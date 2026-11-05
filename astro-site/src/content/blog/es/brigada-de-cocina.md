@@ -14,17 +14,17 @@ faq:
   - q: "¿Sirve la brigada de Escoffier en un restaurante pequeño?"
     a: "Sirve como mapa de técnicas, no como plantilla de contratación. En una cocina de seis personas, varias partidas francesas caen en la misma persona. Lo que no puede quedar sin dueño es el pase, los fríos, el fuego y la cobertura del franco."
   - q: "¿Qué puestos de cocina nombra el convenio en España?"
-    a: "El ALEH VI, en el área de cocina y economato, describe diez puestos: jefatura de cocina, segundo o segunda, jefatura de catering, jefatura de partida, cocinero o cocinera, repostero o repostera, encargada o encargado de economato, ayudante de cocina, ayudante de economato y auxiliar. Las funciones están en el artículo 17 del BOE-A-2023-6344. Una resolución publicada el 4 de septiembre de 2026 cambia la forma de género de algunos nombres y no cambia esas funciones."
+    a: "El ALEH VI relaciona, en cocina y economato, diez puestos de forma enunciativa, no como plantilla que haya que cubrir entera: jefatura de cocina, segundo o segunda, jefatura de catering, jefatura de partida, cocinero o cocinera, repostero o repostera, encargado o encargada de economato, ayudante de cocina, ayudante de economato y auxiliar. Las tareas largas están en el artículo 17 del BOE-A-2023-6344. La resolución publicada el 4 de septiembre de 2026 (BOE-A-2026-18630) cambia la forma de género de algunos nombres y reimprime el párrafo del segundo jefe; no vuelve a copiar el resto de las funciones de cocina."
   - q: "¿Sous chef y segundo jefe de cocina son lo mismo?"
     a: "En muchas cocinas de España se llama sous chef a quien sustituye al jefe y sostiene la línea cuando el jefe no está. El convenio no usa esa palabra francesa: habla de segundo o segunda jefe de cocina, con la función de colaborar y sustituir al jefe. El chef corporativo, quien dirige varias cocinas, tampoco es un puesto del convenio: es un nombre de uso."
   - q: "¿Quién manda en el pase?"
     a: "Manda quien tiene el pase asignado en ese servicio, normalmente el jefe de cocina o el segundo. El pase es una secuencia: se canta la comanda, se marcha lo que está en su punto, se avisa lo que se ha acabado y se limpia el pase entre mesas."
   - q: "¿La calculadora de brigada sustituye al organigrama?"
-    a: "La calculadora gratuita del sitio estima personas de cocina y de sala a partir de cubiertos, tipo de servicio, servicios al día y si hay delivery, y permite descargar un Excel. Sirve para empezar a hablar de plantilla. Los puestos, las funciones y el contrato salen del convenio que te aplica y de cómo está montada tu cocina."
+    a: "La calculadora gratuita del sitio estima personas de cocina y de sala a partir de cubiertos, tipo de servicio, servicios al día y si hay delivery, y permite descargar un Excel. Sirve para empezar a hablar de plantilla. No te dice el puesto del acuerdo ni lo que debe poner el contrato: eso se mira en el ALEH VI y en el convenio que te aplique."
 faqInBody: true
 ---
 
-Una brigada de cocina es el reparto de personas, partidas y responsabilidades con el que sacas el servicio. En España, el mapa legal de esos puestos está en el convenio estatal de hostelería, no en el organigrama francés de un hotel. Esta página es para quien dirige una cocina y necesita decir, por escrito, quién hace qué.
+Una brigada de cocina es el reparto de personas, partidas y responsabilidades con el que sacas el servicio. En España, una referencia de esos puestos y de sus tareas está en el ALEH VI, el acuerdo estatal de hostelería, no en el organigrama francés de un hotel. El acuerdo no obliga a tenerlos todos cubiertos. Esta página es para quien dirige una cocina y quiere decir, por escrito, quién hace qué. No es un criterio para redactar un contrato.
 
 «La brigada de cocina» también es el título de una película. Si has llegado buscando la ficha del filme, esta no es. Aquí el asunto es el turno de hoy.
 
@@ -34,7 +34,7 @@ El texto legal que cito es el español: el Acuerdo Laboral de ámbito Estatal de
 
 Organiza cuatro cosas a la vez.
 
-**El puesto.** Quién es jefe de cocina, quién es segundo, quién lleva una partida y quién ayuda. En el día a día se mezclan los nombres franceses (sous chef, saucier, garde-manger) con los del contrato. Conviene tener los dos a la vista y no usarlos como si fueran sinónimos en una nómina.
+**El puesto.** Quién es jefe de cocina, quién es segundo, quién lleva una partida y quién ayuda. En el día a día se mezclan los nombres franceses (sous chef, saucier, garde-manger) con los del acuerdo. Conviene tener los dos a la vista: no son la misma etiqueta, y el ALEH usa la suya.
 
 **La partida (estación).** El trozo de la carta del que responde una persona en ese servicio: fuegos, fríos, postre, pase. En una cocina pequeña una persona sostiene dos o tres partidas. En un hotel, cada una puede tener nombre y equipo propios.
 
@@ -46,50 +46,46 @@ La [mise en place](https://aichef.pro/blog/mise-en-place) es la preparación de 
 
 ## El modelo de Escoffier y una cocina de seis
 
-Auguste Escoffier ordenó la cocina de los grandes hoteles en partidas con nombre francés: salsas, pescados, parrilla, asados, entremetier, cuarto frío, pastelería, y figuras de apoyo como el tournant, que rueda entre puestos, o quien canta el pase. Es un mapa excelente de técnicas. Enseña que el frío y el fuego no se llevan igual, y que el pase es un oficio y no un hueco entre dos fogones.
+Auguste Escoffier ordenó la cocina de los grandes hoteles en partidas con nombre francés: salsas, pescados, parrilla, asados, entremetier, cuarto frío, pastelería, y figuras de apoyo como el tournant, que rueda entre puestos, o quien canta el pase. Enseña que el frío y el fuego no se llevan igual.
 
-Ese mapa no es una plantilla de contratación. Un hotel de lujo puede acercarse a él. Un restaurante de barrio, una cocina de hotel pequeña o un local de sesenta cubiertos, no. Si intentas copiarlo persona a persona, o contratas una plantilla que no facturas o dejas partidas vacías sobre el papel y el trabajo real cae, sin decirlo, en las dos personas que aguantan.
+Ese mapa no es una plantilla de contratación. Un hotel de lujo puede acercarse a él. Una cocina de seis, no. Si lo copias persona a persona, o contratas una plantilla que no facturas o dejas partidas vacías sobre el papel y el trabajo real cae, sin decirlo, en las dos personas que aguantan.
 
-Lo que sí se conserva al reducir es la responsabilidad. Alguien responde del pase. Alguien responde de que el frío salga frío y el fuego, en su punto. Alguien puede abrir el servicio si el jefe no está. El resto de nombres franceses se agrupan. No desaparecen las tareas: desaparece la fantasía de un cuerpo por tarea.
+Al reducir se conserva la responsabilidad. Alguien responde del pase, de que el frío salga frío y el fuego en su punto, y de abrir si el jefe no está. El resto de nombres franceses se agrupan. No desaparecen las tareas: desaparece la fantasía de un cuerpo por tarea.
 
 <figure><img src="/blog-assets/2026/11/brigada-de-cocina-pase.jpg" alt="Pase de cocina con dos platos blancos, una mano limpiando el borde y otra terminando el emplatado" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
 ## Los diez puestos del convenio español
 
-El ALEH VI ordena la hostelería en áreas. La segunda es cocina y economato. Dentro, el artículo 17.B describe diez puestos y qué hace cada uno. El texto está en el [BOE-A-2023-6344](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-6344). Lo que sigue es una lectura de trabajo, no la cita literal: para un contrato o una inspección se abre el boletín.
+El ALEH VI ordena la hostelería en áreas. La segunda es cocina y economato. El artículo 15 relaciona los puestos «de forma meramente enunciativa y no excluyente», y el artículo 12 dice que no hay obligación de tener cubiertos todos los grupos ni todos los puestos. El artículo 17.B describe las tareas de esos puestos con la misma cautela: son una referencia, «no excluyente de cualquiera otra que se determine o convenga entre las partes». El texto largo está en el [BOE-A-2023-6344](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-6344), de 10 de marzo de 2023. Lo que sigue es una lectura de trabajo, no la cita literal.
 
-| Puesto en el art. 17 | De qué responde, en corto |
+| Puesto en el art. 17.B (2023) | De qué responde, en corto |
 | --- | --- |
-| Jefe o jefa de cocina | Planifica, organiza y controla la cocina y la repostería. Dirige al personal, propone pedidos, vigila maquinaria y colabora en la instrucción |
-| Segundo o segunda jefe de cocina | Hace ese mismo tipo de trabajo y sustituye al jefe |
-| Jefe o jefa de catering | Dirige la elaboración y el reparto de comidas, la higiene, el montaje y al personal de esa producción |
-| Jefe o jefa de partida | Controla la partida o el servicio que le asignan, bajo la dirección del jefe, e informa de sus recursos |
-| Cocinero o cocinera | Prepara, adereza y presenta platos con autonomía. Colabora en pedidos, conservación, carta y costes |
-| Repostero o repostera | Prepara y presenta postres, dulces y masas, con autonomía, y puede organizar al personal de su obrador |
-| Encargado o encargada de economato | Dirige las mercancías: necesidades, peticiones de oferta, existencias |
-| Ayudante de cocina | Elabora con alguna autonomía, bajo supervisión |
-| Ayudante de economato | Compra y gestiona mercancía, recepciona y vigila caducidades y existencias |
+| Jefe o jefa de cocina | Planifica, organiza y controla la cocina y la repostería. Dirige al personal, diseña platos y participa en ellos, propone pedidos, vigila maquinaria y colabora en la instrucción |
+| Segundo o segunda jefe de cocina | Planifica, organiza y controla las tareas de cocina y repostería, y colabora con el jefe o lo sustituye en las suyas. La lista del jefe es más larga |
+| Jefe o jefa de catering | Dirige la elaboración y la distribución de comidas, cuida las condiciones higiénicas y de montaje, y organiza e instruye al personal de esa producción |
+| Jefe o jefa de partida | Controla la partida o el servicio que le asignan, bajo la dirección del jefe. Hace también las tareas del cocinero, y además informa de los recursos de su partida |
+| Cocinero o cocinera | Prepara, adereza y presenta platos. El texto lo escribe como trabajo cualificado, autónomo y responsable, y le hace colaborar en pedidos, conservación, carta y costes |
+| Repostero o repostera | Prepara y presenta postres, dulces, bollería y masas, y organiza al personal que tenga a su cargo |
+| Encargado o encargada de economato | Dirige las mercancías de su departamento: necesidades, peticiones de oferta, existencias |
+| Ayudante de cocina | Participa en las elaboraciones con alguna autonomía y responsabilidad, bajo supervisión |
+| Ayudante de economato | Compra y gestiona mercancía, recepciona, vigila caducidades y existencias. El texto lo escribe como trabajo cualificado, autónomo y responsable, no como el ayudante de cocina |
 | Auxiliar de cocina y economato | Limpieza de útil, maquinaria y menaje, higienización y transporte, sin una cualificación específica y bajo supervisión |
 
-Los grupos profesionales van aparte, en los artículos 15 y 16. En cocina, el grupo primero reúne la jefatura de cocina, el segundo jefe y la jefatura de catering. El segundo grupo reúne partida, cocinero, repostero, economato y ayudantes. El tercero, el auxiliar. El grupo tiene que constar en el contrato y en la nómina.
+Los grupos van en el cuadro del artículo 16, también como lista enunciativa. En el de 2023, el grupo primero de cocina reúne jefe o jefa de cocina, segundo o segunda y jefe o jefa de catering; el segundo, partida, cocinero, repostero, encargado de economato y los dos ayudantes; el tercero, el auxiliar de cocina y economato. El artículo 11.2 pide que el contrato escrito y el recibo de salario indiquen el grupo profesional y, además, la ocupación o el puesto inicial, con la nomenclatura del artículo 15. La clasificación profesional figura entre las materias que el artículo 10.7 reserva al acuerdo estatal, con las salvedades que el propio texto remite al Estatuto de los Trabajadores. El salario no va en esa reserva: el artículo 12.5 lo deja al convenio de ámbito inferior o, en su defecto, al contrato. Qué convenio te toca, y si uno de empresa cambia algo, no se resuelve aquí.
 
-El [BOE-A-2026-18630](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18630), publicado el 4 de septiembre de 2026, modifica la forma de escribir algunos de esos nombres (el llamado sistema de cremallera, que alterna el género) y no reescribe las funciones. No inventes una lista homogénea «todo en masculino» ni «todo en cremallera» si vas a citar el boletín: los dos textos conviven en el detalle, y el que vale para ti es el que lee tu asesoría.
+El [BOE-A-2026-18630](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-18630), de 4 de septiembre de 2026, modifica algunos nombres con el sistema de cremallera. En cocina, el artículo 15 cambia, entre otros, jefa/e de cocina, jefa/e de catering, cocinera/o, ayudanta/e de cocina y encargada/o de economato. No reescribe en ese apartado el segundo jefe, el jefe de partida, el repostero ni el auxiliar. En el artículo 17 reimprime las funciones del segundo jefe y solo cambia el tratamiento de género de la persona a la que sustituye; en el resto de puestos de cocina que toca, deja el nombre nuevo sin volver a copiar las tareas. La frase del acuerdo que dice que un cambio de nombre no altera la prestación se refiere a tres puestos de sala que pasan de auxiliar a asistente, no a toda la cocina. No armes una lista única para pegarla en un contrato: los dos boletines se leen juntos.
 
-El chef corporativo no sale en esa lista. Es el nombre de quien dirige la cocina de varias casas. El sous chef tampoco: es el nombre de oficio del segundo jefe en muchas brigadas. Usarlos en el briefing está bien. Usarlos en el contrato, en lugar del puesto del convenio, es otra conversación, y no es esta página quien la cierra.
+El chef corporativo no sale en esa lista. Es el nombre de quien dirige la cocina de varias casas. El sous chef tampoco: es el nombre de oficio del segundo jefe en muchas brigadas. Usarlos en el briefing está bien. Si el contrato debe llevar el puesto del acuerdo, el nombre francés o los dos, esta página no lo decide.
 
-Mover a alguien dentro de su grupo profesional es la flexibilidad ordinaria del artículo 19 del mismo acuerdo. Sacarlo de su grupo es otra medida: hace falta causa, tiene límite temporal y, si las funciones son de grupo superior, se cobra el superior. El detalle está en el BOE. No lo firmes de memoria.
+Dentro del mismo grupo profesional, el artículo 19 llama flexibilidad ordinaria a encomendar tareas de la prestación, con el límite del grupo y de la titulación que haga falta. Deja que el convenio de ámbito inferior, o un acuerdo de empresa, regule la polivalencia y su efecto en la paga. Pasar a funciones de otro grupo es la flexibilidad extraordinaria: el acuerdo exige causa económica, técnica, organizativa o de producción, que se informe a la representación de las personas trabajadoras, y un tope de seis meses en un año u ocho meses en dos años. Si el nivel retributivo de las funciones nuevas es superior según el convenio aplicable, se respetan esos derechos; si es inferior, se mantiene la retribución de origen. Si el cambio de área funcional es continuado, también pide causa y formación. Es una lectura del artículo, no un criterio para firmar un cambio de puesto.
 
 ## Tres niveles de autonomía
 
-El artículo 17 no dice solo el nombre. Dice con qué autonomía se trabaja, y eso ordena el pase mejor que un póster de Escoffier.
+El artículo 17 no clasifica la cocina en tres escalones con una frase única. Describe cada puesto, y la autonomía no se escribe igual en todos.
 
-El cocinero, el repostero, el jefe de partida y el encargado de economato trabajan de manera cualificada y autónoma. Les puedes exigir el plato, el postre o el pedido sin estar encima de cada gesto. También les puedes pedir que instruyan a quien tienen al lado.
+El cocinero, el repostero, el jefe de partida y el encargado de economato aparecen como trabajo cualificado y autónomo. El ayudante de economato también: el texto dice «de manera cualificada, autónoma y responsable». El ayudante de cocina es otro caso: participa «con alguna autonomía y responsabilidad» y «bajo supervisión». El auxiliar hace limpieza, higienización y transporte «sin cualificación» y «bajo supervisión».
 
-El ayudante participa con alguna autonomía y bajo supervisión. Puede llevar una elaboración que ya conoce. No es el dueño de la partida.
-
-El auxiliar realiza tareas de limpieza, higienización y transporte sin una cualificación específica, bajo supervisión. Pedirle que «saque él el pase» porque falta gente es cambiarle el puesto, no «echar una mano».
-
-Esos tres niveles son la base para decidir qué se delega un sábado lleno. No son una nota de carácter («este es responsable», «este hay que mirarlo»). Están escritos.
+Esa redacción sirve para leer qué describe el acuerdo en cada puesto. No dice hasta dónde mirar un sábado, ni convierte un encargo distinto en un cambio de contrato. Si un auxiliar pasa a cantar el pase de forma continuada, estás fuera de la lista de tareas de ese puesto. Si eso cabe, durante cuánto tiempo y con qué paga, lo dicen el artículo 19 y el convenio que te aplique. Esta página no lo resuelve.
 
 ## Un ejemplo hipotético de reparto
 
@@ -104,7 +100,7 @@ Esto no es un local real ni una ratio de contratación. Es un ejemplo hipotétic
 | Cocinero de rueda | La preparación larga y la baja del día | Tournant |
 | Ayudante | Corte, puesta a punto y apoyo de pase | Commis |
 
-En este ejemplo no hay una séptima persona de economato: el pedido lo cierra el jefe y la recepción la hace quien abre. Tampoco hay obrador de pastelería. El postre de carta es corto y lo deja listo la partida fría por la mañana, o se compra. Si el postre es el negocio, el repostero deja de ser una línea del convenio que «ya cubre alguien» y pasa a ser un puesto de verdad.
+En este ejemplo no hay una séptima persona de economato: el pedido lo cierra el jefe y la recepción la hace quien abre. El acuerdo no exige esa séptima persona. Tampoco hay obrador de pastelería. El postre de carta es corto y lo deja listo la partida fría por la mañana, o se compra. Si el postre es el negocio, el repostero deja de ser una línea que «ya cubre alguien» y pasa a ser un puesto de la casa.
 
 El sábado en que el segundo libra, el cuadro se reescribe antes del viernes. Si no se reescribe, el pase se queda sin dueño y el fuego decide solo. Eso no es una brigada pequeña. Es un servicio sin mando.
 
@@ -120,7 +116,7 @@ El pase se escribe en cinco gestos. No hace falta un discurso.
 4. Entre mesa y mesa se limpia el pase. El borde del plato lo limpia quien emplata, no «quien pase por ahí».
 5. Si el jefe no está, canta el segundo. Si no están los dos, el servicio de ese día tiene otro nombre escrito en la pizarra desde la mañana. No se improvisa a la una y cuarto.
 
-El briefing cabe de pie, en el pase vacío, antes de abrir. Diez minutos bastan si lleváis escrito: cubiertos previstos, bajas del día, alérgenos de las fichas nuevas, qué está en 86 y quién canta. Lo que no se dice ahí se entera cada uno a su manera, y sala se entera la última.
+El briefing cabe de pie, en el pase vacío, antes de abrir. Con diez minutos da para dejar escrito cubiertos previstos, bajas del día, alérgenos de las fichas nuevas, qué está en 86 y quién canta.
 
 <figure><img src="/blog-assets/2026/11/brigada-de-cocina-briefing.jpg" alt="Tres cocineros de blanco revisan un portapapeles en el pase, antes de abrir el servicio" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
@@ -128,13 +124,13 @@ El briefing cabe de pie, en el pase vacío, antes de abrir. Diez minutos bastan 
 
 Siéntate con la lista real de quien trabaja, no con la plantilla ideal.
 
-Escribe los diez puestos del artículo 17 en una columna y, al lado, el nombre de quien los cubre en tu casa. Donde ponga «nadie», esa función la está haciendo alguien sin que el contrato lo diga, o no se está haciendo. Las dos cosas se corrigen distinto.
+Usa la lista del artículo 17 como columna de referencia, no como plantilla obligatoria. Al lado, el nombre de quien cubre esa tarea en tu casa. Donde ponga «nadie», anótalo: o la hace alguien cuyo puesto no la menciona, o no se hace. Qué corresponda escribir en el contrato no se decide en esta columna.
 
 En una segunda columna anota el turno: comida, cena, franco. Un puesto sin turno es un deseo.
 
 La tercera columna es el pase: quién canta en cada servicio. Un solo nombre por servicio.
 
-Con eso ya puedes hablar con el equipo sin discutir de Escoffier. El [Manual del Chef Ejecutivo](https://aichef.pro/manual-chef-ejecutivo) desarrolla las fichas de puesto, la producción de la semana y el criterio de quien dirige la cocina. Esta página no lo resume: te deja el mapa para saber si lo necesitas.
+Con eso ya puedes hablar con el equipo sin discutir de Escoffier. El [Manual del Chef Ejecutivo](https://aichef.pro/manual-chef-ejecutivo) desarrolla las fichas de puesto, la producción de la semana y el criterio de quien dirige la cocina.
 
 Si quieres un borrador para discutir en el briefing, en el espacio de invitado puedes pedir a Chef Ejecutivo Pro una lista de partidas a partir de tus cubiertos y de tu tipo de servicio. Tú la contrastas con quien está contratado y con el convenio. No te presenta el contrato, no te calcula la nómina y no se conecta con el cuadrante.
 
@@ -151,7 +147,7 @@ Es el reparto de personas, partidas y responsabilidades con el que una cocina sa
 Sirve como mapa de técnicas, no como plantilla de contratación. En una cocina de seis personas, varias partidas francesas caen en la misma persona. Lo que no puede quedar sin dueño es el pase, los fríos, el fuego y la cobertura del franco.
 
 **¿Qué puestos de cocina nombra el convenio en España?**
-El ALEH VI, en el área de cocina y economato, describe diez puestos: jefatura de cocina, segundo o segunda, jefatura de catering, jefatura de partida, cocinero o cocinera, repostero o repostera, encargada o encargado de economato, ayudante de cocina, ayudante de economato y auxiliar. Las funciones están en el artículo 17 del BOE-A-2023-6344. Una resolución publicada el 4 de septiembre de 2026 cambia la forma de género de algunos nombres y no cambia esas funciones.
+El ALEH VI relaciona, en cocina y economato, diez puestos de forma enunciativa, no como plantilla que haya que cubrir entera: jefatura de cocina, segundo o segunda, jefatura de catering, jefatura de partida, cocinero o cocinera, repostero o repostera, encargado o encargada de economato, ayudante de cocina, ayudante de economato y auxiliar. Las tareas largas están en el artículo 17 del BOE-A-2023-6344. La resolución publicada el 4 de septiembre de 2026 (BOE-A-2026-18630) cambia la forma de género de algunos nombres y reimprime el párrafo del segundo jefe; no vuelve a copiar el resto de las funciones de cocina.
 
 **¿Sous chef y segundo jefe de cocina son lo mismo?**
 En muchas cocinas de España se llama sous chef a quien sustituye al jefe y sostiene la línea cuando el jefe no está. El convenio no usa esa palabra francesa: habla de segundo o segunda jefe de cocina, con la función de colaborar y sustituir al jefe. El chef corporativo, quien dirige varias cocinas, tampoco es un puesto del convenio: es un nombre de uso.
@@ -160,4 +156,4 @@ En muchas cocinas de España se llama sous chef a quien sustituye al jefe y sost
 Manda quien tiene el pase asignado en ese servicio, normalmente el jefe de cocina o el segundo. El pase es una secuencia: se canta la comanda, se marcha lo que está en su punto, se avisa lo que se ha acabado y se limpia el pase entre mesas.
 
 **¿La calculadora de brigada sustituye al organigrama?**
-La calculadora gratuita del sitio estima personas de cocina y de sala a partir de cubiertos, tipo de servicio, servicios al día y si hay delivery, y permite descargar un Excel. Sirve para empezar a hablar de plantilla. Los puestos, las funciones y el contrato salen del convenio que te aplica y de cómo está montada tu cocina.
+La calculadora gratuita del sitio estima personas de cocina y de sala a partir de cubiertos, tipo de servicio, servicios al día y si hay delivery, y permite descargar un Excel. Sirve para empezar a hablar de plantilla. No te dice el puesto del acuerdo ni lo que debe poner el contrato: eso se mira en el ALEH VI y en el convenio que te aplique.
