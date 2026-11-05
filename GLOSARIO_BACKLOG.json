@@ -5,7 +5,7 @@
   "nota": "Semillas de trabajo para 1-2 años. No son volúmenes de búsqueda. «Publicado» significa que ya hay un post de glosario en español cuyo slug o título contiene el término. Las cifras de Search Console del encargo (homogeneización, abocar/abocado, hidrólisis, maceración, roux, demi-glace, Maillard) no se han recontado en esta tanda.",
   "agentes": 84,
   "terminos_semilla": 3400,
-  "ya_publicados_en_agentes": 405,
+  "ya_publicados_en_agentes": 406,
   "tanda_1": [
     "homogeneización",
     "abocar / abocado",
@@ -12974,8 +12974,8 @@
         },
         {
           "termino": "curry",
-          "estado": "semilla",
-          "post": null
+          "estado": "publicado",
+          "post": "es/curry-concepto-definicion"
         },
         {
           "termino": "dosa",
