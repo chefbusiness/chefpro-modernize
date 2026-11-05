@@ -6,7 +6,7 @@ Fuente de agentes: `scripts/astro-migration/fase8c-agentes/catalogo-hub.json`. U
 
 Estado **publicado**: ya existe un post de la categoría glosario en español. Estado **semilla**: propuesto, sin ficha todavía. No hay volúmenes inventados. Las impresiones de Search Console que cita el encargo de esta tanda (homogeneización 13.214 a posición 6,6; abocar/abocado por encima de 20.000 y sin cubrir bien «abocado»; hidrólisis, maceración, roux, demi-glace y Maillard) se tratan como dato del encargo, no como una medición nueva.
 
-Agentes: **84**. Términos semilla en agentes: **3400**. De esos, el cruce marca **405** como ya publicados en el glosario español.
+Agentes: **84**. Términos semilla en agentes: **3400**. De esos, el cruce marca **406** como ya publicados en el glosario español.
 
 ## Tanda 1 — lo que sale en esta entrega
 
@@ -2693,7 +2693,7 @@ Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en lo
 - tadka — semilla
 - masala — semilla
 - garam masala — semilla
-- curry — semilla
+- curry — publicado (`es/curry-concepto-definicion`)
 - dosa — semilla
 - idli — semilla
 - naan — semilla
