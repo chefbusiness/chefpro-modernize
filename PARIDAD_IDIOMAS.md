@@ -30,7 +30,7 @@ El blog `/nl/blog` abre con el post 1 del roadmap. Keyword y intención por piez
 | 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Publicado: `/nl/blog/14-allergenen` |
 | 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Publicado: `/nl/blog/kruisbesmetting` |
 | 4 | hygiënecode (también hygienecode, serie distinta por el diacrítico) | Qué obliga el código de higiene neerlandés en la hostelería. No aplica en Flandes | Publicado: `/nl/blog/hygienecode` (PR #206) |
-| 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Borrador pendiente de OK (este PR): `/nl/blog/haccp-betekenis` |
+| 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Publicado: `/nl/blog/haccp-betekenis` (este PR) |
 | 6 | haccp lijsten | Plantillas. Se puede dejar caer si hay que podar | Pendiente |
 | 7 | snijtechnieken | Técnica de corte en brigada | Pendiente |
 | 8 | kooktechnieken | Técnicas de cocción de servicio | Pendiente |
