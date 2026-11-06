@@ -2,7 +2,7 @@
 title: "Hygiënecode voor de horeca: wat een restaurant verplicht is"
 description: "Hygiënecode voor de horeca: de gids van KHN die de NVWA goedkeurde als voedselveiligheidsplan. Wat een restaurant verplicht is. In Vlaanderen geldt deze code niet."
 pubDate: 2026-11-04
-modDate: 2026-11-04
+modDate: 2026-11-06
 category: voedselveiligheid
 tags: ["hygiënecode", "hygienecode", "hygiëne", "haccp", "nvwa", "horeca"]
 image: /blog-assets/2026/08/hygiene5-plan.jpg
@@ -50,7 +50,7 @@ Wie in de horeca op «hygiënecode» zoekt, of zonder trema op «hygienecode», 
 
 De NVWA beschrijft een hygiënecode als het voedselveiligheidsplan van een branchevereniging. Voor de horeca wijst zij naar de code van Koninklijke Horeca Nederland. Die code is door de NVWA goedgekeurd als voedselveiligheidsplan. Op de pagina [werken volgens HACCP](https://www.nvwa.nl/onderwerpen/voedselveiligheid/haccp/werken-volgens-haccp-systeem) noemt de NVWA hem een gids op de zeven basisprincipes van HACCP: de gevaren die in uw bedrijf aanwezig kunnen zijn, en hoe u die beheerst.
 
-HACCP is de plicht. De code is de uitgewerkte weg die de branche daarvoor aanbiedt. De afkorting staat voor Hazard Analysis and Critical Control Points. De NVWA vertaalt hazard als gevaar: u brengt de gevaren in kaart en beschrijft hoe u ze voorkomt en beheerst. Een voorbeeld dat de NVWA zelf geeft, is voedsel op de juiste temperatuur bewaren. Welke graad dat in uw proces is, staat in de code of in uw plan. Dit artikel vult die graad niet in.
+HACCP is de plicht. De code is de uitgewerkte weg die de branche daarvoor aanbiedt. Wat die plicht in de keuken betekent, met gevarenanalyse, CCP en monitoring, staat in [HACCP betekenis voor de horeca](https://aichef.pro/nl/blog/haccp-betekenis). De afkorting staat voor Hazard Analysis and Critical Control Points. De NVWA vertaalt hazard als gevaar: u brengt de gevaren in kaart en beschrijft hoe u ze voorkomt en beheerst. Een voorbeeld dat de NVWA zelf geeft, is voedsel op de juiste temperatuur bewaren. Welke graad dat in uw proces is, staat in de code of in uw plan. Dit artikel vult die graad niet in.
 
 Dezelfde NVWA-pagina zet naast de horecacode andere goedgekeurde codes: ambachtelijk ijs, contract- en inflightcatering, en de code van Stichting Overlegplatform Restaurantketens (STOR). Een restaurant dat ter plaatse eten en drinken bereidt, valt bij de horecacode. Een zaak waarvan de activiteit ijsbereiding, bakkerij of visdetailhandel is, kijkt op die lijst of er een eigen code staat. Dit artikel werkt die andere codes niet uit.
 

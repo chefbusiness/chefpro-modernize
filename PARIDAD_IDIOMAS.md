@@ -29,8 +29,8 @@ El blog `/nl/blog` abre con el post 1 del roadmap. Keyword y intención por piez
 | 1 | allergenenlijst | El operador quiere el listado de 14 para imprimir en cocina y sala, no una guía de paciente ni una oferta de empleo de la NVWA | Publicado: `/nl/blog/allergenenlijst` |
 | 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Publicado: `/nl/blog/14-allergenen` |
 | 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Publicado: `/nl/blog/kruisbesmetting` |
-| 4 | hygiënecode (también hygienecode, serie distinta por el diacrítico) | Qué obliga el código de higiene neerlandés en la hostelería. No aplica en Flandes | Borrador pendiente de OK (este PR) |
-| 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Pendiente |
+| 4 | hygiënecode (también hygienecode, serie distinta por el diacrítico) | Qué obliga el código de higiene neerlandés en la hostelería. No aplica en Flandes | Publicado: `/nl/blog/hygienecode` (PR #206) |
+| 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Publicado: `/nl/blog/haccp-betekenis` (este PR) |
 | 6 | haccp lijsten | Plantillas. Se puede dejar caer si hay que podar | Pendiente |
 | 7 | snijtechnieken | Técnica de corte en brigada | Pendiente |
 | 8 | kooktechnieken | Técnicas de cocción de servicio | Pendiente |
@@ -49,7 +49,7 @@ Ya publicados, entre otros: haccp, alergenios, contaminação cruzada, higiene, 
 |---|---|---|---|
 | 1 | ficha técnica de pratos | La ficha que usa el operador (dosis, coste, alérgenos), no un trabajo escolar | Publicado: `/pt/blog/ficha-tecnica-de-pratos` |
 | 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero | Publicado: `/pt/blog/massa-mae` |
-| 3 | garum | Pieza de autoridad histórica y de uso profesional, no una receta de fin de semana | Borrador pendiente de OK (este PR) |
+| 3 | garum | Pieza de autoridad histórica y de uso profesional, no una receta de fin de semana | Publicado: `/pt/blog/garum` (PR #206) |
 
 Cocina molecular, cócteles y food truck se midieron con head terms contaminados. No se escriben hasta tener una variante profesional medida. APPCC y «alérgenos» son notas de Brasil en el roadmap, no la lengua de la página: aquí se dice alergénios y HACCP.
 

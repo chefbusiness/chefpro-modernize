@@ -1,38 +1,38 @@
 ---
-title: "Best Recipe Costing Software {year}: 10 Tools Compared (Free & Paid)"
-description: "Recipe costing software calculates the cost of each dish from ingredient price, yield and waste. How it differs from a spreadsheet, and how it feeds menu engineering."
+title: "Recipe Costing Software {year}: 10 Options Compared (Free and Paid)"
+description: "Recipe costing software prices each dish from ingredient cost, yield and waste, then feeds menu engineering. Compared with a spreadsheet, and with AI agents for chefs."
 pubDate: 2026-03-30
-modDate: 2026-10-22
+modDate: 2026-11-06
 category: ai-in-gastronomy
 lang: en
 wpId: 3321
-image: /blog-assets/en/2026/03/best-recipe-costing-software-2026.png
-imageAlt: "Restaurant manager reviewing recipe costing software on tablet with ingredients"
+image: /blog-assets/2026/08/hygiene-produits.jpg
+imageAlt: "Dry-store shelves with bins and sacks, no people. French labels. Not a recipe costing screen and not a price list."
 faq:
   - q: "What is recipe costing software?"
-    a: "Recipe costing software is a digital tool that calculates the exact cost per dish by tracking ingredient prices, portion sizes, yield percentages, and waste factors. These platforms aggregate supplier pricing data, apply recipe formulations, and generate real-time food cost percentages that inform menu pricing, inventory purchasing, and profitability decisions. Modern solutions go beyond basic calculation to offer AI-powered insights, multi-location synchronization, and integration with POS and inventory systems."
+    a: "Recipe costing software records the ingredient price, the usable yield after trim, and the waste, then adds them up for one dish. Menu engineering uses that number to decide whether the dish stays, moves or leaves the menu. A spreadsheet can do the sum once. It does not change when a supplier invoice changes unless someone edits it. This page does not state a food-cost reduction or a saving that applies to most restaurants."
   - q: "How much does recipe costing software cost?"
-    a: "Pricing spans a vast range from completely free to enterprise-level commitments exceeding $500 monthly. Free options include CostBrain (unlimited free usage), CookKeepBook (free unlimited recipes), and AI Chef Pro’s €10/month Member plan (10,000 monthly credits with full AI access). Mid-range solutions typically cost $25-250 monthly, with reciProfity starting around $30/month and MarketMan at approximately $239/month. Enterprise platforms like Galley Solutions and meez require custom quotes based on location count and feature requirements, often totaling $500-2,000+ monthly for large operations."
+    a: "Prices in this answer were read on each vendor’s own page on 6 November 2026. AI Chef Pro Member is €10 a month with 10,000 credits. There is no free plan. Premium Pro is €25 a month and Plus is €50 a month. MarketMan lists Starter at $249 a month, Growth at $299 a month and Enterprise from $449. WISK lists a single venue at $249 a month for beverage or for food. Galley’s SMB Accelerator starts at $99 a month. CookKeepBook’s standard account is free; Plus is $9 a month or $69 a year. reciProfity publishes add-on and extra-unit prices, not a base plan. costbrain.com does not publish a recipe-costing price. meez, BlueCart and Kitchen CUT do not have a price on a page this article cites: ask them. A later change on a vendor page wins over this answer."
   - q: "Can I use Excel for recipe costing?"
-    a: "While Excel can handle basic recipe costing calculations, dedicated software delivers substantial advantages that justify the investment. Spreadsheets require manual updates when supplier prices change, lack real-time POS integration to track actual sales versus theoretical costs, and are prone to formula errors that can misstate profitability. Recipe costing software typically saves 5-10 hours weekly on manual calculations, provides instant visibility into cost fluctuations, and generates the reports necessary for informed menu engineering decisions. For operations serious about controlling food costs, Excel serves as a useful supplement rather than a primary solution."
+    a: "Yes. A spreadsheet can add up one dish. It does not change that sum when a supplier invoice changes unless someone edits the cell, and a wrong formula can misstate the cost. This page does not state how many hours that edit takes, and it does not claim the software pays for itself."
   - q: "What is the best free recipe costing software?"
-    a: "CostBrain and CookKeepBook offer genuinely free access, and AI Chef Pro starts at €10/month with 10,000 credits and complete access to 75+ AI tools including menu engineering and demand forecasting—unique capabilities unavailable elsewhere. CostBrain offers unlimited free usage for core recipe costing with basic inventory features. CookKeepBook delivers free unlimited recipe storage with inventory tracking capabilities. The “best” choice depends on needs: AI Chef Pro for AI-powered insights, CostBrain for straightforward costing, or CookKeepBook for combined recipe and inventory management."
+    a: "On 6 November 2026, CookKeepBook’s own site says the standard account is free and includes unlimited ingredients and recipes. Plus on that site is $9 a month or $69 a year. costbrain.com does not publish a free recipe-costing plan. AI Chef Pro Member is €10 a month with 10,000 credits and has no free plan. This page does not name a best free tool."
   - q: "How does AI improve recipe costing?"
-    a: "Artificial intelligence transforms recipe costing from reactive calculation to proactive management. AI-powered platforms automatically update costs when supplier prices change, eliminating manual price monitoring. Demand-based scaling predicts ingredient needs based on historical sales, weather, events, and trends, reducing both waste and stockouts. Advanced systems provide menu engineering recommendations that suggest price adjustments or ingredient substitutions to optimize profitability. AI also enables cross-utilization analysis that identifies opportunities to use ingredients across multiple dishes, minimizing waste and maximizing purchasing efficiency. These capabilities represent the future of foodservice profitability, making AI-forward platforms like AI Chef Pro increasingly essential for competitive operations."
+    a: "On AI Chef Pro, AI agents for chefs recalculate a dish when you enter a new ingredient price, and they pass that cost to menu engineering. The guest home opens the workspace. It does not send you to one named agent. This page does not state a measured saving."
   - q: "What ROI can I expect from recipe costing software?"
-    a: "Most operators achieve 2-5% food cost reduction within 90 days of implementing proper recipe costing, with continued improvement over time. For an operation with $500,000 in annual food purchases, this translates to $10,000-25,000 in annual savings—often exceeding the software cost by 10x or more. Beyond direct savings, operators report reduced waste, improved menu profitability consistency, better vendor negotiation leverage through cost visibility, and significant time savings on inventory and costing tasks. Most paid solutions pay for themselves within 1-3 months, making recipe costing software one of the highest-ROI investments in foodservice operations."
+    a: "This page does not state an expected return, a payback period, or a food-cost reduction. No percentage here applies to most restaurants. The dish cost is only as good as the invoice, the yield and the waste you enter. Compare any quote with your own invoices."
 ---
 
-<p><strong>Recipe costing software</strong> calculates what a dish costs before you price it: the ingredient price, the usable yield after trim, and the waste you actually throw away. A spreadsheet can do that arithmetic once. It does not update when a supplier invoice changes, and it does not tell <a href="https://aichef.pro/en/blog/menu-engineering-software-complete-guide">menu engineering software</a> which dish is a star and which one is quietly losing money.</p>
+<p><strong>Recipe costing software</strong> calculates what a dish costs before you price it: the ingredient price, the usable yield after trim, and the waste you actually throw away. A spreadsheet can do that arithmetic once. It does not update when a supplier invoice changes, and it does not tell <a href="https://aichef.pro/en/menu-engineering-software">menu engineering software</a> which dish is a star and which one is quietly losing money. The longer platform comparison is <a href="https://aichef.pro/en/blog/menu-engineering-software-complete-guide">menu engineering software compared</a>.</p>
 <p>For one recipe today, use the <a href="https://aichef.pro/en/food-cost-calculator-restaurant">food cost calculator</a>. For the same logic inside the kitchen workspace, open the <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared">English guest home</a>. Member is €10 a month, 10,000 credits, no lock-in. There is no free plan.</p>
-<p>The shortlist below is what restaurants still compare in 2026. Percentages and vendor prices later in this article come from the original draft. They are not a new measurement from this update. Check a price on the vendor’s own page before you buy.</p>
+<p>The shortlist below is what restaurants still compare in 2026. A price stays on this page only when the vendor’s own site showed it on 6 November 2026. Otherwise the price is omitted. This page does not state a food-cost reduction, a payback period, or a saving that applies to most restaurants.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
-<p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Recipe Costing + 55 More AI Kitchen Tools</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro combines recipe costing, menu engineering, food cost analysis, and demand forecasting in one platform. Member plan — €10/month.</p>
+<p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Recipe costing software, with AI agents for chefs</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro puts recipe costing, menu engineering and food cost in one workspace of AI agents for chefs. Member plan — €10/month. There is no free plan.</p>
 <p><a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;">
-<img decoding="async" src="/blog-assets/en/2026/03/recipe-costing-software-dashboard-comparison.png" alt="Recipe costing software dashboard showing food cost percentages and ingredient analysis" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Modern recipe costing software provides real-time dashboards with food cost breakdowns and margin analysis.</figcaption></figure>
+<img decoding="async" src="/blog-assets/2026/08/hygiene5-plan.jpg" alt="A paper grid with initials pinned to a white tile wall, no people. Not a recipe costing dashboard and not a vendor price." style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">A paper grid on a wall. It is not a software dashboard, and the initials are not a dish cost.</figcaption></figure>
 <h2>What to Look for in Recipe Costing Software</h2>
 <p>Before diving into our comparisons, it&#8217;s essential to understand which features deliver the greatest impact on your bottom line. The best <strong>food costing software</strong> goes beyond basic calculations—it becomes the central nervous system of your kitchen operations.</p>
 <h3>Core Features Checklist</h3>
@@ -48,13 +48,14 @@ faq:
 <li><strong>AI-powered insights:</strong> Advanced tools that suggest menu changes, predict cost impacts, and optimize pricing</li>
 </ul>
 <p>As you evaluate options, prioritize features that address your specific operational challenges. A single-location café has different needs than a 20-unit restaurant group—and the right software should scale with your growth.</p>
+<aside class="dp-banner not-prose" data-product="food-cost-templates"><a class="dp-banner__photo-link" href="https://aichef.pro/en/digital-products/food-cost-templates?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener"><img class="dp-banner__photo" src="https://aichef.pro/kit-escandallos-hero.jpg" alt="Food Cost Kit Pro" loading="lazy" decoding="async" /></a><div class="dp-banner__body"><div class="dp-banner__top"><p class="dp-banner__tag">Digital product</p><img class="dp-banner__logo" src="/email-assets/aichef-pro-logo-white.png" alt="AI Chef Pro" /></div><p class="dp-banner__title"><a class="dp-banner__title-link" href="https://aichef.pro/en/digital-products/food-cost-templates?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">Food Cost Kit Pro</a></p><p class="dp-banner__price">$19</p><a class="dp-banner__cta" href="https://aichef.pro/en/digital-products/food-cost-templates?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">View product →</a></div></aside>
 <h2>The 10 Best Recipe Costing Software in 2026</h2>
 <p>The names below are the ones operators still shortlist. This is not a scored lab test.</p>
-<h3>1. AI Chef Pro — Best Overall</h3>
-<p><strong>AI Chef Pro</strong> (aichef.pro/en) stands out as the most comprehensive kitchen intelligence platform available in 2026. While traditional <strong>recipe costing software</strong> focuses solely on cost calculations, AI Chef Pro delivers a complete suite of 75+ AI-powered tools designed specifically for foodservice professionals. From recipe costing and menu engineering to scaling, food cost analysis, and predictive pricing, this platform covers every aspect of kitchen management.</p>
-<p>What sets AI Chef Pro apart is its artificial intelligence integration. The platform doesn&#8217;t just calculate costs—it predicts them. Users can input ingredient price changes and immediately see how menu items will be affected. The AI suggests optimal menu pricing based on target food cost percentages, identifies recipes with the highest profit margins, and even analyzes sales data to recommend which dishes to promote. With support for 7 languages, it&#8217;s ideal for international restaurant groups and operators working with diverse supplier networks.</p>
+<h3>1. AI Chef Pro</h3>
+<p><strong>AI Chef Pro</strong> (aichef.pro/en) is the workspace of 75+ AI agents for chefs on this shortlist. Traditional <strong>recipe costing software</strong> stops at the dish cost. These agents also cover menu engineering, scaling and food cost. This article does not score the ten tools.</p>
+<p>You enter the ingredient price, the yield and the waste. The agents recalculate the dish and pass that cost to menu engineering. The site publishes 7 languages. It does not publish a food-cost reduction.</p>
 <ul>
-<li>75+ AI-powered kitchen tools</li>
+<li>75+ AI agents for chefs</li>
 <li>Real-time recipe costing and menu engineering</li>
 <li>Automatic <a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">food cost calculator</a> with yield adjustments</li>
 <li>AI-driven pricing suggestions based on target margins</li>
@@ -63,10 +64,10 @@ faq:
 <li>Comprehensive analytics dashboard</li>
 <li>Sub-recipe and mother recipe management</li>
 </ul>
-<p><strong>Pricing:</strong> AI Chef Member entry plan at €10/month with 10,000 credits; Pro at €25/month; Premium at €50/month</p>
+<p><strong>Pricing:</strong> Member at €10/month with 10,000 credits; Premium Pro at €25/month; Plus at €50/month. These are the published plan prices on the <a href="https://aichef.pro/en/pricing">pricing page</a>. There is no free plan.</p>
 <p><strong>Best for:</strong> Independent operators and small restaurant groups seeking AI-powered all-in-one kitchen intelligence</p>
 <ul>
-<li><strong>Pros:</strong> Most comprehensive AI feature set; affordable pricing; low €10/month entry plan; multi-language support; continuous updates with new AI capabilities</li>
+<li><strong>Pros:</strong> Workspace of AI agents for chefs; affordable pricing; low €10/month entry plan; multi-language support; continuous updates with new agents</li>
 <li><strong>Cons:</strong> Relatively new player compared to established competitors; focused primarily on recipe and costing features rather than full inventory management</li>
 </ul>
 <h3>2. meez</h3>
@@ -88,42 +89,36 @@ faq:
 <li><strong>Cons:</strong> Pricing not publicly available; may be overkill for single-location operators; learning curve for full feature utilization</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Inventory Kit Pro</h3><p class="mt-2 text-muted-foreground">Inventory, purchasing, waste tracking, and supplier management.</p><a href="/en/digital-products/restaurant-inventory-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=best-recipe-costing-software-compared" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Inventory Kit Pro for $19</a></aside>
-
 <h3>3. WISK</h3>
-<p><strong>WISK</strong> is the go-to solution for bars and beverage-heavy operations. While it offers full <strong>menu costing software</strong> capabilities, its true strength lies in inventory management and bar operations. With over 60 POS integrations, WISK connects seamlessly with virtually any bar management setup, automatically tracking pour costs, inventory levels, and shrinkage.</p>
-<p>The platform&#8217;s recipe costing features extend naturally to cocktail and beverage recipes, making it invaluable for operators who need precise control over drink margins. Every mixed drink, signature cocktail, and specialty beverage can be costed to the penny, with real-time updates when spirits or mixers change price.</p>
+<p><strong>WISK</strong> publishes inventory and recipe costing for bars and for kitchens. On 6 November 2026 its price page lists 60+ POS integrations and recipe costing on the paid tiers. It does not say that list covers every POS.</p>
+<p>The same recipe sheet can hold a cocktail: the pour, the mixer and the bottle price. When the bottle price changes, the drink cost changes only if that price is updated in the sheet.</p>
 <ul>
 <li>Integrated inventory and recipe costing</li>
-<li>60+ POS integrations</li>
+<li>60+ POS integrations, as listed on the WISK price page on 6 November 2026</li>
 <li>Bar-specific tools (pour tracking, cocktail costing)</li>
 <li>Automatic inventory alerts and reordering</li>
 <li>Shrinkage tracking and analysis</li>
 <li>Vendor management and purchasing</li>
 <li>Real-time cost updates</li>
 </ul>
-<p><strong>Pricing:</strong> Contact for custom quote</p>
-<p><strong>Best for:</strong> Bars, nightclubs, and restaurants with significant beverage programs</p>
+<p><strong>Pricing:</strong> On the <a href="https://www.wisk.ai/price">WISK price page</a>, checked 6 November 2026, a single venue is $249 a month for beverage or for food, and $399 a month for the food-and-beverage bundle. Multi-outlet bands and a published setup fee are on that page. Enterprise (11 or more outlets) is a quote. WISK states there is no free trial. The same page lists 60+ POS integrations.</p>
+<p><strong>Best for:</strong> Bars, nightclubs, and restaurants with a large beverage program</p>
 <ul>
 <li><strong>Pros:</strong> Best-in-class for bar and beverage management; extensive POS integration; comprehensive inventory control</li>
-<li><strong>Cons:</strong> Primarily focused on bar operations; pricing requires consultation; may have more features than casual dining operators need</li>
+<li><strong>Cons:</strong> Primarily focused on bar operations; the single-venue price is published, and 11 or more outlets are a quote; may have more features than a small dining room needs</li>
 </ul>
 <h3>4. CostBrain</h3>
-<p><strong>CostBrain</strong> proves that powerful <strong>recipe cost calculator</strong> functionality doesn&#8217;t have to break the bank. This free tool offers a straightforward approach to recipe costing, making it accessible for budget-conscious operators who need essential functionality without the complexity of enterprise systems.</p>
-<p>While CostBrain lacks the advanced AI features of premium solutions, it handles the fundamentals well: ingredient costing, recipe scaling, and basic food cost percentage calculations. For small operators just starting to formalize their costing processes, CostBrain provides an excellent entry point without financial risk.</p>
+<p>Older shortlists called <strong>CostBrain</strong> a free recipe cost calculator. On 6 November 2026, <a href="https://costbrain.com/">costbrain.com</a> does not publish a restaurant recipe-costing plan, a free tier, or a price. This page does not call it free.</p>
+<p>If you still have an account from an earlier version, ask CostBrain what that account includes now. Do not budget a food-cost workflow on a price this page cannot cite.</p>
 <ul>
-<li>Free recipe costing functionality</li>
-<li>Simple, intuitive interface</li>
-<li>Basic recipe scaling</li>
-<li>Food cost percentage calculations</li>
-<li>Ingredient database management</li>
-<li>No subscription required</li>
+<li>No recipe-costing price on the public site (checked 6 November 2026)</li>
+<li>No free restaurant plan stated on that page</li>
 </ul>
-<p><strong>Pricing:</strong> Free</p>
-<p><strong>Best for:</strong> Budget-conscious small operators, food trucks, and startups just beginning to track food costs</p>
+<p><strong>Pricing:</strong> Not published. Ask the vendor.</p>
+<p><strong>Best for:</strong> Only if CostBrain confirms, in writing, that the account you want still costs recipes</p>
 <ul>
-<li><strong>Pros:</strong> Completely free; easy to learn; covers basic costing needs; no commitment required</li>
-<li><strong>Cons:</strong> Limited advanced features; no POS integration; no multi-location support; basic reporting</li>
+<li><strong>Pros:</strong> Nothing on the current public page can be listed as a restaurant costing feature</li>
+<li><strong>Cons:</strong> The public site does not describe a recipe-costing product or a price</li>
 </ul>
 <h3>5. MarketMan</h3>
 <p><strong>MarketMan</strong> bridges the gap between inventory management and recipe costing, making it a solid choice for mid-size operations that need comprehensive tools without enterprise-level complexity. The platform excels at vendor management, helping operators optimize purchasing decisions while maintaining accurate recipe costs.</p>
@@ -137,7 +132,7 @@ faq:
 <li>Multi-location support</li>
 <li>Vendor performance tracking</li>
 </ul>
-<p><strong>Pricing:</strong> Approximately $99/month (pricing may vary)</p>
+<p><strong>Pricing:</strong> On the <a href="https://www.marketman.com/pricing-for-restaurant-inventory-management-system">MarketMan pricing page</a>, checked 6 November 2026, Starter is $249 a month, Growth is $299 a month, and Enterprise is from $449. API access and commissary are separate add-ons on that page. Ask MarketMan which plan matches your location count.</p>
 <p><strong>Best for:</strong> Mid-size operations (3-10 locations) needing integrated inventory and costing tools</p>
 <ul>
 <li><strong>Pros:</strong> Comprehensive feature set; excellent vendor management; good balance of features and usability</li>
@@ -191,38 +186,33 @@ faq:
 <li>Ingredient cost tracking</li>
 <li>Recipe scaling</li>
 </ul>
-<p><strong>Pricing:</strong> Contact for pricing details</p>
+<p><strong>Pricing:</strong> The <a href="https://reciprofity.com/pricing/">reciProfity pricing page</a>, checked 6 November 2026, does not list a base plan. It does list add-ons at $10 a month (or $100 a year) per unit, extra users at the same rate, and additional units at $30 a month (or $300 a year). The $30 is an extra unit, not a starting plan. Ask reciProfity for the base price.</p>
 <p><strong>Best for:</strong> Single-location restaurants focused on precise food cost control</p>
 <ul>
 <li><strong>Pros:</strong> Focused on costing excellence; detailed analysis capabilities; straightforward approach</li>
 <li><strong>Cons:</strong> Limited to recipe costing; may lack features for growing operations; less comprehensive than all-in-one platforms</li>
 </ul>
 <h3>9. CookKeepBook</h3>
-<p><strong>CookKeepBook</strong> offers a generous free tier with unlimited recipe storage, making it an excellent starting point for startups, food trucks, and new restaurant operators who need to build a recipe library without upfront costs. Despite the free pricing, the platform delivers solid basic costing functionality.</p>
-<p>For new operators just establishing their recipes, CookKeepBook provides the tools needed to document dishes, calculate costs, and build a foundation for more sophisticated costing as the business grows. The unlimited recipes feature is particularly valuable for concept testing or operating multiple concepts.</p>
+<p><strong>CookKeepBook</strong> publishes a free standard account with unlimited ingredients and recipes. That account is a place to write a dish cost without a subscription. It is not the whole product.</p>
+<p>For a new operator writing the first recipes, the standard account stores ingredients, sub-recipes, yield and a measurement converter. Business features sit on the paid Plus account.</p>
 <ul>
-<li>Free unlimited recipes</li>
-<li>Basic recipe costing</li>
-<li>Ingredient management</li>
-<li>Recipe scaling</li>
-<li>Cost calculations</li>
-<li>No subscription required</li>
-<li>Simple recipe organization</li>
+<li>Free standard account with unlimited ingredients and recipes</li>
+<li>Yield and measurement conversion on that account</li>
+<li>Sub-recipes on that account</li>
+<li>Plus account for margin alerts, allergen tags, PDF and CSV</li>
 </ul>
-<p><strong>Pricing:</strong> Free</p>
+<p><strong>Pricing:</strong> On <a href="https://www.cookkeepbook.com/">cookkeepbook.com</a>, checked 6 November 2026, the standard account is free. Plus is $9 a month or $69 a year.</p>
 <p><strong>Best for:</strong> Startups, food trucks, and new operators building their recipe foundation</p>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">HACCP Food Safety Kit Pro</h3><p class="mt-2 text-muted-foreground">HACCP and traceability templates ready for inspection.</p><a href="/en/digital-products/haccp-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=best-recipe-costing-software-compared" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get HACCP Food Safety Kit Pro for $19</a></aside>
-
 <h3>10. Galley Solutions — Enterprise Recipe Management</h3>
-<p>Galley Solutions stands as the enterprise heavyweight in the recipe costing landscape, designed specifically for large-scale food production operations that demand precision, compliance, and multi-location synchronization. While the platform lacks a free tier and requires custom enterprise pricing (typically $500+/month), it delivers capabilities that smaller tools simply cannot match.</p>
-<p>The platform excels in <strong>nutrition labeling and compliance management</strong>, making it the preferred choice for healthcare facilities, educational institutions, and hospital foodservice operations where FDA nutritional requirements and dietary restrictions are non-negotiable. Galley Solutions automatically generates compliant nutrition facts panels and allergen documentation, saving foodservice directors countless hours of manual calculation and regulatory review.</p>
-<p>For multi-unit restaurant groups and commercial caterers, Galley Solutions offers robust <strong>multi-location synchronization</strong> that ensures recipe consistency across dozens or hundreds of sites. Each location can access standardized recipes while allowing for regional ingredient substitutions based on local supplier availability. The centralized control panel gives operations managers real-time visibility into food costs across their entire empire.</p>
+<p>Galley Solutions is built for kitchens that want recipes, menus and food costing in one system, and, on a larger plan, nutrition and more than one site. On 6 November 2026, the <a href="https://www.galleysolutions.com/galley-for-smb">SMB Accelerator page</a> says recipes, menus and food costing start at $99 a month. That page does not publish an enterprise rate. Ask Galley for a quote if you run more than a small kitchen.</p>
+<p>Galley describes nutrition panels and allergen documents as part of the larger platform. This page does not state that a panel meets a regulator’s format, and it does not state how many hours the panel saves.</p>
+<p>For more than one kitchen, Galley describes a shared recipe book so each site opens the same dish. Whether a local ingredient can replace another is a question for the quote, not a result this page measured.</p>
 <p>The platform&#8217;s <strong>API integrations</strong> connect seamlessly with enterprise inventory systems, procurement platforms, and back-of-house hardware. This connectivity enables automated par-level calculations, purchase order generation, and waste tracking that feeds directly into recipe cost calculations. For organizations already invested in digital foodservice infrastructure, Galley Solutions integrates rather than disrupts existing workflows.</p>
 <p><strong>Best for:</strong> Large-scale food production, healthcare foodservice, educational institutions, multi-location restaurant groups, and catering operations requiring compliance documentation and enterprise-grade scalability.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Still Using Spreadsheets for Recipe Costing?</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">Operators switching from Excel to AI-powered costing tools save 5-10 hours/week and reduce food costs by 2-5%. See the difference with AI Chef Pro.</p>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">A spreadsheet holds the dish cost until the next invoice. AI agents for chefs recalculate it in the guest workspace. This page does not promise hours saved or a lower food cost.</p>
 <p><a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Switch to AI Costing →</a>
 </div>
 <h2>Recipe Costing Software Comparison Table</h2>
@@ -243,123 +233,126 @@ faq:
 <td><strong>AI Chef Pro</strong></td>
 <td>€10/mo</td>
 <td>No</td>
-<td>Via API</td>
-<td>Yes</td>
-<td>75+ AI tools</td>
+<td>Not listed on the pricing page</td>
+<td>Not listed on the pricing page</td>
+<td>75+ AI agents</td>
 <td>Independent operators</td>
 </tr>
 <tr>
 <td><strong>meez</strong></td>
 <td>Custom</td>
-<td>Free trial</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Limited</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Not listed</td>
 <td>Multi-unit chains</td>
 </tr>
 <tr>
 <td><strong>WISK</strong></td>
-<td>Custom</td>
-<td>Free trial</td>
+<td>$249/mo</td>
+<td>No</td>
 <td>60+ POS</td>
 <td>Yes</td>
-<td>Basic</td>
+<td>Not scored</td>
 <td>Bars &#038; beverage</td>
 </tr>
 <tr>
 <td><strong>CostBrain</strong></td>
-<td>Free</td>
-<td>Yes</td>
-<td>Limited</td>
-<td>No</td>
-<td>No</td>
-<td>Budget operators</td>
+<td>Not published</td>
+<td>Not published</td>
+<td>Not published</td>
+<td>Not published</td>
+<td>Not published</td>
+<td>Ask the vendor</td>
 </tr>
 <tr>
 <td><strong>MarketMan</strong></td>
-<td>~$239/mo</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Basic</td>
+<td>$249/mo</td>
+<td>Not listed</td>
+<td>Listed</td>
+<td>Ask the vendor</td>
+<td>On the Growth plan</td>
 <td>Mid-size operations</td>
 </tr>
 <tr>
 <td><strong>BlueCart</strong></td>
-<td>Custom</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
+<td>Ask the vendor</td>
+<td>Not listed</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Not listed</td>
 <td>Procurement focus</td>
 </tr>
 <tr>
 <td><strong>Kitchen CUT</strong></td>
-<td>Custom</td>
-<td>Free trial</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Limited</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Not listed</td>
 <td>Hotels &#038; catering</td>
 </tr>
 <tr>
 <td><strong>reciProfity</strong></td>
-<td>~$30/mo</td>
-<td>Free trial</td>
-<td>Limited</td>
-<td>No</td>
-<td>No</td>
+<td>Base plan not listed</td>
+<td>Not listed</td>
+<td>Not listed</td>
+<td>Not listed</td>
+<td>Not listed</td>
 <td>Single locations</td>
 </tr>
 <tr>
 <td><strong>CookKeepBook</strong></td>
-<td>Free</td>
+<td>Free standard</td>
 <td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
+<td>Not listed</td>
+<td>Not listed</td>
+<td>Not listed</td>
 <td>Startups &#038; food trucks</td>
 </tr>
 <tr>
 <td><strong>Galley Solutions</strong></td>
-<td>Custom</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Basic</td>
-<td>Enterprise foodservice</td>
+<td>From $99/mo</td>
+<td>Not listed</td>
+<td>Ask the vendor</td>
+<td>Ask the vendor</td>
+<td>Not listed</td>
+<td>SMB plan; enterprise is a quote</td>
 </tr>
 </tbody>
 </table></div>
+<p>Prices in this table were read on each vendor’s own page on 6 November 2026. AI Chef Pro Member: <a href="https://aichef.pro/en/pricing">aichef.pro/en/pricing</a>. MarketMan Starter: <a href="https://www.marketman.com/pricing-for-restaurant-inventory-management-system">MarketMan pricing</a>. WISK single-venue beverage or food: <a href="https://www.wisk.ai/price">wisk.ai/price</a> (the page also says there is no free trial). Galley SMB Accelerator: <a href="https://www.galleysolutions.com/galley-for-smb">Galley for SMB</a>. CookKeepBook standard and Plus: <a href="https://www.cookkeepbook.com/">cookkeepbook.com</a>. reciProfity add-ons, not a base plan: <a href="https://reciprofity.com/pricing/">reciProfity pricing</a>. CostBrain: <a href="https://costbrain.com/">costbrain.com</a> shows no recipe-costing price. meez, BlueCart and Kitchen CUT: ask the vendor. A later change on those pages wins over this table. “Not listed” means this article did not find the cell on the vendor page it cites.</p>
 <figure style="margin: 32px 0; text-align: center;">
-<img decoding="async" src="/blog-assets/en/2026/03/chef-using-recipe-costing-software.png" alt="Professional chef using recipe costing software to calculate dish costs in commercial kitchen" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">The best recipe costing software integrates seamlessly into kitchen workflows, enabling chefs to cost dishes in real-time.</figcaption></figure>
+<img decoding="async" src="/blog-assets/2026/08/contaminazione-frigo-ordine.jpg" alt="An open professional fridge with boxes on racks, no people. Italian labels. Not a recipe cost and not a menu engineering chart." style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">A fridge. The labels are not a recipe cost. Yield and waste still have to be written on the sheet, not read off this photo.</figcaption></figure>
 <h2>How to Choose the Right Recipe Costing Software</h2>
 <p>Selecting the appropriate recipe costing platform requires honest assessment of your operation&#8217;s scale, technical sophistication, and specific pain points. The following decision framework aligns tools with operational realities:</p>
 <ul>
-<li><strong>Small Operations (1-2 locations):</strong> AI Chef Pro or CostBrain offer the most accessible entry points. AI Chef Pro provides 10,000 monthly credits for €10 with full access to 75+ AI tools, giving independent operators powerful capabilities at minimal cost. CostBrain delivers unlimited free usage for basic recipe costing needs. Both platforms feature straightforward setup that won&#8217;t overwhelm small teams.</li>
-<li><strong>Mid-Size Operations (3-10 locations):</strong> meez or MarketMan provide the standardization and vendor management features essential for growing chains. meez excels at recipe scaling and team collaboration across locations, while MarketMan combines costing with comprehensive inventory and procurement management. These platforms justify their higher costs through operational consistency.</li>
-<li><strong>Large/Enterprise Operations (10+ locations):</strong> Galley Solutions or WISK deliver the scalability, compliance tools, and integrations required for enterprise foodservice. Galley Solutions dominates in healthcare and education where nutrition labeling is mandatory, while WISK offers superior beverage costing for hospitality groups with extensive bar programs.</li>
-<li><strong>Bar-Focused Operations:</strong> WISK remains the definitive choice for bars and beverage-forward restaurants. The platform&#8217;s pour cost tracking, inventory management for liquor, wine, and beer, and integration with 60+ POS systems address the unique costing challenges of drink programs that often represent 25-40% of revenue.</li>
-<li><strong>Budget-Conscious Operators:</strong> CostBrain and CookKeepBook provide genuinely free platforms with no usage limits. CostBrain covers core recipe costing functionality, while CookKeepBook adds inventory tracking. These tools sacrifice advanced features for accessibility, making them ideal for operators testing recipe costing concepts before investing in premium solutions.</li>
-<li><strong>AI-First Approach:</strong> AI Chef Pro stands as the only platform offering 75+ dedicated AI tools for foodservice. Beyond basic costing, users access AI-powered menu engineering that optimizes profitability, demand forecasting that predicts prep needs based on historical data and trends, recipe scaling that automatically adjusts quantities, waste prediction algorithms, and cross-utilization suggestions that maximize ingredient usage across the menu. For operators seeking competitive advantage through technology, this comprehensive AI suite differentiates AI Chef Pro from every alternative.</li>
+<li><strong>Small Operations (1-2 locations):</strong> AI Chef Pro’s Member plan is €10 a month with 10,000 credits and the workspace of 75+ AI agents for chefs. There is no free plan. CookKeepBook’s standard account is free for unlimited recipes and ingredients. CostBrain does not publish a price on its site.</li>
+<li><strong>Mid-Size Operations (3-10 locations):</strong> meez and MarketMan are the names on this shortlist for recipe standards and purchasing. meez does not publish a price. MarketMan publishes Starter at $249 a month. Ask each vendor what the multi-location plan includes before you compare it with a single-site tool.</li>
+<li><strong>Large/Enterprise Operations (10+ locations):</strong> Galley’s SMB Accelerator starts at $99 a month; a large group should ask for the enterprise quote. WISK’s single-venue price is $249 a month; 11 or more outlets are a quote. This page does not rank them by a measured saving.</li>
+<li><strong>Bar-Focused Operations:</strong> WISK’s price page lists recipe costing and 60+ POS integrations. It does not state what share of revenue a drink program is. The single-venue beverage price on that page is $249 a month.</li>
+<li><strong>Budget-Conscious Operators:</strong> CookKeepBook’s standard account is free, with unlimited recipes and ingredients, as published on 6 November 2026. Plus on that site is $9 a month or $69 a year. CostBrain’s site does not publish a free recipe-costing plan. AI Chef Pro is not free.</li>
+<li><strong>AI agents for chefs:</strong> AI Chef Pro is the workspace of 75+ AI agents for chefs. Recipe costing and menu engineering are in that workspace. The guest home opens it. It does not send you to one named agent, and it does not promise a saving.</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Financial Plan Kit Pro</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, scenarios, and a financial ratios dashboard.</p><a href="/en/digital-products/restaurant-financial-plan-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=best-recipe-costing-software-compared" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Financial Plan Kit Pro for $49</a></aside>
+<h2>How recipe costing software feeds menu engineering</h2>
+<p><strong>Recipe costing software</strong> answers what the plate costs. Menu engineering answers what you do with that number: keep the dish, move it, reprice it, or take it off. The page for that job is <a href="https://aichef.pro/en/menu-engineering-software">menu engineering software</a>. The platform comparison is <a href="https://aichef.pro/en/blog/menu-engineering-software-complete-guide">menu engineering software compared</a>. One dish, today, still starts in the <a href="https://aichef.pro/en/food-cost-calculator-restaurant">food cost calculator</a>.</p>
+<p>On AI Chef Pro the same work is done by AI agents for chefs. The <a href="https://enapp.aichef.pro/guest?utm_source=aichef.pro&amp;utm_medium=blog&amp;utm_campaign=best-recipe-costing-software-compared">English guest home</a> opens the workspace. Member is €10 a month, 10,000 credits. There is no free plan. Vendor prices earlier on this page are the ones each vendor published on 6 November 2026, or they are omitted.</p>
+<aside class="dp-banner not-prose" data-product="food-cost-menu-engineering-guide"><a class="dp-banner__photo-link" href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener"><img class="dp-banner__photo" src="https://aichef.pro/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg" alt="Food Cost + Menu Engineering Guide" loading="lazy" decoding="async" /></a><div class="dp-banner__body"><div class="dp-banner__top"><p class="dp-banner__tag">Digital product</p><img class="dp-banner__logo" src="/email-assets/aichef-pro-logo-white.png" alt="AI Chef Pro" /></div><p class="dp-banner__title"><a class="dp-banner__title-link" href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">Food Cost + Menu Engineering Guide</a></p><p class="dp-banner__price">$59</p><a class="dp-banner__cta" href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">View product →</a></div></aside>
 
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
-<p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Find Your Perfect Recipe Costing Tool</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">From free tools for startups to enterprise platforms for multi-unit chains — AI Chef Pro scales with your operation. Start with 10 free uses/month.</p>
+<p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Recipe costing software, then the guest workspace</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI agents for chefs cover recipe costing and menu engineering in one workspace. Member is €10/month with 10,000 credits. There is no free plan.</p>
 <p><a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Open the guest workspace →</a>
 </div>
 
 <h2>Conclusion</h2>
-<p>The landscape of recipe costing software in 2026 offers solutions for every operational scale and budget, from free tools for bootstrapped startups to enterprise platforms commanding $500+ monthly for multi-location empires. What unites these tools is a shared mission: transforming food cost management from guesswork into measurable science.</p>
-<p>Throughout this comparison of 10 leading platforms, several truths emerge clearly. First, entry pricing has matured significantly—AI Chef Pro&#8217;s €10/month plan with full AI access, CostBrain&#8217;s unlimited free tier, and CookKeepBook&#8217;s free recipe storage demonstrate that operators can begin serious cost management for very little. Second, the gap between premium and budget solutions narrows annually as features democratize across price points. Third, AI has become the differentiator that separates incremental improvement from transformative capability.</p>
-<p>For independent operators and small chains seeking that transformative advantage, <strong>AI Chef Pro</strong> represents the most comprehensive value proposition in the market. The platform&#8217;s suite of 75+ AI tools addresses not merely recipe costing but the entire ecosystem of menu profitability: AI-powered menu engineering that recommends optimal pricing, demand forecasting that prevents both waste and stockouts, recipe scaling that adapts to varying crowd sizes, and cross-utilization analysis that maximizes ingredient efficiency across the menu.</p>
-<p>The AI Chef Member plan on the <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">guest home</a> starts from €10/month with 10,000 monthly credits—no commitment, instant access. This accessibility allows operators to experience the full power of AI-driven foodservice management before committing to a larger plan. For growing operations, the upgrade path scales naturally with business expansion.</p>
-<p>Whatever platform you choose, the evidence is clear: operations that systematically track and manage recipe costs consistently outperform those that rely on intuition. The 2-5% food cost reduction most users achieve within 90 days typically translates to $10,000-25,000 in annual savings for mid-size operations—returns that dwarf the software investment.</p>
-<p>In an industry where margins remain perpetually thin, recipe costing software is no longer a luxury reserved for large chains. It is an operational necessity for any foodservice business serious about profitability. The tools exist. The ROI is proven. The only question is which platform best fits your operation&#8217;s unique needs—and the best way to answer that question is to start small—a free tier where one exists, or AI Chef Pro&#8217;s €10/month Member plan—experience the capabilities firsthand, and scale as your operation grows.</p>
+<p>The ten names above cover a published free account, published paid plans, and vendors who only quote. AI Chef Pro’s Member plan is €10 a month. CookKeepBook’s standard account is free. MarketMan, WISK and Galley’s SMB plan publish monthly prices, cited under the table. CostBrain, meez, BlueCart, Kitchen CUT and reciProfity’s base plan are not given a price here.</p>
+<p>For an independent kitchen, <strong>AI Chef Pro</strong> is a workspace of 75+ AI agents for chefs. Those agents cover recipe costing and menu engineering. That is a description of the workspace, not a measured saving.</p>
+<p>The Member plan on the <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">guest home</a> starts from €10/month with 10,000 monthly credits. There is no free plan. The guest home opens the workspace of AI agents for chefs.</p>
+<p>This page does not claim that tracking recipe costs raises profit, or that most restaurants cut food cost by a set percentage. A dish cost is only as good as the invoice, the yield and the waste you enter. Compare the software with your own invoices.</p>
+<p>Where a vendor publishes a free account, the table says so. Where it does not, start from a quoted plan or from AI Chef Pro’s €10/month Member plan, and check the vendor page again before you pay. Prices on this page were checked on 6 November 2026.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>
 <ul>
