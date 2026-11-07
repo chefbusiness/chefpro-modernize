@@ -7,10 +7,17 @@
  * (postPath): el slug del nombre y el prefijo de post.data.lang. Un slug
  * escrito en `translations` solo agrupa fichas que existen y están publicadas
  * en el glosario; no se emite si el fichero no está.
+ *
+ * El frontmatter lo lee js-yaml con `yaml.load`, la misma llamada que
+ * `parseFrontmatter` de `@astrojs/markdown-remark` (loader glob del content
+ * layer). Los defaults que usa el generador son los del schema: `lang` es
+ * `es` si falta y `draft` es false si falta; un `draft` que no sea boolean
+ * no se interpreta a mano.
  */
 import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { basename, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import yaml from 'js-yaml';
 
 export const SITE = 'https://aichef.pro';
 
@@ -87,96 +94,69 @@ export function isPublishedGlossary(post) {
   return post.category === GLOSSARY_CATEGORY_BY_LANG[post.lang];
 }
 
-function unquote(raw, file) {
-  const value = raw.trim();
-  if (value.startsWith('"')) {
-    if (value.length < 2 || !value.endsWith('"')) {
-      throw new Error(`${file}: cadena sin cerrar (${value.slice(0, 60)})`);
-    }
-    return value
-      .slice(1, -1)
-      .replace(/\\n/g, '\n')
-      .replace(/\\"/g, '"')
-      .replace(/\\\\/g, '\\');
-  }
-  if (value.startsWith("'")) {
-    if (value.length < 2 || !value.endsWith("'")) {
-      throw new Error(`${file}: cadena sin cerrar (${value.slice(0, 60)})`);
-    }
-    return value.slice(1, -1).replace(/''/g, "'");
-  }
-  return value.replace(/\s+#.*$/, '');
+// Misma ancla que extractFrontmatter de @astrojs/markdown-remark: BOM opcional
+// o una línea en blanco, y luego la cerca. El blog usa YAML (---), no TOML.
+const FRONTMATTER_RE = /(?:^\uFEFF?|^\s*\n)(---|\+\+\+)([\s\S]*?\n)(?:---|\+\+\+)/;
+
+function requireString(value, file, field) {
+  if (typeof value !== 'string') throw new Error(`${file}: ${field} tiene que ser string`);
+  return value;
 }
 
-function parseFrontmatter(raw, file) {
-  if (!raw.startsWith('---\n') && !raw.startsWith('---\r\n')) {
-    throw new Error(`Sin frontmatter: ${file}`);
+function frontmatterFromYaml(raw, file) {
+  const match = FRONTMATTER_RE.exec(raw);
+  if (!match) throw new Error(`Sin frontmatter: ${file}`);
+  if (match[1] !== '---') throw new Error(`${file}: el frontmatter no es YAML`);
+  let data;
+  try {
+    data = yaml.load(match[2]);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    throw new Error(`${file}: frontmatter YAML inválido (${message})`);
   }
-  const end = raw.indexOf('\n---', 3);
-  if (end === -1) throw new Error(`Frontmatter sin cierre: ${file}`);
-  const body = raw.slice(raw.startsWith('---\r\n') ? 5 : 4, end);
-  const data = {
-    title: '',
-    category: '',
-    lang: 'es',
-    draft: false,
-    translations: {},
-    definedTerm: {},
-  };
-  let section = null;
-  for (const line of body.split(/\r?\n/)) {
-    if (!line.trim() || line.trimStart().startsWith('#')) continue;
-    const indent = line.match(/^ */)[0].length;
-    if (indent === 0) {
-      const header = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
-      if (!header) {
-        section = null;
-        continue;
-      }
-      const key = header[1];
-      const value = header[2].trim();
-      const multiline = value === '' || value === '>' || value === '|' || value.startsWith('>') || value.startsWith('|');
-      if (multiline) {
-        if (key === 'translations' || key === 'definedTerm') {
-          if (value !== '') throw new Error(`${file}: ${key} no admite un escalar multilínea`);
-          section = key;
-          continue;
-        }
-        if (key === 'title' || key === 'category' || key === 'lang' || key === 'draft') {
-          throw new Error(`${file}: ${key} no admite un escalar multilínea`);
-        }
-        section = null;
-        continue;
-      }
-      section = null;
-      if (key === 'title') data.title = unquote(value, file);
-      else if (key === 'category') data.category = unquote(value, file);
-      else if (key === 'lang') data.lang = unquote(value, file);
-      else if (key === 'draft') {
-        const flag = unquote(value, file);
-        data.draft = flag === 'true' || flag === 'yes' || flag === '1';
-      }
-      continue;
+  if (data == null) data = {};
+  if (typeof data !== 'object' || Array.isArray(data)) {
+    throw new Error(`${file}: el frontmatter no es un objeto`);
+  }
+  const lang = data.lang === undefined ? 'es' : data.lang;
+  if (typeof lang !== 'string' || !LANGS.includes(lang)) {
+    throw new Error(`${file}: lang no reconocido (${String(lang)})`);
+  }
+  const title = requireString(data.title, file, 'title');
+  const category = requireString(data.category, file, 'category');
+  let draft = false;
+  if (data.draft !== undefined) {
+    if (typeof data.draft !== 'boolean') throw new Error(`${file}: draft tiene que ser boolean`);
+    draft = data.draft;
+  }
+  const translations = {};
+  if (data.translations != null) {
+    if (typeof data.translations !== 'object' || Array.isArray(data.translations)) {
+      throw new Error(`${file}: translations tiene que ser un objeto`);
     }
-    if (section === 'translations') {
-      const item = line.match(/^\s+(es|en|fr|de|it|pt|nl):\s*(.*)$/);
-      if (!item) continue;
-      const slug = unquote(item[2].trim(), file);
-      if (slug) data.translations[item[1]] = slug;
-      continue;
-    }
-    if (section === 'definedTerm') {
-      const item = line.match(/^\s+(name|description):\s*(.*)$/);
-      if (!item) continue;
-      const value = item[2].trim();
-      if (value === '' || value === '>' || value === '|' || value.startsWith('>') || value.startsWith('|')) {
-        throw new Error(`${file}: definedTerm.${item[1]} no admite un escalar multilínea`);
-      }
-      data.definedTerm[item[1]] = unquote(value, file);
+    for (const code of LANGS) {
+      const slug = data.translations[code];
+      if (slug == null || slug === '') continue;
+      translations[code] = requireString(slug, file, `translations.${code}`);
     }
   }
-  if (!LANGS.includes(data.lang)) throw new Error(`${file}: lang no reconocido (${data.lang})`);
-  return data;
+  const definedTerm = {};
+  if (data.definedTerm != null) {
+    if (typeof data.definedTerm !== 'object' || Array.isArray(data.definedTerm)) {
+      throw new Error(`${file}: definedTerm tiene que ser un objeto`);
+    }
+    if (data.definedTerm.name != null) {
+      definedTerm.name = requireString(data.definedTerm.name, file, 'definedTerm.name');
+    }
+    if (data.definedTerm.description != null) {
+      definedTerm.description = requireString(
+        data.definedTerm.description,
+        file,
+        'definedTerm.description',
+      );
+    }
+  }
+  return { title, category, lang, draft, translations, definedTerm };
 }
 
 function walkMd(dir, acc = []) {
@@ -193,7 +173,7 @@ export function loadBlogPosts(dir) {
   const posts = [];
   const seen = new Set();
   for (const file of walkMd(dir).sort()) {
-    const data = parseFrontmatter(readFileSync(file, 'utf8'), file);
+    const data = frontmatterFromYaml(readFileSync(file, 'utf8'), file);
     const slug = basename(file, '.md');
     const id = `${data.lang}:${slug}`;
     if (seen.has(id)) throw new Error(`Slug repetido en ${data.lang}: ${slug}`);

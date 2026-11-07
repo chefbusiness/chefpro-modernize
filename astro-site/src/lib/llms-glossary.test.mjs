@@ -26,6 +26,7 @@ import {
   loadBlogPosts,
   postPath,
   prepareGlossaryEntries,
+  renderGlossaryBlock,
   syncLlmsGlossaryFiles,
 } from './llms-glossary.mjs';
 
@@ -159,6 +160,167 @@ test('un borrador, una categoría ajena y un slug sin ficha no entran', () => {
     assert.equal(urls.includes(`${SITE}/de/blog/otra-categoria`), false);
   } finally {
     rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('el YAML del loader admite multilínea, escapes, maps inline y draft boolean', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'llms-yaml-'));
+  try {
+    mkdirSync(join(dir, 'es'), { recursive: true });
+    mkdirSync(join(dir, 'en'), { recursive: true });
+    writeFileSync(join(dir, 'es', 'ajeno.md'), [
+      '---',
+      'title: |',
+      '  Línea primera',
+      '  Línea segunda',
+      'category: tutoriales',
+      'lang: es',
+      'description: "no es glosario"',
+      '---',
+      '',
+      'Cuerpo.',
+      '',
+    ].join('\n'));
+    writeFileSync(join(dir, 'es', 'cafe.md'), [
+      '---',
+      'title: "caf\\u00e9"',
+      'category: glosario',
+      'lang: es',
+      'description: "x"',
+      'translations: { es: cafe, en: cafe-en }',
+      'definedTerm:',
+      '  name: "caf\\u00e9"',
+      '  description: "caf\\u00e9 de olla"',
+      '---',
+      '',
+    ].join('\n'));
+    writeFileSync(join(dir, 'en', 'cafe-en.md'), [
+      '---',
+      'title: "Coffee"',
+      'category: glossary',
+      'lang: en',
+      'description: "x"',
+      'translations: { es: cafe, en: cafe-en }',
+      'definedTerm:',
+      '  name: "caf\\u00e9"',
+      '  description: >',
+      '    Primera frase.',
+      '    Segunda frase.',
+      '---',
+      '',
+    ].join('\n'));
+    writeFileSync(join(dir, 'es', 'oculto.md'), [
+      '---',
+      'title: "Oculto"',
+      'category: glosario',
+      'lang: es',
+      'description: "x"',
+      'draft: true',
+      '---',
+      '',
+    ].join('\n'));
+    writeFileSync(join(dir, 'es', 'visible.md'), [
+      '---',
+      'title: >',
+      '  Título',
+      '  plegado',
+      'category: glosario',
+      'lang: es',
+      'description: "x"',
+      'draft: false',
+      '---',
+      '',
+    ].join('\n'));
+    const posts = loadBlogPosts(dir);
+    const ajeno = posts.find((post) => post.slug === 'ajeno');
+    assert.ok(ajeno);
+    assert.match(ajeno.title, /Línea primera/);
+    assert.match(ajeno.title, /Línea segunda/);
+    assert.equal(isPublishedGlossary(ajeno), false);
+    const cafe = posts.find((post) => post.slug === 'cafe');
+    assert.equal(cafe.definedTerm.name, 'café');
+    assert.equal(cafe.translations.en, 'cafe-en');
+    const oculto = posts.find((post) => post.slug === 'oculto');
+    assert.equal(oculto.draft, true);
+    assert.equal(isPublishedGlossary(oculto), false);
+    const visible = posts.find((post) => post.slug === 'visible');
+    assert.equal(visible.draft, false);
+    assert.equal(visible.title.replace(/\s+/g, ' ').trim(), 'Título plegado');
+    const published = posts.filter(isPublishedGlossary);
+    assert.deepEqual(
+      published.map((post) => post.id).sort(),
+      ['en:cafe-en', 'es:cafe', 'es:visible'],
+    );
+    const { entries } = clusterGlossaryPosts(published);
+    const cafeEntry = entries.find((entry) => entry.byLang.get('es')?.slug === 'cafe');
+    assert.equal(cafeEntry.display, 'café');
+    assert.equal(cafeEntry.byLang.get('en').slug, 'cafe-en');
+    const block = renderGlossaryBlock(entries, 'full');
+    assert.match(block, /Primera frase\. Segunda frase\./);
+    assert.equal(block.includes('/blog/ajeno'), false);
+    assert.equal(block.includes('/blog/oculto'), false);
+    assert.match(block, /\[es\]\(https:\/\/aichef\.pro\/blog\/cafe\)/);
+    writeFileSync(join(dir, 'es', 'malo.md'), [
+      '---',
+      'title: "Malo"',
+      'category: glosario',
+      'lang: es',
+      'description: "x"',
+      'draft: "true"',
+      '---',
+      '',
+    ].join('\n'));
+    assert.throws(() => loadBlogPosts(dir), /draft tiene que ser boolean/);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('añadir una ficha y sincronizar en el chequeo no pide otro generador', () => {
+  const root = mkdtempSync(join(tmpdir(), 'llms-flujo-'));
+  try {
+    mkdirSync(join(root, 'src/content/blog/es'), { recursive: true });
+    mkdirSync(join(root, 'public'), { recursive: true });
+    writeFileSync(join(root, 'src/content/blog/es/nuevo.md'), [
+      '---',
+      'title: "Nuevo"',
+      'category: glosario',
+      'lang: es',
+      'description: "x"',
+      'definedTerm:',
+      '  name: "Nuevo"',
+      '  description: "Definición nueva."',
+      '---',
+      '',
+    ].join('\n'));
+    const shell = [
+      '# manual before',
+      'keep-this-url https://aichef.pro/precios',
+      '',
+      GLOSSARY_START,
+      'viejo',
+      GLOSSARY_END,
+      '',
+      '# manual after',
+      '',
+    ].join('\n');
+    for (const name of ['llms.txt', 'llms-full.txt']) {
+      writeFileSync(join(root, 'public', name), shell);
+    }
+    const first = syncLlmsGlossaryFiles({ astroRoot: root, write: true });
+    assert.equal(first.results.every((result) => result.changed), true);
+    const index = readFileSync(join(root, 'public/llms.txt'), 'utf8');
+    const full = readFileSync(join(root, 'public/llms-full.txt'), 'utf8');
+    assert.match(index, /^# manual before\nkeep-this-url https:\/\/aichef\.pro\/precios\n\n/);
+    assert.match(index, /\n# manual after\n$/);
+    assert.match(index, /\[es\]\(https:\/\/aichef\.pro\/blog\/nuevo\)/);
+    assert.equal(index.includes('viejo'), false);
+    assert.match(full, /Definición nueva\./);
+    assert.match(full, /\n# manual after\n$/);
+    const second = syncLlmsGlossaryFiles({ astroRoot: root, write: true });
+    assert.equal(second.results.every((result) => result.changed), false);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
   }
 });
 
