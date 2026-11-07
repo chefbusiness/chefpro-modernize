@@ -2,7 +2,7 @@
 title: "Papillote: qué es en cocina y cómo se hace"
 description: "El papillote es cocer un alimento en un paquete cerrado, casi siempre de papel de horno. Materiales, el cierre y cómo saber que está hecho."
 pubDate: 2026-03-11
-modDate: 2026-11-03
+modDate: 2026-11-07
 category: glosario
 tags: ["papillote", "pescado", "cocción"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 3196
 translations:
   es: "papillote-concepto-definicion"
   en: "what-is-en-papillote"
+  fr: "cuisson-en-papillote"
+  de: "garen-im-pergament"
+  it: "al-cartoccio"
+  nl: "koken-en-papillote"
+  pt: "em-papelote"
 definedTerm:
   name: "Papillote"
   description: "El papillote es cocer un alimento dentro de un paquete cerrado, casi siempre de papel de horno. Se cuece con su propio vapor y con el poco líquido de dentro. El calor no le da directo, así que un pescado o una verdura quedan jugosos. El paquete se abre en la mesa, y entonces sale el aroma."

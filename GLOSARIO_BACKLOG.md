@@ -14,6 +14,19 @@ Quick wins en español (title, definición de 40–60 palabras, FAQ con DefinedT
 
 Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en los 7 idiomas: beurre manié, napar, montar al burro, beurre blanc, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón. Roux (en alemán, Mehlschwitze), emulsión y demi-glace se abren en los idiomas que aún no los tenían y apuntan al post español ya publicado.
 
+## Paridad 2026-11-07 — reducción, mandolina, papillote, beurre blanc
+
+El estado «publicado» de más arriba sigue siendo el del glosario español. Esta sección anota los siete idiomas de cuatro términos. No hay volúmenes nuevos.
+
+| Término | ES | EN | FR | DE | IT | NL | PT |
+|---|---|---|---|---|---|---|---|
+| Reducción | `es/reduccion-concepto-definicion` | `en/what-is-reduction-in-cooking` | `fr/reduction-en-cuisine` | `de/reduktion-kochen` | `it/riduzione-in-cucina` | `nl/reduceren-koken` | `pt/reducao-na-cozinha` |
+| Mandolina | `es/mandolina-concepto-definicion` | `en/what-is-a-mandoline-slicer` | `fr/mandoline-de-cuisine` | `de/mandoline-kueche` | `it/mandolina-da-cucina` | `nl/mandoline-keuken` | `pt/mandolina-de-cozinha` |
+| Papillote | `es/papillote-concepto-definicion` | `en/what-is-en-papillote` | `fr/cuisson-en-papillote` | `de/garen-im-pergament` | `it/al-cartoccio` | `nl/koken-en-papillote` | `pt/em-papelote` |
+| Beurre blanc | `es/beurre-blanc` | `en/beurre-blanc` | `fr/beurre-blanc` | `de/beurre-blanc` | `it/burro-bianco` (ya publicado; no se reescribe) | `nl/beurre-blanc` | `pt/beurre-blanc` |
+
+FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de esta tanda. El hreflang de las seis fichas ES/EN se actualizó para apuntar a las siete. El italiano de beurre blanc ya estaba en `it/burro-bianco` y las otras seis versiones ya lo citaban.
+
 ## Por agente
 
 ### Creatividad Culinaria

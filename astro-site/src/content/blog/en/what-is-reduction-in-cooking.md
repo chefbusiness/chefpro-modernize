@@ -2,7 +2,7 @@
 title: "What is a reduction in cooking?"
 description: "A reduction is a liquid cooked uncovered until water boils off and the flavor concentrates. The spoon test, the usual mistakes, and where cooks use it."
 pubDate: 2026-11-03
-modDate: 2026-11-03
+modDate: 2026-11-07
 category: glossary
 tags: ["reduction", "sauces", "stocks"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "Copper pan of a dark red-fruit reduction simmering on a professional 
 translations:
   es: "reduccion-concepto-definicion"
   en: "what-is-reduction-in-cooking"
+  fr: "reduction-en-cuisine"
+  de: "reduktion-kochen"
+  it: "riduzione-in-cucina"
+  nl: "reduceren-koken"
+  pt: "reducao-na-cozinha"
 definedTerm:
   name: "Reduction"
   description: "A reduction is a liquid cooked uncovered so that some of the water boils away. What remains tastes stronger and, when the liquid had body to begin with, it coats a spoon. Stocks, wine, vinegar, and pan juices are the usual candidates. Flour is not part of the method. Salt concentrates as well, so you season at the end."

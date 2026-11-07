@@ -2,7 +2,7 @@
 title: "What is a mandoline slicer?"
 description: "A mandoline is a blade on a runway that cuts even slices and julienne. Blade types, the hand guard, and the cut-resistant glove."
 pubDate: 2026-11-03
-modDate: 2026-11-03
+modDate: 2026-11-07
 category: glossary
 tags: ["mandoline", "knife cuts", "equipment"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "Stainless steel mandoline with a thickness dial and cucumber slices o
 translations:
   es: "mandolina-concepto-definicion"
   en: "what-is-a-mandoline-slicer"
+  fr: "mandoline-de-cuisine"
+  de: "mandoline-kueche"
+  it: "mandolina-da-cucina"
+  nl: "mandoline-keuken"
+  pt: "mandolina-de-cozinha"
 definedTerm:
   name: "Mandoline"
   description: "A mandoline is a slicer with a fixed blade and a runway you slide the food down. Each pass gives you slices, batons, or julienne of the same thickness. Even pieces cook evenly and look even on the plate. The blade sits in the open, so you use the hand guard and a cut-resistant glove."

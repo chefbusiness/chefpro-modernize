@@ -2,7 +2,7 @@
 title: "Qué es una mandolina: cortes, cuchillas y seguridad"
 description: "Una mandolina es un utensilio de cuchilla para láminas del mismo grosor. Tipos de cuchilla, el protector, el guante anticorte y cómo usarla."
 pubDate: 2026-03-08
-modDate: 2026-11-03
+modDate: 2026-11-07
 category: glosario
 tags: ["mandolina", "cortes", "utensilios"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 3182
 translations:
   es: "mandolina-concepto-definicion"
   en: "what-is-a-mandoline-slicer"
+  fr: "mandoline-de-cuisine"
+  de: "mandoline-kueche"
+  it: "mandolina-da-cucina"
+  nl: "mandoline-keuken"
+  pt: "mandolina-de-cozinha"
 definedTerm:
   name: "Mandolina"
   description: "Una mandolina es un utensilio con una cuchilla fija y una rampa por la que se desliza el alimento. Saca láminas, bastones o juliana del mismo grosor en cada pasada. Ese corte cuece igual y se ve igual en el plato. La cuchilla va al descubierto: se usa con el protector y con un guante anticorte."

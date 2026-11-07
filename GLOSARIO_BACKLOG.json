@@ -18646,5 +18646,45 @@
       "publicados": 3,
       "semillas": 39
     }
-  ]
+  ],
+  "paridad_2026_11_07": {
+    "nota": "Avance real por idioma. No son volúmenes. El italiano de beurre blanc ya estaba publicado y no se reescribe.",
+    "reduccion": {
+      "es": "reduccion-concepto-definicion",
+      "en": "what-is-reduction-in-cooking",
+      "fr": "reduction-en-cuisine",
+      "de": "reduktion-kochen",
+      "it": "riduzione-in-cucina",
+      "nl": "reduceren-koken",
+      "pt": "reducao-na-cozinha"
+    },
+    "mandolina": {
+      "es": "mandolina-concepto-definicion",
+      "en": "what-is-a-mandoline-slicer",
+      "fr": "mandoline-de-cuisine",
+      "de": "mandoline-kueche",
+      "it": "mandolina-da-cucina",
+      "nl": "mandoline-keuken",
+      "pt": "mandolina-de-cozinha"
+    },
+    "papillote": {
+      "es": "papillote-concepto-definicion",
+      "en": "what-is-en-papillote",
+      "fr": "cuisson-en-papillote",
+      "de": "garen-im-pergament",
+      "it": "al-cartoccio",
+      "nl": "koken-en-papillote",
+      "pt": "em-papelote"
+    },
+    "beurre_blanc": {
+      "es": "beurre-blanc",
+      "en": "beurre-blanc",
+      "fr": "beurre-blanc",
+      "de": "beurre-blanc",
+      "it": "burro-bianco",
+      "nl": "beurre-blanc",
+      "pt": "beurre-blanc",
+      "it_ya_publicado": true
+    }
+  }
 }

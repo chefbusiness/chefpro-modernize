@@ -2,7 +2,7 @@
 title: "What is en papillote?"
 description: "En papillote means cooking in a sealed parchment packet so food steams in its own juices. How to seal it, and how to know it is done."
 pubDate: 2026-11-03
-modDate: 2026-11-03
+modDate: 2026-11-07
 category: glossary
 tags: ["en papillote", "fish", "parchment"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "Fish fillet with lemon and herbs on baking parchment, ready to seal e
 translations:
   es: "papillote-concepto-definicion"
   en: "what-is-en-papillote"
+  fr: "cuisson-en-papillote"
+  de: "garen-im-pergament"
+  it: "al-cartoccio"
+  nl: "koken-en-papillote"
+  pt: "em-papelote"
 definedTerm:
   name: "En papillote"
   description: "En papillote means cooking food in a sealed packet, almost always of baking parchment. It cooks in its own steam and in the little liquid inside. Direct heat never touches it, so fish or vegetables stay moist. The packet is opened at the table, and that is when the aroma comes out."
