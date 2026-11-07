@@ -280,27 +280,119 @@ The published suite figure is 75+ AI agents on every language. Pricing, FAQ, abo
 
 Paths are on https://aichef.pro. City pages stay Spanish-only: the dataset is researched rents, licenses and payroll agreements for Spain and some Latin American cities. Translating Madrid into another country would publish invented local law.
 
-<!-- GLOSARIO-TANDA1-START -->
+<!-- GLOSARIO-START -->
 ## Culinary glossary (7 languages)
 
 The hospitality glossary is no longer Spanish-only. Each language has its own category, native slugs and hreflang across es, en, fr, de, it, pt and nl. Definitions are written for cooks and operators. AI agents are the product positioning: calls to action go to the role page, the food cost calculator or the guest home of the app, never to a single agent URL.
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Batch 1, sauces, emulsions and stocks:
+Published entries: 175 posts (es 81, en 19, fr 15, de 15, it 15, pt 15, nl 15), 81 terms. A language is listed only when that glossary post is published.
 
-- Beurre manié: [es](https://aichef.pro/blog/beurre-manie) [en](https://aichef.pro/en/blog/beurre-manie) [fr](https://aichef.pro/fr/blog/beurre-manie) [de](https://aichef.pro/de/blog/mehlbutter) [it](https://aichef.pro/it/blog/beurre-manie) [pt](https://aichef.pro/pt/blog/beurre-manie) [nl](https://aichef.pro/nl/blog/beurre-manie)
-- Nappé: [es](https://aichef.pro/blog/napar-una-salsa) [en](https://aichef.pro/en/blog/nap-a-sauce) [fr](https://aichef.pro/fr/blog/napper-une-sauce) [de](https://aichef.pro/de/blog/nappieren) [it](https://aichef.pro/it/blog/salsa-nappante) [pt](https://aichef.pro/pt/blog/napar-um-molho) [nl](https://aichef.pro/nl/blog/saus-napperen)
-- Monter au beurre: [es](https://aichef.pro/blog/montar-al-burro) [en](https://aichef.pro/en/blog/monter-au-beurre) [fr](https://aichef.pro/fr/blog/monter-au-beurre) [de](https://aichef.pro/de/blog/sauce-mit-butter-montieren) [it](https://aichef.pro/it/blog/mantecare) [pt](https://aichef.pro/pt/blog/montar-na-manteiga) [nl](https://aichef.pro/nl/blog/saus-monteren-met-boter)
+- ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
+- ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
+- ¿Qué es el Maíz?: [es](https://aichef.pro/blog/que-es-el-maiz)
+- ¿Qué es el procesamiento de lenguaje natural? PLN: [es](https://aichef.pro/blog/procesamiento-de-lenguaje-natural)
+- ¿Qué es la Inteligencia Artificial Generativa?: [es](https://aichef.pro/blog/que-es-la-inteligencia-artificial-generativa)
+- Abatidor de Temperatura, Un Indispensable de Hoy en las Cocinas Profesionales: [es](https://aichef.pro/blog/que-es-un-abatidor-de-temperatura)
+- Abocar: [es](https://aichef.pro/blog/que-significa-abocar-en-cocina) [en](https://aichef.pro/en/blog/what-does-abocar-mean-in-cooking)
+  en: Abocar is the Spanish verb for pouring from one vessel into another with the rims together. Cooks do it with a liquid that has settled, so the clear part moves and the sediment stays. Abocado, abocada, and abocados are its participle, and also the name of a wine that is not fully dry. English has no single verb for this.
+- Aioli o allioli: [es](https://aichef.pro/blog/aioli-concepto-definicion)
+- API (Interfaz de Programación): [es](https://aichef.pro/blog/api-interfaz-programacion-hosteleria)
+- Balsámico: [es](https://aichef.pro/blog/balsamico-concepto-definicion)
+- Bechamel: [es](https://aichef.pro/blog/bechamel-concepto-y-definicion)
 - Beurre blanc: [es](https://aichef.pro/blog/beurre-blanc) [en](https://aichef.pro/en/blog/beurre-blanc) [fr](https://aichef.pro/fr/blog/beurre-blanc) [de](https://aichef.pro/de/blog/beurre-blanc) [it](https://aichef.pro/it/blog/burro-bianco) [pt](https://aichef.pro/pt/blog/beurre-blanc) [nl](https://aichef.pro/nl/blog/beurre-blanc)
-- Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
-- Egg-yolk liaison: [es](https://aichef.pro/blog/ligado-con-yema) [en](https://aichef.pro/en/blog/egg-yolk-liaison) [fr](https://aichef.pro/fr/blog/liaison-au-jaune) [de](https://aichef.pro/de/blog/legierung-mit-eigelb) [it](https://aichef.pro/it/blog/legante-al-tuorlo) [pt](https://aichef.pro/pt/blog/ligacao-com-gema) [nl](https://aichef.pro/nl/blog/liaison-met-eigeel)
-- Glace de viande: [es](https://aichef.pro/blog/glace-de-viande) [en](https://aichef.pro/en/blog/glace-de-viande) [fr](https://aichef.pro/fr/blog/glace-de-viande) [de](https://aichef.pro/de/blog/fleischglace) [it](https://aichef.pro/it/blog/glace-de-viande) [pt](https://aichef.pro/pt/blog/glace-de-viande) [nl](https://aichef.pro/nl/blog/vleesglace)
-- Fumet: [es](https://aichef.pro/blog/fumet-de-pescado) [en](https://aichef.pro/en/blog/fish-fumet) [fr](https://aichef.pro/fr/blog/fumet-de-poisson) [de](https://aichef.pro/de/blog/fischfond-fumet) [it](https://aichef.pro/it/blog/fumetto) [pt](https://aichef.pro/pt/blog/fumet-de-peixe) [nl](https://aichef.pro/nl/blog/visfumet)
-- Starch slurry: [es](https://aichef.pro/blog/ligar-con-maicena) [en](https://aichef.pro/en/blog/starch-slurry) [fr](https://aichef.pro/fr/blog/liaison-a-la-fecule) [de](https://aichef.pro/de/blog/staerkebrei) [it](https://aichef.pro/it/blog/sospensione-di-amido) [pt](https://aichef.pro/pt/blog/papas-de-amido) [nl](https://aichef.pro/nl/blog/zetmeelpap)
-- Roux: [es](https://aichef.pro/blog/roux-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-a-roux) [fr](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) [de](https://aichef.pro/de/blog/mehlschwitze) [it](https://aichef.pro/it/blog/roux) [pt](https://aichef.pro/pt/blog/o-que-e-um-roux) [nl](https://aichef.pro/nl/blog/wat-is-een-roux)
-- Emulsion: [es](https://aichef.pro/blog/emulsion-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-an-emulsion) [fr](https://aichef.pro/fr/blog/emulsion-culinaire) [de](https://aichef.pro/de/blog/emulsion-kueche) [it](https://aichef.pro/it/blog/emulsione) [pt](https://aichef.pro/pt/blog/emulsao) [nl](https://aichef.pro/nl/blog/emulsie)
+  en: Beurre blanc is a French butter sauce. You reduce minced shallot with white wine and white wine vinegar, then whisk in cold butter a little at a time until the sauce turns creamy, ivory, and lightly tart. The name means white butter. It comes from the Loire Valley, near Nantes, where it was served with river fish. Cooks still use it for lean white fish, shellfish, and vegetables such as asparagus.
+- Beurre manié: [es](https://aichef.pro/blog/beurre-manie) [en](https://aichef.pro/en/blog/beurre-manie) [fr](https://aichef.pro/fr/blog/beurre-manie) [de](https://aichef.pro/de/blog/mehlbutter) [it](https://aichef.pro/it/blog/beurre-manie) [pt](https://aichef.pro/pt/blog/beurre-manie) [nl](https://aichef.pro/nl/blog/beurre-manie)
+  en: Beurre manié is a paste of soft butter and flour, kneaded in equal parts by weight and left raw. When a finished sauce is too thin, you whisk that paste in, a small piece at a time, and let the sauce simmer gently for about a minute. The starch thickens the sauce, and the butter carries the flour through it. The French name means kneaded butter.
+- Beurre Noisette: [es](https://aichef.pro/blog/beurre-noisette-mantequilla-tostada-guia-tecnica)
+- Brioche: [es](https://aichef.pro/blog/brioche-concepto-definicion)
+- Ceviche: [es](https://aichef.pro/blog/ceviche-concepto-definicion)
+- Chili crisp: [es](https://aichef.pro/blog/chili-crisp)
+- Cocción a baja temperatura: [es](https://aichef.pro/blog/coccion-a-baja-temperatura-concepto-y-definicion)
+- Cocina molecular: [es](https://aichef.pro/blog/cocina-molecular-concepto-y-definicion)
+- Confit: [es](https://aichef.pro/blog/confit-concepto-definicion)
+- Consomé: [es](https://aichef.pro/blog/consomme-concepto-definicion)
+- Context Window: [es](https://aichef.pro/blog/context-window-ventana-contexto-ia)
+- Curry: [es](https://aichef.pro/blog/curry-concepto-definicion)
+  es: El curry es, en el uso occidental, el nombre de un guiso con salsa especiada y también el de una mezcla en polvo. En el subcontinente muchos de esos platos conservan nombre propio y a la mezcla se la llama masala; «curry» también se oye en el inglés de la India. La palabra llega del tamil kari, que significa salsa.
+- Deglasar: [es](https://aichef.pro/blog/deglasear-concepto-definicion)
 - Demi-glace: [es](https://aichef.pro/blog/demi-glace-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-demi-glace) [fr](https://aichef.pro/fr/blog/demi-glace) [de](https://aichef.pro/de/blog/demi-glace) [it](https://aichef.pro/it/blog/demi-glace) [pt](https://aichef.pro/pt/blog/demi-glace) [nl](https://aichef.pro/nl/blog/demi-glace)
+  en: Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means "half-glaze," and you will see it spelled demi-glace, demi glace, or demiglace.
+- Egg-yolk liaison: [es](https://aichef.pro/blog/ligado-con-yema) [en](https://aichef.pro/en/blog/egg-yolk-liaison) [fr](https://aichef.pro/fr/blog/liaison-au-jaune) [de](https://aichef.pro/de/blog/legierung-mit-eigelb) [it](https://aichef.pro/it/blog/legante-al-tuorlo) [pt](https://aichef.pro/pt/blog/ligacao-com-gema) [nl](https://aichef.pro/nl/blog/liaison-met-eigeel)
+  en: An egg-yolk liaison thickens and enriches a hot sauce with egg yolks at the end of cooking, without letting them set into curds. You whisk the yolks with cream, temper them with a little of the hot sauce, and stir them into the pot over gentle heat until the sauce coats a spoon. It is the classic finish for blanquette, fricassee, and sauces such as normande, where Escoffier uses 5 yolks and 200 ml of cream for 750 ml of fish velouté.
+- Emulsion: [es](https://aichef.pro/blog/emulsion-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-an-emulsion) [fr](https://aichef.pro/fr/blog/emulsion-culinaire) [de](https://aichef.pro/de/blog/emulsion-kueche) [it](https://aichef.pro/it/blog/emulsione) [pt](https://aichef.pro/pt/blog/emulsao) [nl](https://aichef.pro/nl/blog/emulsie)
+  en: An emulsion is a mixture of two liquids that do not dissolve in each other, such as oil and water, in which one is spread through the other in droplets so fine that they look like a single liquid. To keep those droplets from joining up again, you need an emulsifier, and in the kitchen the most effective one is egg yolk. Mayonnaise, hollandaise, beurre blanc, and vinaigrette are all emulsions, but each one stands up differently to time and heat.
+- En papillote: [es](https://aichef.pro/blog/papillote-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-en-papillote) [fr](https://aichef.pro/fr/blog/cuisson-en-papillote) [de](https://aichef.pro/de/blog/garen-im-pergament) [it](https://aichef.pro/it/blog/al-cartoccio) [pt](https://aichef.pro/pt/blog/em-papelote) [nl](https://aichef.pro/nl/blog/koken-en-papillote)
+  en: En papillote means cooking food in a sealed packet, almost always of baking parchment. It cooks in its own steam and in the little liquid inside. Direct heat never touches it, so fish or vegetables stay moist. The packet is opened at the table, and that is when the aroma comes out.
+- Escabeche: [es](https://aichef.pro/blog/escabeche-concepto-definicion)
+- Esferificación: [es](https://aichef.pro/blog/esferificacion-concepto-y-definicion)
+- Espumas (técnica Ferran Adrià): [es](https://aichef.pro/blog/espumas-ferran-adria-concepto-y-definicion)
+- Fermentación: [es](https://aichef.pro/blog/fermentacion-concepto-definicion)
+- Fermentación Koji: [es](https://aichef.pro/blog/fermentacion-koji-umami-natural)
+- Fish fumet: [es](https://aichef.pro/blog/fumet-de-pescado) [en](https://aichef.pro/en/blog/fish-fumet) [fr](https://aichef.pro/fr/blog/fumet-de-poisson) [de](https://aichef.pro/de/blog/fischfond-fumet) [it](https://aichef.pro/it/blog/fumetto) [pt](https://aichef.pro/pt/blog/fumet-de-peixe) [nl](https://aichef.pro/nl/blog/visfumet)
+  en: A fish fumet is a French stock made from fish bones, trim, and aromatics. You cover the bones with cold water, hold them at a bare simmer, and take the pot off the heat when the liquid tastes clean and sweet, before the bones turn bitter. Cooks use it as the base for sauces, seafood rice, and paella. In many American kitchens it is the same pot as fish stock, sometimes reduced a little further so the flavor is stronger.
+- Flambeado: [es](https://aichef.pro/blog/flambeado-concepto-definicion)
+- Focaccia: [es](https://aichef.pro/blog/que-es-la-focaccia)
+  es: La focaccia es un pan plano italiano de masa con levadura, aceite de oliva y sal. Se extiende en una bandeja, se marca con los dedos para hacer hoyuelos y se hornea con aceite por encima. Sale dorada y crujiente por abajo, blanda y alveolada por dentro. Se come sola, con hierbas, tomate o aceitunas, o como pan para bocadillos.
+- Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
+- Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
+- Fondo blanco: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion)
+- Fondo oscuro: [es](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion)
+- Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
+  en: A gastrique is a light caramel of sugar dissolved with vinegar. It becomes a sweet-sharp syrup used as the base of sauces, especially with meat or fruit. In the sauce romaine of Le Guide Culinaire (1903), Auguste Escoffier cooks 50 g of sugar to a blond caramel and dissolves it with 150 ml of vinegar. In that book he does not use the word gastrique. He describes the preparation inside the sauce. Today it is the usual name for that base.
+- Gelificación: [es](https://aichef.pro/blog/gelificacion-concepto-definicion)
+- Glace de viande: [es](https://aichef.pro/blog/glace-de-viande) [en](https://aichef.pro/en/blog/glace-de-viande) [fr](https://aichef.pro/fr/blog/glace-de-viande) [de](https://aichef.pro/de/blog/fleischglace) [it](https://aichef.pro/it/blog/glace-de-viande) [pt](https://aichef.pro/pt/blog/glace-de-viande) [nl](https://aichef.pro/nl/blog/vleesglace)
+  en: Glace de viande is brown stock reduced very slowly until it is thick and glossy, like a syrup. The name means "meat glaze." Hot, it coats a spoon in a layer that does not run off. Cold, it sets like a firm jelly, because the gelatin from the bones is highly concentrated. Auguste Escoffier describes it in Le Guide Culinaire (1903) and uses it to strengthen sauces and glaze meat. He also mounts it with butter and serves it as a sauce.
+- Glaseado (glazing): [es](https://aichef.pro/blog/glazing-concepto-definicion)
+- Goma Xantana: [es](https://aichef.pro/blog/goma-xantana-concepto-definicion)
+- Homogenization: [es](https://aichef.pro/blog/homogeneizacion-concepto-definicion) [en](https://aichef.pro/en/blog/homogenization-in-cooking)
+  en: Homogenization is the mechanical process that shrinks the particles in a mixture so they do not separate. In milk, it breaks the fat so the cream stops rising. A blender does a smaller version of the same job on a sauce. The British spelling is homogenisation.
+- Hydrolysis: [es](https://aichef.pro/blog/hidrolisis-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking)
+  en: Hydrolysis is the chemical reaction in which water breaks a bond and splits a large molecule into smaller ones. In a kitchen it is what tenderizes a long braise, what turns the collagen in a stock into gelatin, and what builds flavor in an aged cheese or a soy sauce. It is not the Maillard reaction.
+- Incrustación: [es](https://aichef.pro/blog/incrustacion-concepto-definicion)
+- Lecitina de Soja: [es](https://aichef.pro/blog/lecitina-de-soja-concepto-y-definicion)
+- Liofilización: [es](https://aichef.pro/blog/liofilizacion-concepto-definicion)
+- LLM (Large Language Model): [es](https://aichef.pro/blog/llm-large-language-model-cocina)
+- Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking)
+  en: Maceration means leaving a solid in a liquid, or under sugar, long enough for it to give up flavor, without cooking it. Strawberries with sugar, citrus peel in alcohol, and a vanilla bean in a spirit are all macerations. It is not a marinade for meat, and it is not an infusion made with liquid that has just boiled.
+- Mandoline: [es](https://aichef.pro/blog/mandolina-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-a-mandoline-slicer) [fr](https://aichef.pro/fr/blog/mandoline-de-cuisine) [de](https://aichef.pro/de/blog/mandoline-kueche) [it](https://aichef.pro/it/blog/mandolina-da-cucina) [pt](https://aichef.pro/pt/blog/mandolina-de-cozinha) [nl](https://aichef.pro/nl/blog/mandoline-keuken)
+  en: A mandoline is a slicer with a fixed blade and a runway you slide the food down. Each pass gives you slices, batons, or julienne of the same thickness. Even pieces cook evenly and look even on the plate. The blade sits in the open, so you use the hand guard and a cut-resistant glove.
+- Mayonesa: [es](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
+- Mise en Place: [es](https://aichef.pro/blog/mise-en-place)
+- Monter au beurre: [es](https://aichef.pro/blog/montar-al-burro) [en](https://aichef.pro/en/blog/monter-au-beurre) [fr](https://aichef.pro/fr/blog/monter-au-beurre) [de](https://aichef.pro/de/blog/sauce-mit-butter-montieren) [it](https://aichef.pro/it/blog/mantecare) [pt](https://aichef.pro/pt/blog/montar-na-manteiga) [nl](https://aichef.pro/nl/blog/saus-monteren-met-boter)
+  en: Monter au beurre means whisking cold butter, in pieces, into a sauce that is already hot, with the pan off the boil. The butter disperses through the sauce, gives it shine, and rounds the flavor. The French name means to mount with butter. In sauce allemande, Escoffier adds 100 g of fresh butter per liter at the moment of serving, off the heat.
+- Nappé: [es](https://aichef.pro/blog/napar-una-salsa) [en](https://aichef.pro/en/blog/nap-a-sauce) [fr](https://aichef.pro/fr/blog/napper-une-sauce) [de](https://aichef.pro/de/blog/nappieren) [it](https://aichef.pro/it/blog/salsa-nappante) [pt](https://aichef.pro/pt/blog/napar-um-molho) [nl](https://aichef.pro/nl/blog/saus-napperen)
+  en: To nap a sauce means to coat food with a sauce thick enough to stay on it instead of running into a puddle. That consistency is called nappé. Escoffier considers glace de viande finished when it coats a spoon in a glossy, clinging layer: "qu'elle nappe la cuiller." In practice, you draw a finger across the back of the spoon. If the line stays clean, the sauce naps.
+- Nitrógeno Líquido: [es](https://aichef.pro/blog/nitrogeno-liquido-concepto-definicion)
+- Oxidación en cocina: [es](https://aichef.pro/blog/oxidacion-concepto-definicion)
+- Pasteurización: [es](https://aichef.pro/blog/pasteurizacion-concepto-definicion)
+- Reacción de Maillard: [es](https://aichef.pro/blog/reaccion-de-maillard)
+  es: La reacción de Maillard dora y da aroma a tostado cuando aminoácidos y azúcares se encuentran en una superficie seca y caliente. El agua lo frena, porque esa superficie no pasa del hervor. No es la caramelización, que solo necesita azúcar. En el pase es la costra de la carne, la corteza del pan y el tueste del café.
+- Reduction: [es](https://aichef.pro/blog/reduccion-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-reduction-in-cooking) [fr](https://aichef.pro/fr/blog/reduction-en-cuisine) [de](https://aichef.pro/de/blog/reduktion-kochen) [it](https://aichef.pro/it/blog/riduzione-in-cucina) [pt](https://aichef.pro/pt/blog/reducao-na-cozinha) [nl](https://aichef.pro/nl/blog/reduceren-koken)
+  en: A reduction is a liquid cooked uncovered so that some of the water boils away. What remains tastes stronger and, when the liquid had body to begin with, it coats a spoon. Stocks, wine, vinegar, and pan juices are the usual candidates. Flour is not part of the method. Salt concentrates as well, so you season at the end.
+- Risotto: [es](https://aichef.pro/blog/que-es-el-risotto)
+  es: El risotto es un plato italiano de arroz que se tuesta en grasa y se cuece despacio con caldo caliente, añadido poco a poco y removiendo. El grano suelta almidón y el plato queda cremoso, con el arroz entero y al dente. Se termina fuera del fuego con mantequilla fría y queso, en un paso que se llama mantecatura.
+- Roner: [es](https://aichef.pro/blog/roner-concepto-y-definicion-2)
+- Roux: [es](https://aichef.pro/blog/roux-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-a-roux) [fr](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) [de](https://aichef.pro/de/blog/mehlschwitze) [it](https://aichef.pro/it/blog/roux) [pt](https://aichef.pro/pt/blog/o-que-e-um-roux) [nl](https://aichef.pro/nl/blog/wat-is-een-roux)
+  en: A roux is flour cooked in fat, before the liquid of the sauce goes in. The fat cooks the flour and keeps it from lumping. In Le Guide Culinaire (1903), Auguste Escoffier gives 500 g of clarified butter and 600 g of flour, and he calls those the proportions for 1 kilo. With whole butter, which still contains water, equal weights come close to that ratio. The color of the cooking changes the flavor and the thickening power: white for béchamel, blond for velouté, and a light hazelnut for espagnole.
+- Salsa bearnesa: [es](https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion)
+- Salsa española: [es](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion)
+- Salsa holandesa: [es](https://aichef.pro/blog/salsa-holandesa-concepto-y-definicion)
+- Salsa velouté: [es](https://aichef.pro/blog/salsa-veloute-concepto-y-definicion)
+- Salsas madre de la cocina: [es](https://aichef.pro/blog/salsas-madre-cocina-guia)
+- Sous vide: [es](https://aichef.pro/blog/sous-vide-concepto-definicion)
+- Starch slurry: [es](https://aichef.pro/blog/ligar-con-maicena) [en](https://aichef.pro/en/blog/starch-slurry) [fr](https://aichef.pro/fr/blog/liaison-a-la-fecule) [de](https://aichef.pro/de/blog/staerkebrei) [it](https://aichef.pro/it/blog/sospensione-di-amido) [pt](https://aichef.pro/pt/blog/papas-de-amido) [nl](https://aichef.pro/nl/blog/zetmeelpap)
+  en: A starch slurry is starch (cornstarch, potato starch, or arrowroot) stirred into a little cold liquid and then whisked into a hot sauce to thicken it. For an everyday sauce, a good starting point is 8 g (1 level tablespoon) of cornstarch mixed with 30 ml (2 tablespoons) of cold water for every 250 ml (about 1 cup) of sauce. Escoffier used arrowroot for his jus de veau lié: 30 g for every liter of reduced veal stock.
+- Tapas: [es](https://aichef.pro/blog/tapas-concepto-definicion)
+- Técnicas con sifón: [es](https://aichef.pro/blog/tecnicas-con-sifon-concepto-y-definicion)
+- Técnicas de Prefermento en Panadería: [es](https://aichef.pro/blog/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro)
+- Thermomix: [es](https://aichef.pro/blog/thermomix-concepto-definicion)
+- Tipos de Cortes en la Cocina Profesional: [es](https://aichef.pro/blog/tipos-de-cortes-en-la-cocina-profesional)
+- Token: [es](https://aichef.pro/blog/token-unidad-inteligencia-artificial)
+- Umami: [es](https://aichef.pro/blog/umami-concepto-y-definicion)
+- Vinagreta: [es](https://aichef.pro/blog/vinagreta-concepto-y-definicion)
+- Yuzu kosho: [es](https://aichef.pro/blog/yuzu-kosho-condimento-japones-tendencia)
+<!-- GLOSARIO-END -->
 
-Spanish Search Console pages updated in the same batch: [homogeneización](https://aichef.pro/blog/homogeneizacion-concepto-definicion), [abocar y abocado](https://aichef.pro/blog/que-significa-abocar-en-cocina), [hidrólisis](https://aichef.pro/blog/hidrolisis-concepto-definicion), [maceración](https://aichef.pro/blog/maceracion-concepto-definicion), [reacción de Maillard](https://aichef.pro/blog/reaccion-de-maillard). The old slug maillard-concepto-y-definicion-2 redirects to the Maillard URL.
-<!-- GLOSARIO-TANDA1-END -->
+The old slug maillard-concepto-y-definicion-2 redirects to the Maillard URL.

@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { copyFileSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
@@ -10,6 +10,7 @@ import {
   applyDatePlaceholdersToHtml,
   findUnresolvedSeoPlaceholders,
 } from './src/lib/date-placeholders.mjs';
+import { syncLlmsGlossaryFiles } from './src/lib/llms-glossary.mjs';
 
 // Fase 6 — sitemap nativo con paridad EXACTA vs el sitemap.xml de la SPA:
 // lastmod por URL (snapshot de prod vía scripts/astro-migration/fase6-lastmod-map.py)
@@ -46,6 +47,26 @@ function walkHtml(dir, acc = []) {
     else if (name.endsWith('.html')) acc.push(full);
   }
   return acc;
+}
+
+// Reescribe el bloque de glosario de llms.txt y llms-full.txt antes de copiar
+// public/ y otra vez sobre dist/, por si public/ ya se había copiado.
+function llmsGlossaryIntegration() {
+  const astroRoot = fileURLToPath(new URL('.', import.meta.url));
+  return {
+    name: 'llms-glossary',
+    hooks: {
+      'astro:build:start': () => {
+        syncLlmsGlossaryFiles({ astroRoot });
+      },
+      'astro:build:done': ({ dir }) => {
+        const out = fileURLToPath(dir);
+        for (const name of ['llms.txt', 'llms-full.txt']) {
+          copyFileSync(join(astroRoot, 'public', name), join(out, name));
+        }
+      },
+    },
+  };
 }
 
 // Pase final del build: {year} y {month} en title, meta description, og:title,
@@ -91,6 +112,7 @@ export default defineConfig({
     remarkPlugins: [remarkProductBanners],
   },
   integrations: [
+    llmsGlossaryIntegration(),
     datePlaceholdersIntegration(),
     react(),
     tailwind({ applyBaseStyles: false }),
