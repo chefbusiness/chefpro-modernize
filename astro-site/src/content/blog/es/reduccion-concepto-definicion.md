@@ -2,7 +2,7 @@
 title: "Reducción: qué es en cocina y cómo se hace"
 description: "Una reducción es un líquido cocido destapado hasta que pierde agua y gana sabor. La prueba de la cuchara, los errores habituales y para qué se usa."
 pubDate: 2026-03-24
-modDate: 2026-11-03
+modDate: 2026-11-07
 category: glosario
 tags: ["reducción", "salsas", "fondos"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 3270
 translations:
   es: "reduccion-concepto-definicion"
   en: "what-is-reduction-in-cooking"
+  fr: "reduction-en-cuisine"
+  de: "reduktion-kochen"
+  it: "riduzione-in-cucina"
+  nl: "reduceren-koken"
+  pt: "reducao-na-cozinha"
 definedTerm:
   name: "Reducción"
   description: "La reducción es cocer un líquido destapado para que parte del agua se evapore y lo que queda sepa más y tenga más cuerpo. Sirve con un fondo, un vino, un vinagre o el jugo de un asado. No lleva harina: el espesor, cuando llega, sale del propio líquido. Se prueba al final, porque la sal también se concentra."

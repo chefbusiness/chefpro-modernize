@@ -65,6 +65,36 @@ Hay unos 70 posts. La siguiente ola, después de un pase de SERP, son intencione
 
 `/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Publicado (PR #176). No se toca enblog.
 
+## Glosario — paridad de cuatro términos (2026-11-07)
+
+La regla del glosario es publicar cada ficha en los siete idiomas, con el término que ese mercado busca. Esta tanda cierra reducción, mandolina y papillote (ES y EN ya existían) y deja constancia de beurre blanc. No se midieron volúmenes. La elección de slug sale del nombre de oficio y de cómo se llama la técnica en recetarios de ese país.
+
+| Término | Keyword de cabeza | Slug | URL de producción |
+|---|---|---|---|
+| Reducción FR | réduction en cuisine | `reduction-en-cuisine` | https://aichef.pro/fr/blog/reduction-en-cuisine |
+| Reducción DE | Reduktion kochen (el verbo de oficio es reduzieren; einkochen en casa suele ser conserva) | `reduktion-kochen` | https://aichef.pro/de/blog/reduktion-kochen |
+| Reducción IT | riduzione in cucina (ridurre, no sfumare) | `riduzione-in-cucina` | https://aichef.pro/it/blog/riduzione-in-cucina |
+| Reducción NL | reduceren koken (en casa también se dice inkoken) | `reduceren-koken` | https://aichef.pro/nl/blog/reduceren-koken |
+| Reducción PT | redução na cozinha | `reducao-na-cozinha` | https://aichef.pro/pt/blog/reducao-na-cozinha |
+| Mandolina FR | mandoline de cuisine (el mismo nombre que el instrumento) | `mandoline-de-cuisine` | https://aichef.pro/fr/blog/mandoline-de-cuisine |
+| Mandolina DE | Mandoline Küche (el Gemüsehobel de casa no es la mandolina regulable) | `mandoline-kueche` | https://aichef.pro/de/blog/mandoline-kueche |
+| Mandolina IT | mandolina da cucina (no el mandolino) | `mandolina-da-cucina` | https://aichef.pro/it/blog/mandolina-da-cucina |
+| Mandolina NL | mandoline keuken (el genérico de casa es groentesnijder) | `mandoline-keuken` | https://aichef.pro/nl/blog/mandoline-keuken |
+| Mandolina PT | mandolina de cozinha | `mandolina-de-cozinha` | https://aichef.pro/pt/blog/mandolina-de-cozinha |
+| Papillote FR | cuisson en papillote | `cuisson-en-papillote` | https://aichef.pro/fr/blog/cuisson-en-papillote |
+| Papillote DE | garen im Pergament (en casa se busca también Fisch in Folie, que es otro envoltorio) | `garen-im-pergament` | https://aichef.pro/de/blog/garen-im-pergament |
+| Papillote IT | al cartoccio | `al-cartoccio` | https://aichef.pro/it/blog/al-cartoccio |
+| Papillote NL | koken en papillote (en llano, vispakketje) | `koken-en-papillote` | https://aichef.pro/nl/blog/koken-en-papillote |
+| Papillote PT | em papelote | `em-papelote` | https://aichef.pro/pt/blog/em-papelote |
+
+ES y EN, ya publicados, con hreflang actualizado a las siete versiones:
+
+- https://aichef.pro/blog/reduccion-concepto-definicion y https://aichef.pro/en/blog/what-is-reduction-in-cooking
+- https://aichef.pro/blog/mandolina-concepto-definicion y https://aichef.pro/en/blog/what-is-a-mandoline-slicer
+- https://aichef.pro/blog/papillote-concepto-definicion y https://aichef.pro/en/blog/what-is-en-papillote
+
+Beurre blanc ya estaba en los siete idiomas. El italiano es https://aichef.pro/it/blog/burro-bianco (`it/burro-bianco`). No se ha reescrito. Las otras seis fichas ya apuntaban a ese slug.
+
 ## Formación y contacto — hechos que no se negocian al localizar
 
 Precios publicados en la página española, base España peninsular, IVA excluido, desplazamiento aparte: conferencia 990 €, workshop 1.490 €, jornada 2.490 €, programa 4.990 €, consultoría in situ desde 4.990 €. FUNDAE solo existe como beneficio en el mercado español. Las páginas nuevas no ofrecen CPF, Bildungsgutschein, fondos interprofesionales, IEFP ni SLIM. La sesión en directo la da John en español o en inglés. El material puede ir en la lengua de la página. No se afirma fluidez en las otras cinco.
