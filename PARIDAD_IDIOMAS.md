@@ -65,6 +65,27 @@ Hay unos 70 posts. La siguiente ola, después de un pase de SERP, son intencione
 
 `/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Publicado (PR #176). No se toca enblog.
 
+## Glosario — paridad de risotto y focaccia (2026-11-10)
+
+Risotto y focaccia son nombres de plato que todos los mercados buscan tal cual, así que el slug es el término (`risotto`, `focaccia`), como `beurre-blanc`. En inglés sigue el molde `what-is-…` de las fichas EN. No se midieron volúmenes.
+
+| Término | Keyword de cabeza | Slug | URL de producción |
+|---|---|---|---|
+| Risotto EN | what is risotto | `what-is-risotto` | https://aichef.pro/en/blog/what-is-risotto |
+| Risotto FR | risotto (nacrer el arroz; se compara con el riz pilaf) | `risotto` | https://aichef.pro/fr/blog/risotto |
+| Risotto DE | Risotto (der/das; se compara con el Pilaw) | `risotto` | https://aichef.pro/de/blog/risotto |
+| Risotto IT | risotto (tostatura, sfumare, mantecare; se compara con el riso in brodo) | `risotto` | https://aichef.pro/it/blog/risotto |
+| Risotto NL | risotto (se compara con la pilav) | `risotto` | https://aichef.pro/nl/blog/risotto |
+| Risotto PT | risotto (PT-PT; risoto es la forma brasileña; se compara con el arroz malandrinho) | `risotto` | https://aichef.pro/pt/blog/risotto |
+| Focaccia EN | what is focaccia | `what-is-focaccia` | https://aichef.pro/en/blog/what-is-focaccia |
+| Focaccia FR | focaccia (la prima local es la fougasse) | `focaccia` | https://aichef.pro/fr/blog/focaccia |
+| Focaccia DE | Focaccia | `focaccia` | https://aichef.pro/de/blog/focaccia |
+| Focaccia IT | focaccia (salamoia genovese) | `focaccia` | https://aichef.pro/it/blog/focaccia |
+| Focaccia NL | focaccia | `focaccia` | https://aichef.pro/nl/blog/focaccia |
+| Focaccia PT | focaccia (pizza/pizzaria, uso corriente en Portugal) | `focaccia` | https://aichef.pro/pt/blog/focaccia |
+
+Las secciones de Argentina y México de las fichas ES no se traducen: son matices del español. Beurre blanc IT ya estaba publicado en https://aichef.pro/it/blog/burro-bianco.
+
 ## Glosario — paridad de cuatro términos (2026-11-07)
 
 La regla del glosario es publicar cada ficha en los siete idiomas, con el término que ese mercado busca. Esta tanda cierra reducción, mandolina y papillote (ES y EN ya existían) y deja constancia de beurre blanc. No se midieron volúmenes. La elección de slug sale del nombre de oficio y de cómo se llama la técnica en recetarios de ese país.

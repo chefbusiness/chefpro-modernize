@@ -164,7 +164,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 175 posts (es 81, en 19, fr 15, de 15, it 15, pt 15, nl 15), 81 terms. A language is listed only when that glossary post is published.
+Published entries: 187 posts (es 81, en 21, fr 17, de 17, it 17, pt 17, nl 17), 81 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
@@ -202,7 +202,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Fermentación Koji: [es](https://aichef.pro/blog/fermentacion-koji-umami-natural)
 - Fish fumet: [es](https://aichef.pro/blog/fumet-de-pescado) [en](https://aichef.pro/en/blog/fish-fumet) [fr](https://aichef.pro/fr/blog/fumet-de-poisson) [de](https://aichef.pro/de/blog/fischfond-fumet) [it](https://aichef.pro/it/blog/fumetto) [pt](https://aichef.pro/pt/blog/fumet-de-peixe) [nl](https://aichef.pro/nl/blog/visfumet)
 - Flambeado: [es](https://aichef.pro/blog/flambeado-concepto-definicion)
-- Focaccia: [es](https://aichef.pro/blog/que-es-la-focaccia)
+- Focaccia: [es](https://aichef.pro/blog/que-es-la-focaccia) [en](https://aichef.pro/en/blog/what-is-focaccia) [fr](https://aichef.pro/fr/blog/focaccia) [de](https://aichef.pro/de/blog/focaccia) [it](https://aichef.pro/it/blog/focaccia) [pt](https://aichef.pro/pt/blog/focaccia) [nl](https://aichef.pro/nl/blog/focaccia)
 - Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
 - Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
 - Fondo blanco: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion)
@@ -229,7 +229,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Pasteurización: [es](https://aichef.pro/blog/pasteurizacion-concepto-definicion)
 - Reacción de Maillard: [es](https://aichef.pro/blog/reaccion-de-maillard)
 - Reduction: [es](https://aichef.pro/blog/reduccion-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-reduction-in-cooking) [fr](https://aichef.pro/fr/blog/reduction-en-cuisine) [de](https://aichef.pro/de/blog/reduktion-kochen) [it](https://aichef.pro/it/blog/riduzione-in-cucina) [pt](https://aichef.pro/pt/blog/reducao-na-cozinha) [nl](https://aichef.pro/nl/blog/reduceren-koken)
-- Risotto: [es](https://aichef.pro/blog/que-es-el-risotto)
+- Risotto: [es](https://aichef.pro/blog/que-es-el-risotto) [en](https://aichef.pro/en/blog/what-is-risotto) [fr](https://aichef.pro/fr/blog/risotto) [de](https://aichef.pro/de/blog/risotto) [it](https://aichef.pro/it/blog/risotto) [pt](https://aichef.pro/pt/blog/risotto) [nl](https://aichef.pro/nl/blog/risotto)
 - Roner: [es](https://aichef.pro/blog/roner-concepto-y-definicion-2)
 - Roux: [es](https://aichef.pro/blog/roux-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-a-roux) [fr](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) [de](https://aichef.pro/de/blog/mehlschwitze) [it](https://aichef.pro/it/blog/roux) [pt](https://aichef.pro/pt/blog/o-que-e-um-roux) [nl](https://aichef.pro/nl/blog/wat-is-een-roux)
 - Salsa bearnesa: [es](https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion)

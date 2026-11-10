@@ -14,6 +14,17 @@ Quick wins en español (title, definición de 40–60 palabras, FAQ con DefinedT
 
 Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en los 7 idiomas: beurre manié, napar, montar al burro, beurre blanc, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón. Roux (en alemán, Mehlschwitze), emulsión y demi-glace se abren en los idiomas que aún no los tenían y apuntan al post español ya publicado.
 
+## Paridad 2026-11-10 — risotto y focaccia
+
+Las fichas ES son de #205. Esta tanda publica las otras seis lenguas. No hay volúmenes nuevos.
+
+| Término | ES | EN | FR | DE | IT | NL | PT |
+|---|---|---|---|---|---|---|---|
+| Risotto | `es/que-es-el-risotto` | `en/what-is-risotto` | `fr/risotto` | `de/risotto` | `it/risotto` | `nl/risotto` | `pt/risotto` |
+| Focaccia | `es/que-es-la-focaccia` | `en/what-is-focaccia` | `fr/focaccia` | `de/focaccia` | `it/focaccia` | `nl/focaccia` | `pt/focaccia` |
+
+El hreflang de las dos fichas ES se actualizó para apuntar a las siete. Beurre blanc IT sigue en `it/burro-bianco`, publicado antes de #210; no hacía falta ficha nueva.
+
 ## Paridad 2026-11-07 — reducción, mandolina, papillote, beurre blanc
 
 El estado «publicado» de más arriba sigue siendo el del glosario español. Esta sección anota los siete idiomas de cuatro términos. No hay volúmenes nuevos.
