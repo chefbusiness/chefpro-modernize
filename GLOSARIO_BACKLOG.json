@@ -18686,5 +18686,26 @@
       "pt": "beurre-blanc",
       "it_ya_publicado": true
     }
+  },
+  "paridad_2026_11_10": {
+    "nota": "Avance real por idioma. No son volúmenes. Risotto y focaccia ES salieron en #205; esta tanda abre EN, FR, DE, IT, NL y PT. El italiano de beurre blanc ya estaba publicado (it/burro-bianco) y no se reescribe.",
+    "risotto": {
+      "es": "que-es-el-risotto",
+      "en": "what-is-risotto",
+      "fr": "risotto",
+      "de": "risotto",
+      "it": "risotto",
+      "nl": "risotto",
+      "pt": "risotto"
+    },
+    "focaccia": {
+      "es": "que-es-la-focaccia",
+      "en": "what-is-focaccia",
+      "fr": "focaccia",
+      "de": "focaccia",
+      "it": "focaccia",
+      "nl": "focaccia",
+      "pt": "focaccia"
+    }
   }
 }

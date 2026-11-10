@@ -2,12 +2,20 @@
 title: "Qué es la focaccia: origen, masa y cómo se hace"
 description: "Focaccia: qué es y cómo se hace. Pan plano italiano con aceite de oliva y hoyuelos, de origen genovés. Masa, fermentación, horneado y errores típicos."
 pubDate: 2026-11-03
-modDate: 2026-11-03
+modDate: 2026-11-10
 category: glosario
 tags: ["focaccia", "panadería", "cocina italiana"]
 lang: es
 image: /lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg
 imageAlt: "Focaccia rectangular con hoyuelos, tomates cherry, cebolla roja, romero y flores comestibles sobre la superficie"
+translations:
+  es: "que-es-la-focaccia"
+  en: "what-is-focaccia"
+  fr: "focaccia"
+  de: "focaccia"
+  it: "focaccia"
+  nl: "focaccia"
+  pt: "focaccia"
 definedTerm:
   name: "Focaccia"
   description: "La focaccia es un pan plano italiano de masa con levadura, aceite de oliva y sal. Se extiende en una bandeja, se marca con los dedos para hacer hoyuelos y se hornea con aceite por encima. Sale dorada y crujiente por abajo, blanda y alveolada por dentro. Se come sola, con hierbas, tomate o aceitunas, o como pan para bocadillos."

@@ -2,12 +2,20 @@
 title: "Qué es el risotto: definición y cómo se hace"
 description: "Qué es el risotto, o qué es un risotto: arroz tostado y cocido despacio con caldo hasta quedar cremoso. Qué arroz usar, la mantecatura y los errores típicos."
 pubDate: 2026-11-03
-modDate: 2026-11-03
+modDate: 2026-11-10
 category: glosario
 tags: ["risotto", "arroz", "cocina italiana"]
 lang: es
 image: /blog-assets/2026/03/risotto-hongos.jpg
 imageAlt: "Plato hondo de risotto de hongos con láminas de parmesano y tomillo sobre una mesa de madera"
+translations:
+  es: "que-es-el-risotto"
+  en: "what-is-risotto"
+  fr: "risotto"
+  de: "risotto"
+  it: "risotto"
+  nl: "risotto"
+  pt: "risotto"
 definedTerm:
   name: "Risotto"
   description: "El risotto es un plato italiano de arroz que se tuesta en grasa y se cuece despacio con caldo caliente, añadido poco a poco y removiendo. El grano suelta almidón y el plato queda cremoso, con el arroz entero y al dente. Se termina fuera del fuego con mantequilla fría y queso, en un paso que se llama mantecatura."
