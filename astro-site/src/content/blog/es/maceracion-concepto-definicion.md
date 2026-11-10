@@ -2,7 +2,7 @@
 title: "Maceración: qué es y en qué se diferencia del marinado"
 description: "La maceración extrae sabor de un sólido en frío, con azúcar o con un líquido, sin cocerlo. En qué no es un marinado ni una infusión, y cómo hacerla."
 pubDate: 2026-03-21
-modDate: 2026-10-27
+modDate: 2026-11-10
 category: glosario
 tags: ["maceración", "marinado", "cóctel", "pastelería"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 3258
 translations:
   es: "maceracion-concepto-definicion"
   en: "maceration-in-cooking"
+  fr: "maceration-en-cuisine"
+  de: "mazeration-kochen"
+  it: "macerazione-in-cucina"
+  nl: "macereren-koken"
+  pt: "maceracao-na-cozinha"
 definedTerm:
   name: "Maceración"
   description: "La maceración es dejar un sólido en un líquido, o cubierto de azúcar, el tiempo suficiente para que suelte sabor, sin cocerlo. Unas fresas con azúcar, una piel de cítrico en alcohol o una vaina de vainilla en un destilado son maceraciones. No es un marinado de carne ni una infusión hecha con líquido recién hervido."

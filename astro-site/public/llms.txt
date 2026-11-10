@@ -164,7 +164,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 187 posts (es 81, en 21, fr 17, de 17, it 17, pt 17, nl 17), 81 terms. A language is listed only when that glossary post is published.
+Published entries: 202 posts (es 81, en 21, fr 20, de 20, it 20, pt 20, nl 20), 81 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
@@ -173,7 +173,7 @@ One-line definitions of these entries are in llms-full.txt.
 - ¿Qué es el procesamiento de lenguaje natural? PLN: [es](https://aichef.pro/blog/procesamiento-de-lenguaje-natural)
 - ¿Qué es la Inteligencia Artificial Generativa?: [es](https://aichef.pro/blog/que-es-la-inteligencia-artificial-generativa)
 - Abatidor de Temperatura, Un Indispensable de Hoy en las Cocinas Profesionales: [es](https://aichef.pro/blog/que-es-un-abatidor-de-temperatura)
-- Abocar: [es](https://aichef.pro/blog/que-significa-abocar-en-cocina) [en](https://aichef.pro/en/blog/what-does-abocar-mean-in-cooking)
+- Abocar: [es](https://aichef.pro/blog/que-significa-abocar-en-cocina) [en](https://aichef.pro/en/blog/what-does-abocar-mean-in-cooking) [fr](https://aichef.pro/fr/blog/decanter-en-cuisine) [de](https://aichef.pro/de/blog/dekantieren-kochen) [it](https://aichef.pro/it/blog/decantare-in-cucina) [pt](https://aichef.pro/pt/blog/decantar-na-cozinha) [nl](https://aichef.pro/nl/blog/decanteren-keuken)
 - Aioli o allioli: [es](https://aichef.pro/blog/aioli-concepto-definicion)
 - API (Interfaz de Programación): [es](https://aichef.pro/blog/api-interfaz-programacion-hosteleria)
 - Balsámico: [es](https://aichef.pro/blog/balsamico-concepto-definicion)
@@ -213,12 +213,12 @@ One-line definitions of these entries are in llms-full.txt.
 - Glaseado (glazing): [es](https://aichef.pro/blog/glazing-concepto-definicion)
 - Goma Xantana: [es](https://aichef.pro/blog/goma-xantana-concepto-definicion)
 - Homogenization: [es](https://aichef.pro/blog/homogeneizacion-concepto-definicion) [en](https://aichef.pro/en/blog/homogenization-in-cooking)
-- Hydrolysis: [es](https://aichef.pro/blog/hidrolisis-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking)
+- Hydrolysis: [es](https://aichef.pro/blog/hidrolisis-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking) [fr](https://aichef.pro/fr/blog/hydrolyse-en-cuisine) [de](https://aichef.pro/de/blog/hydrolyse-kochen) [it](https://aichef.pro/it/blog/idrolisi-in-cucina) [pt](https://aichef.pro/pt/blog/hidrolise-na-cozinha) [nl](https://aichef.pro/nl/blog/hydrolyse-koken)
 - Incrustación: [es](https://aichef.pro/blog/incrustacion-concepto-definicion)
 - Lecitina de Soja: [es](https://aichef.pro/blog/lecitina-de-soja-concepto-y-definicion)
 - Liofilización: [es](https://aichef.pro/blog/liofilizacion-concepto-definicion)
 - LLM (Large Language Model): [es](https://aichef.pro/blog/llm-large-language-model-cocina)
-- Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking)
+- Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking) [fr](https://aichef.pro/fr/blog/maceration-en-cuisine) [de](https://aichef.pro/de/blog/mazeration-kochen) [it](https://aichef.pro/it/blog/macerazione-in-cucina) [pt](https://aichef.pro/pt/blog/maceracao-na-cozinha) [nl](https://aichef.pro/nl/blog/macereren-koken)
 - Mandoline: [es](https://aichef.pro/blog/mandolina-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-a-mandoline-slicer) [fr](https://aichef.pro/fr/blog/mandoline-de-cuisine) [de](https://aichef.pro/de/blog/mandoline-kueche) [it](https://aichef.pro/it/blog/mandolina-da-cucina) [pt](https://aichef.pro/pt/blog/mandolina-de-cozinha) [nl](https://aichef.pro/nl/blog/mandoline-keuken)
 - Mayonesa: [es](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
 - Mise en Place: [es](https://aichef.pro/blog/mise-en-place)

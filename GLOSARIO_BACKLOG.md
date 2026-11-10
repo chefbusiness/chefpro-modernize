@@ -14,6 +14,18 @@ Quick wins en español (title, definición de 40–60 palabras, FAQ con DefinedT
 
 Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en los 7 idiomas: beurre manié, napar, montar al burro, beurre blanc, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón. Roux (en alemán, Mehlschwitze), emulsión y demi-glace se abren en los idiomas que aún no los tenían y apuntan al post español ya publicado.
 
+## Paridad 2026-11-10 — maceración, hidrólisis y abocar
+
+ES y EN ya estaban. Esta tanda publica FR, DE, IT, NL y PT. No hay volúmenes nuevos. Homogeneización sigue solo en ES y EN: tenía menos enlaces internos que estos tres.
+
+| Término | ES | EN | FR | DE | IT | NL | PT |
+|---|---|---|---|---|---|---|---|
+| Maceración | `es/maceracion-concepto-definicion` | `en/maceration-in-cooking` | `fr/maceration-en-cuisine` | `de/mazeration-kochen` | `it/macerazione-in-cucina` | `nl/macereren-koken` | `pt/maceracao-na-cozinha` |
+| Hidrólisis | `es/hidrolisis-concepto-definicion` | `en/what-is-hydrolysis-in-cooking` | `fr/hydrolyse-en-cuisine` | `de/hydrolyse-kochen` | `it/idrolisi-in-cucina` | `nl/hydrolyse-koken` | `pt/hidrolise-na-cozinha` |
+| Abocar | `es/que-significa-abocar-en-cocina` | `en/what-does-abocar-mean-in-cooking` | `fr/decanter-en-cuisine` | `de/dekantieren-kochen` | `it/decantare-in-cucina` | `nl/decanteren-keuken` | `pt/decantar-na-cozinha` |
+
+El hreflang de las seis fichas ES/EN se actualizó para apuntar a las siete. El italiano de abocar no reutiliza «abocar»: el verbo de cocina es decantare y la mención legal del vino es abboccato.
+
 ## Paridad 2026-11-10 — risotto y focaccia
 
 Las fichas ES son de #205. Esta tanda publica las otras seis lenguas. No hay volúmenes nuevos.

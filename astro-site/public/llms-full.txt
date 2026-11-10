@@ -287,7 +287,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 187 posts (es 81, en 21, fr 17, de 17, it 17, pt 17, nl 17), 81 terms. A language is listed only when that glossary post is published.
+Published entries: 202 posts (es 81, en 21, fr 20, de 20, it 20, pt 20, nl 20), 81 terms. A language is listed only when that glossary post is published.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
 - ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
@@ -295,7 +295,7 @@ Published entries: 187 posts (es 81, en 21, fr 17, de 17, it 17, pt 17, nl 17), 
 - ¿Qué es el procesamiento de lenguaje natural? PLN: [es](https://aichef.pro/blog/procesamiento-de-lenguaje-natural)
 - ¿Qué es la Inteligencia Artificial Generativa?: [es](https://aichef.pro/blog/que-es-la-inteligencia-artificial-generativa)
 - Abatidor de Temperatura, Un Indispensable de Hoy en las Cocinas Profesionales: [es](https://aichef.pro/blog/que-es-un-abatidor-de-temperatura)
-- Abocar: [es](https://aichef.pro/blog/que-significa-abocar-en-cocina) [en](https://aichef.pro/en/blog/what-does-abocar-mean-in-cooking)
+- Abocar: [es](https://aichef.pro/blog/que-significa-abocar-en-cocina) [en](https://aichef.pro/en/blog/what-does-abocar-mean-in-cooking) [fr](https://aichef.pro/fr/blog/decanter-en-cuisine) [de](https://aichef.pro/de/blog/dekantieren-kochen) [it](https://aichef.pro/it/blog/decantare-in-cucina) [pt](https://aichef.pro/pt/blog/decantar-na-cozinha) [nl](https://aichef.pro/nl/blog/decanteren-keuken)
   en: Abocar is the Spanish verb for pouring from one vessel into another with the rims together. Cooks do it with a liquid that has settled, so the clear part moves and the sediment stays. Abocado, abocada, and abocados are its participle, and also the name of a wine that is not fully dry. English has no single verb for this.
 - Aioli o allioli: [es](https://aichef.pro/blog/aioli-concepto-definicion)
 - API (Interfaz de Programación): [es](https://aichef.pro/blog/api-interfaz-programacion-hosteleria)
@@ -348,13 +348,13 @@ Published entries: 187 posts (es 81, en 21, fr 17, de 17, it 17, pt 17, nl 17), 
 - Goma Xantana: [es](https://aichef.pro/blog/goma-xantana-concepto-definicion)
 - Homogenization: [es](https://aichef.pro/blog/homogeneizacion-concepto-definicion) [en](https://aichef.pro/en/blog/homogenization-in-cooking)
   en: Homogenization is the mechanical process that shrinks the particles in a mixture so they do not separate. In milk, it breaks the fat so the cream stops rising. A blender does a smaller version of the same job on a sauce. The British spelling is homogenisation.
-- Hydrolysis: [es](https://aichef.pro/blog/hidrolisis-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking)
+- Hydrolysis: [es](https://aichef.pro/blog/hidrolisis-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking) [fr](https://aichef.pro/fr/blog/hydrolyse-en-cuisine) [de](https://aichef.pro/de/blog/hydrolyse-kochen) [it](https://aichef.pro/it/blog/idrolisi-in-cucina) [pt](https://aichef.pro/pt/blog/hidrolise-na-cozinha) [nl](https://aichef.pro/nl/blog/hydrolyse-koken)
   en: Hydrolysis is the chemical reaction in which water breaks a bond and splits a large molecule into smaller ones. In a kitchen it is what tenderizes a long braise, what turns the collagen in a stock into gelatin, and what builds flavor in an aged cheese or a soy sauce. It is not the Maillard reaction.
 - Incrustación: [es](https://aichef.pro/blog/incrustacion-concepto-definicion)
 - Lecitina de Soja: [es](https://aichef.pro/blog/lecitina-de-soja-concepto-y-definicion)
 - Liofilización: [es](https://aichef.pro/blog/liofilizacion-concepto-definicion)
 - LLM (Large Language Model): [es](https://aichef.pro/blog/llm-large-language-model-cocina)
-- Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking)
+- Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking) [fr](https://aichef.pro/fr/blog/maceration-en-cuisine) [de](https://aichef.pro/de/blog/mazeration-kochen) [it](https://aichef.pro/it/blog/macerazione-in-cucina) [pt](https://aichef.pro/pt/blog/maceracao-na-cozinha) [nl](https://aichef.pro/nl/blog/macereren-koken)
   en: Maceration means leaving a solid in a liquid, or under sugar, long enough for it to give up flavor, without cooking it. Strawberries with sugar, citrus peel in alcohol, and a vanilla bean in a spirit are all macerations. It is not a marinade for meat, and it is not an infusion made with liquid that has just boiled.
 - Mandoline: [es](https://aichef.pro/blog/mandolina-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-a-mandoline-slicer) [fr](https://aichef.pro/fr/blog/mandoline-de-cuisine) [de](https://aichef.pro/de/blog/mandoline-kueche) [it](https://aichef.pro/it/blog/mandolina-da-cucina) [pt](https://aichef.pro/pt/blog/mandolina-de-cozinha) [nl](https://aichef.pro/nl/blog/mandoline-keuken)
   en: A mandoline is a slicer with a fixed blade and a runway you slide the food down. Each pass gives you slices, batons, or julienne of the same thickness. Even pieces cook evenly and look even on the plate. The blade sits in the open, so you use the hand guard and a cut-resistant glove.

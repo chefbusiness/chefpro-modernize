@@ -2,7 +2,7 @@
 title: "Hydrolysis: what it is and what it does in cooking"
 description: "Hydrolysis is the reaction in which water splits a molecule. How it turns collagen into gelatin, ages beef and cheese, and how it differs from Maillard."
 pubDate: 2026-10-27
-modDate: 2026-10-27
+modDate: 2026-11-10
 category: glossary
 tags: ["hydrolysis", "collagen", "gelatin"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "Braised oxtail falling apart in a deep dish next to a steel tray of t
 translations:
   es: "hidrolisis-concepto-definicion"
   en: "what-is-hydrolysis-in-cooking"
+  fr: "hydrolyse-en-cuisine"
+  de: "hydrolyse-kochen"
+  it: "idrolisi-in-cucina"
+  nl: "hydrolyse-koken"
+  pt: "hidrolise-na-cozinha"
 definedTerm:
   name: "Hydrolysis"
   description: "Hydrolysis is the chemical reaction in which water breaks a bond and splits a large molecule into smaller ones. In a kitchen it is what tenderizes a long braise, what turns the collagen in a stock into gelatin, and what builds flavor in an aged cheese or a soy sauce. It is not the Maillard reaction."
