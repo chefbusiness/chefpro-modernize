@@ -2,7 +2,7 @@
 title: "What does abocar mean in cooking?"
 description: "Abocar is the Spanish verb for pouring from one vessel into another with the rims together, leaving the sediment. It is not the same thing as an abocado wine."
 pubDate: 2026-10-27
-modDate: 2026-10-27
+modDate: 2026-11-10
 category: glossary
 tags: ["abocar", "abocado", "wine", "stock"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "A tilted steel pot pouring clear golden stock into a second pot while
 translations:
   es: "que-significa-abocar-en-cocina"
   en: "what-does-abocar-mean-in-cooking"
+  fr: "decanter-en-cuisine"
+  de: "dekantieren-kochen"
+  it: "decantare-in-cucina"
+  nl: "decanteren-keuken"
+  pt: "decantar-na-cozinha"
 definedTerm:
   name: "Abocar"
   description: "Abocar is the Spanish verb for pouring from one vessel into another with the rims together. Cooks do it with a liquid that has settled, so the clear part moves and the sediment stays. Abocado, abocada, and abocados are its participle, and also the name of a wine that is not fully dry. English has no single verb for this."

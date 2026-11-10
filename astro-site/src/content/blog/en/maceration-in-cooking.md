@@ -2,7 +2,7 @@
 title: "Maceration: what it is and how it differs from a marinade"
 description: "Maceration draws flavor out of a solid in sugar or a cold liquid, without cooking it. How it differs from a marinade and an infusion, and how to do it."
 pubDate: 2026-10-27
-modDate: 2026-10-27
+modDate: 2026-11-10
 category: glossary
 tags: ["maceration", "marinade", "pastry", "cocktail"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "A glass bowl of cut strawberries releasing juice in sugar and a jar o
 translations:
   es: "maceracion-concepto-definicion"
   en: "maceration-in-cooking"
+  fr: "maceration-en-cuisine"
+  de: "mazeration-kochen"
+  it: "macerazione-in-cucina"
+  nl: "macereren-koken"
+  pt: "maceracao-na-cozinha"
 definedTerm:
   name: "Maceration"
   description: "Maceration means leaving a solid in a liquid, or under sugar, long enough for it to give up flavor, without cooking it. Strawberries with sugar, citrus peel in alcohol, and a vanilla bean in a spirit are all macerations. It is not a marinade for meat, and it is not an infusion made with liquid that has just boiled."

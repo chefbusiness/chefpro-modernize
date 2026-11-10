@@ -65,6 +65,36 @@ Hay unos 70 posts. La siguiente ola, después de un pase de SERP, son intencione
 
 `/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Publicado (PR #176). No se toca enblog.
 
+## Glosario — paridad de maceración, hidrólisis y abocar (2026-11-10)
+
+ES y EN ya estaban publicados. Esta tanda cierra FR, DE, IT, NL y PT. No se midieron volúmenes. El slug sale del nombre que esa cocina usa, no de un calco.
+
+| Término | Keyword de cabeza | Slug | URL de producción |
+|---|---|---|---|
+| Maceración FR | macération en cuisine (se separa de la marinada, de la infusión y de la macération carbonique) | `maceration-en-cuisine` | https://aichef.pro/fr/blog/maceration-en-cuisine |
+| Maceración DE | Mazeration (en casa, ziehen lassen; Einlegen es otra conserva) | `mazeration-kochen` | https://aichef.pro/de/blog/mazeration-kochen |
+| Maceración IT | macerazione in cucina (no es la macerazione carbonica) | `macerazione-in-cucina` | https://aichef.pro/it/blog/macerazione-in-cucina |
+| Maceración NL | macereren (en llano, laten trekken; inmaken es otra cosa) | `macereren-koken` | https://aichef.pro/nl/blog/macereren-koken |
+| Maceración PT | maceração na cozinha (PT-PT; no es la maceração carbónica) | `maceracao-na-cozinha` | https://aichef.pro/pt/blog/maceracao-na-cozinha |
+| Hidrólisis FR | hydrolyse en cuisine | `hydrolyse-en-cuisine` | https://aichef.pro/fr/blog/hydrolyse-en-cuisine |
+| Hidrólisis DE | Hydrolyse kochen | `hydrolyse-kochen` | https://aichef.pro/de/blog/hydrolyse-kochen |
+| Hidrólisis IT | idrolisi in cucina | `idrolisi-in-cucina` | https://aichef.pro/it/blog/idrolisi-in-cucina |
+| Hidrólisis NL | hydrolyse koken | `hydrolyse-koken` | https://aichef.pro/nl/blog/hydrolyse-koken |
+| Hidrólisis PT | hidrólise na cozinha | `hidrolise-na-cozinha` | https://aichef.pro/pt/blog/hidrolise-na-cozinha |
+| Abocar FR | décanter en cuisine (soutirer es de cava; el abocado español cae, al gusto, cerca del demi-sec) | `decanter-en-cuisine` | https://aichef.pro/fr/blog/decanter-en-cuisine |
+| Abocar DE | dekantieren (abgießen también es escurrir pasta; el abocado español cae cerca de halbtrocken) | `dekantieren-kochen` | https://aichef.pro/de/blog/dekantieren-kochen |
+| Abocar IT | decantare in cucina (abboccato es la mención legal del vino, con dos b) | `decantare-in-cucina` | https://aichef.pro/it/blog/decantare-in-cucina |
+| Abocar NL | decanteren (afgieten también es escurrir pasta; el abocado español cae cerca de halfdroog) | `decanteren-keuken` | https://aichef.pro/nl/blog/decanteren-keuken |
+| Abocar PT | decantar na cozinha (PT-PT; el abocado español cae cerca del meio seco) | `decantar-na-cozinha` | https://aichef.pro/pt/blog/decantar-na-cozinha |
+
+ES y EN, ya publicados, con hreflang actualizado a las siete versiones:
+
+- https://aichef.pro/blog/maceracion-concepto-definicion y https://aichef.pro/en/blog/maceration-in-cooking
+- https://aichef.pro/blog/hidrolisis-concepto-definicion y https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking
+- https://aichef.pro/blog/que-significa-abocar-en-cocina y https://aichef.pro/en/blog/what-does-abocar-mean-in-cooking
+
+No había ficha previa con otro slug en FR, DE, IT, NL ni PT para estos tres términos. Homogeneización sigue solo en ES y EN.
+
 ## Glosario — paridad de risotto y focaccia (2026-11-10)
 
 Risotto y focaccia son nombres de plato que todos los mercados buscan tal cual, así que el slug es el término (`risotto`, `focaccia`), como `beurre-blanc`. En inglés sigue el molde `what-is-…` de las fichas EN. No se midieron volúmenes.

@@ -2,7 +2,7 @@
 title: "Qué significa abocar en cocina"
 description: "Abocar es verter un líquido acercando las bocas de dos recipientes y dejar el poso. Qué significan abocado, abocada y abocados, y qué es un vino abocado."
 pubDate: 2024-12-11
-modDate: 2026-10-27
+modDate: 2026-11-10
 category: glosario
 tags: ["abocar", "abocado", "vino", "fondos"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 713
 translations:
   es: "que-significa-abocar-en-cocina"
   en: "what-does-abocar-mean-in-cooking"
+  fr: "decanter-en-cuisine"
+  de: "dekantieren-kochen"
+  it: "decantare-in-cucina"
+  nl: "decanteren-keuken"
+  pt: "decantar-na-cozinha"
 definedTerm:
   name: "Abocar"
   description: "Abocar es verter de un recipiente a otro, acercando las bocas. En la cocina se hace con un líquido que ya ha reposado, para pasarlo limpio y dejar el poso. Abocado, abocada y abocados son el participio de ese verbo. Con el mismo adjetivo se llama también a un vino que no está seco del todo."

@@ -2,7 +2,7 @@
 title: "Hidrólisis: qué es y ejemplos en la cocina"
 description: "La hidrólisis es la reacción en la que el agua rompe una molécula. Tipos, ejemplos al cocinar y en qué se distingue de la reacción de Maillard."
 pubDate: 2026-03-20
-modDate: 2026-10-27
+modDate: 2026-11-10
 category: glosario
 tags: ["hidrólisis", "colágeno", "gelatina"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 3249
 translations:
   es: "hidrolisis-concepto-definicion"
   en: "what-is-hydrolysis-in-cooking"
+  fr: "hydrolyse-en-cuisine"
+  de: "hydrolyse-kochen"
+  it: "idrolisi-in-cucina"
+  nl: "hydrolyse-koken"
+  pt: "hidrolise-na-cozinha"
 definedTerm:
   name: "Hidrólisis"
   description: "La hidrólisis es la reacción en la que el agua divide una molécula grande en moléculas más pequeñas. En la cocina ablanda un guiso largo, convierte el colágeno de un fondo en gelatina y da sabor a un queso o a una salsa de soja. No es la reacción de Maillard."

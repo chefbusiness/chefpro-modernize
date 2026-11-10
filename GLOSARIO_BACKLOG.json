@@ -18707,5 +18707,35 @@
       "nl": "focaccia",
       "pt": "focaccia"
     }
+  },
+  "paridad_2026_11_10_maceracion": {
+    "nota": "Avance real por idioma. No son volúmenes. ES y EN de maceración, hidrólisis y abocar ya estaban. Esta tanda abre FR, DE, IT, NL y PT. Homogeneización sigue solo en ES y EN. El italiano de abocar es decantare; abboccato es la mención legal del vino, no un slug aparte.",
+    "maceracion": {
+      "es": "maceracion-concepto-definicion",
+      "en": "maceration-in-cooking",
+      "fr": "maceration-en-cuisine",
+      "de": "mazeration-kochen",
+      "it": "macerazione-in-cucina",
+      "nl": "macereren-koken",
+      "pt": "maceracao-na-cozinha"
+    },
+    "hidrolisis": {
+      "es": "hidrolisis-concepto-definicion",
+      "en": "what-is-hydrolysis-in-cooking",
+      "fr": "hydrolyse-en-cuisine",
+      "de": "hydrolyse-kochen",
+      "it": "idrolisi-in-cucina",
+      "nl": "hydrolyse-koken",
+      "pt": "hidrolise-na-cozinha"
+    },
+    "abocar": {
+      "es": "que-significa-abocar-en-cocina",
+      "en": "what-does-abocar-mean-in-cooking",
+      "fr": "decanter-en-cuisine",
+      "de": "dekantieren-kochen",
+      "it": "decantare-in-cucina",
+      "nl": "decanteren-keuken",
+      "pt": "decantar-na-cozinha"
+    }
   }
 }
