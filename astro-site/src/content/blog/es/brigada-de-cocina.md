@@ -2,12 +2,23 @@
 title: "Brigada de cocina: organigrama real"
 description: "Cómo organizar la brigada cuando no caben las partidas de un hotel. Los diez puestos del convenio español, una cocina de seis y qué se decide en el pase."
 pubDate: 2026-11-05
-modDate: 2026-11-05
+modDate: 2026-11-14
 category: ia-en-gastronomia
 tags: ["brigada de cocina", "organigrama", "pase", "equipo"]
 lang: es
 image: /blog-assets/2026/11/brigada-de-cocina-destacada.jpg
 imageAlt: "Cuatro cocineros en una cocina profesional, cada uno en su partida, antes del servicio"
+translations:
+  es: "brigada-de-cocina"
+  en: "kitchen-brigade-system"
+  fr: "brigade-de-cuisine"
+  de: "kuechenbrigade"
+  it: "brigata-di-cucina"
+  nl: "keukenbrigade"
+  pt: "brigada-de-cozinha"
+definedTerm:
+  name: "Brigada de cocina"
+  description: "Una brigada de cocina es el reparto de personas, partidas y responsabilidades con el que sacas el servicio. En España, una referencia de esos puestos y de sus tareas está en el ALEH VI, el acuerdo estatal de hostelería, no en el organigrama francés de un hotel. El acuerdo no obliga a tenerlos todos cubiertos."
 faq:
   - q: "¿Qué es una brigada de cocina?"
     a: "Es el reparto de personas, partidas y responsabilidades con el que una cocina saca el servicio. Incluye quién canta el pase, quién cubre el día libre del jefe y quién hace el trabajo de apoyo. El título de una película y el organigrama de un hotel grande son otras dos cosas."

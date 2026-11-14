@@ -65,6 +65,31 @@ Hay unos 70 posts. La siguiente ola, después de un pase de SERP, son intencione
 
 `/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Publicado (PR #176). No se toca enblog.
 
+## Glosario — paridad de curry y brigada de cocina (2026-11-14)
+
+No se midieron volúmenes. El slug sale del nombre que esa cocina usa.
+
+| Término | Keyword de cabeza | Slug | URL de producción |
+|---|---|---|---|
+| Curry EN | what is curry (plato, polvo y hoja; no es una especia única) | `what-is-curry` | https://aichef.pro/en/blog/what-is-curry |
+| Curry FR | curry (masculino; el cari de La Réunion es otra cocina) | `curry` | https://aichef.pro/fr/blog/curry |
+| Curry DE | Curry (se separa de la Currywurst; Kurkuma no es Safran) | `curry` | https://aichef.pro/de/blog/curry |
+| Curry IT | curry | `curry` | https://aichef.pro/it/blog/curry |
+| Curry NL | kerrie (el polvo; el plato se llama a menudo curry) | `kerrie` | https://aichef.pro/nl/blog/kerrie |
+| Curry PT | caril (PT-PT; curry es la forma de Brasil) | `caril` | https://aichef.pro/pt/blog/caril |
+| Brigada FR | brigade de cuisine | `brigade-de-cuisine` | https://aichef.pro/fr/blog/brigade-de-cuisine |
+| Brigada DE | Küchenbrigade | `kuechenbrigade` | https://aichef.pro/de/blog/kuechenbrigade |
+| Brigada NL | keukenbrigade | `keukenbrigade` | https://aichef.pro/nl/blog/keukenbrigade |
+| Brigada PT | brigada de cozinha | `brigada-de-cozinha` | https://aichef.pro/pt/blog/brigada-de-cozinha |
+
+ES, EN e IT de brigada ya estaban y no se reescriben:
+
+- https://aichef.pro/blog/brigada-de-cocina (categoría ia-en-gastronomia)
+- https://aichef.pro/en/blog/kitchen-brigade-system (categoría ai-in-gastronomy)
+- https://aichef.pro/it/blog/brigata-di-cucina (categoría gestione-ristorante)
+
+El hreflang de esas tres y de la ficha española de curry apunta a las siete. El ejemplo de seis personas y unos sesenta cubiertos va marcado como hipótesis, no como ratio. El ALEH VI no se traduce como ley local.
+
 ## Glosario — paridad de maceración, hidrólisis y abocar (2026-11-10)
 
 ES y EN ya estaban publicados. Esta tanda cierra FR, DE, IT, NL y PT. No se midieron volúmenes. El slug sale del nombre que esa cocina usa, no de un calco.

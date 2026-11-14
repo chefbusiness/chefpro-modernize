@@ -18737,5 +18737,26 @@
       "nl": "decanteren-keuken",
       "pt": "decantar-na-cozinha"
     }
+  },
+  "paridad_2026_11_14_curry_brigada": {
+    "nota": "Avance real por idioma. No son volúmenes. El curry español ya era glosario; esta tanda abre EN, FR, DE, IT, NL y PT. NL usa kerrie para el polvo y PT-PT usa caril. La brigada española, la inglesa kitchen-brigade-system y la italiana brigata-di-cucina ya existían fuera de la categoría de glosario y no se reescriben. Esta tanda abre FR, DE, NL y PT en el glosario. El ALEH VI se queda en la ficha española.",
+    "curry": {
+      "es": "curry-concepto-definicion",
+      "en": "what-is-curry",
+      "fr": "curry",
+      "de": "curry",
+      "it": "curry",
+      "nl": "kerrie",
+      "pt": "caril"
+    },
+    "brigada": {
+      "es": "brigada-de-cocina",
+      "en": "kitchen-brigade-system",
+      "fr": "brigade-de-cuisine",
+      "de": "kuechenbrigade",
+      "it": "brigata-di-cucina",
+      "nl": "keukenbrigade",
+      "pt": "brigada-de-cozinha"
+    }
   }
 }

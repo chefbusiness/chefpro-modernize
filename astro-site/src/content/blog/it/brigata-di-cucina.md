@@ -2,12 +2,23 @@
 title: "Brigata di cucina: gerarchia, ruoli e partite — dall'organigramma di Escoffier alla cucina vera"
 description: "Scopri la brigata di cucina: gerarchia, ruoli e partite da Escoffier alla cucina vera. Guida pratica con tabelle e adattamenti."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-14
 category: gestione-ristorante
 tags: ["brigata di cucina", "organizzazione", "personale", "gestione"]
 image: /blog-assets/2026/08/brigata-destacada.jpg
 imageAlt: "Una brigata di cucina in pieno servizio serale vista dal pass: lo chef legge la comanda e quattro cuochi lavorano coordinati alle loro partite"
 lang: it
+translations:
+  es: "brigada-de-cocina"
+  en: "kitchen-brigade-system"
+  fr: "brigade-de-cuisine"
+  de: "kuechenbrigade"
+  it: "brigata-di-cucina"
+  nl: "keukenbrigade"
+  pt: "brigada-de-cozinha"
+definedTerm:
+  name: "Brigata di cucina"
+  description: "La brigata di cucina è l'insieme organizzato del personale che lavora in una cucina professionale, con una gerarchia ben definita e una divisione del lavoro per partite, cioè reparti specializzati."
 faq:
   - q: "Cosa significa brigata di cucina?"
     a: "La brigata di cucina è l'insieme organizzato del personale che lavora in una cucina professionale, con una gerarchia ben definita e una divisione del lavoro per partite, cioè reparti specializzati. Questo modello è stato codificato da Auguste Escoffier nelle grandi cucine d'albergo di fine Ottocento. In pratica, è come una squadra: ogni membro ha un ruolo preciso, dalla direzione alla preparazione dei piatti, per garantire efficienza e ordine anche nei momenti di massimo servizio."

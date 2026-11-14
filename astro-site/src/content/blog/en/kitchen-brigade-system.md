@@ -2,11 +2,22 @@
 title: "Kitchen Brigade System: Chef Hierarchy and Roles Explained"
 description: "The kitchen brigade system organizes a kitchen into ranks and stations. See the full chef hierarchy table, classical roles and how kitchens adapt it today."
 pubDate: 2026-10-05
-modDate: 2026-10-17
+modDate: 2026-11-14
 category: ai-in-gastronomy
 lang: en
 image: /blog-assets/en/2026/10/kitchen-brigade-system-featured.jpg
 imageAlt: "Line cooks working their stations during dinner service while the chef checks plates at the pass"
+translations:
+  es: "brigada-de-cocina"
+  en: "kitchen-brigade-system"
+  fr: "brigade-de-cuisine"
+  de: "kuechenbrigade"
+  it: "brigata-di-cucina"
+  nl: "keukenbrigade"
+  pt: "brigada-de-cozinha"
+definedTerm:
+  name: "Kitchen brigade system"
+  description: "The kitchen brigade system is a way of organizing a professional kitchen into ranks and stations, so every cook knows what they own, who they answer to and who covers them when the tickets start piling up."
 faq:
   - q: "Is the kitchen brigade system still used today?"
     a: "Yes, but usually in a simplified form. Hotels and large restaurants still run something close to the classical brigade, with stations and a clear chain of command. Smaller kitchens merge stations and share tasks, but they keep the core ideas: every cook owns a defined job, answers to a specific supervisor, and is cross-trained to cover absences."
