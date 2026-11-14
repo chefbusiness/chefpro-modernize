@@ -2,12 +2,20 @@
 title: "Curry: qué es, polvo y masala"
 description: "El curry nombra un guiso con salsa especiada y también un polvo comercial. Te explicamos en qué se distingue del masala, de la hoja de curry y de las pastas tailandesas."
 pubDate: 2026-11-05
-modDate: 2026-11-05
+modDate: 2026-11-14
 category: glosario
 tags: ["curry", "masala", "especias", "cocina india"]
 lang: es
 image: /blog-assets/2026/11/curry-concepto-definicion-destacada.jpg
 imageAlt: "Cuenco de guiso especiado con arroz y tres cuencos de comino, cúrcuma y cardamomo sobre acero"
+translations:
+  es: "curry-concepto-definicion"
+  en: "what-is-curry"
+  fr: "curry"
+  de: "curry"
+  it: "curry"
+  nl: "kerrie"
+  pt: "caril"
 definedTerm:
   name: "Curry"
   description: "El curry es, en el uso occidental, el nombre de un guiso con salsa especiada y también el de una mezcla en polvo. En el subcontinente muchos de esos platos conservan nombre propio y a la mezcla se la llama masala; «curry» también se oye en el inglés de la India. La palabra llega del tamil kari, que significa salsa."

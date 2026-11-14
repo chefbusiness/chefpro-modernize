@@ -287,7 +287,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 202 posts (es 81, en 21, fr 20, de 20, it 20, pt 20, nl 20), 81 terms. A language is listed only when that glossary post is published.
+Published entries: 212 posts (es 81, en 22, fr 22, de 22, it 21, pt 22, nl 22), 82 terms. A language is listed only when that glossary post is published.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
 - ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
@@ -306,6 +306,8 @@ Published entries: 202 posts (es 81, en 21, fr 20, de 20, it 20, pt 20, nl 20), 
 - Beurre manié: [es](https://aichef.pro/blog/beurre-manie) [en](https://aichef.pro/en/blog/beurre-manie) [fr](https://aichef.pro/fr/blog/beurre-manie) [de](https://aichef.pro/de/blog/mehlbutter) [it](https://aichef.pro/it/blog/beurre-manie) [pt](https://aichef.pro/pt/blog/beurre-manie) [nl](https://aichef.pro/nl/blog/beurre-manie)
   en: Beurre manié is a paste of soft butter and flour, kneaded in equal parts by weight and left raw. When a finished sauce is too thin, you whisk that paste in, a small piece at a time, and let the sauce simmer gently for about a minute. The starch thickens the sauce, and the butter carries the flour through it. The French name means kneaded butter.
 - Beurre Noisette: [es](https://aichef.pro/blog/beurre-noisette-mantequilla-tostada-guia-tecnica)
+- Brigade de cuisine: [fr](https://aichef.pro/fr/blog/brigade-de-cuisine) [de](https://aichef.pro/de/blog/kuechenbrigade) [pt](https://aichef.pro/pt/blog/brigada-de-cozinha) [nl](https://aichef.pro/nl/blog/keukenbrigade)
+  fr: Une brigade de cuisine est la répartition des personnes, des parties et des responsabilités avec laquelle une cuisine sort le service. Elle dit qui annonce au passe, qui couvre le jour de repos du chef et qui fait le travail d'appui. Le modèle d'Auguste Escoffier est une carte des parties, pas une grille d'embauche. Les noms de poste de votre convention collective, en France ou ailleurs, ne se recopient pas depuis cette page.
 - Brioche: [es](https://aichef.pro/blog/brioche-concepto-definicion)
 - Ceviche: [es](https://aichef.pro/blog/ceviche-concepto-definicion)
 - Chili crisp: [es](https://aichef.pro/blog/chili-crisp)
@@ -314,8 +316,8 @@ Published entries: 202 posts (es 81, en 21, fr 20, de 20, it 20, pt 20, nl 20), 
 - Confit: [es](https://aichef.pro/blog/confit-concepto-definicion)
 - Consomé: [es](https://aichef.pro/blog/consomme-concepto-definicion)
 - Context Window: [es](https://aichef.pro/blog/context-window-ventana-contexto-ia)
-- Curry: [es](https://aichef.pro/blog/curry-concepto-definicion)
-  es: El curry es, en el uso occidental, el nombre de un guiso con salsa especiada y también el de una mezcla en polvo. En el subcontinente muchos de esos platos conservan nombre propio y a la mezcla se la llama masala; «curry» también se oye en el inglés de la India. La palabra llega del tamil kari, que significa salsa.
+- Curry: [es](https://aichef.pro/blog/curry-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-curry) [fr](https://aichef.pro/fr/blog/curry) [de](https://aichef.pro/de/blog/curry) [it](https://aichef.pro/it/blog/curry) [pt](https://aichef.pro/pt/blog/caril) [nl](https://aichef.pro/nl/blog/kerrie)
+  en: In Western kitchens, curry is the name of a dish in a spiced sauce and also the name of a ready-made powder. On the subcontinent many of those dishes keep their own names, and the spice mix is called a masala. The English of India uses curry too. The word comes from the Tamil kari, which means a sauce.
 - Deglasar: [es](https://aichef.pro/blog/deglasear-concepto-definicion)
 - Demi-glace: [es](https://aichef.pro/blog/demi-glace-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-demi-glace) [fr](https://aichef.pro/fr/blog/demi-glace) [de](https://aichef.pro/de/blog/demi-glace) [it](https://aichef.pro/it/blog/demi-glace) [pt](https://aichef.pro/pt/blog/demi-glace) [nl](https://aichef.pro/nl/blog/demi-glace)
   en: Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means "half-glaze," and you will see it spelled demi-glace, demi glace, or demiglace.

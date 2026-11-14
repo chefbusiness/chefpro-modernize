@@ -14,6 +14,17 @@ Quick wins en español (title, definición de 40–60 palabras, FAQ con DefinedT
 
 Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en los 7 idiomas: beurre manié, napar, montar al burro, beurre blanc, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón. Roux (en alemán, Mehlschwitze), emulsión y demi-glace se abren en los idiomas que aún no los tenían y apuntan al post español ya publicado.
 
+## Paridad 2026-11-14 — curry y brigada de cocina
+
+El curry español ya era glosario. La brigada española está en `ia-en-gastronomia`; el inglés `kitchen-brigade-system` y el italiano `brigata-di-cucina` ya existían en otras categorías. Esas tres no se reescriben. Esta tanda abre el curry en EN, FR, DE, IT, NL y PT, y la brigada en FR, DE, NL y PT (categoría de glosario). El hreflang de las cuatro fichas ya publicadas apunta a las siete. No hay volúmenes nuevos.
+
+| Término | ES | EN | FR | DE | IT | NL | PT |
+|---|---|---|---|---|---|---|---|
+| Curry | `es/curry-concepto-definicion` | `en/what-is-curry` | `fr/curry` | `de/curry` | `it/curry` | `nl/kerrie` | `pt/caril` |
+| Brigada | `es/brigada-de-cocina` (ya publicada; no es glosario) | `en/kitchen-brigade-system` (ya publicada; no es glossary) | `fr/brigade-de-cuisine` | `de/kuechenbrigade` | `it/brigata-di-cucina` (ya publicada; no es glossario) | `nl/keukenbrigade` | `pt/brigada-de-cozinha` |
+
+En neerlandés el polvo es kerrie y el guiso se sigue llamando a menudo curry. En portugués de Portugal el término es caril; curry es la forma brasileña. En alemán la ficha separa el Curry del Currywurst. El ALEH VI se queda en la ficha española: las demás remiten al convenio local y no copian artículos del BOE.
+
 ## Paridad 2026-11-10 — maceración, hidrólisis y abocar
 
 ES y EN ya estaban. Esta tanda publica FR, DE, IT, NL y PT. No hay volúmenes nuevos. Homogeneización sigue solo en ES y EN: tenía menos enlaces internos que estos tres.

@@ -164,7 +164,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 202 posts (es 81, en 21, fr 20, de 20, it 20, pt 20, nl 20), 81 terms. A language is listed only when that glossary post is published.
+Published entries: 212 posts (es 81, en 22, fr 22, de 22, it 21, pt 22, nl 22), 82 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
@@ -181,6 +181,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Beurre blanc: [es](https://aichef.pro/blog/beurre-blanc) [en](https://aichef.pro/en/blog/beurre-blanc) [fr](https://aichef.pro/fr/blog/beurre-blanc) [de](https://aichef.pro/de/blog/beurre-blanc) [it](https://aichef.pro/it/blog/burro-bianco) [pt](https://aichef.pro/pt/blog/beurre-blanc) [nl](https://aichef.pro/nl/blog/beurre-blanc)
 - Beurre manié: [es](https://aichef.pro/blog/beurre-manie) [en](https://aichef.pro/en/blog/beurre-manie) [fr](https://aichef.pro/fr/blog/beurre-manie) [de](https://aichef.pro/de/blog/mehlbutter) [it](https://aichef.pro/it/blog/beurre-manie) [pt](https://aichef.pro/pt/blog/beurre-manie) [nl](https://aichef.pro/nl/blog/beurre-manie)
 - Beurre Noisette: [es](https://aichef.pro/blog/beurre-noisette-mantequilla-tostada-guia-tecnica)
+- Brigade de cuisine: [fr](https://aichef.pro/fr/blog/brigade-de-cuisine) [de](https://aichef.pro/de/blog/kuechenbrigade) [pt](https://aichef.pro/pt/blog/brigada-de-cozinha) [nl](https://aichef.pro/nl/blog/keukenbrigade)
 - Brioche: [es](https://aichef.pro/blog/brioche-concepto-definicion)
 - Ceviche: [es](https://aichef.pro/blog/ceviche-concepto-definicion)
 - Chili crisp: [es](https://aichef.pro/blog/chili-crisp)
@@ -189,7 +190,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Confit: [es](https://aichef.pro/blog/confit-concepto-definicion)
 - Consomé: [es](https://aichef.pro/blog/consomme-concepto-definicion)
 - Context Window: [es](https://aichef.pro/blog/context-window-ventana-contexto-ia)
-- Curry: [es](https://aichef.pro/blog/curry-concepto-definicion)
+- Curry: [es](https://aichef.pro/blog/curry-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-curry) [fr](https://aichef.pro/fr/blog/curry) [de](https://aichef.pro/de/blog/curry) [it](https://aichef.pro/it/blog/curry) [pt](https://aichef.pro/pt/blog/caril) [nl](https://aichef.pro/nl/blog/kerrie)
 - Deglasar: [es](https://aichef.pro/blog/deglasear-concepto-definicion)
 - Demi-glace: [es](https://aichef.pro/blog/demi-glace-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-demi-glace) [fr](https://aichef.pro/fr/blog/demi-glace) [de](https://aichef.pro/de/blog/demi-glace) [it](https://aichef.pro/it/blog/demi-glace) [pt](https://aichef.pro/pt/blog/demi-glace) [nl](https://aichef.pro/nl/blog/demi-glace)
 - Egg-yolk liaison: [es](https://aichef.pro/blog/ligado-con-yema) [en](https://aichef.pro/en/blog/egg-yolk-liaison) [fr](https://aichef.pro/fr/blog/liaison-au-jaune) [de](https://aichef.pro/de/blog/legierung-mit-eigelb) [it](https://aichef.pro/it/blog/legante-al-tuorlo) [pt](https://aichef.pro/pt/blog/ligacao-com-gema) [nl](https://aichef.pro/nl/blog/liaison-met-eigeel)
