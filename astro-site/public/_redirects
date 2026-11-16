@@ -1,3 +1,315 @@
+# ── enblog.aichef.pro → aichef.pro/en/blog (cutover 2026-11-16) ──
+# Host-based 301s at the TOP so path-only rules cannot shadow them once
+# enblog.aichef.pro is a Netlify alias. Destinations have no trailing slash
+# (astro-site trailingSlash: never). HTTPS and HTTP. First match wins.
+# DNS CNAME and the Netlify alias are handled outside this PR.
+
+# Portada
+https://enblog.aichef.pro/ https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ https://aichef.pro/en/blog 301!
+
+# 39 posts migrados con el mismo slug (curl 200 el 2026-11-16)
+https://enblog.aichef.pro/ai-cooking-assistant-professional-chefs https://aichef.pro/en/blog/ai-cooking-assistant-professional-chefs 301!
+http://enblog.aichef.pro/ai-cooking-assistant-professional-chefs https://aichef.pro/en/blog/ai-cooking-assistant-professional-chefs 301!
+https://enblog.aichef.pro/ai-food-cost-calculator-reduce-costs https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs 301!
+http://enblog.aichef.pro/ai-food-cost-calculator-reduce-costs https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs 301!
+https://enblog.aichef.pro/ai-food-quality-control-machine-vision https://aichef.pro/en/blog/ai-food-quality-control-machine-vision 301!
+http://enblog.aichef.pro/ai-food-quality-control-machine-vision https://aichef.pro/en/blog/ai-food-quality-control-machine-vision 301!
+https://enblog.aichef.pro/ai-menu-engineering-software https://aichef.pro/en/blog/ai-menu-engineering-software 301!
+http://enblog.aichef.pro/ai-menu-engineering-software https://aichef.pro/en/blog/ai-menu-engineering-software 301!
+https://enblog.aichef.pro/ai-menu-pricing-strategy https://aichef.pro/en/blog/ai-menu-pricing-strategy 301!
+http://enblog.aichef.pro/ai-menu-pricing-strategy https://aichef.pro/en/blog/ai-menu-pricing-strategy 301!
+https://enblog.aichef.pro/ai-recipe-costing-ingredients-profit https://aichef.pro/en/blog/ai-recipe-costing-ingredients-profit 301!
+http://enblog.aichef.pro/ai-recipe-costing-ingredients-profit https://aichef.pro/en/blog/ai-recipe-costing-ingredients-profit 301!
+https://enblog.aichef.pro/ai-recipe-generator-vs-traditional https://aichef.pro/en/blog/ai-recipe-generator-vs-traditional 301!
+http://enblog.aichef.pro/ai-recipe-generator-vs-traditional https://aichef.pro/en/blog/ai-recipe-generator-vs-traditional 301!
+https://enblog.aichef.pro/ai-recipe-scaling-guide https://aichef.pro/en/blog/ai-recipe-scaling-guide 301!
+http://enblog.aichef.pro/ai-recipe-scaling-guide https://aichef.pro/en/blog/ai-recipe-scaling-guide 301!
+https://enblog.aichef.pro/ai-restaurant-management-software https://aichef.pro/en/blog/ai-restaurant-management-software 301!
+http://enblog.aichef.pro/ai-restaurant-management-software https://aichef.pro/en/blog/ai-restaurant-management-software 301!
+https://enblog.aichef.pro/bar-profit-margins-beverage-costing https://aichef.pro/en/blog/bar-profit-margins-beverage-costing 301!
+http://enblog.aichef.pro/bar-profit-margins-beverage-costing https://aichef.pro/en/blog/bar-profit-margins-beverage-costing 301!
+https://enblog.aichef.pro/best-ai-tools-for-chefs-2026 https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026 301!
+http://enblog.aichef.pro/best-ai-tools-for-chefs-2026 https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026 301!
+https://enblog.aichef.pro/best-recipe-costing-software-compared https://aichef.pro/en/blog/best-recipe-costing-software-compared 301!
+http://enblog.aichef.pro/best-recipe-costing-software-compared https://aichef.pro/en/blog/best-recipe-costing-software-compared 301!
+https://enblog.aichef.pro/best-restaurant-management-software-2026 https://aichef.pro/en/blog/best-restaurant-management-software-2026 301!
+http://enblog.aichef.pro/best-restaurant-management-software-2026 https://aichef.pro/en/blog/best-restaurant-management-software-2026 301!
+https://enblog.aichef.pro/break-even-analysis-restaurants-ai https://aichef.pro/en/blog/break-even-analysis-restaurants-ai 301!
+http://enblog.aichef.pro/break-even-analysis-restaurants-ai https://aichef.pro/en/blog/break-even-analysis-restaurants-ai 301!
+https://enblog.aichef.pro/chef-productivity-tools-2026 https://aichef.pro/en/blog/chef-productivity-tools-2026 301!
+http://enblog.aichef.pro/chef-productivity-tools-2026 https://aichef.pro/en/blog/chef-productivity-tools-2026 301!
+https://enblog.aichef.pro/cloud-kitchen-business-models https://aichef.pro/en/blog/cloud-kitchen-business-models 301!
+http://enblog.aichef.pro/cloud-kitchen-business-models https://aichef.pro/en/blog/cloud-kitchen-business-models 301!
+https://enblog.aichef.pro/customer-retention-strategies-restaurants https://aichef.pro/en/blog/customer-retention-strategies-restaurants 301!
+http://enblog.aichef.pro/customer-retention-strategies-restaurants https://aichef.pro/en/blog/customer-retention-strategies-restaurants 301!
+https://enblog.aichef.pro/dark-kitchen-vs-ghost-kitchen-vs-cloud-kitchen https://aichef.pro/en/blog/dark-kitchen-vs-ghost-kitchen-vs-cloud-kitchen 301!
+http://enblog.aichef.pro/dark-kitchen-vs-ghost-kitchen-vs-cloud-kitchen https://aichef.pro/en/blog/dark-kitchen-vs-ghost-kitchen-vs-cloud-kitchen 301!
+https://enblog.aichef.pro/food-delivery-robots-guide https://aichef.pro/en/blog/food-delivery-robots-guide 301!
+http://enblog.aichef.pro/food-delivery-robots-guide https://aichef.pro/en/blog/food-delivery-robots-guide 301!
+https://enblog.aichef.pro/ghost-kitchen-complete-guide https://aichef.pro/en/blog/ghost-kitchen-complete-guide 301!
+http://enblog.aichef.pro/ghost-kitchen-complete-guide https://aichef.pro/en/blog/ghost-kitchen-complete-guide 301!
+https://enblog.aichef.pro/ghost-kitchen-technology-stack https://aichef.pro/en/blog/ghost-kitchen-technology-stack 301!
+http://enblog.aichef.pro/ghost-kitchen-technology-stack https://aichef.pro/en/blog/ghost-kitchen-technology-stack 301!
+https://enblog.aichef.pro/haccp-food-safety-7-principles-restaurants https://aichef.pro/en/blog/haccp-food-safety-7-principles-restaurants 301!
+http://enblog.aichef.pro/haccp-food-safety-7-principles-restaurants https://aichef.pro/en/blog/haccp-food-safety-7-principles-restaurants 301!
+https://enblog.aichef.pro/haccp-plan-template-restaurant-guide https://aichef.pro/en/blog/haccp-plan-template-restaurant-guide 301!
+http://enblog.aichef.pro/haccp-plan-template-restaurant-guide https://aichef.pro/en/blog/haccp-plan-template-restaurant-guide 301!
+https://enblog.aichef.pro/kitchen-display-systems-kds-guide https://aichef.pro/en/blog/kitchen-display-systems-kds-guide 301!
+http://enblog.aichef.pro/kitchen-display-systems-kds-guide https://aichef.pro/en/blog/kitchen-display-systems-kds-guide 301!
+https://enblog.aichef.pro/mental-health-support-chefs-ai https://aichef.pro/en/blog/mental-health-support-chefs-ai 301!
+http://enblog.aichef.pro/mental-health-support-chefs-ai https://aichef.pro/en/blog/mental-health-support-chefs-ai 301!
+https://enblog.aichef.pro/menu-engineering-software-complete-guide https://aichef.pro/en/blog/menu-engineering-software-complete-guide 301!
+http://enblog.aichef.pro/menu-engineering-software-complete-guide https://aichef.pro/en/blog/menu-engineering-software-complete-guide 301!
+https://enblog.aichef.pro/recipe-cost-calculator-pricing-guide https://aichef.pro/en/blog/recipe-cost-calculator-pricing-guide 301!
+http://enblog.aichef.pro/recipe-cost-calculator-pricing-guide https://aichef.pro/en/blog/recipe-cost-calculator-pricing-guide 301!
+https://enblog.aichef.pro/restaurant-food-waste-ai-strategies https://aichef.pro/en/blog/restaurant-food-waste-ai-strategies 301!
+http://enblog.aichef.pro/restaurant-food-waste-ai-strategies https://aichef.pro/en/blog/restaurant-food-waste-ai-strategies 301!
+https://enblog.aichef.pro/restaurant-inventory-management-ai https://aichef.pro/en/blog/restaurant-inventory-management-ai 301!
+http://enblog.aichef.pro/restaurant-inventory-management-ai https://aichef.pro/en/blog/restaurant-inventory-management-ai 301!
+https://enblog.aichef.pro/restaurant-marketing-strategy-2026 https://aichef.pro/en/blog/restaurant-marketing-strategy-2026 301!
+http://enblog.aichef.pro/restaurant-marketing-strategy-2026 https://aichef.pro/en/blog/restaurant-marketing-strategy-2026 301!
+https://enblog.aichef.pro/restaurant-menu-pricing-strategy-ai https://aichef.pro/en/blog/restaurant-menu-pricing-strategy-ai 301!
+http://enblog.aichef.pro/restaurant-menu-pricing-strategy-ai https://aichef.pro/en/blog/restaurant-menu-pricing-strategy-ai 301!
+https://enblog.aichef.pro/restaurant-profit-margin-calculator https://aichef.pro/en/blog/restaurant-profit-margin-calculator 301!
+http://enblog.aichef.pro/restaurant-profit-margin-calculator https://aichef.pro/en/blog/restaurant-profit-margin-calculator 301!
+https://enblog.aichef.pro/restaurant-profit-margins-explained-benchmarks https://aichef.pro/en/blog/restaurant-profit-margins-explained-benchmarks 301!
+http://enblog.aichef.pro/restaurant-profit-margins-explained-benchmarks https://aichef.pro/en/blog/restaurant-profit-margins-explained-benchmarks 301!
+https://enblog.aichef.pro/restaurant-seo-complete-guide https://aichef.pro/en/blog/restaurant-seo-complete-guide 301!
+http://enblog.aichef.pro/restaurant-seo-complete-guide https://aichef.pro/en/blog/restaurant-seo-complete-guide 301!
+https://enblog.aichef.pro/restaurant-technology-2026-guide https://aichef.pro/en/blog/restaurant-technology-2026-guide 301!
+http://enblog.aichef.pro/restaurant-technology-2026-guide https://aichef.pro/en/blog/restaurant-technology-2026-guide 301!
+https://enblog.aichef.pro/restaurant-waste-management-ai https://aichef.pro/en/blog/restaurant-waste-management-ai 301!
+http://enblog.aichef.pro/restaurant-waste-management-ai https://aichef.pro/en/blog/restaurant-waste-management-ai 301!
+https://enblog.aichef.pro/robotic-restaurants-robot-chefs-servers https://aichef.pro/en/blog/robotic-restaurants-robot-chefs-servers 301!
+http://enblog.aichef.pro/robotic-restaurants-robot-chefs-servers https://aichef.pro/en/blog/robotic-restaurants-robot-chefs-servers 301!
+https://enblog.aichef.pro/smart-kitchen-technology-commercial https://aichef.pro/en/blog/smart-kitchen-technology-commercial 301!
+http://enblog.aichef.pro/smart-kitchen-technology-commercial https://aichef.pro/en/blog/smart-kitchen-technology-commercial 301!
+https://enblog.aichef.pro/virtual-kitchen-ai-launch-guide https://aichef.pro/en/blog/virtual-kitchen-ai-launch-guide 301!
+http://enblog.aichef.pro/virtual-kitchen-ai-launch-guide https://aichef.pro/en/blog/virtual-kitchen-ai-launch-guide 301!
+
+# Páginas WP, feed, sitemaps e infra
+https://enblog.aichef.pro/feed https://aichef.pro/en/blog/rss.xml 301!
+http://enblog.aichef.pro/feed https://aichef.pro/en/blog/rss.xml 301!
+https://enblog.aichef.pro/feed/* https://aichef.pro/en/blog/rss.xml 301!
+http://enblog.aichef.pro/feed/* https://aichef.pro/en/blog/rss.xml 301!
+https://enblog.aichef.pro/sitemap_index.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/sitemap_index.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/wp-content/uploads/* https://aichef.pro/blog-assets/en/:splat 301!
+http://enblog.aichef.pro/wp-content/uploads/* https://aichef.pro/blog-assets/en/:splat 301!
+https://enblog.aichef.pro/wp-content/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/wp-content/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/blog https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/blog https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/home https://aichef.pro/en 301!
+http://enblog.aichef.pro/home https://aichef.pro/en 301!
+https://enblog.aichef.pro/about https://aichef.pro/en 301!
+http://enblog.aichef.pro/about https://aichef.pro/en 301!
+https://enblog.aichef.pro/contact https://aichef.pro/en 301!
+http://enblog.aichef.pro/contact https://aichef.pro/en 301!
+https://enblog.aichef.pro/roadmap https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/roadmap https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/libreria-de-prompts https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/libreria-de-prompts https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/politica-de-privacidad https://aichef.pro/en/privacidad 301!
+http://enblog.aichef.pro/politica-de-privacidad https://aichef.pro/en/privacidad 301!
+https://enblog.aichef.pro/robots.txt https://aichef.pro/robots.txt 301!
+http://enblog.aichef.pro/robots.txt https://aichef.pro/robots.txt 301!
+https://enblog.aichef.pro/favicon.ico https://aichef.pro/favicon.ico 301!
+http://enblog.aichef.pro/favicon.ico https://aichef.pro/favicon.ico 301!
+https://enblog.aichef.pro/sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/post-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/post-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/page-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/page-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/category-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/category-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/post_tag-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/post_tag-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/author-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+http://enblog.aichef.pro/author-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/amp https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/amp https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/xmlrpc.php https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/xmlrpc.php https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/wp-login.php https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/wp-login.php https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/wp-admin https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/wp-admin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/2024 https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/2024 https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/2025 https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/2025 https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/2026 https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/2026 https://aichef.pro/en/blog 301!
+
+# Categorías que sí existen en /en/blog/category/...
+https://enblog.aichef.pro/category/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+http://enblog.aichef.pro/category/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+https://enblog.aichef.pro/category/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
+http://enblog.aichef.pro/category/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
+https://enblog.aichef.pro/category/local-ai-guides/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/local-ai-guides/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/tutorials/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/tutorials/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/prompt-library/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/prompt-library/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/category/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/tag/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/tag/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/author/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/author/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-in-gastronomy https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+http://enblog.aichef.pro/ai-in-gastronomy https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+https://enblog.aichef.pro/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+http://enblog.aichef.pro/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+https://enblog.aichef.pro/ai-chef-pro https://aichef.pro/en/blog/category/ai-chef-pro 301!
+http://enblog.aichef.pro/ai-chef-pro https://aichef.pro/en/blog/category/ai-chef-pro 301!
+https://enblog.aichef.pro/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
+http://enblog.aichef.pro/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
+https://enblog.aichef.pro/local-ai-guides https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/local-ai-guides https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/local-ai-guides/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/local-ai-guides/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/tutorials https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/tutorials https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/tutorials/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/tutorials/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/prompt-library https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/prompt-library https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/prompt-library/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/prompt-library/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/pro-ai-recipe-book https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/pro-ai-recipe-book https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-glossary-and-lexicon https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-glossary-and-lexicon https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/culinary-science-glossary-and-lexicon https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/culinary-science-glossary-and-lexicon https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+
+# Guías de ciudad (local-ai-guides): no migradas; si cayeran en :slug darían 404.
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-chicago https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-chicago https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-dubai https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-dubai https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-dublin https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-dublin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-london https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-london https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-los-angeles https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-los-angeles https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-miami https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-miami https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-new-york https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-new-york https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-san-francisco https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-san-francisco https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-sydney https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-sydney https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-toronto https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-toronto https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-chicago https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-chicago https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-dubai https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-dubai https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-dublin https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-dublin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-london https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-london https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-los-angeles https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-los-angeles https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-miami https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-miami https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-new-york https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-new-york https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-san-francisco https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-san-francisco https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-sydney https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-sydney https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-toronto https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-toronto https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-chicago https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-chicago https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-dubai https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-dubai https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-dublin https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-dublin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-london https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-london https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-los-angeles https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-los-angeles https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-miami https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-miami https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-new-york https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-new-york https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-san-francisco https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-san-francisco https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-sydney https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-sydney https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-toronto https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-toronto https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-dublin https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-dublin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-london https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-london https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-new-york https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-new-york https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-sydney https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-sydney https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-toronto https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-toronto https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-chicago https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-chicago https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-dubai https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-dubai https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-dublin https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-dublin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-london https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-london https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-los-angeles https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-los-angeles https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-miami https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-miami https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-new-york https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-new-york https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-san-francisco https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-san-francisco https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-sydney https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-sydney https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-toronto https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-toronto https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-dubai https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-dubai https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-london https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-london https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-los-angeles https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-los-angeles https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-miami https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-miami https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-new-york https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-new-york https://aichef.pro/en/blog 301!
+
+# Genérica: cualquier otro post de un solo segmento conserva el slug si existe en /en/blog
+https://enblog.aichef.pro/:slug https://aichef.pro/en/blog/:slug 301!
+http://enblog.aichef.pro/:slug https://aichef.pro/en/blog/:slug 301!
+# Catch-all (paths de 2+ segmentos no contemplados)
+https://enblog.aichef.pro/* https://aichef.pro/en/blog 301!
+http://enblog.aichef.pro/* https://aichef.pro/en/blog 301!
+# ── fin del bloque enblog.aichef.pro ──
+
 
 # Glosario tanda 1 (2026-10-22): el slug duplicado de Maillard
 # va al canónico. La regla del apex cubre el enlace interno viejo;
@@ -590,137 +902,6 @@ https://blog.aichef.pro/puede-chatgpt-disenar-el-menu-o-la-carta-de-un-restauran
 https://blog.aichef.pro/puede-la-ia-reemplazar-a-los-chefs-transforma-tu-cocina-con-ai-chef-pro https://aichef.pro/blog/puede-la-ia-reemplazar-a-los-chefs-descubre-con-ai-chef-pro 301!
 /blog/tecnologia-de-seguridad-alimentaria-con-ia-transformando-practicas-culinarias /blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes 301!
 https://blog.aichef.pro/tecnologia-de-seguridad-alimentaria-con-ia-transformando-practicas-culinarias https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes 301!
-
-# ── Fase 8B.6: enblog.aichef.pro → aichef.pro/en/blog (generado por fase8b6-301map-en.py) ──
-# ACTIVAR SOLO EN EL CUTOVER (requiere enblog.aichef.pro como alias del site).
-# Orden: excepciones → genérica /:slug → catch-all. First match wins.
-
-# Portada y feed
-https://enblog.aichef.pro/ https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/feed https://aichef.pro/en/blog/rss.xml 301!
-https://enblog.aichef.pro/feed/* https://aichef.pro/en/blog/rss.xml 301!
-https://enblog.aichef.pro/sitemap_index.xml https://aichef.pro/sitemap-index.xml 301!
-
-# Medios: subcarpeta propia (los nombres de fichero chocan con los del ES)
-https://enblog.aichef.pro/wp-content/uploads/* https://aichef.pro/blog-assets/en/:splat 301!
-https://enblog.aichef.pro/wp-content/* https://aichef.pro/en/blog 301!
-
-# Páginas del WordPress inglés
-https://enblog.aichef.pro/blog https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/home https://aichef.pro/en 301!
-https://enblog.aichef.pro/about https://aichef.pro/en 301!
-https://enblog.aichef.pro/contact https://aichef.pro/en 301!
-https://enblog.aichef.pro/roadmap https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/libreria-de-prompts https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/politica-de-privacidad https://aichef.pro/en/privacidad 301!
-
-# Infraestructura del WP: sitemaps, robots, basura de bots y archives de año
-https://enblog.aichef.pro/robots.txt https://aichef.pro/robots.txt 301!
-https://enblog.aichef.pro/favicon.ico https://aichef.pro/favicon.ico 301!
-https://enblog.aichef.pro/sitemap.xml https://aichef.pro/sitemap-index.xml 301!
-https://enblog.aichef.pro/post-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
-https://enblog.aichef.pro/page-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
-https://enblog.aichef.pro/category-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
-https://enblog.aichef.pro/post_tag-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
-https://enblog.aichef.pro/author-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
-https://enblog.aichef.pro/amp https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/xmlrpc.php https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/wp-login.php https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/wp-admin https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/2024 https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/2025 https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/2026 https://aichef.pro/en/blog 301!
-
-# Archives de categoría WP (URLs con la base /category/)
-https://enblog.aichef.pro/category/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
-https://enblog.aichef.pro/category/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
-https://enblog.aichef.pro/category/local-ai-guides/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/category/tutorials/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/category/prompt-library/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/category/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/category/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/category/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/category/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/tag/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/author/* https://aichef.pro/en/blog 301!
-
-# Las MISMAS archives en la RAÍZ, que es su URL canónica en este WP (base
-# de categoría vacía). Van antes de la genérica o acabarían en un 404.
-https://enblog.aichef.pro/ai-in-gastronomy https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
-https://enblog.aichef.pro/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
-https://enblog.aichef.pro/ai-chef-pro https://aichef.pro/en/blog/category/ai-chef-pro 301!
-https://enblog.aichef.pro/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
-https://enblog.aichef.pro/local-ai-guides https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/local-ai-guides/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/tutorials https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/tutorials/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/prompt-library https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/prompt-library/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/pro-ai-recipe-book https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-glossary-and-lexicon https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/culinary-science-glossary-and-lexicon https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
-
-# Las 50 guías de ciudad (local-ai-guides) NO se migran → hub. Explícitas:
-# la genérica de abajo las mandaría a un /en/blog/{slug} que no existe.
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-chicago https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-dubai https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-dublin https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-london https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-los-angeles https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-miami https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-new-york https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-san-francisco https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-sydney https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-customer-retention-for-restaurant-owners-in-toronto https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-chicago https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-dubai https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-dublin https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-london https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-los-angeles https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-miami https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-new-york https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-san-francisco https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-sydney https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-toronto https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-chicago https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-dubai https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-dublin https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-london https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-los-angeles https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-miami https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-new-york https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-san-francisco https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-sydney https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-menu-engineering-for-restaurant-owners-in-toronto https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-dublin https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-london https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-new-york https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-sydney https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-bakers-in-toronto https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-chicago https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-dubai https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-dublin https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-london https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-los-angeles https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-miami https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-new-york https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-san-francisco https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-sydney https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-chefs-in-toronto https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-dubai https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-london https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-los-angeles https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-miami https://aichef.pro/en/blog 301!
-https://enblog.aichef.pro/ai-recipe-costing-for-pastry-chefs-in-new-york https://aichef.pro/en/blog 301!
-
-# Genérica: los 39 posts migrados conservan su slug bajo /en/blog
-https://enblog.aichef.pro/:slug https://aichef.pro/en/blog/:slug 301!
-# Catch-all (paths de 2+ segmentos no contemplados)
-https://enblog.aichef.pro/* https://aichef.pro/en/blog 301!
-# ── fin del bloque enblog.aichef.pro ──
 
 # ── Fase 8D: consolidación del clúster sous-vide (2026-08-03) ──
 /blog/sous-vide-avanzado-concepto-y-definicion /blog/sous-vide-concepto-definicion 301!
