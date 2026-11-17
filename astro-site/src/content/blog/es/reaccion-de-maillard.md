@@ -2,12 +2,20 @@
 title: "Reacción de Maillard: qué es y en qué no es caramelizar"
 description: "La reacción de Maillard dora y aromatiza aminoácidos y azúcares en seco. El agua la frena. No es la caramelización, que solo necesita azúcar."
 pubDate: 2026-03-02
-modDate: 2026-10-22
+modDate: 2026-11-17
 category: glosario
 image: /blog-assets/2026/05/maillard-destacada.jpg
 imageAlt: "Reacción de Maillard en carne sellada"
 lang: es
 wpId: 2692
+translations:
+  es: "reaccion-de-maillard"
+  en: "maillard-reaction"
+  fr: "reaction-de-maillard"
+  de: "maillard-reaktion"
+  it: "reazione-di-maillard"
+  nl: "maillardreactie"
+  pt: "reacao-de-maillard"
 definedTerm:
   name: "Reacción de Maillard"
   description: "La reacción de Maillard dora y da aroma a tostado cuando aminoácidos y azúcares se encuentran en una superficie seca y caliente. El agua lo frena, porque esa superficie no pasa del hervor. No es la caramelización, que solo necesita azúcar. En el pase es la costra de la carne, la corteza del pan y el tueste del café."

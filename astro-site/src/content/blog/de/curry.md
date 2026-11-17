@@ -1,8 +1,8 @@
 ---
 title: "Curry: was es ist, Pulver und Masala"
-description: "Curry nennt einen Schmorgericht in gewürzter Sauce und auch ein Pulver aus dem Handel. Was es vom Masala, vom Curryblatt und von der Currywurst trennt."
+description: "Curry nennt ein Schmorgericht in gewürzter Sauce und auch ein Pulver aus dem Handel. Was es vom Masala, vom Curryblatt und von der Currywurst trennt."
 pubDate: 2026-11-14
-modDate: 2026-11-14
+modDate: 2026-11-17
 category: glossar
 tags: ["Curry", "Masala", "Gewürze", "indische Küche"]
 lang: de

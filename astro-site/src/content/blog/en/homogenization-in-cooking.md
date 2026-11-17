@@ -2,7 +2,7 @@
 title: "Homogenization: what it is in milk and in a sauce"
 description: "Homogenization, or homogenisation, breaks particles down so a mixture stays together. What it does to milk, and how it differs from pasteurization."
 pubDate: 2026-10-27
-modDate: 2026-10-27
+modDate: 2026-11-17
 category: glossary
 tags: ["homogenization", "milk", "emulsion", "ice cream"]
 lang: en
@@ -11,6 +11,11 @@ imageAlt: "Two glasses of whole milk, one with a cream layer on top and one unif
 translations:
   es: "homogeneizacion-concepto-definicion"
   en: "homogenization-in-cooking"
+  fr: "homogeneisation-en-cuisine"
+  de: "homogenisierung-kochen"
+  it: "omogeneizzazione-in-cucina"
+  nl: "homogeniseren-koken"
+  pt: "homogeneizacao-na-cozinha"
 definedTerm:
   name: "Homogenization"
   description: "Homogenization is the mechanical process that shrinks the particles in a mixture so they do not separate. In milk, it breaks the fat so the cream stops rising. A blender does a smaller version of the same job on a sauce. The British spelling is homogenisation."

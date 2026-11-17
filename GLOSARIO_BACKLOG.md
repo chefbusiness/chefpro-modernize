@@ -14,6 +14,25 @@ Quick wins en español (title, definición de 40–60 palabras, FAQ con DefinedT
 
 Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en los 7 idiomas: beurre manié, napar, montar al burro, beurre blanc, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón. Roux (en alemán, Mehlschwitze), emulsión y demi-glace se abren en los idiomas que aún no los tenían y apuntan al post español ya publicado.
 
+## Paridad 2026-11-17 — homogeneización, Maillard y fondo oscuro
+
+Homogeneización solo estaba en ES y EN. Maillard solo en ES (`es/reaccion-de-maillard`); el slug viejo `maillard-concepto-y-definicion-2` sigue en 301 y no se reabre. El fondo oscuro italiano ya era `it/fondo-bruno` en `tecnica-e-ricette`: no se reescribe; el hreflang de las otras seis fichas apunta ahí. No hay volúmenes nuevos. La errata de la meta de `/de/blog/curry` («einen Schmorgericht») queda en «ein Schmorgericht».
+
+| Término | ES | EN | FR | DE | IT | NL | PT |
+|---|---|---|---|---|---|---|---|
+| Homogeneización | `es/homogeneizacion-concepto-definicion` | `en/homogenization-in-cooking` | `fr/homogeneisation-en-cuisine` | `de/homogenisierung-kochen` | `it/omogeneizzazione-in-cucina` | `nl/homogeniseren-koken` | `pt/homogeneizacao-na-cozinha` |
+| Reacción de Maillard | `es/reaccion-de-maillard` | `en/maillard-reaction` | `fr/reaction-de-maillard` | `de/maillard-reaktion` | `it/reazione-di-maillard` | `nl/maillardreactie` | `pt/reacao-de-maillard` |
+| Fondo oscuro | `es/fondo-oscuro-concepto-y-definicion` | `en/what-is-brown-stock` | `fr/fond-brun` | `de/brauner-fond` | `it/fondo-bruno` (ya publicado; no es glossario) | `nl/bruine-fond` | `pt/fundo-escuro` |
+
+El clúster de salsas y fondos que ya estaba cerrado en los siete idiomas no se toca: roux, demi-glace, emulsión, beurre manié, napar, montar al burro, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón (ES `ligar-con-maicena`).
+
+Pendiente, fuera del cupo de esta tanda:
+
+| Término | ES | Falta |
+|---|---|---|
+| Fondo blanco | `es/fondo-blanco-concepto-y-definicion` | EN, FR, DE, IT, NL, PT |
+| Deglasar | `es/deglasear-concepto-definicion` | EN, FR, DE, IT, NL, PT |
+
 ## Paridad 2026-11-14 — curry y brigada de cocina
 
 El curry español ya era glosario. La brigada española está en `ia-en-gastronomia`; el inglés `kitchen-brigade-system` y el italiano `brigata-di-cucina` ya existían en otras categorías. Esas tres no se reescriben. Esta tanda abre el curry en EN, FR, DE, IT, NL y PT, y la brigada en FR, DE, NL y PT (categoría de glosario). El hreflang de las cuatro fichas ya publicadas apunta a las siete. No hay volúmenes nuevos.

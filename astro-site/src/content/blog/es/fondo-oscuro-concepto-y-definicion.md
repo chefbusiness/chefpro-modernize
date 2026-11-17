@@ -2,12 +2,20 @@
 title: "Fondo oscuro: qué es y cómo se elabora"
 description: "El fondo oscuro es un caldo de huesos y recortes tostados, con verduras, tomate y hierbas. Color caoba y base de las salsas clásicas de carne."
 pubDate: 2026-02-19
-modDate: 2026-10-22
+modDate: 2026-11-17
 category: glosario
 image: /blog-assets/2026/05/fondo-oscuro-destacada.jpg
 imageAlt: "Fondo oscuro intenso en olla"
 lang: es
 wpId: 2734
+translations:
+  es: "fondo-oscuro-concepto-y-definicion"
+  en: "what-is-brown-stock"
+  fr: "fond-brun"
+  de: "brauner-fond"
+  it: "fondo-bruno"
+  nl: "bruine-fond"
+  pt: "fundo-escuro"
 ---
 
 <p>En cocina, <strong>qué es el fondo oscuro</strong> se entiende mejor si lo piensas como la esencia concentrada del sabor de la carne. Es un caldo intenso que se elabora con huesos y recortes que primero se tuestan en el horno, a los que se suman verduras, tomate y hierbas, y que luego se cocina durante horas hasta lograr un líquido de color caoba profundo y un sabor que llena la boca. Es la base sobre la que se construyen salsas clásicas como la española y la demi-glace.</p>
