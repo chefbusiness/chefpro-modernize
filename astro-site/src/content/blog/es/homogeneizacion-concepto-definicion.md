@@ -2,7 +2,7 @@
 title: "Homogeneización: qué es y qué no es pasteurizar"
 description: "La homogeneización, o homogenización, parte las partículas para que la mezcla no se separe. Qué hace en la leche y en una salsa, y por qué no es pasteurizar."
 pubDate: 2026-03-19
-modDate: 2026-10-27
+modDate: 2026-11-17
 category: glosario
 tags: ["homogeneización", "homogenización", "leche", "emulsión", "helado"]
 lang: es
@@ -12,6 +12,11 @@ wpId: 3244
 translations:
   es: "homogeneizacion-concepto-definicion"
   en: "homogenization-in-cooking"
+  fr: "homogeneisation-en-cuisine"
+  de: "homogenisierung-kochen"
+  it: "omogeneizzazione-in-cucina"
+  nl: "homogeniseren-koken"
+  pt: "homogeneizacao-na-cozinha"
 definedTerm:
   name: "Homogeneización"
   description: "La homogeneización es el proceso mecánico que reduce las partículas de una mezcla para que no se separen. En la leche, parte la grasa y la nata deja de subir. En una salsa, una batidora hace un trabajo parecido, más modesto. También se escribe homogenización: es la misma técnica."

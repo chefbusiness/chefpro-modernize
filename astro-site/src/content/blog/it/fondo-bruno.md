@@ -2,12 +2,20 @@
 title: "Fondo bruno e demi-glace: ricetta professionale e salse derivate"
 description: "Fondo bruno e demi-glace (anche cercata come demi glace): proporzioni per 5 litri, cottura e salse derivate. La demi-glace è il fondo ridotto della metà."
 pubDate: 2026-08-16
-modDate: 2026-10-22
+modDate: 2026-11-17
 category: tecnica-e-ricette
 tags: ["fondo bruno", "salse", "tecnica di cucina", "preparazioni di base"]
 image: /blog-assets/2026/08/fondo-bruno-destacada.jpg
 imageAlt: "Un mestolo solleva il fondo bruno color mogano da una pentola che sobbolle, accanto alla placca con le ossa tostate"
 lang: it
+translations:
+  es: "fondo-oscuro-concepto-y-definicion"
+  en: "what-is-brown-stock"
+  fr: "fond-brun"
+  de: "brauner-fond"
+  it: "fondo-bruno"
+  nl: "bruine-fond"
+  pt: "fundo-escuro"
 faq:
   - q: "Che cosa è il fondo bruno?"
     a: "Il fondo bruno è una preparazione di base della cucina classica: un liquido concentrato e gelatinoso ottenuto da ossa tostate, classicamente di vitello, cotte a lungo in acqua con mirepoix e aromi. Non è un brodo: non si beve e non si sala mai, perché verrà ridotto. Le ossa si tostano prima in forno a 200-220 °C per 45-60 minuti, poi si sobbollono a circa 90 °C. È la base delle salse brune e dei jus."

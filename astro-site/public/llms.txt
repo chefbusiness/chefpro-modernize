@@ -164,7 +164,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 212 posts (es 81, en 22, fr 22, de 22, it 21, pt 22, nl 22), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 228 posts (es 81, en 24, fr 25, de 25, it 23, pt 25, nl 25), 82 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
@@ -183,6 +183,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Beurre Noisette: [es](https://aichef.pro/blog/beurre-noisette-mantequilla-tostada-guia-tecnica)
 - Brigade de cuisine: [fr](https://aichef.pro/fr/blog/brigade-de-cuisine) [de](https://aichef.pro/de/blog/kuechenbrigade) [pt](https://aichef.pro/pt/blog/brigada-de-cozinha) [nl](https://aichef.pro/nl/blog/keukenbrigade)
 - Brioche: [es](https://aichef.pro/blog/brioche-concepto-definicion)
+- Brown stock: [es](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-brown-stock) [fr](https://aichef.pro/fr/blog/fond-brun) [de](https://aichef.pro/de/blog/brauner-fond) [pt](https://aichef.pro/pt/blog/fundo-escuro) [nl](https://aichef.pro/nl/blog/bruine-fond)
 - Ceviche: [es](https://aichef.pro/blog/ceviche-concepto-definicion)
 - Chili crisp: [es](https://aichef.pro/blog/chili-crisp)
 - Cocción a baja temperatura: [es](https://aichef.pro/blog/coccion-a-baja-temperatura-concepto-y-definicion)
@@ -207,19 +208,19 @@ One-line definitions of these entries are in llms-full.txt.
 - Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
 - Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
 - Fondo blanco: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion)
-- Fondo oscuro: [es](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion)
 - Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
 - Gelificación: [es](https://aichef.pro/blog/gelificacion-concepto-definicion)
 - Glace de viande: [es](https://aichef.pro/blog/glace-de-viande) [en](https://aichef.pro/en/blog/glace-de-viande) [fr](https://aichef.pro/fr/blog/glace-de-viande) [de](https://aichef.pro/de/blog/fleischglace) [it](https://aichef.pro/it/blog/glace-de-viande) [pt](https://aichef.pro/pt/blog/glace-de-viande) [nl](https://aichef.pro/nl/blog/vleesglace)
 - Glaseado (glazing): [es](https://aichef.pro/blog/glazing-concepto-definicion)
 - Goma Xantana: [es](https://aichef.pro/blog/goma-xantana-concepto-definicion)
-- Homogenization: [es](https://aichef.pro/blog/homogeneizacion-concepto-definicion) [en](https://aichef.pro/en/blog/homogenization-in-cooking)
+- Homogenization: [es](https://aichef.pro/blog/homogeneizacion-concepto-definicion) [en](https://aichef.pro/en/blog/homogenization-in-cooking) [fr](https://aichef.pro/fr/blog/homogeneisation-en-cuisine) [de](https://aichef.pro/de/blog/homogenisierung-kochen) [it](https://aichef.pro/it/blog/omogeneizzazione-in-cucina) [pt](https://aichef.pro/pt/blog/homogeneizacao-na-cozinha) [nl](https://aichef.pro/nl/blog/homogeniseren-koken)
 - Hydrolysis: [es](https://aichef.pro/blog/hidrolisis-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-hydrolysis-in-cooking) [fr](https://aichef.pro/fr/blog/hydrolyse-en-cuisine) [de](https://aichef.pro/de/blog/hydrolyse-kochen) [it](https://aichef.pro/it/blog/idrolisi-in-cucina) [pt](https://aichef.pro/pt/blog/hidrolise-na-cozinha) [nl](https://aichef.pro/nl/blog/hydrolyse-koken)
 - Incrustación: [es](https://aichef.pro/blog/incrustacion-concepto-definicion)
 - Lecitina de Soja: [es](https://aichef.pro/blog/lecitina-de-soja-concepto-y-definicion)
 - Liofilización: [es](https://aichef.pro/blog/liofilizacion-concepto-definicion)
 - LLM (Large Language Model): [es](https://aichef.pro/blog/llm-large-language-model-cocina)
 - Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking) [fr](https://aichef.pro/fr/blog/maceration-en-cuisine) [de](https://aichef.pro/de/blog/mazeration-kochen) [it](https://aichef.pro/it/blog/macerazione-in-cucina) [pt](https://aichef.pro/pt/blog/maceracao-na-cozinha) [nl](https://aichef.pro/nl/blog/macereren-koken)
+- Maillard reaction: [es](https://aichef.pro/blog/reaccion-de-maillard) [en](https://aichef.pro/en/blog/maillard-reaction) [fr](https://aichef.pro/fr/blog/reaction-de-maillard) [de](https://aichef.pro/de/blog/maillard-reaktion) [it](https://aichef.pro/it/blog/reazione-di-maillard) [pt](https://aichef.pro/pt/blog/reacao-de-maillard) [nl](https://aichef.pro/nl/blog/maillardreactie)
 - Mandoline: [es](https://aichef.pro/blog/mandolina-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-a-mandoline-slicer) [fr](https://aichef.pro/fr/blog/mandoline-de-cuisine) [de](https://aichef.pro/de/blog/mandoline-kueche) [it](https://aichef.pro/it/blog/mandolina-da-cucina) [pt](https://aichef.pro/pt/blog/mandolina-de-cozinha) [nl](https://aichef.pro/nl/blog/mandoline-keuken)
 - Mayonesa: [es](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
 - Mise en Place: [es](https://aichef.pro/blog/mise-en-place)
@@ -228,7 +229,6 @@ One-line definitions of these entries are in llms-full.txt.
 - Nitrógeno Líquido: [es](https://aichef.pro/blog/nitrogeno-liquido-concepto-definicion)
 - Oxidación en cocina: [es](https://aichef.pro/blog/oxidacion-concepto-definicion)
 - Pasteurización: [es](https://aichef.pro/blog/pasteurizacion-concepto-definicion)
-- Reacción de Maillard: [es](https://aichef.pro/blog/reaccion-de-maillard)
 - Reduction: [es](https://aichef.pro/blog/reduccion-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-reduction-in-cooking) [fr](https://aichef.pro/fr/blog/reduction-en-cuisine) [de](https://aichef.pro/de/blog/reduktion-kochen) [it](https://aichef.pro/it/blog/riduzione-in-cucina) [pt](https://aichef.pro/pt/blog/reducao-na-cozinha) [nl](https://aichef.pro/nl/blog/reduceren-koken)
 - Risotto: [es](https://aichef.pro/blog/que-es-el-risotto) [en](https://aichef.pro/en/blog/what-is-risotto) [fr](https://aichef.pro/fr/blog/risotto) [de](https://aichef.pro/de/blog/risotto) [it](https://aichef.pro/it/blog/risotto) [pt](https://aichef.pro/pt/blog/risotto) [nl](https://aichef.pro/nl/blog/risotto)
 - Roner: [es](https://aichef.pro/blog/roner-concepto-y-definicion-2)
