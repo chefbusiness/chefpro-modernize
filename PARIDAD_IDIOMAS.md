@@ -174,3 +174,9 @@ Beurre blanc ya estaba en los siete idiomas. El italiano es https://aichef.pro/i
 ## Formación y contacto — hechos que no se negocian al localizar
 
 Precios publicados en la página española, base España peninsular, IVA excluido, desplazamiento aparte: conferencia 990 €, workshop 1.490 €, jornada 2.490 €, programa 4.990 €, consultoría in situ desde 4.990 €. FUNDAE solo existe como beneficio en el mercado español. Las páginas nuevas no ofrecen CPF, Bildungsgutschein, fondos interprofesionales, IEFP ni SLIM. La sesión en directo la da John en español o en inglés. El material puede ir en la lengua de la página. No se afirma fluidez en las otras cinco.
+
+## ES estacional 2026-11-18
+
+| Pieza | Keyword | Estado |
+|---|---|---|
+| Menú de Navidad para empresas y grupos, con escandallo y alérgenos | menú de navidad para empresas | En PR: `/blog/menu-de-navidad-para-empresas` |

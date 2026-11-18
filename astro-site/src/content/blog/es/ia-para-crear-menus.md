@@ -96,7 +96,7 @@ La planificación semanal es pura logística. Con la IA, generas un menú de lun
 
 ### Menús para eventos y grupos
 
-Bodas, comuniones, cenas de empresa, menús para grupos de 30 a 150 comensales. La IA te ayuda a generar propuestas cerradas con dos o tres opciones de entrante, principal y postre, adaptadas a restricciones alimentarias y con un coste estimado por persona. Además, puedes crear variantes de evento directamente: menú infantil, menú especial para alérgicos, etc.
+Bodas, comuniones, cenas de empresa, menús para grupos de 30 a 150 comensales. La IA te ayuda a generar propuestas cerradas con dos o tres opciones de entrante, principal y postre, adaptadas a restricciones alimentarias y con un coste estimado por persona. Además, puedes crear variantes de evento directamente: menú infantil, menú especial para alérgicos, etc. Para la cena de Navidad de una empresa, con precio cerrado y ficha de alérgenos, sigue [cómo crear el menú de Navidad para empresas](https://aichef.pro/blog/menu-de-navidad-para-empresas).
 
 **Ejemplo de prompt:** «Propón un menú para un cóctel de empresa de 60 personas, con base de pinchos y tapas de autor, que incluya opciones sin gluten, veganas y para embarazadas. Calcula un coste orientativo de materia prima por persona inferior a 12 €».
 
