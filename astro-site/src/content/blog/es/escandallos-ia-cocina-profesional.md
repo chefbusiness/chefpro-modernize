@@ -37,6 +37,8 @@ Muchos cocineros confunden el escandallo con la ficha técnica. No son lo mismo,
 
 ## Por Qué el Escandallo Decide tu Margen
 
+Si el plato entra en un menú cerrado de diciembre para un grupo, la misma cuenta se hace por cubierto completo, no solo por el plato suelto: está desarrollada en [el menú de Navidad para empresas](https://aichef.pro/blog/menu-de-navidad-para-empresas).
+
 El food cost porcentual es el indicador más vigilado en cualquier cocina profesional. Se calcula dividiendo el coste de materia prima entre el precio de venta sin impuestos. Si un plato te cuesta 4,00 € en ingredientes y lo vendes a 14,00 € (sin IVA), tu food cost es del 28,6%. El margen bruto, en ese caso, roza el 71%.
 
 Ese margen bruto todavía tiene que pagar personal, alquiler, suministros, impuestos y un sinfín de gastos. En restauración, el margen neto rara vez supera el 10%. Por eso cada punto de food cost que se te escapa no es una anécdota: es beneficio que desaparece. Un plato mal escandallado puede estar dando pérdidas durante semanas sin que nadie lo note. Basta con que el precio de un ingrediente suba un 15% y no lo actualices para que tu margen se evapore.
