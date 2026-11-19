@@ -18758,5 +18758,35 @@
       "nl": "keukenbrigade",
       "pt": "brigada-de-cozinha"
     }
+  },
+  "paridad_2026_11_19_fondo_blanco_deglasar": {
+    "nota": "Avance real por idioma. No son volúmenes. Fondo blanco y deglasar solo estaban en ES. No había ficha previa en EN, FR, DE, IT, NL ni PT. NL usa witte fond y nombra blanke fond, que es como lo llama la ficha de bruine fond. DE usa ablöschen y nombra deglacieren. IT usa deglassare y nombra sfumare. PT-PT usa deglaçar. Velouté sigue solo en ES.",
+    "fondo_blanco": {
+      "es": "fondo-blanco-concepto-y-definicion",
+      "en": "what-is-white-stock",
+      "fr": "fond-blanc",
+      "de": "heller-fond",
+      "it": "fondo-bianco",
+      "nl": "witte-fond",
+      "pt": "fundo-branco"
+    },
+    "deglasar": {
+      "es": "deglasear-concepto-definicion",
+      "en": "what-is-deglazing",
+      "fr": "deglacer",
+      "de": "abloeschen",
+      "it": "deglassare",
+      "nl": "deglaceren",
+      "pt": "deglacar"
+    },
+    "pendiente": [
+      "es/salsa-veloute-concepto-y-definicion",
+      "es/salsa-espanola-concepto-y-definicion",
+      "es/salsa-holandesa-concepto-y-definicion",
+      "es/bechamel-concepto-y-definicion",
+      "es/salsa-bearnesa-concepto-y-definicion",
+      "es/salsas-madre-cocina-guia"
+    ],
+    "salsas_madre_it_ya_publicado": "it/salse-madri"
   }
 }

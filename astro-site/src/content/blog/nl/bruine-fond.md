@@ -2,7 +2,7 @@
 title: "Bruine fond: wat het is, en wat het niet is"
 description: "Bruine fond is botten en snijsel, eerst geroosterd, dan met groente, tomaat en kruiden gekookt. Mahoniekleur, basis van de bruine sauzen."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-19
 category: glossarium
 tags: ["bruine fond", "fond", "demi-glace", "saus"]
 lang: nl
@@ -73,7 +73,7 @@ Een [visfumet](https://aichef.pro/nl/blog/visfumet) is de bleke fond van graten.
 
 Een [demi-glace](https://aichef.pro/nl/blog/demi-glace) is niet de fond. Het is de saus die u uit bruine fond bouwt en reduceert tot ze nappt. Een [vleesglace](https://aichef.pro/nl/blog/vleesglace) is de fond verder gereduceerd, tot hij koud geleert. De fond is de uitgangsvloeistof. De andere twee zijn wat u ermee doet.
 
-Blanke fond is het bleke tegenstuk. De botten worden niet geroosterd, tomaat blijft buiten, en de smaak blijft stil zodat een velouté of een heldere soep iets anders kan dragen. Een Nederlandse glossariumfiche daarvoor is er nog niet. Het contrast is het roosteren.
+[Witte fond](https://aichef.pro/nl/blog/witte-fond), in de brigade ook blanke fond, is het bleke tegenstuk. De botten worden niet geroosterd, tomaat blijft buiten, en de smaak blijft stil zodat een velouté of een heldere soep iets anders kan dragen. Het contrast is het roosteren.
 
 ## Op de passe
 

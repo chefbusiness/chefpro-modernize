@@ -175,6 +175,32 @@ Beurre blanc ya estaba en los siete idiomas. El italiano es https://aichef.pro/i
 
 Precios publicados en la página española, base España peninsular, IVA excluido, desplazamiento aparte: conferencia 990 €, workshop 1.490 €, jornada 2.490 €, programa 4.990 €, consultoría in situ desde 4.990 €. FUNDAE solo existe como beneficio en el mercado español. Las páginas nuevas no ofrecen CPF, Bildungsgutschein, fondos interprofesionales, IEFP ni SLIM. La sesión en directo la da John en español o en inglés. El material puede ir en la lengua de la página. No se afirma fluidez en las otras cinco.
 
+## Glosario — paridad de fondo blanco y deglasar (2026-11-19)
+
+No se midieron volúmenes. El slug sale del nombre que esa cocina usa. No había ficha previa en otro idioma ni en otra categoría: se buscaron fond blanc, white stock, heller Fond, fondo bianco, witte fond, blanke fond, fundo branco, déglacer, deglaze, ablöschen, deglacieren, deglassare, sfumare, deglaceren y deglaçar. Las imágenes del fondo blanco español se reutilizan. Las del deglasado español llevan manos y marca, así que hay dos fotos nuevas.
+
+| Término | Keyword de cabeza | Slug | URL de producción |
+|---|---|---|---|
+| Fondo blanco EN | white stock (fond blanc es el nombre francés de la ficha) | `what-is-white-stock` | https://aichef.pro/en/blog/what-is-white-stock |
+| Fondo blanco FR | fond blanc | `fond-blanc` | https://aichef.pro/fr/blog/fond-blanc |
+| Fondo blanco DE | heller Fond | `heller-fond` | https://aichef.pro/de/blog/heller-fond |
+| Fondo blanco IT | fondo bianco | `fondo-bianco` | https://aichef.pro/it/blog/fondo-bianco |
+| Fondo blanco NL | witte fond (blanke fond es el otro nombre, el de la ficha de bruine fond) | `witte-fond` | https://aichef.pro/nl/blog/witte-fond |
+| Fondo blanco PT | fundo branco (PT-PT) | `fundo-branco` | https://aichef.pro/pt/blog/fundo-branco |
+| Deglasar EN | deglaze / deglazing | `what-is-deglazing` | https://aichef.pro/en/blog/what-is-deglazing |
+| Deglasar FR | déglacer | `deglacer` | https://aichef.pro/fr/blog/deglacer |
+| Deglasar DE | ablöschen (deglacieren es el mismo gesto) | `abloeschen` | https://aichef.pro/de/blog/abloeschen |
+| Deglasar IT | deglassare (en brigada, sfumare) | `deglassare` | https://aichef.pro/it/blog/deglassare |
+| Deglasar NL | deglaceren | `deglaceren` | https://aichef.pro/nl/blog/deglaceren |
+| Deglasar PT | deglaçar (PT-PT) | `deglacar` | https://aichef.pro/pt/blog/deglacar |
+
+ES, ya publicado, con hreflang actualizado a las siete:
+
+- https://aichef.pro/blog/fondo-blanco-concepto-y-definicion
+- https://aichef.pro/blog/deglasear-concepto-definicion
+
+Velouté sigue solo en https://aichef.pro/blog/salsa-veloute-concepto-y-definicion. Las fichas nuevas lo nombran y no lo enlazan. Las horas y la temperatura del fondo blanco son las de la ficha española, no una medición nueva.
+
 ## ES estacional 2026-11-18
 
 | Pieza | Keyword | Estado |

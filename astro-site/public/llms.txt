@@ -165,7 +165,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 228 posts (es 81, en 24, fr 25, de 25, it 23, pt 25, nl 25), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 82 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
@@ -193,7 +193,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Consomé: [es](https://aichef.pro/blog/consomme-concepto-definicion)
 - Context Window: [es](https://aichef.pro/blog/context-window-ventana-contexto-ia)
 - Curry: [es](https://aichef.pro/blog/curry-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-curry) [fr](https://aichef.pro/fr/blog/curry) [de](https://aichef.pro/de/blog/curry) [it](https://aichef.pro/it/blog/curry) [pt](https://aichef.pro/pt/blog/caril) [nl](https://aichef.pro/nl/blog/kerrie)
-- Deglasar: [es](https://aichef.pro/blog/deglasear-concepto-definicion)
+- Deglazing: [es](https://aichef.pro/blog/deglasear-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-deglazing) [fr](https://aichef.pro/fr/blog/deglacer) [de](https://aichef.pro/de/blog/abloeschen) [it](https://aichef.pro/it/blog/deglassare) [pt](https://aichef.pro/pt/blog/deglacar) [nl](https://aichef.pro/nl/blog/deglaceren)
 - Demi-glace: [es](https://aichef.pro/blog/demi-glace-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-demi-glace) [fr](https://aichef.pro/fr/blog/demi-glace) [de](https://aichef.pro/de/blog/demi-glace) [it](https://aichef.pro/it/blog/demi-glace) [pt](https://aichef.pro/pt/blog/demi-glace) [nl](https://aichef.pro/nl/blog/demi-glace)
 - Egg-yolk liaison: [es](https://aichef.pro/blog/ligado-con-yema) [en](https://aichef.pro/en/blog/egg-yolk-liaison) [fr](https://aichef.pro/fr/blog/liaison-au-jaune) [de](https://aichef.pro/de/blog/legierung-mit-eigelb) [it](https://aichef.pro/it/blog/legante-al-tuorlo) [pt](https://aichef.pro/pt/blog/ligacao-com-gema) [nl](https://aichef.pro/nl/blog/liaison-met-eigeel)
 - Emulsion: [es](https://aichef.pro/blog/emulsion-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-an-emulsion) [fr](https://aichef.pro/fr/blog/emulsion-culinaire) [de](https://aichef.pro/de/blog/emulsion-kueche) [it](https://aichef.pro/it/blog/emulsione) [pt](https://aichef.pro/pt/blog/emulsao) [nl](https://aichef.pro/nl/blog/emulsie)
@@ -208,7 +208,6 @@ One-line definitions of these entries are in llms-full.txt.
 - Focaccia: [es](https://aichef.pro/blog/que-es-la-focaccia) [en](https://aichef.pro/en/blog/what-is-focaccia) [fr](https://aichef.pro/fr/blog/focaccia) [de](https://aichef.pro/de/blog/focaccia) [it](https://aichef.pro/it/blog/focaccia) [pt](https://aichef.pro/pt/blog/focaccia) [nl](https://aichef.pro/nl/blog/focaccia)
 - Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
 - Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
-- Fondo blanco: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion)
 - Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
 - Gelificación: [es](https://aichef.pro/blog/gelificacion-concepto-definicion)
 - Glace de viande: [es](https://aichef.pro/blog/glace-de-viande) [en](https://aichef.pro/en/blog/glace-de-viande) [fr](https://aichef.pro/fr/blog/glace-de-viande) [de](https://aichef.pro/de/blog/fleischglace) [it](https://aichef.pro/it/blog/glace-de-viande) [pt](https://aichef.pro/pt/blog/glace-de-viande) [nl](https://aichef.pro/nl/blog/vleesglace)
@@ -249,6 +248,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Token: [es](https://aichef.pro/blog/token-unidad-inteligencia-artificial)
 - Umami: [es](https://aichef.pro/blog/umami-concepto-y-definicion)
 - Vinagreta: [es](https://aichef.pro/blog/vinagreta-concepto-y-definicion)
+- White stock: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-white-stock) [fr](https://aichef.pro/fr/blog/fond-blanc) [de](https://aichef.pro/de/blog/heller-fond) [it](https://aichef.pro/it/blog/fondo-bianco) [pt](https://aichef.pro/pt/blog/fundo-branco) [nl](https://aichef.pro/nl/blog/witte-fond)
 - Yuzu kosho: [es](https://aichef.pro/blog/yuzu-kosho-condimento-japones-tendencia)
 <!-- GLOSARIO-END -->
 

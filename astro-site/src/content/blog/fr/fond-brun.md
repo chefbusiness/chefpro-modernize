@@ -2,7 +2,7 @@
 title: "Fond brun : ce qu'il est, et ce qu'il n'est pas"
 description: "Le fond brun, ce sont des os et des parures rôtis, puis mijotés avec légumes, tomate et herbes. Couleur acajou, base des sauces brunes."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-19
 category: glossaire
 tags: ["fond brun", "fond de veau", "demi-glace", "sauce"]
 lang: fr
@@ -73,7 +73,7 @@ Un [fumet](https://aichef.pro/fr/blog/fumet-de-poisson) est le fond clair des ar
 
 Une [demi-glace](https://aichef.pro/fr/blog/demi-glace) n'est pas le fond. C'est la sauce que vous bâtissez sur le fond brun et que vous réduisez jusqu'à ce qu'elle nappe. Une [glace de viande](https://aichef.pro/fr/blog/glace-de-viande) est le fond réduit plus loin, jusqu'à gélifier à froid. Le fond est le liquide de départ. Les deux autres sont ce que vous en faites.
 
-Le fond blanc est le frère pâle. Les os ne sont pas rôtis, la tomate reste dehors, et le goût reste discret pour qu'un velouté ou un potage clair porte autre chose. Il n'y a pas encore de fiche française pour lui. Le contraste, c'est le rôtissage.
+Le [fond blanc](https://aichef.pro/fr/blog/fond-blanc) est le frère pâle. Les os ne sont pas rôtis, la tomate reste dehors, et le goût reste discret pour qu'un velouté ou un potage clair porte autre chose. Le contraste, c'est le rôtissage.
 
 ## Au passe
 

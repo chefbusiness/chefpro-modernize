@@ -2,12 +2,20 @@
 title: "Deglasar: qué es y cómo rescatar el fondo"
 description: "Deglasar es recuperar con un líquido los jugos caramelizados del fondo de la sartén. Para qué sirve y cómo ese fondo se convierte en salsa."
 pubDate: 2026-03-17
-modDate: 2026-10-22
+modDate: 2026-11-19
 category: glosario
 image: /blog-assets/2026/03/deglasear-featured.jpg
-imageAlt: "Deglasear: Concepto y Definición"
+imageAlt: "Sartén con el fondo caramelizado mientras se vierte vino"
 lang: es
 wpId: 3232
+translations:
+  es: "deglasear-concepto-definicion"
+  en: "what-is-deglazing"
+  fr: "deglacer"
+  de: "abloeschen"
+  it: "deglassare"
+  nl: "deglaceren"
+  pt: "deglacar"
 ---
 
 <p>El <strong>deglaseado</strong> es una de las técnicas más fundamentales y subestimadas de la cocina profesional. Este proceso, que podría parecer simple a simple vista, es en realidad el puente entre una cocción ordinaria y una salsa extraordinaria. Cuando los jugos de la carne caramelizan y se adhieren al fondo de la sartén, no se trata de algo que limpiar: se trata de <strong>sabor concentrado</strong> esperando ser rescatado.</p>
@@ -189,5 +197,5 @@ wpId: 3232
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para técnicas de salsas y fondos.<br />     Deglaseados, reducciones y emulsiones explicadas paso a paso.   </p>
 <p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=deglasear-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR MIEMBRO AHORA →   </a>   </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">     AI Chef Miembro: 10 €/mes • 48.733+ recetas generadas   </p>
-</p></div>
+</div>
 <p><strong>¿Listo para transformar tus salsas con el deglaseado?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=deglasear-concepto-definicion">AI Chef Pro</a>.</p>
