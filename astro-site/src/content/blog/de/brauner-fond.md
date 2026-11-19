@@ -2,7 +2,7 @@
 title: "Brauner Fond: was er ist, und was er nicht ist"
 description: "Brauner Fond sind Knochen und Abschnitte, erst geröstet, dann mit Gemüse, Tomate und Kräutern geköchelt. Mahagoni, Basis der braunen Saucen."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-19
 category: glossar
 tags: ["brauner Fond", "Kraftbrühe", "Demi-glace", "Sauce"]
 lang: de
@@ -73,7 +73,7 @@ Ein [Fischfond](https://aichef.pro/de/blog/fischfond-fumet) ist der helle Fond a
 
 Eine [Demi-glace](https://aichef.pro/de/blog/demi-glace) ist nicht der Fond. Sie ist die Sauce, die Sie aus braunem Fond bauen und reduzieren, bis sie nappt. Eine [Fleischglace](https://aichef.pro/de/blog/fleischglace) ist der Fond weiter reduziert, bis er kalt geliert. Der Fond ist die Ausgangsflüssigkeit. Die beiden anderen sind das, was Sie daraus machen.
 
-Heller Fond ist das blasse Gegenstück. Die Knochen werden nicht geröstet, Tomate bleibt draußen, und der Geschmack bleibt still, damit ein Velouté oder eine klare Suppe etwas anderes tragen kann. Eine deutsche Glossarfiche dafür gibt es noch nicht. Der Kontrast ist das Rösten.
+[Heller Fond](https://aichef.pro/de/blog/heller-fond) ist das blasse Gegenstück. Die Knochen werden nicht geröstet, Tomate bleibt draußen, und der Geschmack bleibt still, damit ein Velouté oder eine klare Suppe etwas anderes tragen kann. Der Kontrast ist das Rösten.
 
 ## Am Pass
 

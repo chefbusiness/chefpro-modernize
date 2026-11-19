@@ -33,6 +33,28 @@ Pendiente, fuera del cupo de esta tanda:
 | Fondo blanco | `es/fondo-blanco-concepto-y-definicion` | EN, FR, DE, IT, NL, PT |
 | Deglasar | `es/deglasear-concepto-definicion` | EN, FR, DE, IT, NL, PT |
 
+## Paridad 2026-11-19 — fondo blanco y deglasar
+
+Los dos términos que la tanda del 17 dejaba fuera del cupo. No había ficha previa en EN, FR, DE, IT, NL ni PT: se comprobaron slugs y títulos del clúster (el italiano `it/fondo-bruno` y el inglés `en/kitchen-brigade-system` siguen siendo el caso de «ya existía, no se reescribe»; aquí no se dio). No hay volúmenes nuevos. La ficha española de cada término se queda; solo entra en el hreflang. En neerlandés la ficha de fondo oscuro ya decía blanke fond: la nueva usa witte fond como cabeza y nombra blanke fond en la misma frase. En alemán el verbo de oficio es ablöschen; deglacieren es el mismo gesto en la brigada. En italiano deglassare y sfumare comparten ficha. En portugués de Portugal el verbo es deglaçar.
+
+| Término | ES | EN | FR | DE | IT | NL | PT |
+|---|---|---|---|---|---|---|---|
+| Fondo blanco | `es/fondo-blanco-concepto-y-definicion` | `en/what-is-white-stock` | `fr/fond-blanc` | `de/heller-fond` | `it/fondo-bianco` | `nl/witte-fond` | `pt/fundo-branco` |
+| Deglasar | `es/deglasear-concepto-definicion` | `en/what-is-deglazing` | `fr/deglacer` | `de/abloeschen` | `it/deglassare` | `nl/deglaceren` | `pt/deglacar` |
+
+El hreflang de las dos fichas ES apunta a las siete. Las fichas de fondo oscuro ya publicadas enlazan ahora al fondo blanco de su idioma. Velouté sigue solo en español: las fichas nuevas lo nombran y no lo enlazan.
+
+Pendiente, para la próxima tanda. Son términos del clúster de salsas y fondos ya publicados en ES que aún no tienen las siete versiones, ordenados por menciones internas en el blog. No se reescribe lo que ya exista en otro idioma.
+
+| Término | ES | Nota |
+|---|---|---|
+| Velouté | `es/salsa-veloute-concepto-y-definicion` | Solo ES. Es la salsa que nace del fondo blanco. |
+| Salsa española | `es/salsa-espanola-concepto-y-definicion` | Solo ES. Es la salsa que nace del fondo oscuro. |
+| Salsa holandesa | `es/salsa-holandesa-concepto-y-definicion` | Solo ES. |
+| Bechamel | `es/bechamel-concepto-y-definicion` | Solo ES. |
+| Salsa bearnesa | `es/salsa-bearnesa-concepto-y-definicion` | Solo ES. |
+| Salsas madre | `es/salsas-madre-cocina-guia` | El italiano ya es `it/salse-madri` (no se reescribe; el hreflang apuntaría ahí). Faltan EN, FR, DE, NL y PT. |
+
 ## Paridad 2026-11-14 — curry y brigada de cocina
 
 El curry español ya era glosario. La brigada española está en `ia-en-gastronomia`; el inglés `kitchen-brigade-system` y el italiano `brigata-di-cucina` ya existían en otras categorías. Esas tres no se reescriben. Esta tanda abre el curry en EN, FR, DE, IT, NL y PT, y la brigada en FR, DE, NL y PT (categoría de glosario). El hreflang de las cuatro fichas ya publicadas apunta a las siete. No hay volúmenes nuevos.

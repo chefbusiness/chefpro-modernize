@@ -288,7 +288,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 228 posts (es 81, en 24, fr 25, de 25, it 23, pt 25, nl 25), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 82 terms. A language is listed only when that glossary post is published.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
 - ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
@@ -321,7 +321,8 @@ Published entries: 228 posts (es 81, en 24, fr 25, de 25, it 23, pt 25, nl 25), 
 - Context Window: [es](https://aichef.pro/blog/context-window-ventana-contexto-ia)
 - Curry: [es](https://aichef.pro/blog/curry-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-curry) [fr](https://aichef.pro/fr/blog/curry) [de](https://aichef.pro/de/blog/curry) [it](https://aichef.pro/it/blog/curry) [pt](https://aichef.pro/pt/blog/caril) [nl](https://aichef.pro/nl/blog/kerrie)
   en: In Western kitchens, curry is the name of a dish in a spiced sauce and also the name of a ready-made powder. On the subcontinent many of those dishes keep their own names, and the spice mix is called a masala. The English of India uses curry too. The word comes from the Tamil kari, which means a sauce.
-- Deglasar: [es](https://aichef.pro/blog/deglasear-concepto-definicion)
+- Deglazing: [es](https://aichef.pro/blog/deglasear-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-deglazing) [fr](https://aichef.pro/fr/blog/deglacer) [de](https://aichef.pro/de/blog/abloeschen) [it](https://aichef.pro/it/blog/deglassare) [pt](https://aichef.pro/pt/blog/deglacar) [nl](https://aichef.pro/nl/blog/deglaceren)
+  en: To deglaze is to pour a liquid into a hot pan after the food comes out, then scrape the browned bits off the metal so they dissolve into a sauce. Those bits are the fond. The liquid is usually wine, stock, or vinegar. Deglazing is not a reduction, and it is not a second Maillard step.
 - Demi-glace: [es](https://aichef.pro/blog/demi-glace-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-demi-glace) [fr](https://aichef.pro/fr/blog/demi-glace) [de](https://aichef.pro/de/blog/demi-glace) [it](https://aichef.pro/it/blog/demi-glace) [pt](https://aichef.pro/pt/blog/demi-glace) [nl](https://aichef.pro/nl/blog/demi-glace)
   en: Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means "half-glaze," and you will see it spelled demi-glace, demi glace, or demiglace.
 - Egg-yolk liaison: [es](https://aichef.pro/blog/ligado-con-yema) [en](https://aichef.pro/en/blog/egg-yolk-liaison) [fr](https://aichef.pro/fr/blog/liaison-au-jaune) [de](https://aichef.pro/de/blog/legierung-mit-eigelb) [it](https://aichef.pro/it/blog/legante-al-tuorlo) [pt](https://aichef.pro/pt/blog/ligacao-com-gema) [nl](https://aichef.pro/nl/blog/liaison-met-eigeel)
@@ -342,7 +343,6 @@ Published entries: 228 posts (es 81, en 24, fr 25, de 25, it 23, pt 25, nl 25), 
   en: Focaccia is an Italian flatbread made from a yeasted dough with olive oil and salt. It is spread in a pan, dimpled with the fingers, and baked with oil on top. It comes out golden and crisp underneath, soft and open inside. It is eaten on its own, with herbs, tomato, or olives, or split as sandwich bread.
 - Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
 - Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
-- Fondo blanco: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion)
 - Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
   en: A gastrique is a light caramel of sugar dissolved with vinegar. It becomes a sweet-sharp syrup used as the base of sauces, especially with meat or fruit. In the sauce romaine of Le Guide Culinaire (1903), Auguste Escoffier cooks 50 g of sugar to a blond caramel and dissolves it with 150 ml of vinegar. In that book he does not use the word gastrique. He describes the preparation inside the sauce. Today it is the usual name for that base.
 - Gelificación: [es](https://aichef.pro/blog/gelificacion-concepto-definicion)
@@ -396,6 +396,8 @@ Published entries: 228 posts (es 81, en 24, fr 25, de 25, it 23, pt 25, nl 25), 
 - Token: [es](https://aichef.pro/blog/token-unidad-inteligencia-artificial)
 - Umami: [es](https://aichef.pro/blog/umami-concepto-y-definicion)
 - Vinagreta: [es](https://aichef.pro/blog/vinagreta-concepto-y-definicion)
+- White stock: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-white-stock) [fr](https://aichef.pro/fr/blog/fond-blanc) [de](https://aichef.pro/de/blog/heller-fond) [it](https://aichef.pro/it/blog/fondo-bianco) [pt](https://aichef.pro/pt/blog/fundo-branco) [nl](https://aichef.pro/nl/blog/witte-fond)
+  en: White stock is a meat stock from bones that are never roasted. They start in cold water with raw vegetables and a bouquet garni, and they simmer until the liquid is pale gold. It feeds veloutés and clear soups. It is not brown stock, which roasts the bones, and it is not a fish fumet.
 - Yuzu kosho: [es](https://aichef.pro/blog/yuzu-kosho-condimento-japones-tendencia)
 <!-- GLOSARIO-END -->
 

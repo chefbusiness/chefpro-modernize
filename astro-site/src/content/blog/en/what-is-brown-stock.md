@@ -2,7 +2,7 @@
 title: "Brown stock: what it is, and what it is not"
 description: "Brown stock is bones and trim roasted, then simmered with vegetables, tomato, and herbs. Mahogany color, and the base of classic meat sauces."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-19
 category: glossary
 tags: ["brown stock", "dark stock", "fond", "demi-glace"]
 lang: en
@@ -73,7 +73,7 @@ A [fish fumet](https://aichef.pro/en/blog/fish-fumet) is the pale stock of fish 
 
 A [demi-glace](https://aichef.pro/en/blog/what-is-demi-glace) is not the stock. It is the sauce you build from brown stock and reduce until it naps. A [glace de viande](https://aichef.pro/en/blog/glace-de-viande) is the stock reduced further, until it gels when cold. The stock is the starting liquid. The other two are what you do with it.
 
-White stock is the pale sibling. The bones are not roasted, tomato stays out, and the flavor stays quiet so a velouté or a clear soup can carry something else. There is no English glossary card for it yet. The contrast is the roast.
+[White stock](https://aichef.pro/en/blog/what-is-white-stock) is the pale sibling. The bones are not roasted, tomato stays out, and the flavor stays quiet so a velouté or a clear soup can carry something else. The contrast is the roast.
 
 ## On the pass
 

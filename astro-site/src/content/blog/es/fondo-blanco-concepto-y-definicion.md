@@ -2,19 +2,27 @@
 title: "Fondo blanco: qué es y cómo se prepara"
 description: "El fondo blanco es un caldo base sin dorar para sopas y salsas claras. Ingredientes, proporciones, paso a paso, clarificado y diferencia con el fondo oscuro."
 pubDate: 2026-02-19
-modDate: 2026-08-31
+modDate: 2026-11-19
 category: glosario
 image: /blog-assets/2026/05/fondo-blanco-destacada.jpg
 imageAlt: "Fondo blanco claro en olla"
 lang: es
 wpId: 2733
+translations:
+  es: "fondo-blanco-concepto-y-definicion"
+  en: "what-is-white-stock"
+  fr: "fond-blanc"
+  de: "heller-fond"
+  it: "fondo-bianco"
+  nl: "witte-fond"
+  pt: "fundo-branco"
 ---
 
 <p>Si alguna vez te has preguntado <strong>qué es el fondo blanco</strong> en cocina profesional, la respuesta es directa: se trata de un caldo base elaborado con huesos y carcasas que <strong>no se tuestan</strong> antes de la cocción, junto con verduras frescas y un bouquet garni, todo ello sometido a una cocción larga y suave. Es la madre de las preparaciones delicadas, el lienzo limpio sobre el que pintar salsas, cremas y arroces sin enmascarar sabores.</p>
 <p>A diferencia de su hermano más robusto —el fondo oscuro—, aquí no buscamos notas tostadas ni colores profundos, sino extraer el colágeno, la gelatina y la esencia más pura de los ingredientes. En cualquier cocina que se precie, tener un buen fondo blanco en el congelador es como tener un as bajo la manga: soluciona servicios, eleva platos aparentemente sencillos y demuestra que detrás de los fogones hay técnica de verdad.</p>
 <h2>Qué es el fondo blanco: mucho más que un caldo</h2>
 <p>Cuando hablamos de <strong>qué es el fondo blanco</strong> conviene no confundirlo con un simple caldo casero. En el argot profesional, los fondos son preparaciones de cocina con una concentración de sabor, cuerpo y gelatina muy superiores a lo que habitualmente hacemos en casa. La clave está en la proporción: más huesos que agua, cocción prolongada y un desgrasado minucioso que garantiza limpieza visual y gustativa.</p>
-<p>Piensa en él como la base neutra por excelencia. Su color pajizo claro, su sabor redondo pero no invasivo y su textica ligeramente untuosa lo convierten en el punto de partida ideal para recetas donde el protagonismo debe recaer en otros ingredientes. Es el fondo de ave clásico para una velouté sedosa, el caldo de ternera blanco que transforma un risotto y el comodín que necesitas cuando quieres cocinar sin que el fondo grite más que el plato principal.</p>
+<p>Piensa en él como la base neutra por excelencia. Su color pajizo claro, su sabor redondo pero no invasivo y su textura ligeramente untuosa lo convierten en el punto de partida ideal para recetas donde el protagonismo debe recaer en otros ingredientes. Es el fondo de ave clásico para una velouté sedosa, el caldo de ternera blanco que transforma un risotto y el comodín que necesitas cuando quieres cocinar sin que el fondo grite más que el plato principal.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
 <p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza por 10 € al mes.</p>
