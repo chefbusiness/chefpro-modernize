@@ -24,6 +24,11 @@ faq:
 ---
 
 <p><strong>Recipe costing software</strong> calculates what a dish costs before you price it: the ingredient price, the usable yield after trim, and the waste you actually throw away. A spreadsheet can do that arithmetic once. It does not update when a supplier invoice changes, and it does not tell <a href="https://aichef.pro/en/menu-engineering-software">menu engineering software</a> which dish is a star and which one is quietly losing money. The longer platform comparison is <a href="https://aichef.pro/en/blog/menu-engineering-software-complete-guide">menu engineering software compared</a>.</p>
+<aside style="border: 1px solid #e6d7a2; border-radius: 8px; padding: 24px; margin: 28px 0; background: #fffaf0;">
+<p style="font-size: 20px; font-weight: 700; margin: 0 0 10px 0; color: #1a1a2e;">Recipe costing software for restaurants</p>
+<p style="font-size: 16px; margin: 0 0 16px 0; color: #333333;">This article compares ten tools. The product page is the paid membership: AI agents that build a costed recipe card and a menu price from your ingredients. Member is €10 a month for 10,000 credits. Premium plans start at €25 a month.</p>
+<p style="margin: 0;"><a href="https://aichef.pro/en/recipe-costing-software" style="display: inline-block; background: #1a1a2e; color: #ffffff; font-weight: 700; font-size: 16px; padding: 12px 24px; border-radius: 6px; text-decoration: none;">See recipe costing software</a></p>
+</aside>
 <p>For one recipe today, use the <a href="https://aichef.pro/en/food-cost-calculator-restaurant">food cost calculator</a>. For the same logic inside the kitchen workspace, open the <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared">English guest home</a>. Member is €10 a month, 10,000 credits, no lock-in. There is no free plan.</p>
 <p>The shortlist below is what restaurants still compare in 2026. A price stays on this page only when the vendor’s own site showed it on 6 November 2026. Otherwise the price is omitted. This page does not state a food-cost reduction, a payback period, or a saving that applies to most restaurants.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
