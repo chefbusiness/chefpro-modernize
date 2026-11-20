@@ -23,3 +23,12 @@ node scripts/astro-migration/auditar-anos-fijos.mjs
 ```
 
 La auditoría solo lista. No migra títulos ni cambia precios.
+
+## Copy publicado: se escribe para el lector (obligatorio)
+
+Aplica a todo lo que se publica: blog, glosario, landings, contenido por mercado y tandas de contenido, en todos los idiomas.
+
+- El texto publicado nunca lleva metalenguaje SEO, frases sobre lo que la página es o no es («This article compares…», «This page stays on…», «a comparison article, not the product page»), ni ecos de reglas o políticas internas («this page does not state…», «a price stays only when…», «otherwise the price is omitted»). Tampoco en el `faq:` del frontmatter, los `alt`, los pies de foto ni los textos de los banners.
+- Lo que una regla interna exige (no inventar ahorros, citar solo precios publicados, separar suscripción y packs) se cumple en silencio: el texto da el dato o no lo da, sin explicar al lector por qué.
+- Cualquier agente que escriba o corrija contenido publicable corre con `claude-opus-5-5` (esfuerzo alto) o `grok-4.7` (razonamiento alto). Nunca Auto, el modelo por defecto ni Composer.
+- Estas reglas valen también para las tandas del glosario y del contenido por mercado.
