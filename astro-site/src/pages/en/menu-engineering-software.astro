@@ -64,27 +64,27 @@ const financialBanner = bannerFor('restaurant-financial-plan-templates');
 const faqs = [
   {
     q: 'What is menu engineering software?',
-    a: 'Menu engineering software ranks each dish on contribution margin and popularity, then sorts the menu into stars, puzzles, plowhorses and dogs. The point is to decide what to promote, reprice, rewrite or remove. A single-dish food cost percentage is a different job.',
+    a: 'Menu engineering software ranks each dish on contribution margin and popularity, then sorts the menu into stars, puzzles, plowhorses and dogs. The point is to decide what to promote, reprice, rewrite or remove. It builds on the food cost % of each dish, but looks at the whole menu at once.',
   },
   {
     q: 'What is AI menu engineering?',
-    a: 'AI menu engineering is the same classification, done with hospitality AI agents instead of a blank spreadsheet. In AI Chef Pro you cost the recipe, load your vendor prices, and the agents help you read which dishes earn their place on the menu. It is part of the paid membership, starting with AI Chef Member at €10/month.',
+    a: 'AI menu engineering is the same classification, done with hospitality AI agents instead of a blank spreadsheet. In AI Chef Pro you cost the recipe, load your vendor prices, and the agents help you read which dishes earn their place on the menu. It’s included from AI Chef Member, at €10/month for 10,000 credits.',
   },
   {
     q: 'How is AI Chef Pro different from meez, MarketMan or MarginEdge?',
-    a: 'meez, MarketMan and MarginEdge are inventory and purchasing platforms: invoices, stock and recipe costing tied to what you buy. meez also markets AI menu analysis on that culinary record. AI Chef Pro does not replace them. It does not capture invoices, run stock counts or act as the purchasing system of record. It is a paid suite of AI agents for food cost, recipe costing and menu analysis. Supplier prices are typed in or imported from a spreadsheet. A CSV cost card can be imported into MarketMan, MarginEdge, Toast, Square or Lightspeed when those tools accept CSV. That handoff is an export, not a live inventory sync.',
+    a: 'meez, MarketMan and MarginEdge are inventory and purchasing platforms: invoices, stock and recipe costing tied to what you buy. meez also markets AI menu analysis on that culinary record. AI Chef Pro works alongside them: it doesn’t capture invoices, count stock or act as your purchasing system. It’s a suite of AI agents for food cost, recipe costing and menu analysis. You type supplier prices in or import them from a spreadsheet, and you can export a CSV cost card into MarketMan, MarginEdge, Toast, Square or Lightspeed if they accept CSV. It’s an export, not a live inventory sync.',
   },
   {
     q: 'Is there a free menu engineering plan?',
-    a: 'No. AI Chef Pro has no free plan. The entry membership is AI Chef Member at €10 per month, with 10,000 credits and the 75+ AI agents. You can cancel anytime. The Food Cost Calculator for Restaurants is a separate single-dish calculator and is not this software.',
+    a: 'No. AI Chef Pro has no free plan and no free trial. The entry membership is AI Chef Member at €10 per month, with 10,000 credits and the 75+ AI agents, and you can cancel anytime. If you only need the food cost of one dish, the free Food Cost Calculator for Restaurants does that without an account.',
   },
   {
     q: 'What does the Member plan include for menu work?',
-    a: 'AI Chef Member is €10/month and includes 10,000 credits, the 75+ AI agents and email support. Premium Pro is €25/month (85,000 credits), Premium Plus is €50/month (175,000 credits), Premium Max is €95/month with unlimited credits, and Premium Max Annual is €950/year. Digital packs such as the Food Cost Kit Pro are one-time purchases, not included as a free tier.',
+    a: 'AI Chef Member is €10/month and includes 10,000 credits, the 75+ AI agents and email support. Premium Pro is €25/month (85,000 credits), Premium Plus is €50/month (175,000 credits), Premium Max is €95/month with unlimited credits, and Premium Max Annual is €950/year. All plans are billed in euros. Digital packs such as the Food Cost Kit Pro are one-time purchases, sold separately.',
   },
   {
     q: 'Do I have to drop my inventory system to use it?',
-    a: 'No. Keep meez, MarketMan, MarginEdge or your POS as the system that receives invoices and counts stock. Use AI Chef Pro to cost plates and engineer the menu, then move a CSV cost card across if your inventory tool imports CSV. Direct supplier connections are not part of the membership today.',
+    a: 'No. Keep meez, MarketMan, MarginEdge or your POS as the system that receives invoices and counts stock. Use AI Chef Pro to cost plates and engineer the menu, then move a CSV cost card across if your inventory tool imports CSV. The agents don’t connect directly to suppliers today.',
   },
 ];
 
@@ -144,13 +144,13 @@ const classes = [
   <main class="container mx-auto max-w-7xl px-4 py-14">
     <header class="mx-auto mb-16 max-w-3xl text-center">
       <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
-        Paid membership · not a free tool
+        Paid membership
       </p>
       <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">
         {h1}
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
-        AI menu engineering that sorts every dish by contribution margin and popularity, then shows what to promote, reprice or take off the menu. The membership starts at €10/month.
+        AI menu engineering that sorts every dish by contribution margin and popularity, then shows what to promote, reprice or take off the menu. Plans start at €10/month.
       </p>
       <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
@@ -187,9 +187,9 @@ const classes = [
         ))}
       </ul>
       <p class="mt-6 text-muted-foreground leading-7">
-        That classification is the job of this page. A one-plate percentage is a different job. If you only need the food cost of a single dish, use the
-        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">Food Cost Calculator for Restaurants</a>.
-        It does not require an account, and it is not a plan of AI Chef Pro. Menu engineering across the whole card is the paid membership.
+        Only need the food cost of one plate right now? The free
+        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">Food Cost Calculator for Restaurants</a>
+        does that without an account. When you want to engineer the whole menu, that’s where the agents come in.
       </p>
     </section>
 
@@ -200,7 +200,7 @@ const classes = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="how-it-runs">
       <h2 id="how-it-runs" class="text-3xl font-bold text-foreground">How AI menu engineering runs in AI Chef Pro</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        The same membership that costs a recipe also reads the menu. Nothing here is a free tier. You work inside the agents, on credits, from the Member plan up.
+        The same agents that cost your recipes also read the menu. Everything runs on credits, from the Member plan up.
       </p>
       <ol class="mt-8 space-y-6">
         <li class="rounded-xl border border-border bg-card p-6">
@@ -219,9 +219,8 @@ const classes = [
         <li class="rounded-xl border border-border bg-card p-6">
           <h3 class="text-lg font-semibold text-foreground">3. Menu rewrite</h3>
           <p class="mt-2 text-sm leading-6 text-muted-foreground">
-            Names, descriptions and where a dish sits on the card come after the matrix, not before it. The design companion is
+            Names, descriptions and where a dish sits on the menu come after the matrix, not before it. For the design side, see
             <a href="/en/restaurant-menu-ai" class="font-semibold text-primary hover:underline">Restaurant Menu Design with AI</a>.
-            This page stays on profitability.
           </p>
         </li>
       </ol>
@@ -235,10 +234,10 @@ const classes = [
       <div class="mx-auto max-w-3xl">
         <h2 id="not-an-erp" class="text-3xl font-bold text-foreground">How this differs from meez, MarketMan and MarginEdge</h2>
         <p class="mt-4 text-muted-foreground leading-7">
-          meez, MarketMan and MarginEdge are inventory and purchasing platforms. meez presents recipe management and food costing for groups, and it markets AI menu analysis on that record. MarketMan centers on inventory, purchasing and recipe costing. MarginEdge centers on invoice processing, recipe costing and inventory. Those descriptions follow what each vendor publishes. This page does not quote their prices.
+          meez, MarketMan and MarginEdge are inventory and purchasing platforms. meez presents recipe management and food costing for groups, and it markets AI menu analysis on that record. MarketMan centers on inventory, purchasing and recipe costing. MarginEdge centers on invoice processing, recipe costing and inventory. For their current prices, check each vendor’s website.
         </p>
         <p class="mt-4 text-muted-foreground leading-7">
-          AI Chef Pro does not replace that stack. It does not capture invoices, count stock or sit as the system of record for purchasing. Direct supplier connections are not part of the membership today. You type vendor prices or import a spreadsheet. When a cost card needs to live in an inventory tool, the recipe-costing page already describes the handoff: a CSV you can import into MarketMan, MarginEdge, Toast, Square or Lightspeed if that product accepts CSV. An export is not a live sync.
+          AI Chef Pro works alongside that stack. It doesn’t capture invoices, count stock or act as your purchasing system, and it doesn’t connect directly to suppliers today. You type vendor prices or import a spreadsheet. When a cost card needs to live in your inventory tool, export it as a CSV and import it into MarketMan, MarginEdge, Toast, Square or Lightspeed, if that product accepts CSV. It’s an export, not a live sync.
         </p>
       </div>
       <div class="mt-8 overflow-x-auto rounded-xl border border-border">
@@ -254,7 +253,7 @@ const classes = [
             <tr class="border-t border-border">
               <th class="p-4 text-left font-medium text-foreground" scope="row">Built around</th>
               <td class="p-4 text-muted-foreground">Purchasing, invoices and inventory. meez also markets AI menu analysis on its recipe record.</td>
-              <td class="p-4 text-muted-foreground">Paid AI agents for food cost, recipe costing and menu analysis.</td>
+              <td class="p-4 text-muted-foreground">AI agents for food cost, recipe costing and menu analysis.</td>
             </tr>
             <tr class="border-t border-border">
               <th class="p-4 text-left font-medium text-foreground" scope="row">How prices arrive</th>
@@ -267,8 +266,8 @@ const classes = [
               <td class="p-4 text-muted-foreground">Stars, puzzles, plowhorses and dogs from contribution margin and popularity.</td>
             </tr>
             <tr class="border-t border-border">
-              <th class="p-4 text-left font-medium text-foreground" scope="row">What you pay here</th>
-              <td class="p-4 text-muted-foreground">Their own subscription. Not listed on this page.</td>
+              <th class="p-4 text-left font-medium text-foreground" scope="row">What you pay</th>
+              <td class="p-4 text-muted-foreground">Their own subscription, priced on each vendor’s website.</td>
               <td class="p-4 text-muted-foreground">Member €10/month. Premium from €25/month. See the plans below.</td>
             </tr>
           </tbody>
@@ -279,7 +278,7 @@ const classes = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="packs">
       <h2 id="packs" class="text-3xl font-bold text-foreground">One-time packs, separate from the membership</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        The guides and workbooks are a one-time purchase with lifetime access to their files. They do not replace the subscription, and they are not a free plan. The Food Cost + Menu Engineering Guide and the Food Cost Kit Pro sit next to the menu work. The Restaurant Financial Plan Kit Pro is the venue workbook for projections and cash flow once the menu is costed. It is not menu engineering software.
+        Prefer to work in a spreadsheet, or want a reference next to the agents? These guides and workbooks are one-time purchases with lifetime access to their files, sold separately from the subscription. The Food Cost + Menu Engineering Guide and the Food Cost Kit Pro cover costing and the menu matrix. The Restaurant Financial Plan Kit Pro picks up once the menu is costed, with projections and cash flow for the whole venue. Packs are priced in US dollars; the membership is billed in euros.
       </p>
       <ProductBanner {...financialBanner} />
     </section>
@@ -287,14 +286,13 @@ const classes = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="keep-reading">
       <h2 id="keep-reading" class="text-3xl font-bold text-foreground">Keep reading</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        These pages go deeper on a slice of the same work. They are not a second copy of this offer. Plans and signup stay on
-        <a href="/en/pricing" class="font-semibold text-primary hover:underline">AI Chef Pro pricing</a>
-        and on the English app.
+        These guides go deeper on specific parts of the work. Every plan is on
+        <a href="/en/pricing" class="font-semibold text-primary hover:underline">AI Chef Pro pricing</a>.
       </p>
       <ul class="mt-6 space-y-3 text-muted-foreground">
         <li>
           <a href="/en/blog/menu-engineering-software-complete-guide" class="font-semibold text-primary hover:underline">Best Menu Engineering Software: 10 Tools Compared for Profit Optimization</a>
-          <span> — a comparison article, not the product page.</span>
+          <span> — a side-by-side comparison of ten tools.</span>
         </li>
         <li>
           <a href="/en/blog/ai-menu-engineering-software" class="font-semibold text-primary hover:underline">AI Menu Engineering Software: How Artificial Intelligence Optimizes Restaurant Menus</a>
@@ -327,9 +325,9 @@ const classes = [
     </section>
 
     <section class="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-8 text-center sm:p-10">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Engineer the menu on a paid plan</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Start engineering your menu</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Open the English app, choose AI Chef Member at €10/month, and put the first menu through recipe costing and the four-class matrix. Upgrade only when the credit count says you should. Full prices sit on
+        Open the app, choose AI Chef Member at €10/month for 10,000 credits, and put your first menu through recipe costing and the four-class matrix. Upgrade only when your credit use says you should. Every plan is on
         <a href="/en/pricing" class="font-semibold text-primary hover:underline">the pricing page</a>.
       </p>
       <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
