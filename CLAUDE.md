@@ -5,7 +5,8 @@
 Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, página) en este o cualquier proyecto del grupo ChefBusiness. **Antes de escribir la primera línea:**
 
 1. **Keyword research + análisis SERP PRIMERO.** Nunca escribir sin investigar keywords e inspeccionar la SERP de Google del/los mercado(s) objetivo. Lo que dicte la SERP (formatos, People Also Ask, entidades, intención) manda sobre lo que se incluye.
-2. **Texto → `bridge.py`.** Motor de redacción. Desde el **2026-08-08 TODAS las tareas** (`content`, `translation`, `meta`, `social`, `analysis`, `email`, `report`, `quick`, `code`) apuntan a un único slug: **`~deepseek/deepseek-v4-flash-latest`**. La `~` es un alias de OpenRouter que resuelve siempre a la última revisión, así que ya no hay que actualizar el routing a mano. Gotcha: es modelo de razonamiento y verboso → **`--max-tokens` ≥ 8000** o devuelve vacío (el default ya es 8192, y ahora falla con código 3 en vez de escribir un `.txt` vacío). **La ruta depende de la máquina** (este repo se trabaja desde el Mac y desde el VPS):
+2. **Texto → `claude-opus-5-5` (esfuerzo high).** Regla de John (20-nov-2026): los textos de clientes, los posts de LinkedIn y el blog (y, con él, landings, glosario y contenido por mercado) se redactan con **`claude-opus-5-5` en esfuerzo high**, y con **`grok-4.7` en esfuerzo high solo si Opus no está disponible**. **Nunca** con Auto/default ni con Composer. El engagement corto de las rutinas (respuestas, comentarios y DM breves) se queda como está. Un Cloud Agent que redacte o corrija contenido publicable se lanza con ese modelo y ese esfuerzo.
+   - `bridge.py` (DeepSeek vía OpenRouter, `~deepseek/deepseek-v4-flash-latest`) **ya no redacta contenido publicable**. Queda solo para tareas auxiliares que no se publican (research, análisis, informes). Gotcha si se usa: modelo de razonamiento verboso → `--max-tokens` ≥ 8000. **La ruta depende de la máquina:**
    - VPS: `/root/chefbusiness-ai/bridge.py` — ejecutar con su venv: `/root/chefbusiness-ai/.venv/bin/python`
    - Mac: `/Users/johnguerrero/chefbusiness-ai/bridge.py`
    En el mismo repo están `serp_research.py` (research SERP previo) y `gsc_report.py`.
@@ -20,7 +21,7 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 Guías, bonus, planes, manuales y ejercicios: el texto lo escriben **subagentes Anthropic** (sonnet por defecto) a
 partir del guion; el método (`dump_prompts.py` → un agente por bloque → `check_bloque.py`) y el motivo están en la
-skill **`productos-digitales-aichef`**. **El blog y las landings de captación siguen con bridge.py.**
+skill **`productos-digitales-aichef`**. **El blog y las landings de captación se redactan con `claude-opus-5-5` high (o `grok-4.7` high si Opus no está disponible), según el punto 2.**
 
 ## Stack y notas operativas
 
@@ -37,7 +38,7 @@ skill **`productos-digitales-aichef`**. **El blog y las landings de captación s
 
 Para no cargar ~14k tokens en cada sesión, el detalle de tres áreas vive ahora fuera de este fichero, **copiado literal**. Los no negociables siguen aquí, en una línea cada uno. **Los gotchas nuevos de estas áreas se añaden en su destino, no aquí** (si solo es un «nunca», una línea más abajo).
 
-- **Blog, SEO y contenidos web** → skill local **`blog-aichef`** (`.claude/skills/blog-aichef/SKILL.md`): elección de motor en bridge, gotchas del blog, moldes HTML, bloques congelados de WordPress, banners, robots.txt, research SEO. **Cargarla SIEMPRE antes de crear, ampliar, traducir, parchear o borrar posts, o de tocar `_redirects`, `robots.txt`, sitemap, FAQ o banners del blog.**
+- **Blog, SEO y contenidos web** → skill local **`blog-aichef`** (`.claude/skills/blog-aichef/SKILL.md`): gotchas de motor (la redacción va con `claude-opus-5-5` high, ver punto 2), gotchas del blog, moldes HTML, bloques congelados de WordPress, banners, robots.txt, research SEO. **Cargarla SIEMPRE antes de crear, ampliar, traducir, parchear o borrar posts, o de tocar `_redirects`, `robots.txt`, sitemap, FAQ o banners del blog.**
   - Contenido que el lector copia y ejecuta (prompts, fórmulas, comandos) → modelo bueno + gate. Y, sea cual sea el motor, barrido de caracteres no latinos (CJK, cirílico, hangul…) antes de publicar.
   - Al borrar posts o tocar el FRONTMATTER: `rm -rf astro-site/.astro astro-site/dist` antes de construir, y verificar el JSON-LD en el `dist`, no en el `.md`.
   - NUNCA volver a correr un ensamblador (`fase8c-libreria-assemble.py`, `fase8d-ampliar-glosario.py`) sobre un post publicado: reconstruye el cuerpo y pisa las ediciones manuales. Banners en lo publicado → `fase8e-banners-corpus.py`.
