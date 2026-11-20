@@ -66,27 +66,27 @@ const financialBanner = bannerFor('restaurant-financial-plan-templates');
 const faqs = [
   {
     q: 'What is recipe costing software?',
-    a: 'Recipe costing software keeps a card for each dish: the ingredients, the usable yield after trim, the waste you account for, and the price you pay. From that card it shows plate cost, food cost %, a suggested menu price and the margin that price implies.',
+    a: 'Recipe costing software keeps a card for each dish with the ingredients, the usable yield after trim, the waste and the price you pay. From that card it works out plate cost, food cost %, a suggested menu price and the margin that price leaves you.',
   },
   {
     q: 'How is food costing different from menu costing?',
-    a: 'Food costing is the cost of what you serve, usually as plate cost and food cost %. Menu costing reads those dish costs across the card you sell. Menu pricing is the next decision: the menu price you set from the cost and the margin you want. Recipe costing software is the card that feeds all three.',
+    a: 'Food costing tells you what one dish costs to make, usually as plate cost and food cost %. Menu costing does the same for every dish on your menu, so you can compare them side by side. Menu pricing is setting what you charge for each dish, based on its cost and the margin you need. Good recipe cards feed all three.',
   },
   {
     q: 'How do AI Chef Pro’s agents cost a recipe?',
-    a: 'You give the agents the dish and your ingredient prices. They build a costed recipe card and a price from those ingredients. When a price changes, you enter the new number and ask for the card again. The agents do not pull invoices or connect to a supplier. This work is part of the paid membership, starting with AI Chef Member at €10/month for 10,000 credits.',
+    a: 'You give the agents the dish and your ingredient prices, and they build a costed recipe card with a suggested menu price. When a price changes, enter the new number and ask for an updated card. The agents don’t read invoices or connect to suppliers. Recipe costing is included from AI Chef Member, at €10/month for 10,000 credits.',
   },
   {
     q: 'What should I look for in recipe costing software?',
-    a: 'Look for a recipe card that stores yield and trim, a place to update an ingredient price, plate cost and food cost % on the same card, and a suggested menu price tied to a margin you choose. Ask whether invoice capture and stock counts are included. On AI Chef Pro they are not. The membership is the agents. Inventory stays in the system you already use.',
+    a: 'Look for a recipe card that stores yield and trim, an easy way to update ingredient prices, plate cost and food cost % on the same card, and a suggested menu price tied to a margin you choose. Also check whether invoice capture and stock counts are included. AI Chef Pro doesn’t do either, so most kitchens keep their inventory system and use the agents for costing and pricing.',
   },
   {
     q: 'What does the membership cost?',
-    a: 'AI Chef Member is €10/month and includes 10,000 credits, the 75+ AI agents and email support. Premium Pro is €25/month (85,000 credits), Premium Plus is €50/month (175,000 credits), Premium Max is €95/month with unlimited credits, and Premium Max Annual is €950/year. There is no free plan and no free trial. Digital packs such as the Food Cost Kit Pro are one-time purchases, separate from the membership.',
+    a: 'AI Chef Member is €10/month and includes 10,000 credits, the 75+ AI agents and email support. Premium Pro is €25/month (85,000 credits), Premium Plus is €50/month (175,000 credits), Premium Max is €95/month with unlimited credits, and Premium Max Annual is €950/year. All plans are billed in euros. There is no free plan and no free trial. Digital packs such as the Food Cost Kit Pro are one-time purchases, sold separately.',
   },
   {
     q: 'Who is recipe costing software for?',
-    a: 'Chefs, owners, managers, bakers, pastry chefs, chocolatiers, bartenders and consultants who price a dish from their own ingredient costs. It is the paid membership, not a spreadsheet file and not an inventory platform.',
+    a: 'Chefs, owners, managers, bakers, pastry chefs, chocolatiers, bartenders and consultants: anyone who prices dishes or drinks from their own ingredient costs.',
   },
 ];
 
@@ -123,36 +123,36 @@ const schemas = [
 const cardJobs = [
   {
     name: 'Yield, waste and trim',
-    detail: 'The usable amount after you peel, bone or reduce. Waste and trim stay on the card, so the cost is the portion on the plate, not the weight on the invoice.',
+    detail: 'The usable amount left after you peel, bone or reduce. Waste and trim stay on the card, so you cost the portion on the plate, not the weight on the invoice.',
   },
   {
     name: 'Ingredient price updates',
-    detail: 'When a supplier price changes, you update that line and the plate cost moves with it. The card does not read the invoice for you.',
+    detail: 'When a supplier changes a price, you update that line and the plate cost moves with it.',
   },
   {
     name: 'Plate cost and food cost %',
-    detail: 'Plate cost is what the portion costs. Food cost % is that cost divided by the menu price.',
+    detail: 'Plate cost is what one portion costs you to make. Food cost % is that cost divided by the menu price. If a portion costs 4.00 and the dish sells for 14.00, food cost is about 29%.',
   },
   {
     name: 'Suggested menu price and margin',
-    detail: 'A margin you choose points at a menu price. Menu pricing is that decision. Menu costing is the same card read across the dishes you sell.',
+    detail: 'Choose the margin you want and the card suggests the menu price that delivers it.',
   },
 ];
 
 const audiences = [
   { name: 'Chefs and cooks', detail: 'Price a special or a new dish before it reaches the pass.' },
-  { name: 'Owners and managers', detail: 'Read food cost % next to the menu price, dish by dish.' },
+  { name: 'Owners and managers', detail: 'See food cost % next to the menu price, dish by dish.' },
   { name: 'Bakers, pastry, chocolate and bar', detail: 'Cost a batch, a cake or a pour from the ingredients you buy.' },
-  { name: 'Consultants', detail: 'Build the card with the operator, from the operator’s own prices.' },
+  { name: 'Consultants', detail: 'Build costed cards with a client, using the client’s own prices.' },
 ];
 
 const checklist = [
-  'A recipe card that stores yield and waste or trim, not only the purchase quantity.',
-  'A clear place to update an ingredient price, and a plate cost that follows that update.',
-  'Food cost % and a suggested menu price from a margin you choose.',
-  'A path from the dish cost into menu costing, so one plate is not priced in isolation.',
-  'A membership price you can read before you sign up: Member is €10/month for 10,000 credits. Premium plans start at €25/month.',
-  'A clean split between the subscription and any workbook you buy once.',
+  'A recipe card that stores yield, waste and trim, not just the purchase quantity.',
+  'An easy way to update an ingredient price, with the plate cost following the change.',
+  'Food cost % and a suggested menu price based on a margin you choose.',
+  'A view across the whole menu, so no dish is priced in isolation.',
+  'Pricing you can read before you sign up. On AI Chef Pro, Member is €10/month for 10,000 credits and Premium plans start at €25/month.',
+  'A clear line between the monthly subscription and any workbook you buy once.',
 ];
 ---
 
@@ -174,13 +174,13 @@ const checklist = [
   <main class="container mx-auto max-w-7xl px-4 py-14">
     <header class="mx-auto mb-16 max-w-3xl text-center">
       <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
-        Paid membership · not a free tool
+        Paid membership
       </p>
       <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">
         {h1}
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
-        Build a costed recipe card from the ingredients you buy, then turn plate cost into a menu price. The membership starts at €10/month.
+        Build a costed recipe card from the ingredients you buy, then turn plate cost into a menu price. Plans start at €10/month.
       </p>
       <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
@@ -206,7 +206,7 @@ const checklist = [
     <section class="mx-auto max-w-3xl" aria-labelledby="what-it-does">
       <h2 id="what-it-does" class="text-3xl font-bold text-foreground">What recipe costing software does</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        Recipe costing software keeps one card per dish. The card starts with the ingredients, the amount that survives prep, and the price you pay for each one. Food costing is that arithmetic. It is not a stock count and it is not the menu layout.
+        Recipe costing software keeps one card per dish: the ingredients, how much of each one survives prep, and what you pay for it. From that card you get what the plate really costs and what you should charge for it.
       </p>
       <ul class="mt-6 grid gap-4 sm:grid-cols-2">
         {cardJobs.map((item) => (
@@ -217,9 +217,9 @@ const checklist = [
         ))}
       </ul>
       <p class="mt-6 text-muted-foreground leading-7">
-        A single dish is a smaller job. If you only need the food cost of one plate, use the
-        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">Food Cost Calculator for Restaurants</a>.
-        It does not require an account, and it is not a plan of AI Chef Pro. Costing the recipes you sell, and pricing them, is the paid membership.
+        Only need the food cost of one plate right now? The free
+        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">Food Cost Calculator for Restaurants</a>
+        does that without an account. When you want to cost and price every dish you sell, that’s where the agents come in.
       </p>
     </section>
 
@@ -230,37 +230,37 @@ const checklist = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="menu-pricing">
       <h2 id="menu-pricing" class="text-3xl font-bold text-foreground">Menu costing and menu pricing</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        Menu costing is the recipe card read across the dishes you actually sell. Menu pricing is what you charge once you know the plate cost and the margin you want. One number without the other is a guess: a popular dish can still sit under the food cost % you can live with, and a careful dish can be priced past what the dining room will order.
+        Menu costing means knowing the plate cost of every dish on the menu you sell, not just one. Menu pricing is deciding what to charge for each dish, based on that cost and the margin you need. You need both: a best-seller can be underpriced and quietly eat into your margin, while a dish priced higher than your guests will pay simply doesn’t sell.
       </p>
       <p class="mt-4 text-muted-foreground leading-7">
-        When the cards are in place, the next question is which dishes earn their place. That is
+        Once every dish is costed, the next question is which ones earn their spot on the menu. That’s
         <a href="/en/menu-engineering-software" class="font-semibold text-primary hover:underline">menu engineering software</a>,
-        on the same membership. This page stays on the cost of the recipe and the price you put on the menu.
+        included in the same membership.
       </p>
     </section>
 
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="how-agents">
       <h2 id="how-agents" class="text-3xl font-bold text-foreground">How AI Chef Pro’s agents do it</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        AI Chef Pro is a paid membership of AI agents. You describe the dish and the ingredients, and you enter the prices you pay. The agents build a costed recipe card and a price from those ingredients. They are assistants for that work. They do not capture invoices, count stock or connect to a supplier. When a price changes, you enter the new number and ask for the card again.
+        AI Chef Pro gives you 75+ AI agents for the kitchen and the business. For costing, you describe the dish, list the ingredients and enter the prices you pay. The agents build a costed recipe card and suggest a menu price. They don’t scan invoices, count stock or connect to your suppliers, so when a price changes, you enter the new number and ask for an updated card.
       </p>
       <ol class="mt-8 space-y-6">
         <li class="rounded-xl border border-border bg-card p-6">
-          <h3 class="text-lg font-semibold text-foreground">1. The dish and your prices</h3>
+          <h3 class="text-lg font-semibold text-foreground">1. Your dish and your prices</h3>
           <p class="mt-2 text-sm leading-6 text-muted-foreground">
-            You bring the recipe and the prices on your invoices. Nothing is pulled from a supplier account. Typed prices, or prices you paste from a spreadsheet, are the input.
+            Bring the recipe and the prices from your invoices. Type them in or paste them from a spreadsheet.
           </p>
         </li>
         <li class="rounded-xl border border-border bg-card p-6">
           <h3 class="text-lg font-semibold text-foreground">2. A costed recipe card</h3>
           <p class="mt-2 text-sm leading-6 text-muted-foreground">
-            The agents return a costed recipe card from those ingredients and prices. Plate cost and food cost % are only as good as the prices and the waste you enter.
+            The agents return the card with plate cost and food cost %. The numbers are only as accurate as the prices and waste you enter, so it’s worth weighing your trim at least once.
           </p>
         </li>
         <li class="rounded-xl border border-border bg-card p-6">
           <h3 class="text-lg font-semibold text-foreground">3. A price for the menu</h3>
           <p class="mt-2 text-sm leading-6 text-muted-foreground">
-            From that cost, the agents help you set a menu price and see the margin it implies. You still choose the price. The membership does not publish a food-cost target for your restaurant.
+            From that cost, the agents help you set a menu price. You choose the target; the agents show the margin it implies.
           </p>
         </li>
       </ol>
@@ -269,7 +269,7 @@ const checklist = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="who-for">
       <h2 id="who-for" class="text-3xl font-bold text-foreground">Who recipe costing software is for</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        The membership is for people who price food and drink from their own costs. It is not limited to a dining-room menu.
+        It’s for anyone who prices food or drink from their own costs, whether in the kitchen, behind the bar or at the pastry bench.
       </p>
       <ul class="mt-6 grid gap-4 sm:grid-cols-2">
         {audiences.map((item) => (
@@ -284,9 +284,8 @@ const checklist = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="what-to-look-for">
       <h2 id="what-to-look-for" class="text-3xl font-bold text-foreground">What to look for</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        A scored comparison of ten products is a different page:
+        Use this checklist to judge any tool, AI Chef Pro included. For a side-by-side look at ten options, read
         <a href="/en/blog/best-recipe-costing-software-compared" class="font-semibold text-primary hover:underline">Recipe costing software: 10 options compared</a>.
-        Use this list to judge any of them, including AI Chef Pro.
       </p>
       <ol class="mt-6 list-decimal space-y-3 pl-5 text-muted-foreground leading-7">
         {checklist.map((item) => (
@@ -294,7 +293,7 @@ const checklist = [
         ))}
       </ol>
       <p class="mt-6 text-muted-foreground leading-7">
-        If you also need invoice capture, stock counts or a live supplier feed, that is a different product. AI Chef Pro does not do that work. Keep the system that already receives your invoices, and use the agents for the card and the price.
+        If you also need invoice scanning, stock counts or a live supplier feed, keep the inventory system that already handles your invoices and use the agents for the recipe card and the price.
       </p>
     </section>
 
@@ -305,7 +304,7 @@ const checklist = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="packs">
       <h2 id="packs" class="text-3xl font-bold text-foreground">One-time packs, separate from the membership</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        The guides and workbooks are a one-time purchase. They do not replace the subscription, and they are not included with it. The Food Cost Kit Pro and the Food Cost + Menu Engineering Guide sit next to the recipe card. The Restaurant Financial Plan Kit Pro is the venue workbook for projections and cash flow once the menu is costed. It is not recipe costing software.
+        Prefer to work in a spreadsheet, or want a reference next to the agents? These guides and workbooks are one-time purchases, sold separately from the subscription. The Food Cost Kit Pro and the Food Cost + Menu Engineering Guide cover costing and pricing. The Restaurant Financial Plan Kit Pro picks up once the menu is costed, with projections and cash flow for the whole venue. Packs are priced in US dollars; the membership is billed in euros.
       </p>
       <ProductBanner {...financialBanner} />
     </section>
@@ -313,14 +312,12 @@ const checklist = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="keep-reading">
       <h2 id="keep-reading" class="text-3xl font-bold text-foreground">Keep reading</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        These pages go deeper on a slice of the same work. They are not a second copy of this offer. Plans and signup stay on
-        <a href="/en/pricing" class="font-semibold text-primary hover:underline">AI Chef Pro pricing</a>
-        and on the English app.
+        These guides go deeper on specific parts of the work.
       </p>
       <ul class="mt-6 space-y-3 text-muted-foreground">
         <li>
           <a href="/en/blog/best-recipe-costing-software-compared" class="font-semibold text-primary hover:underline">Recipe costing software: 10 options compared</a>
-          <span> — a comparison article, not the product page.</span>
+          <span> — a side-by-side comparison of ten tools.</span>
         </li>
         <li>
           <a href="/en/menu-engineering-software" class="font-semibold text-primary hover:underline">Menu engineering software for restaurants</a>
@@ -349,9 +346,9 @@ const checklist = [
     </section>
 
     <section class="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-8 text-center sm:p-10">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Cost the recipe on a paid plan</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Start costing your recipes</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Open the English app, choose AI Chef Member at €10/month for 10,000 credits, and build the first costed recipe card from your own ingredient prices. Premium plans start at €25/month. Full prices sit on
+        Open the app, choose AI Chef Member at €10/month for 10,000 credits, and build your first costed recipe card from your own ingredient prices. Need more credits? Premium plans start at €25/month. Every plan is on
         <a href="/en/pricing" class="font-semibold text-primary hover:underline">the pricing page</a>.
       </p>
       <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
