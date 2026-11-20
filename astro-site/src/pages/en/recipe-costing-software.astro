@@ -1,0 +1,377 @@
+---
+// Landing comercial EN, solo este idioma. No pasa por fase6-generate-marketing.py:
+// no hay gemela ES/FR/DE/IT/PT/NL en este cambio, y el registro de marketing
+// exige los siete slugs. El head usa el mismo BaseLayout que /en/pricing
+// (hreflang solo en), y el cuerpo reutiliza Header, Footer, Pricing y ProductBanner.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Pricing from '../../components/Pricing.astro';
+import ProductBanner from '../../components/blog/ProductBanner.astro';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { SITE } from '../../i18n/config';
+
+type CatalogueRow = { url: string; title: string; image: string; price: string };
+
+// Importar el JSON desde la página lo busca en dist/pages/data y el build aborta.
+// El catálogo se lee en el servidor, en el mismo sitio que product-banners.mjs.
+const catalogue = JSON.parse(
+  readFileSync(join(process.cwd(), 'src/data/digital-products-catalogue.json'), 'utf8'),
+) as { en: CatalogueRow[] };
+
+const lang = 'en';
+const basePath = '/recipe-costing-software';
+const canonical = `${SITE}/en/recipe-costing-software`;
+
+const title = 'Recipe Costing Software for Restaurants | AI Chef Pro';
+const description =
+  'Recipe costing software for restaurants: a costed recipe card, plate cost, food cost % and a suggested menu price. Member €10/month for 10,000 credits. Premium from €25/month.';
+const keywords =
+  'recipe costing software, food costing software, menu costing software, menu pricing software, plate cost, restaurant food cost';
+
+const h1 = 'Recipe costing software for restaurants';
+
+// CTAs de esta landing. La franja de precios usa el helper compartido
+// (utm_source=web, utm_medium=landing-recipe-costing), igual que /en/menu-engineering-software.
+const ctaHref =
+  'https://enapp.aichef.pro/?utm_source=aichef&utm_medium=landing-recipe-costing&utm_campaign=recipe-costing-software';
+
+const enProducts = catalogue.en;
+
+function bannerFor(slug: string) {
+  const row = enProducts.find((product) => product.url.split('/').filter(Boolean).pop() === slug);
+  if (!row) {
+    throw new Error(`EN catalogue has no product «${slug}»`);
+  }
+  const href = new URL(row.url);
+  href.searchParams.set('utm_source', 'aichef');
+  href.searchParams.set('utm_medium', 'landing');
+  href.searchParams.set('utm_campaign', 'productos-digitales');
+  href.searchParams.set('utm_content', 'recipe-costing-software');
+  return {
+    id: slug,
+    title: row.title,
+    price: row.price,
+    image: row.image,
+    href: href.toString(),
+    catalogue: 'en' as const,
+  };
+}
+
+const kitBanner = bannerFor('food-cost-templates');
+const guideBanner = bannerFor('food-cost-menu-engineering-guide');
+const financialBanner = bannerFor('restaurant-financial-plan-templates');
+
+const faqs = [
+  {
+    q: 'What is recipe costing software?',
+    a: 'Recipe costing software keeps a card for each dish: the ingredients, the usable yield after trim, the waste you account for, and the price you pay. From that card it shows plate cost, food cost %, a suggested menu price and the margin that price implies.',
+  },
+  {
+    q: 'How is food costing different from menu costing?',
+    a: 'Food costing is the cost of what you serve, usually as plate cost and food cost %. Menu costing reads those dish costs across the card you sell. Menu pricing is the next decision: the menu price you set from the cost and the margin you want. Recipe costing software is the card that feeds all three.',
+  },
+  {
+    q: 'How do AI Chef Pro’s agents cost a recipe?',
+    a: 'You give the agents the dish and your ingredient prices. They build a costed recipe card and a price from those ingredients. When a price changes, you enter the new number and ask for the card again. The agents do not pull invoices or connect to a supplier. This work is part of the paid membership, starting with AI Chef Member at €10/month for 10,000 credits.',
+  },
+  {
+    q: 'What should I look for in recipe costing software?',
+    a: 'Look for a recipe card that stores yield and trim, a place to update an ingredient price, plate cost and food cost % on the same card, and a suggested menu price tied to a margin you choose. Ask whether invoice capture and stock counts are included. On AI Chef Pro they are not. The membership is the agents. Inventory stays in the system you already use.',
+  },
+  {
+    q: 'What does the membership cost?',
+    a: 'AI Chef Member is €10/month and includes 10,000 credits, the 75+ AI agents and email support. Premium Pro is €25/month (85,000 credits), Premium Plus is €50/month (175,000 credits), Premium Max is €95/month with unlimited credits, and Premium Max Annual is €950/year. There is no free plan and no free trial. Digital packs such as the Food Cost Kit Pro are one-time purchases, separate from the membership.',
+  },
+  {
+    q: 'Who is recipe costing software for?',
+    a: 'Chefs, owners, managers, bakers, pastry chefs, chocolatiers, bartenders and consultants who price a dish from their own ingredient costs. It is the paid membership, not a spreadsheet file and not an inventory platform.',
+  },
+];
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/en` },
+      { '@type': 'ListItem', position: 2, name: 'Recipe costing software', item: canonical },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    headline: h1,
+    description,
+    url: canonical,
+    inLanguage: 'en',
+    isPartOf: { '@type': 'WebSite', name: 'AI Chef Pro', url: SITE },
+  },
+];
+
+const cardJobs = [
+  {
+    name: 'Yield, waste and trim',
+    detail: 'The usable amount after you peel, bone or reduce. Waste and trim stay on the card, so the cost is the portion on the plate, not the weight on the invoice.',
+  },
+  {
+    name: 'Ingredient price updates',
+    detail: 'When a supplier price changes, you update that line and the plate cost moves with it. The card does not read the invoice for you.',
+  },
+  {
+    name: 'Plate cost and food cost %',
+    detail: 'Plate cost is what the portion costs. Food cost % is that cost divided by the menu price.',
+  },
+  {
+    name: 'Suggested menu price and margin',
+    detail: 'A margin you choose points at a menu price. Menu pricing is that decision. Menu costing is the same card read across the dishes you sell.',
+  },
+];
+
+const audiences = [
+  { name: 'Chefs and cooks', detail: 'Price a special or a new dish before it reaches the pass.' },
+  { name: 'Owners and managers', detail: 'Read food cost % next to the menu price, dish by dish.' },
+  { name: 'Bakers, pastry, chocolate and bar', detail: 'Cost a batch, a cake or a pour from the ingredients you buy.' },
+  { name: 'Consultants', detail: 'Build the card with the operator, from the operator’s own prices.' },
+];
+
+const checklist = [
+  'A recipe card that stores yield and waste or trim, not only the purchase quantity.',
+  'A clear place to update an ingredient price, and a plate cost that follows that update.',
+  'Food cost % and a suggested menu price from a margin you choose.',
+  'A path from the dish cost into menu costing, so one plate is not priced in isolation.',
+  'A membership price you can read before you sign up: Member is €10/month for 10,000 credits. Premium plans start at €25/month.',
+  'A clean split between the subscription and any workbook you buy once.',
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  locales={['en']}
+  basePath={basePath}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+    <header class="mx-auto mb-16 max-w-3xl text-center">
+      <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
+        Paid membership · not a free tool
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">
+        {h1}
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
+        Build a costed recipe card from the ingredients you buy, then turn plate cost into a menu price. The membership starts at €10/month.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={ctaHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Start with Member
+        </a>
+        <a
+          href="#pricing"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          See plans and pricing
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-muted-foreground">
+        AI Chef Member · €10/month · 10,000 credits · Cancel anytime
+      </p>
+    </header>
+
+    <section class="mx-auto max-w-3xl" aria-labelledby="what-it-does">
+      <h2 id="what-it-does" class="text-3xl font-bold text-foreground">What recipe costing software does</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Recipe costing software keeps one card per dish. The card starts with the ingredients, the amount that survives prep, and the price you pay for each one. Food costing is that arithmetic. It is not a stock count and it is not the menu layout.
+      </p>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {cardJobs.map((item) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{item.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{item.detail}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-6 text-muted-foreground leading-7">
+        A single dish is a smaller job. If you only need the food cost of one plate, use the
+        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">Food Cost Calculator for Restaurants</a>.
+        It does not require an account, and it is not a plan of AI Chef Pro. Costing the recipes you sell, and pricing them, is the paid membership.
+      </p>
+    </section>
+
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ProductBanner {...kitBanner} />
+    </div>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="menu-pricing">
+      <h2 id="menu-pricing" class="text-3xl font-bold text-foreground">Menu costing and menu pricing</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Menu costing is the recipe card read across the dishes you actually sell. Menu pricing is what you charge once you know the plate cost and the margin you want. One number without the other is a guess: a popular dish can still sit under the food cost % you can live with, and a careful dish can be priced past what the dining room will order.
+      </p>
+      <p class="mt-4 text-muted-foreground leading-7">
+        When the cards are in place, the next question is which dishes earn their place. That is
+        <a href="/en/menu-engineering-software" class="font-semibold text-primary hover:underline">menu engineering software</a>,
+        on the same membership. This page stays on the cost of the recipe and the price you put on the menu.
+      </p>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="how-agents">
+      <h2 id="how-agents" class="text-3xl font-bold text-foreground">How AI Chef Pro’s agents do it</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        AI Chef Pro is a paid membership of AI agents. You describe the dish and the ingredients, and you enter the prices you pay. The agents build a costed recipe card and a price from those ingredients. They are assistants for that work. They do not capture invoices, count stock or connect to a supplier. When a price changes, you enter the new number and ask for the card again.
+      </p>
+      <ol class="mt-8 space-y-6">
+        <li class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-lg font-semibold text-foreground">1. The dish and your prices</h3>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">
+            You bring the recipe and the prices on your invoices. Nothing is pulled from a supplier account. Typed prices, or prices you paste from a spreadsheet, are the input.
+          </p>
+        </li>
+        <li class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-lg font-semibold text-foreground">2. A costed recipe card</h3>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">
+            The agents return a costed recipe card from those ingredients and prices. Plate cost and food cost % are only as good as the prices and the waste you enter.
+          </p>
+        </li>
+        <li class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-lg font-semibold text-foreground">3. A price for the menu</h3>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">
+            From that cost, the agents help you set a menu price and see the margin it implies. You still choose the price. The membership does not publish a food-cost target for your restaurant.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="who-for">
+      <h2 id="who-for" class="text-3xl font-bold text-foreground">Who recipe costing software is for</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        The membership is for people who price food and drink from their own costs. It is not limited to a dining-room menu.
+      </p>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {audiences.map((item) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{item.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{item.detail}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="what-to-look-for">
+      <h2 id="what-to-look-for" class="text-3xl font-bold text-foreground">What to look for</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        A scored comparison of ten products is a different page:
+        <a href="/en/blog/best-recipe-costing-software-compared" class="font-semibold text-primary hover:underline">Recipe costing software: 10 options compared</a>.
+        Use this list to judge any of them, including AI Chef Pro.
+      </p>
+      <ol class="mt-6 list-decimal space-y-3 pl-5 text-muted-foreground leading-7">
+        {checklist.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ol>
+      <p class="mt-6 text-muted-foreground leading-7">
+        If you also need invoice capture, stock counts or a live supplier feed, that is a different product. AI Chef Pro does not do that work. Keep the system that already receives your invoices, and use the agents for the card and the price.
+      </p>
+    </section>
+
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ProductBanner {...guideBanner} />
+    </div>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="packs">
+      <h2 id="packs" class="text-3xl font-bold text-foreground">One-time packs, separate from the membership</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        The guides and workbooks are a one-time purchase. They do not replace the subscription, and they are not included with it. The Food Cost Kit Pro and the Food Cost + Menu Engineering Guide sit next to the recipe card. The Restaurant Financial Plan Kit Pro is the venue workbook for projections and cash flow once the menu is costed. It is not recipe costing software.
+      </p>
+      <ProductBanner {...financialBanner} />
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="keep-reading">
+      <h2 id="keep-reading" class="text-3xl font-bold text-foreground">Keep reading</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        These pages go deeper on a slice of the same work. They are not a second copy of this offer. Plans and signup stay on
+        <a href="/en/pricing" class="font-semibold text-primary hover:underline">AI Chef Pro pricing</a>
+        and on the English app.
+      </p>
+      <ul class="mt-6 space-y-3 text-muted-foreground">
+        <li>
+          <a href="/en/blog/best-recipe-costing-software-compared" class="font-semibold text-primary hover:underline">Recipe costing software: 10 options compared</a>
+          <span> — a comparison article, not the product page.</span>
+        </li>
+        <li>
+          <a href="/en/menu-engineering-software" class="font-semibold text-primary hover:underline">Menu engineering software for restaurants</a>
+          <span> — what to promote, reprice or take off once the plates are costed.</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="-mx-4 mt-8">
+      <Pricing lang={lang} medium="landing-recipe-costing" schema={false} />
+    </div>
+
+    <section class="mx-auto mt-4 max-w-3xl" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="mb-8 text-center text-3xl font-bold text-foreground">Questions about recipe costing software</h2>
+      <div class="space-y-3">
+        {faqs.map((faq) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-foreground">
+              {faq.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm leading-6 text-muted-foreground">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-8 text-center sm:p-10">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Cost the recipe on a paid plan</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Open the English app, choose AI Chef Member at €10/month for 10,000 credits, and build the first costed recipe card from your own ingredient prices. Premium plans start at €25/month. Full prices sit on
+        <a href="/en/pricing" class="font-semibold text-primary hover:underline">the pricing page</a>.
+      </p>
+      <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={ctaHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Start with Member
+        </a>
+        <a
+          href="#pricing"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          Compare plans
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
