@@ -216,7 +216,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Bieten Sie Rückerstattungen an?',
-        a: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail an unter info@aichef.pro. Das Abo der App können Sie jederzeit in Ihrem Konto kündigen, ohne Laufzeitbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
+        a: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail unter info@aichef.pro an. Das Abo der App können Sie jederzeit in Ihrem Konto kündigen, ohne Laufzeitbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
       },
     ],
     blocks: [],
