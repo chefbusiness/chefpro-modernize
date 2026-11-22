@@ -48,11 +48,19 @@ export default function HerramientasIARestaurantes() {
   const k = (key: string) => t(`landingRestaurantes.${key}`, { returnObjects: true });
   const s = (key: string) => t(`landingRestaurantes.${key}`) as string;
 
-  const results = k('results') as Array<{ metric: string; label: string }>;
-  const tools = k('tools') as Array<{ title: string; description: string; keywords: string[] }>;
+  const resultsRaw = k('results');
+  const results = Array.isArray(resultsRaw) ? resultsRaw as Array<{ metric: string; label: string }> : [];
+  const tools = k('tools') as Array<{ title: string; description: string; keywords?: string[]; href?: string; linkLabel?: string }>;
   const profiles = k('profiles') as Array<{ title: string; description: string }>;
   const benefits = k('why_section.benefits') as string[];
   const faqs = k('faq') as Array<{ question: string; answer: string }>;
+  const testimonialQuote = s('testimonial.quote');
+  const showTestimonial = testimonialQuote.trim() !== '' && !testimonialQuote.startsWith('landingRestaurantes.');
+  const whyLinksRaw = currentLanguage === 'es' ? k('why_section.links') : [];
+  const whyLinks = Array.isArray(whyLinksRaw) ? whyLinksRaw as Array<{ href: string; label: string }> : [];
+  const whyNoteKey = 'landingRestaurantes.why_section.note';
+  const whyNote = currentLanguage === 'es' ? (t(whyNoteKey) as string) : '';
+  const showWhyNote = whyNote.trim() !== '' && whyNote !== whyNoteKey;
 
   const canonicalSlug = LANG_SLUGS[currentLanguage] || LANG_SLUGS.es;
   const canonicalUrl = currentLanguage === 'es'
@@ -104,7 +112,7 @@ export default function HerramientasIARestaurantes() {
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/5 py-20 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl text-center">
-              <HeroSocialProof />
+              {currentLanguage !== 'es' && <HeroSocialProof />}
               <Badge className="mb-6 text-sm px-4 py-2">{s('hero.badge')}</Badge>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
                 {s('hero.h1')}
@@ -129,7 +137,7 @@ export default function HerramientasIARestaurantes() {
           </div>
         </section>
 
-        {/* Resultados */}
+        {results.length > 0 && (
         <section className="py-16 bg-gradient-to-r from-primary/90 to-primary">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
@@ -142,6 +150,7 @@ export default function HerramientasIARestaurantes() {
             </div>
           </div>
         </section>
+        )}
 
         {/* Herramientas */}
         <section className="py-20">
@@ -162,10 +171,16 @@ export default function HerramientasIARestaurantes() {
                   <CardContent>
                     <p className="text-muted-foreground mb-4">{tool.description}</p>
                     <div className="flex flex-wrap gap-2">
-                      {tool.keywords.map((kw, j) => (
+                      {(tool.keywords ?? []).map((kw, j) => (
                         <Badge key={j} variant="secondary" className="text-xs">{kw}</Badge>
                       ))}
                     </div>
+                    {tool.href && (
+                      <a href={tool.href} className="inline-flex items-center mt-4 text-sm font-semibold text-primary hover:underline">
+                        {tool.linkLabel || tool.title}
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </a>
+                    )}
                   </CardContent>
                 </Card>
               ))}
@@ -201,7 +216,7 @@ export default function HerramientasIARestaurantes() {
         {/* Por qué IA */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+            <div className={showTestimonial ? 'grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto' : 'max-w-3xl mx-auto'}>
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">{s('why_section.title')}</h2>
                 <p className="text-lg text-muted-foreground mb-6">{s('why_section.body')}</p>
@@ -213,7 +228,23 @@ export default function HerramientasIARestaurantes() {
                     </li>
                   ))}
                 </ul>
+                {showWhyNote && (
+                  <p className="text-muted-foreground mt-6">{whyNote}</p>
+                )}
+                {whyLinks.length > 0 && (
+                  <ul className="mt-4 space-y-2">
+                    {whyLinks.map((link) => (
+                      <li key={link.href}>
+                        <a href={link.href} className="inline-flex items-center text-sm font-semibold text-primary hover:underline">
+                          {link.label}
+                          <ArrowRight className="ml-1 h-4 w-4" />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
+              {showTestimonial && (
               <div className="bg-muted/30 rounded-2xl p-8">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />)}
@@ -221,13 +252,14 @@ export default function HerramientasIARestaurantes() {
                 {/* Estaba cableado en castellano: era el único bloque en español
                     de esta página en los 6 idiomas no españoles. */}
                 <p className="text-lg italic text-foreground mb-6">
-                  "{s('testimonial.quote')}"
+                  "{testimonialQuote}"
                 </p>
                 <div>
                   <p className="font-semibold">{s('testimonial.name')}</p>
                   <p className="text-sm text-muted-foreground">{s('testimonial.role')}</p>
                 </div>
               </div>
+              )}
             </div>
           </div>
         </section>
