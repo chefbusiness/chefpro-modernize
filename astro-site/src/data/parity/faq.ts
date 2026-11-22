@@ -2,11 +2,11 @@ import type { PageCopy, ParityLang } from './types';
 
 const refund = {
   en: 'Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at info@aichef.pro. You can cancel an app subscription any time from your panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case at that same email.',
-  fr: 'Il n’y a pas de politique de remboursement publiée pour l’abonnement. Chaque cas se regarde par e-mail à info@aichef.pro. Vous résiliez à tout moment depuis le compte, sans engagement.',
-  de: 'Für das Abo ist keine Erstattungsregel veröffentlicht. Wir prüfen den Einzelfall per E-Mail an info@aichef.pro. Sie kündigen jederzeit im Konto, ohne Laufzeitbindung.',
-  it: 'Per l’abbonamento non c’è una politica di rimborso pubblicata. Ogni caso si guarda via email a info@aichef.pro. Disdici quando vuoi dal pannello, senza permanenza.',
-  pt: 'Para a subscrição não há política de reembolso publicada. Cada caso vê-se por email para info@aichef.pro. Cancelas quando quiseres no painel, sem permanência.',
-  nl: 'Voor het abonnement is geen terugbetalingsbeleid gepubliceerd. We bekijken elk geval per e-mail via info@aichef.pro. Opzeggen kan op elk moment in het account, zonder binding.',
+  fr: 'Les guides, kits et packs payants achetés en une seule fois ont une garantie de satisfaction de 30 jours à compter de l’achat et un remboursement de 100 %. Demandez-le par e-mail à info@aichef.pro. Vous pouvez résilier l’abonnement à l’application à tout moment depuis votre panneau, sans engagement, et vous conservez l’accès jusqu’à la fin de la période déjà payée. Toute autre question sur l’abonnement s’examine au cas par cas à cette même adresse.',
+  de: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail an unter info@aichef.pro. Das Abo der App können Sie jederzeit in Ihrem Konto kündigen, ohne Laufzeitbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
+  it: 'Le guide, i kit e i pack a pagamento acquistati in un’unica soluzione hanno una garanzia di soddisfazione di 30 giorni dall’acquisto e un rimborso del 100 %. Lo chiedi via email a info@aichef.pro. L’abbonamento all’app lo disdici quando vuoi dal pannello, senza permanenza, e l’accesso resta fino alla fine del periodo che hai già pagato. Qualsiasi altra questione sull’abbonamento la vediamo caso per caso a quella stessa email.',
+  pt: 'Os guias, kits e packs pagos comprados de uma só vez têm uma garantia de satisfação de 30 dias a partir da compra e um reembolso de 100 %. Pede-o por email para info@aichef.pro. Podes cancelar a subscrição da app quando quiseres no painel, sem permanência, e manténs o acesso até ao fim do período que já pagaste. Qualquer outra questão da subscrição vemos caso a caso nesse mesmo email.',
+  nl: 'Betaalde gidsen, kits en packs die je in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via info@aichef.pro. Je zegt het app-abonnement op wanneer je wilt in je account, zonder contractduur, en je houdt toegang tot het einde van de periode die je al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval via hetzelfde e-mailadres.',
 };
 
 export const FAQ: Record<ParityLang, PageCopy> = {
@@ -162,7 +162,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'compte',
         h2: 'Compte, résiliation et allergènes',
         answer:
-          'Vous changez de forfait ou vous résiliez vous-même dans le compte. Le remboursement de l’abonnement se traite au cas par cas.',
+          'Vous changez de forfait ou vous résiliez vous-même dans le compte. Les guides, kits et packs payants achetés en une seule fois ont une garantie de satisfaction de 30 jours et un remboursement de 100 %. Toute autre question sur l’abonnement s’examine au cas par cas.',
         faqs: [
           {
             q: 'Puis-je résilier quand je veux ?',
@@ -251,7 +251,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'konto',
         h2: 'Konto, Kündigung und Allergene',
         answer:
-          'Tarifwechsel und Kündigung erledigen Sie selbst im Konto. Eine Erstattung des Abos wird im Einzelfall geprüft.',
+          'Tarifwechsel und Kündigung erledigen Sie selbst im Konto. Kostenpflichtige Leitfäden, Kits und Packs aus einem einmaligen Kauf haben eine Zufriedenheitsgarantie von 30 Tagen und eine Rückerstattung von 100 %. Jede andere Frage zum Abo prüfen wir im Einzelfall.',
         faqs: [
           {
             q: 'Kann ich jederzeit kündigen?',
@@ -340,7 +340,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'account',
         h2: 'Account, disdetta e allergeni',
         answer:
-          'Cambi piano o disdici da solo nel pannello. Il rimborso dell’abbonamento si valuta caso per caso.',
+          'Cambi piano o disdici da solo nel pannello. Le guide, i kit e i pack a pagamento acquistati in un’unica soluzione hanno una garanzia di soddisfazione di 30 giorni e un rimborso del 100 %. Qualsiasi altra questione sull’abbonamento la vediamo caso per caso.',
         faqs: [
           {
             q: 'Posso disdire quando voglio?',
@@ -429,7 +429,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'conta',
         h2: 'Conta, cancelamento e alergénios',
         answer:
-          'Mudanças de plano e cancelamento fazes tu no painel. O reembolso da subscrição avalia-se caso a caso.',
+          'Mudanças de plano e cancelamento fazes tu no painel. Os guias, kits e packs pagos comprados de uma só vez têm uma garantia de satisfação de 30 dias e um reembolso de 100 %. Qualquer outra questão da subscrição vemos caso a caso.',
         faqs: [
           {
             q: 'Posso cancelar quando quiser?',
@@ -518,7 +518,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'account',
         h2: 'Account, opzeggen en allergenen',
         answer:
-          'Abonnement wisselen of opzeggen doe je zelf in het account. Een terugbetaling van het abonnement bekijken we per geval.',
+          'Abonnement wisselen of opzeggen doe je zelf in het account. Betaalde gidsen, kits en packs die je in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen en een terugbetaling van 100%. Elke andere vraag over het abonnement bekijken we per geval.',
         faqs: [
           {
             q: 'Kan ik op elk moment opzeggen?',
