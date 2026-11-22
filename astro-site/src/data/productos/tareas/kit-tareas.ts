@@ -348,7 +348,7 @@ const data: KitTareasData = {
       {
         name: 'David Molina',
         role: 'Propietario, Gastrobar La Esquina',
-        text: 'Abrí mi primer restaurante hace un año y se me olvidaba todo: encender el horno, revisar reservas, reponer servilletas. Con las checklists reduje los olvidos un 80%. Literalmente salvaron mi operación diaria.',
+        text: 'Abrí mi primer restaurante hace un año y se me olvidaba todo: encender el horno, revisar reservas, reponer servilletas. Con las checklists casi no se me escapa nada. Literalmente salvaron mi operación diaria.',
         avatar: '/avatars/avatar-3.jpg',
       },
       {
@@ -360,7 +360,7 @@ const data: KitTareasData = {
       {
         name: 'Sergio Blanco',
         role: 'Gerente, Brasserie Central',
-        text: 'Antes, un nuevo camarero necesitaba dos semanas para aprender la rutina completa. Ahora con las checklists por perfil, en 2 días ya sabe qué hacer en cada turno. La rotación de personal ya no es un drama.',
+        text: 'Antes, un nuevo camarero tardaba en aprender la rutina completa. Ahora, con las checklists por perfil, sabe qué hacer en cada turno mucho antes. La rotación de personal ya no es un drama.',
         avatar: '/avatars/avatar-5.jpg',
       },
       {
@@ -372,7 +372,7 @@ const data: KitTareasData = {
       {
         name: 'Fernando López',
         role: 'Propietario, Restaurante Mesa Abierta',
-        text: 'Solo la plantilla de briefing pre-servicio ya vale el precio. Antes el briefing era improvisado y duraba 30 segundos. Ahora repasamos platos del día, alérgenos, reservas VIP y objetivos en 5 minutos. El servicio sale mucho mejor.',
+        text: 'Solo la plantilla de briefing pre-servicio ya vale el precio. Antes el briefing era improvisado y se quedaba en nada. Ahora repasamos platos del día, alérgenos, reservas VIP y objetivos con calma. El servicio sale mucho mejor.',
         avatar: '/avatars/avatar-7.jpg',
       },
       {
@@ -384,7 +384,7 @@ const data: KitTareasData = {
       {
         name: 'Pablo Santana',
         role: 'Consultor Gastronómico',
-        text: 'Lo recomiendo a todos mis clientes de consultoría sin excepción. Las checklists de apertura, cierre y tareas del manager cubren el 90% de lo que necesita cualquier restaurante para funcionar con orden. Es un must-have.',
+        text: 'Lo recomiendo a todos mis clientes de consultoría sin excepción. Las checklists de apertura, cierre y tareas del manager cubren lo que necesita cualquier restaurante para funcionar con orden. Es un must-have.',
         avatar: '/avatars/chef-avatar-5.jpg',
       },
       {
