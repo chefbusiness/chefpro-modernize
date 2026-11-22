@@ -240,6 +240,15 @@ export default function EscandallosRestaurante() {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">{s('why_section.title')}</h2>
                 <p className="text-lg text-muted-foreground mb-6">{s('why_section.body')}</p>
+                {currentLanguage === 'es' && (
+                  <p className="text-muted-foreground mb-6">
+                    Las cantidades del plato salen de un borrador de receta. Ese borrador se trabaja en{' '}
+                    <a href="/recetas-ia-restaurantes" className="font-semibold text-primary hover:underline">
+                      recetas con IA para restaurantes
+                    </a>
+                    . El coste se calcula con los precios que tú indicas.
+                  </p>
+                )}
                 <ul className="space-y-4">
                   {benefits.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">

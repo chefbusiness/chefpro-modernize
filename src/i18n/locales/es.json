@@ -2243,35 +2243,35 @@
   "landingRecetas": {
     "seo": {
       "title": "Recetas con IA para Restaurantes | AI Chef Pro",
-      "description": "Genera recetas profesionales con IA: 25 cocinas del mundo, menús de temporada, fichas técnicas y escalado automático. Más de 5.000 restaurantes ya lo usan.",
-      "keywords": "recetas con IA restaurantes, generador recetas profesionales, recetas IA chef, menú temporada IA, fichas técnicas recetas, recetas 25 cocinas mundo"
+      "description": "Recetas con IA para restaurantes. El agente redacta el borrador del plato y el chef lo revisa antes del pase. 27 recetarios de Europa, Latinoamérica y Asia.",
+      "keywords": "recetas con ia, recetas con IA para restaurantes, recetarios, ficha técnica de cocina, escandallo"
     },
-    "breadcrumb": "Recetas con IA para Restaurantes",
+    "breadcrumb": "Recetas con IA para restaurantes",
     "hero": {
-      "badge": "Generador de Recetas Profesionales con IA",
-      "h1": "Recetas con IA para Restaurantes: 25 Cocinas del Mundo",
-      "subtitle": "Genera recetas técnicamente correctas al instante. Menús de temporada, fichas técnicas profesionales y escalado automático de raciones para tu restaurante.",
-      "tagline": "Del concepto al plato en minutos, no en horas.",
-      "cta_primary": "Probar ahora",
-      "cta_secondary": "Ver planes y precios",
-      "no_card": "Desde 10 € al mes · Sin permanencia · Acceso inmediato"
+      "badge": "Borrador para la partida",
+      "h1": "Recetas con IA para restaurantes",
+      "subtitle": "Pides el plato y el agente deja un borrador: ingredientes, cantidades y elaboración. Tú lo pruebas y lo corriges antes de que llegue al pase.",
+      "tagline": "Son 27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia.",
+      "cta_primary": "Redactar la receta en la app",
+      "cta_secondary": "Ver precios",
+      "no_card": "Plan Miembro · 10 €/mes · 10.000 créditos"
     },
     "results": [
       {
-        "metric": "25",
-        "label": "Cocinas del mundo"
+        "metric": "27",
+        "label": "Recetarios"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Restaurantes activos"
+        "metric": "12",
+        "label": "De Europa"
       },
       {
-        "metric": "80%",
-        "label": "Menos tiempo en desarrollo de carta"
+        "metric": "11",
+        "label": "De Latinoamérica"
       },
       {
-        "metric": "75+",
-        "label": "Agentes de IA"
+        "metric": "4",
+        "label": "De Asia"
       }
     ],
     "comparison": {
@@ -2283,27 +2283,27 @@
         {
           "feature": "Creación de recetas",
           "other": "Horas de investigación y pruebas",
-          "aichef": "Receta técnica generada en segundos"
+          "aichef": "Borrador que el chef prueba antes del pase"
         },
         {
           "feature": "Variedad de cocinas",
           "other": "Limitada al conocimiento del chef",
-          "aichef": "25 cocinas del mundo con técnica real"
+          "aichef": "27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia"
         },
         {
           "feature": "Menús de temporada",
           "other": "Proceso manual de semanas",
-          "aichef": "Menú completo con ingredientes de temporada"
+          "aichef": "Borrador de platos para la carta de la temporada"
         },
         {
           "feature": "Escalado de raciones",
           "other": "Cálculos manuales con errores",
-          "aichef": "Escalado automático e instantáneo"
+          "aichef": "Calcula Pax deja otro borrador de cantidades"
         },
         {
           "feature": "Fichas técnicas",
           "other": "Redacción manual en Word/Excel",
-          "aichef": "Ficha técnica profesional generada al momento"
+          "aichef": "La ficha se cierra cuando el chef revisa el borrador"
         }
       ]
     },
@@ -2313,8 +2313,8 @@
     },
     "tools": [
       {
-        "title": "Generador de Recetas Profesionales",
-        "description": "Crea recetas técnicamente correctas con vocabulario culinario profesional, técnicas precisas y presentación detallada.",
+        "title": "Cocina Creativa",
+        "description": "Redacta el borrador del plato: ingredientes, cantidades y elaboración. El chef lo prueba antes del pase.",
         "keywords": [
           "generador recetas IA",
           "recetas profesionales chef",
@@ -2322,8 +2322,8 @@
         ]
       },
       {
-        "title": "25 Cocinas del Mundo",
-        "description": "Accede a recetas auténticas de 25 tradiciones culinarias: francesa, japonesa, peruana, italiana, mexicana y mucho más.",
+        "title": "Recetarios Mundiales",
+        "description": "27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia. Cada agente redacta el borrador en su cocina.",
         "keywords": [
           "cocinas del mundo",
           "recetas internacionales",
@@ -2340,8 +2340,8 @@
         ]
       },
       {
-        "title": "Escalado Automático de Raciones",
-        "description": "Adapta cualquier receta al número de comensales que necesites. La IA ajusta gramajes, tiempos y técnicas.",
+        "title": "Calcula Pax",
+        "description": "Pasa las cantidades a otro número de comensales. La sal y los tiempos los cierras tú al probar.",
         "keywords": [
           "escalado recetas",
           "gramajes por ración",
@@ -2349,8 +2349,8 @@
         ]
       },
       {
-        "title": "Fichas Técnicas Profesionales",
-        "description": "Genera fichas técnicas completas con alérgenos, valores nutricionales, técnicas y emplatado para tu equipo.",
+        "title": "ID Alérgenos",
+        "description": "Marca los alérgenos de los ingredientes del borrador. La etiqueta del proveedor manda si el producto es compuesto.",
         "keywords": [
           "ficha técnica receta",
           "recetario profesional",
@@ -2382,7 +2382,7 @@
       },
       {
         "title": "Chef de Hotel o Catering",
-        "description": "Crea menús completos para eventos multitudinarios con escalado automático de raciones."
+        "description": "Pide el borrador de las raciones del evento y lo prueba antes del servicio."
       },
       {
         "title": "Dueño de Restaurante",
@@ -2394,17 +2394,17 @@
       "body": "Un generador genérico te dará recetas básicas. AI Chef Pro entiende técnica culinaria real: fondos, reducciones, puntos de cocción, maridajes y la lógica de cada cocina del mundo.",
       "benefits": [
         "Recetas con vocabulario técnico culinario correcto desde el primer intento",
-        "25 cocinas del mundo con sus técnicas y tradiciones auténticas",
-        "Menús de temporada alineados con tu concepto gastronómico",
-        "Fichas técnicas listas para imprimir y usar con tu equipo",
-        "Escalado de raciones instantáneo sin errores de cálculo",
+        "27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia",
+        "Menús de temporada como borrador, alineados con tu casa",
+        "La ficha se cierra cuando el chef revisa el borrador",
+        "Calcula Pax deja otro borrador de cantidades, y la sal se vuelve a probar",
         "Adaptación a restricciones dietéticas sin perder calidad culinaria"
       ]
     },
     "testimonial": {
-      "quote": "Antes me pasaba horas desarrollando nuevos platos. Con AI Chef Pro tengo una receta técnicamente correcta en minutos, con la ficha técnica incluida. Mi equipo puede reproducirla perfectamente desde el primer día.",
-      "name": "Laura Sánchez",
-      "role": "Chef Ejecutiva, Restaurante Origen, Bilbao"
+      "quote": "",
+      "name": "",
+      "role": ""
     },
     "pricing_section": {
       "title": "Accede al generador de recetas con IA desde 10 €",
@@ -2416,25 +2416,33 @@
     },
     "faq": [
       {
-        "question": "¿Puede la IA crear recetas profesionales para restaurantes?",
-        "answer": "Sí. AI Chef Pro genera recetas con vocabulario técnico culinario correcto, incluyendo técnicas precisas, puntos de cocción, presentación y maridaje. A diferencia de una IA generalista, entiende la lógica de cada cocina del mundo."
+        "question": "¿Puede la IA escribir una receta profesional para un restaurante?",
+        "answer": "Sí. Cocina Creativa redacta el borrador de un plato: ingredientes, cantidades y elaboración. En un postre, el borrador lo escribe Pastelería Creativa. Si pides una cocina concreta, lo redacta el recetario de esa cocina. El texto que se queda en el pase es el que tú has probado."
       },
       {
-        "question": "¿Qué cocinas del mundo incluye AI Chef Pro?",
-        "answer": "AI Chef Pro incluye recetas y técnicas de 25 cocinas: francesa, italiana, japonesa, española, peruana, mexicana, griega, marroquí, tailandesa, india, china y más. Cada una con sus técnicas y vocabulario auténticos."
+        "question": "¿Cómo revisa el chef ese borrador?",
+        "answer": "Lo cocina. Si la sal, el punto o la textura no son los de tu casa, mandan la cata y la báscula. Los alérgenos se cruzan con la etiqueta cuando el ingrediente es un producto compuesto. El maridaje que propone Food Pairing AI se acepta o se cambia."
       },
       {
-        "question": "¿Puedo generar fichas técnicas con AI Chef Pro?",
-        "answer": "Sí. AI Chef Pro genera fichas técnicas profesionales completas: ingredientes con gramajes, técnicas paso a paso, alérgenos según el Reglamento UE 1169/2011, valores nutricionales y sugerencias de emplatado."
+        "question": "¿Qué cocinas cubren los recetarios?",
+        "answer": "27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia. Entre ellos están Cocina Española, Cocina Francesa, Cocina Italiana, Cocina Mexicana, Cocina Peruana, Cocina Japonesa, Cocina China, Cocina India y Cocina Tailandesa."
       },
       {
-        "question": "¿Cómo funciona el escalado automático de recetas?",
-        "answer": "Introduce el número de raciones que necesitas y la IA ajusta automáticamente todos los gramajes, tiempos de cocción y técnicas. Ideal para catering, eventos o para adaptar recetas de menú degustación a servicio à la carte."
+        "question": "¿El escalado cierra los gramajes solo?",
+        "answer": "No. Calcula Pax pasa las cantidades a otro número de comensales y deja un borrador. La sal, una salsa reducida o el tiempo de horno no siguen el multiplicador: los ajustas al probar."
+      },
+      {
+        "question": "¿En qué se diferencia de un chatbot genérico?",
+        "answer": "Un chatbot genérico escribe una receta de casa. Aquí el borrador lo redacta un agente de cocina: Cocina Creativa, Pastelería Creativa o un recetario. Desde ahí puedes seguir con ID Alérgenos, Calcula Pax y Food Pairing AI. Si cocinas en casa con lo que queda en la nevera, el camino es otro."
+      },
+      {
+        "question": "¿Cuánto cuesta usar los agentes?",
+        "answer": "El plan Miembro son 10 € al mes, con 10.000 créditos. Premium Pro son 25 € al mes y 85.000 créditos. Premium Plus son 50 € al mes y 175.000 créditos. Premium Max son 95 € al mes, o 950 € al año, con créditos ilimitados."
       }
     ],
     "cta_section": {
       "title": "Empieza a crear recetas con IA para tu restaurante",
-      "subtitle": "Más de {{userCount}} chefs y restauradores ya usan AI Chef Pro para crear recetas profesionales en minutos.",
+      "subtitle": "El plan Miembro son 10 € al mes, con 10.000 créditos. El borrador lo revisa el chef antes del pase.",
       "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     }

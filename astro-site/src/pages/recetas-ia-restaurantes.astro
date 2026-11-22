@@ -1,15 +1,132 @@
 ---
-// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
-// Fase 6: la página de la SPA (src/pages/RecetasIARestaurantes.tsx) se monta como island (D5,
-// patrón Fase 5); el head SEO sale server-side del head-module (claves i18n
-// verbatim de la SPA — SEOHead/Helmet son la spec).
+// Landing de captación ES, reescrita a mano. No la regenere fase6-generate-marketing.py
+// (el script salta este path). Los otros seis idiomas siguen en island.
+// Mismo BaseLayout, Header y Footer que /ficha-tecnica-cocina-ia y /precios.
+// hreflang: los siete slugs de la familia. Canonical a sí misma.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import { SITE } from '../i18n/config';
+import { appCtaUrl } from '../lib/app-url';
 import { head } from '../lib/marketing-heads/recetas-i-a-restaurantes';
-import RecetasIARestaurantesIsland from '../islands/marketing/RecetasIARestaurantesIsland';
+import { tObjects } from '../i18n/translations';
 
 const lang = 'es';
+const basePath = '/recetas-ia-restaurantes';
+const canonical = `${SITE}${basePath}`;
 const h = head(lang);
+
+const h1 = 'Recetas con IA para restaurantes';
+
+const cta = (content: string) => appCtaUrl(lang, 'landing-recetas-ia', content);
+
+const alternates = {
+  es: '/recetas-ia-restaurantes',
+  en: '/en/ai-recipes-for-restaurants',
+  fr: '/fr/recettes-ia-restaurants',
+  de: '/de/ki-rezepte-restaurants',
+  it: '/it/ricette-ia-ristoranti',
+  pt: '/pt/receitas-ia-restaurantes',
+  nl: '/nl/ai-recepten-restaurants',
+};
+
+const fields = [
+  {
+    name: 'Ingredientes y cantidades',
+    detail: 'Lo que entra en el plato, en gramos o en unidades, para las raciones que pides.',
+  },
+  {
+    name: 'Elaboración',
+    detail: 'Los pasos, en el orden de la partida, para que otro cocinero pueda repetir el plato.',
+  },
+  {
+    name: 'Alérgenos',
+    detail: 'Los que ID Alérgenos marca a partir de esos ingredientes. La etiqueta del proveedor manda si el producto es compuesto.',
+  },
+  {
+    name: 'Otro número de comensales',
+    detail: 'Calcula Pax pasa las cantidades a las raciones que pides. La sal y los tiempos los cierras tú al probar.',
+  },
+  {
+    name: 'Maridaje',
+    detail: 'Food Pairing AI propone combinaciones. La copa que sale en la carta la decides tú.',
+  },
+  {
+    name: 'Cocina de origen',
+    detail: 'Cocina Creativa redacta el plato. En un postre, Pastelería Creativa. Si pides una cocina concreta, responde el recetario de esa cocina.',
+  },
+];
+
+const review = [
+  'Cocina el borrador una vez. Si el punto, la sal o la textura no son los de tu casa, mandan la cata y la báscula.',
+  'Cruza los alérgenos con la etiqueta. El pescado se ve. Un caldo o una salsa comprada pueden traer otro.',
+  'Si cambias el número de comensales, usa el borrador de Calcula Pax y prueba de nuevo. Una salsa reducida no se multiplica en línea recta.',
+  'Lee el maridaje en voz alta. Si no es el vino de tu carta, lo cambias.',
+  'Cuando el plato ya está, pasa las cantidades a la ficha y el coste con los precios de tu albarán.',
+];
+
+const agents = [
+  {
+    name: 'Cocina Creativa',
+    detail: 'Redacta el borrador del plato salado: ingredientes, cantidades y elaboración.',
+  },
+  {
+    name: 'Pastelería Creativa',
+    detail: 'Hace lo mismo cuando el plato es un postre.',
+  },
+  {
+    name: 'Recetarios Mundiales',
+    detail: '27 agentes, uno por cocina. Cada uno redacta el borrador en su repertorio.',
+  },
+  {
+    name: 'Calcula Pax',
+    detail: 'Pasa las cantidades de la receta a otro número de comensales. El resultado es otro borrador.',
+  },
+  {
+    name: 'ID Alérgenos',
+    detail: 'Marca los alérgenos de los ingredientes del borrador. Para un plato suelto y sin registro está el detector de alérgenos, que pide la misma revisión.',
+  },
+  {
+    name: 'Food Pairing AI',
+    detail: 'Propone un maridaje. Tú decides si entra en la carta.',
+  },
+];
+
+const regions = [
+  {
+    name: 'Europa',
+    count: '12',
+    agents:
+      'Cocina Alemana, Cocina Belga, Cocina Británica, Cocina Croata, Cocina Española, Cocina Francesa, Cocina Griega, Cocina Italiana, Cocina Países Bajos, Cocina Portuguesa, Cocina Suiza y Cocina Turca.',
+  },
+  {
+    name: 'Latinoamérica',
+    count: '11',
+    agents:
+      'Cocina Argentina, Cocina Brasileña, Cocina Chilena, Cocina Colombiana, Cocina Dominicana, Cocina Ecuatoriana, Cocina Jamaicana, Cocina Mexicana, Cocina Paraguaya, Cocina Peruana y Cocina Venezolana.',
+  },
+  {
+    name: 'Asia',
+    count: '4',
+    agents: 'Cocina China, Cocina India, Cocina Japonesa y Cocina Tailandesa.',
+  },
+];
+
+const faqs = tObjects<{ question: string; answer: string }>(lang, 'landingRecetas.faq');
+
+const schemas = [
+  ...h.schemas,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: h.title,
+    headline: h1,
+    description: h.description,
+    url: canonical,
+    inLanguage: 'es',
+    isPartOf: { '@type': 'WebSite', name: 'AI Chef Pro', url: SITE },
+  },
+];
 ---
 
 <BaseLayout
@@ -17,11 +134,211 @@ const h = head(lang);
   description={h.description}
   keywords={h.keywords}
   lang={lang}
-  alternates={{"es": "/recetas-ia-restaurantes", "en": "/en/ai-recipes-for-restaurants", "fr": "/fr/recettes-ia-restaurants", "de": "/de/ki-rezepte-restaurants", "it": "/it/ricette-ia-ristoranti", "pt": "/pt/receitas-ia-restaurantes", "nl": "/nl/ai-recepten-restaurants"}}
-  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+  alternates={alternates}
+  ogImage={`${SITE}/og-image.jpg`}
 >
-  {h.schemas.map((s) => (
-    <script type="application/ld+json" set:html={JSON.stringify(s)} />
-  ))}
-  <RecetasIARestaurantesIsland client:load lang={lang} pathname={Astro.url.pathname} />
+  <Fragment slot="head">
+    {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+    <header class="mx-auto mb-16 max-w-3xl text-center">
+      <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
+        Borrador para la partida
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">
+        {h1}
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
+        Pides el plato y el agente deja un borrador: ingredientes, cantidades y elaboración. Tú lo pruebas y lo corriges antes de que llegue al pase. Son 27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={cta('hero')}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Redactar la receta en la app
+        </a>
+        <a
+          href="/precios"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          Ver precios
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-muted-foreground">
+        Plan Miembro · 10 €/mes · 10.000 créditos
+      </p>
+    </header>
+
+    <section class="mx-auto max-w-3xl" aria-labelledby="que-trae">
+      <h2 id="que-trae" class="text-3xl font-bold text-foreground">Qué trae el borrador</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Una receta con IA sale como borrador. Esto es lo que cubre, y lo que tú cierras antes de dejarla en la brigada.
+      </p>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {fields.map((item) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{item.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{item.detail}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="revision">
+      <h2 id="revision" class="text-3xl font-bold text-foreground">Cómo lo revisa el chef</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        El borrador ahorra el folio en blanco. La receta que se queda en el pase es la que tú has comprobado.
+      </p>
+      <ol class="mt-6 list-decimal space-y-3 pl-5 text-muted-foreground leading-7">
+        {review.map((step) => (
+          <li>{step}</li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="ejemplo">
+      <h2 id="ejemplo" class="text-3xl font-bold text-foreground">Ejemplo: arroz a banda, 4 raciones</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Ejemplo para ver la forma del borrador. No es una salida guardada de la app. En tu cocina cambias el pescado, el caldo y la sal por los de tu casa.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[640px] border-collapse text-sm">
+          <caption class="border-b border-border bg-muted/50 px-4 py-3 text-left text-base font-semibold text-foreground">
+            Borrador de receta para un servicio
+          </caption>
+          <tbody class="divide-y divide-border">
+            <tr>
+              <th scope="row" class="w-40 p-4 text-left align-top font-medium text-foreground">Plato</th>
+              <td class="p-4 text-muted-foreground">Arroz a banda</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Raciones</th>
+              <td class="p-4 text-muted-foreground">4</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Ingredientes</th>
+              <td class="p-4 text-muted-foreground">Arroz 320 g, caldo de pescado 1.200 g, ajo 20 g, ñora 15 g, aceite de oliva 40 g, sal 6 g</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Elaboración</th>
+              <td class="p-4 text-muted-foreground">Sofreír ajo y ñora, añadir el arroz, mojar con el caldo caliente y cocer. El chef prueba la sal del caldo antes de mojar y abre un grano antes de retirar.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Alérgenos</th>
+              <td class="p-4 text-muted-foreground">Pescado. Si el caldo lleva marisco, entran crustáceos o moluscos: se mira la receta del caldo, no solo el arroz. Ajo, ñora, arroz, aceite de oliva y sal no están entre los de declaración obligatoria. Si el caldo es un producto comprado, manda la etiqueta.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Revisión</th>
+              <td class="p-4 text-muted-foreground">La sal del caldo y el punto del grano. Para 12 raciones, Calcula Pax deja otro borrador de cantidades. La sal se vuelve a probar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="recetarios">
+      <h2 id="recetarios" class="text-3xl font-bold text-foreground">27 recetarios del mundo</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Recetarios Mundiales agrupa estos agentes. Cada uno redacta un borrador en su cocina. Tú lo pruebas igual que cualquier otra receta de la casa.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[640px] border-collapse text-sm">
+          <caption class="border-b border-border bg-muted/50 px-4 py-3 text-left text-base font-semibold text-foreground">
+            Recetarios Mundiales
+          </caption>
+          <thead>
+            <tr class="border-b border-border text-left">
+              <th scope="col" class="p-4 font-semibold text-foreground">Región</th>
+              <th scope="col" class="w-16 p-4 font-semibold text-foreground">N.º</th>
+              <th scope="col" class="p-4 font-semibold text-foreground">Agentes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            {regions.map((region) => (
+              <tr>
+                <th scope="row" class="p-4 text-left align-top font-medium text-foreground">{region.name}</th>
+                <td class="p-4 align-top text-muted-foreground">{region.count}</td>
+                <td class="p-4 align-top text-muted-foreground">{region.agents}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="agentes">
+      <h2 id="agentes" class="text-3xl font-bold text-foreground">Agentes de la receta</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Estos agentes están en AI Chef Pro y cubren el borrador. Ninguno cierra el plato por ti.
+      </p>
+      <ul class="mt-6 space-y-4">
+        {agents.map((agent) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{agent.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{agent.detail}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-6 text-muted-foreground leading-7">
+        Cuando el borrador ya te convence, la ficha del plato se trabaja en la
+        <a href="/ficha-tecnica-cocina-ia" class="font-semibold text-primary hover:underline">ficha técnica de cocina con IA</a>.
+        El coste de la ración, con los precios de tu factura, en
+        <a href="/escandallos-restaurante-ia" class="font-semibold text-primary hover:underline">escandallos de restaurante con IA</a>.
+        Los platos que salen a la sala, en la
+        <a href="/carta-menu-restaurante-ia" class="font-semibold text-primary hover:underline">carta del restaurante con IA</a>.
+      </p>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Si cocinas en casa con lo que queda en la nevera, el texto del
+        <a href="/blog/generador-de-recetas-con-ingredientes-por-ia" class="font-semibold text-primary hover:underline">generador de recetas con ingredientes por IA</a>
+        va por ese uso. En un restaurante el borrador entra en la partida: raciones, alérgenos y la revisión del chef antes del pase.
+      </p>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="planes">
+      <h2 id="planes" class="text-3xl font-bold text-foreground">Planes</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        El plan Miembro son 10 €/mes, con 10.000 créditos. Premium Pro son 25 €/mes y 85.000 créditos. Premium Plus son 50 €/mes y 175.000 créditos. Premium Max son 95 €/mes, o 950 € al año, con créditos ilimitados. Sin permanencia: cambias de plan o cancelas cuando quieras. La comparación está en
+        <a href="/precios" class="font-semibold text-primary hover:underline">precios</a>.
+      </p>
+      <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+        <a
+          href={cta('planes')}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Redactar la receta en la app
+        </a>
+        <a
+          href="/precios"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          Ver precios
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="faq">
+      <h2 id="faq" class="text-3xl font-bold text-foreground">Preguntas frecuentes</h2>
+      <div class="mt-6 space-y-3">
+        {faqs.map((faq) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+              {faq.question}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm leading-6 text-muted-foreground">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
 </BaseLayout>
