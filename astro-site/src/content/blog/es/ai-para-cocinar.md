@@ -112,7 +112,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph"><strong>Ejemplo práctico:</strong> El sistema de Cocina Creativa de AI Chef Pro puede generar una «Crema de coliflor ahumada con tartar de vieiras, gel de cítricos y polvo de algas» especificando cada ingrediente, cantidad exacta, tiempo de preparación y técnica específica, adaptándose al nivel de experiencia del chef y al equipamiento disponible.</p>
+<p class="wp-block-paragraph"><strong>Ejemplo práctico:</strong> A Cocina Creativa le puedes pedir una crema, un tartar o un gel, y decir el equipo que tienes. Lo que salga es un borrador: cantidades y punto los cierras tú en el fuego.</p>
 
 
 
@@ -196,7 +196,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">La herramienta ID Alérgenos de AI Chef Pro puede reescribir una receta, por ejemplo un risotto de mariscos, en versiones vegana, sin gluten, baja en sodio o keto, y en combinaciones de esas restricciones, manteniendo la idea del plato.</p>
+<p class="wp-block-paragraph">ID Alérgenos sirve para revisar los alérgenos de una receta, por ejemplo un risotto de mariscos, y señalar lo que conviene mirar si cambias un ingrediente. La ficha la confirmas tú antes de servir.</p>
 
 
 
@@ -567,7 +567,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph"><strong>Gastro Lexicum</strong>, el asistente especializado de AI Chef Pro, puede explicar desde «¿cómo lograr la textura perfecta en una mayonesa?» hasta «¿cuáles son los principios científicos detrás de la esferificación?» proporcionando respuestas precisas y contextualizadas.</p>
+<p class="wp-block-paragraph"><strong>Gastro Lexicum</strong> sirve para preguntar una técnica o un término, por ejemplo la mayonesa o la esferificación. La respuesta la contrastas con lo que ya haces en el pase.</p>
 
 
 
@@ -613,7 +613,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Mental Coach de AI Chef Pro analiza patrones de comportamiento y comunicación del equipo, sugiriendo intervenciones personalizadas. Puede proponerte una pauta de organización para los servicios más cargados. La aplicas si encaja con tu brigada.</p>
+<p class="wp-block-paragraph">Mental Coach sirve para pedir una pauta de organización del servicio. La aplicas si encaja con tu brigada.</p>
 
 
 
@@ -739,7 +739,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph"><strong>Menu Plate Local SEO</strong>, parte del ecosistema AI Chef Pro, genera automáticamente descripciones atractivas y optimizadas para cada plato del menú. Por ejemplo, transforma «Paella mixta» en «Auténtica Paella Mixta Valenciana con mariscos frescos del Mediterráneo, pollo de corral y sofrito tradicional, cocinada en paellera artesanal sobre fuego de leña &#8211; Especialidad de la casa que celebra la tradición culinaria española con productos locales de temporada».</p>
+<p class="wp-block-paragraph"><strong>Menu Plate Local SEO</strong> sirve para pedir un texto más largo de un plato, por ejemplo una paella mixta. Lo que publiques en la carta lo revisas tú.</p>
 
 
 
@@ -799,15 +799,15 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph"><strong>Incorporación de Herramientas Complementarias:</strong> Una vez dominada la primera herramienta, añade aplicaciones que complementen y potencien los beneficios obtenidos. La integración de múltiples herramientas AI genera efectos sinérgicos significativos.</p>
+<p class="wp-block-paragraph"><strong>Incorporación de Herramientas Complementarias:</strong> Cuando la primera ya te sirva, puedes probar otro agente. Cada uno se usa por separado.</p>
 
 
 
-<p class="wp-block-paragraph"><strong>Personalización Avanzada:</strong> Configura parámetros específicos para tu operación: proveedores habituales, estilos culinarios preferidos, márgenes objetivo, restricciones de equipamiento. Esto mejora la precisión de las recomendaciones.</p>
+<p class="wp-block-paragraph"><strong>Personalización Avanzada:</strong> En el encargo puedes decir los proveedores, el estilo, el margen y el equipo que tienes. La propuesta la revisas tú.</p>
 
 
 
-<p class="wp-block-paragraph"><strong>Análisis de Resultados y Ajustes:</strong> Revisa métricas semanalmente y ajusta procesos según datos obtenidos. La IA mejora con feedback y uso constante.</p>
+<p class="wp-block-paragraph"><strong>Análisis de Resultados y Ajustes:</strong> Revisa el resultado y vuelve a pedir si no encaja.</p>
 
 
 
@@ -825,7 +825,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph"><strong>Complejidad Tecnológica:</strong> Muchos profesionales gastronómicos sienten intimidación tecnológica. Comienza con interfaces simples y proporciona formación práctica paso a paso. La curva de aprendizaje de AI Chef Pro está diseñada para ser intuitiva incluso para usuarios no técnicos.</p>
+<p class="wp-block-paragraph"><strong>Complejidad Tecnológica:</strong> Empieza por un encargo corto, con una receta que ya conoces.</p>
 
 
 
@@ -845,11 +845,11 @@ wpId: 1550
 
 
 
-<h3 class="wp-block-heading">AI Chef Pro: La Suite Completa para Profesionales</h3>
+<h3 class="wp-block-heading">AI Chef Pro: agentes para la cocina profesional</h3>
 
 
 
-<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> se distingue como la plataforma más completa del mercado, ofreciendo más de 75 agentes organizados en módulos específicos para diferentes necesidades gastronómicas.</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> reúne más de 75 agentes, agrupados por el trabajo de cocina.</p>
 
 
 
@@ -880,62 +880,6 @@ wpId: 1550
 
 <li><strong>Marketing Digital:</strong> Menu Plate Local SEO, Gastro Calendar, InstaFlow AI Pro</li>
 </ul>
-
-
-
-<p class="wp-block-paragraph"><strong>Ventajas Competitivas:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li>Integración completa entre aplicaciones para workflows optimizados</li>
-
-
-
-<li>Base de conocimiento específicamente entrenada para gastronomía profesional</li>
-
-
-
-<li>Actualización continua con últimas tendencias y técnicas culinarias</li>
-
-
-
-<li>Soporte especializado por profesionales del sector gastronómico</li>
-
-
-
-<li>Planes escalables desde emprendedores hasta cadenas internacionales</li>
-</ul>
-
-
-
-<h3 class="wp-block-heading">Integración con Equipamiento de Cocina</h3>
-
-
-
-<p class="wp-block-paragraph">La próxima frontera en <strong>AI cooking</strong> es la integración directa con equipamiento de cocina inteligente. AI Chef Pro está desarrollando conectividad con:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Hornos Programables:</strong> Transferencia directa de parámetros de cocción desde recetas AI</li>
-
-
-
-<li><strong>Sistemas de Vacío:</strong> Configuración automática según especificaciones de cada preparación</li>
-
-
-
-<li><strong>Balanzas Inteligentes:</strong> Pesado automático según recetas escaladas</li>
-
-
-
-<li><strong>Termómetros Conectados:</strong> Monitoreo en tiempo real de procesos de cocción</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">Esta integración minimizará errores humanos y optimizará consistencia en resultados, especialmente valioso para cadenas de restauración y operaciones de alto volumen.</p>
 
 
 
@@ -1079,7 +1023,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Para mantenerte actualizado sobre estas innovaciones, consulta regularmente nuestro <a href="https://aichef.pro/blog" data-lasso-id="5161">roadmap de desarrollos futuros</a> y nuestro análisis sobre <a href="/blog/el-futuro-de-los-restaurantes-inteligentes-ia-y-iot-en-la-gastronomia" data-lasso-id="5162">el futuro de los restaurantes inteligentes</a>.</p>
+<p class="wp-block-paragraph">Sobre sensores y equipos conectados, el artículo está en <a href="/blog/el-futuro-de-los-restaurantes-inteligentes-ia-y-iot-en-la-gastronomia" data-lasso-id="5162">el futuro de los restaurantes inteligentes</a>.</p>
 
 
 
@@ -1121,19 +1065,19 @@ wpId: 1550
 
 
 
-<h2 class="wp-block-heading">AI Chef Pro: Tu Compañero Ideal para Cocinar con IA</h2>
+<h2 class="wp-block-heading">AI Chef Pro para cocinar</h2>
 
 
 
-<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> representa la evolución natural de la tecnología culinaria, ofreciendo la plataforma más completa y especializada para profesionales que buscan implementar <strong>AI para cocinar</strong> de manera efectiva y rentable.</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> reúne más de 75 agentes de cocina. El plan de entrada es AI Chef Miembro: 10 € al mes y 10.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>.</p>
 
 
 
-<h3 class="wp-block-heading">Ecosistema Integral de Soluciones</h3>
+<h3 class="wp-block-heading">Misma suite, pasos distintos</h3>
 
 
 
-<p class="wp-block-paragraph">A diferencia de aplicaciones individuales que abordan problemas específicos, AI Chef Pro ofrece un <strong>ecosistema integrado</strong> donde cada herramienta potencia las demás:</p>
+<p class="wp-block-paragraph">Los agentes están en la misma suite. Cada uno se usa cuando lo pides:</p>
 
 
 
@@ -1142,15 +1086,6 @@ wpId: 1550
 
 
 
-<li><strong>Aprendizaje Cruzado:</strong> Las preferencias y patrones identificados en una aplicación mejoran las sugerencias en todas las demás</li>
-
-
-
-<li><strong>Base de Datos Compartida:</strong> Ingredientes, proveedores, técnicas y costes se sincronizan entre todas las herramientas</li>
-
-
-
-<li><strong>Reportes Unificados:</strong> Dashboard central que muestra métricas de todas las aplicaciones en un solo lugar</li>
 </ul>
 
 
@@ -1167,37 +1102,6 @@ wpId: 1550
 
 
 
-<h3 class="wp-block-heading">Soporte Especializado y Formación Continua</h3>
-
-
-
-<p class="wp-block-paragraph">AI Chef Pro va más allá del software, ofreciendo un <strong>ecosistema de apoyo integral</strong>:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Onboarding Personalizado:</strong> Sesión de configuración 1:1 con especialistas gastronómicos</li>
-
-
-
-<li><strong>Webinars Semanales:</strong> Formación continua sobre nuevas funcionalidades y mejores prácticas</li>
-
-
-
-<li><strong>Comunidad Profesional:</strong> Acceso a red de chefs usuarios para intercambio de experiencias</li>
-
-
-
-<li><strong>Soporte especializado:</strong> Asistencia técnica orientada a la cocina</li>
-
-
-
-<li><strong>Consultorías Estratégicas:</strong> Asesoramiento para implementación en operaciones complejas</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">Para ver los planes, entra en <a href="https://aichef.pro/precios">la página de precios</a>. El de entrada es AI Chef Miembro: 10 € al mes y 10.000 créditos.</p>
 
 
 
@@ -1209,11 +1113,11 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Absolutamente. Los sistemas modernos de <strong>AI para cocinar</strong> están diseñados con protocolos de seguridad alimentaria integrados. Herramientas como ID Alérgenos analizan cada ingrediente para detectar alérgenos potenciales, contaminantes cruzados y problemas de compatibilidad. Además, los algoritmos están entrenados con bases de datos que incluyen normativas HACCP, regulaciones FDA/EFSA, y mejores prácticas de seguridad alimentaria.</p>
+<p class="wp-block-paragraph">ID Alérgenos sirve para revisar los alérgenos de una receta. La ficha la confirmas tú antes de servir.</p>
 
 
 
-<p class="wp-block-paragraph">La IA mejora significativamente la seguridad alimentaria al reducir errores humanos, proporcionar trazabilidad completa de ingredientes, y generar alertas automáticas ante situaciones de riesgo. Para profundizar en este tema, consulta nuestro análisis sobre <a href="/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" data-lasso-id="5165">cómo la IA mejora la seguridad alimentaria</a>.</p>
+<p class="wp-block-paragraph">Para el marco del oficio, sigue en <a href="/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" data-lasso-id="5165">cómo la IA mejora la seguridad alimentaria</a>.</p>
 
 
 
@@ -1225,43 +1129,17 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Piensa en la IA como el mejor sous chef que podrías tener: nunca se cansa, conoce todas las técnicas, calcula perfectamente, y siempre está disponible para ayudar. Pero la visión gastronómica, la toma de decisiones creativas y la experiencia sensorial final siguen dependiendo del chef humano. Para una reflexión más profunda sobre este tema, lee nuestro artículo <a href="/blog/puede-la-ia-reemplazar-a-los-chefs-descubre-con-ai-chef-pro" data-lasso-id="5166">¿puede la IA reemplazar a los chefs?</a></p>
+<p class="wp-block-paragraph">Te puede proponer una receta, una cantidad o una técnica. El plato lo pruebas tú. Para seguir con el tema, lee <a href="/blog/puede-la-ia-reemplazar-a-los-chefs-descubre-con-ai-chef-pro" data-lasso-id="5166">¿puede la IA reemplazar a los chefs?</a>.</p>
 
 
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Nikkei</h3><p class="mt-2 text-muted-foreground">60 plazas, la fusión peruano-japonesa con su roadmap completo.</p><a href="/guia-restaurante-nikkei?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-para-cocinar" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Nikkei por €65</a></aside>
 
-<h3 class="wp-block-heading">¿Qué app de IA cocina es la mejor para principiantes?</h3>
+<h3 class="wp-block-heading">¿Por dónde se empieza?</h3>
 
 
 
-<p class="wp-block-paragraph">Para principiantes, recomendamos comenzar con <strong>AI Chef Pro en su plan AI Chef Miembro</strong>, específicamente utilizando Cocina Creativa para generar recetas simples. Esta herramienta permite:</p>
-
-
-
-<ul class="wp-block-list">
-<li>Especificar nivel de experiencia (principiante) para recetas adaptadas</li>
-
-
-
-<li>Recibir explicaciones detalladas de cada paso</li>
-
-
-
-<li>Acceso a Gastro Lexicum para consultar términos técnicos</li>
-
-
-
-<li>Cálculo automático de proporciones para diferentes números de comensales</li>
-
-
-
-<li>Sugerencias de sustitutos para ingredientes no disponibles</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">La interfaz intuitiva y las explicaciones contextuales hacen que incluso usuarios sin experiencia tecnológica puedan aprovechar inmediatamente los beneficios de la IA culinaria.</p>
+<p class="wp-block-paragraph">El plan de entrada es AI Chef Miembro: 10 € al mes y 10.000 créditos. Puedes pedir una receta sencilla y, si un término no te suena, preguntarlo. Las cantidades las revisas tú.</p>
 
 
 
@@ -1281,11 +1159,11 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Sí, y este es uno de los aspectos más sorprendentes de la <strong>AI cooking</strong> moderna. Los algoritmos generativos no simplemente recombinen recetas existentes; crean propuestas completamente nuevas basándose en principios gastronómicos, compatibilidades científicas y objetivos específicos.</p>
+<p class="wp-block-paragraph">Puedes pedir una combinación que no esté en tu recetario. Sale un borrador. Si el plato se sostiene, lo decides al probarlo.</p>
 
 
 
-<p class="wp-block-paragraph">La originalidad se garantiza mediante:</p>
+<p class="wp-block-paragraph">Una propuesta puede salir de:</p>
 
 
 
@@ -1306,12 +1184,12 @@ wpId: 1550
 
 
 
-<li>Iteración continua basada en feedback y resultados</li>
+<li>Un segundo encargo si el primero no encaja</li>
 </ul>
 
 
 
-<p class="wp-block-paragraph">Por ejemplo, AI Chef Pro puede generar \»Espuma de remolacha fermentada con caviar de aceite de oliva y chips de pan artesanal\», una combinación que no existe en bases de datos tradicionales pero que se fundamenta en compatibilidades sensoriales científicamente validadas.</p>
+<p class="wp-block-paragraph">Puedes pedir, por ejemplo, una espuma de remolacha con un aceite y un pan crujiente. Si el plato se sostiene, lo decides al probarlo.</p>
 
 
 
@@ -1345,7 +1223,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Por ejemplo, el módulo de Cocina Japonesa comprende la importancia del umami, los principios de presentación washoku, y la estacionalidad específica de ingredientes japoneses, generando recetas que respetan la autenticidad cultural mientras permiten innovación controlada.</p>
+<p class="wp-block-paragraph">Puedes pedir una receta de esa cocina y decir qué quieres respetar. El punto lo marcas tú.</p>
 
 
 
@@ -1353,29 +1231,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Aunque AI Chef Pro funciona óptimamente con conexión a internet para acceder a actualizaciones y bases de datos en tiempo real, muchas funcionalidades pueden utilizarse offline:</p>
-
-
-
-<ul class="wp-block-list">
-<li>Recetas generadas previamente se almacenan localmente</li>
-
-
-
-<li>Cálculos de mermas y conversiones funcionan sin conexión</li>
-
-
-
-<li>Consultas a Gastro Lexicum se cachean para uso offline</li>
-
-
-
-<li>Planes de menú se sincronizan cuando se restaura la conexión</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">Para operaciones en ubicaciones con conectividad limitada, recomendamos generar y descargar contenido durante períodos de buena conexión para uso posterior offline.</p>
+<p class="wp-block-paragraph">Los agentes se consultan con conexión. Lo que pidas, lo pides en ese momento.</p>
 
 
 
@@ -1399,7 +1255,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">La clave del éxito radica en seleccionar las herramientas adecuadas para tus necesidades específicas e implementarlas de manera gradual y estructurada. <strong>AI Chef Pro</strong> ofrece el ecosistema más completo y especializado, con más de 75 agentes pensados para el trabajo de cocina.</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> reúne más de 75 agentes para el trabajo de cocina. Cada uno se usa cuando lo pides.</p>
 
 
 
@@ -1415,7 +1271,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Para consultas específicas sobre implementación en tu establecimiento, nuestro equipo de especialistas gastronómicos está disponible en <a href="https://aichef.pro/contacto" data-lasso-id="5168">nuestro centro de contacto</a>.</p>
+<p class="wp-block-paragraph">Si quieres escribirnos, el formulario está en <a href="https://aichef.pro/contacto" data-lasso-id="5168">la página de contacto</a>.</p>
 
 
 
@@ -1423,7 +1279,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph"><em>¿Tienes preguntas específicas sobre implementación de IA en tu cocina? ¿Te gustaría una demostración personalizada de AI Chef Pro? ¡Déjanos tus comentarios y te contactaremos para ayudarte a diseñar la estrategia de IA perfecta para tu negocio gastronómico!</em></p>
+<p class="wp-block-paragraph">El plan AI Chef Miembro está en <a href="https://aichef.pro/precios">la página de precios</a>: 10 € al mes y 10.000 créditos. La app en español está en <a href="https://app.aichef.pro/?utm_source=blog&amp;utm_medium=body&amp;utm_content=ai-para-cocinar" target="_blank" rel="noopener noreferrer">app.aichef.pro</a>.</p>
 
 
 
