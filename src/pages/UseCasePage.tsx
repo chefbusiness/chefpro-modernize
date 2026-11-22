@@ -448,9 +448,18 @@ export default function UseCasePage({ type }: UseCasePageProps) {
               <p className="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto text-balance">
                 <LinkifyText text={content.heroSubtitle} appUrl={APP_URL} />
               </p>
-              <p className={`text-lg font-semibold ${theme.text} mb-10`}>
+              <p className={`text-lg font-semibold ${theme.text} ${content.captureLink ? 'mb-4' : 'mb-10'}`}>
                 {content.heroTagline}
               </p>
+              {content.captureLink && (
+                <p className="text-base text-muted-foreground mb-10 max-w-2xl mx-auto">
+                  {content.captureLink.before}{' '}
+                  <a href={content.captureLink.href} className="font-semibold text-primary underline-offset-2 hover:underline">
+                    {content.captureLink.label}
+                  </a>
+                  {content.captureLink.after}
+                </p>
+              )}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="btn-gold" onClick={() => window.open(APP_URL, '_blank')}>
                   {ui.ctaPrimary} <ArrowRight className="ml-2 h-5 w-5" />

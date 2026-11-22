@@ -4966,6 +4966,12 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       h1: 'Cómo Crear Fichas Técnicas con IA',
       heroSubtitle: 'Documenta cada plato con ficha técnica profesional: ingredientes, gramaje, técnica paso a paso, alergenos, food cost, plating photo y storytelling para sala. Suite de agentes de IA gastronómica genera ficha completa en minutos.',
       heroTagline: 'Fichas técnicas profesionales en minutos, no en horas',
+      captureLink: {
+        before: 'Si lo que buscas es la ficha del plato, con ingredientes, alérgenos y coste, está en',
+        href: '/ficha-tecnica-cocina-ia',
+        label: 'ficha técnica de cocina con IA',
+        after: '.',
+      },
       badge: 'Tarea: Fichas técnicas',
       painsTitle: 'Lo Que Cuesta Hacer Fichas Técnicas a Mano',
       pains: [

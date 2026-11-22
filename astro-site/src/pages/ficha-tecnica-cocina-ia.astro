@@ -1,0 +1,309 @@
+---
+// Landing de captación ES, solo este idioma. No pasa por fase6-generate-marketing.py:
+// no hay gemelas, y el registro de marketing exige los siete slugs. Mismo BaseLayout,
+// Header y Footer que /precios. hreflang: es + x-default, canonical a sí misma.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../i18n/config';
+import { appCtaUrl } from '../lib/app-url';
+
+const lang = 'es';
+const basePath = '/ficha-tecnica-cocina-ia';
+const canonical = `${SITE}${basePath}`;
+
+const title = 'Ficha técnica de cocina con IA | AI Chef Pro';
+const description =
+  'Ficha técnica de cocina con IA: ingredientes, pasos, alérgenos y coste. El chef revisa el borrador antes de dejarla en el pase.';
+const keywords =
+  'ficha técnica de cocina, ficha técnica de cocina con IA, ficha técnica cocina, alérgenos, escandallo';
+const h1 = 'Ficha técnica de cocina con IA';
+
+const cta = (content: string) => appCtaUrl(lang, 'landing-ficha-tecnica', content);
+
+const fields = [
+  { name: 'Ingredientes y cantidades', detail: 'Lo que entra en la receta, en gramos o en unidades, para las raciones que pides.' },
+  { name: 'Elaboración', detail: 'Los pasos, en el orden de la partida, para que otro cocinero pueda repetir el plato.' },
+  { name: 'Alérgenos', detail: 'Los que ID Alérgenos marca a partir de esos ingredientes. La etiqueta del proveedor manda si el producto es compuesto.' },
+  { name: 'Coste y escandallo', detail: 'El coste de la ración sale de los precios de compra que tú escribes, no de una tarifa ajena.' },
+  { name: 'Emplatado y sala', detail: 'Una nota de presentación y una frase corta para el equipo de sala. GastroIMG Gen+ puede añadir una imagen de referencia.' },
+];
+
+const review = [
+  'Pesa la ración que sale del pase. Si el borrador dice una cosa y la báscula otra, manda la báscula.',
+  'Cruza los alérgenos con la etiqueta. El huevo se ve. Un caldo, un aceite aromatizado o una salsa comprada pueden traer otro.',
+  'Sustituye los precios del ejemplo por los de tu albarán. Sin ese cambio, el coste no es el de tu casa.',
+  'Lee la frase de sala en voz alta. Si no suena a tu restaurante, la reescribes.',
+  'Si hay imagen de emplatado, trátala como referencia. La foto de la ficha es la del plato que emplatas tú.',
+];
+
+const agents = [
+  {
+    name: 'Cocina Creativa',
+    detail: 'Redacta el borrador del plato: ingredientes, pasos y la frase para sala. En un postre, ese borrador lo escribe Pastelería Creativa.',
+  },
+  {
+    name: 'ID Alérgenos',
+    detail: 'Marca los alérgenos de los ingredientes del borrador. Para un plato suelto y sin registro está el detector de alérgenos, que pide la misma revisión.',
+  },
+  {
+    name: 'Mermas GenCal',
+    detail: 'Entra cuando quieres anotar la merma de limpieza o de cocción y el rendimiento que queda.',
+  },
+  {
+    name: 'Calcula Pax',
+    detail: 'Pasa las cantidades de la receta a otro número de comensales.',
+  },
+  {
+    name: 'GastroIMG Gen+',
+    detail: 'Propone una imagen de referencia del emplatado. No sustituye la foto del plato real.',
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Qué trae el borrador de una ficha técnica de cocina?',
+    a: 'Ingredientes con cantidad, pasos de elaboración, alérgenos marcados a partir de esos ingredientes, una nota de emplatado y una frase para sala. El coste de la ración aparece cuando indicas el precio de compra de cada ingrediente.',
+  },
+  {
+    q: '¿Qué agentes de AI Chef Pro se usan?',
+    a: 'Cocina Creativa redacta el plato. En pastelería, Pastelería Creativa. ID Alérgenos marca los alérgenos. Mermas GenCal anota la merma y el rendimiento. Calcula Pax escala las cantidades a otro número de comensales. GastroIMG Gen+ propone una imagen de referencia del emplatado. El coste sale de los precios que tú indicas.',
+  },
+  {
+    q: '¿Puedo dejar la ficha en el pase tal como sale?',
+    a: 'No conviene. Pesa la ración, cruza los alérgenos con la etiqueta del proveedor, cambia los precios por los de tu factura y reescribe la frase de sala si no suena a tu casa. La imagen de referencia no sustituye la foto del plato real.',
+  },
+  {
+    q: '¿De dónde sale el coste de la ración?',
+    a: 'De los precios de compra que indicas. Para un plato suelto, la calculadora de food cost lo hace sin registro. En la suite, el escandallo parte de esos mismos precios.',
+  },
+  {
+    q: '¿Cuánto cuesta usar los agentes?',
+    a: 'El plan Miembro son 10 € al mes, con 10.000 créditos. Premium Pro son 25 € al mes, Plus 50 € al mes y Max 95 € al mes, o 950 € al año.',
+  },
+];
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE },
+      { '@type': 'ListItem', position: 2, name: h1, item: canonical },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    headline: h1,
+    description,
+    url: canonical,
+    inLanguage: 'es',
+    isPartOf: { '@type': 'WebSite', name: 'AI Chef Pro', url: SITE },
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  locales={['es']}
+  basePath={basePath}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+    <header class="mx-auto mb-16 max-w-3xl text-center">
+      <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
+        Ficha del plato con los agentes
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">
+        {h1}
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
+        Pides el plato y los agentes dejan un borrador: cantidades, elaboración, alérgenos, coste y una nota de emplatado. Tú lo contrastas con la báscula, la etiqueta y el albarán antes de que la ficha llegue al pase.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={cta('hero')}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Crear la ficha en la app
+        </a>
+        <a
+          href="/precios"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          Ver precios
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-muted-foreground">
+        Plan Miembro · 10 €/mes · 10.000 créditos
+      </p>
+    </header>
+
+    <section class="mx-auto max-w-3xl" aria-labelledby="que-rellena">
+      <h2 id="que-rellena" class="text-3xl font-bold text-foreground">Qué rellena la IA</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        La ficha técnica de cocina sale como borrador. Estos son los campos que cubre, y los que tú cierras antes de dejar la ficha en la brigada.
+      </p>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {fields.map((item) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{item.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{item.detail}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="revision">
+      <h2 id="revision" class="text-3xl font-bold text-foreground">Cómo la revisa el chef</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        El borrador ahorra el folio en blanco. La ficha que se queda en el pase es la que tú has comprobado.
+      </p>
+      <ol class="mt-6 list-decimal space-y-3 pl-5 text-muted-foreground leading-7">
+        {review.map((step) => (
+          <li>{step}</li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="ejemplo">
+      <h2 id="ejemplo" class="text-3xl font-bold text-foreground">Ejemplo: tortilla de patatas, 4 raciones</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Ejemplo para ver la forma de la ficha. No es una salida guardada de la app. Los precios no son de mercado: sirven para enseñar la cuenta. En tu cocina los cambias por los del albarán.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[640px] border-collapse text-sm">
+          <caption class="border-b border-border bg-muted/50 px-4 py-3 text-left text-base font-semibold text-foreground">
+            Ejemplo de ficha técnica de cocina
+          </caption>
+          <tbody class="divide-y divide-border">
+            <tr>
+              <th scope="row" class="w-40 p-4 text-left align-top font-medium text-foreground">Plato</th>
+              <td class="p-4 text-muted-foreground">Tortilla de patatas</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Raciones</th>
+              <td class="p-4 text-muted-foreground">4</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Ingredientes</th>
+              <td class="p-4 text-muted-foreground">Patata 400 g, huevo 200 g (4 unidades), cebolla 80 g, aceite de oliva 40 g, sal 4 g</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Elaboración</th>
+              <td class="p-4 text-muted-foreground">Confitar patata y cebolla, escurrir, mezclar con el huevo, cuajar y voltear.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Alérgenos</th>
+              <td class="p-4 text-muted-foreground">Huevo. Patata, cebolla, aceite de oliva y sal no están entre los de declaración obligatoria. Si el aceite o la sal son un producto compuesto, se mira la etiqueta.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Coste de ejemplo</th>
+              <td class="p-4 text-muted-foreground">
+                Patata 400 g × 1,00 €/kg = 0,40 €. Huevo 200 g × 4,00 €/kg = 0,80 €. Cebolla 80 g × 1,00 €/kg = 0,08 €. Aceite 40 g × 5,00 €/kg = 0,20 €. Sal, 0,00 € en el ejemplo. Receta: 1,48 €. Ración: 0,37 €.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Emplatado</th>
+              <td class="p-4 text-muted-foreground">Cuña con el corte a la vista. La foto del pase la hace la cocina.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left align-top font-medium text-foreground">Sala</th>
+              <td class="p-4 text-muted-foreground">«Tortilla jugosa, patata y cebolla pochadas.» Se reescribe con las palabras de la casa.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-muted-foreground leading-6">
+        Si la patata merma al confitarla, anotas el peso que queda, no el que entró en la sartén. Para esa merma está Mermas GenCal.
+      </p>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="agentes">
+      <h2 id="agentes" class="text-3xl font-bold text-foreground">Agentes de la ficha</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Estos agentes están en AI Chef Pro y cubren el borrador. El detalle de la tarea, uno por uno, está en
+        <a href="/usos/tarea/fichas-tecnicas-con-ia" class="font-semibold text-primary hover:underline">cómo crear fichas técnicas con IA</a>.
+      </p>
+      <ul class="mt-6 space-y-4">
+        {agents.map((agent) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{agent.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{agent.detail}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-6 text-muted-foreground leading-7">
+        El coste de la ración se calcula con los precios de tu factura. Para un plato está la
+        <a href="/calculadora-food-cost-restaurante" class="font-semibold text-primary hover:underline">calculadora de food cost</a>,
+        sin registro. Para la carta,
+        <a href="/escandallos-restaurante-ia" class="font-semibold text-primary hover:underline">escandallos de restaurante con IA</a>.
+        Los alérgenos de un plato suelto, también sin registro, en el
+        <a href="/detector-alergenos-restaurante" class="font-semibold text-primary hover:underline">detector de alérgenos</a>.
+      </p>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="planes">
+      <h2 id="planes" class="text-3xl font-bold text-foreground">Planes</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        El plan Miembro son 10 €/mes, con 10.000 créditos. Premium Pro son 25 €/mes, Plus 50 €/mes y Max 95 €/mes, o 950 €/año. La comparación está en
+        <a href="/precios" class="font-semibold text-primary hover:underline">precios</a>.
+      </p>
+      <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+        <a
+          href={cta('planes')}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Crear la ficha en la app
+        </a>
+        <a
+          href="/precios"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          Ver precios
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="faq">
+      <h2 id="faq" class="text-3xl font-bold text-foreground">Preguntas frecuentes</h2>
+      <div class="mt-6 space-y-3">
+        {faqs.map((faq) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+              {faq.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm leading-6 text-muted-foreground">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
