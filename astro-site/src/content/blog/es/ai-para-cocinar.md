@@ -329,7 +329,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">Mermas GenCal, el agente de AI Chef Pro para rendimientos, trabaja con el histórico de tu cocina para afinar la previsión de merma. El ajuste final lo confirmas con lo que pesas en el pase.</p>
+<p class="wp-block-paragraph">Mermas GenCal sirve para calcular rendimientos y merma a partir de lo que pesas.</p>
 
 
 

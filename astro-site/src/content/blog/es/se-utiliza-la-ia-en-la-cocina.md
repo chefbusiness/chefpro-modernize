@@ -14,11 +14,11 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">En este artículo exhaustivo, exploraremos <strong>20 casos reales y documentados</strong> de implementación exitosa de inteligencia artificial en el ámbito culinario. Desde gigantes corporativos hasta startups innovadoras, descubrirás cómo la tecnología está redefiniendo la forma en que cocinamos, servimos y gestionamos los alimentos.</p>
+<p class="wp-block-paragraph">Los casos que siguen van de un robot que da la vuelta a la hamburguesa a un asistente de pedido y a un programa que propone recetas. Los hay en cadenas, en locales y en obradores.</p>
 
 
 
-<p class="wp-block-paragraph">Si te has preguntado <strong>«¿se utiliza la IA en la cocina?»</strong>, prepárate para conocer ejemplos concretos que demuestran que la respuesta es un rotundo sí. La <strong>AI cooking</strong> ya está aquí, y estos casos de éxito lo confirman.</p>
+<p class="wp-block-paragraph">Sí se utiliza la IA en la cocina. En unos sitios toma el pedido, en otros propone la receta y en otros mueve un brazo en la plancha.</p>
 
 
 
@@ -844,7 +844,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">Para mantenerte actualizado sobre las últimas innovaciones, visita nuestro <a href="https://aichef.pro/blog" data-lasso-id="5352">roadmap de desarrollos futuros</a>.</p>
+<p class="wp-block-paragraph">Para seguir estas novedades, entra en <a href="https://aichef.pro/blog" data-lasso-id="5352">el blog</a>.</p>
 
 
 
