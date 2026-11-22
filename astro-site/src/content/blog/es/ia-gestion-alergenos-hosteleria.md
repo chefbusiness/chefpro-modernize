@@ -10,7 +10,7 @@ lang: es
 wpId: 3494
 faq:
   - q: "¿Es obligatoria la carta de alérgenos en un restaurante?"
-    a: "Obligatoria es la información sobre las sustancias del anexo II del Reglamento (UE) 1169/2011 en lo que se sirve sin envasar. En España, el Real Decreto 126/2015 permite darla en la carta, en otro soporte escrito o electrónico, o de palabra si está registrada en el local y hay un aviso visible. La carta es donde el cliente la lee antes de pedir. Esto no es asesoramiento legal ni sustituye a tu consultor de seguridad alimentaria."
+    a: "Hay que informar de las sustancias del anexo II del Reglamento (UE) 1169/2011 en lo que se sirve sin envasar. En España, el Real Decreto 126/2015 permite dar esa información en la carta, en otro soporte escrito o electrónico, o de palabra si está registrada en el local y hay un aviso visible. La carta es donde el cliente la lee antes de pedir. Esto no es asesoramiento legal ni sustituye a tu consultor de seguridad alimentaria."
   - q: "¿Cómo se escriben los alérgenos en la carta?"
     a: "Con una referencia clara al nombre del anexo II, en una línea bajo el plato. Por ejemplo: «Contiene: cereales que contienen gluten (trigo), huevos y leche». Si el nombre del plato ya nombra esa sustancia con claridad, el Real Decreto 126/2015 no exige repetirla. El resto de alérgenos del plato sí hay que nombrarlos."
   - q: "¿Se puede informar de los alérgenos de palabra?"
@@ -21,7 +21,7 @@ faq:
     a: "Lees la etiqueta nueva, pasas los ingredientes por el detector o por ID Alérgenos y reescribes la línea de los platos que usan ese producto. Ni el detector ni el agente ven el cambio de marca si tú no se lo cuentas."
 ---
 
-En el servicio, la carta de alérgenos lleva bajo cada plato la información que el cliente lee antes de pedir, y esa línea tiene que coincidir con lo que cocinas hoy. Obligatoria es la información de alérgenos. La carta es el soporte donde el comensal la ve sin tener que preguntar. El real decreto admite también otros soportes.
+En el servicio, la carta de alérgenos lleva bajo cada plato la información que el cliente lee antes de pedir, y esa línea tiene que coincidir con lo que cocinas hoy. La información de alérgenos es obligatoria. La carta es el soporte donde el comensal la ve sin tener que preguntar. El real decreto admite también otros soportes.
 
 En lo que se sirve sin envasar, la lista es el [anexo II del Reglamento (UE) 1169/2011](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32011R1169). En España, el [Real Decreto 126/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-2293) mantiene esa mención en las comidas que entrega una colectividad. Puedes darla en la carta, en otro soporte escrito o electrónico, o de palabra si se cumplen las condiciones del artículo 6.5. Esto no es asesoramiento legal y no sustituye al consultor de seguridad alimentaria de tu comunidad.
 
@@ -48,11 +48,11 @@ Esto es un ejemplo de redacción, no la carta de un local ni una plantilla para 
 | :--- | :--- | :--- |
 | Croquetas de jamón | Leche, harina de trigo, mantequilla, huevo, pan rallado, jamón, aceite de oliva | Contiene: cereales que contienen gluten (trigo), huevos y leche. |
 | Hummus con picos | Garbanzo, tahini, ajo, limón, comino, aceite de oliva, picos de trigo | Contiene: sésamo y cereales que contienen gluten (trigo). El garbanzo no está en el anexo II. |
-| Arroz con calamar | Arroz, calamar, tomate, ajo, vino blanco, aceite de oliva | Contiene: moluscos. Los sulfitos, solo si la etiqueta del vino que usas supera el umbral del anexo. |
+| Arroz con calamar | Arroz, calamar, tomate, ajo, vino blanco, aceite de oliva | Contiene: moluscos. Si la etiqueta del vino pone «contiene sulfitos», se declaran en el plato; si hay dudas, se consulta con el asesor. |
 
-El tercer plato enseña el límite del nombre «vino». El anexo II incluye el dióxido de azufre y los sulfitos por encima de 10 mg/kg o 10 mg/l, expresados como SO2. Eso se lee en la etiqueta de la botella que tienes abierta.
+El tercer plato enseña el límite del nombre «vino». Si la etiqueta del vino pone «contiene sulfitos», se declaran en el plato. Si hay dudas, se consulta con el asesor. El anexo II incluye el dióxido de azufre y los sulfitos por encima de 10 mg/kg o 10 mg/l, expresados como SO2.
 
-<figure class="wp-block-image size-large"><img src="/blog-assets/2026/07/idalergenos-lectura-etiquetas.jpg" alt="Manos revisando la lista de ingredientes de un producto envasado en una cocina profesional" loading="lazy" decoding="async" /><figcaption>La línea de la carta sale de la etiqueta del economato, no del nombre comercial del bote.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="/blog-assets/2026/07/idalergenos-lectura-etiquetas.jpg" alt="Bote de conserva y cuatro recipientes apilados con etiquetas en blanco, un cuaderno abierto y un bolígrafo sobre una encimera de mármol, con una cocina profesional al fondo" loading="lazy" decoding="async" /><figcaption>La línea de la carta sale de la etiqueta del economato, no del nombre comercial del bote.</figcaption></figure>
 
 ## El borrador, con el detector
 
@@ -62,7 +62,7 @@ Sirve para el primer borrador de la línea, plato a plato:
 
 1. Abres el detector y escribes los ingredientes del plato que vas a servir, incluidos el pan, la guarnición y la salsa si van en el pase.
 2. Lees la ficha y la pasas a una sola frase con los nombres del anexo II.
-3. Guardas esa frase en la carta y tiras el borrador cuando la receta cambie.
+3. Guardas esa frase en la carta y rehaces el borrador cuando la receta cambie.
 
 No lee el bote cerrado, no ve la freidora y no reescribe la carta entera porque hayas cambiado de harina. Si el alérgeno va en un aditivo que no has tecleado, no aparece. Por eso la etiqueta manda sobre la ficha.
 
@@ -76,7 +76,7 @@ No cierra la carta por ti. No está en el pase, así que el aceite compartido o 
 | :--- | :--- | :--- | :--- |
 | Qué le das | Ingredientes separados por comas | La receta, la salsa o la lista del bote | La etiqueta real y lo que ocurre en el pase |
 | Qué devuelve | Coincidencias con los 14, ficha para copiar o PDF | Un borrador de la lista a partir de lo que le escribes | La línea que se imprime en la carta |
-| Qué no ve | El bote cerrado, la freidora y el cambio de marca si no lo tecleas | La cocina, salvo que se lo cuentes | La etiqueta y el pase, que sigues mirando tú |
+| Qué no ve | El bote cerrado, la freidora y el cambio de marca si no lo tecleas | La cocina, salvo que se lo cuentes | Ves la etiqueta y el pase |
 
 ID Alérgenos se usa desde la <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=ia-gestion-alergenos-hosteleria" target="_blank" rel="noopener noreferrer">app</a>. Los planes publicados están en <a href="https://aichef.pro/precios">precios</a>: Miembro, 10 €/mes y 10.000 créditos; Premium Pro, 25 €/mes; Premium Plus, 50 €/mes; Premium Max, 95 €/mes o 950 €/año. El detector sigue siendo gratis y no pide cuenta.
 
