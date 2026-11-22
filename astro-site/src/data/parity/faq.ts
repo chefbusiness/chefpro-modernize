@@ -1,7 +1,7 @@
 import type { PageCopy, ParityLang } from './types';
 
 const refund = {
-  en: 'There is no published refund policy for the subscription. We look at each case by email at info@aichef.pro. You can cancel any time from the account panel; there is no lock-in.',
+  en: 'Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at info@aichef.pro. You can cancel an app subscription any time from your panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case at that same email.',
   fr: 'Il n’y a pas de politique de remboursement publiée pour l’abonnement. Chaque cas se regarde par e-mail à info@aichef.pro. Vous résiliez à tout moment depuis le compte, sans engagement.',
   de: 'Für das Abo ist keine Erstattungsregel veröffentlicht. Wir prüfen den Einzelfall per E-Mail an info@aichef.pro. Sie kündigen jederzeit im Konto, ohne Laufzeitbindung.',
   it: 'Per l’abbonamento non c’è una politica di rimborso pubblicata. Ogni caso si guarda via email a info@aichef.pro. Disdici quando vuoi dal pannello, senza permanenza.',
@@ -73,7 +73,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'account',
         h2: 'Account, cancellation and allergens',
         answer:
-          'You change plan or cancel yourself in the account. Refunds are case by case because no subscription refund policy is published.',
+          'You change plan or cancel yourself in the account. Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee and a 100% refund. Any other subscription matter is reviewed case by case.',
         faqs: [
           {
             q: 'Can I cancel any time?',
