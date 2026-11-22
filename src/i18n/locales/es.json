@@ -1371,130 +1371,108 @@
   },
   "landingRestaurantes": {
     "seo": {
-      "title": "Agentes de IA para restaurantes: 75+ | AI Chef Pro",
-      "description": "Agentes de IA para restaurantes: 75+ especialistas en costes, carta, alérgenos y marketing. Sin permanencia. Empieza hoy desde 10 € al mes y compara planes.",
-      "keywords": "agentes de ia para restaurantes, agentes ia hostelería, food cost ia, carta restaurante ia, ai chef pro",
+      "title": "IA para restaurantes: escandallo, carta y cocina | AI Chef Pro",
+      "description": "IA para restaurantes e IA para hostelería: escandallo, fichas de receta, alérgenos, carta e ingeniería de menú. Planes de créditos desde 10 € al mes.",
+      "keywords": "ia para restaurantes, ia para hostelería, escandallo con ia, ficha técnica restaurante, alérgenos carta, ingeniería de menú, ai chef pro",
       "url_slug": "herramientas-ia-para-restaurantes"
     },
     "hero": {
-      "badge": "75+ agentes de IA para hostelería",
-      "h1": "Agentes de IA para restaurantes",
-      "subtitle": "75+ agentes de IA para restaurantes, bares y cafeterías. Sin conocimientos técnicos.",
-      "tagline": "Controla costes · Diseña tu carta · Automatiza el marketing · Reduce mermas",
+      "badge": "Cocina de restaurante y de hotel",
+      "h1": "IA para restaurantes",
+      "subtitle": "Escandallo, ficha de receta, alérgenos, carta y el pase de la brigada. Sirve en el restaurante, en el bar y en la cocina de un hotel.",
+      "tagline": "Coste del plato · Ficha técnica · Alérgenos · Carta · Ingeniería de menú",
       "cta_primary": "Empezar ahora",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin permanencia · Cancela cuando quieras"
+      "no_card": "Planes de créditos desde 10 € al mes · Sin permanencia"
     },
-    "results": [
-      {
-        "metric": "22%",
-        "label": "reducción media en costes de ingredientes"
-      },
-      {
-        "metric": "35%",
-        "label": "menos tiempo en desarrollo de nuevos platos"
-      },
-      {
-        "metric": "30%",
-        "label": "reducción en desperdicio de comida"
-      },
-      {
-        "metric": "75+",
-        "label": "agentes de IA para hostelería"
-      }
-    ],
+    "results": [],
     "tools_section": {
-      "title": "¿Qué puede hacer la IA por tu restaurante?",
-      "subtitle": "Cada herramienta resuelve un problema real del día a día en hostelería. Sin tecnicismos, sin configuraciones complejas."
+      "title": "IA para hostelería: lo que hace el equipo en cocina",
+      "subtitle": "El jefe de cocina, el jefe de partida y quien lleva el banquete de un hotel usan los agentes para el trabajo de oficina de cocina: coste, ficha, alérgeno, carta y el relevo."
     },
     "tools": [
       {
-        "title": "Diseño de carta y menú",
-        "description": "Genera cartas completas adaptadas a tu concepto, temporada y food cost objetivo. Incluye descripciones atractivas y maridajes.",
-        "keywords": [
-          "carta digital",
-          "menú IA",
-          "ingeniería de menú"
-        ]
+        "title": "Escandallo con IA",
+        "description": "Pasas la receta con gramajes y el precio de compra. El agente devuelve el coste del plato, el food cost y un precio de venta con el margen que tú marcas. Vale para la carta del día y para el banquete del hotel.",
+        "keywords": ["escandallo", "food cost", "precio de venta"],
+        "href": "/escandallos-restaurante-ia",
+        "linkLabel": "Escandallos de restaurante con IA"
       },
       {
-        "title": "Control de costes y food cost",
-        "description": "Calcula el coste exacto de cada plato, establece precios de venta con el margen que necesitas y detecta dónde pierdes dinero.",
-        "keywords": [
-          "food cost",
-          "coste plato",
-          "precio venta"
-        ]
+        "title": "Fichas de receta",
+        "description": "La ficha sale con ingredientes, cantidades, elaboración y el rendimiento. Quien entra de extra o cambia de partida cocina con el mismo criterio que quien escribió la receta.",
+        "keywords": ["ficha técnica", "receta de partida", "rendimiento"],
+        "href": "/recetas-ia-restaurantes",
+        "linkLabel": "Recetas con IA para restaurantes"
       },
       {
-        "title": "Reducción de mermas",
-        "description": "Planifica compras según la demanda real, aprovecha géneros al máximo con recetas de aprovechamiento y elimina el desperdicio.",
-        "keywords": [
-          "mermas cocina",
-          "desperdicio alimentario",
-          "planificación compras"
-        ]
+        "title": "Alérgenos en cada plato",
+        "description": "Los 14 alérgenos de declaración obligatoria quedan marcados en la ficha y se pueden pasar a la carta, antes de que sala tenga que adivinar la respuesta.",
+        "keywords": ["14 alérgenos", "carta", "declaración"],
+        "href": "/detector-alergenos-restaurante",
+        "linkLabel": "Detector de alérgenos"
       },
       {
-        "title": "Gestión de alérgenos",
-        "description": "Identifica y etiqueta automáticamente los 14 alérgenos de obligatoria declaración en todos tus platos. Cumplimiento legal simplificado.",
-        "keywords": [
-          "alérgenos restaurante",
-          "normativa alérgenos",
-          "etiquetado"
-        ]
+        "title": "Texto de la carta",
+        "description": "El texto de cada plato, el menú del día y la oferta de grupo salen en el tono de la casa. Tú decides qué se queda en la carta impresa o en la web.",
+        "keywords": ["carta", "menú del día", "descripción"],
+        "href": "/carta-menu-restaurante-ia",
+        "linkLabel": "Carta y menú de restaurante con IA"
       },
       {
-        "title": "Marketing gastronómico",
-        "description": "Crea contenido para redes sociales, fichas de Google My Business, respuestas a reseñas y campañas promocionales en minutos.",
-        "keywords": [
-          "marketing restaurante",
-          "redes sociales hostelería",
-          "Google My Business"
-        ]
+        "title": "Ingeniería de menú",
+        "description": "Con el margen de cada plato y lo que sale en sala ves qué conviene empujar, qué ajustar y qué sacar. El método de la matriz está en la guía de food cost e ingeniería de menú.",
+        "keywords": ["ingeniería de menú", "margen", "salida"],
+        "href": "/guia-food-cost-ingenieria-menu",
+        "linkLabel": "Guía de food cost e ingeniería de menú"
       },
       {
-        "title": "Creatividad culinaria",
-        "description": "Desarrolla nuevos platos, experimenta con maridajes y adapta recetas de 25 cocinas del mundo a tu concepto.",
-        "keywords": [
-          "creatividad culinaria",
-          "nuevos platos",
-          "recetas IA"
-        ]
+        "title": "Formación de la brigada",
+        "description": "La ficha, el alérgeno y el paso a paso quedan por escrito para el relevo, el extra del sábado y quien entra nuevo en la cocina del hotel. El jefe deja el criterio; el equipo no depende de la memoria de un turno.",
+        "keywords": ["brigada", "relevo", "personal nuevo"],
+        "href": "/software-gestion-cocina-ia",
+        "linkLabel": "Software de gestión de cocina con IA"
       }
     ],
     "profiles_section": {
-      "title": "Diseñado para profesionales de la restauración",
-      "subtitle": "Tanto si tienes un bar de barrio como una cadena de restaurantes, AI Chef Pro tiene herramientas adaptadas a tu realidad."
+      "title": "Para quien pasa el servicio",
+      "subtitle": "El mismo criterio de ficha y de margen, ya sea un local de barrio, un bar, un grupo o la cocina de un hotel."
     },
     "profiles": [
       {
-        "title": "Restaurante independiente",
-        "description": "Gestiona tu carta, costes y marketing sin depender de agencias ni consultores caros."
+        "title": "Restaurante",
+        "description": "Carta, coste y alérgenos en el mismo sitio, sin montar un departamento aparte."
+      },
+      {
+        "title": "Cocina de hotel",
+        "description": "Banquete, servicio de habitaciones y media pensión: la misma ficha y el mismo escandallo cuando el plato cambia de salida."
       },
       {
         "title": "Bar y cafetería",
-        "description": "Crea tu oferta gastronómica, controla el género y atrae más clientes con contenido profesional."
+        "description": "Raciones, oferta de barra y menú del día, con el coste del género a la vista."
       },
       {
-        "title": "Cadena de restaurantes",
-        "description": "Estandariza procesos, controla costes en múltiples locales y escala tu operación."
-      },
-      {
-        "title": "Chef ejecutivo",
-        "description": "Agiliza la ingeniería de menú, el análisis nutricional y el desarrollo de recetas de autor."
+        "title": "Grupo o cadena",
+        "description": "La misma ficha y el mismo margen en cada local, para que el plato no cambie según quién esté de jefe."
       }
     ],
     "why_section": {
-      "title": "Por qué la inteligencia artificial está cambiando la hostelería",
-      "body": "Los restaurantes que adoptan herramientas de IA no compiten con los que no las usan. La diferencia está en la velocidad de decisión, el control de costes y la capacidad de crear una oferta gastronómica diferenciada.",
+      "title": "El pase sale mejor cuando el coste y la ficha ya están hechos",
+      "body": "Un restaurante y la cocina de un hotel se atascan en lo mismo: saber cuánto cuesta el plato, cómo se elabora y qué alérgeno lleva, antes de que entre la sala. Los agentes dejan ese trabajo escrito. El criterio del plato sigue en el jefe de cocina.",
       "benefits": [
-        "Diseña la carta de tu restaurante en horas, no en semanas",
-        "Calcula el food cost de cada plato al céntimo",
-        "Genera contenido para redes en minutos, no en días",
-        "Identifica alérgenos automáticamente en todos tus platos",
-        "Reduce mermas con planificación inteligente de compras",
-        "Accede a recetas de 25 cocinas del mundo adaptadas a tu negocio"
+        "El escandallo parte de los precios de compra que tú indicas.",
+        "La ficha de receta queda lista para el relevo y para el extra.",
+        "Los 14 alérgenos se marcan en la ficha y en la carta.",
+        "El texto de la carta sale en el tono de la casa.",
+        "La ingeniería de menú se apoya en el margen y en la salida de cada plato.",
+        "La brigada nueva lee la ficha antes de preguntar en medio del pase."
+      ],
+      "note": "Si solo necesitas un food cost, revisar un alérgeno o esbozar un menú, usa las herramientas gratuitas.",
+      "links": [
+        {
+          "href": "/herramientas-gratuitas",
+          "label": "Herramientas gratuitas"
+        }
       ]
     },
     "pricing_section": {
@@ -1507,34 +1485,25 @@
     },
     "faq": [
       {
-        "question": "¿Qué herramientas de IA son útiles para un restaurante?",
-        "answer": "Las herramientas de IA más útiles para restaurantes incluyen: generadores de carta y menú digital, calculadoras de coste de plato, gestores de alérgenos, herramientas de marketing gastronómico para redes sociales, planificadores de compras y control de mermas. AI Chef Pro reúne 75+ agentes de IA en una sola suite."
+        "question": "¿Qué IA usar en un restaurante?",
+        "answer": "Una suite de agentes de cocina: escandallo, ficha de receta, alérgenos, texto de carta e ingeniería de menú. AI Chef Pro reúne ese trabajo en 75+ agentes. Los planes de créditos empiezan en 10 € al mes."
       },
       {
-        "question": "¿Puede la inteligencia artificial ayudar a reducir costes en un restaurante?",
-        "answer": "Sí. La IA permite optimizar el food cost calculando el coste exacto de cada plato, detectar mermas innecesarias, planificar compras según la demanda y ajustar precios de carta para maximizar el margen. Los usuarios de AI Chef Pro reportan una reducción media del 22% en costes de ingredientes."
+        "question": "¿Sirve para hostelería?",
+        "answer": "Sí. Una cocina de hotel, un bar, una cafetería o un grupo hace el mismo trabajo de oficina: coste del plato, ficha para la brigada, alérgenos y carta. La IA para hostelería cubre ese día a día, también cuando el plato sale en banquete o en media pensión."
       },
       {
-        "question": "¿Necesito conocimientos técnicos para usar herramientas de IA en mi restaurante?",
-        "answer": "No. AI Chef Pro está diseñado para dueños y gestores de restaurantes sin formación técnica. Las herramientas funcionan con lenguaje natural: describes lo que necesitas y la IA genera el resultado. Sin programación ni configuraciones complejas."
-      },
-      {
-        "question": "¿Cuánto cuesta usar IA para la gestión de restaurantes?",
-        "answer": "El plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos. Los planes Premium van desde 25 €/mes (AI Chef Premium Pro, 85.000 créditos) hasta 95 €/mes con créditos ilimitados. Sin permanencia."
+        "question": "¿Cuánto cuesta?",
+        "answer": "Los planes de créditos empiezan en 10 € al mes: AI Chef Miembro, con 10.000 créditos. Premium Pro son 25 € al mes (85.000 créditos), Premium Plus 50 € al mes (175.000 créditos) y Premium Max 95 € al mes, con créditos ilimitados. El Premium Max anual son 950 €. Sin permanencia: cambias de plan o cancelas cuando quieras."
       }
     ],
     "cta_section": {
-      "title": "Empieza hoy con las herramientas de IA para tu restaurante",
-      "subtitle": "Sin permanencia · Cancela cuando quieras. Acceso inmediato a 75+ agentes de IA en gastronomía y hostelería.",
-      "primary": "Probar ahora",
-      "secondary": "Ver todos los planes"
+      "title": "Lleva la IA para restaurantes a tu cocina",
+      "subtitle": "Planes de créditos desde 10 € al mes, sin permanencia. Escandallo, ficha, alérgenos y carta en la misma suite.",
+      "primary": "Empezar ahora",
+      "secondary": "Ver planes y precios"
     },
-    "breadcrumb": "Herramientas IA para Restaurantes",
-    "testimonial": {
-      "quote": "Reducimos nuestras mermas del 14% al 5% en menos de un mes. El ROI fue inmediato: pagamos la suscripción con lo que ahorramos la primera semana.",
-      "name": "Laura García",
-      "role": "Directora de Operaciones, Grupo Gastronómico BCN"
-    }
+    "breadcrumb": "IA para restaurantes"
   },
   "landingMenu": {
     "seo": {
