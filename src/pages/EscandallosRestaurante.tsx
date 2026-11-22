@@ -196,6 +196,15 @@ export default function EscandallosRestaurante() {
                 </Card>
               ))}
             </div>
+            {currentLanguage === 'es' && (
+              <p className="mt-10 max-w-2xl mx-auto text-center text-muted-foreground">
+                El coste de la ración es una parte de la ficha. La{' '}
+                <a href="/ficha-tecnica-cocina-ia" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  ficha técnica de cocina con IA
+                </a>{' '}
+                junta ingredientes, elaboración, alérgenos y ese coste en la misma hoja.
+              </p>
+            )}
           </div>
         </section>
 

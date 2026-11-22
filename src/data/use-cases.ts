@@ -80,6 +80,8 @@ export interface UseCaseContent {
   galleryImages?: string[]; // 6 imágenes /lovable-uploads/ai-gallery/use-case-*.jpg
   galleryTitle?: string;
   gallerySubtitle?: string;
+  /** Enlace a la landing de captación del mismo tema, si existe. */
+  captureLink?: { before: string; href: string; label: string; after: string };
 }
 
 export interface UseCase {
