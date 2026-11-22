@@ -458,6 +458,18 @@ export default function DetectorAlergenos() {
                   </div>
                 ))}
               </div>
+              {currentLanguage === 'es' && (
+                <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-slate-600">
+                  Para pasar de la ficha de un plato a la línea de la carta, y ver qué revisas tú después, lee{' '}
+                  <Link
+                    to="/blog/ia-gestion-alergenos-hosteleria"
+                    className="font-semibold text-red-700 underline"
+                  >
+                    Carta de alérgenos obligatoria: cómo tenerla al día
+                  </Link>
+                  .
+                </p>
+              )}
             </div>
           </section>
         )}
