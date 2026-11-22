@@ -712,7 +712,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">A pesar de los éxitos documentados, la implementación de <strong>IA para cocinar</strong> enfrenta desafíos importantes:</p>
+<p class="wp-block-paragraph">Meter la IA en la cocina tiene sus trabas:</p>
 
 
 
