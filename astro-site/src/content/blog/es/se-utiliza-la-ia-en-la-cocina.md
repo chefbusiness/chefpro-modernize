@@ -1,6 +1,6 @@
 ---
 title: "¿Se Utiliza la IA en la Cocina? 20 Casos Reales de Implementación Exitosa"
-description: "La inteligencia artificial está revolucionando la cocina de formas que hace apenas una década parecían ciencia ficción. Desde robots que preparan…"
+description: "Veinte casos de IA en la cocina profesional: robots que dan la vuelta a la hamburguesa, asistentes de pedido y programas para pedir recetas."
 pubDate: 2025-09-11
 modDate: 2026-11-22
 category: ia-en-gastronomia
@@ -344,11 +344,11 @@ wpId: 1580
 
 
 
-<h4 class="wp-block-heading">10. Mugaritz &#8211; IA para Alta Cocina con Eneko Atxa</h4>
+<h4 class="wp-block-heading">10. Azurmendi &#8211; IA para alta cocina con Eneko Atxa</h4>
 
 
 
-<p class="wp-block-paragraph">El chef <strong>Eneko Atxa</strong> del restaurante Mugaritz (2 estrellas Michelin) colaboró con el físico <strong>Eneko Axpe</strong> en un experimento revolucionario:</p>
+<p class="wp-block-paragraph">El chef <strong>Eneko Atxa</strong>, de Azurmendi (3 estrellas Michelin), colaboró con el físico <strong>Eneko Axpe</strong> en un experimento de cocina con inteligencia artificial:</p>
 
 
 
@@ -357,7 +357,7 @@ wpId: 1580
 
 
 
-<li>Uso de ChatGPT y Midjourney para conceptualización</li>
+<li>Uso de ChatGPT para la conceptualización</li>
 
 
 
@@ -367,10 +367,6 @@ wpId: 1580
 
 <li>Exploración de combinaciones de sabores inesperadas</li>
 </ul>
-
-
-
-<p class="wp-block-paragraph"><strong>Descubrimiento clave:</strong> La IA demostró ser «<strong>brillante para adaptar recetas a intolerancias y alergias</strong>«, proporcionando soluciones rápidas y eficientes para desafíos diarios.</p>
 
 
 

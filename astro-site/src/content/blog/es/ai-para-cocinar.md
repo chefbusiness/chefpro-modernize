@@ -1138,7 +1138,7 @@ wpId: 1550
 
 
 <ul class="wp-block-list">
-<li><strong>Flujo de Trabajo Unificado:</strong> Una receta creada en Cocina Creativa se integra automáticamente con Mermas GenCal para análisis de costes, ID Alérgenos para verificación de seguridad, y Menu Plate SEO para promoción digital</li>
+<li><strong>Misma suite, pasos distintos:</strong> una receta salida de Cocina Creativa se puede seguir con Mermas GenCal para el coste, con ID Alérgenos para la ficha y con Menu Plate SEO para la carta. Cada uno se usa cuando toca; no se encadenan solos</li>
 
 
 
@@ -1273,15 +1273,7 @@ wpId: 1550
 
 
 
-<p class="wp-block-paragraph">El precio es el de los planes publicados, no un presupuesto por el tamaño del local:</p>
-
-
-
-
-
-
-
-<p class="wp-block-paragraph">AI Chef Miembro (10 € al mes, 10.000 créditos) es el plan de entrada para ayudantes, cocineros y jefes de partida. AI Chef Premium Pro (25 €, 85.000 créditos) encaja con jefes de cocina. AI Chef Premium Plus (50 €, 175.000 créditos) está orientado a propietarios y cadenas. AI Chef Premium Max son 95 € al mes con créditos ilimitados, y el anual, 950 €. La lista viva está en <a href="https://aichef.pro/precios">la página de precios</a>. Se paga desde el alta y puedes cancelar cuando quieras.</p>
+<p class="wp-block-paragraph">El precio es el de los planes publicados, no un presupuesto por el tamaño del local. La lista está en <a href="https://aichef.pro/precios">la página de precios</a>.</p>
 
 
 

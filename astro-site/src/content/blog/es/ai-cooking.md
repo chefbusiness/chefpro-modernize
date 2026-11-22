@@ -1044,7 +1044,7 @@ wpId: 1489
 
 
 
-<p class="wp-block-paragraph">Sí, las plataformas profesionales como AI Chef Pro implementan medidas de seguridad estrictas: cifrado de extremo a extremo para toda la información, confidencialidad garantizada de recetas propias sin compartir con otros usuarios, cumplimiento riguroso del RGPD y normativas de protección de datos, auditorías de seguridad periódicas por terceros independientes, y opciones de acceso personalizado con control granular de permisos para equipos.</p>
+<p class="wp-block-paragraph">Si la receta es tuya y no quieres que circule, no la pegues en un chat público. En AI Chef Pro se trabaja desde tu cuenta.</p>
 
 
 
