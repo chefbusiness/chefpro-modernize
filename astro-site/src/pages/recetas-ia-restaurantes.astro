@@ -62,7 +62,7 @@ const review = [
   'Cruza los alérgenos con la etiqueta. El pescado se ve. Un caldo o una salsa comprada pueden traer otro.',
   'Si cambias el número de comensales, usa el borrador de Calcula Pax y prueba de nuevo. Una salsa reducida no se multiplica en línea recta.',
   'Lee el maridaje en voz alta. Si no es el vino de tu carta, lo cambias.',
-  'Cuando el plato ya está, pasa las cantidades a la ficha y el coste con los precios de tu albarán.',
+  'Cuando el plato ya está, pasa las cantidades a la ficha y calcula el coste con los precios de tu albarán.',
 ];
 
 const agents = [
@@ -205,12 +205,12 @@ const schemas = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="ejemplo">
       <h2 id="ejemplo" class="text-3xl font-bold text-foreground">Ejemplo: arroz a banda, 4 raciones</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        Ejemplo para ver la forma del borrador. No es una salida guardada de la app. En tu cocina cambias el pescado, el caldo y la sal por los de tu casa.
+        Ejemplo para ver la forma de la receta. No es una salida guardada de la app. En tu cocina cambias el pescado, el caldo y la sal por los de tu casa.
       </p>
       <div class="mt-6 overflow-x-auto rounded-xl border border-border">
         <table class="w-full min-w-[640px] border-collapse text-sm">
           <caption class="border-b border-border bg-muted/50 px-4 py-3 text-left text-base font-semibold text-foreground">
-            Borrador de receta para un servicio
+            Ejemplo de receta para un servicio
           </caption>
           <tbody class="divide-y divide-border">
             <tr>
@@ -286,7 +286,7 @@ const schemas = [
         ))}
       </ul>
       <p class="mt-6 text-muted-foreground leading-7">
-        Cuando el borrador ya te convence, la ficha del plato se trabaja en la
+        Cuando la receta ya te convence, la ficha del plato se trabaja en la
         <a href="/ficha-tecnica-cocina-ia" class="font-semibold text-primary hover:underline">ficha técnica de cocina con IA</a>.
         El coste de la ración, con los precios de tu factura, en
         <a href="/escandallos-restaurante-ia" class="font-semibold text-primary hover:underline">escandallos de restaurante con IA</a>.
@@ -294,16 +294,16 @@ const schemas = [
         <a href="/carta-menu-restaurante-ia" class="font-semibold text-primary hover:underline">carta del restaurante con IA</a>.
       </p>
       <p class="mt-4 text-muted-foreground leading-7">
-        Si cocinas en casa con lo que queda en la nevera, el texto del
-        <a href="/blog/generador-de-recetas-con-ingredientes-por-ia" class="font-semibold text-primary hover:underline">generador de recetas con ingredientes por IA</a>
-        va por ese uso. En un restaurante el borrador entra en la partida: raciones, alérgenos y la revisión del chef antes del pase.
+        Si cocinas en casa con lo que queda en la nevera, te sirve más el
+        <a href="/blog/generador-de-recetas-con-ingredientes-por-ia" class="font-semibold text-primary hover:underline">generador de recetas con ingredientes por IA</a>.
+        En un restaurante, la receta entra en la partida: raciones, alérgenos y la revisión del chef antes del pase.
       </p>
     </section>
 
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="planes">
       <h2 id="planes" class="text-3xl font-bold text-foreground">Planes</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        El plan Miembro son 10 €/mes, con 10.000 créditos. Premium Pro son 25 €/mes y 85.000 créditos. Premium Plus son 50 €/mes y 175.000 créditos. Premium Max son 95 €/mes, o 950 € al año, con créditos ilimitados. Sin permanencia: cambias de plan o cancelas cuando quieras. La comparación está en
+        El plan Miembro cuesta 10 €/mes, con 10.000 créditos. Premium Pro cuesta 25 €/mes y 85.000 créditos. Premium Plus cuesta 50 €/mes y 175.000 créditos. Premium Max cuesta 95 €/mes, con créditos ilimitados. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras. La opción anual de Premium Max cuesta 950 € al año. La comparación está en
         <a href="/precios" class="font-semibold text-primary hover:underline">precios</a>.
       </p>
       <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row">
