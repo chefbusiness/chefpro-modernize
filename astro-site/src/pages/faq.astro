@@ -4,9 +4,7 @@
 // Fuentes de contenido: las 6 FAQ de precios.astro (reutilizadas/adaptadas),
 // home y legales del repo. Bloques narrativos nuevos redactados con bridge.py
 // (DeepSeek v4) y revisados como editor. Solo se afirman HECHOS verificados
-// (pricing/agentes/idiomas/fundador/contacto). Reembolsos: NO hay política
-// publicada en legales/terms → respuesta honesta (caso por caso vía email +
-// cancelación sin permanencia desde el panel).
+// (pricing/agentes/idiomas/fundador/contacto).
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -83,8 +81,8 @@ const blocks = [
       },
       {
         q: '¿Ofrecéis reembolsos?',
-        a: 'No tenemos una política de reembolsos publicada como tal, así que no te vamos a vender letra pequeña que no existe. Si tienes algún problema con tu suscripción, escríbenos a info@aichef.pro y lo estudiamos caso por caso con sentido común. Además, puedes cancelar cuando quieras desde tu panel, sin permanencia.',
-        aHtml: `No tenemos una política de reembolsos publicada como tal, así que no te vamos a vender letra pequeña que no existe. Si tienes algún problema con tu suscripción, escríbenos a <a href="mailto:info@aichef.pro" class="${linkClass}">info@aichef.pro</a> y lo estudiamos caso por caso con sentido común. Además, puedes cancelar cuando quieras desde tu panel, sin permanencia.`,
+        a: 'Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a info@aichef.pro. Puedes cancelar la suscripción de la app cuando quieras desde tu panel, sin permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso en ese mismo email.',
+        aHtml: `Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a <a href="mailto:info@aichef.pro" class="${linkClass}">info@aichef.pro</a>. Puedes cancelar la suscripción de la app cuando quieras desde tu panel, sin permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso en ese mismo email.`,
       },
       {
         q: '¿Emitís factura con IVA?',
