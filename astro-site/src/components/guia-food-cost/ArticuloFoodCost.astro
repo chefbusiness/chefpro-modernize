@@ -1,0 +1,315 @@
+---
+// Texto de /guia-food-cost-ingenieria-menu. Vive solo en esta URL: no es una plantilla
+// de la línea de guías. La ficha de compra sigue en GuiaLandingPage.
+import { appCtaUrl } from '../../lib/app-url';
+
+const appHref = appCtaUrl('es', 'guia-food-cost', 'entrar');
+---
+
+<article class="bg-background text-foreground border-t border-border px-4 pt-16 pb-28 md:pb-20">
+  <div class="mx-auto max-w-3xl">
+    <p class="text-sm font-semibold uppercase tracking-wide text-muted-foreground">El método, con números</p>
+    <h2 id="que-es-el-food-cost" class="mt-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+      Qué es el food cost
+    </h2>
+    <p class="mt-4 text-lg leading-8 text-muted-foreground">
+      El food cost es la parte del precio de un plato que se va en materia prima. Se mira de dos maneras: en porcentaje, para ver qué peso tiene el coste sobre lo que cobras, y en euros, para ver cuánto deja cada ración antes de pagar al equipo, el local y el resto.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El porcentaje de la casa es una media. Un plato puede quedar dentro de esa media y, aun así, dejar poco dinero cada vez que sale. Por eso la carta se decide plato a plato, con el coste de la ración y las ventas del periodo delante.
+    </p>
+
+    <h2 id="como-se-calcula" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      Cómo se calcula el food cost de un plato
+    </h2>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      La fórmula usa el precio sin IVA. El impuesto no es ingreso del restaurante: si lo dejas dentro, el porcentaje sale más bajo y el plato parece más holgado de lo que es.
+    </p>
+    <p class="mt-4 rounded-xl border border-border bg-card px-5 py-4 font-medium leading-7 text-foreground">
+      food cost % = coste de materia prima ÷ precio de venta sin IVA × 100
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El coste es el de la ración que sale a la mesa: ingredientes, la merma que ya hayas medido y lo que acompaña al plato si va en el mismo precio. Ejemplo, solo para ver la cuenta, con un 10 % de IVA de sala. Un plato a 16,50 € en carta. Precio sin IVA: 16,50 ÷ 1,10 = 15,00 €. Coste de materia prima: 4,50 €.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      food cost % = 4,50 ÷ 15,00 × 100 = 30 %.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El 10 % de este ejemplo es el tipo del servicio en el local. En para llevar y en delivery el tipo cambia, y una bebida alcohólica que sale sin servicio no va al mismo tipo que la copa servida en sala. Esa matriz, con la ley citada, está en el capítulo de IVA de la guía.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      La ficha del plato —gramajes, merma y precio de proveedor— es el escandallo. En la suite se hace en
+      <a href="/escandallos-restaurante-ia" class="font-semibold text-primary hover:underline">escandallos con IA</a>.
+      Los precios de proveedor los pones tú. Si solo quieres el porcentaje de una ración, sin suscripción, la
+      <a href="/calculadora-food-cost-restaurante" class="font-semibold text-primary hover:underline">calculadora de food cost</a>
+      hace esa cuenta en la web.
+    </p>
+
+    <figure class="my-10">
+      <img
+        src="/lovable-uploads/ai-gallery/guia-foodcost-cocina.jpg"
+        alt="Cocinera pesando dados de carne en una báscula, con verdura ya preparada en gastronorms"
+        width="1200"
+        height="800"
+        loading="lazy"
+        class="h-auto w-full rounded-xl border border-border"
+      />
+      <figcaption class="mt-2 text-sm text-muted-foreground">
+        El coste de la ración sale de lo que pesas y de lo que pagas al proveedor.
+      </figcaption>
+    </figure>
+
+    <h2 id="porcentaje-y-euros" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      El porcentaje y el margen en euros
+    </h2>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El margen de contribución es lo que queda de la ración después de la materia prima:
+    </p>
+    <p class="mt-4 rounded-xl border border-border bg-card px-5 py-4 font-medium leading-7 text-foreground">
+      margen de contribución = precio de venta sin IVA − coste de materia prima
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      En el ejemplo de la costilla: 15,00 − 4,50 = 10,50 €. Otro plato del mismo ejemplo, también al 30 %: coste 1,20 €, precio sin IVA 4,00 €, margen 2,80 €. Mismo porcentaje, 7,70 € menos cada vez que sale. Si ordenas la carta solo por el porcentaje, empujas el plato que deja poco.
+    </p>
+
+    <h2 id="ingenieria-de-menu" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      Qué es la ingeniería de menú
+    </h2>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      La ingeniería de menú clasifica cada plato con dos datos del mismo periodo: cuántas raciones se han vendido y cuánto deja cada una. Las raciones salen del TPV. El margen sale del precio sin IVA y del coste del escandallo.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El cruce que se usa en sala es el de Michael Kasavana y Donald Smith: popularidad contra margen de contribución en euros. Jack Miller clasificaba por porcentaje de food cost y popularidad. La guía pone esas lecturas, junto con Pavesic y el Goal Value, sobre la misma carta, en el Excel de la matriz. Cada método mira una pareja de variables distinta. Lo que interesa es dónde no coinciden.
+    </p>
+
+    <h2 id="matriz-bcg" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      La matriz BCG de la carta
+    </h2>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      La matriz del Boston Consulting Group ordena productos según el crecimiento de su mercado y la cuota frente al competidor. Los cuatro grupos clásicos son estrella, vaca, interrogante y perro. Sirve para decidir en qué negocios invertir.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      En una carta se usa la misma rejilla de cuatro casillas, con otros ejes: cuánto se pide el plato y cuánto deja cada ración. Por eso en hostelería se sigue diciendo matriz BCG de la carta, aunque la cuenta sea la de Kasavana y Smith. Al caballo de batalla también se le llama vaca, y al puzzle, interrogante o enigma. En la guía y en la suite los nombres son estrella, caballo de batalla, puzzle y perro.
+    </p>
+
+    <div class="my-8 overflow-x-auto rounded-xl border border-border">
+      <table class="w-full min-w-[640px] border-collapse text-sm">
+        <thead>
+          <tr class="bg-muted/50 text-left">
+            <th class="p-4 font-semibold text-foreground">Cuadrante</th>
+            <th class="p-4 font-semibold text-foreground">Popularidad</th>
+            <th class="p-4 font-semibold text-foreground">Margen de contribución</th>
+            <th class="p-4 font-semibold text-foreground">Qué se suele revisar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-border">
+            <th class="p-4 text-left font-medium text-foreground" scope="row">Estrella</th>
+            <td class="p-4 text-muted-foreground">Alta</td>
+            <td class="p-4 text-muted-foreground">Alto</td>
+            <td class="p-4 text-muted-foreground">Receta, porción y sitio en la carta. Es el plato que conviene proteger.</td>
+          </tr>
+          <tr class="border-t border-border">
+            <th class="p-4 text-left font-medium text-foreground" scope="row">Caballo de batalla</th>
+            <td class="p-4 text-muted-foreground">Alta</td>
+            <td class="p-4 text-muted-foreground">Bajo</td>
+            <td class="p-4 text-muted-foreground">Coste, guarnición o precio. Se vende mucho y cada ración deja poco.</td>
+          </tr>
+          <tr class="border-t border-border">
+            <th class="p-4 text-left font-medium text-foreground" scope="row">Puzzle</th>
+            <td class="p-4 text-muted-foreground">Baja</td>
+            <td class="p-4 text-muted-foreground">Alto</td>
+            <td class="p-4 text-muted-foreground">Nombre, descripción y lugar en la carta. Deja dinero y casi no se pide.</td>
+          </tr>
+          <tr class="border-t border-border">
+            <th class="p-4 text-left font-medium text-foreground" scope="row">Perro</th>
+            <td class="p-4 text-muted-foreground">Baja</td>
+            <td class="p-4 text-muted-foreground">Bajo</td>
+            <td class="p-4 text-muted-foreground">Si sigue en carta. Ocupa sitio, compra y tiempo de cocina.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="leading-7 text-muted-foreground">
+      El corte de popularidad de Kasavana y Smith se calcula dentro de cada sección (entrantes con entrantes, principales con principales):
+    </p>
+    <p class="mt-4 rounded-xl border border-border bg-card px-5 py-4 font-medium leading-7 text-foreground">
+      umbral de popularidad = (1 ÷ número de platos de la sección) × 70 %
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      Ejemplo: diez principales. Si se vendieran igual, cada uno sería el 10 % de las raciones. El umbral queda en el 7 %. Un plato cuenta como popular, en este método, cuando llega a ese 7 %.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El corte de margen es la media ponderada de la sección: el margen de todas las raciones vendidas, dividido entre esas raciones. La media simple de los platos de la carta daría el mismo peso a uno que vende 400 raciones que a uno que vende 30.
+    </p>
+
+    <figure class="my-10">
+      <img
+        src="/lovable-uploads/ai-gallery/guia-foodcost-carta.jpg"
+        alt="Carta de restaurante sobre un mantel, junto a una calculadora, un bolígrafo y un café"
+        width="1200"
+        height="800"
+        loading="lazy"
+        class="h-auto w-full rounded-xl border border-border"
+      />
+      <figcaption class="mt-2 text-sm text-muted-foreground">
+        La matriz se arma con las ventas de un periodo y el margen de cada plato.
+      </figcaption>
+    </figure>
+
+    <h2 id="ejemplo-cuatro-platos" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      Un ejemplo con cuatro platos
+    </h2>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      Cifras inventadas para seguir la cuenta. Una sección de cuatro principales, un mes, IVA del 10 % en sala. Umbral de popularidad = (1 ÷ 4) × 70 % = 17,5 %.
+    </p>
+
+    <div class="my-8 overflow-x-auto rounded-xl border border-border">
+      <table class="w-full min-w-[760px] border-collapse text-sm">
+        <caption class="caption-bottom px-4 py-3 text-left text-sm text-muted-foreground">
+          Ejemplo de trabajo. Estas cifras no salen de un local ni de un resultado de AI Chef Pro.
+        </caption>
+        <thead>
+          <tr class="bg-muted/50 text-left">
+            <th class="p-3 font-semibold text-foreground">Plato</th>
+            <th class="p-3 font-semibold text-foreground">Coste</th>
+            <th class="p-3 font-semibold text-foreground">PVP sin IVA</th>
+            <th class="p-3 font-semibold text-foreground">Food cost</th>
+            <th class="p-3 font-semibold text-foreground">Margen</th>
+            <th class="p-3 font-semibold text-foreground">Raciones</th>
+            <th class="p-3 font-semibold text-foreground">Popularidad</th>
+            <th class="p-3 font-semibold text-foreground">Cuadrante</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-border">
+            <th class="p-3 text-left font-medium text-foreground" scope="row">Costilla</th>
+            <td class="p-3 text-muted-foreground">4,50 €</td>
+            <td class="p-3 text-muted-foreground">15,00 €</td>
+            <td class="p-3 text-muted-foreground">30 %</td>
+            <td class="p-3 text-muted-foreground">10,50 €</td>
+            <td class="p-3 text-muted-foreground">80</td>
+            <td class="p-3 text-muted-foreground">40 %</td>
+            <td class="p-3 text-muted-foreground">Estrella</td>
+          </tr>
+          <tr class="border-t border-border">
+            <th class="p-3 text-left font-medium text-foreground" scope="row">Ensalada</th>
+            <td class="p-3 text-muted-foreground">1,20 €</td>
+            <td class="p-3 text-muted-foreground">4,00 €</td>
+            <td class="p-3 text-muted-foreground">30 %</td>
+            <td class="p-3 text-muted-foreground">2,80 €</td>
+            <td class="p-3 text-muted-foreground">70</td>
+            <td class="p-3 text-muted-foreground">35 %</td>
+            <td class="p-3 text-muted-foreground">Caballo de batalla</td>
+          </tr>
+          <tr class="border-t border-border">
+            <th class="p-3 text-left font-medium text-foreground" scope="row">Solomillo</th>
+            <td class="p-3 text-muted-foreground">9,00 €</td>
+            <td class="p-3 text-muted-foreground">22,00 €</td>
+            <td class="p-3 text-muted-foreground">40,9 %</td>
+            <td class="p-3 text-muted-foreground">13,00 €</td>
+            <td class="p-3 text-muted-foreground">30</td>
+            <td class="p-3 text-muted-foreground">15 %</td>
+            <td class="p-3 text-muted-foreground">Puzzle</td>
+          </tr>
+          <tr class="border-t border-border">
+            <th class="p-3 text-left font-medium text-foreground" scope="row">Pasta</th>
+            <td class="p-3 text-muted-foreground">3,00 €</td>
+            <td class="p-3 text-muted-foreground">8,00 €</td>
+            <td class="p-3 text-muted-foreground">37,5 %</td>
+            <td class="p-3 text-muted-foreground">5,00 €</td>
+            <td class="p-3 text-muted-foreground">20</td>
+            <td class="p-3 text-muted-foreground">10 %</td>
+            <td class="p-3 text-muted-foreground">Perro</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="leading-7 text-muted-foreground">
+      Margen total del ejemplo: 1.526 €. Raciones: 200. Umbral de margen = 1.526 ÷ 200 = 7,63 €. La costilla supera los dos cortes: estrella. La ensalada se pide mucho y deja 2,80 €, por debajo de 7,63 €: caballo de batalla, con el mismo 30 % de food cost que la costilla. El solomillo deja 13,00 € y se queda en el 15 % de las raciones, bajo el 17,5 %: puzzle. La pasta no llega a ninguno de los dos cortes: perro.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      En carta, con el 10 % del ejemplo, esos precios sin IVA salen a 16,50 €, 4,40 €, 24,20 € y 8,80 €. El food cost se calcula sobre 15,00 €, 4,00 €, 22,00 € y 8,00 €.
+    </p>
+
+    <h2 id="que-hacer" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      Qué revisar en cada cuadrante
+    </h2>
+    <ul class="mt-4 list-disc space-y-3 pl-5 leading-7 text-muted-foreground">
+      <li><span class="font-medium text-foreground">Estrella.</span> Mantén la receta y la porción. Revisa que el precio y el sitio en la carta la sostengan.</li>
+      <li><span class="font-medium text-foreground">Caballo de batalla.</span> Mira porción, guarnición y proveedor antes de subir el precio de golpe. Mucha gente entra por ese plato.</li>
+      <li><span class="font-medium text-foreground">Puzzle.</span> Cambia el nombre, el texto o el lugar en la carta antes de bajar el precio. El margen ya está; falta que se pida.</li>
+      <li><span class="font-medium text-foreground">Perro.</span> Candidato a salir, salvo que cumpla una función clara: un plato para quien no come otra cosa, o uno que arrastra una bebida. Si se queda, que sea a propósito.</li>
+    </ul>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      El delivery cambia la cuenta. Al coste del plato se le suma el envase, y lo que ingresas es el precio menos la comisión de la plataforma. Un plato estrella en sala puede quedar flojo en la app. El simulador de la guía lo hace por canal, con el IVA y la comisión en casillas.
+    </p>
+
+    <h2 id="ai-chef-pro" class="mt-14 text-3xl font-bold tracking-tight text-foreground">
+      Food cost e ingeniería de menú en AI Chef Pro
+    </h2>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      Esta guía es un pago único de 55 EUR: el método, 20 capítulos, 8 Excel y los ejercicios. La suite de agentes es la suscripción, y se contrata aparte.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      En la suite los agentes se usan uno detrás de otro. Pasas tú de uno al siguiente, con los números que ya tienes.
+    </p>
+    <ol class="mt-6 space-y-4">
+      <li class="rounded-xl border border-border bg-card p-5">
+        <h3 class="text-lg font-semibold text-foreground">1. Coste del plato</h3>
+        <p class="mt-2 leading-7 text-muted-foreground">
+          Se trabaja en
+          <a href="/escandallos-restaurante-ia" class="font-semibold text-primary hover:underline">escandallos con IA</a>.
+          Describes el plato y aportas los precios de proveedor. De ahí sale el coste de la ración que luego entra en la matriz.
+        </p>
+      </li>
+      <li class="rounded-xl border border-border bg-card p-5">
+        <h3 class="text-lg font-semibold text-foreground">2. Matriz de la carta</h3>
+        <p class="mt-2 leading-7 text-muted-foreground">
+          Con ese coste y las raciones del periodo, el paso de ingeniería de menú está en
+          <a href="/carta-menu-restaurante-ia" class="font-semibold text-primary hover:underline">carta e ingeniería de menú con IA</a>.
+          Clasifica estrellas, puzzles, caballos de batalla y perros. Le pasas el coste y las ventas: trabaja con lo que tú le das.
+        </p>
+      </li>
+      <li class="rounded-xl border border-border bg-card p-5">
+        <h3 class="text-lg font-semibold text-foreground">3. Texto y orden de la carta</h3>
+        <p class="mt-2 leading-7 text-muted-foreground">
+          Nombre, descripción y sitio del plato vienen después de la matriz, en la misma página de carta, cuando ya sabes qué plato quieres empujar.
+        </p>
+      </li>
+    </ol>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      Los planes publicados están en
+      <a href="/precios" class="font-semibold text-primary hover:underline">precios</a>:
+      AI Chef Miembro, 10 € al mes y 10.000 créditos; Premium Pro, 25 € y 85.000; Premium Plus, 50 € y 175.000; Premium Max, 95 € al mes o 950 € al año. No hay plan gratis ni prueba. Cada uso de un agente gasta créditos según lo que le pidas. La guía de 55 EUR no incluye esa suscripción.
+    </p>
+    <p class="mt-4 leading-7 text-muted-foreground">
+      Si prefieres la hoja de coste por formato de negocio, el
+      <a href="/kit-escandallos" class="font-semibold text-primary hover:underline">Kit de Escandallos Pro</a>
+      es otro pago único. Esta guía sigue a partir del coste: precio, matriz y qué hacer con cada plato. Para leerlo más despacio están la
+      <a href="/blog/carta-restaurante-rentable-ingenieria-menu-ia" class="font-semibold text-primary hover:underline">ingeniería de menú en el blog</a>
+      y los
+      <a href="/blog/8-errores-que-destruyen-el-food-cost-en-tu-restaurante" class="font-semibold text-primary hover:underline">errores de food cost</a>.
+    </p>
+
+    <div class="mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+      <a
+        href={appHref}
+        class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+      >
+        Entrar en AI Chef Pro
+      </a>
+      <a
+        href="/precios"
+        class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+      >
+        Ver precios
+      </a>
+    </div>
+    <p class="mt-3 text-sm text-muted-foreground">
+      AI Chef Miembro · 10 € al mes · 10.000 créditos. La suscripción se contrata en la página de precios.
+    </p>
+  </div>
+</article>

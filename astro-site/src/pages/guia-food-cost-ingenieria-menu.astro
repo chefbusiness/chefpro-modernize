@@ -11,6 +11,7 @@
 // landing NACE en Astro (no hay página SPA de la que portarla).
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GuiaLandingPage from '../components/pages/GuiaLandingPage.astro';
+import ArticuloFoodCost from '../components/guia-food-cost/ArticuloFoodCost.astro';
 import data from '../data/productos/guias/guia-food-cost-ingenieria-menu';
 import { alternatesFamilia } from '../lib/tienda';
 
@@ -40,4 +41,5 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GUIA_FOOD_COST || '#
   ogImage={data.seo.ogImage}
 >
   <GuiaLandingPage data={data} stripeLink={stripeLink} />
+  <ArticuloFoodCost />
 </BaseLayout>

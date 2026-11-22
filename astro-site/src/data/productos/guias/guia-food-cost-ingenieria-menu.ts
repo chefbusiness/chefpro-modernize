@@ -10,32 +10,54 @@
 //    de 30 días»: art. 20 TRLGDCU / RDL 24/2021).
 //  - D3: SIN `aggregateRating` y con `testimonials.items: []` — no ha vendido una unidad,
 //    así que no hay reseñas. El template oculta la sección cuando el array está vacío.
-//  - CERO cifras inventadas. La ÚNICA cifra de mercado admitida es el coste anual del
-//    software de food cost (>1.100 € + IVA), tomada de las tarifas públicas de
-//    haddock.app y tspoonlab.com consultadas el 2026-09-03 (research §3).
+//  - CERO cifras de mercado sin fuente revisada. La comparación con el software
+//    de haddock y tspoonlab (más de 1.100 €/año) se quitó de la landing el
+//    2026-11-22: no se volvió a comprobar.
 //  - `95` y `32` son TOKENS: se sustituyen por las páginas MEDIDAS
 //    con PyMuPDF cuando el PDF esté construido (D17). No publicar con el token puesto.
 import type { GuiaData } from './types';
+
+const faqs: GuiaData['faqs'] = [
+    { q: '¿Qué es el food cost de un restaurante?', a: 'Es la parte del precio de un plato que se va en materia prima. Se mira en porcentaje, sobre el precio de venta sin IVA, y en euros de margen por ración. El porcentaje de la casa es una media: cada plato se mira aparte.' },
+    { q: '¿Cómo se calcula el food cost de un plato?', a: 'Con esta fórmula: food cost % = coste de materia prima / precio de venta sin IVA × 100. Ejemplo: un coste de 4,50 € y un precio sin IVA de 15,00 € dan un food cost del 30 %. Esos 15,00 € salen de un precio de carta de 16,50 € con un 10 % de IVA de sala (16,50 / 1,10). El tipo del ejemplo es el del servicio en el local; en para llevar y en delivery puede ser otro.' },
+    { q: '¿Qué es la ingeniería de menú?', a: 'Clasificar cada plato según cuántas raciones vende y cuánto deja cada una, en euros. El método de Kasavana y Smith cruza popularidad y margen de contribución. Las raciones salen del TPV y el coste, del escandallo.' },
+    { q: '¿Qué es la matriz BCG de una carta?', a: 'La matriz BCG original ordena productos por crecimiento del mercado y por cuota. En la carta se usa la misma rejilla de cuatro casillas con otros ejes: popularidad y margen de contribución. Los grupos son estrella, caballo de batalla, puzzle y perro.' },
+    { q: '¿Qué se revisa en cada cuadrante?', a: 'La estrella se protege: receta, porción y sitio en la carta. El caballo de batalla se vende mucho y deja poco: se revisan coste, guarnición o precio. El puzzle deja dinero y se pide poco: se revisan nombre, texto y lugar. El perro es candidato a salir, salvo que cumpla otra función en la carta.' },
+    { q: '¿Hace falta el escandallo antes de la matriz?', a: 'Sí. El margen de cada plato sale del coste de la ración. En AI Chef Pro ese coste se trabaja en escandallos con IA (aichef.pro/escandallos-restaurante-ia) y la clasificación, en la página de carta e ingeniería de menú (aichef.pro/carta-menu-restaurante-ia). Se usan uno detrás de otro: pasas tú el coste y las ventas de un paso al siguiente.' },
+    { q: '¿La guía incluye la suscripción de AI Chef Pro?', a: 'La guía son 55 EUR, un pago único. La suite se contrata aparte: AI Chef Miembro, 10 € al mes y 10.000 créditos; Premium Pro, 25 € y 85.000; Premium Plus, 50 € y 175.000; Premium Max, 95 € al mes o 950 € al año. No hay plan gratis ni prueba. Los precios están en aichef.pro/precios.' },
+    { q: '¿Necesito el Kit de Escandallos si compro esta guía?', a: 'Puedes trabajar con la ficha de escandallo y el test de rendimiento que trae la guía. El Kit son 13 plantillas para escandallar por formato de negocio. Si tienes los dos, se solapan esas dos herramientas básicas y el resto es distinto: la guía sigue en el precio, la matriz y la decisión plato a plato.' },
+    { q: '¿Cómo afecta el IVA al cálculo del food cost?', a: 'El food cost se calcula sobre la venta neta (la base imponible) y con el coste neto de IVA soportado, porque el IVA de la compra se deduce: es tesorería, no coste. El tipo cambia según vendas en sala, para llevar o por delivery. Calcularlo sobre el precio con IVA mueve el porcentaje y puede llevarte a subir el plato equivocado.' },
+    { q: '¿Las bebidas alcohólicas llevan el 21 % en un restaurante?', a: 'Cuando se sirven en sala, el servicio de hostelería para consumir en el acto va al 10 %, alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992). El 21 % aparece cuando no hay servicio: una bebida alcohólica vendida para llevar o por delivery es una entrega de bienes y sale del tipo reducido. La guía trae la matriz por canal y tipo de producto, y en los Excel vive en casillas editables.' },
+    { q: '¿Cómo calculo el food cost de un plato vendido por delivery?', a: 'Sumando al coste del plato el packaging que le corresponde por pedido y dividiendo entre lo que ingresas: el precio menos la comisión de la plataforma. El simulador de la guía lo hace por plato y marca si el precio necesario cabe bajo el techo de la app.' },
+    { q: '¿El objetivo de las bebidas es el mismo que el de la comida?', a: 'La estructura de coste de la bodega es otra: la unidad de venta (copa, media botella, botella) la decides tú y el despiece no pesa igual. El libro de bebidas deja el objetivo de cada categoría en una casilla editable, para que pongas el tuyo.' },
+    { q: '¿Con qué frecuencia hay que re-escandallar una receta?', a: 'Cuando cambia la tarifa de un proveedor, la temporada, el formato de compra, la receta o la ración, y en una revisión de la carta completa. El capítulo 18 fija el protocolo.' },
+    { q: '¿Kasavana y Smith es el único método de la guía?', a: 'Es el cruce de popularidad y margen de contribución, el de la matriz BCG de la carta. La guía añade Miller, Pavesic y el Goal Value de Hayes y Huffman sobre la misma carta, con una hoja que marca dónde discrepan.' },
+    { q: '¿Qué es el prime cost?', a: 'Es la suma del coste de producto y el coste de personal, con su seguridad social. Un food cost bajo puede convivir con un exceso de horas que se come el margen. El cuadro de mando los pinta juntos mes a mes, con el objetivo en una casilla editable.' },
+    { q: '¿Incluye actualizaciones?', a: 'El acceso es de por vida. Si cambia un tipo de IVA o una herramienta, la versión nueva se descarga desde el mismo acceso, sin otro pago.' },
+    { q: '¿Hay garantía de devolución?', a: '30 días. Si la guía no te sirve, se devuelve el 100 % del pago.' },
+    { q: '¿Sirve fuera de España?', a: 'El bloque fiscal está escrito con la normativa española y sus artículos citados. Los tipos de IVA, las comisiones y los objetivos viven en casillas editables de los Excel. Incluye la Guía de Equivalencias (20 países): «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «ración» es «orden» en México y «porción» en Colombia.' },
+    { q: '¿Con qué programas funcionan las herramientas Excel?', a: 'Con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Están hechas sin funciones que rompan la compatibilidad y traen los valores calculados guardados en el fichero.' },
+  ];
 
 const data: GuiaData = {
   slug: 'guia-food-cost-ingenieria-menu',
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_GUIA_FOOD_COST',
 
   seo: {
-    title: 'Guía Food Cost + Ingeniería de Menú: Escandallo, Precios y Carta Rentable | AI Chef Pro',
-    description: 'Escandallo (costeo de recetas), precios y rentabilidad de tu carta: guía de 95 páginas, 8 Excel con fórmulas y 12 ejercicios resueltos. IVA por canal y delivery. 55 EUR.',
-    keywords: 'food cost, escandallo, costeo de recetas, ingeniería de menú, menu engineering, cómo calcular el food cost, precio de venta de un plato, kasavana smith, prime cost, beverage cost, food cost delivery, IVA hostelería, guía food cost, AI Chef Pro',
+    title: 'Food cost e ingeniería de menú: matriz BCG de carta | AI Chef Pro',
+    description: 'Cómo se calcula el food cost de un plato, qué mira la ingeniería de menú y cómo se lee la matriz BCG de la carta. Guía con Excel, 55 EUR. Desde 10 € al mes.',
+    keywords: 'food cost, ingeniería de menú, matriz BCG carta, menu engineering, food cost restaurante, margen de contribución, estrella caballo de batalla puzzle perro, kasavana smith, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-guia-food-cost-ingenieria-menu.jpg',
   },
 
   showCompatibleApps: true,
 
   hero: {
-    badge: 'Para quien ya opera: poner precio y decidir la carta con números, no a ojo',
-    titlePre: 'Guía Food Cost + ',
-    titleGold: 'Ingeniería de Menú',
-    subtitleLine: 'Escandallo, precios y rentabilidad de tu carta — con el IVA bien puesto y el delivery dentro de la cuenta',
-    description: 'El Kit te dice cuánto te cuesta cada plato. La Guía te dice qué hacer con esa información: qué reformular, qué resubir, qué rediseñar y qué retirar, plato a plato y con el cálculo delante.',
+    badge: 'Guía de pago único para quien ya tiene la carta en marcha',
+    titlePre: 'Food cost e ',
+    titleGold: 'ingeniería de menú',
+    subtitleLine: 'La matriz BCG de la carta, con el cálculo del plato delante',
+    description: 'Cómo se saca el food cost de una ración, en qué se separa del margen en euros y cómo cae cada plato en estrella, caballo de batalla, puzzle o perro. La guía trae el método y ocho Excel. El escandallo con IA y la ingeniería de menú de la suite van aparte, agente por agente.',
     checkItems: [
       'Guía completa PDF + DOCX editable (20 capítulos, 95 páginas)',
       '8 herramientas Excel con fórmulas vivas: escandallo, mermas, precios, matriz de carta, delivery, bebidas, prime cost y plan de 90 días',
@@ -71,7 +93,7 @@ const data: GuiaData = {
   grid: {
     countGold: '20',
     headingRest: ' Capítulos + 8 Herramientas Excel + 12 Ejercicios Resueltos',
-    subtitle: 'Método, no teoría. Cada capítulo se apoya en una de las ocho herramientas Excel del pack y sus tablas salen de las celdas de esos ficheros, no de ejemplos inventados. Escrito por un chef y consultor gastronómico que lleva desde 2010 poniendo precios en cartas reales.',
+    subtitle: 'Cada capítulo se apoya en una de las ocho herramientas Excel del pack. El food cost, el precio y la matriz BCG de la carta se leen con esas hojas. Consultor gastronómico desde 2010.',
     chapters: [
       { icon: 'Users', num: '01', title: 'Para Quién Es Esta Guía (y Qué No Vas a Encontrar Aquí)', desc: 'Nivel de partida, mapa problema → capítulo → herramienta, y el glosario ES/LATAM: escandallo (costeo de recetas), coste (costo), carta (menú).' },
       { icon: 'BarChart3', num: '02', title: 'Las Cuatro Cifras Que Gobiernan tu Carta', desc: 'Food cost %, margen de contribución en euros, prime cost y ticket medio. Cuál manda en cada decisión y por qué mirar solo una engaña.' },
@@ -80,9 +102,9 @@ const data: GuiaData = {
       { icon: 'TrendingDown', num: '05', title: 'Del Bruto al Neto: Merma, Rendimiento y el Test Que Sustituye a la Tabla', desc: 'Despiece, cocción y desperdicio. El protocolo del test de rendimiento con tu proveedor y el coste neto por kilo con subproductos aprovechados.' },
       { icon: 'FileSpreadsheet', num: '06', title: 'La Ficha de Escandallo Que Aguanta una Auditoría', desc: 'Cantidad bruta a partir de la neta y la merma, raciones, coste por ración y precio objetivo. Qué debe llevar una ficha para que nadie la discuta.' },
       { icon: 'Search', num: '07', title: 'Food Cost Teórico vs Real: Dónde Se Escapa el Dinero', desc: 'La fórmula del real con stock inicial, compras y stock final; las cuatro causas de desviación y el protocolo semanal para cazarlas.' },
-      { icon: 'Target', num: '08', title: 'Prime Cost: la Métrica Que Mide la Salud del Negocio', desc: 'Producto y personal juntos, con los umbrales del sector español según el formato. Un food cost «bueno» puede estar tapando un coste de personal roto.' },
+      { icon: 'Target', num: '08', title: 'Prime Cost: la Métrica Que Mide la Salud del Negocio', desc: 'Producto y personal juntos. Un food cost bajo puede convivir con un coste de personal que se come el margen. El objetivo del formato va en una casilla editable.' },
       { icon: 'Calculator', num: '09', title: 'Cuatro Formas de Poner Precio a un Plato', desc: 'Factor sobre coste, margen en euros, precio de mercado y valor percibido. Cuándo usar cada una y por qué el factor arruina los platos de coste alto.' },
-      { icon: 'Sparkles', num: '10', title: 'Psicología de Precios: lo Demostrado y lo Que Es Leyenda', desc: 'El efecto señuelo con estudio revisado por pares, los clásicos citados con sus salvedades y lo que circula por el sector sin ninguna evidencia detrás.' },
+      { icon: 'Sparkles', num: '10', title: 'Psicología de Precios: lo Demostrado y lo Que Es Leyenda', desc: 'Qué se puede usar al poner un precio (anclaje, orden, el plato que hace de referencia) y qué conviene no copiar de oídas.' },
       { icon: 'LayoutGrid', num: '11', title: 'Ingeniería de Menú I: Kasavana & Smith Bien Hecho', desc: 'La matriz clásica como debe hacerse: umbral de popularidad por familia, margen de contribución y las cuatro categorías con su lectura.' },
       { icon: 'PieChart', num: '12', title: 'Ingeniería de Menú II: lo Que la Matriz Clásica No Ve', desc: 'Miller, Pavesic con margen ponderado y el Goal Value de Hayes y Huffman con su fórmula completa. Tres lecturas que la matriz 2×2 no da.' },
       { icon: 'Shuffle', num: '13', title: 'Cuando los Métodos Discrepan: el Protocolo de Decisión', desc: 'Qué mide realmente cada método, cómo leer la hoja de comparativa y el árbol de decisión: reformular, resubir, rediseñar o retirar.' },
@@ -105,17 +127,19 @@ const data: GuiaData = {
   },
 
   why: {
+    titlePre: '¿Por qué esta guía de ',
+    titleGold: 'food cost',
     reasons: [
       { icon: 'Scale', title: 'El IVA, Dentro del Cálculo', desc: 'El food cost se calcula sobre la base imponible, y el tipo cambia según vendas en sala, para llevar o por delivery. Aquí está resuelto con la base legal citada y en casillas editables, no escondido dentro de una fórmula.' },
-      { icon: 'Shuffle', title: 'Cuatro Métodos, No Uno', desc: 'Kasavana & Smith, Miller, Pavesic y Goal Value sobre la misma carta, con una hoja que enseña dónde discrepan y por qué. Cada método mide dos de tres variables: lo interesante no es que coincidan, es que no lo hagan.' },
-      { icon: 'FileSpreadsheet', title: 'Ocho Excel con Fórmulas Vivas', desc: 'No son PDF para rellenar a mano: metes tus datos y calculan. Compatibles con Excel, Google Sheets y Numbers, con IVA, comisiones y objetivos en casillas editables para trabajar también fuera de España.' },
-      { icon: 'Wallet', title: 'Un Pago Único Frente a una Cuota Mensual', desc: 'Un año de software de food cost cuesta más de 1.100 €, IVA aparte, según las tarifas públicas de haddock.app y tspoonlab.com consultadas el 3 de septiembre de 2026. Esta guía es un pago único con acceso de por vida.' },
+      { icon: 'Shuffle', title: 'Cuatro métodos sobre la misma carta', desc: 'Kasavana y Smith, Miller, Pavesic y Goal Value, con una hoja que enseña dónde discrepan. Cada método mira una pareja de variables distinta.' },
+      { icon: 'FileSpreadsheet', title: 'Ocho Excel con Fórmulas Vivas', desc: 'Metes tus datos y calculan. Compatibles con Excel, Google Sheets y Numbers, con IVA, comisiones y objetivos en casillas editables para trabajar también fuera de España.' },
+      { icon: 'Wallet', title: 'Un Pago Único, la Suite Aparte', desc: 'La guía son 55 EUR, una vez, con acceso de por vida. La suite de agentes se contrata en la página de precios: AI Chef Miembro sale a 10 € al mes, con 10.000 créditos. El escandallo y la matriz se usan uno detrás de otro.' },
     ],
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos, incluyendo restaurantes con Estrella Michelin y Soles Repsol en España y Europa.',
-    badge3: '+200 aperturas',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Consultor gastronómico desde 2010.',
+    badge3: 'Consultor desde 2010',
   },
 
   bonus: {
@@ -143,23 +167,11 @@ const data: GuiaData = {
     text: 'Si la guía no te sirve para poner precios y decidir tu carta con criterio, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones. Tienes 30 días para decidir.',
   },
 
-  faqs: [
-    { q: '¿Necesito el Kit de Escandallos si compro esta guía?', a: 'No, pero se complementan. El Kit son 13 plantillas para escandallar por formato de negocio; la Guía es el método y la decisión: qué precio poner, qué método usar y qué hacer con cada plato. La Guía incluye una ficha de escandallo base y un test de rendimiento para que puedas trabajar sin el Kit; si tienes los dos, solo se solapan esas dos herramientas básicas (el Kit también trae ficha estándar y test de rendimiento) y todo lo demás es distinto.' },
-    { q: '¿Sirve fuera de España?', a: 'Sí, con un matiz que conviene decir claro: el bloque fiscal está escrito con la normativa española y sus artículos citados. Los tipos de IVA, las comisiones de plataforma y los objetivos viven en casillas editables de los Excel, así que sustituyes los valores por los de tu país y todo se recalcula. El vocabulario incluye las equivalencias de Hispanoamérica (escandallo/costeo de recetas, coste/costo, carta/menú) y los ejemplos de delivery mencionan también las plataformas de México, Argentina, Uruguay y Panamá. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «ración» es «orden» en México y «porción» en Colombia.' },
-    { q: '¿Con qué programas funcionan las herramientas Excel?', a: 'Con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Los libros están construidos a propósito sin funciones que rompen la compatibilidad entre programas, y traen los valores calculados guardados dentro del fichero, así que también se ven bien en el móvil y en visores que no recalculan.' },
-    { q: '¿Cómo afecta el IVA al cálculo del food cost?', a: 'Más de lo que parece, y es el hueco que casi ninguna fuente gratuita cubre. El food cost se calcula sobre la venta neta (la base imponible), no sobre el precio de la carta, y con el coste neto de IVA soportado, porque ese IVA de compra se deduce: es tesorería, no coste. Calcularlo sobre el precio con IVA infla o desinfla el porcentaje según el canal y te lleva a subir el plato equivocado.' },
-    { q: '¿Las bebidas alcohólicas llevan el 21% en un restaurante?', a: 'No cuando se sirven en sala: el servicio de hostelería para consumir en el acto va al 10%, alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992). El 21% aparece cuando no hay servicio: una bebida alcohólica vendida para llevar o por delivery es una entrega de bienes y sale del tipo reducido. La guía trae la matriz completa por canal y tipo de producto, y en los Excel vive en casillas editables.' },
-    { q: '¿Cómo calculo el food cost de un plato vendido por delivery?', a: 'Sumando al coste del plato el packaging que le corresponde por pedido y dividiendo entre lo que realmente ingresas, es decir, el precio menos la comisión de la plataforma. El simulador multicanal lo hace por ti para cada plato y además te dice qué precio necesitarías para cumplir tu objetivo y si ese precio cabe bajo el techo que la app te deja poner.' },
-    { q: '¿Por qué el objetivo de las bebidas es distinto al de la comida?', a: 'Porque la estructura de coste no se parece: no hay merma de despiece, la unidad de venta se decide (copa, media botella, botella) y la rotación es otra. La guía da los rangos por categoría con su fuente y los deja en casillas editables del libro de bebidas, para que compares tu bodega con la referencia y no con una cifra genérica.' },
-    { q: '¿Con qué frecuencia hay que re-escandallar una receta?', a: 'No por calendario ciego, sino por disparadores: cambio de tarifa de un proveedor, cambio de temporada o de formato de compra, cambio de receta o de ración, y una revisión periódica de la carta completa. El capítulo 18 fija el protocolo y explica cómo leer las notas de precios oficiales para anticiparte, en vez de enterarte con la factura.' },
-    { q: '¿El método de Kasavana & Smith es el único válido?', a: 'Es el más citado, no el único, y por sí solo se queda corto: cruza popularidad con margen de contribución e ignora el porcentaje de coste. La guía lo hace bien y además añade Miller, Pavesic y el Goal Value de Hayes y Huffman sobre la misma carta, con una hoja que marca dónde discrepan. Ahí es donde suelen estar las decisiones que importan.' },
-    { q: '¿Qué es el prime cost y por qué importa más que el food cost solo?', a: 'Es la suma del coste de producto y el coste de personal con su seguridad social. Importa porque son las dos partidas que se mueven con tu operativa, y porque un food cost estupendo puede estar sostenido por un exceso de horas que se come el margen. El cuadro de mando los pinta juntos mes a mes, con el objetivo del formato de tu negocio en una casilla editable.' },
-    { q: '¿Incluye actualizaciones?', a: 'Sí, el acceso es de por vida. Si cambia un tipo de IVA o mejoramos una herramienta, entras a tu dashboard y descargas la versión nueva sin pagar nada. En el propio panel verás el historial de cambios de cada versión.' },
-    { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho con el contenido, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.' },
-  ],
+  faqs,
+
 
   cta: {
-    heading: 'Deja de Poner Precios a Ojo',
+    heading: 'La guía de food cost y la matriz de la carta',
     subtitle: 'El método, las herramientas y los ejercicios para decidir tu carta con números delante.',
     items: [
       'Guía completa PDF + DOCX (20 capítulos, 95 páginas)',
@@ -176,6 +188,12 @@ const data: GuiaData = {
   stickyLabel: 'GUÍA FOOD COST + INGENIERÍA DE MENÚ — 55 EUR',
 
   footerLinks: [
+    { label: 'Escandallos con IA', href: '/escandallos-restaurante-ia' },
+    { label: 'Carta e ingeniería de menú', href: '/carta-menu-restaurante-ia' },
+    { label: 'Calculadora de food cost', href: '/calculadora-food-cost-restaurante' },
+    { label: 'Precios', href: '/precios' },
+    { label: 'Ingeniería de menú en el blog', href: '/blog/carta-restaurante-rentable-ingenieria-menu-ia' },
+    { label: 'Errores de food cost', href: '/blog/8-errores-que-destruyen-el-food-cost-en-tu-restaurante' },
     { label: 'Kit de Escandallos Pro', href: '/kit-escandallos' },
     { label: 'Kit Gestión de Personal', href: '/kit-gestion-personal' },
     { label: 'Guía Restaurante Gastronómico', href: '/guia-restaurante-gastronomico' },
@@ -196,17 +214,10 @@ const data: GuiaData = {
 
   schema: {
     productName: 'Guía Food Cost + Ingeniería de Menú',
-    productDescription: 'Guía técnica de 20 capítulos para escandallar, poner precio y decidir la carta de un negocio de hostelería ya en marcha: IVA por canal, mermas medidas, cuatro metodologías de ingeniería de menú, delivery, beverage cost y prime cost. Incluye 8 herramientas Excel con fórmulas y 12 ejercicios resueltos.',
+    productDescription: 'Guía para calcular el food cost de cada plato, leer la ingeniería de menú y clasificar la carta con la matriz BCG: estrellas, caballos de batalla, puzzles y perros. 20 capítulos, 8 Excel y 12 ejercicios resueltos. Pago único de 55 EUR, aparte de la suscripción de AI Chef Pro.',
     price: '55.00',
     priceValidUntil: '2026-12-31',
-    faqs: [
-      { q: '¿Necesito el Kit de Escandallos si compro esta guía?', a: 'No. El Kit son plantillas para escandallar; la Guía es el método y la decisión, e incluye su propia ficha de escandallo base y su test de rendimiento. Si tienes los dos, solo se solapan esas dos herramientas básicas.' },
-      { q: '¿Sirve fuera de España?', a: 'Sí. El bloque fiscal está escrito con normativa española citada, pero los tipos de IVA, comisiones y objetivos viven en casillas editables de los Excel para adaptarlos a cualquier país. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «ración» es «orden» en México y «porción» en Colombia.' },
-      { q: '¿Con qué programas funcionan las herramientas Excel?', a: 'Con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Están construidas sin funciones que rompan la compatibilidad y traen los valores calculados guardados en el fichero.' },
-      { q: '¿Cómo afecta el IVA al cálculo del food cost?', a: 'El food cost se calcula sobre la venta neta (base imponible) y con el coste neto de IVA soportado. El tipo cambia según vendas en sala, para llevar o por delivery; la guía trae la matriz por canal y producto.' },
-      { q: '¿Cómo calculo el food cost de un plato vendido por delivery?', a: 'Sumando al coste del plato el packaging por pedido y dividiendo entre el precio menos la comisión de la plataforma. El simulador multicanal lo calcula por plato y dice si el precio necesario cabe bajo el techo de la app.' },
-      { q: '¿El método de Kasavana & Smith es el único válido?', a: 'No. Cruza popularidad con margen e ignora el porcentaje de coste. La guía añade Miller, Pavesic y el Goal Value de Hayes y Huffman sobre la misma carta, con una hoja que marca dónde discrepan.' },
-    ],
+    faqs,
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },
       { name: 'Productos Digitales', item: 'https://aichef.pro/productos-digitales' },
