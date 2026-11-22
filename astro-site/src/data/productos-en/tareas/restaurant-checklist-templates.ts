@@ -373,7 +373,7 @@ const data: KitTareasData = {
       {
         name: 'David Molina',
         role: 'Owner, Gastrobar La Esquina',
-        text: 'I opened my first restaurant a year ago and I kept forgetting things: turning on the oven, checking reservations, restocking napkins. With the checklists I cut the slip-ups by 80%. They literally saved my day-to-day operation.',
+        text: 'I opened my first restaurant a year ago and I kept forgetting things: turning on the oven, checking reservations, restocking napkins. With the checklists, almost nothing slips through. They literally saved my day-to-day operation.',
         avatar: '/avatars/avatar-3.jpg',
       },
       {
@@ -385,7 +385,7 @@ const data: KitTareasData = {
       {
         name: 'Sergio Blanco',
         role: 'General Manager, Brasserie Central',
-        text: 'A new server used to need two weeks to learn the full routine. Now, with the checklists by role, in 2 days they know what to do on every shift. Staff turnover is no longer a drama.',
+        text: 'A new server used to take a long time to learn the full routine. Now, with the checklists by role, they know what to do on every shift much sooner. Staff turnover is no longer a drama.',
         avatar: '/avatars/avatar-5.jpg',
       },
       {
@@ -397,7 +397,7 @@ const data: KitTareasData = {
       {
         name: 'Fernando López',
         role: 'Owner, Restaurante Mesa Abierta',
-        text: 'The pre-shift meeting template alone is worth the price. Our pre-shift used to be improvised and last 30 seconds. Now we go over the specials, allergens, VIP reservations and goals in 5 minutes. Service goes much better.',
+        text: 'The pre-shift meeting template alone is worth the price. Our pre-shift used to be improvised and barely happened. Now we go over the specials, allergens, VIP reservations and goals properly. Service goes much better.',
         avatar: '/avatars/avatar-7.jpg',
       },
       {
@@ -409,7 +409,7 @@ const data: KitTareasData = {
       {
         name: 'Pablo Santana',
         role: 'Restaurant Consultant',
-        text: "I recommend it to every one of my consulting clients, no exceptions. The opening, closing and manager checklists cover 90% of what any restaurant needs to run in an orderly way. It's a must-have.",
+        text: "I recommend it to every one of my consulting clients, no exceptions. The opening, closing and manager checklists cover what any restaurant needs to run in an orderly way. It's a must-have.",
         avatar: '/avatars/chef-avatar-5.jpg',
       },
       {
