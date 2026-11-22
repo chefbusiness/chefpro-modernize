@@ -45,7 +45,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Food cost e ingeniería de menú: matriz BCG de carta | AI Chef Pro',
-    description: 'Cómo se calcula el food cost de un plato, qué mira la ingeniería de menú y cómo se lee la matriz BCG de la carta. Guía con Excel, 55 EUR. Desde 10 € al mes.',
+    description: 'Cómo se calcula el food cost de un plato, qué mira la ingeniería de menú y cómo se lee la matriz BCG de la carta. Guía con Excel, 55 €, pago único.',
     keywords: 'food cost, ingeniería de menú, matriz BCG carta, menu engineering, food cost restaurante, margen de contribución, estrella caballo de batalla puzzle perro, kasavana smith, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-guia-food-cost-ingenieria-menu.jpg',
   },
