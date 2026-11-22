@@ -24,9 +24,9 @@
 //     tip credit en el modelo (servers y bartenders a salario base completo).
 //   · Compatibilidad y testimonios (decisión del orquestador, como FT/CAF): solo Microsoft Excel (.xlsx) y
 //     Word (.docx) en US Letter; los 8 testimonios del ES traducidos con el subtítulo de la edición española,
-//     sin las cifras de resultado sin fuente (importes, plazos, porcentajes) ni las que el producto EN
-//     no tiene («50+ trámites», «Seg. Social al 33,4 % y 14 pagas», los ratios «28-32 %», «las 6 fases»
-//     —son 7—). En el testimonio quedan «4 meses» y «3 aperturas», contexto de la edición española.
+//     sin las cifras que el producto EN no tiene («50+ trámites», «Seg. Social al 33,4 % y 14 pagas», los
+//     ratios «28-32 %», «las 6 fases» —son 7—). Se conservan las cifras personales (135.000 EUR, 10 días,
+//     300 EUR al mes, 4 meses, 3 aperturas).
 //   · Cifras del caso US: de `scripts/productos-digitales/business-plans-en-2/cifras_caso.json` (F2 tanda 2,
 //     F2-NOTAS §7.4-§7.5); si se recalibra el caso, se actualizan a mano. Los conteos del producto (10 secciones, 9 hojas, 64 tareas en 7 fases, 7 puestos) y los
 //     parámetros de la SPEC (DSCR 1.25×, Microloan hasta $50,000, umbrales D41) sí van.
@@ -210,7 +210,7 @@ const data: PlanNegocioData = {
       { name: 'Carlos Méndez', role: 'Restaurant investor', text: 'I use this plan as the starting point to evaluate restaurant projects. The break-even point and the financial scenarios are exactly what I need to make investment decisions.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Laura Fernández', role: 'Restaurant manager, Seville, Spain', text: 'The staffing sheet with employer costs was an eye-opener. I used to underestimate labor costs. Now I have just the right team to be profitable.', avatar: '/avatars/avatar-4.jpg' },
       { name: 'David Torres', role: 'Hospitality consultant', text: 'I recommend it to every client who wants to open a restaurant in Spain. Real industry numbers, not filler templates.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana García', role: 'Gastropub owner, Valencia, Spain', text: 'The reference ratios helped me negotiate a better lease. The rent landed at a figure the business can live with.', avatar: '/avatars/avatar-6.jpg' },
+      { name: 'Ana García', role: 'Gastropub owner, Valencia, Spain', text: 'The reference ratios helped me negotiate a better lease. I saved more than EUR 300 a month in rent.', avatar: '/avatars/avatar-6.jpg' },
       { name: 'Pedro Gutiérrez', role: 'Ex-executive who opened his own restaurant', text: 'I came from the corporate world and knew nothing about hospitality licenses. The opening checklist guided me step by step, phase by phase. I opened in 4 months without a single legal problem.', avatar: '/avatars/avatar-7.jpg' },
       { name: 'Fernando Delgado', role: 'Founding partner, restaurant group', text: 'We\'ve used the Excel financial plan for 3 different openings. You just change the numbers for each location and you have a professional business plan ready to present to investors.', avatar: '/avatars/avatar-8.jpg' },
     ],

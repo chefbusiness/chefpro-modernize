@@ -20,11 +20,10 @@
 //     como estimación editable del kit (D15), restaurante de ejemplo con EBITDA ≈ 17.3 % (§5). Sin
 //     «bank-approved», «SBA-approved», financiación garantizada ni asesoría fiscal o financiera: la
 //     línea «A planning tool, not financial or tax advice» va en el why y en la FAQ del lender.
-//   · Sin reviews ni aggregateRating en el JSON-LD. Testimonios: los 8 del ES traducidos
-//     (nombres y negocios de origen), con el subtítulo de la edición española (TIENDA §3.5).
-//     Las cifras de resultado sin fuente (importes, plazos) no se copian. Donde el ES habla de
-//     bancos o fiscalidad se precisa que son españoles, para que no se lea como una promesa
-//     sobre un banco de EE. UU.
+//   · Sin reviews ni aggregateRating en el JSON-LD. Testimonios: los 8 del ES traducidos tal cual
+//     (nombres, negocios y cifras de origen, importes en EUR sin el signo), con el subtítulo de la
+//     edición española (TIENDA §3.5). Única adaptación: donde el ES habla de bancos o fiscalidad se
+//     precisa que son españoles, para que no se lea como una promesa sobre un banco de EE. UU.
 //   · Compatibilidad: SIN Google Sheets mientras no haya test real (SPEC §6 y §9: IRR, gráficos y
 //     protección), en toda la landing y en el dashboard (RestaurantFinancialPlanKitDashboard.tsx). El
 //     resto, como los kits EN hermanos (Excel, LibreOffice, Numbers) + US Letter. Cuando el test pase:
@@ -286,11 +285,11 @@ const data: KitExcelData = {
     subtitle:
       'Owners, investors and consultants who already plan their finances with the Kit Plan Financiero, the Spanish edition of this kit',
     items: [
-      { name: 'Ricardo Gómez', role: 'Owner, newly opened casual restaurant', text: 'The 3-year financial projection was exactly what my bank in Spain asked for the loan. I presented it as it was, with the charts and the scenarios, and they approved the financing without dragging it out.', avatar: '/avatars/avatar-1.jpg' },
+      { name: 'Ricardo Gómez', role: 'Owner, newly opened casual restaurant', text: 'The 3-year financial projection was exactly what my bank in Spain asked for the loan. I presented it as it was, with the charts and the scenarios, and they approved EUR 120,000 in 2 weeks.', avatar: '/avatars/avatar-1.jpg' },
       { name: 'Ana Beltrán', role: 'Restaurant consultant, 15+ years', text: 'I use it with every client who is about to open. The scenario simulator is brilliant: you change the average check or the occupancy and instantly see how it affects profitability. It makes any opening project look professional.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Javier Morales', role: 'General Manager, group of 3 restaurants in Valencia, Spain', text: 'The monthly P&L budget vs actual changed my life. I used to find out at the end of the year that something was wrong. Now I spot variances every month with the traffic light and fix them in time.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Isabel Campos', role: 'Finance Director, restaurant chain', text: 'The financial ratios dashboard with industry benchmarks is exactly what I needed for our management committee meetings. Food cost, labor cost, prime cost, GOP — all automatic.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Fernando Reyes', role: 'Chef and entrepreneur, first restaurant', text: 'The break-even calculator opened my eyes. I saw the covers a day and the average check I needed to be profitable. Without it I would have opened blind.', avatar: '/avatars/avatar-5.jpg' },
+      { name: 'Fernando Reyes', role: 'Chef and entrepreneur, first restaurant', text: 'The break-even calculator opened my eyes. I found out I needed 45 covers a day at an average check of EUR 22 to be profitable. Without it I would have opened blind.', avatar: '/avatars/avatar-5.jpg' },
       { name: 'María Herrero', role: 'Tax advisor specializing in hospitality, Spain', text: 'The cash flow forecast with low-cash alerts is what I value most. My clients now see 3 months ahead when they are going to be tight on cash. Prevention is infinitely cheaper than the cure.', avatar: '/avatars/avatar-6.jpg' },
       { name: 'Pablo Navarro', role: 'Investor, 2 restaurants + a ghost kitchen', text: 'The capex budget with actual vs budget variance saved me from surprises during the build-out. Every line under control: kitchen, furniture, technology, licenses. I always knew how much I had left.', avatar: '/avatars/avatar-7.jpg' },
       { name: 'Daniel Ortiz', role: 'Director of Operations, restaurant franchise', text: 'The feasibility report for Spanish banks is flawless. IRR, NPV, payback period — all calculated automatically. Our franchisees use it to get financing without hiring consultants.', avatar: '/avatars/avatar-8.jpg' },
