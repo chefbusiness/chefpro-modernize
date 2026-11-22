@@ -129,7 +129,7 @@ faq:
 </figure>
 
 
-<p>Questa tabella non è un documento burocratico: è uno strumento di lavoro. Stampala in formato A4, plastificala e tienila vicino alla postazione di cottura. Quando un collega ha un dubbio su un ingrediente, la risposta è a portata di mano.</p>
+<p>Questa tabella non è un documento burocratico: è uno strumento di lavoro. Stampala in formato A4, plastificala e tienila vicino alla postazione di cottura. Quando un collega ha un dubbio su un ingrediente, la risposta è a portata di mano. E quando metti a punto un piatto nuovo, scrivi i suoi ingredienti nel <a href="/it/rilevatore-allergeni-ristorante">rilevatore di allergeni per ristoranti</a>: in pochi secondi vedi quali dei 14 sono presenti e ottieni la scheda da aggiungere al menù.</p>
 
 <h2>Perché la numerazione conta (e quando NON si usano i numeri)</h2>
 <p>La numerazione da 1 a 14 non è un’invenzione editoriale: è l’ordine dell’Allegato II del Reg. (UE) 1169/2011. Usarla ti aiuta a parlare la stessa lingua degli ispettori, dei fornitori e dei colleghi. Se in cucina dici “attenzione, c’è il numero 7”, tutti sanno che si tratta di latte e derivati, senza dover rileggere l’etichetta.</p>
