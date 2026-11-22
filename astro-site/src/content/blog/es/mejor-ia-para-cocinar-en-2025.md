@@ -23,7 +23,7 @@ faq:
     a: "El plan AI Chef Miembro cuesta 10 € al mes y incluye 10.000 créditos. AI Chef Premium Pro cuesta 25 € al mes con 85.000 créditos. AI Chef Premium Plus cuesta 50 € al mes con 175.000 créditos. AI Chef Premium Max cuesta 95 € al mes con créditos ilimitados, y AI Chef Premium Max Anual cuesta 950 € al año, también con créditos ilimitados. La lista completa está en la página de precios."
 ---
 
-Imagina un martes a las ocho de la tarde. Abres la nevera y hay un puerro mustio, tres huevos, un bote de tomate a medio acabar y un trozo de queso que pide salir. Ahí es donde entra un ayudante: te propone un plato con lo que hay, te explica la técnica y te deja las cantidades en gramos. No es una máquina que cocina por ti. Es el compañero que te dice que con eso sale una quiche sin masa o unos huevos al plato con tomate y queso, y que no tardas ni veinte minutos.
+Imagina un martes a las ocho de la tarde. Abres la nevera y hay un puerro mustio, tres huevos, un bote de tomate a medio acabar y un trozo de queso que pide salir. Ahí es donde entra un ayudante: te propone un plato con lo que hay, te explica la técnica y te deja las cantidades en gramos. Con eso sale una quiche sin masa o unos huevos al plato con tomate y queso, y no tardas ni veinte minutos.
 
 Casi todo el resultado depende de cómo se lo pidas. «Receta con pollo» devuelve un texto genérico. «Tengo dos contramuslos deshuesados, una sartén de hierro y quiero una cena para dos con la salsa ligada en menos de 40 minutos» ya se puede cocinar. Vamos a ello.
 
@@ -63,7 +63,7 @@ En cocina, un buen encargo lleva cuatro cosas: quién cocina y para cuántos, co
 
 ## Cinco usos que cambian la forma de cocinar
 
-Estas cinco tareas son las que más repito, en casa y con el equipo. No son trucos de laboratorio. Son ayudas de fogón: más rápido, más preciso y con una idea de reserva cuando el servicio aprieta.
+Estas cinco tareas son las que más repito, en casa y con el equipo. Son ayudas de fogón: vas más rápido, afinas el punto y guardas una idea de reserva cuando el servicio aprieta.
 
 <figure class="wp-block-image alignwide size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1290" height="733" data-attachment-id="1328" data-orig-file="/blog-assets/2025/05/mermas-gencal-aichefpro-scaled.jpg" data-orig-size="2560,1454" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="mermas-gencal-aichefpro" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/05/mermas-gencal-aichefpro-scaled.jpg" src="/blog-assets/2025/05/mermas-gencal-aichefpro-scaled.jpg" alt="Captura Mermas Gen Cal App de AI Chef Pro" class="wp-image-1328" /></figure>
 
@@ -81,7 +81,7 @@ Se acabó la nata y el horno ya está caliente. «Me falta nata para montar en u
 
 ### 4. Maridajes que se pueden defender
 
-«Vino blanco con pescado» no es un maridaje. «Cordero asado con especias, cuscús y yogur a la menta, para 8. Dame 3 tintos españoles y dime por qué encajan, más una alternativa sin alcohol.» Eso se puede explicar en la mesa.
+«Vino blanco con pescado» se queda en una norma de manual. El encargo que se puede defender en la mesa es otro: «Cordero asado con especias, cuscús y yogur a la menta, para 8. Dame 3 tintos españoles y dime por qué encajan, más una alternativa sin alcohol.»
 
 ### 5. Raciones sin descuadre
 
@@ -154,4 +154,4 @@ No hace falta instalar nada ni hacer un curso.
 3. Cocina y anota qué rectificarías. Sal, acidez, punto. La propuesta la da la IA. El punto lo decides tú al probar.
 4. Vuelve con lo que has visto. «La salsa de ayer quedó líquida. ¿Cómo la reduzco sin pasarme de sal?» Cuanto más le cuentas, menos genérica es la siguiente respuesta.
 
-Con el [plan AI Chef Miembro](https://aichef.pro/precios) (10 € al mes, 10.000 créditos) da para varias recetas, un par de maridajes y una técnica afinada. Desde ahí decides si subes. Y si quieres probarlo con el delantal puesto, <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia-para-cocinar-en-2025" target="_blank" rel="noopener noreferrer">entra en la app en español</a>.
+El [plan AI Chef Miembro](https://aichef.pro/precios) son 10 € al mes y 10.000 créditos: el plan de entrada para ayudantes, cocineros y jefes de partida que empiezan con la IA. Desde ahí decides si subes. Y si quieres probarlo con el delantal puesto, <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia-para-cocinar-en-2025" target="_blank" rel="noopener noreferrer">entra en la app en español</a>.

@@ -60,7 +60,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">Según datos recientes del sector, <strong>más del 35% de los restaurantes de alta gama</strong> están implementando algún tipo de solución basada en IA, mientras que un <strong>62% de los chefs considera que la tecnología será crucial</strong> para mantener la competitividad en los próximos cinco años.</p>
+<p class="wp-block-paragraph">En alta cocina y en la restauración de volumen ya hay equipos que usan la IA para pedir, prever y servir. Lo que cambia en cada casa se mide con sus propios datos.</p>
 
 
 
@@ -72,7 +72,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">A continuación, presentamos <strong>20 casos documentados y verificables</strong> de implementación exitosa de inteligencia artificial en cocinas profesionales, ordenados por categorías según su aplicación principal.</p>
+<p class="wp-block-paragraph">Estos son 20 casos de inteligencia artificial en cocinas profesionales, agrupados por el tipo de uso.</p>
 
 
 
@@ -101,12 +101,12 @@ wpId: 1580
 
 
 
-<li>Procesar hasta <strong>300 hamburguesas por hora</strong></li>
+
 </ul>
 
 
 
-<p class="wp-block-paragraph"><strong>Resultados medibles:</strong> White Castle ha instalado múltiples unidades Flippy en sus ubicaciones de Illinois y Detroit, reportando una <strong>reducción del 40% en errores de cocción</strong> y una <strong>mejora del 25% en tiempos de servicio</strong>. El coste del robot (aproximadamente 30.000 dólares) se amortiza en 18 meses considerando los ahorros en formación y rotación de personal.</p>
+
 
 
 
@@ -136,7 +136,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Impacto:</strong> Desde su apertura en 2023, ha procesado <strong>más de 150 pedidos por hora</strong> durante horas pico, con una <strong>consistencia del 99,2% en la preparación</strong> de hamburguesas.</p>
+
 
 
 
@@ -149,7 +149,7 @@ wpId: 1580
 
 
 <ul class="wp-block-list">
-<li>Controla temperatura y tiempos con <strong>precisión de ±1°C</strong></li>
+
 
 
 
@@ -157,7 +157,7 @@ wpId: 1580
 
 
 
-<li>Reduce desperdicios en un <strong>23% comparado con cocinas tradicionales</strong></li>
+
 </ul>
 
 
@@ -179,12 +179,12 @@ wpId: 1580
 
 
 
-<li>Dispensa ingredientes con <strong>precisión de 0,1 gramos</strong></li>
+<li>Dispensa los ingredientes de cada hamburguesa por separado</li>
 </ul>
 
 
 
-<p class="wp-block-paragraph"><strong>Resultados:</strong> <strong>Tiempo de preparación de 5 minutos</strong> por hamburguesa gourmet, con <strong>zero desperdicios</strong> de ingredientes.</p>
+
 
 
 
@@ -209,11 +209,11 @@ wpId: 1580
 
 
 
-<li>Reduce desperdicios en un <strong>15-20%</strong></li>
 
 
 
-<li>Mejora la disponibilidad de productos en <strong>85%</strong></li>
+
+
 </ul>
 
 
@@ -244,7 +244,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Impacto medible:</strong> <strong>40% de las órdenes</strong> online se realizan a través de Dom, con una <strong>satisfacción del cliente del 92%</strong>.</p>
+
 
 
 
@@ -274,7 +274,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Resultados:</strong> <strong>Incremento del 18% en ventas adicionales</strong> por recomendaciones personalizadas y <strong>reducción del 12% en tiempo de espera</strong>.</p>
+
 
 
 
@@ -304,7 +304,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Resultados:</strong> <strong>55% de pedidos online</strong> se procesan a través del asistente, con <strong>tiempo promedio de orden de 3 minutos</strong>.</p>
+
 
 
 
@@ -404,7 +404,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Impacto comercial:</strong> Ventas que <strong>superaron las proyecciones en un 23%</strong> en los primeros tres meses.</p>
+
 
 
 
@@ -438,7 +438,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Resultados:</strong> <strong>Reducción del 30% en tiempo de espera</strong> percibido y <strong>mejora del 25% en satisfacción del cliente</strong>.</p>
+
 
 
 
@@ -468,7 +468,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Aplicación práctica:</strong> Testeo de nuevos menús con <strong>95% de precisión</strong> en predicción de aceptación.</p>
+
 
 
 
@@ -481,7 +481,7 @@ wpId: 1580
 
 
 <ul class="wp-block-list">
-<li>Reconoce <strong>1,400 platos internacionales</strong> automáticamente</li>
+<li>Reconoce platos a partir de una foto y devuelve una lectura nutricional</li>
 
 
 
@@ -532,7 +532,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Adopción:</strong> <strong>33% de pedidos digitales</strong> se procesan a través del chatbot.</p>
+
 
 
 
@@ -545,7 +545,7 @@ wpId: 1580
 
 
 <ul class="wp-block-list">
-<li>Pedidos rápidos con <strong>3 clics o menos</strong></li>
+<li>El pedido se cierra en pocos pasos</li>
 
 
 
@@ -562,7 +562,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Impacto:</strong> <strong>Reducción del 45% en llamadas telefónicas</strong> y <strong>incremento del 28% en pedidos online</strong>.</p>
+
 
 
 
@@ -592,7 +592,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Beneficios operativos:</strong> <strong>Reducción del 50% en llamadas perdidas</strong> y <strong>disminución del 35% en tiempos de espera</strong>.</p>
+
 
 
 
@@ -632,7 +632,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Modelo de negocio:</strong> Concepto híbrido que aumenta el <strong>tiempo de permanencia en 87%</strong> y las <strong>ventas totales en 34%</strong>.</p>
+
 
 
 
@@ -662,7 +662,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Adopción:</strong> Implementado en más de <strong>200 restaurantes</strong> en Estados Unidos y Corea del Sur, con <strong>99.5% de precisión</strong> en entrega de pedidos.</p>
+
 
 
 
@@ -675,7 +675,7 @@ wpId: 1580
 
 
 <ul class="wp-block-list">
-<li><strong>50+ herramientas especializadas</strong> para profesionales gastronómicos</li>
+<li><strong>Más de 75 agentes</strong> para el trabajo de cocina</li>
 
 
 
@@ -696,7 +696,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph"><strong>Casos de éxito:</strong> Más de <strong>5,000 chefs profesionales</strong> utilizan AI Chef Pro globalmente, reportando una <strong>reducción promedio del 35% en tiempo de desarrollo</strong> de nuevos platos y una <strong>optimización del 22% en costes de ingredientes</strong>.</p>
+<p class="wp-block-paragraph">Esas herramientas se usan para desarrollar platos, cruzar alérgenos y mirar el coste. El resultado lo mides en tu propia partida.</p>
 
 
 
@@ -704,15 +704,11 @@ wpId: 1580
 
 
 
-<h2 class="wp-block-heading">Análisis de Impacto: Beneficios Medibles de la IA en Cocinas</h2>
+<h2 class="wp-block-heading">Qué cambia cuando la IA entra en la cocina</h2>
 
 
 
-<p class="wp-block-paragraph">Los casos presentados demuestran beneficios consistentes y medibles:</p>
-
-
-
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th><strong>Área de Impacto</strong></th><th><strong>Mejora Promedio</strong></th><th><strong>Casos Documentados</strong></th></tr></thead><tbody><tr><td>Reducción de Desperdicios</td><td>15-30%</td><td>McDonald&#8217;s, LogMeal, Spice</td></tr><tr><td>Consistencia en Preparación</td><td>95-99%</td><td>Flippy, Creator, Cali Express</td></tr><tr><td>Velocidad de Servicio</td><td>20-40%</td><td>Starbucks, Pizza Hut, Wingstop</td></tr><tr><td>Reducción de Costes Laborales</td><td>25-45%</td><td>White Castle, Bear Robotics</td></tr><tr><td>Satisfacción del Cliente</td><td>18-35%</td><td>Domino&#8217;s, DataSparQ, Robot.He</td></tr><tr><td>Precisión en Pedidos</td><td>92-99%</td><td>KFC China, Burger King</td></tr></tbody></table></div></figure>
+<p class="wp-block-paragraph">Cada casa mide el cambio con sus mermas, sus tiempos y su carta.</p>
 
 
 
@@ -751,11 +747,11 @@ wpId: 1580
 
 
 <ul class="wp-block-list">
-<li><strong>Inversión inicial elevada:</strong> $20,000 &#8211; $60,000 por robot especializado</li>
 
 
 
-<li><strong>ROI a medio plazo:</strong> Amortización entre 12-24 meses</li>
+
+
 
 
 
@@ -936,33 +932,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">Los <strong>20 casos reales</strong> presentados demuestran inequívocamente que <strong>la IA se utiliza ampliamente en la cocina</strong>. Desde robots que preparan miles de hamburguesas diarias hasta algoritmos que predicen preferencias de sabor, la inteligencia artificial ha trascendido la experimentación para convertirse en una herramienta fundamental para la competitividad gastronómica.</p>
-
-
-
-<p class="wp-block-paragraph"><strong>Los beneficios son tangibles y medibles:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>15-30% de reducción en desperdicios</strong> de alimentos</li>
-
-
-
-<li><strong>95-99% de consistencia</strong> en preparación de platos</li>
-
-
-
-<li><strong>20-40% de mejora</strong> en velocidad de servicio</li>
-
-
-
-<li><strong>25-45% de optimización</strong> en costes laborales</li>
-
-
-
-<li><strong>18-35% de incremento</strong> en satisfacción del cliente</li>
-</ul>
+<p class="wp-block-paragraph">Estos casos muestran que <strong>la IA ya se usa en la cocina</strong>: brazos que dan la vuelta a una hamburguesa, asistentes de pedido y programas que proponen recetas. El oficio sigue en quien cata y en quien firma el pase.</p>
 
 
 
