@@ -347,7 +347,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europe",
-        "count": "10 Cuisines"
+        "count": "12 Cuisines"
       },
       "latinoamerica": {
         "name": "Latin America",
@@ -572,9 +572,9 @@
       },
       "id_alergenos": {
         "name": "Allergen ID",
-        "description": "Automatically identify allergens",
+        "description": "",
         "preview": "Comply with food safety regulations without errors",
-        "v2_blurb": "Automatically identify allergens and comply with food safety without errors."
+        "v2_blurb": "Comply with food safety regulations without errors."
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -1325,7 +1325,7 @@
     "pricing_section": {
       "title": "Start reducing costs today",
       "subtitle": "Start with the Member plan for €10 per month. The subscription pays for itself with what you save in the first month.",
-      "annual_note": "Annual plans with 2 months free. No lock-in."
+      "annual_note": "The annual Premium Max option costs €950 per year."
     },
     "faq_section": {
       "title": "FAQs about AI cost control for restaurants"
@@ -1511,7 +1511,7 @@
       },
       {
         "question": "How much does it cost to use AI for restaurant management?",
-        "answer": "The entry plan is AI Chef Member: €10 per month with 10,000 credits. Premium plans range from €25/month (AI Chef Premium Pro, 85,000 credits) up to €95/month with unlimited credits. No commitment."
+        "answer": "The Member plan costs €10 per month and includes 10,000 credits. Premium Pro costs €25/month and includes 85,000 credits. Premium Max costs €95/month, with unlimited credits. Monthly plans have no minimum term."
       }
     ],
     "cta_section": {
@@ -1860,7 +1860,7 @@
       },
       {
         "question": "How much does AI marketing for restaurants cost with AI Chef Pro?",
-        "answer": "The Member plan costs €10/month and includes 10,000 monthly credits and access to all 75+ AI agents, marketing ones included. Higher plans add more credits, and there is also an annual plan. There is no commitment: you can cancel anytime."
+        "answer": "The Member plan costs €10/month and includes 10,000 monthly credits and access to all 75+ AI agents, marketing ones included. Higher plans add more credits. There is also an annual plan. Monthly plans have no minimum term: you can change or cancel them whenever you want."
       }
     ],
     "cta_section": {
@@ -2446,11 +2446,6 @@
         "Dietary restriction adaptation without losing culinary quality"
       ]
     },
-    "testimonial": {
-      "quote": "I used to spend hours developing new dishes. With AI Chef Pro I have a technically accurate recipe in minutes, with the tech sheet included. My team can reproduce it perfectly from day one.",
-      "name": "Laura Sánchez",
-      "role": "Executive Chef, Restaurante Origen, Bilbao"
-    },
     "pricing_section": {
       "title": "Access the AI recipe generator from €10",
       "subtitle": "Start with the Member plan and scale when your business needs it. No commitment.",
@@ -2487,28 +2482,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Restaurant Food Cost Calculator AI | AI Chef Pro",
-      "description": "Calculate restaurant food cost with AI in 2 minutes. Waste control, optimal selling price and profitability analysis per dish. Start today.",
+      "description": "Calculate restaurant food cost with AI. Waste control, optimal selling price and profitability analysis per dish. Start today.",
       "keywords": "restaurant food cost, food cost AI, food cost calculator, restaurant cost control, dish selling price, kitchen waste, dish profitability"
     },
     "breadcrumb": "Restaurant Food Cost with AI",
     "hero": {
       "badge": "AI Food Cost Calculator for Restaurants",
-      "h1": "Restaurant Food Cost with AI: Complete Costing in 2 Minutes",
-      "subtitle": "Calculate the exact cost of each dish instantly. Waste control, optimal selling price and profitability analysis to maximise your restaurant's profit.",
+      "h1": "Restaurant Food Cost with AI: Complete Costing",
+      "subtitle": "Calculate the cost of each dish. Waste control, optimal selling price and profitability analysis to maximise your restaurant's profit.",
       "tagline": "Stop losing money from uncontrolled food cost.",
       "cta_primary": "Calculate my food cost",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · No commitment · Instant access"
+      "no_card": "From €10/month · No commitment"
     },
     "results": [
-      {
-        "metric": "2min",
-        "label": "For a complete food cost"
-      },
-      {
-        "metric": "30%",
-        "label": "Average cost reduction"
-      },
       {
         "metric": "{{userCount}}+",
         "label": "Active restaurants"
@@ -2525,14 +2512,14 @@
       "col_other": "Excel / Manual",
       "items": [
         {
-          "feature": "Time per costing",
+          "feature": "Food costing",
           "other": "30-60 minutes per dish",
-          "aichef": "2 minutes with AI"
+          "aichef": "From the prices you enter"
         },
         {
           "feature": "Price updates",
           "other": "Manual every time costs rise",
-          "aichef": "Automatic recalculation instantly"
+          "aichef": "You enter the new supplier price"
         },
         {
           "feature": "Waste control",
@@ -2547,7 +2534,7 @@
         {
           "feature": "Profitability per dish",
           "other": "No systematic analysis",
-          "aichef": "Real-time profitability dashboard"
+          "aichef": "Profitability dashboard"
         }
       ]
     },
@@ -2557,10 +2544,10 @@
     },
     "tools": [
       {
-        "title": "Automatic AI Food Costing",
-        "description": "Enter ingredients, weights and supplier prices. AI calculates the exact food cost of each dish in seconds.",
+        "title": "AI Food Costing",
+        "description": "Enter ingredients, weights and supplier prices. The food cost of each dish uses those prices.",
         "keywords": [
-          "automatic food costing",
+          "food costing",
           "food cost per dish",
           "food cost calculator"
         ]
@@ -2594,7 +2581,7 @@
       },
       {
         "title": "Price Updates",
-        "description": "When an ingredient cost rises, AI automatically recalculates all affected food costings.",
+        "description": "When an ingredient cost rises, you update the price on the costings that use it.",
         "keywords": [
           "food cost update",
           "food inflation",
@@ -2603,7 +2590,7 @@
       },
       {
         "title": "Food Cost Dashboard",
-        "description": "Visualise your restaurant's overall food cost, by category and by dish. Detect deviations instantly.",
+        "description": "Visualise your restaurant's overall food cost, by category and by dish.",
         "keywords": [
           "food cost dashboard",
           "kitchen cost control",
@@ -2622,7 +2609,7 @@
       },
       {
         "title": "Operations Director",
-        "description": "Monitors food cost across multiple venues from a single dashboard with real-time data."
+        "description": "Monitors food cost across multiple venues from a single dashboard."
       },
       {
         "title": "Head Chef",
@@ -2630,25 +2617,20 @@
       },
       {
         "title": "Controller or Finance",
-        "description": "Has for the first time exact control of each dish cost and its impact on the P&L."
+        "description": "Sees the cost of each dish and its impact on the P&L."
       }
     ],
     "why_section": {
       "title": "Uncontrolled food cost is the margin you're giving away",
-      "body": "Most restaurants lose between 5% and 15% of potential profit due to poorly calculated food cost. AI Chef Pro gives you the exact control you need to protect your margin.",
+      "body": "Food cost is the cost of the ingredients in each dish. AI Chef Pro calculates it from the prices you enter.",
       "benefits": [
-        "Complete food costing of any dish in under 2 minutes",
+        "Food costing of a dish from the prices you enter",
         "Waste control by ingredient type and cooking technique",
         "Optimal selling price calculated with your target margin",
-        "Automatic recalculation when supplier prices change",
+        "You update the costing when supplier prices change",
         "Identification of your most and least profitable dishes",
         "Global food cost dashboard with deviation alerts"
       ]
-    },
-    "testimonial": {
-      "quote": "We had been doing food costings in Excel for years. With AI Chef Pro they're all updated in real time and we identified 4 dishes that were losing us money without us knowing. We recovered the investment in three months.",
-      "name": "Roberto Fernández",
-      "role": "Operations Director, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
       "title": "Start controlling your food cost from €10",
@@ -2661,11 +2643,11 @@
     "faq": [
       {
         "question": "What is a restaurant food costing?",
-        "answer": "A food costing is the detailed calculation of the production cost of a dish: ingredients, weights, waste and supplier price. It is the basis of food cost and selling price. AI Chef Pro generates it automatically with AI in under 2 minutes."
+        "answer": "A food costing is the detailed calculation of the production cost of a dish: ingredients, weights, waste and supplier price. It is the basis of food cost and selling price. AI Chef Pro calculates it from the ingredients, weights and prices you enter."
       },
       {
         "question": "How does AI Chef Pro calculate the food cost of a dish?",
-        "answer": "You enter the ingredients, weights per portion and supplier prices. AI automatically calculates the gross cost, applies the waste percentages for each ingredient and gives you the real net cost of the dish."
+        "answer": "You enter the ingredients, weights per portion and supplier prices. The costing uses those prices. You note the waste for each ingredient."
       },
       {
         "question": "Can I calculate the selling price with AI Chef Pro?",
@@ -2673,7 +2655,7 @@
       },
       {
         "question": "What happens when an ingredient price rises?",
-        "answer": "AI Chef Pro automatically recalculates all food costings that include that ingredient. In seconds you know which dishes have become more expensive, how much the margin has changed and whether you need to adjust selling prices."
+        "answer": "You update that ingredient's price on the costings that include it, and you see which dishes use it."
       }
     ],
     "cta_section": {
@@ -2852,11 +2834,6 @@
         "Increase your margin without aggressive price hikes",
         "Total control in seconds, no Excel or formulas"
       ]
-    },
-    "testimonial": {
-      "quote": "With this calculator I saw my signature dish cost more than I thought. I raised the price by €1.50 and no one noticed. I made €400 extra that month.",
-      "name": "Carlos Romero",
-      "role": "Owner, Bar Restaurant La Plaza, Zaragoza"
     },
     "pricing": {
       "title": "More power with AI Chef Pro",

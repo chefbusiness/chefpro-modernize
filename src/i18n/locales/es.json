@@ -160,7 +160,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europa",
-        "count": "10 Cocinas"
+        "count": "12 Cocinas"
       },
       "latinoamerica": {
         "name": "Latinoamérica",
@@ -397,9 +397,9 @@
       },
       "id_alergenos": {
         "name": "ID Alérgenos",
-        "description": "Identifica alérgenos automáticamente",
+        "description": "",
         "preview": "Cumple normativas de seguridad alimentaria sin errores",
-        "v2_blurb": "Identifica alérgenos automáticamente y cumple con la normativa de seguridad alimentaria sin errores."
+        "v2_blurb": "Cumple con la normativa de seguridad alimentaria sin errores."
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -1335,7 +1335,7 @@
     "pricing_section": {
       "title": "Empieza a reducir costes desde hoy",
       "subtitle": "Empieza con el plan Miembro por 10 € al mes. La suscripción se paga sola con lo que ahorras el primer mes.",
-      "annual_note": "Planes anuales con 2 meses gratis. Sin permanencia."
+      "annual_note": "La opción anual de Premium Max cuesta 950 € al año."
     },
     "faq_section": {
       "title": "Preguntas frecuentes sobre control de costes con IA"
@@ -1495,7 +1495,7 @@
       },
       {
         "question": "¿Cuánto cuesta?",
-        "answer": "Los planes de créditos empiezan en 10 € al mes: AI Chef Miembro, con 10.000 créditos. Premium Pro son 25 € al mes (85.000 créditos), Premium Plus 50 € al mes (175.000 créditos) y Premium Max 95 € al mes, con créditos ilimitados. El Premium Max anual son 950 €. Sin permanencia: cambias de plan o cancelas cuando quieras."
+        "answer": "El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos. Premium Pro cuesta 25 €/mes e incluye 85.000 créditos. Premium Plus cuesta 50 €/mes e incluye 175.000 créditos. Premium Max cuesta 95 €/mes, con créditos ilimitados. La opción anual de Premium Max cuesta 950 € al año. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras."
       }
     ],
     "cta_section": {
@@ -2401,11 +2401,6 @@
         "Adaptación a restricciones dietéticas sin perder calidad culinaria"
       ]
     },
-    "testimonial": {
-      "quote": "",
-      "name": "",
-      "role": ""
-    },
     "pricing_section": {
       "title": "Accede al generador de recetas con IA desde 10 €",
       "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Sin permanencia.",
@@ -2437,12 +2432,12 @@
       },
       {
         "question": "¿Cuánto cuesta usar los agentes?",
-        "answer": "El plan Miembro cuesta 10 € al mes, con 10.000 créditos. Premium Pro cuesta 25 € al mes y 85.000 créditos. Premium Plus cuesta 50 € al mes y 175.000 créditos. Premium Max cuesta 95 € al mes, o 950 € al año, con créditos ilimitados."
+        "answer": "El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos. Premium Pro cuesta 25 €/mes e incluye 85.000 créditos. Premium Plus cuesta 50 €/mes e incluye 175.000 créditos. Premium Max cuesta 95 €/mes, con créditos ilimitados. La opción anual de Premium Max cuesta 950 € al año. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras."
       }
     ],
     "cta_section": {
       "title": "Empieza a crear recetas con IA para tu restaurante",
-      "subtitle": "El plan Miembro son 10 € al mes, con 10.000 créditos. El borrador lo revisa el chef antes del pase.",
+      "subtitle": "El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos. El borrador lo revisa el chef antes del pase.",
       "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     }
@@ -2815,11 +2810,6 @@
         "Aumenta tu margen sin subir precios de forma agresiva",
         "Control total en segundos, sin Excel ni fórmulas"
       ]
-    },
-    "testimonial": {
-      "quote": "Con esta calculadora vi que mi plato estrella me costaba más de lo que pensaba. Subí el precio 1,50€ y nadie lo notó. En un mes gané 400€ extra.",
-      "name": "Carlos Romero",
-      "role": "Propietario, Bar Restaurante La Plaza, Zaragoza"
     },
     "pricing": {
       "title": "Más potencia con AI Chef Pro",

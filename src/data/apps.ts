@@ -164,7 +164,7 @@ export const businessTools: App[] = [
   {
     id: 'id-alergenos',
     name: 'ID Alérgenos',
-    description: 'Identifica alérgenos automáticamente',
+    description: '',
     preview: 'Cumple normativas de seguridad alimentaria sin errores',
     icon: AlertTriangle,
     category: 'business',

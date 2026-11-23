@@ -337,7 +337,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europa",
-        "count": "10 Küchen"
+        "count": "12 Küchen"
       },
       "latinoamerica": {
         "name": "Lateinamerika",
@@ -572,7 +572,7 @@
       },
       "id_alergenos": {
         "name": "ID Allergene",
-        "description": "Identifiziert Allergene automatisch",
+        "description": "",
         "preview": "Erfüllt Lebensmittelsicherheitsvorschriften fehlerfrei"
       },
       "mental_coach": {
@@ -868,9 +868,9 @@
       },
       "id_alergenos": {
         "name": "ID Allergene",
-        "description": "Identifiziert Allergene automatisch",
+        "description": "",
         "preview": "Erfüllt Lebensmittelsicherheitsvorschriften fehlerfrei",
-        "v2_blurb": "Allergene automatisch erkennen und Lebensmittelsicherheitsvorschriften fehlerfrei einhalten."
+        "v2_blurb": "Lebensmittelsicherheitsvorschriften fehlerfrei einhalten."
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -1610,7 +1610,7 @@
     "pricing_section": {
       "title": "Beginnen Sie noch heute mit der Kostensenkung",
       "subtitle": "Starten Sie mit dem Mitglied-Plan für 10 € pro Monat. Die Abo zahlt sich im ersten Monat durch die Ersparnisse selbst.",
-      "annual_note": "Jahrespläne mit 2 Monaten gratis. Ohne Bindung."
+      "annual_note": "Die Jahresoption von Premium Max kostet 950 € pro Jahr."
     },
     "faq_section": {
       "title": "Häufige Fragen zur KI-Kostenkontrolle für Restaurants"
@@ -1796,7 +1796,7 @@
       },
       {
         "question": "Was kostet der Einsatz von KI für die Restaurantverwaltung?",
-        "answer": "Der Einstiegsplan ist AI Chef Mitglied-Plan: 10 € pro Monat mit 10.000 Credits. Die Premium-Pläne reichen von 25 €/Monat (AI Chef Premium Pro, 85.000 Credits) bis zu 95 €/Monat mit unbegrenzten Credits. Keine Mindestlaufzeit."
+        "answer": "Der Plan Mitglied kostet 10 € pro Monat und enthält 10.000 Credits. Premium Pro kostet 25 €/Monat und enthält 85.000 Credits. Premium Max kostet 95 €/Monat, mit unbegrenzten Credits. Monatliche Pläne haben keine Mindestlaufzeit."
       }
     ],
     "cta_section": {
@@ -2707,11 +2707,6 @@
         "Anpassung an Ernährungseinschränkungen ohne Qualitätsverlust"
       ]
     },
-    "testimonial": {
-      "quote": "Früher verbrachte ich Stunden mit der Entwicklung neuer Gerichte. Mit AI Chef Pro habe ich in Minuten ein technisch korrektes Rezept, inklusive technischem Datenblatt. Mein Team kann es vom ersten Tag an perfekt reproduzieren.",
-      "name": "Laura Sánchez",
-      "role": "Küchenchefin, Restaurante Origen, Bilbao"
-    },
     "pricing_section": {
       "title": "Zugang zum KI-Rezeptgenerator ab 10 €",
       "subtitle": "Starten Sie mit dem Mitglied-Plan und skalieren Sie, wenn Ihr Unternehmen es benötigt. Keine Mindestlaufzeit.",
@@ -2748,28 +2743,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Restaurant Food Cost Rechner KI | AI Chef Pro",
-      "description": "Berechnen Sie Ihren Restaurant Food Cost mit KI in 2 Minuten. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse pro Gericht. Starten Sie heute.",
+      "description": "Berechnen Sie Ihren Restaurant Food Cost mit KI. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse pro Gericht. Starten Sie heute.",
       "keywords": "Restaurant Food Cost, Food Cost KI, Food Cost Rechner, Restaurantkostenkontrolle, Gerichtverkaufspreis, Küchenverluste, Gerichtrentabilität"
     },
     "breadcrumb": "Restaurant Food Cost mit KI",
     "hero": {
       "badge": "KI Food Cost Rechner für Restaurants",
-      "h1": "Restaurant Food Cost mit KI: Vollständige Kalkulation in 2 Minuten",
-      "subtitle": "Berechnen Sie die genauen Kosten jedes Gerichts sofort. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse zur Gewinnmaximierung.",
+      "h1": "Restaurant Food Cost mit KI: Vollständige Kalkulation",
+      "subtitle": "Berechnen Sie die Kosten jedes Gerichts. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse zur Gewinnmaximierung.",
       "tagline": "Hören Sie auf, Geld durch unkontrollierten Food Cost zu verlieren.",
       "cta_primary": "Meinen Food Cost berechnen",
       "cta_secondary": "Pläne und Preise ansehen",
-      "no_card": "Ab 10 €/Monat · Ohne Vertragsbindung · Sofortiger Zugang"
+      "no_card": "Ab 10 €/Monat · Ohne Vertragsbindung"
     },
     "results": [
-      {
-        "metric": "2min",
-        "label": "Für eine vollständige Kalkulation"
-      },
-      {
-        "metric": "30%",
-        "label": "Durchschnittliche Kostenreduktion"
-      },
       {
         "metric": "{{userCount}}+",
         "label": "Aktive Restaurants"
@@ -2786,14 +2773,14 @@
       "col_other": "Excel / Manuell",
       "items": [
         {
-          "feature": "Zeit pro Kalkulation",
+          "feature": "Kalkulation",
           "other": "30-60 Minuten pro Gericht",
-          "aichef": "2 Minuten mit KI"
+          "aichef": "Aus den Preisen, die Sie eintragen"
         },
         {
           "feature": "Preisaktualisierungen",
           "other": "Manuell bei jeder Kostensteigerung",
-          "aichef": "Automatische Neuberechnung sofort"
+          "aichef": "Sie tragen den neuen Lieferantenpreis ein"
         },
         {
           "feature": "Schwundkontrolle",
@@ -2808,7 +2795,7 @@
         {
           "feature": "Rentabilität pro Gericht",
           "other": "Keine systematische Analyse",
-          "aichef": "Echtzeit-Rentabilitäts-Dashboard"
+          "aichef": "Rentabilitäts-Dashboard"
         }
       ]
     },
@@ -2818,10 +2805,10 @@
     },
     "tools": [
       {
-        "title": "Automatische KI Food Cost Kalkulation",
-        "description": "Geben Sie Zutaten, Gewichte und Lieferantenpreise ein. KI berechnet die genauen Kosten jedes Gerichts in Sekunden.",
+        "title": "KI Food Cost Kalkulation",
+        "description": "Geben Sie Zutaten, Gewichte und Lieferantenpreise ein. Die Kosten jedes Gerichts gehen von diesen Preisen aus.",
         "keywords": [
-          "automatische Kostenkalkulation",
+          "Kostenkalkulation",
           "Food Cost pro Gericht",
           "Food Cost Rechner"
         ]
@@ -2855,7 +2842,7 @@
       },
       {
         "title": "Preisaktualisierungen",
-        "description": "Wenn die Kosten einer Zutat steigen, berechnet KI automatisch alle betroffenen Kalkulationen neu.",
+        "description": "Wenn die Kosten einer Zutat steigen, tragen Sie den neuen Preis in den Kalkulationen ein, die sie verwenden.",
         "keywords": [
           "Food Cost Update",
           "Lebensmittelinflation",
@@ -2864,7 +2851,7 @@
       },
       {
         "title": "Food Cost Dashboard",
-        "description": "Visualisieren Sie den globalen Food Cost Ihres Restaurants, nach Kategorie und Gericht. Erkennen Sie Abweichungen sofort.",
+        "description": "Visualisieren Sie den globalen Food Cost Ihres Restaurants, nach Kategorie und Gericht.",
         "keywords": [
           "Food Cost Dashboard",
           "Küchenkostenkontrolle",
@@ -2883,7 +2870,7 @@
       },
       {
         "title": "Betriebsleiter",
-        "description": "Überwacht den Food Cost mehrerer Standorte von einem einzigen Dashboard mit Echtzeitdaten."
+        "description": "Überwacht den Food Cost mehrerer Standorte von einem einzigen Dashboard."
       },
       {
         "title": "Küchenchef",
@@ -2891,25 +2878,20 @@
       },
       {
         "title": "Controller oder Finanz",
-        "description": "Hat erstmals genaue Kontrolle über die Kosten jedes Gerichts und deren Auswirkung auf das Ergebnis."
+        "description": "Sieht die Kosten jedes Gerichts und ihre Auswirkung auf das Ergebnis."
       }
     ],
     "why_section": {
       "title": "Unkontrollierter Food Cost ist die Marge, die Sie verschenken",
-      "body": "Die meisten Restaurants verlieren 5% bis 15% potenziellen Gewinn durch falsch berechneten Food Cost. AI Chef Pro gibt Ihnen die präzise Kontrolle, die Sie benötigen, um Ihre Marge zu schützen.",
+      "body": "Der Food Cost ist die Summe der Zutatenkosten eines Gerichts. AI Chef Pro rechnet ihn aus den Preisen, die Sie eintragen.",
       "benefits": [
-        "Vollständige Kalkulation jedes Gerichts in unter 2 Minuten",
+        "Kalkulation eines Gerichts aus den Preisen, die Sie eintragen",
         "Schwundkontrolle nach Zutatenart und Gartechnik",
         "Optimaler Verkaufspreis mit Ihrer Zielmarge berechnet",
-        "Automatische Neuberechnung bei Lieferantenpreisänderungen",
+        "Sie aktualisieren die Kalkulation, wenn sich Lieferantenpreise ändern",
         "Identifikation Ihrer profitabelsten und unrentabelsten Gerichte",
         "Globales Food Cost Dashboard mit Abweichungsalarmen"
       ]
-    },
-    "testimonial": {
-      "quote": "Wir haben jahrelang Food Cost in Excel berechnet. Mit AI Chef Pro sind alle Kalkulationen in Echtzeit aktualisiert und wir haben 4 Gerichte identifiziert, die uns unwissentlich Geld gekostet haben. Wir haben die Investition in drei Monaten zurückgewonnen.",
-      "name": "Roberto Fernández",
-      "role": "Betriebsleiter, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
       "title": "Beginnen Sie mit der Food Cost Kontrolle ab 10 €",
@@ -2922,11 +2904,11 @@
     "faq": [
       {
         "question": "Was ist eine Restaurant Food Cost Kalkulation?",
-        "answer": "Eine Food Cost Kalkulation ist die detaillierte Berechnung der Produktionskosten eines Gerichts: Zutaten, Gewichte, Schwund und Lieferantenpreis. Es ist die Grundlage des Food Cost und des Verkaufspreises. AI Chef Pro generiert sie automatisch mit KI in unter 2 Minuten."
+        "answer": "Eine Food Cost Kalkulation ist die detaillierte Berechnung der Produktionskosten eines Gerichts: Zutaten, Gewichte, Schwund und Lieferantenpreis. Es ist die Grundlage des Food Cost und des Verkaufspreises. AI Chef Pro rechnet sie aus den Zutaten, Gewichten und Preisen, die Sie eintragen."
       },
       {
         "question": "Wie berechnet AI Chef Pro den Food Cost eines Gerichts?",
-        "answer": "Sie geben Zutaten, Gewichte pro Portion und Lieferantenpreise ein. KI berechnet automatisch die Bruttokosten, wendet die Schwundprozentsätze für jede Zutat an und gibt Ihnen die tatsächlichen Nettokosten des Gerichts."
+        "answer": "Sie geben Zutaten, Gewichte pro Portion und Lieferantenpreise ein. Die Kalkulation geht von diesen Preisen aus. Den Schwund tragen Sie je Zutat ein."
       },
       {
         "question": "Kann ich den Verkaufspreis mit AI Chef Pro berechnen?",
@@ -2934,7 +2916,7 @@
       },
       {
         "question": "Was passiert, wenn ein Zutatenpreis steigt?",
-        "answer": "AI Chef Pro berechnet automatisch alle Kalkulationen neu, die diese Zutat enthalten. In Sekunden wissen Sie, welche Gerichte teurer geworden sind, wie stark sich die Marge verändert hat und ob Sie die Verkaufspreise anpassen müssen."
+        "answer": "Sie aktualisieren den Preis dieser Zutat in den Kalkulationen, die sie enthalten, und sehen, welche Gerichte sie verwenden."
       }
     ],
     "cta_section": {
@@ -3113,11 +3095,6 @@
         "Marge erhöhen ohne aggressive Preiserhöhungen",
         "Totale Kontrolle in Sekunden, ohne Excel"
       ]
-    },
-    "testimonial": {
-      "quote": "Mit diesem Rechner sah ich, dass mein Signatur-Gericht mehr kostete als gedacht. Ich erhöhte den Preis um 1,50€ und niemand bemerkte es. Ich verdiente 400€ extra in diesem Monat.",
-      "name": "Carlos Romero",
-      "role": "Inhaber, Bar Restaurant La Plaza, Saragossa"
     },
     "pricing": {
       "title": "Mehr Leistung mit AI Chef Pro",

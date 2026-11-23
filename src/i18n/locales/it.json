@@ -337,7 +337,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europa",
-        "count": "10 Cucine"
+        "count": "12 Cucine"
       },
       "latinoamerica": {
         "name": "America Latina",
@@ -572,7 +572,7 @@
       },
       "id_alergenos": {
         "name": "ID Allergeni",
-        "description": "Identifica allergeni automaticamente",
+        "description": "",
         "preview": "Rispetta normative sicurezza alimentare senza errori"
       },
       "mental_coach": {
@@ -868,9 +868,9 @@
       },
       "id_alergenos": {
         "name": "ID Allergeni",
-        "description": "Identifica allergeni automaticamente",
+        "description": "",
         "preview": "Rispetta normative sicurezza alimentare senza errori",
-        "v2_blurb": "Identifica automaticamente gli allergeni e rispetta le norme di sicurezza alimentare senza errori."
+        "v2_blurb": "Rispetta le norme di sicurezza alimentare senza errori."
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -1610,7 +1610,7 @@
     "pricing_section": {
       "title": "Inizia a ridurre i costi oggi stesso",
       "subtitle": "Inizia con il piano Membro a 10 € al mese. L'abbonamento si ripaga da solo con ciò che risparmi il primo mese.",
-      "annual_note": "Piani annuali con 2 mesi gratis. Senza vincoli."
+      "annual_note": "L'opzione annuale di Premium Max costa 950 € all'anno."
     },
     "faq_section": {
       "title": "Domande frequenti sul controllo costi IA per ristoranti"
@@ -1796,7 +1796,7 @@
       },
       {
         "question": "Quanto costa usare l'IA per la gestione di un ristorante?",
-        "answer": "Il piano di partenza è AI Chef Membro: 10 € al mese con 10.000 crediti. I piani Premium vanno da 25 €/mese (AI Chef Premium Pro, 85.000 crediti) fino a 95 €/mese con crediti illimitati. Senza impegno."
+        "answer": "Il piano Membro costa 10 € al mese e include 10.000 crediti. Premium Pro costa 25 €/mese e include 85.000 crediti. Premium Max costa 95 €/mese, con crediti illimitati. I piani mensili non hanno un vincolo minimo."
       }
     ],
     "cta_section": {
@@ -2707,11 +2707,6 @@
         "Adattamento alle restrizioni alimentari senza perdere la qualità culinaria"
       ]
     },
-    "testimonial": {
-      "quote": "Prima passavo ore a sviluppare nuovi piatti. Con AI Chef Pro ho una ricetta tecnicamente corretta in minuti, con la scheda tecnica inclusa. Il mio team può riprodurla perfettamente dal primo giorno.",
-      "name": "Laura Sánchez",
-      "role": "Chef Esecutiva, Restaurante Origen, Bilbao"
-    },
     "pricing_section": {
       "title": "Accedi al generatore di ricette con IA da 10 €",
       "subtitle": "Inizia con il piano Membro e scala quando la tua attività lo richiede. Senza impegno.",
@@ -2723,7 +2718,7 @@
     "faq": [
       {
         "question": "Qual è la migliore IA per le ricette?",
-        "answer": "Per un ristorante, la migliore IA per le ricette è quella che consegna scheda tecnica, allergeni e dosi, non solo un testo. AI Chef Pro lo fa con agenti IA, da 10 €/mese e 10.000 crediti, senza vincoli. Non esiste un piano gratuito. Un chatbot gratuito può bastare per una cena a casa."
+        "answer": "Per un ristorante, la migliore IA per le ricette è quella che consegna scheda tecnica, allergeni e dosi, non solo un testo. AI Chef Pro lo fa con agenti IA. Il piano Membro costa 10 €/mese e include 10.000 crediti. I piani mensili non hanno un vincolo minimo. Non esiste un piano gratuito. Un chatbot gratuito può bastare per una cena a casa."
       },
       {
         "question": "L'IA può creare ricette professionali per ristoranti?",
@@ -2752,28 +2747,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Calcolo Food Cost Ristorante IA | AI Chef Pro",
-      "description": "Calcola il food cost del tuo ristorante con l'IA in 2 minuti. Controllo sprechi, prezzo di vendita ottimale e analisi di redditività per piatto. Inizia oggi.",
+      "description": "Calcola il food cost del tuo ristorante con l'IA. Controllo sprechi, prezzo di vendita e analisi di redditività per piatto. Inizia oggi.",
       "keywords": "food cost ristorante, food cost IA, calcolo food cost, controllo costi ristorante, prezzo vendita piatto, sprechi cucina, redditività piatti"
     },
     "breadcrumb": "Food Cost Ristorante con IA",
     "hero": {
       "badge": "Calcolatore Food Cost IA per Ristoranti",
-      "h1": "Food Cost Ristorante con IA: Calcolo Completo in 2 Minuti",
-      "subtitle": "Calcola il costo esatto di ogni piatto all'istante. Controllo sprechi, prezzo di vendita ottimale e analisi di redditività per massimizzare il profitto del tuo ristorante.",
+      "h1": "Food Cost Ristorante con IA: Calcolo Completo",
+      "subtitle": "Calcola il costo di ogni piatto. Controllo sprechi, prezzo di vendita ottimale e analisi di redditività per massimizzare il profitto del tuo ristorante.",
       "tagline": "Smetti di perdere soldi per un food cost non controllato.",
       "cta_primary": "Calcola il mio food cost",
       "cta_secondary": "Vedi piani e prezzi",
-      "no_card": "Da 10 €/mese · Senza vincoli · Accesso immediato"
+      "no_card": "Da 10 €/mese · Senza vincoli"
     },
     "results": [
-      {
-        "metric": "2min",
-        "label": "Per un calcolo completo"
-      },
-      {
-        "metric": "30%",
-        "label": "Riduzione media dei costi"
-      },
       {
         "metric": "{{userCount}}+",
         "label": "Ristoranti attivi"
@@ -2790,14 +2777,14 @@
       "col_other": "Excel / Manuale",
       "items": [
         {
-          "feature": "Tempo per calcolo",
+          "feature": "Calcolo del costo",
           "other": "30-60 minuti per piatto",
-          "aichef": "2 minuti con l'IA"
+          "aichef": "Dai prezzi che inserisci"
         },
         {
           "feature": "Aggiornamento prezzi",
           "other": "Manuale ad ogni aumento",
-          "aichef": "Ricalcolo automatico istantaneo"
+          "aichef": "Inserisci il nuovo prezzo del fornitore"
         },
         {
           "feature": "Controllo sprechi",
@@ -2812,7 +2799,7 @@
         {
           "feature": "Redditività per piatto",
           "other": "Nessuna analisi sistematica",
-          "aichef": "Dashboard redditività in tempo reale"
+          "aichef": "Dashboard di redditività"
         }
       ]
     },
@@ -2822,10 +2809,10 @@
     },
     "tools": [
       {
-        "title": "Food Cost Automatico con IA",
-        "description": "Inserisci ingredienti, grammature e prezzi fornitore. L'IA calcola il food cost esatto di ogni piatto in secondi.",
+        "title": "Food Cost con IA",
+        "description": "Inserisci ingredienti, grammature e prezzi fornitore. Il food cost di ogni piatto parte da questi prezzi.",
         "keywords": [
-          "food cost automatico",
+          "calcolo food cost",
           "food cost per piatto",
           "calcolatore food cost"
         ]
@@ -2859,7 +2846,7 @@
       },
       {
         "title": "Aggiornamento Prezzi",
-        "description": "Quando aumenta il costo di un ingrediente, l'IA ricalcola automaticamente tutti i food cost interessati.",
+        "description": "Quando aumenta il costo di un ingrediente, aggiorni il prezzo nei food cost che lo usano.",
         "keywords": [
           "aggiornamento food cost",
           "inflazione alimenti",
@@ -2868,7 +2855,7 @@
       },
       {
         "title": "Dashboard Food Cost",
-        "description": "Visualizza il food cost globale del tuo ristorante, per categoria e per piatto. Rileva le deviazioni all'istante.",
+        "description": "Visualizza il food cost globale del tuo ristorante, per categoria e per piatto.",
         "keywords": [
           "dashboard food cost",
           "controllo costi cucina",
@@ -2895,25 +2882,20 @@
       },
       {
         "title": "Controller o Finanza",
-        "description": "Ha per la prima volta un controllo esatto del costo di ogni piatto e del suo impatto sul conto economico."
+        "description": "Vede il costo di ogni piatto e il suo impatto sul conto economico."
       }
     ],
     "why_section": {
       "title": "Il food cost non controllato è il margine che stai regalando",
-      "body": "La maggior parte dei ristoranti perde tra il 5% e il 15% del potenziale profitto a causa di un food cost mal calcolato. AI Chef Pro ti dà il controllo esatto di cui hai bisogno per proteggere il tuo margine.",
+      "body": "Il food cost è la somma del costo degli ingredienti di un piatto. AI Chef Pro lo calcola dai prezzi che inserisci.",
       "benefits": [
-        "Calcolo completo di qualsiasi piatto in meno di 2 minuti",
+        "Calcolo del costo di un piatto dai prezzi che inserisci",
         "Controllo sprechi per tipo di ingrediente e tecnica di cottura",
         "Prezzo di vendita ottimale calcolato con il tuo margine target",
-        "Ricalcolo automatico quando cambiano i prezzi dei fornitori",
+        "Aggiorni il calcolo quando cambiano i prezzi dei fornitori",
         "Identificazione dei piatti più e meno redditizi",
         "Dashboard food cost globale con alert di deviazione"
       ]
-    },
-    "testimonial": {
-      "quote": "Facevamo i food cost su Excel da anni. Con AI Chef Pro sono tutti aggiornati in tempo reale e abbiamo identificato 4 piatti che ci costavano soldi senza saperlo. Abbiamo recuperato l'investimento in tre mesi.",
-      "name": "Roberto Fernández",
-      "role": "Direttore Operativo, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
       "title": "Inizia a controllare il tuo food cost da 10 €",
@@ -2926,11 +2908,11 @@
     "faq": [
       {
         "question": "Cos'è un calcolo food cost di ristorante?",
-        "answer": "Un food cost è il calcolo dettagliato del costo di produzione di un piatto: ingredienti, grammature, sprechi e prezzo fornitore. È la base del food cost e del prezzo di vendita. AI Chef Pro lo genera automaticamente con l'IA in meno di 2 minuti."
+        "answer": "Un food cost è il calcolo dettagliato del costo di produzione di un piatto: ingredienti, grammature, sprechi e prezzo fornitore. È la base del food cost e del prezzo di vendita. AI Chef Pro lo calcola dagli ingredienti, dalle grammature e dai prezzi che inserisci."
       },
       {
         "question": "Come calcola AI Chef Pro il food cost di un piatto?",
-        "answer": "Inserisci gli ingredienti, le grammature per porzione e i prezzi dei fornitori. L'IA calcola automaticamente il costo lordo, applica le percentuali di spreco per ogni ingrediente e ti dà il costo netto reale del piatto."
+        "answer": "Inserisci gli ingredienti, le grammature per porzione e i prezzi dei fornitori. Il calcolo parte da questi prezzi. Lo spreco lo annoti tu per ogni ingrediente."
       },
       {
         "question": "Posso calcolare il prezzo di vendita con AI Chef Pro?",
@@ -2938,7 +2920,7 @@
       },
       {
         "question": "Cosa succede quando aumenta il prezzo di un ingrediente?",
-        "answer": "AI Chef Pro ricalcola automaticamente tutti i food cost che includono quell'ingrediente. In pochi secondi sai quali piatti sono diventati più cari, di quanto è variato il margine e se devi aggiustare i prezzi di vendita."
+        "answer": "Aggiorni il prezzo di quell'ingrediente nei food cost che lo includono e vedi quali piatti lo usano."
       }
     ],
     "cta_section": {
@@ -3117,11 +3099,6 @@
         "Aumenta il tuo margine senza aumenti di prezzo aggressivi",
         "Controllo totale in secondi, senza Excel"
       ]
-    },
-    "testimonial": {
-      "quote": "Con questo calcolatore ho visto che il mio piatto signature mi costava più di quanto pensassi. Ho aumentato il prezzo di 1,50€ e nessuno se n'è accorto. Ho guadagnato 400€ in più quel mese.",
-      "name": "Carlos Romero",
-      "role": "Proprietario, Bar Ristorante La Plaza, Saragozza"
     },
     "pricing": {
       "title": "Più potenza con AI Chef Pro",
