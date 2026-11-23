@@ -140,8 +140,8 @@ for e in registry:
         bp = e['basePath']
         pairs = [('es', bp)] + [(l, f'/{l}{bp}') for l in LANGS if l != 'es']
     for lang, path in pairs:
-        # /recetas-ia-restaurantes es landing nativa. --force no debe devolver el island.
-        if path.strip('/') == 'recetas-ia-restaurantes':
+        # Landings ES nativas. --force no debe devolver el island.
+        if path.strip('/') in ('recetas-ia-restaurantes', 'escandallos-restaurante-ia'):
             continue
         write(ASTRO / 'pages' / (path.strip('/') + '.astro'), page_astro(e, lang, path))
         n_pages += 1

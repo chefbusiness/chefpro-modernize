@@ -24,6 +24,22 @@ UA_HUMAN = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 
             '(KHTML, like Gecko) Chrome/126.0 Safari/537.36')
 LANGS = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl']
 SITE = 'https://aichef.pro'
+# Landings ES escritas a mano (Header.astro). El resto de cada familia sigue en island.
+NATIVE_ES = {
+    '/recetas-ia-restaurantes',
+    '/escandallos-restaurante-ia',
+}
+# SEO de escandallos ES vive en la página, no en las cadenas i18n (siguen diciendo
+# «2 minutos» y «automático» para no tocar los otros idiomas en el mismo módulo).
+NATIVE_ES_SEO = {
+    '/escandallos-restaurante-ia': {
+        'title': 'Escandallos de restaurante con IA | AI Chef Pro',
+        'description': (
+            'Escandallo con IA: la herramienta deja el coste por ración con los precios que tú escribes. '
+            'Mermas GenCal anota el rendimiento y el chef lo contrasta con el albarán antes del servicio.'
+        ),
+    },
+}
 
 failures = []
 checked = 0
@@ -111,8 +127,10 @@ def check_marketing_page(entry, lang, path, is_alias=False):
     if st != 200:
         return
     kebab = entry['kebab']
-    # title / description: exacto si el módulo es t() simple; sanidad si no
-    exp_t = expected_from_module(kebab, 'title', lang)
+    # title / description: exacto si el módulo es t() simple; sanidad si no.
+    # La landing nativa de escandallos no lee el i18n: el título vive en la página.
+    native_seo = NATIVE_ES_SEO.get(path)
+    exp_t = native_seo['title'] if native_seo else expected_from_module(kebab, 'title', lang)
     got_t = title_of(h)
     if exp_t:
         check(got_t == exp_t, f'{path}: title {got_t!r} != {exp_t!r}')
@@ -120,7 +138,7 @@ def check_marketing_page(entry, lang, path, is_alias=False):
         check(bool(got_t) and len(got_t) > 10 and 'undefined' not in got_t
               and not re.match(r'^[a-zA-Z.]+$', got_t),
               f'{path}: title sospechoso {got_t!r}')
-    exp_d = expected_from_module(kebab, 'description', lang)
+    exp_d = native_seo['description'] if native_seo else expected_from_module(kebab, 'description', lang)
     got_d = desc_of(h)
     if exp_d:
         check(got_d == exp_d, f'{path}: description no coincide')
@@ -136,18 +154,17 @@ def check_marketing_page(entry, lang, path, is_alias=False):
     check(bool(m) and m.group(1) == exp_canon,
           f'{path}: canonical {m.group(1) if m else None!r} != {exp_canon!r}')
     # hreflang ×8 (7 idiomas + x-default).
-    # La landing nativa de recetas usa Header.astro, y el selector de idioma
+    # Las landings nativas usan Header.astro, y el selector de idioma
     # también lleva hreflang en los <a>. Ahí se cuentan solo los <link rel="alternate">.
-    if path == '/recetas-ia-restaurantes':
+    if path in NATIVE_ES:
         n_hl = len(re.findall(r'rel="alternate" hreflang="', h))
     else:
         n_hl = len(re.findall(r'hreflang="', h))
     check(n_hl == 8, f'{path}: hreflang {n_hl} != 8')
     # sin noindex (páginas indexables; el noindex de staging va por cabecera)
     check('noindex' not in h, f'{path}: meta noindex inesperado')
-    # /recetas-ia-restaurantes es landing nativa (el HTML ya trae el texto).
-    # El resto de la familia sigue en island.
-    if path != '/recetas-ia-restaurantes':
+    # Las landings nativas traen el texto en el HTML. El resto de la familia sigue en island.
+    if path not in NATIVE_ES:
         check('<astro-island' in h, f'{path}: sin astro-island')
         mc = re.search(r'component-url="([^"]+)"', h)
         check(bool(mc), f'{path}: sin component-url')
