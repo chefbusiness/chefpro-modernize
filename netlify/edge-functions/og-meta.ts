@@ -323,7 +323,7 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
   '/recetas-ia-restaurantes': {
     title: 'Recetas con IA para Restaurantes | AI Chef Pro',
-    description: 'Genera recetas profesionales con IA: 25 cocinas del mundo, menús de temporada, fichas técnicas y escalado automático. Más de 5.000 restaurantes ya lo usan.',
+    description: 'Genera recetas profesionales con IA: 27 cocinas del mundo, menús de temporada, fichas técnicas y escalado automático. Más de 5.000 restaurantes ya lo usan.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/escandallos-restaurante-ia': {

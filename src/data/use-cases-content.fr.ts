@@ -797,7 +797,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Est-ce que cela convient à la cuisine gastronomique avancée ou seulement à la cuisine décontractée ?",
-        "a": "Pour tout le spectre. Il existe des agents spécifiques : Cuisine Créative pour la cuisine d'auteur, Pâtisserie Créative, Fermentus pour l'avant-garde, VegChef pour le plant-based, en plus de plus de 25 recueils de recettes par pays. Des cas réels au Michelin et aux Soles Repsol, ainsi que dans des groupes décontractés allant jusqu'à 25 unités."
+        "a": "Pour tout le spectre. Il existe des agents spécifiques : Cuisine Créative pour la cuisine d'auteur, Pâtisserie Créative, Fermentus pour l'avant-garde, VegChef pour le plant-based, en plus de 27 recueils de recettes par pays. Des cas réels au Michelin et aux Soles Repsol, ainsi que dans des groupes décontractés allant jusqu'à 25 unités."
       },
       {
         "q": "Comment le système s'adapte-t-il à ma façon de travailler ?",

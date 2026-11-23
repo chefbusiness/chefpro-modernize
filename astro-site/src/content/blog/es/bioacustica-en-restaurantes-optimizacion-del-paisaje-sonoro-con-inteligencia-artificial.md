@@ -800,7 +800,7 @@ wpId: 2656
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #ffd700; margin: 0 0 10px 0;">⭐ Plan Anual — Mejor Precio</p>
 <h3 style="font-size: 22px; margin: 0 0 15px 0; color: #ffffff; line-height: 1.3;">500€/año: Acceso Completo a Más de 55 Herramientas de IA Gastronómica</h3>
-<p style="font-size: 15px; color: #c0d6f7; margin: 0 0 20px 0; max-width: 600px; display: inline-block;">Food Pairing AI, Mermas GenCal, Catering AI+, generadores de recetas de más de 25 cocinas del mundo, Mental Coach, herramientas de contenido y RRSS, y mucho más. Ahorra frente a los planes mensuales de 25€, 50€ y 95€.</p>
+<p style="font-size: 15px; color: #c0d6f7; margin: 0 0 20px 0; max-width: 600px; display: inline-block;">Food Pairing AI, Mermas GenCal, Catering AI+, generadores de recetas de 27 cocinas del mundo, Mental Coach, herramientas de contenido y RRSS, y mucho más. Ahorra frente a los planes mensuales de 25€, 50€ y 95€.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial" target="_blank" style="display: inline-block; background-color: #ffd700; color: #1e3c72; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Ver el Plan Anual de 500€</a>
 </div>
 

@@ -112,7 +112,7 @@
   "stats": {
     "apps": "75+",
     "apps_label": "Specialized AI Agents",
-    "cookbooks": "25+",
+    "cookbooks": "27",
     "cookbooks_label": "Regional Cookbooks",
     "tools": "10+",
     "tools_label": "Business Tools",
@@ -467,7 +467,7 @@
     "creativity_subtitle": "Showcase",
     "creativity_description": "8 specialized AI agents to take you beyond the conventional",
     "world_title": "World Cookbooks",
-    "world_description": "25 world cuisines with authentic recipes and traditional techniques",
+    "world_description": "27 world cuisines with authentic recipes and traditional techniques",
     "business_title": "Business Tools",
     "business_description": "6 essential AI agents to optimize your daily operation",
     "preview_label": "Preview",
@@ -491,6 +491,8 @@
     "alemana": "German",
     "belga": "Belgian",
     "britanica": "British",
+    "croata": "Croatian",
+    "italiana": "Italian",
     "espanola": "Spanish",
     "francesa": "French",
     "griega": "Greek",
@@ -572,9 +574,9 @@
       },
       "id_alergenos": {
         "name": "Allergen ID",
-        "description": "",
-        "preview": "Comply with food safety regulations without errors",
-        "v2_blurb": "Comply with food safety regulations without errors."
+        "description": "It helps you review the 14 allergens in each recipe; the final check is yours",
+        "preview": "It helps you review the 14 allergens in each recipe; the final check is yours",
+        "v2_blurb": "It helps you review the 14 allergens in each recipe; the final check is yours"
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -768,7 +770,7 @@
         "v2_features": [
           "75+ AI agents included",
           "10,000 monthly credits",
-          "25+ world cookbooks",
+          "27 world cookbooks",
           "Email support"
         ],
         "period": "/month"
@@ -1446,7 +1448,7 @@
       },
       {
         "title": "Culinary creativity",
-        "description": "Develop new dishes, experiment with pairings and adapt recipes from 25 world cuisines to your concept.",
+        "description": "Develop new dishes, experiment with pairings and adapt recipes from 27 world cuisines to your concept.",
         "keywords": [
           "culinary creativity",
           "new dishes",
@@ -1485,7 +1487,7 @@
         "Generate social media content in minutes, not days",
         "Automatically identify allergens in all your dishes",
         "Reduce waste with intelligent purchase planning",
-        "Access recipes from 25 world cuisines adapted to your business"
+        "Access recipes from 27 world cuisines adapted to your business"
       ]
     },
     "pricing_section": {
@@ -1556,7 +1558,7 @@
         "label": "allergens managed automatically"
       },
       {
-        "metric": "25+",
+        "metric": "27",
         "label": "world cuisines to inspire your menu"
       }
     ],
@@ -1900,7 +1902,7 @@
         "label": "restaurants and chefs already using it"
       },
       {
-        "metric": "25",
+        "metric": "27",
         "label": "world cuisines in the database"
       }
     ],
@@ -1927,7 +1929,7 @@
         {
           "feature": "Professional recipes",
           "chatgpt": "Generic, no technique",
-          "aichef": "25 world cuisines with technique"
+          "aichef": "27 world cuisines with technique"
         },
         {
           "feature": "Gastronomy marketing",
@@ -1974,8 +1976,8 @@
         ]
       },
       {
-        "title": "Recipes from 25 Cuisines",
-        "description": "Database of techniques and recipes from 25 world cuisines.",
+        "title": "Recipes from 27 Cuisines",
+        "description": "Database of techniques and recipes from 27 world cuisines.",
         "keywords": [
           "professional recipes",
           "cooking techniques",
@@ -2030,7 +2032,7 @@
         "Responses with correct gastronomic technical vocabulary from the first attempt",
         "Food cost calculated with real restaurant logic",
         "Allergen management according to current European regulations",
-        "Technically correct recipes from 25 world cuisines",
+        "Technically correct recipes from 27 world cuisines",
         "Marketing with the tone and language specific to hospitality",
         "No learning curve: tools ready, no complex prompts"
       ]
@@ -2063,7 +2065,7 @@
       },
       {
         "question": "Can AI Chef Pro help me create recipes like ChatGPT?",
-        "answer": "Yes, and with more technical precision: 25 world cuisines with correct culinary vocabulary, stocks, reductions, textures, pastry techniques, adapted to your food cost and season."
+        "answer": "Yes, and with more technical precision: 27 world cuisines with correct culinary vocabulary, stocks, reductions, textures, pastry techniques, adapted to your food cost and season."
       }
     ],
     "cta_section": {
@@ -2288,13 +2290,13 @@
   "landingRecetas": {
     "seo": {
       "title": "AI Recipes for Restaurants | AI Chef Pro",
-      "description": "Generate professional recipes with AI: 25 world cuisines, seasonal menus, tech sheets and automatic scaling. Used by 5,000+ restaurants.",
-      "keywords": "AI recipes restaurants, professional recipe generator, AI chef recipes, seasonal menu AI, recipe tech sheets, 25 world cuisines recipes"
+      "description": "Generate professional recipes with AI: 27 world cuisines, seasonal menus, tech sheets and automatic scaling. Used by 5,000+ restaurants.",
+      "keywords": "AI recipes restaurants, professional recipe generator, AI chef recipes, seasonal menu AI, recipe tech sheets, 27 world cuisines recipes"
     },
     "breadcrumb": "AI Recipes for Restaurants",
     "hero": {
       "badge": "Professional AI Recipe Generator",
-      "h1": "AI Recipes for Restaurants: 25 World Cuisines",
+      "h1": "AI Recipes for Restaurants: 27 World Cuisines",
       "subtitle": "Generate technically accurate recipes instantly. Seasonal menus, professional tech sheets and automatic portion scaling for your restaurant.",
       "tagline": "From concept to dish in minutes, not hours.",
       "cta_primary": "Try now",
@@ -2303,7 +2305,7 @@
     },
     "results": [
       {
-        "metric": "25",
+        "metric": "27",
         "label": "World cuisines"
       },
       {
@@ -2333,7 +2335,7 @@
         {
           "feature": "Cuisine variety",
           "other": "Limited to chef's knowledge",
-          "aichef": "25 world cuisines with real technique"
+          "aichef": "27 world cuisines with real technique"
         },
         {
           "feature": "Seasonal menus",
@@ -2367,7 +2369,7 @@
         ]
       },
       {
-        "title": "25 World Cuisines",
+        "title": "27 World Cuisines",
         "description": "Access authentic recipes from 25 culinary traditions: French, Japanese, Peruvian, Italian, Mexican and much more.",
         "keywords": [
           "world cuisines",
@@ -2439,7 +2441,7 @@
       "body": "A generic generator gives you basic recipes. AI Chef Pro understands real culinary technique: stocks, reductions, cooking points, pairings and the logic of each world cuisine.",
       "benefits": [
         "Recipes with correct culinary technical vocabulary from the first attempt",
-        "25 world cuisines with authentic techniques and traditions",
+        "27 world cuisines with authentic techniques and traditions",
         "Seasonal menus aligned with your gastronomic concept",
         "Tech sheets ready to print and use with your team",
         "Instant portion scaling without calculation errors",
@@ -2461,7 +2463,7 @@
       },
       {
         "question": "What world cuisines does AI Chef Pro include?",
-        "answer": "AI Chef Pro includes recipes and techniques from 25 cuisines: French, Italian, Japanese, Spanish, Peruvian, Mexican, Greek, Moroccan, Thai, Indian, Chinese and more. Each with authentic techniques and vocabulary."
+        "answer": "AI Chef Pro includes recipes and techniques from 27 cuisines: French, Italian, Japanese, Spanish, Peruvian, Mexican, Greek, Moroccan, Thai, Indian, Chinese and more. Each with authentic techniques and vocabulary."
       },
       {
         "question": "Can I generate tech sheets with AI Chef Pro?",
@@ -2482,24 +2484,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Restaurant Food Cost Calculator AI | AI Chef Pro",
-      "description": "Calculate restaurant food cost with AI. Waste control, optimal selling price and profitability analysis per dish. Start today.",
+      "description": "The cost of each dish comes from the prices you copy off the delivery note. Mermas GenCal notes the yield and Calcula Pax scales the portions. You set the selling price.",
       "keywords": "restaurant food cost, food cost AI, food cost calculator, restaurant cost control, dish selling price, kitchen waste, dish profitability"
     },
     "breadcrumb": "Restaurant Food Cost with AI",
     "hero": {
       "badge": "AI Food Cost Calculator for Restaurants",
       "h1": "Restaurant Food Cost with AI: Complete Costing",
-      "subtitle": "Calculate the cost of each dish. Waste control, optimal selling price and profitability analysis to maximise your restaurant's profit.",
+      "subtitle": "The cost of each dish comes from the prices you copy off the delivery note. Mermas GenCal notes the yield and Calcula Pax scales the portions. You set the selling price.",
       "tagline": "Stop losing money from uncontrolled food cost.",
       "cta_primary": "Calculate my food cost",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · No commitment"
+      "no_card": "From €10/month. Monthly plans have no minimum term"
     },
     "results": [
-      {
-        "metric": "{{userCount}}+",
-        "label": "Active restaurants"
-      },
       {
         "metric": "75+",
         "label": "AI agents"
@@ -2514,7 +2512,7 @@
         {
           "feature": "Food costing",
           "other": "30-60 minutes per dish",
-          "aichef": "From the prices you enter"
+          "aichef": "From the prices you copy off the delivery note"
         },
         {
           "feature": "Price updates",
@@ -2529,12 +2527,12 @@
         {
           "feature": "Selling price",
           "other": "Gut feeling without objective basis",
-          "aichef": "Optimal price with target margin"
+          "aichef": "You set the selling price"
         },
         {
           "feature": "Profitability per dish",
           "other": "No systematic analysis",
-          "aichef": "Profitability dashboard"
+          "aichef": "You compare the cost of each dish"
         }
       ]
     },
@@ -2544,35 +2542,35 @@
     },
     "tools": [
       {
-        "title": "AI Food Costing",
-        "description": "Enter ingredients, weights and supplier prices. The food cost of each dish uses those prices.",
+        "title": "Costing from your prices",
+        "description": "You enter the ingredients, the weights and the prices you copy off the delivery note or the invoice. The cost per portion comes from those prices.",
         "keywords": [
           "food costing",
-          "food cost per dish",
-          "food cost calculator"
+          "cost per portion",
+          "delivery note prices"
         ]
       },
       {
-        "title": "Waste Control",
-        "description": "Calculate real waste by ingredient type (cleaning, cooking, evaporation) for precise food cost.",
+        "title": "Mermas GenCal",
+        "description": "If an ingredient loses weight in prep or cooking, Mermas GenCal notes the weight that remains.",
         "keywords": [
-          "kitchen waste",
-          "ingredient yield",
-          "cooking losses"
+          "waste",
+          "yield",
+          "Mermas GenCal"
         ]
       },
       {
-        "title": "Optimal Selling Price",
-        "description": "AI calculates the ideal selling price based on your target margin, market and restaurant positioning.",
+        "title": "Selling price",
+        "description": "The cost comes from the prices you copy. You decide the price on the menu.",
         "keywords": [
-          "dish selling price",
-          "restaurant margin",
-          "pricing policy"
+          "selling price",
+          "menu price",
+          "your decision"
         ]
       },
       {
         "title": "Profitability Analysis",
-        "description": "Identify which dishes give you the most margin and which are costing you money. Optimise your menu with real data.",
+        "description": "You compare the cost of each dish from the prices you entered. You decide which dishes stay.",
         "keywords": [
           "profitability per dish",
           "menu engineering",
@@ -2581,7 +2579,7 @@
       },
       {
         "title": "Price Updates",
-        "description": "When an ingredient cost rises, you update the price on the costings that use it.",
+        "description": "When a supplier price changes, you type the new price on the costings that use it.",
         "keywords": [
           "food cost update",
           "food inflation",
@@ -2589,12 +2587,12 @@
         ]
       },
       {
-        "title": "Food Cost Dashboard",
-        "description": "Visualise your restaurant's overall food cost, by category and by dish.",
+        "title": "Calcula Pax",
+        "description": "If the number of covers changes, Calcula Pax prepares the quantities. The cost still comes from the prices you already entered.",
         "keywords": [
-          "food cost dashboard",
-          "kitchen cost control",
-          "restaurant KPIs"
+          "portions",
+          "covers",
+          "Calcula Pax"
         ]
       }
     ],
@@ -2609,7 +2607,7 @@
       },
       {
         "title": "Operations Director",
-        "description": "Monitors food cost across multiple venues from a single dashboard."
+        "description": "Reviews the cost of the dishes at each site from the prices entered there."
       },
       {
         "title": "Head Chef",
@@ -2622,19 +2620,19 @@
     ],
     "why_section": {
       "title": "Uncontrolled food cost is the margin you're giving away",
-      "body": "Food cost is the cost of the ingredients in each dish. AI Chef Pro calculates it from the prices you enter.",
+      "body": "Food cost is the cost of the ingredients in each dish. It comes from the prices you copy off the delivery note.",
       "benefits": [
-        "Food costing of a dish from the prices you enter",
-        "Waste control by ingredient type and cooking technique",
-        "Optimal selling price calculated with your target margin",
-        "You update the costing when supplier prices change",
-        "Identification of your most and least profitable dishes",
-        "Global food cost dashboard with deviation alerts"
+        "Cost per portion from the prices you copy off the delivery note",
+        "Mermas GenCal notes the yield after prep and cooking",
+        "You set the selling price from that cost",
+        "When a supplier price changes, you type the new one",
+        "You compare the cost of each dish from the prices you entered",
+        "Calcula Pax prepares the quantities for a different number of portions"
       ]
     },
     "pricing_section": {
       "title": "Start controlling your food cost from €10",
-      "subtitle": "Cost out your full menu with the Member plan for €10 per month. No commitment.",
+      "subtitle": "Cost the menu with the Member plan at €10/month. Monthly plans have no minimum term.",
       "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2643,15 +2641,15 @@
     "faq": [
       {
         "question": "What is a restaurant food costing?",
-        "answer": "A food costing is the detailed calculation of the production cost of a dish: ingredients, weights, waste and supplier price. It is the basis of food cost and selling price. AI Chef Pro calculates it from the ingredients, weights and prices you enter."
+        "answer": "A food costing is the calculation of a dish’s cost: ingredients, weights, waste and the supplier price. In AI Chef Pro that cost comes from the prices you copy off the delivery note. You check it before service."
       },
       {
         "question": "How does AI Chef Pro calculate the food cost of a dish?",
-        "answer": "You enter the ingredients, weights per portion and supplier prices. The costing uses those prices. You note the waste for each ingredient."
+        "answer": "You enter the ingredients, the weights per portion and the prices from the delivery note or the invoice. The cost per portion comes from those prices. If there is waste, Mermas GenCal notes the weight that remains."
       },
       {
         "question": "Can I calculate the selling price with AI Chef Pro?",
-        "answer": "Yes. Once the food cost is calculated, AI suggests the optimal selling price based on your target margin (typically 25%-35% food cost ratio for restaurants), also considering your restaurant's positioning."
+        "answer": "The costing gives the cost per portion from the prices you copy off the delivery note or the invoice. You decide the selling price."
       },
       {
         "question": "What happens when an ingredient price rises?",
@@ -2660,7 +2658,7 @@
     ],
     "cta_section": {
       "title": "Start controlling your food cost with AI today",
-      "subtitle": "Over {{userCount}} restaurants already use AI Chef Pro to calculate food cost and protect their margin.",
+      "subtitle": "The cost of each dish comes from the prices you copy off the delivery note.",
       "primary": "Calculate my food cost",
       "secondary": "See all plans"
     }

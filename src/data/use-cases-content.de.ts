@@ -797,7 +797,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       },
       {
         "q": "Ist es für fortgeschrittene gastronomische Küche geeignet oder nur für Casual Dining?",
-        "a": "Für das gesamte Spektrum. Es gibt spezifische Agenten: Kreativküche für Autorenküche, Kreative Patisserie, Fermentus für Avantgarde, VegChef für pflanzliche Küche, sowie über 25 Rezeptbücher pro Land. Reale Fälle bei Michelin und Repsol Soles und in Casual-Gruppen mit bis zu 25 Einheiten."
+        "a": "Für das gesamte Spektrum. Es gibt spezifische Agenten: Kreativküche für Autorenküche, Kreative Patisserie, Fermentus für Avantgarde, VegChef für pflanzliche Küche, sowie 27 Rezeptbücher pro Land. Reale Fälle bei Michelin und Repsol Soles und in Casual-Gruppen mit bis zu 25 Einheiten."
       },
       {
         "q": "Wie passt sich das System an meine Arbeitsweise an?",

@@ -113,11 +113,13 @@ export const worldCookbooks = {
     { name: 'Alemana', flag: '🇩🇪', preview: 'Sauerbraten con spätzle caseros y col lombarda...' },
     { name: 'Belga', flag: '🇧🇪', preview: 'Carbonada flamenca con cerveza trapense y pan tostado...' },
     { name: 'Británica', flag: '🇬🇧', preview: 'Fish and chips con masa crujiente y salsa tártara...' },
+    { name: 'Croata', flag: '🇭🇷', preview: 'Peka de cordero con patatas, pimientos y romero...' },
     { name: 'Española', flag: '🇪🇸', preview: 'Paella valenciana tradicional con azafrán de La Mancha...' },
     { name: 'Francesa', flag: '🇫🇷', preview: 'Coq au vin de Borgoña con hierbas de Provenza...' },
     { name: 'Griega', flag: '🇬🇷', preview: 'Moussaka auténtica con berenjenas y salsa bechamel...' },
-    { name: 'Portuguesa', flag: '🇵🇹', preview: 'Bacalhau à Brás con patatas paja y aceitunas negras...' },
+    { name: 'Italiana', flag: '🇮🇹', preview: 'Risotto alla milanese con azafrán y tuétano...' },
     { name: 'Países Bajos', flag: '🇳🇱', preview: 'Stamppot de col rizada con salchicha ahumada...' },
+    { name: 'Portuguesa', flag: '🇵🇹', preview: 'Bacalhau à Brás con patatas paja y aceitunas negras...' },
     { name: 'Suiza', flag: '🇨🇭', preview: 'Fondue de quesos alpinos con pan artesanal...' },
     { name: 'Turca', flag: '🇹🇷', preview: 'Kebab de cordero con yogur de hierbas y pilaf...' }
   ],
@@ -164,8 +166,8 @@ export const businessTools: App[] = [
   {
     id: 'id-alergenos',
     name: 'ID Alérgenos',
-    description: '',
-    preview: 'Cumple normativas de seguridad alimentaria sin errores',
+    description: 'Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya',
+    preview: 'Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya',
     icon: AlertTriangle,
     category: 'business',
     slug: 'id-alergenos'
