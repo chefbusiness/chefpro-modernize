@@ -18,7 +18,7 @@ faq:
   - q: "¿Qué es el food pairing algorítmico y cómo lo aplica la IA?"
     a: "El food pairing algorítmico cruza los compuestos aromáticos de miles de ingredientes para encontrar afinidades no obvias. La IA puede analizar esas combinaciones en segundos y sugerir maridajes o nuevas parejas de sabor, ampliando el abanico creativo del chef sin sustituir su criterio."
   - q: "¿La IA ayuda realmente a reducir mermas y controlar alérgenos?"
-    a: "Sí. Los agentes de IA pueden actualizar escandallos automáticamente, prever mermas según estacionalidad y mapear alérgenos en cada receta. Esto reduce errores en el servicio, mejora la consistencia y optimiza la compra de producto premium."
+    a: "Sí. La IA propone el escandallo cuando cambia un precio y el cocinero lo valida. También puedes estimar mermas según la estacionalidad y hacer la revisión de los 14 alérgenos con validación final del cocinero."
   - q: "¿Cuánto cuesta usar AI Chef Pro de forma profesional?"
     a: "El plan de entrada de pago es Premium Pro, por 25 € al mes con 85.000 créditos. El plan Plus cuesta 50 €/mes (175.000 créditos) y el plan Max ofrece créditos ilimitados por 95 €/mes. Existe también la opción Max Anual por 950 €/año."
 ---
@@ -57,9 +57,9 @@ A partir de esa propuesta, el chef ajusta, prueba, corrige. La IA no te da un me
 
 La Guía Michelin premia, entre otras cosas, la consistencia. Un plato excelente un día y correcto al siguiente no vale. Aquí la IA opera como un sistema de control de calidad que no se cansa.
 
-En cocinas de alto nivel, donde un lomo de rodaballo puede costar 60 €/kg y se trabaja con decenas de referencias, el escandallo manual es lento y propenso a errores. Una herramienta de IA conectada a tu recetario digital recalcula automáticamente costes, gramajes y márgenes cada vez que ajustas una receta. Si cambias la guarnición del pase de carne o sustituyes la mantequilla por un aceite de arbequina, el escandallo se actualiza al instante, y además te avisa si el plato se sale del margen objetivo.
+En cocinas de alto nivel, donde un lomo de rodaballo puede costar 60 €/kg y se trabaja con decenas de referencias, el escandallo manual es lento y propenso a errores. Cuando ajustas una receta, la IA propone el coste, el gramaje y el margen, y el cocinero valida el escandallo. Si cambias la guarnición del pase de carne o sustituyes la mantequilla por un aceite de arbequina, revisas si el plato se sale del margen que tú has marcado.
 
-El control de alérgenos es otro punto crítico. En un menú degustación con 14 pases y varios comensales con restricciones, cruzar manualmente cada plato con cada alergia es un riesgo. La IA puede mapear automáticamente los alérgenos de cada elaboración, generar fichas de plato con alertas visuales y hasta sugerir sustituciones que mantengan el perfil de sabor. No elimina la responsabilidad del equipo, pero reduce drásticamente la probabilidad de un error en un servicio a 45 € el cubierto.
+El control de alérgenos es otro punto crítico. En un menú degustación con 14 pases y varios comensales con restricciones, cruzar manualmente cada plato con cada alergia es un riesgo. La IA puede proponer la revisión de los 14 alérgenos de cada elaboración, con validación final del cocinero, generar fichas de plato con alertas visuales y hasta sugerir sustituciones que mantengan el perfil de sabor. No elimina la responsabilidad del equipo, pero reduce drásticamente la probabilidad de un error en un servicio a 45 € el cubierto.
 
 Y luego están las mermas. Producto premium significa mermas caras. Un agente de IA puede analizar tu histórico de pedidos, la estacionalidad y el rendimiento real de cada pieza para ajustar las compras y minimizar el desperdicio. No es adivinación: es cruzar datos que ya tienes pero que nadie miraba con método.
 

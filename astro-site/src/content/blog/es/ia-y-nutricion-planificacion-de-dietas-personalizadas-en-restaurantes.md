@@ -140,7 +140,7 @@ En las colectividades, la personalización nutricional no es una ventaja competi
 
 **Empresas**: comedores de personal donde la variedad de preferencias se dispara (vegano, sin gluten, keto, deportista) y la repetición del menú es el peor enemigo. La rotación de platos y la señalización nutricional clara son la clave para que el trabajador elija con criterio.
 
-La IA ayuda a manejar este volumen de datos y trazabilidad: genera automáticamente las fichas técnicas de cada elaboración con alérgenos, adapta recetas a texturas modificadas sin que el gramaje se descontrole, planifica rotaciones de menús cumpliendo frecuencias alimentarias y calcula las necesidades de compra con menos margen de error. Pero insisto de nuevo porque no es un detalle menor: **toda dieta clínica o menú de colectividad debe estar validado por un dietista-nutricionista colegiado**. La máquina no firma la responsabilidad técnico-sanitaria.
+La IA ayuda a manejar este volumen de datos y trazabilidad: prepara las fichas técnicas de cada elaboración con la revisión de los 14 alérgenos y la validación del cocinero, adapta recetas a texturas modificadas sin que el gramaje se descontrole, planifica rotaciones de menús cumpliendo frecuencias alimentarias y calcula las necesidades de compra con menos margen de error. Pero insisto de nuevo porque no es un detalle menor: **toda dieta clínica o menú de colectividad debe estar validado por un dietista-nutricionista colegiado**. La máquina no firma la responsabilidad técnico-sanitaria.
 
 | Tipo de colectividad | Necesidad nutricional dominante | Qué aporta la IA | Quién valida |
 | :--- | :--- | :--- | :--- |

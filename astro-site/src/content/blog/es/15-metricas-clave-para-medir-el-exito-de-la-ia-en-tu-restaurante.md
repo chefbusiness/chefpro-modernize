@@ -153,7 +153,7 @@ wpId: 2337
 
 
 
-<p class="wp-block-paragraph"><strong>Objetivo:</strong> Incremento del 5-15% en márgenes mediante análisis de costes automatizado.</p>
+<p class="wp-block-paragraph"><strong>Objetivo:</strong> Revisar el margen a partir del escandallo con IA, con validación del cocinero.</p>
 
 
 
@@ -162,7 +162,7 @@ wpId: 2337
 
 
 <ul class="wp-block-list">
-<li>Cálculo automático del escandallo de recetas</li>
+<li>Escandallo con IA, con validación del cocinero</li>
 
 
 

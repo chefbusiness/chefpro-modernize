@@ -20,7 +20,7 @@ faq:
   - q: "¿Puedo pedirle que planifique un menú para un equipo con musulmanes, vegetarianos o alérgicos?"
     a: "El agente te pregunta expresamente por las particularidades de tu equipo. A partir de ahí, diseña menús con ingredientes y elaboraciones que respetan esas necesidades, manteniendo el equilibrio nutricional y el presupuesto sin que nadie se quede sin comer. Puedes mencionar desde alergias hasta preferencias religiosas y él las integra sin dramas."
   - q: "¿Cómo escala las recetas si un día como 15 personas y otro 40?"
-    a: "Le indicas el número exacto de comensales y él recalcula automáticamente las cantidades de cada ingrediente, ajustando también los tiempos de elaboración y el rendimiento de las bases. Así evitas desperdicio y mantienes el coste por persona. Da igual si son 10 o 50: la receta se adapta al momento."
+    a: "Le indicas el número de comensales y propone las cantidades de cada ingrediente, los tiempos de elaboración y el rendimiento de las bases. El cocinero valida la receta y el coste por persona."
   - q: "¿Aprovecha los fondos, sofritos y salsas que ya tengo en cocina?"
     a: "Sí, el agente está programado para detectar oportunidades de aprovechamiento. Te sugiere elaboraciones base que puedas reutilizar en varios platos de la semana, reduciendo el trabajo diario y el coste de materia prima sin sacrificar variedad. Un fondo oscuro te vale para un arroz y para una salsa, y él lo tiene en cuenta desde el minuto uno."
   - q: "¿Puedo exportar el plan semanal y los escandallos a PDF o CSV?"

@@ -20,7 +20,7 @@ faq:
   - q: "¿Puedo empezar con la gestión de inventario con IA con el plan AI Chef Miembro?"
     a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €, con tarjeta y sin permanencia. Puedes probar el conteo asistido, el cálculo de PMP y el pedido sugerido para convencerte de que la IA no es un gasto, sino una inversión en margen."
   - q: "¿Cómo conecta el inventario con los escandallos de los platos?"
-    a: "Cada ingrediente del escandallo toma su coste del PMP calculado en el inventario. Cuando actualizas el inventario tras una recepción, el coste de todos los platos que usan ese ingrediente se recalcula automáticamente. Así el food cost teórico siempre está al día."
+    a: "Cada ingrediente del escandallo puede tomar su coste del precio medio del inventario. Cuando actualizas el inventario tras una recepción, revisas el coste de los platos que usan ese ingrediente y el cocinero valida el escandallo."
 ---
 
 He pasado 29 años metido en cocinas de alta hostelería y 15 más como consultor gastronómico. Si algo he visto repetirse hasta la náusea es que la gestión de inventario de un restaurante es el punto donde se gana o se pierde el margen real, y casi nadie le presta la atención que merece. Con la IA, esta tarea deja de ser un castigo de fin de semana y se convierte en un sistema de control que te dice exactamente qué tienes, cuánto vale y cuándo te interesa pedir.

@@ -63,7 +63,7 @@ wpId: 1571
 
 
 
-<li><strong>Gestión de alérgenos:</strong> Identificación y trazabilidad automática de elementos alérgenos</li>
+<li><strong>Gestión de alérgenos:</strong> Revisión de los 14 alérgenos con validación final del cocinero</li>
 
 
 
@@ -139,7 +139,7 @@ wpId: 1571
 
 
 
-<li>Cumplimiento normativo automático: 100% trazabilidad de alérgenos</li>
+<li>Revisión de los 14 alérgenos con validación final del cocinero</li>
 </ul>
 
 
@@ -270,7 +270,7 @@ wpId: 1571
 
 
 <ul class="wp-block-list">
-<li><strong>Detección automática:</strong> Identificación de los 14 alérgenos principales en cada receta</li>
+<li><strong>Revisión de los 14 alérgenos:</strong> Propuesta de los 14 alérgenos principales en cada receta, con validación final del cocinero</li>
 
 
 
@@ -282,7 +282,7 @@ wpId: 1571
 
 
 
-<li><strong>Adaptación automática:</strong> Generación de versiones libres de alérgenos específicos</li>
+<li><strong>Adaptación de la receta:</strong> El cocinero valida las versiones sin un alérgeno concreto</li>
 
 
 
@@ -476,7 +476,7 @@ wpId: 1571
 
 
 
-<li><strong>ID Alérgenos:</strong> Trazabilidad automática de alérgenos</li>
+<li><strong>ID Alérgenos:</strong> Revisión de los 14 alérgenos con validación final del cocinero</li>
 
 
 
@@ -730,7 +730,7 @@ wpId: 1571
 
 
 
-<li>ID Alérgenos para gestión automática de restricciones</li>
+<li>ID Alérgenos para la revisión de los 14 alérgenos, con validación final del cocinero</li>
 
 
 

@@ -58,7 +58,7 @@ La mayoría de IAs genéricas fallan aquí de forma sistemática. No entienden d
 Estas son algunas tareas que resuelve a diario en una cocina real, con el detalle que marca la diferencia entre una herramienta de juguete y una herramienta de trabajo:
 
 - **Fichas técnicas completas**: nombre del plato, ingredientes con cantidades en bruto y neto, alérgenos por ingrediente, tabla nutricional calculada por ración, coste por ración con desglose de cada ingrediente, precio de venta recomendado según margen objetivo y peso final de la ración.
-- **Escandallos**: cálculo automático de costes aplicando mermas diferenciadas (limpieza, cocción, emplatado), márgenes brutos y netos, y comparativa de precios de proveedores si introduces varias opciones de compra.
+- **Escandallos**: escandallo con IA, con las mermas que el cocinero valida (limpieza, cocción, emplatado), márgenes brutos y netos, y comparativa de precios de proveedores si introduces varias opciones de compra.
 - **Cartas y menús**: diseño de cartas por tipo de cocina, temporada, target de cliente o evento concreto, con equilibrio entre platos de alto y bajo coste para mantener el margen global de la carta.
 - **Ingeniería de menús**: análisis de rentabilidad por plato según la matriz de popularidad y margen, para decidir qué platos son estrellas, cuáles son caballos de batalla, cuáles son incógnitas y cuáles son perros que debes eliminar o reformular.
 - **Textos de marketing gastronómico**: descripciones de platos que apetecen, publicaciones para redes sociales con tono de restaurante, notas de prensa para medios gastronómicos, todo con el lenguaje del sector y sin frases genéricas tipo "elaborado con los mejores ingredientes".

@@ -129,7 +129,7 @@ En AI Chef Pro tienes un [generador visual de cartas y menús con IA](https://ai
 
 ## Paso 6: Alérgenos, idiomas y código QR
 
-En la Unión Europea, desde hace años es obligatorio declarar los 14 alérgenos principales: gluten, crustáceos, huevos, pescado, cacahuetes, soja, leche, frutos de cáscara, apio, mostaza, sésamo, sulfitos, altramuces y moluscos. La carta debe dejar claro qué alérgenos contiene cada plato o dónde puede consultarlos el cliente. La IA te ayuda a cruzar ingredientes y generar automáticamente la tabla de alérgenos para cada plato, lo que te ahorra errores y tiempo.
+En la Unión Europea, desde hace años es obligatorio declarar los 14 alérgenos principales: gluten, crustáceos, huevos, pescado, cacahuetes, soja, leche, frutos de cáscara, apio, mostaza, sésamo, sulfitos, altramuces y moluscos. La carta debe dejar claro qué alérgenos contiene cada plato o dónde puede consultarlos el cliente. La IA te ayuda a cruzar ingredientes y preparar la tabla de alérgenos de cada plato, con validación final del cocinero, lo que te ahorra errores y tiempo.
 
 Si trabajas en zona turística, la carta multilingüe ya no es un lujo: es una expectativa. La IA traduce a 7 idiomas manteniendo el matiz gastronómico, sin perder el detalle que hace que una descripción venda. No es lo mismo traducir “meloso” que “creamy” o “onctueux”, y la IA entrenada en cocina lo entiende.
 

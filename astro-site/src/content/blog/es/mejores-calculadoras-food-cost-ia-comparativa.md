@@ -130,7 +130,7 @@ No voy a venderte que esto te cambia la vida. Pero sí te digo lo que hace y lo 
 
 La calculadora de food cost de AI Chef Pro parte de una premisa sencilla: tú le das los ingredientes de una receta (o se la dictas, o la pegas), y la IA te devuelve el coste por ración **considerando mermas y rendimientos reales**. No es un cálculo teórico con el precio de compra bruto; la herramienta aplica factores de rendimiento por tipo de ingrediente (desperdicio en limpieza de pescados, pérdida de peso en cocciones, reducción de salsas…).
 
-Además, genera automáticamente el **escandallo completo** y la **ficha técnica** del plato, dos documentos que todo inspector de sanidad y todo gerente quieren tener a mano. Puedes probarlo directamente desde el [agente de escandallos para restaurantes](https://aichef.pro/escandallos-restaurante-ia).
+Además, prepara el **escandallo** con IA, para que el cocinero lo valide, y la **ficha técnica** del plato, dos documentos que todo inspector de sanidad y todo gerente quieren tener a mano. Puedes probarlo directamente desde el [agente de escandallos para restaurantes](https://aichef.pro/escandallos-restaurante-ia).
 
 ¿Qué más aporta respecto a otras opciones? Pertenece a una suite de más de 70 agentes de IA culinarios, en 7 idiomas con español nativo. Esto significa que no es una herramienta aislada: puedes calcular el food cost, generar la ficha técnica, diseñar la carta, planificar menús y analizar márgenes desde un mismo ecosistema. Si quieres explorar qué más pueden hacer estas herramientas por tu cocina, échale un ojo a [las mejores IA para restaurantes en 2026](https://aichef.pro/blog/mejores-ia-restaurantes-2026).
 

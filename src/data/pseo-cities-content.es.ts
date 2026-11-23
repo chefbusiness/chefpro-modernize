@@ -218,7 +218,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryProductSlug: 'saas-trial',
     primaryProductLabel: 'Prueba AI Chef Pro desde 10 €',
     primaryCtaTitle: 'Empieza desde 10 €/mes con AI Chef Pro',
-    primaryCtaBody: 'AI Chef Pro es el SaaS que reúne en una sola plataforma escandallos automáticos, APPCC digital, generación de cartas con IA, control de inventario, gestión de personal, calendario de contenidos y 75+ agentes de IA específicos para restauración. Desde 10 € al mes. Los planes mensuales no tienen permanencia y el acceso es inmediato. Adaptado a la regulación de {country}.',
+    primaryCtaBody: 'AI Chef Pro es el SaaS que reúne en una sola plataforma el escandallo con IA y la validación del cocinero, APPCC digital, generación de cartas con IA, control de inventario, gestión de personal, calendario de contenidos y 75+ agentes de IA específicos para restauración. Desde 10 € al mes. Los planes mensuales no tienen permanencia y el acceso es inmediato. Adaptado a la regulación de {country}.',
     saasCtaTitle: 'Suscripción Profesional AI Chef Pro',
     saasCtaBody: 'Suscripción mensual con acceso ilimitado a todas las herramientas IA, generación de cartas, escandallos masivos, APPCC digital, integración con tu TPV. Soporte en español + atención WhatsApp.',
     faqs: [

@@ -1535,7 +1535,7 @@
       },
       {
         "metric": "14",
-        "label": "alérgenos gestionados automáticamente"
+        "label": "alérgenos de declaración obligatoria, con revisión del cocinero"
       },
       {
         "metric": "27",
@@ -1576,7 +1576,7 @@
       },
       {
         "title": "Gestión de Alérgenos",
-        "description": "Identifica y etiqueta automáticamente los 14 alérgenos de declaración obligatoria. Cumplimiento legal sin esfuerzo en todos los platos de tu carta.",
+        "description": "Revisión de los 14 alérgenos de declaración obligatoria, con validación final del cocinero, para etiquetar la carta.",
         "keywords": [
           "alérgenos carta",
           "normativa alérgenos",
@@ -2821,7 +2821,7 @@
       },
       {
         "question": "¿Esta calculadora incluye mermas?",
-        "answer": "Esta versión gratuita trabaja con los gramajes netos que introduces. Para incluir mermas de limpieza, cocción y evaporación de forma automática, usa la herramienta de escandallos de AI Chef Pro Premium."
+        "answer": "Esta versión trabaja con los gramajes netos que introduces. Para incluir mermas de limpieza, cocción y evaporación, usa la herramienta de escandallos de AI Chef Pro y valida el resultado."
       },
       {
         "question": "¿Cómo mejorar un food cost alto?",
@@ -3260,7 +3260,7 @@
       "copy": "Copiar ficha",
       "copied": "¡Copiado!",
       "reset": "Nuevo análisis",
-      "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?",
+      "cta_after": "¿Quieres revisar los 14 alérgenos de toda la carta, con validación final del cocinero?",
       "allergens_title": "Los 14 alérgenos de declaración obligatoria",
       "allergens_subtitle": "Reglamento (UE) 1169/2011",
       "try_free": "Probar AI Chef Pro",
@@ -3518,8 +3518,8 @@
         },
         {
           "step": "2",
-          "title": "Detección automática",
-          "description": "El detector identifica qué alérgenos del Reglamento EU 1169/2011 están presentes en los ingredientes."
+          "title": "Revisión de los 14 alérgenos",
+          "description": "El detector propone qué alérgenos del Reglamento (UE) 1169/2011 aparecen en los ingredientes. La validación final es del cocinero."
         },
         {
           "step": "3",
@@ -3544,7 +3544,7 @@
     },
     "pricing": {
       "title": "Gestión completa de alérgenos con AI Chef Pro",
-      "subtitle": "El detector básico es gratuito. Con AI Chef Pro gestionas los alérgenos de toda tu carta con alertas automáticas.",
+      "subtitle": "Con AI Chef Pro revisas los 14 alérgenos de la carta, con validación final del cocinero.",
       "plans": [
         {
           "name": "Miembro",
@@ -3595,7 +3595,7 @@
     ],
     "cta_section": {
       "title": "Gestiona los alérgenos de toda tu carta con IA",
-      "subtitle": "Con AI Chef Pro gestionas los alérgenos de cada plato automáticamente, con alertas cuando cambias ingredientes y ficha exportable para tu carta.",
+      "subtitle": "Con AI Chef Pro revisas los 14 alérgenos de cada plato, con validación final del cocinero, y exportas la ficha para la carta.",
       "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },

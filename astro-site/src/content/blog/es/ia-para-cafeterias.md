@@ -16,7 +16,7 @@ faq:
   - q: "¿La IA va a sustituir a mis baristas?"
     a: "No. La IA no prepara cafés ni atiende a tus clientes. Te ayuda en tareas de gestión: escandallos, cartas, redes, fidelización. El calor humano, la técnica del barista y el trato con el cliente siguen siendo insustituibles. La IA te quita trabajo administrativo para que tu equipo se centre en lo que de verdad aporta valor."
   - q: "¿Cómo me ayuda la IA con los escandallos y el food cost del café y el brunch?"
-    a: "La IA lee tus facturas de proveedores, extrae los precios actualizados y recalcula automáticamente el coste de cada receta. Así detectas al instante si un ingrediente se ha disparado y puedes ajustar precios o cambiar de proveedor. También te permite simular escenarios para mantener el margen que necesitas en cada bebida y plato."
+    a: "Anotas los precios de las facturas de tus proveedores y la IA propone el coste de cada receta. El cocinero lo valida. Así ves si un ingrediente se ha encarecido y puedes ajustar el precio, cambiar de proveedor o revisar el margen de cada bebida y plato."
   - q: "¿Puedo usar la IA para las redes sociales de mi cafetería?"
     a: "Sí. Puedes generar imágenes de tus productos (flat white, tostadas, bowls) y redactar los pies de foto y hashtags en segundos. La calidad no siempre iguala a un fotógrafo profesional, pero te permite mantener una frecuencia diaria de publicación sin gastar una fortuna ni invertir horas que no tienes."
   - q: "¿Con qué plan de AI Chef Pro me conviene empezar?"
@@ -55,7 +55,7 @@ El café, el matcha, la leche de avena y el aguacate no perdonan. Un céntimo de
 
 ### Escandallos que se actualizan solos
 
-Imagina que subes el ticket de compra de tu último pedido de café de especialidad o de matcha. Un agente de IA lee ese documento, extrae el coste por kilo o por gramo, recalcula automáticamente el coste de cada receta y te avisa si tu food cost se ha disparado. Así no tienes que rehacer las fichas a mano cada mes.
+Imagina que subes el ticket de compra de tu último pedido de café de especialidad o de matcha. Anotas el coste por kilo o por gramo y la IA propone el coste de cada receta. El cocinero lo valida y ves si el food cost se ha salido del margen que tú has marcado. Así no tienes que rehacer las fichas a mano cada mes.
 
 En mi trabajo de consultoría he visto cómo este simple automatismo reduce el tiempo de escandallo entre un 60% y un 80% y permite ajustar precios con criterio, no a ojo. Si además enlazas la IA con tu calculadora de food cost, puedes simular escenarios: ¿qué pasaría si cambio de proveedor de leche de avena? ¿Cuánto margen gano si subo 20 céntimos el flat white?
 

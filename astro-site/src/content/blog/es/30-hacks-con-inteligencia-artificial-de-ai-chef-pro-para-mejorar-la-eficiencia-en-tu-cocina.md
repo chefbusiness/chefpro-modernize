@@ -116,7 +116,7 @@ Cotiza cualquier servicio con precisión.
 | Calcular escandallo de un plato | Excel, búsqueda de precios de proveedores, cálculo manual | Introduce receta y precios; el agente devuelve escandallo detallado | De 2-3 h a 2 min |
 | Fijar precio de venta con margen objetivo | Prueba y error, estimaciones | El agente calcula precio según margen objetivo y coste real | De 30 min a 1 min |
 | Detectar platos poco rentables | Revisar carta a mano | El agente analiza todos los platos y señala los que no alcanzan el margen | De 1 h a 3 min |
-| Simular subida de proveedor | Recalcular todos los platos manualmente | El agente actualiza automáticamente todos los escandallos con el nuevo coste | De 2-3 h a 1 min |
+| Simular subida de proveedor | Recalcular todos los platos manualmente | Revisas el escandallo con el precio nuevo y el cocinero lo valida | El tiempo lo marca esa revisión |
 | Control de food cost semanal | Recopilación de datos y cálculos manuales | El agente genera un informe semanal comparando teórico vs real | De 4 h a 5 min |
 | Presupuesto de evento/catering | Cotización manual, posibles errores | El agente elabora presupuesto detallado con costes y márgenes | De 1-2 h a 3 min |
 

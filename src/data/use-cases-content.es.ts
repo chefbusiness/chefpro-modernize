@@ -355,7 +355,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       features: [
         { icon: 'ChefHat', title: 'Chef Ejecutivo Pro', description: 'Agente de IA especializado en el rol: estandarización multi-local, fichas técnicas, manuales de cocina y decisiones de carta basadas en datos reales.' },
         { icon: 'Sparkles', title: 'Cocina Creativa + Food Pairing AI', description: 'Lluvia de ideas de platos por temporada, ingrediente o técnica, con combinaciones apoyadas en base científica. Cocina Creativa entrega además la receta detallada y un escandallo inicial con precios de referencia de mercado, descargable en CSV.' },
-        { icon: 'Calculator', title: 'Escandallos profesionales', description: 'Cargas el CSV de Cocina Creativa en el Kit de Escandallos Pro y sustituyes los precios de referencia por los de tus proveedores reales. Coste por ración, food cost %, margen y precio sugerido al instante. Recalcula automáticamente cuando cambias un gramaje o un coste.' },
+        { icon: 'Calculator', title: 'Escandallos profesionales', description: 'Cargas el CSV de Cocina Creativa en el Kit de Escandallos Pro y sustituyes los precios de referencia por los de tus proveedores reales. Ves el coste por ración, el food cost, el margen y un precio sugerido. Si cambias un gramaje o un coste, revisas el escandallo y el cocinero lo valida.' },
         { icon: 'BookOpen', title: 'Fichas técnicas profesionales', description: 'Receta, procedimiento, alérgenos, emplatado y storytelling en un único documento. Listo para enviar a todas las cocinas del grupo.' },
         { icon: 'Layers', title: 'Estandarización multi-local', description: 'Mismo plato, misma calidad y mismo coste en 1, 5 o 25 unidades. Manuales replicables y totalmente trazables.' },
         { icon: 'Beaker', title: 'Fermentus Con AI+ y técnicas avanzadas', description: 'Koji, kombuchas, shoyus, garums y lactofermentos: I+D gastronómico con respaldo profesional.' },
@@ -716,7 +716,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       faqTitle: 'Preguntas Frecuentes de Chefs de Catering',
       faqs: [
         { q: '¿Sirve para cualquier tamaño de catering?', a: 'Sí. Desde caterings boutique de 50 invitados al mes hasta empresas con más de 1000 servicios al mes y eventos de 2000 comensales.' },
-        { q: '¿Permite gestionar la variabilidad de invitados?', a: 'Sí. Calcula Pax escala recetas a cualquier número de comensales y el Kit de Escandallos Pro recalcula coste, food cost y margen automáticamente.' },
+        { q: '¿Permite gestionar la variabilidad de invitados?', a: 'Sí. Calcula Pax escala las recetas al número de comensales. En el Kit de Escandallos Pro revisas el coste, el food cost y el margen, y el cocinero los valida.' },
         { q: '¿Cubre APPCC fuera del local fijo?', a: 'Sí. El Pack APPCC tiene plantillas específicas para producto que viaja en mochila, moto, furgoneta refrigerada o cocina central, incluyendo trazabilidad en sede ajena.' },
         { q: '¿Hay plantillas específicas de catering?', a: 'Sí. El Kit de Tareas Catering incluye listas detalladas de producción, transporte, montaje en sede, servicio y desmontaje, además de protocolos de coordinación con cocina central.' },
         { q: '¿Cómo se adapta a mi tipo de catering?', a: 'Empiezas con el agente «¿Quién Soy?», un onboarding de 2 minutos donde le cuentas qué tipo de eventos haces (bodas, corporativos, cocktails, galas), tamaño medio, ciudad y operativa. Todo se adapta a tu contexto.' },
@@ -4751,7 +4751,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'task-escandallos-con-ia': {
       h1: 'Cómo Hacer Escandallos con IA',
-      heroSubtitle: 'Calcula coste real por plato, food cost % y precio sugerido en minutos en lugar de días: receta + escandallo CSV automático con coste hora obrador, mermas integradas y margen validado en tiempo real con una suite de agentes de IA gastronómica.',
+      heroSubtitle: 'Calcula el coste real por plato, el food cost y un precio sugerido. La IA prepara la receta y el escandallo; el cocinero valida el coste hora de obrador, las mermas y el margen.',
       heroTagline: 'Escandallos profesionales en minutos, no en horas',
       badge: 'Tarea: Escandallos y costing',
       painsTitle: 'Lo Que Cuesta Escandallar a Mano',
@@ -4766,7 +4766,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       featuresTitle: 'Cómo AI Chef Pro Resuelve los Escandallos',
       features: [
         { icon: 'Calculator', title: 'Cocina Creativa + escandallo CSV', description: 'Cualquier agente creativo (Cocina, Pastelería, Heladería, Chocolatería) entrega receta + escandallo CSV con balance técnico y coste hora obrador integrado.' },
-        { icon: 'BarChart3', title: 'Mermas GenCal', description: 'Datos precisos de mermas por proceso (despiece, tueste, abatimiento, vitrina, formado) integrados automáticamente al CSV.' },
+        { icon: 'BarChart3', title: 'Mermas GenCal', description: 'Datos de mermas por proceso (despiece, tueste, abatimiento, vitrina, formado) que incorporas al CSV. La validación final es del cocinero.' },
         { icon: 'Beaker', title: 'Sosa Ingredients Agent', description: 'Catálogo Sosa con precios de referencia para ingredientes técnicos profesionales.' },
         { icon: 'Sparkles', title: 'Calcula Pax + Conversor Ing', description: 'Escala recetas a 2, 6, 12, 100 pax sin perder precisión; conversor automático de pesos y medidas.' },
         { icon: 'CheckSquare', title: 'Kit de Escandallos Pro', description: 'Plantillas Excel descargables que reciben el CSV y calculan margen real, food cost % y precio sugerido al instante.' },
@@ -4986,7 +4986,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       features: [
         { icon: 'BookOpen', title: 'Cocina Creativa con ficha completa', description: 'Cada receta entrega ficha técnica profesional: ingredientes, gramaje, técnica, alérgenos, mermas, coste, storytelling, plating.' },
         { icon: 'ShieldCheck', title: 'ID Alérgenos', description: 'Revisión de los 14 alérgenos con validación final del cocinero por receta: lácteos, gluten, frutos secos, soja, mariscos, sulfitos, etc.' },
-        { icon: 'Calculator', title: 'Coste integrado', description: 'Ficha técnica incluye food cost % y coste por porción calculado automáticamente con coste hora obrador.' },
+        { icon: 'Calculator', title: 'Coste integrado', description: 'La ficha técnica incluye el food cost y el coste por porción, con el coste hora de obrador, para que el cocinero los revise.' },
         { icon: 'Image', title: 'GastroIMG Gen+', description: 'Imagen de referencia del plato emplatado para incluir en la ficha técnica como guía visual.' },
         { icon: 'Sparkles', title: 'Storytelling para sala', description: 'Cada ficha incluye descripción profesional para que el equipo de sala recite con técnica.' },
         { icon: 'CheckSquare', title: 'Plantilla estandarizada', description: 'Formato uniforme para todas las fichas: técnica, conservación, alérgenos, presentación, coste.' },

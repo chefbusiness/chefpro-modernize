@@ -739,7 +739,7 @@ wpId: 2141
 
 
 
-<li><strong>Gestión de alérgenos:</strong> Identificación automática y sugerencias de sustitución</li>
+<li><strong>Gestión de alérgenos:</strong> Revisión de los 14 alérgenos con validación final del cocinero, y sugerencias de sustitución</li>
 
 
 

@@ -255,7 +255,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph"><strong>Cómo implementarlo:</strong> Introduce cada receta en ID Alérgenos con todos sus ingredientes, incluidas las salsas base, los fondos y las guarniciones. La herramienta identifica automáticamente qué alérgenos contiene cada plato, genera las fichas de alérgenos para el personal de sala y crea alertas automáticas para las combinaciones de riesgo cruzado. Tiempo de setup inicial: 2 horas. Mantenimiento: 10 minutos por plato nuevo. Consulta nuestra guía completa sobre <a href="https://aichef.pro/blog/alergenos" target="_blank">alérgenos en restaurantes</a> para implementar este sistema de forma correcta.</p>
+<p class="wp-block-paragraph"><strong>Cómo implementarlo:</strong> Introduce cada receta en ID Alérgenos con todos sus ingredientes, incluidas las salsas base, los fondos y las guarniciones. La herramienta propone la revisión de los 14 alérgenos, con validación final del cocinero, para que sala trabaje con la ficha confirmada. Tiempo de setup inicial: 2 horas. Mantenimiento: 10 minutos por plato nuevo. Consulta nuestra guía completa sobre <a href="https://aichef.pro/blog/alergenos" target="_blank">alérgenos en restaurantes</a> para implementar este sistema de forma correcta.</p>
 
 
 
@@ -279,7 +279,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph"><strong>Cómo implementarlo:</strong> Copia y pega cualquier receta en Calcula Pax, introduce el número de comensales y el sistema recalcula automáticamente todas las cantidades, respetando los porcentajes de merma para ese ingrediente específico. Funciona para cualquier escala, desde 10 hasta 10.000 comensales.</p>
+<p class="wp-block-paragraph"><strong>Cómo implementarlo:</strong> Copia y pega cualquier receta en Calcula Pax, introduce el número de comensales y la herramienta propone las cantidades con el porcentaje de merma de ese ingrediente, y el cocinero las valida. Funciona para cualquier escala, desde 10 hasta 10.000 comensales.</p>
 
 
 

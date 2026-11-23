@@ -50,7 +50,7 @@ Olvídate de las hojas de cálculo que nunca cuadran. Esta calculadora te permit
 [Calculadora de food cost gratuita](https://aichef.pro/calculadora-food-cost-restaurante)
 
 ### 2. Detector de alérgenos
-Cruza automáticamente tus ingredientes con los 14 alérgenos de declaración obligatoria en la UE. Imprime fichas claras o compártelas con el equipo de sala. Un gran apoyo para evitar sustos, aunque la responsabilidad final sobre los alérgenos siempre recae en el equipo. Ejemplo orientativo: un cliente celíaco te avisa diez minutos antes de pedir; imprimes la ficha del plato adaptado y la llevas a la mesa en el momento.  
+Te ayuda con la revisión de los 14 alérgenos de declaración obligatoria en la UE, con validación final del cocinero. Imprime fichas claras o compártelas con el equipo de sala. Un gran apoyo para evitar sustos, aunque la responsabilidad final sobre los alérgenos siempre recae en el equipo. Ejemplo orientativo: un cliente celíaco te avisa diez minutos antes de pedir; imprimes la ficha del plato adaptado y la llevas a la mesa en el momento.  
 [Detector de alérgenos](https://aichef.pro/detector-alergenos-restaurante)
 
 ### 3. Generador de textos de carta

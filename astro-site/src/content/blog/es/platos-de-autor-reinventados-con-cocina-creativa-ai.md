@@ -1311,7 +1311,7 @@ wpId: 2313
 
 
 
-<p class="wp-block-paragraph">Las recetas incluyen puntos críticos de control, temperaturas de seguridad y tiempos de cocción validados. Además, <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">ID Alérgenos</a> identifica automáticamente posibles alérgenos en cada plato generado.</p>
+<p class="wp-block-paragraph">Las recetas incluyen puntos críticos de control, temperaturas de seguridad y tiempos de cocción validados. Además, <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">ID Alérgenos</a> propone la revisión de los 14 alérgenos en cada plato, con validación final del cocinero.</p>
 
 
 

@@ -53,7 +53,7 @@ El **escandallo** es la ficha técnica económica de cada plato: gramajes exacto
 
 Recalcular plato a plato con los precios de hoy es la única forma de saber qué platos han cruzado el umbral de rentabilidad y cuáles aguantan. Y no hablo de hacerlo una vez al año. Hablo de tener una herramienta que te permita actualizar el coste de un insumo y ver al instante cómo impacta en toda la carta. Si no tienes eso, estás cocinando a ciegas.
 
-Aquí es donde una [calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante) bien afinada te salva horas de Excel y errores de báscula. Y si además la conectas con un sistema que te recalcula los escandallos automáticamente cuando cambia un precio de compra, ya no estás apagando fuegos: estás gestionando el margen en tiempo real. Tengo un artículo completo sobre [cómo usar IA para escandallos en cocina profesional](https://aichef.pro/blog/escandallos-ia-cocina-profesional) donde explico el método paso a paso.
+Aquí es donde una [calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante) bien afinada te salva horas de Excel y errores de báscula. Y cuando cambia un precio de compra, revisas el escandallo con IA y el cocinero lo valida: así sigues el margen sin rehacer la hoja desde cero. Tengo un artículo completo sobre [cómo usar IA para escandallos en cocina profesional](https://aichef.pro/blog/escandallos-ia-cocina-profesional) donde explico el método paso a paso.
 
 ## Las tres palancas para proteger el margen sin espantar clientes
 

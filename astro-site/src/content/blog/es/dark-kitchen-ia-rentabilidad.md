@@ -20,7 +20,7 @@ faq:
   - q: "¿Cuánto cobran las plataformas de delivery?"
     a: "Las comisiones en España oscilan entre el 20% y el 35% por pedido. El porcentaje exacto depende del volumen de facturación, la exclusividad con la plataforma y la negociación. Es el coste más alto del modelo y puede llevarse más de un tercio del ticket, por lo que hay que diversificar y buscar canales propios."
   - q: "¿Ayuda la IA a que una dark kitchen sea más rentable?"
-    a: "Sí, atacando las tres fugas principales de margen: reducción de mermas mediante predicción de demanda, actualización automática de escandallos para mantener el food cost bajo control y optimización de la carta con datos reales de rentabilidad. No sustituye la gestión, pero puede convertir un margen del 8% en uno del 15% en pocos meses."
+    a: "Sí. Puedes revisar las mermas, actualizar el escandallo con IA cuando cambia un precio (la validación final es del cocinero) y ordenar la carta con los datos de rentabilidad que tú introduces. No sustituye la gestión."
 ---
 
 Sí, una dark kitchen puede ser rentable. Pero con márgenes netos que raramente superan el 15% si no tienes control absoluto de tus números. La promesa del dinero fácil es un mito: el ahorro en sala y local se esfuma en la comisión que te cobran las plataformas de delivery, que puede llegar al 35% de cada pedido. Lo que de verdad salva el negocio es la disciplina, la multi-marca y usar datos para no perder un euro en mermas o decisiones a ciegas.

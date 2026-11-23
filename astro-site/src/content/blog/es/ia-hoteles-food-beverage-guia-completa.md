@@ -12,7 +12,7 @@ faq:
   - q: "¿Qué es exactamente la gestión de F&B en hoteles?"
     a: "Es la administración de todos los puntos de venta de alimentos y bebidas de un hotel: restaurante, bar, room service, banquetes, buffet y minibar. A diferencia de un restaurante independiente, aquí gestionas entre 3 y 8 outlets simultáneos, cada uno con su propio margen, equipo y cliente. El objetivo es maximizar la rentabilidad del departamento manteniendo la calidad del servicio al huésped."
   - q: "¿Cómo reduce la inteligencia artificial el food cost en un hotel?"
-    a: "Lo reduce de tres formas principales: centraliza todos los escandallos en un maestro único para que un cambio de precio de proveedor se refleje automáticamente en todos los outlets; predice la demanda por ocupación y nacionalidad para producir justo lo necesario; y detecta desviaciones de stock en tiempo real para frenar mermas antes de que se acumulen. El rango objetivo pasa del 28-35% al 22-28%."
+    a: "Lo reduce de tres formas principales: centraliza los escandallos en un maestro único para que, cuando cambia el precio de un proveedor, revises el escandallo de cada outlet y el cocinero lo valide; predice la demanda por ocupación y nacionalidad para producir justo lo necesario; y detecta desviaciones de stock en tiempo real para frenar mermas antes de que se acumulen. El food cost objetivo lo marcas tú a partir de tus precios."
   - q: "¿Qué es el RevPASH y por qué importa en hotelería?"
     a: "El RevPASH (Revenue Per Available Seat Hour) mide el ingreso generado por cada asiento disponible en el restaurante por hora. Es el equivalente al RevPAR de habitaciones pero aplicado al comedor. Importa porque un restaurante con 80 sillas que solo se llena en el desayuno está desaprovechando capacidad. La IA identifica horas valle y sugiere acciones para maximizar la ocupación de asientos durante todo el día."
   - q: "¿Cómo funcionan los escandallos multi-outlet en un hotel?"
@@ -85,9 +85,9 @@ No es lo mismo un cóctel corporativo que una boda de sábado. El primero pide c
 
 El cálculo manual de un banquete para 350 personas es lento y propenso a errores. Una herramienta de escandallo con IA permite calcular el food cost de cada evento, desde 50 hasta 500 comensales, en minutos. Si el presupuesto del cliente no cubre el coste, la herramienta lo señala antes de firmar el contrato. Adiós a los banquetes que se cierran con margen negativo.
 
-### Escandallos escalables de forma automática
+### Escandallos que escalas con IA
 
-Un menú de banquete se compone de recetas que ya existen en el maestro del hotel. Al escalarlo a 200, 300 o 500 cubiertos, la IA recalcula automáticamente las cantidades de cada ingrediente, actualiza el coste según el precio de compra vigente y genera la lista de pedido al proveedor. Lo que antes llevaba una mañana entera de Excel se resuelve en segundos.
+Un menú de banquete se compone de recetas que ya existen en el maestro del hotel. Al escalarlo a 200, 300 o 500 cubiertos, la IA propone las cantidades de cada ingrediente y el coste según el precio de compra que introduces. El cocinero valida el escandallo y la lista de pedido al proveedor.
 
 ## Bares y minibar: margen alto, control estricto
 
@@ -111,13 +111,13 @@ El mayor agujero del F&B hotelero no está en un outlet concreto, sino en la dis
 
 ### El problema de las fichas duplicadas
 
-En un hotel con restaurante, room service, barra de snacks y banquetes, es habitual que el solomillo esté en cuatro fichas técnicas diferentes. Si el precio del proveedor sube un 8%, alguien tiene que actualizar manualmente cada ficha. Si se olvida una, ese outlet está vendiendo por debajo de coste sin saberlo. Un maestro de recetas centralizado resuelve esto de raíz: cambia el precio del ingrediente una sola vez y el food cost se recalcula automáticamente en todos los platos de todos los outlets.
+En un hotel con restaurante, room service, barra de snacks y banquetes, es habitual que el solomillo esté en cuatro fichas técnicas diferentes. Si el precio del proveedor sube un 8%, alguien tiene que actualizar manualmente cada ficha. Si se olvida una, ese outlet está vendiendo por debajo de coste sin saberlo. Un maestro de recetas centralizado resuelve esto de raíz: cambias el precio del ingrediente y revisas el food cost de los platos que lo llevan en cada outlet. El cocinero valida el escandallo.
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-hoteles-food-beverage-guia-completa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
 
 ### Consistencia de alérgenos y fichas técnicas
 
-La misma lógica aplica a alérgenos. Un plato debe declarar los mismos alérgenos en la carta del restaurante, en el menú de room service y en el bufé de banquetes. Con un sistema centralizado, cualquier modificación en la receta —cambio de marca de harina, por ejemplo— actualiza automáticamente la información de alérgenos en todos los puntos de venta. Esto no solo es eficiencia: es seguridad alimentaria y cumplimiento normativo.
+La misma lógica aplica a alérgenos. Un plato debe declarar los mismos alérgenos en la carta del restaurante, en el menú de room service y en el bufé de banquetes. Con un sistema centralizado, cualquier modificación en la receta —cambio de marca de harina, por ejemplo— revisas la información de alérgenos en todos los puntos de venta y el cocinero la valida. Esto no solo es eficiencia: es seguridad alimentaria y cumplimiento normativo.
 
 ## Los KPIs de F&B hotelero que la IA vigila por ti
 

@@ -65,7 +65,7 @@ Ejemplo con lomo de res: compras a $18,00 el kilo, pero al limpiar grasa y nervi
 
 Ignorar la merma es como aceptar que cada plato subsidia los recortes. En un restaurante con 100 servicios diarios, un error del 10 % en la merma de la proteína principal puede significar cientos de dólares (o soles, o pesos) al mes que no ves salir, pero salen.
 
-Para profundizar en cómo sistematizar este cálculo, te recomiendo leer [escandallos con IA en cocina profesional](https://aichef.pro/blog/escandallos-ia-cocina-profesional), donde explicamos cómo la tecnología aplica automáticamente los porcentajes de merma a cada ingrediente sin que tengas que hacer la cuenta a mano.
+Para profundizar en cómo sistematizar este cálculo, te recomiendo leer [escandallos con IA en cocina profesional](https://aichef.pro/blog/escandallos-ia-cocina-profesional), donde explicamos cómo anotas el porcentaje de merma de cada ingrediente y el cocinero valida la cuenta.
 
 
 

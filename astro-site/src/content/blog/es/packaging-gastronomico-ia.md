@@ -187,7 +187,7 @@ wpId: 2153
 
 
 
-<p class="wp-block-paragraph">Etiquetas NFC con información detallada sobre ingredientes y alérgenos que se actualiza automáticamente cuando cambian las recetas o proveedores. Esto garantiza que el personal siempre tenga acceso a la información más actualizada.</p>
+<p class="wp-block-paragraph">Etiquetas NFC con los ingredientes y la revisión de los 14 alérgenos. Cuando cambia la receta o el proveedor, actualizas la ficha y el cocinero la valida, para que sala trabaje con la información vigente.</p>
 
 
 
@@ -782,7 +782,7 @@ wpId: 2153
 
 
 
-<p class="wp-block-paragraph">Generar automáticamente listados de alérgenos para incluir en las etiquetas.</p>
+<p class="wp-block-paragraph">Preparar el listado de los 14 alérgenos, con validación final del cocinero, para incluirlo en las etiquetas.</p>
 
 
 

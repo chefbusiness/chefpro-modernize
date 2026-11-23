@@ -981,7 +981,7 @@ wpId: 2511
 
 
 
-<p class="wp-block-paragraph">Identifica automáticamente los <a href="https://aichef.pro/blog/alergenos" target="_blank">alérgenos potenciales</a> en cada preparación, esencial para cumplir normativas y proteger a tus comensales.</p>
+<p class="wp-block-paragraph">Propone la revisión de los 14 alérgenos, con validación final del cocinero, en cada preparación. La ficha la confirma quien cocina.</p>
 
 
 

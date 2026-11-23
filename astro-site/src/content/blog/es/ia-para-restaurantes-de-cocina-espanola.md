@@ -158,11 +158,11 @@ wpId: 2346
 
 
 
-<p class="wp-block-paragraph">La cocina española, rica en frutos secos, mariscos, gluten y lácteos, presenta desafíos significativos en la gestión de alérgenos. La normativa europea exige identificar 14 alérgenos obligatorios, y herramientas como <a href="https://aichef.pro/blog/alergenos" target="_blank">ID Alérgenos</a> automatizan este proceso crítico.</p>
+<p class="wp-block-paragraph">La cocina española, rica en frutos secos, mariscos, gluten y lácteos, presenta desafíos significativos en la gestión de alérgenos. La normativa europea exige identificar 14 alérgenos obligatorios, y herramientas como <a href="https://aichef.pro/blog/alergenos" target="_blank">ID Alérgenos</a> ayudan en la revisión de los 14 alérgenos, con validación final del cocinero.</p>
 
 
 
-<p class="wp-block-paragraph">Un sistema de <strong>IA para identificación de alérgenos</strong> puede analizar automáticamente los ingredientes de una paella mixta y generar:</p>
+<p class="wp-block-paragraph">La revisión de los 14 alérgenos de una paella mixta, con validación final del cocinero, puede dejar preparados:</p>
 
 
 
@@ -637,7 +637,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 
 
-<li><strong>ID Alérgenos:</strong> Identificación automática conforme a normativa UE</li>
+<li><strong>ID Alérgenos:</strong> Revisión de los 14 alérgenos con validación final del cocinero, conforme a la normativa de la UE</li>
 
 
 

@@ -167,7 +167,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph"><strong>1. Revisión de los 14 alérgenos con validación final del cocinero:</strong> Los algoritmos de IA pueden analizar listas de ingredientes y detectar automáticamente la presencia de los 14 alérgenos obligatorios, incluyendo derivados y nombres alternativos que podrían pasar desapercibidos en una revisión manual.</p>
+<p class="wp-block-paragraph"><strong>1. Revisión de los 14 alérgenos con validación final del cocinero:</strong> Los algoritmos de IA pueden analizar listas de ingredientes y proponer la revisión de los 14 alérgenos obligatorios, con validación final del cocinero, incluyendo derivados y nombres alternativos que podrían pasar desapercibidos en una revisión manual.</p>
 
 
 
@@ -217,7 +217,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph"><strong>Análisis inteligente de recetas:</strong> Introduce cualquier receta y el sistema identificará automáticamente todos los alérgenos presentes, incluyendo aquellos ocultos en ingredientes procesados o con nombres poco comunes.</p>
+<p class="wp-block-paragraph"><strong>Análisis inteligente de recetas:</strong> Introduce cualquier receta y el cocinero revisa los 14 alérgenos presentes, incluyendo aquellos ocultos en ingredientes procesados o con nombres poco comunes.</p>
 
 
 
@@ -828,7 +828,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">AI Chef Pro permite actualizar la información de ingredientes de forma centralizada. Cuando se modifica la composición de un ingrediente, el sistema recalcula automáticamente la información alergénica de todos los platos que lo utilizan, generando alertas si hay cambios significativos. Esto garantiza que la documentación siempre esté actualizada.</p>
+<p class="wp-block-paragraph">AI Chef Pro permite actualizar la información de ingredientes de forma centralizada. Cuando cambia la composición de un ingrediente, revisas la información de alérgenos de los platos que lo llevan y el cocinero valida la ficha.</p>
 
 
 
@@ -844,7 +844,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">El sistema genera automáticamente los iconos y símbolos necesarios para indicar alérgenos en cartas y menús, siguiendo los estándares más utilizados en el sector. También puede exportar la información en formatos compatibles con sistemas de cartas digitales y aplicaciones de pedidos.</p>
+<p class="wp-block-paragraph">Preparas los iconos y símbolos necesarios para indicar alérgenos en cartas y menús, siguiendo los estándares más utilizados en el sector. También puede exportar la información en formatos compatibles con sistemas de cartas digitales y aplicaciones de pedidos.</p>
 
 
 
