@@ -135,15 +135,24 @@ def check_marketing_page(entry, lang, path, is_alias=False):
     m = re.search(r'<link rel="canonical" href="([^"]+)"', h)
     check(bool(m) and m.group(1) == exp_canon,
           f'{path}: canonical {m.group(1) if m else None!r} != {exp_canon!r}')
-    # hreflang ×8 (7 idiomas + x-default)
-    n_hl = len(re.findall(r'hreflang="', h))
+    # hreflang ×8 (7 idiomas + x-default).
+    # La landing nativa de recetas usa Header.astro, y el selector de idioma
+    # también lleva hreflang en los <a>. Ahí se cuentan solo los <link rel="alternate">.
+    if path == '/recetas-ia-restaurantes':
+        n_hl = len(re.findall(r'rel="alternate" hreflang="', h))
+    else:
+        n_hl = len(re.findall(r'hreflang="', h))
     check(n_hl == 8, f'{path}: hreflang {n_hl} != 8')
     # sin noindex (páginas indexables; el noindex de staging va por cabecera)
     check('noindex' not in h, f'{path}: meta noindex inesperado')
-    # island montado + chunk servido
-    check('<astro-island' in h, f'{path}: sin astro-island')
-    mc = re.search(r'component-url="([^"]+)"', h)
-    check(bool(mc), f'{path}: sin component-url')
+    # /recetas-ia-restaurantes es landing nativa (el HTML ya trae el texto).
+    # El resto de la familia sigue en island.
+    if path != '/recetas-ia-restaurantes':
+        check('<astro-island' in h, f'{path}: sin astro-island')
+        mc = re.search(r'component-url="([^"]+)"', h)
+        check(bool(mc), f'{path}: sin component-url')
+    else:
+        mc = None
     if mc:
         cst, _, _ = curl(BASE + mc.group(1))
         check(cst == 200, f'{path}: chunk {mc.group(1)} HTTP {cst}')
