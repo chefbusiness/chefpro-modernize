@@ -65,6 +65,7 @@
     "v2_social_prefix": "Con la confianza de",
     "v2_social_chefs": "profesionales",
     "v2_social_count": "recetas, procesos y soluciones generadas",
+    "v2_agents_line": "75+ agentes de IA en 7 idiomas",
     "v2_title_prefix": "Crea, gestiona y haz crecer tu",
     "v2_title_suffix": "con",
     "v2_subtitle": "Automatiza recetas, food cost, mermas, cartas y marketing con 75+ agentes de IA diseñados para restaurantes y negocios de hostelería.",
@@ -288,13 +289,13 @@
     "use_case_label": "Caso de uso",
     "use_tool": "Usar Herramienta",
     "v2_business_eyebrow": "Herramientas de negocio · 6 agentes nativos de cocina",
-    "v2_business_title_prefix": "Reduce el coste de ingredientes hasta un",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "con herramientas pensadas para el pase.",
-    "v2_business_description": "Mermas, racionado, alérgenos, conversiones: las matemáticas del día a día en una cocina profesional, automatizadas.",
-    "v2_proof_label": "Dato real",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "de reducción media en el coste de ingredientes gracias a cálculos precisos de mermas",
+    "v2_business_title_prefix": "Controla el coste de los ingredientes",
+    "v2_business_title_highlight": "en el pase",
+    "v2_business_title_suffix": "con herramientas de cocina.",
+    "v2_business_description": "Mermas, racionado, alérgenos y conversiones: las cuentas del día a día en una cocina profesional.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Caso de uso",
     "v2_included_prefix": "Todas las herramientas incluidas desde el plan",
     "v2_included_suffix": "en adelante.",
@@ -394,7 +395,7 @@
       "mermas_gencal": {
         "name": "Mermas GenCal",
         "description": "Optimiza rendimientos y reduce desperdicios",
-        "preview": "Ahorra hasta 30% en costes de ingredientes con cálculos precisos",
+        "preview": "Te ayuda a calcular rendimientos y mermas de cada partida.",
         "v2_blurb": "Optimiza los rendimientos y reduce las mermas en cada mise en place, partida y servicio."
       },
       "id_alergenos": {
@@ -412,8 +413,8 @@
       "conversor_ing": {
         "name": "Conversor Ing",
         "description": "Convierte medidas y pesos al instante",
-        "preview": "Adapta recetas entre sistemas métricos sin errores",
-        "v2_blurb": "Adapta recetas entre sistemas de medida al instante, sin errores de conversión."
+        "preview": "Te ayuda a convertir unidades y cantidades de una receta.",
+        "v2_blurb": "Te ayuda a pasar unidades y cantidades de una receta a otro sistema de medida."
       },
       "calcula_pax": {
         "name": "Calcula Pax",
@@ -729,13 +730,13 @@
     "q2": "¿Puedo usar AI Chef Pro si soy principiante?",
     "a2": "¡Absolutamente! AI Chef Pro está diseñado para profesionales de todos los niveles. Nuestras herramientas incluyen explicaciones detalladas, técnicas paso a paso y coaching que te ayudarán a desarrollar tus habilidades gastronómicas.",
     "q3": "¿Cómo funciona el plan AI Chef Miembro?",
-    "a3": "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos mensuales con acceso a los 75+ agentes de IA. Cuando necesites más, puedes pasar a AI Chef Premium Pro (25 €/mes, 85.000 créditos) o superior. Sin permanencia: cambias de plan o cancelas cuando quieras.",
+    "a3": "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos mensuales con acceso a los 75+ agentes de IA. Cuando necesites más, puedes pasar a AI Chef Premium Pro (25 €/mes, 85.000 créditos) o superior. Los planes mensuales no tienen permanencia: cambias de plan o cancelas cuando quieras.",
     "q4": "¿Las recetas se adaptan a diferentes tamaños de porción?",
     "a4": "Sí, todas nuestras herramientas incluyen cálculo automático de porciones. Puedes ajustar cualquier receta para 1 persona o para 1000 comensales, y nuestro sistema calculará automáticamente las cantidades exactas de cada ingrediente.",
     "q5": "¿Incluye soporte para restricciones alimentarias?",
-    "a5": "Definitivamente. AI Chef Pro incluye identificación automática de alérgenos, adaptación para dietas veganas, vegetarianas, sin gluten, keto y muchas otras restricciones. También incluye análisis nutricional completo.",
+    "a5": "Definitivamente. Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya. También adapta propuestas para dietas veganas, vegetarianas, sin gluten, keto y otras restricciones, e incluye análisis nutricional.",
     "q6": "¿Puedo cancelar mi suscripción en cualquier momento?",
-    "a6": "Sí, puedes cancelar tu suscripción en cualquier momento desde tu panel de usuario. No hay penalizaciones ni tarifas de cancelación. Si cancelas, mantendrás acceso hasta el final de tu período de facturación actual."
+    "a6": "Sí, los planes mensuales se cancelan cuando quieras desde tu panel de usuario. No hay penalizaciones ni tarifas de cancelación en esos planes. Si cancelas, mantienes el acceso hasta el final del periodo que ya has pagado."
   },
   "footer": {
     "description": "Suite de herramientas de IA para profesionales gastronómicos",
@@ -1108,14 +1109,14 @@
   },
   "seo": {
     "title": "Agentes de IA para chefs y restaurantes | AI Chef Pro",
-    "description": "Agentes de IA para chefs y restaurantes: 75+ especialistas en food cost, escandallos, recetas y carta. Empieza hoy desde 10 € al mes, sin permanencia.",
+    "description": "Agentes de IA para chefs y restaurantes: 75+ especialistas en food cost, escandallos, recetas y carta. Empieza hoy desde 10 € al mes. Los planes mensuales no tienen permanencia.",
     "keywords": "agentes de ia para chefs, agentes de ia para restaurantes, ia hostelería, food cost ia, escandallos ia, ai chef pro",
     "og_image_alt": "Agentes de IA para chefs y restaurantes | AI Chef Pro"
   },
   "pages": {
     "index": {
       "seo_title": "Agentes de IA para chefs y restaurantes | AI Chef Pro",
-      "seo_description": "Agentes de IA para chefs y restaurantes: 75+ especialistas en food cost, escandallos, recetas y carta. Empieza hoy desde 10 € al mes, sin permanencia.",
+      "seo_description": "Agentes de IA para chefs y restaurantes: 75+ especialistas en food cost, escandallos, recetas y carta. Empieza hoy desde 10 € al mes. Los planes mensuales no tienen permanencia.",
       "seo_keywords": "agentes de ia para chefs, agentes de ia para restaurantes, ia hostelería, food cost ia, escandallos ia, ai chef pro"
     },
     "mentoria_online": {
@@ -1180,7 +1181,7 @@
         "<h2>4. Uso Permitido</h2><p>Puedes utilizar AI Chef Pro para fines profesionales gastronómicos legítimos. No está permitido el uso para actividades ilegales, spam, o cualquier actividad que pueda dañar nuestros servicios o a otros usuarios.</p>",
         "<h2>5. Propiedad Intelectual</h2><p>Todos los contenidos, marcas, logos y tecnologías de AI Chef Pro son propiedad de sus titulares. Las recetas y contenidos generados por IA pueden ser utilizados por el usuario según su suscripción.</p>",
         "<h2>6. Suscripciones y Pagos</h2><p>Ofrecemos diferentes planes de suscripción con distintas funcionalidades. Los pagos son procesados de forma segura y las renovaciones son automáticas según el plan elegido.</p>",
-        "<h2>7. Garantía y devoluciones</h2><p>Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a <strong>info@aichef.pro</strong>. Puedes cancelar la suscripción de la app cuando quieras desde tu panel, sin permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso por email a <strong>info@aichef.pro</strong>.</p>",
+        "<h2>7. Garantía y devoluciones</h2><p>Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a <strong>info@aichef.pro</strong>. Los planes mensuales se cancelan cuando quieras desde tu panel, sin permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso por email a <strong>info@aichef.pro</strong>.</p>",
         "<h2>8. Limitaciones y Responsabilidades</h2><p>AI Chef Pro se proporciona 'tal como está'. No garantizamos que el servicio esté libre de errores o interrupciones. Nuestra responsabilidad se limita al importe pagado por el servicio.</p>",
         "<h2>9. Terminación</h2><p>Podemos suspender o terminar tu cuenta si incumples estos términos. Puedes cancelar tu suscripción en cualquier momento desde tu panel de usuario.</p>",
         "<h2>10. Modificaciones</h2><p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Te notificaremos sobre cambios importantes por email o mediante avisos en la plataforma.</p>",
@@ -1220,7 +1221,7 @@
       "tagline": "La herramienta que usan más de {{userCount}} profesionales de la gastronomía.",
       "cta_primary": "Empezar a ahorrar",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Desde 10 € al mes · Sin permanencia · Acceso inmediato"
+      "no_card": "Desde 10 € al mes · Planes mensuales sin permanencia · Acceso inmediato"
     },
     "results": [
       {
@@ -1357,7 +1358,7 @@
       },
       {
         "question": "¿Funciona para restaurantes pequeños o solo para grandes grupos?",
-        "answer": "Funciona para cualquier tamaño. Desde el restaurante familiar con 40 cubiertos hasta grupos con 20 locales. El plan Miembro por 10 € al mes es ideal para empezar sin permanencia."
+        "answer": "Funciona para cualquier tamaño. Desde el restaurante familiar con 40 cubiertos hasta grupos con 20 locales. El plan Miembro por 10 € al mes es un plan mensual, sin permanencia."
       }
     ],
     "cta_section": {
@@ -1386,7 +1387,7 @@
       "tagline": "Coste del plato · Ficha técnica · Alérgenos · Carta · Ingeniería de menú",
       "cta_primary": "Empezar ahora",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Planes de créditos desde 10 € al mes · Sin permanencia"
+      "no_card": "Planes de créditos desde 10 € al mes · Planes mensuales sin permanencia"
     },
     "results": [],
     "tools_section": {
@@ -1502,7 +1503,7 @@
     ],
     "cta_section": {
       "title": "Lleva la IA para restaurantes a tu cocina",
-      "subtitle": "Planes de créditos desde 10 € al mes, sin permanencia. Escandallo, ficha, alérgenos y carta en la misma suite.",
+      "subtitle": "Planes de créditos desde 10 € al mes. Los planes mensuales no tienen permanencia. Escandallo, ficha, alérgenos y carta en la misma suite.",
       "primary": "Empezar ahora",
       "secondary": "Ver planes y precios"
     },
@@ -1521,7 +1522,7 @@
       "tagline": "Diseña tu carta · Optimiza precios · Gestiona alérgenos · Renueva por temporada",
       "cta_primary": "Crear mi carta",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin permanencia · Cancela cuando quieras"
+      "no_card": "Planes mensuales sin permanencia"
     },
     "results": [
       {
@@ -1630,7 +1631,7 @@
         "Genera una carta completa en horas, no en semanas",
         "Identifica los platos estrella que maximizan margen y rotación",
         "Escribe descripciones que generan deseo y aumentan el ticket",
-        "Gestiona los 14 alérgenos legales sin errores ni omisiones",
+        "Te ayuda a revisar los 14 alérgenos de la carta; la validación final es tuya",
         "Renueva la carta por temporadas sin partir desde cero",
         "Adapta el menú a distintos idiomas para turistas internacionales"
       ]
@@ -1687,7 +1688,7 @@
       "tagline": "Redes sociales · Google My Business · Reseñas · Campañas · Email marketing",
       "cta_primary": "Empezar ahora",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin permanencia · Cancela cuando quieras"
+      "no_card": "Planes mensuales sin permanencia"
     },
     "results": [
       {
@@ -1853,7 +1854,7 @@
       "tagline": "Escandallos · Cartas · Alérgenos · Marketing gastronómico · Control de costes",
       "cta_primary": "Probar AI Chef Pro",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin permanencia · Cancela cuando quieras"
+      "no_card": "Planes mensuales sin permanencia"
     },
     "results": [
       {
@@ -2046,7 +2047,7 @@
   "landingSoftwareGestion": {
     "seo": {
       "title": "Software Gestión de Cocina con IA | AI Chef Pro",
-      "description": "Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. Más de 5.000 restaurantes ya lo usan. Empieza hoy.",
+      "description": "Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. 75+ agentes de IA en 7 idiomas. Empieza hoy.",
       "keywords": "software gestión cocina, gestión restaurante IA, programa gestión hostelería, software cocina profesional, gestión inventario restaurante, food cost IA"
     },
     "breadcrumb": "Software Gestión de Cocina con IA",
@@ -2057,7 +2058,7 @@
       "tagline": "Ahorra hasta 3 horas diarias en gestión de cocina.",
       "cta_primary": "Probar ahora",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Desde 10 € al mes · Sin permanencia · Acceso inmediato"
+      "no_card": "Desde 10 € al mes · Planes mensuales sin permanencia · Acceso inmediato"
     },
     "results": [
       {
@@ -2073,8 +2074,8 @@
         "label": "Agentes de IA"
       },
       {
-        "metric": "30%",
-        "label": "Reducción de costes media"
+        "metric": "7",
+        "label": "Idiomas"
       }
     ],
     "comparison": {
@@ -2211,7 +2212,7 @@
     },
     "pricing_section": {
       "title": "Software de gestión de cocina con IA desde 10 €",
-      "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Sin permanencia.",
+      "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Los planes mensuales no tienen permanencia.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -2405,7 +2406,7 @@
     },
     "pricing_section": {
       "title": "Accede al generador de recetas con IA desde 10 €",
-      "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Sin permanencia.",
+      "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Los planes mensuales no tienen permanencia.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {

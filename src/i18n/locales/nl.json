@@ -62,6 +62,7 @@
     "v2_social_prefix": "Vertrouwd door",
     "v2_social_chefs": "professionals",
     "v2_social_count": "recepten, processen & oplossingen gegenereerd",
+    "v2_agents_line": "75+ AI-agents in 7 talen",
     "v2_title_prefix": "Creëer, beheer en laat uw",
     "v2_title_suffix": "groeien met",
     "v2_subtitle": "Automatiseer recepten, foodcost, derving, menu’s en marketing met 75+ AI-agenten voor restaurants en horecabedrijven.",
@@ -442,13 +443,13 @@
     "explore_app": "Verken de app",
     "preview_label": "Voorbeeld",
     "v2_business_eyebrow": "Bedrijfstools · 6 keukengerichte agents",
-    "v2_business_title_prefix": "Verlaag uw ingrediëntenkosten tot wel",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "met tools gebouwd voor de pas.",
-    "v2_business_description": "Verspilling, portionering, allergenen, omrekeningen: de dagelijkse berekeningen van een professionele keuken, geautomatiseerd.",
-    "v2_proof_label": "Bewijs",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "gemiddelde verlaging van ingrediëntenkosten dankzij nauwkeurige verspillingsberekeningen",
+    "v2_business_title_prefix": "Houd de kosten van ingrediënten in de hand",
+    "v2_business_title_highlight": "op de passe",
+    "v2_business_title_suffix": "met keukengereedschap.",
+    "v2_business_description": "Verlies, porties, allergenen en omrekeningen: de dagelijkse cijfers in een professionele keuken.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Toepassing",
     "v2_included_prefix": "Alle tools inbegrepen vanaf het",
     "v2_included_suffix": "abonnement en hoger.",
@@ -565,7 +566,7 @@
       "mermas_gencal": {
         "name": "Mermas GenCal",
         "description": "Optimaliseert opbrengsten en vermindert verspilling",
-        "preview": "Bespaart tot 30% op ingrediëntenkosten met precieze berekeningen"
+        "preview": "Helpt u de opbrengst en het verlies van elke mise en place te berekenen."
       },
       "id_alergenos": {
         "name": "ID Allergenen",
@@ -580,7 +581,7 @@
       "conversor_ing": {
         "name": "Convertor Ing",
         "description": "Converteert maten en gewichten direct",
-        "preview": "Past recepten aan tussen metrische systemen zonder fouten"
+        "preview": "Helpt u eenheden en hoeveelheden van een recept om te rekenen."
       },
       "calcula_pax": {
         "name": "Calcula Pax",
@@ -847,7 +848,7 @@
       "mermas_gencal": {
         "name": "Mermas GenCal",
         "description": "Optimaliseert opbrengsten en vermindert verspilling",
-        "preview": "Bespaart tot 30% op ingrediëntenkosten met precieze berekeningen",
+        "preview": "Helpt u de opbrengst en het verlies van elke mise en place te berekenen.",
         "v2_blurb": "Optimaliseer opbrengsten en verminder verspilling in elke mise-en-place, post en service."
       },
       "id_alergenos": {
@@ -865,8 +866,8 @@
       "conversor_ing": {
         "name": "Convertor Ing",
         "description": "Converteert maten en gewichten direct",
-        "preview": "Past recepten aan tussen metrische systemen zonder fouten",
-        "v2_blurb": "Pas recepten direct aan tussen metrische systemen, zonder omrekenfouten."
+        "preview": "Helpt u eenheden en hoeveelheden van een recept om te rekenen.",
+        "v2_blurb": "Helpt u eenheden en hoeveelheden van een recept naar een ander maatsysteem om te zetten."
       },
       "calcula_pax": {
         "name": "Calcula Pax",
@@ -1182,13 +1183,13 @@
     "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
     "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
     "q3": "Hoe werkt het AI Chef Lid-plan?",
-    "a3": "Het AI Chef Lid-plan kost €10 per maand en omvat 10.000 maandelijkse credits met toegang tot de 75+ AI-agenten. Wanneer u meer nodig heeft, kunt u overstappen naar AI Chef Premium Pro (€25/maand, 85.000 credits) of hoger. Maandelijks opzegbaar: u wijzigt uw plan of annuleert wanneer u wilt.",
+    "a3": "Het AI Chef Lid-plan kost €10 per maand en omvat 10.000 maandelijkse credits met toegang tot de 75+ AI-agenten. Wanneer u meer nodig heeft, kunt u overstappen naar AI Chef Premium Pro (€25/maand, 85.000 credits) of hoger. Maandabonnementen zonder verplichting: u wijzigt uw plan of annuleert wanneer u wilt.",
     "q4": "Passen recepten zich aan aan verschillende portiegroottes?",
     "a4": "Ja, al onze tools bevatten automatische portieberekening. U kunt elk recept aanpassen voor 1 persoon of voor 1000 gasten, en ons systeem berekent automatisch de exacte hoeveelheden van elk ingrediënt.",
     "q5": "Bevat het ondersteuning voor voedingsbeperkingen?",
-    "a5": "Zeker. AI Chef Pro bevat automatische allergeenidentificatie, aanpassing voor veganistische, vegetarische, glutenvrije, keto en vele andere beperkingen. Het bevat ook volledige voedingsanalyse.",
+    "a5": "Ja. Het helpt u de 14 allergenen van elk recept na te kijken; de eindcontrole is aan u. Het past voorstellen ook aan voor veganistische, vegetarische, glutenvrije, keto- en andere beperkingen, en het bevat een voedingsanalyse.",
     "q6": "Kan ik mijn abonnement op elk moment opzeggen?",
-    "a6": "Ja, u kunt uw abonnement op elk moment opzeggen via uw gebruikerspaneel. Er zijn geen boetes of opzegkosten. Als u opzegt, behoudt u toegang tot het einde van uw huidige factureringsperiode."
+    "a6": "Ja. Maandabonnementen zeg je op wanneer u wilt, vanuit uw account. Op die abonnementen zijn er geen boetes. Als u opzegt, houdt u toegang tot het einde van de periode die u al hebt betaald."
   },
   "footer": {
     "description": "AI-tools suite voor culinaire professionals",
@@ -1437,7 +1438,7 @@
         "<h2>4. Toegestaan Gebruik</h2><p>U mag AI Chef Pro gebruiken voor legitieme professionele gastronomische doeleinden. Gebruik voor illegale of schadelijke activiteiten is verboden.</p>",
         "<h2>5. Intellectueel Eigendom</h2><p>Alle inhoud, merken en technologieën van AI Chef Pro zijn eigendom van hun respectieve houders. Door AI gegenereerde recepten kunnen worden gebruikt volgens uw abonnement.</p>",
         "<h2>6. Abonnementen en Betalingen</h2><p>Wij bieden verschillende abonnementsplannen. Betalingen worden veilig verwerkt en verlengingen zijn automatisch.</p>",
-        "<h2>7. Garantie en terugbetaling</h2><p>Betaalde gidsen, kits en packs die u in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via <strong>info@aichef.pro</strong>. U kunt het app-abonnement op elk moment opzeggen in uw account, zonder contractduur, en de toegang blijft tot het einde van de periode die u al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval per e-mail via <strong>info@aichef.pro</strong>.</p>",
+        "<h2>7. Garantie en terugbetaling</h2><p>Betaalde gidsen, kits en packs die u in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via <strong>info@aichef.pro</strong>. Maandabonnementen zegt u op wanneer u wilt in uw account, zonder verplichting, en de toegang blijft tot het einde van de periode die u al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval per e-mail via <strong>info@aichef.pro</strong>.</p>",
         "<h2>8. Beperkingen en Aansprakelijkheid</h2><p>AI Chef Pro wordt 'zoals het is' geleverd. Wij garanderen niet dat de dienst foutloos of ononderbroken is.</p>",
         "<h2>9. Beëindiging</h2><p>Wij kunnen uw account opschorten of beëindigen bij schending van deze voorwaarden. U kunt uw abonnement op elk moment opzeggen.</p>",
         "<h2>10. Wijzigingen</h2><p>Wij behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Wij informeren u over belangrijke wijzigingen.</p>",
@@ -1477,7 +1478,7 @@
       "tagline": "Het tool dat meer dan {{userCount}} gastronomie-professionals gebruiken.",
       "cta_primary": "beginnen met besparen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Geen verplichtingen · Directe toegang"
+      "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
     },
     "results": [
       {
@@ -1643,7 +1644,7 @@
       "tagline": "Kosten beheersen · Menu ontwerpen · Marketing automatiseren · Verspilling verminderen",
       "cta_primary": "Nu beginnen",
       "cta_secondary": "Plannen en prijzen bekijken",
-      "no_card": "Geen verplichtingen · Zeg op wanneer u wilt"
+      "no_card": "Maandabonnementen zonder verplichting"
     },
     "results": [
       {
@@ -1655,8 +1656,8 @@
         "label": "minder tijd voor nieuwe gerechtontwikkeling"
       },
       {
-        "metric": "30%",
-        "label": "vermindering van voedselverspilling"
+        "metric": "7",
+        "label": "Talen"
       },
       {
         "metric": "75+",
@@ -1785,7 +1786,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag met AI-tools voor uw restaurant",
-      "subtitle": "Geen verplichtingen · Zeg op wanneer u wilt. Directe toegang tot 75+ AI-agenten voor gastronomie en horeca.",
+      "subtitle": "Maandabonnementen zonder verplichting. Directe toegang tot 75+ AI-agenten voor gastronomie en horeca.",
       "primary": "Nu uitproberen",
       "secondary": "Alle plannen bekijken"
     },
@@ -1809,7 +1810,7 @@
       "tagline": "Ontwerp uw menu · Optimaliseer prijzen · Beheer allergenen · Vernieuw elk seizoen",
       "cta_primary": "Mijn menu aanmaken",
       "cta_secondary": "Plannen en prijzen bekijken",
-      "no_card": "Geen verplichtingen · Zeg op wanneer u wilt"
+      "no_card": "Maandabonnementen zonder verplichting"
     },
     "results": [
       {
@@ -1975,7 +1976,7 @@
       "tagline": "Social media · Google My Business · Beoordelingen · Campagnes · E-mailmarketing",
       "cta_primary": "Nu starten",
       "cta_secondary": "Plannen en prijzen bekijken",
-      "no_card": "Geen verplichtingen · Zeg op wanneer u wilt"
+      "no_card": "Maandabonnementen zonder verplichting"
     },
     "results": [
       {
@@ -2141,7 +2142,7 @@
       "tagline": "Food Cost · Menu's · Allergenen · Gastronomie Marketing · Kostenbeheersing",
       "cta_primary": "AI Chef Pro proberen",
       "cta_secondary": "Plannen en prijzen bekijken",
-      "no_card": "Geen verplichtingen · Zeg op wanneer u wilt"
+      "no_card": "Maandabonnementen zonder verplichting"
     },
     "results": [
       {
@@ -2334,7 +2335,7 @@
   "landingSoftwareGestion": {
     "seo": {
       "title": "AI Keukenbeheersoftware | AI Chef Pro",
-      "description": "AI-gestuurde keukenbeheersoftware: food cost, inventaris, recepten en allergenen op één platform. Meer dan 5.000 restaurants gebruiken het al. Start vandaag.",
+      "description": "AI-gestuurde keukenbeheersoftware: food cost, inventaris, recepten en allergenen op één platform. 75+ AI-agents in 7 talen. Start vandaag.",
       "keywords": "keukenbeheersoftware, restaurant management AI, horecasoftware, professionele keukensoftware, restaurantinventaris, food cost AI"
     },
     "breadcrumb": "AI Keukenbeheersoftware",
@@ -2345,7 +2346,7 @@
       "tagline": "Bespaar dagelijks tot 3 uur op keukenbeheer.",
       "cta_primary": "Nu proberen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Geen verplichtingen · Directe toegang"
+      "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
     },
     "results": [
       {
@@ -2361,8 +2362,8 @@
         "label": "AI-agenten"
       },
       {
-        "metric": "30%",
-        "label": "Gemiddelde kostenreductie"
+        "metric": "7",
+        "label": "Talen"
       }
     ],
     "comparison": {
@@ -2533,7 +2534,7 @@
   "landingRecetas": {
     "seo": {
       "title": "AI Recepten voor Restaurants | AI Chef Pro",
-      "description": "Genereer professionele recepten met AI: 27 wereldkeukens, seizoensmenus, technische fiches en automatisch schalen. Al gebruikt door 5.000+ restaurants.",
+      "description": "Genereer professionele recepten met AI: 27 wereldkeukens, seizoensmenus, technische fiches en automatisch schalen. 75+ AI-agents in 7 talen.",
       "keywords": "AI recepten restaurants, professionele receptengenerator, AI chef recepten, seizoensmenu AI, technische receptfiches, 27 wereldkeukens"
     },
     "breadcrumb": "AI Recepten voor Restaurants",
@@ -2544,7 +2545,7 @@
       "tagline": "Van concept tot gerecht in minuten, niet in uren.",
       "cta_primary": "Nu proberen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Geen verplichtingen · Directe toegang"
+      "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
     },
     "results": [
       {
@@ -2552,16 +2553,16 @@
         "label": "Wereldkeukens"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Actieve restaurants"
+        "metric": "12",
+        "label": "Uit Europa"
       },
       {
-        "metric": "80%",
-        "label": "Minder tijd aan menuontwikkeling"
+        "metric": "11",
+        "label": "Uit Latijns-Amerika"
       },
       {
-        "metric": "75+",
-        "label": "AI-agenten"
+        "metric": "4",
+        "label": "Uit Azië"
       }
     ],
     "comparison": {
@@ -2706,7 +2707,7 @@
       },
       {
         "question": "Welke wereldkeukens omvat AI Chef Pro?",
-        "answer": "AI Chef Pro omvat recepten en technieken uit 27 keukens: Frans, Italiaans, Japans, Spaans, Peruaans, Mexicaans, Grieks, Marokkaans, Thais, Indisch, Chinees en meer. Elk met authentieke technieken en vocabulaire."
+        "answer": "AI Chef Pro omvat recepten en technieken uit 27 keukens: Frans, Italiaans, Japans, Spaans, Peruaans, Mexicaans, Grieks, Portugees, Thais, Indisch, Chinees en meer. Elk met authentieke technieken en vocabulaire."
       },
       {
         "question": "Kan ik technische fiches genereren met AI Chef Pro?",
@@ -2719,7 +2720,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag nog met AI-recepten voor uw restaurant",
-      "subtitle": "Meer dan {{userCount}} chefs en restauranthouders gebruiken AI Chef Pro al om in minuten professionele recepten te maken.",
+      "subtitle": "75+ AI-agents in 7 talen",
       "primary": "Nu proberen",
       "secondary": "Alle plannen bekijken"
     }
@@ -4243,7 +4244,7 @@
       "title": "Maak complete content met AI Chef Pro",
       "subtitle": "De ideenkalender is gratis. Met AI Chef Pro Premium genereert u complete teksten publicatieklaar, met voor elk netwerk geoptimaliseerde hashtags.",
       "cta": "Premium Plan bekijken",
-      "note": "Geen verplichting · Annuleer wanneer u wilt",
+      "note": "Maandabonnementen zonder verplichting",
       "plans": [
         {
           "name": "Lid",

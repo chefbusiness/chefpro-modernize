@@ -31,7 +31,6 @@ import {
 } from '../../lib/use-cases';
 import { getProductsByIds } from '../../../../src/data/products-catalog';
 import { linkifyHtml } from '../../lib/linkify-use-case';
-import SocialCountLive from '../SocialCountLive.astro';
 import { appCtaUrl } from '../../lib/app-url';
 
 interface Props { lang?: Locale; uc: UseCase }
@@ -261,21 +260,6 @@ const CARD_HEADER = 'flex flex-col space-y-1.5 p-6';
 const CARD_TITLE = 'text-2xl font-semibold leading-none tracking-tight';
 const CARD_CONTENT = 'p-6 pt-0';
 
-// ── HeroSocialProof (inline) — getDynamicCount() VERBATIM ──
-function getDynamicCount(): number {
-  const BASE_DATE = new Date('2026-02-12');
-  const BASE_COUNT = 1048149; // 2026-09-21: +1.000.000 (ver lib/social-counts.ts)
-  const today = new Date();
-  const diffTime = today.getTime() - BASE_DATE.getTime();
-  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-  let total = BASE_COUNT;
-  for (let i = 1; i <= diffDays; i++) {
-    const seed = (i * 7 + 13) % 21;
-    total += 60 + seed;
-  }
-  return total;
-}
-const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
 const socialAvatars = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // ── Derivados (mismos cálculos que UseCasePage.tsx) ──
@@ -409,17 +393,9 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                   </span>
                 ))}
               </div>
-              <div class="flex flex-col items-center gap-0.5">
-                <div class="flex items-center gap-0.5">
-                  {[0, 1, 2, 3, 4].map((i) => (
-                    <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`} />
-                  ))}
-                </div>
-                <span class="text-sm text-muted-foreground">
-                  <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
-                  {t(lang, 'hero.social_proof_label')}
-                </span>
-              </div>
+              <p class="text-sm font-medium text-foreground text-center text-balance">
+                {t(lang, 'hero.v2_agents_line')}
+              </p>
             </div>
 
             <div class={`${BADGE_DEFAULT} mb-6 text-sm px-4 py-2`}>{content.badge}</div>

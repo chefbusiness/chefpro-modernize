@@ -9936,7 +9936,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack HACCP + ID Allergeni ci hanno trasformato la sicurezza alimentare. Siamo passati da carta stampata sparsa a 19 registri digitali con HACCP integrato per turno e allergeni automatici per ricetta. L'ispezione sanitaria è impeccabile e il rischio legale è sceso a zero.",
+    "testimonialQuote": "Pack HACCP + ID Allergeni ci hanno trasformato la sicurezza alimentare. Siamo passati da carta stampata sparsa a 19 registri digitali con HACCP integrato per turno e controllo dei 14 allergeni, con la verifica finale del cuoco per ricetta. L'ispezione sanitaria è impeccabile e il rischio legale è sceso a zero.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "F&B Director, hotel 5 stelle con 4 punti vendita",
     "faqTitle": "Domande Frequenti sull'HACCP con IA",
@@ -9966,8 +9966,8 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
     "ctaSubtitle": "Inizia con l'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti.",
     "seo": {
       "title": "Come Gestire l'HACCP Digitale con IA: Modelli, Allergeni e Tracciabilità | AI Chef Pro",
-      "description": "Suite IA per HACCP digitale: modelli Excel, allergeni automatici, tracciabilità ISO. Inizia oggi.",
-      "keywords": "HACCP digitale IA, modelli HACCP, allergeni automatici, ISO 22000 IA, sicurezza alimentare IA, HACCP digitale",
+      "description": "Suite IA per HACCP digitale: modelli Excel, controllo dei 14 allergeni, con la verifica finale del cuoco, tracciabilità ISO. Inizia oggi.",
+      "keywords": "HACCP digitale IA, modelli HACCP, controllo dei 14 allergeni, con la verifica finale del cuoco, ISO 22000 IA, sicurezza alimentare IA, HACCP digitale",
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Personalizzato per la Tua Attività dal Primo Minuto",
@@ -10609,14 +10609,14 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Documentare 28 piatti con scheda tecnica professionale ci richiedeva 2 settimane. Cucina Creativa fornisce già ogni scheda completa in pochi minuti: ingredienti, tecnica, allergeni automatici, costo e storytelling per la sala. Ora qualsiasi cuoco replica con coerenza e quando ispezionano abbiamo tutto tracciato.",
+    "testimonialQuote": "Documentare 28 piatti con scheda tecnica professionale ci richiedeva 2 settimane. Cucina Creativa fornisce già ogni scheda completa in pochi minuti: ingredienti, tecnica, controllo dei 14 allergeni, con la verifica finale del cuoco, costo e storytelling per la sala. Ora qualsiasi cuoco replica con coerenza e quando ispezionano abbiamo tutto tracciato.",
     "testimonialAuthor": "Carla Mendoza",
     "testimonialRole": "Capo cuoca, ristorante casual con 3 punti",
     "faqTitle": "Domande Frequenti sulle Schede Tecniche con IA",
     "faqs": [
       {
         "q": "Cosa include una scheda tecnica professionale?",
-        "a": "Ingredienti con grammatura esatta, tecnica passo passo, allergeni automatici, food cost %, costo per porzione, conservazione, presentazione, abbinamento suggerito e descrizione per la sala."
+        "a": "Ingredienti con grammatura esatta, tecnica passo passo, controllo dei 14 allergeni, con la verifica finale del cuoco, food cost %, costo per porzione, conservazione, presentazione, abbinamento suggerito e descrizione per la sala."
       },
       {
         "q": "Come gestisce gli allergeni automaticamente?",
@@ -10639,8 +10639,8 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
     "ctaSubtitle": "Inizia con l'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti.",
     "seo": {
       "title": "Schede Tecniche con IA: Allergeni, Costo e Storytelling",
-      "description": "Suite IA per schede tecniche: allergeni automatici, costo integrato, foto dell'impiattamento e storytelling. Inizia oggi.",
-      "keywords": "schede tecniche IA, scheda tecnica piatto, allergeni automatici, costo per porzione, scheda tecnica ristorante",
+      "description": "Suite IA per schede tecniche: controllo dei 14 allergeni, con la verifica finale del cuoco, costo integrato, foto dell'impiattamento e storytelling. Inizia oggi.",
+      "keywords": "schede tecniche IA, scheda tecnica piatto, controllo dei 14 allergeni, con la verifica finale del cuoco, costo per porzione, scheda tecnica ristorante",
       "ogImage": "https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg"
     },
     "personalizationTitle": "Personalizzato alla Tua Cucina dal Primo Minuto",

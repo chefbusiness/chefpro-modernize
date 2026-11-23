@@ -42,26 +42,26 @@ const appUrl = `${plataforma(lang)}${GUEST_PATH[lang] ?? '/invitado'}?utm_source
 // desde 10 €») y el cifra pública unificada: 75+ agentes de IA en todos los idiomas.
 const COPY = {
   en: {
-    heading: 'Over 75 culinary AI agents working for your business',
+    heading: '75+ culinary AI agents for the day-to-day in your kitchen',
     body:
       'Recipe costing, menus, HACCP, food marketing and a lot more. Plans for every budget, from €10/month.',
     cta: 'Discover AI Chef Pro',
   },
   it: {
-    heading: '75+ agenti IA culinari al lavoro per la tua attività',
+    heading: '75+ agenti IA culinari per il lavoro di ogni giorno in cucina',
     body:
       'Food cost, menu, HACCP, marketing gastronomico e molto altro. Piani per tutte le tasche, da 10 € al mese.',
     cta: 'Scopri AI Chef Pro',
   },
   fr: {
-    heading: "75+ agents IA culinaires au service de votre établissement",
+    heading: "75+ agents IA culinaires pour le quotidien de votre cuisine",
     body:
       "Fiches techniques, cartes, HACCP, marketing gastronomique et bien plus encore. Des formules pour tous les budgets, à partir de 10 €/mois.",
     cta: 'Découvrir AI Chef Pro',
   },
   // 2026-08-18 — blog DE (Sie-Form). Cifra pública: 75+ KI-Agenten.
   de: {
-    heading: '75+ kulinarische KI-Agenten im Einsatz für Ihren Betrieb',
+    heading: '75+ kulinarische KI-Agenten für den Alltag in Ihrer Küche',
     body:
       'Kalkulation, Speisekarten, HACCP, Gastro-Marketing und vieles mehr. Tarife für jedes Budget, ab 10 €/Monat.',
     cta: 'AI Chef Pro entdecken',
@@ -69,19 +69,19 @@ const COPY = {
   // 2026-08-19 — blog PT (PT-PT: «ementas», no «cardápios»; «carteiras»).
   // Cifra pública: 75+ agentes de IA.
   pt: {
-    heading: '75+ agentes de IA culinários ao serviço do seu negócio',
+    heading: '75+ agentes de IA culinários para o dia a dia da sua cozinha',
     body:
       'Fichas técnicas, ementas, HACCP, marketing gastronómico e muito mais. Planos para todas as carteiras, desde 10 €/mês.',
     cta: 'Descobrir o AI Chef Pro',
   },
   nl: {
-    heading: '75+ culinaire AI-agents voor uw zaak',
+    heading: '75+ culinaire AI-agents voor de dagelijkse gang in uw keuken',
     body:
       'Recepten, kostprijs, allergenen, marketing en meer. Formules voor elk budget, vanaf €10 per maand.',
     cta: 'Ontdek AI Chef Pro',
   },
   es: {
-    heading: 'Más de 75 agentes de IA culinarios trabajando para tu negocio',
+    heading: '75+ agentes de IA culinarios para el día a día de tu cocina',
     body:
       'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Planes para todos los bolsillos, desde 10 €/mes.',
     cta: 'Descubrir AI Chef Pro',
@@ -101,6 +101,8 @@ const copy = COPY[lang as keyof typeof COPY] ?? COPY.es;
   </p>
   <a
     href={appUrl}
+    target="_blank"
+    rel="noopener"
     class="mt-6 inline-block rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
   >
     {copy.cta}

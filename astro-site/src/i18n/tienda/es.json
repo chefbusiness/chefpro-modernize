@@ -29,7 +29,7 @@
     },
     {
       "title": "Detector Alérgenos",
-      "desc": "Identifica alérgenos automáticamente en tus recetas",
+      "desc": "Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya",
       "href": "/detector-alergenos-restaurante"
     },
     {
@@ -73,7 +73,7 @@
   "tryHeadingPre": "Prueba AI Chef Pro ",
   "tryHeadingGold": "desde 10 €",
   "tryText1": "La suite de IA más completa para hostelería y restauración. Disponible en 7 idiomas.",
-  "tryText2": "10.000 créditos al mes con el plan Miembro. Sin permanencia.",
+  "tryText2": "10.000 créditos al mes con el plan Miembro. Los planes mensuales no tienen permanencia.",
   "tryCtaHref": "https://aichef.pro/precios?utm_source=producto&utm_medium=banner&utm_content=try-platform",
   "tryCtaLabel": "Empieza desde 10 €/mes",
   "copyright": "© 2026 AI Chef Pro · Todos los derechos reservados",

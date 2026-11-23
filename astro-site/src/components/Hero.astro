@@ -17,7 +17,7 @@ import type { Locale } from '../i18n/config';
 import SocialCountLive from './SocialCountLive.astro';
 import { appCtaUrl } from '../lib/app-url';
 import { pricingHref } from '../lib/pricing-path';
-import { dynamicSolutions, dynamicChefs } from '../lib/social-counts';
+import { dynamicChefs } from '../lib/social-counts';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -41,7 +41,6 @@ const firstPrefix = businessPrefixes[0] ?? '';
 // <SocialCountLive /> los recalcula en cliente si el build es de otro día.
 // 2026-09-20 (John): el nº de chefs también crece a diario, ya no es una constante.
 const locale = lang === 'en' ? 'en-US' : 'es-ES';
-const socialCount = dynamicSolutions().toLocaleString(locale);
 const chefsCount = dynamicChefs().toLocaleString(locale);
 
 const avatars = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -82,8 +81,8 @@ const stats = [
         {t(lang, 'hero.v2_social_chefs')}{' '}
         {t(lang, 'hero.v2_social_countries_pre')}{' '}
         <strong class="font-bold text-foreground">{t(lang, 'hero.v2_social_countries')}</strong>{' · '}
-        <strong class="font-bold text-foreground" data-social-count>{socialCount}</strong><SocialCountLive />{' '}
-        {t(lang, 'hero.v2_social_count')}
+        <SocialCountLive />
+        {t(lang, 'hero.v2_agents_line')}
       </span>
     </div>
   </div>

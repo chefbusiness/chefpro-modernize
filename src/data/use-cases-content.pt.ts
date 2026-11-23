@@ -10379,14 +10379,14 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Documentar 28 pratos com ficha técnica profissional levava-nos 2 semanas. Culinária Criativa entrega já cada ficha completa em minutos: ingredientes, técnica, alergénios automáticos, custo e storytelling para sala. Agora qualquer cozinheiro replica com consistência e quando inspecionam temos tudo rastreado.",
+    "testimonialQuote": "Documentar 28 pratos com ficha técnica profissional levava-nos 2 semanas. Culinária Criativa entrega já cada ficha completa em minutos: ingredientes, técnica, revisão dos 14 alergénios, com a validação final do cozinheiro, custo e storytelling para sala. Agora qualquer cozinheiro replica com consistência e quando inspecionam temos tudo rastreado.",
     "testimonialAuthor": "Carla Mendoza",
     "testimonialRole": "Chefe de cozinha, restaurante casual com 3 pontos",
     "faqTitle": "Perguntas Frequentes sobre Fichas Técnicas com IA",
     "faqs": [
       {
         "q": "O que inclui uma ficha técnica profissional?",
-        "a": "Ingredientes com gramagem exata, técnica passo a passo, alergénios automáticos, food cost %, custo por porção, conservação, apresentação, maridagem sugerida e descrição para sala."
+        "a": "Ingredientes com gramagem exata, técnica passo a passo, revisão dos 14 alergénios, com a validação final do cozinheiro, food cost %, custo por porção, conservação, apresentação, maridagem sugerida e descrição para sala."
       },
       {
         "q": "Como gere alergénios automaticamente?",
@@ -10409,8 +10409,8 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
     "seo": {
       "title": "Como Criar Fichas Técnicas com IA: Alergénios, Custo e Storytelling | AI Chef Pro",
-      "description": "Suite de IA para fichas técnicas: alergénios automáticos, custo integrado, plating photo e storytelling. Comece hoje.",
-      "keywords": "fichas técnicas IA, ficha técnica prato, alergénios automáticos, custo por porção, ficha técnica restaurante",
+      "description": "Suite de IA para fichas técnicas: revisão dos 14 alergénios, com a validação final do cozinheiro, custo integrado, plating photo e storytelling. Comece hoje.",
+      "keywords": "fichas técnicas IA, ficha técnica prato, revisão dos 14 alergénios, com a validação final do cozinheiro, custo por porção, ficha técnica restaurante",
       "ogImage": "https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg"
     },
     "personalizationTitle": "Personalizado para a Sua Cozinha desde o Minuto Um",
@@ -11051,7 +11051,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack APPCC + ID Alergénios transformaram a nossa segurança alimentar. Passámos de papel impresso disperso para 19 registos digitais com APPCC integrado por turno e alergénios automáticos por receita. A inspeção sanitária sai impecável e o risco legal caiu para zero.",
+    "testimonialQuote": "Pack APPCC + ID Alergénios transformaram a nossa segurança alimentar. Passámos de papel impresso disperso para 19 registos digitais com APPCC integrado por turno e revisão dos 14 alergénios, com a validação final do cozinheiro por receita. A inspeção sanitária sai impecável e o risco legal caiu para zero.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "Diretor de F&B, hotel 5 estrelas com 4 outlets",
     "faqTitle": "Perguntas Frequentes sobre APPCC com IA",
@@ -11081,8 +11081,8 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
     "seo": {
       "title": "Como Gerir APPCC Digital com IA: Modelos, Alergénios e Rastreabilidade | AI Chef Pro",
-      "description": "Suite de IA para APPCC digital: modelos Excel, alergénios automáticos, rastreabilidade ISO. Comece hoje.",
-      "keywords": "APPCC digital IA, modelos APPCC, alergénios automáticos, ISO 22000 IA, segurança alimentar IA, HACCP digital",
+      "description": "Suite de IA para APPCC digital: modelos Excel, revisão dos 14 alergénios, com a validação final do cozinheiro, rastreabilidade ISO. Comece hoje.",
+      "keywords": "APPCC digital IA, modelos APPCC, revisão dos 14 alergénios, com a validação final do cozinheiro, ISO 22000 IA, segurança alimentar IA, HACCP digital",
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Personalizado ao Seu Estabelecimento desde o Primeiro Minuto",

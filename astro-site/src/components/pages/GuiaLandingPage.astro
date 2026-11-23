@@ -166,7 +166,8 @@ const bottomRow = data.testimonials.items.slice(mid);
 // Prueba social del hero (8 avatares + 5 estrellas). El ES la pinta SIEMPRE, también en las guías
 // sin testimonios (comportamiento histórico, byte a byte). Fuera del ES rige la capa comercial
 // honesta (TIENDA §3.5, como PlanNegocio): sin testimonios en la ficha no se pintan estrellas.
-const showHeroSocialProof = lang === 'es' || data.testimonials.items.length > 0;
+// guia-dark-kitchen no tiene testimonios: sin avatares ni estrellas, para no dejar el hueco.
+const showHeroSocialProof = data.slug !== 'guia-dark-kitchen' && (lang === 'es' || data.testimonials.items.length > 0);
 
 // ---- BonusSection: split = fila de 3 (slice 0-3) + fila del resto (slice 3) ----
 const bonusFirst = bonusLayout === 'split' ? data.bonus.items.slice(0, 3) : data.bonus.items;

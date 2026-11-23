@@ -318,12 +318,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
   '/software-gestion-cocina-ia': {
     title: 'Software Gestión de Cocina con IA | AI Chef Pro',
-    description: 'Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. Más de 5.000 restaurantes ya lo usan. Empieza gratis.',
+    description: 'Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. 75+ agentes de IA en 7 idiomas. Planes mensuales desde 10 €.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/recetas-ia-restaurantes': {
     title: 'Recetas con IA para Restaurantes | AI Chef Pro',
-    description: 'Genera recetas profesionales con IA: 27 cocinas del mundo, menús de temporada, fichas técnicas y escalado automático. Más de 5.000 restaurantes ya lo usan.',
+    description: 'Genera recetas profesionales con IA: 27 cocinas del mundo, menús de temporada, fichas técnicas y escalado automático. 75+ agentes de IA en 7 idiomas.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/escandallos-restaurante-ia': {

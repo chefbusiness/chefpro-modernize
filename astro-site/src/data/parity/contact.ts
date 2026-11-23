@@ -56,7 +56,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'How do I change plan, download an invoice or cancel?',
-        a: 'You do it yourself in the account panel: plan changes, tax details and cancellation, with no lock-in. Each subscription generates an invoice with the VAT that applies to your country. For a specific invoice, email info@aichef.pro from the account address.',
+        a: 'You do it yourself in the account panel: plan changes, tax details and cancellation of monthly plans, with no lock-in. Each subscription generates an invoice with the VAT that applies to your country. For a specific invoice, email info@aichef.pro from the account address.',
       },
       {
         q: 'Who do I write for press or a partnership?',
@@ -68,7 +68,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Do you offer refunds?',
-        a: 'Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at info@aichef.pro. You can cancel an app subscription any time from your panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case at that same email.',
+        a: 'Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at info@aichef.pro. You can cancel a monthly plan any time from your panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case at that same email.',
       },
     ],
     blocks: [],
@@ -130,7 +130,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Comment changer de forfait, obtenir une facture ou résilier ?',
-        a: 'Vous le faites vous-même dans le panneau du compte : changement de forfait, données de facturation et résiliation, sans engagement. Chaque abonnement produit une facture avec la TVA applicable à votre pays. Pour une facture précise, écrivez à info@aichef.pro depuis l’adresse du compte.',
+        a: 'Vous le faites vous-même dans le panneau du compte : changement de forfait, données de facturation et résiliation des forfaits mensuels, sans engagement. Chaque abonnement produit une facture avec la TVA applicable à votre pays. Pour une facture précise, écrivez à info@aichef.pro depuis l’adresse du compte.',
       },
       {
         q: 'Qui contacter pour la presse ou un partenariat ?',
@@ -142,7 +142,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Proposez-vous des remboursements ?',
-        a: 'Les guides, kits et packs payants achetés en une seule fois ont une garantie de satisfaction de 30 jours à compter de l’achat et un remboursement de 100 %. Demandez-le par e-mail à info@aichef.pro. Vous pouvez résilier l’abonnement à l’application à tout moment depuis votre panneau, sans engagement, et vous conservez l’accès jusqu’à la fin de la période déjà payée. Toute autre question sur l’abonnement s’examine au cas par cas à cette même adresse.',
+        a: 'Les guides, kits et packs payants achetés en une seule fois ont une garantie de satisfaction de 30 jours à compter de l’achat et un remboursement de 100 %. Demandez-le par e-mail à info@aichef.pro. Les forfaits mensuels se résilient quand vous voulez depuis votre panneau, sans engagement, et vous conservez l’accès jusqu’à la fin de la période déjà payée. Toute autre question sur l’abonnement s’examine au cas par cas à cette même adresse.',
       },
     ],
     blocks: [],
@@ -204,7 +204,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Wie wechsle ich den Tarif, lade eine Rechnung oder kündige?',
-        a: 'Das erledigen Sie selbst im Konto: Tarifwechsel, Rechnungsdaten und Kündigung, ohne Laufzeitbindung. Jedes Abo erzeugt eine Rechnung mit der Mehrwertsteuer, die für Ihr Land gilt. Zu einer konkreten Rechnung schreiben Sie von der Kontoadresse an info@aichef.pro.',
+        a: 'Das erledigen Sie selbst im Konto: Tarifwechsel, Rechnungsdaten und Kündigung, bei monatlichen Tarifen ohne Vertragsbindung. Jedes Abo erzeugt eine Rechnung mit der Mehrwertsteuer, die für Ihr Land gilt. Zu einer konkreten Rechnung schreiben Sie von der Kontoadresse an info@aichef.pro.',
       },
       {
         q: 'Wen erreiche ich für Presse oder eine Kooperation?',
@@ -216,7 +216,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Bieten Sie Rückerstattungen an?',
-        a: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail unter info@aichef.pro an. Das Abo der App können Sie jederzeit in Ihrem Konto kündigen, ohne Laufzeitbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
+        a: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail unter info@aichef.pro an. Monatliche Tarife können Sie jederzeit in Ihrem Konto kündigen, ohne Vertragsbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
       },
     ],
     blocks: [],
@@ -278,7 +278,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Come cambio piano, scarico una fattura o disdico?',
-        a: 'Lo fai tu dal pannello: cambio piano, dati fiscali e disdetta, senza permanenza. Ogni abbonamento genera una fattura con l’IVA del tuo paese. Per una fattura precisa scrivi a info@aichef.pro dall’indirizzo dell’account.',
+        a: 'Lo fai tu dal pannello: cambio piano, dati fiscali e disdetta dei piani mensili, senza vincoli. Ogni abbonamento genera una fattura con l’IVA del tuo paese. Per una fattura precisa scrivi a info@aichef.pro dall’indirizzo dell’account.',
       },
       {
         q: 'Chi contatto per la stampa o una collaborazione?',
@@ -290,7 +290,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Offrite rimborsi?',
-        a: 'Le guide, i kit e i pack a pagamento acquistati in un’unica soluzione hanno una garanzia di soddisfazione di 30 giorni dall’acquisto e un rimborso del 100 %. Lo chiedi via email a info@aichef.pro. L’abbonamento all’app lo disdici quando vuoi dal pannello, senza permanenza, e l’accesso resta fino alla fine del periodo che hai già pagato. Qualsiasi altra questione sull’abbonamento la vediamo caso per caso a quella stessa email.',
+        a: 'Le guide, i kit e i pack a pagamento acquistati in un’unica soluzione hanno una garanzia di soddisfazione di 30 giorni dall’acquisto e un rimborso del 100 %. Lo chiedi via email a info@aichef.pro. I piani mensili li disdici quando vuoi dal pannello, senza vincoli, e l’accesso resta fino alla fine del periodo che hai già pagato. Qualsiasi altra questione sull’abbonamento la vediamo caso per caso a quella stessa email.',
       },
     ],
     blocks: [],
@@ -352,7 +352,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Como mudo de plano, descarrego uma fatura ou cancelo?',
-        a: 'Fazes tu no painel: mudança de plano, dados fiscais e cancelamento, sem permanência. Cada subscrição gera uma fatura com o IVA do teu país. Para uma fatura concreta, escreve para info@aichef.pro a partir do email da conta.',
+        a: 'Fazes tu no painel: mudança de plano, dados fiscais e cancelamento dos planos mensais, sem fidelização. Cada subscrição gera uma fatura com o IVA do teu país. Para uma fatura concreta, escreve para info@aichef.pro a partir do email da conta.',
       },
       {
         q: 'Quem contacto para imprensa ou uma parceria?',
@@ -364,7 +364,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Oferecem reembolsos?',
-        a: 'Os guias, kits e packs pagos comprados de uma só vez têm uma garantia de satisfação de 30 dias a partir da compra e um reembolso de 100 %. Pede-o por email para info@aichef.pro. Podes cancelar a subscrição da app quando quiseres no painel, sem permanência, e manténs o acesso até ao fim do período que já pagaste. Qualquer outra questão da subscrição vemos caso a caso nesse mesmo email.',
+        a: 'Os guias, kits e packs pagos comprados de uma só vez têm uma garantia de satisfação de 30 dias a partir da compra e um reembolso de 100 %. Pede-o por email para info@aichef.pro. Os planos mensais cancelam-se quando quiseres no painel, sem fidelização, e manténs o acesso até ao fim do período que já pagaste. Qualquer outra questão da subscrição vemos caso a caso nesse mesmo email.',
       },
     ],
     blocks: [],
@@ -426,7 +426,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Hoe wijzig ik mijn abonnement, download ik een factuur of zeg ik op?',
-        a: 'Dat doe je zelf in het account: abonnement wisselen, factuurgegevens en opzeggen, zonder contractduur. Elk abonnement krijgt een factuur met de btw die voor jouw land geldt. Voor een concrete factuur mail je info@aichef.pro vanaf het e-mailadres van het account.',
+        a: 'Dat doe je zelf in het account: abonnement wisselen, factuurgegevens en opzeggen van maandabonnementen, zonder verplichting. Elk abonnement krijgt een factuur met de btw die voor jouw land geldt. Voor een concrete factuur mail je info@aichef.pro vanaf het e-mailadres van het account.',
       },
       {
         q: 'Wie mail ik voor pers of een samenwerking?',
@@ -438,7 +438,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
       {
         q: 'Bieden jullie terugbetalingen aan?',
-        a: 'Betaalde gidsen, kits en packs die je in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via info@aichef.pro. Je zegt het app-abonnement op wanneer je wilt in je account, zonder contractduur, en je houdt toegang tot het einde van de periode die je al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval via hetzelfde e-mailadres.',
+        a: 'Betaalde gidsen, kits en packs die je in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via info@aichef.pro. Maandabonnementen zeg je op wanneer je wilt in je account, zonder verplichting, en je houdt toegang tot het einde van de periode die je al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval via hetzelfde e-mailadres.',
       },
     ],
     blocks: [],
