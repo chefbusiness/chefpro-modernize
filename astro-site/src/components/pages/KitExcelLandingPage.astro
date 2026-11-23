@@ -151,13 +151,6 @@ const breadcrumbSchema = {
 // ---- Testimonials (paridad TestimonialsMarquee: mid = ceil(len/2)) ----
 // Opcionales (capa comercial honesta): un producto sin compradores reales en su idioma NO trae
 // testimonios, y entonces tampoco se pintan el marquee ni los avatares con estrellas del hero.
-const HIDE_STAR_ROW = new Set([
-  'kit-escandallos',
-  'kit-inventario',
-  'food-cost-templates',
-  'restaurant-inventory-templates',
-]);
-const showStarRow = !HIDE_STAR_ROW.has(data.slug);
 const testimonialItems = data.testimonials?.items ?? [];
 const mid = Math.ceil(testimonialItems.length / 2);
 const topRow = testimonialItems.slice(0, mid);
@@ -271,13 +264,11 @@ const nlSp = (s: string) => '\n' + s + ' ';
             </span>
           ))}
         </div>
-        {showStarRow && (
         <div class="flex items-center gap-0.5">
           {Array.from({ length: 5 }).map(() => (
             <Icon name="Star" class="h-4 w-4 fill-[#FFD700] text-[#FFD700]" />
           ))}
         </div>
-        )}
       </div>
       )}
 

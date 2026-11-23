@@ -81,6 +81,7 @@ const data = {
       'Hospitality professionals who already use the prompts every day, from the Spanish edition of this eBook',
     items: [
       { name: 'Carlos Martinez', role: 'Executive Chef, El Olivo restaurant', text: "I've been in kitchens for 20 years and never thought AI would save me this much time. The creative recipe prompts have given me ideas that would have taken me weeks of R&D on my own.", avatar: '/avatars/chef-avatar-1.jpg' },
+      { name: 'Laura Sanchez', role: 'Manager, LB restaurant group', text: 'The management and cost prompts are pure gold. Within a week I had food cost under control across 3 restaurants with the templates the AI generates.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Miguel Angel Torres', role: 'Owner, La Esquina gastrobar', text: "I bought the eBook expecting generic prompts. I was completely wrong: they're built for hospitality and they work from day one.", avatar: '/avatars/avatar-3.jpg' },
       { name: 'Ana Belen Ruiz', role: 'Pastry chef, Dulce Ana bakery', text: "The pastry section is incredible. I've created 15 new recipes for the season with the combination and technique prompts. My customers love them.", avatar: '/avatars/avatar-4.jpg' },
       { name: 'Javier Moreno', role: 'Catering Director, EventosPro', text: 'The catering prompts help me put together tailored proposals in minutes. Each event quote used to take me half a day.', avatar: '/avatars/avatar-5.jpg' },
