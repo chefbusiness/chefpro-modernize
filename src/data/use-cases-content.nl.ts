@@ -177,7 +177,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht, klaar voor regelgeving."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht, klaar voor regelgeving."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -306,7 +306,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per gerecht, klaar voor de regelgeving en voor de bediening."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht, klaar voor de regelgeving en voor de bediening."
       }
     ],
     "workflowTitle": "Een Echte Dag van een Manager met AI Chef Pro",
@@ -394,7 +394,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Conversor Ing",
@@ -636,7 +636,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per recept, uniform in alle units."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept, uniform in alle units."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -702,78 +702,78 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ]
   },
   "chef-ejecutivo": {
-    "h1": "AI voor Executive Chef en Corporate Chef",
-    "heroSubtitle": "Creeër standaardiseerde recepten, precise escandallos en repliceerbare manuals for 1, 5 oder 25 keukens. Een suite van gastronomische AI-agents designed for een van de me exigeerende rollen in de professioneel keuken.",
-    "heroTagline": "Uw creatief en operatief team, gescaleerd op de snelheid van een conversatie",
+    "h1": "AI voor de executive chef en de corporate chef",
+    "heroSubtitle": "U maakt gestandaardiseerde recepten, nauwkeurige kostprijsberekeningen en handboeken die u in 1, 5 of 25 keukens herhaalt. Een reeks gastronomische AI-agenten voor een van de zwaarste rollen in de professionele keuken.",
+    "heroTagline": "Uw creatieve en operationele team, op het tempo van een gesprek",
     "badge": "Voor executive chefs en corporate chefs",
-    "painsTitle": "Wat een Executive Chef Niet Kan Laaten Onopgelost",
+    "painsTitle": "Wat een executive chef niet kan laten liggen",
     "pains": [
-      "Recepten standaardisearje in geografisch verspreide keukens, zonder dat elke locatie se op uw eigen wijze interpreteert",
-      "Precise escandallos sluiten for elke technische fiche met seizoensproduct waarvan de prijs elke week verandert",
-      "De kaart elke 6-12 weken vernieuwen zonder dat het team in papieren ondergaat",
-      "Keukenmanuals and onboarding up-to-date houden bij constante personeelrotatie",
-      "Seizoenmenu innovieren zonder de doel-food cost oder de echte marge te verliezen",
-      "Rapporteren aan de leiding met duidelijke KPIs: rentabiliteit per gerecht, productiviteit van de brigade en mermas"
+      "Recepten standaardiseren in keukens op verschillende locaties, zonder dat elke vestiging ze op haar eigen manier uitlegt",
+      "Een nauwkeurige kostprijsberekening bij elke technische fiche, met seizoensproducten waarvan de prijs elke week verandert",
+      "De kaart elke 6 tot 12 weken vernieuwen zonder dat het team verdrinkt in papierwerk",
+      "Keukenhandboeken en de inwerking actueel houden bij een constante wissel van personeel",
+      "Een seizoensmenu vernieuwen zonder de streef-foodcost of de echte marge te verliezen",
+      "Rapporteren aan de directie met duidelijke KPI's: rentabiliteit per gerecht, productiviteit van de brigade en verliezen"
     ],
-    "featuresTitle": "Hoe AI Chef Pro een Executive Chef Helpt",
+    "featuresTitle": "Hoe AI Chef Pro een executive chef helpt",
     "features": [
       {
         "icon": "ChefHat",
         "title": "Executive Chef Pro",
-        "description": "AI-agent specialiseerd in de rol: multi-locale standaardisatie, technische fiches, keukenmanuals and kaartbesluiten op basis van echte data."
+        "description": "AI-agent voor deze rol: standaardisatie over meerdere vestigingen, technische fiches, keukenhandboeken en kaartbeslissingen op basis van echte gegevens."
       },
       {
         "icon": "Sparkles",
         "title": "Creatieve Keuken + Food Pairing AI",
-        "description": "Ideeënstorm for gerechten per seizoen, ingrediente oder techniek, met combinaties ondersteund door wetenschappelijk basis. Creatieve Keuken levert bovendien de gedetailleerde recept and een initiële escandallo met referentie-marktprijzen, downloadbaar as CSV."
+        "description": "Gerechten bedenken per seizoen, ingrediënt of techniek, met combinaties die op een wetenschappelijke basis steunen. Creatieve Keuken levert ook het uitgewerkte recept en een eerste kostprijsberekening met referentieprijzen van de markt, te downloaden als CSV."
       },
       {
         "icon": "Calculator",
-        "title": "Professioneel escandallos",
-        "description": "U laad de CSV van Creatieve Keuken in de Kit de Escandallos Pro and substitueert de referentieprijzen door die van uw echte leveranciers. Cost per portie, food cost %, marge and suggested prijs instant. Recalculiert automatisch als u een grammage oder een cost verandert."
+        "title": "Professionele kostprijsberekeningen",
+        "description": "U laadt de CSV van Creatieve Keuken in de Kit de Escandallos Pro en vervangt de referentieprijzen door die van uw echte leveranciers. Kostprijs per portie, foodcost %, marge en een voorgestelde prijs. U herberekent wanneer u een gram of een kostprijs wijzigt, en de kok controleert het cijfer."
       },
       {
         "icon": "BookOpen",
-        "title": "Professioneel technische fiches",
-        "description": "Recept, procedure, allergenen, emplating and storytelling in een enkel document. Klaar om aan alle keukens van de groep te senden."
+        "title": "Professionele technische fiches",
+        "description": "Recept, werkwijze, allergenen, dressing en storytelling in één document. Klaar om naar alle keukens van de groep te sturen."
       },
       {
         "icon": "Layers",
-        "title": "Multi-locale standaardisatie",
-        "description": "Hetzelfde gerecht, hetzelfde kwaliteit and hetzelfde cost in 1, 5 oder 25 eenheden. Repliceerbare and voll traceerbare manuals."
+        "title": "Standaardisatie over vestigingen",
+        "description": "Hetzelfde gerecht, dezelfde kwaliteit en dezelfde kostprijs in 1, 5 of 25 vestigingen. Handboeken die u kunt herhalen en volledig kunt traceren."
       },
       {
         "icon": "Beaker",
-        "title": "Fermentus Con AI+ and geavanceerde techniken",
-        "description": "Koji, kombuchas, shoyus, garums and lactofermentos: gastronomische I+D met professioneel ondersteuning."
+        "title": "Fermentus Con AI+ en geavanceerde technieken",
+        "description": "Koji, kombucha, shoyu, garum en lactofermenten: gastronomisch onderzoek met professionele ondersteuning."
       },
       {
         "icon": "ShieldCheck",
-        "title": "Allergenen ID and Mermas GenCal",
-        "description": "Automatische detectie van allergenen per gerecht and precise data over mermas and rendements per ingrediente."
+        "title": "Allergenen ID en Mermas GenCal",
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht, en nauwkeurige gegevens over verliezen en opbrengsten per ingrediënt."
       },
       {
         "icon": "Search",
         "title": "Sonar Deep Research",
-        "description": "Diepe gastronomische onderzoek: trends, opkomende techniken, producenten and seizoensproducten."
+        "description": "Diepgaand gastronomisch onderzoek: trends, opkomende technieken, producenten en seizoensproducten."
       },
       {
         "icon": "Image",
         "title": "GastroIMG Gen+",
-        "description": "AI-generated gastronomische fotografie for technische fiches, interne communicatie and persreleases."
+        "description": "Gastronomische fotografie met AI voor technische fiches, interne communicatie en persberichten."
       }
     ],
-    "workflowTitle": "Een Echte Dag van een Executive Chef met AI Chef Pro",
+    "workflowTitle": "Een echte dag van een executive chef met AI Chef Pro",
     "workflow": [
-      "Morgen, 09:00 · Creatieve Keuken — ideeënstorm van 12 gerechten for the herfstmenu op basis van lokale seizoensproduct. De agent levert u een gedetailleerd recept and een initiële escandallo met referentie-marktprijzen, downloadbaar as CSV.",
-      "Morgen, 10:30 · Kit de Escandallos Pro — u laad de 12 CSV's van Creatieve Keuken, substitueert de referentieprijzen door die van uw echte leveranciers and discarteert 4 gerechten die niet passen met uw doel-food cost (28 %).",
-      "Middag, 12:00 · Food Pairing AI — u werkt aan de pairing van de 8 finalisten and valideert onverwachte harmonien.",
-      "Namiddag, 15:00 · Allergenen ID — u genereert de allergenenfiche per gerecht, klaar for regulatie and for de zaal.",
-      "Namiddag, 16:30 · Executive Chef Pro — u schrijft de complete technische fiche met procedure, grammages, emplating and storytelling.",
-      "Namiddag, 18:00 · GastroIMG Gen+ — u genereert de fotos van elke gerecht for the interne manual and the persrelease.",
-      "Namiddag, 18:30 · U repliceert de manual aan de 5 keukens van de groep. Wat een traditioneel process in 15-30 dagen sluit, sluit u in 1-3 werkdagen, afhangig van de grootte van de kaart."
+      "Ochtend, 09:00 · Creatieve Keuken — u bedenkt 12 gerechten voor de herfstkaart op basis van lokale seizoensproducten. De agent levert een uitgewerkt recept en een eerste kostprijsberekening met referentieprijzen van de markt, te downloaden als CSV.",
+      "Ochtend, 10:30 · Kit de Escandallos Pro — u laadt de 12 CSV-bestanden van Creatieve Keuken, vervangt de referentieprijzen door die van uw echte leveranciers en schrapt 4 gerechten die niet passen bij uw streef-foodcost (28 %).",
+      "Middag, 12:00 · Food Pairing AI — u werkt de combinaties van de 8 finalisten uit en toetst onverwachte harmonieën.",
+      "Namiddag, 15:00 · Allergenen ID — u maakt de allergenenfiche per gerecht, klaar voor de regelgeving en voor de zaal. De kok geeft de eindcontrole.",
+      "Namiddag, 16:30 · Executive Chef Pro — u schrijft de volledige technische fiche met werkwijze, grammages, dressing en storytelling.",
+      "Namiddag, 18:00 · GastroIMG Gen+ — u maakt de foto's van elk gerecht voor het interne handboek en het persbericht.",
+      "Namiddag, 18:30 · U stuurt het handboek naar de 5 keukens van de groep. Wat in een klassiek proces 15 tot 30 dagen duurt, rondt u af in 1 tot 3 werkdagen, afhankelijk van de omvang van de kaart."
     ],
-    "productsTitle": "Downloadbare Sjabloneen en Kits voor Executive Chefs",
+    "productsTitle": "Downloadbare sjablonen en kits voor executive chefs",
     "productIds": [
       "kit-escandallos",
       "pack-appcc",
@@ -782,122 +782,122 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Vroeger nam het me tussen 15 en 20 dagen om een nieuwe kaart te sluiten tussen ideeënstorm, tests, escandallos, technische fiches en interne communicatie. Met AI Chef Pro doe ik het in 2 oder 3 dagen, afhangig van de grootte van de kaart en of het totale oder partielle reengineering is. De verschil is niet alleen tijd: de team ontvangt professioneel en repliceerbare documentatie, geen handgeschreven notizen.",
+    "testimonialQuote": "Vroeger had ik 15 tot 20 dagen nodig om een nieuwe kaart rond te krijgen, met ideeën, tests, kostprijsberekeningen, technische fiches en interne communicatie. Met AI Chef Pro doe ik dat in 2 tot 3 dagen, afhankelijk van de omvang van de kaart en of het een volledige of gedeeltelijke herziening is. Het verschil zit niet alleen in de tijd: het team krijgt professionele documentatie die het kan herhalen, geen handgeschreven notities.",
     "testimonialAuthor": "Diego Saavedra",
-    "testimonialRole": "Executive Chef, groep van 5 mediterraanse restaurants",
-    "faqTitle": "Veelgestelde Vragen van Executive Chefs",
+    "testimonialRole": "Executive chef, groep van 5 mediterrane restaurants",
+    "faqTitle": "Veelgestelde vragen van executive chefs",
     "faqs": [
       {
-        "q": "Verstaan de AI-agents van AI Chef Pro professioneel keuken oder binne se generalistische chatbots?",
-        "a": "Se binne specialiseerde agents. Creatieve Keuken, Food Pairing AI, Fermentus Con AI+ and Executive Chef Pro binne getrained met professioneel gastronomische kennis: techniken, echte escandallo, rentabiliteit, grammages and cuts. Se binne geen generisch ChatGPT: se binne tools designed for iemand die al kan kooken."
+        "q": "Begrijpen de AI-agenten van AI Chef Pro de professionele keuken, of zijn het algemene chatbots?",
+        "a": "Het zijn gespecialiseerde agenten. Creatieve Keuken, Food Pairing AI, Fermentus Con AI+ en Executive Chef Pro zijn getraind met professionele gastronomische kennis: technieken, echte kostprijsberekening, rentabiliteit, grammages en snitten. Het is geen generieke ChatGPT: het zijn hulpmiddelen voor iemand die al kan koken."
       },
       {
-        "q": "Kan ik mijn bestaand receptbook opladen?",
-        "a": "Ja. De Kit de Escandallos Pro maakt het mogelijk uw receptbook te laden and escandallo automatiseerd in minuten toe te passen. U kan ook de agent Executive Chef Pro vraagen om technische fiches te genereren op basis of vrije beschrijvingen."
+        "q": "Kan ik mijn bestaande receptenboek opladen?",
+        "a": "Ja. Met de Kit de Escandallos Pro laadt u uw receptenboek. De AI maakt een kostprijsberekening en de kok controleert die voordat ze de keuken in gaat. Executive Chef Pro kan uit een vrije beschrijving ook een technische fiche schetsen."
       },
       {
-        "q": "Is het for geavanceerde gastronomische keuken oder alleen for casual keuken?",
-        "a": "For het hele spectrum. Er zijn specifieke agents: Creatieve Keuken for autor keuken, Creatieve Patisserie, Fermentus for avant-garde, VegChef Plantaardig for plant-based, naast 27 receptbooks per land. Echte cases in Michelin and Repsol Soles and in casual groups up to 25 eenheden."
+        "q": "Is het voor een gevorderde gastronomische keuken, of alleen voor casual dining?",
+        "a": "Voor het hele spectrum. Er zijn specifieke agenten: Creatieve Keuken voor auteurskeuken, Creatieve Patisserie, Fermentus Con AI+ voor de avant-garde, VegChef Plantaardig voor plantaardige keuken, plus 27 receptenboeken per land. Er zijn toepassingen in Michelinkeuens, in keukens met Repsol-zonnen en in casual groepen tot 25 vestigingen."
       },
       {
-        "q": "Hoe adapteert het system aan uw werkwijze?",
-        "a": "Start met de agent «Wie Ben Ik?», een conversationele onboarding van 2 minuten waarin u vertelt wie u binne, waar u werkt, uw type keuken and op wat für een schaal. Van dat moment an adapteeren alle agents aan uw context: lokale prijzen, normativa van uw land, keuken van de territorium and schaal van uw operatie."
+        "q": "Hoe past het systeem zich aan mijn manier van werken aan?",
+        "a": "U begint met de agent «Wie Ben Ik?», een gesprek van 2 minuten waarin u vertelt wie u bent, waar u werkt, welk type keuken u leidt en op welke schaal. Vanaf dat moment passen alle agenten zich aan uw context aan: lokale prijzen, de regelgeving van uw land, de keuken van het gebied en de schaal van uw operatie."
       },
       {
-        "q": "Is er iets specifisch for multi-locale groups and restaurantketens?",
-        "a": "Ja. De agent Executive Chef Pro is gedacht for standaardisatie: hetzelfde technische fiche, hetzelfde escandallo and hetzelfde manuals repliceerd in alle eenheden. Gecombineerd met de Kit Plan Financiero kan u de KPI-reporting per eenheid and per group consolideeren."
+        "q": "Is er iets specifieks voor groepen met meerdere vestigingen en restaurantketens?",
+        "a": "Ja. De agent Executive Chef Pro is bedoeld voor standaardisatie: dezelfde technische fiche, dezelfde kostprijsberekening en dezelfde handboeken, herhaald in alle vestigingen. Samen met de Kit Plan Financiero consolideert u de KPI-rapportage per vestiging en per groep."
       },
       {
-        "q": "Is er een bibliotheek van specifische prompts for chefs?",
-        "a": "Ja. De Pro Prompts eBook bevat meer dan 300 getest prompts for creativiteit, escandallo, technische fiches, vorming, interne communicatie and keukenoperatie, georganiseerd per gebruikssituatie."
+        "q": "Is er een bibliotheek met prompts voor chefs?",
+        "a": "Ja. Het Pro Prompts eBook bevat meer dan 300 geteste prompts voor creativiteit, kostprijsberekening, technische fiches, opleiding, interne communicatie en keukenoperatie, geordend per gebruikssituatie."
       },
       {
-        "q": "Hoe lang dauert het voordat de abonnement zich terugbetaalt?",
-        "a": "De meiste executive chefs rapporteren return in de eerste nieuwe kaart. Een traditioneel menuverandering neemt 15-30 dagen in ideeënstorm, tests, escandallos, technische fiches and interne communicatie. Met AI Chef Pro and een good flow in Excel oder Google Workspace, gaat hetzelfde process naar 1-3 dagen, afhangig van de grootte de kaart and of het totale oder partielle reengineering is. Met 4-6 kaartveranderingen per jaar, recupereert u tussen 60 and 120 werkdagen."
+        "q": "Hoe snel verdient het abonnement zich terug?",
+        "a": "De meeste executive chefs zien de terugverdientijd bij de eerste nieuwe kaart. Een klassieke kaartwissel duurt 15 tot 30 dagen, met ideeën, tests, kostprijsberekeningen, technische fiches en interne communicatie. Met AI Chef Pro en een goede werkwijze in Excel of Google Workspace wordt hetzelfde proces 1 tot 3 dagen, afhankelijk van de omvang van de kaart en of het een volledige of gedeeltelijke herziening is. Bij 4 tot 6 kaartwisselingen per jaar wint u 60 tot 120 werkdagen terug."
       }
     ],
-    "ctaTitle": "Creeër, escandalleer en repliceer recepten op de snelheid van een conversatie.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Plan Lidmaat for 10 € per maand met 10.000 crédits om alle agents te gebruiken.",
+    "ctaTitle": "Maak, bereken en herhaal recepten op het tempo van een gesprek.",
+    "ctaSubtitle": "Begin met de kennismaking van 2 minuten. Lidmaatschap voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
     "seo": {
-      "title": "AI for Executive Chef: Recepten, Escandallos and Manuals | AI Chef Pro",
-      "description": "AI-suite for executive and corporate chef: Executive Chef Pro agent, automatische escandallos, technische fiches and repliceerbare multi-locale manuals. Start heute.",
-      "keywords": "AI executive chef, executive chef AI, corporate chef software, gastronomische AI-agent, automatische escandallos, technische fiches restaurant, standaardiseerde multi-locale recepten, keukenmanuals AI, food pairing AI, AI for restaurant groups, executive chef Nederland",
+      "title": "AI voor de executive chef: recepten, kostprijs en handboeken | AI Chef Pro",
+      "description": "AI-suite voor de executive en de corporate chef: de agent Executive Chef Pro, kostprijsberekeningen die de kok controleert, technische fiches en handboeken voor meerdere vestigingen. Begin vandaag.",
+      "keywords": "AI executive chef, executive chef AI, software corporate chef, gastronomische AI-agent, kostprijsberekening met controle door de kok, technische fiches restaurant, gestandaardiseerde recepten, keukenhandboeken AI, food pairing AI, AI voor restaurantgroepen, executive chef Nederland",
       "ogImage": "https://aichef.pro/og/use-cases/chef-ejecutivo.jpg"
     },
-    "personalizationTitle": "Personaliseerd aan U vanaf Minut Een",
-    "personalizationBody": "AI Chef Pro start met een conversationele onboarding van 2 minuten —de agent «Wie Ben Ik?»— waarin u vertelt wie u binne, waar u werkt, wat für een keuken u leidt en op wat für een schaal u opereert. Van dat moment an reageert elke agent —van escandallos tot creativiteit— aangepast aan uw context: uw lokale keuken, uw normativa, uw marktprijzen en de grootte van uw brigade. Het is geen formulier: het is een korte conversatie die alles wat daarna komt betekenis geeft.",
-    "appsTitle": "De AI-Agents die U als Executive Chef Zal Gebruiken",
+    "personalizationTitle": "Vanaf de eerste minuut afgestemd op u",
+    "personalizationBody": "AI Chef Pro start met een gesprek van 2 minuten, de agent «Wie Ben Ik?», waarin u vertelt wie u bent, waar u werkt, welke keuken u leidt en op welke schaal u werkt. Vanaf dat moment antwoordt elke agent, van de kostprijsberekening tot de creativiteit, afgestemd op uw context: uw lokale keuken, uw regelgeving, uw marktprijzen en de omvang van uw brigade. Het is geen formulier: het is een kort gesprek dat zin geeft aan alles wat daarna komt.",
+    "appsTitle": "De AI-agenten die u als executive chef gebruikt",
     "apps": [
       {
         "name": "Executive Chef Pro",
         "category": "Gastro Profile Pro",
-        "description": "Hoofdagent: multi-locale standaardisatie, technische fiches and kaartbesluiten."
+        "description": "Hoofdagent: standaardisatie over vestigingen, technische fiches en kaartbeslissingen."
       },
       {
         "name": "Creatieve Keuken",
-        "category": "Culinaire Creativiteit",
-        "description": "Professioneel gerechtontwikkeling met gedetailleerd recept and initiële escandallo downloadbaar as CSV (referentie-marktprijzen), klaar om in de Kit de Escandallos Pro te laden."
+        "category": "Culinaire creativiteit",
+        "description": "Ontwikkeling van professionele gerechten met een uitgewerkt recept en een eerste kostprijsberekening, te downloaden als CSV (referentieprijzen van de markt), klaar om in de Kit de Escandallos Pro te laden."
       },
       {
         "name": "Food Pairing AI",
-        "category": "Culinaire Creativiteit",
-        "description": "Ingredientecombinaties and pairings met wetenschappelijk basis."
+        "category": "Culinaire creativiteit",
+        "description": "Combinaties van ingrediënten en pairings met een wetenschappelijke basis."
       },
       {
         "name": "Fermentus Con AI+",
-        "category": "Culinaire Creativiteit",
-        "description": "Creatieve fermentatie: koji, kombucha, shoyu, miso, garum and lactofermentos."
+        "category": "Culinaire creativiteit",
+        "description": "Creatieve fermentatie: koji, kombucha, shoyu, miso, garum en lactofermenten."
       },
       {
         "name": "Mermas GenCal",
-        "category": "Tools and Utilities",
-        "description": "Precise data over mermas and rendements per ingrediente. Essentieel for realistisch escandallo."
+        "category": "Hulpmiddelen",
+        "description": "Nauwkeurige gegevens over verliezen en opbrengsten per ingrediënt. Onmisbaar voor een realistische kostprijsberekening."
       },
       {
         "name": "Calcula Pax",
-        "category": "Tools and Utilities",
-        "description": "Portiecalculator die recepten scaleert to any number of gasten."
+        "category": "Hulpmiddelen",
+        "description": "Portiecalculator die recepten schaalt naar elk aantal gasten."
       },
       {
         "name": "Allergenen ID",
-        "category": "Tools and Utilities",
-        "description": "Automatische identificatie van potentielle allergenen per recept and per gerecht."
+        "category": "Hulpmiddelen",
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en per gerecht."
       },
       {
         "name": "Creatieve Patisserie",
-        "category": "Culinaire Creativiteit",
-        "description": "Creatieve restaurantdesserts met professioneel patisserietechniek."
+        "category": "Culinaire creativiteit",
+        "description": "Creatieve restaurantdesserts met professionele patisserietechniek."
       },
       {
         "name": "Sosa Ingredients Agent",
-        "category": "Gastro Leveranciers",
-        "description": "Selectie- and techniekassistent met the professioneel catalog van Sosa."
+        "category": "Gastro-leveranciers",
+        "description": "Assistent voor selectie en techniek met de professionele catalogus van Sosa."
       },
       {
         "name": "tSpoonLab Agent",
-        "category": "Gastro Leveranciers",
-        "description": "Assistent van de tSpoonLab catalog for geavanceerde techniken and applicaties."
+        "category": "Gastro-leveranciers",
+        "description": "Assistent van de catalogus van tSpoonLab voor geavanceerde technieken en toepassingen."
       },
       {
         "name": "Sonar Deep Research",
-        "category": "AI Models + LLM",
-        "description": "Diepe onderzoek: trends, producenten and opkomende techniken."
+        "category": "AI-modellen",
+        "description": "Diepgaand onderzoek: trends, producenten en opkomende technieken."
       },
       {
         "name": "GastroIMG Gen+",
-        "category": "Gastro Kennis",
-        "description": "AI-generated gastronomische fotografie for technische fiches and pers."
+        "category": "Gastro-kennis",
+        "description": "Gastronomische fotografie met AI voor technische fiches en de pers."
       },
       {
         "name": "Gastro Lexicon",
-        "category": "Gastro Kennis",
-        "description": "Tutor met definities van techniken, processen, additiven and gastronomische wetenschap."
+        "category": "Gastro-kennis",
+        "description": "Tutor met definities van technieken, processen, additieven en gastronomische wetenschap."
       }
     ],
     "metrics": [
       {
         "value": "−90 %",
-        "label": "tijd om nieuwe kaart te sluiten"
+        "label": "tijd om een nieuwe kaart te sluiten"
       },
       {
         "value": "×10",
@@ -905,34 +905,34 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "value": "+4 pp",
-        "label": "marge door bettere escandallo"
+        "label": "marge door een betere kostprijs"
       },
       {
         "value": "13+",
-        "label": "AI-agents for uw rol"
+        "label": "AI-agenten voor uw rol"
       }
     ],
     "beforeAfter": {
       "beforeTitle": "Zonder AI Chef Pro",
       "beforeItems": [
-        "Sluiten van een nieuwe kaart: tussen 15 and 30 dagen, afhangig van de standaardisatie van de process",
-        "Receptbook in losse bladen, rommelige Word-documenten and handgeschrieben notizen",
-        "Elke locatie interpreteert de recept op uw eigen wijze and the resultaat varieert",
-        "Handmatig escandallo met calculator: u verandert een grammage and herschrijft alles",
-        "Manuals and onboarding continueel verouderd"
+        "Een nieuwe kaart sluiten: 15 tot 30 dagen, afhankelijk van hoe vast het proces staat",
+        "Receptenboek op losse bladen, rommelige Word-documenten en handgeschreven notities",
+        "Elke vestiging legt het recept op haar eigen manier uit en het resultaat verschilt",
+        "Kostprijs met de rekenmachine: u wijzigt een gram en schrijft alles opnieuw",
+        "Handboeken en inwerking die voortdurend verouderd zijn"
       ],
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
-        "Sluiten van een nieuwe kaart: tussen 1 and 3 dagen, afhangig van de grootte and of het totale oder partielle reengineering is",
-        "Centraliseerd receptbook met escandallo, allergenen, techniek and storytelling",
-        "Hetzelfde gerecht, hetzelfde kwaliteit and hetzelfde cost in 1, 5 oder 25 keukens",
-        "Professioneel escandallo that instant recalculiert met any verandering",
-        "Manuals up-to-date met een klik and onboarding klaar for nieuwe chefs"
+        "Een nieuwe kaart sluiten: 1 tot 3 dagen, afhankelijk van de omvang en of het een volledige of gedeeltelijke herziening is",
+        "Eén receptenboek met kostprijs, allergenen, techniek en storytelling",
+        "Hetzelfde gerecht, dezelfde kwaliteit en dezelfde kostprijs in 1, 5 of 25 keukens",
+        "Een kostprijsberekening die u opnieuw klaarzet bij een wijziging, en die de kok controleert",
+        "Handboeken bijgewerkt in één stap, en een inwerking klaar voor nieuwe chefs"
       ]
     },
     "appUrlPath": "/agents/chef-ejecutivo-pro",
-    "galleryTitle": "De Dag-tot-Dag van een Executive Chef, in Beelden",
-    "gallerySubtitle": "Wat u met AI Chef Pro kan beheere: brigade, technische fiches, creativiteit, escandallos en interne communicatie.",
+    "galleryTitle": "De dag van een executive chef, in beelden",
+    "gallerySubtitle": "Wat u met AI Chef Pro beheert: brigade, technische fiches, creativiteit, kostprijsberekeningen en interne communicatie.",
     "galleryImages": [
       "/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-hero.jpg",
       "/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-recipes.jpg",
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID en Mermas GenCal",
-        "description": "Automatische detectie van allergenen per gerecht en nauwkeurige gegevens over verliezen en opbrengsten per ingrediënt."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht, en nauwkeurige gegevens over verliezen en opbrengsten per ingrediënt."
       }
     ],
     "workflowTitle": "Een echte dag van een keukenchef met AI Chef Pro",
@@ -1109,7 +1109,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -1162,7 +1162,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "Gecentraliseerd receptenboek met kostprijsberekening, allergenen, techniek en storytelling",
-        "Automatische kostprijsberekening die direct herberekent bij elke prijswijziging",
+        "Een nieuwe kostprijsberekening als een prijs verandert; de kok controleert het cijfer",
         "APPCC vanaf mobiel met registraties en meldingen, klaar voor inspectie",
         "Menukaart vernieuwen in 1-3 dagen met Creatieve Keuken + Kit de Escandallos Pro",
         "Herbruikbare trainingshandleidingen met script van het Pro Prompts eBook"
@@ -1233,7 +1233,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID en Mermas GenCal",
-        "description": "Automatische detectie van allergenen en nauwkeurige verliesgegevens voor gang en partij."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, en nauwkeurige verliesgegevens voor de gang en de partij."
       }
     ],
     "workflowTitle": "Een Echte Dag van een Sous Chef met AI Chef Pro",
@@ -1336,7 +1336,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -1455,7 +1455,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen, cruciaal voor evenementen met veel gasten met verschillende voedingsprofielen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, cruciaal voor evenementen met veel gasten met verschillende voedingsprofielen."
       },
       {
         "icon": "BookOpen",
@@ -1494,7 +1494,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Kunt u hiermee de wisselende aantallen gasten beheren?",
-        "a": "Ja. Calcula Pax schaalt recepten op naar elk aantal gasten en de Kit de Escandallos Pro herberekent automatisch kosten, foodcost en marge."
+        "a": "Ja. Calcula Pax schaalt recepten op naar elk aantal gasten en de Kit de Escandallos Pro rekent u opnieuw, en de kok controleert kosten, foodcost en marge."
       },
       {
         "q": "Deckt het APPCC buiten de vaste locatie?",
@@ -1558,7 +1558,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per gerecht, cruciaal voor grote evenementen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht, cruciaal voor grote evenementen."
       },
       {
         "name": "Mermas GenCal",
@@ -1780,7 +1780,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per recept, cruciaal voor grote evenementen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept, cruciaal voor grote evenementen."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -2013,7 +2013,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per drankje: sulfieten, zuivel, noten, gluten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per drankje: sulfieten, zuivel, noten, gluten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2236,7 +2236,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per pizza: gluten, zuivel, noten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per pizza: gluten, zuivel, noten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2469,7 +2469,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Hulpmiddelen",
-        "description": "Automatische identificatie van allergenen per stuk: gluten, zuivel, noten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per stuk: gluten, zuivel, noten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2698,7 +2698,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per bonbon: zuivel, noten, gluten, alcohol."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per bonbon: zuivel, noten, gluten, alcohol."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2817,7 +2817,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per klant: cruciaal wanneer u werkt met gezinnen met specifieke intoleranties."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per klant: cruciaal wanneer u werkt met gezinnen met specifieke intoleranties."
       },
       {
         "icon": "Calendar",
@@ -2865,7 +2865,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe ga ik om met allergieën en speciale diëten per klant?",
-        "a": "Allergenen ID identificeert automatisch allergenen per recept. Privé Chef Pro redeneert in termen van personalisatie: keto-, veganistische, glutenvrije, natriumarme, FODMAP-dieeten, zwangerschap. Elke klant krijgt een echt aangepast menu."
+        "a": "Allergenen ID dient voor de controle van de 14 allergenen, met eindcontrole door de kok, per recept. Privé Chef Pro redeneert in termen van personalisatie: keto-, veganistische, glutenvrije, natriumarme, FODMAP-dieeten, zwangerschap. Elke klant krijgt een echt aangepast menu."
       },
       {
         "q": "Hoe schaal ik recepten op voor verschillende aantallen gasten?",
@@ -2915,7 +2915,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per klant en recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per klant en recept."
       },
       {
         "name": "Conversor Ing",
@@ -3158,7 +3158,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie voor gasten met allergieën bij banketten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, voor gasten met allergieën bij banketten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -3376,7 +3376,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen om aan de gast te communiceren."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, om aan de gast te communiceren."
       },
       {
         "name": "Mentale Coach",
@@ -3837,7 +3837,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per cut en bijgerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per cut en bijgerecht."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4060,7 +4060,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per smaak: zuivel, noten, gluten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per smaak: zuivel, noten, gluten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4298,7 +4298,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per stuk: gluten, zuivel, noten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per stuk: gluten, zuivel, noten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4515,7 +4515,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -4743,7 +4743,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -4976,7 +4976,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergene per pizza en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per pizza en per gerecht."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5199,7 +5199,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per burger en saus."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per burger en saus."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5431,7 +5431,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per recept. Verplicht om legaal in delivery te verkopen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept. Verplicht om legaal in delivery te verkopen."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5676,7 +5676,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per stuk, cruciaal in de patisserie."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per stuk, cruciaal in de patisserie."
       },
       {
         "name": "GastroIMG Gen+",
@@ -5899,7 +5899,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen in cocktails en borrelhapjes."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, in cocktails en borrelhapjes."
       },
       {
         "name": "Mermas GenCal",
@@ -6023,7 +6023,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie, cruciaal voor evenementen met uiteenlopende voedingsprofielen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, cruciaal voor evenementen met uiteenlopende voedingsprofielen."
       },
       {
         "icon": "Search",
@@ -6364,7 +6364,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept, cruciaal in internationale hotels."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept, cruciaal in internationale hotels."
       },
       {
         "name": "Mermas GenCal",
@@ -6577,7 +6577,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per smaak: zuivel, noten, gluten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per smaak: zuivel, noten, gluten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -6805,7 +6805,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per bonbon: zuivel, noten, gluten, alcohol."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per bonbon: zuivel, noten, gluten, alcohol."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7492,7 +7492,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per gerecht: gluten, zuivel, noten, soja."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht: gluten, zuivel, noten, soja."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7725,7 +7725,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen: vis, zeevruchten, gluten, zuivel."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: vis, zeevruchten, gluten, zuivel."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7953,7 +7953,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Hulpprogramma's",
-        "description": "Automatische identificatie van allergenen: vis, schaaldieren, soja, gluten, sesam."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: vis, schaaldieren, soja, gluten, sesam."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8186,7 +8186,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen: vis, schelpdieren, soja, gluten, sesam, noten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: vis, schelpdieren, soja, gluten, sesam, noten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8414,7 +8414,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie: gluten, noten, soja, sesam (vrij van dierlijke producten)."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: gluten, noten, soja, sesam (vrij van dierlijke producten)."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8642,7 +8642,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per snede en bijgerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per snede en bijgerecht."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8860,7 +8860,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie voor plantaardige alternatieven en banket."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, voor plantaardige alternatieven en banket."
       },
       {
         "name": "GastroIMG Gen+",
@@ -9544,7 +9544,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht."
       },
       {
         "name": "GastroIMG Gen+",
@@ -9854,7 +9854,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
   },
   "task-escandallos-con-ia": {
     "h1": "Zo maakt u kostprijsberekeningen met AI",
-    "heroSubtitle": "Bereken de werkelijke kostprijs per gerecht, foodcost % en adviesprijs in minuten in plaats van dagen: recept + automatische CSV-kostprijsberekening met uurkostprijs atelier, geïntegreerde verliezen en realtime gevalideerde marge met een suite van culinaire AI-agenten.",
+    "heroSubtitle": "U ziet de echte kostprijs per gerecht, de foodcost en een adviesprijs. De AI maakt het recept en de calculatie; de kok controleert de uurkostprijs, de verliezen en de marge.",
     "heroTagline": "Professionele kostprijsberekeningen in minuten, niet in uren",
     "badge": "Taak: kostprijsberekening en costing",
     "painsTitle": "Wat het kost om handmatig kostprijzen te berekenen",
@@ -9876,7 +9876,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "Mermas GenCal",
-        "description": "Nauwkeurige verliesgegevens per proces (uitsnijden, braden, koelen, vitrine, vormen) automatisch geïntegreerd in de CSV."
+        "description": "Verliesgegevens per proces (uitsnijden, braden, koelen, vitrine, vormen) die u in de CSV zet. De kok doet de eindcontrole."
       },
       {
         "icon": "Beaker",
@@ -10006,7 +10006,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpmiddelen",
-        "description": "Automatische identificatie van allergenen per ingrediënt."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per ingrediënt."
       },
       {
         "name": "Sosa Ingredients Agent",
@@ -10325,12 +10325,12 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per recept: zuivel, gluten, noten, soja, schaaldieren, sulfieten, enz."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept: zuivel, gluten, noten, soja, schaaldieren, sulfieten, enz."
       },
       {
         "icon": "Calculator",
         "title": "Geïntegreerde kostprijs",
-        "description": "Technische fiche bevat food cost % en kostprijs per portie automatisch berekend met uurprijs van de werkplaats."
+        "description": "De technische fiche noteert food cost % en de kostprijs per portie, met het uurtarief van de werkplaats. De kok controleert het cijfer."
       },
       {
         "icon": "Image",
@@ -10366,7 +10366,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "workflowTitle": "Technische Fiches in 4 Stappen Maken",
     "workflow": [
       "1. Creatieve Keuken (of uw creatieve agent) — u ontwikkelt of laadt het recept. De AI-agent levert recept + volledige technische fiche met alle professionele velden.",
-      "2. Allergenen ID — identificeert automatisch de allergenen per recept en integreert ze in de fiche; wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk.",
+      "2. Allergenen ID — dient voor de controle van de 14 allergenen, met eindcontrole door de kok, per recept en integreert ze in de fiche; wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk.",
       "3. GastroIMG Gen+ — genereert een referentieafbeelding van het opgemaakte gerecht om in de fiche op te nemen als visuele gids voor de kok.",
       "4. Food Pairing AI + storytelling voor de bediening — de fiche bevat een aanbevolen pairing en een professionele beschrijving voor de briefing van het team."
     ],
@@ -10390,7 +10390,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het de 14 allergenen na te kijken?",
-        "a": "Allergenen ID identificeert de allergenen per ingrediënt en integreert ze in de fiche. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk en werkt het de informatie voor de bediening bij."
+        "a": "Allergenen ID dient voor de controle van de 14 allergenen per ingrediënt, met eindcontrole door de kok, op de fiche. Wijzigt u een ingrediënt, dan kijkt u de fiche opnieuw na."
       },
       {
         "q": "Is het geschikt voor elk type keuken?",
@@ -10435,7 +10435,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept."
       },
       {
         "name": "Conversor Ing",
@@ -10508,7 +10508,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "28 gerechten in één dag gedocumenteerd met professioneel sjabloon",
-        "Automatische allergenen met Allergenen ID",
+        "Controle van de 14 allergenen, met eindcontrole door de kok met Allergenen ID",
         "Professionele storytelling voor de briefing van de bediening",
         "Wijzigingen werken fiche en allergenen onmiddellijk bij",
         "Uniform sjabloon klaar voor audits en certificeringen"
@@ -10997,7 +10997,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "Sparkles",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per ingrediënt en recept. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per ingrediënt en recept. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
       },
       {
         "icon": "CheckSquare",
@@ -11038,7 +11038,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "workflowTitle": "Hoe implementeert u digitale APPCC in 4 stappen",
     "workflow": [
       "1. Pack APPCC (€14, downloadbare Excel-sjablonen) — u downloadt de 17 professionele sjablonen aangepast aan uw type keuken (patisserie, ijssalon, restaurant, enz.).",
-      "2. Allergenen ID — scant automatisch de recepten en sjablonen van uw menu om allergenen per gerecht te identificeren. Het integreert ze in de technische fiches en de zaal.",
+      "2. Allergenen ID — kijkt de recepten na en sjablonen van uw menu om allergenen per gerecht te identificeren. Het integreert ze in de technische fiches en de zaal.",
       "3. Creatieve Keuken met geïntegreerde APPCC — elk nieuw recept levert APPCC-procedures (kritische temperatuur, bewaring, allergenen, opslag) geïntegreerd in de technische fiche.",
       "4. Kit de Tareas met APPCC — dienstsjablonen (opening, service, sluiting) met geïntegreerde APPCC. Het team ondertekent elke dienst digitaal vanaf mobiel."
     ],
@@ -11062,7 +11062,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe kijkt u de 14 allergenen na?",
-        "a": "Allergenen ID identificeert allergenen per ingrediënt en recept, integreert ze in technische fiches en APPCC-sjablonen. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
+        "a": "Allergenen ID dient voor de controle van de 14 allergenen per ingrediënt en recept, met eindcontrole door de kok, op de fiches en de APPCC-sjablonen. Wijzigt u een ingrediënt, dan kijkt u de fiche opnieuw na."
       },
       {
         "q": "Deckt u Europese en Latijns-Amerikaanse regelgeving?",
@@ -11092,7 +11092,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Hulpmiddelen en Utilities",
-        "description": "Automatische identificatie van allergenen per recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept."
       },
       {
         "name": "Creatieve Keuken",
@@ -11180,7 +11180,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "APPCC vanaf mobiel met digitale handtekening",
-        "Automatische allergenen met Allergenen ID",
+        "Controle van de 14 allergenen, met eindcontrole door de kok met Allergenen ID",
         "Excel-sjablonen aangepast per concept",
         "Briefing met APPCC geïntegreerd in Kit de Tareas",
         "Traceerbaarheid klaar voor ISO 22000, BRC, IFS"

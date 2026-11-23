@@ -1201,14 +1201,14 @@
     "breadcrumb": "Reduce Restaurant Costs with AI",
     "seo": {
       "title": "Reduce Restaurant Costs with AI | AI Chef Pro",
-      "description": "Cut up to 35% of waste and food costs in your restaurant with artificial intelligence. Automatic food cost tracking, recipe costing and menu optimization in real time.",
+      "description": "Keep waste and food costs in view with artificial intelligence. AI recipe costing, food-cost control and a look at the menu.",
       "keywords": "reduce restaurant costs, restaurant food cost control, reduce kitchen waste, digital recipe costing, optimize kitchen costs, restaurant profitability AI, AI to cut costs"
     },
     "hero": {
       "badge": "💰 Save from the first month",
       "h1": "Cut your restaurant costs by up to 35% with AI",
       "subtitle": "Control waste, optimize food cost and improve each dish margin — no spreadsheets, no manual calculations.",
-      "tagline": "The tool used by {{userCount}}+ gastronomy professionals.",
+      "tagline": "75+ AI agents in 7 languages for the professional kitchen.",
       "cta_primary": "Start saving",
       "cta_secondary": "View plans and pricing",
       "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
@@ -1246,8 +1246,8 @@
         ]
       },
       {
-        "title": "Automatic Recipe Costing",
-        "description": "Calculate the real cost of each recipe in seconds. Update ingredient prices and all costings recalculate automatically.",
+        "title": "AI recipe costing",
+        "description": "Cost each recipe from your ingredients and prices. If a price changes, you recost it; the cook makes the final check.",
         "keywords": [
           "recipe costing",
           "food cost",
@@ -1306,7 +1306,7 @@
       },
       {
         "title": "Head Chef",
-        "description": "Design profitable recipes from the start. Automatic costing tells you the cost before adding a dish to the menu."
+        "description": "Design recipes with the cost in sight. AI costing gives you a first figure before a dish goes on the menu; the cook checks it."
       },
       {
         "title": "Restaurant Group",
@@ -1353,7 +1353,7 @@
     ],
     "cta_section": {
       "title": "Stop losing money. Start controlling your costs today.",
-      "subtitle": "Join {{userCount}}+ professionals who already use AI to protect their margins and grow their business.",
+      "subtitle": "75+ AI agents in 7 languages to look after the margins.",
       "primary": "Start now",
       "secondary": "View all plans"
     },
@@ -1556,7 +1556,7 @@
       },
       {
         "metric": "14",
-        "label": "allergens managed automatically"
+        "label": "mandatory allergens, reviewed by the cook"
       },
       {
         "metric": "27",
@@ -1652,7 +1652,7 @@
         "Generate a complete menu in hours, not weeks",
         "Identify star dishes that maximize margin and turnover",
         "Write descriptions that generate desire and increase the ticket",
-        "Manage the 14 legal allergens without errors or omissions",
+        "Review the 14 allergens, with the cook's final check",
         "Refresh your menu each season without starting from scratch",
         "Adapt the menu to different languages for international guests"
       ]
@@ -1681,7 +1681,7 @@
       },
       {
         "question": "Does AI manage allergens for my dishes?",
-        "answer": "Yes. Enter the ingredients for each dish and the AI automatically identifies the 14 mandatory allergens under EU Regulation 1169/2011. You can export the information to include in your digital or printed menu."
+        "answer": "Enter the ingredients of each dish and review the 14 mandatory allergens under EU Regulation 1169/2011, with the cook's final check. You can use that review on the digital or printed menu."
       },
       {
         "question": "Can I update my menu seasonally with AI?",
@@ -1690,7 +1690,7 @@
     ],
     "cta_section": {
       "title": "Design the menu your restaurant deserves",
-      "subtitle": "Over {{userCount}} professionals already use AI Chef Pro to create profitable, attractive and legally compliant menus.",
+      "subtitle": "75+ AI agents in 7 languages for menus with the allergens reviewed.",
       "primary": "Create my menu",
       "secondary": "View all plans"
     },
@@ -1868,7 +1868,7 @@
     ],
     "cta_section": {
       "title": "Stop improvising. Automate your restaurant marketing.",
-      "subtitle": "Over {{userCount}} restaurants already use AI Chef Pro to create professional content, manage their online reputation and attract more customers.",
+      "subtitle": "75+ AI agents in 7 languages for the posts, the Google listing and the reviews.",
       "primary": "Start now",
       "secondary": "View all plans"
     },
@@ -1893,14 +1893,6 @@
       {
         "metric": "75+",
         "label": "AI agents"
-      },
-      {
-        "metric": "10x",
-        "label": "more accurate in food cost calculations"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "restaurants and chefs already using it"
       },
       {
         "metric": "27",
@@ -2071,7 +2063,7 @@
     ],
     "cta_section": {
       "title": "The hospitality AI that ChatGPT cannot be",
-      "subtitle": "Over {{userCount}} chefs and restaurateurs have already chosen the AI specialized in gastronomy.",
+      "subtitle": "75+ AI agents in 7 languages, trained for hospitality.",
       "primary": "Try AI Chef Pro",
       "secondary": "See all plans"
     },
@@ -2099,10 +2091,6 @@
         "label": "of repetitive costing work handed to AI"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Chefs and hospitality professionals"
-      },
-      {
         "metric": "75+",
         "label": "AI agents"
       },
@@ -2118,9 +2106,9 @@
       "col_other": "Traditional Software",
       "items": [
         {
-          "feature": "Automatic food costing",
+          "feature": "AI food costing, checked by the cook",
           "other": "Manual, in Excel sheets",
-          "aichef": "AI calculates food cost instantly"
+          "aichef": "The AI drafts the food cost; the cook checks it"
         },
         {
           "feature": "Recipe management",
@@ -2140,7 +2128,7 @@
         {
           "feature": "Price updates",
           "other": "Slow and tedious process",
-          "aichef": "Automatic recalculation in seconds"
+          "aichef": "You update the price and review the costing"
         }
       ]
     },
@@ -2151,7 +2139,7 @@
     "tools": [
       {
         "title": "AI Food Costing",
-        "description": "Calculate the exact cost of each dish in seconds. Enter ingredients, weights and supplier prices — AI does the rest.",
+        "description": "Cost each dish from ingredients, weights and prices. The AI drafts the cost and you check it.",
         "keywords": [
           "restaurant food costing",
           "food cost AI",
@@ -2230,7 +2218,7 @@
       "title": "The kitchen management chefs need, powered by AI",
       "body": "Traditional management software is slow, rigid and doesn't understand the kitchen. AI Chef Pro is software designed by and for hospitality professionals. Artificial intelligence in professional kitchens isn't a gadget: it takes over the repetitive math, such as costing every dish, recalculating when prices change and flagging allergens, so the chef can spend that time on the pass.",
       "benefits": [
-        "Automatic food costing with up-to-date market prices",
+        "AI food costing from the prices you enter, checked by the cook",
         "Integrated allergen control compliant with current EU regulations",
         "Standardized recipes with professional tech sheets",
         "Dish-by-dish profitability analysis with menu engineering",
@@ -2258,11 +2246,11 @@
       },
       {
         "question": "Can I manage my food costs with AI Chef Pro?",
-        "answer": "Yes. AI Chef Pro automatically calculates the food cost of each dish using your ingredients, weights and supplier prices. It updates costs in seconds when market prices change."
+        "answer": "Yes. AI Chef Pro drafts the food cost of each dish from your ingredients, weights and supplier prices. If a price changes, you recost it and the cook checks the result."
       },
       {
         "question": "Does AI Chef Pro comply with allergen regulations?",
-        "answer": "Yes. The system identifies the 14 allergens under EU Regulation 1169/2011 and generates tech sheets compliant with current European regulations. Essential for avoiding fines and protecting your customers' health."
+        "answer": "You review the 14 allergens under EU Regulation 1169/2011, with the cook's final check, and you can put that review on the tech sheet."
       },
       {
         "question": "Do I need to install any software on my computer?",
@@ -2270,11 +2258,11 @@
       },
       {
         "question": "What should kitchen management software for chefs include?",
-        "answer": "At a minimum: food costing per dish, recipe tech sheets with portion scaling, inventory and waste control, allergen management and a view of each dish's profitability. AI Chef Pro brings all of these together and adds AI so the calculations update themselves when your prices change."
+        "answer": "At a minimum: food costing per dish, recipe tech sheets with portion scaling, inventory and waste control, a review of the 14 allergens and a view of each dish's profitability. When a price changes, you review the costing and the cook checks it."
       },
       {
         "question": "How does AI help in a professional kitchen?",
-        "answer": "AI acts as a food manager that does the repetitive work: it calculates the cost of each dish, recalculates when supplier prices change, helps you standardize recipes, identifies the 14 EU allergens and analyzes which dishes earn the most. The chef keeps the decisions and the creativity."
+        "answer": "AI drafts the repetitive work: a first cost for each dish from the prices you enter, a recipe you can standardize, a review of the 14 EU allergens and a look at which dishes earn more. When a price changes, you recost and the cook checks it. The chef keeps the decisions and the creativity."
       },
       {
         "question": "Can AI help me design and cost my kitchen menu?",
@@ -2283,7 +2271,7 @@
     ],
     "cta_section": {
       "title": "Start managing your kitchen with AI today",
-      "subtitle": "Over {{userCount}} hospitality professionals already use AI Chef Pro to manage their kitchen with more control and less time.",
+      "subtitle": "75+ AI agents in 7 languages for kitchen management.",
       "primary": "Try now",
       "secondary": "See all plans"
     }
@@ -2291,14 +2279,14 @@
   "landingRecetas": {
     "seo": {
       "title": "AI Recipes for Restaurants | AI Chef Pro",
-      "description": "Generate professional recipes with AI: 27 world cuisines, seasonal menus, tech sheets and automatic scaling. 75+ AI agents in 7 languages.",
+      "description": "Recipes with AI for restaurants. The agent drafts the dish and the chef checks it before service. 27 cuisines from Europe, Latin America and Asia.",
       "keywords": "AI recipes restaurants, professional recipe generator, AI chef recipes, seasonal menu AI, recipe tech sheets, 27 world cuisines recipes"
     },
     "breadcrumb": "AI Recipes for Restaurants",
     "hero": {
       "badge": "Professional AI Recipe Generator",
       "h1": "AI Recipes for Restaurants: 27 World Cuisines",
-      "subtitle": "Generate technically accurate recipes instantly. Seasonal menus, professional tech sheets and automatic portion scaling for your restaurant.",
+      "subtitle": "You ask for the dish and the agent leaves a draft: ingredients, amounts and method. You cook it and correct it before it reaches the pass.",
       "tagline": "From concept to dish in minutes, not hours.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
@@ -2346,7 +2334,7 @@
         {
           "feature": "Portion scaling",
           "other": "Manual calculations with errors",
-          "aichef": "Automatic and instant scaling"
+          "aichef": "A new draft of the weights; you check the seasoning before service"
         },
         {
           "feature": "Tech sheets",
@@ -2388,8 +2376,8 @@
         ]
       },
       {
-        "title": "Automatic Portion Scaling",
-        "description": "Adapt any recipe to the number of diners you need. AI adjusts weights, cooking times and techniques.",
+        "title": "Portion scaling, checked by the cook",
+        "description": "Calcula Pax drafts the new amounts for another number of diners. You check the seasoning and the times before service.",
         "keywords": [
           "recipe scaling",
           "weights per portion",
@@ -2430,7 +2418,7 @@
       },
       {
         "title": "Hotel or Catering Chef",
-        "description": "Creates full menus for large events with automatic portion scaling."
+        "description": "Drafts full menus for large events. Calcula Pax proposes the new amounts and you taste them."
       },
       {
         "title": "Restaurant Owner",
@@ -2445,7 +2433,7 @@
         "27 world cuisines with authentic techniques and traditions",
         "Seasonal menus aligned with your gastronomic concept",
         "Tech sheets ready to print and use with your team",
-        "Instant portion scaling without calculation errors",
+        "Calcula Pax drafts the new quantities. You taste a spoonful and adjust before service.",
         "Dietary restriction adaptation without losing culinary quality"
       ]
     },
@@ -2471,8 +2459,8 @@
         "answer": "Yes. AI Chef Pro generates complete professional tech sheets: ingredients with weights, step-by-step techniques, allergens per EU Regulation 1169/2011, nutritional values and plating suggestions."
       },
       {
-        "question": "How does automatic recipe scaling work?",
-        "answer": "Enter the number of servings you need and the AI automatically adjusts all weights, cooking times and techniques. Ideal for catering, events or adapting tasting menu recipes to à la carte service."
+        "question": "How does portion scaling work?",
+        "answer": "Enter the number of servings. The AI drafts the new weights, times and techniques. You taste and correct them before service. It suits catering, events or moving a tasting-menu recipe to à la carte."
       }
     ],
     "cta_section": {
@@ -2736,9 +2724,9 @@
         "No registration or credit card needed",
         "Instant results in your browser",
         "Based on real industry standards",
-        "Used by more than {{userCount}} professionals"
+        "Built for the work of the kitchen and the dining room"
       ],
-      "users_label": "hospitality professionals already use them"
+      "users_label": "AI agents in 7 languages"
     },
     "cta": {
       "title": "Need more power?",
@@ -2782,7 +2770,7 @@
       "status_warn": "⚠️ Tight food cost — Review prices or ingredients",
       "status_bad": "🔴 High food cost — Consider raising price or reducing costs",
       "tip": "💡 Industry benchmark: food cost between 25% and 32% is healthy for restaurants",
-      "cta_after": "Want to calculate all your dishes automatically?",
+      "cta_after": "Want to cost the whole menu with AI and check the result?",
       "reset": "New calculation",
       "export_excel": "Download Excel",
       "lead_title": "Enter your email to download the Excel file",
@@ -2836,7 +2824,7 @@
     },
     "pricing": {
       "title": "More power with AI Chef Pro",
-      "subtitle": "The free calculator is just a sample. With AI Chef Pro you calculate your entire menu with waste control and automatic price updates.",
+      "subtitle": "With AI Chef Pro you cost the whole menu, with waste in the picture. When a price changes, you review the costing.",
       "plans": [
         {
           "name": "Member",
@@ -2878,7 +2866,7 @@
       },
       {
         "question": "Does this calculator include waste?",
-        "answer": "This free version works with the net weights you enter. To automatically include cleaning, cooking and evaporation waste, use the recipe costing tool in AI Chef Pro Premium."
+        "answer": "This version uses the net weights you enter. To include trimming, cooking and evaporation loss, use the AI Chef Pro costing tool and check the result."
       },
       {
         "question": "How to improve a high food cost?",
@@ -2886,8 +2874,8 @@
       }
     ],
     "cta_section": {
-      "title": "Automate all your recipe costing with AI",
-      "subtitle": "With AI Chef Pro you calculate food cost for your entire menu in minutes, with waste control and automatic updates when prices change.",
+      "title": "Cost the whole menu with AI, and check it",
+      "subtitle": "With AI Chef Pro you cost the whole menu, with waste in the picture. When a price changes, you review the costing and the cook checks it.",
       "primary": "Try AI Chef Pro",
       "secondary": "See all plans"
     }
@@ -3317,7 +3305,7 @@
       "copy": "Copy declaration",
       "copied": "Copied!",
       "reset": "New analysis",
-      "cta_after": "Want to manage allergens for your entire menu automatically?",
+      "cta_after": "Want to review the 14 allergens across the menu, with the cook's final check?",
       "allergens_title": "The 14 mandatory allergens",
       "allergens_subtitle": "EU Regulation 1169/2011",
       "try_free": "Try AI Chef Pro",
@@ -3552,8 +3540,8 @@
         },
         {
           "step": "2",
-          "title": "Automatic detection",
-          "description": "The checker identifies which allergens from EU Regulation 1169/2011 are present."
+          "title": "Review of the 14 allergens",
+          "description": "The checker suggests which allergens from EU Regulation 1169/2011 show up in the ingredients. The cook makes the final check."
         },
         {
           "step": "3",
@@ -3578,7 +3566,7 @@
     },
     "pricing": {
       "title": "Complete allergen management with AI Chef Pro",
-      "subtitle": "The basic checker is free. With AI Chef Pro you manage allergens for your entire menu with automatic alerts.",
+      "subtitle": "With AI Chef Pro you review the 14 allergens on the menu, with the cook's final check.",
       "plans": [
         {
           "name": "Member",
@@ -3629,7 +3617,7 @@
     ],
     "cta_section": {
       "title": "Manage allergens for your entire menu with AI",
-      "subtitle": "With AI Chef Pro you manage allergens for each dish automatically, with alerts when you change ingredients and exportable declaration for your menu.",
+      "subtitle": "With AI Chef Pro you review the 14 allergens on each dish, with the cook's final check, and you export the sheet for the menu.",
       "primary": "Try AI Chef Pro",
       "secondary": "See all plans"
     },

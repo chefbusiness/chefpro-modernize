@@ -12,7 +12,6 @@ import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
-import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
 const SITE_URL = 'https://aichef.pro';
 
@@ -157,8 +156,7 @@ export default function HerramientasGratuitas() {
 
   const tools = k('tools') as Array<{ title: string; description: string; badge: string; color: string }>;
   const lang = currentLanguage;
-  const { formatted: userCountFormatted, formattedPlus: userCountPlus } = useLiveUserCount(lang);
-  const whyItems = t('toolHub.why.items', { returnObjects: true, userCount: userCountFormatted }) as string[];
+  const whyItems = t('toolHub.why.items', { returnObjects: true }) as string[];
   const canonicalSlug = LANG_SLUGS[lang] || LANG_SLUGS.es;
   const canonicalUrl = lang === 'es'
     ? `${SITE_URL}/${canonicalSlug}`
@@ -292,7 +290,7 @@ export default function HerramientasGratuitas() {
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <ChefHat className="h-8 w-8 text-amber-600" />
                 </div>
-                <p className="text-4xl font-bold text-amber-700 mb-2">{lang === 'es' ? '75+' : userCountPlus}</p>
+                <p className="text-4xl font-bold text-amber-700 mb-2">{'75+'}</p>
                 <p className="text-muted-foreground mb-6">{s('why.users_label')}</p>
                 <Button
                   size="lg"

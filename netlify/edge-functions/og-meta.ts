@@ -1138,7 +1138,7 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
   '/en/use-cases/task/technical-recipe-sheets-with-ai': {
     title: 'How to Create Spec Sheets with AI | AI Chef Pro',
-    description: 'Document every dish with a professional spec sheet: ingredients, gram weights, technique, automatic allergens, food cost, and storytelling.',
+    description: 'Document every dish with a professional spec sheet: ingredients, gram weights, technique, a cook-checked review of the 14 allergens, food cost, and storytelling.',
     image: 'https://aichef.pro/og/use-cases/en/technical-recipe-sheets-with-ai.jpg',
   },
   '/en/use-cases/task/wine-pairings-with-ai': {

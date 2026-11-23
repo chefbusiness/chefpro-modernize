@@ -1486,14 +1486,14 @@
     "breadcrumb": "Restaurantkosten senken mit KI",
     "seo": {
       "title": "Restaurantkosten senken mit KI | AI Chef Pro",
-      "description": "Reduzieren Sie Lebensmittelverluste und Kosten in Ihrem Restaurant um bis zu 35% mit künstlicher Intelligenz. Automatische Rezeptkalkulation und Menüoptimierung in Echtzeit.",
+      "description": "Behalten Sie Verluste und Kosten im Restaurant mit künstlicher Intelligenz im Blick. Rezeptkalkulation mit KI, Food-Cost-Kontrolle und eine Prüfung der Speisekarte.",
       "keywords": "Restaurantkosten senken, Food-Cost-Kontrolle Restaurant, Küchenabfall reduzieren, digitale Rezeptkalkulation, Küchenkosten optimieren, Restaurant-Rentabilität KI"
     },
     "hero": {
       "badge": "💰 Sparen Sie ab dem ersten Monat",
       "h1": "Senken Sie die Kosten Ihres Restaurants um bis zu 35% mit KI",
       "subtitle": "Kontrollieren Sie Verluste, optimieren Sie den Food Cost und verbessern Sie die Marge jedes Gerichts — ohne Tabellen oder manuelle Berechnungen.",
-      "tagline": "Das Tool, das über {{userCount}} Gastronomie-Profis nutzen.",
+      "tagline": "75+ KI-Agenten in 7 Sprachen für die Profiküche.",
       "cta_primary": "anfangen zu sparen",
       "cta_secondary": "Preise und Pläne ansehen",
       "no_card": "Ab 10 €/Monat · Monatliche Tarife ohne Vertragsbindung · Sofortiger Zugang"
@@ -1531,8 +1531,8 @@
         ]
       },
       {
-        "title": "Automatische Rezeptkalkulation",
-        "description": "Berechnen Sie die tatsächlichen Kosten jedes Rezepts in Sekunden. Aktualisieren Sie Zutatenpreise und alle Kalkulationen werden automatisch neu berechnet.",
+        "title": "Rezeptkalkulation mit KI",
+        "description": "Berechnen Sie die Kosten jeder Rezeptur aus Ihren Zutaten und Preisen. Ändert sich ein Preis, rechnen Sie neu; die letzte Prüfung macht der Koch.",
         "keywords": [
           "Rezeptkalkulation",
           "Food Cost",
@@ -1591,7 +1591,7 @@
       },
       {
         "title": "Küchenchef",
-        "description": "Entwickeln Sie von Anfang an rentable Rezepte. Die automatische Kalkulation zeigt Ihnen die Kosten, bevor Sie ein Gericht auf die Karte nehmen."
+        "description": "Entwickeln Sie Rezepte mit den Kosten im Blick. Die Kalkulation mit KI liefert eine erste Zahl, bevor das Gericht auf die Karte kommt; der Koch prüft sie."
       },
       {
         "title": "Gastronomiegruppe",
@@ -1638,7 +1638,7 @@
     ],
     "cta_section": {
       "title": "Hören Sie auf, Geld zu verlieren. Kontrollieren Sie Ihre Kosten ab heute.",
-      "subtitle": "Schließen Sie sich {{userCount}}+ Profis an, die bereits KI nutzen, um ihre Margen zu schützen und ihr Geschäft auszubauen.",
+      "subtitle": "75+ KI-Agenten in 7 Sprachen, um die Margen im Blick zu behalten.",
       "primary": "Jetzt starten",
       "secondary": "Alle Pläne ansehen"
     },
@@ -1716,7 +1716,7 @@
       },
       {
         "title": "Allergenverwaltung",
-        "description": "Identifizieren und kennzeichnen Sie automatisch die 14 meldepflichtigen Allergene in allen Ihren Gerichten. Vereinfachte rechtliche Compliance.",
+        "description": "Prüfung der 14 meldepflichtigen Allergene, mit abschließender Kontrolle durch den Koch, damit Sie sie auf die Karte setzen können.",
         "keywords": [
           "Restaurant-Allergene",
           "Allergenvorschriften",
@@ -1771,7 +1771,7 @@
         "Gestalten Sie Ihre Speisekarte in Stunden, nicht Wochen",
         "Berechnen Sie den Food Cost jedes Gerichts auf den Cent genau",
         "Generieren Sie Social-Media-Inhalte in Minuten",
-        "Identifizieren Sie Allergene automatisch in allen Ihren Gerichten",
+        "Sie prüfen die 14 Allergene in jedem Gericht, und der Koch gibt die letzte Kontrolle.",
         "Reduzieren Sie Abfall mit intelligenter Einkaufsplanung",
         "Greifen Sie auf Rezepte aus 27 Weltküchen für Ihr Unternehmen zu"
       ]
@@ -1841,7 +1841,7 @@
       },
       {
         "metric": "14",
-        "label": "Allergene automatisch verwaltet"
+        "label": "meldepflichtige Allergene, vom Koch geprüft"
       },
       {
         "metric": "27",
@@ -1882,7 +1882,7 @@
       },
       {
         "title": "Allergenverwaltung",
-        "description": "Identifizieren und kennzeichnen Sie automatisch die 14 deklarationspflichtigen Allergene. Rechtliche Konformität mühelos für alle Gerichte.",
+        "description": "Prüfung der 14 deklarationspflichtigen Allergene, mit abschließender Kontrolle durch den Koch, zum Kennzeichnen der Karte.",
         "keywords": [
           "Allergene Speisekarte",
           "Allergenvorschriften",
@@ -1966,7 +1966,7 @@
       },
       {
         "question": "Verwaltet die KI die Allergene meiner Gerichte?",
-        "answer": "Ja. Geben Sie die Zutaten ein und die KI identifiziert automatisch die 14 deklarationspflichtigen Allergene gemäß EU-Verordnung 1169/2011. Die Daten können für Ihre digitale oder gedruckte Speisekarte exportiert werden."
+        "answer": "Geben Sie die Zutaten ein und prüfen Sie die 14 deklarationspflichtigen Allergene der EU-Verordnung 1169/2011, mit abschließender Kontrolle durch den Koch. Diese Prüfung können Sie auf die digitale oder gedruckte Karte setzen."
       },
       {
         "question": "Kann ich meine Speisekarte saisonal mit KI aktualisieren?",
@@ -1975,7 +1975,7 @@
     ],
     "cta_section": {
       "title": "Gestalten Sie die Speisekarte, die Ihr Restaurant verdient",
-      "subtitle": "Über {{userCount}} Fachleute nutzen AI Chef Pro bereits für rentable, attraktive und rechtskonforme Speisekarten.",
+      "subtitle": "75+ KI-Agenten in 7 Sprachen für Speisekarten mit geprüften Allergenen.",
       "primary": "Meine Karte erstellen",
       "secondary": "Alle Pläne ansehen"
     },
@@ -1998,16 +1998,8 @@
     },
     "results": [
       {
-        "metric": "10x",
-        "label": "schneller Social-Media-Inhalte erstellen"
-      },
-      {
         "metric": "3h",
         "label": "pro Woche im digitalen Marketing gespart"
-      },
-      {
-        "metric": "4.8★",
-        "label": "durchschnittliche Kundenbewertung bei Google"
       },
       {
         "metric": "75+",
@@ -2141,7 +2133,7 @@
     ],
     "cta_section": {
       "title": "Hören Sie auf zu improvisieren. Automatisieren Sie Ihr Restaurant-Marketing.",
-      "subtitle": "Über {{userCount}} Restaurants nutzen AI Chef Pro bereits für professionelle Inhalte, Online-Reputation und mehr Kunden.",
+      "subtitle": "75+ KI-Agenten in 7 Sprachen für Beiträge, den Google-Eintrag und die Bewertungen.",
       "primary": "Jetzt starten",
       "secondary": "Alle Pläne ansehen"
     },
@@ -2166,14 +2158,6 @@
       {
         "metric": "75+",
         "label": "KI-Agenten"
-      },
-      {
-        "metric": "10x",
-        "label": "präziser bei Food-Cost-Berechnungen"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "Restaurants und Köche, die es nutzen"
       },
       {
         "metric": "27",
@@ -2344,7 +2328,7 @@
     ],
     "cta_section": {
       "title": "Die Gastronomie-KI, die ChatGPT nicht sein kann",
-      "subtitle": "Über {{userCount}} Köche und Gastronomen haben sich bereits für die auf Gastronomie spezialisierte KI entschieden.",
+      "subtitle": "75+ KI-Agenten in 7 Sprachen, für die Gastronomie trainiert.",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne ansehen"
     },
@@ -2372,10 +2356,6 @@
         "label": "Tägliche Zeiteinsparung"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Aktive Restaurants"
-      },
-      {
         "metric": "75+",
         "label": "KI-Agenten"
       },
@@ -2391,9 +2371,9 @@
       "col_other": "Traditionelle Software",
       "items": [
         {
-          "feature": "Automatische Food-Cost-Kalkulation",
+          "feature": "Food-Cost-Kalkulation mit KI, vom Koch geprüft",
           "other": "Manuell in Excel-Tabellen",
-          "aichef": "KI berechnet Food Cost sofort"
+          "aichef": "Die KI schlägt den Food Cost vor; der Koch prüft ihn"
         },
         {
           "feature": "Rezeptverwaltung",
@@ -2413,7 +2393,7 @@
         {
           "feature": "Preisaktualisierung",
           "other": "Langsamer und mühsamer Prozess",
-          "aichef": "Automatische Neuberechnung in Sekunden"
+          "aichef": "Sie aktualisieren den Preis und prüfen die Kalkulation"
         }
       ]
     },
@@ -2503,7 +2483,7 @@
       "title": "Das Küchenmanagement, das Köche brauchen – ermöglicht durch KI",
       "body": "Traditionelle Verwaltungssoftware ist langsam, starr und versteht die Küche nicht. AI Chef Pro ist Software, die von und für Gastronomieprofis entwickelt wurde.",
       "benefits": [
-        "Automatische Food-Cost-Kalkulation mit aktuellen Marktpreisen",
+        "Food-Cost-Kalkulation mit KI aus den Preisen, die Sie eingeben, vom Koch geprüft",
         "Integrierte Allergenkontrolle gemäß aktueller EU-Verordnung",
         "Standardisierte Rezepte mit professionellen Technischen Datenblättern",
         "Gerichtsweise Rentabilitätsanalyse mit Menü-Engineering",
@@ -2531,11 +2511,11 @@
       },
       {
         "question": "Kann ich meine Food-Cost-Kalkulationen mit AI Chef Pro verwalten?",
-        "answer": "Ja. AI Chef Pro berechnet automatisch den Food Cost jedes Gerichts mit Ihren Zutaten, Gewichten und Lieferantenpreisen. Es aktualisiert die Kosten in Sekunden, wenn sich die Marktpreise ändern."
+        "answer": "Ja. AI Chef Pro schlägt den Food Cost jedes Gerichts aus Ihren Zutaten, Gewichten und Lieferantenpreisen vor. Ändert sich ein Preis, rechnen Sie neu und der Koch prüft das Ergebnis."
       },
       {
         "question": "Entspricht AI Chef Pro den Allergenvorschriften?",
-        "answer": "Ja. Das System identifiziert die 14 Allergene gemäß EU-Verordnung 1169/2011 und erstellt Technische Datenblätter, die der aktuellen europäischen Gesetzgebung entsprechen."
+        "answer": "Sie prüfen die 14 Allergene der EU-Verordnung 1169/2011, mit abschließender Kontrolle durch den Koch, und können diese Prüfung auf das technische Datenblatt setzen."
       },
       {
         "question": "Muss ich Software auf meinem Computer installieren?",
@@ -2544,7 +2524,7 @@
     ],
     "cta_section": {
       "title": "Beginnen Sie noch heute mit dem KI-gestützten Küchenmanagement",
-      "subtitle": "Über {{userCount}} Gastronomieprofis nutzen bereits AI Chef Pro, um ihre Küche mit mehr Kontrolle und weniger Zeitaufwand zu managen.",
+      "subtitle": "75+ KI-Agenten in 7 Sprachen für die Küchenverwaltung.",
       "primary": "Jetzt testen",
       "secondary": "Alle Pläne ansehen"
     }
@@ -2607,7 +2587,7 @@
         {
           "feature": "Portionsskalierung",
           "other": "Manuelle Berechnungen mit Fehlern",
-          "aichef": "Automatische und sofortige Skalierung"
+          "aichef": "Calcula Pax legt einen neuen Mengenentwurf vor"
         },
         {
           "feature": "Technische Datenblätter",
@@ -2649,8 +2629,8 @@
         ]
       },
       {
-        "title": "Automatische Portionsskalierung",
-        "description": "Passen Sie jedes Rezept an die gewünschte Personenzahl an. KI passt Gewichte, Garzeiten und Techniken an.",
+        "title": "Portionsskalierung, vom Koch geprüft",
+        "description": "Calcula Pax legt neue Mengen für eine andere Gästezahl vor. Sie schmecken Salz und Zeiten vor dem Service ab.",
         "keywords": [
           "Rezeptskalierung",
           "Gewichte pro Portion",
@@ -2691,7 +2671,7 @@
       },
       {
         "title": "Hotel- oder Cateringkoch",
-        "description": "Erstellt vollständige Menüs für Großveranstaltungen mit automatischer Portionsskalierung."
+        "description": "Legt ganze Menüs für große Events vor. Calcula Pax schlägt die neuen Mengen vor und Sie schmecken sie ab."
       },
       {
         "title": "Restaurantinhaber",
@@ -2706,7 +2686,7 @@
         "27 Weltküchen mit authentischen Techniken und Traditionen",
         "Saisonmenüs abgestimmt auf Ihr gastronomisches Konzept",
         "Technische Datenblätter druckfertig für Ihr Team",
-        "Sofortige Portionsskalierung ohne Berechnungsfehler",
+        "Calcula Pax legt einen neuen Mengenentwurf vor, und das Salz wird noch einmal abgeschmeckt.",
         "Anpassung an Ernährungseinschränkungen ohne Qualitätsverlust"
       ]
     },
@@ -2732,8 +2712,8 @@
         "answer": "Ja. AI Chef Pro generiert vollständige professionelle technische Datenblätter: Zutaten mit Gewichten, schrittweise Techniken, Allergene gemäß EU-Verordnung 1169/2011, Nährwerte und Anrichtevorschläge."
       },
       {
-        "question": "Wie funktioniert die automatische Rezeptskalierung?",
-        "answer": "Geben Sie die gewünschte Portionsanzahl ein und die KI passt automatisch alle Gewichte, Garzeiten und Techniken an. Ideal für Catering, Events oder die Anpassung von Degustationsmenüs an den À-la-carte-Service."
+        "question": "Wie funktioniert die Portionsskalierung?",
+        "answer": "Sie geben die Portionszahl ein. Die KI legt einen Entwurf der Gewichte, Zeiten und Techniken vor. Sie schmecken ab und korrigieren vor dem Service. Das passt zu Catering, Events oder wenn ein Degustationsrezept auf die Karte wandert."
       }
     ],
     "cta_section": {
@@ -2997,9 +2977,9 @@
         "Keine Anmeldung oder Kreditkarte erforderlich",
         "Sofortige Ergebnisse in Ihrem Browser",
         "Basierend auf echten Branchenstandards",
-        "Von mehr als {{userCount}} Fachleuten genutzt"
+        "Gedacht für die Arbeit in Küche und Service"
       ],
-      "users_label": "Gastronomieprofis nutzen sie bereits"
+      "users_label": "KI-Agenten in 7 Sprachen"
     },
     "cta": {
       "title": "Benötigen Sie mehr Leistung?",
@@ -3043,7 +3023,7 @@
       "status_warn": "⚠️ Knapper Food Cost — Überprüfen Sie Preise oder Zutaten",
       "status_bad": "🔴 Hoher Food Cost — Erwägen Sie Preiserhöhung oder Kostensenkung",
       "tip": "💡 Branchenreferenz: Food Cost zwischen 25% und 32% ist gesund für Restaurants",
-      "cta_after": "Möchten Sie alle Ihre Gerichte automatisch berechnen?",
+      "cta_after": "Möchten Sie die ganze Karte mit KI kalkulieren und das Ergebnis prüfen lassen?",
       "reset": "Neue Berechnung",
       "export_excel": "Excel herunterladen",
       "lead_title": "E-Mail eintragen, um die Excel-Datei herunterzuladen",
@@ -3139,7 +3119,7 @@
       },
       {
         "question": "Beinhaltet dieser Rechner Abfälle?",
-        "answer": "Diese kostenlose Version arbeitet mit den Nettogewichten, die Sie eingeben. Für automatische Abfallberechnung nutzen Sie das Kalkulations-Tool von AI Chef Pro Premium."
+        "answer": "Diese Version rechnet mit den Nettogewichten, die Sie eingeben. Für Putzen, Garen und Verdunstung nutzen Sie das Kalkulationswerkzeug von AI Chef Pro und der Koch prüft das Ergebnis."
       },
       {
         "question": "Wie verbessert man einen hohen Food Cost?",
@@ -3147,8 +3127,8 @@
       }
     ],
     "cta_section": {
-      "title": "Automatisieren Sie Ihre gesamte Kalkulation mit KI",
-      "subtitle": "Mit AI Chef Pro berechnen Sie den Food Cost Ihrer gesamten Speisekarte in Minuten, mit Abfallkontrolle und automatischen Updates.",
+      "title": "Die ganze Karte mit KI kalkulieren und prüfen",
+      "subtitle": "Mit AI Chef Pro kalkulieren Sie die ganze Karte, mit den Verlusten im Blick. Ändert sich ein Preis, prüfen Sie die Kalkulation und der Koch kontrolliert sie.",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne ansehen"
     }
@@ -3578,7 +3558,7 @@
       "copy": "Deklaration kopieren",
       "copied": "Kopiert!",
       "reset": "Neue Analyse",
-      "cta_after": "Möchten Sie die Allergene Ihrer gesamten Speisekarte automatisch verwalten?",
+      "cta_after": "Möchten Sie die 14 Allergene der ganzen Karte prüfen, mit abschließender Kontrolle durch den Koch?",
       "allergens_title": "Die 14 deklarationspflichtigen Allergene",
       "allergens_subtitle": "Verordnung (EU) 1169/2011",
       "try_free": "AI Chef Pro testen",
@@ -3840,8 +3820,8 @@
         },
         {
           "step": "2",
-          "title": "Automatische Erkennung",
-          "description": "Der Detektor identifiziert, welche Allergene der EU-Verordnung 1169/2011 in den Zutaten vorhanden sind."
+          "title": "Prüfung der 14 Allergene",
+          "description": "Der Detektor schlägt vor, welche Allergene der EU-Verordnung 1169/2011 in den Zutaten vorkommen. Die letzte Prüfung macht der Koch."
         },
         {
           "step": "3",
@@ -3866,7 +3846,7 @@
     },
     "pricing": {
       "title": "Komplette Allergenverwaltung mit AI Chef Pro",
-      "subtitle": "Der Basisdetektor ist kostenlos. Mit AI Chef Pro verwalten Sie die Allergene Ihrer gesamten Speisekarte mit automatischen Warnungen.",
+      "subtitle": "Mit AI Chef Pro prüfen Sie die 14 Allergene der Karte, mit abschließender Kontrolle durch den Koch.",
       "plans": [
         {
           "name": "Mitglied",
@@ -3917,7 +3897,7 @@
     ],
     "cta_section": {
       "title": "Verwalten Sie die Allergene Ihrer gesamten Speisekarte mit KI",
-      "subtitle": "Mit AI Chef Pro verwalten Sie die Allergene jedes Gerichts automatisch, mit Warnungen bei Zutatenänderungen und exportierbarer Deklaration für Ihre Speisekarte.",
+      "subtitle": "Mit AI Chef Pro prüfen Sie die 14 Allergene jedes Gerichts, mit abschließender Kontrolle durch den Koch, und exportieren das Blatt für die Karte.",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne ansehen"
     },

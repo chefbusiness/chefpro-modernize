@@ -242,9 +242,8 @@ export default defineConfig({
         // Fase 5 (zona app islands): los gates/dashboards de la SPA se importan
         // cross-root TAL CUAL (fuente de verdad única, cero copias). Sus imports
         // internos '@/x' apuntan al src/ de la RAÍZ del repo (no a astro-site/src).
-        // ⚠️ Desde Fase 6, BaseLayout.astro también usa '@/hooks/useLiveUserCount'
-        // A PROPÓSITO (fichero cross-root de la SPA). Si algún día se crea
-        // astro-site/src/hooks/*, recordar que '@/' SIEMPRE resuelve a la raíz.
+        // Si algún día se crea astro-site/src/hooks/*, recordar que '@/'
+        // SIEMPRE resuelve a la raíz del repo (src/ de la SPA).
         // Nota: el find '@' solo matchea '@' exacto o '@/...' — los paquetes
         // scoped tipo @astrojs/* NO se ven afectados (semántica @rollup/plugin-alias).
         '@': fileURLToPath(new URL('../src', import.meta.url)),

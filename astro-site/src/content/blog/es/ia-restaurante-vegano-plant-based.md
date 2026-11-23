@@ -2,7 +2,7 @@
 title: "IA para Restaurantes Veganos y Plant-Based: Guía Completa {year}"
 description: "Por Qué los Restaurantes Veganos Necesitan IA en {year} El sector de la restauración vegana y plant-based en España y Latinoamérica está experimentando una…"
 pubDate: 2026-04-06
-modDate: 2026-08-31
+modDate: 2026-11-23
 category: tutoriales
 image: /blog-assets/2026/03/ia-restaurante-vegano-chef-madrid.jpg
 imageAlt: "Chef preparando platos veganos con inteligencia artificial en restaurante plant-based Madrid 2026"
@@ -25,7 +25,7 @@ wpId: 3490
 <h3>2. Optimización del <a href="https://aichef.pro/blog">Food Cost</a> en Cocina Vegana</h3>
 <p>El control del food cost representa uno de los mayores desafíos para los restaurantes veganos. Los ingredientes especializados como el tofu de calidad premium, el tempeh artesanal, los quesos vegetales madurados o las alternativas cárnicas procesadas tienen precios significativamente superiores a sus equivalentes animales. Esta realidad hace que la optimización del coste de materias primas sea crítica para la rentabilidad del negocio.</p>
 <p>La diferencia fundamental entre la cocina vegana y la tradicional en términos de gestión de costes radica en el comportamiento de los ingredientes. Mientras que las proteínas animales pueden almacenarse durante períodos más largos y tienen procesos de conservación más establecidos, los ingredientes vegetales perecederos requieren una gestión más precisa para evitar mermas que erosionen rápidamente los márgenes.</p>
-<p>Los <a href="https://aichef.pro/blog/escandallos-ia-cocina-profesional">escandallos con IA</a> transforman esta ecuación. Un escandallo es la breakdown detallada del coste de cada plato, incluyendo la cantidad exacta de cada ingrediente, el porcentaje de merma esperado en preparación y el coste final por porción. Tradicionalmente, calcular <a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">escandallos</a> era un proceso manual que consumía horas del equipo de cocina y frecuentemente quedaba desactualizado ante fluctuaciones de precios de proveedores.</p>
+<p>Los <a href="https://aichef.pro/blog/escandallos-ia-cocina-profesional">escandallos con IA</a> transforman esta ecuación. Un escandallo es el desglose detallado del coste de cada plato, incluyendo la cantidad exacta de cada ingrediente, el porcentaje de merma esperado en preparación y el coste final por porción. Tradicionalmente, calcular <a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">escandallos</a> era un proceso manual que consumía horas del equipo de cocina y frecuentemente quedaba desactualizado ante fluctuaciones de precios de proveedores.</p>
 <p>AI Chef Pro propone el escandallo a partir de los precios que tú introduces. El cocinero lo valida, puede probar un cambio de receta antes de pasarlo a la carta y revisar el food cost de cada plato. Así el restaurante vegano sigue el margen cuando se mueve el precio de la materia prima.</p>
 <p>El control de mermas verdes, término que define las pérdidas de ingredientes vegetales durante el proceso de elaboración, se beneficia especialmente de la IA. El sistema puede analizar patrones de uso históricos, identificar picos de demanda por días y estaciones, y sugerir ajustes en las preparaciones que maximicen el aprovechamiento de cada ingrediente.</p>
 <h3>3. Menús Personalizados por Alérgenos e Intolerancias</h3>

@@ -1468,14 +1468,14 @@
     "breadcrumb": "Restaurantkosten verlagen met AI",
     "seo": {
       "title": "Restaurantkosten verlagen met AI | AI Chef Pro",
-      "description": "Verlaag verspilling en voedselkosten in uw restaurant met 35% dankzij kunstmatige intelligentie. Automatische receptkalkulation en menuoptimalisatie in real-time.",
+      "description": "Houd verspilling en kosten in uw restaurant in de gaten met kunstmatige intelligentie. Receptkalkulatie met AI, foodcost-controle en een check van de menukaart.",
       "keywords": "restaurantkosten verlagen, food cost controle restaurant, keukenverspilling verminderen, digitale receptkalkulation, keukenkosten optimaliseren, restaurant winstgevendheid AI"
     },
     "hero": {
       "badge": "💰 Bespaar vanaf de eerste maand",
       "h1": "Verlaag de kosten van uw restaurant met 35% via AI",
       "subtitle": "Beheers verspilling, optimaliseer de food cost en verbeter de marge van elk gerecht — zonder spreadsheets of handmatige berekeningen.",
-      "tagline": "Het tool dat meer dan {{userCount}} gastronomie-professionals gebruiken.",
+      "tagline": "75+ AI-agents in 7 talen voor de professionele keuken.",
       "cta_primary": "beginnen met besparen",
       "cta_secondary": "Bekijk plannen en prijzen",
       "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
@@ -1513,8 +1513,8 @@
         ]
       },
       {
-        "title": "Automatische Receptberekening",
-        "description": "Bereken de werkelijke kosten van elk recept in seconden. Werk ingrediëntprijzen bij en alle berekeningen worden automatisch herberekend.",
+        "title": "Receptkalkulatie met AI",
+        "description": "Reken de kostprijs van elk recept uit met uw ingrediënten en prijzen. Verandert een prijs, dan rekent u opnieuw; de kok doet de eindcontrole.",
         "keywords": [
           "receptberekening",
           "food cost",
@@ -1573,7 +1573,7 @@
       },
       {
         "title": "Keukenchef",
-        "description": "Ontwerp van het begin af winstgevende recepten. De automatische berekening vertelt u de kosten voordat u een gerecht aan het menu toevoegt."
+        "description": "Ontwerp recepten met de kostprijs in beeld. De kalkulatie met AI geeft een eerste cijfer voordat het gerecht op de kaart komt; de kok controleert het."
       },
       {
         "title": "Restaurantgroep",
@@ -1620,7 +1620,7 @@
     ],
     "cta_section": {
       "title": "Stop met geld verliezen. Beheer uw kosten vanaf vandaag.",
-      "subtitle": "Sluit u aan bij {{userCount}}+ professionals die AI al gebruiken om hun marges te beschermen en hun bedrijf te laten groeien.",
+      "subtitle": "75+ AI-agents in 7 talen om de marges in de gaten te houden.",
       "primary": "Nu beginnen",
       "secondary": "Alle plannen bekijken"
     },
@@ -1698,7 +1698,7 @@
       },
       {
         "title": "Allergenbeheer",
-        "description": "Identificeer en etiketteer automatisch de 14 verplicht te vermelden allergenen in al uw gerechten. Vereenvoudigde wettelijke naleving.",
+        "description": "Controle van de 14 verplicht te vermelden allergenen, met eindcontrole door de kok, om ze op de kaart te zetten.",
         "keywords": [
           "restaurant allergenen",
           "allergeenregelgeving",
@@ -1753,7 +1753,7 @@
         "Ontwerp het menu van uw restaurant in uren, niet weken",
         "Bereken de food cost van elk gerecht tot op de cent",
         "Genereer social media-content in minuten, niet dagen",
-        "Identificeer allergenen automatisch in al uw gerechten",
+        "U kijkt de 14 allergenen in elk gerecht na, en de kok doet de eindcontrole.",
         "Verminder verspilling met intelligente inkoopplanning",
         "Toegang tot recepten uit 27 wereldkeukens voor uw bedrijf"
       ]
@@ -1823,7 +1823,7 @@
       },
       {
         "metric": "14",
-        "label": "allergenen automatisch beheerd"
+        "label": "verplichte allergenen, nagekeken door de kok"
       },
       {
         "metric": "27",
@@ -1864,7 +1864,7 @@
       },
       {
         "title": "Allergenenbeleid",
-        "description": "Identificeer en label automatisch de 14 verplicht te vermelden allergenen. Wettelijke naleving moeiteloos voor alle gerechten op uw menukaart.",
+        "description": "Controle van de 14 verplicht te vermelden allergenen, met eindcontrole door de kok, om de kaart te etiketteren.",
         "keywords": [
           "allergenen menukaart",
           "allergeenregelgeving",
@@ -1948,7 +1948,7 @@
       },
       {
         "question": "Beheert AI de allergenen van mijn gerechten?",
-        "answer": "Ja. Voer de ingrediënten van elk gerecht in en de AI identificeert automatisch de 14 verplicht te vermelden allergenen conform EU-Verordening 1169/2011. U kunt de informatie exporteren voor uw digitale of gedrukte menukaart."
+        "answer": "Voer de ingrediënten van elk gerecht in en kijk de 14 verplicht te vermelden allergenen van Verordening (EU) 1169/2011 na, met eindcontrole door de kok. Die controle kunt u op de digitale of gedrukte kaart zetten."
       },
       {
         "question": "Kan ik mijn menukaart elk seizoen bijwerken met AI?",
@@ -1957,7 +1957,7 @@
     ],
     "cta_section": {
       "title": "Ontwerp de menukaart die uw restaurant verdient",
-      "subtitle": "Meer dan {{userCount}} professionals gebruiken AI Chef Pro al voor winstgevende, aantrekkelijke en wettelijk conforme menukaarten.",
+      "subtitle": "75+ AI-agents in 7 talen voor menukaarten waarvan de allergenen zijn nagekeken.",
       "primary": "Mijn menu aanmaken",
       "secondary": "Alle plannen bekijken"
     },
@@ -1980,16 +1980,8 @@
     },
     "results": [
       {
-        "metric": "10x",
-        "label": "sneller social media content maken"
-      },
-      {
         "metric": "3u",
         "label": "per week bespaard op digitale marketing"
-      },
-      {
-        "metric": "4.8★",
-        "label": "gemiddelde klantbeoordeling op Google"
       },
       {
         "metric": "75+",
@@ -2123,7 +2115,7 @@
     ],
     "cta_section": {
       "title": "Stop met improviseren. Automatiseer uw restaurantmarketing.",
-      "subtitle": "Meer dan {{userCount}} restaurants gebruiken AI Chef Pro al voor professionele content, online reputatiebeheer en meer klanten.",
+      "subtitle": "75+ AI-agents in 7 talen voor de berichten, de Google-vermelding en de reviews.",
       "primary": "Nu starten",
       "secondary": "Alle plannen bekijken"
     },
@@ -2148,14 +2140,6 @@
       {
         "metric": "75+",
         "label": "AI-agenten"
-      },
-      {
-        "metric": "10x",
-        "label": "nauwkeuriger in food cost berekeningen"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "restaurants en chefs die het al gebruiken"
       },
       {
         "metric": "27",
@@ -2326,7 +2310,7 @@
     ],
     "cta_section": {
       "title": "De horeca AI die ChatGPT niet kan zijn",
-      "subtitle": "Meer dan {{userCount}} chefs en restauranthouders hebben al gekozen voor de in gastronomie gespecialiseerde AI.",
+      "subtitle": "75+ AI-agents in 7 talen, getraind voor de horeca.",
       "primary": "AI Chef Pro proberen",
       "secondary": "Alle plannen bekijken"
     },
@@ -2354,10 +2338,6 @@
         "label": "Dagelijkse tijdsbesparing"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Actieve restaurants"
-      },
-      {
         "metric": "75+",
         "label": "AI-agenten"
       },
@@ -2373,9 +2353,9 @@
       "col_other": "Traditionele Software",
       "items": [
         {
-          "feature": "Automatische food cost",
+          "feature": "Foodcost met AI, gecontroleerd door de kok",
           "other": "Handmatig in Excel",
-          "aichef": "AI berekent food cost direct"
+          "aichef": "De AI stelt de foodcost voor; de kok controleert die"
         },
         {
           "feature": "Receptenbeheer",
@@ -2395,7 +2375,7 @@
         {
           "feature": "Prijsupdates",
           "other": "Traag en omslachtig proces",
-          "aichef": "Automatische herberekening in seconden"
+          "aichef": "U werkt de prijs bij en kijkt de kalkulatie na"
         }
       ]
     },
@@ -2485,7 +2465,7 @@
       "title": "Het keukenbeheer dat chefs nodig hebben, mogelijk gemaakt door AI",
       "body": "Traditionele beheersoftware is traag, rigide en begrijpt de keuken niet. AI Chef Pro is software ontworpen door en voor horecaprofessionals.",
       "benefits": [
-        "Automatische food cost met actuele marktprijzen",
+        "Foodcost met AI op basis van de prijzen die u invoert, gecontroleerd door de kok",
         "Geïntegreerde allergenencontrole conform huidige EU-regelgeving",
         "Gestandaardiseerde recepten met professionele technische fiches",
         "Gerecht-voor-gerecht winstgevendheidsanalyse met menu-engineering",
@@ -2513,11 +2493,11 @@
       },
       {
         "question": "Kan ik mijn food costs beheren met AI Chef Pro?",
-        "answer": "Ja. AI Chef Pro berekent automatisch de food cost van elk gerecht met uw ingrediënten, gewichten en leveranciersprijs. Het werkt kosten bij in seconden wanneer marktprijzen veranderen."
+        "answer": "Ja. AI Chef Pro stelt de foodcost van elk gerecht voor op basis van uw ingrediënten, gewichten en leveranciersprijs. Verandert een prijs, dan rekent u opnieuw en de kok controleert het resultaat."
       },
       {
         "question": "Voldoet AI Chef Pro aan de allergenenregelgeving?",
-        "answer": "Ja. Het systeem identificeert de 14 allergenen conform EU-verordening 1169/2011 en genereert technische fiches die voldoen aan de huidige Europese regelgeving."
+        "answer": "U kijkt de 14 allergenen van Verordening (EU) 1169/2011 na, met eindcontrole door de kok, en kunt die controle op de technische fiche zetten."
       },
       {
         "question": "Moet ik software installeren op mijn computer?",
@@ -2526,7 +2506,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag nog met AI-gestuurd keukenbeheer",
-      "subtitle": "Meer dan {{userCount}} horecaprofessionals gebruiken AI Chef Pro al om hun keuken te beheren met meer controle en minder tijd.",
+      "subtitle": "75+ AI-agents in 7 talen voor keukenbeheer.",
       "primary": "Nu proberen",
       "secondary": "Alle plannen bekijken"
     }
@@ -2589,7 +2569,7 @@
         {
           "feature": "Portiescaling",
           "other": "Handmatige berekeningen met fouten",
-          "aichef": "Automatisch en direct schalen"
+          "aichef": "Calcula Pax legt een nieuw hoeveelhedenvoorstel neer"
         },
         {
           "feature": "Technische fiches",
@@ -2631,8 +2611,8 @@
         ]
       },
       {
-        "title": "Automatisch Portieschalen",
-        "description": "Pas elk recept aan het gewenste aantal gasten aan. AI past gewichten, kooktijden en technieken aan.",
+        "title": "Portieschaling, door de kok gecontroleerd",
+        "description": "Calcula Pax legt nieuwe hoeveelheden voor een ander aantal gasten voor. U proeft zout en tijden voor de service.",
         "keywords": [
           "recepten schalen",
           "gewichten per portie",
@@ -2673,7 +2653,7 @@
       },
       {
         "title": "Hotel- of Cateringchef",
-        "description": "Maakt complete menu's voor grote evenementen met automatisch portieschalen."
+        "description": "Legt complete menu's voor grote events voor. Calcula Pax stelt de nieuwe hoeveelheden voor en u proeft ze."
       },
       {
         "title": "Restauranteigenaar",
@@ -2688,7 +2668,7 @@
         "27 wereldkeukens met authentieke technieken en tradities",
         "Seizoensmenus afgestemd op uw gastronomisch concept",
         "Technische fiches klaar om af te drukken en te gebruiken met uw team",
-        "Instant portieschaling zonder rekenfouten",
+        "Calcula Pax legt een nieuw hoeveelhedenvoorstel neer, en het zout wordt opnieuw geproefd.",
         "Aanpassing aan voedingsbeperkingen zonder culinaire kwaliteitsverlies"
       ]
     },
@@ -2714,8 +2694,8 @@
         "answer": "Ja. AI Chef Pro genereert complete professionele technische fiches: ingrediënten met gewichten, stap-voor-stap technieken, allergenen conform EU-verordening 1169/2011, voedingswaarden en presentatiesuggesties."
       },
       {
-        "question": "Hoe werkt automatisch recepten schalen?",
-        "answer": "Voer het gewenste aantal porties in en de AI past automatisch alle gewichten, kooktijden en technieken aan. Ideaal voor catering, evenementen of het aanpassen van degustatiemenu-recepten aan à la carte service."
+        "question": "Hoe werkt de portieschaling?",
+        "answer": "U geeft het aantal porties op. De AI legt een ontwerp van gewichten, tijden en technieken neer. U proeft en corrigeert voor de service. Dat past bij catering, events of als een proeverijrecept naar de kaart gaat."
       }
     ],
     "cta_section": {
@@ -2979,9 +2959,9 @@
         "Geen registratie of creditcard nodig",
         "Directe resultaten in uw browser",
         "Gebaseerd op echte branchestandaarden",
-        "Gebruikt door meer dan {{userCount}} professionals"
+        "Bedacht voor het werk in de keuken en in de zaal"
       ],
-      "users_label": "horecaprofessionals gebruiken ze al"
+      "users_label": "AI-agents in 7 talen"
     },
     "cta": {
       "title": "Heeft u meer kracht nodig?",
@@ -3025,7 +3005,7 @@
       "status_warn": "⚠️ Krappe food cost — Controleer prijzen of ingrediënten",
       "status_bad": "🔴 Hoge food cost — Overweeg prijsverhoging of kostenreductie",
       "tip": "💡 Branche benchmark: food cost tussen 25% en 32% is gezond voor restaurants",
-      "cta_after": "Wilt u al uw gerechten automatisch berekenen?",
+      "cta_after": "Wilt u de hele kaart met AI calculeren en het resultaat laten controleren?",
       "reset": "Nieuwe berekening",
       "export_excel": "Excel downloaden",
       "lead_title": "Vul uw e-mail in om de Excel te downloaden",
@@ -3121,7 +3101,7 @@
       },
       {
         "question": "Bevat deze calculator verspilling?",
-        "answer": "Deze gratis versie werkt met de netto gewichten die u invoert. Voor automatische verspillingsberekening, gebruik het receptenberekenings-tool van AI Chef Pro Premium."
+        "answer": "Deze versie rekent met de nettogewichten die u invoert. Voor schoonmaken, garen en verdamping gebruikt u het calculatiegereedschap van AI Chef Pro en de kok controleert het resultaat."
       },
       {
         "question": "Hoe verbetert u een hoge food cost?",
@@ -3129,8 +3109,8 @@
       }
     ],
     "cta_section": {
-      "title": "Automatiseer al uw receptenberekening met AI",
-      "subtitle": "Met AI Chef Pro berekent u de food cost van uw hele menukaart in minuten, met verspillingscontrole en automatische updates.",
+      "title": "Calculeer de hele kaart met AI, en laat die controleren",
+      "subtitle": "Met AI Chef Pro calculeert u de hele kaart, met de verliezen in beeld. Verandert een prijs, dan kijkt u de kalkulatie na en de kok controleert die.",
       "primary": "AI Chef Pro uitproberen",
       "secondary": "Alle plannen bekijken"
     }
@@ -3560,7 +3540,7 @@
       "copy": "Declaratie kopiëren",
       "copied": "Gekopieerd!",
       "reset": "Nieuwe analyse",
-      "cta_after": "Wilt u de allergenen van uw hele menukaart automatisch beheren?",
+      "cta_after": "Wilt u de 14 allergenen van de hele kaart nakijken, met eindcontrole door de kok?",
       "allergens_title": "De 14 verplicht te vermelden allergenen",
       "allergens_subtitle": "Verordening (EU) 1169/2011",
       "try_free": "AI Chef Pro uitproberen",
@@ -3819,8 +3799,8 @@
         },
         {
           "step": "2",
-          "title": "Automatische detectie",
-          "description": "De detector identificeert welke allergenen van EU-Verordening 1169/2011 aanwezig zijn in de ingrediënten."
+          "title": "Controle van de 14 allergenen",
+          "description": "De detector geeft aan welke allergenen van Verordening (EU) 1169/2011 in de ingrediënten voorkomen. De kok doet de eindcontrole."
         },
         {
           "step": "3",
@@ -3845,7 +3825,7 @@
     },
     "pricing": {
       "title": "Volledig allergenenmanagement met AI Chef Pro",
-      "subtitle": "De basisdetector is gratis. Met AI Chef Pro beheert u de allergenen van uw hele menukaart met automatische waarschuwingen.",
+      "subtitle": "Met AI Chef Pro kijkt u de 14 allergenen van de kaart na, met eindcontrole door de kok.",
       "plans": [
         {
           "name": "Lid",
@@ -3896,7 +3876,7 @@
     ],
     "cta_section": {
       "title": "Beheer de allergenen van uw hele menukaart met AI",
-      "subtitle": "Met AI Chef Pro beheert u de allergenen van elk gerecht automatisch, met waarschuwingen bij ingrediëntenwijzigingen en exporteerbare declaratie voor uw menukaart.",
+      "subtitle": "Met AI Chef Pro kijkt u de 14 allergenen van elk gerecht na, met eindcontrole door de kok, en exporteert u het blad voor de kaart.",
       "primary": "AI Chef Pro proberen",
       "secondary": "Alle plannen bekijken"
     },

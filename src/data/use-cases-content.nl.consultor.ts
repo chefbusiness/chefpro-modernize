@@ -74,7 +74,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Casual Restaurants AI+', category: 'Zakelijke Concepten', description: 'Specialist in bistro’s, gastrobars, tapas en mediterrane keuken: dekt het casual spectrum.' },
       { name: 'Creatieve Keuken', category: 'Culinaire Creativiteit', description: 'Gerechtontwikkeling met recept + kostprijs-CSV om in de Kostprijs Pro Kit van de klant te laden.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Precieze derving en rendementen per ingrediënt: cruciaal voor realistische kostprijsberekeningen in audits.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per gerecht: nodig voor compliance-rapporten.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht: nodig voor compliance-rapporten.' },
       { name: 'MenuDish Local SEO', category: 'Content en Social Media', description: 'Diagnose van gerechtbeschrijvingen van de klant en geoptimaliseerd lokaal SEO-voorstel.' },
       { name: 'BlogPost SEO Gen+', category: 'Content en Social Media', description: 'Redactieplan voor blog om lokaal organisch verkeer aan te trekken: directe deliverable voor de klant.' },
       { name: 'Keyword Discovery AI+', category: 'Content en Social Media', description: 'Onderzoek naar lokale gastronomische trefwoorden per postcodegebied: kant-en-klare concurrentieanalyse.' },
@@ -143,7 +143,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { icon: 'ShieldCheck', title: 'HACCP en traceerbaarheid', description: 'HACCP Pack met 19 registraties klaar voor sanitaire inspectie. Nuttig in audits en voorstellen voor luxe hotels.' },
       { icon: 'Sparkles', title: 'MenuDish Local SEO', description: 'Gerechtbeschrijvingen geoptimaliseerd voor lokale SEO op Google Business en de website van de klant.' },
       { icon: 'BarChart3', title: 'Personeelsmaaltijden', description: 'Generator van personeelsmenu’s die de klant kosten bespaart terwijl de brigade gemotiveerd blijft.' },
-      { icon: 'MessageSquare', title: 'Allergenen ID', description: 'Automatische identificatie van allergenen per recept klaar voor Europese regelgeving.' },
+      { icon: 'MessageSquare', title: 'Allergenen ID', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per recept klaar voor Europese regelgeving.' },
     ],
     workflowTitle: 'Een Echte Dag van een Chef Consultant met AI Chef Pro',
     workflow: [
@@ -187,7 +187,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Creatieve Keuken', category: 'Culinaire Creativiteit', description: 'Professionele gerechtontwikkeling met recept + kostprijs-CSV. Uw motor voor culinaire voorstellen.' },
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Geavanceerde versie met avant-garde, technieken en premium ingrediënten voor haute cuisine klanten.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Precieze derving en rendementen per ingrediënt: onmisbaar voor realistische kostprijsberekeningen.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per recept en gerecht.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht.' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor professionele keuken.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van recepten naar elk aantal gasten.' },
       { name: 'Casual Restaurants AI+', category: 'Zakelijke Concepten', description: 'Specialist in bistro’s, gastrobars, tapas en mediterrane keuken.' },
@@ -299,7 +299,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van smaken en bases met POD/PAC/vaste stoffen balans + kostprijs-CSV.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van fruit, noten en zuivelbases.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per smaak.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per smaak.' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor ambachtelijke werkplaats.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van bases voor verschillende ijsmachinevolumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de eigenaar van de klant-ijssalon.' },
@@ -412,7 +412,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van bonbons, tabletten en desserts met gedetailleerd recept en tempereercurve.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van couverture, cacaoboter en noten.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per bonbonrecept.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per bonbonrecept.' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor de chocolaterie-werkplaats.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van recepten voor productie op verschillende volumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de eigenaar van de klant chocolate shop.' },
@@ -525,7 +525,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van desserts, deegsoorten, bladerdeeg en viennoiserie met gedetailleerd recept.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van boter, bloem, zuivel en chocolade.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per dessert en viennoiserie.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per dessert en viennoiserie.' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor professionele werkplaats.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van recepten naar verschillende productievolumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de eigenaar van de klant-patisserie.' },
@@ -638,7 +638,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van pizza’s met gedetailleerd recept (deeg, saus, mozzarella, toppings).' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van meel, mozzarella, tomaat en olie.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per pizza.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per pizza.' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor de pizzeria-werkplaats.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van deegrecepten naar verschillende dagelijkse volumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de eigenaar van de klant-pizzeria.' },
@@ -751,7 +751,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van koffiedranken en signature drinks met gedetailleerd recept.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van groene koffie en melk.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen (melk, noten, soja).' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, (melk, noten, soja).' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor professionele extractie.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van batch brew voor verschillende dagelijkse volumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de eigenaar van de klant-koffiezaak.' },
@@ -977,7 +977,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van cocktails (herlezen klassiekers, signature, low-ABV, alcoholvrij) met gedetailleerd recept.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van sappen, gedistilleerd en modifiers.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen in cocktails (zuivel, noten, soja).' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, in cocktails (zuivel, noten, soja).' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Maatomrekenaar (ml/oz/dash/barspoon) voor professionele bar.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van batch cocktails voor verschillende volumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de F&B Manager van de klant.' },
@@ -1090,7 +1090,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Creatieve Keuken Pro', category: 'Culinaire Creativiteit', description: 'Ontwikkeling van brood, zuurdesem, bladerdeeg en brioches met gedetailleerd recept.' },
       { name: 'Mermas GenCal', category: 'Tools en Utilities', description: 'Derving en rendementen van meel, boter en zuivel.' },
-      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Automatische identificatie van allergenen per brood en viennoiserie.' },
+      { name: 'Allergenen ID', category: 'Tools en Utilities', description: 'Controle van de 14 allergenen, met eindcontrole door de kok, per brood en viennoiserie.' },
       { name: 'Conversor Ing', category: 'Tools en Utilities', description: 'Omrekenaar voor gewichten en maten voor professionele werkplaats.' },
       { name: 'Calcula Pax', category: 'Tools en Utilities', description: 'Schalen van recepten voor verschillende dagelijkse werkplaatsvolumes.' },
       { name: 'Pro Restaurant Manager', category: 'Gastro Profile Pro', description: 'Operatie en rapportage aan de eigenaar van de klant-bakkerij.' },

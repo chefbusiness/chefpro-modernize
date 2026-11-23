@@ -10,7 +10,6 @@ import SEOHead from '@/components/SEOHead';
 import PricingV2 from '@/components/PricingV2';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
-import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
 const TOOL_CARDS = [
   { icon: <Sparkles className="h-7 w-7 text-amber-600" />, bg: 'bg-amber-50', border: 'border-amber-200' },
@@ -45,10 +44,8 @@ export default function RecetasIARestaurantes() {
   const { currentLanguage, getAppUrl } = useLanguage();
   const APP_URL = getAppUrl(currentLanguage);
 
-  const { formatted: userCount } = useLiveUserCount(currentLanguage);
-
-  const k = (key: string) => t(`landingRecetas.${key}`, { returnObjects: true, userCount });
-  const s = (key: string) => t(`landingRecetas.${key}`, { userCount }) as string;
+  const k = (key: string) => t(`landingRecetas.${key}`, { returnObjects: true });
+  const s = (key: string) => t(`landingRecetas.${key}`) as string;
 
   const results = k('results') as Array<{ metric: string; label: string }>;
   const tools = k('tools') as Array<{ title: string; description: string; keywords: string[] }>;

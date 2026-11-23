@@ -177,7 +177,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette et plat, prête pour la réglementation."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette et plat, prête pour la réglementation."
       },
       {
         "name": "Repas du Personnel",
@@ -306,7 +306,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes",
-        "description": "Identification automatique des allergènes par plat, prête pour la réglementation et pour la salle."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat, prête pour la réglementation et pour la salle."
       }
     ],
     "workflowTitle": "Une journée réelle d'un manager avec AI Chef Pro",
@@ -394,7 +394,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette et par plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette et par plat."
       },
       {
         "name": "Conversor Ing",
@@ -636,7 +636,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette, unifiée dans toutes les unités."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette, unifiée dans toutes les unités."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -730,7 +730,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches de coût professionnelles",
-        "description": "Vous chargez le CSV de Cuisine Créative dans le Kit de Escandallos Pro et remplacez les prix de référence par ceux de vos fournisseurs réels. Coût par portion, food cost %, marge et prix suggéré instantanément. Recalcule automatiquement lorsque vous modifiez un grammage ou un coût."
+        "description": "Vous chargez le CSV de Cuisine Créative dans le Kit de Escandallos Pro et remplacez les prix de référence par ceux de vos fournisseurs réels. Coût par portion, food cost %, marge et prix suggéré instantanément. Vous relisez la fiche lorsque vous modifiez un grammage ou un coût."
       },
       {
         "icon": "BookOpen",
@@ -750,7 +750,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes et Rendement GenCal",
-        "description": "Détection automatique des allergènes par plat et données précises sur les pertes et les rendements par ingrédient."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat, et données précises sur les pertes et les rendements par ingrédient."
       },
       {
         "icon": "Search",
@@ -820,8 +820,8 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Commencez avec l'onboarding de 2 minutes. Plan Membre à 10 € par mois avec 10.000 crédits pour utiliser tous les agents.",
     "seo": {
       "title": "IA pour Chef Exécutif : Recettes, Fiches de Coût et Manuels | AI Chef Pro",
-      "description": "Suite d'IA pour chef exécutif et corporate : agent Chef Exécutif Pro, fiches de coût automatiques, fiches techniques et manuels réplicables multi-site. Commencez dès aujourd'hui.",
-      "keywords": "IA chef exécutif, chef exécutif IA, logiciel chef corporate, agent IA gastronomique, fiches de coût automatiques, fiches techniques restaurant, recettes standardisées multi-site, manuels de cuisine IA, food pairing IA, IA pour groupes de restauration, chef exécutif Espagne",
+      "description": "Suite d'IA pour chef exécutif et corporate : agent Chef Exécutif Pro, fiches de coût avec IA, à valider par le cuisinier, fiches techniques et manuels réplicables multi-site. Commencez dès aujourd'hui.",
+      "keywords": "IA chef exécutif, chef exécutif IA, logiciel chef corporate, agent IA gastronomique, fiches de coût avec IA, à valider par le cuisinier, fiches techniques restaurant, recettes standardisées multi-site, manuels de cuisine IA, food pairing IA, IA pour groupes de restauration, chef exécutif Espagne",
       "ogImage": "https://aichef.pro/og/use-cases/chef-ejecutivo.jpg"
     },
     "personalizationTitle": "Personnalisé pour Vous dès la Première Minute",
@@ -861,7 +861,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes potentiels par recette et par plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, potentiels par recette et par plat."
       },
       {
         "name": "Pâtisserie Créative",
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes et Rendement GenCal",
-        "description": "Détection automatique des allergènes par plat et données précises sur les pertes et rendements par ingrédient."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat, et données précises sur les pertes et les rendements par ingrédient."
       }
     ],
     "workflowTitle": "Une Journée Réelle d'un Chef de Cuisine avec AI Chef Pro",
@@ -1109,7 +1109,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette et par plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette et par plat."
       },
       {
         "name": "Repas du Personnel",
@@ -1162,7 +1162,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "afterTitle": "Avec AI Chef Pro",
       "afterItems": [
         "Recettes centralisées avec coût, allergènes, technique et storytelling",
-        "Coût automatique qui recalcule instantanément à tout changement de prix",
+        "Fiche de coût avec IA que vous mettez à jour quand un prix change ; la validation finale est du cuisinier",
         "APPCC depuis le mobile avec enregistrements et alertes, prêt pour l'inspection",
         "Renouveler la carte en 1-3 jours avec Cuisine Créative + Kit de Escandallos Pro",
         "Manuels de formation réplicables avec le script du Pro Prompts eBook"
@@ -1233,7 +1233,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes et Rendement GenCal",
-        "description": "Détection automatique des allergènes et données précises de pertes pour le passe et le poste."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, et données précises de pertes pour le passe et le poste."
       }
     ],
     "workflowTitle": "Une Journée Réelle d'un Sous-Chef avec AI Chef Pro",
@@ -1336,7 +1336,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette et par plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette et par plat."
       },
       {
         "name": "Repas du Personnel",
@@ -1455,7 +1455,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes",
-        "description": "Identification automatique des allergènes, critique pour les événements avec de nombreux invités aux profils alimentaires variés."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, critique pour les événements avec de nombreux invités aux profils alimentaires variés."
       },
       {
         "icon": "BookOpen",
@@ -1494,7 +1494,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Permet-il de gérer la variabilité des invités ?",
-        "a": "Oui. Calcula Pax adapte les recettes à tout nombre de convives et le Kit de Escandallos Pro recalcule coût, food cost et marge automatiquement."
+        "a": "Oui. Calcula Pax adapte les recettes au nombre de convives. Dans le Kit de Escandallos Pro vous relisez le coût, le food cost et la marge, et le cuisinier les valide."
       },
       {
         "q": "Couvre-t-il l'APPCC hors du local fixe ?",
@@ -1558,7 +1558,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par plat, critique pour les grands événements."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat, critique pour les grands événements."
       },
       {
         "name": "Rendement GenCal",
@@ -1780,7 +1780,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette, essentielle pour les grands événements."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette, essentielle pour les grands événements."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -2013,7 +2013,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par verre : sulfites, produits laitiers, fruits à coque, gluten."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par verre : sulfites, produits laitiers, fruits à coque, gluten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2236,7 +2236,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par pizza : gluten, produits laitiers, fruits à coque, œuf."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par pizza : gluten, produits laitiers, fruits à coque, œuf."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2469,7 +2469,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par pièce : gluten, produits laitiers, fruits à coque, œuf."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par pièce : gluten, produits laitiers, fruits à coque, œuf."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2698,7 +2698,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par chocolat : produits laitiers, fruits secs, gluten, alcools."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par chocolat : produits laitiers, fruits secs, gluten, alcools."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2817,7 +2817,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes",
-        "description": "Identification automatique des allergènes par client : critique lorsque vous travaillez avec des familles ayant des intolérances spécifiques."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par client : critique lorsque vous travaillez avec des familles ayant des intolérances spécifiques."
       },
       {
         "icon": "Calendar",
@@ -2865,7 +2865,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment gérer les allergies et les régimes spéciaux par client ?",
-        "a": "ID Allergènes identifie automatiquement les allergènes par recette. Chef Privé Pro raisonne en termes de personnalisation : régimes keto, végétalien, sans gluten, faible en sodium, FODMAP, grossesse. Chaque client reçoit un menu réellement adapté."
+        "a": "ID Allergènes sert à la révision des 14 allergènes, avec validation finale du cuisinier, par recette. Chef Privé Pro raisonne en termes de personnalisation : régimes keto, végétalien, sans gluten, faible en sodium, FODMAP, grossesse. Chaque client reçoit un menu réellement adapté."
       },
       {
         "q": "Comment escalader les recettes pour différents nombres de convives ?",
@@ -2915,7 +2915,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par client et recette."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par client et recette."
       },
       {
         "name": "Conversor Ing",
@@ -3158,7 +3158,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique pour les clients avec allergies dans les banquets."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, pour les clients avec allergies dans les banquets."
       },
       {
         "name": "GastroIMG Gen+",
@@ -3376,7 +3376,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes à communiquer au client."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, à communiquer au client."
       },
       {
         "name": "Coach Mental",
@@ -3837,7 +3837,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique par coupe et accompagnement."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par coupe et accompagnement."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4060,7 +4060,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique par saveur : produits laitiers, fruits à coque, gluten."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par saveur : produits laitiers, fruits à coque, gluten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4298,7 +4298,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique par pièce : gluten, produits laitiers, fruits secs, œuf."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par pièce : gluten, produits laitiers, fruits secs, œuf."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4515,7 +4515,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette et plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette et plat."
       },
       {
         "name": "Repas du Personnel",
@@ -4743,7 +4743,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette."
       },
       {
         "name": "Repas du Personnel",
@@ -4976,7 +4976,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes par pizza et plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par pizza et plat."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5199,7 +5199,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par burger et sauce."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par burger et sauce."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5431,7 +5431,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette. Obligatoire pour vendre en livraison en toute légalité."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette. Obligatoire pour vendre en livraison en toute légalité."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5676,7 +5676,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes par pièce, critique en pâtisserie."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par pièce, critique en pâtisserie."
       },
       {
         "name": "GastroIMG Gen+",
@@ -5899,7 +5899,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes dans les cocktails et les tapas."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, dans les cocktails et les tapas."
       },
       {
         "name": "Rendement GenCal",
@@ -6023,7 +6023,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes",
-        "description": "Identification automatique critique pour les événements avec des profils alimentaires variés."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, critique pour les événements avec des profils alimentaires variés."
       },
       {
         "icon": "Search",
@@ -6364,7 +6364,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes par recette, essentielle dans les hôtels internationaux."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette, essentielle dans les hôtels internationaux."
       },
       {
         "name": "Rendement GenCal",
@@ -6577,7 +6577,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par parfum : produits laitiers, fruits secs, gluten, œuf."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par parfum : produits laitiers, fruits secs, gluten, œuf."
       },
       {
         "name": "GastroIMG Gen+",
@@ -6805,7 +6805,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par chocolat : produits laitiers, fruits à coque, gluten, alcools."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par chocolat : produits laitiers, fruits à coque, gluten, alcools."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7492,7 +7492,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par plat : gluten, produits laitiers, fruits à coque, soja."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat : gluten, produits laitiers, fruits à coque, soja."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7725,7 +7725,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes : poisson, fruits de mer, gluten, produits laitiers."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, : poisson, fruits de mer, gluten, produits laitiers."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7953,7 +7953,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes : poisson, fruits de mer, soja, gluten, sésame."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, : poisson, fruits de mer, soja, gluten, sésame."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8186,7 +8186,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes : poisson, fruits de mer, soja, gluten, sésame, fruits à coque."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, : poisson, fruits de mer, soja, gluten, sésame, fruits à coque."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8414,7 +8414,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique : gluten, fruits à coque, soja, sésame (sans produits animaux)."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, : gluten, fruits à coque, soja, sésame (sans produits animaux)."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8642,7 +8642,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par coupe et accompagnement."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par coupe et accompagnement."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8860,7 +8860,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique pour alternatives végétales et pâtisserie."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, pour alternatives végétales et pâtisserie."
       },
       {
         "name": "GastroIMG Gen+",
@@ -9544,7 +9544,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique par plat."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat."
       },
       {
         "name": "GastroIMG Gen+",
@@ -9854,7 +9854,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
   },
   "task-escandallos-con-ia": {
     "h1": "Comment faire des calculs de coûts avec l'IA",
-    "heroSubtitle": "Calculez le coût réel par plat, le food cost % et le prix suggéré en minutes au lieu de jours : recette + fiche technique CSV automatique avec coût horaire d'atelier, pertes intégrées et marge validée en temps réel avec une suite d'agents d'IA gastronomique.",
+    "heroSubtitle": "Vous voyez le coût réel par plat, le food cost et un prix suggéré. L'IA prépare la recette et la fiche ; le cuisinier valide le coût horaire d'atelier, les pertes et la marge.",
     "heroTagline": "Calculs de coûts professionnels en minutes, pas en heures",
     "badge": "Tâche : Calculs de coûts et costing",
     "painsTitle": "Ce que coûte le calcul de coûts à la main",
@@ -9876,7 +9876,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "Rendement GenCal",
-        "description": "Données précises de pertes par processus (découpe, torréfaction, refroidissement, vitrine, formage) intégrées automatiquement au CSV."
+        "description": "Données de pertes par processus (découpe, torréfaction, refroidissement, vitrine, formage) que vous reportez dans le CSV. La validation finale est du cuisinier."
       },
       {
         "icon": "Beaker",
@@ -10006,7 +10006,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et utilitaires",
-        "description": "Identification automatique des allergènes par ingrédient."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par ingrédient."
       },
       {
         "name": "Agent Sosa Ingredients",
@@ -10325,12 +10325,12 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes",
-        "description": "Identification automatique des allergènes par recette : produits laitiers, gluten, fruits à coque, soja, fruits de mer, sulfites, etc."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette : produits laitiers, gluten, fruits à coque, soja, fruits de mer, sulfites, etc."
       },
       {
         "icon": "Calculator",
         "title": "Coût intégré",
-        "description": "La fiche technique inclut le food cost % et le coût par portion calculé automatiquement avec le coût horaire de l'atelier."
+        "description": "La fiche technique inclut le food cost et le coût par portion, avec le coût horaire de l'atelier, pour que le cuisinier les relise."
       },
       {
         "icon": "Image",
@@ -10366,7 +10366,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "workflowTitle": "Comment Créer des Fiches Techniques en 4 Étapes",
     "workflow": [
       "1. Cuisine Créative (ou votre agent créatif) — vous développez ou chargez la recette. L'agent IA livre recette + fiche technique complète avec tous les champs professionnels.",
-      "2. ID Allergènes — identifie automatiquement les allergènes par recette et les intègre à la fiche ; lorsque vous changez un ingrédient, il recalcule instantanément.",
+      "2. ID Allergènes — sert à la révision des 14 allergènes, avec validation finale du cuisinier, par recette et les intègre à la fiche ; lorsque vous changez un ingrédient, il recalcule instantanément.",
       "3. GastroIMG Gen+ — génère une image de référence du plat dressé à inclure dans la fiche comme guide visuel du cuisinier.",
       "4. Food Pairing AI + storytelling pour la salle — la fiche inclut un accord mets-vins recommandé et une description professionnelle pour le briefing de l'équipe."
     ],
@@ -10389,8 +10389,8 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
         "a": "Ingrédients avec grammage exact, technique étape par étape, relecture des 14 allergènes, le contrôle final vous appartient, food cost %, coût par portion, conservation, présentation, accord suggéré et description pour la salle."
       },
       {
-        "q": "Comment gère-t-il les allergènes automatiquement ?",
-        "a": "ID Allergènes identifie les allergènes par ingrédient et les intègre à la fiche. Lorsque vous changez un ingrédient, il recalcule instantanément et met à jour l'information pour la salle."
+        "q": "Comment relit-on les allergènes ?",
+        "a": "ID Allergènes sert à la révision des 14 allergènes par ingrédient, avec validation finale du cuisinier, sur la fiche. Si vous changez un ingrédient, vous relisez la fiche."
       },
       {
         "q": "Est-ce que cela fonctionne pour tout type de cuisine ?",
@@ -10435,7 +10435,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette."
       },
       {
         "name": "Conversor Ing",
@@ -10485,7 +10485,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "value": "100 %",
-        "label": "allergènes identifiés automatiquement"
+        "label": "allergènes en révision, avec validation finale du cuisinier"
       },
       {
         "value": "ISO",
@@ -10508,7 +10508,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "afterTitle": "Avec AI Chef Pro",
       "afterItems": [
         "28 plats documentés en une journée avec un modèle professionnel",
-        "Allergènes automatiques avec ID Allergènes",
+        "Révision des 14 allergènes, avec validation finale du cuisinier avec ID Allergènes",
         "Storytelling professionnel pour le briefing de salle",
         "Les changements mettent à jour la fiche et les allergènes instantanément",
         "Modèle uniforme prêt pour l'audit et les certifications"
@@ -10997,7 +10997,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Sparkles",
         "title": "ID Allergènes",
-        "description": "Identification automatique des allergènes par ingrédient et recette. Lorsque vous changez un ingrédient, il recalcule instantanément."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par ingrédient et recette. Lorsque vous changez un ingrédient, il recalcule instantanément."
       },
       {
         "icon": "CheckSquare",
@@ -11038,7 +11038,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "workflowTitle": "Comment mettre en œuvre l'APPCC numérique en 4 étapes",
     "workflow": [
       "1. Pack APPCC (€14, modèles Excel téléchargeables) — vous téléchargez les 19 registres professionnels adaptés à votre type de cuisine (pâtisserie, glacerie, restaurant, etc.).",
-      "2. ID Allergènes — scanne automatiquement les recettes et modèles de votre carte pour identifier les allergènes par plat. Il l'intègre aux fiches techniques et en salle.",
+      "2. ID Allergènes — relit les recettes et modèles de votre carte pour identifier les allergènes par plat. Il l'intègre aux fiches techniques et en salle.",
       "3. Cuisine Créative avec APPCC intégré — chaque nouvelle recette fournit des procédures APPCC (température critique, conservation, allergènes, stockage) intégrées à la fiche technique.",
       "4. Kit de Tareas con APPCC — modèles de service (ouverture, service, fermeture) avec APPCC intégré. L'équipe signe numériquement chaque service depuis mobile."
     ],
@@ -11061,8 +11061,8 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
         "a": "Oui. Le Pack APPCC adapte les modèles à restaurant, café, pâtisserie, glacerie, chocolaterie, pizzeria, dark kitchen, bar, traiteur, hôtel."
       },
       {
-        "q": "Comment gérez-vous les allergènes automatiquement ?",
-        "a": "ID Allergènes identifie les allergènes par ingrédient et recette, les intègre aux fiches techniques et modèles APPCC. Lorsque vous changez un ingrédient, il recalcule instantanément."
+        "q": "Comment relisez-vous les allergènes ?",
+        "a": "ID Allergènes sert à la révision des 14 allergènes par ingrédient et recette, avec validation finale du cuisinier, sur les fiches et les modèles APPCC. Si vous changez un ingrédient, vous relisez la fiche."
       },
       {
         "q": "Couvre-t-il la réglementation européenne, latino-américaine ?",
@@ -11092,7 +11092,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "name": "ID Allergènes",
         "category": "Outils et Utilitaires",
-        "description": "Identification automatique des allergènes par recette."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par recette."
       },
       {
         "name": "Cuisine Créative",
@@ -11157,7 +11157,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "value": "100 %",
-        "label": "allergènes identifiés automatiquement"
+        "label": "allergènes en révision, avec validation finale du cuisinier"
       },
       {
         "value": "0 %",
@@ -11180,7 +11180,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "afterTitle": "Avec AI Chef Pro",
       "afterItems": [
         "APPCC depuis mobile avec signature numérique",
-        "Allergènes automatiques avec ID Allergènes",
+        "Révision des 14 allergènes, avec validation finale du cuisinier avec ID Allergènes",
         "Modèles Excel adaptés par concept",
         "Briefing avec APPCC intégré au Kit de Tareas",
         "Traçabilité prête pour ISO 22000, BRC, IFS"
