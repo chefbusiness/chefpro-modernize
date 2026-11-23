@@ -213,6 +213,10 @@ export default function MenuRestaurante() {
                     <a href="/recetas-ia-restaurantes" className="font-semibold text-primary hover:underline">
                       recetas con IA para restaurantes
                     </a>
+                    . El coste de cada ración, con los precios de tu albarán, se trabaja en{' '}
+                    <a href="/escandallos-restaurante-ia" className="font-semibold text-primary hover:underline">
+                      escandallos de restaurante con IA
+                    </a>
                     .
                   </p>
                 )}

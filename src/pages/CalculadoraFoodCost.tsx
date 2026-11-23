@@ -650,6 +650,15 @@ export default function CalculadoraFoodCost() {
                       </li>
                     ))}
                   </ul>
+                  {lang === 'es' && (
+                    <p className="mt-6 text-muted-foreground">
+                      Para un plato, esta calculadora da el porcentaje sin registro. Si quieres el escandallo de toda la carta, con mermas y raciones, está en{' '}
+                      <a href="/escandallos-restaurante-ia" className="font-semibold text-primary hover:underline">
+                        escandallos de restaurante con IA
+                      </a>
+                      .
+                    </p>
+                  )}
                 </div>
                 <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
                   <div className="flex items-center gap-1 mb-4">
