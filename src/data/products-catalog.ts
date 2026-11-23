@@ -28,8 +28,8 @@ interface ProductCatalogRaw {
   id: string;
   url: string;
   price: string;
-  name: { es: string; en?: string };
-  description: { es: string; en?: string };
+  name: { es: string } & Partial<Record<ProductLang, string>>;
+  description: { es: string } & Partial<Record<ProductLang, string>>;
   urlByLang?: ProductUrlByLang;
   priceByLang?: ProductPriceByLang;
 }
@@ -60,6 +60,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     description: {
       es: '200+ prompts profesionales probados para chefs y propietarios.',
       en: '300 professional prompts for chefs and owners.',
+      nl: '200+ professionele prompts, getest voor chefs en eigenaren.',
     },
     // Tienda EN (3-oct-2026): producto propio, `ai-prompts-for-restaurants`, $14 USD.
     urlByLang: { en: '/en/digital-products/ai-prompts-for-restaurants' },
@@ -73,6 +74,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     description: {
       es: 'Plantillas Excel para escandallar en minutos con food cost real.',
       en: 'Excel templates that cost out recipes in minutes with real food cost.',
+      nl: 'Excel-sjablonen voor de kostprijs, met de echte foodcost. De kok controleert het cijfer.',
     },
     // Tienda EN (24-sep-2026): producto propio, `food-cost-templates`, $19 USD.
     urlByLang: { en: '/en/digital-products/food-cost-templates' },
@@ -82,10 +84,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'pack-appcc',
     url: '/pack-appcc',
     price: '€14',
-    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Food Safety Kit Pro' },
+    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Food Safety Kit Pro', nl: 'Pack APPCC' },
     description: {
       es: 'APPCC y trazabilidad listos para inspección.',
       en: 'HACCP and traceability templates ready for inspection.',
+      nl: 'APPCC en traceerbaarheid, klaar voor een inspectie.',
     },
     // Tienda EN (3-oct-2026): producto propio, `haccp-templates`, $19 USD.
     urlByLang: { en: '/en/digital-products/haccp-templates' },
@@ -95,7 +98,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-gestion-personal',
     url: '/kit-gestion-personal',
     price: '€14',
-    name: { es: 'Kit Gestión de Personal y Turnos', en: 'Restaurant Staff Scheduling Kit Pro' },
+    name: { es: 'Kit Gestión de Personal y Turnos', en: 'Restaurant Staff Scheduling Kit Pro', nl: 'Kit personeel en roosters' },
     description: {
       // COM-22/RC-05/RD-25 · decía «ratios de productividad», que no existen
       // en ninguno de los 9 ficheros del kit: lo más cercano son los
@@ -105,6 +108,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
       // y PSeoCityPageContent vía getProductsByIds).
       es: 'Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.',
       en: 'Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.',
+      nl: 'Roosters, overuren, loonkost, inwerking, verlof en beoordeling van het team.',
     },
     // Tienda EN (3-oct-2026): producto propio, `restaurant-schedule-templates`, $19 USD.
     urlByLang: { en: '/en/digital-products/restaurant-schedule-templates' },
@@ -114,10 +118,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-inventario',
     url: '/kit-inventario',
     price: '€14',
-    name: { es: 'Kit Control de Inventario', en: 'Restaurant Inventory Kit Pro' },
+    name: { es: 'Kit Control de Inventario', en: 'Restaurant Inventory Kit Pro', nl: 'Kit voorraadbeheer' },
     description: {
       es: 'Inventario, compras, mermas y proveedores.',
       en: 'Inventory, purchasing, waste tracking, and supplier management.',
+      nl: 'Voorraad, inkoop, verliezen en leveranciers.',
     },
     // Tienda EN (25-sep-2026): producto propio, `restaurant-inventory-templates`, $19 USD.
     urlByLang: { en: '/en/digital-products/restaurant-inventory-templates' },
@@ -127,10 +132,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-plan-financiero',
     url: '/kit-plan-financiero',
     price: '€39',
-    name: { es: 'Kit Plan Financiero', en: 'Restaurant Financial Plan Kit Pro' },
+    name: { es: 'Kit Plan Financiero', en: 'Restaurant Financial Plan Kit Pro', nl: 'Kit Plan Financiero' },
     description: {
       es: 'Cash flow, P&L, escenarios y dashboard de ratios financieros.',
       en: 'Cash flow, P&L, scenarios, and a financial ratios dashboard.',
+      nl: 'Cashflow, resultatenrekening, scenario\'s en een dashboard met financiële ratio\'s.',
     },
     // Tienda EN (3-oct-2026): producto propio, `restaurant-financial-plan-templates`, $49 USD.
     urlByLang: { en: '/en/digital-products/restaurant-financial-plan-templates' },
@@ -782,8 +788,8 @@ function localize(entry: ProductCatalogRaw, lang: ProductLang): ProductCatalogEn
     id: entry.id,
     url: productUrl(entry, lang),
     price: productPrice(entry, lang),
-    name: entry.name[lang as 'es' | 'en'] ?? entry.name.es,
-    description: entry.description[lang as 'es' | 'en'] ?? entry.description.es,
+    name: entry.name[lang] ?? entry.name.es,
+    description: entry.description[lang] ?? entry.description.es,
   };
 }
 
