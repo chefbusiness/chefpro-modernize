@@ -375,6 +375,7 @@ def banner(slug_producto, prods, slug_post, lang='es'):
         '<h3 class="mt-2 text-xl font-bold text-foreground">%s</h3>'
         '<p class="mt-2 text-muted-foreground">%s</p>'
         '<a href="%s?utm_source=blog&amp;utm_medium=banner&amp;utm_content=%s" '
+        'target="_blank" rel="noopener" '
         'class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold '
         'text-accent-foreground transition-opacity hover:opacity-90">%s</a>'
         '</aside>' % (esc(etiqueta), esc(nombre), esc(desc), url, slug_post,

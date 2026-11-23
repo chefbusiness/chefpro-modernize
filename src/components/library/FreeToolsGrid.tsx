@@ -5,7 +5,7 @@ import {
 
 const tools = [
   { icon: Calculator, title: 'Calculadora Food Cost', desc: 'Calcula el coste real de cada plato', href: '/calculadora-food-cost-restaurante', color: 'bg-green-500/20 text-green-400' },
-  { icon: ShieldAlert, title: 'Detector Alérgenos', desc: 'Identifica alérgenos en tus recetas', href: '/detector-alergenos-restaurante', color: 'bg-red-500/20 text-red-400' },
+  { icon: ShieldAlert, title: 'Detector Alérgenos', desc: 'Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya', href: '/detector-alergenos-restaurante', color: 'bg-red-500/20 text-red-400' },
   { icon: Calendar, title: 'Calendario Contenidos', desc: 'Plan mensual para redes sociales', href: '/calendario-contenidos-restaurante', color: 'bg-purple-500/20 text-purple-400' },
   { icon: TrendingUp, title: 'Simulador Rentabilidad', desc: 'Proyecta ingresos y beneficio neto', href: '/simulador-rentabilidad-restaurante', color: 'bg-yellow-500/20 text-yellow-400' },
   { icon: FileText, title: 'Generador Textos Carta', desc: 'Descripciones irresistibles para tu menú', href: '/generador-textos-carta-restaurante', color: 'bg-blue-500/20 text-blue-400' },
@@ -18,7 +18,7 @@ const tools = [
 // astro-site/src/i18n/tienda/en.json), mismos iconos y colores.
 const toolsEn: typeof tools = [
   { icon: Calculator, title: 'Food Cost Calculator', desc: 'Work out the real cost of every dish', href: '/en/food-cost-calculator-restaurant', color: 'bg-green-500/20 text-green-400' },
-  { icon: ShieldAlert, title: 'Allergen Detector', desc: 'Spot the allergens in your recipes', href: '/en/restaurant-allergen-detector', color: 'bg-red-500/20 text-red-400' },
+  { icon: ShieldAlert, title: 'Allergen Detector', desc: 'Helps you review the 14 allergens in each recipe; the final check is yours', href: '/en/restaurant-allergen-detector', color: 'bg-red-500/20 text-red-400' },
   { icon: Calendar, title: 'Content Calendar', desc: 'A monthly plan for your social media', href: '/en/restaurant-content-calendar', color: 'bg-purple-500/20 text-purple-400' },
   { icon: TrendingUp, title: 'Profit Simulator', desc: 'Project revenue and net profit', href: '/en/restaurant-profit-simulator', color: 'bg-yellow-500/20 text-yellow-400' },
   { icon: FileText, title: 'Menu Copy Generator', desc: 'Irresistible descriptions for your menu', href: '/en/restaurant-menu-copy-generator', color: 'bg-blue-500/20 text-blue-400' },

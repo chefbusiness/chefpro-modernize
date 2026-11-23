@@ -26,7 +26,6 @@ import Footer from '../Footer.astro';
 import Icon from '../Icon.astro';
 import { t } from '../../i18n/translations';
 import { SITE, type Locale } from '../../i18n/config';
-import SocialCountLive from '../SocialCountLive.astro';
 import { appCtaUrl } from '../../lib/app-url';
 import {
   SEGMENTS,
@@ -65,7 +64,7 @@ const UI: Record<string, {
     tabConceptDesc: 'Descubre cómo encaja AI Chef Pro en tu tipo concreto de negocio gastronómico.',
     cardCta: 'Ver caso de uso',
     finalH2: '¿No Ves Tu Caso? AI Chef Pro Se Adapta',
-    finalBody: 'Empieza con el plan Miembro (10 €/mes, 10.000 créditos) y descubre cómo encaja en tu día a día. Sin permanencia.',
+    finalBody: 'Empieza con el plan Miembro (10 €/mes, 10.000 créditos) y descubre cómo encaja en tu día a día. Los planes mensuales no tienen permanencia.',
     finalSecondary: 'Ver productos digitales',
     h1StripPrefix: /^IA para /,
     seoTitle: 'Casos de uso de agentes de IA en hostelería | AI Chef Pro',
@@ -85,7 +84,7 @@ const UI: Record<string, {
     tabConceptDesc: 'See how AI Chef Pro fits your specific type of hospitality business.',
     cardCta: 'View use case',
     finalH2: 'Don\'t See Your Case? AI Chef Pro Adapts',
-    finalBody: 'Start with the Member plan (€10/month, 10,000 credits) and discover how it fits your day-to-day. No commitment.',
+    finalBody: 'Start with the Member plan (€10/month, 10,000 credits) and discover how it fits your day-to-day. Monthly plans, no lock-in.',
     finalSecondary: 'See digital products',
     h1StripPrefix: /^AI for /,
     seoTitle: 'AI agent use cases for restaurant teams | AI Chef Pro',
@@ -105,7 +104,7 @@ const UI: Record<string, {
     tabConceptDesc: "Découvre comment AI Chef Pro s'intègre à ton concept de restauration spécifique.",
     cardCta: "Voir le cas d'usage",
     finalH2: "Tu ne vois pas ton cas ? AI Chef Pro s'adapte",
-    finalBody: "Commencez avec le plan Membre (10 €/mois, 10 000 crédits) et découvrez comment il s'adapte à votre quotidien. Sans engagement.",
+    finalBody: "Commencez avec le plan Membre (10 €/mois, 10 000 crédits) et découvrez comment il s'adapte à votre quotidien. Forfaits mensuels sans engagement.",
     finalSecondary: "Voir les produits numériques",
     h1StripPrefix: /^IA pour /,
     seoTitle: "Cas d’usage des agents IA en restauration | AI Chef Pro",
@@ -125,7 +124,7 @@ const UI: Record<string, {
     tabConceptDesc: "Entdecke, wie AI Chef Pro zu deinem konkreten Gastronomiegeschäft passt.",
     cardCta: "Anwendungsfall ansehen",
     finalH2: "Du findest deinen Fall nicht? AI Chef Pro passt sich an",
-    finalBody: "Starte mit dem Mitglied-Plan (10 €/Monat, 10.000 Credits) und entdecke, wie es in deinen Alltag passt. Keine Mindestlaufzeit.",
+    finalBody: "Starte mit dem Mitglied-Plan (10 €/Monat, 10.000 Credits) und entdecke, wie es in deinen Alltag passt. Monatliche Tarife ohne Vertragsbindung.",
     finalSecondary: "Digitale Produkte ansehen",
     h1StripPrefix: /^KI für /,
     seoTitle: "KI-Agenten: Anwendungsfälle für die Gastro | AI Chef Pro",
@@ -145,7 +144,7 @@ const UI: Record<string, {
     tabConceptDesc: "Scopri come AI Chef Pro si adatta al tuo tipo specifico di attività gastronomica.",
     cardCta: "Vedi caso d'uso",
     finalH2: "Non vedi il tuo caso? AI Chef Pro si adatta",
-    finalBody: "Inizia con il piano Membro (10 €/mese, 10.000 crediti) e scopri come si adatta alla tua giornata. Senza vincoli.",
+    finalBody: "Inizia con il piano Membro (10 €/mese, 10.000 crediti) e scopri come si adatta alla tua giornata. Piani mensili senza vincoli.",
     finalSecondary: "Vedi i prodotti digitali",
     h1StripPrefix: /^IA per /,
     seoTitle: "Casi d’uso degli agenti IA in ristorazione | AI Chef Pro",
@@ -165,7 +164,7 @@ const UI: Record<string, {
     tabConceptDesc: "Descubra como o AI Chef Pro se encaixa no seu tipo específico de negócio gastronômico.",
     cardCta: "Ver caso de utilização",
     finalH2: "Não Vê o Seu Caso? O AI Chef Pro Se Adapta",
-    finalBody: "Comece com o plano Membro (10 €/mês, 10.000 créditos) e descubra como ele se encaixa no seu dia a dia. Sem fidelização.",
+    finalBody: "Comece com o plano Membro (10 €/mês, 10.000 créditos) e descubra como ele se encaixa no seu dia a dia. Planos mensais sem fidelização.",
     finalSecondary: "Ver produtos digitais",
     h1StripPrefix: /^IA para /,
     seoTitle: "Casos de uso de agentes de IA na hotelaria | AI Chef Pro",
@@ -225,21 +224,6 @@ const TAB_BTN_BASE = `${BTN} h-11 rounded-md px-8 w-full sm:w-auto`;
 const TAB_ACTIVE = 'bg-primary text-primary-foreground hover:bg-primary/90 btn-gold';
 const TAB_INACTIVE = 'border border-input bg-background hover:bg-accent hover:text-accent-foreground';
 
-// ── HeroSocialProof (inline) — getDynamicCount() VERBATIM (idéntico a UseCasePageContent) ──
-function getDynamicCount(): number {
-  const BASE_DATE = new Date('2026-02-12');
-  const BASE_COUNT = 1048149; // 2026-09-21: +1.000.000 (ver lib/social-counts.ts)
-  const today = new Date();
-  const diffTime = today.getTime() - BASE_DATE.getTime();
-  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-  let total = BASE_COUNT;
-  for (let i = 1; i <= diffDays; i++) {
-    const seed = (i * 7 + 13) % 21;
-    total += 60 + seed;
-  }
-  return total;
-}
-const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
 const socialAvatars = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // ── Derivados (mismos cálculos que UseCasesHub.tsx) ──
@@ -300,17 +284,9 @@ const breadcrumbSchema = {
                   </span>
                 ))}
               </div>
-              <div class="flex flex-col items-center gap-0.5">
-                <div class="flex items-center gap-0.5">
-                  {[0, 1, 2, 3, 4].map((i) => (
-                    <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`} />
-                  ))}
-                </div>
-                <span class="text-sm text-muted-foreground">
-                  <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
-                  {t(lang, 'hero.social_proof_label')}
-                </span>
-              </div>
+              <p class="text-sm font-medium text-foreground text-center text-balance">
+                {t(lang, 'hero.v2_agents_line')}
+              </p>
             </div>
 
             <div class={`${BADGE_DEFAULT} mb-6 text-sm px-4 py-2`}>{ui.badge}</div>

@@ -59,33 +59,6 @@ const productSchema = {
     availability: 'https://schema.org/InStock',
     seller: { '@type': 'Organization', name: 'AI Chef Pro', url: 'https://aichef.pro' },
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '10',
-    bestRating: '5',
-    worstRating: '1',
-  },
-  review: [
-    {
-      '@type': 'Review',
-      author: { '@type': 'Person', name: 'Carlos Martínez' },
-      reviewRating: { '@type': 'Rating', ratingValue: '5' },
-      reviewBody: 'Llevo 20 años en cocina y nunca pensé que la IA me ahorraría tanto tiempo. Los prompts de recetas creativas me han dado ideas que a mí solo me habrían costado semanas de I+D.',
-    },
-    {
-      '@type': 'Review',
-      author: { '@type': 'Person', name: 'Laura Sánchez' },
-      reviewRating: { '@type': 'Rating', ratingValue: '5' },
-      reviewBody: 'Los prompts de gestión y costes son oro puro. En una semana ya tenía controlado el food cost de 3 restaurantes con las plantillas que genera la IA.',
-    },
-    {
-      '@type': 'Review',
-      author: { '@type': 'Person', name: 'Roberto García' },
-      reviewRating: { '@type': 'Rating', ratingValue: '5' },
-      reviewBody: 'Recomiendo el eBook a todos mis clientes. Es la forma más rápida de que un restaurante empiece a usar IA sin necesitar formación técnica.',
-    },
-  ],
 };
 
 const faqSchema = {
@@ -170,7 +143,6 @@ const categories = [
 // ---- TestimonialsMarquee (ebookTestimonials; mid = ceil(len/2)) ----
 const testimonials = [
   { name: 'Carlos Martínez', role: 'Chef Ejecutivo, Restaurante El Olivo', text: 'Llevo 20 años en cocina y nunca pensé que la IA me ahorraría tanto tiempo. Los prompts de recetas creativas me han dado ideas que a mí solo me habrían costado semanas de I+D.', avatar: '/avatars/chef-avatar-1.jpg' },
-  { name: 'Laura Sánchez', role: 'Gerente, Grupo Gastronómico LB', text: 'Los prompts de gestión y costes son oro puro. En una semana ya tenía controlado el food cost de 3 restaurantes con las plantillas que genera la IA.', avatar: '/avatars/avatar-2.jpg' },
   { name: 'Miguel Ángel Torres', role: 'Dueño, Gastrobar La Esquina', text: 'Compré el eBook pensando que serían prompts genéricos. Me equivoqué completamente — son específicos para hostelería y funcionan desde el primer día.', avatar: '/avatars/avatar-3.jpg' },
   { name: 'Ana Belén Ruiz', role: 'Pastelera, Obrador Dulce Ana', text: 'La sección de pastelería es increíble. He creado 15 recetas nuevas para la temporada usando los prompts de combinaciones y técnicas. Mis clientes están encantados.', avatar: '/avatars/avatar-4.jpg' },
   { name: 'Javier Moreno', role: 'Director de Catering, EventosPro', text: 'Los prompts de catering me ayudan a crear propuestas personalizadas en minutos. Antes me llevaba medio día preparar cada presupuesto de evento.', avatar: '/avatars/avatar-5.jpg' },
@@ -213,7 +185,7 @@ const bonuses = [
 // ---- FreeToolsSection (constante; 8 herramientas) ----
 const freeTools = [
   { icon: 'Calculator', title: 'Calculadora Food Cost', desc: 'Calcula el coste real de cada plato al céntimo', href: '/calculadora-food-cost-restaurante', color: 'text-green-400' },
-  { icon: 'ShieldAlert', title: 'Detector Alérgenos', desc: 'Identifica alérgenos automáticamente en tus recetas', href: '/detector-alergenos-restaurante', color: 'text-red-400' },
+  { icon: 'ShieldAlert', title: 'Detector Alérgenos', desc: 'Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya', href: '/detector-alergenos-restaurante', color: 'text-red-400' },
   { icon: 'Calendar', title: 'Calendario Contenidos', desc: 'Plan de contenido mensual para redes sociales', href: '/calendario-contenidos-restaurante', color: 'text-purple-400' },
   { icon: 'TrendingUp', title: 'Simulador Rentabilidad', desc: 'Proyecta ingresos, costes y beneficio neto', href: '/simulador-rentabilidad-restaurante', color: 'text-yellow-400' },
   { icon: 'FileText', title: 'Generador Textos Carta', desc: 'Descripciones irresistibles para tu menú', href: '/generador-textos-carta-restaurante', color: 'text-blue-400' },
@@ -320,11 +292,6 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             <span class="relative flex shrink-0 overflow-hidden rounded-full border-2 border-[#0a0a0a] w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-[#0a0a0a]">
               <img src={avatar} alt={`Professional ${i + 1}`} class="aspect-square h-full w-full object-cover" />
             </span>
-          ))}
-        </div>
-        <div class="flex items-center gap-0.5">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-[#FFD700] text-[#FFD700]' : 'fill-[#FFD700]/40 text-[#FFD700]/40'}`} />
           ))}
         </div>
       </div>
@@ -746,7 +713,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <p class="text-gray-400 text-sm tracking-[0.2em] uppercase mb-4">¿Aún no conoces la plataforma?</p>
         <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 leading-tight">Prueba AI Chef Pro <span class="text-[#FFD700]">desde 10 €</span></h2>
         <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-2">La suite de IA más completa para hostelería y restauración. Disponible en 7 idiomas.</p>
-        <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-4">10.000 créditos al mes con el plan Miembro. Sin permanencia.</p>
+        <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-4">10.000 créditos al mes con el plan Miembro. Los planes mensuales no tienen permanencia.</p>
         <div class="flex flex-wrap justify-center gap-2 mb-10">
           {langPills.map((lang) => (
             <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">{lang}</span>

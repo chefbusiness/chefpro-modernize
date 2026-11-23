@@ -17,7 +17,6 @@ import Icon from '../Icon.astro';
 import AuthorityBackedBy from '../AuthorityBackedBy.astro';
 import { t } from '../../i18n/translations';
 import { SITE, type Locale } from '../../i18n/config';
-import SocialCountLive from '../SocialCountLive.astro';
 import { appCtaUrl } from '../../lib/app-url';
 import {
   SEGMENTS,
@@ -82,7 +81,7 @@ const UI: Record<string, {
       { q: '¿Cómo ayuda la IA a un consultor gastronómico independiente?', a: 'La IA acelera los entregables habituales de un proyecto de consultoría —escandallos, fichas técnicas, manuales APPCC, cartas, auditorías y planes de formación— manteniendo el rigor técnico. Reduces horas de trabajo operativo y dedicas más tiempo a la estrategia y a la relación con el cliente, atendiendo a más proyectos a la vez.' },
       { q: '¿Sirve AI Chef Pro para asesores de restaurantes y grupos de restauración?', a: 'Sí. Los asesores de restaurantes y de grupos multi-local lo usan para estandarizar metodología, replicar manuales y acelerar auditorías, onboarding y formación. Funciona igual para asesoría gastronómica integral, consultoría restaurantera y proyectos puntuales en España y Latinoamérica.' },
       { q: '¿Hay un agente de IA para cada perfil profesional?', a: 'Sí. Cada uno de los 10 agentes está especializado en una disciplina: hay IA para chefs consultores, sommeliers, pasteleros, panaderos, pizzeros, heladeros, chocolateros, baristas y bartenders, además de un agente de gestión y modelo de negocio para el conjunto del proyecto.' },
-      { q: '¿Cuánto cuesta empezar a usar la IA para consultoría gastronómica?', a: 'El plan Miembro cuesta 10 € al mes e incluye 10.000 créditos para usar todos los agentes de Consultoría Gastro Pro, sin permanencia. El onboarding tarda unos 2 minutos.' },
+      { q: '¿Cuánto cuesta empezar a usar la IA para consultoría gastronómica?', a: 'El plan Miembro cuesta 10 € al mes e incluye 10.000 créditos para usar todos los agentes de Consultoría Gastro Pro, plan mensual y sin permanencia. El onboarding tarda unos 2 minutos.' },
     ],
     seoTitle: 'IA para Consultores y Asesores Gastronómicos | AI Chef Pro',
     seoDescription: 'IA para consultores y asesores gastronómicos: 10 agentes especializados (chef consultor, sommelier, pastelero, pizzero, heladero y más) para acelerar tus proyectos. Empieza hoy.',
@@ -121,7 +120,7 @@ const UI: Record<string, {
       { q: 'How does AI help an independent restaurant consultant?', a: 'The AI speeds up the deliverables of a consulting project —food costing, technical sheets, HACCP manuals, menus, audits and training plans— while keeping technical rigor. You cut operational hours and spend more time on strategy and the client relationship, handling more projects at once.' },
       { q: 'Does AI Chef Pro work for F&B advisors and restaurant groups?', a: 'Yes. F&B advisors and multi-location group consultants use it to standardize methodology, replicate manuals and accelerate audits, onboarding and training. It works equally well for full hospitality consulting and one-off project engagements.' },
       { q: 'Is there a dedicated AI agent for each professional profile?', a: 'Yes. Each of the 10 agents specializes in one discipline: there is AI for chef consultants, sommeliers, pastry chefs, bakers, pizzaiolos, gelato makers, chocolatiers, baristas and bartenders, plus a management and business-model agent for the whole project.' },
-      { q: 'How much does it cost to start?', a: 'The Member plan costs €10/month and includes 10,000 credits to use every Gastro Consultancy Pro agent, with no commitment. Onboarding takes about 2 minutes.' },
+      { q: 'How much does it cost to start?', a: 'The Member plan costs €10/month and includes 10,000 credits to use every Gastro Consultancy Pro agent, monthly plan, no lock-in. Onboarding takes about 2 minutes.' },
     ],
     seoTitle: 'AI for Restaurant & Hospitality Consultants | AI Chef Pro',
     seoDescription: 'AI for restaurant, F&B and hospitality consultants: 10 specialized agents (chef consultant, sommelier, pastry, bakery, pizza, gelato & more) to speed up your projects. Start today.',
@@ -160,7 +159,7 @@ const UI: Record<string, {
       { q: "Comment l’IA aide-t-elle un consultant en restauration indépendant ?", a: "L’IA accélère la production des livrables typiques d’une mission de conseil en restauration : fiches techniques, manuels APPCC/HACCP, cartes, audits et plans de formation, tout en conservant votre rigueur professionnelle. Vous réduisez le temps opérationnel et pouvez vous concentrer sur la stratégie, ce qui vous permet de gérer simultanément plus de projets." },
       { q: "AI Chef Pro convient-il aux conseillers de restaurants et groupes de restauration ?", a: "Absolument. Les conseillers en restauration et les cabinets conseil restauration l’utilisent pour standardiser leurs méthodologies, dupliquer les manuels et accélérer les audits, l’onboarding et la formation. Cela fonctionne aussi bien pour le conseil en restauration global, le conseil pour restaurants indépendants ou les projets ponctuels multi-sites." },
       { q: "Y a-t-il un agent IA par métier de bouche ?", a: "Oui. Les 10 agents sont spécialisés dans un métier : chef consultant, sommelier, barista, bartender, pizzaiolo, chocolatier, pâtissier, boulanger, glacier, et un agent dédié au conseil en gestion et modèle économique. Chaque agent maîtrise le savoir-faire technique et les exigences business de son domaine." },
-      { q: "Combien coûte l’IA pour le conseil en restauration ?", a: "Le plan Membre coûte 10 € par mois et inclut 10 000 crédits pour utiliser tous les agents du module Consultoría Gastro Pro, sans engagement. L’inscription ne prend que 2 minutes. Des forfaits supérieurs sont disponibles pour un usage intensif." },
+      { q: "Combien coûte l’IA pour le conseil en restauration ?", a: "Le plan Membre coûte 10 € par mois et inclut 10 000 crédits pour utiliser tous les agents du module Consultoría Gastro Pro, forfait mensuel sans engagement. L’inscription ne prend que 2 minutes. Des forfaits supérieurs sont disponibles pour un usage intensif." },
     ],
     seoTitle: "Conseil en Restauration IA : 10 Agents | AI Chef Pro",
     seoDescription: "Conseil en restauration : 10 agents IA (chef consultant, sommelier, barista, etc.) pour accélérer vos projets. Lancez-vous dès aujourd'hui.",
@@ -199,7 +198,7 @@ const UI: Record<string, {
       { q: "Wie hilft eine KI einem freiberuflichen Gastronomieberater?", a: "Die KI beschleunigt typische Projektergebnisse wie Kalkulationen, HACCP-Handbücher, Speisekarten, Audits und Schulungspläne, ohne Abstriche bei der fachlichen Genauigkeit. So reduzieren Sie operative Arbeitsstunden und gewinnen mehr Zeit für Strategie und Kundenbeziehungen, um parallel mehr Projekte zu betreuen." },
       { q: "Ist AI Chef Pro für Restaurantberatung und Gastronomiegruppen geeignet?", a: "Ja. Restaurantberater und Berater für Multi-Location-Gruppen nutzen AI Chef Pro, um Methodik zu standardisieren, Handbücher zu replizieren und Audits, Onboarding sowie Schulungen zu beschleunigen. Es eignet sich für ganzheitliche Gastronomieberatung ebenso wie für punktuelle Projekte." },
       { q: "Gibt es einen KI-Agenten für jedes Fachprofil?", a: "Ja. Jeder der 10 Agenten ist auf eine Disziplin spezialisiert: Es gibt KI für Chef Consultants, sommelier, pâtissier, Bäcker, pizzaiolo, Eismacher, chocolatier, barista und bartender sowie einen Agenten für Management und Geschäftsmodell, der das Gesamtprojekt im Blick behält." },
-      { q: "Was kostet der Einstieg in die KI für Gastronomieberatung?", a: "Der Mitglied-Plan kostet 10 € pro Monat und enthält 10.000 Credits für alle Agenten des Consultoría Gastro Pro, ohne Mindestlaufzeit. Das Onboarding dauert etwa 2 Minuten. Höhere Pläne passen zu größerem Projektvolumen." },
+      { q: "Was kostet der Einstieg in die KI für Gastronomieberatung?", a: "Der Mitglied-Plan kostet 10 € pro Monat und enthält 10.000 Credits für alle Agenten des Consultoría Gastro Pro, monatlicher Tarif ohne Vertragsbindung. Das Onboarding dauert etwa 2 Minuten. Höhere Pläne passen zu größerem Projektvolumen." },
     ],
     seoTitle: "KI Gastronomieberatung | AI Chef Pro",
     seoDescription: "KI Gastronomieberatung mit 10 spezialisierten Agenten für Gastronomieberater. Projekte beschleunigen, BAFA-Förderung nutzen. Jetzt testen.",
@@ -238,7 +237,7 @@ const UI: Record<string, {
       { q: "Come può l’IA aiutare un consulente di ristorazione indipendente?", a: "L’IA accelera i deliverable tipici di un progetto di consulenza – distinte base, schede tecniche, manuali HACCP/APPCC, menu, audit e piani formativi – mantenendo il rigore tecnico. Riduci le ore di lavoro operativo e dedichi più tempo alla strategia e alla relazione con il cliente, gestendo più progetti contemporaneamente." },
       { q: "AI Chef Pro è utile per consulenti di ristoranti e gruppi di ristorazione?", a: "Sì. I consulenti di ristoranti e di gruppi multi-sede lo utilizzano per standardizzare la metodologia, replicare i manuali e accelerare audit, onboarding e formazione. Funziona sia per la consulenza di ristorazione integrale, sia per progetti puntuali o di supporto operativo." },
       { q: "C’è un agente IA per ogni profilo professionale?", a: "Sì. Ciascuno dei 10 agenti è specializzato in una disciplina: IA per chef consulenti, sommelier, pâtissier, panettieri, pizzaioli, gelatieri, chocolatier, baristi e bartender, oltre a un agente di gestione e modello di business per l’insieme del progetto." },
-      { q: "Quanto costa iniziare a usare l’IA per la consulenza di ristorazione?", a: "Il piano Membro costa 10 € al mese e include 10.000 crediti per usare tutti gli agenti di Consulenza Gastro Pro, senza vincoli. L’onboarding richiede circa 2 minuti." },
+      { q: "Quanto costa iniziare a usare l’IA per la consulenza di ristorazione?", a: "Il piano Membro costa 10 € al mese e include 10.000 crediti per usare tutti gli agenti di Consulenza Gastro Pro, piano mensile senza vincoli. L’onboarding richiede circa 2 minuti." },
     ],
     seoTitle: "IA per Consulenti Ristorazione | AI Chef Pro",
     seoDescription: "IA per consulenti ristorazione: 10 agenti specializzati (chef consulente, sommelier, pizzaiolo, pâtissier, gelatiere e altri) per accelerare i tuoi progetti. Inizia oggi.",
@@ -277,7 +276,7 @@ const UI: Record<string, {
       { q: "Como a IA ajuda um consultor gastronômico independente?", a: "A IA agiliza os entregáveis habituais de um projeto de consultoria — cálculos de custos, fichas técnicas, manuais APPCC, cartas, auditorias e planos de formação — mantendo o rigor técnico. Reduz horas de trabalho operacional e dedica mais tempo à estratégia e ao relacionamento com o cliente, permitindo atender mais projetos ao mesmo tempo. Com o AI Chef Pro, o consultor A&B ganha velocidade sem sacrificar qualidade." },
       { q: "O AI Chef Pro serve para assessores de restaurantes e grupos de restauração?", a: "Sim. Os assessores de restaurantes e de grupos multilocal usam o Consultoria Gastro Pro para padronizar metodologia, replicar manuais e acelerar auditorias, integração e formação. Funciona tanto para assessoria gastronômica integral, consultoria de restaurantes e projetos pontuais. A IA para gastronomia garante consistência em todos os projetos." },
       { q: "Há um agente de IA para cada perfil profissional?", a: "Sim. Cada um dos 10 agentes é especializado numa disciplina: há IA para chefs consultores, sommeliers, pâtissiers, padeiros, pizzaiolos, sorveteiros, chocolatiers, baristas e bartenders, além de um agente de gestão e modelo de negócio para o projeto como um todo. Isso permite que cada tipo de consultor gastronômico tenha assistência precisa e adaptada às suas necessidades." },
-      { q: "Quanto custa começar a usar a IA para consultoria gastronômica?", a: "O plano Membro custa 10 € ao mês e inclui 10.000 créditos para usar todos os agentes do Consultoria Gastro Pro, sem fidelização. O onboarding demora cerca de 2 minutos. Planos superiores ajustam-se ao volume de projetos." },
+      { q: "Quanto custa começar a usar a IA para consultoria gastronômica?", a: "O plano Membro custa 10 € ao mês e inclui 10.000 créditos para usar todos os agentes do Consultoria Gastro Pro, plano mensal sem fidelização. O onboarding demora cerca de 2 minutos. Planos superiores ajustam-se ao volume de projetos." },
     ],
     seoTitle: "IA para Consultores e Assessores Gastronômicos | AI Chef Pro",
     seoDescription: "IA para consultores e assessores gastronômicos: 10 agentes (chef consultor, sommelier, pâtissier e mais) para acelerar seus projetos. Comece hoje.",
@@ -349,21 +348,6 @@ const CARD_HEADER = 'flex flex-col space-y-1.5 p-6';
 const CARD_TITLE = 'text-2xl font-semibold leading-none tracking-tight';
 const CARD_CONTENT = 'p-6 pt-0';
 
-// ── HeroSocialProof (inline) — getDynamicCount() VERBATIM (idéntico a UseCasePageContent) ──
-function getDynamicCount(): number {
-  const BASE_DATE = new Date('2026-02-12');
-  const BASE_COUNT = 1048149; // 2026-09-21: +1.000.000 (ver lib/social-counts.ts)
-  const today = new Date();
-  const diffTime = today.getTime() - BASE_DATE.getTime();
-  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-  let total = BASE_COUNT;
-  for (let i = 1; i <= diffDays; i++) {
-    const seed = (i * 7 + 13) % 21;
-    total += 60 + seed;
-  }
-  return total;
-}
-const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
 const socialAvatars = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // ── Derivados (mismos cálculos que ConsultoriaGastroProHub.tsx) ──
@@ -458,17 +442,9 @@ const faqSchema = {
                   </span>
                 ))}
               </div>
-              <div class="flex flex-col items-center gap-0.5">
-                <div class="flex items-center gap-0.5">
-                  {[0, 1, 2, 3, 4].map((i) => (
-                    <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`} />
-                  ))}
-                </div>
-                <span class="text-sm text-muted-foreground">
-                  <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
-                  {t(lang, 'hero.social_proof_label')}
-                </span>
-              </div>
+              <p class="text-sm font-medium text-foreground text-center text-balance">
+                {t(lang, 'hero.v2_agents_line')}
+              </p>
             </div>
 
             <div class={`${BADGE_DEFAULT} mb-6 text-sm px-4 py-2`}>{ui.badge}</div>

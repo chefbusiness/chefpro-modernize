@@ -65,6 +65,7 @@
     "v2_social_prefix": "Trusted by",
     "v2_social_chefs": "professionals",
     "v2_social_count": "recipes, processes & solutions generated",
+    "v2_agents_line": "75+ AI agents in 7 languages",
     "v2_title_prefix": "Create, run and grow your",
     "v2_title_suffix": "with",
     "v2_subtitle": "Automate recipes, food cost, waste, menus and marketing with 75+ AI agents built for restaurants and hospitality businesses.",
@@ -475,13 +476,13 @@
     "use_case_label": "Use case",
     "use_tool": "Use Tool",
     "v2_business_eyebrow": "Business tools · 6 kitchen-native agents",
-    "v2_business_title_prefix": "Cut ingredient costs up to",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "with tools built for the pass.",
-    "v2_business_description": "Waste, portioning, allergens, conversions: the daily math of a professional kitchen, automated.",
-    "v2_proof_label": "Proof point",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "average ingredient-cost reduction with precise waste calculations",
+    "v2_business_title_prefix": "Keep ingredient cost in check",
+    "v2_business_title_highlight": "on the line",
+    "v2_business_title_suffix": "with kitchen tools.",
+    "v2_business_description": "Waste, portions, allergens and conversions: the day-to-day numbers in a professional kitchen.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Use case",
     "v2_included_prefix": "Every tool included from the",
     "v2_included_suffix": "plan upward.",
@@ -569,7 +570,7 @@
       "mermas_gencal": {
         "name": "Waste GenCal",
         "description": "Optimize yields and reduce waste",
-        "preview": "Save up to 30% in ingredient costs with precise calculations",
+        "preview": "Helps you work out yields and waste for each prep.",
         "v2_blurb": "Optimize yields and reduce waste across every prep list, station, and service."
       },
       "id_alergenos": {
@@ -587,8 +588,8 @@
       "conversor_ing": {
         "name": "Unit Converter",
         "description": "Convert measurements and weights instantly",
-        "preview": "Adapt recipes between metric systems without errors",
-        "v2_blurb": "Adapt recipes between metric systems instantly, without conversion errors."
+        "preview": "Helps you convert units and quantities in a recipe.",
+        "v2_blurb": "Helps you convert units and quantities from one measure system to another."
       },
       "calcula_pax": {
         "name": "Portion Calculator",
@@ -911,13 +912,13 @@
     "q2": "Can I use AI Chef Pro if I'm a beginner?",
     "a2": "Absolutely. Our tools are designed for all skill levels, from culinary students to Michelin-starred chefs. Each application includes detailed guides and examples.",
     "q3": "How does the AI Chef Member plan work?",
-    "a3": "The AI Chef Member plan costs €10 per month and includes 10,000 monthly credits with access to the 75+ AI agents. When you need more, you can upgrade to AI Chef Premium Pro (€25/month, 85,000 credits) or higher. No commitment: change plans or cancel whenever you want.",
+    "a3": "The AI Chef Member plan costs €10 per month and includes 10,000 monthly credits with access to the 75+ AI agents. When you need more, you can upgrade to AI Chef Premium Pro (€25/month, 85,000 credits) or higher. Monthly plans, no lock-in: change plans or cancel whenever you want.",
     "q4": "Do recipes adapt to different portion sizes?",
     "a4": "Yes, all our AI agents include intelligent scaling systems that automatically adjust ingredients and techniques according to the number of diners.",
     "q5": "Does it include support for dietary restrictions?",
     "a5": "Yes, our tools can generate recipes adapted to allergies, intolerances, and specific diets (vegan, gluten-free, keto, etc.).",
     "q6": "Can I cancel my subscription at any time?",
-    "a6": "Yes, you can cancel your subscription at any time from your user panel. There are no permanence commitments or cancellation fees."
+    "a6": "Yes. Monthly plans can be cancelled any time from your user panel. There are no cancellation fees on those plans. If you cancel, you keep access until the end of the period you have already paid."
   },
   "footer": {
     "brand_desc": "Artificial Intelligence for Today's Chef. Develop your professional potential with the use and support of artificial intelligence in your daily routine.",
@@ -1098,14 +1099,14 @@
   },
   "seo": {
     "title": "AI agents built for chefs and restaurants | AI Chef Pro",
-    "description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €10 a month, with no lock-in.",
+    "description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €10 a month. Monthly plans, no lock-in.",
     "keywords": "ai agents for chefs, ai agents for restaurants, restaurant ai agents, food cost ai, menu engineering ai, ai chef pro",
     "og_image_alt": "AI agents built for chefs and restaurants | AI Chef Pro"
   },
   "pages": {
     "index": {
       "seo_title": "AI agents built for chefs and restaurants | AI Chef Pro",
-      "seo_description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €10 a month, with no lock-in.",
+      "seo_description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €10 a month. Monthly plans, no lock-in.",
       "seo_keywords": "ai agents for chefs, ai agents for restaurants, restaurant ai agents, food cost ai, menu engineering ai, ai chef pro"
     },
     "mentoria_online": {
@@ -1170,7 +1171,7 @@
         "<h2>4. Permitted Use</h2><p>You may use AI Chef Pro for legitimate professional gastronomic purposes. Use for illegal activities, spam, or any activity that could harm our services or other users is not permitted.</p>",
         "<h2>5. Intellectual Property</h2><p>All content, trademarks, logos and technologies of AI Chef Pro are the property of their respective owners. AI-generated recipes and content may be used by the user according to their subscription.</p>",
         "<h2>6. Subscriptions and Payments</h2><p>We offer different subscription plans with various features. Payments are processed securely and renewals are automatic according to the chosen plan.</p>",
-        "<h2>7. Guarantee and refunds</h2><p>Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at <strong>info@aichef.pro</strong>. You can cancel an app subscription any time from your account panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case by email at <strong>info@aichef.pro</strong>.</p>",
+        "<h2>7. Guarantee and refunds</h2><p>Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at <strong>info@aichef.pro</strong>. You can cancel a monthly plan any time from your account panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case by email at <strong>info@aichef.pro</strong>.</p>",
         "<h2>8. Limitations and Liability</h2><p>AI Chef Pro is provided 'as is'. We do not guarantee that the service will be error-free or uninterrupted. Our liability is limited to the amount paid for the service.</p>",
         "<h2>9. Termination</h2><p>We may suspend or terminate your account if you breach these terms. You can cancel your subscription at any time from your user dashboard.</p>",
         "<h2>10. Modifications</h2><p>We reserve the right to modify these terms at any time. We will notify you of important changes by email or through notices on the platform.</p>",
@@ -1210,7 +1211,7 @@
       "tagline": "The tool used by {{userCount}}+ gastronomy professionals.",
       "cta_primary": "Start saving",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · No commitment · Instant access"
+      "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
     },
     "results": [
       {
@@ -1376,7 +1377,7 @@
       "tagline": "Control costs · Design your menu · Automate marketing · Reduce waste",
       "cta_primary": "Start now",
       "cta_secondary": "View plans and pricing",
-      "no_card": "No commitment · Cancel anytime"
+      "no_card": "Monthly plans, no lock-in"
     },
     "results": [
       {
@@ -1388,8 +1389,8 @@
         "label": "less time developing new dishes"
       },
       {
-        "metric": "30%",
-        "label": "reduction in food waste"
+        "metric": "7",
+        "label": "Languages"
       },
       {
         "metric": "75+",
@@ -1430,7 +1431,7 @@
       },
       {
         "title": "Allergen management",
-        "description": "Automatically identify and label the 14 mandatory allergens in all your dishes. Simplified legal compliance.",
+        "description": "Helps you review the 14 mandatory allergens in each dish; the final check is yours.",
         "keywords": [
           "restaurant allergens",
           "allergen regulations",
@@ -1485,7 +1486,7 @@
         "Design your restaurant menu in hours, not weeks",
         "Calculate the food cost of each dish to the cent",
         "Generate social media content in minutes, not days",
-        "Automatically identify allergens in all your dishes",
+        "Helps you review the 14 allergens in each dish; the final check is yours",
         "Reduce waste with intelligent purchase planning",
         "Access recipes from 27 world cuisines adapted to your business"
       ]
@@ -1542,7 +1543,7 @@
       "tagline": "Design your menu · Optimize prices · Manage allergens · Refresh every season",
       "cta_primary": "Create my menu",
       "cta_secondary": "View plans and pricing",
-      "no_card": "No commitment · Cancel anytime"
+      "no_card": "Monthly plans, no lock-in"
     },
     "results": [
       {
@@ -1596,7 +1597,7 @@
       },
       {
         "title": "Allergen Management",
-        "description": "Automatically identify and label the 14 mandatory allergens. Legal compliance effortlessly across all dishes on your menu.",
+        "description": "Helps you review the 14 mandatory allergens on the menu; the final check is yours.",
         "keywords": [
           "menu allergens",
           "allergen regulations",
@@ -1708,7 +1709,7 @@
       "tagline": "Social media · Google My Business · Reviews · Campaigns · Email marketing",
       "cta_primary": "Start now",
       "cta_secondary": "View plans and pricing",
-      "no_card": "No commitment · Cancel anytime"
+      "no_card": "Monthly plans, no lock-in"
     },
     "results": [
       {
@@ -1886,7 +1887,7 @@
       "tagline": "Food Cost · Menus · Allergens · Gastronomy Marketing · Cost Control",
       "cta_primary": "Try AI Chef Pro",
       "cta_secondary": "See plans and pricing",
-      "no_card": "No commitment · Cancel anytime"
+      "no_card": "Monthly plans, no lock-in"
     },
     "results": [
       {
@@ -2090,7 +2091,7 @@
       "tagline": "Spend less time on spreadsheets and more time on the pass.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · No commitment · Instant access"
+      "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
     },
     "results": [
       {
@@ -2106,8 +2107,8 @@
         "label": "AI agents"
       },
       {
-        "metric": "30%",
-        "label": "Average ingredient-cost reduction"
+        "metric": "7",
+        "label": "Languages"
       }
     ],
     "comparison": {
@@ -2244,7 +2245,7 @@
     },
     "pricing_section": {
       "title": "AI kitchen management software from €10",
-      "subtitle": "Start with the Member plan and scale when your business needs it. No commitment.",
+      "subtitle": "Start with the Member plan and scale when your business needs it. Monthly plans, no lock-in.",
       "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2290,7 +2291,7 @@
   "landingRecetas": {
     "seo": {
       "title": "AI Recipes for Restaurants | AI Chef Pro",
-      "description": "Generate professional recipes with AI: 27 world cuisines, seasonal menus, tech sheets and automatic scaling. Used by 5,000+ restaurants.",
+      "description": "Generate professional recipes with AI: 27 world cuisines, seasonal menus, tech sheets and automatic scaling. 75+ AI agents in 7 languages.",
       "keywords": "AI recipes restaurants, professional recipe generator, AI chef recipes, seasonal menu AI, recipe tech sheets, 27 world cuisines recipes"
     },
     "breadcrumb": "AI Recipes for Restaurants",
@@ -2301,7 +2302,7 @@
       "tagline": "From concept to dish in minutes, not hours.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · No commitment · Instant access"
+      "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
     },
     "results": [
       {
@@ -2309,16 +2310,16 @@
         "label": "World cuisines"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Active restaurants"
+        "metric": "12",
+        "label": "From Europe"
       },
       {
-        "metric": "80%",
-        "label": "Less time on menu development"
+        "metric": "11",
+        "label": "From Latin America"
       },
       {
-        "metric": "75+",
-        "label": "AI agents"
+        "metric": "4",
+        "label": "From Asia"
       }
     ],
     "comparison": {
@@ -2450,7 +2451,7 @@
     },
     "pricing_section": {
       "title": "Access the AI recipe generator from €10",
-      "subtitle": "Start with the Member plan and scale when your business needs it. No commitment.",
+      "subtitle": "Start with the Member plan and scale when your business needs it. Monthly plans, no lock-in.",
       "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2463,7 +2464,7 @@
       },
       {
         "question": "What world cuisines does AI Chef Pro include?",
-        "answer": "AI Chef Pro includes recipes and techniques from 27 cuisines: French, Italian, Japanese, Spanish, Peruvian, Mexican, Greek, Moroccan, Thai, Indian, Chinese and more. Each with authentic techniques and vocabulary."
+        "answer": "AI Chef Pro includes recipes and techniques from 27 cuisines: French, Italian, Japanese, Spanish, Peruvian, Mexican, Greek, Portuguese, Thai, Indian, Chinese and more. Each with authentic techniques and vocabulary."
       },
       {
         "question": "Can I generate tech sheets with AI Chef Pro?",
@@ -2476,7 +2477,7 @@
     ],
     "cta_section": {
       "title": "Start creating AI recipes for your restaurant",
-      "subtitle": "Over {{userCount}} chefs and restaurateurs already use AI Chef Pro to create professional recipes in minutes.",
+      "subtitle": "75+ AI agents in 7 languages",
       "primary": "Try now",
       "secondary": "See all plans"
     }
@@ -3976,7 +3977,7 @@
       "title": "Create complete content with AI Chef Pro",
       "subtitle": "The idea calendar is free. With AI Chef Pro Premium you generate complete texts ready to publish, with hashtags optimised for each network.",
       "cta": "See Premium Plan",
-      "note": "No commitment · Cancel anytime",
+      "note": "Monthly plans, no lock-in",
       "plans": [
         {
           "name": "Member",

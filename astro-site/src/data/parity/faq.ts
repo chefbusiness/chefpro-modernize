@@ -1,12 +1,12 @@
 import type { PageCopy, ParityLang } from './types';
 
 const refund = {
-  en: 'Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at info@aichef.pro. You can cancel an app subscription any time from your panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case at that same email.',
-  fr: 'Les guides, kits et packs payants achetés en une seule fois ont une garantie de satisfaction de 30 jours à compter de l’achat et un remboursement de 100 %. Demandez-le par e-mail à info@aichef.pro. Vous pouvez résilier l’abonnement à l’application à tout moment depuis votre panneau, sans engagement, et vous conservez l’accès jusqu’à la fin de la période déjà payée. Toute autre question sur l’abonnement s’examine au cas par cas à cette même adresse.',
-  de: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail unter info@aichef.pro an. Das Abo der App können Sie jederzeit in Ihrem Konto kündigen, ohne Laufzeitbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
-  it: 'Le guide, i kit e i pack a pagamento acquistati in un’unica soluzione hanno una garanzia di soddisfazione di 30 giorni dall’acquisto e un rimborso del 100 %. Lo chiedi via email a info@aichef.pro. L’abbonamento all’app lo disdici quando vuoi dal pannello, senza permanenza, e l’accesso resta fino alla fine del periodo che hai già pagato. Qualsiasi altra questione sull’abbonamento la vediamo caso per caso a quella stessa email.',
-  pt: 'Os guias, kits e packs pagos comprados de uma só vez têm uma garantia de satisfação de 30 dias a partir da compra e um reembolso de 100 %. Pede-o por email para info@aichef.pro. Podes cancelar a subscrição da app quando quiseres no painel, sem permanência, e manténs o acesso até ao fim do período que já pagaste. Qualquer outra questão da subscrição vemos caso a caso nesse mesmo email.',
-  nl: 'Betaalde gidsen, kits en packs die je in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via info@aichef.pro. Je zegt het app-abonnement op wanneer je wilt in je account, zonder contractduur, en je houdt toegang tot het einde van de periode die je al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval via hetzelfde e-mailadres.',
+  en: 'Paid guides, kits and packs bought in a single payment have a 30-day satisfaction guarantee from the purchase date and a 100% refund. Request it by email at info@aichef.pro. You can cancel a monthly plan any time from your panel, with no lock-in, and you keep access until the end of the period you have already paid. Any other subscription matter is reviewed case by case at that same email.',
+  fr: 'Les guides, kits et packs payants achetés en une seule fois ont une garantie de satisfaction de 30 jours à compter de l’achat et un remboursement de 100 %. Demandez-le par e-mail à info@aichef.pro. Les forfaits mensuels se résilient quand vous voulez depuis votre panneau, sans engagement, et vous conservez l’accès jusqu’à la fin de la période déjà payée. Toute autre question sur l’abonnement s’examine au cas par cas à cette même adresse.',
+  de: 'Kostenpflichtige Leitfäden, Kits und Packs, die Sie einmalig kaufen, haben eine Zufriedenheitsgarantie von 30 Tagen ab dem Kauf und eine Rückerstattung von 100 %. Fordern Sie die Rückerstattung per E-Mail unter info@aichef.pro an. Monatliche Tarife können Sie jederzeit in Ihrem Konto kündigen, ohne Vertragsbindung, und der Zugang bleibt bis zum Ende des bereits bezahlten Zeitraums. Jede andere Frage zum Abo prüfen wir im Einzelfall über dieselbe E-Mail.',
+  it: 'Le guide, i kit e i pack a pagamento acquistati in un’unica soluzione hanno una garanzia di soddisfazione di 30 giorni dall’acquisto e un rimborso del 100 %. Lo chiedi via email a info@aichef.pro. I piani mensili li disdici quando vuoi dal pannello, senza vincoli, e l’accesso resta fino alla fine del periodo che hai già pagato. Qualsiasi altra questione sull’abbonamento la vediamo caso per caso a quella stessa email.',
+  pt: 'Os guias, kits e packs pagos comprados de uma só vez têm uma garantia de satisfação de 30 dias a partir da compra e um reembolso de 100 %. Pede-o por email para info@aichef.pro. Os planos mensais cancelam-se quando quiseres no painel, sem fidelização, e manténs o acesso até ao fim do período que já pagaste. Qualquer outra questão da subscrição vemos caso a caso nesse mesmo email.',
+  nl: 'Betaalde gidsen, kits en packs die je in één keer koopt, hebben een tevredenheidsgarantie van 30 dagen vanaf de aankoop en een terugbetaling van 100%. Vraag die aan per e-mail via info@aichef.pro. Maandabonnementen zeg je op wanneer je wilt in je account, zonder verplichting, en je houdt toegang tot het einde van de periode die je al hebt betaald. Elke andere vraag over het abonnement bekijken we per geval via hetzelfde e-mailadres.',
 };
 
 export const FAQ: Record<ParityLang, PageCopy> = {
@@ -20,7 +20,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
     lead: 'Prices, credits, cancellation and what the allergen help does — and does not — decide for you.',
     answerLabel: 'Direct answer',
     answer:
-      'AI Chef Pro is a browser suite of specialized agents for professional kitchens, not a generic chatbot. The Member plan is €10 per month with 10,000 credits and, on the English pricing page, access to 75+ agents. There is no free plan and no lock-in. Prices on this site are in euro.',
+      'AI Chef Pro is a browser suite of specialized agents for professional kitchens, not a generic chatbot. The Member plan is €10 per month with 10,000 credits and, on the English pricing page, access to 75+ agents. There is no free plan. Monthly plans have no lock-in. Prices on this site are in euro.',
     homeLabel: 'Home',
     crumb: 'FAQ',
     faqHeading: 'FAQ',
@@ -77,7 +77,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Can I cancel any time?',
-            a: 'Yes. There is no lock-in. Plan changes and cancellation are in the account panel.',
+            a: 'Yes. Monthly plans have no lock-in. Plan changes and cancellation are in the account panel.',
           },
           {
             q: 'What is the refund policy?',

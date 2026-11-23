@@ -35,24 +35,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros): checklists operativos para restaurante casual con 491 tareas ya escritas — apertura, cierre, caja, partidas de cocina, manager, perfiles profesionales, eventos y festivos.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Diego Martín',
-        rating: '5',
-        body: 'Desde que imprimimos los checklists de apertura y cierre, no se olvida ni una tarea. El equipo sabe exactamente qué hacer.',
-      },
-      {
-        author: 'Ana Belén Roca',
-        rating: '5',
-        body: 'Gestiono 3 restaurantes y ahora todos siguen el mismo estándar. Las listas por perfil son geniales para el onboarding.',
-      },
-      {
-        author: 'Javier López',
-        rating: '5',
-        body: 'Pagábamos una cuota mensual por un SaaS de checklists. Esto hace lo mismo en Excel por €14, pago único. No necesito más.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas?',

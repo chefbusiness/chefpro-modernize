@@ -67,28 +67,7 @@ const sideTools: BusinessTool[] = SIDE_IDS
       />
       <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/85 to-zinc-950/35" aria-hidden="true"></div>
       <div class="relative z-10 flex h-full flex-col gap-4">
-      <span class="self-start inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent text-[11px] font-semibold uppercase tracking-wider px-3 py-1">
-        <svg
-          class="h-3.5 w-3.5"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M20 6 9 17l-5-5" />
-        </svg>
-        {t(lang, 'showcase.v2_proof_label')}
-      </span>
-
-      <p class="text-6xl md:text-7xl font-extrabold leading-none text-accent">
-        {t(lang, 'showcase.v2_proof_value')}
-      </p>
-      <p class="font-semibold text-white">{t(lang, 'showcase.v2_proof_text')}</p>
-
-      <h3 class="text-xl font-semibold mt-2">{t(lang, `${heroKey}.name`)}</h3>
+      <h3 class="text-xl font-semibold">{t(lang, `${heroKey}.name`)}</h3>
       <p class="text-zinc-300 text-sm">{t(lang, `${heroKey}.v2_blurb`)}</p>
 
       <div class="mt-auto rounded-lg bg-white/5 border-l-4 border-accent p-4">

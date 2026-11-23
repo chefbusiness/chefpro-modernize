@@ -6,7 +6,7 @@ import FadeIn from './FadeIn';
 
 const tools = [
   { icon: Calculator, title: 'Calculadora Food Cost', desc: 'Calcula el coste real de cada plato al céntimo', href: '/calculadora-food-cost-restaurante', color: 'text-green-400' },
-  { icon: ShieldAlert, title: 'Detector Alérgenos', desc: 'Identifica alérgenos automáticamente en tus recetas', href: '/detector-alergenos-restaurante', color: 'text-red-400' },
+  { icon: ShieldAlert, title: 'Detector Alérgenos', desc: 'Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya', href: '/detector-alergenos-restaurante', color: 'text-red-400' },
   { icon: Calendar, title: 'Calendario Contenidos', desc: 'Plan de contenido mensual para redes sociales', href: '/calendario-contenidos-restaurante', color: 'text-purple-400' },
   { icon: TrendingUp, title: 'Simulador Rentabilidad', desc: 'Proyecta ingresos, costes y beneficio neto', href: '/simulador-rentabilidad-restaurante', color: 'text-yellow-400' },
   { icon: FileText, title: 'Generador Textos Carta', desc: 'Descripciones irresistibles para tu menú', href: '/generador-textos-carta-restaurante', color: 'text-blue-400' },

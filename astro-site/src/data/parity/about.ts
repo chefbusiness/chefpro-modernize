@@ -1,7 +1,7 @@
 import type { PageCopy, ParityLang, PlanRow, Standard } from './types';
 
 const enPlans: PlanRow[] = [
-  { name: 'Member', price: '€10/month', detail: '10,000 credits · no lock-in' },
+  { name: 'Member', price: '€10/month', detail: '10,000 credits · monthly plan, no lock-in' },
   { name: 'Premium Pro', price: '€25/month', detail: '85,000 credits' },
   { name: 'Premium Plus', price: '€50/month', detail: '175,000 credits' },
   { name: 'Premium Max', price: '€95/month', detail: 'Unlimited credits' },
@@ -42,7 +42,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       { big: '75+', label: 'Agents on the English pricing page' },
       { big: '7', label: 'Languages, Spanish first' },
       { big: '10,000', label: 'Credits on the Member plan' },
-      { big: '€10', label: 'Per month, no lock-in' },
+      { big: '€10', label: 'Monthly plan, no lock-in' },
     ],
     plans: enPlans,
     plansHeading: 'Plans, in euro',
@@ -63,7 +63,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'What is AI Chef Pro?',
-        a: 'A suite of specialized AI agents for hospitality professionals: costing, menus, allergens, content, local search and the daily paperwork of a kitchen. The English pricing page states 75+ agents. Member is €10 per month with 10,000 credits, with no lock-in.',
+        a: 'A suite of specialized AI agents for hospitality professionals: costing, menus, allergens, content, local search and the daily paperwork of a kitchen. The English pricing page states 75+ agents. Member is €10 per month with 10,000 credits. Monthly plan, no lock-in.',
       },
       {
         q: 'Who founded it?',
@@ -103,10 +103,10 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       { big: '75+', label: 'Agents indiqués sur la page tarifs FR' },
       { big: '7', label: 'Langues, espagnol d’origine' },
       { big: '10 000', label: 'Crédits du forfait Membre' },
-      { big: '10 €', label: 'Par mois, sans engagement' },
+      { big: '10 €', label: 'Forfait mensuel, sans engagement' },
     ],
     plans: [
-      { name: 'Membre', price: '10 €/mois', detail: '10 000 crédits · sans engagement' },
+      { name: 'Membre', price: '10 €/mois', detail: '10 000 crédits · forfait mensuel, sans engagement' },
       { name: 'Premium Pro', price: '25 €/mois', detail: '85 000 crédits' },
       { name: 'Premium Plus', price: '50 €/mois', detail: '175 000 crédits' },
       { name: 'Premium Max', price: '95 €/mois', detail: 'Crédits illimités' },
@@ -137,7 +137,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Qu’est-ce qu’AI Chef Pro ?',
-        a: 'Une suite d’agents spécialisés pour la restauration : fiches, carte, allergènes, contenu et recherche locale. La page tarifs française indique 75+ agents aujourd’hui. Le forfait Membre est à 10 € par mois avec 10 000 crédits, sans engagement.',
+        a: 'Une suite d’agents spécialisés pour la restauration : fiches, carte, allergènes, contenu et recherche locale. La page tarifs française indique 75+ agents aujourd’hui. Le forfait Membre est à 10 € par mois avec 10 000 crédits, forfait mensuel sans engagement.',
       },
       {
         q: 'Qui a fondé le projet ?',
@@ -251,10 +251,10 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       { big: '75+', label: 'Agenti indicati sulla pagina prezzi IT' },
       { big: '7', label: 'Lingue, spagnolo d’origine' },
       { big: '10.000', label: 'Crediti del piano Membro' },
-      { big: '10 €', label: 'Al mese, senza permanenza' },
+      { big: '10 €', label: 'Piano mensile, senza vincoli' },
     ],
     plans: [
-      { name: 'Membro', price: '10 €/mese', detail: '10.000 crediti · senza permanenza' },
+      { name: 'Membro', price: '10 €/mese', detail: '10.000 crediti · piano mensile, senza vincoli' },
       { name: 'Premium Pro', price: '25 €/mese', detail: '85.000 crediti' },
       { name: 'Premium Plus', price: '50 €/mese', detail: '175.000 crediti' },
       { name: 'Premium Max', price: '95 €/mese', detail: 'Crediti illimitati' },
@@ -285,7 +285,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Che cos’è AI Chef Pro?',
-        a: 'Una suite di agenti specializzati per la ristorazione: schede, menu, allergeni, contenuti e ricerca locale. La pagina prezzi italiana indica oggi 75+ agenti. Il piano Membro costa 10 € al mese con 10.000 crediti, senza permanenza.',
+        a: 'Una suite di agenti specializzati per la ristorazione: schede, menu, allergeni, contenuti e ricerca locale. La pagina prezzi italiana indica oggi 75+ agenti. Il piano Membro costa 10 € al mese con 10.000 crediti. Piano mensile, senza vincoli.',
       },
       {
         q: 'Chi l’ha fondato?',
@@ -325,10 +325,10 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       { big: '75+', label: 'Agentes na página de preços PT' },
       { big: '7', label: 'Línguas, espanhol de origem' },
       { big: '10.000', label: 'Créditos do plano Membro' },
-      { big: '10 €', label: 'Por mês, sem permanência' },
+      { big: '10 €', label: 'Plano mensal, sem fidelização' },
     ],
     plans: [
-      { name: 'Membro', price: '10 €/mês', detail: '10.000 créditos · sem permanência' },
+      { name: 'Membro', price: '10 €/mês', detail: '10.000 créditos · plano mensal, sem fidelização' },
       { name: 'Premium Pro', price: '25 €/mês', detail: '85.000 créditos' },
       { name: 'Premium Plus', price: '50 €/mês', detail: '175.000 créditos' },
       { name: 'Premium Max', price: '95 €/mês', detail: 'Créditos ilimitados' },
@@ -359,7 +359,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'O que é o AI Chef Pro?',
-        a: 'Uma suite de agentes especializados para a restauração: fichas, carta, alergénios, conteúdo e pesquisa local. A página de preços em português indica hoje 75+ agentes. O plano Membro custa 10 € por mês com 10.000 créditos, sem permanência.',
+        a: 'Uma suite de agentes especializados para a restauração: fichas, carta, alergénios, conteúdo e pesquisa local. A página de preços em português indica hoje 75+ agentes. O plano Membro custa 10 € por mês com 10.000 créditos. Plano mensal, sem fidelização.',
       },
       {
         q: 'Quem fundou o projeto?',
@@ -399,10 +399,10 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       { big: '75+', label: 'Agenten op de Nederlandse prijspagina' },
       { big: '7', label: 'Talen, Spaans als oorsprong' },
       { big: '10.000', label: 'Credits in het Lid-abonnement' },
-      { big: '€ 10', label: 'Per maand, zonder contractduur' },
+      { big: '€ 10', label: 'Maandabonnement, zonder verplichting' },
     ],
     plans: [
-      { name: 'Lid', price: '€ 10/maand', detail: '10.000 credits · zonder contractduur' },
+      { name: 'Lid', price: '€ 10/maand', detail: '10.000 credits · maandabonnement, zonder verplichting' },
       { name: 'Premium Pro', price: '€ 25/maand', detail: '85.000 credits' },
       { name: 'Premium Plus', price: '€ 50/maand', detail: '175.000 credits' },
       { name: 'Premium Max', price: '€ 95/maand', detail: 'Onbeperkte credits' },
@@ -433,7 +433,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Wat is AI Chef Pro?',
-        a: 'Een suite van gespecialiseerde agenten voor de horeca: kostprijs, kaart, allergenen, content en lokale zoekopdrachten. De Nederlandse prijspagina noemt vandaag 75+ agenten. Lid kost € 10 per maand met 10.000 credits, zonder contractduur.',
+        a: 'Een suite van gespecialiseerde agenten voor de horeca: kostprijs, kaart, allergenen, content en lokale zoekopdrachten. De Nederlandse prijspagina noemt vandaag 75+ agenten. Lid kost € 10 per maand met 10.000 credits. Maandabonnement, zonder verplichting.',
       },
       {
         q: 'Wie heeft het opgericht?',

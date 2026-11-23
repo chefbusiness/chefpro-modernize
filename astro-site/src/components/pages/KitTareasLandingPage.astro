@@ -156,6 +156,8 @@ const breadcrumbSchema = {
 };
 
 // ---- Testimonials (paridad TestimonialsMarquee: mid = ceil(len/2)) ----
+const HIDE_STAR_ROW = new Set(['kit-tareas', 'restaurant-checklist-templates']);
+const showStarRow = !HIDE_STAR_ROW.has(data.slug);
 const mid = Math.ceil(data.testimonials.items.length / 2);
 const topRow = data.testimonials.items.slice(0, mid);
 const bottomRow = data.testimonials.items.slice(mid);
@@ -269,11 +271,13 @@ const nlSp = (s: string) => '\n' + s + ' ';
             </span>
           ))}
         </div>
+        {showStarRow && (
         <div class="flex items-center gap-0.5">
           {Array.from({ length: 5 }).map(() => (
             <Icon name="Star" class="h-4 w-4 fill-[#FFD700] text-[#FFD700]" />
           ))}
         </div>
+        )}
       </div>
 
       <span class="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium animate-fade-in">

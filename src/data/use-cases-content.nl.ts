@@ -10379,17 +10379,17 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Het documenteren van 28 gerechten met een professionele technische fiche kostte ons 2 weken. Creatieve Keuken levert nu elke volledige fiche in minuten op: ingrediënten, techniek, automatische allergenen, kostprijs en storytelling voor de bediening. Nu kan elke kok consistent repliceren en bij inspecties hebben we alles getraceerd.",
+    "testimonialQuote": "Het documenteren van 28 gerechten met een professionele technische fiche kostte ons 2 weken. Creatieve Keuken levert nu elke volledige fiche in minuten op: ingrediënten, techniek, een controle van de 14 allergenen; de eindcontrole is aan u, kostprijs en storytelling voor de bediening. Nu kan elke kok consistent repliceren en bij inspecties hebben we alles getraceerd.",
     "testimonialAuthor": "Carla Mendoza",
     "testimonialRole": "Chef-kok, casual restaurant met 3 locaties",
     "faqTitle": "Veelgestelde vragen over technische fiches met AI",
     "faqs": [
       {
         "q": "Wat bevat een professionele technische fiche?",
-        "a": "Ingrediënten met exacte grammage, stap-voor-stap techniek, automatische allergenen, food cost %, kostprijs per portie, conservering, presentatie, voorgestelde pairing en beschrijving voor de bediening."
+        "a": "Ingrediënten met exacte grammage, stap-voor-stap techniek, een controle van de 14 allergenen; de eindcontrole is aan u, food cost %, kostprijs per portie, conservering, presentatie, voorgestelde pairing en beschrijving voor de bediening."
       },
       {
-        "q": "Hoe beheert het allergenen automatisch?",
+        "q": "Hoe helpt het de 14 allergenen na te kijken?",
         "a": "Allergenen ID identificeert de allergenen per ingrediënt en integreert ze in de fiche. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk en werkt het de informatie voor de bediening bij."
       },
       {
@@ -10409,8 +10409,8 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits.",
     "seo": {
       "title": "Technische Fiches Maken met AI: Allergenen, Kostprijs en Storytelling | AI Chef Pro",
-      "description": "AI-suite voor technische fiches: automatische allergenen, geïntegreerde kostprijs, plating photo en storytelling. Start vandaag.",
-      "keywords": "technische fiches AI, technische fiche gerecht, automatische allergenen, kostprijs per portie, technische fiche restaurant",
+      "description": "AI-suite voor technische fiches: een controle van de 14 allergenen; de eindcontrole is aan u, geïntegreerde kostprijs, plating photo en storytelling. Start vandaag.",
+      "keywords": "technische fiches AI, technische fiche gerecht, een controle van de 14 allergenen; de eindcontrole is aan u, kostprijs per portie, technische fiche restaurant",
       "ogImage": "https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg"
     },
     "personalizationTitle": "Gepersonaliseerd voor uw keuken vanaf minuut één",
@@ -10485,7 +10485,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "value": "100 %",
-        "label": "allergenen automatisch geïdentificeerd"
+        "label": "14 allergenen nagekeken, met uw eindcontrole"
       },
       {
         "value": "ISO",
@@ -11051,7 +11051,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack APPCC + Allergenen ID hebben onze voedselveiligheid getransformeerd. We zijn overgestapt van verspreid bedrukt papier naar 17 digitale sjablonen met geïntegreerde APPCC per dienst en automatische allergenen per recept. De hygiëne-inspectie is vlekkeloos en het juridisch risico is naar nul gedaald.",
+    "testimonialQuote": "Pack APPCC + Allergenen ID hebben onze voedselveiligheid getransformeerd. We zijn overgestapt van verspreid bedrukt papier naar 17 digitale sjablonen met geïntegreerde APPCC per dienst en een controle van de 14 allergenen; de eindcontrole is aan u per recept. De hygiëne-inspectie is vlekkeloos en het juridisch risico is naar nul gedaald.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "F&B-directeur, 5-sterrenhotel met 4 outlets",
     "faqTitle": "Veelgestelde vragen over APPCC met AI",
@@ -11061,7 +11061,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
         "a": "Ja. Pack APPCC past sjablonen aan voor restaurant, cafetaria, patisserie, ijssalon, chocolaterie, pizzeria, dark kitchen, bar, catering, hotel."
       },
       {
-        "q": "Hoe beheert u allergenen automatisch?",
+        "q": "Hoe kijkt u de 14 allergenen na?",
         "a": "Allergenen ID identificeert allergenen per ingrediënt en recept, integreert ze in technische fiches en APPCC-sjablonen. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
       },
       {
@@ -11081,8 +11081,8 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
     "seo": {
       "title": "Hoe u digitale APPCC met AI beheert: Sjablonen, Allergenen en Traceerbaarheid | AI Chef Pro",
-      "description": "AI-suite voor digitale APPCC: Excel-sjablonen, automatische allergenen, ISO-traceerbaarheid. Begin vandaag.",
-      "keywords": "digitale APPCC AI, APPCC-sjablonen, automatische allergenen, ISO 22000 AI, voedselveiligheid AI, digitale HACCP",
+      "description": "AI-suite voor digitale APPCC: Excel-sjablonen, een controle van de 14 allergenen; de eindcontrole is aan u, ISO-traceerbaarheid. Begin vandaag.",
+      "keywords": "digitale APPCC AI, APPCC-sjablonen, een controle van de 14 allergenen; de eindcontrole is aan u, ISO 22000 AI, voedselveiligheid AI, digitale HACCP",
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Gepersonaliseerd voor uw horecagelegenheid vanaf minuut één",
@@ -11157,7 +11157,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "value": "100 %",
-        "label": "allergenen automatisch geïdentificeerd"
+        "label": "14 allergenen nagekeken, met uw eindcontrole"
       },
       {
         "value": "0 %",

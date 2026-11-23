@@ -10379,14 +10379,14 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Documenter 28 plats avec une fiche technique professionnelle nous prenait 2 semaines. Cuisine Créative livre désormais chaque fiche complète en quelques minutes : ingrédients, technique, allergènes automatiques, coût et storytelling pour la salle. Désormais, n'importe quel cuisinier réplique avec cohérence et lors des inspections, tout est tracé.",
+    "testimonialQuote": "Documenter 28 plats avec une fiche technique professionnelle nous prenait 2 semaines. Cuisine Créative livre désormais chaque fiche complète en quelques minutes : ingrédients, technique, relecture des 14 allergènes, le contrôle final vous appartient, coût et storytelling pour la salle. Désormais, n'importe quel cuisinier réplique avec cohérence et lors des inspections, tout est tracé.",
     "testimonialAuthor": "Carla Mendoza",
     "testimonialRole": "Cheffe de cuisine, restaurant décontracté avec 3 points de vente",
     "faqTitle": "Questions Fréquentes sur les Fiches Techniques avec l'IA",
     "faqs": [
       {
         "q": "Que comprend une fiche technique professionnelle ?",
-        "a": "Ingrédients avec grammage exact, technique étape par étape, allergènes automatiques, food cost %, coût par portion, conservation, présentation, accord suggéré et description pour la salle."
+        "a": "Ingrédients avec grammage exact, technique étape par étape, relecture des 14 allergènes, le contrôle final vous appartient, food cost %, coût par portion, conservation, présentation, accord suggéré et description pour la salle."
       },
       {
         "q": "Comment gère-t-il les allergènes automatiquement ?",
@@ -10409,8 +10409,8 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Commencez avec l'onboarding de 2 minutes. Plan Membre à 10 € par mois avec 10 000 crédits.",
     "seo": {
       "title": "Comment Créer des Fiches Techniques avec l'IA : Allergènes, Coût et Storytelling | AI Chef Pro",
-      "description": "Suite IA pour fiches techniques : allergènes automatiques, coût intégré, photo de dressage et storytelling. Commencez dès aujourd'hui.",
-      "keywords": "fiches techniques IA, fiche technique plat, allergènes automatiques, coût par portion, fiche technique restaurant",
+      "description": "Suite IA pour fiches techniques : relecture des 14 allergènes, le contrôle final vous appartient, coût intégré, photo de dressage et storytelling. Commencez dès aujourd'hui.",
+      "keywords": "fiches techniques IA, fiche technique plat, relecture des 14 allergènes, le contrôle final vous appartient, coût par portion, fiche technique restaurant",
       "ogImage": "https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg"
     },
     "personalizationTitle": "Personnalisé pour Votre Cuisine dès la Première Minute",
@@ -11051,7 +11051,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Le Pack APPCC + ID Allergènes ont transformé notre sécurité alimentaire. Nous sommes passés de papier imprimé dispersé à 19 registres numériques avec APPCC intégré par service et allergènes automatiques par recette. L'inspection sanitaire est impeccable et le risque juridique est tombé à zéro.",
+    "testimonialQuote": "Le Pack APPCC + ID Allergènes ont transformé notre sécurité alimentaire. Nous sommes passés de papier imprimé dispersé à 19 registres numériques avec APPCC intégré par service et relecture des 14 allergènes, le contrôle final vous appartient par recette. L'inspection sanitaire est impeccable et le risque juridique est tombé à zéro.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "Directeur F&B, hôtel 5 étoiles avec 4 points de vente",
     "faqTitle": "Questions Fréquentes sur l'APPCC avec l'IA",
@@ -11081,8 +11081,8 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Commencez avec l'onboarding de 2 minutes. Plan Membre à 10 € par mois avec 10 000 crédits.",
     "seo": {
       "title": "Comment gérer l'APPCC numérique avec l'IA : Modèles, Allergènes et Traçabilité | AI Chef Pro",
-      "description": "Suite d'IA pour l'APPCC numérique : modèles Excel, allergènes automatiques, traçabilité ISO. Commencez dès aujourd'hui.",
-      "keywords": "APPCC numérique IA, modèles APPCC, allergènes automatiques, ISO 22000 IA, sécurité alimentaire IA, HACCP numérique",
+      "description": "Suite d'IA pour l'APPCC numérique : modèles Excel, relecture des 14 allergènes, le contrôle final vous appartient, traçabilité ISO. Commencez dès aujourd'hui.",
+      "keywords": "APPCC numérique IA, modèles APPCC, relecture des 14 allergènes, le contrôle final vous appartient, ISO 22000 IA, sécurité alimentaire IA, HACCP numérique",
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Personnalisé à votre établissement dès la première minute",

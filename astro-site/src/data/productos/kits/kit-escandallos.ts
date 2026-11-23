@@ -26,29 +26,6 @@ const data: KitExcelData = {
       '13 plantillas de escandallos con fórmulas automáticas, mermas precargadas y calculadora de PVP. Para chefs, gerentes y dueños de restaurante.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '10',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Antes hacía los escandallos en un cuaderno. Ahora con estas plantillas tengo el food cost de cada plato controlado al céntimo. He bajado del 35% al 28% en dos meses.',
-      },
-      {
-        author: 'María José Pérez',
-        rating: '5',
-        body: 'Gestiono 4 restaurantes y estas plantillas me permiten estandarizar los escandallos en todos. El dashboard mensual es lo que más uso.',
-      },
-      {
-        author: 'Antonio Delgado',
-        rating: '5',
-        body: 'Uso el kit con todos mis clientes de consultoría. Es la herramienta más práctica que he encontrado para enseñar control de costes.',
-      },
-    ],
     // FAQPage schema (MÁS CORTAS que las FAQ on-page — VERBATIM del Helmet)
     faqs: [
       {

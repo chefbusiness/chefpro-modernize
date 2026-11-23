@@ -39,29 +39,6 @@ const data: KitExcelData = {
       '9 plantillas Excel con formulas automaticas para controlar inventario, proveedores, pedidos, mermas, FIFO y costes de compras en hosteleria.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Miguel Fernandez',
-        rating: '5',
-        body: 'El control de mermas fue revelador. Descubrimos que perdiamos 400 EUR/mes solo en verdura mal almacenada.',
-      },
-      {
-        author: 'Laura Martinez',
-        rating: '5',
-        body: 'La comparativa de proveedores nos ahorro mas de 2.000 EUR el primer trimestre.',
-      },
-      {
-        author: 'Elena Ruiz',
-        rating: '5',
-        body: 'Es el kit mas completo que he visto en espanol: desde el inventario diario hasta el analisis de costes con dashboard.',
-      },
-    ],
     // FAQPage schema (VERBATIM del Helmet — MÁS CORTAS que las FAQ on-page)
     faqs: [
       {

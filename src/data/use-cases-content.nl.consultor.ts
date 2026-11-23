@@ -214,7 +214,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       afterTitle: 'Met AI Chef Pro',
       afterItems: [
         '30 minuten per kaart met Creatieve Keuken + Kostprijs Pro Kit',
-        'Technische fiches met allergenen automatisch gegenereerd en bewerkbaar',
+        'Technische fiches met een controle van de 14 allergenen, die u zelf afrondt',
         'Afdrukbare operationele handboeken die het team van de klant zonder u kan gebruiken',
         'Professionele planningen met Personeelsbeheer Kit volgens cao',
         'Meer afgesloten projecten zonder aannemen: verdrievoudig uw volume als consultant',

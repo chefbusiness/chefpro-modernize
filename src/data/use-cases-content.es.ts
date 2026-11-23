@@ -4977,7 +4977,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       pains: [
         'Documentar 30 platos con ficha técnica profesional puede llevar 2 semanas',
         'Sin estandarización, cada cocinero replica su versión y pierde consistencia',
-        'Allergenos calculados a mano por receta, riesgo legal y de seguridad alimentaria',
+        'Alérgenos calculados a mano por receta, riesgo legal y de seguridad alimentaria',
         'Sin storytelling para sala, equipo describe el plato improvisadamente',
         'Cuando se cambia un ingrediente, hay que actualizar la ficha y recalcular allergenos',
         'Falta de plantilla profesional con todos los campos críticos (técnica, gramaje, mermas, coste)',
@@ -5017,7 +5017,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ctaTitle: 'Tus fichas técnicas profesionales en minutos.',
       ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos.',
       seo: {
-        title: 'Cómo Crear Fichas Técnicas con IA: Allergenos, Coste y Storytelling | AI Chef Pro',
+        title: 'Cómo Crear Fichas Técnicas con IA: Alérgenos, Coste y Storytelling | AI Chef Pro',
         description: 'Suite de IA para fichas técnicas: allergenos automáticos, coste integrado, plating photo y storytelling. Empieza hoy.',
         keywords: 'fichas técnicas IA, ficha técnica plato, allergenos automáticos, coste por porción, ficha técnica restaurante',
         ogImage: 'https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg',
@@ -5049,7 +5049,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         beforeTitle: 'Sin AI Chef Pro',
         beforeItems: [
           '2 semanas para documentar 28 platos',
-          'Allergenos calculados a mano (riesgo legal)',
+          'Alérgenos calculados a mano (riesgo legal)',
           'Storytelling improvisado en sala',
           'Cambios de ingrediente sin actualizar fichas',
           'Sin plantilla profesional estandarizada',
@@ -5057,7 +5057,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         afterTitle: 'Con AI Chef Pro',
         afterItems: [
           '28 platos documentados en un día con plantilla profesional',
-          'Allergenos automáticos con ID Alérgenos',
+          'Revisión de los 14 alérgenos con ID Alérgenos; la validación final es tuya',
           'Storytelling profesional para briefing de sala',
           'Cambios actualizan ficha y allergenos al instante',
           'Plantilla uniforme lista para auditoría y certificaciones',
@@ -5295,7 +5295,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       pains: [
         'Papel impreso disperso por la cocina, registros incompletos en inspecciones',
         'Sin estandarización por concepto (heladería, panadería, parrilla, sushi tienen registros distintos)',
-        'Allergenos calculados a mano por receta, riesgo legal y de seguridad',
+        'Alérgenos calculados a mano por receta, riesgo legal y de seguridad',
         'Cambios en regulación sin actualizar plantillas y procedimientos',
         'Equipo rotativo sin formación constante en seguridad alimentaria',
         'Sin trazabilidad para auditorías ISO 22000, BRC, IFS o certificaciones de calidad',
@@ -5335,7 +5335,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ctaTitle: 'Tu APPCC profesional desde móvil sin papel.',
       ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos.',
       seo: {
-        title: 'Cómo Gestionar APPCC Digital con IA: Plantillas, Allergenos y Trazabilidad | AI Chef Pro',
+        title: 'Cómo Gestionar APPCC Digital con IA: Plantillas, Alérgenos y Trazabilidad | AI Chef Pro',
         description: 'Suite de IA para APPCC digital: plantillas Excel, allergenos automáticos, trazabilidad ISO. Empieza hoy.',
         keywords: 'APPCC digital IA, plantillas APPCC, allergenos automáticos, ISO 22000 IA, seguridad alimentaria IA, HACCP digital',
         ogImage: 'https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg',
@@ -5367,7 +5367,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         beforeTitle: 'Sin AI Chef Pro',
         beforeItems: [
           'Papel impreso disperso por la cocina',
-          'Allergenos calculados a mano (riesgo legal)',
+          'Alérgenos calculados a mano (riesgo legal)',
           'Sin plantillas adaptadas al tipo de cocina',
           'Equipo rotativo sin formación documentada',
           'Sin trazabilidad para auditorías ISO',
@@ -5375,7 +5375,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         afterTitle: 'Con AI Chef Pro',
         afterItems: [
           'APPCC desde móvil con firma digital',
-          'Allergenos automáticos con ID Alérgenos',
+          'Revisión de los 14 alérgenos con ID Alérgenos; la validación final es tuya',
           'Plantillas Excel adaptadas por concepto',
           'Briefing con APPCC integrado al Kit de Tareas',
           'Trazabilidad lista para ISO 22000, BRC, IFS',

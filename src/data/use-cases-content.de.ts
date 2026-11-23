@@ -10379,14 +10379,14 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Das Dokumentieren von 28 Gerichten mit professionellem Rezeptblatt dauerte uns 2 Wochen. Kreativküche liefert jetzt jedes vollständige Rezeptblatt in Minuten: Zutaten, Technik, automatische Allergene, Kosten und Storytelling für den Service. Jetzt kann jeder Koch konsistent nachkochen, und bei Inspektionen ist alles nachvollziehbar.",
+    "testimonialQuote": "Das Dokumentieren von 28 Gerichten mit professionellem Rezeptblatt dauerte uns 2 Wochen. Kreativküche liefert jetzt jedes vollständige Rezeptblatt in Minuten: Zutaten, Technik, eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, Kosten und Storytelling für den Service. Jetzt kann jeder Koch konsistent nachkochen, und bei Inspektionen ist alles nachvollziehbar.",
     "testimonialAuthor": "Carla Mendoza",
     "testimonialRole": "Küchenchefin, Casual-Restaurant mit 3 Standorten",
     "faqTitle": "Häufige Fragen zu Rezeptblättern mit KI",
     "faqs": [
       {
         "q": "Was enthält ein professionelles Rezeptblatt?",
-        "a": "Zutaten mit exakter Grammatur, Schritt-für-Schritt-Technik, automatische Allergene, Food-Cost-%, Kosten pro Portion, Konservierung, Präsentation, empfohlene Weinbegleitung und Beschreibung für den Service."
+        "a": "Zutaten mit exakter Grammatur, Schritt-für-Schritt-Technik, eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, Food-Cost-%, Kosten pro Portion, Konservierung, Präsentation, empfohlene Weinbegleitung und Beschreibung für den Service."
       },
       {
         "q": "Wie verwaltet es Allergene automatisch?",
@@ -10409,8 +10409,8 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
     "seo": {
       "title": "So erstellen Sie Rezeptblätter mit KI: Allergene, Kosten und Storytelling | AI Chef Pro",
-      "description": "KI-Suite für Rezeptblätter: automatische Allergene, integrierte Kosten, Plating-Foto und Storytelling. Starten Sie noch heute.",
-      "keywords": "Rezeptblätter KI, Rezeptblatt Gericht, automatische Allergene, Kosten pro Portion, Rezeptblatt Restaurant",
+      "description": "KI-Suite für Rezeptblätter: eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, integrierte Kosten, Plating-Foto und Storytelling. Starten Sie noch heute.",
+      "keywords": "Rezeptblätter KI, Rezeptblatt Gericht, eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, Kosten pro Portion, Rezeptblatt Restaurant",
       "ogImage": "https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg"
     },
     "personalizationTitle": "Von der ersten Minute an auf Ihre Küche zugeschnitten",
@@ -11081,8 +11081,8 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits.",
     "seo": {
       "title": "So verwalten Sie digitales APPCC mit KI: Vorlagen, Allergene und Rückverfolgbarkeit | AI Chef Pro",
-      "description": "KI-Suite für digitales APPCC: Excel-Vorlagen, automatische Allergene, ISO-Rückverfolgbarkeit. Starten Sie noch heute.",
-      "keywords": "digitales APPCC KI, APPCC-Vorlagen, automatische Allergene, ISO 22000 KI, Lebensmittelsicherheit KI, digitales HACCP",
+      "description": "KI-Suite für digitales APPCC: Excel-Vorlagen, eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, ISO-Rückverfolgbarkeit. Starten Sie noch heute.",
+      "keywords": "digitales APPCC KI, APPCC-Vorlagen, eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, ISO 22000 KI, Lebensmittelsicherheit KI, digitales HACCP",
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Von der ersten Minute an auf Ihren Betrieb zugeschnitten",
