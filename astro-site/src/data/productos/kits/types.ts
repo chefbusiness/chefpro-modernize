@@ -22,8 +22,7 @@
 //      → hero.titlePost? y hero.titleSubtitle? son opcionales; se renderiza lo que exista.
 //   2. HERO BADGE tono: 'gold' (escandallos, appcc) | 'red' (inventario, gestion, plan). → hero.badgeTone.
 //   3. CONTENT GRID columnas: escandallos usa lg:grid-cols-4 (11 tarjetas); el resto md:grid-cols-3 (9). → grid.fourCols.
-//   4. GUARANTEE heading: acentuado "Garantía de Satisfacción " (escandallos, appcc) vs sin tildes
-//      "Garantia de Satisfaccion " (inventario, gestion, plan). El gold "100%" es constante. → guarantee.headingPre.
+//   4. GUARANTEE heading: "Garantía de Satisfacción ". El gold "100%" es constante. → guarantee.headingPre.
 //   5. STICKY BAR: dos variantes DOM:
 //        · 'v1' (SOLO escandallos): px-4, <div><p text-sm></div>, CTA "COMPRAR AHORA" (px-6 whitespace-nowrap).
 //        · 'v2' (resto): px-3 max-w-screen-sm, <p text-xs truncate>, CTA "COMPRAR" (px-5 flex-shrink-0).
@@ -237,8 +236,7 @@ export interface KitExcelData {
 
   // ---- Guarantee ----
   guarantee: {
-    /** heading antes del gold "100%". Default "Garantía de Satisfacción " (acentuado).
-     *  inventario/gestion/plan pasan "Garantia de Satisfaccion ". */
+    /** heading antes del gold "100%". Default "Garantía de Satisfacción " (acentuado). */
     headingPre?: string;
     text: string;
     stats: KitExcelStat[];

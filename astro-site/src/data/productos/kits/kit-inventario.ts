@@ -11,7 +11,7 @@
 //   · hero.badgeTone = 'red' (no 'gold').
 //   · hero H1 = Forma B: titlePre + titleGold + titleSubtitle en <span block> (SIN titlePost).
 //   · grid.fourCols = omitido (9 tarjetas, grid-cols-2 md:grid-cols-3 — NO 4 columnas).
-//   · guarantee.headingPre = 'Garantia de Satisfaccion ' (sin tildes).
+//   · guarantee.headingPre = 'Garantía de Satisfacción ' (acentuado, JohnB 2026-11-23).
 //   · authorBadges = ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (sin tildes).
 //   · stickyVariant = omitido (default 'v2', igual que la SPA: px-3 max-w-screen-sm, CTA "COMPRAR").
 //   · images.gridGallery = omitido: ContentGrid.tsx usa el MISMO set de 6 imágenes que el hero
@@ -189,7 +189,7 @@ const data: KitExcelData = {
   },
 
   guarantee: {
-    headingPre: 'Garantia de Satisfaccion ',
+    headingPre: 'Garantía de Satisfacción ',
     text:
       'Si las plantillas no te ayudan a reducir mermas y controlar mejor las compras de tu restaurante, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.',
     stats: [
