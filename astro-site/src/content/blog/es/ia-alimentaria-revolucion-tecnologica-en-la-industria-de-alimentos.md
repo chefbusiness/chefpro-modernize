@@ -278,7 +278,7 @@ wpId: 1424
 
 
 
-<p class="wp-block-paragraph"><strong>Detección de Alérgenos con Precisión:</strong> Sistemas de IA procesan datos de composición de ingredientes para identificar automáticamente la presencia de los 14 alérgenos principales reconocidos internacionalmente. Estas herramientas son especialmente valiosas para la industria gastronómica, como se detalla en nuestras aplicaciones de <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank" rel="noopener" data-lasso-id="3260">tecnología de seguridad alimentaria con IA</a>.</p>
+<p class="wp-block-paragraph"><strong>Detección de Alérgenos con Precisión:</strong> Sistemas de IA procesan datos de composición de ingredientes para proponer la revisión de los 14 alérgenos principales, con validación final del cocinero. Estas herramientas son especialmente valiosas para la industria gastronómica, como se detalla en nuestras aplicaciones de <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank" rel="noopener" data-lasso-id="3260">tecnología de seguridad alimentaria con IA</a>.</p>
 
 
 
@@ -446,7 +446,7 @@ wpId: 1424
 
 
 
-<p class="wp-block-paragraph"><strong>ID Alérgenos &#8211; Seguridad Alimentaria Automatizada:</strong> Aprovechando tecnología similar a la utilizada por sistemas de trazabilidad industrial, esta aplicación identifica automáticamente alérgenos en formulaciones, garantizando compliance con regulaciones internacionales y protegiendo la salud de consumidores sensibles.</p>
+<p class="wp-block-paragraph"><strong>ID Alérgenos &#8211; Seguridad Alimentaria Automatizada:</strong> Aprovechando tecnología similar a la utilizada por sistemas de trazabilidad industrial, esta aplicación ayuda a revisar los 14 alérgenos, con validación final del cocinero en formulaciones, garantizando compliance con regulaciones internacionales y protegiendo la salud de consumidores sensibles.</p>
 
 
 

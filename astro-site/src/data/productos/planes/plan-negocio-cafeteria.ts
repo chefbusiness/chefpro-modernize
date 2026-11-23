@@ -44,29 +44,6 @@ const data: PlanNegocioData = {
       'Plan de negocio completo para abrir una cafetería o brunch en España. Incluye plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada (130.176 €: 91.650 € de CAPEX más 38.526 € de fondo de maniobra), punto de equilibrio en 84 clientes/día con ticket medio de 9,80 € sin IVA (10,78 € de PVP), escenarios financieros, tesorería a 12 meses con liquidación de IVA, plan de financiación con cuadro de amortización y DSCR, cuadro de personal con Seguridad Social, checklist de apertura con 75 trámites bajo licencia de actividad inocua y registro sanitario autonómico, equipamiento específico cafetería y ratios sectoriales del mercado español 2026.',
     price: '29.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'El plan financiero me ayudó a conseguir financiación ICO. El desglose de inversión en máquina de café, horno y mobiliario era exacto.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'Gracias al checklist no se me pasó ningún trámite. La licencia de actividad inocua fue clave para abrir rápido.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'El punto de equilibrio de 53 clientes/día con ticket medio €9,50 es realista. Números que cuadran con el mercado.',
-      },
-    ],
     // FAQPage schema (4 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 6)
     faqs: [
       {
@@ -153,16 +130,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Propietarios e inversores que abrieron su cafetería o brunch con un plan financiero profesional',
-    items: [
-      { name: 'Alejandro Ruiz', role: 'Propietario Cafetería Specialty Madrid', text: 'El plan financiero me ayudó a conseguir financiación ICO. El desglose de inversión en máquina de café, horno y mobiliario era exacto, sin sorpresas.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'María López', role: 'Emprendedora Brunch Barcelona', text: 'Gracias al checklist de apertura no se me pasó ningún trámite. La licencia de actividad inocua fue clave para abrir rápido y sin retrasos.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Carlos Méndez', role: 'Inversor Hostelería', text: 'El punto de equilibrio de 53 clientes/día con ticket medio €9,50 es realista. Números que cuadran con el mercado real de cafeterías.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Laura Fernández', role: 'Socia Cafetería Brunch Sevilla', text: 'Los escenarios financieros nos dieron confianza para firmar el alquiler. Sabíamos exactamente cuánto necesitábamos facturar para ser rentables.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'David Torres', role: 'Consultor Hostelería', text: 'Lo recomiendo a todo emprendedor que quiera abrir una cafetería en España. Datos reales del sector, no plantillas de relleno.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana García', role: 'Propietaria Coffee Shop Valencia', text: 'Los ratios de café (food cost 25-30 %) y el cuadro de personal con SS me ahorraron errores de miles de euros antes de firmar nada.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Gutiérrez', role: 'Ex Corporativo, Abrió Cafetería Brunch', text: 'No sabía nada de licencias hostelería. El checklist con las 6 fases me guió paso a paso. Abrí en 3 meses sin ningún problema legal.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Fernando Delgado', role: 'Dueño Cadena 3 Cafeterías', text: 'Hemos usado el plan financiero Excel para nuestras 3 aperturas. Solo cambias la ubicación y tienes un business plan profesional listo para presentar.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

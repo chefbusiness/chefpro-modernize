@@ -18,7 +18,7 @@ faq:
   - q: "¿Puedo integrar la IA con mi TPV o mi hoja de cálculo de ventas?"
     a: "Sí, aunque no requiere integración compleja. Puedes exportar tus datos de ventas en CSV y cargarlos en el agente de previsión de demanda, o simplemente dictarle las cifras de la semana. Muchos panaderos empiezan con un registro manual de 5 minutos al día y la IA aprende los patrones sin necesidad de conectar sistemas."
   - q: "¿Cómo gestiona los alérgenos y la información nutricional?"
-    a: "Cada ficha técnica generada incluye automáticamente los alérgenos de los ingredientes que declares. Además, puedes pedir al agente que calcule la información nutricional por 100 g y por pieza, con desglose de grasas, proteínas e hidratos. Esto te permite imprimir etiquetas o actualizar la carta digital con datos fiables y adaptados a la normativa europea."
+    a: "Cada ficha técnica generada deja preparada la revisión de los 14 alérgenos de los ingredientes que declares, con validación final del cocinero. Además, puedes pedir al agente que calcule la información nutricional por 100 g y por pieza, con desglose de grasas, proteínas e hidratos. Esto te permite imprimir etiquetas o actualizar la carta digital con datos fiables y adaptados a la normativa europea."
   - q: "¿Cuánto tiempo necesito para aprender a usar los agentes de IA?"
     a: "Menos de 10 minutos. La interfaz es un chat en español donde escribes lo que necesitas, como si hablaras con un compañero. No hay menús complicados ni formación técnica. La mayoría de los panaderos hacen su primer escandallo completo en menos de un cuarto de hora y en una semana dominan las funciones principales."
 ---

@@ -97,7 +97,7 @@ wpId: 2113
 
 
 
-<li>Adaptación automática a restricciones dietéticas y alérgenos</li>
+<li>Revisión de los 14 alérgenos, con validación final del cocinero, y adaptación a restricciones dietéticas</li>
 
 
 
@@ -181,11 +181,11 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">La <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">seguridad alimentaria con IA</a> abarca desde la identificación automática de alérgenos hasta la supervisión continua de la cadena de frío. Los sistemas de visión por computadora pueden detectar contaminantes, moho y otros problemas de seguridad en tiempo real.</p>
+<p class="wp-block-paragraph">La <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">seguridad alimentaria con IA</a> abarca desde la revisión de los 14 alérgenos con validación final del cocinero hasta la supervisión continua de la cadena de frío. Los sistemas de visión por computadora pueden detectar contaminantes, moho y otros problemas de seguridad en tiempo real.</p>
 
 
 
-<p class="wp-block-paragraph">Herramientas como <strong>ID Alérgenos</strong> permiten identificar de forma precisa los alérgenos potenciales en cualquier receta, generando automáticamente la información obligatoria para menús y facilitando el cumplimiento normativo. Para profundizar en este tema, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/alergenos" target="_blank">gestión de alérgenos</a>.</p>
+<p class="wp-block-paragraph">Herramientas como <strong>ID Alérgenos</strong> permiten identificar de forma precisa los alérgenos potenciales en cualquier receta, y prepara la información obligatoria para los menús, con validación final del cocinero y facilitando el cumplimiento normativo. Para profundizar en este tema, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/alergenos" target="_blank">gestión de alérgenos</a>.</p>
 
 
 

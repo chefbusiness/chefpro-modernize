@@ -52,7 +52,7 @@ wpId: 1965
 
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px;">🛡️ Gestiona los Alérgenos de tu Restaurante con IA</h3>
-<p style="color: #e8e8e8; font-size: 16px; margin-bottom: 20px;">ID Alérgenos de AI Chef Pro identifica automáticamente los 14 alérgenos obligatorios en tus recetas y platos. Protege a tus comensales y cumple con la normativa sin esfuerzo.</p>
+<p style="color: #e8e8e8; font-size: 16px; margin-bottom: 20px;">ID Alérgenos de AI Chef Pro te ayuda con la revisión de los 14 alérgenos obligatorios en tus recetas y platos, con validación final del cocinero.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Probar AI Chef Pro Miembro</a>
 </div>
 
@@ -167,7 +167,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph"><strong>1. Identificación automática de alérgenos:</strong> Los algoritmos de IA pueden analizar listas de ingredientes y detectar automáticamente la presencia de los 14 alérgenos obligatorios, incluyendo derivados y nombres alternativos que podrían pasar desapercibidos en una revisión manual.</p>
+<p class="wp-block-paragraph"><strong>1. Revisión de los 14 alérgenos con validación final del cocinero:</strong> Los algoritmos de IA pueden analizar listas de ingredientes y proponer la revisión de los 14 alérgenos obligatorios, con validación final del cocinero, incluyendo derivados y nombres alternativos que podrían pasar desapercibidos en una revisión manual.</p>
 
 
 
@@ -217,7 +217,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph"><strong>Análisis inteligente de recetas:</strong> Introduce cualquier receta y el sistema identificará automáticamente todos los alérgenos presentes, incluyendo aquellos ocultos en ingredientes procesados o con nombres poco comunes.</p>
+<p class="wp-block-paragraph"><strong>Análisis inteligente de recetas:</strong> Introduce cualquier receta y el cocinero revisa los 14 alérgenos presentes, incluyendo aquellos ocultos en ingredientes procesados o con nombres poco comunes.</p>
 
 
 
@@ -828,7 +828,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">AI Chef Pro permite actualizar la información de ingredientes de forma centralizada. Cuando se modifica la composición de un ingrediente, el sistema recalcula automáticamente la información alergénica de todos los platos que lo utilizan, generando alertas si hay cambios significativos. Esto garantiza que la documentación siempre esté actualizada.</p>
+<p class="wp-block-paragraph">AI Chef Pro permite actualizar la información de ingredientes de forma centralizada. Cuando cambia la composición de un ingrediente, revisas la información de alérgenos de los platos que lo llevan y el cocinero valida la ficha.</p>
 
 
 
@@ -844,7 +844,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">El sistema genera automáticamente los iconos y símbolos necesarios para indicar alérgenos en cartas y menús, siguiendo los estándares más utilizados en el sector. También puede exportar la información en formatos compatibles con sistemas de cartas digitales y aplicaciones de pedidos.</p>
+<p class="wp-block-paragraph">Preparas los iconos y símbolos necesarios para indicar alérgenos en cartas y menús, siguiendo los estándares más utilizados en el sector. También puede exportar la información en formatos compatibles con sistemas de cartas digitales y aplicaciones de pedidos.</p>
 
 
 

@@ -38,29 +38,6 @@ const data: PlanNegocioData = {
       'Plan de negocio completo para abrir un bar-restaurante en España. Incluye plan financiero Excel con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, checklist de apertura con 64 trámites y análisis de mercado España 2026.',
     price: '35.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Presenté el plan financiero al banco y me aprobaron la financiación. Las proyecciones a 3 años con escenarios les dieron mucha confianza.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'El checklist de apertura me salvó meses de trabajo. 50+ trámites organizados por fases, desde constituir la SL hasta la licencia de actividad.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'Uso este plan como base para evaluar proyectos de restauración. El punto de equilibrio y los escenarios financieros son exactamente lo que necesito.',
-      },
-    ],
     // FAQPage schema (5 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 6)
     faqs: [
       {
@@ -151,16 +128,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Emprendedores e inversores que usaron el plan de negocio para abrir su restaurante en España',
-    items: [
-      { name: 'Alejandro Ruiz', role: 'Propietario Bar-Restaurante Madrid', text: 'Presenté el plan financiero al banco y me aprobaron la financiación. Las proyecciones a 3 años con escenarios les dieron mucha confianza. La inversión quedó clara, partida por partida.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'María López', role: 'Emprendedora Hostelería Barcelona', text: 'El checklist de apertura me salvó meses de trabajo. 50+ trámites organizados por fases, desde constituir la SL hasta la licencia de actividad. No me dejé nada pendiente.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Carlos Méndez', role: 'Inversor Restauración', text: 'Uso este plan como base para evaluar proyectos de restauración. El punto de equilibrio y los escenarios financieros son exactamente lo que necesito para tomar decisiones de inversión.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Laura Fernández', role: 'Directora Restaurante Sevilla', text: 'El cuadro de personal, con la Seguridad Social y las 14 pagas, me abrió los ojos. Antes subestimaba los costes laborales. Ahora tengo el equipo justo para ser rentable.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'David Torres', role: 'Consultor Hostelería', text: 'Lo recomiendo a todos mis clientes que quieren abrir un restaurante en España. Es el plan de negocio más completo y actualizado que he visto, con datos reales del mercado español.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana García', role: 'Propietaria Gastrobar Valencia', text: 'Los ratios de referencia me ayudaron a negociar mejor el local. El alquiler quedó en una cifra con la que el negocio puede vivir.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Gutiérrez', role: 'Ex Directivo que Abrió su Restaurante', text: 'Venía del mundo corporativo y no sabía nada de licencias hostelería. El checklist de apertura con las 6 fases me guió paso a paso. Abrí en 4 meses sin ningún problema legal.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Fernando Delgado', role: 'Socio Fundador Grupo Restauración', text: 'Hemos usado el plan financiero Excel para 3 aperturas distintas. Solo cambias las cifras del local y tienes un business plan profesional listo para presentar a inversores.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

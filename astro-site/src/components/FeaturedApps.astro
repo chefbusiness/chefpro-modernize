@@ -60,6 +60,7 @@ const { lang = 'es' } = Astro.props;
                   </h3>
                   <p class="text-sm text-muted-foreground text-sm leading-relaxed">{description}</p>
                 </div>
+                {lang !== 'es' && (
                 <div class="p-6 pt-0 p-4 sm:p-6 pt-0">
                   <blockquote class="border-l-4 border-accent/30 pl-3 sm:pl-4 italic text-sm">
                     <p class="mb-2 text-xs sm:text-sm leading-relaxed">"{t(lang, `${appKey}.testimonial.text`)}"</p>
@@ -70,6 +71,7 @@ const { lang = 'es' } = Astro.props;
                     </footer>
                   </blockquote>
                 </div>
+                )}
                 <div class="flex items-center p-6 pt-0 p-4 sm:p-6 pt-0">
                   <button
                     type="button"

@@ -42,29 +42,6 @@ const data: PlanNegocioData = {
       'Plan + kit profesional completo para montar un servicio premium itinerante de paella y arroces para eventos en España 2026. Modelo híbrido para particulares (bodas, comuniones, cumpleaños, peñas) y empresas (wedding planners, agencias, hoteles 4-5*, empresas team-building y ayuntamientos con fiestas populares). Incluye plan de negocio en Word de 10 secciones con anexo del fuego al aire libre en 8 comunidades, plan financiero Excel de 9 hojas (PyG 3 años, punto de equilibrio, escenarios, personal, tesorería 12 meses y financiación), calculadora de presupuestos por evento con IVA al 10 %, checklist de apertura de 83 tareas en 6 fases, plantilla de 88 proveedores DO Valencia + Calasparra, catálogo de equipamiento y menaje, manual técnico paellero (técnica del fuego + socarrat + 6 arroces + 4 caldos + 12 paellas), carta de 12 paellas, modelos de contrato B2C + B2B, 10 experiencias temáticas y guía de 8 sistemas con roadmap de food truck arrocero.',
     price: '45.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Vicent Pellicer',
-        rating: '5',
-        body: 'Llevo 25 años haciendo paellas en fiestas del pueblo y siempre me faltó el plan de negocio para escalar a bodas premium. La calculadora pricing y el modelo contrato B2B me cerraron 4 wedding planners en 2 meses.',
-      },
-      {
-        author: 'Carmen Soler',
-        rating: '5',
-        body: 'El manual técnico del fuego y el socarrat es oro puro. La tabla de cocción de 12 paellas la imprimí y la tengo plastificada en la furgo. Mis bodas en finca mejoraron en consistencia desde la primera temporada.',
-      },
-      {
-        author: 'Marc Esteve',
-        rating: '5',
-        body: 'En el segundo año ya facturo más de 95.000 EUR. La plantilla de 88 proveedores DO Valencia me ahorró 3 meses de búsqueda.',
-      },
-    ],
     // FAQPage schema (5 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 7, más largas)
     faqs: [
       {
@@ -161,16 +138,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Paelleros profesionales, mestres arrossers y wedding planners que usaron el plan para montar o impulsar su empresa premium de paella y arroces para eventos',
-    items: [
-      { name: 'Vicent Pellicer', role: 'Mestre arrosser valenciano, Sueca', text: 'Llevo 25 años haciendo paellas en fiestas del pueblo y siempre me faltó el plan de negocio para escalar a bodas premium. Este kit me dio todo: la calculadora pricing y el modelo contrato B2B me cerraron 4 wedding planners en 2 meses.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Carmen Soler', role: 'Paellera profesional, finca Toledo', text: 'El manual técnico del fuego y el socarrat es oro puro. La tabla de cocción de 12 paellas la imprimí y la tengo plastificada en la furgo. Mis bodas en finca mejoraron en consistencia desde la primera temporada.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Antonio Rivas', role: 'Paellero murciano, Mar Menor', text: 'Soy de Murcia y llevaba años haciendo paella de marisco en eventos privados sin marca. El plan de negocio y los contratos B2B me posicionaron premium en wedding planners de la zona Levante.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Marc Esteve', role: 'Joven emprendedor arrocero, Valencia', text: 'En el segundo año ya facturo más de 95.000 EUR. La plantilla de 88 proveedores DO Valencia me ahorró 3 meses de búsqueda.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Sara Romero', role: 'Paellera corporate, Madrid', text: 'Hago corporate showcooking para empresas en terrazas de Madrid y el catálogo de equipamiento con SKU exactos de Garcima me organizó la inversión inicial sin pasarme. La calculadora pricing B2B es la que más uso.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Don Joan Beltrán', role: 'Asador a la leña tradicional, Castellón', text: 'Soy de la vieja escuela del fuego de leña. Pensaba que no necesitaba un plan, pero el anexo legal CCAA + el modelo de contrato profesional me organizaron el papeleo de la primera boda planner que cerré.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Laura Martín', role: 'Paellera de bodas premium, Levante', text: 'Las 10 experiencias temáticas + la carta de 12 paellas me dieron un catálogo comercial de productos empaquetados. El ticket medio subió un 40 % desde que vendo "experiencias" en lugar de "menús".', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Diego Montes', role: 'Paellero alicantino fideuá, Alicante', text: 'Los dos modelos de contrato (B2C + B2B con anexos) son ya mi base de trabajo. Antes redactaba cláusulas sueltas para cada cliente; ahora copio, edito y firmo en 10 minutos.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

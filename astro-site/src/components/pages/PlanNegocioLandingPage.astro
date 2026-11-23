@@ -173,6 +173,7 @@ const breadcrumbSchema = {
 // idioma NO trae testimonios, y entonces tampoco se pintan el marquee ni los avatares con estrellas
 // del hero. Las 10 fichas ES los traen.
 const testimonialItems = data.testimonials?.items ?? [];
+const showTestimonials = lang === 'es' ? testimonialItems.length > 0 : Boolean(data.testimonials);
 const mid = Math.ceil(testimonialItems.length / 2);
 const topRow = testimonialItems.slice(0, mid);
 const bottomRow = testimonialItems.slice(mid);
@@ -283,7 +284,7 @@ const nlPre = (s: string) => '\n' + s;
       </div>
 
       {/* Prueba social (avatares + 5 estrellas): solo si el producto trae testimonios reales. */}
-      {data.testimonials && (
+      {showTestimonials && (
       <div class="flex flex-col items-center gap-2 mb-6">
         <div class="flex -space-x-3 justify-center">
           {heroAvatars.map((avatar, i) => (
@@ -414,7 +415,7 @@ const nlPre = (s: string) => '\n' + s;
   </section>
 
   {/* ===== 5. TestimonialsMarquee ===== */}
-  {data.testimonials && (
+  {showTestimonials && (
   <section class="py-16 md:py-24 overflow-hidden">
     <div class="text-center mb-10 px-4">
       <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">{ui.testimonialsHeadingPre}<span class="text-[#FFD700]">{ui.testimonialsHeadingGold}</span></h2>

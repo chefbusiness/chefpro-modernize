@@ -203,7 +203,7 @@ export default function ReducirCostesRestaurante() {
         {/* Por qué */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+            <div className={`grid grid-cols-1 ${currentLanguage === 'es' ? '' : 'lg:grid-cols-2'} gap-16 items-center max-w-6xl mx-auto`}>
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">{s('why_section.title')}</h2>
                 <p className="text-lg text-muted-foreground mb-6">{s('why_section.body')}</p>
@@ -216,6 +216,7 @@ export default function ReducirCostesRestaurante() {
                   ))}
                 </ul>
               </div>
+              {currentLanguage !== 'es' && (
               <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border border-red-100">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -234,6 +235,7 @@ export default function ReducirCostesRestaurante() {
                   <p className="text-sm text-muted-foreground">{s('testimonial.role')}</p>
                 </div>
               </div>
+              )}
             </div>
           </div>
         </section>

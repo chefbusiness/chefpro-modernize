@@ -55,7 +55,7 @@ export default function HerramientasIARestaurantes() {
   const benefits = k('why_section.benefits') as string[];
   const faqs = k('faq') as Array<{ question: string; answer: string }>;
   const testimonialQuote = s('testimonial.quote');
-  const showTestimonial = testimonialQuote.trim() !== '' && !testimonialQuote.startsWith('landingRestaurantes.');
+  const showTestimonial = currentLanguage !== 'es' && testimonialQuote.trim() !== '' && !testimonialQuote.startsWith('landingRestaurantes.');
   const whyLinksRaw = currentLanguage === 'es' ? k('why_section.links') : [];
   const whyLinks = Array.isArray(whyLinksRaw) ? whyLinksRaw as Array<{ href: string; label: string }> : [];
   const whyNoteKey = 'landingRestaurantes.why_section.note';

@@ -292,7 +292,7 @@ export default function HerramientasGratuitas() {
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <ChefHat className="h-8 w-8 text-amber-600" />
                 </div>
-                <p className="text-4xl font-bold text-amber-700 mb-2">{userCountPlus}</p>
+                <p className="text-4xl font-bold text-amber-700 mb-2">{lang === 'es' ? '75+' : userCountPlus}</p>
                 <p className="text-muted-foreground mb-6">{s('why.users_label')}</p>
                 <Button
                   size="lg"

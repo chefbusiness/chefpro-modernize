@@ -39,29 +39,6 @@ const data: PlanNegocioData = {
       'Plan de negocio completo para abrir una panadería u obrador artesanal en España. Incluye plan financiero Excel de 9 hojas con P&L previsional a 3 años con estacionalidad navideña, inversión inicial detallada (101.600 € de CAPEX y 145.215 € con el colchón de caja), punto de equilibrio en 162 transacciones diarias con ticket medio de 5,50 € sin IVA, escenarios financieros, tesorería mes a mes con liquidación de IVA, plan de financiación con cuadro de amortización francés y DSCR, cuadro de personal panadero de 6 puestos con turno de madrugada y auditoría de horas, checklist de apertura con 66 trámites incluida la inscripción en el registro sanitario de tu Comunidad Autónoma, equipamiento específico (horno de pisos o rotativo, amasadora espiral 25-50 kg, cámara de fermentación) y los rangos de referencia del sector panadero español 2026.',
     price: '35.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Presenté el plan al banco y me aprobaron 65K EUR de financiación con leasing del horno. La proyección a 3 años con estacionalidad navideña fue clave.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'El checklist con 60+ trámites me salvó del laberinto del RGSEAA y la licencia de obrador. Hubiera tardado el doble.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'El break-even por kilos de pan diarios y el mix bollería son exactamente los ratios que necesito ver.',
-      },
-    ],
     // FAQPage schema (4 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 6)
     faqs: [
       {
@@ -149,16 +126,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Maestros panaderos, propietarios de obrador artesanal e inversores que abrieron su panadería con un plan financiero profesional',
-    items: [
-      { name: 'Alejandro Ruiz', role: 'Maestro Panadero Madrid', text: 'Presenté el plan al banco y me aprobaron 65K EUR de financiación con leasing del horno. La proyección a 3 años con estacionalidad navideña fue clave para que confiaran en el proyecto.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'María López', role: 'Emprendedora Obrador Barcelona', text: 'El checklist con 60+ trámites me salvó del laberinto del RGSEAA y la licencia de obrador. Hubiera tardado el doble sin esta guía organizada por fases.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Carlos Méndez', role: 'Inversor Sector Alimentación', text: 'Uso este plan para evaluar proyectos de panadería en mi cartera. El break-even por kilos de pan diarios y el mix bollería son exactamente los ratios que necesito ver.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Laura Fernández', role: 'Propietaria Panadería Artesanal Sevilla', text: 'El cuadro de personal con turno madrugada y plus nocturnidad me abrió los ojos. Antes calculaba mal los costes del maestro panadero. Ahora margen real superior al 25 %.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'David Torres', role: 'Consultor Hostelería y Obradores', text: 'Lo recomiendo a todos mis clientes panaderos. Es el plan más completo del mercado español con datos reales del sector: ratios materia prima, mermas y márgenes por categoría.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana García', role: 'Propietaria Panadería con Cafetería Valencia', text: 'Los ratios — coste materia prima 22-28 %, merma 3-5 %, margen bollería >75 % — me ayudaron a renegociar precios con el molino harinero. Ahorré 800 EUR al mes.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Gutiérrez', role: 'Ex Corporativo, Abrió Obrador Pan', text: 'Venía del mundo financiero y no sabía nada de licencias de obrador ni RGSEAA. El checklist con las 6 fases me guió paso a paso. Abrí en 4 meses sin retrasos legales.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Fernando Delgado', role: 'Socio Cadena 3 Panaderías', text: 'Hemos usado el plan financiero Excel para nuestras 3 aperturas. Solo cambias las cifras del local y mix de producción y tienes business plan profesional listo para inversores.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

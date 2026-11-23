@@ -666,7 +666,7 @@ wpId: 2021
 
 
 <ul class="wp-block-list">
-<li>Identificación automática de alérgenos en cualquier receta</li>
+<li>Revisión de los 14 alérgenos con validación final del cocinero en cualquier receta</li>
 
 
 
@@ -973,7 +973,7 @@ wpId: 2021
 
 
 
-<p class="wp-block-paragraph">Los sistemas de IA centralizan la información de todos los operadores, permitiendo una trazabilidad completa de ingredientes y elaboraciones. Herramientas como ID Alérgenos detectan automáticamente riesgos potenciales, mientras que los sensores IoT monitorizan temperaturas de conservación en tiempo real, generando alertas ante cualquier desviación.</p>
+<p class="wp-block-paragraph">Los sistemas de IA centralizan la información de todos los operadores, permitiendo una trazabilidad completa de ingredientes y elaboraciones. Herramientas como ID Alérgenos propone la revisión de los 14 alérgenos, con validación final del cocinero, mientras que los sensores IoT monitorizan temperaturas de conservación en tiempo real, generando alertas ante cualquier desviación.</p>
 
 
 

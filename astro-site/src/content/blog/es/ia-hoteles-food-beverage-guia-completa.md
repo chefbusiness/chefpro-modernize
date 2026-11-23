@@ -12,7 +12,7 @@ faq:
   - q: "¿Qué es exactamente la gestión de F&B en hoteles?"
     a: "Es la administración de todos los puntos de venta de alimentos y bebidas de un hotel: restaurante, bar, room service, banquetes, buffet y minibar. A diferencia de un restaurante independiente, aquí gestionas entre 3 y 8 outlets simultáneos, cada uno con su propio margen, equipo y cliente. El objetivo es maximizar la rentabilidad del departamento manteniendo la calidad del servicio al huésped."
   - q: "¿Cómo reduce la inteligencia artificial el food cost en un hotel?"
-    a: "Lo reduce de tres formas principales: centraliza todos los escandallos en un maestro único para que un cambio de precio de proveedor se refleje automáticamente en todos los outlets; predice la demanda por ocupación y nacionalidad para producir justo lo necesario; y detecta desviaciones de stock en tiempo real para frenar mermas antes de que se acumulen. El rango objetivo pasa del 28-35% al 22-28%."
+    a: "Lo reduce de tres formas principales: centraliza los escandallos en un maestro único para que, cuando cambia el precio de un proveedor, revises el escandallo de cada outlet y el cocinero lo valide; predice la demanda por ocupación y nacionalidad para producir justo lo necesario; y detecta desviaciones de stock en tiempo real para frenar mermas antes de que se acumulen. El food cost objetivo lo marcas tú a partir de tus precios."
   - q: "¿Qué es el RevPASH y por qué importa en hotelería?"
     a: "El RevPASH (Revenue Per Available Seat Hour) mide el ingreso generado por cada asiento disponible en el restaurante por hora. Es el equivalente al RevPAR de habitaciones pero aplicado al comedor. Importa porque un restaurante con 80 sillas que solo se llena en el desayuno está desaprovechando capacidad. La IA identifica horas valle y sugiere acciones para maximizar la ocupación de asientos durante todo el día."
   - q: "¿Cómo funcionan los escandallos multi-outlet en un hotel?"
@@ -51,7 +51,7 @@ Otra capa de optimización: los datos muestran que a las 7:30 el 80% de los hué
 
 
 
-<figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/ia-hoteles-fb-img3-banquet.jpg" alt="Salón de banquetes de hotel preparado para evento corporativo con planificación IA"/><figcaption>Los escandallos automáticos permiten planificar banquetes de 50 a 500 comensales con precisión</figcaption></figure>
+<figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/ia-hoteles-fb-img3-banquet.jpg" alt="Salón de banquetes de hotel preparado para evento corporativo con planificación IA"/><figcaption>Los escandallos con IA permiten planificar banquetes de 50 a 500 comensales con precisión</figcaption></figure>
 
 
 
@@ -83,11 +83,11 @@ No es lo mismo un cóctel corporativo que una boda de sábado. El primero pide c
 
 ### Food cost por evento sin sorpresas
 
-El cálculo manual de un banquete para 350 personas es lento y propenso a errores. Una herramienta de escandallo automático escalable permite calcular el food cost exacto de cada evento, desde 50 hasta 500 comensales, en minutos. Si el presupuesto del cliente no cubre el coste, la herramienta lo señala antes de firmar el contrato. Adiós a los banquetes que se cierran con margen negativo.
+El cálculo manual de un banquete para 350 personas es lento y propenso a errores. Una herramienta de escandallo con IA permite calcular el food cost de cada evento, desde 50 hasta 500 comensales, en minutos. Si el presupuesto del cliente no cubre el coste, la herramienta lo señala antes de firmar el contrato. Adiós a los banquetes que se cierran con margen negativo.
 
-### Escandallos escalables de forma automática
+### Escandallos que escalas con IA
 
-Un menú de banquete se compone de recetas que ya existen en el maestro del hotel. Al escalarlo a 200, 300 o 500 cubiertos, la IA recalcula automáticamente las cantidades de cada ingrediente, actualiza el coste según el precio de compra vigente y genera la lista de pedido al proveedor. Lo que antes llevaba una mañana entera de Excel se resuelve en segundos.
+Un menú de banquete se compone de recetas que ya existen en el maestro del hotel. Al escalarlo a 200, 300 o 500 cubiertos, la IA propone las cantidades de cada ingrediente y el coste según el precio de compra que introduces. El cocinero valida el escandallo y la lista de pedido al proveedor.
 
 ## Bares y minibar: margen alto, control estricto
 
@@ -111,13 +111,13 @@ El mayor agujero del F&B hotelero no está en un outlet concreto, sino en la dis
 
 ### El problema de las fichas duplicadas
 
-En un hotel con restaurante, room service, barra de snacks y banquetes, es habitual que el solomillo esté en cuatro fichas técnicas diferentes. Si el precio del proveedor sube un 8%, alguien tiene que actualizar manualmente cada ficha. Si se olvida una, ese outlet está vendiendo por debajo de coste sin saberlo. Un maestro de recetas centralizado resuelve esto de raíz: cambia el precio del ingrediente una sola vez y el food cost se recalcula automáticamente en todos los platos de todos los outlets.
+En un hotel con restaurante, room service, barra de snacks y banquetes, es habitual que el solomillo esté en cuatro fichas técnicas diferentes. Si el precio del proveedor sube un 8%, alguien tiene que actualizar manualmente cada ficha. Si se olvida una, ese outlet está vendiendo por debajo de coste sin saberlo. Un maestro de recetas centralizado resuelve esto de raíz: cambias el precio del ingrediente y revisas el food cost de los platos que lo llevan en cada outlet. El cocinero valida el escandallo.
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ia-hoteles-food-beverage-guia-completa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
 
 ### Consistencia de alérgenos y fichas técnicas
 
-La misma lógica aplica a alérgenos. Un plato debe declarar los mismos alérgenos en la carta del restaurante, en el menú de room service y en el bufé de banquetes. Con un sistema centralizado, cualquier modificación en la receta —cambio de marca de harina, por ejemplo— actualiza automáticamente la información de alérgenos en todos los puntos de venta. Esto no solo es eficiencia: es seguridad alimentaria y cumplimiento normativo.
+La misma lógica aplica a alérgenos. Un plato debe declarar los mismos alérgenos en la carta del restaurante, en el menú de room service y en el bufé de banquetes. Con un sistema centralizado, cualquier modificación en la receta —cambio de marca de harina, por ejemplo— revisas la información de alérgenos en todos los puntos de venta y el cocinero la valida. Esto no solo es eficiencia: es seguridad alimentaria y cumplimiento normativo.
 
 ## Los KPIs de F&B hotelero que la IA vigila por ti
 
@@ -127,7 +127,7 @@ Gestionar sin datos es cocinar sin probar. La IA no solo automatiza procesos: po
 
 | KPI | Qué mide | Rango objetivo 2026 | Cómo lo mejora la IA |
 | :--- | :--- | :--- | :--- |
-| **Food cost** | Coste de materia prima sobre ventas de comida | 22-28% (bajando del 28-35% tradicional) | Escandallos automáticos multi-outlet, actualización de precios en tiempo real y predicción de compras por demanda |
+| **Food cost** | Coste de materia prima sobre ventas de comida | 22-28% (bajando del 28-35% tradicional) | Escandallos con IA multi-outlet, actualización de precios en tiempo real y predicción de compras por demanda |
 | **Beverage cost** | Coste de bebida sobre ventas de barra y minibar | 18-24% | Control de stock con alertas de merma, recetas estandarizadas y reposición predictiva de minibar |
 | **Prime cost** | Food cost + labor cost (los dos grandes costes del F&B) | 60-65% | Optimización conjunta de compras y turnos de personal según demanda prevista por outlet |
 | **Labor cost** | Coste de personal sobre ventas totales de F&B | 28-32% | Predicción de carga de trabajo por franja horaria y outlet; ajuste de turnos para evitar sobredimensionamiento |
@@ -155,6 +155,6 @@ Esta hoja de ruta no es teórica. Los hoteles que completan las cinco fases en u
 
 ## El F&B hotelero, outlet a outlet, con datos
 
-Gestionar el F&B de un hotel es gestionar cinco o seis negocios distintos bajo el mismo techo. Cada uno tiene su cliente, su margen y sus ritmos. La inteligencia artificial no viene a sustituir al director de F&B ni al jefe de cocina: viene a darles la información que necesitan para tomar decisiones rápidas y precisas en cada outlet. Predicción de consumo en el buffet, menú dinámico en room service, escandallos automáticos en banquetes, control de mermas en el bar y un maestro único de recetas que unifica toda la operación.
+Gestionar el F&B de un hotel es gestionar cinco o seis negocios distintos bajo el mismo techo. Cada uno tiene su cliente, su margen y sus ritmos. La inteligencia artificial no viene a sustituir al director de F&B ni al jefe de cocina: viene a darles la información que necesitan para tomar decisiones rápidas y precisas en cada outlet. Predicción de consumo en el buffet, menú dinámico en room service, escandallos con IA en banquetes, control de mermas en el bar y un maestro único de recetas que unifica toda la operación.
 
 AI Chef Pro es una plataforma con más de 70 agentes de IA culinarios, disponible en 7 idiomas con español nativo, que cubre exactamente estas necesidades: food cost por outlet, escandallos centralizados, gestión de alérgenos y predicción de demanda. Si quieres ver cómo funciona en tu operación, puedes empezar con el [plan AI Chef Miembro de 10.000 créditos por 10 € al mes](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=hoteles-fb). Cuando necesites más capacidad, el plan Premium Pro ofrece 85.000 créditos por 25 € al mes, y el plan Max da créditos ilimitados por 95 € al mes (o 950 € al año). Pero antes de rascarte el bolsillo, prueba los [escandallos con IA en cocina profesional](https://aichef.pro/blog/escandallos-ia-cocina-profesional) con los créditos del plan AI Chef Miembro y comprueba si los números cuadran. Si luego quieres explorar otras opciones del mercado, aquí tienes una comparativa actualizada de [las mejores IA para restaurantes en 2026](https://aichef.pro/blog/mejores-ia-restaurantes-2026). Pero empieza por lo básico: centraliza tus fichas, conecta tu PMS y deja que los datos trabajen mientras tú cocinas.

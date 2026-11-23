@@ -43,7 +43,7 @@ Estas son las áreas donde una herramienta como AI Chef Pro impacta desde el pri
 
 - **Escandallos y food cost**: introduces ingredientes, formatos y precios de proveedor; la IA calcula el coste por plato, el porcentaje sobre PVP y te avisa cuando un ingrediente se dispara y descuadra el margen. Si sube la carne de vacuno madurado o el queso cheddar, recalcular toda la carta lleva minutos, no horas. Aquí tienes más sobre [escandallos con IA](https://aichef.pro/escandallos-restaurante-ia).
 - **Diseño de cartas e ingeniería de menú**: la IA analiza rentabilidad y popularidad de cada referencia, propone reorganizar la carta, sugiere descripciones que venden y detecta qué platos son lastre. También te ayuda a crear versiones específicas para delivery con precios que absorban la comisión de plataforma.
-- **Fichas de producto y alérgenos**: genera automáticamente fichas técnicas con alérgenos, tabla nutricional y declaraciones obligatorias para cada burger y acompañamiento. Ideal para cumplir normativa y para que el equipo de sala o los riders tengan información clara.
+- **Fichas de producto y alérgenos**: prepara fichas técnicas con la revisión de los 14 alérgenos y la validación del cocinero, tabla nutricional y declaraciones obligatorias para cada burger y acompañamiento. Ideal para cumplir normativa y para que el equipo de sala o los riders tengan información clara.
 - **Combos y upselling**: propone combinaciones de burger + bebida + sides con margen validado, calcula el ticket medio resultante y sugiere add-ons (doble de queso, bacon extra, salsa premium) que suman sin disparar el coste.
 - **Compras y mermas**: a partir de tus escandallos y previsiones de venta, estima cantidades de compra, compara precios entre proveedores y reduce el desperdicio ajustando raciones y fondos de nevera.
 - **Contenido de marca y redes**: genera textos para Instagram, TikTok, fichas de producto para apps de delivery, naming de nuevas burgers, storytelling de ingredientes y tono de marca coherente. Todo en español nativo y con lenguaje de hostelería, no de robot.
@@ -88,7 +88,7 @@ Voy a ponerte un ejemplo real de escandallo para una **smash burger doble con qu
 
 Este 29,2% es un food cost sano para una burger signature. Si vendes 80 unidades al día de esta referencia, el margen bruto diario solo con ella es de 708 €. Al mes, 21.240 € de margen bruto en una sola burger. Ahora imagina tener esto calculado para cada referencia de la carta y recalcularlo automáticamente cuando el proveedor de carne te sube un 8% o el queso cheddar se va a 12,50 €/kg.
 
-Con la [calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante) de AI Chef Pro, ese recálculo que a mano te llevaría una mañana entera se hace en minutos. Cambias el precio del ingrediente una sola vez y la IA actualiza automáticamente el escandallo de todas las burgers que lo llevan, te muestra el nuevo food cost y te sugiere si necesitas ajustar el PVP, reducir gramaje o cambiar de proveedor.
+Con la [calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante) de AI Chef Pro, ese recálculo que a mano te llevaría una mañana entera se hace en minutos. Cambias el precio del ingrediente una sola vez y revisas el escandallo con IA de las burgers que lo llevan y el cocinero lo valida que lo llevan, te muestra el nuevo food cost y te sugiere si necesitas ajustar el PVP, reducir gramaje o cambiar de proveedor.
 
 
 

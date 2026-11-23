@@ -27,24 +27,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura y cierre de negocio, cobros y facturación por evento (anticipos, liquidación y saldos), montaje, servicio, desmontaje y post-evento.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Marta Domínguez',
-        rating: '5',
-        body: 'Los checklists de producción y transporte eliminaron el 90% de los olvidos. El equipo eventual sabe exactamente qué hacer.',
-      },
-      {
-        author: 'Laura Sánchez',
-        rating: '5',
-        body: 'Hago 3-4 bodas por semana en temporada alta. Los checklists por tipo de evento me ahorran horas de preparación.',
-      },
-      {
-        author: 'Isabel García',
-        rating: '5',
-        body: 'Recomiendo este kit a todos mis clientes de catering. Cubren el ciclo completo del evento.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para catering?',
@@ -308,68 +290,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Event managers, chefs de catering y coordinadores que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Manuel Domínguez',
-        role: 'Director, Catering Elegance Madrid',
-        text: 'Antes cada evento era un caos organizado. Los checklists de producción y transporte eliminaron el 90% de los olvidos. Ahora el equipo eventual sabe exactamente qué hacer sin preguntar.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Javier Montero',
-        role: 'Chef Ejecutivo, Grupo Banquetes del Sur',
-        text: 'El checklist de producción off-site es oro puro. Mise en place, empaquetado, control de temperatura... todo en una hoja. Mis cocineros lo imprimen y lo siguen paso a paso.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Laura Sánchez',
-        role: 'Event Manager, Bodas con Alma',
-        text: 'Hago 3-4 bodas por semana en temporada alta. Los checklists por tipo de evento me ahorran horas de preparación. El de bodas cubre desde el cocktail hasta la recena.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Roberto Ibáñez',
-        role: 'Gerente, Catering Corporativo BCN',
-        text: 'Los coffee breaks y eventos corporativos requieren precisión militar. El timing sheet del event manager y las tareas por perfil han profesionalizado nuestra operación.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Ana Belén Torres',
-        role: 'Coordinadora Logística, Grupo Eventos Premium',
-        text: 'El checklist de transporte y cadena de frío es exactamente lo que necesitábamos para cumplir normativa APPCC. Ya no improvisamos con las temperaturas.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Diana Fernández',
-        role: 'Maître, Hotel Palace Catering',
-        text: 'Las tareas por perfil para camareros de evento son geniales para personal eventual. Les damos la hoja impresa y saben qué hacer antes, durante y después del servicio.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Carmen Ruiz',
-        role: 'Propietaria, Catering a Domicilio Valencia',
-        text: 'El checklist de montaje y desmontaje del venue me salvó la vida. Antes siempre nos dejábamos algo. Ahora hacemos el recorrido final con la lista y nunca falla.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Sergio Navarro',
-        role: 'Director de Operaciones, Catering 360',
-        text: 'El calendario anual de temporada alta es brutal para planificar personal eventual. Sabemos exactamente cuándo necesitamos más gente y podemos anticiparnos meses.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-      {
-        name: 'Isabel García',
-        role: 'Consultora de Eventos y Catering',
-        text: 'Recomiendo este kit a todos mis clientes de catering. Producción, transporte, montaje, servicio... cubren el ciclo completo. Es el estándar que debería tener toda empresa de eventos.',
-        avatar: '/avatars/chef-avatar-1.jpg',
-      },
-      {
-        name: 'Francisco López',
-        role: 'Formador, Escuela de Hostelería y Eventos',
-        text: 'Mis alumnos de catering usan estos checklists como referencia. Las tareas están perfectamente estructuradas por fase del evento. Es material de formación de primera.',
-        avatar: '/avatars/chef-avatar-3.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

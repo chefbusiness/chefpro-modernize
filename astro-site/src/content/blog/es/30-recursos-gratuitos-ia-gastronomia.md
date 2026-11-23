@@ -50,7 +50,7 @@ Olvídate de las hojas de cálculo que nunca cuadran. Esta calculadora te permit
 [Calculadora de food cost gratuita](https://aichef.pro/calculadora-food-cost-restaurante)
 
 ### 2. Detector de alérgenos
-Cruza automáticamente tus ingredientes con los 14 alérgenos de declaración obligatoria en la UE. Imprime fichas claras o compártelas con el equipo de sala. Un gran apoyo para evitar sustos, aunque la responsabilidad final sobre los alérgenos siempre recae en el equipo. Ejemplo orientativo: un cliente celíaco te avisa diez minutos antes de pedir; imprimes la ficha del plato adaptado y la llevas a la mesa en el momento.  
+Te ayuda con la revisión de los 14 alérgenos de declaración obligatoria en la UE, con validación final del cocinero. Imprime fichas claras o compártelas con el equipo de sala. Un gran apoyo para evitar sustos, aunque la responsabilidad final sobre los alérgenos siempre recae en el equipo. Ejemplo orientativo: un cliente celíaco te avisa diez minutos antes de pedir; imprimes la ficha del plato adaptado y la llevas a la mesa en el momento.  
 [Detector de alérgenos](https://aichef.pro/detector-alergenos-restaurante)
 
 ### 3. Generador de textos de carta
@@ -95,7 +95,7 @@ Repasa los fallos más comunes en el control de costes y cómo la IA puede ayuda
 [8 errores que destruyen el food cost de tu restaurante](https://aichef.pro/blog/8-errores-que-destruyen-el-food-cost-en-tu-restaurante)
 
 ### 10. 10 herramientas de IA imprescindibles para chefs
-Selección comentada de herramientas que realmente funcionan en una cocina profesional. Sin humo, con criterio de chef. Incluye desde el escandallo automático hasta generadores de imágenes para previsualizar un emplatado antes de pedir la vajilla nueva. Herramientas que realmente usas entre servicio y servicio.  
+Selección comentada de herramientas que realmente funcionan en una cocina profesional. Sin humo, con criterio de chef. Incluye desde el escandallo con IA hasta generadores de imágenes para previsualizar un emplatado antes de pedir la vajilla nueva. Herramientas que realmente usas entre servicio y servicio.  
 [10 herramientas de IA imprescindibles para los chefs de hoy](https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy)
 
 ### 11. Comparativa honesta: ChatGPT para restaurantes vs. AI Chef Pro

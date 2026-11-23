@@ -474,7 +474,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph"><strong>ID Alérgenos:</strong> La identificación de alérgenos potenciales requiere atención constante y memoria perfecta de las 14 sustancias de declaración obligatoria. ID Alérgenos analiza automáticamente recetas y platos, señalando riesgos con un código de colores intuitivo que elimina la posibilidad de error humano en un área donde las consecuencias pueden ser graves.</p>
+<p class="wp-block-paragraph"><strong>ID Alérgenos:</strong> La identificación de alérgenos potenciales requiere atención constante y memoria perfecta de las 14 sustancias de declaración obligatoria. ID Alérgenos propone la revisión de los 14 alérgenos en recetas y platos, con validación final del cocinero, y señala riesgos con un código de colores intuitivo que elimina la posibilidad de error humano en un área donde las consecuencias pueden ser graves.</p>
 
 
 

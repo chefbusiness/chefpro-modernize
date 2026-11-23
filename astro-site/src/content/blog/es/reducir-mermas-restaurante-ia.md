@@ -113,9 +113,9 @@ Lo más potente hoy es la previsión de demanda. Un sistema bien entrenado cruza
 
 Otra herramienta son los sistemas de visión por computadora que se instalan sobre el cubo de basura —Winnow, Leanpath, Orbisk son algunos nombres del mercado internacional—. Identifican y pesan lo que estás tirando, categorizan el tipo de producto y te enseñan cuándo y por qué se produce la merma. Así, descubres que cada jueves tiras 4 kg de pescado por un pedido mal ajustado, y puedes corregir la compra de los miércoles.
 
-Luego está la generación automática de escandallos y fichas técnicas que fijan el gramaje exacto y el rendimiento real de cada proveedor, eliminando desviaciones que se arrastran semanas. Y, por último, la capacidad de sugerir elaboraciones de aprovechamiento con los excedentes que la previsión no haya podido absorber: una ensalada tibia con restos de asado, una crema fría con verduras que están en su punto justo.
+Luego está el escandallo con IA y las fichas técnicas, con el gramaje y el rendimiento de cada proveedor, y con la validación final del cocinero. Y, por último, la capacidad de sugerir elaboraciones de aprovechamiento con los excedentes que la previsión no haya podido absorber: una ensalada tibia con restos de asado, una crema fría con verduras que están en su punto justo.
 
-Lo que la IA no sustituye es tu criterio. La tecnología te da fotos precisas y alertas tempranas, pero la decisión de cambiar una receta, compactar una carta o rediseñar el flujo de trabajo sigue siendo tuya. En AI Chef Pro, por ejemplo, +70 agentes de IA culinarios trabajan en español nativo para cubrir áreas como previsión de demanda, escandallos automáticos, inventario, fichas técnicas y sugerencias de aprovechamiento. No venden humo: ofrecen datos concretos para que el chef decida con fundamento.
+Lo que la IA no sustituye es tu criterio. La tecnología te da fotos precisas y alertas tempranas, pero la decisión de cambiar una receta, compactar una carta o rediseñar el flujo de trabajo sigue siendo tuya. En AI Chef Pro, por ejemplo, +70 agentes de IA culinarios trabajan en español nativo para cubrir áreas como previsión de demanda, escandallos con IA, inventario, fichas técnicas y sugerencias de aprovechamiento. No venden humo: ofrecen datos concretos para que el chef decida con fundamento.
 
 
 

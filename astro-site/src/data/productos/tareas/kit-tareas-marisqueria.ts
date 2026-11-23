@@ -28,24 +28,6 @@ const data: KitTareasData = {
       '11 checklists operativos pre-rellenados para marisquería y restaurante de pescado: control del vivero, expositor de hielo, trazabilidad APPCC, alérgenos de crustáceos y moluscos, lonjas y temporadas de pesca de España.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Los checklists del vivero son muy completos. Temperatura, oxígeno, salinidad… todo el equipo sigue el mismo estándar cada mañana.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'La trazabilidad APPCC con registro de lotes y alérgenos nos ha salvado en dos inspecciones de Sanidad. Imprescindible.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'Implementamos en 3 marisquerías. La consistencia en el control del expositor y la rotación FIFO es ahora uniforme.',
-      },
-    ],
     faqs: [
       {
         q: '¿Incluye el control completo del vivero?',
@@ -311,56 +293,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Mariscadores, propietarios de marisquería y consultores que ya tienen su operativa bajo control',
-    items: [
-      {
-        name: 'Alejandro Ruiz',
-        role: 'Jefe de Cocina, Marisquería Madrid',
-        text: 'Los checklists del vivero son muy completos. Temperatura, oxígeno, salinidad, densidad de carga… todo el equipo sigue el mismo estándar cada mañana y los animales llegan al plato en óptimas condiciones.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'María López',
-        role: 'Propietaria Marisquería Gallega',
-        text: 'La trazabilidad APPCC con registro de lotes, zona FAO y alérgenos de crustáceos y moluscos nos ha salvado en dos inspecciones de Sanidad. Imprescindible para cumplir con el reglamento UE.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Carlos Méndez',
-        role: 'Director Cadena de Marisquerías (3 locales)',
-        text: 'Implementamos en los 3 locales. La consistencia en el control del expositor de hielo, la rotación FIFO y la apertura de ostras es ahora uniforme. Mismo estándar en Vigo, Madrid y Marbella.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Laura Fernández',
-        role: 'Jefa de Sala Marisquería, Madrid',
-        text: 'Las tareas por perfil clarifican quién hace qué. El briefing pre-servicio con capturas del día, piezas destacadas y reservas VIP alinea cocina y sala en 5 minutos antes de abrir.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'David Torres',
-        role: 'Consultor Hostelero especializado en pescado y marisco',
-        text: 'Para marisquerías es el kit más completo del mercado. Vivero, expositor, trazabilidad, lonjas, temporadas de pesca… cubre todos los puntos críticos donde los locales de pescado suelen fallar.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Ana García',
-        role: 'Encargada Restaurante de Pescado, Barcelona',
-        text: 'El calendario con temporadas de pesca en España y vedas nos permite planificar la carta y las compras en lonja con antelación. Ya no compramos langostino congelado en pleno temporada de gamba roja.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Pedro Gutiérrez',
-        role: 'Mariscador profesional, Galicia',
-        text: 'Las tareas de control del vivero están muy claras: oxígeno, salinidad, pH, limpieza de filtros, mortalidad. Sé exactamente qué revisar en cada turno sin tener que ir preguntando al chef.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Fernando Delgado',
-        role: 'Chef Ejecutivo Marisquería Premium, Marbella',
-        text: 'El control de frescura del pescado y la trazabilidad de lotes son detalles que marcan la diferencia profesional. Lo hemos integrado en nuestro APPCC y ha pasado de "improvisado" a "auditable".',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

@@ -160,7 +160,7 @@ wpId: 2034
 
 
 
-<p class="wp-block-paragraph">La <strong>gestión de alérgenos</strong> es una responsabilidad crítica que la IA puede simplificar enormemente. Herramientas especializadas como ID Alérgenos analizan automáticamente los ingredientes de tus recetas e identifican todos los alérgenos potenciales, generando documentación precisa para el cumplimiento normativo.</p>
+<p class="wp-block-paragraph">La <strong>gestión de alérgenos</strong> es una responsabilidad crítica que la IA puede simplificar enormemente. Herramientas especializadas como ID Alérgenos proponen la revisión de los 14 alérgenos, con validación final del cocinero, para documentar la carta.</p>
 
 
 
@@ -464,7 +464,7 @@ wpId: 2034
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro (Especializada)</th><th>Herramientas Genéricas</th></tr></thead><tbody><tr><td>Conocimiento gastronómico</td><td>Optimizado para terminología y técnicas culinarias profesionales</td><td>Conocimiento generalista con limitaciones técnicas</td></tr><tr><td>Cálculo de costes y mermas</td><td>Precisión específica para ingredientes y técnicas</td><td>Capacidad limitada sin base de datos especializada</td></tr><tr><td>Gestión de alérgenos</td><td>Identificación automática según normativa</td><td>Sin validación específica de normativas</td></tr><tr><td>Integración con operativa</td><td>Herramientas específicas para kitchen management</td><td>Sin funciones específicas para cocina</td></tr><tr><td>Soporte especializado</td><td>Equipo con experiencia en hostelería</td><td>Soporte técnico general</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro (Especializada)</th><th>Herramientas Genéricas</th></tr></thead><tbody><tr><td>Conocimiento gastronómico</td><td>Optimizado para terminología y técnicas culinarias profesionales</td><td>Conocimiento generalista con limitaciones técnicas</td></tr><tr><td>Cálculo de costes y mermas</td><td>Precisión específica para ingredientes y técnicas</td><td>Capacidad limitada sin base de datos especializada</td></tr><tr><td>Gestión de alérgenos</td><td>Revisión de los 14 alérgenos, con validación del cocinero</td><td>Sin validación específica de normativas</td></tr><tr><td>Integración con operativa</td><td>Herramientas específicas para kitchen management</td><td>Sin funciones específicas para cocina</td></tr><tr><td>Soporte especializado</td><td>Equipo con experiencia en hostelería</td><td>Soporte técnico general</td></tr></tbody></table></div></figure>
 
 
 

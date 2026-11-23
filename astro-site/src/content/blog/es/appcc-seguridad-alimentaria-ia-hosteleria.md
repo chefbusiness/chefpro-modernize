@@ -90,7 +90,7 @@ Aquí van los planes de prerrequisito que necesitas documentar y mantener actual
 | Control de proveedores | Homologación previa, criterios de aceptación, auditorías si procede. Solo entran materias primas de fuentes controladas | Lista de proveedores homologados, fichas de recepción |
 | Gestión de alérgenos | Ficha de alérgenos por plato, protocolo de sustitución, servicio en sala: información al cliente y prevención de contacto cruzado | Ficha de alérgenos actualizada, registro de formación específica |
 
-Si hoy tuviera que señalar los dos prerrequisitos que más miran las inspecciones en 2026, serían la gestión de alérgenos y la trazabilidad. Con las alergias alimentarias creciendo en prevalencia y la normativa de información al consumidor más exigente, la ficha de alérgenos ya no es un papel orientativo: es un documento legal que te protege a ti y a tu cliente. Si necesitas montar este prerrequisito desde cero, puedes apoyarte en un [detector de alérgenos por plato que te genera la ficha automáticamente](https://aichef.pro/detector-alergenos-restaurante) a partir de tu recetario.
+Si hoy tuviera que señalar los dos prerrequisitos que más miran las inspecciones en 2026, serían la gestión de alérgenos y la trazabilidad. Con las alergias alimentarias creciendo en prevalencia y la normativa de información al consumidor más exigente, la ficha de alérgenos ya no es un papel orientativo: es un documento legal que te protege a ti y a tu cliente. Si necesitas montar este prerrequisito desde cero, puedes apoyarte en un [detector de alérgenos por plato, con la revisión de los 14 alérgenos y la validación final del cocinero](https://aichef.pro/detector-alergenos-restaurante) a partir de tu recetario.
 
 
 

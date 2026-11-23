@@ -734,7 +734,7 @@
     "q4": "¿Las recetas se adaptan a diferentes tamaños de porción?",
     "a4": "Sí, todas nuestras herramientas incluyen cálculo automático de porciones. Puedes ajustar cualquier receta para 1 persona o para 1000 comensales, y nuestro sistema calculará automáticamente las cantidades exactas de cada ingrediente.",
     "q5": "¿Incluye soporte para restricciones alimentarias?",
-    "a5": "Definitivamente. Te ayuda a revisar los 14 alérgenos de cada receta; la validación final es tuya. También adapta propuestas para dietas veganas, vegetarianas, sin gluten, keto y otras restricciones, e incluye análisis nutricional.",
+    "a5": "Te ayuda con la revisión de los 14 alérgenos de cada receta, con validación final del cocinero. También adapta propuestas para dietas veganas, vegetarianas, sin gluten, keto y otras restricciones, e incluye análisis nutricional.",
     "q6": "¿Puedo cancelar mi suscripción en cualquier momento?",
     "a6": "Sí, los planes mensuales se cancelan cuando quieras desde tu panel de usuario. No hay penalizaciones ni tarifas de cancelación en esos planes. Si cancelas, mantienes el acceso hasta el final del periodo que ya has pagado."
   },
@@ -1211,14 +1211,14 @@
     "breadcrumb": "Reducir Costes con IA",
     "seo": {
       "title": "Reducir Costes Restaurante con IA | AI Chef Pro",
-      "description": "Reduce hasta un 35% las mermas y costes de tu restaurante con inteligencia artificial. Escandallo automático, control de food cost y optimización de carta en tiempo real.",
+      "description": "Controla mermas y costes de tu restaurante con inteligencia artificial. Escandallo con IA, control de food cost y revisión de la carta.",
       "keywords": "reducir costes restaurante, control food cost restaurante, reducir mermas hostelería, escandallo digital restaurante, optimizar costes cocina, gestión costes gastronomía, IA para reducir costes"
     },
     "hero": {
       "badge": "💰 Ahorra desde el primer mes",
       "h1": "Reduce los costes de tu restaurante hasta un 35% con IA",
       "subtitle": "Controla mermas, optimiza el food cost y mejora el margen de cada plato sin hojas de Excel ni cálculos manuales.",
-      "tagline": "La herramienta que usan más de {{userCount}} profesionales de la gastronomía.",
+      "tagline": "75+ agentes de IA en 7 idiomas para la cocina profesional.",
       "cta_primary": "Empezar a ahorrar",
       "cta_secondary": "Ver planes y precios",
       "no_card": "Desde 10 € al mes · Planes mensuales sin permanencia · Acceso inmediato"
@@ -1256,8 +1256,8 @@
         ]
       },
       {
-        "title": "Escandallo Digital Automático",
-        "description": "Calcula el coste real de cada receta en segundos. Actualiza precios de ingredientes y el escandallo se recalcula solo, sin trabajo manual.",
+        "title": "Escandallo con IA",
+        "description": "Calcula el coste de cada receta a partir de tus ingredientes y precios. Si cambia un precio, vuelves a calcular el escandallo; la validación final es del cocinero.",
         "keywords": [
           "escandallo",
           "food cost",
@@ -1316,7 +1316,7 @@
       },
       {
         "title": "Jefe de Cocina",
-        "description": "Diseña recetas rentables desde el principio. El escandallo automático te dice el coste antes de añadir un plato a la carta."
+        "description": "Diseña recetas con el coste a la vista. El escandallo con IA te da una base de coste antes de añadir un plato a la carta; la validación final es del cocinero."
       },
       {
         "title": "Grupo Gastronómico",
@@ -1363,7 +1363,7 @@
     ],
     "cta_section": {
       "title": "Deja de perder dinero. Empieza a controlar tus costes hoy.",
-      "subtitle": "Únete a más de {{userCount}} profesionales que ya usan IA para proteger sus márgenes y hacer crecer su negocio.",
+      "subtitle": "75+ agentes de IA en 7 idiomas para cuidar los márgenes del negocio.",
       "primary": "Empezar ahora",
       "secondary": "Ver todos los planes"
     },
@@ -1535,7 +1535,7 @@
       },
       {
         "metric": "14",
-        "label": "alérgenos gestionados automáticamente"
+        "label": "alérgenos de declaración obligatoria, con revisión del cocinero"
       },
       {
         "metric": "27",
@@ -1576,7 +1576,7 @@
       },
       {
         "title": "Gestión de Alérgenos",
-        "description": "Identifica y etiqueta automáticamente los 14 alérgenos de declaración obligatoria. Cumplimiento legal sin esfuerzo en todos los platos de tu carta.",
+        "description": "Revisión de los 14 alérgenos de declaración obligatoria, con validación final del cocinero, para etiquetar la carta.",
         "keywords": [
           "alérgenos carta",
           "normativa alérgenos",
@@ -1660,7 +1660,7 @@
       },
       {
         "question": "¿La IA gestiona los alérgenos de mis platos?",
-        "answer": "Sí. Introduce los ingredientes de cada plato y la IA identifica automáticamente los 14 alérgenos de declaración obligatoria según el Reglamento UE 1169/2011. Puedes exportar la información para incluirla en tu carta digital o impresa."
+        "answer": "Introduce los ingredientes de cada plato y revisa los 14 alérgenos de declaración obligatoria del Reglamento (UE) 1169/2011, con validación final del cocinero. Puedes usar esa revisión en la carta digital o impresa."
       },
       {
         "question": "¿Puedo actualizar mi carta por temporadas con la IA?",
@@ -1669,7 +1669,7 @@
     ],
     "cta_section": {
       "title": "Diseña la carta que tu restaurante merece",
-      "subtitle": "Más de {{userCount}} profesionales ya usan AI Chef Pro para crear cartas rentables, atractivas y legalmente correctas.",
+      "subtitle": "75+ agentes de IA en 7 idiomas para cartas con los alérgenos revisados.",
       "primary": "Crear mi carta",
       "secondary": "Ver todos los planes"
     },
@@ -1692,16 +1692,8 @@
     },
     "results": [
       {
-        "metric": "10x",
-        "label": "más rápido crear contenido para redes sociales"
-      },
-      {
         "metric": "3h",
         "label": "ahorradas por semana en marketing digital"
-      },
-      {
-        "metric": "4.8★",
-        "label": "valoración media de clientes en Google"
       },
       {
         "metric": "75+",
@@ -1835,7 +1827,7 @@
     ],
     "cta_section": {
       "title": "Deja de improvisar. Automatiza el marketing de tu restaurante.",
-      "subtitle": "Más de {{userCount}} restaurantes ya usan AI Chef Pro para crear contenido profesional, gestionar su reputación online y atraer más clientes.",
+      "subtitle": "75+ agentes de IA en 7 idiomas para el contenido, la ficha de Google y las reseñas.",
       "primary": "Empezar ahora",
       "secondary": "Ver todos los planes"
     },
@@ -1860,14 +1852,6 @@
       {
         "metric": "75+",
         "label": "agentes de IA"
-      },
-      {
-        "metric": "10x",
-        "label": "más preciso en escandallos y food cost"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "restaurantes y chefs que ya lo usan"
       },
       {
         "metric": "27",
@@ -2038,7 +2022,7 @@
     ],
     "cta_section": {
       "title": "La IA de hostelería que ChatGPT no puede ser",
-      "subtitle": "Más de {{userCount}} chefs y restauradores ya han elegido la IA especializada en gastronomía.",
+      "subtitle": "75+ agentes de IA en 7 idiomas, entrenados para la hostelería.",
       "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },
@@ -2066,10 +2050,6 @@
         "label": "Ahorro diario en gestión"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Restaurantes activos"
-      },
-      {
         "metric": "75+",
         "label": "Agentes de IA"
       },
@@ -2085,9 +2065,9 @@
       "col_other": "Software Tradicional",
       "items": [
         {
-          "feature": "Escandallo automático",
+          "feature": "Escandallo con IA",
           "other": "Manual, en hoja Excel",
-          "aichef": "IA calcula food cost al instante"
+          "aichef": "La IA propone el food cost; el cocinero lo valida"
         },
         {
           "feature": "Gestión de recetas",
@@ -2107,7 +2087,7 @@
         {
           "feature": "Actualización de precios",
           "other": "Proceso lento y tedioso",
-          "aichef": "Recálculo automático en segundos"
+          "aichef": "Actualizas el precio y revisas el escandallo"
         }
       ]
     },
@@ -2118,7 +2098,7 @@
     "tools": [
       {
         "title": "Escandallo con IA",
-        "description": "Calcula el coste exacto de cada plato en segundos. Introduce ingredientes, gramajes y precios: la IA hace el resto.",
+        "description": "Calcula el coste de cada plato a partir de ingredientes, gramajes y precios. La IA propone el coste y tú lo validas.",
         "keywords": [
           "escandallo restaurante",
           "food cost IA",
@@ -2197,7 +2177,7 @@
       "title": "La gestión de cocina que los chefs necesitan, con la IA que lo hace posible",
       "body": "Los programas de gestión tradicionales son lentos, rígidos y no entienden la cocina. AI Chef Pro es un software pensado por y para profesionales de la hostelería.",
       "benefits": [
-        "Escandallos automáticos con actualización de precios de mercado",
+        "Escandallos con IA a partir de los precios que tú introduces, con revisión del cocinero",
         "Control de alérgenos integrado según normativa europea vigente",
         "Recetas estandarizadas con fichas técnicas profesionales",
         "Análisis de rentabilidad plato a plato con ingeniería de menú",
@@ -2238,7 +2218,7 @@
     ],
     "cta_section": {
       "title": "Empieza a gestionar tu cocina con IA hoy mismo",
-      "subtitle": "Más de {{userCount}} profesionales de la hostelería ya usan AI Chef Pro para gestionar su cocina con más control y menos tiempo.",
+      "subtitle": "75+ agentes de IA en 7 idiomas para la gestión de cocina.",
       "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     }
@@ -2699,9 +2679,9 @@
         "Sin registro ni tarjeta de crédito",
         "Resultados instantáneos en tu navegador",
         "Basadas en estándares reales del sector",
-        "Usadas por más de {{userCount}} profesionales"
+        "Pensadas para el trabajo de cocina y de sala"
       ],
-      "users_label": "profesionales de la hostelería ya las usan"
+      "users_label": "agentes de IA en 7 idiomas"
     },
     "cta": {
       "title": "¿Necesitas más potencia?",
@@ -2841,7 +2821,7 @@
       },
       {
         "question": "¿Esta calculadora incluye mermas?",
-        "answer": "Esta versión gratuita trabaja con los gramajes netos que introduces. Para incluir mermas de limpieza, cocción y evaporación de forma automática, usa la herramienta de escandallos de AI Chef Pro Premium."
+        "answer": "Esta versión trabaja con los gramajes netos que introduces. Para incluir mermas de limpieza, cocción y evaporación, usa la herramienta de escandallos de AI Chef Pro y valida el resultado."
       },
       {
         "question": "¿Cómo mejorar un food cost alto?",
@@ -3280,7 +3260,7 @@
       "copy": "Copiar ficha",
       "copied": "¡Copiado!",
       "reset": "Nuevo análisis",
-      "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?",
+      "cta_after": "¿Quieres revisar los 14 alérgenos de toda la carta, con validación final del cocinero?",
       "allergens_title": "Los 14 alérgenos de declaración obligatoria",
       "allergens_subtitle": "Reglamento (UE) 1169/2011",
       "try_free": "Probar AI Chef Pro",
@@ -3538,8 +3518,8 @@
         },
         {
           "step": "2",
-          "title": "Detección automática",
-          "description": "El detector identifica qué alérgenos del Reglamento EU 1169/2011 están presentes en los ingredientes."
+          "title": "Revisión de los 14 alérgenos",
+          "description": "El detector propone qué alérgenos del Reglamento (UE) 1169/2011 aparecen en los ingredientes. La validación final es del cocinero."
         },
         {
           "step": "3",
@@ -3564,7 +3544,7 @@
     },
     "pricing": {
       "title": "Gestión completa de alérgenos con AI Chef Pro",
-      "subtitle": "El detector básico es gratuito. Con AI Chef Pro gestionas los alérgenos de toda tu carta con alertas automáticas.",
+      "subtitle": "Con AI Chef Pro revisas los 14 alérgenos de la carta, con validación final del cocinero.",
       "plans": [
         {
           "name": "Miembro",
@@ -3615,7 +3595,7 @@
     ],
     "cta_section": {
       "title": "Gestiona los alérgenos de toda tu carta con IA",
-      "subtitle": "Con AI Chef Pro gestionas los alérgenos de cada plato automáticamente, con alertas cuando cambias ingredientes y ficha exportable para tu carta.",
+      "subtitle": "Con AI Chef Pro revisas los 14 alérgenos de cada plato, con validación final del cocinero, y exportas la ficha para la carta.",
       "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },

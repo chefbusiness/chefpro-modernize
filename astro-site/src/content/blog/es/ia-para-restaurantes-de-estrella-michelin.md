@@ -18,7 +18,7 @@ faq:
   - q: "¿Qué es el food pairing algorítmico y cómo lo aplica la IA?"
     a: "El food pairing algorítmico cruza los compuestos aromáticos de miles de ingredientes para encontrar afinidades no obvias. La IA puede analizar esas combinaciones en segundos y sugerir maridajes o nuevas parejas de sabor, ampliando el abanico creativo del chef sin sustituir su criterio."
   - q: "¿La IA ayuda realmente a reducir mermas y controlar alérgenos?"
-    a: "Sí. Los agentes de IA pueden actualizar escandallos automáticamente, prever mermas según estacionalidad y mapear alérgenos en cada receta. Esto reduce errores en el servicio, mejora la consistencia y optimiza la compra de producto premium."
+    a: "Sí. La IA propone el escandallo cuando cambia un precio y el cocinero lo valida. También puedes estimar mermas según la estacionalidad y hacer la revisión de los 14 alérgenos con validación final del cocinero."
   - q: "¿Cuánto cuesta usar AI Chef Pro de forma profesional?"
     a: "El plan de entrada de pago es Premium Pro, por 25 € al mes con 85.000 créditos. El plan Plus cuesta 50 €/mes (175.000 créditos) y el plan Max ofrece créditos ilimitados por 95 €/mes. Existe también la opción Max Anual por 950 €/año."
 ---
@@ -40,7 +40,7 @@ No es magia: es análisis masivo de compuestos aromáticos, generación de secue
 | Frente | Qué resuelve | Ejemplo de tarea | A quién ayuda |
 | :--- | :--- | :--- | :--- |
 | Creatividad y food pairing | Explorar combinaciones de sabores no obvias y estructurar menús degustación con lógica sensorial | Analizar miles de compuestos volátiles para sugerir un maridaje de queso azul con chocolate blanco y yuzu, o secuenciar 14 pases sin fatiga de paladar | Chef creativo, jefe de cocina que diseña menú degustación |
-| Precisión operativa | Mantener la consistencia entre servicios, controlar mermas de producto premium y gestionar alérgenos con trazabilidad | Escandallo automático con gramajes exactos, alertas de alérgenos cruzados en cada receta, previsión de mermas del lenguado salvaje según estacionalidad | Jefe de partida, responsable de compras, equipo de cocina |
+| Precisión operativa | Mantener la consistencia entre servicios, controlar mermas de producto premium y gestionar alérgenos con trazabilidad | Escandallo con IA y gramajes, revisión de los 14 alérgenos con validación final del cocinero, y una base para prever mermas del lenguado salvaje según la temporada | Jefe de partida, responsable de compras, equipo de cocina |
 | Gestión de reservas de alto valor y personalización | Conocer al comensal antes de que llegue, anticipar preferencias y restricciones, personalizar la experiencia sin invadir | CRM inteligente que cruza historial de visitas, alergias, preferencias de temperatura de servicio e incluso aniversarios para sugerir un pase extra personalizado | Director de sala, sumiller, jefe de cocina, maître |
 
 ### Creatividad: probar combinaciones y prototipar menús degustación
@@ -57,9 +57,9 @@ A partir de esa propuesta, el chef ajusta, prueba, corrige. La IA no te da un me
 
 La Guía Michelin premia, entre otras cosas, la consistencia. Un plato excelente un día y correcto al siguiente no vale. Aquí la IA opera como un sistema de control de calidad que no se cansa.
 
-En cocinas de alto nivel, donde un lomo de rodaballo puede costar 60 €/kg y se trabaja con decenas de referencias, el escandallo manual es lento y propenso a errores. Una herramienta de IA conectada a tu recetario digital recalcula automáticamente costes, gramajes y márgenes cada vez que ajustas una receta. Si cambias la guarnición del pase de carne o sustituyes la mantequilla por un aceite de arbequina, el escandallo se actualiza al instante, y además te avisa si el plato se sale del margen objetivo.
+En cocinas de alto nivel, donde un lomo de rodaballo puede costar 60 €/kg y se trabaja con decenas de referencias, el escandallo manual es lento y propenso a errores. Cuando ajustas una receta, la IA propone el coste, el gramaje y el margen, y el cocinero valida el escandallo. Si cambias la guarnición del pase de carne o sustituyes la mantequilla por un aceite de arbequina, revisas si el plato se sale del margen que tú has marcado.
 
-El control de alérgenos es otro punto crítico. En un menú degustación con 14 pases y varios comensales con restricciones, cruzar manualmente cada plato con cada alergia es un riesgo. La IA puede mapear automáticamente los alérgenos de cada elaboración, generar fichas de plato con alertas visuales y hasta sugerir sustituciones que mantengan el perfil de sabor. No elimina la responsabilidad del equipo, pero reduce drásticamente la probabilidad de un error en un servicio a 45 € el cubierto.
+El control de alérgenos es otro punto crítico. En un menú degustación con 14 pases y varios comensales con restricciones, cruzar manualmente cada plato con cada alergia es un riesgo. La IA puede proponer la revisión de los 14 alérgenos de cada elaboración, con validación final del cocinero, generar fichas de plato con alertas visuales y hasta sugerir sustituciones que mantengan el perfil de sabor. No elimina la responsabilidad del equipo, pero reduce drásticamente la probabilidad de un error en un servicio a 45 € el cubierto.
 
 Y luego están las mermas. Producto premium significa mermas caras. Un agente de IA puede analizar tu histórico de pedidos, la estacionalidad y el rendimiento real de cada pieza para ajustar las compras y minimizar el desperdicio. No es adivinación: es cruzar datos que ya tienes pero que nadie miraba con método.
 
@@ -97,7 +97,7 @@ A partir de ahí, el ecosistema ha evolucionado hacia herramientas mucho más pr
 | :--- | :--- | :--- |
 | Investigación de combinaciones | Semanas de consulta de bibliografía, catas a ciegas, viajes de prospección y prueba-error | Horas de análisis algorítmico de miles de pares de ingredientes, con propuestas justificadas por compuestos aromáticos compartidos |
 | Prototipado de secuencias de pases | Reuniones de equipo, discusión de sensaciones, ajustes a base de ensayos en cocina durante varios días | Generación de varias secuencias completas en minutos, con argumentos de ritmo, intensidad y contraste; el equipo elige sobre una base ya estructurada |
-| Ajuste de recetas y escandallos | Cálculo manual de gramajes, costes y alérgenos; riesgo de descuadres | Escandallo automático actualizado en tiempo real, con fichas de alérgenos y márgenes por pase |
+| Ajuste de recetas y escandallos | Cálculo manual de gramajes, costes y alérgenos; riesgo de descuadres | Escandallo con IA que revisas cuando cambia un precio, con la ficha de alérgenos y el margen por pase; la validación final es del cocinero |
 | Pruebas en cocina y validación final | Catas del menú completo, ajustes iterativos | Catas igualmente imprescindibles, pero con un punto de partida mucho más afinado; el tiempo total desde la idea hasta el menú validado se acorta de forma notable |
 
 Los tiempos son estimaciones ilustrativas: cada cocina tiene sus ritmos y su nivel de exigencia. Lo relevante no es el número exacto de días, sino la naturaleza del cambio: la IA se ocupa de la exploración masiva y el cálculo repetitivo, y el equipo dedica su energía a lo que ninguna máquina puede hacer: probar, sentir, decidir.
@@ -123,7 +123,7 @@ Y la cuarta, quizá la más importante, es la expresión personal. La Guía Mich
 
 ## Empezar sin coste: cómo probar la IA en tu cocina
 
-Si todo esto te resuena, lo lógico es probarlo sin compromiso. AI Chef Pro es una suite de más de 70 agentes de IA culinarios especializados, disponible en 7 idiomas con español nativo. Cubre desde la generación de menús degustación hasta el escandallo automático, el control de alérgenos y la personalización de reservas.
+Si todo esto te resuena, lo lógico es probarlo sin compromiso. AI Chef Pro es una suite de más de 70 agentes de IA culinarios especializados, disponible en 7 idiomas con español nativo. Cubre desde la generación de menús degustación hasta el escandallo con IA, el control de alérgenos y la personalización de reservas.
 
 Estos son los planes actuales:
 

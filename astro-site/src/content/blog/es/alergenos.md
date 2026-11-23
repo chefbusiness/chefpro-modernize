@@ -18,7 +18,7 @@ faq:
   - q: "¿Qué pasa con la contaminación cruzada y las trazas?"
     a: "Si hay riesgo real de presencia accidental de un alérgeno (por utensilios, superficies o freidoras compartidas), el restaurante debe informar de esa posibilidad. La ley no obliga a declarar trazas hipotéticas, pero sí a gestionar el riesgo con buenas prácticas y comunicarlo con transparencia."
   - q: "¿Cómo puede ayudar la IA a gestionar los alérgenos de una carta?"
-    a: "La IA cruza automáticamente los ingredientes de cada receta con los 14 alérgenos, detecta derivados ocultos y genera la información actualizada para carta o fichas técnicas. Así se evitan errores manuales cada vez que cambia un proveedor o una elaboración, algo muy frecuente en cocinas reales."
+    a: "La revisión de los 14 alérgenos, con validación final del cocinero, parte de los ingredientes de cada receta, incluidos derivados y nombres poco habituales. Cuando cambia un proveedor o una elaboración, actualizas la ficha y el cocinero la confirma."
   - q: "¿Se puede eliminar de la lista el gluten o el aceite de girasol si mi cliente me lo pide?"
     a: "No. La lista del Anexo II es cerrada y de obligado cumplimiento. Aunque un cliente afirme que no le afecta, debes declarar el alérgeno si está presente. El aceite de girasol no figura entre los 14, por lo que no requiere declaración como alérgeno, salvo que exista contaminación cruzada con otro que sí lo sea."
 ---
@@ -136,7 +136,7 @@ Insisto: este esquema es una guía de sentido común, no un sustituto de la form
 
 Mantener toda esta información al día de forma manual es un trabajo minucioso que, con el ritmo de un servicio real, se vuelve frágil. Un cambio de proveedor de harina, una salsa nueva que lleva mostaza sin que lo indique el nombre comercial o un plato fuera de carta improvisado bastan para que la matriz de alérgenos quede obsoleta. Y un error así puede costar una vida y el cierre del negocio.
 
-Aquí es donde la inteligencia artificial aporta sentido común: cruzar automáticamente cada ingrediente de una receta con los 14 alérgenos de declaración obligatoria, detectar trazas ocultas en derivados y generar la información de carta lista para imprimir o consultar en sala. No se trata de magia, sino de un asistente que no se olvida de revisar el apio en el caldo o los sulfitos en el vino de una salsa.
+Aquí es donde la inteligencia artificial aporta sentido común: revisar los 14 alérgenos de declaración obligatoria en cada ingrediente de la receta, con validación final del cocinero, y dejar la información de carta lista para imprimir o consultar en sala. No se trata de magia, sino de un asistente que no se olvida de revisar el apio en el caldo o los sulfitos en el vino de una salsa.
 
 En AI Chef Pro hemos construido una suite con más de 70 agentes de IA culinarios que trabajan en siete idiomas (español nativo, inglés, francés, alemán, italiano, portugués y neerlandés), pensada para facilitar el día a día de cocinas reales. Puedes generar fichas técnicas con alérgenos, escandallos, cartas coherentes y mucho más. Y si lo que necesitas ahora mismo es una comprobación rápida, tenemos un [detector de alérgenos para miembros](https://aichef.pro/detector-alergenos-restaurante) con el que puedes empezar sin coste.
 

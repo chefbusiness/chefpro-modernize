@@ -144,11 +144,11 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de restricción</th><th>Complejidad tradicional</th><th>Solución con IA</th><th>Tiempo ahorrado</th></tr></thead><tbody><tr><td>Alérgenos múltiples</td><td>Requiere consulta manual de cada ingrediente</td><td>Identificación automática y sustituciones inteligentes</td><td>85%</td></tr><tr><td>Dietas especiales (vegano, halal, kosher)</td><td>Menús separados con logística duplicada</td><td>Menús integrados con variaciones automáticas</td><td>70%</td></tr><tr><td>Preferencias individuales</td><td>Imposible a escala</td><td>Personalización basada en datos de cada comensal</td><td>N/A (antes imposible)</td></tr><tr><td>Adaptación estacional</td><td>Investigación manual de disponibilidad</td><td>Análisis predictivo de mercado</td><td>60%</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de restricción</th><th>Complejidad tradicional</th><th>Solución con IA</th><th>Tiempo ahorrado</th></tr></thead><tbody><tr><td>Alérgenos múltiples</td><td>Requiere consulta manual de cada ingrediente</td><td>Revisión de los 14 alérgenos, con validación del cocinero, y sustituciones</td><td>85%</td></tr><tr><td>Dietas especiales (vegano, halal, kosher)</td><td>Menús separados con logística duplicada</td><td>Menús integrados con variaciones automáticas</td><td>70%</td></tr><tr><td>Preferencias individuales</td><td>Imposible a escala</td><td>Personalización basada en datos de cada comensal</td><td>N/A (antes imposible)</td></tr><tr><td>Adaptación estacional</td><td>Investigación manual de disponibilidad</td><td>Análisis predictivo de mercado</td><td>60%</td></tr></tbody></table></div></figure>
 
 
 
-<p class="wp-block-paragraph">El módulo <a href="https://aichef.pro/blog/alergenos" target="_blank">ID Alérgenos</a> de AI Chef Pro identifica automáticamente los 14 alérgenos de declaración obligatoria en cada receta, generando alternativas seguras sin comprometer el concepto gastronómico.</p>
+<p class="wp-block-paragraph">El módulo <a href="https://aichef.pro/blog/alergenos" target="_blank">ID Alérgenos</a> de AI Chef Pro sirve para la revisión de los 14 alérgenos de declaración obligatoria en cada receta, con validación final del cocinero.</p>
 
 
 

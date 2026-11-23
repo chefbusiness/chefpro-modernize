@@ -40,29 +40,6 @@ const data: PlanNegocioData = {
       'Plan de negocio completo para montar un food truck en España. Incluye documento DOCX de 10 secciones, plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada (81.997 € en total: 63.944 € de compra y adaptación más 18.053 € de fondo de maniobra), punto de equilibrio en 41 clientes/día con ticket de 12 € sin IVA, tesorería mes a mes, plan de financiación con cuadro de amortización y DSCR, escenarios financieros, cuadro de personal, checklist de apertura con 68 trámites incluyendo licencia de venta ambulante, ITV vehículo adaptado y registro sanitario de tu comunidad autónoma, equipamiento cocina móvil y permisos municipales.',
     price: '29.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Presenté el plan financiero al banco y me aprobaron el microcrédito en 2 semanas. Inversión total: 62K EUR.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'El checklist de apertura con 59 trámites me salvó meses de trabajo. Permisos municipales, ITV vehículo, venta ambulante.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: '27 clientes/día a €12 de ticket medio cubre costes. La inversión es mucho menor que un restaurante y el retorno más rápido.',
-      },
-    ],
     // FAQPage schema (4 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 6)
     faqs: [
       {
@@ -149,16 +126,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Propietarios de food trucks, flotas de gastro móvil e inversores que montaron su negocio con un plan financiero profesional',
-    items: [
-      { name: 'Alejandro Ruiz', role: 'Propietario Food Truck Madrid', text: 'Presenté el plan financiero al banco y me aprobaron el microcrédito en 2 semanas. Las proyecciones a 3 años con escenarios les dieron mucha confianza. Inversión total: 62K EUR.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'María López', role: 'Emprendedora Street Food Barcelona', text: 'El checklist de apertura con los 59 trámites me salvó meses de trabajo. Permisos municipales, ITV del vehículo, licencia de venta ambulante… no me dejé nada pendiente.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Carlos Méndez', role: 'Inversor Food & Bev', text: 'Lo que más me convenció fue ver que con 27 clientes al día a €12 de ticket medio ya cubres costes. La inversión es mucho menor que un restaurante y el retorno más rápido.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Laura Fernández', role: 'Socia 2 Food Trucks Sevilla', text: 'Empecé con un truck y en 18 meses abrí el segundo. El plan financiero Excel me permitió proyectar la expansión con datos reales. La movilidad es la clave del negocio.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'David Torres', role: 'Consultor Hostelería', text: 'Lo recomiendo a todos mis clientes que quieren emprender con bajo riesgo. Un food truck requiere menos inversión, menos personal y puedes cambiar de ubicación si no funciona.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana García', role: 'Propietaria Food Truck Valencia', text: 'Los ratios de referencia — food cost 30 %, margen 65 %, retorno 12-24 meses — me ayudaron a negociar con proveedores y elegir las mejores ubicaciones para maximizar ventas.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Gutiérrez', role: 'Ex Corporativo, Abrió Food Truck', text: 'Dejé mi trabajo corporativo y monté mi food truck en 3 meses. El checklist de permisos municipales y la guía de licencias por CCAA fueron fundamentales para no perder tiempo.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Fernando Delgado', role: 'Propietario Flota 5 Trucks', text: 'Hemos usado el plan financiero Excel para las 5 aperturas. Solo cambias las cifras de cada ubicación y tienes un business plan profesional listo para presentar a inversores.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

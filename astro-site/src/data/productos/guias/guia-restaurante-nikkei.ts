@@ -91,16 +91,7 @@ const data: GuiaData = {
   testimonials: {
     titleGold: 'Profesionales',
     subtitle: 'Itamae, chefs, propietarios, inversores y consultores que ya usaron esta guía',
-    items: [
-      { name: 'Mitsuharu Nakasone', role: 'Chef nikkei, restaurante en Madrid', text: 'Esta guía me resolvió las dudas clave: proveedores de ají amarillo y rocoto en España, protocolo anisakis para tiraditos y leches de tigre, y escandallos reales con el coste del pescado premium mediterráneo. El business plan lo presenté al inversor y cerramos la ronda.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Valeria Tsumura', role: 'Propietaria cevichería-nikkei, Barcelona', text: 'Monté una barra nikkei de 60 plazas siguiendo la guía. La sección de tiraditos + causas nikkei + makis acevichados con menú engineering me ayudó a fijar un ticket medio de 58€. Margen bruto 66%. Invaluable.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Diego Matsufuji', role: 'Itamae nikkei, omakase en Valencia', text: 'La mejor guía sobre nikkei en español. Diferencia con claridad el nikkei tradicional de Lima, la escuela Nobu y la evolución contemporánea (Maido, Osaka). El capítulo de pescado sashimi-grade y leches de tigre es oro.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Lucía Benavides', role: 'Inversora, 2 restaurantes nikkei en Málaga', text: 'Presenté el business plan modelo al banco y obtuvimos financiación en 3 semanas. Los números del nikkei premium en España (ticket 65-85€, food cost 33%, break-even mes 12) son realistas y convincentes.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Akira Shimabukuro', role: 'Chef consultor nikkei, formación en Lima', text: 'El protocolo APPCC con PCC específico para pescado crudo y leches de tigre es lo mejor que he visto en una guía en español. Incluye temperaturas, tiempos, registros y trazabilidad. 100% implementable.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Claudia Ferrari', role: 'Interiorista especializada en restaurantes premium', text: 'El capítulo de diseño de sala nikkei (fusión estética japonesa minimalista + textiles peruanos + cerámica Chulucanas) es brillante. Lejos del cliché. Lo he aplicado en 2 proyectos en Madrid.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Javier Quispe', role: 'Importador de productos peruanos en España', text: 'Como proveedor de ají amarillo, limo y rocoto en España, confirmo que los proveedores y precios listados son reales y están actualizados. Lo recomiendo a todos mis clientes que abren nikkei.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Ricardo Miyashiro', role: 'Sommelier de pisco y sake, Bilbao', text: 'El capítulo de barra de pisco + sake + coctelería nikkei es excelente. Las 40 referencias recomendadas, los maridajes con tiraditos y los márgenes del 75-85% me dieron ideas que implementamos el mismo mes. Barra rentable.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {
@@ -186,7 +177,6 @@ const data: GuiaData = {
     productDescription: 'Guía premium de 20 capítulos para montar un restaurante nikkei (fusión peruano-japonesa): tiraditos, ceviches nikkei, omakase, barra de pisco y sake, proveedores de ají amarillo, rocoto y pescado sashimi-grade en España. Incluye 9 plantillas Excel, 6 checklists, business plan y manual de operaciones.',
     price: '65.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     faqs: [
       { q: '¿Cuánto cuesta montar un restaurante nikkei en España?', a: 'Entre 280.000€ y 520.000€ para 60 plazas. El equipamiento mixto (barra de tiraditos, robata/josper, wok station, licuadoras para leches de tigre, cuchillos yanagiba y molcajete) y la brigada especializada son el mayor coste, pero los márgenes en pisco, sake y coctelería nikkei (75-85%) lo compensan.' },
       { q: '¿Qué normativa de anisakis aplica a tiraditos y leches de tigre?', a: 'El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado para consumo crudo (incluidos tiraditos, ceviches nikkei y marinados en leche de tigre) a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas. La guía incluye PCC específico, checklist y protocolo de trazabilidad.' },

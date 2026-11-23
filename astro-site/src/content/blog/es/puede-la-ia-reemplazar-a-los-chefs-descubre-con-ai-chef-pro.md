@@ -51,7 +51,7 @@ Estas tareas no definen quién eres como chef. Son los andamios que sostienen la
 
 | Tarea de cocina/gestión | Qué aporta la IA | Qué gana el chef |
 | :--- | :--- | :--- |
-| Escandallos y food cost | Cálculo automático de costes por ración, actualizado con precios de mercado en tiempo real | Precisión sin calculadora; detección temprana de platos que se van de margen |
+| Escandallos y food cost | Escandallo con IA a partir de los precios que introduces, con validación del cocinero | Precisión sin calculadora; detección temprana de platos que se van de margen |
 | Fichas técnicas | Generación estructurada con gramajes, alérgenos, procesos y fotos del pase | Estandarización sin pasar horas delante del Excel; fichas listas para el equipo |
 | Previsión de compras y mermas | Patrones basados en histórico de ventas, clima y eventos locales | Reducción de mermas entre un 20 y un 35% (orientativo según negocio); menos dinero en el contenedor |
 | Borradores de carta y descripciones | Redacción de platos con tono e identidad de casa; variaciones sobre una misma base | Punto de partida creativo que el chef ajusta en minutos, no en horas |

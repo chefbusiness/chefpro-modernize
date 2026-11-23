@@ -857,12 +857,6 @@ wpId: 1056
 
 
 
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">«AI Chef Pro no solo nos ayudó a crear mejor contenido, sino que nos permitió dedicar más tiempo a lo que realmente importa: nuestros clientes y la cocina.»- Chef María González, La Marea</p>
-</blockquote>
-
-
-
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h2 class="wp-block-heading">Conclusiones y Próximos Pasos</h2>

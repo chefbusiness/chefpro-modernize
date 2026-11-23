@@ -70,7 +70,7 @@ Pongamos un ejemplo realista para una Margherita en 2026:
 | Merma estimada (2 %) | – | 0,04 |
 | **Coste total materia prima** | | **1,80** |
 
-Con un *food cost* objetivo del 28-32 %, el precio de venta sugerido se mueve entre 5,65 € y 6,45 €. Ajustas en función de tu zona, tu servicio y el valor que percibe el cliente. El agente recalcula automáticamente si cambias de proveedor, subes la cantidad de mozzarella o modificas el tamaño de la bola de masa.
+Con un *food cost* objetivo del 28-32 %, el precio de venta sugerido se mueve entre 5,65 € y 6,45 €. Ajustas en función de tu zona, tu servicio y el valor que percibe el cliente. Si cambias de proveedor, subes la cantidad de mozzarella o modificas el tamaño de la bola de masa, revisas el escandallo con IA y el cocinero lo valida.
 
 Una vez tienes el coste de materia prima (1,80 € en la Margherita), aplicas la fórmula: Precio = Coste / Food cost objetivo. Con un food cost del 30 %, el precio sugerido sería 1,80 € / 0,30 = 6,00 € (sin IVA). Eso te deja un margen bruto de 4,20 € por pizza. A ese cálculo se le suma después el IVA correspondiente. Pero el escandallo fino no termina ahí: debes vigilar la merma de la mozzarella. Si al trocearla pierdes un 5 % en suero o recortes, cada pizza absorbe 6 céntimos más; la IA te permite fijar ese porcentaje y repercutirlo. Igual con el desperdicio de masa: bola sobrefermentada que acaba en la basura es dinero. Con tu histórico, puedes estimar un 2-3 % de merma de masa y ajustar.
 

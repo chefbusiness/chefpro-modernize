@@ -141,7 +141,7 @@ La IA no cocina por ti, pero puede quitarte horas de trastienda. Aquí lo llevo 
 
 - **Estudio de mercado**: cruza datos de zona, competencia, reseñas y tendencias de consumo para afinar tu posicionamiento en minutos, no en semanas.
 - **Generación de conceptos**: te propone nombres, hilos narrativos y experiencias coherentes con el tipo de público que buscas.
-- **Escandallos y food cost**: calcula costes por plato automáticamente, actualiza precios con cambios de proveedor y te alerta si algún plato se sale del margen.
+- **Escandallos y food cost**: prepara el coste por plato para que el cocinero lo valide cuando cambia un proveedor, y revisas si algún plato se sale del margen.
 - **Plan de negocio y previsiones financieras**: estructura el documento, proyecta ventas y gastos, y te ayuda a simular escenarios antes de pedir financiación.
 - **Cartas y menús**: diseña cartas completas, fichas técnicas y sugerencias diarias manteniendo coherencia nutricional y de costes.
 - **Marketing de apertura**: redacta publicaciones para redes, guiones para email marketing y textos de web, en el tono que tú decidas.

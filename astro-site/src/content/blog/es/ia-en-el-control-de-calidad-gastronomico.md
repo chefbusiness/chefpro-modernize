@@ -63,7 +63,7 @@ Una ficha técnica viva es un documento digital, actualizado, accesible en cocin
 
 ### El papel de la IA
 
-Un asistente de inteligencia artificial te genera una ficha técnica completa a partir de tu receta en lenguaje natural. Le dices "lomo de corvina a la brasa con puré de coliflor y salsa de cítricos" y te devuelve la ficha estructurada con gramajes, pasos, puntos de cocción y alérgenos. Pero lo potente no es eso: es que cuando el proveedor te sube el precio del pescado, la IA recalcula el [escandallo automáticamente](https://aichef.pro/blog/escandallos-ia-cocina-profesional) y actualiza el coste por ración. Y si tienes equipo multicultural, traduce la ficha al idioma de cada cocinero manteniendo la precisión técnica. La ficha deja de ser un PDF muerto y se convierte en el estándar operativo vivo.
+Un asistente de inteligencia artificial te genera una ficha técnica completa a partir de tu receta en lenguaje natural. Le dices "lomo de corvina a la brasa con puré de coliflor y salsa de cítricos" y te devuelve la ficha estructurada con gramajes, pasos, puntos de cocción y alérgenos. Pero lo potente no es eso: es que cuando el proveedor te sube el precio del pescado, vuelves a calcular el [escandallo con IA](https://aichef.pro/blog/escandallos-ia-cocina-profesional) y revisas el coste por ración; la validación final es del cocinero. Y si tienes equipo multicultural, traduce la ficha al idioma de cada cocinero manteniendo la precisión técnica. La ficha deja de ser un PDF muerto y se convierte en el estándar operativo vivo.
 
 ## 2. Estandarización entre turnos y entre locales
 

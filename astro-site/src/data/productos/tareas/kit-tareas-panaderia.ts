@@ -27,24 +27,6 @@ const data: KitTareasData = {
       '11 checklists operativos pre-rellenados para panadería y obrador: turno madrugada, masas madre y pre-fermentos, hornos y cocción, expositor y venta, tareas del manager, perfiles del equipo, semanales y mensuales, eventos y temporadas, plantilla personalizable, briefing de producción diaria y calendario anual.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Los checklists de turno madrugada son imprescindibles. Encendido de hornos, masas del día, fermentaciones… todo el equipo sigue el mismo protocolo desde las 03:00.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'El control de masas madre y pre-fermentos nos salvó. Cada refresco, cada poolish y cada biga está documentado con temperaturas y tiempos exactos.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'Implementamos en 4 obradores. La consistencia en hornos, fermentaciones y producción es ahora uniforme en todas las tiendas.',
-      },
-    ],
     faqs: [
       {
         q: '¿Incluye control de masas madre y pre-fermentos?',
@@ -314,56 +296,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Maestros panaderos, oficiales de obrador y consultores de panificación que ya tienen su producción bajo control',
-    items: [
-      {
-        name: 'Alejandro Ruiz',
-        role: 'Maestro Panadero Madrid',
-        text: 'Los checklists de turno madrugada son imprescindibles. Encendido de hornos, masas del día, fermentaciones… todo el equipo sigue el mismo protocolo desde las 03:00 y entramos a producir sin caos.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'María López',
-        role: 'Propietaria Obrador Barcelona',
-        text: 'El control de masas madre y pre-fermentos nos salvó. Ahora cada refresco, cada poolish y cada biga está documentado con temperaturas y tiempos exactos. Cero hornadas perdidas.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Carlos Méndez',
-        role: 'Director Cadena Panaderías (4 obradores)',
-        text: 'Implementamos en 4 obradores. La consistencia en hornos, fermentaciones y producción es ahora uniforme en todas las tiendas. Mismo pan en cada punto de venta.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Laura Fernández',
-        role: 'Encargada Panadería Artesana',
-        text: 'Las tareas por perfil clarifican quién hace qué: maestro, oficial, ayudante, dependiente. El briefing de producción diaria nos ahorra tiempo y errores en cada hornada.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'David Torres',
-        role: 'Consultor Panificación',
-        text: 'Para panaderías y obradores es el kit más completo del mercado. Masas madre, hornos, expositor, turno madrugada… todo cubierto sin huecos operativos.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Ana García',
-        role: 'Oficial de Obrador',
-        text: 'El control de hornos y cocción está muy bien detallado. Horno de piso, rotativo, vapor, tiempos, temperaturas… sé exactamente qué hacer en cada hornada y cada tipo de pan.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Pedro Gutiérrez',
-        role: 'Responsable Producción Panadería',
-        text: 'Las tareas semanales y mensuales de limpieza de hornos, revisión de harinas y calibración de básculas nos mantienen siempre a punto para cualquier inspección sanitaria.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Fernando Delgado',
-        role: 'Maestro Panadero Obrador Premium',
-        text: 'El calendario anual con panes de temporada y campañas especiales nos ayuda a planificar Navidad, Reyes, Semana Santa y toda la producción estacional sin sorpresas.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

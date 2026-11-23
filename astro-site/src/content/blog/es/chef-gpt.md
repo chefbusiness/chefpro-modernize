@@ -95,13 +95,13 @@ Este año la tendencia es clara: **la IA genérica para cocina se ha democratiza
 
 Para que se entienda la distancia entre una herramienta doméstica y una profesional, nada mejor que tres ejemplos de lo que ocurre en el día a día de un restaurante.
 
-### Escandallo y food cost automático
+### Escandallo y food cost con IA
 
 Imagina que creas un nuevo plato: tataki de atún con emulsión de miso. Con ChefGPT.xyz obtienes una receta descriptiva. Con una suite profesional como AI Chef Pro, introduces los ingredientes, sus precios de compra y los rendimientos tras limpieza (por ejemplo, el atún pierde un 15 % en recortes). El agente calcula al instante el coste por ración, el margen bruto y te sugiere un PVP recomendado para alcanzar el porcentaje de food cost que manejas en tu carta. Si cambia el precio del atún la semana siguiente, reajustas un dato y todo se recalcula.
 
 ### Fichas técnicas y alérgenos con trazabilidad
 
-Necesitas la ficha de producción para el equipo de cocina y la carta de alérgenos actualizada para los clientes. Con una herramienta vertical, generas ambos documentos desde la misma receta. El sistema etiqueta automáticamente los 14 alérgenos de declaración obligatoria, cruza información para advertir de contaminación cruzada (por ejemplo, si usas la misma freidora para gluten) y te permite exportar la ficha en formato profesional. Si un proveedor cambia la composición de una salsa, actualizas un ingrediente y todas las fichas que lo contienen se regeneran.
+Necesitas la ficha de producción para el equipo de cocina y la carta de alérgenos actualizada para los clientes. Con una herramienta vertical, generas ambos documentos desde la misma receta. Haces la revisión de los 14 alérgenos de declaración obligatoria, con validación final del cocinero, cruza información para advertir de contaminación cruzada (por ejemplo, si usas la misma freidora para gluten) y te permite exportar la ficha en formato profesional. Si un proveedor cambia la composición de una salsa, actualizas un ingrediente y todas las fichas que lo contienen se regeneran.
 
 ### Cartas multilingües sin perder precisión técnica
 
@@ -195,7 +195,7 @@ Para todo eso, ChefGPT.xyz funciona bien. El problema es cuando un dueño de res
 
 ## ¿Y si tienes un restaurante, cafetería u obrador?
 
-Entonces necesitas herramientas que hablen tu idioma profesional. Literal y figuradamente. AI Chef Pro está construido sobre el feedback de cocineros reales: escandallos automáticos, fichas técnicas de producción, gestión de alérgenos con cruce de contaminación, planificación de partidas, food cost por plato y por carta completa. Si diriges un obrador, los agentes calculan mermas y rendimientos de cada elaboración (panes, masas, rellenos) con la misma precisión que en una partida de restaurante.
+Entonces necesitas herramientas que hablen tu idioma profesional. Literal y figuradamente. AI Chef Pro está construido sobre el feedback de cocineros reales: escandallos con IA, fichas técnicas de producción, gestión de alérgenos con cruce de contaminación, planificación de partidas, food cost por plato y por carta completa. Si diriges un obrador, los agentes calculan mermas y rendimientos de cada elaboración (panes, masas, rellenos) con la misma precisión que en una partida de restaurante.
 
 No es una app de recetas bonitas. Es una suite de trabajo. Y su plan Miembro —10 € al mes con 10.000 créditos y sin permanencia— te permite usar los agentes a diario. Si luego necesitas más, los planes de pago empiezan en 25 €/mes.
 

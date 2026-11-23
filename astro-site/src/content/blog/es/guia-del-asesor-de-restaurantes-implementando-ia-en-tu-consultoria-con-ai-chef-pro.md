@@ -111,7 +111,7 @@ Para que se vea claro el salto, he preparado esta comparativa. No es ciencia fic
 | Nº de clientes en paralelo | 3-5 proyectos simultáneos | 8-15 proyectos simultáneos |
 | Calidad y consistencia de entregables | Variable según carga de trabajo y fatiga | Estándar alto y consistente en todos los proyectos |
 | Coste de producir un informe | 8-15 horas de trabajo facturable | 1-3 horas de revisión y ajuste |
-| Actualización de escandallos | Manual, cada vez que cambian precios | Automática al cargar nuevas tarifas de proveedores |
+| Actualización de escandallos | Manual, cada vez que cambian precios | La revisas al cargar las tarifas nuevas; el cocinero valida |
 | Respuesta a imprevistos | Reactiva, compite con otros proyectos | Rápida, con borradores generados en minutos |
 
 La diferencia no está en el talento del consultor. Está en la capacidad de producción. Un consultor de restaurantes con IA no es más listo que uno tradicional. Sencillamente, tiene más horas útiles al día para dedicar a lo que de verdad importa: pensar, decidir y estar con el cliente.

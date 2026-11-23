@@ -520,7 +520,7 @@ wpId: 1880
 
 
 
-<p class="wp-block-paragraph"><strong>ID Alérgenos</strong> utiliza <a href="https://aichef.pro/blog/procesamiento-de-lenguaje-natural">procesamiento de lenguaje natural</a> (NLP) para identificar automáticamente alérgenos potenciales en recetas y platos, crucial tanto para seguridad como para optimización de conservación (muchos alérgenos son también indicadores de sensibilidad a deterioro). Profundiza en este tema consultando nuestro artículo sobre <a href="https://aichef.pro/blog/alergenos" target="_blank" rel="noreferrer noopener">alérgenos en la cocina profesional</a>.</p>
+<p class="wp-block-paragraph"><strong>ID Alérgenos</strong> utiliza <a href="https://aichef.pro/blog/procesamiento-de-lenguaje-natural">procesamiento de lenguaje natural</a> (NLP) para proponer la revisión de los 14 alérgenos en recetas y platos, con validación final del cocinero, crucial tanto para seguridad como para optimización de conservación (muchos alérgenos son también indicadores de sensibilidad a deterioro). Profundiza en este tema consultando nuestro artículo sobre <a href="https://aichef.pro/blog/alergenos" target="_blank" rel="noreferrer noopener">alérgenos en la cocina profesional</a>.</p>
 
 
 
@@ -1024,7 +1024,7 @@ wpId: 1880
 
 
 
-<p class="wp-block-paragraph">Absolutamente. Herramientas como <strong>ID Alérgenos</strong> de AI Chef Pro no solo identifican alérgenos en recetas, sino que también ayudan a gestionar conservación específica para prevenir contaminación cruzada. El sistema recomienda segregación de almacenamiento, etiquetado automático con información de alérgenos y trazabilidad completa desde recepción hasta consumo. Esto es especialmente crítico para establecimientos que gestionan múltiples restricciones dietéticas simultáneamente.</p>
+<p class="wp-block-paragraph">Absolutamente. Herramientas como <strong>ID Alérgenos</strong> de AI Chef Pro no solo identifican alérgenos en recetas, sino que también ayudan a gestionar conservación específica para prevenir contaminación cruzada. El sistema recomienda segregación de almacenamiento, etiquetado con la revisión de los 14 alérgenos y la validación del cocinero y trazabilidad completa desde recepción hasta consumo. Esto es especialmente crítico para establecimientos que gestionan múltiples restricciones dietéticas simultáneamente.</p>
 
 
 

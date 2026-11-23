@@ -175,7 +175,7 @@ wpId: 1550
 
 
 <ul class="wp-block-list">
-<li>Identificar automáticamente alérgenos ocultos en preparaciones complejas</li>
+<li>Revisar los 14 alérgenos, con validación final del cocinero, también en preparaciones complejas</li>
 
 
 
@@ -942,7 +942,7 @@ wpId: 1550
 
 
 
-<li>Detección automática de alérgenos y contaminantes</li>
+<li>Revisión de los 14 alérgenos, con validación final del cocinero, y revisión de contaminantes</li>
 
 
 
