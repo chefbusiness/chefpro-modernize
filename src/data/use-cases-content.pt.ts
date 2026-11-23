@@ -750,7 +750,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Alergénios e Mermas Genéricas",
-        "description": "Revisão dos 14 alergénios de alergénios por prato e dados precisos de mermas e rendimentos por ingrediente."
+        "description": "Revisão dos 14 alergénios, com validação final do cozinheiro, por prato, e dados precisos de quebras e rendimentos por ingrediente."
       },
       {
         "icon": "Search",
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Alergénios e Mermas Genéricas",
-        "description": "Revisão dos 14 alergénios de alergénios por prato e dados precisos de quebras e rendimentos por ingrediente."
+        "description": "Revisão dos 14 alergénios, com validação final do cozinheiro, por prato, e dados precisos de quebras e rendimentos por ingrediente."
       }
     ],
     "workflowTitle": "Um Dia Real de um Chefe de Cozinha com a AI Chef Pro",
@@ -1233,7 +1233,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Alergénios e Mermas Genéricas",
-        "description": "Revisão dos 14 alergénios de alergénios e dados precisos de mermas para passe e partida."
+        "description": "Revisão dos 14 alergénios, com validação final do cozinheiro, e dados precisos de quebras para o passe e a partida."
       }
     ],
     "workflowTitle": "Um Dia Real de um Sous Chef com AI Chef Pro",

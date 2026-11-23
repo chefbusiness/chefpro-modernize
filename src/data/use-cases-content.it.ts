@@ -1214,7 +1214,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "ID Allergeni",
-        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco,, critica per eventi con molti ospiti con profili alimentari diversi.",
+        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco, critica per eventi con molti ospiti con profili alimentari diversi.",
         "icon": "ShieldCheck"
       },
       {
@@ -1446,7 +1446,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "ID Allergeni e Sprechi GenCal",
-        "description": "Revisione dei 14 allergeni degli allergeni per piatto e dati precisi su sprechi e rese per ingrediente.",
+        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco, per piatto, e dati precisi su sprechi e rese per ingrediente.",
         "icon": "ShieldCheck"
       }
     ],
@@ -1673,7 +1673,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "ID Allergeni e Sprechi GenCal",
-        "description": "Rilevazione automatica degli allergeni per piatto e dati precisi su sprechi e rese per ingrediente.",
+        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco, per piatto, e dati precisi su sprechi e rese per ingrediente.",
         "icon": "ShieldCheck"
       },
       {
@@ -1784,7 +1784,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "name": "ID Allergeni",
-        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco, di allergeni potenziali per ricetta e per piatto.",
+        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco, per ricetta e per piatto.",
         "category": "Strumenti e Utility"
       },
       {
@@ -9461,7 +9461,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "ID Allergeni e Sprechi GenCal",
-        "description": "Rilevazione automatica degli allergeni e dati precisi sugli sprechi per passaggio e partita.",
+        "description": "Revisione dei 14 allergeni, con validazione finale del cuoco, e dati precisi sugli sprechi per il passaggio e la partita.",
         "icon": "ShieldCheck"
       }
     ],

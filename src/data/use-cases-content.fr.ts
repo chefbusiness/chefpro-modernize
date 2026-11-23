@@ -750,7 +750,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes et Rendement GenCal",
-        "description": "Relecture des 14 allergènes des allergènes par plat et données précises sur les pertes et les rendements par ingrédient."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat, et données précises sur les pertes et les rendements par ingrédient."
       },
       {
         "icon": "Search",
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes et Rendement GenCal",
-        "description": "Relecture des 14 allergènes des allergènes par plat et données précises sur les pertes et rendements par ingrédient."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, par plat, et données précises sur les pertes et les rendements par ingrédient."
       }
     ],
     "workflowTitle": "Une Journée Réelle d'un Chef de Cuisine avec AI Chef Pro",
@@ -1233,7 +1233,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes et Rendement GenCal",
-        "description": "Relecture des 14 allergènes des allergènes et données précises de pertes pour le passe et le poste."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, et données précises de pertes pour le passe et le poste."
       }
     ],
     "workflowTitle": "Une Journée Réelle d'un Sous-Chef avec AI Chef Pro",
@@ -1455,7 +1455,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "ID Allergènes",
-        "description": "Révision des 14 allergènes, avec validation finale du cuisinier,, critique pour les événements avec de nombreux invités aux profils alimentaires variés."
+        "description": "Révision des 14 allergènes, avec validation finale du cuisinier, critique pour les événements avec de nombreux invités aux profils alimentaires variés."
       },
       {
         "icon": "BookOpen",

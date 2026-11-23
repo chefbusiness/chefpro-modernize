@@ -1652,7 +1652,7 @@
         "Generate a complete menu in hours, not weeks",
         "Identify star dishes that maximize margin and turnover",
         "Write descriptions that generate desire and increase the ticket",
-        "Manage the 14 legal allergens without errors or omissions",
+        "Review the 14 allergens, with the cook's final check",
         "Refresh your menu each season without starting from scratch",
         "Adapt the menu to different languages for international guests"
       ]
@@ -2334,7 +2334,7 @@
         {
           "feature": "Portion scaling",
           "other": "Manual calculations with errors",
-          "aichef": "Another draft of the quantities; you taste the salt again"
+          "aichef": "A new draft of the weights; you check the seasoning before service"
         },
         {
           "feature": "Tech sheets",
@@ -2377,7 +2377,7 @@
       },
       {
         "title": "Portion scaling, checked by the cook",
-        "description": "Calcula Pax drafts the new amounts for another number of diners. You taste the salt and the times before service.",
+        "description": "Calcula Pax drafts the new amounts for another number of diners. You check the seasoning and the times before service.",
         "keywords": [
           "recipe scaling",
           "weights per portion",
@@ -2433,7 +2433,7 @@
         "27 world cuisines with authentic techniques and traditions",
         "Seasonal menus aligned with your gastronomic concept",
         "Tech sheets ready to print and use with your team",
-        "Calcula Pax drafts the new quantities, and you taste the salt again.",
+        "Calcula Pax drafts the new quantities. You taste a spoonful and adjust before service.",
         "Dietary restriction adaptation without losing culinary quality"
       ]
     },

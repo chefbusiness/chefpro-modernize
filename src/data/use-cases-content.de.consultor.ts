@@ -143,7 +143,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { icon: 'ShieldCheck', title: 'HACCP und Rückverfolgbarkeit', description: 'HACCP-Paket mit 17 inspektionsbereiten Vorlagen. Nützlich in Audits und Angeboten für Luxushotels.' },
       { icon: 'Sparkles', title: 'MenuDish Local SEO', description: 'Gerichtebeschreibungen optimiert für lokale SEO in Google Business und auf der Website des Kunden.' },
       { icon: 'BarChart3', title: 'Personalverpflegung', description: 'Generator für Personalmenüs, der dem Kunden Kosten spart und die Brigade motiviert hält.' },
-      { icon: 'MessageSquare', title: 'ID Allergene', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Rezept, bereit für die europäische Regulierung.' },
+      { icon: 'MessageSquare', title: 'ID Allergene', description: 'Prüfung der 14 Allergene pro Rezept, mit abschließender Kontrolle durch den Koch, bereit für die europäische Regulierung.' },
     ],
     workflowTitle: 'Ein realer Tag eines Chef-Beraters mit AI Chef Pro',
     workflow: [
@@ -187,7 +187,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Kreativküche', category: 'Kulinarische Kreativität', description: 'Entwicklung professioneller Gerichte mit Rezept + Kalkulations-CSV. Ihr Motor für kulinarische Vorschläge.' },
       { name: 'Kreativküche Pro', category: 'Kulinarische Kreativität', description: 'Erweiterte Version mit Avantgarde, Techniken und Premium-Zutaten für Haute-Cuisine-Kunden.' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Präzise Schwund- und Ertragswerte pro Zutat: unverzichtbar für realistische Kalkulationen.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Rezept und Gericht.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene pro Rezept und pro Gericht, mit abschließender Kontrolle durch den Koch.' },
       { name: 'Conversor Ing', category: 'Werkzeuge und Utilities', description: 'Gewichts- und Maßumrechner für die professionelle Küche.' },
       { name: 'Calcula Pax', category: 'Werkzeuge und Utilities', description: 'Skalierung von Rezepten auf beliebige Gästezahlen.' },
       { name: 'Casual Restaurants AI+', category: 'Geschäftskonzepte', description: 'Spezialist für Bistros, Gastrobars, Tapas und Mediterranes.' },

@@ -750,7 +750,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID und Lebensmittelabfälle AI",
-        "description": "Prüfung der 14 Allergene von Allergenen pro Gericht und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
+        "description": "Prüfung der 14 Allergene mit abschließender Kontrolle durch den Koch, pro Gericht, und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
       },
       {
         "icon": "Search",
@@ -793,7 +793,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       },
       {
         "q": "Kann ich mein bestehendes Rezeptbuch hochladen?",
-        "a": "Ja. Das Kit de Escandallos Pro ermöglicht das Hochladen Ihres Rezeptbuchs und die automatisierte Kalkulation in Minuten. Sie können den Agenten Executive Chef Pro auch bitten, technische Rezeptblätter aus freien Beschreibungen zu generieren."
+        "a": "Ja. Mit dem Kit de Escandallos Pro laden Sie Ihr Rezeptbuch hoch. Die KI legt eine Kalkulation an, und der Koch prüft sie, bevor sie in die Küche geht. Executive Chef Pro kann aus einer freien Beschreibung auch ein technisches Rezeptblatt entwerfen."
       },
       {
         "q": "Ist es für fortgeschrittene gastronomische Küche geeignet oder nur für Casual Dining?",
@@ -861,7 +861,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Werkzeuge und Utilities",
-        "description": "Automatische Identifizierung potenzieller Allergene pro Rezept und Gericht."
+        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Rezept und pro Gericht."
       },
       {
         "name": "Kreative Patisserie",
@@ -926,7 +926,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
         "Abschluss einer neuen Karte: zwischen 1 und 3 Tagen, je nach Umfang und ob es sich um eine vollständige oder teilweise Neuaufsetzung handelt",
         "Zentralisiertes Rezeptbuch mit Kalkulation, Allergenen, Technik und Storytelling",
         "Dasselbe Gericht, dieselbe Qualität und dieselben Kosten in 1, 5 oder 25 Küchen",
-        "Professionelle Kalkulation, die bei jeder Änderung sofort neu berechnet",
+        "Professionelle Kalkulation: bei einer Änderung legen Sie eine neue Version an, und der Koch prüft sie",
         "Handbücher mit einem Klick aktualisiert und Onboarding bereit für neue Köche"
       ]
     },
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID und Lebensmittelabfälle AI",
-        "description": "Prüfung der 14 Allergene von Allergenen pro Gericht und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
+        "description": "Prüfung der 14 Allergene mit abschließender Kontrolle durch den Koch, pro Gericht, und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
       }
     ],
     "workflowTitle": "Ein echter Tag eines Küchenchefs mit AI Chef Pro",
@@ -1162,7 +1162,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       "afterTitle": "Mit AI Chef Pro",
       "afterItems": [
         "Zentralisierte Rezeptsammlung mit Kalkulation, Allergenen, Technik und Storytelling",
-        "Automatische Kalkulation, die bei jeder Preisänderung sofort neu berechnet",
+        "Kalkulation mit KI: bei einem neuen Preis legen Sie eine neue Version an, und der Koch prüft sie",
         "HACCP vom Handy mit Aufzeichnungen und Warnungen, bereit für Inspektionen",
         "Kartenerneuerung in 1-3 Tagen mit Kreativküche + Kit de Escandallos Pro",
         "Replizierbare Schulungshandbücher mit dem Skript aus dem Pro Prompts eBook"
@@ -1455,7 +1455,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch,, entscheidend für Events mit vielen Gästen mit unterschiedlichen Ernährungsprofilen."
+        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, entscheidend für Events mit vielen Gästen mit unterschiedlichen Ernährungsprofilen."
       },
       {
         "icon": "BookOpen",
@@ -2865,7 +2865,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       },
       {
         "q": "Wie verwalte ich Allergien und spezielle Diäten pro Kunde?",
-        "a": "Allergen-ID dient der Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Rezept. Privatkoch Pro denkt in Bezug auf Personalisierung: Keto-, vegane, glutenfreie, natriumarme, FODMAP-Diäten, Schwangerschaft. Jeder Kunde erhält ein wirklich angepasstes Menü."
+        "a": "Allergen-ID prüft die 14 Allergene pro Rezept. Der Koch gibt die letzte Kontrolle. Privatkoch Pro denkt an die Personalisierung: Keto-, vegane, glutenfreie, natriumarme, FODMAP-Diäten, Schwangerschaft. Jeder Kunde erhält ein wirklich angepasstes Menü."
       },
       {
         "q": "Wie skaliere ich Rezepte für verschiedene Gästezahlen?",
@@ -10325,7 +10325,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID",
-        "description": "Automatische Identifizierung von Allergenen pro Rezept: Milchprodukte, Gluten, Nüsse, Soja, Meeresfrüchte, Sulfite usw."
+        "description": "Prüfung der 14 Allergene pro Rezept, mit abschließender Kontrolle durch den Koch: Milchprodukte, Gluten, Nüsse, Soja, Meeresfrüchte, Sulfite usw."
       },
       {
         "icon": "Calculator",
@@ -10366,7 +10366,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
     "workflowTitle": "So erstellen Sie Rezeptblätter in 4 Schritten",
     "workflow": [
       "1. Kreativküche (oder Ihr kreativer Agent) – Sie entwickeln oder laden das Rezept hoch. Der KI-Agent liefert Rezept + vollständiges Rezeptblatt mit allen professionellen Feldern.",
-      "2. Allergen-ID – dient der Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Rezept und integriert sie in das Rezeptblatt; wenn Sie eine Zutat ändern, berechnet es sofort neu.",
+      "2. Allergen-ID prüft die 14 Allergene pro Rezept, mit abschließender Kontrolle durch den Koch, und übernimmt sie ins Rezeptblatt. Wenn Sie eine Zutat ändern, prüfen Sie das Rezeptblatt erneut und der Koch kontrolliert es.",
       "3. GastroIMG Gen+ – generiert ein Referenzbild des angerichteten Gerichts, um es als visuelle Anleitung für den Koch in das Rezeptblatt aufzunehmen.",
       "4. Food Pairing AI + Storytelling für den Service – das Rezeptblatt enthält empfohlene Weinbegleitung und professionelle Beschreibung für das Team-Briefing."
     ],
@@ -10390,7 +10390,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       },
       {
         "q": "Wie werden die Allergene geprüft?",
-        "a": "Allergen-ID identifiziert die Allergene pro Zutat und integriert sie in das Rezeptblatt. Wenn Sie eine Zutat ändern, berechnet es sofort neu und aktualisiert die Informationen für den Service."
+        "a": "Allergen-ID prüft die Allergene pro Zutat und übernimmt sie ins Rezeptblatt. Wenn Sie eine Zutat ändern, prüfen Sie das Rezeptblatt erneut und der Koch kontrolliert es, bevor der Service die neue Fassung nutzt."
       },
       {
         "q": "Funktioniert es für jede Küchenart?",
@@ -10435,7 +10435,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Automatische Identifizierung von Allergenen pro Rezept."
+        "description": "Prüfung der 14 Allergene pro Rezept, mit abschließender Kontrolle durch den Koch."
       },
       {
         "name": "Conversor Ing",
