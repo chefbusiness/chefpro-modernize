@@ -675,7 +675,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
         </div>
       </section>
 
-      {/* Testimonio */}
+      {lang !== 'es' && (
       <section class="py-20">
         <div class="container mx-auto px-4">
           <div class={`${CARD} max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
@@ -690,6 +690,8 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
           </div>
         </div>
       </section>
+
+      )}
 
       {/* FAQ */}
       <section class="py-20 bg-muted/30">

@@ -150,7 +150,7 @@ Este plan está pensado para que en cuatro semanas pases de intuir a controlar. 
 
 ### Semana 1: Medir la base real
 
-- **Haz los escandallos de los 20 platos más vendidos.** Pesa ingredientes, actualiza precios de compra y calcula el coste por ración. Si usas [escandallos automáticos con IA](https://aichef.pro/escandallos-restaurante-ia), tendrás las fichas listas en horas en lugar de días.
+- **Haz los escandallos de los 20 platos más vendidos.** Pesa ingredientes, actualiza precios de compra y calcula el coste por ración. Si usas [escandallos con IA](https://aichef.pro/escandallos-restaurante-ia), tendrás las fichas listas en horas en lugar de días.
 - **Calcula el food cost real del mes anterior.** Suma todas las compras de materia prima, ajusta el inventario inicial y final, y divídelo entre las ventas netas. Identifica qué platos se desvían más del teórico.
 - **Extrae las ventas por producto desde el TPV.** Ordena los platos por facturación y por unidades vendidas. Así sabrás qué mueve el negocio de verdad.
 
@@ -191,7 +191,7 @@ Con 12.000 € de costes fijos al mes, ticket medio 25 € y coste variable 10 �
 
 Controlar los KPIs de rentabilidad de un restaurante exige datos precisos y actualizados, pero el día a día en cocina no da tregua para pasarse horas con hojas de cálculo. Ahí es donde las herramientas de IA bien aplicadas te devuelven el tiempo.
 
-Con [AI Chef Pro](https://aichef.pro/blog/mejores-ia-restaurantes-2026) tienes más de 70 agentes de IA culinarios que hablan español nativo y trabajan en 7 idiomas. Puedes generar escandallos automáticos, calcular el food cost por plato o por periodo, simular la rentabilidad de la carta y ajustar recetas al instante. Todo sin depender de un consultor externo cada semana.
+Con [AI Chef Pro](https://aichef.pro/blog/mejores-ia-restaurantes-2026) tienes más de 70 agentes de IA culinarios que hablan español nativo y trabajan en 7 idiomas. Puedes generar escandallos con IA, calcular el food cost por plato o por periodo, simular la rentabilidad de la carta y ajustar recetas al instante. Todo sin depender de un consultor externo cada semana.
 
 Los planes se adaptan al volumen de cada cocina: el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €/mes con tarjeta; Premium Pro cuesta 25 €/mes (85.000 créditos); Plus, 50 €/mes (175.000 créditos); y Max ofrece créditos ilimitados por 95 €/mes o 950 €/año. Así puedes empezar sin riesgo y escalar cuando veas los resultados.
 

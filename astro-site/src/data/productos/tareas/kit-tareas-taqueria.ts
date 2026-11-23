@@ -28,24 +28,6 @@ const data: KitTareasData = {
       '11 checklists operativos pre-rellenados para taquería mexicana: apertura y cierre, trompo al pastor, nixtamal y tortillería, barra de salsas, APPCC (HACCP) y alérgenos, tareas por perfil y calendario anual de tareas.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Roberto Salinas',
-        rating: '5',
-        body: 'El checklist del trompo con la sonda al inicio y a mitad del servicio nos ordenó el pastor de verdad. Antes cada taquero lo hacía a su manera.',
-      },
-      {
-        author: 'Patricia Domínguez',
-        rating: '5',
-        body: 'La hoja de la barra de salsas con hora de puesta y de descarte nos ha salvado en la inspección de Sanidad. Todo queda documentado por turno.',
-      },
-      {
-        author: 'Miguel Ángel Torres',
-        rating: '5',
-        body: 'Lo implementamos en 3 locales. El nixtamal, la tortillería y el trompo siguen el mismo estándar en los tres, y el calendario anual nos ordena las temporadas.',
-      },
-    ],
     faqs: [
       {
         q: '¿Incluye las temperaturas y el registro APPCC obligatorios por ley?',
@@ -311,56 +293,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Taqueros, propietarios de taquería y consultores que ya tienen su operativa bajo control',
-    items: [
-      {
-        name: 'Roberto Salinas',
-        role: 'Taquero del Trompo, Taquería Madrid',
-        text: 'El checklist del trompo con la sonda al inicio y a mitad del servicio nos ordenó el pastor de verdad. Antes cada taquero lo hacía a su manera; ahora todo el equipo sigue el mismo estándar.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Patricia Domínguez',
-        role: 'Propietaria Taquería, Valencia',
-        text: 'La hoja de la barra de salsas con hora de puesta y de descarte de cada salsa nos ha salvado en dos inspecciones de Sanidad. Lo tenemos todo documentado por turno. Imprescindible.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Miguel Ángel Torres',
-        role: 'Director Cadena de Taquerías (3 locales)',
-        text: 'Implementamos los checklists en los 3 locales. El nixtamal, la tortillería y el montaje del trompo siguen ahora el mismo estándar en los tres. El cliente percibe la misma calidad esté donde esté.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Sofía Ramírez',
-        role: 'Jefa de Mostrador, Taquería Bilbao',
-        text: 'Las tareas por perfil clarifican quién hace qué: taquero, tortillería, salsas, mostrador. El briefing pre-servicio con el producto del día y los alérgenos críticos es genial para alinear al equipo en 5 minutos.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Javier Molina',
-        role: 'Consultor Hostelero especializado en cocina mexicana',
-        text: 'Para taquerías es el kit más completo del mercado. Trompo, nixtamal, barra de salsas, alérgenos, perfiles, calendario de festividades… cubre todos los puntos críticos en los que los locales suelen fallar.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Carmen Ibáñez',
-        role: 'Encargada Taquería, Sevilla',
-        text: 'El calendario con las festividades mexicanas y las campañas españolas nos permite planificar la carta con antelación: chiles en nogada en otoño, Día de Muertos, posadas… ya no improvisamos.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Guadalupe Reyes',
-        role: 'Tortillera en Formación',
-        text: 'Las tareas de la tortillería están muy claras: molienda, calibrado, mermas, limpieza del molino. Sé exactamente qué hacer en cada momento sin que el encargado tenga que estar dirigiéndome.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Fernando Ochoa',
-        role: 'Chef Ejecutivo Cocina Mexicana, Marbella',
-        text: 'El control de la hora límite del cono montado y la trazabilidad de la barra de salsas son detalles que marcan la diferencia profesional. Lo hemos integrado en nuestro APPCC y nos ha pasado de "improvisado" a "auditable".',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

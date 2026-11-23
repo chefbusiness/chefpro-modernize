@@ -181,7 +181,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">La <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">seguridad alimentaria con IA</a> abarca desde la identificación automática de alérgenos hasta la supervisión continua de la cadena de frío. Los sistemas de visión por computadora pueden detectar contaminantes, moho y otros problemas de seguridad en tiempo real.</p>
+<p class="wp-block-paragraph">La <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">seguridad alimentaria con IA</a> abarca desde la revisión de los 14 alérgenos con validación final del cocinero hasta la supervisión continua de la cadena de frío. Los sistemas de visión por computadora pueden detectar contaminantes, moho y otros problemas de seguridad en tiempo real.</p>
 
 
 

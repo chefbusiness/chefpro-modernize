@@ -148,7 +148,7 @@ wpId: 1825
 
 
 
-<p class="wp-block-paragraph">El módulo <a href="https://aichef.pro/blog/alergenos" target="_blank">ID Alérgenos</a> de AI Chef Pro identifica automáticamente los 14 alérgenos de declaración obligatoria en cada receta, generando alternativas seguras sin comprometer el concepto gastronómico.</p>
+<p class="wp-block-paragraph">El módulo <a href="https://aichef.pro/blog/alergenos" target="_blank">ID Alérgenos</a> de AI Chef Pro sirve para la revisión de los 14 alérgenos de declaración obligatoria en cada receta, con validación final del cocinero.</p>
 
 
 

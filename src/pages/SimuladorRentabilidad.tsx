@@ -523,7 +523,7 @@ export default function SimuladorRentabilidad() {
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className={`grid grid-cols-1 ${currentLanguage === 'es' ? '' : 'lg:grid-cols-2'} gap-12 items-center`}>
                 <div>
                   <h2 className="text-3xl font-bold text-foreground mb-8">{s('benefits.title')}</h2>
                   <ul className="space-y-4">
@@ -535,6 +535,7 @@ export default function SimuladorRentabilidad() {
                     ))}
                   </ul>
                 </div>
+                {currentLanguage !== 'es' && (
                 <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border border-yellow-100">
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -549,6 +550,7 @@ export default function SimuladorRentabilidad() {
                     <p className="text-sm text-muted-foreground">{s('testimonial.role')}</p>
                   </div>
                 </div>
+                )}
               </div>
             </div>
           </div>

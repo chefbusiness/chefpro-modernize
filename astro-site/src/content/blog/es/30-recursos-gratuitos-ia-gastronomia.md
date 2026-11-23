@@ -95,7 +95,7 @@ Repasa los fallos más comunes en el control de costes y cómo la IA puede ayuda
 [8 errores que destruyen el food cost de tu restaurante](https://aichef.pro/blog/8-errores-que-destruyen-el-food-cost-en-tu-restaurante)
 
 ### 10. 10 herramientas de IA imprescindibles para chefs
-Selección comentada de herramientas que realmente funcionan en una cocina profesional. Sin humo, con criterio de chef. Incluye desde el escandallo automático hasta generadores de imágenes para previsualizar un emplatado antes de pedir la vajilla nueva. Herramientas que realmente usas entre servicio y servicio.  
+Selección comentada de herramientas que realmente funcionan en una cocina profesional. Sin humo, con criterio de chef. Incluye desde el escandallo con IA hasta generadores de imágenes para previsualizar un emplatado antes de pedir la vajilla nueva. Herramientas que realmente usas entre servicio y servicio.  
 [10 herramientas de IA imprescindibles para los chefs de hoy](https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy)
 
 ### 11. Comparativa honesta: ChatGPT para restaurantes vs. AI Chef Pro

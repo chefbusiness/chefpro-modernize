@@ -71,7 +71,7 @@ Rellenar registros de temperaturas, fichas de control de alérgenos o trazabilid
 
 ### Escandallos y Food Cost
 
-El escandallo es el latido económico de una cocina. Cuando el proveedor te sube el aceite, la harina o el pescado, necesitas saber al instante cómo se mueve tu margen en cada plato. Automatizar esta área significa tener fichas técnicas vivas que recalculan el food cost automáticamente con cada cambio de precio, en lugar de perseguir al jefe de cocina para que actualice quince excels un martes a las once de la noche. Significa también que cuando cambias una guarnición de temporada, el sistema reajusta el coste de todos los platos que la llevan sin que tengas que revisarlos uno a uno. He visto cocinas donde un plato estrella llevaba seis meses perdiendo margen porque nadie había actualizado la subida del aceite de oliva virgen extra en la ficha técnica. Con un escandallo automatizado, ese plato habría saltado una alerta la misma semana que el proveedor cambió la tarifa.
+El escandallo es el latido económico de una cocina. Cuando el proveedor te sube el aceite, la harina o el pescado, necesitas saber al instante cómo se mueve tu margen en cada plato. Llevar esta área con IA significa tener fichas de coste que puedes volver a calcular cuando cambia un precio, en lugar de perseguir al jefe de cocina para que actualice quince excels un martes a las once de la noche. Si cambias una guarnición de temporada, revisas el coste de los platos que la llevan; la validación final es del cocinero. He visto cocinas donde un plato estrella llevaba seis meses perdiendo margen porque nadie había actualizado la subida del aceite de oliva virgen extra en la ficha técnica. Con el escandallo al día, esa subida se ve en cuanto actualizas el precio del proveedor.
 
 Un food cost sano se mueve entre el 28 % y el 35 % según concepto, y una variación de un punto porcentual puede ser la diferencia entre un mes tranquilo y un susto. La automatización aquí no es un lujo: es control financiero en tiempo real. Es dormir tranquilo sabiendo que cada plato que sale por el pase está contribuyendo al margen que necesitas para mantener el negocio vivo.
 
@@ -113,7 +113,7 @@ Si tuviera que dar un consejo a cualquier chef o gerente que quiera empezar hoy,
 | Planificación de producción y turnos | Medio | Alto | 4 |
 | Creación de recetas asistida | Bajo | Medio | 5 |
 
-La lógica de la ganancia rápida es aplastante: empiezas por lo que te devuelve margen y horas con la mínima fricción. Un escandallo automatizado lo tienes funcionando en días y el retorno es inmediato. La documentación APPCC automatizada te quita un dolor de cabeza diario y encima te protege ante una inspección. Los pedidos y la planificación requieren un poco más de rodaje, pero el impacto en la cuenta de resultados y en la calidad de vida del equipo es brutal.
+La lógica de la ganancia rápida es aplastante: empiezas por lo que te devuelve margen y horas con la mínima fricción. Un escandallo con IA lo puedes montar en días; el cocinero valida el coste antes de tocar la carta. La documentación APPCC automatizada te quita un dolor de cabeza diario y encima te protege ante una inspección. Los pedidos y la planificación requieren un poco más de rodaje, pero el impacto en la cuenta de resultados y en la calidad de vida del equipo es brutal.
 
 No intentes automatizarlo todo de golpe. Elige una, implántala bien, forma al equipo y pasa a la siguiente. Esto es una cocina, no un hackathon. He visto cocinas que han querido digitalizarse enteras en un mes y han acabado con el equipo frustrado, las herramientas infrautilizadas y el mismo caos de siempre pero con pantallas. La automatización bien hecha es una carrera de fondo, no un sprint.
 
@@ -157,7 +157,7 @@ Puedes [contratar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_mediu
 
 ## Conclusión: Automatiza el Papeleo, Protege el Oficio
 
-La automatización en cocinas profesionales no es una amenaza para el oficio: es la mejor herramienta que tenemos para protegerlo. Cada hora que le robas al Excel se la devuelves al producto, al equipo y al comensal. Cada punto de margen que recuperas con un escandallo automático es dinero que te queda para pagar mejor, comprar mejor materia prima o invertir en lo que de verdad importa.
+La automatización en cocinas profesionales no es una amenaza para el oficio: es la mejor herramienta que tenemos para protegerlo. Cada hora que le robas al Excel se la devuelves al producto, al equipo y al comensal. Cada punto de margen que recuperas con un escandallo revisado es dinero que te queda para pagar mejor, comprar mejor materia prima o invertir en lo que de verdad importa.
 
 Lo he visto en cocinas de todo tipo: cuando liberas al chef del papeleo, vuelve a probar caldos, a corregir sazones en el pase, a sentarse con el equipo a revisar técnicas. Vuelve a hacer lo que le llevó a este oficio. Y el restaurante lo nota: en el plato, en el ambiente de cocina y en la cuenta de resultados. La automatización no deshumaniza la cocina; la devuelve a lo humano.
 

@@ -1071,16 +1071,6 @@ wpId: 1410
 
 
 
-<p class="wp-block-paragraph"><strong>Testimonios reales:</strong></p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">«AI Chef Pro no reemplaza mi creatividad, la catapulta. Me sugiere combinaciones que jamás habría considerado, pero soy yo quien decide cómo ejecutarlas y qué toques personales agregar.» &#8211; <em>Ana Martínez, chef amateur con 3 años usando IA culinaria</em></p>
-</blockquote>
-
-
-
 <p class="wp-block-paragraph">Para una exploración profunda sobre este tema, consulta nuestro análisis detallado: <a href="https://aichef.pro/blog/puede-la-ia-reemplazar-a-los-chefs-descubre-con-ai-chef-pro" data-lasso-id="3223">¿Puede la IA reemplazar a los chefs?</a></p>
 
 
@@ -1795,16 +1785,6 @@ wpId: 1410
 
 <li><strong>Modo aprendizaje:</strong> Progresión gradual desde recetas simples a complejas</li>
 </ul>
-
-
-
-<p class="wp-block-paragraph"><strong>Testimonios de principiantes exitosos:</strong></p>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">«Nunca había cocinado más que pasta con tomate. En 3 meses usando AI Chef Pro, ya preparo cenas completas para mi familia. El sistema me enseñó desde cómo cortar cebolla hasta hacer risotto perfecto.» &#8211; <em>Pedro González, usuario desde enero 2024</em></p>
-</blockquote>
 
 
 

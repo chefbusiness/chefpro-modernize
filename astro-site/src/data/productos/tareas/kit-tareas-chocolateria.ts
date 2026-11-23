@@ -27,24 +27,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción, apertura y cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Miguel Ángel Roca',
-        rating: '5',
-        body: 'El checklist de producción me salvó. Ahora el templado, moldeado y envasado quedan documentados y el control de calidad es impecable.',
-      },
-      {
-        author: 'Elena Montero',
-        rating: '5',
-        body: 'Tenemos 4 tiendas y ahora con los checklists estandarizados la experiencia es la misma en todas.',
-      },
-      {
-        author: 'Patricia Vega',
-        rating: '5',
-        body: 'Lo primero que hago con cada cliente de chocolatería es entregarle estos checklists. Cubren el 95% de lo que necesita.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para chocolatería?',
@@ -305,56 +287,7 @@ const data: KitTareasData = {
 
   testimonials: {
     subtitle: 'Chocolateros, encargados y dueños de chocolatería que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Miguel Ángel Roca',
-        role: 'Maestro chocolatero, Chocolatería Roca',
-        text: 'El checklist de producción me salvó. Antes olvidaba registrar temperaturas de templado y tiempos de cristalización. Ahora todo queda documentado y el control de calidad es impecable.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Elena Montero',
-        role: 'Propietaria, Bombonería La Trufa Dorada',
-        text: 'Abrí mi chocolatería hace un año y el caos de Navidad era insostenible. Con los checklists por turno y zona, el equipo sabe exactamente qué hacer sin que yo esté encima.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Javier Solís',
-        role: 'Jefe de obrador, Chocolates Artesanos Solís',
-        text: 'Las partidas de producción están perfectamente estructuradas: templado, moldeado, bombones, tabletas, envasado. Mis chocolateros nuevos aprenden el proceso en la mitad de tiempo.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Laura Fuentes',
-        role: 'Encargada de tienda, Cacao & Co.',
-        text: 'El checklist de vitrina es genial. Bombones, tabletas, packaging, limpieza de expositores... todo está listado. La tienda siempre está perfecta para el cliente.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Carlos Mendoza',
-        role: 'Director, Cadena Chocolaterías Mendoza',
-        text: 'Tenemos 4 tiendas y cada encargado hacía las cosas diferente. Ahora con los checklists estandarizados, la experiencia del cliente es la misma en todas. El onboarding pasó de 2 semanas a 4 días.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Patricia Vega',
-        role: 'Consultora gastronómica, Chocolaterías & Obradores',
-        text: 'Lo primero que hago con cada cliente de chocolatería es entregarle estos checklists. Producción, vitrina, gestión, temporada... cubren el 95% de lo que necesita cualquier chocolatería artesanal.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Andrés Beltrán',
-        role: 'Maestro chocolatero, Obrador Beltrán',
-        text: 'El calendario estacional es oro puro. Navidad, San Valentín, Pascua, Día de la Madre, ferias... por fin tengo la planificación anual que siempre quise tener.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Sergio Herrera',
-        role: 'Gerente, Chocolatería Origen',
-        text: 'El control de food cost y mermas de producción que incluye el checklist del manager es justo lo que necesitábamos. Antes las mermas de cobertura nos sorprendían a final de mes. Ahora las controlamos a diario.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

@@ -74,7 +74,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Casual Restaurants AI+', category: 'Conceptos de Negocio', description: 'Especialista en bistrós, gastrobares, tapas y mediterráneo: cubre el espectro casual.' },
       { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Desarrollo de platos con receta + escandallo CSV para cargar en el Kit de Escandallos Pro del cliente.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos precisos por ingrediente: clave para escandallos realistas en auditorías.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por plato: necesario para informes de compliance.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por plato: necesario para informes de compliance.' },
       { name: 'MenuDish Local SEO', category: 'Contenidos y RRSS', description: 'Diagnóstico de descripciones de plato del cliente y propuesta SEO local optimizada.' },
       { name: 'BlogPost SEO Gen+', category: 'Contenidos y RRSS', description: 'Plan editorial de blog para captar tráfico orgánico local: deliverable directo para el cliente.' },
       { name: 'Keyword Discovery AI+', category: 'Contenidos y RRSS', description: 'Investigación de palabras clave gastronómicas locales por zona postal: análisis de competencia listo.' },
@@ -137,13 +137,13 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     features: [
       { icon: 'ChefHat', title: 'Cocina Creativa', description: 'Desarrollo de platos profesionales con receta detallada + escandallo CSV con precios de referencia HORECA, listo para personalizar.' },
       { icon: 'Calculator', title: 'Escandallo profesional', description: 'Kit Escandallos Pro: gestiona escandallos con precios reales del cliente, mermas y rendimientos, exporta PDF profesional.' },
-      { icon: 'BookOpen', title: 'Fichas técnicas y manuales', description: 'Generación automática de fichas técnicas con alérgenos, mise en place, foto de plato y procedimiento detallado.' },
+      { icon: 'BookOpen', title: 'Fichas técnicas y manuales', description: 'Fichas técnicas con la revisión de los 14 alérgenos y validación final del cocinero, mise en place, foto de plato y procedimiento detallado.' },
       { icon: 'Users', title: 'Formación de brigadas', description: 'Kit Gestión de Personal con onboarding de cocineros, cuadrantes que respetan el convenio y control de horas extra.' },
       { icon: 'Building2', title: 'Estandarización multi-local', description: 'Manuales operativos replicables: el mismo plato sale igual en 1, 5 o 25 cocinas del grupo cliente.' },
       { icon: 'ShieldCheck', title: 'APPCC y trazabilidad', description: 'Pack APPCC con 19 registros listas para inspección sanitaria. Útil en auditorías y propuestas para hoteles de lujo.' },
       { icon: 'Sparkles', title: 'MenuDish Local SEO', description: 'Descripciones de plato optimizadas para SEO local en Google Business y web del cliente.' },
       { icon: 'BarChart3', title: 'Comida de Personal', description: 'Generador de menús de staff que ahorra coste al cliente manteniendo motivada a la brigada.' },
-      { icon: 'MessageSquare', title: 'ID Alérgenos', description: 'Identificación automática de alérgenos por receta lista para regulación europea.' },
+      { icon: 'MessageSquare', title: 'ID Alérgenos', description: 'Revisión de los 14 alérgenos con validación final del cocinero por receta lista para regulación europea.' },
     ],
     workflowTitle: 'Un Día Real de un Chef Consultor con AI Chef Pro',
     workflow: [
@@ -187,7 +187,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Desarrollo de platos profesionales con receta + escandallo CSV. Tu motor de propuestas culinarias.' },
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Versión avanzada con vanguardia, técnicas e ingredientes premium para clientes de alta cocina.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos precisos por ingrediente: imprescindible para escandallos realistas.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por receta y plato.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por receta y plato.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para cocina profesional.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de recetas a cualquier número de comensales.' },
       { name: 'Casual Restaurants AI+', category: 'Conceptos de Negocio', description: 'Especialista en bistrós, gastrobares, tapas y mediterráneo.' },
@@ -214,7 +214,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       afterTitle: 'Con AI Chef Pro',
       afterItems: [
         '30 minutos por carta con Cocina Creativa + Kit Escandallos Pro',
-        'Fichas técnicas con alérgenos generadas automáticamente y editables',
+        'Fichas técnicas con la revisión de los 14 alérgenos y validación final del cocinero, editables',
         'Manuales operativos imprimibles que el equipo del cliente puede usar sin ti',
         'Cuadrantes profesionales con Kit Gestión de Personal respetando convenio',
         'Más proyectos cerrados sin contratar: triplica tu volumen como consultor',
@@ -299,7 +299,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de sabores y bases con balance POD/PAC/sólidos + escandallo CSV.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de fruta, frutos secos y bases lácteas.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por sabor.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por sabor.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para obrador artesanal.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de bases para distintos volúmenes de mantecadora.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al propietario de la heladería cliente.' },
@@ -412,7 +412,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de bombonería, tabletas y postres con receta detallada y curva de temperado.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de couverture, manteca de cacao y frutos secos.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por receta de bombonería.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por receta de bombonería.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para obrador de chocolatería.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de recetas para producción a distintos volúmenes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al propietario del chocolate shop cliente.' },
@@ -525,7 +525,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de postres, masas, hojaldres y bollería con receta detallada.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de mantequilla, harina, lácteos y chocolate.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por postre y bollería.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por postre y bollería.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para obrador profesional.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de recetas a distintos volúmenes de producción.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al propietario de la pastelería cliente.' },
@@ -638,7 +638,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de pizzas con receta detallada (masa, salsa, mozzarella, toppings).' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de harina, mozzarella, tomate y aceite.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por pizza.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por pizza.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para obrador de pizzería.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de recetas de masa para distintos volúmenes diarios.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al propietario de la pizzería cliente.' },
@@ -751,7 +751,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de bebidas de café y signature drinks con receta detallada.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de café verde y leche.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos (leche, frutos secos, soja).' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero (leche, frutos secos, soja).' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para extracción profesional.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de batch brew para distintos volúmenes diarios.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al propietario de la cafetería cliente.' },
@@ -977,7 +977,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de cócteles (clásicos releídos, signature, low-ABV, sin alcohol) con receta detallada.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de zumos, destilados y modificadores.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos en cócteles (lácteos, frutos secos, soja).' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero en cócteles (lácteos, frutos secos, soja).' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de medidas (ml/oz/dash/barspoon) para barra profesional.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de batch cocktails para distintos volúmenes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al F&B Manager del cliente.' },
@@ -1090,7 +1090,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Desarrollo de panes, masas madre, hojaldres y brioches con receta detallada.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Mermas y rendimientos de harinas, mantequilla y lácteos.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por pan y bollería.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Revisión de los 14 alérgenos con validación final del cocinero por pan y bollería.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Conversor de pesos y medidas para obrador profesional.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Escalado de recetas para distintos volúmenes diarios de obrador.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operativa y reporting al propietario de la panadería cliente.' },

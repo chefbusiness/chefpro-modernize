@@ -25,7 +25,7 @@ wpId: 3490
 <h3>2. Optimización del <a href="https://aichef.pro/blog">Food Cost</a> en Cocina Vegana</h3>
 <p>El control del food cost representa uno de los mayores desafíos para los restaurantes veganos. Los ingredientes especializados como el tofu de calidad premium, el tempeh artesanal, los quesos vegetales madurados o las alternativas cárnicas procesadas tienen precios significativamente superiores a sus equivalentes animales. Esta realidad hace que la optimización del coste de materias primas sea crítica para la rentabilidad del negocio.</p>
 <p>La diferencia fundamental entre la cocina vegana y la tradicional en términos de gestión de costes radica en el comportamiento de los ingredientes. Mientras que las proteínas animales pueden almacenarse durante períodos más largos y tienen procesos de conservación más establecidos, los ingredientes vegetales perecederos requieren una gestión más precisa para evitar mermas que erosionen rápidamente los márgenes.</p>
-<p>Los <a href="https://aichef.pro/blog/escandallos-ia-cocina-profesional">escandallos automáticos con IA</a> transforman esta ecuación. Un escandallo es la breakdown detallada del coste de cada plato, incluyendo la cantidad exacta de cada ingrediente, el porcentaje de merma esperado en preparación y el coste final por porción. Tradicionalmente, calcular <a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">escandallos</a> era un proceso manual que consumía horas del equipo de cocina y frecuentemente quedaba desactualizado ante fluctuaciones de precios de proveedores.</p>
+<p>Los <a href="https://aichef.pro/blog/escandallos-ia-cocina-profesional">escandallos con IA</a> transforman esta ecuación. Un escandallo es la breakdown detallada del coste de cada plato, incluyendo la cantidad exacta de cada ingrediente, el porcentaje de merma esperado en preparación y el coste final por porción. Tradicionalmente, calcular <a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">escandallos</a> era un proceso manual que consumía horas del equipo de cocina y frecuentemente quedaba desactualizado ante fluctuaciones de precios de proveedores.</p>
 <p>AI Chef Pro ofrece calculadoras de escandallos automáticas que actualizan los costes en tiempo real según los precios actuales de los proveedores, permiten simular el impacto de cambios en las recetas antes de implementarlos y generan alertas cuando el food cost de un plato supera los márgenes establecidos. Esta capacidad de respuesta inmediata permite a los restaurantes vegans mantener su rentabilidad incluso en entornos de alta volatilidad de precios de materias primas.</p>
 <p>El control de mermas verdes, término que define las pérdidas de ingredientes vegetales durante el proceso de elaboración, se beneficia especialmente de la IA. El sistema puede analizar patrones de uso históricos, identificar picos de demanda por días y estaciones, y sugerir ajustes en las preparaciones que maximicen el aprovechamiento de cada ingrediente.</p>
 <h3>3. Menús Personalizados por Alérgenos e Intolerancias</h3>
@@ -107,7 +107,7 @@ wpId: 3490
 <td>No disponible</td>
 </tr>
 <tr>
-<td><strong>Escandallos automáticos</strong></td>
+<td><strong>Escandallos con IA</strong></td>
 <td>Incluido y actualizado</td>
 <td>Requiere desarrollo propio</td>
 <td>Funcionalidad limitada</td>
@@ -148,7 +148,7 @@ wpId: 3490
 <p>La suite de 55+ herramientas de AI Chef Pro incluye:</p>
 <ul>
 <li><strong>Generadores de recetas:</strong> Creación de recetas veganas, optimización de recetas existentes, adaptación a ingredientes locales, generación de variaciones por temporada.</li>
-<li><strong>Calculadoras gastronómicas:</strong> Escandallos automáticos, cálculo de food cost, rendimiento de ingredientes, conversiones de unidades.</li>
+<li><strong>Calculadoras gastronómicas:</strong> Escandallos con IA, cálculo de food cost, rendimiento de ingredientes, conversiones de unidades.</li>
 <li><strong>Gestión de alérgenos:</strong> Detección automática, generación de menús por restricción dietética, alertas de contaminación cruzada.</li>
 <li><strong>Predicción y planificación:</strong> Forecasting de demanda, optimización de pedidos, gestión de inventario.</li>
 <li><strong>Marketing y contenido:</strong> Generación de contenido para RRSS, optimización SEO, gestión de reviews, email marketing.</li>

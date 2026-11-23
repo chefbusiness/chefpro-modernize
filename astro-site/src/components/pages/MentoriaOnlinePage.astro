@@ -376,7 +376,7 @@ const intensiveFeatures = tList(lang, 'mentoriaOnline.sections.pricing.intensive
       </div>
     </section>
 
-    <!-- Testimonials Section -->
+    {lang !== 'es' && (
     <section class="py-20 bg-muted/30">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
@@ -417,6 +417,8 @@ const intensiveFeatures = tList(lang, 'mentoriaOnline.sections.pricing.intensive
         </div>
       </div>
     </section>
+
+    )}
 
     <!-- Process Section -->
     <section class="py-20">

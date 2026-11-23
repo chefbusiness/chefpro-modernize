@@ -30,24 +30,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros): checklists operativos pre-rellenados para dark kitchen multi-marca con 331 tareas ya escritas — estaciones de producción, empaquetado, plataformas delivery, riders, perfiles y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Roberto Navarro',
-        rating: '5',
-        body: 'Gestionar 4 marcas en la misma cocina era un caos. Desde que imprimimos los checklists, los errores de empaquetado bajaron un 85%.',
-      },
-      {
-        author: 'Elena Morales',
-        rating: '5',
-        body: 'Abrí mi dark kitchen hace 6 meses y me perdía con las tablets y el packaging. Estas checklists me organizaron desde el día uno.',
-      },
-      {
-        author: 'Daniel Ortiz',
-        rating: '5',
-        body: 'El checklist de gestión de plataformas es oro puro. Activar marcas, pausar en horas pico, revisar valoraciones. Cero incidencias.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para dark kitchen multi-marca?',
@@ -320,68 +302,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Operadores de dark kitchen, gestores de plataformas y empaquetadores que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Roberto Navarro',
-        role: 'Operador Dark Kitchen, 4 marcas virtuales',
-        text: 'Gestionar 4 marcas en la misma cocina era un caos. Desde que imprimimos los checklists por estación y por marca, los errores de empaquetado bajaron un 85%. Cada turno sabe exactamente qué hacer.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Elena Morales',
-        role: 'Duena, Ghost Kitchen Multi-Marca',
-        text: 'Abrí mi dark kitchen hace 6 meses y me perdía con las tablets, las plataformas y el packaging diferente para cada marca. Estas checklists me organizaron desde el día uno. Imprescindible.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Daniel Ortiz',
-        role: 'Encargado de Operaciones, CloudEats',
-        text: 'El checklist de gestión de plataformas es oro puro. Activar marcas, pausar en horas pico, revisar valoraciones, actualizar menús. Antes se nos olvidaba la mitad. Ahora cero incidencias.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Carmen Ruiz',
-        role: 'Cocinera Multi-Concepto, 3 marcas',
-        text: 'Cocinar para 3 marcas distintas en la misma estación requiere organización militar. Los checklists por perfil me salvan el turno cada día. Sé exactamente qué preparar para cada marca.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Marcos Gimenez',
-        role: 'Empaquetador/Expedidor, FoodFactory BCN',
-        text: 'El checklist de empaquetado por marca me cambió la vida. Precintos de seguridad, etiquetado correcto, packaging diferenciado. Las reclamaciones por pedido incorrecto bajaron a cero.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Laura Serrano',
-        role: 'Gestora de Plataformas, DarkKitchen Madrid',
-        text: 'Gestionar Glovo, Uber Eats y Just Eat a la vez sin un checklist es imposible. Ahora tengo claro qué revisar al abrir, durante el servicio y al cerrar. Los tiempos de preparación bajaron a 10 min.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Javier Pascual',
-        role: 'Director de Operaciones, Grupo Virtual Foods',
-        text: 'Tenemos 3 dark kitchens y antes cada encargado hacía las cosas diferente. Con los checklists estandarizamos la operación. El onboarding de personal nuevo pasó de 2 semanas a 3 días.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Hugo Martinez',
-        role: 'Fundador, GhostBurger + GhostPoke + GhostWok',
-        text: 'Lanzar una nueva marca virtual con estos checklists es mucho más fácil. Ya tienes las tareas base y solo adaptas los platos y el packaging. Ahorramos semanas en cada lanzamiento.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-      {
-        name: 'Pablo Herrero',
-        role: 'Chef Ejecutivo, Dark Kitchen Valencia',
-        text: 'Solo la plantilla de briefing pre-turno ya vale el precio. Antes no hacíamos briefing. Ahora en 5 minutos repasamos marcas activas, promociones activas y platos agotados. El servicio sale perfecto.',
-        avatar: '/avatars/chef-avatar-1.jpg',
-      },
-      {
-        name: 'Adrián Soto',
-        role: 'Consultor de Dark Kitchens',
-        text: 'Lo primero que hago con cada cliente nuevo es entregarle estas checklists. Les pone orden desde el día uno. Producción, empaquetado, plataformas, riders... cubren el 95% de lo que necesita cualquier dark kitchen.',
-        avatar: '/avatars/chef-avatar-3.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

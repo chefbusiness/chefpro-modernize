@@ -401,10 +401,6 @@ wpId: 2096
 
 
 
-<p class="wp-block-paragraph">El chef ejecutivo comenta: «AI Chef Pro ha transformado nuestra manera de abordar el desarrollo de menús. No reemplaza nuestra creatividad, la amplifica de maneras que no imaginábamos posibles».</p>
-
-
-
 <h3 class="wp-block-heading">Caso 2: Cadena de restaurantes casual dining en Barcelona</h3>
 
 

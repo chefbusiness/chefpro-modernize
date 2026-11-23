@@ -942,7 +942,7 @@ wpId: 1550
 
 
 
-<li>Detección automática de alérgenos y contaminantes</li>
+<li>Revisión de los 14 alérgenos, con validación final del cocinero, y revisión de contaminantes</li>
 
 
 

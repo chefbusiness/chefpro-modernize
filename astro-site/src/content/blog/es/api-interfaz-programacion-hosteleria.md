@@ -136,7 +136,7 @@ wpId: 2901
 <div style="background: #000; padding: 20px; border-radius: 10px; margin: 20px 0; color: white; text-align: center; border: 2px solid #FF6B35;">
   <h3 style="margin: 0 0 10px 0; color: #FF6B35;">🎯 Potencia tu Restaurante con IA</h3>
   <p style="margin: 0; color: white;">Únete a miles de chefs que ya usan AI Chef Pro para crear recetas profesionales en segundos.</p>
-  <p style="margin: 10px 0; color: #F7931E; font-size: 14px;">✓ Recetas ilimitadas ✓ Técnicas profesionales ✓ Escandallos automáticos</p>
+  <p style="margin: 10px 0; color: #F7931E; font-size: 14px;">✓ Recetas ilimitadas ✓ Técnicas profesionales ✓ Escandallos con IA</p>
   <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-ai&#038;utm_content=api-interfaz-programacion-hosteleria" style="display: inline-block; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; margin-top: 10px; font-weight: bold; font-size: 16px;">Empieza desde 10 €/mes →</a>
 </div>
 

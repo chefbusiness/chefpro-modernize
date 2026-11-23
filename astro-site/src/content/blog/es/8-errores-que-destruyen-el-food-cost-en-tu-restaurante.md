@@ -16,7 +16,7 @@ faq:
   - q: "¿Cuál es el error que más food cost destruye?"
     a: "En mi experiencia, el que más duele es cocinar sin escandallos reales. Cuando nadie ha calculado cuánto cuesta de verdad cada plato, es habitual encontrar recetas con un food cost del 40-45 % que el dueño creía tener en el 30 %. El escandallo es la partida de nacimiento de cada plato. Sin él, todo lo demás —raciones, compras, precios— es andar a ciegas."
   - q: "¿Cómo ayuda la IA a bajar el food cost en un restaurante?"
-    a: "La IA actúa en todos los puntos de fuga: genera escandallos automáticos con costes actualizados en tiempo real, estandariza fichas técnicas con gramajes fijos, analiza patrones de merma para que compres justo lo necesario y aplica ingeniería de menú para que sepas qué platos empujar y cuáles rediseñar o retirar. Es como tener un consultor de gestión mirando tus números las 24 horas."
+    a: "La IA actúa en todos los puntos de fuga: prepara escandallos con IA a partir de los costes que tú actualizas, estandariza fichas técnicas con gramajes fijos, analiza patrones de merma para que compres justo lo necesario y aplica ingeniería de menú para que sepas qué platos empujar y cuáles rediseñar o retirar. Es como tener un consultor de gestión mirando tus números las 24 horas."
   - q: "¿AI Chef Pro es de pago?"
     a: "Sí, el plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos, con tarjeta y sin permanencia. Con eso puedes probar escandallos, generar fichas técnicas y hacer algún análisis de inventario antes de decidir si te compensa pasar a un plan de pago. Los planes de pago empiezan en 25 € al mes y el plan Max, con créditos ilimitados, cuesta 95 € al mes o 950 € al año."
   - q: "¿Cada cuánto debería revisar los escandallos de mis platos?"
@@ -124,7 +124,7 @@ La IA te permite hacer un reprecio guiado por tu food cost objetivo y aplicar in
 | :--- | :--- | :--- | :--- |
 | Raciones a ojo | Gramajes distintos según quién monta el plato | 1-3 puntos de food cost extra | Fichas técnicas con gramaje fijo y escandallo real por ración |
 | Sobrecompra | Cámaras llenas, producto caducado al fondo | 2-5 % del valor de compra mensual | Previsión de compras sobre ventas reales y niveles par calculados |
-| Sin escandallos | Nadie sabe cuánto cuesta realmente un plato | Platos con food cost real del 40-45 % | Escandallos automáticos con merma y rendimiento por ingrediente |
+| Sin escandallos | Nadie sabe cuánto cuesta realmente un plato | Platos con food cost real del 40-45 % | Escandallos con IA, con merma y rendimiento por ingrediente |
 | Mermas de manipulación | Exceso de recortes, producto mal rotado | 5-10 % de producto aprovechable perdido | Cálculo de rendimiento real y alertas de rotación FIFO |
 | Robo y hurto interno | Descuadres recurrentes en productos de alto valor | 1-3 % de las compras | Inventario ciego y comparativa teórico-real sistematizada |
 | No registrar mermas | Se tira producto a diario sin anotar | Puede duplicar la merma real | Registro estructurado y análisis de patrones de desperdicio |

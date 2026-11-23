@@ -26,24 +26,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros): checklists operativos para bar y cocktail bar con 342 tareas ya escritas — apertura, cierre, negocio, caja, coctelería, cerveza de grifo, vinos por copa, terraza, inventario y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Álvaro Reyes',
-        rating: '5',
-        body: 'El checklist de mise en place de barra me cambió la vida. Ahora todo está listo antes de abrir.',
-      },
-      {
-        author: 'Roberto Vega',
-        rating: '5',
-        body: 'Tenemos 4 bares y ahora con los checklists hemos estandarizado la operación.',
-      },
-      {
-        author: 'Pablo García',
-        rating: '5',
-        body: 'Lo primero que hago con cada cliente nuevo es entregarle estos checklists. Cubren el 95% de lo que necesita cualquier bar.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para bar?',
@@ -311,68 +293,7 @@ const data: KitTareasData = {
 
   testimonials: {
     subtitle: 'Bartenders, encargados y dueños de bar que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Álvaro Reyes',
-        role: 'Head Bartender, The Alchemist Bar',
-        text: 'El checklist de mise en place de barra me cambió la vida. Antes cada bartender montaba a su manera y siempre faltaba algo en medio del servicio. Ahora todo está listo antes de abrir.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Claudia Martín',
-        role: 'Propietaria, Cocktail Lab BCN',
-        text: 'Abrí mi bar de cócteles hace 8 meses y el caos de las primeras semanas fue brutal. Los checklists por zona y turno pusieron orden desde el día que los imprimimos.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Roberto Vega',
-        role: 'Gerente, Grupo Bar Madrid',
-        text: 'Tenemos 4 bares y antes cada encargado hacía las cosas diferente. Ahora con los checklists hemos estandarizado la operación. El onboarding de barbacks pasó de 3 semanas a 5 días.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Marina Torres',
-        role: 'Bartender, Hotel Arts Barcelona',
-        text: 'Las tareas por perfil son geniales. Como bartender, sé exactamente qué tengo que hacer antes, durante y después del servicio. No hay excusas para olvidar nada.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'David Ruiz',
-        role: 'Head Bartender, Speakeasy Madrid',
-        text: 'El control de inventario semanal por categoría (spirits, cerveza, vino, mixers) es justo lo que necesitábamos. Antes el pour cost nos sorprendía cada mes. Ahora lo controlamos.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Sofía Hernández',
-        role: 'Encargada, Vermutería El Rincón',
-        text: 'Los checklists de limpieza de grifos de cerveza y mantenimiento de máquina de espresso nos han salvado de averías. Antes no teníamos protocolo de mantenimiento preventivo.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Ignacio López',
-        role: 'Barback, Cocktail Bar Negroni',
-        text: 'Como barback, el checklist de mi perfil me dice exactamente qué reponer, cuándo y dónde. No tengo que estar preguntando al bartender cada 5 minutos. Me da autonomía.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Enrique Campos',
-        role: 'Director de Operaciones, Grupo Nightlife',
-        text: 'El calendario anual con las fechas clave (Nochevieja, Halloween, St. Patrick) nos ayuda a planificar stock y personal con semanas de antelación. Antes improvisábamos y se notaba.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-      {
-        name: 'Pablo García',
-        role: 'Consultor de Bares y Restaurantes',
-        text: 'Lo primero que hago con cada cliente nuevo es entregarle estos checklists. Barra, bodega, terraza, inventario... cubren el 95% de lo que necesita cualquier bar profesional.',
-        avatar: '/avatars/chef-avatar-1.jpg',
-      },
-      {
-        name: 'Carlos Navarro',
-        role: 'Formador de Bartenders, Escuela de Hostelería',
-        text: 'Recomiendo este kit a todos mis alumnos. Las tareas de coctelería, control de stock y cierre de barra están perfectamente estructuradas. Es el estándar que debería tener todo bar.',
-        avatar: '/avatars/chef-avatar-3.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

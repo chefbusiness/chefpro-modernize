@@ -27,24 +27,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros): checklists operativos para cafetería y brunch con 500 tareas ya escritas — apertura, cierre, barista, vitrina de pastelería, arqueo de caja, brunch dominical, manager, perfiles, eventos y festivos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Carlos Mendoza',
-        rating: '5',
-        body: 'Desde que usamos el checklist de barista, la calibración del molinillo es consistente cada mañana. La calidad del espresso mejoró muchísimo.',
-      },
-      {
-        author: 'Laura Serrano',
-        rating: '5',
-        body: 'Gestionar la apertura de una cafetería con terraza y obrador era un caos. Los checklists por zona nos organizaron desde el día uno.',
-      },
-      {
-        author: 'Andrés Gallego',
-        rating: '5',
-        body: 'El brunch dominical era siempre un estrés. Con el checklist pre-brunch ahora todo fluye sin que yo tenga que repetir nada.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para cafetería?',
@@ -327,68 +309,7 @@ const data: KitTareasData = {
 
   testimonials: {
     subtitle: 'Baristas, encargados y dueños de cafetería que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Carlos Mendoza',
-        role: 'Barista Jefe, Café Arábica',
-        text: 'Antes cada barista hacía la calibración del molinillo a su manera. Con el checklist de barista, ahora todos siguen el mismo protocolo cada mañana. La consistencia del espresso ha mejorado muchísimo.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Laura Serrano',
-        role: 'Encargada, La Cafetería del Mercado',
-        text: 'Gestionar la apertura de una cafetería con terraza y obrador era un caos. Desde que imprimimos los checklists de apertura por zona, el equipo sabe exactamente qué hacer antes de abrir puertas.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Miguel Ángel Ruiz',
-        role: 'Dueño, Coffee Lab Barcelona',
-        text: 'Abrí mi coffee shop hace 8 meses y me olvidaba de todo: purgar el grupo, revisar la vitrina, reponer leches vegetales. Con estas checklists reduje los olvidos un 90%. Literalmente me salvaron.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Patricia Vega',
-        role: 'Pastelera y Socia, Dulce Brunch',
-        text: 'El checklist de control de vitrina de pastelería es increíble. Rotación FIFO, temperaturas, etiquetado de alérgenos... todo en un A4 que pegamos dentro de la vitrina. Cero desperdicios desde entonces.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Andrés Gallego',
-        role: 'Gerente, Brunch & Co.',
-        text: 'El brunch dominical era siempre un estrés. Con el checklist pre-brunch (48h antes, día anterior, mañana) ahora todo fluye. El equipo prepara mise en place, decora y monta buffet sin que yo tenga que repetir nada.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Sofía Montero',
-        role: 'Directora de Operaciones, Grupo Café Central',
-        text: 'Tenemos 4 cafeterías y antes cada encargada hacía las cosas diferente. Ahora con los checklists hemos estandarizado la operación en los 4 locales. El onboarding de personal nuevo pasó de 2 semanas a 3 días.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Javier Reyes',
-        role: 'Dueño, Tostadores Artesanos',
-        text: 'Solo la plantilla de briefing pre-servicio ya vale el precio. Antes no hacíamos briefing. Ahora en 5 minutos repasamos sugerencias del día, alérgenos, reservas y equipo. El servicio sale mucho mejor preparado.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Rodrigo Espinosa',
-        role: 'Barista y Formador',
-        text: 'Como formador de baristas, recomiendo este kit a todos mis alumnos. Las tareas de calibración, limpieza y mantenimiento de la cafetera están perfectamente estructuradas. Es lo que debería tener toda cafetería.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-      {
-        name: 'Diego Navarro',
-        role: 'Chef Pastelero, Café Gourmand',
-        text: 'El checklist semanal del manager es mi herramienta favorita. Controlo pedidos a proveedores, rotación de vitrinas, limpieza profunda y formación del equipo en un solo documento. Todo organizado por día.',
-        avatar: '/avatars/chef-avatar-1.jpg',
-      },
-      {
-        name: 'Pablo Ibáñez',
-        role: 'Consultor de Cafeterías de Especialidad',
-        text: 'Lo primero que hago con cada cliente nuevo es entregarle estas checklists. Les pone orden desde el día uno. Apertura, cierre, barista, vitrina... cubren el 95% de lo que necesita cualquier cafetería.',
-        avatar: '/avatars/chef-avatar-3.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

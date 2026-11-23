@@ -40,7 +40,7 @@ No es magia: es análisis masivo de compuestos aromáticos, generación de secue
 | Frente | Qué resuelve | Ejemplo de tarea | A quién ayuda |
 | :--- | :--- | :--- | :--- |
 | Creatividad y food pairing | Explorar combinaciones de sabores no obvias y estructurar menús degustación con lógica sensorial | Analizar miles de compuestos volátiles para sugerir un maridaje de queso azul con chocolate blanco y yuzu, o secuenciar 14 pases sin fatiga de paladar | Chef creativo, jefe de cocina que diseña menú degustación |
-| Precisión operativa | Mantener la consistencia entre servicios, controlar mermas de producto premium y gestionar alérgenos con trazabilidad | Escandallo automático con gramajes exactos, alertas de alérgenos cruzados en cada receta, previsión de mermas del lenguado salvaje según estacionalidad | Jefe de partida, responsable de compras, equipo de cocina |
+| Precisión operativa | Mantener la consistencia entre servicios, controlar mermas de producto premium y gestionar alérgenos con trazabilidad | Escandallo con IA y gramajes, revisión de los 14 alérgenos con validación final del cocinero, y una base para prever mermas del lenguado salvaje según la temporada | Jefe de partida, responsable de compras, equipo de cocina |
 | Gestión de reservas de alto valor y personalización | Conocer al comensal antes de que llegue, anticipar preferencias y restricciones, personalizar la experiencia sin invadir | CRM inteligente que cruza historial de visitas, alergias, preferencias de temperatura de servicio e incluso aniversarios para sugerir un pase extra personalizado | Director de sala, sumiller, jefe de cocina, maître |
 
 ### Creatividad: probar combinaciones y prototipar menús degustación
@@ -97,7 +97,7 @@ A partir de ahí, el ecosistema ha evolucionado hacia herramientas mucho más pr
 | :--- | :--- | :--- |
 | Investigación de combinaciones | Semanas de consulta de bibliografía, catas a ciegas, viajes de prospección y prueba-error | Horas de análisis algorítmico de miles de pares de ingredientes, con propuestas justificadas por compuestos aromáticos compartidos |
 | Prototipado de secuencias de pases | Reuniones de equipo, discusión de sensaciones, ajustes a base de ensayos en cocina durante varios días | Generación de varias secuencias completas en minutos, con argumentos de ritmo, intensidad y contraste; el equipo elige sobre una base ya estructurada |
-| Ajuste de recetas y escandallos | Cálculo manual de gramajes, costes y alérgenos; riesgo de descuadres | Escandallo automático actualizado en tiempo real, con fichas de alérgenos y márgenes por pase |
+| Ajuste de recetas y escandallos | Cálculo manual de gramajes, costes y alérgenos; riesgo de descuadres | Escandallo con IA que revisas cuando cambia un precio, con la ficha de alérgenos y el margen por pase; la validación final es del cocinero |
 | Pruebas en cocina y validación final | Catas del menú completo, ajustes iterativos | Catas igualmente imprescindibles, pero con un punto de partida mucho más afinado; el tiempo total desde la idea hasta el menú validado se acorta de forma notable |
 
 Los tiempos son estimaciones ilustrativas: cada cocina tiene sus ritmos y su nivel de exigencia. Lo relevante no es el número exacto de días, sino la naturaleza del cambio: la IA se ocupa de la exploración masiva y el cálculo repetitivo, y el equipo dedica su energía a lo que ninguna máquina puede hacer: probar, sentir, decidir.
@@ -123,7 +123,7 @@ Y la cuarta, quizá la más importante, es la expresión personal. La Guía Mich
 
 ## Empezar sin coste: cómo probar la IA en tu cocina
 
-Si todo esto te resuena, lo lógico es probarlo sin compromiso. AI Chef Pro es una suite de más de 70 agentes de IA culinarios especializados, disponible en 7 idiomas con español nativo. Cubre desde la generación de menús degustación hasta el escandallo automático, el control de alérgenos y la personalización de reservas.
+Si todo esto te resuena, lo lógico es probarlo sin compromiso. AI Chef Pro es una suite de más de 70 agentes de IA culinarios especializados, disponible en 7 idiomas con español nativo. Cubre desde la generación de menús degustación hasta el escandallo con IA, el control de alérgenos y la personalización de reservas.
 
 Estos son los planes actuales:
 

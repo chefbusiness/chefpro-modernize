@@ -41,7 +41,7 @@ Para que veas dónde puedes aplicarla ya, aquí tienes un resumen con estimacion
 
 | Área de la cafetería | Aplicación de IA | Impacto práctico (estimación orientativa) |
 | :--- | :--- | :--- |
-| Bebidas (café, matcha, especialidades) | Escandallo automático, ajuste de precios según coste de materia prima, detección de desviaciones en consumo | Reducción del tiempo de escandallo entre un 60% y un 80%; mejora del food cost en 2-5 puntos porcentuales (según proyectos de consultoría) |
+| Bebidas (café, matcha, especialidades) | Escandallo con IA, ajuste de precios según coste de materia prima, detección de desviaciones en consumo | Reducción del tiempo de escandallo entre un 60% y un 80%; mejora del food cost en 2-5 puntos porcentuales (según proyectos de consultoría) |
 | Cocina de brunch | Desarrollo de recetas con coste objetivo, optimización de mermas, fichas técnicas en segundos | Acelera la creación de platos con margen controlado; recorta el desperdicio alimentario identificando excesos en prep |
 | Carta y menú | Ideación de platos de temporada, rotación semanal, adaptación a tendencias locales | Permite lanzar especiales cada semana sin bloquear al chef; aumenta la frecuencia de visita |
 | Fotografía y redes | Generación de imágenes de producto, redacción de copies para Instagram/TikTok, calendario editorial | Ahorro de horas en producción de contenido; mejora la consistencia visual sin necesidad de fotógrafo profesional |

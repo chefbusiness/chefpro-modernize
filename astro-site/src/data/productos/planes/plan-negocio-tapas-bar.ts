@@ -38,29 +38,6 @@ const data: PlanNegocioData = {
       'Plan de negocio completo para abrir un tapas bar o gastrobar en España. Incluye documento DOCX de 10 secciones (resumen ejecutivo, concepto, mercado, DAFO, marketing, operaciones, RRHH, financiero, legal, conclusiones), plan financiero Excel de 9 hojas con P&L previsional a 3 años, inversión inicial detallada, punto de equilibrio, 3 escenarios financieros, cuadro de personal con Seg. Social, previsión de tesorería mes a mes con liquidación de IVA y plan de financiación con cuadro de amortización del préstamo, checklist de apertura con 73 trámites incluyendo licencia clasificada y salida de humos, y ratios sectoriales del mercado español 2026.',
     price: '35.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'El plan financiero me ayudó a conseguir el préstamo ICO en 2 semanas. El desglose de inversión para cocina y barra fue exacto.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'El checklist de apertura fue clave. Descubrí que necesitaba licencia clasificada y no inocua por la potencia de cocina. Me ahorré meses de retrasos.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'El break-even de 34 clientes al día es realista para un tapas bar bien ubicado. Los márgenes en tapas y bebidas dan mucha confianza.',
-      },
-    ],
     // FAQPage schema (4 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 6)
     faqs: [
       {
@@ -147,16 +124,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Propietarios e inversores que abrieron su tapas bar o gastrobar con un plan financiero profesional',
-    items: [
-      { name: 'Alejandro Ruiz', role: 'Propietario Tapas Bar Madrid', text: 'El plan financiero me ayudó a conseguir el préstamo ICO en 2 semanas. El desglose de inversión para cocina y barra fue exacto, sin sorpresas. Inversión total: 120K EUR.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'María López', role: 'Emprendedora Gastrobar Barcelona', text: 'El checklist de apertura fue clave. Descubrí que necesitaba licencia clasificada y no inocua por la potencia de cocina. Me ahorré meses de retrasos y multas.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Carlos Méndez', role: 'Inversor Hostelería', text: 'El break-even de 34 clientes al día es realista para un tapas bar bien ubicado. Los márgenes en tapas y bebidas dan mucha confianza para invertir.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Laura Fernández', role: 'Socia Gastrobar Sevilla', text: 'Los escenarios financieros me dieron la seguridad que necesitaba. Sabía exactamente la facturación mínima para ser rentable y la máxima si todo iba bien.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'David Torres', role: 'Consultor Hostelería', text: 'Lo recomiendo a todos mis clientes que quieren abrir un tapas bar o gastrobar. Es el plan de negocio más completo y actualizado que he visto para este formato.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana García', role: 'Propietaria Tapas Bar Valencia', text: 'Los ratios de food cost tapas 28-32 % y los márgenes en bebidas me ahorraron miles de euros. Sabía exactamente dónde estaban los beneficios antes de abrir.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Gutiérrez', role: 'Ex Corporativo, Abrió Gastrobar', text: 'No sabía nada sobre salida de humos ni licencia clasificada. El checklist me guió paso a paso por los 63 trámites. Abrí sin ningún problema legal ni retrasos.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Fernando Delgado', role: 'Propietario Grupo 4 Gastrobars', text: 'He usado este plan para las 4 aperturas de mis gastrobars. Solo cambias las cifras del local y tienes un business plan profesional listo para presentar.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

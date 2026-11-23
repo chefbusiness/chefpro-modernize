@@ -96,16 +96,7 @@ const data: GuiaData = {
   testimonials: {
     titleGold: 'Panaderos',
     subtitle: 'Maestros panaderos, emprendedores e inversores que ya usaron esta guía',
-    items: [
-      { name: 'Marta Vidal', role: 'Panadera artesana, primera apertura en Madrid', text: 'La parte de licencia clasificada con salida de humos me ahorró meses de retraso. Verifiqué la viabilidad antes de firmar el alquiler como dice el manual y descarté dos locales que me habrían costado una fortuna en cambios.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Javier Marca', role: 'Maestro panadero con obrador propio, Barcelona', text: 'Llevo 12 años haciendo pan y aún así el plan de fermentación 24-72h y la calculadora de masa madre me dieron criterios técnicos que no había sistematizado. Lo recomiendo a cualquiera que se quiera profesionalizar.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Carmen Iglesias', role: 'Emprendedora, abriendo panadería-bistró en Bilbao', text: 'El business plan modelo me lo aceptó el banco prácticamente sin cambios. Conseguí la financiación de 130.000€ en 18 días. Vale 10 veces el precio de la guía solo por eso.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Daniel Romero', role: 'Antiguo chef pastelero reconvertido a panadero', text: 'El recetario maestro con baguette tradition, hogaza T80 masa madre, croissant clásico y panettone es muy técnico. Las hidrataciones, los plegados, los tiempos. Información de obrador real, no de blog.', avatar: '/avatars/avatar-8.jpg' },
-      { name: 'Lucía Bermúdez', role: 'Asesora financiera especializada hostelería', text: 'El P&L mensual con 3 escenarios + cash flow 24 meses + calculadora CAPEX es lo más completo que he visto a este precio. Lo doy a todos mis clientes que quieren entrar en panadería.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Estévez', role: 'Inversor con 3 locales de gastrobar buscando diversificar', text: 'El capítulo de modelos de negocio (tradicional vs despacho vs bistró vs boutique) me ayudó a decidir el modelo correcto para mi ubicación. Cada uno tiene márgenes muy distintos y el análisis es preciso.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Elena Solís', role: 'Panadera celíaca, especialidad sin gluten', text: 'El protocolo de alérgenos cruzados con separación física es exactamente lo que necesitaba para certificarme FACE. Me aclaró por qué tantas panaderías cometen errores graves al ofrecer sin gluten.', avatar: '/lovable-uploads/avatars-nicho/avatar-panadera-celiaca.jpg' },
-      { name: 'Roberto Casas', role: 'Gestor laboral hostelería', text: 'El control horario digital 2026 con plus nocturnidad para turnos de madrugada está bien resuelto en la plantilla de turnos. Cumplimiento legal + rentabilidad. Mis clientes panaderos lo agradecen.', avatar: '/avatars/avatar-3.jpg' },
-    ],
+    items: [],
   },
 
   why: {
@@ -192,7 +183,6 @@ const data: GuiaData = {
     productDescription: 'Guía premium de 20 capítulos para montar una panadería con obrador artesanal: plan financiero, recetario masa madre, salida de humos, licencia clasificada, APPCC obrador con alérgenos cruzados, planes de fermentación 18-72h. Incluye 9 plantillas Excel, 6 checklists, business plan y manual del obrador.',
     price: '65.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     faqs: [
       { q: '¿Cuánto cuesta montar una panadería con obrador en España?', a: 'Entre 120.000€ y 200.000€ para 60-90 m² con obrador propio. La guía desglosa cada partida con costes reales del mercado español 2026 e incluye calculadora CAPEX en Excel.' },
       { q: '¿Incluye recetario de masa madre?', a: 'Sí. Manual del obrador con recetario técnico: baguette tradition, hogaza T80 masa madre, croissant clásico, brioche, panettone. Incluye refrescos diarios masa madre líquida y sólida.' },

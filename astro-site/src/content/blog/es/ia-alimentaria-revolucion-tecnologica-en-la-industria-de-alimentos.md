@@ -446,7 +446,7 @@ wpId: 1424
 
 
 
-<p class="wp-block-paragraph"><strong>ID Alérgenos &#8211; Seguridad Alimentaria Automatizada:</strong> Aprovechando tecnología similar a la utilizada por sistemas de trazabilidad industrial, esta aplicación identifica automáticamente alérgenos en formulaciones, garantizando compliance con regulaciones internacionales y protegiendo la salud de consumidores sensibles.</p>
+<p class="wp-block-paragraph"><strong>ID Alérgenos &#8211; Seguridad Alimentaria Automatizada:</strong> Aprovechando tecnología similar a la utilizada por sistemas de trazabilidad industrial, esta aplicación ayuda a revisar los 14 alérgenos, con validación final del cocinero en formulaciones, garantizando compliance con regulaciones internacionales y protegiendo la salud de consumidores sensibles.</p>
 
 
 

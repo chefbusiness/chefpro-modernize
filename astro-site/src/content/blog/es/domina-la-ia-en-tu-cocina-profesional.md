@@ -97,7 +97,7 @@ wpId: 1394
 
 
 
-<li>Identificación automática de alérgenos y restricciones dietéticas</li>
+<li>Revisión de los 14 alérgenos con validación final del cocinero y restricciones dietéticas</li>
 </ul>
 
 
@@ -473,40 +473,6 @@ wpId: 1394
 
 
 <p class="wp-block-paragraph">Para verdaderamente comprender el potencial transformador de <strong>dominar la IA en tu cocina profesional</strong>, es fundamental analizar casos reales de implementación exitosa. Los siguientes ejemplos demuestran cómo diferentes tipos de establecimientos han revolucionado sus operaciones:</p>
-
-
-
-<h3 class="wp-block-heading">Caso 1: Restaurante «El Laboratorio» &#8211; Madrid</h3>
-
-
-
-<p class="wp-block-paragraph"><strong>Perfil:</strong> Restaurante de cocina creativa, 60 plazas, orientado a alta gastronomía<br><strong>Desafío inicial:</strong> Desarrollo lento de nuevas propuestas y control impreciso de costes<br><strong>Solución implementada:</strong> Suite completa AI Chef Pro con énfasis en Food Pairing AI y Cocina Creativa</p>
-
-
-
-<p class="wp-block-paragraph"><strong>Resultados obtenidos en 8 meses:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li>Reducción del 65% en tiempo de desarrollo de nuevos platos</li>
-
-
-
-<li>Incremento del 40% en aceptación de propuestas por parte de comensales</li>
-
-
-
-<li>Mejora del 35% en precisión de cálculo de food cost</li>
-
-
-
-<li>Aumento del 25% en margen bruto por plato</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph"><em>«AI Chef Pro ha transformado completamente nuestro proceso creativo. Lo que antes nos tomaba semanas ahora lo resolvemos en días, pero sin perder un ápice de creatividad o calidad.»</em> &#8211; Chef Ejecutivo Miguel Fernández</p>
 
 
 

@@ -248,38 +248,6 @@ wpId: 1606
 
 
 
-<h3 class="wp-block-heading">Caso 1: Restaurante Gourmet &#8211; Chef Marcos Morán</h3>
-
-
-
-<p class="wp-block-paragraph">El chef Marcos Morán, propietario de un restaurante con estrella Michelin, implementó AI Chef Pro para optimizar su proceso de desarrollo de menús estacionales. Los resultados fueron extraordinarios:</p>
-
-
-
-<ul class="wp-block-list">
-<li><strong>Tiempo de desarrollo:</strong> Reducción del 40% en creación de nuevos platos</li>
-
-
-
-<li><strong>Margen de beneficio:</strong> Incremento del 15% gracias a optimización de ingredientes</li>
-
-
-
-<li><strong>Creatividad culinaria:</strong> 30% más variaciones por temporada</li>
-
-
-
-<li><strong>Satisfacción del equipo:</strong> Mejora del 25% en motivación de la brigada</li>
-</ul>
-
-
-
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">«AI Chef Pro ha transformado nuestra manera de abordar el desarrollo de menús. La capacidad de explorar combinaciones que jamás habríamos considerado nos ha llevado a crear platos que definen nuestro nuevo concepto gastronómico.»</p>
-<cite>Chef Marcos Morán</cite></blockquote>
-
-
-
 <h3 class="wp-block-heading">Caso 2: Empresa de Catering &#8211; EventGastro Solutions</h3>
 
 

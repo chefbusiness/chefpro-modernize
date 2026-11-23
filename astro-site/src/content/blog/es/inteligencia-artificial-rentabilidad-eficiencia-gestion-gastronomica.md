@@ -10,7 +10,7 @@ lang: es
 wpId: 2356
 faq:
   - q: "¿Qué incluye el plan AI Chef Miembro de AI Chef Pro y necesito tarjeta de crédito?"
-    a: "El plan AI Chef Miembro te da 10.000 créditos al mes, acceso a más de 70 agentes de IA culinarios en 7 idiomas (español, inglés, francés, alemán, italiano, portugués y neerlandés) y requiere tarjeta de crédito. Puedes probar funciones como escandallos automáticos, previsión de demanda o generación de contenido sin compromiso ni riesgo."
+    a: "El plan AI Chef Miembro te da 10.000 créditos al mes, acceso a más de 70 agentes de IA culinarios en 7 idiomas (español, inglés, francés, alemán, italiano, portugués y neerlandés) y requiere tarjeta de crédito. Puedes probar funciones como escandallos con IA, previsión de demanda o generación de contenido sin compromiso ni riesgo."
   - q: "¿Cuánto puedo mejorar realmente la rentabilidad de mi restaurante con inteligencia artificial?"
     a: "Depende del punto de partida, pero en restaurantes con márgenes ajustados, aplicar IA en compras, mermas y carta puede sumar entre 4 y 8 puntos de margen neto en 6-12 meses. Son cifras orientativas basadas en la experiencia del sector, no promesas milagro. La mejora real depende de la disciplina en la ejecución y de los datos de partida."
   - q: "¿Necesito cambiar mi sistema de gestión o mi TPV para usar estas herramientas?"

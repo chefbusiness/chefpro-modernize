@@ -27,24 +27,6 @@ const data: KitTareasData = {
       '11 checklists operativos pre-rellenados para tapas bar y gastrobar: barra de pinchos y tapas frías, cocina de raciones, cerveza de grifo, vinos por copa y vermut, rotación de carta, terraza, perfiles y eventos.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Los checklists de barra de pinchos y cocina de raciones son muy completos. Plancha, freidora, guisos, cazuelas… todo el equipo sigue el mismo estándar cada turno.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'La rotación de la vitrina de tapas con FIFO y el control de mermas en barra nos ha reducido el desperdicio a la mitad. Imprescindible para cualquier tapas bar.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'Implementamos en los 3 locales. La consistencia en el montaje de pinchos y la pizarra de tapas del día es ahora uniforme en todos.',
-      },
-    ],
     faqs: [
       {
         q: '¿Sirve para un gastrobar moderno?',
@@ -310,56 +292,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Hosteleros, jefes de cocina y consultores que ya tienen su tapas bar o gastrobar bajo control',
-    items: [
-      {
-        name: 'Alejandro Ruiz',
-        role: 'Jefe de Cocina, Tapas Bar Madrid',
-        text: 'Los checklists de barra de pinchos y cocina de raciones son muy completos. Plancha, freidora, guisos, cazuelas… todo el equipo sigue el mismo estándar cada turno y la barra se monta sin sobresaltos.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'María López',
-        role: 'Propietaria Gastrobar Barcelona',
-        text: 'La rotación de la vitrina de tapas con FIFO y el control de mermas en barra nos ha reducido el desperdicio a la mitad. Imprescindible para cualquier tapas bar o gastrobar moderno.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Carlos Méndez',
-        role: 'Director Cadena Tapas Bars (3 locales)',
-        text: 'Implementamos en los 3 locales. La consistencia en el montaje de pinchos, la pizarra de tapas del día y el control de cerveza de grifo es ahora uniforme en todos. Cero descoordinación.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Laura Fernández',
-        role: 'Encargada Gastrobar, Madrid',
-        text: 'Las tareas por perfil clarifican quién hace qué en barra, cocina, sala y terraza. El briefing pre-servicio con tapas del día y reservas alinea al equipo en 5 minutos antes de abrir.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'David Torres',
-        role: 'Consultor Hostelero especializado en gastrobar',
-        text: 'Para tapas bars y gastrobars es el kit más completo del mercado. Barra, cocina raciones, cerveza de grifo, vermut, terraza, eventos… cubre todos los puntos críticos sin huecos.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Ana García',
-        role: 'Jefa de Barra Tapas Bar, Sevilla',
-        text: 'El control de cerveza de grifo (presión, CO2, temperatura, purga, limpieza de líneas) y el inventario de barra nos permiten tener stock óptimo y cero mermas en barril. Gana margen.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Pedro Gutiérrez',
-        role: 'Cocinero Gastrobar, Bilbao',
-        text: 'Las tareas de cocina de raciones están muy bien detalladas. Plancha, freidora, cazuelas, guisos… sé exactamente qué revisar en cada momento del servicio sin tener que preguntar al jefe.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Fernando Delgado',
-        role: 'Chef Ejecutivo Gastrobar Premium, Valencia',
-        text: 'El calendario anual con tapas estacionales, rutas de tapas y rotación de carta nos ayuda a mantener la oferta fresca y atractiva todo el año. Pasa de "tapas de siempre" a propuesta dinámica.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

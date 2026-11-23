@@ -92,16 +92,7 @@ const data: GuiaData = {
   testimonials: {
     titleGold: 'Profesionales',
     subtitle: 'Propietarios, chefs, inversores y consultores que ya usaron esta guía',
-    items: [
-      { name: 'Carlos Mendoza', role: 'Propietario de taquería gourmet en Madrid', text: 'La sección de proveedores de productos mexicanos en España me ahorró meses de búsqueda. Chiles, masa de maíz, tequilas premium... todo con contactos reales.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Patricia Ramírez', role: 'Chef mexicana, 12 años en España', text: 'Por fin una guía que entiende la diferencia entre mexicano auténtico y tex-mex. Los escandallos de tacos al pastor y mole poblano con food cost real son oro puro.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Roberto Díaz', role: 'Consultor de restauración, Barcelona', text: 'El capítulo de barra de tequilas y mezcales es impresionante. Los márgenes del 75-80% en coctelería mexicana son los mejores del sector. Mis clientes se sorprenden.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Ana Moreno', role: 'Inversora, 3 restaurantes en Valencia', text: 'Presenté el business plan modelo al banco con los números de la guía y me aprobaron la financiación. La proyección financiera con escenarios fue clave.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Miguel Torres', role: 'Diseñador de interiores, especializado en hostelería', text: 'El capítulo de interiorismo mexicano auténtico versus el cliché de sombreros es exactamente lo que mis clientes necesitan leer. Azulejos Talavera, colores, materiales...', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Lucía Hernández', role: 'Propietaria cantina mexicana, Sevilla', text: 'La guía de delivery para comida mexicana me ayudó a diseñar un menú que viaja perfecto. Los tacos y burritos son el producto ideal para delivery. Facturamos 25% más.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Fernando García', role: 'Importador de productos mexicanos, Madrid', text: 'Como importador, confirmo que los proveedores listados en la guía son los principales del mercado español. Información difícil de conseguir si no estás en el sector.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Sofía López', role: 'Community manager de restaurantes, Málaga', text: 'El capítulo de marketing con eventos temáticos (Día de Muertos, Cinco de Mayo) me dio ideas para un calendario de contenido de todo el año. Engagement por las nubes.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {
@@ -188,7 +179,6 @@ const data: GuiaData = {
     productDescription: 'Guía premium de 20 capítulos para montar un restaurante mexicano: plan financiero, proveedores de productos mexicanos, barra de tequilas, escandallos de tacos. Incluye 8 plantillas Excel, 6 checklists, business plan y manual de operaciones.',
     price: '65.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     faqs: [
       { q: '¿Cuánto cuesta montar un restaurante mexicano en España?', a: 'Entre 120.000€ y 280.000€ para 80 plazas. La cocina mexicana requiere equipamiento específico (comal, tortillera) pero es más económica que otros conceptos.' },
       { q: '¿Dónde consigo productos mexicanos auténticos en España?', a: 'La guía incluye un capítulo completo con proveedores de importación de chiles, masa de maíz, tortillas, tequila y mezcal con distribución nacional.' },

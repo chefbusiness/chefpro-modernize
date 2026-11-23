@@ -40,29 +40,6 @@ const data: PlanNegocioData = {
       'Plan de negocio + kit profesional completo para montar una empresa de coctelería itinerante con barra móvil en España 2026. Incluye DOCX 10 secciones, Plan Financiero Excel con estacionalidad de eventos, Calculadora Pricing, plantilla de 96 proveedores reales, catálogo de equipamiento (GGM/Mewindo/Deus), carta de 15 cocktails temáticos, modelo de contrato profesional, 10 experiencias temáticas premium y checklist de apertura con 71 trámites adaptado al modelo itinerante.',
     price: '55.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Nadia y Lidia',
-        rating: '5',
-        body: 'Buscábamos un plan específico para nuestro modelo de barra móvil con experiencias temáticas y este es exactamente lo que necesitábamos. Las 10 experiencias y los proveedores nos han ahorrado meses de investigación.',
-      },
-      {
-        author: 'Alejandro Vela',
-        rating: '5',
-        body: 'Ojalá hubiera tenido este plan cuando arranqué hace dos años. La calculadora de pricing es oro: ahora cobro lo que vale realmente cada evento, no lo que me parecía.',
-      },
-      {
-        author: 'Laura Manchón',
-        rating: '5',
-        body: 'Recomiendo este plan a TODOS los proveedores de coctelería que entran en mi red. La plantilla de proveedores y el modelo de contrato les ahorran 40 horas de trabajo administrativo.',
-      },
-    ],
     // FAQPage schema (5 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 6, más largas)
     faqs: [
       {
@@ -154,16 +131,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Bartenders, wedding planners y emprendedores que usaron el plan para montar o impulsar su empresa de coctelería de eventos',
-    items: [
-      { name: 'Nadia y Lidia', role: 'Fundadoras Empresa Coctelería Eventos', text: 'Buscábamos un plan específico para nuestro modelo de barra móvil con experiencias temáticas y este es exactamente lo que necesitábamos. Las 10 experiencias y los proveedores nos han ahorrado meses de investigación.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Alejandro Vela', role: 'Bartender, segundo año con barra móvil Madrid', text: 'Ojalá hubiera tenido este plan cuando arranqué hace dos años. La calculadora de pricing es oro: ahora cobro lo que vale realmente cada evento, no lo que me parecía.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Laura Manchón', role: 'Wedding Planner, Madrid centro', text: 'Recomiendo este plan a TODOS los proveedores de coctelería que entran en mi red. La plantilla de proveedores y el modelo de contrato les ahorran 40 horas de trabajo administrativo.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Carlos Ferreras', role: 'Coctelero freelance pasando a empresa propia', text: 'El plan financiero me convenció: con 50 eventos al año puedes facturar 70K EUR con margen del 42 %. Mi próximo paso es aplicar el checklist y arrancar en septiembre.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'María Pino', role: 'Profesora Escuela de Coctelería Madrid', text: 'Lo recomiendo en todos los cursos avanzados. Nadie en el mercado español ha empaquetado tan bien el conocimiento de cómo montar este negocio.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ferran Llopis', role: 'Empresario hostelería Barcelona', text: 'Iba a abrir un bar fijo de 150K EUR. Después de leer este plan he pivotado a barra móvil de eventos: misma rentabilidad esperada, 1/4 del riesgo financiero.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pedro Gutiérrez', role: 'Ex hostelería que monta su barra móvil', text: 'Venía del bar tradicional y no sabía nada de captar bodas. La estrategia de wedding planners y la lista de plataformas (Bodas.net, Zankyou) me dieron la hoja de ruta clara.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Fernando Delgado', role: 'Inversor en proyectos hostelería', text: 'El plan financiero es realista: 50 eventos/año, ticket medio 1.400 EUR, break-even mes 10. Esto es lo que esperaba de un plan profesional, no un PowerPoint inflado.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

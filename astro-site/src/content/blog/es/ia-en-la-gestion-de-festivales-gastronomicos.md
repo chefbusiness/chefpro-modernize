@@ -666,7 +666,7 @@ wpId: 2021
 
 
 <ul class="wp-block-list">
-<li>Identificación automática de alérgenos en cualquier receta</li>
+<li>Revisión de los 14 alérgenos con validación final del cocinero en cualquier receta</li>
 
 
 

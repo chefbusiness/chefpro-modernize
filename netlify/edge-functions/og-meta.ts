@@ -298,7 +298,7 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
   '/reducir-costes-restaurante-ia': {
     title: 'Reducir Costes Restaurante con IA | AI Chef Pro',
-    description: 'Reduce hasta un 35% las mermas y costes de tu restaurante con inteligencia artificial. Escandallo automático, control de food cost y optimización de carta en tiempo real.',
+    description: 'Controla mermas y costes de tu restaurante con inteligencia artificial. Escandallo con IA, control de food cost y revisión de la carta.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/carta-menu-restaurante-ia': {

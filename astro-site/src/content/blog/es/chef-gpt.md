@@ -195,7 +195,7 @@ Para todo eso, ChefGPT.xyz funciona bien. El problema es cuando un dueño de res
 
 ## ¿Y si tienes un restaurante, cafetería u obrador?
 
-Entonces necesitas herramientas que hablen tu idioma profesional. Literal y figuradamente. AI Chef Pro está construido sobre el feedback de cocineros reales: escandallos automáticos, fichas técnicas de producción, gestión de alérgenos con cruce de contaminación, planificación de partidas, food cost por plato y por carta completa. Si diriges un obrador, los agentes calculan mermas y rendimientos de cada elaboración (panes, masas, rellenos) con la misma precisión que en una partida de restaurante.
+Entonces necesitas herramientas que hablen tu idioma profesional. Literal y figuradamente. AI Chef Pro está construido sobre el feedback de cocineros reales: escandallos con IA, fichas técnicas de producción, gestión de alérgenos con cruce de contaminación, planificación de partidas, food cost por plato y por carta completa. Si diriges un obrador, los agentes calculan mermas y rendimientos de cada elaboración (panes, masas, rellenos) con la misma precisión que en una partida de restaurante.
 
 No es una app de recetas bonitas. Es una suite de trabajo. Y su plan Miembro —10 € al mes con 10.000 créditos y sin permanencia— te permite usar los agentes a diario. Si luego necesitas más, los planes de pago empiezan en 25 €/mes.
 

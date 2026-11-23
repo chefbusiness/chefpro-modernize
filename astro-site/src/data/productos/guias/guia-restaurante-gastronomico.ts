@@ -91,16 +91,7 @@ const data: GuiaData = {
   testimonials: {
     titleGold: 'Profesionales',
     subtitle: 'Chefs, sommeliers, inversores y consultores que ya usaron esta guía',
-    items: [
-      { name: 'Marcos Delgado', role: 'Chef ejecutivo, 1 Estrella Michelin en Madrid', text: 'El capítulo sobre cómo aspirar a la Estrella Michelin es el más realista que he leído. Los 5 criterios explicados con ejemplos concretos. Ojalá lo hubiese tenido hace 10 años.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Ana Beltrán', role: 'Consultora gastronómica, ex-directora Guía Repsol', text: 'La sección de plan financiero con inversiones reales de 500K-900K€ es brutal. Por fin una guía que no vende fantasías de abrir un gastronómico con 100K€.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Fernando Ruiz', role: 'Propietario, restaurante 2 Soles Repsol en Galicia', text: 'El cronograma Gantt de 18 meses es exactamente lo que necesita cualquiera que quiera abrir un gastronómico. Cada fase con sus dependencias. Imprescindible.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Isabel Navarro', role: 'Sommelier, directora de bodega en Barcelona', text: 'El capítulo de bodega es muy completo: desde la inversión inicial (15-80K€) hasta el software de gestión. El budget de bodega con márgenes por referencia es oro puro.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Carlos Herrera', role: 'Arquitecto especializado en interiorismo gastronómico', text: 'El diseño de cocina por partidas y el ratio cocina/sala están perfectamente calculados. La sección de iluminación 2700-3000K demuestra que el autor sabe de lo que habla.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Lucía Martín', role: 'Maître y formadora de equipos de sala', text: 'El manual de servicio de sala que incluye como bonus vale más que el precio de la guía entera. Protocolo de recepción, servicio de vinos, gestión de quejas... todo.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Pablo Fernández', role: 'Inversor, 3 restaurantes en Madrid y Valencia', text: 'El business plan modelo para bancos me ahorró 5.000€ en consultoría. Lo presenté tal cual a mi banco y me aprobaron la financiación. Plantilla perfecta.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Javier Moreno', role: 'Chef de partida, aspirante a primer restaurante propio', text: 'Después de 12 años como jefe de partida, esta guía me dio la hoja de ruta completa para abrir mi propio gastronómico. Los salarios, las brigadas, el equipamiento... todo con datos reales.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {
@@ -186,7 +177,6 @@ const data: GuiaData = {
     productDescription: 'Guía premium de 22 capítulos para montar un restaurante gastronómico: plan financiero, diseño cocina y sala, brigada, bodega, Michelin, Sol Repsol. Incluye 10 plantillas Excel, 8 checklists, business plan y manual de sala.',
     price: '85.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     faqs: [
       { q: '¿Cuánto cuesta montar un restaurante gastronómico?', a: 'Entre 500.000€ y 900.000€ para 65 plazas de nivel medio-alto en capital de provincia española. La guía desglosa cada partida.' },
       { q: '¿Incluye información sobre cómo aspirar a Estrella Michelin?', a: "Sí. Los capítulos 17-19 cubren Michelin, Sol Repsol y The World's 50 Best con criterios, proceso de inspección y estrategia." },

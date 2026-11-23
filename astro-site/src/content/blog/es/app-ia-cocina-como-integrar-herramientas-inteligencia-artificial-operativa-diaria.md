@@ -691,12 +691,6 @@ wpId: 1571
 
 
 
-<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p class="wp-block-paragraph">«AI Chef Pro ha transformado completamente nuestro proceso creativo. Ahora puedo explorar 50 variaciones de un plato en 10 minutos, algo que antes me llevaba días. La calidad y precision técnica de las propuestas es extraordinaria.» &#8211; <em>Raúl Mendoza, Chef Ejecutivo</em></p>
-</blockquote>
-
-
-
 <h3 class="wp-block-heading">Caso 2 &#8211; Empresa de Catering «Eventos Premium» (500+ eventos/año)</h3>
 
 

@@ -28,24 +28,6 @@ const data: KitTareasData = {
       '9 checklists operativos pre-rellenados para chef privado: ficha de cliente, equipo, APPCC móvil, servicio, fidelización y administración.',
     price: '18.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Raúl Ibáñez',
-        rating: '5',
-        body: 'La ficha de cliente me cambió la vida. Ahora tengo todo centralizado: preferencias, equipamiento de cocina, historial de menús. Cero errores en 6 meses.',
-      },
-      {
-        author: 'Carolina Valls',
-        rating: '5',
-        body: 'El checklist de equipo y transporte es imprescindible. Ya no llego a la villa de un cliente y descubro que olvidé algo.',
-      },
-      {
-        author: 'Martín del Río',
-        rating: '5',
-        body: 'En un yate no hay segunda oportunidad. El briefing pre-servicio me salvó de más de un desastre.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para chef privado?',
@@ -297,56 +279,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Chefs privados, personal chefs y consultores que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Raúl Ibáñez',
-        role: 'Chef privado, Ibiza & Mallorca',
-        text: 'La ficha de cliente me cambió la vida. Antes llevaba las alergias en notas del móvil. Ahora tengo todo centralizado: preferencias, equipamiento de cocina, historial de menús. Cero errores en 6 meses.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Carolina Valls',
-        role: 'Chef privada, villas de lujo en Marbella',
-        text: 'El checklist de equipo y transporte es imprescindible. Ya no llego a la villa de un cliente y descubro que olvidé la mandolina o la nevera portátil. Todo marcado antes de salir.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Martín del Río',
-        role: 'Chef de yates, Costa del Sol',
-        text: 'En un yate no hay segunda oportunidad: si olvidas un ingrediente estás en medio del mar. El briefing pre-servicio me salvó de más de un desastre. Lo uso religiosamente.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Elena Pascual',
-        role: 'Personal chef, meal prep semanal en Barcelona',
-        text: 'El control de costes por servicio es brutal. Antes no sabía cuánto ganaba realmente por cliente. Ahora calculo margen por servicio y he ajustado mis precios. Gano un 30% más.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Diego Serrano',
-        role: 'Chef privado para eventos, Madrid',
-        text: 'El APPCC móvil me da tranquilidad. Registro temperaturas, alérgenos y trazabilidad en cada servicio. Si algún día hay una incidencia, tengo todo documentado.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Lucía Romero',
-        role: 'Consultora gastronómica, chefs privados',
-        text: 'Lo primero que hago con cada chef que asesoro es darle estos checklists. Cubren las 10 áreas críticas del negocio: desde la consulta inicial hasta la facturación. Profesionaliza al instante.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Alejandro Cortés',
-        role: 'Chef privado corporativo, Valencia',
-        text: 'El calendario anual de demanda es oro. Ahora sé cuándo invertir en marketing (noviembre) y cuándo maximizar servicios (verano, Navidad). Mi facturación subió un 40%.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Marcos Torres',
-        role: 'Chef privado, aviación y yates premium',
-        text: 'Trabajo para clientes muy exigentes: aviones privados, yates, CEOs. Los checklists me dan un nivel de profesionalidad y organización que mis clientes valoran enormemente.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

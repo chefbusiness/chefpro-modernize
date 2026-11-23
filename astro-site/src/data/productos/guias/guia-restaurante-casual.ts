@@ -91,16 +91,7 @@ const data: GuiaData = {
   testimonials: {
     titleGold: 'Profesionales',
     subtitle: 'Propietarios, chefs, inversores y consultores que ya usaron esta guía',
-    items: [
-      { name: 'Laura Fernández', role: 'Propietaria de restaurante casual en Madrid', text: 'Abrí mi restaurante con esta guía como hoja de ruta. El plan financiero me salvó de errores que habrían costado miles de euros. Los números son reales, no fantasía.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'David García', role: 'Chef y emprendedor, Valencia', text: 'Después de 10 años como jefe de cocina, quería abrir mi propio casual. La guía cubre TODO: desde la SL hasta el menú engineering. El cronograma Gantt fue clave para no perderme.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'María Sánchez', role: 'Consultora de restauración, Barcelona', text: 'Recomiendo esta guía a todos mis clientes que quieren abrir un casual. El capítulo de delivery es oro puro — muchos restaurantes lo ignoran y pierden un 20% de facturación.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Alejandro Ruiz', role: 'Inversor en hostelería, 5 locales en Málaga', text: 'El business plan modelo lo presenté tal cual al banco. Me aprobaron la financiación en dos semanas. Una plantilla que vale 10 veces el precio de la guía.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Carmen López', role: 'Encargada de sala, aspirante a primera apertura', text: 'Llevaba años queriendo dar el salto. La sección de equipo y turnos me ayudó a calcular exactamente cuánto personal necesito y cuánto me va a costar. Sin sorpresas.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Roberto Martín', role: 'Arquitecto especializado en hostelería', text: 'El capítulo de diseño de sala con ratios m²/plaza y distribución de mesas es impecable. Incluye terraza, acústica e iluminación por turnos. Muy profesional.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Patricia Navarro', role: 'Propietaria, gastrobar en Sevilla', text: 'Lo que más me gustó: el capítulo de menú del día con food cost controlado. Pasé de perder dinero en el menú a que sea mi mejor herramienta de captación.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Javier Torres', role: 'Gestor fiscal especializado en hostelería', text: 'El checklist legal es el más completo que he visto para un restaurante en España. 32 trámites con responsable, coste y orden. Se lo paso a mis clientes nuevos.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {
@@ -185,7 +176,6 @@ const data: GuiaData = {
     productDescription: 'Guía premium de 20 capítulos para montar un restaurante casual dining: plan financiero, diseño cocina y sala, delivery, terraza, menú del día. Incluye 8 plantillas Excel, 6 checklists, business plan y manual de operaciones.',
     price: '65.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     faqs: [
       { q: '¿Cuánto cuesta montar un restaurante casual?', a: 'Entre 150.000€ y 350.000€ para 80 plazas dependiendo de ubicación y acabados. La guía desglosa cada partida con costes reales.' },
       { q: '¿Incluye capítulos sobre delivery y terraza?', a: 'Sí. Los capítulos 17 y 18 cubren delivery (plataformas, packaging, menú optimizado) y terraza (licencias, rentabilidad, mobiliario).' },

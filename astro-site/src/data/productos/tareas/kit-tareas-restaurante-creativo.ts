@@ -31,24 +31,6 @@ const data: KitTareasData = {
       '11 plantillas + 3 bonus (14 ficheros): checklists operativos para restaurante creativo con 477 tareas ya escritas — I+D, menú degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Alberto Riera',
-        rating: '5',
-        body: 'El checklist de mise en place para degustación me cambió la vida. Cada pase documentado con timing, temperaturas y responsable.',
-      },
-      {
-        author: 'Marina Delgado',
-        rating: '5',
-        body: 'La plantilla de I+D es increíble. Fichas técnicas, pruebas de concepto, evaluación sensorial... por fin tengo un sistema.',
-      },
-      {
-        author: 'Patricia Vega',
-        rating: '5',
-        body: 'Lo primero que hago con cada cliente de restaurante creativo es entregarle estos checklists. Cubren el 95% de lo que necesita.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para restaurante creativo?',
@@ -323,56 +305,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Chefs ejecutivos, sous-chefs, sumilleres y gerentes de restaurante creativo que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Alberto Riera',
-        role: 'Chef ejecutivo, restaurante con estrella Michelin',
-        text: 'El checklist de mise en place para degustación me cambió la vida. Cada pase documentado con timing, temperaturas y responsable. Mi sous-chef ya no necesita preguntarme nada, todo está en la plantilla.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Marina Delgado',
-        role: 'Sous-chef, restaurante degustación 2 estrellas',
-        text: 'La plantilla de I+D es increíble. Fichas técnicas, pruebas de concepto, evaluación sensorial... por fin tengo un sistema para documentar toda la investigación que hacemos en cocina.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Fernando Casas',
-        role: 'Sumiller, restaurante gastronómico',
-        text: 'Por fin un checklist que entiende el trabajo del sumiller: gestión de bodega, maridajes por pase, temperaturas de servicio, catas de equipo. Los agentes IA genéricos no cubren ni el 20% de esto.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Lucía Navarro',
-        role: 'Jefa de sala, restaurante de autor',
-        text: 'El briefing diario de servicio lo usamos antes de cada pase. VIPs, alergias, cambios de carta, rangos de sala... en 5 minutos todo el equipo está alineado. Imprescindible para fine dining.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Carlos Iniesta',
-        role: 'Chef propietario de 2 restaurantes creativos',
-        text: 'Tengo dos restaurantes creativos y cada sous-chef hacía las cosas a su manera. Con los checklists estandarizados, la calidad es la misma en ambos. El onboarding de stagiaires pasó de 2 semanas a 4 días.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Patricia Vega',
-        role: 'Consultora gastronómica, alta cocina',
-        text: 'Lo primero que hago con cada cliente de restaurante creativo es entregarle estos checklists. I+D, degustación, sumiller, eventos... cubren el 95% de lo que necesita cualquier restaurante de autor.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Diego Morales',
-        role: 'Chef pastelero creativo',
-        text: 'La sección de I+D me permite documentar cada prueba de postre nuevo con costes, tiempos y evaluación. Antes perdía ideas geniales porque no las registraba. Ahora tengo un histórico completo.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Javier Ortega',
-        role: 'Director de operaciones, grupo gastronómico',
-        text: 'Gestionamos 4 restaurantes creativos. El calendario anual de eventos y carta nos permite planificar cambios estacionales, guias, premios y jornadas tematicas con meses de antelación. Oro puro.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

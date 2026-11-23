@@ -28,24 +28,6 @@ const data: KitTareasData = {
       '11 checklists operativos pre-rellenados para asador y parrilla con horno Josper: encendido y mantenimiento de brasas, maduración dry-age y despiece, temperaturas por corte, pescados y verduras a la brasa, eventos y temporadas.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Alejandro Ruiz',
-        rating: '5',
-        body: 'Los checklists del Josper son muy completos. Encendido, zonas de calor, regulación de compuertas, gestión del carbón… todo el equipo sigue el mismo protocolo.',
-      },
-      {
-        author: 'María López',
-        rating: '5',
-        body: 'El control de maduración y temperaturas por corte ha elevado la calidad de nuestras carnes. Los clientes lo notan.',
-      },
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'Implementamos en 3 asadores. La consistencia en puntos de cocción y presentación es ahora uniforme en todos.',
-      },
-    ],
     faqs: [
       {
         q: '¿Incluye el protocolo del horno Josper?',
@@ -311,56 +293,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Parrilleros, propietarios de asador y consultores que ya tienen su operativa bajo control',
-    items: [
-      {
-        name: 'Alejandro Ruiz',
-        role: 'Parrillero, Asador Madrid',
-        text: 'Los checklists del Josper son muy completos. Encendido, zonas de calor, regulación de compuertas, gestión del carbón… todo el equipo sigue el mismo protocolo y ya no hay mermas por descontrol.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'María López',
-        role: 'Propietaria Asador, Bilbao',
-        text: 'El control de maduración dry-age con fichas por pieza, fecha y peso, más las temperaturas de cocción por corte, ha elevado la calidad de nuestras carnes. Los clientes lo notan en cada chuletón.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Carlos Méndez',
-        role: 'Director Cadena de Asadores (3 locales)',
-        text: 'Implementamos en los 3 asadores. La consistencia en puntos de cocción y presentación es ahora uniforme. Un cliente recibe el mismo entrecot esté donde esté.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Laura Fernández',
-        role: 'Jefa de Sala Steakhouse, Madrid',
-        text: 'Las tareas del parrillero están muy bien definidas y el briefing pre-servicio con las carnes del día y las piezas especiales es genial para alinear sala y cocina en 5 minutos.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'David Torres',
-        role: 'Consultor Hostelero especializado en asadores',
-        text: 'Para asadores y steakhouse es el kit más completo del mercado. Josper, maduración, cortes, carbón, perfiles, temporadas… cubre todos los puntos críticos donde los locales suelen fallar.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Ana García',
-        role: 'Encargada Parrilla Gastrobar, Barcelona',
-        text: 'El calendario con temporadas de caza, calçotada y eventos navideños nos permite planificar grupos y carta especial con antelación. Ya no improvisamos las piezas grandes.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Pedro Gutiérrez',
-        role: 'Ayudante de Parrilla en formación',
-        text: 'Las tareas del ayudante están muy claras: carbón, cenizas, guarniciones, tablas, mise en place. Sé exactamente qué preparar sin que el parrillero tenga que estar detrás de mí.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Fernando Delgado',
-        role: 'Chef Ejecutivo Steakhouse, Marbella',
-        text: 'El protocolo del Josper y las fichas de maduración son detalles que marcan la diferencia profesional. Lo hemos integrado en nuestro APPCC y ha pasado de "improvisado" a "auditable".',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

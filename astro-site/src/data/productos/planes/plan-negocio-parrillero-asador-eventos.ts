@@ -42,29 +42,6 @@ const data: PlanNegocioData = {
       'Plan + kit profesional completo para montar un servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido B2C particular (bodas, cumpleaños, bautizos) + B2B (wedding planners, agencias, hoteles, empresas, restaurantes show cooking). Incluye plan de negocio en Word de 10 secciones con anexo del fuego al aire libre en 8 comunidades, plan financiero Excel de 9 hojas, calculadora de presupuestos por evento con IVA, escalado y tramos de cancelación, plantilla de 93 proveedores, catálogo de equipamiento + menaje, manual técnico del parrillero (8 salmueras + 12 marinados + 18 cortes + escalado), carta de 12 cortes, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck y checklist de apertura de 83 tareas.',
     price: '45.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: {
-      ratingValue: '4.9',
-      reviewCount: '8',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    reviews: [
-      {
-        author: 'Mariano Rodríguez',
-        rating: '5',
-        body: 'Llevaba 12 años de empleado en parrilla y este plan me dio la hoja de ruta para independizarme. Las 10 experiencias y la calculadora de pricing son lo que más uso ahora.',
-      },
-      {
-        author: 'Lucía Sanz',
-        rating: '5',
-        body: 'El manual técnico de salmueras y la tabla de cocción de 18 cortes vale el plan entero. Mis bodas mejoraron en consistencia desde la primera temporada con esta guía.',
-      },
-      {
-        author: 'Diego López',
-        rating: '5',
-        body: 'El roadmap del food truck especializado en parrilla es brutal. Invertí 30.000 EUR siguiendo el blueprint y arranqué con eventos corporate en 6 meses.',
-      },
-    ],
     // FAQPage schema (5 preguntas — subconjunto VERBATIM del Helmet; on-page tiene 7, más largas)
     faqs: [
       {
@@ -160,16 +137,7 @@ const data: PlanNegocioData = {
   testimonials: {
     subtitle:
       'Parrilleros, asadores castellanos, BBQ pitmasters y emprendedores latinos que usaron el plan para montar o escalar su servicio itinerante de parrilla',
-    items: [
-      { name: 'Mariano Rodríguez', role: 'Parrillero argentino, Madrid', text: 'Llevaba 12 años de empleado en parrilla y este plan me dio la hoja de ruta para independizarme. Las 10 experiencias y la calculadora de pricing son lo que más uso ahora.', avatar: '/avatars/avatar-1.jpg' },
-      { name: 'Lucía Sanz', role: 'Parrillera profesional, Barcelona', text: 'El manual técnico de salmueras y la tabla de cocción de 18 cortes vale el plan entero. Mis bodas mejoraron en consistencia desde la primera temporada con esta guía.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Don Tomás García', role: 'Asador castellano, finca rural Toledo', text: 'Pensaba que ya lo sabía todo del cordero a la cruz, pero la sección de marco legal CCAA y el modelo de contrato profesional me organizaron todo el papeleo de la primera boda planner.', avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Diego López', role: 'BBQ pitmaster, Madrid corporate', text: 'El roadmap del food truck especializado en parrilla es brutal. Invertí 30.000 EUR siguiendo el blueprint y arranqué con eventos corporate en 6 meses.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Andrés Camacho', role: 'Asador llanero colombiano, Madrid', text: 'Aporta lo que ningún plan español ofrece: cubre el barril llanero y el asado tradicional latino. Diferencial total en bodas con familia LATAM.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Federico Aguirre', role: 'Asador uruguayo, Costa del Sol', text: 'La plantilla de 93 proveedores me ahorró meses de búsqueda. Con web y zona de cada uno, ya tenía por dónde empezar a llamar. Tienda Biomasa para el quebracho fue el hallazgo del año.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Marcos Pérez', role: 'Joven emprendedor parrillero, Valencia', text: 'En el segundo año ya facturo más de 100.000 EUR. El plan financiero realista es lo que me ancla cada decisión.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Sandra Vera', role: 'Parrillera latina freelance, Bilbao', text: 'Los dos modelos de contrato (B2C + B2B) son oro puro. Antes redactaba cláusulas sueltas para cada cliente; ahora copio, edito y firmo en 10 minutos.', avatar: '/avatars/avatar-8.jpg' },
-    ],
+    items: [],
   },
 
   why: {

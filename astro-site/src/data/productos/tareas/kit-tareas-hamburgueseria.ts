@@ -27,24 +27,6 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros): checklists operativos para hamburguesería con 346 tareas ya escritas — plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Carlos Méndez',
-        rating: '5',
-        body: 'El checklist de plancha y grill me ha cambiado el turno. Ahora seguimos el mismo protocolo y el smash sale perfecto cada vez.',
-      },
-      {
-        author: 'Marta Iglesias',
-        rating: '5',
-        body: 'Gestionar la apertura de una hamburguesería con delivery y sala era un caos. Los checklists por zona nos organizaron desde el día uno.',
-      },
-      {
-        author: 'Alejandro Fuentes',
-        rating: '5',
-        body: 'La línea de montaje de burger es donde más nos ayudó. Cada ingrediente en su sitio, salsas repuestas, pan tostado a tiempo.',
-      },
-    ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para hamburguesería?',
@@ -322,68 +304,7 @@ const data: KitTareasData = {
   testimonials: {
     subtitle:
       'Parrilleros, encargados y dueños de hamburguesería que ya tienen sus operaciones bajo control',
-    items: [
-      {
-        name: 'Carlos Méndez',
-        role: 'Parrillero / Grill Master, Smash & Co.',
-        text: 'El checklist de plancha y grill me ha cambiado el turno. Antes cada parrillero limpiaba y calentaba la plancha a su manera. Ahora seguimos el mismo protocolo y el smash sale perfecto cada vez.',
-        avatar: '/avatars/avatar-1.jpg',
-      },
-      {
-        name: 'Marta Iglesias',
-        role: 'Encargada, The Burger Lab',
-        text: 'Gestionar la apertura de una hamburguesería con delivery y sala era un caos. Desde que imprimimos los checklists por zona, el equipo sabe exactamente qué hacer. Los olvidos bajaron un 90%.',
-        avatar: '/avatars/avatar-2.jpg',
-      },
-      {
-        name: 'Rubén Torres',
-        role: 'Dueño, La Brasería Burger',
-        text: 'Abrí mi hamburguesería hace 4 meses y me olvidaba de todo: encender la plancha a tiempo, filtrar la freidora, preparar los toppings. Estas checklists me organizaron desde el día uno.',
-        avatar: '/avatars/avatar-3.jpg',
-      },
-      {
-        name: 'Patricia Vega',
-        role: 'Gerente de Operaciones, Grupo Burger Factory',
-        text: 'Tenemos 4 hamburgueserías y antes cada encargado hacía las cosas diferente. Ahora con los checklists hemos estandarizado la operación. El onboarding de personal nuevo pasó de 2 semanas a 3 días.',
-        avatar: '/avatars/avatar-4.jpg',
-      },
-      {
-        name: 'Alejandro Fuentes',
-        role: 'Cocinero de Línea, Stack Burger',
-        text: 'La línea de montaje de burger es donde más nos ayudó. Cada ingrediente en su sitio, salsas repuestas, pan tostado a tiempo. Antes improvisábamos y los pedidos salían lentos. Ahora todo fluye.',
-        avatar: '/avatars/avatar-5.jpg',
-      },
-      {
-        name: 'Laura Navarro',
-        role: 'Freidurista y Encargada, Crispy Burger Bar',
-        text: 'El checklist de freidora es genial. Test polares del aceite, filtrado diario, control de temperatura para patatas y aros de cebolla. Antes se nos pasaba filtrar y el aceite duraba la mitad.',
-        avatar: '/avatars/avatar-6.jpg',
-      },
-      {
-        name: 'Sergio Ramos',
-        role: 'Parrillero, Grill House BCN',
-        text: 'Solo la parte de punto de carne ya vale el precio. Tenemos una guía clara para cada grosor y tipo de burger: cocción con sonda, 70 °C en el centro. Las quejas por punto bajaron a cero.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
-      {
-        name: 'Diego Castillo',
-        role: 'Responsable de Delivery, BurgerExpress',
-        text: 'El checklist de packaging delivery nos cambió el negocio. Packaging correcto para que la burger no se desmonte, control de tiempos, etiquetado. Las devoluciones bajaron de 15 al mes a 2.',
-        avatar: '/avatars/avatar-8.jpg',
-      },
-      {
-        name: 'Pablo Herrera',
-        role: 'Chef Parrillero, Street Smash',
-        text: 'Solo la plantilla de briefing pre-servicio ya vale el precio. Antes no hacíamos briefing. Ahora en 5 minutos repasamos reservas, burger especial del día y alérgenos. El servicio sale mucho mejor.',
-        avatar: '/avatars/chef-avatar-1.jpg',
-      },
-      {
-        name: 'Andrés Molina',
-        role: 'Consultor de Hamburgueserías',
-        text: 'Lo primero que hago con cada cliente nuevo es entregarle estas checklists. Les pone orden desde el día uno. Plancha, freidora, línea, delivery... cubren el 95% de lo que necesita cualquier hamburguesería.',
-        avatar: '/avatars/chef-avatar-3.jpg',
-      },
-    ],
+    items: [],
   },
 
   pricing: {

@@ -60,10 +60,6 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">El chef Marcos Delgado, del restaurante estrella Michelin «Raíces», comenta: «Inicialmente era escéptico sobre integrar IA en mi cocina. Pensaba que podría comprometer la autenticidad. Sin embargo, después de seis meses utilizando <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="5359">AI Chef Pro</a>, he descubierto que la tecnología potencia mi creatividad en lugar de limitarla. He desarrollado 23 nuevos platos este año, comparado con los 8 del año anterior».</p>
-
-
-
 <figure class="wp-block-image alignwide size-full"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1290" height="690" data-attachment-id="1482" data-orig-file="/blog-assets/2025/09/pulpo-atlantico-gazpacho-fresas-5-scaled.jpg" data-orig-size="2560,1369" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="pulpo-atlantico-gazpacho-fresas-5" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/09/pulpo-atlantico-gazpacho-fresas-5-scaled.jpg" src="/blog-assets/2025/09/pulpo-atlantico-gazpacho-fresas-5-scaled.jpg" alt="Pulpo Atlántico confitado, gazpacho de fresa y granizado de pepino, aire de albahaca y crujiente de arroz negro" class="wp-image-1482" /></figure>
 
 
@@ -198,7 +194,7 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">Durante esta fase, recomiendo comenzar con el plan AI Chef Miembro de <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" data-lasso-id="5362">AI Chef Pro</a> para familiarizarse con las capacidades básicas sin compromiso económico.</p>
+<p class="wp-block-paragraph">Durante esta fase, recomiendo comenzar con el plan AI Chef Miembro de <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" data-lasso-id="5362">AI Chef Pro</a> (10 € al mes, 10.000 créditos; los planes mensuales no tienen permanencia) para familiarizarse con las capacidades básicas.</p>
 
 
 
@@ -213,10 +209,6 @@ wpId: 1582
 
 
 <figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Área de Enfoque</th><th>Herramienta Recomendada</th><th>Métricas de Éxito</th><th>Duración</th></tr></thead><tbody><tr><td>Desarrollo de recetas</td><td>Cocina Creativa AI</td><td>Tiempo de desarrollo, aceptación del cliente</td><td>2 semanas</td></tr><tr><td>Optimización de costes</td><td>Mermas GenCal</td><td>Reducción de desperdicios, margen mejorado</td><td>3 semanas</td></tr><tr><td>Food pairing</td><td>Food Pairing AI</td><td>Nuevas combinaciones exitosas</td><td>2 semanas</td></tr><tr><td>Gestión de equipo</td><td>Mental Coach AI</td><td>Satisfacción del personal, productividad</td><td>4 semanas</td></tr></tbody></table></div></figure>
-
-
-
-<p class="wp-block-paragraph">El chef David Muñoz, del restaurante «DiverXO», implementó initially solo la herramienta de food pairing: «Comenzamos con Food Pairing AI para desarrollar nuestro menú de primavera. En dos semanas, habíamos creado 8 combinaciones completamente nuevas que se convirtieron en nuestros platos más solicitados. Eso nos convenció del potencial de la tecnología».</p>
 
 
 
@@ -319,48 +311,6 @@ wpId: 1582
 
 
 <p class="wp-block-paragraph">Para ilustrar el impacto real de la transición hacia un modelo de <strong>chef IA</strong>, hemos documentado tres casos de éxito de diferentes tipos de establecimientos que han integrado exitosamente tecnología de inteligencia artificial en sus operaciones.</p>
-
-
-
-<h3 class="wp-block-heading">Caso 1: Restaurante de alta cocina «Elementos» &#8211; Madrid</h3>
-
-
-
-<p class="wp-block-paragraph"><strong>Situación inicial:</strong> Restaurante con 1 estrella Michelin, 35 pax, enfrentando presión por innovación constante y optimización de márgenes.</p>
-
-
-
-<p class="wp-block-paragraph"><strong>Implementación:</strong> Adopción completa de AI Chef Pro, enfocándose inicialmente en Cocina Creativa AI y Food Pairing AI para desarrollo de menús degustación.</p>
-
-
-
-<p class="wp-block-paragraph"><strong>Resultados después de 8 meses:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li>Desarrollo de 47 nuevos platos vs. 18 del período anterior</li>
-
-
-
-<li>Reducción del 35% en tiempo de conceptualización de menús</li>
-
-
-
-<li>Incremento del 12% en margen bruto gracias a optimización de mermas</li>
-
-
-
-<li>Mejora del 23% en puntuaciones de satisfacción del cliente</li>
-
-
-
-<li>Reducción del 40% en rotación de personal de cocina</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">«La integración de IA nos ha permitido mantener nuestra creatividad mientras optimizamos aspectos técnicos y comerciales. Ahora podemos dedicar más tiempo a perfeccionar la ejecución en lugar de buscar inspiración», comenta Elena Ramos, chef ejecutiva de Elementos.</p>
 
 
 
