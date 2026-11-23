@@ -36,7 +36,7 @@ const alternates = {
 const fields = [
   {
     name: 'Ingredientes y cantidades',
-    detail: 'Los escribe el chef, o llegan del borrador de la receta y de la ficha técnica.',
+    detail: 'Los escribe el chef, o llegan de la receta y de la ficha técnica.',
   },
   {
     name: 'Precio de compra',
@@ -56,7 +56,7 @@ const review = [
   'Pesa lo que entra en la receta. Si el borrador dice una cosa y la báscula otra, manda la báscula.',
   'Sustituye cada precio por el de tu albarán o tu factura. Con los precios del ejemplo, el coste no es el de tu casa.',
   'Si el género merma al limpiarlo o al cocinarlo, anota con Mermas GenCal el peso que queda.',
-  'Si cambias el número de comensales, Calcula Pax deja otro borrador de cantidades. El coste de esas raciones sale otra vez de los precios que ya escribiste.',
+  'Si cambias el número de comensales, Calcula Pax prepara las cantidades para ese número. El coste de esas raciones sale otra vez de los precios que ya escribiste.',
   'El coste que te cuadra pasa a la ficha técnica, junto al resto del plato.',
 ];
 
@@ -65,7 +65,7 @@ const rows = [
   { ingredient: 'Huevo', qty: '200 g', price: '4,00 €/kg', cost: '0,80 €' },
   { ingredient: 'Cebolla', qty: '80 g', price: '1,00 €/kg', cost: '0,08 €' },
   { ingredient: 'Aceite de oliva', qty: '40 g', price: '5,00 €/kg', cost: '0,20 €' },
-  { ingredient: 'Sal', qty: '4 g', price: '0,00 €/kg', cost: '0,00 €' },
+  { ingredient: 'Sal', qty: '4 g', price: '0,50 €/kg', cost: '< 0,01 €' },
 ];
 
 const agents = [
@@ -81,8 +81,8 @@ const agents = [
 
 const faqs = [
   {
-    q: '¿Qué es un escandallo de restaurante?',
-    a: 'Es el coste de una ración: ingredientes, cantidades y el precio de compra de cada uno. En AI Chef Pro la herramienta deja ese coste a partir de los precios que tú escribes. Tú lo contrastas con el albarán antes del servicio.',
+    q: '¿Qué hace el escandallo con IA de AI Chef Pro?',
+    a: 'Calcula el coste por ración con los precios que tú escribes del albarán o de la factura. Tú lo contrastas con el albarán antes del servicio.',
   },
   {
     q: '¿De dónde salen los precios del escandallo?',
@@ -90,19 +90,19 @@ const faqs = [
   },
   {
     q: '¿Qué anota Mermas GenCal?',
-    a: 'La merma de limpieza o de cocción y el rendimiento que queda. El chef revisa ese peso con la báscula antes de usar el borrador en el servicio.',
+    a: 'La merma de limpieza o de cocción y el rendimiento que queda. El chef revisa ese peso con la báscula antes del servicio.',
   },
   {
     q: '¿Para qué sirve Calcula Pax en el escandallo?',
     a: 'Pasa las cantidades a otro número de comensales. El coste de esas raciones se calcula otra vez con los precios que ya escribiste.',
   },
   {
-    q: '¿Puedo calcular un solo plato sin cuenta?',
-    a: 'Sí. La calculadora de food cost hace el porcentaje de un plato, sin registro. En la suite, el escandallo parte de los mismos precios que tú escribes. Los agentes de la suite van en un plan de pago, con créditos.',
+    q: '¿Puedo calcular un solo plato sin registrarme?',
+    a: 'Sí. La calculadora de food cost hace el porcentaje de un plato, sin registro. Los agentes de la suite van en un plan de pago, con créditos.',
   },
   {
     q: '¿Dónde queda el coste de la ración?',
-    a: 'En la ficha técnica del plato, junto a los ingredientes y la elaboración. El chef lo revisa antes de dejar la ficha en el pase.',
+    a: 'En la ficha técnica del plato, junto a los ingredientes y la elaboración. El chef lo revisa antes de usarla en el servicio.',
   },
   {
     q: '¿Cuánto cuestan los planes?',
@@ -190,7 +190,7 @@ const schemas = [
     <section class="mx-auto max-w-3xl" aria-labelledby="que-calcula">
       <h2 id="que-calcula" class="text-3xl font-bold text-foreground">Qué calcula la herramienta</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        El escandallo con IA sale como borrador. Esto es lo que cubre, y lo que tú cierras antes del servicio.
+        Esto es lo que cubre el escandallo con IA, y lo que tú cierras antes del servicio.
       </p>
       <ul class="mt-6 grid gap-4 sm:grid-cols-2">
         {fields.map((item) => (
@@ -205,7 +205,7 @@ const schemas = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="revision">
       <h2 id="revision" class="text-3xl font-bold text-foreground">Cómo lo revisa el chef</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        El borrador ahorra la cuenta en blanco. El escandallo que se usa en el servicio es el que tú has comprobado.
+        El escandallo que se usa en el servicio es el que tú has comprobado.
       </p>
       <ol class="mt-6 list-decimal space-y-3 pl-5 text-muted-foreground leading-7">
         {review.map((step) => (
@@ -255,7 +255,7 @@ const schemas = [
         </table>
       </div>
       <p class="mt-4 text-sm text-muted-foreground leading-6">
-        Si la patata merma al confitarla, anotas el peso que queda, no el que entró en la sartén. Para esa merma está Mermas GenCal. Para 12 raciones, Calcula Pax deja otro borrador de cantidades y el coste se mira otra vez con los precios de tu albarán.
+        El coste sale de la patata que compras. Si merma al pelarla o al confitarla, con Mermas GenCal calculas el rendimiento y sabes cuánto pesa de verdad cada ración. Para 12 raciones, Calcula Pax prepara las cantidades y el coste se mira otra vez con los precios de tu albarán.
       </p>
     </section>
 
@@ -277,13 +277,13 @@ const schemas = [
     <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="ficha">
       <h2 id="ficha" class="text-3xl font-bold text-foreground">El coste en la ficha técnica</h2>
       <p class="mt-4 text-muted-foreground leading-7">
-        El coste de la ración vive en la ficha del plato, con los ingredientes, la elaboración y los alérgenos. Esa hoja se trabaja en la
+        El coste de la ración va en la ficha del plato, con los ingredientes, la elaboración y los alérgenos. Esa hoja se trabaja en la
         <a href="/ficha-tecnica-cocina-ia" class="font-semibold text-primary hover:underline">ficha técnica de cocina con IA</a>.
       </p>
       <p class="mt-4 text-muted-foreground leading-7">
-        Las cantidades, si partes de un borrador de receta, se piden en
+        Si partes de una receta, las cantidades las sacas en
         <a href="/recetas-ia-restaurantes" class="font-semibold text-primary hover:underline">recetas con IA para restaurantes</a>.
-        Los platos que salen a la sala, en la
+        Los platos que salen a sala se preparan en la
         <a href="/carta-menu-restaurante-ia" class="font-semibold text-primary hover:underline">carta del restaurante con IA</a>.
       </p>
     </section>
