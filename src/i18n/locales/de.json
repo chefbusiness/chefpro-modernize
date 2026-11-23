@@ -109,7 +109,7 @@
   "stats": {
     "apps": "50+",
     "apps_label": "Spezialisierte KI-Agenten",
-    "cookbooks": "25+",
+    "cookbooks": "27",
     "cookbooks_label": "Regionale Kochbücher",
     "tools": "10+",
     "tools_label": "Business Tools",
@@ -337,7 +337,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europa",
-        "count": "10 Küchen"
+        "count": "12 Küchen"
       },
       "latinoamerica": {
         "name": "Lateinamerika",
@@ -402,13 +402,15 @@
   },
   "cookbooks": {
     "title": "Kochbücher der Welt",
-    "description": "Erkunden Sie authentische Küchen verschiedener Kulturen mit über 25 regionalen Kochbüchern",
+    "description": "Erkunden Sie authentische Küchen verschiedener Kulturen mit 27 regionalen Kochbüchern",
     "europa": "Europa",
     "latinoamerica": "Lateinamerika",
     "asia": "Asien",
     "alemana": "Deutsch",
     "belga": "Belgisch",
     "britanica": "Britisch",
+    "croata": "Kroatisch",
+    "italiana": "Italienisch",
     "espanola": "Spanisch",
     "francesa": "Französisch",
     "griega": "Griechisch",
@@ -572,8 +574,8 @@
       },
       "id_alergenos": {
         "name": "ID Allergene",
-        "description": "Identifiziert Allergene automatisch",
-        "preview": "Erfüllt Lebensmittelsicherheitsvorschriften fehlerfrei"
+        "description": "Hilft Ihnen, die 14 Allergene jeder Rezeptur zu prüfen; die endgültige Prüfung liegt bei Ihnen",
+        "preview": "Hilft Ihnen, die 14 Allergene jeder Rezeptur zu prüfen; die endgültige Prüfung liegt bei Ihnen"
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -868,9 +870,9 @@
       },
       "id_alergenos": {
         "name": "ID Allergene",
-        "description": "Identifiziert Allergene automatisch",
-        "preview": "Erfüllt Lebensmittelsicherheitsvorschriften fehlerfrei",
-        "v2_blurb": "Allergene automatisch erkennen und Lebensmittelsicherheitsvorschriften fehlerfrei einhalten."
+        "description": "Hilft Ihnen, die 14 Allergene jeder Rezeptur zu prüfen; die endgültige Prüfung liegt bei Ihnen",
+        "preview": "Hilft Ihnen, die 14 Allergene jeder Rezeptur zu prüfen; die endgültige Prüfung liegt bei Ihnen",
+        "v2_blurb": "Hilft Ihnen, die 14 Allergene jeder Rezeptur zu prüfen; die endgültige Prüfung liegt bei Ihnen"
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -1031,7 +1033,7 @@
         "v2_features": [
           "75+ KI-Agenten enthalten",
           "10.000 monatliche Credits",
-          "25+ internationale Kochbücher",
+          "27 internationale Kochbücher",
           "E-Mail-Support"
         ],
         "period": "/Monat"
@@ -1194,7 +1196,7 @@
     "title": "Häufig gestellte Fragen",
     "description": "Finden Sie Antworten auf die häufigsten Fragen zu AI Chef Pro",
     "q1": "Was ist in AI Chef Pro enthalten?",
-    "a1": "AI Chef Pro umfasst 75+ auf Gastronomie spezialisierte KI-Agenten, von kulinarischer Kreativität bis hin zu Business-Tools. Sie erhalten Zugang zu Kochbüchern aus 25 Weltküchen, KI-Rezeptgeneratoren, wissenschaftlichem Food Pairing, Management-Tools und vielem mehr.",
+    "a1": "AI Chef Pro umfasst 75+ auf Gastronomie spezialisierte KI-Agenten, von kulinarischer Kreativität bis hin zu Business-Tools. Sie erhalten Zugang zu Kochbüchern aus 27 Weltküchen, KI-Rezeptgeneratoren, wissenschaftlichem Food Pairing, Management-Tools und vielem mehr.",
     "q2": "Kann ich AI Chef Pro als Anfänger verwenden?",
     "a2": "Absolut! AI Chef Pro ist für Profis aller Erfahrungsstufen konzipiert. Unsere Tools enthalten detaillierte Erklärungen, Schritt-für-Schritt-Techniken und Coaching, die Ihnen helfen, Ihre gastronomischen Fähigkeiten zu entwickeln.",
     "q3": "Wie funktioniert der AI Chef Mitglied-Plan?",
@@ -1610,7 +1612,7 @@
     "pricing_section": {
       "title": "Beginnen Sie noch heute mit der Kostensenkung",
       "subtitle": "Starten Sie mit dem Mitglied-Plan für 10 € pro Monat. Die Abo zahlt sich im ersten Monat durch die Ersparnisse selbst.",
-      "annual_note": "Jahrespläne mit 2 Monaten gratis. Ohne Bindung."
+      "annual_note": "Die Jahresoption von Premium Max kostet 950 € pro Jahr."
     },
     "faq_section": {
       "title": "Häufige Fragen zur KI-Kostenkontrolle für Restaurants"
@@ -1731,7 +1733,7 @@
       },
       {
         "title": "Kulinarische Kreativität",
-        "description": "Entwickeln Sie neue Gerichte, experimentieren Sie mit Pairings und adaptieren Sie Rezepte aus 25 Weltküchen für Ihr Konzept.",
+        "description": "Entwickeln Sie neue Gerichte, experimentieren Sie mit Pairings und adaptieren Sie Rezepte aus 27 Weltküchen für Ihr Konzept.",
         "keywords": [
           "kulinarische Kreativität",
           "neue Gerichte",
@@ -1770,7 +1772,7 @@
         "Generieren Sie Social-Media-Inhalte in Minuten",
         "Identifizieren Sie Allergene automatisch in allen Ihren Gerichten",
         "Reduzieren Sie Abfall mit intelligenter Einkaufsplanung",
-        "Greifen Sie auf Rezepte aus 25 Weltküchen für Ihr Unternehmen zu"
+        "Greifen Sie auf Rezepte aus 27 Weltküchen für Ihr Unternehmen zu"
       ]
     },
     "pricing_section": {
@@ -1796,7 +1798,7 @@
       },
       {
         "question": "Was kostet der Einsatz von KI für die Restaurantverwaltung?",
-        "answer": "Der Einstiegsplan ist AI Chef Mitglied-Plan: 10 € pro Monat mit 10.000 Credits. Die Premium-Pläne reichen von 25 €/Monat (AI Chef Premium Pro, 85.000 Credits) bis zu 95 €/Monat mit unbegrenzten Credits. Keine Mindestlaufzeit."
+        "answer": "Der Plan Mitglied kostet 10 € pro Monat und enthält 10.000 Credits. Premium Pro kostet 25 €/Monat und enthält 85.000 Credits. Premium Max kostet 95 €/Monat, mit unbegrenzten Credits. Monatliche Pläne haben keine Mindestlaufzeit."
       }
     ],
     "cta_section": {
@@ -1841,7 +1843,7 @@
         "label": "Allergene automatisch verwaltet"
       },
       {
-        "metric": "25+",
+        "metric": "27",
         "label": "Weltküchen zur Inspiration Ihrer Karte"
       }
     ],
@@ -2173,7 +2175,7 @@
         "label": "Restaurants und Köche, die es nutzen"
       },
       {
-        "metric": "25",
+        "metric": "27",
         "label": "Weltküchen in der Datenbank"
       }
     ],
@@ -2200,7 +2202,7 @@
         {
           "feature": "Professionelle Rezepte",
           "chatgpt": "Generisch, ohne Technik",
-          "aichef": "25 Weltküchen mit Technik"
+          "aichef": "27 Weltküchen mit Technik"
         },
         {
           "feature": "Gastronomie-Marketing",
@@ -2247,8 +2249,8 @@
         ]
       },
       {
-        "title": "Rezepte aus 25 Küchen",
-        "description": "Datenbank mit Techniken und Rezepten aus 25 Weltküchen.",
+        "title": "Rezepte aus 27 Küchen",
+        "description": "Datenbank mit Techniken und Rezepten aus 27 Weltküchen.",
         "keywords": [
           "professionelle rezepte",
           "kochtechniken",
@@ -2303,7 +2305,7 @@
         "Antworten mit korrektem gastronomischem Fachvokabular beim ersten Versuch",
         "Food Cost mit echter Restaurantlogik berechnet",
         "Allergenverwaltung nach aktuellen europäischen Vorschriften",
-        "Technisch korrekte Rezepte aus 25 Weltküchen",
+        "Technisch korrekte Rezepte aus 27 Weltküchen",
         "Marketing im Ton und der Sprache der Gastronomie",
         "Keine Lernkurve: Tools bereit, keine komplexen Prompts"
       ]
@@ -2336,7 +2338,7 @@
       },
       {
         "question": "Kann AI Chef Pro mir wie ChatGPT beim Rezepte erstellen helfen?",
-        "answer": "Ja, und mit mehr technischer Präzision: 25 Weltküchen mit korrektem kulinarischen Vokabular, Fonds, Reduktionen, Texturen, Konditortechniken, angepasst an Ihre Food Cost und Saison."
+        "answer": "Ja, und mit mehr technischer Präzision: 27 Weltküchen mit korrektem kulinarischen Vokabular, Fonds, Reduktionen, Texturen, Konditortechniken, angepasst an Ihre Food Cost und Saison."
       }
     ],
     "cta_section": {
@@ -2549,13 +2551,13 @@
   "landingRecetas": {
     "seo": {
       "title": "KI-Rezepte für Restaurants | AI Chef Pro",
-      "description": "Generieren Sie professionelle Rezepte mit KI: 25 Weltküchen, Saisonmenüs, technische Datenblätter und automatische Skalierung. Über 5.000 Restaurants nutzen es bereits.",
-      "keywords": "KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 25 Weltküchen Rezepte"
+      "description": "Generieren Sie professionelle Rezepte mit KI: 27 Weltküchen, Saisonmenüs, technische Datenblätter und automatische Skalierung. Über 5.000 Restaurants nutzen es bereits.",
+      "keywords": "KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 27 Weltküchen Rezepte"
     },
     "breadcrumb": "KI-Rezepte für Restaurants",
     "hero": {
       "badge": "Professioneller KI-Rezeptgenerator",
-      "h1": "KI-Rezepte für Restaurants: 25 Weltküchen",
+      "h1": "KI-Rezepte für Restaurants: 27 Weltküchen",
       "subtitle": "Generieren Sie technisch korrekte Rezepte sofort. Saisonmenüs, professionelle technische Datenblätter und automatische Portionierung für Ihr Restaurant.",
       "tagline": "Vom Konzept zum Gericht in Minuten, nicht in Stunden.",
       "cta_primary": "Jetzt testen",
@@ -2564,7 +2566,7 @@
     },
     "results": [
       {
-        "metric": "25",
+        "metric": "27",
         "label": "Weltküchen"
       },
       {
@@ -2594,7 +2596,7 @@
         {
           "feature": "Küchenvielfalt",
           "other": "Begrenzt auf Köche-Kenntnisse",
-          "aichef": "25 Weltküchen mit echter Technik"
+          "aichef": "27 Weltküchen mit echter Technik"
         },
         {
           "feature": "Saisonmenüs",
@@ -2628,8 +2630,8 @@
         ]
       },
       {
-        "title": "25 Weltküchen",
-        "description": "Zugang zu authentischen Rezepten aus 25 kulinarischen Traditionen: Französisch, Japanisch, Peruanisch, Italienisch, Mexikanisch und viel mehr.",
+        "title": "27 Weltküchen",
+        "description": "Zugang zu authentischen Rezepten aus 27 kulinarischen Traditionen: Französisch, Japanisch, Peruanisch, Italienisch, Mexikanisch und viel mehr.",
         "keywords": [
           "Weltküchen",
           "internationale Rezepte",
@@ -2700,17 +2702,12 @@
       "body": "Ein generischer Generator gibt Ihnen grundlegende Rezepte. AI Chef Pro versteht echte Kochkunst: Fonds, Reduktionen, Garpunkte, Pairings und die Logik jeder Weltküche.",
       "benefits": [
         "Rezepte mit korrektem kulinarischem Fachvokabular beim ersten Versuch",
-        "25 Weltküchen mit authentischen Techniken und Traditionen",
+        "27 Weltküchen mit authentischen Techniken und Traditionen",
         "Saisonmenüs abgestimmt auf Ihr gastronomisches Konzept",
         "Technische Datenblätter druckfertig für Ihr Team",
         "Sofortige Portionsskalierung ohne Berechnungsfehler",
         "Anpassung an Ernährungseinschränkungen ohne Qualitätsverlust"
       ]
-    },
-    "testimonial": {
-      "quote": "Früher verbrachte ich Stunden mit der Entwicklung neuer Gerichte. Mit AI Chef Pro habe ich in Minuten ein technisch korrektes Rezept, inklusive technischem Datenblatt. Mein Team kann es vom ersten Tag an perfekt reproduzieren.",
-      "name": "Laura Sánchez",
-      "role": "Küchenchefin, Restaurante Origen, Bilbao"
     },
     "pricing_section": {
       "title": "Zugang zum KI-Rezeptgenerator ab 10 €",
@@ -2727,7 +2724,7 @@
       },
       {
         "question": "Welche Weltküchen umfasst AI Chef Pro?",
-        "answer": "AI Chef Pro umfasst Rezepte und Techniken aus 25 Küchen: Französisch, Italienisch, Japanisch, Spanisch, Peruanisch, Mexikanisch, Griechisch, Marokkanisch, Thailändisch, Indisch, Chinesisch und mehr."
+        "answer": "AI Chef Pro umfasst Rezepte und Techniken aus 27 Küchen: Französisch, Italienisch, Japanisch, Spanisch, Peruanisch, Mexikanisch, Griechisch, Marokkanisch, Thailändisch, Indisch, Chinesisch und mehr."
       },
       {
         "question": "Kann ich technische Datenblätter mit AI Chef Pro generieren?",
@@ -2748,32 +2745,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Restaurant Food Cost Rechner KI | AI Chef Pro",
-      "description": "Berechnen Sie Ihren Restaurant Food Cost mit KI in 2 Minuten. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse pro Gericht. Starten Sie heute.",
+      "description": "Die Kosten jedes Gerichts entstehen aus den Preisen, die Sie vom Lieferschein abschreiben. Mermas GenCal notiert die Ausbeute und Calcula Pax setzt die Portionen. Den Verkaufspreis legen Sie fest.",
       "keywords": "Restaurant Food Cost, Food Cost KI, Food Cost Rechner, Restaurantkostenkontrolle, Gerichtverkaufspreis, Küchenverluste, Gerichtrentabilität"
     },
     "breadcrumb": "Restaurant Food Cost mit KI",
     "hero": {
       "badge": "KI Food Cost Rechner für Restaurants",
-      "h1": "Restaurant Food Cost mit KI: Vollständige Kalkulation in 2 Minuten",
-      "subtitle": "Berechnen Sie die genauen Kosten jedes Gerichts sofort. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse zur Gewinnmaximierung.",
+      "h1": "Restaurant Food Cost mit KI: Vollständige Kalkulation",
+      "subtitle": "Die Kosten jedes Gerichts entstehen aus den Preisen, die Sie vom Lieferschein abschreiben. Mermas GenCal notiert die Ausbeute und Calcula Pax setzt die Portionen. Den Verkaufspreis legen Sie fest.",
       "tagline": "Hören Sie auf, Geld durch unkontrollierten Food Cost zu verlieren.",
       "cta_primary": "Meinen Food Cost berechnen",
       "cta_secondary": "Pläne und Preise ansehen",
-      "no_card": "Ab 10 €/Monat · Ohne Vertragsbindung · Sofortiger Zugang"
+      "no_card": "Ab 10 €/Monat. Monatliche Pläne haben keine Mindestlaufzeit"
     },
     "results": [
-      {
-        "metric": "2min",
-        "label": "Für eine vollständige Kalkulation"
-      },
-      {
-        "metric": "30%",
-        "label": "Durchschnittliche Kostenreduktion"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "Aktive Restaurants"
-      },
       {
         "metric": "75+",
         "label": "KI-Agenten"
@@ -2786,14 +2771,14 @@
       "col_other": "Excel / Manuell",
       "items": [
         {
-          "feature": "Zeit pro Kalkulation",
+          "feature": "Kalkulation",
           "other": "30-60 Minuten pro Gericht",
-          "aichef": "2 Minuten mit KI"
+          "aichef": "Aus den Preisen, die Sie vom Lieferschein abschreiben"
         },
         {
           "feature": "Preisaktualisierungen",
           "other": "Manuell bei jeder Kostensteigerung",
-          "aichef": "Automatische Neuberechnung sofort"
+          "aichef": "Sie tragen den neuen Lieferantenpreis ein"
         },
         {
           "feature": "Schwundkontrolle",
@@ -2803,12 +2788,12 @@
         {
           "feature": "Verkaufspreis",
           "other": "Bauchgefühl ohne Grundlage",
-          "aichef": "Optimaler Preis mit Zielmarge"
+          "aichef": "Den Verkaufspreis legen Sie fest"
         },
         {
           "feature": "Rentabilität pro Gericht",
           "other": "Keine systematische Analyse",
-          "aichef": "Echtzeit-Rentabilitäts-Dashboard"
+          "aichef": "Sie vergleichen die Kosten jedes Gerichts"
         }
       ]
     },
@@ -2818,35 +2803,35 @@
     },
     "tools": [
       {
-        "title": "Automatische KI Food Cost Kalkulation",
-        "description": "Geben Sie Zutaten, Gewichte und Lieferantenpreise ein. KI berechnet die genauen Kosten jedes Gerichts in Sekunden.",
+        "title": "Kalkulation aus Ihren Preisen",
+        "description": "Sie tragen Zutaten, Gewichte und die Preise ein, die Sie vom Lieferschein oder der Rechnung abschreiben. Die Kosten pro Portion entstehen aus diesen Preisen.",
         "keywords": [
-          "automatische Kostenkalkulation",
-          "Food Cost pro Gericht",
-          "Food Cost Rechner"
+          "Kalkulation",
+          "Kosten pro Portion",
+          "Lieferschein"
         ]
       },
       {
-        "title": "Schwundkontrolle",
-        "description": "Berechnen Sie den tatsächlichen Schwund nach Zutatenart (Reinigung, Garen, Verdunstung) für präzise Kosten.",
+        "title": "Mermas GenCal",
+        "description": "Wenn eine Zutat bei der Vorbereitung oder beim Garen Gewicht verliert, notiert Mermas GenCal das Gewicht, das bleibt.",
         "keywords": [
-          "Küchenschwund",
-          "Zutatenrendite",
-          "Garverluste"
+          "Schwund",
+          "Ausbeute",
+          "Mermas GenCal"
         ]
       },
       {
-        "title": "Optimaler Verkaufspreis",
-        "description": "KI berechnet den idealen Verkaufspreis basierend auf Ihrer Zielmarge, dem Markt und der Positionierung Ihres Restaurants.",
+        "title": "Verkaufspreis",
+        "description": "Die Kosten entstehen aus den Preisen, die Sie abschreiben. Den Preis auf der Karte legen Sie fest.",
         "keywords": [
-          "Gerichtverkaufspreis",
-          "Restaurantmarge",
-          "Preispolitik"
+          "Verkaufspreis",
+          "Karte",
+          "Ihre Entscheidung"
         ]
       },
       {
         "title": "Rentabilitätsanalyse",
-        "description": "Identifizieren Sie, welche Gerichte die höchste Marge bringen und welche Sie Geld kosten. Optimieren Sie Ihre Speisekarte mit echten Daten.",
+        "description": "Sie vergleichen die Kosten jedes Gerichts anhand der Preise, die Sie eingetragen haben. Sie entscheiden, welche Gerichte bleiben.",
         "keywords": [
           "Rentabilität pro Gericht",
           "Menü-Engineering",
@@ -2855,7 +2840,7 @@
       },
       {
         "title": "Preisaktualisierungen",
-        "description": "Wenn die Kosten einer Zutat steigen, berechnet KI automatisch alle betroffenen Kalkulationen neu.",
+        "description": "Wenn sich ein Lieferantenpreis ändert, tragen Sie den neuen Preis in die Kalkulationen ein, die ihn nutzen.",
         "keywords": [
           "Food Cost Update",
           "Lebensmittelinflation",
@@ -2863,12 +2848,12 @@
         ]
       },
       {
-        "title": "Food Cost Dashboard",
-        "description": "Visualisieren Sie den globalen Food Cost Ihres Restaurants, nach Kategorie und Gericht. Erkennen Sie Abweichungen sofort.",
+        "title": "Calcula Pax",
+        "description": "Wenn sich die Gästezahl ändert, setzt Calcula Pax die Mengen. Die Kosten entstehen weiter aus den Preisen, die Sie schon eingetragen haben.",
         "keywords": [
-          "Food Cost Dashboard",
-          "Küchenkostenkontrolle",
-          "Restaurant KPIs"
+          "Portionen",
+          "Gäste",
+          "Calcula Pax"
         ]
       }
     ],
@@ -2883,7 +2868,7 @@
       },
       {
         "title": "Betriebsleiter",
-        "description": "Überwacht den Food Cost mehrerer Standorte von einem einzigen Dashboard mit Echtzeitdaten."
+        "description": "Prüft die Kosten der Gerichte jedes Betriebs anhand der dort eingetragenen Preise."
       },
       {
         "title": "Küchenchef",
@@ -2891,29 +2876,24 @@
       },
       {
         "title": "Controller oder Finanz",
-        "description": "Hat erstmals genaue Kontrolle über die Kosten jedes Gerichts und deren Auswirkung auf das Ergebnis."
+        "description": "Sieht die Kosten jedes Gerichts und ihre Auswirkung auf das Ergebnis."
       }
     ],
     "why_section": {
       "title": "Unkontrollierter Food Cost ist die Marge, die Sie verschenken",
-      "body": "Die meisten Restaurants verlieren 5% bis 15% potenziellen Gewinn durch falsch berechneten Food Cost. AI Chef Pro gibt Ihnen die präzise Kontrolle, die Sie benötigen, um Ihre Marge zu schützen.",
+      "body": "Food Cost sind die Kosten der Zutaten jedes Gerichts. Sie entstehen aus den Preisen, die Sie vom Lieferschein abschreiben.",
       "benefits": [
-        "Vollständige Kalkulation jedes Gerichts in unter 2 Minuten",
-        "Schwundkontrolle nach Zutatenart und Gartechnik",
-        "Optimaler Verkaufspreis mit Ihrer Zielmarge berechnet",
-        "Automatische Neuberechnung bei Lieferantenpreisänderungen",
-        "Identifikation Ihrer profitabelsten und unrentabelsten Gerichte",
-        "Globales Food Cost Dashboard mit Abweichungsalarmen"
+        "Kosten pro Portion aus den Preisen, die Sie vom Lieferschein abschreiben",
+        "Mermas GenCal notiert die Ausbeute nach Vorbereitung und Garen",
+        "Den Verkaufspreis legen Sie anhand dieser Kosten fest",
+        "Wenn sich ein Lieferantenpreis ändert, tragen Sie den neuen ein",
+        "Sie vergleichen die Kosten jedes Gerichts anhand der eingetragenen Preise",
+        "Calcula Pax setzt die Mengen für eine andere Portionszahl"
       ]
-    },
-    "testimonial": {
-      "quote": "Wir haben jahrelang Food Cost in Excel berechnet. Mit AI Chef Pro sind alle Kalkulationen in Echtzeit aktualisiert und wir haben 4 Gerichte identifiziert, die uns unwissentlich Geld gekostet haben. Wir haben die Investition in drei Monaten zurückgewonnen.",
-      "name": "Roberto Fernández",
-      "role": "Betriebsleiter, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
       "title": "Beginnen Sie mit der Food Cost Kontrolle ab 10 €",
-      "subtitle": "Berechnen Sie Ihre gesamte Speisekarte mit dem Mitglied-Plan für 10 € pro Monat. Keine Mindestlaufzeit.",
+      "subtitle": "Kalkulieren Sie die Karte mit dem Plan Mitglied für 10 € im Monat. Monatliche Pläne haben keine Mindestlaufzeit.",
       "annual_note": "Jahresplan AI Chef Premium Max auch verfügbar für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
@@ -2922,24 +2902,24 @@
     "faq": [
       {
         "question": "Was ist eine Restaurant Food Cost Kalkulation?",
-        "answer": "Eine Food Cost Kalkulation ist die detaillierte Berechnung der Produktionskosten eines Gerichts: Zutaten, Gewichte, Schwund und Lieferantenpreis. Es ist die Grundlage des Food Cost und des Verkaufspreises. AI Chef Pro generiert sie automatisch mit KI in unter 2 Minuten."
+        "answer": "Eine Kalkulation rechnet die Kosten eines Gerichts: Zutaten, Gewichte, Schwund und Lieferantenpreis. Bei AI Chef Pro entstehen diese Kosten aus den Preisen, die Sie vom Lieferschein abschreiben. Sie prüfen sie vor dem Service."
       },
       {
         "question": "Wie berechnet AI Chef Pro den Food Cost eines Gerichts?",
-        "answer": "Sie geben Zutaten, Gewichte pro Portion und Lieferantenpreise ein. KI berechnet automatisch die Bruttokosten, wendet die Schwundprozentsätze für jede Zutat an und gibt Ihnen die tatsächlichen Nettokosten des Gerichts."
+        "answer": "Sie geben Zutaten, Gewichte pro Portion und Lieferantenpreise ein. Die Kalkulation geht von diesen Preisen aus. Den Schwund tragen Sie je Zutat ein."
       },
       {
         "question": "Kann ich den Verkaufspreis mit AI Chef Pro berechnen?",
-        "answer": "Ja. Nach der Food Cost Berechnung schlägt die KI den optimalen Verkaufspreis basierend auf Ihrer Zielmarge vor (typischerweise 25%-35% Food Cost Ratio für Restaurants), unter Berücksichtigung der Positionierung Ihres Restaurants."
+        "answer": "Die Kalkulation liefert die Kosten pro Portion aus den Preisen, die Sie vom Lieferschein oder der Rechnung abschreiben. Den Verkaufspreis legen Sie fest."
       },
       {
         "question": "Was passiert, wenn ein Zutatenpreis steigt?",
-        "answer": "AI Chef Pro berechnet automatisch alle Kalkulationen neu, die diese Zutat enthalten. In Sekunden wissen Sie, welche Gerichte teurer geworden sind, wie stark sich die Marge verändert hat und ob Sie die Verkaufspreise anpassen müssen."
+        "answer": "Sie aktualisieren den Preis dieser Zutat in den Kalkulationen, die sie enthalten, und sehen, welche Gerichte sie verwenden."
       }
     ],
     "cta_section": {
       "title": "Beginnen Sie noch heute mit KI Food Cost Kontrolle",
-      "subtitle": "Über {{userCount}} Restaurants nutzen AI Chef Pro bereits, um Food Cost zu berechnen und ihre Marge zu schützen.",
+      "subtitle": "Die Kosten jedes Gerichts entstehen aus den Preisen, die Sie vom Lieferschein abschreiben.",
       "primary": "Meinen Food Cost berechnen",
       "secondary": "Alle Pläne ansehen"
     }
@@ -3113,11 +3093,6 @@
         "Marge erhöhen ohne aggressive Preiserhöhungen",
         "Totale Kontrolle in Sekunden, ohne Excel"
       ]
-    },
-    "testimonial": {
-      "quote": "Mit diesem Rechner sah ich, dass mein Signatur-Gericht mehr kostete als gedacht. Ich erhöhte den Preis um 1,50€ und niemand bemerkte es. Ich verdiente 400€ extra in diesem Monat.",
-      "name": "Carlos Romero",
-      "role": "Inhaber, Bar Restaurant La Plaza, Saragossa"
     },
     "pricing": {
       "title": "Mehr Leistung mit AI Chef Pro",

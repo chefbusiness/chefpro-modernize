@@ -109,7 +109,7 @@
   "stats": {
     "apps": "50+",
     "apps_label": "Agents IA Spécialisés",
-    "cookbooks": "25+",
+    "cookbooks": "27",
     "cookbooks_label": "Livres de Recettes Régionales",
     "tools": "10+",
     "tools_label": "Outils Business",
@@ -337,7 +337,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europe",
-        "count": "10 Cuisines"
+        "count": "12 Cuisines"
       },
       "latinoamerica": {
         "name": "Amérique Latine",
@@ -544,7 +544,7 @@
         "v2_features": [
           "75+ agents IA inclus",
           "10 000 crédits mensuels",
-          "25+ livres de cuisine du monde",
+          "27 livres de cuisine du monde",
           "Support par e-mail"
         ],
         "period": "/mois"
@@ -867,9 +867,9 @@
       },
       "id_alergenos": {
         "name": "ID Allergènes",
-        "description": "Identifie allergènes automatiquement",
-        "preview": "Respecte réglementations de sécurité alimentaire sans erreurs",
-        "v2_blurb": "Identifiez automatiquement les allergènes et respectez les normes sanitaires sans erreur."
+        "description": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient",
+        "preview": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient",
+        "v2_blurb": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient"
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -949,13 +949,15 @@
   },
   "cookbooks": {
     "title": "Livres de Recettes du Monde",
-    "description": "Explorez des cuisines authentiques de différentes cultures avec plus de 25 livres de recettes régionales",
+    "description": "Explorez des cuisines authentiques de différentes cultures avec 27 livres de recettes régionales",
     "europa": "Europe",
     "latinoamerica": "Amérique Latine",
     "asia": "Asie",
     "alemana": "Allemande",
     "belga": "Belge",
     "britanica": "Britannique",
+    "croata": "Croate",
+    "italiana": "Italienne",
     "espanola": "Espagnole",
     "francesa": "Française",
     "griega": "Grecque",
@@ -1326,7 +1328,7 @@
     "pricing_section": {
       "title": "Commencez à réduire vos coûts dès aujourd'hui",
       "subtitle": "Commencez avec le plan Membre à 10 € par mois. L'abonnement se rembourse seul avec ce que vous économisez le premier mois.",
-      "annual_note": "Formules annuelles avec 2 mois offerts. Sans engagement."
+      "annual_note": "L'option annuelle de Premium Max coûte 950 € par an."
     },
     "faq_section": {
       "title": "Questions fréquentes sur le contrôle des coûts IA"
@@ -1447,7 +1449,7 @@
       },
       {
         "title": "Créativité culinaire",
-        "description": "Développez de nouveaux plats, expérimentez des accords et adaptez des recettes de 25 cuisines du monde à votre concept.",
+        "description": "Développez de nouveaux plats, expérimentez des accords et adaptez des recettes de 27 cuisines du monde à votre concept.",
         "keywords": [
           "créativité culinaire",
           "nouveaux plats",
@@ -1486,7 +1488,7 @@
         "Générez du contenu pour les réseaux sociaux en minutes",
         "Identifiez automatiquement les allergènes dans tous vos plats",
         "Réduisez le gaspillage grâce à une planification intelligente des achats",
-        "Accédez à des recettes de 25 cuisines du monde adaptées à votre établissement"
+        "Accédez à des recettes de 27 cuisines du monde adaptées à votre établissement"
       ]
     },
     "pricing_section": {
@@ -1512,7 +1514,7 @@
       },
       {
         "question": "Combien coûte l'utilisation de l'IA pour la gestion d'un restaurant ?",
-        "answer": "Le plan d'entrée est AI Chef Membre : 10 € par mois avec 10 000 crédits. Les plans Premium vont de 25 €/mois (AI Chef Premium Pro, 85 000 crédits) à 95 €/mois avec crédits illimités. Sans engagement."
+        "answer": "Le plan Membre coûte 10 € par mois et inclut 10 000 crédits. Premium Pro coûte 25 €/mois et inclut 85 000 crédits. Premium Max coûte 95 €/mois, avec des crédits illimités. Les plans mensuels n'ont pas de durée minimale."
       }
     ],
     "cta_section": {
@@ -1557,7 +1559,7 @@
         "label": "allergènes gérés automatiquement"
       },
       {
-        "metric": "25+",
+        "metric": "27",
         "label": "cuisines du monde pour inspirer votre carte"
       }
     ],
@@ -1889,7 +1891,7 @@
         "label": "restaurants et chefs qui l'utilisent"
       },
       {
-        "metric": "25",
+        "metric": "27",
         "label": "cuisines du monde en base de données"
       }
     ],
@@ -1916,7 +1918,7 @@
         {
           "feature": "Recettes professionnelles",
           "chatgpt": "Génériques, sans technique",
-          "aichef": "25 cuisines du monde avec technique"
+          "aichef": "27 cuisines du monde avec technique"
         },
         {
           "feature": "Marketing gastronomique",
@@ -1963,8 +1965,8 @@
         ]
       },
       {
-        "title": "Recettes de 25 Cuisines",
-        "description": "Base de données de techniques et recettes de 25 cuisines du monde.",
+        "title": "Recettes de 27 Cuisines",
+        "description": "Base de données de techniques et recettes de 27 cuisines du monde.",
         "keywords": [
           "recettes professionnelles",
           "techniques culinaires",
@@ -2019,7 +2021,7 @@
         "Réponses avec le vocabulaire technique gastronomique correct dès la première tentative",
         "Food cost calculé avec la logique d'un vrai restaurant",
         "Gestion des allergènes selon la réglementation européenne en vigueur",
-        "Recettes techniquement correctes de 25 cuisines du monde",
+        "Recettes techniquement correctes de 27 cuisines du monde",
         "Marketing avec le ton et le langage propres à la restauration",
         "Sans courbe d'apprentissage: outils prêts, sans prompts complexes"
       ]
@@ -2052,7 +2054,7 @@
       },
       {
         "question": "AI Chef Pro peut-il m'aider à créer des recettes comme ChatGPT?",
-        "answer": "Oui, et avec plus de précision technique: 25 cuisines du monde avec le vocabulaire culinaire correct, fonds, réductions, textures, techniques de pâtisserie, adaptées à votre food cost et à la saison."
+        "answer": "Oui, et avec plus de précision technique: 27 cuisines du monde avec le vocabulaire culinaire correct, fonds, réductions, textures, techniques de pâtisserie, adaptées à votre food cost et à la saison."
       }
     ],
     "cta_section": {
@@ -2280,7 +2282,7 @@
     },
     "results": [
       {
-        "metric": "25",
+        "metric": "27",
         "label": "Cuisines du monde"
       },
       {
@@ -2310,7 +2312,7 @@
         {
           "feature": "Variété de cuisines",
           "other": "Limitée aux connaissances du chef",
-          "aichef": "25 cuisines du monde avec technique réelle"
+          "aichef": "27 cuisines du monde avec technique réelle"
         },
         {
           "feature": "Menus de saison",
@@ -2344,7 +2346,7 @@
         ]
       },
       {
-        "title": "25 Cuisines du Monde",
+        "title": "27 Cuisines du Monde",
         "description": "Accédez à des recettes authentiques de 25 traditions culinaires : française, japonaise, péruvienne, italienne, mexicaine et bien plus.",
         "keywords": [
           "cuisines du monde",
@@ -2416,17 +2418,12 @@
       "body": "Un générateur générique vous donnera des recettes basiques. AI Chef Pro comprend la technique culinaire réelle : fonds, réductions, points de cuisson, accords et la logique de chaque cuisine du monde.",
       "benefits": [
         "Recettes avec vocabulaire technique culinaire correct dès le premier essai",
-        "25 cuisines du monde avec techniques et traditions authentiques",
+        "27 cuisines du monde avec techniques et traditions authentiques",
         "Menus de saison alignés avec votre concept gastronomique",
         "Fiches techniques prêtes à imprimer et utiliser avec votre équipe",
         "Mise à l'échelle des portions instantanée sans erreurs de calcul",
         "Adaptation aux restrictions alimentaires sans perdre la qualité culinaire"
       ]
-    },
-    "testimonial": {
-      "quote": "Je passais des heures à développer de nouveaux plats. Avec AI Chef Pro, j'ai une recette techniquement correcte en minutes, avec la fiche technique incluse. Mon équipe peut la reproduire parfaitement dès le premier jour.",
-      "name": "Laura Sánchez",
-      "role": "Chef Exécutive, Restaurante Origen, Bilbao"
     },
     "pricing_section": {
       "title": "Accédez au générateur de recettes IA à partir de 10 €",
@@ -2439,7 +2436,7 @@
     "faq": [
       {
         "question": "Existe-t-il une IA recette cuisine gratuite ?",
-        "answer": "Un chatbot grand public a souvent un palier gratuit pour une recette à la maison. AI Chef Pro n'a pas d'offre gratuite : le plan Membre est à 10 €/mois, 10 000 crédits, sans engagement. Cette page décrit l'usage en restaurant (fiche technique, allergènes, portions), pas un classement d'applications domestiques."
+        "answer": "Un chatbot grand public a souvent un palier gratuit pour une recette à la maison. AI Chef Pro n'a pas d'offre gratuite : le plan Membre coûte 10 €/mois et inclut 10 000 crédits. Les plans mensuels n'ont pas de durée minimale. Cette page décrit l'usage en restaurant (fiche technique, allergènes, portions), pas un classement d'applications domestiques."
       },
       {
         "question": "L'IA peut-elle créer des recettes professionnelles pour les restaurants ?",
@@ -2447,7 +2444,7 @@
       },
       {
         "question": "Quelles cuisines du monde inclut AI Chef Pro ?",
-        "answer": "AI Chef Pro inclut des recettes et techniques de 25 cuisines : française, italienne, japonaise, espagnole, péruvienne, mexicaine, grecque, marocaine, thaïlandaise, indienne, chinoise et plus. Chacune avec ses techniques et vocabulaire authentiques."
+        "answer": "AI Chef Pro inclut des recettes et techniques de 27 cuisines : française, italienne, japonaise, espagnole, péruvienne, mexicaine, grecque, marocaine, thaïlandaise, indienne, chinoise et plus. Chacune avec ses techniques et vocabulaire authentiques."
       },
       {
         "question": "Puis-je générer des fiches techniques avec AI Chef Pro ?",
@@ -2468,32 +2465,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Logiciel Food Cost Restaurant avec IA | AI Chef Pro",
-      "description": "Logiciel de food cost pour restaurant : calculez le coût de chaque plat avec l'IA, maîtrisez les pertes, fixez vos prix. Dès 10 €/mois, sans engagement.",
+      "description": "Le coût de chaque plat part des prix que vous copiez du bon de livraison. Mermas GenCal note le rendement et Calcula Pax prépare les portions. Le prix de vente, c’est vous qui le fixez.",
       "keywords": "logiciel food cost, logiciel food cost restaurant, logiciel calcul food cost, logiciel food cost restauration, food cost IA, calcul food cost restaurant, outil de calcul coût restaurant, contrôle coûts restaurant, prix vente plat, pertes cuisine"
     },
     "breadcrumb": "Food Cost Restaurant avec IA",
     "hero": {
       "badge": "Logiciel de Food Cost IA pour Restaurants",
-      "h1": "Logiciel Food Cost Restaurant avec IA : Calcul Complet en Quelques Minutes",
-      "subtitle": "Calculez le coût exact de chaque plat instantanément. Contrôle des pertes, prix de vente optimal et analyse de rentabilité pour maximiser les bénéfices de votre restaurant.",
+      "h1": "Logiciel Food Cost Restaurant avec IA : Calcul Complet",
+      "subtitle": "Le coût de chaque plat part des prix que vous copiez du bon de livraison. Mermas GenCal note le rendement et Calcula Pax prépare les portions. Le prix de vente, c’est vous qui le fixez.",
       "tagline": "Arrêtez de perdre de l'argent à cause d'un food cost non maîtrisé.",
       "cta_primary": "Calculer mon food cost",
       "cta_secondary": "Voir les plans et tarifs",
-      "no_card": "Dès 10 €/mois · Sans engagement · Accès immédiat"
+      "no_card": "Dès 10 €/mois. Les plans mensuels n’ont pas de durée minimale"
     },
     "results": [
-      {
-        "metric": "Minutes",
-        "label": "pour un calcul complet, pas des heures"
-      },
-      {
-        "metric": "30%",
-        "label": "Réduction moyenne du coût matière"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "Chefs et professionnels de la restauration"
-      },
       {
         "metric": "75+",
         "label": "Agents IA"
@@ -2506,14 +2491,14 @@
       "col_other": "Excel / Manuel",
       "items": [
         {
-          "feature": "Temps par calcul",
+          "feature": "Calcul du coût",
           "other": "Long et fastidieux, plat par plat",
-          "aichef": "Quelques minutes avec l'IA"
+          "aichef": "À partir des prix que vous copiez du bon de livraison"
         },
         {
           "feature": "Mise à jour des prix",
           "other": "Manuelle à chaque hausse",
-          "aichef": "Recalcul automatique instantané"
+          "aichef": "Vous saisissez le nouveau prix fournisseur"
         },
         {
           "feature": "Contrôle des pertes",
@@ -2523,12 +2508,12 @@
         {
           "feature": "Prix de vente",
           "other": "Intuition sans base objective",
-          "aichef": "Prix optimal avec marge cible"
+          "aichef": "Le prix de vente, c’est vous qui le fixez"
         },
         {
           "feature": "Rentabilité par plat",
           "other": "Pas d'analyse systématique",
-          "aichef": "Dashboard rentabilité en temps réel"
+          "aichef": "Vous comparez le coût de chaque plat"
         }
       ]
     },
@@ -2538,35 +2523,35 @@
     },
     "tools": [
       {
-        "title": "Food Cost Automatique IA",
-        "description": "Entrez ingrédients, grammages et prix fournisseur. L'IA calcule le food cost exact de chaque plat en secondes.",
+        "title": "Coût à partir de vos prix",
+        "description": "Vous saisissez les ingrédients, les grammages et les prix que vous copiez du bon de livraison ou de la facture. Le coût par portion part de ces prix.",
         "keywords": [
-          "food cost automatique",
-          "food cost par plat",
-          "calculateur food cost"
+          "fiche de coût",
+          "coût par portion",
+          "bon de livraison"
         ]
       },
       {
-        "title": "Contrôle des Pertes",
-        "description": "Calculez les pertes réelles par type d'ingrédient (épluchage, cuisson, évaporation) pour un food cost précis.",
+        "title": "Mermas GenCal",
+        "description": "Si un ingrédient perd du poids à la préparation ou à la cuisson, Mermas GenCal note le poids qui reste.",
         "keywords": [
-          "pertes cuisine",
-          "rendement ingrédients",
-          "pertes à la cuisson"
+          "pertes",
+          "rendement",
+          "Mermas GenCal"
         ]
       },
       {
-        "title": "Prix de Vente Optimal",
-        "description": "L'IA calcule le prix de vente idéal selon votre marge cible, le marché et le positionnement de votre restaurant.",
+        "title": "Prix de vente",
+        "description": "Le coût part des prix que vous copiez. Le prix sur la carte, c’est vous qui le décidez.",
         "keywords": [
-          "prix vente plat",
-          "marge restaurant",
-          "politique tarifaire"
+          "prix de vente",
+          "carte",
+          "votre décision"
         ]
       },
       {
         "title": "Analyse de Rentabilité",
-        "description": "Identifiez quels plats vous rapportent le plus et lesquels vous coûtent de l'argent. Optimisez votre carte avec de vraies données.",
+        "description": "Vous comparez le coût de chaque plat à partir des prix saisis. Vous décidez quels plats restent.",
         "keywords": [
           "rentabilité par plat",
           "ingénierie menu",
@@ -2575,7 +2560,7 @@
       },
       {
         "title": "Mise à Jour des Prix",
-        "description": "Quand le coût d'un ingrédient augmente, l'IA recalcule automatiquement tous les fiches de coût concernées.",
+        "description": "Quand un prix fournisseur change, vous saisissez le nouveau prix sur les fiches qui l’utilisent.",
         "keywords": [
           "mise à jour food cost",
           "inflation alimentaire",
@@ -2583,12 +2568,12 @@
         ]
       },
       {
-        "title": "Dashboard Food Cost",
-        "description": "Visualisez le food cost global de votre restaurant, par catégorie et par plat. Détectez les écarts instantanément.",
+        "title": "Calcula Pax",
+        "description": "Si le nombre de couverts change, Calcula Pax prépare les quantités. Le coût part toujours des prix que vous avez déjà saisis.",
         "keywords": [
-          "dashboard food cost",
-          "contrôle coûts cuisine",
-          "KPIs restaurant"
+          "portions",
+          "couverts",
+          "Calcula Pax"
         ]
       }
     ],
@@ -2603,7 +2588,7 @@
       },
       {
         "title": "Directeur des Opérations",
-        "description": "Surveille le food cost de plusieurs établissements depuis un seul tableau de bord en temps réel."
+        "description": "Relit le coût des plats de chaque site à partir des prix saisis sur place."
       },
       {
         "title": "Chef de Cuisine",
@@ -2611,29 +2596,24 @@
       },
       {
         "title": "Contrôleur de Gestion",
-        "description": "Dispose pour la première fois d'un contrôle exact du coût de chaque plat et de son impact sur le compte de résultat."
+        "description": "Dispose d'un suivi du coût de chaque plat et de son impact sur le compte de résultat."
       }
     ],
     "why_section": {
       "title": "Le food cost non maîtrisé, c'est la marge que vous offrez",
-      "body": "Un food cost mal calculé, des pertes ignorées ou une hausse fournisseur non répercutée grignotent votre marge sans que vous le voyiez. AI Chef Pro vous donne le contrôle exact dont vous avez besoin pour la protéger.",
+      "body": "Le food cost, c’est le coût des ingrédients de chaque plat. Il part des prix que vous copiez du bon de livraison.",
       "benefits": [
-        "Calcul complet de n'importe quel plat en quelques minutes",
-        "Contrôle des pertes par type d'ingrédient et technique de cuisson",
-        "Prix de vente optimal calculé avec votre marge cible",
-        "Recalcul automatique quand les prix fournisseur changent",
-        "Identification de vos plats les plus et moins rentables",
-        "Dashboard food cost global avec alertes d'écart"
+        "Coût par portion à partir des prix que vous copiez du bon de livraison",
+        "Mermas GenCal note le rendement après préparation et cuisson",
+        "Le prix de vente, c’est vous qui le fixez à partir de ce coût",
+        "Quand un prix fournisseur change, vous saisissez le nouveau",
+        "Vous comparez le coût de chaque plat à partir des prix saisis",
+        "Calcula Pax prépare les quantités pour un autre nombre de portions"
       ]
-    },
-    "testimonial": {
-      "quote": "Nous faisions nos fiches de coût sur Excel depuis des années. Avec AI Chef Pro, elles sont toutes mises à jour en temps réel et nous avons identifié 4 plats qui nous coûtaient de l'argent sans le savoir. Nous avons récupéré l'investissement en trois mois.",
-      "name": "Roberto Fernández",
-      "role": "Directeur des Opérations, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
       "title": "Commencez à contrôler votre food cost à partir de 10 €",
-      "subtitle": "Établissez votre carte complète avec le plan Membre à 10 € par mois. Sans engagement.",
+      "subtitle": "Établissez votre carte avec le plan Membre à 10 € par mois. Les plans mensuels n’ont pas de durée minimale.",
       "annual_note": "Plan annuel AI Chef Premium Max disponible à 950€/an · Économisez 2 mois"
     },
     "faq_section": {
@@ -2642,36 +2622,36 @@
     "faq": [
       {
         "question": "Qu'est-ce qu'une fiche de coût de restaurant ?",
-        "answer": "Une fiche de coût est le calcul détaillé du coût de production d'un plat : ingrédients, grammages, pertes et prix fournisseur. C'est la base du food cost et du prix de vente. AI Chef Pro la génère automatiquement avec l'IA en quelques minutes."
+        "answer": "Une fiche de coût calcule le coût d’un plat : ingrédients, grammages, pertes et prix fournisseur. Dans AI Chef Pro, ce coût part des prix que vous copiez du bon de livraison. Vous le vérifiez avant le service."
       },
       {
         "question": "Comment AI Chef Pro calcule-t-il le food cost d'un plat ?",
-        "answer": "Vous entrez les ingrédients, les grammages par portion et les prix fournisseur. L'IA calcule automatiquement le coût brut, applique les pourcentages de pertes correspondants à chaque ingrédient et vous donne le coût net réel du plat."
+        "answer": "Vous saisissez les ingrédients, les grammages par portion et les prix du bon de livraison ou de la facture. Le coût par portion part de ces prix. S’il y a une perte, Mermas GenCal note le poids qui reste."
       },
       {
         "question": "Puis-je calculer le prix de vente avec AI Chef Pro ?",
-        "answer": "Oui. Une fois le food cost calculé, l'IA suggère le prix de vente optimal selon la marge souhaitée (généralement entre 25% et 35% de ratio food cost pour les restaurants), en tenant compte aussi du positionnement de votre restaurant."
+        "answer": "La fiche donne le coût par portion à partir des prix que vous copiez du bon de livraison ou de la facture. Le prix de vente, c’est vous qui le fixez."
       },
       {
         "question": "Que se passe-t-il quand le prix d'un ingrédient augmente ?",
-        "answer": "AI Chef Pro recalcule automatiquement toutes les fiches de coût qui incluent cet ingrédient. En quelques secondes, vous savez quels plats sont devenus plus chers, de combien la marge a varié et si vous devez ajuster le prix de vente."
+        "answer": "Vous mettez à jour le prix de cet ingrédient sur les fiches qui l'incluent, et vous voyez quels plats l'utilisent."
       },
       {
         "question": "Quel logiciel de food cost choisir pour un restaurant ?",
-        "answer": "Un bon logiciel de food cost pour la restauration doit couvrir cinq points : les fiches de coût par plat, les pertes par ingrédient, la mise à jour automatique des prix fournisseur, le calcul du prix de vente selon votre marge cible et l'analyse de rentabilité de la carte. AI Chef Pro réunit tout cela et l'IA fait les calculs à votre place. Le plan Membre démarre à 10 €/mois, sans engagement."
+        "answer": "Le calcul part des prix que vous copiez : fiches de coût, pertes avec Mermas GenCal, mise à jour du prix fournisseur que vous saisissez, et le prix de vente que vous fixez. Le plan Membre coûte 10 €/mois. Les plans mensuels n’ont pas de durée minimale."
       },
       {
         "question": "Existe-t-il un logiciel de calcul du food cost adapté à une pizzeria ?",
-        "answer": "Oui. Le calcul fonctionne avec n'importe quelle recette : vous saisissez les ingrédients, les grammages par portion et les prix fournisseur, puis l'IA vous donne le coût réel de chaque pizza, en tenant compte des pertes. Vous pouvez ensuite fixer le prix de vente en fonction de la marge visée."
+        "answer": "Vous saisissez les ingrédients, les grammages par portion et les prix du bon de livraison ou de la facture. Le coût par portion part de ces prix. S’il y a une perte, Mermas GenCal note le poids qui reste. La fiche donne le coût par portion à partir des prix que vous copiez du bon de livraison ou de la facture. Le prix de vente, c’est vous qui le fixez."
       },
       {
         "question": "Comment calculer le food cost d'un restaurant ?",
-        "answer": "Le ratio de food cost se calcule ainsi : coût des matières premières ÷ chiffre d'affaires HT × 100. Pour un plat, on divise son coût de revient par son prix de vente HT. Un outil de calcul comme AI Chef Pro automatise ces calculs, plat par plat, et les recalcule quand les prix de vos fournisseurs changent."
+        "answer": "Vous saisissez les ingrédients, les grammages par portion et les prix du bon de livraison ou de la facture. Le coût par portion part de ces prix. S’il y a une perte, Mermas GenCal note le poids qui reste."
       }
     ],
     "cta_section": {
       "title": "Commencez à contrôler votre food cost avec l'IA dès aujourd'hui",
-      "subtitle": "Plus de {{userCount}} restaurants utilisent déjà AI Chef Pro pour calculer le food cost et protéger leur marge.",
+      "subtitle": "Le coût de chaque plat part des prix que vous copiez du bon de livraison.",
       "primary": "Calculer mon food cost",
       "secondary": "Voir tous les plans"
     }
@@ -2845,11 +2825,6 @@
         "Augmentez votre marge sans hausses de prix agressives",
         "Contrôle total en secondes, sans Excel"
       ]
-    },
-    "testimonial": {
-      "quote": "Avec ce calculateur, j'ai vu que mon plat phare me coûtait plus que prévu. J'ai augmenté le prix de 1,50€ et personne n'a remarqué. J'ai gagné 400€ de plus ce mois-là.",
-      "name": "Carlos Romero",
-      "role": "Propriétaire, Bar Restaurant La Plaza, Saragosse"
     },
     "pricing": {
       "title": "Plus de puissance avec AI Chef Pro",

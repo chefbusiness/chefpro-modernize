@@ -797,7 +797,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is het for geavanceerde gastronomische keuken oder alleen for casual keuken?",
-        "a": "For het hele spectrum. Er zijn specifieke agents: Creatieve Keuken for autor keuken, Creatieve Patisserie, Fermentus for avant-garde, VegChef Plantaardig for plant-based, naast meer dan 25 receptbooks per land. Echte cases in Michelin and Repsol Soles and in casual groups up to 25 eenheden."
+        "a": "For het hele spectrum. Er zijn specifieke agents: Creatieve Keuken for autor keuken, Creatieve Patisserie, Fermentus for avant-garde, VegChef Plantaardig for plant-based, naast 27 receptbooks per land. Echte cases in Michelin and Repsol Soles and in casual groups up to 25 eenheden."
       },
       {
         "q": "Hoe adapteert het system aan uw werkwijze?",

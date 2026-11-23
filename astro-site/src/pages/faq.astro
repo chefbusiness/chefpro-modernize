@@ -49,8 +49,8 @@ const blocks = [
     faqs: [
       {
         q: '¿Cuál es el plan de entrada?',
-        a: 'El plan AI Chef Miembro: 10 € al mes, con 10.000 créditos mensuales y acceso a los más de 75 agentes de IA. Sin permanencia: cambias de plan o cancelas cuando quieras.',
-        aHtml: `El plan AI Chef Miembro cuesta 10 € al mes, con 10.000 créditos mensuales y acceso a los más de 75 agentes de IA. Sin permanencia: cambias o cancelas cuando quieras, y tienes el desglose completo de cada plan en la <a href="/precios" class="${linkClass}">página de precios</a>.`,
+        a: 'El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos, con acceso a los más de 75 agentes de IA. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras.',
+        aHtml: `El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos, con acceso a los más de 75 agentes de IA. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras. El desglose de cada plan está en la <a href="/precios" class="${linkClass}">página de precios</a>.`,
       },
       {
         q: '¿Qué es un crédito y cuántos gasta cada acción?',
@@ -68,7 +68,7 @@ const blocks = [
     faqs: [
       {
         q: '¿Necesito tarjeta de crédito?',
-        a: 'Sí: todos los planes son suscripciones mensuales y se pagan con tarjeta desde el alta. Sin permanencia: puedes cancelar o cambiar de plan cuando quieras desde tu cuenta.',
+        a: 'Miembro, Pro, Plus y Max se pagan mes a mes con tarjeta desde el alta. Premium Max también tiene una opción anual de 950 €. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras desde tu cuenta.',
       },
       {
         q: '¿Puedo cambiar de plan cuando quiera?',
@@ -77,12 +77,12 @@ const blocks = [
       },
       {
         q: '¿Puedo cancelar la suscripción?',
-        a: 'Sí, en cualquier momento y desde tu propio panel, sin penalizaciones ni permanencia. Al cancelar mantienes el acceso hasta el final del periodo que ya has pagado.',
+        a: 'Sí, desde tu propio panel. Los planes mensuales no tienen permanencia. Al cancelar mantienes el acceso hasta el final del periodo que ya has pagado.',
       },
       {
         q: '¿Ofrecéis reembolsos?',
-        a: 'Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a info@aichef.pro. Puedes cancelar la suscripción de la app cuando quieras desde tu panel, sin permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso en ese mismo email.',
-        aHtml: `Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a <a href="mailto:info@aichef.pro" class="${linkClass}">info@aichef.pro</a>. Puedes cancelar la suscripción de la app cuando quieras desde tu panel, sin permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso en ese mismo email.`,
+        a: 'Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a info@aichef.pro. Puedes cancelar los planes mensuales cuando quieras desde tu panel, porque no tienen permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso en ese mismo email.',
+        aHtml: `Las guías, los kits y los packs de pago que compras de una sola vez tienen una garantía de satisfacción de 30 días desde la compra y el reembolso del 100 %. Lo pides por email a <a href="mailto:info@aichef.pro" class="${linkClass}">info@aichef.pro</a>. Puedes cancelar los planes mensuales cuando quieras desde tu panel, porque no tienen permanencia, y mantienes el acceso hasta el final del periodo que ya has pagado. Cualquier otra cuestión de la suscripción la vemos caso por caso en ese mismo email.`,
       },
       {
         q: '¿Emitís factura con IVA?',
@@ -258,7 +258,7 @@ const schemas = [
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
         Escríbenos a <a href="mailto:info@aichef.pro" class={linkClass}>info@aichef.pro</a> y te
         respondemos personalmente. Y si prefieres probarlo directamente, crea tu cuenta
-        con el plan Miembro: 10 € al mes con 10.000 créditos, sin permanencia.
+        con el plan Miembro, que cuesta 10 €/mes e incluye 10.000 créditos. Los planes mensuales no tienen permanencia.
       </p>
       <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">

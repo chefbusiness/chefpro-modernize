@@ -48,7 +48,7 @@ Esto es un ejemplo de redacción, no la carta de un local ni una plantilla para 
 | :--- | :--- | :--- |
 | Croquetas de jamón | Leche, harina de trigo, mantequilla, huevo, pan rallado, jamón, aceite de oliva | Contiene: cereales que contienen gluten (trigo), huevos y leche. |
 | Hummus con picos | Garbanzo, tahini, ajo, limón, comino, aceite de oliva, picos de trigo | Contiene: sésamo y cereales que contienen gluten (trigo). El garbanzo no está en el anexo II. |
-| Arroz con calamar | Arroz, calamar, tomate, ajo, vino blanco, aceite de oliva | Contiene: moluscos. Si la etiqueta del vino pone «contiene sulfitos», se declaran en el plato; si hay dudas, se consulta con el asesor. |
+| Arroz con calamar | Arroz, calamar, tomate, ajo, vino blanco, aceite de oliva | Contiene: moluscos. |
 
 El tercer plato enseña el límite del nombre «vino». Si la etiqueta del vino pone «contiene sulfitos», se declaran en el plato. Si hay dudas, se consulta con el asesor. El anexo II incluye el dióxido de azufre y los sulfitos por encima de 10 mg/kg o 10 mg/l, expresados como SO2.
 
@@ -76,9 +76,9 @@ No cierra la carta por ti. No está en el pase, así que el aceite compartido o 
 | :--- | :--- | :--- | :--- |
 | Qué le das | Ingredientes separados por comas | La receta, la salsa o la lista del bote | La etiqueta real y lo que ocurre en el pase |
 | Qué devuelve | Coincidencias con los 14, ficha para copiar o PDF | Un borrador de la lista a partir de lo que le escribes | La línea que se imprime en la carta |
-| Qué no ve | El bote cerrado, la freidora y el cambio de marca si no lo tecleas | La cocina, salvo que se lo cuentes | Ves la etiqueta y el pase |
+| Qué no ve | El bote cerrado, la freidora y el cambio de marca si no lo tecleas | La cocina, salvo que se lo cuentes | Nada: ves la etiqueta y el pase |
 
-ID Alérgenos se usa desde la <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=ia-gestion-alergenos-hosteleria" target="_blank" rel="noopener noreferrer">app</a>. Los planes publicados están en <a href="https://aichef.pro/precios">precios</a>: Miembro, 10 €/mes y 10.000 créditos; Premium Pro, 25 €/mes; Premium Plus, 50 €/mes; Premium Max, 95 €/mes o 950 €/año. El detector sigue siendo gratis y no pide cuenta.
+ID Alérgenos se usa desde la <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=ia-gestion-alergenos-hosteleria" target="_blank" rel="noopener noreferrer">app</a>. Los planes publicados están en <a href="https://aichef.pro/precios">precios</a>: el plan Miembro cuesta 10 €/mes e incluye 10.000 créditos. Premium Pro cuesta 25 €/mes e incluye 85.000 créditos. Premium Plus cuesta 50 €/mes e incluye 175.000 créditos. Premium Max cuesta 95 €/mes, con créditos ilimitados. La opción anual de Premium Max cuesta 950 € al año. El detector sigue siendo gratis y no pide cuenta.
 
 <figure class="wp-block-image size-large"><img src="/blog-assets/2026/03/ia-gestion-alergenos-tablet-dashboard.jpg" alt="Persona en un restaurante revisando una ficha de alérgenos en una tablet" loading="lazy" decoding="async" /><figcaption>El detector y ID Alérgenos devuelven un borrador. La carta que sale al comedor la cierras tú.</figcaption></figure>
 

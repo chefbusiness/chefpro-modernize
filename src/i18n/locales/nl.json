@@ -104,7 +104,7 @@
   "stats": {
     "apps": "50+",
     "apps_label": "Gespecialiseerde AI-agents",
-    "cookbooks": "25+",
+    "cookbooks": "27",
     "cookbooks_label": "Regionale Kookboeken",
     "tools": "10+",
     "tools_label": "Business Tools",
@@ -332,7 +332,7 @@
     "world_cookbooks": {
       "europa": {
         "name": "Europa",
-        "count": "10 Keukens"
+        "count": "12 Keukens"
       },
       "latinoamerica": {
         "name": "Latijns-Amerika",
@@ -397,13 +397,15 @@
   },
   "cookbooks": {
     "title": "Wereldwijde Kookboeken",
-    "description": "Verken authentieke keukens van verschillende culturen met meer dan 25 regionale kookboeken",
+    "description": "Verken authentieke keukens van verschillende culturen met 27 regionale kookboeken",
     "europa": "Europa",
     "latinoamerica": "Latijns-Amerika",
     "asia": "Azië",
     "alemana": "Duits",
     "belga": "Belgisch",
     "britanica": "Brits",
+    "croata": "Kroatisch",
+    "italiana": "Italiaans",
     "espanola": "Spaans",
     "francesa": "Frans",
     "griega": "Grieks",
@@ -567,8 +569,8 @@
       },
       "id_alergenos": {
         "name": "ID Allergenen",
-        "description": "Identificeert allergenen automatisch",
-        "preview": "Voldoet aan voedselveiligheidsnormen zonder fouten"
+        "description": "Helpt je de 14 allergenen van elk recept te controleren; de uiteindelijke check is aan jou",
+        "preview": "Helpt je de 14 allergenen van elk recept te controleren; de uiteindelijke check is aan jou"
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -850,9 +852,9 @@
       },
       "id_alergenos": {
         "name": "ID Allergenen",
-        "description": "Identificeert allergenen automatisch",
-        "preview": "Voldoet aan voedselveiligheidsnormen zonder fouten",
-        "v2_blurb": "Identificeer allergenen automatisch en voldoe foutloos aan de voedselveiligheidsnormen."
+        "description": "Helpt je de 14 allergenen van elk recept te controleren; de uiteindelijke check is aan jou",
+        "preview": "Helpt je de 14 allergenen van elk recept te controleren; de uiteindelijke check is aan jou",
+        "v2_blurb": "Helpt je de 14 allergenen van elk recept te controleren; de uiteindelijke check is aan jou"
       },
       "mental_coach": {
         "name": "Mental Coach",
@@ -1013,7 +1015,7 @@
         "v2_features": [
           "75+ AI-agenten inbegrepen",
           "10.000 maandelijkse credits",
-          "25+ wereldkookboeken",
+          "27 wereldkookboeken",
           "E-mailondersteuning"
         ],
         "period": "/maand"
@@ -1176,7 +1178,7 @@
     "title": "Veelgestelde Vragen",
     "description": "Vind antwoorden op de meest gestelde vragen over AI Chef Pro",
     "q1": "Wat is inbegrepen in AI Chef Pro?",
-    "a1": "AI Chef Pro omvat 75+ gespecialiseerde gastronomische AI-agents, van culinaire creativiteit tot bedrijfstools. U krijgt toegang tot kookboeken van 25 wereldkeukens, AI-receptgeneratoren, wetenschappelijke food pairing, managementtools en veel meer.",
+    "a1": "AI Chef Pro omvat 75+ gespecialiseerde gastronomische AI-agents, van culinaire creativiteit tot bedrijfstools. U krijgt toegang tot kookboeken van 27 wereldkeukens, AI-receptgeneratoren, wetenschappelijke food pairing, managementtools en veel meer.",
     "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
     "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
     "q3": "Hoe werkt het AI Chef Lid-plan?",
@@ -1592,7 +1594,7 @@
     "pricing_section": {
       "title": "Begin vandaag nog met kostenverlaging",
       "subtitle": "Start met het Lid-plan voor €10 per maand. Het abonnement betaalt zichzelf terug met wat u de eerste maand bespaart.",
-      "annual_note": "Jaarplannen met 2 maanden gratis. Geen bindingsperiode."
+      "annual_note": "De jaaroptie van Premium Max kost €950 per jaar."
     },
     "faq_section": {
       "title": "Veelgestelde vragen over AI-kostenbeheersing voor restaurants"
@@ -1713,7 +1715,7 @@
       },
       {
         "title": "Culinaire creativiteit",
-        "description": "Ontwikkel nieuwe gerechten, experimenteer met pairings en pas recepten uit 25 wereldkeukens aan voor uw concept.",
+        "description": "Ontwikkel nieuwe gerechten, experimenteer met pairings en pas recepten uit 27 wereldkeukens aan voor uw concept.",
         "keywords": [
           "culinaire creativiteit",
           "nieuwe gerechten",
@@ -1752,7 +1754,7 @@
         "Genereer social media-content in minuten, niet dagen",
         "Identificeer allergenen automatisch in al uw gerechten",
         "Verminder verspilling met intelligente inkoopplanning",
-        "Toegang tot recepten uit 25 wereldkeukens voor uw bedrijf"
+        "Toegang tot recepten uit 27 wereldkeukens voor uw bedrijf"
       ]
     },
     "pricing_section": {
@@ -1778,7 +1780,7 @@
       },
       {
         "question": "Hoeveel kost het gebruik van AI voor restaurantbeheer?",
-        "answer": "Het instapplan is AI Chef Lid: €10 per maand met 10.000 credits. De Premium-plannen variëren van €25/maand (AI Chef Premium Pro, 85.000 credits) tot €95/maand met onbeperkte credits. Maandelijks opzegbaar."
+        "answer": "Het plan Lid kost €10 per maand en omvat 10.000 credits. Premium Pro kost €25/maand en omvat 85.000 credits. Premium Max kost €95/maand, met onbeperkte credits. Maandabonnementen hebben geen minimumtermijn."
       }
     ],
     "cta_section": {
@@ -1823,7 +1825,7 @@
         "label": "allergenen automatisch beheerd"
       },
       {
-        "metric": "25+",
+        "metric": "27",
         "label": "wereldkeukens om uw menu te inspireren"
       }
     ],
@@ -2155,7 +2157,7 @@
         "label": "restaurants en chefs die het al gebruiken"
       },
       {
-        "metric": "25",
+        "metric": "27",
         "label": "wereldkeukens in de database"
       }
     ],
@@ -2182,7 +2184,7 @@
         {
           "feature": "Professionele recepten",
           "chatgpt": "Generiek, zonder techniek",
-          "aichef": "25 wereldkeukens met techniek"
+          "aichef": "27 wereldkeukens met techniek"
         },
         {
           "feature": "Gastronomie marketing",
@@ -2229,8 +2231,8 @@
         ]
       },
       {
-        "title": "Recepten uit 25 Keukens",
-        "description": "Database van technieken en recepten uit 25 wereldkeukens.",
+        "title": "Recepten uit 27 Keukens",
+        "description": "Database van technieken en recepten uit 27 wereldkeukens.",
         "keywords": [
           "professionele recepten",
           "kooktechnieken",
@@ -2285,7 +2287,7 @@
         "Antwoorden met correct gastronomisch technisch vocabulaire bij de eerste poging",
         "Food cost berekend met echte restaurantlogica",
         "Allergenenb eheer volgens actuele Europese regelgeving",
-        "Technisch correcte recepten uit 25 wereldkeukens",
+        "Technisch correcte recepten uit 27 wereldkeukens",
         "Marketing met de toon en taal van de horeca",
         "Geen leercurve: tools klaar, geen complexe prompts"
       ]
@@ -2318,7 +2320,7 @@
       },
       {
         "question": "Kan AI Chef Pro me helpen recepten te maken zoals ChatGPT?",
-        "answer": "Ja, en met meer technische precisie: 25 wereldkeukens met correct culinair vocabulaire, bouillons, reducties, texturen, banketbakkerstechnieken, aangepast aan uw food cost en seizoen."
+        "answer": "Ja, en met meer technische precisie: 27 wereldkeukens met correct culinair vocabulaire, bouillons, reducties, texturen, banketbakkerstechnieken, aangepast aan uw food cost en seizoen."
       }
     ],
     "cta_section": {
@@ -2531,13 +2533,13 @@
   "landingRecetas": {
     "seo": {
       "title": "AI Recepten voor Restaurants | AI Chef Pro",
-      "description": "Genereer professionele recepten met AI: 25 wereldkeukens, seizoensmenus, technische fiches en automatisch schalen. Al gebruikt door 5.000+ restaurants.",
-      "keywords": "AI recepten restaurants, professionele receptengenerator, AI chef recepten, seizoensmenu AI, technische receptfiches, 25 wereldkeukens"
+      "description": "Genereer professionele recepten met AI: 27 wereldkeukens, seizoensmenus, technische fiches en automatisch schalen. Al gebruikt door 5.000+ restaurants.",
+      "keywords": "AI recepten restaurants, professionele receptengenerator, AI chef recepten, seizoensmenu AI, technische receptfiches, 27 wereldkeukens"
     },
     "breadcrumb": "AI Recepten voor Restaurants",
     "hero": {
       "badge": "Professionele AI Receptengenerator",
-      "h1": "AI Recepten voor Restaurants: 25 Wereldkeukens",
+      "h1": "AI Recepten voor Restaurants: 27 Wereldkeukens",
       "subtitle": "Genereer technisch correcte recepten direct. Seizoensmenus, professionele technische fiches en automatisch schalen voor uw restaurant.",
       "tagline": "Van concept tot gerecht in minuten, niet in uren.",
       "cta_primary": "Nu proberen",
@@ -2546,7 +2548,7 @@
     },
     "results": [
       {
-        "metric": "25",
+        "metric": "27",
         "label": "Wereldkeukens"
       },
       {
@@ -2576,7 +2578,7 @@
         {
           "feature": "Keukenvarieteit",
           "other": "Beperkt tot kennis van de chef",
-          "aichef": "25 wereldkeukens met echte techniek"
+          "aichef": "27 wereldkeukens met echte techniek"
         },
         {
           "feature": "Seizoensmenus",
@@ -2610,7 +2612,7 @@
         ]
       },
       {
-        "title": "25 Wereldkeukens",
+        "title": "27 Wereldkeukens",
         "description": "Toegang tot authentieke recepten uit 25 culinaire tradities: Frans, Japans, Peruaans, Italiaans, Mexicaans en nog veel meer.",
         "keywords": [
           "wereldkeukens",
@@ -2682,17 +2684,12 @@
       "body": "Een generieke generator geeft u basisrecepten. AI Chef Pro begrijpt echte culinaire techniek: bouillons, reducties, gaarpunten, combinaties en de logica van elke wereldkeuken.",
       "benefits": [
         "Recepten met correct culinair technisch vocabulaire bij de eerste poging",
-        "25 wereldkeukens met authentieke technieken en tradities",
+        "27 wereldkeukens met authentieke technieken en tradities",
         "Seizoensmenus afgestemd op uw gastronomisch concept",
         "Technische fiches klaar om af te drukken en te gebruiken met uw team",
         "Instant portieschaling zonder rekenfouten",
         "Aanpassing aan voedingsbeperkingen zonder culinaire kwaliteitsverlies"
       ]
-    },
-    "testimonial": {
-      "quote": "Vroeger besteedde ik uren aan het ontwikkelen van nieuwe gerechten. Met AI Chef Pro heb ik in minuten een technisch correct recept, inclusief technische fiche. Mijn team kan het vanaf dag één perfect reproduceren.",
-      "name": "Laura Sánchez",
-      "role": "Executive Chef, Restaurante Origen, Bilbao"
     },
     "pricing_section": {
       "title": "Toegang tot de AI-receptengenerator vanaf € 10",
@@ -2709,7 +2706,7 @@
       },
       {
         "question": "Welke wereldkeukens omvat AI Chef Pro?",
-        "answer": "AI Chef Pro omvat recepten en technieken uit 25 keukens: Frans, Italiaans, Japans, Spaans, Peruaans, Mexicaans, Grieks, Marokkaans, Thais, Indisch, Chinees en meer. Elk met authentieke technieken en vocabulaire."
+        "answer": "AI Chef Pro omvat recepten en technieken uit 27 keukens: Frans, Italiaans, Japans, Spaans, Peruaans, Mexicaans, Grieks, Marokkaans, Thais, Indisch, Chinees en meer. Elk met authentieke technieken en vocabulaire."
       },
       {
         "question": "Kan ik technische fiches genereren met AI Chef Pro?",
@@ -2730,32 +2727,20 @@
   "landingEscandallos": {
     "seo": {
       "title": "Restaurant Food Cost Berekening AI | AI Chef Pro",
-      "description": "Bereken uw restaurant food cost met AI in 2 minuten. Verspillingscontrole, optimale verkoopprijs en rentabiliteitsanalyse per gerecht. Start vandaag.",
+      "description": "De kost van elk gerecht komt uit de prijzen die je van de pakbon overneemt. Mermas GenCal noteert het rendement en Calcula Pax zet de porties. De verkoopprijs bepaal jij.",
       "keywords": "restaurant food cost, food cost AI, food cost berekening, restaurantkostenbeheersing, gerecht verkoopprijs, keuken verspilling, gerecht rentabiliteit"
     },
     "breadcrumb": "Restaurant Food Cost met AI",
     "hero": {
       "badge": "AI Food Cost Calculator voor Restaurants",
-      "h1": "Restaurant Food Cost met AI: Volledige Berekening in 2 Minuten",
-      "subtitle": "Bereken de exacte kosten van elk gerecht direct. Verspillingscontrole, optimale verkoopprijs en rentabiliteitsanalyse om uw restaurantwinst te maximaliseren.",
+      "h1": "Restaurant Food Cost met AI: Volledige Berekening",
+      "subtitle": "De kost van elk gerecht komt uit de prijzen die je van de pakbon overneemt. Mermas GenCal noteert het rendement en Calcula Pax zet de porties. De verkoopprijs bepaal jij.",
       "tagline": "Stop met geld verliezen door ongecontroleerde food cost.",
       "cta_primary": "Mijn food cost berekenen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Geen verplichtingen · Directe toegang"
+      "no_card": "Vanaf € 10 per maand. Maandabonnementen hebben geen minimumtermijn"
     },
     "results": [
-      {
-        "metric": "2min",
-        "label": "Voor een volledige berekening"
-      },
-      {
-        "metric": "30%",
-        "label": "Gemiddelde kostenreductie"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "Actieve restaurants"
-      },
       {
         "metric": "75+",
         "label": "AI-agenten"
@@ -2768,14 +2753,14 @@
       "col_other": "Excel / Handmatig",
       "items": [
         {
-          "feature": "Tijd per berekening",
+          "feature": "Kostprijsberekening",
           "other": "30-60 minuten per gerecht",
-          "aichef": "2 minuten met AI"
+          "aichef": "Uit de prijzen die je van de pakbon overneemt"
         },
         {
           "feature": "Prijsupdates",
           "other": "Handmatig bij elke kostenstijging",
-          "aichef": "Automatische herberekening direct"
+          "aichef": "Jij vult de nieuwe leveranciersprijs in"
         },
         {
           "feature": "Verspillingscontrole",
@@ -2785,12 +2770,12 @@
         {
           "feature": "Verkoopprijs",
           "other": "Buikgevoel zonder objectieve basis",
-          "aichef": "Optimale prijs met doelmarge"
+          "aichef": "De verkoopprijs bepaal jij"
         },
         {
           "feature": "Rentabiliteit per gerecht",
           "other": "Geen systematische analyse",
-          "aichef": "Realtime rentabiliteitsdashboard"
+          "aichef": "Je vergelijkt de kost van elk gerecht"
         }
       ]
     },
@@ -2800,35 +2785,35 @@
     },
     "tools": [
       {
-        "title": "Automatische AI Food Cost",
-        "description": "Voer ingrediënten, gewichten en leveranciersprijs in. AI berekent de exacte food cost van elk gerecht in seconden.",
+        "title": "Kost uit jouw prijzen",
+        "description": "Je vult ingrediënten, gewichten en de prijzen in die je van de pakbon of de factuur overneemt. De kost per portie komt uit die prijzen.",
         "keywords": [
-          "automatische food cost",
-          "food cost per gerecht",
-          "food cost calculator"
+          "kostprijs",
+          "kost per portie",
+          "pakbon"
         ]
       },
       {
-        "title": "Verspillingscontrole",
-        "description": "Bereken het werkelijke verlies per ingrediënttype (schoonmaken, koken, verdamping) voor nauwkeurige food cost.",
+        "title": "Mermas GenCal",
+        "description": "Als een ingrediënt gewicht verliest bij het schoonmaken of garen, noteert Mermas GenCal het gewicht dat overblijft.",
         "keywords": [
-          "keuken verspilling",
-          "ingrediëntrendement",
-          "kookverliezen"
+          "verlies",
+          "rendement",
+          "Mermas GenCal"
         ]
       },
       {
-        "title": "Optimale Verkoopprijs",
-        "description": "AI berekent de ideale verkoopprijs op basis van uw doelmarge, de markt en de positionering van uw restaurant.",
+        "title": "Verkoopprijs",
+        "description": "De kost komt uit de prijzen die je overneemt. De prijs op de kaart bepaal jij.",
         "keywords": [
-          "gerecht verkoopprijs",
-          "restaurantmarge",
-          "prijsbeleid"
+          "verkoopprijs",
+          "kaart",
+          "jouw beslissing"
         ]
       },
       {
         "title": "Rentabiliteitsanalyse",
-        "description": "Identificeer welke gerechten de hoogste marge geven en welke u geld kosten. Optimaliseer uw menu met echte data.",
+        "description": "Je vergelijkt de kost van elk gerecht op basis van de prijzen die je hebt ingevuld. Jij beslist welke gerechten blijven.",
         "keywords": [
           "rentabiliteit per gerecht",
           "menu-engineering",
@@ -2837,7 +2822,7 @@
       },
       {
         "title": "Prijsupdates",
-        "description": "Wanneer de kosten van een ingrediënt stijgen, herberekent AI automatisch alle getroffen food costings.",
+        "description": "Als een leveranciersprijs verandert, vul jij de nieuwe prijs in op de berekeningen die hem gebruiken.",
         "keywords": [
           "food cost update",
           "voedselinflatie",
@@ -2845,12 +2830,12 @@
         ]
       },
       {
-        "title": "Food Cost Dashboard",
-        "description": "Visualiseer de totale food cost van uw restaurant, per categorie en per gerecht. Detecteer afwijkingen direct.",
+        "title": "Calcula Pax",
+        "description": "Als het aantal gasten verandert, zet Calcula Pax de hoeveelheden. De kost komt nog steeds uit de prijzen die je al hebt ingevuld.",
         "keywords": [
-          "food cost dashboard",
-          "keuken kostenbeheersing",
-          "restaurant KPIs"
+          "porties",
+          "gasten",
+          "Calcula Pax"
         ]
       }
     ],
@@ -2865,7 +2850,7 @@
       },
       {
         "title": "Operationeel Directeur",
-        "description": "Bewaakt de food cost van meerdere locaties vanuit één dashboard met realtime data."
+        "description": "Bekijkt de kost van de gerechten van elke zaak met de prijzen die daar zijn ingevuld."
       },
       {
         "title": "Keukenchef",
@@ -2873,29 +2858,24 @@
       },
       {
         "title": "Controller of Finance",
-        "description": "Heeft voor het eerst exacte controle over de kosten van elk gerecht en de impact op het resultaat."
+        "description": "Ziet de kosten van elk gerecht en het effect op het resultaat."
       }
     ],
     "why_section": {
       "title": "Ongecontroleerde food cost is de marge die u weggeeft",
-      "body": "De meeste restaurants verliezen 5% tot 15% potentiële winst door slecht berekende food cost. AI Chef Pro geeft u de precieze controle die u nodig heeft om uw marge te beschermen.",
+      "body": "Food cost is de kost van de ingrediënten van elk gerecht. Die komt uit de prijzen die je van de pakbon overneemt.",
       "benefits": [
-        "Volledige food cost van elk gerecht in minder dan 2 minuten",
-        "Verspillingscontrole per ingrediënttype en kooktechniek",
-        "Optimale verkoopprijs berekend met uw doelmarge",
-        "Automatische herberekening bij leveranciersprijswijzigingen",
-        "Identificatie van uw meest en minst winstgevende gerechten",
-        "Globaal food cost dashboard met afwijkingsalarmen"
+        "Kost per portie uit de prijzen die je van de pakbon overneemt",
+        "Mermas GenCal noteert het rendement na schoonmaken en garen",
+        "De verkoopprijs bepaal jij op basis van die kost",
+        "Als een leveranciersprijs verandert, vul jij de nieuwe in",
+        "Je vergelijkt de kost van elk gerecht met de prijzen die je hebt ingevuld",
+        "Calcula Pax zet de hoeveelheden voor een ander aantal porties"
       ]
-    },
-    "testimonial": {
-      "quote": "We deden food costings in Excel al jaren. Met AI Chef Pro zijn ze allemaal realtime bijgewerkt en hebben we 4 gerechten geïdentificeerd die ons onbewust geld kostten. We hebben de investering in drie maanden terugverdiend.",
-      "name": "Roberto Fernández",
-      "role": "Operationeel Directeur, Grupo La Dehesa, Madrid"
     },
     "pricing_section": {
       "title": "Begin met food cost controle vanaf € 10",
-      "subtitle": "Bereken uw volledige menu met het Lid-plan voor €10 per maand. Maandelijks opzegbaar.",
+      "subtitle": "Reken de kaart door met het Lid-abonnement voor € 10 per maand. Maandabonnementen hebben geen minimumtermijn.",
       "annual_note": "Jaarplan AI Chef Premium Max ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2904,24 +2884,24 @@
     "faq": [
       {
         "question": "Wat is een restaurant food cost berekening?",
-        "answer": "Een food cost berekening is de gedetailleerde berekening van de productiekosten van een gerecht: ingrediënten, gewichten, verspilling en leveranciersprijs. Het is de basis van food cost en verkoopprijs. AI Chef Pro genereert het automatisch met AI in minder dan 2 minuten."
+        "answer": "Een costing berekent de kost van een gerecht: ingrediënten, gewichten, verlies en de leveranciersprijs. Bij AI Chef Pro komt die kost uit de prijzen die je van de pakbon overneemt. Jij controleert hem voor de service."
       },
       {
         "question": "Hoe berekent AI Chef Pro de food cost van een gerecht?",
-        "answer": "U voert de ingrediënten, gewichten per portie en leveranciersprijs in. AI berekent automatisch de brutokost, past de verspillingspercentages voor elk ingrediënt toe en geeft u de werkelijke nettokost van het gerecht."
+        "answer": "Je vult ingrediënten, gewichten per portie en de prijzen van de pakbon of de factuur in. De kost per portie komt uit die prijzen. Bij verlies noteert Mermas GenCal het gewicht dat overblijft."
       },
       {
         "question": "Kan ik de verkoopprijs berekenen met AI Chef Pro?",
-        "answer": "Ja. Na de food cost berekening suggereert AI de optimale verkoopprijs op basis van uw gewenste marge (typisch 25%-35% food cost ratio voor restaurants), ook rekening houdend met de positionering van uw restaurant."
+        "answer": "De berekening geeft de kost per portie uit de prijzen die je van de pakbon of de factuur overneemt. De verkoopprijs bepaal jij."
       },
       {
         "question": "Wat gebeurt er wanneer een ingrediëntprijs stijgt?",
-        "answer": "AI Chef Pro herberekent automatisch alle food costings die dat ingrediënt bevatten. In seconden weet u welke gerechten duurder zijn geworden, hoeveel de marge is veranderd en of u de verkoopprijzen moet aanpassen."
+        "answer": "U werkt de prijs van dat ingrediënt bij in de food costings die het bevatten, en u ziet welke gerechten het gebruiken."
       }
     ],
     "cta_section": {
       "title": "Begin vandaag nog met AI food cost controle",
-      "subtitle": "Meer dan {{userCount}} restaurants gebruiken AI Chef Pro al om food cost te berekenen en hun marge te beschermen.",
+      "subtitle": "De kost van elk gerecht komt uit de prijzen die je van de pakbon overneemt.",
       "primary": "Mijn food cost berekenen",
       "secondary": "Alle plannen bekijken"
     }
@@ -3095,11 +3075,6 @@
         "Marge verhogen zonder agressieve prijsverhogingen",
         "Totale controle in seconden, zonder Excel"
       ]
-    },
-    "testimonial": {
-      "quote": "Met deze calculator zag ik dat mijn signature gerecht meer kostte dan ik dacht. Ik verhoogde de prijs met €1,50 en niemand merkte het. Ik verdiende €400 extra die maand.",
-      "name": "Carlos Romero",
-      "role": "Eigenaar, Bar Restaurant La Plaza, Zaragoza"
     },
     "pricing": {
       "title": "Meer kracht met AI Chef Pro",

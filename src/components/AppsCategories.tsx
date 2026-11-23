@@ -52,7 +52,7 @@ export default function AppsCategories() {
       count: t('categories.cookbooks.count'),
       colorClass: 'category-card-cookbooks',
       apps: [
-        t('cookbooks.europa') + ' (10)',
+        t('cookbooks.europa') + ' (12)',
         t('cookbooks.latinoamerica') + ' (11)',
         t('cookbooks.asia') + ' (4)'
       ]
