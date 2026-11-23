@@ -74,7 +74,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Restaurants Décontractés AI+', category: 'Concepts d\'Affaires', description: 'Spécialiste des bistrots, gastrobars, tapas et méditerranéen : couvre tout le spectre casual.' },
       { name: 'Cuisine Créative', category: 'Créativité Culinaire', description: 'Développement de plats avec recette + fiche de coût CSV à charger dans le Kit de Escandallos Pro du client.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements précis par ingrédient : clé pour des fiches de coût réalistes dans les audits.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par plat : nécessaire pour les rapports de conformité.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par plat : nécessaire pour les rapports de conformité.' },
       { name: 'MenuDish Local SEO', category: 'Contenus et Réseaux Sociaux', description: 'Diagnostic des descriptions de plats du client et proposition SEO local optimisée.' },
       { name: 'BlogPost SEO Gen+', category: 'Contenus et Réseaux Sociaux', description: 'Plan éditorial de blog pour capter du trafic organique local : livrable direct pour le client.' },
       { name: 'Keyword Discovery AI+', category: 'Contenus et Réseaux Sociaux', description: 'Recherche de mots-clés gastronomiques locaux par code postal : analyse de concurrence prête.' },
@@ -143,7 +143,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { icon: 'ShieldCheck', title: 'HACCP et traçabilité', description: 'Pack APPCC avec 19 registres prêts pour l\'inspection sanitaire. Utile dans les audits et les propositions pour hôtels de luxe.' },
       { icon: 'Sparkles', title: 'MenuDish Local SEO', description: 'Descriptions de plats optimisées pour le SEO local sur Google Business et le site web du client.' },
       { icon: 'BarChart3', title: 'Repas du Personnel', description: 'Générateur de repas du personnel qui économise du coût au client tout en maintenant la brigade motivée.' },
-      { icon: 'MessageSquare', title: 'ID Allergènes', description: 'Identification automatique des allergènes par recette prête pour la réglementation européenne.' },
+      { icon: 'MessageSquare', title: 'ID Allergènes', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par recette prête pour la réglementation européenne.' },
     ],
     workflowTitle: 'Une Journée Réelle d\'un Chef Consultant avec AI Chef Pro',
     workflow: [
@@ -187,7 +187,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Cuisine Créative', category: 'Créativité Culinaire', description: 'Développement de plats professionnels avec recette + fiche de coût CSV. Votre moteur de propositions culinaires.' },
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Version avancée avec avant-garde, techniques et ingrédients premium pour les clients de haute cuisine.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements précis par ingrédient : indispensable pour des fiches de coût réalistes.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par recette et par plat.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par recette et par plat.' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour cuisine professionnelle.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle des recettes pour n\'importe quel nombre de couverts.' },
       { name: 'Restaurants Décontractés AI+', category: 'Concepts d\'Affaires', description: 'Spécialiste des bistrots, gastrobars, tapas et méditerranéen.' },
@@ -299,7 +299,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de parfums et bases avec équilibre POD/PAC/solides + fiche de coût CSV.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de fruits, fruits secs et bases lactées.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par parfum.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par parfum.' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour fournil artisanal.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle des bases pour différents volumes de turbine.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au propriétaire de la glacerie cliente.' },
@@ -412,7 +412,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de bonbons, tablettes et desserts avec recette détaillée et courbe de tempérage.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de couverture, beurre de cacao et fruits secs.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par recette de bonbonnerie.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par recette de bonbonnerie.' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour fournil de chocolaterie.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle des recettes pour production à différents volumes.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au propriétaire du chocolate shop client.' },
@@ -525,7 +525,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de desserts, pâtes, feuilletages et viennoiseries avec recette détaillée.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de beurre, farine, produits laitiers et chocolat.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par dessert et viennoiserie.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par dessert et viennoiserie.' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour fournil professionnel.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle des recettes à différents volumes de production.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au propriétaire de la pâtisserie cliente.' },
@@ -638,7 +638,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de pizzas avec recette détaillée (pâte, sauce, mozzarella, garnitures).' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de farine, mozzarella, tomate et huile.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par pizza.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par pizza.' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour fournil de pizzeria.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle des recettes de pâte pour différents volumes quotidiens.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au propriétaire de la pizzeria cliente.' },
@@ -751,7 +751,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de boissons au café et signature drinks avec recette détaillée.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de café vert et de lait.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes (lait, fruits secs, soja).' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, (lait, fruits secs, soja).' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour extraction professionnelle.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle du batch brew pour différents volumes quotidiens.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au propriétaire du café client.' },
@@ -977,7 +977,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de cocktails (classiques relus, signature, low-ABV, sans alcool) avec recette détaillée.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de jus, spiritueux et modificateurs.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes dans les cocktails (produits laitiers, fruits secs, soja).' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, dans les cocktails (produits laitiers, fruits secs, soja).' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de mesures (ml/oz/dash/barspoon) pour bar professionnel.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle de batch cocktails pour différents volumes.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au F&B Manager du client.' },
@@ -1090,7 +1090,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cuisine Créative Pro', category: 'Créativité Culinaire', description: 'Développement de pains, levains, pâtes feuilletées et brioches avec recette détaillée.' },
       { name: 'Rendement GenCal', category: 'Outils et Utilitaires', description: 'Pertes et rendements de farines, beurre et produits laitiers.' },
-      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Identification automatique des allergènes par pain et viennoiserie.' },
+      { name: 'ID Allergènes', category: 'Outils et Utilitaires', description: 'Révision des 14 allergènes, avec validation finale du cuisinier, par pain et viennoiserie.' },
       { name: 'Conversor Ing', category: 'Outils et Utilitaires', description: 'Convertisseur de poids et de mesures pour fournil professionnel.' },
       { name: 'Calcula Pax', category: 'Outils et Utilitaires', description: 'Mise à l\'échelle des recettes pour différents volumes quotidiens de fournil.' },
       { name: 'Manager de Restaurant Pro', category: 'Gastro Profile Pro', description: 'Opérationnel et reporting au propriétaire de la boulangerie cliente.' },

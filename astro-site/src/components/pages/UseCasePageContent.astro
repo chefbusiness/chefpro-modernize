@@ -675,24 +675,6 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
         </div>
       </section>
 
-      {lang !== 'es' && (
-      <section class="py-20">
-        <div class="container mx-auto px-4">
-          <div class={`${CARD} max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
-            <div class={`${CARD_CONTENT} pt-10 pb-10 text-center`}>
-              <Icon name="Sparkles" class={`h-10 w-10 ${theme.text} mx-auto mb-4`} />
-              <p class="text-xl text-foreground italic mb-6 text-balance">"{content.testimonialQuote}"</p>
-              <div>
-                <p class="font-bold text-foreground">{content.testimonialAuthor}</p>
-                <p class="text-sm text-muted-foreground">{content.testimonialRole}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      )}
-
       {/* FAQ */}
       <section class="py-20 bg-muted/30">
         <div class="container mx-auto px-4">

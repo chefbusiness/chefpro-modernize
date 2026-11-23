@@ -74,7 +74,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Casual Restaurants AI+', category: 'Conceptos de Negocio', description: 'Specialist in bistros, gastrobars, tapas, and Mediterranean: covers the casual spectrum.' },
       { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Dish development with recipe + cost CSV to paste into the client\'s Food Cost Kit Pro.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Accurate yields and shrinkage by ingredient: key for realistic recipe costing in audits.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by dish: required for compliance reports.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by dish: required for compliance reports.' },
       { name: 'MenuDish Local SEO', category: 'Contenidos y RRSS', description: 'Diagnostic of the client\'s dish descriptions and optimized local SEO proposal.' },
       { name: 'BlogPost SEO Gen+', category: 'Contenidos y RRSS', description: 'Editorial blog plan to capture local organic traffic: a direct deliverable for the client.' },
       { name: 'Keyword Discovery AI+', category: 'Contenidos y RRSS', description: 'Local gastronomic keyword research by postal area: ready-to-use competitive analysis.' },
@@ -143,7 +143,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { icon: 'ShieldCheck', title: 'HACCP and traceability', description: 'HACCP Pack with 19 records ready for sanitary inspection. Useful in audits and proposals for luxury hotels.' },
       { icon: 'Sparkles', title: 'MenuDish Local SEO', description: 'Dish descriptions optimized for local SEO on Google Business and the client\'s website.' },
       { icon: 'BarChart3', title: 'Staff Meals', description: 'Staff meal generator that saves the client money while keeping the brigade motivated.' },
-      { icon: 'MessageSquare', title: 'Allergen ID', description: 'Automatic allergen identification by recipe, ready for European regulation.' },
+      { icon: 'MessageSquare', title: 'Allergen ID', description: 'Cook-checked review of the 14 allergens by recipe, ready for European regulation.' },
     ],
     workflowTitle: 'A Real Day of a Consultant Chef with AI Chef Pro',
     workflow: [
@@ -187,7 +187,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Professional dish development with recipe + cost CSV. Your engine for culinary proposals.' },
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Advanced version with avant-garde, techniques, and premium ingredients for fine-dining clients.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Accurate yields and shrinkage by ingredient: essential for realistic costing.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by recipe and dish.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by recipe and dish.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for professional kitchens.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales recipes to any number of covers.' },
       { name: 'Casual Restaurants AI+', category: 'Conceptos de Negocio', description: 'Specialist in bistros, gastrobars, tapas, and Mediterranean.' },
@@ -299,7 +299,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Flavor and base development with POD/PAC/solids balance + cost CSV.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for fruit, nuts, and dairy bases.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by flavor.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by flavor.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for artisan labs.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales bases to different batch-freezer volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client gelato shop owner.' },
@@ -412,7 +412,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of bonbons, tablets, and desserts with detailed recipe and tempering curve.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for couverture, cocoa butter, and nuts.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by bonbon recipe.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by bonbon recipe.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for chocolate work.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales recipes for different production volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client chocolate shop owner.' },
@@ -525,7 +525,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of desserts, doughs, puff pastry, and viennoiserie with detailed recipe.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for butter, flour, dairy, and chocolate.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by dessert and viennoiserie.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by dessert and viennoiserie.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for professional labs.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales recipes to different production volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client patisserie owner.' },
@@ -638,7 +638,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Pizza development with detailed recipe (dough, sauce, mozzarella, toppings).' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for flour, mozzarella, tomato, and oil.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by pizza.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by pizza.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for the pizza lab.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales dough recipes for different daily volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client pizzeria owner.' },
@@ -751,7 +751,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of coffee beverages and signature drinks with detailed recipe.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for green coffee and milk.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification (dairy, nuts, soy).' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens (dairy, nuts, soy).' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for professional extraction.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales batch brew for different daily volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client café owner.' },
@@ -977,7 +977,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Cocktail development (reread classics, signature, low-ABV, alcohol-free) with detailed recipe.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for juices, spirits, and modifiers.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification in cocktails (dairy, nuts, soy).' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens in cocktails (dairy, nuts, soy).' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Measure converter (ml/oz/dash/barspoon) for the professional bar.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales batch cocktails for different volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client\'s F&B Manager.' },
@@ -1090,7 +1090,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of breads, sourdough, puff pastry, and brioche with detailed recipe.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Yields and shrinkage for flour, butter, and dairy.' },
-      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by bread and viennoiserie.' },
+      { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Cook-checked review of the 14 allergens by bread and viennoiserie.' },
       { name: 'Conversor Ing', category: 'Herramientas y Utilities', description: 'Weight and measure converter for the professional lab.' },
       { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Scales recipes for different daily lab volumes.' },
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operations and reporting to the client bakery owner.' },

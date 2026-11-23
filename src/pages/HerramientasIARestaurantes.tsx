@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, ArrowRight, ChefHat, TrendingDown, Clock, Star, Utensils, BarChart3, Megaphone, BookOpen } from 'lucide-react';
+import { CheckCircle, ArrowRight, ChefHat, TrendingDown, Clock, Utensils, BarChart3, Megaphone, BookOpen } from 'lucide-react';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
@@ -54,8 +54,6 @@ export default function HerramientasIARestaurantes() {
   const profiles = k('profiles') as Array<{ title: string; description: string }>;
   const benefits = k('why_section.benefits') as string[];
   const faqs = k('faq') as Array<{ question: string; answer: string }>;
-  const testimonialQuote = s('testimonial.quote');
-  const showTestimonial = currentLanguage !== 'es' && testimonialQuote.trim() !== '' && !testimonialQuote.startsWith('landingRestaurantes.');
   const whyLinksRaw = currentLanguage === 'es' ? k('why_section.links') : [];
   const whyLinks = Array.isArray(whyLinksRaw) ? whyLinksRaw as Array<{ href: string; label: string }> : [];
   const whyNoteKey = 'landingRestaurantes.why_section.note';
@@ -216,7 +214,7 @@ export default function HerramientasIARestaurantes() {
         {/* Por qué IA */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className={showTestimonial ? 'grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto' : 'max-w-3xl mx-auto'}>
+            <div className={'max-w-3xl mx-auto'}>
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">{s('why_section.title')}</h2>
                 <p className="text-lg text-muted-foreground mb-6">{s('why_section.body')}</p>
@@ -244,22 +242,6 @@ export default function HerramientasIARestaurantes() {
                   </ul>
                 )}
               </div>
-              {showTestimonial && (
-              <div className="bg-muted/30 rounded-2xl p-8">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />)}
-                </div>
-                {/* Estaba cableado en castellano: era el único bloque en español
-                    de esta página en los 6 idiomas no españoles. */}
-                <p className="text-lg italic text-foreground mb-6">
-                  "{testimonialQuote}"
-                </p>
-                <div>
-                  <p className="font-semibold">{s('testimonial.name')}</p>
-                  <p className="text-sm text-muted-foreground">{s('testimonial.role')}</p>
-                </div>
-              </div>
-              )}
             </div>
           </div>
         </section>

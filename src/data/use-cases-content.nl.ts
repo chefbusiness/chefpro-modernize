@@ -177,7 +177,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht, klaar voor regelgeving."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht, klaar voor regelgeving."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -306,7 +306,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per gerecht, klaar voor de regelgeving en voor de bediening."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht, klaar voor de regelgeving en voor de bediening."
       }
     ],
     "workflowTitle": "Een Echte Dag van een Manager met AI Chef Pro",
@@ -394,7 +394,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Conversor Ing",
@@ -636,7 +636,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per recept, uniform in alle units."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept, uniform in alle units."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -750,7 +750,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID and Mermas GenCal",
-        "description": "Automatische detectie van allergenen per gerecht and precise data over mermas and rendements per ingrediente."
+        "description": "Controle van de 14 allergenen van allergenen per gerecht and precise data over mermas and rendements per ingrediente."
       },
       {
         "icon": "Search",
@@ -793,7 +793,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Kan ik mijn bestaand receptbook opladen?",
-        "a": "Ja. De Kit de Escandallos Pro maakt het mogelijk uw receptbook te laden and escandallo automatiseerd in minuten toe te passen. U kan ook de agent Executive Chef Pro vraagen om technische fiches te genereren op basis of vrije beschrijvingen."
+        "a": "Ja. De Kit de Escandallos Pro maakt het mogelijk uw receptbook te laden and escandallo met AI, met controle door de kok in minuten toe te passen. U kan ook de agent Executive Chef Pro vraagen om technische fiches te genereren op basis of vrije beschrijvingen."
       },
       {
         "q": "Is het for geavanceerde gastronomische keuken oder alleen for casual keuken?",
@@ -820,8 +820,8 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "ctaSubtitle": "Start met de onboarding van 2 minuten. Plan Lidmaat for 10 € per maand met 10.000 crédits om alle agents te gebruiken.",
     "seo": {
       "title": "AI for Executive Chef: Recepten, Escandallos and Manuals | AI Chef Pro",
-      "description": "AI-suite for executive and corporate chef: Executive Chef Pro agent, automatische escandallos, technische fiches and repliceerbare multi-locale manuals. Start heute.",
-      "keywords": "AI executive chef, executive chef AI, corporate chef software, gastronomische AI-agent, automatische escandallos, technische fiches restaurant, standaardiseerde multi-locale recepten, keukenmanuals AI, food pairing AI, AI for restaurant groups, executive chef Nederland",
+      "description": "AI-suite for executive and corporate chef: Executive Chef Pro agent, escandallo's met AI, met controle door de kok, technische fiches and repliceerbare multi-locale manuals. Start heute.",
+      "keywords": "AI executive chef, executive chef AI, corporate chef software, gastronomische AI-agent, escandallo's met AI, met controle door de kok, technische fiches restaurant, standaardiseerde multi-locale recepten, keukenmanuals AI, food pairing AI, AI for restaurant groups, executive chef Nederland",
       "ogImage": "https://aichef.pro/og/use-cases/chef-ejecutivo.jpg"
     },
     "personalizationTitle": "Personaliseerd aan U vanaf Minut Een",
@@ -861,7 +861,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools and Utilities",
-        "description": "Automatische identificatie van potentielle allergenen per recept and per gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, van potentielle allergenen per recept and per gerecht."
       },
       {
         "name": "Creatieve Patisserie",
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID en Mermas GenCal",
-        "description": "Automatische detectie van allergenen per gerecht en nauwkeurige gegevens over verliezen en opbrengsten per ingrediënt."
+        "description": "Controle van de 14 allergenen van allergenen per gerecht en nauwkeurige gegevens over verliezen en opbrengsten per ingrediënt."
       }
     ],
     "workflowTitle": "Een echte dag van een keukenchef met AI Chef Pro",
@@ -1109,7 +1109,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -1233,7 +1233,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID en Mermas GenCal",
-        "description": "Automatische detectie van allergenen en nauwkeurige verliesgegevens voor gang en partij."
+        "description": "Controle van de 14 allergenen van allergenen en nauwkeurige verliesgegevens voor gang en partij."
       }
     ],
     "workflowTitle": "Een Echte Dag van een Sous Chef met AI Chef Pro",
@@ -1336,7 +1336,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -1455,7 +1455,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen, cruciaal voor evenementen met veel gasten met verschillende voedingsprofielen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,, cruciaal voor evenementen met veel gasten met verschillende voedingsprofielen."
       },
       {
         "icon": "BookOpen",
@@ -1494,7 +1494,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Kunt u hiermee de wisselende aantallen gasten beheren?",
-        "a": "Ja. Calcula Pax schaalt recepten op naar elk aantal gasten en de Kit de Escandallos Pro herberekent automatisch kosten, foodcost en marge."
+        "a": "Ja. Calcula Pax schaalt recepten op naar elk aantal gasten en de Kit de Escandallos Pro rekent u opnieuw, en de kok controleert kosten, foodcost en marge."
       },
       {
         "q": "Deckt het APPCC buiten de vaste locatie?",
@@ -1558,7 +1558,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per gerecht, cruciaal voor grote evenementen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht, cruciaal voor grote evenementen."
       },
       {
         "name": "Mermas GenCal",
@@ -1780,7 +1780,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per recept, cruciaal voor grote evenementen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept, cruciaal voor grote evenementen."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -2013,7 +2013,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per drankje: sulfieten, zuivel, noten, gluten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per drankje: sulfieten, zuivel, noten, gluten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2236,7 +2236,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per pizza: gluten, zuivel, noten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per pizza: gluten, zuivel, noten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2469,7 +2469,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Hulpmiddelen",
-        "description": "Automatische identificatie van allergenen per stuk: gluten, zuivel, noten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per stuk: gluten, zuivel, noten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2698,7 +2698,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per bonbon: zuivel, noten, gluten, alcohol."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per bonbon: zuivel, noten, gluten, alcohol."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2817,7 +2817,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per klant: cruciaal wanneer u werkt met gezinnen met specifieke intoleranties."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per klant: cruciaal wanneer u werkt met gezinnen met specifieke intoleranties."
       },
       {
         "icon": "Calendar",
@@ -2865,7 +2865,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe ga ik om met allergieën en speciale diëten per klant?",
-        "a": "Allergenen ID identificeert automatisch allergenen per recept. Privé Chef Pro redeneert in termen van personalisatie: keto-, veganistische, glutenvrije, natriumarme, FODMAP-dieeten, zwangerschap. Elke klant krijgt een echt aangepast menu."
+        "a": "Allergenen ID dient voor de controle van de 14 allergenen, met eindcontrole door de kok, per recept. Privé Chef Pro redeneert in termen van personalisatie: keto-, veganistische, glutenvrije, natriumarme, FODMAP-dieeten, zwangerschap. Elke klant krijgt een echt aangepast menu."
       },
       {
         "q": "Hoe schaal ik recepten op voor verschillende aantallen gasten?",
@@ -2915,7 +2915,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per klant en recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per klant en recept."
       },
       {
         "name": "Conversor Ing",
@@ -3158,7 +3158,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie voor gasten met allergieën bij banketten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, voor gasten met allergieën bij banketten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -3376,7 +3376,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen om aan de gast te communiceren."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, om aan de gast te communiceren."
       },
       {
         "name": "Mentale Coach",
@@ -3837,7 +3837,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per cut en bijgerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per cut en bijgerecht."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4060,7 +4060,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per smaak: zuivel, noten, gluten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per smaak: zuivel, noten, gluten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4298,7 +4298,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per stuk: gluten, zuivel, noten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per stuk: gluten, zuivel, noten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4515,7 +4515,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept en gerecht."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -4743,7 +4743,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept."
       },
       {
         "name": "Personeelsmaaltijden",
@@ -4976,7 +4976,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergene per pizza en gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, van allergene per pizza en gerecht."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5199,7 +5199,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per burger en saus."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per burger en saus."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5431,7 +5431,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per recept. Verplicht om legaal in delivery te verkopen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept. Verplicht om legaal in delivery te verkopen."
       },
       {
         "name": "MenuDish Local SEO",
@@ -5676,7 +5676,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per stuk, cruciaal in de patisserie."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per stuk, cruciaal in de patisserie."
       },
       {
         "name": "GastroIMG Gen+",
@@ -5899,7 +5899,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen in cocktails en borrelhapjes."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, in cocktails en borrelhapjes."
       },
       {
         "name": "Mermas GenCal",
@@ -6023,7 +6023,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie, cruciaal voor evenementen met uiteenlopende voedingsprofielen."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,, cruciaal voor evenementen met uiteenlopende voedingsprofielen."
       },
       {
         "icon": "Search",
@@ -6364,7 +6364,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept, cruciaal in internationale hotels."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept, cruciaal in internationale hotels."
       },
       {
         "name": "Mermas GenCal",
@@ -6577,7 +6577,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per smaak: zuivel, noten, gluten, ei."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per smaak: zuivel, noten, gluten, ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -6805,7 +6805,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per bonbon: zuivel, noten, gluten, alcohol."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per bonbon: zuivel, noten, gluten, alcohol."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7492,7 +7492,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen per gerecht: gluten, zuivel, noten, soja."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht: gluten, zuivel, noten, soja."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7725,7 +7725,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen: vis, zeevruchten, gluten, zuivel."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: vis, zeevruchten, gluten, zuivel."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7953,7 +7953,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Hulpprogramma's",
-        "description": "Automatische identificatie van allergenen: vis, schaaldieren, soja, gluten, sesam."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: vis, schaaldieren, soja, gluten, sesam."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8186,7 +8186,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpprogramma's",
-        "description": "Automatische identificatie van allergenen: vis, schelpdieren, soja, gluten, sesam, noten."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: vis, schelpdieren, soja, gluten, sesam, noten."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8414,7 +8414,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie: gluten, noten, soja, sesam (vrij van dierlijke producten)."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok,: gluten, noten, soja, sesam (vrij van dierlijke producten)."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8642,7 +8642,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per snede en bijgerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per snede en bijgerecht."
       },
       {
         "name": "GastroIMG Gen+",
@@ -8860,7 +8860,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie voor plantaardige alternatieven en banket."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, voor plantaardige alternatieven en banket."
       },
       {
         "name": "GastroIMG Gen+",
@@ -9544,7 +9544,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie per gerecht."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per gerecht."
       },
       {
         "name": "GastroIMG Gen+",
@@ -9854,7 +9854,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
   },
   "task-escandallos-con-ia": {
     "h1": "Zo maakt u kostprijsberekeningen met AI",
-    "heroSubtitle": "Bereken de werkelijke kostprijs per gerecht, foodcost % en adviesprijs in minuten in plaats van dagen: recept + automatische CSV-kostprijsberekening met uurkostprijs atelier, geïntegreerde verliezen en realtime gevalideerde marge met een suite van culinaire AI-agenten.",
+    "heroSubtitle": "U ziet de echte kostprijs per gerecht, de foodcost en een adviesprijs. De AI maakt het recept en de calculatie; de kok controleert de uurkostprijs, de verliezen en de marge.",
     "heroTagline": "Professionele kostprijsberekeningen in minuten, niet in uren",
     "badge": "Taak: kostprijsberekening en costing",
     "painsTitle": "Wat het kost om handmatig kostprijzen te berekenen",
@@ -9876,7 +9876,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "Mermas GenCal",
-        "description": "Nauwkeurige verliesgegevens per proces (uitsnijden, braden, koelen, vitrine, vormen) automatisch geïntegreerd in de CSV."
+        "description": "Verliesgegevens per proces (uitsnijden, braden, koelen, vitrine, vormen) die u in de CSV zet. De kok doet de eindcontrole."
       },
       {
         "icon": "Beaker",
@@ -10006,7 +10006,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en hulpmiddelen",
-        "description": "Automatische identificatie van allergenen per ingrediënt."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per ingrediënt."
       },
       {
         "name": "Sosa Ingredients Agent",
@@ -10325,7 +10325,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per recept: zuivel, gluten, noten, soja, schaaldieren, sulfieten, enz."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept: zuivel, gluten, noten, soja, schaaldieren, sulfieten, enz."
       },
       {
         "icon": "Calculator",
@@ -10366,7 +10366,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "workflowTitle": "Technische Fiches in 4 Stappen Maken",
     "workflow": [
       "1. Creatieve Keuken (of uw creatieve agent) — u ontwikkelt of laadt het recept. De AI-agent levert recept + volledige technische fiche met alle professionele velden.",
-      "2. Allergenen ID — identificeert automatisch de allergenen per recept en integreert ze in de fiche; wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk.",
+      "2. Allergenen ID — dient voor de controle van de 14 allergenen, met eindcontrole door de kok, per recept en integreert ze in de fiche; wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk.",
       "3. GastroIMG Gen+ — genereert een referentieafbeelding van het opgemaakte gerecht om in de fiche op te nemen als visuele gids voor de kok.",
       "4. Food Pairing AI + storytelling voor de bediening — de fiche bevat een aanbevolen pairing en een professionele beschrijving voor de briefing van het team."
     ],
@@ -10390,7 +10390,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het de 14 allergenen na te kijken?",
-        "a": "Allergenen ID identificeert de allergenen per ingrediënt en integreert ze in de fiche. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk en werkt het de informatie voor de bediening bij."
+        "a": "Allergenen ID dient voor de controle van de 14 allergenen per ingrediënt, met eindcontrole door de kok, op de fiche. Wijzigt u een ingrediënt, dan kijkt u de fiche opnieuw na."
       },
       {
         "q": "Is het geschikt voor elk type keuken?",
@@ -10435,7 +10435,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Tools en Utilities",
-        "description": "Automatische identificatie van allergenen per recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept."
       },
       {
         "name": "Conversor Ing",
@@ -10508,7 +10508,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "28 gerechten in één dag gedocumenteerd met professioneel sjabloon",
-        "Automatische allergenen met Allergenen ID",
+        "Controle van de 14 allergenen, met eindcontrole door de kok met Allergenen ID",
         "Professionele storytelling voor de briefing van de bediening",
         "Wijzigingen werken fiche en allergenen onmiddellijk bij",
         "Uniform sjabloon klaar voor audits en certificeringen"
@@ -10997,7 +10997,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "Sparkles",
         "title": "Allergenen ID",
-        "description": "Automatische identificatie van allergenen per ingrediënt en recept. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per ingrediënt en recept. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
       },
       {
         "icon": "CheckSquare",
@@ -11038,7 +11038,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "workflowTitle": "Hoe implementeert u digitale APPCC in 4 stappen",
     "workflow": [
       "1. Pack APPCC (€14, downloadbare Excel-sjablonen) — u downloadt de 17 professionele sjablonen aangepast aan uw type keuken (patisserie, ijssalon, restaurant, enz.).",
-      "2. Allergenen ID — scant automatisch de recepten en sjablonen van uw menu om allergenen per gerecht te identificeren. Het integreert ze in de technische fiches en de zaal.",
+      "2. Allergenen ID — kijkt de recepten na en sjablonen van uw menu om allergenen per gerecht te identificeren. Het integreert ze in de technische fiches en de zaal.",
       "3. Creatieve Keuken met geïntegreerde APPCC — elk nieuw recept levert APPCC-procedures (kritische temperatuur, bewaring, allergenen, opslag) geïntegreerd in de technische fiche.",
       "4. Kit de Tareas met APPCC — dienstsjablonen (opening, service, sluiting) met geïntegreerde APPCC. Het team ondertekent elke dienst digitaal vanaf mobiel."
     ],
@@ -11062,7 +11062,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe kijkt u de 14 allergenen na?",
-        "a": "Allergenen ID identificeert allergenen per ingrediënt en recept, integreert ze in technische fiches en APPCC-sjablonen. Wanneer u een ingrediënt wijzigt, herberekent het onmiddellijk."
+        "a": "Allergenen ID dient voor de controle van de 14 allergenen per ingrediënt en recept, met eindcontrole door de kok, op de fiches en de APPCC-sjablonen. Wijzigt u een ingrediënt, dan kijkt u de fiche opnieuw na."
       },
       {
         "q": "Deckt u Europese en Latijns-Amerikaanse regelgeving?",
@@ -11092,7 +11092,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "name": "Allergenen ID",
         "category": "Hulpmiddelen en Utilities",
-        "description": "Automatische identificatie van allergenen per recept."
+        "description": "Controle van de 14 allergenen, met eindcontrole door de kok, per recept."
       },
       {
         "name": "Creatieve Keuken",
@@ -11180,7 +11180,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "APPCC vanaf mobiel met digitale handtekening",
-        "Automatische allergenen met Allergenen ID",
+        "Controle van de 14 allergenen, met eindcontrole door de kok met Allergenen ID",
         "Excel-sjablonen aangepast per concept",
         "Briefing met APPCC geïntegreerd in Kit de Tareas",
         "Traceerbaarheid klaar voor ISO 22000, BRC, IFS"

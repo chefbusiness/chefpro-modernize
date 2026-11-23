@@ -74,7 +74,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Restaurantes Casuais AI+', category: 'Conceitos de Negócio', description: 'Especialista em bistrôs, gastrobares, petiscos e mediterrâneo: cobre o espectro casual.' },
       { name: 'Culinária Criativa', category: 'Criatividade Culinária', description: 'Desenvolvimento de pratos com receita + escandalho CSV para carregar no Kit de Escandalhos Pro do cliente.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos precisos por ingrediente: chave para escandalhos realistas em auditorias.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por prato: necessária para relatórios de compliance.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por prato: necessária para relatórios de compliance.' },
       { name: 'MenuDish Local SEO', category: 'Conteúdos e Redes Sociais', description: 'Diagnóstico de descrições de prato do cliente e proposta SEO local otimizada.' },
       { name: 'BlogPost SEO Gen+', category: 'Conteúdos e Redes Sociais', description: 'Plano editorial de blog para captar tráfego orgânico local: deliverable direto para o cliente.' },
       { name: 'Keyword Discovery AI+', category: 'Conteúdos e Redes Sociais', description: 'Investigação de palavras-chave gastronómicas locais por código postal: análise de concorrência pronta.' },
@@ -143,7 +143,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { icon: 'ShieldCheck', title: 'HACCP e rastreabilidade', description: 'Pack HACCP com 19 registos prontos para inspeção sanitária. Útil em auditorias e propostas para hotéis de luxo.' },
       { icon: 'Sparkles', title: 'MenuDish Local SEO', description: 'Descrições de prato otimizadas para SEO local no Google Business e no site do cliente.' },
       { icon: 'BarChart3', title: 'Comida de Pessoal', description: 'Gerador de menus de staff que poupa custo ao cliente mantendo a brigada motivada.' },
-      { icon: 'MessageSquare', title: 'ID Alergénios', description: 'Identificação automática de alergénios por receita pronta para regulamentação europeia.' },
+      { icon: 'MessageSquare', title: 'ID Alergénios', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por receita pronta para regulamentação europeia.' },
     ],
     workflowTitle: 'Um Dia Real de Um Chef Consultor com o AI Chef Pro',
     workflow: [
@@ -187,7 +187,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Culinária Criativa', category: 'Criatividade Culinária', description: 'Desenvolvimento de pratos profissionais com receita + escandalho CSV. O seu motor de propostas culinárias.' },
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Versão avançada com vanguarda, técnicas e ingredientes premium para clientes de alta cozinha.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos precisos por ingrediente: imprescindível para escandalhos realistas.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por receita e prato.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por receita e prato.' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para cozinha profissional.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de receitas para qualquer número de comensais.' },
       { name: 'Restaurantes Casuais AI+', category: 'Conceitos de Negócio', description: 'Especialista em bistrôs, gastrobares, petiscos e mediterrâneo.' },
@@ -299,7 +299,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de sabores e bases com balanço POD/PAC/sólidos + escandalho CSV.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de fruta, frutos secos e bases lácteas.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por sabor.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por sabor.' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para obrador artesanal.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de bases para distintos volumes de mantecadora.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao proprietário da gelataria cliente.' },
@@ -412,7 +412,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de bombonaria, tabletes e sobremesas com receita detalhada e curva de temperagem.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de couverture, manteiga de cacau e frutos secos.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por receita de bombonaria.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por receita de bombonaria.' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para obrador de chocolataria.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de receitas para produção em distintos volumes.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao proprietário do chocolate shop cliente.' },
@@ -525,7 +525,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de sobremesas, massas, folhados e bolaria com receita detalhada.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de manteiga, farinha, lacticínios e chocolate.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por sobremesa e bolaria.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por sobremesa e bolaria.' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para obrador profissional.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de receitas para distintos volumes de produção.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao proprietário da pastelaria cliente.' },
@@ -638,7 +638,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de pizzas com receita detalhada (massa, molho, mozzarella, toppings).' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de farinha, mozzarella, tomate e azeite.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por pizza.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por pizza.' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para obrador de pizzaria.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de receitas de massa para distintos volumes diários.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao proprietário da pizzaria cliente.' },
@@ -751,7 +751,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de bebidas de café e signature drinks com receita detalhada.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de café verde e leite.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios (leite, frutos secos, soja).' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, (leite, frutos secos, soja).' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para extração profissional.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de batch brew para distintos volumes diários.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao proprietário da cafetaria cliente.' },
@@ -977,7 +977,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de cocktails (clássicos relidos, signature, low-ABV, sem álcool) com receita detalhada.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de sumos, destilados e modificadores.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios em cocktails (lacticínios, frutos secos, soja).' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, em cocktails (lacticínios, frutos secos, soja).' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de medidas (ml/oz/dash/barspoon) para balcão profissional.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de batch cocktails para distintos volumes.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao F&B Manager do cliente.' },
@@ -1090,7 +1090,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Culinária Criativa Pro', category: 'Criatividade Culinária', description: 'Desenvolvimento de pães, massas-mãe, folhados e brioches com receita detalhada.' },
       { name: 'Mermas Genéricas', category: 'Ferramentas e Utilitárias', description: 'Quebras e rendimentos de farinhas, manteiga e lacticínios.' },
-      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Identificação automática de alergénios por pão e bolaria.' },
+      { name: 'ID Alergénios', category: 'Ferramentas e Utilitárias', description: 'Revisão dos 14 alergénios, com validação final do cozinheiro, por pão e bolaria.' },
       { name: 'Conversor Ing', category: 'Ferramentas e Utilitárias', description: 'Conversor de pesos e medidas para obrador profissional.' },
       { name: 'Calcula Pax', category: 'Ferramentas e Utilitárias', description: 'Escalonamento de receitas para distintos volumes diários de obrador.' },
       { name: 'Gerente Restaurante Pro', category: 'Gastro Profile Pro', description: 'Operação e reporting ao proprietário da padaria cliente.' },

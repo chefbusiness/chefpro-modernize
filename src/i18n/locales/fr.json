@@ -1202,14 +1202,14 @@
     "breadcrumb": "Réduire les coûts restaurant avec IA",
     "seo": {
       "title": "Réduire Coûts Restaurant avec IA | AI Chef Pro",
-      "description": "Réduisez jusqu'à 35% les pertes et coûts alimentaires de votre restaurant grâce à l'intelligence artificielle. Fiche technique automatique et optimisation de carte en temps réel.",
+      "description": "Gardez les pertes et les coûts alimentaires sous contrôle avec l'intelligence artificielle. Fiche de coût avec IA, contrôle du food cost et relecture de la carte.",
       "keywords": "réduire coûts restaurant, contrôle food cost restaurant, réduire pertes cuisine, fiche technique digitale, optimiser coûts cuisine, rentabilité restaurant IA"
     },
     "hero": {
       "badge": "💰 Économisez dès le premier mois",
       "h1": "Réduisez les coûts de votre restaurant jusqu'à 35% avec l'IA",
       "subtitle": "Contrôlez les pertes, optimisez le food cost et améliorez la marge de chaque plat — sans tableurs ni calculs manuels.",
-      "tagline": "L'outil utilisé par plus de {{userCount}} professionnels de la gastronomie.",
+      "tagline": "75+ agents d'IA en 7 langues pour la cuisine professionnelle.",
       "cta_primary": "Commencer à économiser",
       "cta_secondary": "Voir les formules et tarifs",
       "no_card": "Dès 10 €/mois · Forfaits mensuels sans engagement · Accès immédiat"
@@ -1247,8 +1247,8 @@
         ]
       },
       {
-        "title": "Fiche Technique Automatique",
-        "description": "Calculez le coût réel de chaque recette en quelques secondes. Mettez à jour les prix des ingrédients et les fiches techniques se recalculent automatiquement.",
+        "title": "Fiche de coût avec IA",
+        "description": "Calculez le coût de chaque recette à partir de vos ingrédients et de vos prix. Si un prix change, vous refaites la fiche ; le cuisinier valide.",
         "keywords": [
           "fiche technique",
           "food cost",
@@ -1307,7 +1307,7 @@
       },
       {
         "title": "Chef de Cuisine",
-        "description": "Concevez des recettes rentables dès le départ. La fiche technique automatique vous indique le coût avant d'ajouter un plat à la carte."
+        "description": "Concevez des recettes avec le coût sous les yeux. La fiche de coût avec IA donne une base avant d'ajouter un plat ; le cuisinier valide."
       },
       {
         "title": "Groupe de Restauration",
@@ -1354,7 +1354,7 @@
     ],
     "cta_section": {
       "title": "Arrêtez de perdre de l'argent. Maîtrisez vos coûts dès aujourd'hui.",
-      "subtitle": "Rejoignez plus de {{userCount}} professionnels qui utilisent déjà l'IA pour protéger leurs marges et développer leur activité.",
+      "subtitle": "75+ agents d'IA en 7 langues pour garder les marges.",
       "primary": "Commencer maintenant",
       "secondary": "Voir toutes les formules"
     },
@@ -1432,7 +1432,7 @@
       },
       {
         "title": "Gestion des allergènes",
-        "description": "Identifiez et étiquetez automatiquement les 14 allergènes à déclaration obligatoire dans tous vos plats. Conformité légale simplifiée.",
+        "description": "Révision des 14 allergènes à déclaration obligatoire, avec validation finale du cuisinier, pour les passer à la carte.",
         "keywords": [
           "allergènes restaurant",
           "réglementation allergènes",
@@ -1487,7 +1487,7 @@
         "Concevez la carte de votre restaurant en heures, pas en semaines",
         "Calculez le food cost de chaque plat à l'euro près",
         "Générez du contenu pour les réseaux sociaux en minutes",
-        "Identifiez automatiquement les allergènes dans tous vos plats",
+        "Vous relisez les 14 allergènes de chaque plat ; la validation finale est du cuisinier.",
         "Réduisez le gaspillage grâce à une planification intelligente des achats",
         "Accédez à des recettes de 27 cuisines du monde adaptées à votre établissement"
       ]
@@ -1557,7 +1557,7 @@
       },
       {
         "metric": "14",
-        "label": "allergènes gérés automatiquement"
+        "label": "allergènes à déclaration obligatoire, relus par le cuisinier"
       },
       {
         "metric": "27",
@@ -1598,7 +1598,7 @@
       },
       {
         "title": "Gestion des Allergènes",
-        "description": "Identifiez et étiquetez automatiquement les 14 allergènes à déclaration obligatoire. Conformité légale sans effort sur tous les plats de votre carte.",
+        "description": "Révision des 14 allergènes à déclaration obligatoire, avec validation finale du cuisinier, pour étiqueter la carte.",
         "keywords": [
           "allergènes carte",
           "réglementation allergènes",
@@ -1682,7 +1682,7 @@
       },
       {
         "question": "L'IA gère-t-elle les allergènes de mes plats ?",
-        "answer": "Oui. Saisissez les ingrédients de chaque plat et l'IA identifie automatiquement les 14 allergènes à déclaration obligatoire selon le Règlement UE 1169/2011. Vous pouvez exporter les informations pour les inclure dans votre carte numérique ou imprimée."
+        "answer": "Saisissez les ingrédients de chaque plat et relisez les 14 allergènes à déclaration obligatoire du règlement (UE) 1169/2011, avec validation finale du cuisinier. Vous pouvez utiliser cette relecture sur la carte numérique ou imprimée."
       },
       {
         "question": "Puis-je mettre à jour ma carte chaque saison avec l'IA ?",
@@ -1691,7 +1691,7 @@
     ],
     "cta_section": {
       "title": "Concevez la carte que votre restaurant mérite",
-      "subtitle": "Plus de {{userCount}} professionnels utilisent déjà AI Chef Pro pour créer des cartes rentables, attractives et légalement conformes.",
+      "subtitle": "75+ agents d'IA en 7 langues pour des cartes dont les allergènes sont relus.",
       "primary": "Créer ma carte",
       "secondary": "Voir tous les plans"
     },
@@ -1714,16 +1714,8 @@
     },
     "results": [
       {
-        "metric": "10x",
-        "label": "plus rapide pour créer du contenu réseaux sociaux"
-      },
-      {
         "metric": "3h",
         "label": "économisées par semaine en marketing digital"
-      },
-      {
-        "metric": "4.8★",
-        "label": "note moyenne des clients sur Google"
       },
       {
         "metric": "75+",
@@ -1857,7 +1849,7 @@
     ],
     "cta_section": {
       "title": "Arrêtez d'improviser. Automatisez le marketing de votre restaurant.",
-      "subtitle": "Plus de {{userCount}} restaurants utilisent déjà AI Chef Pro pour créer du contenu professionnel, gérer leur réputation en ligne et attirer plus de clients.",
+      "subtitle": "75+ agents d'IA en 7 langues pour les publications, la fiche Google et les avis.",
       "primary": "Commencer AI Chef Pro",
       "secondary": "Voir tous les plans"
     },
@@ -1882,14 +1874,6 @@
       {
         "metric": "75+",
         "label": "agents IA"
-      },
-      {
-        "metric": "10x",
-        "label": "plus précis pour le coût matière"
-      },
-      {
-        "metric": "{{userCount}}+",
-        "label": "restaurants et chefs qui l'utilisent"
       },
       {
         "metric": "27",
@@ -2060,7 +2044,7 @@
     ],
     "cta_section": {
       "title": "L'IA de restauration que ChatGPT ne peut pas être",
-      "subtitle": "Plus de {{userCount}} chefs et restaurateurs ont déjà choisi l'IA spécialisée en gastronomie.",
+      "subtitle": "75+ agents d'IA en 7 langues, formés pour la restauration.",
       "primary": "Essayer AI Chef Pro",
       "secondary": "Voir tous les plans"
     },
@@ -2088,10 +2072,6 @@
         "label": "Gain quotidien en gestion"
       },
       {
-        "metric": "{{userCount}}+",
-        "label": "Restaurants actifs"
-      },
-      {
         "metric": "75+",
         "label": "Agents IA"
       },
@@ -2107,9 +2087,9 @@
       "col_other": "Logiciel Traditionnel",
       "items": [
         {
-          "feature": "Fiche de coût automatique",
+          "feature": "Fiche de coût avec IA, validée par le cuisinier",
           "other": "Manuel, sur Excel",
-          "aichef": "L'IA calcule le food cost instantanément"
+          "aichef": "L'IA propose le food cost ; le cuisinier le valide"
         },
         {
           "feature": "Gestion des recettes",
@@ -2129,7 +2109,7 @@
         {
           "feature": "Mise à jour des prix",
           "other": "Processus lent et fastidieux",
-          "aichef": "Recalcul automatique en quelques secondes"
+          "aichef": "Vous mettez le prix à jour et vous relisez la fiche"
         }
       ]
     },
@@ -2219,7 +2199,7 @@
       "title": "La gestion de cuisine dont les chefs ont besoin, propulsée par l'IA",
       "body": "Les logiciels de gestion traditionnels sont lents, rigides et ne comprennent pas la cuisine. AI Chef Pro est un logiciel conçu par et pour les professionnels de la restauration.",
       "benefits": [
-        "Fiches de coût automatiques avec prix du marché à jour",
+        "Fiches de coût avec IA à partir des prix que vous saisissez, relues par le cuisinier",
         "Contrôle des allergènes intégré selon la réglementation européenne en vigueur",
         "Recettes standardisées avec fiches techniques professionnelles",
         "Analyse de rentabilité plat par plat avec ingénierie du menu",
@@ -2247,11 +2227,11 @@
       },
       {
         "question": "Puis-je gérer mes fiches de coût avec AI Chef Pro ?",
-        "answer": "Oui. AI Chef Pro calcule automatiquement le food cost de chaque plat avec vos ingrédients, grammages et prix fournisseur. Il met à jour les coûts en quelques secondes quand les prix du marché changent."
+        "answer": "Oui. AI Chef Pro propose le food cost de chaque plat à partir de vos ingrédients, grammages et prix fournisseur. Si un prix change, vous refaites la fiche et le cuisinier valide."
       },
       {
         "question": "AI Chef Pro est-il conforme à la réglementation sur les allergènes ?",
-        "answer": "Oui. Le système identifie les 14 allergènes selon le Règlement UE 1169/2011 et génère des fiches techniques conformes à la réglementation européenne en vigueur."
+        "answer": "Vous relisez les 14 allergènes du règlement (UE) 1169/2011, avec validation finale du cuisinier, et vous pouvez porter cette relecture sur la fiche technique."
       },
       {
         "question": "Dois-je installer un logiciel sur mon ordinateur ?",
@@ -2260,7 +2240,7 @@
     ],
     "cta_section": {
       "title": "Commencez à gérer votre cuisine avec l'IA dès aujourd'hui",
-      "subtitle": "Plus de {{userCount}} professionnels de la restauration utilisent déjà AI Chef Pro pour gérer leur cuisine avec plus de contrôle et moins de temps.",
+      "subtitle": "75+ agents d'IA en 7 langues pour la gestion de cuisine.",
       "primary": "Essayer AI Chef Pro",
       "secondary": "Voir tous les plans"
     }
@@ -2323,7 +2303,7 @@
         {
           "feature": "Mise à l'échelle",
           "other": "Calculs manuels avec erreurs",
-          "aichef": "Mise à l'échelle automatique et instantanée"
+          "aichef": "Calcula Pax laisse un autre brouillon de quantités"
         },
         {
           "feature": "Fiches techniques",
@@ -2365,8 +2345,8 @@
         ]
       },
       {
-        "title": "Mise à l'Échelle Automatique",
-        "description": "Adaptez n'importe quelle recette au nombre de convives souhaité. L'IA ajuste les grammages, temps de cuisson et techniques.",
+        "title": "Mise à l'échelle, à goûter",
+        "description": "Calcula Pax propose les nouvelles quantités pour un autre nombre de convives. Vous goûtez le sel et les temps avant le service.",
         "keywords": [
           "mise à l'échelle recettes",
           "grammages par portion",
@@ -2407,7 +2387,7 @@
       },
       {
         "title": "Chef d'Hôtel ou Traiteur",
-        "description": "Crée des menus complets pour de grands événements avec mise à l'échelle automatique."
+        "description": "Propose des menus complets pour de grands événements. Calcula Pax laisse les nouvelles quantités et vous les goûtez."
       },
       {
         "title": "Propriétaire de Restaurant",
@@ -2422,7 +2402,7 @@
         "27 cuisines du monde avec techniques et traditions authentiques",
         "Menus de saison alignés avec votre concept gastronomique",
         "Fiches techniques prêtes à imprimer et utiliser avec votre équipe",
-        "Mise à l'échelle des portions instantanée sans erreurs de calcul",
+        "Calcula Pax laisse un autre brouillon de quantités, et le sel se goûte à nouveau.",
         "Adaptation aux restrictions alimentaires sans perdre la qualité culinaire"
       ]
     },
@@ -2452,8 +2432,8 @@
         "answer": "Oui. AI Chef Pro génère des fiches techniques professionnelles complètes : ingrédients avec grammages, techniques étape par étape, allergènes selon le Règlement UE 1169/2011, valeurs nutritionnelles et suggestions de dressage."
       },
       {
-        "question": "Comment fonctionne la mise à l'échelle automatique ?",
-        "answer": "Entrez le nombre de portions souhaitées et l'IA ajuste automatiquement tous les grammages, temps de cuisson et techniques. Idéal pour la restauration événementielle ou pour adapter des recettes de menu dégustation au service à la carte."
+        "question": "Comment fonctionne la mise à l'échelle des portions ?",
+        "answer": "Vous indiquez le nombre de portions. L'IA laisse un brouillon de grammages, de temps et de techniques. Vous goûtez et vous corrigez avant le service. Cela sert au traiteur, aux événements ou pour passer une recette de menu dégustation à la carte."
       }
     ],
     "cta_section": {
@@ -2729,9 +2709,9 @@
         "Sans inscription ni carte bancaire",
         "Résultats instantanés dans votre navigateur",
         "Basés sur des standards réels du secteur",
-        "Utilisées par plus de {{userCount}} professionnels"
+        "Pensées pour le travail de cuisine et de salle"
       ],
-      "users_label": "professionnels de l'hôtellerie les utilisent déjà"
+      "users_label": "agents d'IA en 7 langues"
     },
     "cta": {
       "title": "Vous avez besoin de plus de puissance ?",
@@ -2775,7 +2755,7 @@
       "status_warn": "⚠️ Food cost serré — Vérifiez les prix ou les ingrédients",
       "status_bad": "🔴 Food cost élevé — Envisagez d'augmenter le prix ou de réduire les coûts",
       "tip": "💡 Référence du secteur : un food cost entre 25% et 32% est sain pour les restaurants",
-      "cta_after": "Vous voulez calculer tous vos plats automatiquement ?",
+      "cta_after": "Vous voulez chiffrer toute la carte avec l'IA et faire valider le résultat ?",
       "reset": "Nouveau calcul",
       "export_excel": "Télécharger Excel",
       "lead_title": "Indiquez votre e-mail pour télécharger l'Excel",
@@ -2871,7 +2851,7 @@
       },
       {
         "question": "Ce calculateur inclut-il les pertes ?",
-        "answer": "Cette version gratuite fonctionne avec les grammages nets que vous saisissez. Pour inclure automatiquement les pertes, utilisez l'outil de costing d'AI Chef Pro Premium."
+        "answer": "Cette version utilise les grammages nets que vous saisissez. Pour inclure les pertes de parage, de cuisson et d'évaporation, utilisez l'outil de fiche de coût d'AI Chef Pro et validez le résultat."
       },
       {
         "question": "Comment améliorer un food cost élevé ?",
@@ -2879,8 +2859,8 @@
       }
     ],
     "cta_section": {
-      "title": "Automatisez tout votre costing avec l'IA",
-      "subtitle": "Avec AI Chef Pro, calculez le food cost de toute votre carte en minutes, avec contrôle des pertes et mises à jour automatiques.",
+      "title": "Chiffrez toute la carte avec l'IA, et validez-la",
+      "subtitle": "Avec AI Chef Pro vous chiffrez toute la carte, pertes comprises. Si un prix change, vous relisez la fiche et le cuisinier valide.",
       "primary": "Essayer AI Chef Pro",
       "secondary": "Voir tous les plans"
     }
@@ -3310,7 +3290,7 @@
       "copy": "Copier la déclaration",
       "copied": "Copié !",
       "reset": "Nouvelle analyse",
-      "cta_after": "Vous voulez gérer les allergènes de toute votre carte automatiquement ?",
+      "cta_after": "Vous voulez relire les 14 allergènes de toute la carte, avec validation finale du cuisinier ?",
       "allergens_title": "Les 14 allergènes à déclaration obligatoire",
       "allergens_subtitle": "Règlement (UE) 1169/2011",
       "try_free": "Essayer AI Chef Pro",
@@ -3568,8 +3548,8 @@
         },
         {
           "step": "2",
-          "title": "Détection automatique",
-          "description": "Le vérificateur identifie les allergènes du Règlement UE 1169/2011 présents."
+          "title": "Relecture des 14 allergènes",
+          "description": "Le vérificateur propose quels allergènes du règlement (UE) 1169/2011 apparaissent dans les ingrédients. La validation finale est du cuisinier."
         },
         {
           "step": "3",
@@ -3594,7 +3574,7 @@
     },
     "pricing": {
       "title": "Gestion complète des allergènes avec AI Chef Pro",
-      "subtitle": "Le vérificateur basique est gratuit. Avec AI Chef Pro, gérez les allergènes de toute votre carte avec alertes automatiques.",
+      "subtitle": "Avec AI Chef Pro, vous relisez les 14 allergènes de la carte, avec validation finale du cuisinier.",
       "plans": [
         {
           "name": "Membre",
@@ -3645,7 +3625,7 @@
     ],
     "cta_section": {
       "title": "Gérez les allergènes de toute votre carte avec l'IA",
-      "subtitle": "Avec AI Chef Pro, gérez automatiquement les allergènes de chaque plat avec alertes et déclaration exportable.",
+      "subtitle": "Avec AI Chef Pro, vous relisez les 14 allergènes de chaque plat, avec validation finale du cuisinier, et vous exportez la fiche pour la carte.",
       "primary": "Essayer AI Chef Pro",
       "secondary": "Voir tous les plans"
     },
