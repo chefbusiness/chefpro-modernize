@@ -2,7 +2,7 @@
 title: "Generador de Recetas con IA: Crea Recetas con tus Ingredientes"
 description: "Generador de recetas con IA a partir de tus ingredientes: cómo funciona, ejemplos en casa y en cocina profesional, y cómo aprovechar lo que tienes en la nevera."
 pubDate: 2025-09-03
-modDate: 2026-11-24
+modDate: 2026-09-05
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/generador-recetas-ia-4.jpeg
 imageAlt: "Generador de Recetas con Ingredientes por IA: Transforma lo que Tienes en Casa"
