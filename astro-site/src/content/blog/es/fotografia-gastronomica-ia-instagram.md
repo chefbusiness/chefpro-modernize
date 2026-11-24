@@ -101,9 +101,10 @@ Los tres ángulos que debes dominar se resumen en esta tabla:
 | Frontal 0° / nivel de mesa | Bebidas con hielo y cítricos, hamburguesas altas, postres con capas (milhojas, tartas) y shots donde interesa el perfil. | Platos planos como pizzas o tablas, porque se aplanan y se pierde el detalle. |
 | Formato 4:5 vertical (1080 × 1350 px) | El formato que mejor aprovecha el feed de Instagram: ocupa más pantalla y retiene la atención. | Historias y Reels, donde el estándar es 9:16 (1080 × 1920 px). |
 
+Con estas pautas, cada plato encuentra su encuadre natural. Y si dudas entre dos ángulos, haz ambas tomas; la edición posterior te ayudará a decidir.
+
 Si además quieres grabar el plato en vídeo, tienes [cómo hacer vídeos de recetas con IA](https://aichef.pro/blog/como-hacer-videos-de-recetas-con-ia).
 
-Con estas pautas, cada plato encuentra su encuadre natural. Y si dudas entre dos ángulos, haz ambas tomas; la edición posterior te ayudará a decidir.
 
 ## Edición con IA paso a paso, sin exagerar
 
