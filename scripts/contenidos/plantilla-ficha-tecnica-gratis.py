@@ -39,14 +39,14 @@ INGREDIENTES = [
     ('Ajo', 5, 'g', 0.10),
     ('AOVE', 15, 'ml', 0.0),
     ('Limón', 30, 'g', 0.0),
-    ('Sal, pimienta y perejil', None, 'al gusto', None),
+    ('Sal, pimienta y perejil', None, 'sal 2 g · pimienta 0,5 g · perejil 3 g', None),
 ]
 PASOS = [
-    ('Cortar el calabacín y el pimiento en bastones regulares y la cebolla morada en juliana fina.', '5 min', ''),
-    ('Saltear las verduras con el ajo laminado y parte del AOVE a fuego fuerte, sin que pierdan el color.', '4 min', 'fuego fuerte'),
-    ('Marcar el salmón por el lado de la piel en la plancha bien caliente y terminar por el otro lado.', '6 min', 'plancha bien caliente'),
+    ('Cortar el calabacín y el pimiento en bastones, la cebolla morada en juliana fina y laminar el ajo.', '5 min', ''),
+    ('Saltear las verduras con el ajo y 10 ml de AOVE a fuego fuerte, sin que pierdan el color.', '4 min', 'fuego fuerte'),
+    ('Marcar el salmón con los 5 ml de AOVE restantes por el lado de la piel y terminar por el otro lado.', '6 min', 'plancha bien caliente'),
     ('Retirar y dejar reposar un minuto antes de emplatar.', '1 min', ''),
-    ('Emplatar las verduras de base, el salmón encima con la piel hacia arriba, el limón y el perejil.', '2 min', ''),
+    ('Emplatar las verduras de base, el salmón encima con la piel hacia arriba, el gajo de limón y el perejil.', '2 min', ''),
 ]
 ALERGENOS = ['Cereales con gluten', 'Crustáceos', 'Huevos', 'Pescado', 'Cacahuetes', 'Soja', 'Leche',
              'Frutos de cáscara', 'Apio', 'Mostaza', 'Granos de sésamo', 'Dióxido de azufre y sulfitos',
@@ -89,20 +89,20 @@ def main():
     # Datos generales (filas 4-10)
     titulo(ws, 4, 'Datos generales')
     datos = [('Plato', 'Salmón a la plancha con verduras salteadas'), ('Categoría', 'Pescados'), ('Raciones', 1),
-             ('Tiempo de preparación', '20 min'), ('Autor', ''), ('Fecha y versión', 'v1.0')]
+             ('Peso por ración', 'Unos 410 g en crudo (suma de netos)'), ('Tiempo de preparación', '20 min'), ('Autor', ''), ('Fecha y versión', 'dd-mm-aaaa · v1.0')]
     for i, (k, v) in enumerate(datos):
         f = 5 + i
         celda(ws, f, 1, k, negrita=True)
         celda(ws, f, 2, v, es_entrada=True)
         ws.merge_cells(start_row=f, start_column=2, end_row=f, end_column=6)
 
-    # Ingredientes (cabecera fila 12, datos 13-24)
-    titulo(ws, 12, 'Ingredientes (por ración)')
+    # Ingredientes (cabecera fila 13, datos desde la 15)
+    titulo(ws, 12 + 1, 'Ingredientes (por ración)')
     cab = ['Ingrediente', 'Cantidad neta (en plato)', 'Unidad', 'Merma (%)', 'Cantidad bruta (a comprar)', 'Alérgenos que aporta']
     for col, txt in enumerate(cab, start=1):
-        c = celda(ws, 13, col, txt, negrita=True)
+        c = celda(ws, 14, col, txt, negrita=True)
         c.fill = PatternFill('solid', fgColor=GRIS)
-    primera = 14
+    primera = 15
     filas = INGREDIENTES + [None] * 4
     for i, item in enumerate(filas):
         f = primera + i
@@ -117,8 +117,12 @@ def main():
             for col in (1, 2, 3, 4, 6):
                 celda(ws, f, col, None, '0%' if col == 4 else ('0' if col == 2 else None), es_entrada=True)
         # bruta = neta / (1 − merma), redondeada al gramo hacia arriba
-        celda(ws, f, 5, f'=IF(OR(B{f}="",D{f}=""),"",ROUNDUP(B{f}/(1-D{f}),0))', '0')
+        celda(ws, f, 5, f'=IF(OR(B{f}="",N(D{f})>=1),"",ROUNDUP(B{f}/(1-N(D{f})),0))', '0')
     ultima_ing = primera + len(filas) - 1
+    dvm = DataValidation(type='decimal', operator='between', formula1='0', formula2='0.99',
+                         error='La merma va de 0 % a 99 %.', errorTitle='Merma')
+    ws.add_data_validation(dvm)
+    dvm.add(f'D{primera}:D{ultima_ing}')
 
     # Elaboración (cabecera, datos)
     fe = ultima_ing + 2
@@ -136,7 +140,7 @@ def main():
         ws.merge_cells(start_row=f, start_column=2, end_row=f, end_column=4)
         celda(ws, f, 5, tiempo or None, es_entrada=True)
         celda(ws, f, 6, temp or None, es_entrada=True)
-        ws.row_dimensions[f].height = 32
+        ws.row_dimensions[f].height = 48
 
     # Alérgenos (14, con desplegable)
     fa = fe + 2 + len(pasos) + 1
