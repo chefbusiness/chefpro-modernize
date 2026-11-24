@@ -166,7 +166,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 82 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
@@ -201,6 +201,7 @@ One-line definitions of these entries are in llms-full.txt.
 - En papillote: [es](https://aichef.pro/blog/papillote-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-en-papillote) [fr](https://aichef.pro/fr/blog/cuisson-en-papillote) [de](https://aichef.pro/de/blog/garen-im-pergament) [it](https://aichef.pro/it/blog/al-cartoccio) [pt](https://aichef.pro/pt/blog/em-papelote) [nl](https://aichef.pro/nl/blog/koken-en-papillote)
 - Escabeche: [es](https://aichef.pro/blog/escabeche-concepto-definicion)
 - Esferificación: [es](https://aichef.pro/blog/esferificacion-concepto-y-definicion)
+- Espagnole: [es](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-espagnole) [fr](https://aichef.pro/fr/blog/sauce-espagnole) [de](https://aichef.pro/de/blog/espagnole) [it](https://aichef.pro/it/blog/salsa-spagnola) [pt](https://aichef.pro/pt/blog/molho-espanhol) [nl](https://aichef.pro/nl/blog/spaanse-saus)
 - Espumas (técnica Ferran Adrià): [es](https://aichef.pro/blog/espumas-ferran-adria-concepto-y-definicion)
 - Fermentación: [es](https://aichef.pro/blog/fermentacion-concepto-definicion)
 - Fermentación Koji: [es](https://aichef.pro/blog/fermentacion-koji-umami-natural)
@@ -235,9 +236,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Roner: [es](https://aichef.pro/blog/roner-concepto-y-definicion-2)
 - Roux: [es](https://aichef.pro/blog/roux-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-a-roux) [fr](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) [de](https://aichef.pro/de/blog/mehlschwitze) [it](https://aichef.pro/it/blog/roux) [pt](https://aichef.pro/pt/blog/o-que-e-um-roux) [nl](https://aichef.pro/nl/blog/wat-is-een-roux)
 - Salsa bearnesa: [es](https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion)
-- Salsa española: [es](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion)
 - Salsa holandesa: [es](https://aichef.pro/blog/salsa-holandesa-concepto-y-definicion)
-- Salsa velouté: [es](https://aichef.pro/blog/salsa-veloute-concepto-y-definicion)
 - Salsas madre de la cocina: [es](https://aichef.pro/blog/salsas-madre-cocina-guia)
 - Sous vide: [es](https://aichef.pro/blog/sous-vide-concepto-definicion)
 - Starch slurry: [es](https://aichef.pro/blog/ligar-con-maicena) [en](https://aichef.pro/en/blog/starch-slurry) [fr](https://aichef.pro/fr/blog/liaison-a-la-fecule) [de](https://aichef.pro/de/blog/staerkebrei) [it](https://aichef.pro/it/blog/sospensione-di-amido) [pt](https://aichef.pro/pt/blog/papas-de-amido) [nl](https://aichef.pro/nl/blog/zetmeelpap)
@@ -248,6 +247,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Tipos de Cortes en la Cocina Profesional: [es](https://aichef.pro/blog/tipos-de-cortes-en-la-cocina-profesional)
 - Token: [es](https://aichef.pro/blog/token-unidad-inteligencia-artificial)
 - Umami: [es](https://aichef.pro/blog/umami-concepto-y-definicion)
+- Velouté: [es](https://aichef.pro/blog/salsa-veloute-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-veloute) [fr](https://aichef.pro/fr/blog/veloute) [de](https://aichef.pro/de/blog/veloute) [it](https://aichef.pro/it/blog/vellutata) [pt](https://aichef.pro/pt/blog/veloute) [nl](https://aichef.pro/nl/blog/veloute)
 - Vinagreta: [es](https://aichef.pro/blog/vinagreta-concepto-y-definicion)
 - White stock: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-white-stock) [fr](https://aichef.pro/fr/blog/fond-blanc) [de](https://aichef.pro/de/blog/heller-fond) [it](https://aichef.pro/it/blog/fondo-bianco) [pt](https://aichef.pro/pt/blog/fundo-branco) [nl](https://aichef.pro/nl/blog/witte-fond)
 - Yuzu kosho: [es](https://aichef.pro/blog/yuzu-kosho-condimento-japones-tendencia)

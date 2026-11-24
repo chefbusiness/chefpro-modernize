@@ -2,7 +2,7 @@
 title: "Fondo bruno e demi-glace: ricetta professionale e salse derivate"
 description: "Fondo bruno e demi-glace (anche cercata come demi glace): proporzioni per 5 litri, cottura e salse derivate. La demi-glace è il fondo ridotto della metà."
 pubDate: 2026-08-16
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: tecnica-e-ricette
 tags: ["fondo bruno", "salse", "tecnica di cucina", "preparazioni di base"]
 image: /blog-assets/2026/08/fondo-bruno-destacada.jpg
@@ -125,4 +125,4 @@ faq:
 
 <h2>Il tuo prossimo passo</h2>
 
-<p>Ora hai le proporzioni, la tecnica e le derivate: la pentola di stasera è davvero la carta di domani. Se ti sei accorto che il fondo bruno era la prima riga della lista di preparazione della partita, non è un caso: l'organizzazione che lo rende possibile è quella della <a href="https://aichef.pro/it/blog/mise-en-place">mise en place</a>, e la sua conservazione segue le regole delle <a href="https://aichef.pro/it/blog/temperature-frigorifero-haccp">temperature del frigorifero HACCP</a> — etichetta, 0/+4 °C, raffreddamento rapido. E quando il fondo è pronto, il capitolo successivo è già scritto: le <a href="https://aichef.pro/it/blog/salse-madri">cinque salse madri</a> — la spagnola è sua figlia diretta. Metti la placca in forno: il resto viene da sé.</p>
+<p>Ora hai le proporzioni, la tecnica e le derivate: la pentola di stasera è davvero la carta di domani. Se ti sei accorto che il fondo bruno era la prima riga della lista di preparazione della partita, non è un caso: l'organizzazione che lo rende possibile è quella della <a href="https://aichef.pro/it/blog/mise-en-place">mise en place</a>, e la sua conservazione segue le regole delle <a href="https://aichef.pro/it/blog/temperature-frigorifero-haccp">temperature del frigorifero HACCP</a> — etichetta, 0/+4 °C, raffreddamento rapido. E quando il fondo è pronto, il capitolo successivo è già scritto: le <a href="https://aichef.pro/it/blog/salse-madri">cinque salse madri</a> — la <a href="https://aichef.pro/it/blog/salsa-spagnola">spagnola</a> è sua figlia diretta. Metti la placca in forno: il resto viene da sé.</p>

@@ -2,7 +2,7 @@
 title: "Fond blanc : ce qu'il est, et ce qu'il n'est pas"
 description: "Le fond blanc, ce sont des os non rôtis, mijotés avec une garniture crue et des herbes. Base discrète des veloutés et des potages clairs."
 pubDate: 2026-11-19
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossaire
 tags: ["fond blanc", "velouté", "fond", "bouillon"]
 lang: fr
@@ -74,13 +74,13 @@ Un [fumet](https://aichef.pro/fr/blog/fumet-de-poisson) est le fond clair des ar
 
 Une [demi-glace](https://aichef.pro/fr/blog/demi-glace) n'est pas ce fond. C'est une sauce bâtie sur le fond brun et réduite jusqu'à napper. Une [glace de viande](https://aichef.pro/fr/blog/glace-de-viande) est le fond brun réduit plus loin, jusqu'à gélifier dur à froid. Un fond blanc peut se réduire, mais il ne devient ni l'une ni l'autre. La couleur et le rôtissage manquent exprès.
 
-Le velouté est la sauce mère qui part d'ici : fond pâle et roux blond. Il n'y a pas encore de fiche française du velouté. Le fond est le liquide. Le roux est un autre geste. Ne faites pas comme si le fond avait déjà le corps de la sauce.
+Le [velouté](https://aichef.pro/fr/blog/veloute) est la sauce mère qui part d'ici : fond pâle et [roux](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) blond. Le fond est le liquide. Le roux est un autre geste. Ne faites pas comme si le fond avait déjà le corps de la sauce.
 
 ## Au passe
 
 On ne boit pas un fond blanc à la tasse, même si le cuisinier le goûte. Une louche est le liquide d'un velouté, la base d'un potage qui doit goûter le légume et non le rôti, et le mouillement d'un risotto quand un cube salé couvrirait le riz. Un poisson poché, un blanc de volaille, ou de petits légumes glacés en prennent un peu, avec du beurre à la fin. La gélatine aide. Le goût reste en retrait.
 
-Si la fiche dit velouté, le fond est non salé et pâle, et la liaison est à part. Si la fiche dit espagnole ou sauce au poivre, vous vouliez un [fond brun](https://aichef.pro/fr/blog/fond-brun). Un fond blanc à cette place donne une sauce sans note rôtie, et la réduction n'inventera pas le rôtissage que vous avez sauté.
+Si la fiche dit [velouté](https://aichef.pro/fr/blog/veloute), le fond est non salé et pâle, et la liaison est à part. Si la fiche dit [espagnole](https://aichef.pro/fr/blog/sauce-espagnole) ou sauce au poivre, vous vouliez un [fond brun](https://aichef.pro/fr/blog/fond-brun). Un fond blanc à cette place donne une sauce sans note rôtie, et la réduction n'inventera pas le rôtissage que vous avez sauté.
 
 Salez quand vous connaissez le volume final. Un potage qui réduit à peine peut prendre le sel en fin de cuisson. Une sauce que vous couperez de moitié ne le peut pas.
 

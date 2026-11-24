@@ -2,7 +2,7 @@
 title: "White stock: what it is, and what it is not"
 description: "White stock is bones simmered pale, never roasted, with raw vegetables and herbs. The quiet base of veloutés and clear soups."
 pubDate: 2026-11-19
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossary
 tags: ["white stock", "fond blanc", "velouté", "stock"]
 lang: en
@@ -74,13 +74,13 @@ A [fish fumet](https://aichef.pro/en/blog/fish-fumet) is the pale stock of fish 
 
 A [demi-glace](https://aichef.pro/en/blog/what-is-demi-glace) is not this stock. It is a sauce built from brown stock and reduced until it naps. A [glace de viande](https://aichef.pro/en/blog/glace-de-viande) is brown stock reduced further, until it gels hard when cold. White stock can be reduced, but it does not become either of those. The color and the roast are missing on purpose.
 
-Velouté is the mother sauce that starts here: pale stock and a blond roux. There is no English glossary card for velouté yet. The stock is the liquid. The roux is a separate step. Do not pretend the stock already has the body of the sauce.
+[Velouté](https://aichef.pro/en/blog/what-is-veloute) is the mother sauce that starts here: pale stock and a blond [roux](https://aichef.pro/en/blog/what-is-a-roux). The stock is the liquid. The roux is a separate step. Do not pretend the stock already has the body of the sauce.
 
 ## On the pass
 
 You do not drink white stock from a cup, though a cook will taste it. A ladle is the liquid in a velouté, the base of a cream soup that should taste of the vegetable and not of roast, and the moistening for a risotto when a salty cube would shout over the rice. Poached fish, a chicken breast, or glazed small vegetables take a little of it with butter at the end. The gelatin helps. The flavor stays in the background.
 
-If the spec says velouté, the stock is unsalted and pale, and the liaison is separate. If the spec says espagnole or a pepper sauce, you wanted [brown stock](https://aichef.pro/en/blog/what-is-brown-stock). Using white stock there gives you a sauce with no roasted note, and reducing it will not invent the roast you skipped.
+If the spec says [velouté](https://aichef.pro/en/blog/what-is-veloute), the stock is unsalted and pale, and the liaison is separate. If the spec says [espagnole](https://aichef.pro/en/blog/what-is-espagnole) or a pepper sauce, you wanted [brown stock](https://aichef.pro/en/blog/what-is-brown-stock). Using white stock there gives you a sauce with no roasted note, and reducing it will not invent the roast you skipped.
 
 Season after you know the final volume. A soup that only needs a little reduction can take salt in the pot at the end. A sauce you will cut by half cannot.
 

@@ -288,7 +288,7 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 82 terms. A language is listed only when that glossary post is published.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
 - ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
@@ -333,6 +333,8 @@ Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 
   en: En papillote means cooking food in a sealed packet, almost always of baking parchment. It cooks in its own steam and in the little liquid inside. Direct heat never touches it, so fish or vegetables stay moist. The packet is opened at the table, and that is when the aroma comes out.
 - Escabeche: [es](https://aichef.pro/blog/escabeche-concepto-definicion)
 - Esferificación: [es](https://aichef.pro/blog/esferificacion-concepto-y-definicion)
+- Espagnole: [es](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-espagnole) [fr](https://aichef.pro/fr/blog/sauce-espagnole) [de](https://aichef.pro/de/blog/espagnole) [it](https://aichef.pro/it/blog/salsa-spagnola) [pt](https://aichef.pro/pt/blog/molho-espanhol) [nl](https://aichef.pro/nl/blog/spaanse-saus)
+  en: Espagnole, also called Spanish sauce, is a mother sauce of brown stock, a dark roux, caramelized mirepoix, and tomato. The stock comes from roasted bones. The roux is cooked to a deep mahogany. After a long, quiet simmer the sauce is the base of demi-glace and of the brown sauces that follow. The name is French. The sauce is not a recipe from Spain.
 - Espumas (técnica Ferran Adrià): [es](https://aichef.pro/blog/espumas-ferran-adria-concepto-y-definicion)
 - Fermentación: [es](https://aichef.pro/blog/fermentacion-concepto-definicion)
 - Fermentación Koji: [es](https://aichef.pro/blog/fermentacion-koji-umami-natural)
@@ -381,9 +383,7 @@ Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 
 - Roux: [es](https://aichef.pro/blog/roux-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-a-roux) [fr](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) [de](https://aichef.pro/de/blog/mehlschwitze) [it](https://aichef.pro/it/blog/roux) [pt](https://aichef.pro/pt/blog/o-que-e-um-roux) [nl](https://aichef.pro/nl/blog/wat-is-een-roux)
   en: A roux is flour cooked in fat, before the liquid of the sauce goes in. The fat cooks the flour and keeps it from lumping. In Le Guide Culinaire (1903), Auguste Escoffier gives 500 g of clarified butter and 600 g of flour, and he calls those the proportions for 1 kilo. With whole butter, which still contains water, equal weights come close to that ratio. The color of the cooking changes the flavor and the thickening power: white for béchamel, blond for velouté, and a light hazelnut for espagnole.
 - Salsa bearnesa: [es](https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion)
-- Salsa española: [es](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion)
 - Salsa holandesa: [es](https://aichef.pro/blog/salsa-holandesa-concepto-y-definicion)
-- Salsa velouté: [es](https://aichef.pro/blog/salsa-veloute-concepto-y-definicion)
 - Salsas madre de la cocina: [es](https://aichef.pro/blog/salsas-madre-cocina-guia)
 - Sous vide: [es](https://aichef.pro/blog/sous-vide-concepto-definicion)
 - Starch slurry: [es](https://aichef.pro/blog/ligar-con-maicena) [en](https://aichef.pro/en/blog/starch-slurry) [fr](https://aichef.pro/fr/blog/liaison-a-la-fecule) [de](https://aichef.pro/de/blog/staerkebrei) [it](https://aichef.pro/it/blog/sospensione-di-amido) [pt](https://aichef.pro/pt/blog/papas-de-amido) [nl](https://aichef.pro/nl/blog/zetmeelpap)
@@ -395,6 +395,8 @@ Published entries: 240 posts (es 81, en 26, fr 27, de 27, it 25, pt 27, nl 27), 
 - Tipos de Cortes en la Cocina Profesional: [es](https://aichef.pro/blog/tipos-de-cortes-en-la-cocina-profesional)
 - Token: [es](https://aichef.pro/blog/token-unidad-inteligencia-artificial)
 - Umami: [es](https://aichef.pro/blog/umami-concepto-y-definicion)
+- Velouté: [es](https://aichef.pro/blog/salsa-veloute-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-veloute) [fr](https://aichef.pro/fr/blog/veloute) [de](https://aichef.pro/de/blog/veloute) [it](https://aichef.pro/it/blog/vellutata) [pt](https://aichef.pro/pt/blog/veloute) [nl](https://aichef.pro/nl/blog/veloute)
+  en: Velouté is a mother sauce made from white stock and a blond roux. The stock is poultry, veal, or fish, started pale and never roasted. The roux is cooked only to a light sand color. The finished sauce is ivory, fluid, and silky, and it carries the taste of the stock. It is not béchamel, which is built on milk, and it is not espagnole, which starts from brown stock.
 - Vinagreta: [es](https://aichef.pro/blog/vinagreta-concepto-y-definicion)
 - White stock: [es](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion) [en](https://aichef.pro/en/blog/what-is-white-stock) [fr](https://aichef.pro/fr/blog/fond-blanc) [de](https://aichef.pro/de/blog/heller-fond) [it](https://aichef.pro/it/blog/fondo-bianco) [pt](https://aichef.pro/pt/blog/fundo-branco) [nl](https://aichef.pro/nl/blog/witte-fond)
   en: White stock is a meat stock from bones that are never roasted. They start in cold water with raw vegetables and a bouquet garni, and they simmer until the liquid is pale gold. It feeds veloutés and clear soups. It is not brown stock, which roasts the bones, and it is not a fish fumet.

@@ -2,7 +2,7 @@
 title: "Heller Fond: was er ist, und was er nicht ist"
 description: "Heller Fond sind Knochen, die nie geröstet, sondern mit rohem Gemüse und Kräutern geköchelt werden. Die stille Basis für Veloutés und klare Suppen."
 pubDate: 2026-11-19
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossar
 tags: ["heller Fond", "weiße Kraftbrühe", "Velouté", "Fond"]
 lang: de
@@ -74,13 +74,13 @@ Ein [Fischfond](https://aichef.pro/de/blog/fischfond-fumet) ist der helle Fond a
 
 Eine [Demi-glace](https://aichef.pro/de/blog/demi-glace) ist nicht dieser Fond. Sie ist eine Sauce aus braunem Fond, reduziert, bis sie nappt. Eine [Fleischglace](https://aichef.pro/de/blog/fleischglace) ist brauner Fond weiter reduziert, bis er kalt fest geliert. Heller Fond lässt sich reduzieren, wird aber keines von beiden. Farbe und Röstung fehlen mit Absicht.
 
-Velouté ist die Grundsauce, die hier beginnt: blasser Fond und eine blonde Mehlschwitze. Eine deutsche Glossarfiche zum Velouté gibt es noch nicht. Der Fond ist die Flüssigkeit. Die Mehlschwitze ist ein eigener Schritt. Tun Sie nicht so, als hätte der Fond schon den Körper der Sauce.
+[Velouté](https://aichef.pro/de/blog/veloute) ist die Grundsauce, die hier beginnt: blasser Fond und eine blonde [Mehlschwitze](https://aichef.pro/de/blog/mehlschwitze). Der Fond ist die Flüssigkeit. Die Mehlschwitze ist ein eigener Schritt. Tun Sie nicht so, als hätte der Fond schon den Körper der Sauce.
 
 ## Am Pass
 
 Hellen Fond trinkt niemand aus der Tasse, auch wenn die Köchin ihn kostet. Eine Kelle ist die Flüssigkeit in einem Velouté, die Basis einer Cremesuppe, die nach Gemüse schmecken soll und nicht nach Braten, und das Aufgießen eines Risottos, wenn ein salziger Würfel den Reis übertönen würde. Pochierter Fisch, eine Geflügelbrust oder glasierte kleine Gemüse nehmen am Ende etwas davon mit Butter. Die Gelatine hilft. Der Geschmack bleibt im Hintergrund.
 
-Sagt die Karte Velouté, ist der Fond ungesalzen und blass, und die Bindung ist separat. Sagt die Karte spanische Sauce oder Pfeffersauce, wollten Sie [braunen Fond](https://aichef.pro/de/blog/brauner-fond). Heller Fond an dieser Stelle gibt eine Sauce ohne Röstnote, und Einkochen erfindet das Rösten nicht, das Sie ausgelassen haben.
+Sagt die Karte [Velouté](https://aichef.pro/de/blog/veloute), ist der Fond ungesalzen und blass, und die Bindung ist separat. Sagt die Karte [spanische Sauce](https://aichef.pro/de/blog/espagnole) oder Pfeffersauce, wollten Sie [braunen Fond](https://aichef.pro/de/blog/brauner-fond). Heller Fond an dieser Stelle gibt eine Sauce ohne Röstnote, und Einkochen erfindet das Rösten nicht, das Sie ausgelassen haben.
 
 Salzen Sie, wenn Sie das Endvolumen kennen. Eine Suppe, die kaum einkocht, kann das Salz am Ende im Topf vertragen. Eine Sauce, die Sie auf die Hälfte ziehen, kann es nicht.
 
