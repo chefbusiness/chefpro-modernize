@@ -11,9 +11,15 @@ céntimos (como en la tabla del artículo) y el total da 4,29 €. El script lo 
 
 Uso:  python3 scripts/contenidos/plantilla-escandallo-gratis.py
 Sale: astro-site/public/descargas/plantilla-escandallo-gratis-aichef.xlsx
-Después: python3 scripts/productos-digitales/parche_xml_xlsx.py --check <xlsx>
+El script inyecta él mismo los valores calculados (inject_cache.py, pycel) para que los visores
+que no recalculan (Quick Look, WhatsApp, Gmail) no enseñen celdas en blanco, y comprueba las
+celdas del libro con data_only. Después: python3 scripts/productos-digitales/parche_xml_xlsx.py --check <xlsx>
 """
+import subprocess
+import sys
 from pathlib import Path
+
+from openpyxl import load_workbook
 
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
@@ -71,7 +77,7 @@ def main():
 
     titulos = ['Ingrediente', 'Cantidad bruta comprada (kg o L)', 'Merma (%)',
                'Cantidad neta (kg o L)', 'Precio de compra (€/kg o €/L)',
-               'Precio real del kilo neto', 'Coste (€)']
+               'Precio real neto (€/kg o €/L)', 'Coste (€)']
     fila_t = 5
     for col, txt in enumerate(titulos, start=1):
         c = ws.cell(row=fila_t, column=col, value=txt)
@@ -105,7 +111,7 @@ def main():
         ws.cell(row=r, column=3).number_format = PCT
         ws.cell(row=r, column=4).number_format = KG
         ws.cell(row=r, column=5).number_format = EUR_KG
-        ws.cell(row=r, column=6).number_format = EUR_KG
+        ws.cell(row=r, column=6).number_format = EUR
         ws.cell(row=r, column=7).number_format = EUR
         r += 1
 
@@ -156,7 +162,7 @@ def main():
     nota = b + len(bloque) + 1
     ws.cell(row=nota, column=1, value='Guía paso a paso con tres ejemplos resueltos:')
     ws.cell(row=nota, column=2, value=GUIA).hyperlink = GUIA
-    ws.cell(row=nota + 1, column=1, value='¿Toda la carta, mermas y subrecetas? Kit de Escandallos Pro:')
+    ws.cell(row=nota + 1, column=1, value='¿Toda la carta, mermas y PVP? Kit de Escandallos Pro:')
     ws.cell(row=nota + 1, column=2, value=KIT).hyperlink = KIT
     for f in (nota, nota + 1):
         ws.cell(row=f, column=2).font = Font(color='0563C1', underline='single')
@@ -174,11 +180,11 @@ def main():
         '2. Cantidad bruta = lo que compras y pagas (con piel, espinas o hueso), en kg o litros.',
         '3. Merma = lo que pierdes al limpiar o cocinar. Un 18 % se escribe 18 %.',
         '4. Precio de compra = el del último albarán, por kg o por litro.',
-        '5. Lo pequeño (sal, especias, perejil) ve en la línea de coste fijo.',
+        '5. Lo pequeño (sal, especias, perejil) va en la última línea: escribe su coste directamente en la columna G.',
         '6. Indica cuántas raciones salen y tu food cost objetivo.',
         '7. Redondea el PVP con IVA a tu precio de carta y mira el food cost real.',
         '',
-        'Las celdas grises y blancas llevan fórmulas: no las borres.',
+        'Las columnas D, F y G y el bloque de precio llevan fórmulas: no las borres.',
         'Revisa los precios cada vez que cambie una tarifa o la temporada.',
         '',
         'Plantilla gratuita de AI Chef Pro (aichef.pro). Puedes copiarla y adaptarla.',
@@ -202,6 +208,15 @@ def main():
     fc_real = coste / (15.90 / 1.10)
     assert round(fc_real * 100, 1) == 29.7, fc_real
     assert round(15.90 / 1.10 - coste, 2) == 10.16
+    # Valores cacheados + comprobación sobre el LIBRO, no sobre la aritmética en Python.
+    subprocess.run([sys.executable, str(RAIZ / 'scripts/productos-digitales/inject_cache.py'), str(SALIDA)],
+                   check=True, stdout=subprocess.DEVNULL)
+    wsv = load_workbook(SALIDA, data_only=True)['Escandallo']
+    celdas = {'G6': 3.52, 'B30': 4.29, 'B32': 4.29, 'B34': 14.30, 'B36': 15.73, 'B39': 10.16}
+    for ref, esperado in celdas.items():
+        v = wsv[ref].value
+        assert v is not None and round(float(v), 2) == esperado, (ref, v, esperado)
+    assert round(float(wsv['B38'].value) * 100, 1) == 29.7, wsv['B38'].value
     print(f'OK {SALIDA.relative_to(RAIZ)} · coste {coste} · PVP {pvp} · con IVA 15,73 · '
           f'FC real {fc_real:.1%}')
 
