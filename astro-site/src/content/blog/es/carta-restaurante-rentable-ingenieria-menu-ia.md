@@ -115,6 +115,9 @@ Tienes una plantilla lista para descargar, sin registro, que se abre en Excel, G
 
 Viene con los 8 platos del ejemplo ya cargados y sitio para 30. Solo rellenas tres columnas por plato: precio sin IVA, coste —el que sale de tu escandallo— y unidades vendidas en el mes. La hoja calcula sola el margen en euros y en porcentaje, el margen total, el peso de cada plato en las ventas y la clasificación en estrella, caballo, puzzle o perro, con color por cuadrante para que lo veas de un vistazo.
 
+<figure class="wp-block-image size-large">
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/ingenieria-menu-plantilla.jpg" alt="Hoja de cálculo con los platos de la carta coloreados por cuadrante en un portátil, junto a la carta impresa"/><figcaption>La plantilla colorea cada plato según su cuadrante: estrella, caballo, puzzle o perro</figcaption></figure>
+
 Los umbrales también salen solos: el margen medio ponderado —8,53 € en el ejemplo— y la popularidad, con un desplegable para elegir entre la media (150 unidades) o la regla del 70 % (105). Al lado tienes una leyenda con lo que toca hacer en cada cuadrante, para no quedarte mirando los colores sin saber por dónde empezar.
 
 El coste de cada plato no se inventa: sale del escandallo. Para eso está la [plantilla de escandallo](https://aichef.pro/descargas/plantilla-escandallo-gratis-aichef.xlsx), también gratis.
