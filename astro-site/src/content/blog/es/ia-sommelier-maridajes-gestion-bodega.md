@@ -35,7 +35,7 @@ wpId: 3443
 </ul>
 <p>Estas competencias no sustituyen el conocimiento profundo del vino, sino que lo amplifican. Un sommelier que domina estas herramientas puede manejar un catálogo de 500 referencias con la misma facilidad que antes se gestionaban 50.</p>
 <h2>Maridajes Inteligentes con Inteligencia Artificial</h2>
-<p>El maridaje food and wine es uno de los aspectos más complejos y valorados del trabajo del sommelier. La inteligencia artificial ha revolucionado esta práctica mediante el análisis de perfiles aromáticos, bases de datos masivas y algoritmos de recomendación avanzados.</p>
+<p>El <a href="https://aichef.pro/blog/que-es-el-maridaje">maridaje</a> food and wine es uno de los aspectos más complejos y valorados del trabajo del sommelier. La inteligencia artificial ha revolucionado esta práctica mediante el análisis de perfiles aromáticos, bases de datos masivas y algoritmos de recomendación avanzados.</p>
 <h3>Análisis de perfiles aromáticos</h3>
 <p>Los sistemas de <strong>maridaje vinos ia</strong> utilizan algoritmos que analizan miles de compuestos aromáticos en cada vino y plato. Estas herramientas pueden:</p>
 <ul>
