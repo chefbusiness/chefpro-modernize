@@ -82,7 +82,7 @@ def main():
             c = ws.cell(row=r, column=col, value=vals.get(col))
             c.fill = entrada
         ws.cell(row=r, column=4, value=f'=IF(OR(B{r}="",C{r}=""),"",B{r}-C{r})')
-        ws.cell(row=r, column=5, value=f'=IF(OR(B{r}="",C{r}=""),"",(B{r}-C{r})/B{r})')
+        ws.cell(row=r, column=5, value=f'=IF(OR(B{r}="",C{r}="",N(B{r})=0),"",(B{r}-C{r})/B{r})')
         ws.cell(row=r, column=7, value=f'=IF(OR(D{r}="",F{r}=""),"",D{r}*F{r})')
         ws.cell(row=r, column=8, value=f'=IF(F{r}="","",F{r}/SUM($F${p1}:$F${pn}))')
         ws.cell(row=r, column=9, value=(f'=IF(OR(D{r}="",F{r}=""),"",IF(AND(D{r}>={U_MARGEN},F{r}>={U_POP}),"Estrella",'
@@ -121,23 +121,25 @@ def main():
         if fmt:
             c.number_format = fmt
         c.fill = entrada if ent else PatternFill('solid', fgColor=GRIS)
-    dv = DataValidation(type='list', formula1='"Media,Regla del 70 %"', allow_blank=False)
+    dv = DataValidation(type='list', formula1='"Media,Regla del 70 %"', allow_blank=False, showErrorMessage=True,
+                        error='Elige «Media» o «Regla del 70 %».', errorTitle='Método')
     ws.add_data_validation(dv)
     dv.add('L6')
 
     guia = [('Qué hacer con cada uno', ''), ('Estrella', 'Proteger y destacar: no tocar la receta.'),
             ('Caballo', 'Subir precio con cabeza o ajustar escandallo y ración.'),
             ('Puzzle', 'Reposicionar en carta, mejor nombre y descripción, empuje de sala.'),
-            ('Perro', 'Eliminar o reinventar, salvo que sea estratégico.')]
+            ('Perro', 'Eliminar o reinventar, salvo que sea estratégico.'),
+            ('Familias', 'Analiza entrantes, principales y postres por separado: una copia de la hoja por familia.')]
     for i, (k, v) in enumerate(guia):
         r = 13 + i
         ws.cell(row=r, column=11, value=k).font = Font(bold=True)
         ws.cell(row=r, column=12, value=v).alignment = Alignment(wrap_text=True)
-    ws.cell(row=19, column=11, value='Guía con el ejemplo explicado:')
-    ws.cell(row=19, column=12, value=GUIA).hyperlink = GUIA
-    ws.cell(row=20, column=11, value='Coste de cada plato (plantilla de escandallo gratis):')
-    ws.cell(row=20, column=12, value=ESCANDALLO).hyperlink = ESCANDALLO
-    for r in (19, 20):
+    ws.cell(row=20, column=11, value='Guía con el ejemplo explicado:')
+    ws.cell(row=20, column=12, value=GUIA).hyperlink = GUIA
+    ws.cell(row=21, column=11, value='Plantilla de escandallo gratis:')
+    ws.cell(row=21, column=12, value=ESCANDALLO).hyperlink = ESCANDALLO
+    for r in (20, 21):
         ws.cell(row=r, column=12).font = Font(color='0563C1', underline='single')
 
     for col, w in {'A': 40, 'B': 12, 'C': 12, 'D': 11, 'E': 10, 'F': 11, 'G': 13, 'H': 11, 'I': 13, 'J': 3, 'K': 34, 'L': 44}.items():
