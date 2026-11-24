@@ -2,7 +2,7 @@
 title: "IA para Crear Menús: Genera tu Carta en Minutos (Gratis)"
 description: "Crea menús y cartas con IA en minutos: menú del día, degustación, semanal y eventos, con ejemplos y costes por menú. Empieza con AI Chef Miembro: 10 €/mes y 10.000 créditos."
 pubDate: 2026-01-04
-modDate: 2026-08-31
+modDate: 2026-11-24
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/ia-para-crear-menus-4.jpeg
 imageAlt: "IA para Crear Menús: La Guía Definitiva para Transformar tu Restaurante con Inteligencia Artificial"
@@ -141,6 +141,8 @@ Esto significa que, incluso con el plan AI Chef Miembro de 10.000 créditos al m
 ## Herramientas: generadores genéricos vs. plataforma especializada
 
 En el mercado hay decenas de herramientas que prometen generar cartas o menús. Pero no todas hablan el idioma de la cocina. Los generadores de diseño genéricos —esos que usas para maquetar la carta en PDF con imágenes bonitas— son útiles para el acabado visual, pero flaquean en lo que realmente importa: el escandallo, la gestión de alérgenos, la coherencia gastronómica y la adaptación a producto real de mercado. Te dan un diseño bonito, pero el contenido tienes que escribirlo y validarlo tú desde cero.
+
+Si quieres probar sin pagar, en aichef.pro tienes dos herramientas gratuitas y sin registro: el [Generador Menú Degustación](https://aichef.pro/generador-menu-degustacion), que te propone un menú degustación con nombre, descripción, técnica y maridaje para cada pase, y el [generador de textos para la carta](https://aichef.pro/generador-textos-carta-restaurante), que te da tres versiones de la descripción de cada plato (clásica, emocional y km 0). La plataforma completa, con sus agentes, es de pago desde 10 €/mes.
 
 Una plataforma culinaria especializada como AI Chef Pro está pensada para el flujo real de cocina. Con más de 70 agentes de IA culinarios, en 7 idiomas y con español nativo, no se limita a maquetar: genera recetas, calcula escandallos, sugiere maridajes, gestiona alérgenos y redacta descripciones de plato con criterio gastronómico. La diferencia es que no te da una plantilla vacía; te da un punto de partida sólido que tú, como chef, ajustas. Es la diferencia entre un cuchillo de oficio bien afilado y un pelador de supermercado. Ambos cortan, pero el resultado no es el mismo.
 
