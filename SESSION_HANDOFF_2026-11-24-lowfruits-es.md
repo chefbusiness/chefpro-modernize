@@ -19,12 +19,14 @@
 | PR | Pieza | Volumen (DataForSEO, ES) | Estado |
 |---|---|---|---|
 | #241 | Pilar escandallo en su URL + plantilla Excel gratis | escandallo 5.400 · cómo hacer 140 · de costes 480 | LIVE (`b0fb7202`) |
-| #242 | Glosario: qué es el maridaje · qué es un menú degustación | maridaje: qué es 880+880, significado 390, de vinos 390 | auditado + corregido |
-| #243 | Software para restaurantes (guía nueva) | ≈ 690 en variantes | auditado + corregido |
+| #242 | Glosario: qué es el maridaje · qué es un menú degustación | maridaje: qué es 880+880, significado 390, de vinos 390 | LIVE (`380462d8`) |
+| #243 | Software para restaurantes (guía nueva) | ≈ 690 en variantes | LIVE (`2f6a5d3d`) |
 | #244 | Ficha técnica de cocina (guía nueva) + plantilla | ≈ 490 en variantes | auditado + corregido |
 | #245 | Ingeniería de menú: refresco + plantilla (regla del 70 %) | 90 + menu engineering 260 | auditado + corregido |
 | #246 | APPCC: refresco «qué es» + plantilla de temperaturas | **qué es el APPCC 2.400** | auditado + corregido |
 | #247 | Bloque A: meta honestas en posts que ya rankean | — | auditado + corregido |
+| #248 | Sección «Maridaje de vino y queso» + tabla de quesos (dentro del post del maridaje) | 40 | auditado + corregido |
+| #249 | Tutorial «Cómo hacer vídeos de recetas con IA» | vídeos de recetas 110 · con IA 10 | auditado + corregido |
 
 Plantillas gratis en `astro-site/public/descargas/` (todas con `noindex` por `netlify.toml`), generadores en
 `scripts/contenidos/` con `inject_cache.py` y gate sobre celdas: escandallo, ficha técnica, ingeniería de menú,
@@ -54,5 +56,5 @@ escandallos); tablas sin fila de cabecera; FAQ que contradicen el cuerpo; planti
   pilar de Cursor #227 (`mejor-ia-para-cocinar-en-2025`, 11).
 - `fase8b-regen-lastmod.py` baja siempre `/blog/ia-gestion-alergenos-hosteleria` a 22-nov (su `.md` dice 22 y el JSON 23).
 - `~/chefbusiness-ai/.env` del Mac: `OPENROUTER_API_KEY` revocada (401) → bridge.py no funciona en el Mac.
-- Satélites pequeños de LowFruits no hechos (no compensan): «maridaje vino y queso» (40), «vídeos de recetas con IA» (10).
+- **Regla de John (25-nov):** en LowFruits NO aplica la regla de proporcionalidad: se hacen todas las oportunidades, aunque tengan 10 búsquedas (formato más barato que no canibalice: sección dentro del post afín si existe).
 - Siguiente: aplicar el mismo método a otro idioma de `/Users/johnguerrero/aichef-lowfruits/`.
