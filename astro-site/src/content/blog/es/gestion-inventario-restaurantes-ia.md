@@ -25,7 +25,7 @@ faq:
 
 He pasado 29 años metido en cocinas de alta hostelería y 15 más como consultor gastronómico. Si algo he visto repetirse hasta la náusea es que la gestión de inventario de un restaurante es el punto donde se gana o se pierde el margen real, y casi nadie le presta la atención que merece. Con la IA, esta tarea deja de ser un castigo de fin de semana y se convierte en un sistema de control que te dice exactamente qué tienes, cuánto vale y cuándo te interesa pedir.
 
-La gestión de inventario con IA no es un software bonito que te cuenta latas. Es un asistente que cruza datos de consumo, actualiza precios automáticamente, calcula el precio medio ponderado (PMP) sin que te duela la cabeza y te sugiere pedidos basados en el ritmo real de tu cocina, no en corazonadas. El resultado: menos stock parado, menos mermas por caducidad y un food cost que no se dispara cuando menos te lo esperas.
+La gestión de inventario con IA no es un software bonito que te cuenta latas. Es un asistente que cruza datos de consumo, actualiza precios automáticamente, calcula el precio medio ponderado (PMP) sin que te duela la cabeza y te sugiere pedidos basados en el ritmo real de tu cocina, no en corazonadas. El resultado: menos stock parado, menos mermas por caducidad y un food cost que no se dispara cuando menos te lo esperas. Y si estás montando el resto del software del local (TPV, reservas, APPCC o turnos), tienes la [guía de software para restaurantes](https://aichef.pro/blog/software-para-restaurantes).
 
 
 
