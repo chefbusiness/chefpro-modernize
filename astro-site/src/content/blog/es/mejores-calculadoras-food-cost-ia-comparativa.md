@@ -76,7 +76,7 @@ Aquí va la parte que casi nadie te cuenta, y te la digo sin paños calientes.
 - No necesitas calcular mermas con precisión; te vale una estimación general.
 - Trabajas con un **único local** y no tienes que consolidar datos de varias cocinas.
 
-No hay nada malo en usar una hoja de cálculo. Es gratis, flexible y, si la cuidas, funciona. He visto cartas de restaurantes con estrella Michelin gestionadas con un Excel impecable. Pero el chef se dejaba los ojos cada lunes actualizando precios.
+No hay nada malo en usar una hoja de cálculo. Es gratis, flexible y, si la cuidas, funciona. He visto cartas de restaurantes con estrella Michelin gestionadas con un Excel impecable. Pero el chef se dejaba los ojos cada lunes actualizando precios. Si vas a empezar por ahí, tienes la [guía del escandallo paso a paso](https://aichef.pro/blog/escandallos-ia-cocina-profesional) con una [plantilla de escandallo en Excel gratis](https://aichef.pro/descargas/plantilla-escandallo-gratis-aichef.xlsx) y las fórmulas ya puestas.
 
 ### Necesitas dar el salto cuando…
 
