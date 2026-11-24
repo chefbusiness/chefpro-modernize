@@ -168,6 +168,9 @@ La tienes lista para descargar, gratis y sin darte de alta. Se abre en Excel, Go
 
 Está pensada para un mes completo: 31 días con cuatro lecturas al día, a las 08:00, 12:00, 16:00 y 20:00, cada cuatro horas, como pide la tabla para las cámaras de refrigeración. Cubre dos cámaras de refrigeración y un congelador.
 
+<figure class="wp-block-image size-large">
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/appcc-registro-temperaturas.jpg" alt="Un cocinero comprueba el termómetro de la puerta de la cámara frigorífica y lo anota en el registro de temperaturas"/><figcaption>Lectura de la cámara y registro en la misma ronda: así se rellena la plantilla</figcaption></figure>
+
 Los límites van en celdas editables y vienen cargados con los de la tabla: refrigeración de 0 a 4 °C y congelación a -18 °C o menos. Cada local pone los de su propio plan, que pueden ser más estrictos. La columna «¿En rango?» responde Sí o NO sola, y la lectura que se sale se pinta en rojo; al lado tienes la medida correctora y la firma de quien la aplica.
 
 Trae un ejemplo. El día 2, la cámara 2 marca 6,5 °C porque la puerta se había quedado mal cerrada: se cierra, el producto pasa a la cámara 1 y a las 08:30 se vuelve a leer, 3,5 °C. Así se escribe una medida correctora que un inspector entiende a la primera.
