@@ -1,6 +1,6 @@
 ---
 title: "Qué es el maridaje: tipos, reglas y ejemplos"
-description: "Qué es el maridaje y por qué se dice así: los 4 tipos, las reglas básicas, 8 maridajes clásicos, vino y queso, y cómo se monta y se pone precio al de un menú."
+description: "Qué es el maridaje y por qué se dice así: 4 tipos, reglas básicas, 8 maridajes clásicos, vino y queso, y cómo montar y poner precio al maridaje de un menú."
 pubDate: 2026-11-24
 modDate: 2026-11-25
 category: glosario
@@ -25,7 +25,7 @@ faq:
   - q: "¿Cuánto vino se sirve en un maridaje?"
     a: "Depende del número de pases, pero conviene hacer la cuenta. Seis vinos de 80 ml son 480 ml por persona, casi dos tercios de botella. Por eso conviene ofrecer media copa o una alternativa sin alcohol, sobre todo en menús largos y en comidas de mediodía."
   - q: "¿Qué vino va con una tabla de quesos?"
-    a: "Si solo vas a poner una botella, elige un espumoso brut o un blanco con cuerpo y buena acidez: aguantan quesos frescos, semicurados y cremosos sin pelearse con ninguno. Reserva un tinto joven de tempranillo para el manchego semicurado y un dulce, como Pedro Ximénez u oporto, aparte para el azul. Sirve los quesos a temperatura de servicio, no recién sacados de la cámara."
+    a: "Si solo vas a poner una botella, elige un espumoso brut o un blanco con cuerpo y buena acidez: aguantan quesos frescos, semicurados y cremosos sin pelearse con ninguno. Si puedes abrir más de una, reserva un tinto joven de tempranillo para el manchego semicurado y un dulce, como Pedro Ximénez u oporto, aparte para el azul. Saca los quesos de la cámara entre 30 y 60 minutos antes, según el tamaño de la pieza."
   - q: "¿Qué queso va con vino tinto?"
     a: "Los quesos semicurados y curados, porque su intensidad aguanta el tanino: manchego semicurado con un tinto joven de tempranillo, zamorano curado con un tinto de Toro. Evita los frescos y los muy cremosos, que con tinto se apagan y dejan un regusto amargo. Si el queso es azul, mejor un dulce que un tinto seco."
 ---
@@ -103,9 +103,9 @@ Estos ocho maridajes aguantan cualquier carta y sirven para explicar el oficio a
 
 ## Maridaje de Vino y Queso
 
-Con el queso manda la intensidad: uno fresco pide un vino ligero y uno curado aguanta uno con más cuerpo. Y hay un detalle que conviene saber en sala: los blancos y los espumosos casan con más quesos que los tintos, porque el tanino se topa con la grasa láctea y saca ese amargor áspero que te estropea el bocado.
+Con el queso, lo primero es la intensidad: un queso fresco pide un vino ligero y uno curado, un vino con más cuerpo. Y hay un detalle que conviene saber en sala: los blancos y los espumosos casan con más quesos que los tintos, porque con los quesos frescos, cremosos o de cabra el tanino se vuelve áspero o metálico, mientras que la acidez y la burbuja van bien con casi todos. Con los curados de pasta dura, en cambio, el tinto funciona.
 
-Piensa en la grasa antes que en la uva. Cuanto más grasa y más curación tiene la pieza, más peso necesita el vino para limpiar la boca entre bocado y bocado; y cuanto más joven y láctico es el queso, más acidez le hace falta al vino para refrescar sin taparlo. A partir de ahí, la sal y el ahumado mandan: si el queso es salino, busca un vino que lo equilibre; si es ahumado, uno que lo limpie.
+Piensa en el queso antes que en la uva. Cuanta más grasa y más curación tiene la pieza, más estructura necesita el vino para no quedar tapado; y cuanto más joven y láctico es el queso, más acidez le hace falta al vino para refrescar sin taparlo. Después vienen la sal y el ahumado: con un queso salino funcionan la burbuja, la acidez o un dulce; con uno ahumado, un vino que lo limpie.
 
 | Queso | Vino | Por qué funciona |
 | :--- | :--- | :--- |
@@ -113,10 +113,10 @@ Piensa en la grasa antes que en la uva. Cuanto más grasa y más curación tiene
 | Tetilla gallega | Albariño | Regional: frescura con un queso suave y mantecoso |
 | Manchego semicurado | Tinto joven de tempranillo | Intensidad media con intensidad media |
 | Zamorano curado | Tinto de Toro | Regional: intensidad alta, grasa con tanino |
-| Idiazábal | Txakoli | Regional: la acidez del txakoli limpia el ahumado |
+| Idiazábal | Txakoli | Regional: la acidez del txakoli limpia la grasa y el ahumado, si lo tiene |
 | Cabrales u otro queso azul | Pedro Ximénez u oporto | Contraste: el dulce equilibra la sal |
-| Brie o camembert | Cava o champagne brut | La burbuja limpia la cremosidad |
-| Parmigiano reggiano curado | Lambrusco | Regional: burbuja y fruta con un queso salino |
+| Brie o camembert | Cava o Champagne brut | La burbuja limpia la cremosidad |
+| Parmigiano Reggiano | Lambrusco | Regional: burbuja y fruta con un queso salino |
 
 Fíjate en que casi todas las filas van en la misma dirección: acidez, burbuja o dulzor contra grasa, sal y ahumado. Cuando dudes, vuelve a esa idea y aciertas más que siguiendo una lista de memoria.
 
@@ -127,11 +127,11 @@ Fíjate en que casi todas las filas van en la misma dirección: acidez, burbuja 
 
 Una tabla funciona cuando tiene un recorrido claro de sabor y no cuando acumula piezas sueltas. De tres a cinco quesos bien elegidos se defienden mejor que ocho amontonados.
 
-- Elige de 3 a 5 quesos y colócalos **del más suave al más intenso**, para que el comensal no se queme el paladar en el primer bocado.
+- Elige de 3 a 5 quesos y colócalos **del más suave al más intenso**, para que el comensal no sature el paladar en el primer bocado.
 - Si solo vas a poner una botella, un **espumoso o un blanco con cuerpo** aguanta casi toda la tabla sin desentonar.
-- Si hay azul, pon un **dulce aparte**: no lo mezcles con el resto de la selección.
+- Si hay azul, ponlo al final y separado, con su **dulce aparte**.
 - Acompaña con membrillo, frutos secos, uvas, higos y un pan **sin sabores fuertes** que no compita con el queso.
-- Sácalos de la cámara un rato antes de servir, para que lleguen a temperatura de servicio y suelten aroma y textura.
+- Sácalos de la cámara entre 30 y 60 minutos antes, según el tamaño de la pieza, para que suelten aroma y textura.
 
 Y si la tabla va en carta, escandállala por gramos de cada queso ([cómo hacer un escandallo](https://aichef.pro/blog/escandallos-ia-cocina-profesional)): es la única forma de saber qué te deja cada tabla antes de que la sirvas.
 
