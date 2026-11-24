@@ -1666,8 +1666,8 @@
         },
         {
           "termino": "maridaje",
-          "estado": "semilla",
-          "post": null
+          "estado": "publicado",
+          "post": "es/que-es-el-maridaje"
         },
         {
           "termino": "umami",
@@ -3637,8 +3637,8 @@
         },
         {
           "termino": "maridaje",
-          "estado": "semilla",
-          "post": null
+          "estado": "publicado",
+          "post": "es/que-es-el-maridaje"
         },
         {
           "termino": "carta de vinos",
@@ -18421,8 +18421,8 @@
         },
         {
           "termino": "menú degustación",
-          "estado": "semilla",
-          "post": null
+          "estado": "publicado",
+          "post": "es/que-es-un-menu-degustacion"
         }
       ],
       "publicados": 1,

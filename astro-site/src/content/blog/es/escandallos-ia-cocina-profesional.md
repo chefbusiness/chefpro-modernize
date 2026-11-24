@@ -67,7 +67,7 @@ No todos los escandallos tienen la misma granularidad. Según lo que necesites c
 
 - **Escandallo de materia prima**: costea un ingrediente en crudo, aplicando su merma para saber el precio real del kilo neto utilizable. Es la base de todo lo demás.
 - **Escandallo de plato**: el más habitual. Calcula el coste completo de una ración, sumando todos los ingredientes en sus cantidades brutas.
-- **Escandallo de menú o experiencia**: agrupa varios platos (entrante, principal, postre, bebida) para calcular el coste total de un menú cerrado o degustación.
+- **Escandallo de menú o experiencia**: agrupa varios platos (entrante, principal, postre, bebida) para calcular el coste total de un menú cerrado o de un [menú degustación](https://aichef.pro/blog/que-es-un-menu-degustacion), con su [maridaje](https://aichef.pro/blog/que-es-el-maridaje) si lo lleva.
 - **Escandallo de evento o banquete**: similar al de menú, pero añadiendo partidas de montaje, servicio y posibles desperdicios a gran escala.
 
 

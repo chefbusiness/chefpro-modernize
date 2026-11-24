@@ -443,7 +443,7 @@ FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de es
 - puente de sabor — semilla
 - contraste — semilla
 - afinidad — semilla
-- maridaje — semilla
+- maridaje — publicado (`es/que-es-el-maridaje`)
 - umami — publicado (`es/fermentacion-koji-umami-natural`)
 - acidez — semilla
 - grasa — publicado (`es/confit-concepto-definicion`)
@@ -852,7 +852,7 @@ FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de es
 - decantar — semilla
 - copas — semilla
 - temperatura de servicio — semilla
-- maridaje — semilla
+- maridaje — publicado (`es/que-es-el-maridaje`)
 - carta de vinos — semilla
 - margen de bodega — semilla
 - compra de vino — semilla
@@ -3929,7 +3929,7 @@ El local como sistema: concepto, turno, norma y equipo.
 - libro de reclamaciones — semilla
 - menú del día — semilla
 - carta — semilla
-- menú degustación — semilla
+- menú degustación — publicado (`es/que-es-un-menu-degustacion`)
 
 ### La profesión
 
