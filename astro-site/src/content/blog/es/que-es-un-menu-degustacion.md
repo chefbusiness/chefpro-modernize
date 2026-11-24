@@ -10,10 +10,10 @@ image: /blog-assets/2026/11/menu-degustacion-destacada.jpg
 imageAlt: "Un cocinero termina con pinzas un pase de menú degustación sobre un plato de cerámica"
 definedTerm:
   name: "Menú degustación"
-  description: "Un menú degustación es un menú cerrado de varios pases pequeños que elige el chef, con un precio fijado por persona y, a menudo, la opción de maridaje. Se sirve a toda la mesa y busca mostrar la cocina de la casa mediante un recorrido, no la suma de platos sueltos."
+  description: "Un menú degustación es un menú cerrado de varios pases pequeños que elige el chef, con un precio fijado por persona y, a menudo, la opción de maridaje. Suele servirse a toda la mesa y busca mostrar la cocina de la casa mediante un recorrido, no la suma de platos sueltos."
 faq:
   - q: "¿Qué es un menú degustación?"
-    a: "Es un menú cerrado de varios pases pequeños que elige el chef, con un precio fijado por persona y, a menudo, maridaje opcional. Se sirve a toda la mesa y busca mostrar la cocina de la casa mediante un recorrido completo. El cliente no elige platos: elige confiar en la propuesta del chef y dejarse llevar por el orden que ha diseñado."
+    a: "Es un menú cerrado de varios pases pequeños que elige el chef, con un precio fijado por persona y, a menudo, maridaje opcional. Suele servirse a toda la mesa y busca mostrar la cocina de la casa mediante un recorrido completo. El cliente no elige platos: elige confiar en la propuesta del chef y dejarse llevar por el orden que ha diseñado."
   - q: "¿Cuántos platos tiene un menú degustación?"
     a: "No hay un número fijo. Lo habitual es empezar en cinco o seis pases y llegar a más de veinte bocados en la alta cocina. Cada pase suele ser un bocado o media ración, porque lo que importa es el recorrido completo y no la cantidad de un plato concreto. Lo que cuenta es que el comensal termine bien y no lleno."
   - q: "¿Qué diferencia hay entre un menú degustación y la carta?"
@@ -28,15 +28,15 @@ faq:
 
 Un menú degustación es la forma que tiene un chef de contarte su cocina en un solo recorrido: varios pases pequeños, un precio cerrado por persona y la cocina marcando el ritmo. No eliges los platos, eliges sentarte y dejarte llevar. Te cuento cómo se piensa, cómo se estructuran los pases, cómo se escandalla y cómo se pone precio, tanto si vas a comerlo como si vas a diseñarlo en tu restaurante.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Diseña un menú degustación con sus maridajes y la puesta en escena de cada pase en el Generador Menú Degustación de AI Chef Pro. Es gratis.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/generador-menu-degustacion?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-un-menu-degustacion">Crear mi menú degustación</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Diseña un menú degustación con nombre, descripción, técnica y maridaje para cada pase en el Generador Menú Degustación de AI Chef Pro. Es gratis.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/generador-menu-degustacion?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-un-menu-degustacion">Crear mi menú degustación</a></p></aside>
 
 ## Qué Es un Menú Degustación
 
-Es un menú cerrado de muchos pases pequeños que elige el chef para mostrar su cocina, con precio cerrado por persona y, a menudo, maridaje opcional. Se sirve a toda la mesa y va de cinco o seis pases a más de veinte bocados en la alta cocina.
+Es un menú cerrado de muchos pases pequeños que elige el chef para mostrar su cocina, con precio fijo por persona y, a menudo, maridaje opcional. Suele servirse a toda la mesa y va de cinco o seis pases a más de veinte bocados en la alta cocina.
 
 La clave está en la palabra cerrado. Tú no decides qué comes ni en qué orden: decides confiar. El chef ha elegido los productos, ha medido las cantidades y ha montado una secuencia que tiene principio y final. Por eso el precio se fija por persona y por menú completo, no por plato, y por eso muchas casas piden que lo tome toda la mesa: la cocina necesita sacar los pases a la vez para que el ritmo no se rompa y para que el producto llegue en su punto.
 
-El nombre viene del francés menu dégustation, de degustar, que es probar con atención, sin prisa. Se popularizó en la alta cocina francesa de la segunda mitad del siglo XX y de ahí pasó a las cocinas de todo el mundo. Hoy convive con formatos muy distintos: desde un menú corto de cinco pases hasta recorridos larguísimos de más de veinte bocados.
+El nombre viene del francés *menu dégustation*, de degustar, que es probar con atención. Se suele asociar a la *nouvelle cuisine* francesa y de ahí pasó a las cocinas de todo el mundo. Hoy convive con formatos muy distintos: desde un menú corto de cinco pases hasta recorridos larguísimos de más de veinte bocados.
 
 ## En Qué Se Diferencia de la Carta, el Menú del Día y el Menú Gastronómico
 
@@ -44,12 +44,12 @@ La diferencia está en quién elige y en cuánto comes: en la carta decides tú 
 
 | Formato | Quién elige | Cómo es | Para qué sirve |
 | :--- | :--- | :--- | :--- |
-| Carta | el cliente, plato a plato | raciones completas con precio por plato | libertad y comer a tu ritmo |
-| Menú del día | el restaurante, con opciones | primero, segundo, postre, pan y bebida a precio cerrado | comida de mediodía económica |
-| Menú degustación | el chef | muchos pases pequeños para toda la mesa | conocer la cocina de una casa |
-| Menú gastronómico | el chef | en muchos restaurantes es otro nombre del degustación, a veces más corto | lo mismo, en formato más breve |
+| Carta | El cliente, plato a plato | Raciones completas con precio por plato | Libertad y comer a tu ritmo |
+| Menú del día | El restaurante, con opciones | Primero, segundo, postre, pan y bebida a precio cerrado | Comida de mediodía económica |
+| Menú degustación | El chef | Muchos pases pequeños para toda la mesa | Conocer la cocina de una casa |
+| Menú gastronómico | El chef | Según la casa, sinónimo del degustación o una versión más corta o más larga | Conocer la cocina de la casa en otro formato |
 
-La carta te da libertad y también te obliga a decidir: eliges tres o cuatro platos y te los comes enteros. El menú del día resuelve el mediodía con un precio cerrado y opciones limitadas, pensado para comer bien y rápido. El degustación no pretende saciarte pronto, pretende que recorras la cocina de la casa. Y el menú gastronómico es, en la práctica, el mismo concepto con otro nombre: muchos restaurantes lo usan para su versión más corta.
+La carta te da libertad y también te obliga a decidir: eliges tres o cuatro platos y te los comes enteros. El menú del día resuelve el mediodía con un precio cerrado y opciones limitadas, pensado para comer bien y rápido. El degustación no pretende saciarte pronto, pretende que recorras la cocina de la casa. Y el menú gastronómico depende de la casa: unas lo usan como sinónimo del degustación y otras para una versión más corta o más larga.
 
 ## Cómo Se Estructura: los Pases
 
@@ -79,7 +79,7 @@ La duración suele ir de dos a cuatro horas según el número de pases, el ritmo
 
 ## Cómo Diseñar un Menú Degustación (Si Eres Cocinero)
 
-Diseñar un degustación es decidir un recorrido antes de escribir una sola receta. Primero el esqueleto, después los platos, y al final los números. Si lo haces al revés, acabas con ocho platos buenos que no cuentan nada juntos.
+Diseñar un degustación es decidir un recorrido antes de escribir una sola receta. Primero el esqueleto, después los platos, y los números a la vez que los platos, no al final. Si lo haces al revés, acabas con ocho platos buenos que no cuentan nada juntos.
 
 <figure class="wp-block-image size-large">
 <img decoding="async" loading="lazy" src="/blog-assets/2026/11/menu-degustacion-diseno.jpg" alt="Un cocinero dibuja en un cuaderno el plan de un menú degustación junto a verduras de temporada y un café"/><figcaption>Primero el recorrido, después las recetas: el menú se dibuja antes de cocinarlo</figcaption></figure>
@@ -89,7 +89,7 @@ Diseñar un degustación es decidir un recorrido antes de escribir una sola rece
 3. **Diseña el maridaje a la vez que el menú, no después.** El vino o la bebida no se elige al final para tapar huecos: condiciona el plato y el plato condiciona la copa. Si quieres entender cómo se piensa esa parte, tienes una guía completa en [qué es el maridaje](https://aichef.pro/blog/que-es-el-maridaje).
 4. **Resuelve los alérgenos antes de imprimir.** Al ser un menú cerrado, no puedes improvisar en el servicio: prepara de antemano qué pases se adaptan y cómo, y ten claro qué sustituyes en cada caso. En la UE hay que informar de los 14 alérgenos de declaración obligatoria según el Reglamento 1169/2011, así que esto no es un extra, es parte del diseño. Te lo detallo en [gestión de alérgenos con IA en hostelería](https://aichef.pro/blog/ia-gestion-alergenos-hosteleria).
 5. **Cuida la logística.** Mise en place por pase, tiempos entre pases y una sala que sepa contar cada plato. Un degustación se cae por la sala antes que por la cocina: si el pase sale tarde o nadie sabe qué está sirviendo, el recorrido pierde fuerza.
-6. **Escandalla cada pase y pon el precio.** Es el paso que muchos dejan para el final y es el que decide si el menú es viable. Lo vemos en la sección siguiente.
+6. **Escandalla cada pase y pon el precio.** Muchos lo dejan para cuando el menú ya está cerrado, y es lo que decide si es viable: escandalla mientras diseñas.
 
 ## Cuánto Cuesta un Menú Degustación y Cómo Se Le Pone Precio
 
@@ -111,27 +111,27 @@ Vamos con un ejemplo de ocho pases, con precios de ejemplo:
 
 En un degustación el food cost se suele apuntar más bajo que en carta, porque la mano de obra pesa mucho más que en un plato suelto: hay más pases, más elaboración repartida y más gente en cocina y en sala. Con un 25 % de food cost sobre esos 15,00 €, el cálculo queda así: 15,00 ÷ 0,25 = 60,00 € sin IVA; con el 10 % de IVA, 66,00 €. Si lo pones a 70,00 € en carta con el IVA incluido, el food cost real baja al 23,6 %.
 
-El maridaje se cobra aparte. En nuestro ejemplo de 6 copas, 45,00 €, así que el menú con maridaje sale a 115,00 €. Ahí tienes el número que ve el cliente en la web, y por eso conviene decidir desde el principio si el maridaje es opcional, obligatorio o si hay alternativa sin alcohol.
+El maridaje se cobra aparte. Con un maridaje de 6 copas a 45,00 €, como el del ejemplo de [qué es el maridaje](https://aichef.pro/blog/que-es-el-maridaje), el menú con maridaje sale a 115,00 €. Ahí tienes el número que ve el cliente en la web, y por eso conviene decidir desde el principio si el maridaje es opcional, obligatorio o si hay alternativa sin alcohol.
 
 Si quieres el método completo para escandallar paso a paso, lo tienes en [cómo hacer un escandallo paso a paso](https://aichef.pro/blog/escandallos-ia-cocina-profesional). Y si prefieres ir directo a la herramienta, el [Kit de Escandallos Pro](https://aichef.pro/kit-escandallos) es de pago único e incluye una plantilla de menú degustación con escandallo por pase y una hoja resumen del menú.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-menu-degustacion" target="_blank" rel="noopener" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-menu-degustacion" target="_blank" rel="noopener" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
 
 ## Consejos si Vas a Comer un Menú Degustación
 
-Reservar bien un degustación consiste en avisar de lo que no puedes comer y en llegar con hambre y con tiempo. Son cuatro detalles que te ahorran sorpresas.
+Reservar bien un degustación consiste en avisar de lo que no puedes comer y en ir con tiempo. Estos cuatro detalles te ahorran sorpresas:
 
 - Avisa de alergias e intolerancias al reservar, no al sentarte. La cocina necesita preparar la adaptación de cada pase y no siempre se puede resolver en el momento.
 - Pregunta si es para toda la mesa. Muchos restaurantes lo piden así para poder llevar el ritmo de los pases, y es mejor saberlo antes de discutirlo en la mesa.
-- Ve con tiempo y sin hambre de más. Son varias horas: si llegas con prisa o con un bocadillo a medias, no lo disfrutas igual.
-- El maridaje es opcional. También puedes pedir por copas o una alternativa sin alcohol; no pasa nada por decirlo.
+- Ve con tiempo y sin haber picado antes. Son varias horas: si llegas con prisa o con un bocadillo a medias, no lo disfrutas igual.
+- Normalmente el maridaje es opcional (si no lo es, te lo dirán al reservar). También puedes pedir por copas o una alternativa sin alcohol; no pasa nada por decirlo.
 
 ## Diseñarlo con IA
 
 Hay herramientas que te dan el primer borrador del menú en minutos, y eso te deja tiempo para lo que no se automatiza: probar, corregir y ajustar al producto que tienes en cámara.
 
-El [Generador Menú Degustación](https://aichef.pro/generador-menu-degustacion) de AI Chef Pro es gratis y te propone un menú degustación completo con maridajes y la puesta en escena de cada pase.
+El [Generador Menú Degustación](https://aichef.pro/generador-menu-degustacion) de AI Chef Pro es gratis y te propone un menú degustación completo, con nombre, descripción, técnica y maridaje para cada pase.
 
-Dentro de la plataforma, que es de pago, Sommelier Consultor Pro propone el maridaje plato a plato e ID Alérgenos te ayuda a revisar los alérgenos de cada pase. Tómalo como lo que es, un borrador: el chef lo prueba, lo corrige y lo ajusta a su cocina y a su escandallo.
+Dentro de la plataforma, que es de pago, [Sommelier Consultor Pro](https://aichef.pro/blog/libreria-de-prompts-para-sommelier-consultor-pro-ai) propone el maridaje plato a plato e [ID Alérgenos](https://aichef.pro/blog/libreria-de-prompts-para-id-alergenos) te ayuda a revisar los alérgenos de cada pase. Tómalo como lo que es, un borrador: el chef lo prueba, lo corrige y lo ajusta a su cocina y a su escandallo.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Chef Privado</h3><p class="mt-2 text-muted-foreground">Showcooking a domicilio y eventos, con 11 entregables.</p><a href="/plan-chef-privado-showcooking-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-menu-degustacion" target="_blank" rel="noopener" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Chef Privado por €45</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Catering Temático</h3><p class="mt-2 text-muted-foreground">Catering y kit temático para eventos, con 11 entregables.</p><a href="/plan-catering-tematico-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-un-menu-degustacion" target="_blank" rel="noopener" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Catering Temático por €45</a></aside>

@@ -28,7 +28,7 @@ faq:
 
 El maridaje es la combinación de un plato y una bebida buscando que el conjunto sepa mejor que cada cosa por su lado. No es un ritual de sumiller ni una regla escrita en piedra: es criterio de cocina aplicado a la bebida, y se aprende probando.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Propón maridajes plato a plato con Sommelier Consultor Pro y prepara la carta de vinos y de cócteles con los agentes de IA de AI Chef Pro. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/sommelier?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-el-maridaje">Ver la ficha de sommelier</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Propón maridajes plato a plato con Sommelier Consultor Pro y prepara la carta de vinos y de cócteles con los agentes de IA de AI Chef Pro. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/sommelier?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-el-maridaje">Ver qué hace la IA para sommeliers</a></p></aside>
 
 ## Qué Es el Maridaje
 
@@ -44,7 +44,7 @@ Se dice maridaje porque viene de maridar, que es unir en matrimonio. La idea es 
 
 La palabra se ha instalado en las cartas, en los escaparates de las bodegas y en las webs de las tiendas de vino. Cuando un restaurante anuncia un menú con maridaje, está avisando de que el precio incluye las bebidas elegidas para cada pase. Cuando una bodega propone un maridaje, está sugiriendo con qué acompañar su botella. En los dos casos la palabra hace el mismo trabajo: promete que alguien ha pensado la combinación.
 
-Aquí llega la confusión que más veces me han planteado: marinar no tiene nada que ver con maridar. Marinar es macerar un alimento en un líquido con especias para que coja sabor y se ablande; el marinado es una técnica de cocina. Maridar es casar una bebida con un plato. Suenan parecido y significan cosas distintas, y conviene tenerlo claro porque en una carta mal escrita se ven cosas raras. Un pescado marinado puede llevar su maridaje como cualquier otro plato.
+Aquí llega una confusión muy frecuente: marinar no tiene nada que ver con maridar. Marinar es macerar un alimento en un líquido con especias para que coja sabor y se ablande; el marinado es una técnica de cocina. Maridar es casar una bebida con un plato. Suenan parecido y significan cosas distintas, y conviene tenerlo claro porque en una carta mal escrita se ven cosas raras. Un pescado marinado puede llevar su maridaje como cualquier otro plato.
 
 ## Los Tipos de Maridaje
 
@@ -56,17 +56,17 @@ Se buscan intensidades y aromas parecidos, de forma que la bebida y el plato par
 
 ### Por Contraste
 
-Se juntan opuestos que se equilibran. Un queso azul con un vino dulce es el caso de manual: la sal y el punzante del queso se compensan con el dulzor. Las ostras con un espumoso brut nature funcionan por la misma lógica: la acidez y la burbuja limpian el yodo y la sal, y dejan la boca lista para el siguiente pase. El contraste no es capricho, es limpieza.
+Se juntan opuestos que se equilibran. Un queso azul con un vino dulce es el caso de manual: la sal y lo punzante del queso se compensan con el dulzor. Las ostras con un espumoso brut nature funcionan por la misma lógica: la acidez y la burbuja limpian el yodo y la sal, y dejan la boca lista para el siguiente pase. El contraste no es capricho, es limpieza.
 
 ### Por Complemento
 
 La bebida aporta lo que al plato le falta: un toque de acidez, frescor o amargor. Un plato con salsa grasa y untuosa pide un blanco de acidez viva que corte; una verdura con amargor pide una bebida que lo acompañe sin pelearse. Aquí no se busca ni el parecido ni el choque, sino rellenar el hueco que el plato deja.
 
-### Regional o de Territorio
+### Por Territorio
 
-Lo que nace junto suele ir junto, y casi siempre hay una razón de clima y de costumbre detrás. El pulpo a la gallega con albariño y el jamón ibérico con fino o manzanilla son los dos ejemplos que más se repiten. No es una ley, pero cuando dudes ante un producto muy de sitio, empieza por la bebida de ese mismo sitio: rara vez falla.
+Lo que nace junto suele ir junto, y casi siempre hay una razón de clima y de costumbre detrás. El pulpo a la gallega con albariño y, en Andalucía, el jamón ibérico con fino o manzanilla son dos ejemplos que se repiten mucho. No es una ley, pero cuando dudes ante un producto muy de sitio, empieza por la bebida de ese mismo sitio: rara vez falla.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Gastronómico</h3><p class="mt-2 text-muted-foreground">65 plazas, Michelin/Repsol, 20+ entregables.</p><a href="/guia-restaurante-gastronomico?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-el-maridaje" target="_blank" rel="noopener" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Gastronómico por €85</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Bar / Cocktails</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, mise y prep de garnishes.</p><a href="/kit-tareas-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-es-el-maridaje" target="_blank" rel="noopener" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Bar / Cocktails por €12</a></aside>
 
 ## Las Reglas Básicas del Maridaje
 
@@ -74,26 +74,23 @@ Las reglas básicas del maridaje son reglas de oficio, no dogmas. Sirven para no
 
 - **Intensidad con intensidad.** Un plato delicado se apaga con un vino potente, y un guiso contundente se merienda un blanco ligerísimo. Busca que los dos estén en la misma liga.
 - **La acidez corta la grasa.** Es el recurso más rentable de la sala: un blanco con acidez viva o una burbuja convierten un plato pesado en algo que se sigue comiendo.
-- **El vino tiene que ser al menos tan dulce como el postre.** Si no, sabe agrio. El postre siempre manda en el dulzor; la copa se adapta a él, nunca al contrario.
-- **Los taninos van bien con proteína y grasa, y mal con el pescado azul.** Un tinto tánico con caballa o con sardina puede dejar un regusto metálico que no hay manera de tapar.
+- **El vino tiene que ser al menos tan dulce como el postre.** Si no, sabe agrio. En el dulzor manda el postre: la copa se adapta a él.
+- **Los taninos van bien con proteína y grasa, y mal con el pescado azul.** Un tinto tánico con caballa o con sardina puede dejar un regusto metálico difícil de tapar.
 - **La sal pide burbuja o acidez.** Ahí están las ostras, las anchoas y los aperitivos salados: la burbuja limpia y la acidez refresca.
 - **El picante y el alcohol alto se multiplican.** Cuanto más pica el plato, más arde el alcohol. Mejor vinos con algo de azúcar residual y menos grado, o una cerveza suave.
-- **Amargo con amargo se suma.** Cuidado con alcachofa, endivia o espárrago: si encima pones una bebida amarga, la suma se hace cuesta arriba.
+- **Amargo con amargo se suma.** Cuidado con la endivia, la achicoria o el radicchio: si encima pones una bebida amarga, la suma se hace cuesta arriba. La alcachofa y el espárrago son difíciles por otra razón: la alcachofa hace que el vino parezca dulce o metálico y el espárrago choca con muchos tintos; con ellos, mejor un blanco seco o un fino.
 
 Y por encima de todas, la que manda: probar. Las reglas te evitan el error de salida; lo demás se decide con una copa, un plato y la boca.
 
 ## Ejemplos de Maridajes Clásicos
 
-Estos ocho maridajes aguantan cualquier carta y sirven para explicar el oficio a quien empieza. Están probados mil veces, así que son un buen punto de partida antes de buscar combinaciones propias.
-
-<figure class="wp-block-image size-large">
-<img decoding="async" loading="lazy" src="/blog-assets/2026/11/maridaje-copas-pases.jpg" alt="Seis copas en fila, de espumoso a vino dulce, cada una junto a un bocado de menú degustación sobre una mesa de madera"/><figcaption>Un maridaje de seis copas: del espumoso al dulce, cada vino con su bocado</figcaption></figure>
+Estos ocho maridajes aguantan cualquier carta y sirven para explicar el oficio a quien empieza. La clasificación es orientativa: muchos maridajes juegan a dos bandas, armonía y contraste a la vez.
 
 | Plato | Bebida | Tipo de maridaje | Por qué funciona |
 | :--- | :--- | :--- | :--- |
 | Ostras | Espumoso brut nature | Contraste | La acidez y la burbuja limpian el yodo y la sal |
 | Jamón ibérico | Fino o manzanilla | Regional y contraste | La sequedad salina limpia la grasa |
-| Queso azul | Vino dulce (Pedro Ximénez o un blanco botrytizado) | Contraste | El dulce equilibra la sal y el punzante |
+| Queso azul | Vino dulce (Pedro Ximénez o un blanco botritizado) | Contraste | El dulce equilibra la sal y lo punzante |
 | Cordero asado | Tinto con crianza | Armonía | Intensidad parecida, taninos con grasa |
 | Pulpo a la gallega | Albariño | Regional | Acidez y frescor con el pimentón y el aceite |
 | Chocolate negro | Pedro Ximénez u oporto | Armonía | Dulzor e intensidad a la par |
@@ -102,11 +99,11 @@ Estos ocho maridajes aguantan cualquier carta y sirven para explicar el oficio a
 
 ## Maridaje en un Menú: Cómo Se Monta y Cuánto Cuesta
 
-En un menú degustación el maridaje es una bebida por pase o por bloques de pases, servida en copas más cortas que una copa normal. Se diseña a la vez que el menú, no después: si primero cierras los platos y luego buscas bebidas, acabas tapando huecos con lo que tengas en la bodega.
+En un menú degustación el maridaje es una bebida por pase o por bloques de pases, con servicios más cortos que una copa normal. Se diseña a la vez que el menú, no después: si primero cierras los platos y luego buscas bebidas, acabas tapando huecos con lo que tengas en la bodega.
 
 Cuidado con la cantidad. Si sirves 6 vinos de 80 ml, son 480 ml por persona, casi dos tercios de botella. En una comida larga eso se nota. Ofrece media copa o una alternativa sin alcohol: el cliente que conduce o no bebe también tiene que poder sentarse a la mesa sin sentirse fuera de lugar.
 
-El escandallo de la copa se hace en un minuto. Una botella de 75 cl a 12,00 € sale a 0,016 € el ml; una copa de 80 ml cuesta 1,28 €. A partir de ahí, cada vino tiene su número.
+El escandallo de la copa se hace en un minuto. Una botella de 75 cl a 12,00 € sale a 0,016 € el ml; una copa de 80 ml cuesta 1,28 €. A partir de ahí, cada vino tiene su número. Para simplificar, la tabla no aplica merma: en la práctica salen 9 copas de 80 ml por botella, no 9,4, y la copa de 12,00 € sube a 1,33 €. Los vinos dulces, además, se suelen servir en una medida más corta y vienen en botellas más pequeñas: ajusta la cuenta a tu formato.
 
 Ejemplo de maridaje de 6 copas de 80 ml (precios de ejemplo):
 
@@ -119,6 +116,9 @@ Ejemplo de maridaje de 6 copas de 80 ml (precios de ejemplo):
 | Tinto con crianza | 20,00 € | 2,13 € |
 | Dulce | 15,00 € | 1,60 € |
 | **Total** | | **9,60 €** |
+
+<figure class="wp-block-image size-large">
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/maridaje-copas-pases.jpg" alt="Seis copas en fila, de espumoso a vino dulce, cada una junto a un bocado de menú degustación sobre una mesa de madera"/><figcaption>Un maridaje de seis copas: del espumoso al dulce, cada vino con su bocado</figcaption></figure>
 
 Con un coste de bebida objetivo del 25 % (ejemplo), 9,60 ÷ 0,25 = 38,40 € sin IVA; con el 10 % de IVA, 42,24 €. Si lo pones a 45,00 € en carta, el coste de bebida real es del 23,5 %. No redondees hacia abajo: por debajo de 42,24 € te sales del 25 % que te habías marcado, y esa diferencia se repite en cada cubierto.
 
@@ -135,11 +135,11 @@ Una cena maridaje es un evento con menú cerrado en el que cada plato llega con 
 
 Una cata maridaje es otra cosa. Se catan varias bebidas con bocados pensados para cada una, y el protagonista es la bebida, no la comida. El bocado está al servicio de la copa; en la cena, la copa está al servicio del plato.
 
-Para un restaurante, los dos formatos sirven para llenar días flojos y presentar producto. Tienen precio cerrado, compra previsible y aforo conocido, que es justo lo que necesita una semana floja.
+Para un restaurante, los dos formatos sirven para llenar días flojos y presentar producto. Tienen precio cerrado, compra previsible y aforo conocido.
 
 ## Maridaje y Food Pairing No Son lo Mismo
 
-El food pairing combina ingredientes por los compuestos aromáticos que comparten; el maridaje combina comida y bebida. Son disciplinas distintas, aunque en la conversación se mezclen cada dos por tres. El food pairing trabaja dentro del plato: qué va con qué sobre la mesa.
+El food pairing combina ingredientes por los compuestos aromáticos que comparten; el maridaje combina comida y bebida. Son disciplinas distintas, aunque en la conversación se mezclen cada dos por tres: en sentido amplio también se habla de maridaje de ingredientes (tomate y albahaca, por ejemplo), pero en sala, cuando alguien dice maridaje, casi siempre habla de plato y bebida. El food pairing trabaja dentro del plato: qué va con qué sobre la mesa.
 
 El maridaje trabaja fuera del plato: qué copa acompaña a ese conjunto. Puedes hacer un food pairing perfecto y estropearlo con la bebida, y puedes tener un plato sencillo y redondearlo con la copa justa. Si te interesa la parte de ingredientes, la tienes en [qué es el food pairing](https://aichef.pro/blog/que-es-el-food-pairing).
 
@@ -147,7 +147,7 @@ El maridaje trabaja fuera del plato: qué copa acompaña a ese conjunto. Puedes 
 
 ## Maridaje con IA: Lo Que Te Ahorra y Lo Que No
 
-En AI Chef Pro, Sommelier Consultor Pro propone maridajes plato a plato y te ayuda con la carta de vinos y de cócteles; [Food Pairing AI](https://aichef.pro/blog/libreria-de-prompts-para-food-pairing-ai) busca combinaciones de ingredientes. Lo que te ahorra es tiempo de borrador: llegar a la mesa de catas con propuestas en lugar de con la página en blanco. Lo que no te ahorra es probar. Es un borrador, y el sumiller y el chef prueban antes de servir.
+En AI Chef Pro, Sommelier Consultor Pro propone maridajes plato a plato y te ayuda con la carta de vinos y de cócteles; Food Pairing AI busca combinaciones de ingredientes (tienes su [librería de prompts](https://aichef.pro/blog/libreria-de-prompts-para-food-pairing-ai)). Lo que te ahorra es tiempo de borrador: llegar a la mesa de catas con propuestas en lugar de con la página en blanco. Lo que no te ahorra es probar. Es un borrador, y el sumiller y el chef prueban antes de servir.
 
 Para montar un menú degustación con sus maridajes tienes el [Generador Menú Degustación](https://aichef.pro/generador-menu-degustacion), gratis.
 
