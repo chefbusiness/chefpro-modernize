@@ -53,9 +53,10 @@ def main():
     datos = [('Establecimiento', ''), ('Mes y año', ''), ('Responsable', '')]
     for i, (k, v) in enumerate(datos):
         ws.cell(row=3 + i, column=1, value=k).font = Font(bold=True)
-        c = ws.cell(row=3 + i, column=2, value=v)
+        ws.merge_cells(start_row=3 + i, start_column=1, end_row=3 + i, end_column=2)
+        c = ws.cell(row=3 + i, column=3, value=v)
         c.fill = entrada
-        ws.merge_cells(start_row=3 + i, start_column=2, end_row=3 + i, end_column=4)
+        ws.merge_cells(start_row=3 + i, start_column=3, end_row=3 + i, end_column=5)
 
     # Límites (F3:I5)
     ws['F3'] = 'Límites (edítalos)'
@@ -92,8 +93,12 @@ def main():
                 c = ws.cell(row=r, column=col, value=(ej[col - 3] if ej else None))
                 c.fill = entrada
                 c.number_format = '0.0'
-            ws.cell(row=r, column=7, value=(ej[3] or None) if ej else None).fill = entrada
+            cg = ws.cell(row=r, column=7, value=(ej[3] or None) if ej else None)
+            cg.fill = entrada
+            cg.alignment = Alignment(wrap_text=True, vertical='top')
             ws.merge_cells(start_row=r, start_column=7, end_row=r, end_column=8)
+            if ej and ej[3]:
+                ws.row_dimensions[r].height = 46
             ws.cell(row=r, column=9, value=ej[4] if ej else None).fill = entrada
             ws.cell(row=r, column=6, value=(
                 f'=IF(COUNT(C{r}:E{r})=0,"",IF(AND(OR(C{r}="",AND(C{r}>={RMIN},C{r}<={RMAX})),'
@@ -109,23 +114,31 @@ def main():
 
     fn = pn + 2
     notas = [
-        'Cada fila en rojo necesita su medida correctora escrita y una nueva lectura.',
+        'Cada lectura en rojo necesita su medida correctora escrita y una nueva lectura.',
         'Revisa los termómetros con un termómetro patrón según tu plan, y guarda este registro el tiempo que te pida.',
     ]
     for i, n in enumerate(notas):
         ws.cell(row=fn + i, column=1, value=n).font = Font(italic=True, color='555555')
-    ws.cell(row=fn + 3, column=1, value='Guía del APPCC con el ejemplo de PCC:').font = Font(bold=True)
-    ws.cell(row=fn + 3, column=3, value=GUIA).hyperlink = GUIA
-    ws.cell(row=fn + 4, column=1, value='Los 19 registros (limpieza, trazabilidad, alérgenos, plagas…): Pack APPCC').font = Font(bold=True)
-    ws.cell(row=fn + 4, column=3, value=PACK).hyperlink = PACK
-    for rr in (fn + 3, fn + 4):
-        ws.cell(row=rr, column=3).font = Font(color='0563C1', underline='single')
+        ws.merge_cells(start_row=fn + i, start_column=1, end_row=fn + i, end_column=9)
+    for k, (etq, url) in enumerate([('Guía del APPCC con el ejemplo de PCC:', GUIA),
+                                     ('19 plantillas de APPCC (limpieza, trazabilidad, alérgenos, plagas…): Pack APPCC', PACK)]):
+        rr = fn + 3 + k
+        ws.cell(row=rr, column=1, value=etq).font = Font(bold=True)
+        ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=5)
+        c = ws.cell(row=rr, column=6, value=url)
+        c.hyperlink = url
+        c.font = Font(color='0563C1', underline='single')
+        ws.merge_cells(start_row=rr, start_column=6, end_row=rr, end_column=9)
 
     for col, w in {'A': 6, 'B': 9, 'C': 15, 'D': 15, 'E': 14, 'F': 10, 'G': 40, 'H': 12, 'I': 10}.items():
         ws.column_dimensions[col].width = w
     ws.column_dimensions['F'].width = 12
     ws.freeze_panes = f'C{p1}'
     ws.print_title_rows = f'{ft}:{ft}'
+    ws.page_setup.orientation = 'landscape'
+    ws.page_setup.fitToWidth = 1
+    ws.page_setup.fitToHeight = 0
+    ws.sheet_properties.pageSetUpPr.fitToPage = True
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     wb.save(SALIDA)
