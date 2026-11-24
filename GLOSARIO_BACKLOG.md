@@ -421,7 +421,7 @@ FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de es
 - aceite de hierbas — semilla
 - fermentado vegetal — semilla
 
-#### Food Pairing AI · librería `libreria-de-prompts-para-food-pairing-ai` — 8 publicados, 34 semillas
+#### Food Pairing AI · librería `libreria-de-prompts-para-food-pairing-ai` — 9 publicados, 33 semillas
 
 - mise en place — publicado (`es/mise-en-place`)
 - ficha técnica — semilla
@@ -443,7 +443,7 @@ FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de es
 - puente de sabor — semilla
 - contraste — semilla
 - afinidad — semilla
-- maridaje — semilla
+- maridaje — publicado (`es/que-es-el-maridaje`)
 - umami — publicado (`es/fermentacion-koji-umami-natural`)
 - acidez — semilla
 - grasa — publicado (`es/confit-concepto-definicion`)
@@ -830,7 +830,7 @@ FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de es
 - brunch — semilla
 - pastelería de barra — semilla
 
-#### Sommelier Consultor Pro · librería `libreria-de-prompts-para-sommelier-consultor-pro-ai` — 4 publicados, 38 semillas
+#### Sommelier Consultor Pro · librería `libreria-de-prompts-para-sommelier-consultor-pro-ai` — 5 publicados, 37 semillas
 
 - mise en place — publicado (`es/mise-en-place`)
 - ficha técnica — semilla
@@ -852,7 +852,7 @@ FR, DE, IT, NL y PT de reducción, mandolina y papillote son fichas nuevas de es
 - decantar — semilla
 - copas — semilla
 - temperatura de servicio — semilla
-- maridaje — semilla
+- maridaje — publicado (`es/que-es-el-maridaje`)
 - carta de vinos — semilla
 - margen de bodega — semilla
 - compra de vino — semilla
@@ -3886,7 +3886,7 @@ Números del negocio: margen, caja, turno y compra.
 
 El local como sistema: concepto, turno, norma y equipo.
 
-1 publicados, 41 semillas.
+2 publicados, 40 semillas.
 
 - concepto de negocio — semilla
 - propuesta de valor — semilla
@@ -3929,7 +3929,7 @@ El local como sistema: concepto, turno, norma y equipo.
 - libro de reclamaciones — semilla
 - menú del día — semilla
 - carta — semilla
-- menú degustación — semilla
+- menú degustación — publicado (`es/que-es-un-menu-degustacion`)
 
 ### La profesión
 

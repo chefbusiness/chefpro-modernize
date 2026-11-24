@@ -2,7 +2,7 @@
 title: "Gestión de Inventario Restaurante con IA: Guía {year}"
 description: "Guía práctica de gestión de inventario en restaurantes con IA: conteos, PMP, rotación, pedidos sugeridos y escandallos. Con tabla de KPIs y proceso semanal."
 pubDate: 2026-03-13
-modDate: 2026-08-31
+modDate: 2026-11-24
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/gestion-inventario-restaurante-ia-chef-tablet.jpg
 imageAlt: "Chef profesional gestionando inventario con tablet en cocina de restaurante moderno"
@@ -18,14 +18,14 @@ faq:
   - q: "¿La IA sustituye al jefe de cocina en los pedidos?"
     a: "No. La IA sugiere el pedido óptimo a partir del consumo real, el lead time de cada proveedor y el stock de seguridad. El chef revisa la propuesta, la ajusta según su criterio (eventos, cambios de carta) y la aprueba. La decisión final sigue siendo humana."
   - q: "¿Puedo empezar con la gestión de inventario con IA con el plan AI Chef Miembro?"
-    a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €, con tarjeta y sin permanencia. Puedes probar el conteo asistido, el cálculo de PMP y el pedido sugerido para convencerte de que la IA no es un gasto, sino una inversión en margen."
+    a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €, con tarjeta y sin permanencia. Puedes pedir a los agentes que te ayuden a ordenar el conteo, calcular el PMP con tus compras y preparar un borrador de pedido para que lo revises. AI Chef Pro no se conecta a tu TPV ni guarda tu stock: te ayuda con el cálculo."
   - q: "¿Cómo conecta el inventario con los escandallos de los platos?"
     a: "Cada ingrediente del escandallo puede tomar su coste del precio medio del inventario. Cuando actualizas el inventario tras una recepción, revisas el coste de los platos que usan ese ingrediente y el cocinero valida el escandallo."
 ---
 
 He pasado 29 años metido en cocinas de alta hostelería y 15 más como consultor gastronómico. Si algo he visto repetirse hasta la náusea es que la gestión de inventario de un restaurante es el punto donde se gana o se pierde el margen real, y casi nadie le presta la atención que merece. Con la IA, esta tarea deja de ser un castigo de fin de semana y se convierte en un sistema de control que te dice exactamente qué tienes, cuánto vale y cuándo te interesa pedir.
 
-La gestión de inventario con IA no es un software bonito que te cuenta latas. Es un asistente que cruza datos de consumo, actualiza precios automáticamente, calcula el precio medio ponderado (PMP) sin que te duela la cabeza y te sugiere pedidos basados en el ritmo real de tu cocina, no en corazonadas. El resultado: menos stock parado, menos mermas por caducidad y un food cost que no se dispara cuando menos te lo esperas.
+La gestión de inventario con IA no es un software bonito que te cuenta latas. Es un asistente que cruza datos de consumo, actualiza precios automáticamente, calcula el precio medio ponderado (PMP) sin que te duela la cabeza y te sugiere pedidos basados en el ritmo real de tu cocina, no en corazonadas. El resultado: menos stock parado, menos mermas por caducidad y un food cost que no se dispara cuando menos te lo esperas. Y si estás montando el resto del software del local (TPV, reservas, APPCC o turnos), tienes la [guía de software para restaurantes](https://aichef.pro/blog/software-para-restaurantes).
 
 
 
@@ -175,11 +175,11 @@ Un sistema de inventario con IA cruza cada tique de venta con la receta que lo p
 
 La IA acelera cálculos, cruza datos y avisa con tiempo, pero el criterio de cocina sigue mandando. Ponla a trabajar a tu favor, no al revés.
 
-## AI Chef Pro: inventario, escandallos y pedidos en el mismo sitio
+## Qué hace AI Chef Pro en el inventario (y qué no)
 
 AI Chef Pro es la plataforma con la que trabajo desde hace meses. No es un software de contabilidad disfrazado de herramienta de cocina. Es un ecosistema de más de 70 agentes de IA culinarios que entienden cómo funciona una cocina de verdad, en siete idiomas y con español nativo.
 
-Aquí no hay módulos sueltos: el inventario se conecta con los escandallos, los pedidos sugeridos se basan en el consumo real y el food cost se actualiza automáticamente cada vez que entra mercancía o se registra una venta. Tú haces el conteo con el móvil, la IA calcula PMP, rotación y desviaciones, y el viernes te presenta el pedido con los proveedores que ya tienes dados de alta.
+Seamos claros: AI Chef Pro no es un programa de inventario. No se conecta a tu TPV ni a tus albaranes, y no guarda tu stock. Lo que hacen sus agentes es ayudarte con el cálculo y la redacción: con los datos que les das (el conteo, las compras, los consumos), te ayudan a sacar el precio medio ponderado (PMP), la rotación y las desviaciones, a preparar un borrador de pedido para que lo revises y a cruzar el inventario con tus escandallos. Si lo que necesitas es llevar el stock y las compras en un sistema, eso es un software de gestión, como Miselup desde su plan Mise Pro.
 
 Los planes, sin letra pequeña:
 

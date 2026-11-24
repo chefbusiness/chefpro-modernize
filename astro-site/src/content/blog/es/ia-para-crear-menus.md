@@ -66,7 +66,7 @@ El caballo de batalla de la mayoría de negocios. Con la IA, puedes generar un m
 
 ### Menú degustación
 
-El menú degustación es la carta de presentación de la casa. Aquí la IA brilla en la construcción de la secuencia de pases, respetando intensidades y técnicas, y en la sugerencia de maridaje. Puedes usarla para idear un menú de siete a diez pases con un hilo conductor, y ajustar cada descripción a un estilo más narrativo. [El generador de menús degustación](https://aichef.pro/generador-menu-degustacion) de AI Chef Pro te deja elegir los ingredientes estrella, el número de pases, el estilo y la temporada.
+El [menú degustación](https://aichef.pro/blog/que-es-un-menu-degustacion) es la carta de presentación de la casa. Aquí la IA brilla en la construcción de la secuencia de pases, respetando intensidades y técnicas, y en la sugerencia de maridaje. Puedes usarla para idear un menú de siete a diez pases con un hilo conductor, y ajustar cada descripción a un estilo más narrativo. [El generador de menús degustación](https://aichef.pro/generador-menu-degustacion) de AI Chef Pro te deja elegir los ingredientes estrella, el número de pases, el estilo y la temporada.
 
 **Ejemplo de prompt:** «Diseña un menú degustación de siete pases para un restaurante de autor con base de cocina de mercado española contemporánea. Cada pase debe incluir una descripción cuidada, alérgenos y una sugerencia de vino. Precio global orientativo: 60-70 € por persona».
 
