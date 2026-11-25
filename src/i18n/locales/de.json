@@ -2990,15 +2990,15 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "Kostenloser Restaurant Food Cost Rechner | AI Chef Pro",
-      "description": "Berechnen Sie den Food Cost Ihrer Gerichte kostenlos: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. Ohne Anmeldung.",
-      "keywords": "Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Food Cost Prozentsatz, Gerichtkosten Restaurant"
+      "title": "Wareneinsatz-Rechner pro Gericht (kostenlos) | AI Chef Pro",
+      "description": "Wareneinsatz und Wareneinsatzquote pro Gericht kostenlos berechnen: Zutaten, Mengen, Einkaufspreise, Nettoverkaufspreis. Mit Ampel, ohne Anmeldung.",
+      "keywords": "Wareneinsatz berechnen, Wareneinsatz Rechner, Wareneinsatzquote berechnen, Wareneinsatz pro Gericht, Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Gerichtkosten Restaurant"
     },
     "breadcrumb": "Food Cost Rechner",
     "hero": {
       "badge": "Kostenlos — Keine Anmeldung",
-      "h1": "Food Cost Rechner für Restaurants",
-      "subtitle": "Berechnen Sie den Food Cost-Prozentsatz jedes Gerichts in Sekunden. Fügen Sie Zutaten, Mengen und Verkaufspreis hinzu.",
+      "h1": "Wareneinsatz berechnen: kostenloser Rechner pro Gericht",
+      "subtitle": "Berechnen Sie den Wareneinsatz und die Wareneinsatzquote (Food Cost) jedes Gerichts in Sekunden: Zutaten, Mengen, Einkaufspreise und Nettoverkaufspreis.",
       "cta_tool": "Zum Rechner ↓",
       "cta_premium": "Premium-Plan →"
     },
@@ -3007,22 +3007,22 @@
       "dish_name_label": "Gerichtname",
       "dish_name_placeholder": "Z.B.: Pilzrisotto",
       "portions_label": "Anzahl der Portionen",
-      "sale_price_label": "Verkaufspreis pro Portion (€)",
+      "sale_price_label": "Verkaufspreis netto pro Portion (€)",
       "ingredients_title": "Zutaten",
       "ingredient_name": "Zutat",
       "ingredient_qty": "Menge (g)",
       "ingredient_cost": "Preis/kg (€)",
       "add_ingredient": "+ Zutat hinzufügen",
-      "calculate": "Food Cost berechnen",
+      "calculate": "Wareneinsatz berechnen",
       "result_title": "Ergebnis",
       "total_cost_label": "Gesamtzutatenkosten",
       "cost_per_portion_label": "Kosten pro Portion",
       "food_cost_pct_label": "Food Cost %",
       "gross_margin_label": "Rohertrag (€/Portion)",
-      "status_ok": "✅ Ausgezeichneter Food Cost — Ihr Gericht ist sehr profitabel",
-      "status_warn": "⚠️ Knapper Food Cost — Überprüfen Sie Preise oder Zutaten",
-      "status_bad": "🔴 Hoher Food Cost — Erwägen Sie Preiserhöhung oder Kostensenkung",
-      "tip": "💡 Branchenreferenz: Food Cost zwischen 25% und 32% ist gesund für Restaurants",
+      "status_ok": "✅ Gute Quote — Ihr Gericht ist sehr profitabel",
+      "status_warn": "⚠️ Knappe Quote — Überprüfen Sie Preise oder Zutaten",
+      "status_bad": "🔴 Hoher Wareneinsatz — Erwägen Sie Preiserhöhung oder Kostensenkung",
+      "tip": "💡 Orientierung: Übliche Wareneinsatzquoten liegen grob zwischen 25 und 35 %. Entscheidend ist Ihre Kalkulation, nicht ein Branchenwert.",
       "cta_after": "Möchten Sie die ganze Karte mit KI kalkulieren und das Ergebnis prüfen lassen?",
       "reset": "Neue Berechnung",
       "export_excel": "Excel herunterladen",
@@ -3057,17 +3057,17 @@
         {
           "step": "2",
           "title": "Portionen und Verkaufspreis angeben",
-          "description": "Wie viele Portionen das Rezept ergibt und zu welchem Preis Sie es verkaufen."
+          "description": "Wie viele Portionen das Rezept ergibt und den Nettoverkaufspreis pro Portion (bei Speisen: Bruttopreis ÷ 1,07)."
         },
         {
           "step": "3",
-          "title": "Food Cost erhalten",
-          "description": "Sie sehen die genauen Kosten pro Portion, den Food Cost-Prozentsatz und den Rentabilitätsstatus."
+          "title": "Wareneinsatz erhalten",
+          "description": "Sie sehen den Wareneinsatz pro Portion, die Wareneinsatzquote und den Rentabilitätsstatus."
         }
       ]
     },
     "benefits": {
-      "title": "Warum Ihren Food Cost berechnen",
+      "title": "Warum Sie den Wareneinsatz berechnen sollten",
       "items": [
         "Gerichte identifizieren, die Geld verlieren",
         "Verkaufspreise mit echten Daten anpassen",
@@ -3110,8 +3110,8 @@
     },
     "faq": [
       {
-        "question": "Was ist Food Cost?",
-        "answer": "Food Cost ist der Prozentsatz des Verkaufspreises, der die Zutatenkosten darstellt. Formel: Food Cost % = (Zutatenkosten / Verkaufspreis) × 100. Ein gesunder Food Cost liegt zwischen 25% und 32%."
+        "question": "Was ist der Wareneinsatz pro Gericht (Food Cost)?",
+        "answer": "Der Wareneinsatz pro Gericht sind die Kosten der Zutaten einer Portion. Die Wareneinsatzquote setzt sie ins Verhältnis zum Nettoverkaufspreis: Quote % = (Wareneinsatz ÷ Nettoverkaufspreis) × 100. Im Englischen heißt das Food Cost. Übliche Quoten liegen grob zwischen 25 und 35 %, einen allgemein richtigen Wert gibt es nicht."
       },
       {
         "question": "Warum ist es wichtig, ihn zu kontrollieren?",
@@ -3122,8 +3122,12 @@
         "answer": "Diese Version rechnet mit den Nettogewichten, die Sie eingeben. Für Putzen, Garen und Verdunstung nutzen Sie das Kalkulationswerkzeug von AI Chef Pro und der Koch prüft das Ergebnis."
       },
       {
-        "question": "Wie verbessert man einen hohen Food Cost?",
+        "question": "Wie senkt man einen hohen Wareneinsatz?",
         "answer": "Sie können den Verkaufspreis erhöhen, zu günstigeren Lieferanten wechseln, die Menge teurer Zutaten reduzieren oder Hochkostenkomponenten ersetzen."
+      },
+      {
+        "question": "Wie berechne ich den Wareneinsatz für den ganzen Monat?",
+        "answer": "Mit der Inventur: Anfangsbestand plus Einkäufe minus Endbestand, alles netto. Beispiel: 8.400 € + 12.600 € − 7.800 € = 13.200 €; bei 44.000 € Nettoumsatz ergibt das eine Quote von 30 %. Die Formel, das durchgerechnete Beispiel und eine kostenlose Excel-Vorlage finden Sie im Blog-Artikel „Wareneinsatz berechnen“."
       }
     ],
     "cta_section": {

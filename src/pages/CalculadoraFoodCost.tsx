@@ -671,6 +671,19 @@ export default function CalculadoraFoodCost() {
                     .
                   </p>
                 )}
+                {lang === 'de' && (
+                  <p className="mt-6 text-muted-foreground">
+                    Dieser Rechner liefert den Wareneinsatz eines Gerichts ohne Anmeldung. Den Wareneinsatz des ganzen Monats per Inventur, mit Speisen und Getränken getrennt, erklärt der Artikel{' '}
+                    <a href="/de/blog/wareneinsatz-berechnen" className="font-semibold text-primary hover:underline">
+                      Wareneinsatz berechnen
+                    </a>
+                    , mit kostenloser Excel-Vorlage. Für die Kalkulation der ganzen Karte mit Abfall und Portionen gibt es die{' '}
+                    <a href="/de/food-cost-rechner-restaurant-ki" className="font-semibold text-primary hover:underline">
+                      Kalkulation mit KI
+                    </a>
+                    .
+                  </p>
+                )}
               </div>
             </div>
           </div>

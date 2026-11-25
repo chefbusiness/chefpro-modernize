@@ -1,8 +1,8 @@
 ---
-title: "Wareneinsatz berechnen: die Formel, das durchgerechnete Beispiel und die Quote, die Ihr Restaurant steuert"
-description: "Berechnen Sie den Wareneinsatz mit Formel und Beispiel: Anfangsbestand plus Einkäufe minus Endbestand. So steuern Sie Ihre Quote im Restaurant."
+title: "Wareneinsatz berechnen: Formel, Beispiel und kostenlose Excel-Vorlage"
+description: "Wareneinsatz berechnen: Formel (Anfangsbestand + Einkäufe − Endbestand), durchgerechnetes Beispiel, Wareneinsatzquote und kostenlose Excel-Vorlage."
 pubDate: 2026-08-19
-modDate: 2026-08-19
+modDate: 2026-11-25
 category: restaurant-management
 tags: ["wareneinsatz", "wareneinsatzquote", "kalkulation", "restaurantmanagement"]
 image: /blog-assets/2026/08/wareneinsatz-destacada.jpg
@@ -19,11 +19,17 @@ faq:
     a: "Der Wareneinsatz wird immer netto berechnet, also ohne Mehrwertsteuer. Das gilt sowohl für den Wareneinsatz selbst als auch für den Umsatz, den Sie in der Quote verwenden. Wenn Sie Bruttowerte heranziehen, verfälschen Sie das Ergebnis, weil die Mehrwertsteuer unterschiedlich hoch sein kann. Rechnen Sie konsequent mit Nettobeträgen, um eine genaue und vergleichbare Kennzahl zu erhalten. So behalten Sie die tatsächlichen Warenkosten im Blick und können dann Ihre Kalkulation darauf aufbauen."
   - q: "Wie oft braucht man eine Inventur für den Wareneinsatz?"
     a: "Für eine verlässliche monatliche Wareneinsatzberechnung benötigen Sie eine Inventur am Monatsanfang und am Monatsende. Der Endbestand des Vormonats ist dabei der Anfangsbestand des Folgemonats. Ohne tatsächliche Zählung bleibt die Quote lediglich eine Schätzung. Führen Sie die Inventur daher regelmäßig durch, idealerweise monatlich. Bei stark schwankenden Warenbeständen oder besonderer Kontrollnotwendigkeit können Sie auch wöchentliche oder tägliche Zählungen vornehmen, aber der Monatsrhythmus ist in der Gastronomie der Standard für aussagekräftige Auswertungen."
+  - q: "Gibt es eine kostenlose Excel-Vorlage für den Wareneinsatz?"
+    a: "Ja. Unser Wareneinsatz-Rechner als Excel-Vorlage ist kostenlos und ohne Anmeldung: ein Blatt mit dem Beispiel aus diesem Artikel, ein leeres Monatsblatt mit Speisen und Getränken getrennt und einer Hilfe von Brutto- zu Nettoumsatz, und ein Jahresblatt mit der Quote für alle zwölf Monate. Sie finden sie im Abschnitt „Kostenlose Excel-Vorlage“ dieses Artikels."
+  - q: "Welche Mehrwertsteuer gilt 2026 für Speisen und Getränke in der Gastronomie?"
+    a: "Seit dem 1. Januar 2026 gilt für Speisen in der Gastronomie dauerhaft der ermäßigte Satz von 7 %, auch außer Haus und bei Lieferung; Getränke bleiben bei 19 %. Für die Wareneinsatzquote brauchen Sie den Nettoumsatz: Bruttoumsatz Speisen ÷ 1,07 und Bruttoumsatz Getränke ÷ 1,19. Sonderfälle wie Kombiangebote klären Sie mit Ihrer Steuerberatung."
 ---
 
 <p>Der Monat ist vorbei, der Steuerberater schickt die Zahlen, und irgendwie ist der Gewinn wieder kleiner als das Bauchgefühl. Die Tische waren voll, der Umsatz stimmt, und trotzdem bleibt am Ende weniger hängen als erwartet. Wer in der Gastronomie arbeitet, kennt diesen Moment genau: Man hat geschuftet, das Team hat geschuftet, die Gäste waren zufrieden – und dann die Ernüchterung am Monatsende. Die erste Kennzahl, die ein Küchenprofi in so einer Situation anschaut, ist der Wareneinsatz. Denn hier zeigt sich, ob das, was eingekauft wurde, auch wirklich in Ertrag verwandelt wurde oder ob irgendwo Geld versickert ist.</p>
 
 <p>Die Formel ist so einfach wie mächtig: Wareneinsatz = Anfangsbestand + Einkäufe (Warenzugänge) − Endbestand. Alle Werte netto, zum Einstandspreis. Der Wareneinsatz ist der Wert der Waren, die in der Periode tatsächlich verbraucht wurden – nicht das, was Sie eingekauft haben. Wer diese Unterscheidung verinnerlicht, hat den wichtigsten Schritt in der Küchenkalkulation bereits gemacht. Denn die meisten Fehler entstehen nicht beim Rechnen, sondern beim Verständnis: Wer Einkäufe und Verbrauch verwechselt, steuert sein Restaurant mit falschen Zahlen.</p>
+
+<p>Sie wollen gleich loslegen? Laden Sie unseren <a href="https://aichef.pro/descargas/wareneinsatz-rechner-vorlage-aichef.xlsx">Wareneinsatz-Rechner als Excel-Vorlage</a> herunter, kostenlos und ohne Anmeldung, oder berechnen Sie den Wareneinsatz eines einzelnen Gerichts mit dem <a href="https://aichef.pro/de/food-cost-rechner-restaurant">Wareneinsatz-Rechner pro Gericht</a>.</p>
 
 <h2>Die Formel: Anfangsbestand plus Einkäufe minus Endbestand</h2>
 
@@ -136,6 +142,12 @@ faq:
 <h2>Ihre Quote, Monat für Monat im Griff</h2>
 
 <p>Die Formel ist eine Zeile — die Arbeit ist die Routine drumherum: die Inventur organisieren, die Kategorien trennen, die Entwicklung lesen und die richtigen Schlüsse ziehen.</p>
+
+<h3>Kostenlose Excel-Vorlage: Wareneinsatz-Rechner</h3>
+
+<p>Damit die Routine nicht an der Tabelle scheitert, gibt es den <a href="https://aichef.pro/descargas/wareneinsatz-rechner-vorlage-aichef.xlsx">Wareneinsatz-Rechner als Excel-Vorlage</a>, kostenlos und ohne Anmeldung. Er hat drei Blätter: das Beispiel aus diesem Artikel (8.400 € + 12.600 € − 7.800 € = 13.200 €, Quote 30 %), ein leeres Monatsblatt mit Speisen und Getränken getrennt und einer Hilfe, die Ihren Bruttoumsatz in Nettoumsatz umrechnet (7 % für Speisen, 19 % für Getränke), und ein Jahresblatt, in dem Sie die Quote Monat für Monat verfolgen. Sie tragen nur die Inventurwerte, die Einkäufe und den Umsatz ein; Wareneinsatz und Quote rechnet die Vorlage selbst.</p>
+
+<p>Für den Wareneinsatz eines einzelnen Gerichts, etwa bevor Sie einen Kartenpreis festlegen, nutzen Sie den <a href="https://aichef.pro/de/food-cost-rechner-restaurant">kostenlosen Wareneinsatz-Rechner pro Gericht</a>.</p>
 
 <p>Auf <a href="https://deapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=wareneinsatz-berechnen" target="_blank" rel="noopener noreferrer">deapp.aichef.pro</a> finden Sie mehr als 50 KI-Werkzeuge von AI Chef Pro für Küchenchefs und Gastronomen; für diese Aufgabe begleitet Sie der <strong><a href="https://deapp.aichef.pro/gerente-de-restaurante-pro-dumn4-de?utm_source=blog&utm_medium=cta&utm_content=wareneinsatz-berechnen" target="_blank" rel="noopener noreferrer">Profi Restaurantmanager</a></strong>: Geben Sie ihm Ihre Monatszahlen, und arbeiten Sie die Quote, die Trennung nach Kategorien und die Ursachen einer Veränderung gemeinsam durch — bis aus der Zahl eine Entscheidung wird.</p>
 
