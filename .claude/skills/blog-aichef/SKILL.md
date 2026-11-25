@@ -225,6 +225,18 @@ Resultado, medido en GSC: **27 URLs sin poder rastrearse desde el 1 de agosto** 
 - Gate: **`python3 scripts/astro-migration/robots-gate.py`** — implementa la spec de Google (comodín, `$`, gana el path más largo y en empate Allow; validado contra Protego en 6.445 decisiones) y comprueba, para cada user-agent del fichero, que **toda URL del `dist/` es rastreable** y que **toda ruta de la zona app está bloqueada**. Con el `robots.txt` viejo canta las 27; con el nuevo, cero. **Correrlo siempre que se toque `robots.txt` o nazca una familia de producto.**
 - Regla general: **al publicar contenido nuevo, comprobar que su URL no cae en ningún patrón de `robots.txt`**. Cuesta un comando y aquí ha costado casi un mes de indexación de 26 posts.
 
+### Duplicar un post ES a otro idioma: lo que cazaron las auditorías (25-nov-2026, FR/DE/IT/NL/PT)
+
+- **Un `<aside>` (o `</figure>`, `</p>`) pegado a la línea `## …` se traga el H2**: sale «## Título» como texto en la página. Siempre una línea en blanco entre un bloque HTML y un encabezado markdown. Barrido: `</(aside|figure|p|table)>\n#`.
+- **Asides y salidas al embudo**: los glosarios de cada idioma llevan los dos `<aside>` del molde (rol + guest, `utm_content=<slug>`) y, en NL, el bloque «In het glossarium». Copiar el molde de un post del mismo idioma y adaptar el tratamiento (NL nuevo = «u»; el molde viejo dice «jouw»).
+- **Cero huérfanas**: la traducción no hereda enlaces entrantes. Añadir 1-3 desde posts del mismo idioma que ya mencionan el término (grep del término en `blog/<lang>/`), con `modDate` y regenerar lastmod.
+- **Nombres de agentes y herramientas localizados**: sacarlos de `src/i18n/locales/<lang>.json` y `src/data/use-cases-content.<lang>*.ts` (NL «Sommelier Adviseur Pro», PT «Gerador Menu Degustação» / «Detector de Alergénios»), nunca el nombre español.
+- **Recursos que no existen en el idioma**: el ES remite a manuales, kits y librerías de prompts en español → quitar la frase o cambiarla por la herramienta local (generador gratuito, calculadora). Miselup no tiene `/nl/`: usar `miselup.pro/en/`.
+- **FAQ y secciones que solo tienen sentido en español** (etimología de «maridaje», la confusión maridar/marinar): sustituirlas por una pregunta del PAA local (p. ej. «Wat is een wijnarrangement?», «Is het de of het receptuur?», «Sommelier ou escanção?»).
+- **DeepSeek inventa palabras y calcos**: «escandilhar» (PT; el blog usa «escandallo»), «criterium», «parcours», «palet», «passe» como plato del menú (PT = «momento»), «prato do dia» por «menu do dia». Comparar cifras/enlaces por script y pasar SIEMPRE auditoría de nativo.
+- **IVA por país en los ejemplos de precio**: NL comida 9 %, alcohol 21 % · PT comida 13 %, alcohol y refrigerantes 23 % (continente) · IT somministrazione 10 % · DE comida 7 %, bebidas 19 % · FR comida 10 %, alcohol 20 %. Recalcular con python antes del brief.
+- **Plantillas descargables**: duplicar el generador ES/FR del mismo producto y pasar pycel sobre copia SIN caché con celdas vacías (el Excel ES de ficha técnica daba `#DIV/0!`; el FR ya estaba arreglado).
+
 ### Banners de productos digitales: política obligatoria
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.
