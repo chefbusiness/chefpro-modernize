@@ -1,8 +1,8 @@
 ---
-title: "Ingeniería de Menú Restaurante: Carta Rentable con IA"
-description: "Ingeniería de menú para tu restaurante: la matriz de rentabilidad, un ejemplo numérico con 8 platos, psicología de precios de carta y automatización con IA."
+title: "Ingeniería de menú: matriz, ejemplo y plantilla Excel gratis"
+description: "Ingeniería de menú (menu engineering) para tu restaurante: matriz de estrellas, caballos, puzzles y perros, ejemplo con 8 platos y plantilla Excel gratis."
 pubDate: 2026-03-24
-modDate: 2026-09-03
+modDate: 2026-11-24
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a4-ia-1.jpg
 imageAlt: "Chef y gerente diseñando carta rentable con IA"
@@ -21,9 +21,13 @@ faq:
     a: "Sí, y quizá más que en los grandes. Un negocio pequeño no puede permitirse platos que drenen margen. Con una carta de 15 referencias, clasificar a mano es rápido y el impacto de eliminar un perro o reposicionar un puzzle se nota enseguida en la cuenta. La matriz escala perfectamente hacia abajo."
   - q: "¿Cómo ayuda la IA a hacer la ingeniería de menú?"
     a: "Automatiza la parte más pesada: actualiza escandallos, cruza datos con el TPV, clasifica los platos en la matriz y sugiere reprecios y reformulaciones. Con herramientas como AI Chef Pro puedes empezar con el plan AI Chef Miembro por 10 € al mes con 10.000 créditos y tener la matriz lista en minutos, sin depender de hojas de cálculo interminables."
+  - q: "¿Qué es el menu engineering?"
+    a: "Es el nombre en inglés de la ingeniería de menú: el mismo método, con las mismas cuatro categorías (stars, plowhorses, puzzles y dogs). En España se usan los dos nombres. Si buscas plantillas o software en inglés, verás menu engineering; en las guías en español, ingeniería de menú."
+  - q: "¿Hay una plantilla de ingeniería de menú en Excel gratis?"
+    a: "Sí. En aichef.pro hay una plantilla de ingeniería de menú en Excel gratis y sin registro, que se abre también en Google Sheets y LibreOffice. Trae los ocho platos del ejemplo y sitio para treinta: rellenas precio sin IVA, coste y unidades vendidas al mes, y la hoja calcula margen, peso en ventas y la clasificación de cada plato con color por cuadrante. Los dos umbrales salen solos."
 ---
 
-Llevo 29 años entre fogones y 15 asesorando restaurantes de todos los tamaños, y si hay algo que separa una cocina rentable de un agujero negro disfrazado de carta es la **ingeniería de menú restaurante**. No hablo de diseño gráfico ni de cambiar la tipografía. Hablo de cruzar dos números que tu TPV ya tiene: el **margen de contribución** —lo que te queda en caja después de pagar la materia prima de cada plato— y las **unidades vendidas**. Con ese cruce decides qué platos empujar, cuáles subir de precio, cuáles reposicionar y cuáles jubilar sin miramientos. En el sector manejamos referencias orientativas de 2026 que apuntan a que una buena **ingeniería de menú** puede subir el margen del restaurante entre un 15 % y un 25 %, y las ventas entre un 10 % y un 15 %. No es magia: es gestión de carta con método.
+Llevo 29 años entre fogones y 15 asesorando restaurantes de todos los tamaños, y si hay algo que separa una cocina rentable de un agujero negro disfrazado de carta es la **ingeniería de menú restaurante**. No hablo de diseño gráfico ni de cambiar la tipografía. Hablo de cruzar dos números que tu TPV ya tiene: el **margen de contribución** —lo que te queda en caja después de pagar la materia prima de cada plato— y las **unidades vendidas**. Con ese cruce decides qué platos empujar, cuáles subir de precio, cuáles reposicionar y cuáles jubilar sin miramientos. No es magia: es gestión de carta con método, y en mi experiencia es de lo primero que mueve el margen sin tocar el local ni la plantilla.
 
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/a4-ia-2.jpg" alt="Chef revisando precios y márgenes de la carta con calculadora y libreta de escandallos"/><figcaption>Cruzar margen de contribución y ventas es la base de una carta rentable</figcaption></figure>
 
@@ -31,7 +35,7 @@ Llevo 29 años entre fogones y 15 asesorando restaurantes de todos los tamaños,
 
 ## Qué es la ingeniería de menú (y por qué tu carta actual pierde dinero)
 
-El concepto nació en los años 70 de la mano de Kasavana y Smith en la Michigan State University, y bebe directamente de la lógica de la matriz BCG que se usa en estrategia empresarial. La **ingeniería de menú restaurante** no es más que clasificar cada plato según dos ejes: **rentabilidad** (margen de contribución) y **popularidad** (volumen de ventas). Al poner cada receta en un cuadrante, la carta deja de ser una colección de recetas bonitas y se convierte en una herramienta de negocio.
+El concepto lo popularizaron Michael Kasavana y Donald Smith, de la Michigan State University, a principios de los años ochenta (en inglés se conoce como *menu engineering*), y bebe directamente de la lógica de la matriz BCG que se usa en estrategia empresarial. La **ingeniería de menú restaurante** no es más que clasificar cada plato según dos ejes: **rentabilidad** (margen de contribución) y **popularidad** (volumen de ventas). Al poner cada receta en un cuadrante, la carta deja de ser una colección de recetas bonitas y se convierte en una herramienta de negocio.
 
 En 2026, con la materia prima y la energía disparadas, gestionar la carta “a ojo” sale carísimo. Muchos restaurantes operan a ciegas: saben cuánto facturan, pero no cuánto gana o pierde cada plato. Y un plato muy vendido con margen raquítico te puede estar comiendo la cuenta de resultados mientras aplaudes su éxito en sala. La **ingeniería de menú** te obliga a mirar los números con nombre y apellidos.
 
@@ -78,7 +82,7 @@ Ni margen ni ventas. La mayoría deben desaparecer. Solo los mantendría si cubr
 
 ## Ejemplo numérico: clasificar una carta de 8 platos
 
-Para clasificar necesitas dos umbrales, y ambos se calculan sobre TU carta. Un plato es **rentable** cuando su margen de contribución en euros supera la media de márgenes de la carta. Y es **popular** cuando sus unidades vendidas superan la media de ventas por plato. En el ejemplo de abajo, la media de margen ronda los 8,50 € y la media de ventas, unas 150 unidades al mes; con esos dos cortes, cada plato cae en su cuadrante. Los umbrales no son absolutos: lo que en un restaurante es estrella, en otro puede ser caballo.
+Para clasificar necesitas dos umbrales, y ambos se calculan sobre TU carta. Un plato es **rentable** cuando su margen de contribución en euros supera la media de márgenes de la carta. Y es **popular** cuando sus unidades vendidas superan la media de ventas por plato. En el ejemplo de abajo usamos esa versión simplificada, con medias simples: la media de margen ronda los 8,50 € y la media de ventas, unas 150 unidades al mes. El método clásico la afina con el margen ponderado y la regla del 70 %, que verás justo después. Con esos dos cortes, cada plato cae en su cuadrante. Los umbrales no son absolutos: lo que en un restaurante es estrella, en otro puede ser caballo.
 
 Aquí tienes un ejemplo con ocho platos realistas. Las cifras son mensuales y sin IVA.
 
@@ -97,16 +101,41 @@ Con la media en 8,50 € de margen y 150 unidades, la lectura sale sola. Las cro
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=carta-restaurante-rentable-ingenieria-menu-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
 
+### La Regla del 70 % para Medir la Popularidad
+
+No hace falta que un plato venda por encima de la media para ser popular: basta con que alcance el 70 % de lo que le tocaría si todos vendieran lo mismo. Es la propuesta de Kasavana y Smith, y sigue siendo el método clásico de referencia.
+
+Con 8 platos y 1.200 unidades al mes, la media son 150 por plato, así que el umbral queda en 0,7 × 150 = 105 unidades. En el ejemplo la clasificación no se mueve: la carrillera, con 85, y el bacalao, con 90, siguen por debajo. Pero con la media simple, por construcción, buena parte de la carta queda por debajo, y el 70 % es más justo. Y hazlo por familias: entrantes con entrantes, principales con principales y postres con postres. En el ejemplo mezclamos toda la carta para que se entienda, pero así los postres y el menú infantil salen peor parados de lo que son.
+
+Para la rentabilidad, el método clásico no usa la media simple del margen, sino la media ponderada por las ventas: margen total entre unidades totales. En el ejemplo, 10.232,50 € ÷ 1.200 unidades = 8,53 €, casi lo mismo que la media simple, y es el número que usa el método.
+
+## Plantilla de Ingeniería de Menú Gratis (Excel)
+
+Tienes una plantilla lista para descargar, sin registro, que se abre en Excel, Google Sheets o LibreOffice y hace las cuentas de la matriz por ti. Descárgala aquí: [plantilla de ingeniería de menú en Excel gratis](https://aichef.pro/descargas/plantilla-ingenieria-menu-gratis-aichef.xlsx).
+
+Viene con los 8 platos del ejemplo ya cargados y sitio para 30. Solo rellenas tres columnas por plato: precio sin IVA, coste —el que sale de tu escandallo— y unidades vendidas en el mes. La hoja calcula sola el margen en euros y en porcentaje, el margen total, el peso de cada plato en las ventas y la clasificación en estrella, caballo, puzzle o perro, con color por cuadrante para que lo veas de un vistazo.
+
+<figure class="wp-block-image size-large">
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/ingenieria-menu-plantilla.jpg" alt="Hoja de cálculo con los platos de la carta coloreados por cuadrante en un portátil, junto a la carta impresa"/><figcaption>La plantilla colorea cada plato según su cuadrante: estrella, caballo, puzzle o perro</figcaption></figure>
+
+Los umbrales también salen solos: el margen medio ponderado —8,53 € en el ejemplo— y la popularidad, con un desplegable para elegir entre la media (150 unidades) o la regla del 70 % (105). Al lado tienes una leyenda con lo que toca hacer en cada cuadrante, para no quedarte mirando los colores sin saber por dónde empezar.
+
+El coste de cada plato no se inventa: sale del escandallo. Para eso está la [plantilla de escandallo](https://aichef.pro/descargas/plantilla-escandallo-gratis-aichef.xlsx), también gratis.
+
+Un límite honesto: la plantilla clasifica, no decide. Qué haces con cada plato —tocar precio, ajustar ración, reescribir la descripción, moverlo de sitio en la carta— y repetir el análisis cada trimestre o al cambiar de temporada es trabajo tuyo. Si quieres el método completo, con precios por cuatro métodos y ocho Excel, está la [Guía Food Cost + Ingeniería de Menú](https://aichef.pro/guia-food-cost-ingenieria-menu), de pago único.
+
+Un consejo antes de empezar: usa ventas de un mes normal. Si en agosto cierras, no sirve; tampoco la semana de Navidad. Y repite el análisis cada trimestre o al cambiar de temporada, porque la carta cambia y los cuadrantes se mueven. Si tu carta tiene varias familias, usa una copia de la hoja para cada una.
+
 ## Psicología de precios en la carta
 
-La **ingeniería de menú restaurante** no acaba en la matriz. La forma en que presentas los precios influye en la decisión del comensal, y aquí no se trata de manipular, sino de comunicar valor sin trampas. Algunas técnicas contrastadas por estudios del sector:
+La **ingeniería de menú restaurante** no acaba en la matriz. La forma en que presentas los precios influye en la decisión del comensal, y aquí no se trata de manipular, sino de comunicar valor sin trampas. Algunas técnicas que funcionan en sala:
 
 - **Quita el símbolo del euro y alinea los precios con discreción.** Evita la columna de precios alineada a la derecha que invita a comparar solo por precio. Si pones “12,50” al final de la descripción, la atención va al plato, no al número.
 - **Huye de los precios con decimales engañosos en gama media-alta.** El “9,95” funciona en *fast casual*, pero en un restaurante con mantel transmite poca calidad. Los precios redondos comunican honestidad y oficio.
 - **Anclaje.** Coloca un plato premium con precio alto (aunque apenas lo pidan) cerca de tus estrellas y puzzles. El contraste hace que el resto parezca más razonable.
 - **Zonas calientes de la carta.** El ojo no lee de arriba abajo: se va al primer y último ítem de cada bloque y a la esquina superior derecha. Pon ahí tus estrellas y puzzles.
 - **Descripciones que venden.** Un nombre evocador más un apunte de origen o producto (“Tataki de atún rojo de almadraba con sésamo tostado”) eleva el valor percibido sin necesidad de rebajar el precio.
-- **Menos es más.** Las cartas con 7 ± 2 platos por categoría venden más y generan menos parálisis de elección. Si tienes 14 entrantes, el comensal se agobia y acaba pidiendo lo de siempre.
+- **Menos es más.** Una carta corta por categoría se lee mejor y genera menos parálisis de elección. Si tienes 14 entrantes, el comensal se agobia y acaba pidiendo lo de siempre.
 
 Estas técnicas potencian el trabajo de la matriz, pero no lo sustituyen. Si el plato no tiene margen, por mucha psicología que apliques, seguirá siendo un caballo o un perro.
 
@@ -122,12 +151,12 @@ AI Chef Pro cuenta con **más de 70 agentes de IA culinarios** en 7 idiomas con 
 
 Para la parte más operativa de la carta, puedes usar directamente el [generador de carta de menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y, si trabajas menús cerrados o eventos, el [generador de menú degustación](https://aichef.pro/generador-menu-degustacion) te ahorra horas de composición. Y como la ingeniería de menú no vive aislada, te conviene tener a mano el marco financiero completo que explico en [KPIs y métricas de rentabilidad de restaurante](https://aichef.pro/blog/rentabilidad-restaurante-kpis-metricas-2026).
 
-Puedes empezar sin compromiso. El **plan AI Chef Miembro** te da 10.000 créditos al mes por 10 €, con tarjeta. Si necesitas más músculo, el plan **Premium Pro** son 25 €/mes (85.000 créditos), el **Plus** 50 €/mes (175.000 créditos), y el plan **Max** llega a 95 €/mes con créditos ilimitados. Si prefieres el pago anual, **Max Anual** cuesta 950 €/año. Lo sensato es arrancar con el plan AI Chef Miembro, probar la matriz con tu carta real y decidir después. [Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ingenieria-menu).
+Puedes empezar sin compromiso. El **plan AI Chef Miembro** te da 10.000 créditos al mes por 10 €, con tarjeta. Si necesitas más músculo, el plan **Premium Pro** son 25 €/mes (85.000 créditos), el **Premium Plus** 50 €/mes (175.000 créditos), y el plan **Premium Max** llega a 95 €/mes con créditos ilimitados. Si prefieres el pago anual, **Premium Max anual** cuesta 950 €/año. Lo sensato es arrancar con el plan AI Chef Miembro, probar la matriz con tu carta real y decidir después. [Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ingenieria-menu).
 
 ## Plan de acción en 5 pasos
 
 1. **Exporta las ventas de tu TPV de los últimos 30-90 días.** Sin datos reales, la matriz es un ejercicio teórico.
 2. **Actualiza los escandallos y saca el margen de contribución de cada plato.** Si el coste no es real, las decisiones serán erróneas.
-3. **Clasifica cada plato en la matriz: estrellas, caballos, puzzles o perros.** Calcula los umbrales con la media de tu propia carta.
+3. **Clasifica cada plato en la matriz: estrellas, caballos, puzzles o perros.** Calcula los umbrales con los datos de tu propia carta (margen medio ponderado y regla del 70 %), familia por familia.
 4. **Aplica la acción que corresponde a cada cuadrante** y refuerza con las técnicas de psicología de precios que hemos visto.
 5. **Revisa la matriz cada trimestre.** Los costes cambian, los gustos también. La **ingeniería de menú** no es un proyecto de una vez; es un hábito de gestión que, cuando se convierte en rutina, te da una **carta rentable** trimestre tras trimestre.
