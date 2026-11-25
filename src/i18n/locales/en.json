@@ -2278,14 +2278,14 @@
   },
   "landingRecetas": {
     "seo": {
-      "title": "AI Recipes for Restaurants | AI Chef Pro",
-      "description": "Recipes with AI for restaurants. The agent drafts the dish and the chef checks it before service. 27 cuisines from Europe, Latin America and Asia.",
-      "keywords": "AI recipes restaurants, professional recipe generator, AI chef recipes, seasonal menu AI, recipe tech sheets, 27 world cuisines recipes"
+      "title": "AI Recipe Generator for Restaurants & Chefs | AI Chef Pro",
+      "description": "AI recipe generator for restaurants: give the agents your ingredients or a dish and get a draft the chef checks before service. 27 world cuisines.",
+      "keywords": "AI recipe generator, AI recipe maker, AI recipes restaurants, professional recipe generator, AI chef recipes, recipe tech sheets, 27 world cuisines recipes"
     },
     "breadcrumb": "AI Recipes for Restaurants",
     "hero": {
       "badge": "Professional AI Recipe Generator",
-      "h1": "AI Recipes for Restaurants: 27 World Cuisines",
+      "h1": "AI Recipe Generator for Restaurants: 27 World Cuisines",
       "subtitle": "You ask for the dish and the agent leaves a draft: ingredients, amounts and method. You cook it and correct it before it reaches the pass.",
       "tagline": "From concept to dish in minutes, not hours.",
       "cta_primary": "Try now",
@@ -2359,7 +2359,7 @@
       },
       {
         "title": "27 World Cuisines",
-        "description": "Access authentic recipes from 25 culinary traditions: French, Japanese, Peruvian, Italian, Mexican and much more.",
+        "description": "Recipe agents for 27 world cuisines (12 from Europe, 11 from Latin America, 4 from Asia): French, Japanese, Peruvian, Italian, Mexican and more.",
         "keywords": [
           "world cuisines",
           "international recipes",
