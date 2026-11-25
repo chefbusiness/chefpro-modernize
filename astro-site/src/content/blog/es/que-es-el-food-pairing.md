@@ -8,6 +8,7 @@ image: /blog-assets/2024/09/que-es-el-food-pairing-blog.jpg
 imageAlt: "qué es el foodpairing"
 translations:
   de: "foodpairing"
+  nl: "foodpairing"
 lang: es
 wpId: 533
 faq:
