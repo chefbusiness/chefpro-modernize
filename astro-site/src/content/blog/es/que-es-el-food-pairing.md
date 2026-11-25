@@ -9,6 +9,7 @@ imageAlt: "qué es el foodpairing"
 translations:
   de: "foodpairing"
   nl: "foodpairing"
+  pt: "food-pairing"
 lang: es
 wpId: 533
 faq:
