@@ -200,11 +200,10 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 265 posts (es 83, en 28, fr 30, de 30, it 30, pt 32, nl 32), 85 terms. A language is listed only when that glossary post is published.
 One-line definitions of these entries are in llms-full.txt.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
-- ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
 - ¿Qué es el Maíz?: [es](https://aichef.pro/blog/que-es-el-maiz)
 - ¿Qué es el procesamiento de lenguaje natural? PLN: [es](https://aichef.pro/blog/procesamiento-de-lenguaje-natural)
 - ¿Qué es la Inteligencia Artificial Generativa?: [es](https://aichef.pro/blog/que-es-la-inteligencia-artificial-generativa)
@@ -244,6 +243,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Focaccia: [es](https://aichef.pro/blog/que-es-la-focaccia) [en](https://aichef.pro/en/blog/what-is-focaccia) [fr](https://aichef.pro/fr/blog/focaccia) [de](https://aichef.pro/de/blog/focaccia) [it](https://aichef.pro/it/blog/focaccia) [pt](https://aichef.pro/pt/blog/focaccia) [nl](https://aichef.pro/nl/blog/focaccia)
 - Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
 - Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
+- Foodpairing: [es](https://aichef.pro/blog/que-es-el-food-pairing) [de](https://aichef.pro/de/blog/foodpairing) [pt](https://aichef.pro/pt/blog/food-pairing) [nl](https://aichef.pro/nl/blog/foodpairing)
 - Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
 - Gelificación: [es](https://aichef.pro/blog/gelificacion-concepto-definicion)
 - Glace de viande: [es](https://aichef.pro/blog/glace-de-viande) [en](https://aichef.pro/en/blog/glace-de-viande) [fr](https://aichef.pro/fr/blog/glace-de-viande) [de](https://aichef.pro/de/blog/fleischglace) [it](https://aichef.pro/it/blog/glace-de-viande) [pt](https://aichef.pro/pt/blog/glace-de-viande) [nl](https://aichef.pro/nl/blog/vleesglace)
@@ -258,7 +258,9 @@ One-line definitions of these entries are in llms-full.txt.
 - Maceration: [es](https://aichef.pro/blog/maceracion-concepto-definicion) [en](https://aichef.pro/en/blog/maceration-in-cooking) [fr](https://aichef.pro/fr/blog/maceration-en-cuisine) [de](https://aichef.pro/de/blog/mazeration-kochen) [it](https://aichef.pro/it/blog/macerazione-in-cucina) [pt](https://aichef.pro/pt/blog/maceracao-na-cozinha) [nl](https://aichef.pro/nl/blog/macereren-koken)
 - Maillard reaction: [es](https://aichef.pro/blog/reaccion-de-maillard) [en](https://aichef.pro/en/blog/maillard-reaction) [fr](https://aichef.pro/fr/blog/reaction-de-maillard) [de](https://aichef.pro/de/blog/maillard-reaktion) [it](https://aichef.pro/it/blog/reazione-di-maillard) [pt](https://aichef.pro/pt/blog/reacao-de-maillard) [nl](https://aichef.pro/nl/blog/maillardreactie)
 - Mandoline: [es](https://aichef.pro/blog/mandolina-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-a-mandoline-slicer) [fr](https://aichef.pro/fr/blog/mandoline-de-cuisine) [de](https://aichef.pro/de/blog/mandoline-kueche) [it](https://aichef.pro/it/blog/mandolina-da-cucina) [pt](https://aichef.pro/pt/blog/mandolina-de-cozinha) [nl](https://aichef.pro/nl/blog/mandoline-keuken)
+- Maridaje: [es](https://aichef.pro/blog/que-es-el-maridaje) [it](https://aichef.pro/it/blog/abbinamento-cibo-vino) [pt](https://aichef.pro/pt/blog/harmonizacao-de-vinhos) [nl](https://aichef.pro/nl/blog/wijn-spijscombinatie)
 - Mayonesa: [es](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
+- Menú degustación: [es](https://aichef.pro/blog/que-es-un-menu-degustacion) [fr](https://aichef.pro/fr/blog/menu-degustation) [it](https://aichef.pro/it/blog/menu-degustazione) [pt](https://aichef.pro/pt/blog/menu-degustacao)
 - Mise en Place: [es](https://aichef.pro/blog/mise-en-place)
 - Monter au beurre: [es](https://aichef.pro/blog/montar-al-burro) [en](https://aichef.pro/en/blog/monter-au-beurre) [fr](https://aichef.pro/fr/blog/monter-au-beurre) [de](https://aichef.pro/de/blog/sauce-mit-butter-montieren) [it](https://aichef.pro/it/blog/mantecare) [pt](https://aichef.pro/pt/blog/montar-na-manteiga) [nl](https://aichef.pro/nl/blog/saus-monteren-met-boter)
 - Nappé: [es](https://aichef.pro/blog/napar-una-salsa) [en](https://aichef.pro/en/blog/nap-a-sauce) [fr](https://aichef.pro/fr/blog/napper-une-sauce) [de](https://aichef.pro/de/blog/nappieren) [it](https://aichef.pro/it/blog/salsa-nappante) [pt](https://aichef.pro/pt/blog/napar-um-molho) [nl](https://aichef.pro/nl/blog/saus-napperen)
@@ -272,6 +274,7 @@ One-line definitions of these entries are in llms-full.txt.
 - Salsa bearnesa: [es](https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion)
 - Salsa holandesa: [es](https://aichef.pro/blog/salsa-holandesa-concepto-y-definicion)
 - Salsas madre de la cocina: [es](https://aichef.pro/blog/salsas-madre-cocina-guia)
+- Scheda tecnica: [it](https://aichef.pro/it/blog/scheda-tecnica-ricetta) [nl](https://aichef.pro/nl/blog/receptuur)
 - Sous vide: [es](https://aichef.pro/blog/sous-vide-concepto-definicion)
 - Starch slurry: [es](https://aichef.pro/blog/ligar-con-maicena) [en](https://aichef.pro/en/blog/starch-slurry) [fr](https://aichef.pro/fr/blog/liaison-a-la-fecule) [de](https://aichef.pro/de/blog/staerkebrei) [it](https://aichef.pro/it/blog/sospensione-di-amido) [pt](https://aichef.pro/pt/blog/papas-de-amido) [nl](https://aichef.pro/nl/blog/zetmeelpap)
 - Tapas: [es](https://aichef.pro/blog/tapas-concepto-definicion)

@@ -323,10 +323,9 @@ The hospitality glossary is no longer Spanish-only. Each language has its own ca
 
 Glossary hubs: [ES](https://aichef.pro/blog/categoria/glosario) · [EN](https://aichef.pro/en/blog/category/glossary) · [FR](https://aichef.pro/fr/blog/categorie/glossaire) · [DE](https://aichef.pro/de/blog/kategorie/glossar) · [IT](https://aichef.pro/it/blog/categoria/glossario) · [PT](https://aichef.pro/pt/blog/categoria/glossario) · [NL](https://aichef.pro/nl/blog/categorie/glossarium).
 
-Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 82 terms. A language is listed only when that glossary post is published.
+Published entries: 265 posts (es 83, en 28, fr 30, de 30, it 30, pt 32, nl 32), 85 terms. A language is listed only when that glossary post is published.
 
 - ¿Qué es el Aprendizaje Automático o Machine Learning?: [es](https://aichef.pro/blog/aprendizaje-automatico-machine-learning)
-- ¿Qué es el Food Pairing?: [es](https://aichef.pro/blog/que-es-el-food-pairing)
 - ¿Qué es el Maíz?: [es](https://aichef.pro/blog/que-es-el-maiz)
 - ¿Qué es el procesamiento de lenguaje natural? PLN: [es](https://aichef.pro/blog/procesamiento-de-lenguaje-natural)
 - ¿Qué es la Inteligencia Artificial Generativa?: [es](https://aichef.pro/blog/que-es-la-inteligencia-artificial-generativa)
@@ -380,6 +379,8 @@ Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 
   en: Focaccia is an Italian flatbread made from a yeasted dough with olive oil and salt. It is spread in a pan, dimpled with the fingers, and baked with oil on top. It comes out golden and crisp underneath, soft and open inside. It is eaten on its own, with herbs, tomato, or olives, or split as sandwich bread.
 - Foie Gras: [es](https://aichef.pro/blog/foie-gras-concepto-definicion)
 - Fond: [es](https://aichef.pro/blog/fond-concepto-y-definicion)
+- Foodpairing: [es](https://aichef.pro/blog/que-es-el-food-pairing) [de](https://aichef.pro/de/blog/foodpairing) [pt](https://aichef.pro/pt/blog/food-pairing) [nl](https://aichef.pro/nl/blog/foodpairing)
+  de: Foodpairing ist eine kulinarische Technik, bei der Zutaten nach ihren Aromastoffen kombiniert werden: Lebensmittel, die wichtige Aromaverbindungen teilen, ergänzen sich in der Regel und ergeben harmonische, oft überraschende Paarungen.
 - Gastrique: [es](https://aichef.pro/blog/gastrique) [en](https://aichef.pro/en/blog/gastrique) [fr](https://aichef.pro/fr/blog/gastrique) [de](https://aichef.pro/de/blog/gastrique) [it](https://aichef.pro/it/blog/gastrique) [pt](https://aichef.pro/pt/blog/gastrique) [nl](https://aichef.pro/nl/blog/gastrique)
   en: A gastrique is a light caramel of sugar dissolved with vinegar. It becomes a sweet-sharp syrup used as the base of sauces, especially with meat or fruit. In the sauce romaine of Le Guide Culinaire (1903), Auguste Escoffier cooks 50 g of sugar to a blond caramel and dissolves it with 150 ml of vinegar. In that book he does not use the word gastrique. He describes the preparation inside the sauce. Today it is the usual name for that base.
 - Gelificación: [es](https://aichef.pro/blog/gelificacion-concepto-definicion)
@@ -401,7 +402,11 @@ Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 
   en: The Maillard reaction browns food and gives it a toasted aroma when amino acids and sugars meet on a hot, dry surface. Water holds that surface near a boil, so the browning stalls. It is not caramelization, which only needs sugar. On the pass it is the crust on meat, the crust of bread, and the roast of coffee.
 - Mandoline: [es](https://aichef.pro/blog/mandolina-concepto-definicion) [en](https://aichef.pro/en/blog/what-is-a-mandoline-slicer) [fr](https://aichef.pro/fr/blog/mandoline-de-cuisine) [de](https://aichef.pro/de/blog/mandoline-kueche) [it](https://aichef.pro/it/blog/mandolina-da-cucina) [pt](https://aichef.pro/pt/blog/mandolina-de-cozinha) [nl](https://aichef.pro/nl/blog/mandoline-keuken)
   en: A mandoline is a slicer with a fixed blade and a runway you slide the food down. Each pass gives you slices, batons, or julienne of the same thickness. Even pieces cook evenly and look even on the plate. The blade sits in the open, so you use the hand guard and a cut-resistant glove.
+- Maridaje: [es](https://aichef.pro/blog/que-es-el-maridaje) [it](https://aichef.pro/it/blog/abbinamento-cibo-vino) [pt](https://aichef.pro/pt/blog/harmonizacao-de-vinhos) [nl](https://aichef.pro/nl/blog/wijn-spijscombinatie)
+  es: El maridaje es la combinación de comida y bebida buscando que juntas sepan mejor que por separado. No se limita al vino: también se marida con cerveza, sidra, sake, cócteles o bebidas sin alcohol. En gastronomía, es el criterio con el que se elige la bebida de cada plato, o el plato que acompaña a una bebida.
 - Mayonesa: [es](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
+- Menú degustación: [es](https://aichef.pro/blog/que-es-un-menu-degustacion) [fr](https://aichef.pro/fr/blog/menu-degustation) [it](https://aichef.pro/it/blog/menu-degustazione) [pt](https://aichef.pro/pt/blog/menu-degustacao)
+  es: Un menú degustación es un menú cerrado de varios pases pequeños que elige el chef, con un precio fijado por persona y, a menudo, la opción de maridaje. Suele servirse a toda la mesa y busca mostrar la cocina de la casa mediante un recorrido, no la suma de platos sueltos.
 - Mise en Place: [es](https://aichef.pro/blog/mise-en-place)
 - Monter au beurre: [es](https://aichef.pro/blog/montar-al-burro) [en](https://aichef.pro/en/blog/monter-au-beurre) [fr](https://aichef.pro/fr/blog/monter-au-beurre) [de](https://aichef.pro/de/blog/sauce-mit-butter-montieren) [it](https://aichef.pro/it/blog/mantecare) [pt](https://aichef.pro/pt/blog/montar-na-manteiga) [nl](https://aichef.pro/nl/blog/saus-monteren-met-boter)
   en: Monter au beurre means whisking cold butter, in pieces, into a sauce that is already hot, with the pan off the boil. The butter disperses through the sauce, gives it shine, and rounds the flavor. The French name means to mount with butter. In sauce allemande, Escoffier adds 100 g of fresh butter per liter at the moment of serving, off the heat.
@@ -420,6 +425,8 @@ Published entries: 252 posts (es 81, en 28, fr 29, de 29, it 27, pt 29, nl 29), 
 - Salsa bearnesa: [es](https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion)
 - Salsa holandesa: [es](https://aichef.pro/blog/salsa-holandesa-concepto-y-definicion)
 - Salsas madre de la cocina: [es](https://aichef.pro/blog/salsas-madre-cocina-guia)
+- Scheda tecnica: [it](https://aichef.pro/it/blog/scheda-tecnica-ricetta) [nl](https://aichef.pro/nl/blog/receptuur)
+  it: Una scheda tecnica di cucina è il documento che descrive un piatto con il dettaglio sufficiente perché esca uguale chiunque lo cucini: ingredienti con pesi netti e lordi, preparazione passo passo con tempi e temperature, allergeni, conservazione, impiattamento e costo per porzione. Serve a standardizzare, formare la brigata e controllare il food cost.
 - Sous vide: [es](https://aichef.pro/blog/sous-vide-concepto-definicion)
 - Starch slurry: [es](https://aichef.pro/blog/ligar-con-maicena) [en](https://aichef.pro/en/blog/starch-slurry) [fr](https://aichef.pro/fr/blog/liaison-a-la-fecule) [de](https://aichef.pro/de/blog/staerkebrei) [it](https://aichef.pro/it/blog/sospensione-di-amido) [pt](https://aichef.pro/pt/blog/papas-de-amido) [nl](https://aichef.pro/nl/blog/zetmeelpap)
   en: A starch slurry is starch (cornstarch, potato starch, or arrowroot) stirred into a little cold liquid and then whisked into a hot sauce to thicken it. For an everyday sauce, a good starting point is 8 g (1 level tablespoon) of cornstarch mixed with 30 ml (2 tablespoons) of cold water for every 250 ml (about 1 cup) of sauce. Escoffier used arrowroot for his jus de veau lié: 30 g for every liter of reduced veal stock.
