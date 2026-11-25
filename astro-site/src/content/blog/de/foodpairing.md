@@ -7,6 +7,7 @@ category: glossar
 tags: ["Foodpairing", "Aromen", "Molekularküche"]
 translations:
   es: "que-es-el-food-pairing"
+  nl: "foodpairing"
 image: /blog-assets/2026/11/foodpairing-destacada-de.jpg
 imageAlt: "Sechs Foodpairing-Paare von oben auf einem Eichenbrett: Erdbeere und Basilikum, Tomate und Vanille, Blauschimmelkäse und Zartbitterschokolade, Kaffee und Schweinefleisch, Auster und Maracuja, Banane und Petersilie"
 lang: de

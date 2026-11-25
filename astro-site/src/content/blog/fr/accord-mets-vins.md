@@ -8,6 +8,7 @@ tags: ["accord mets-vins", "vin et fromage", "sommellerie", "menu dégustation"]
 translations:
   es: "que-es-el-maridaje"
   it: "abbinamento-cibo-vino"
+  nl: "wijn-spijscombinatie"
 lang: fr
 image: /blog-assets/2026/11/accord-mets-vins-destacada.jpg
 imageAlt: "Un serveur verse un vin blanc à côté d'un bar grillé au beurre blanc sur une nappe blanche de bistrot"

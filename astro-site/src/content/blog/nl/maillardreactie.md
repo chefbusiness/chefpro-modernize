@@ -2,7 +2,7 @@
 title: "Maillardreactie: wat het is, en wat het niet is"
 description: "De Maillardreactie bruint aminozuren en suikers op een droog oppervlak. Water remt haar. Het is geen karamelliseren, dat alleen suiker nodig heeft."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-25
 category: glossarium
 tags: ["Maillardreactie", "bruinen", "karamel", "aanbraden"]
 lang: nl
@@ -43,7 +43,7 @@ De Maillardreactie bruint en geeft een geroosterd aroma als aminozuren en suiker
 
 In 1912 beschreef de Franse chemicus Louis-Camille Maillard hoe aminogroepen in eiwitten de carbonylgroep van bepaalde suikers ontmoeten zodra er warmte bij komt. Die eerste ontmoeting loopt uit in een cascade. De kok ziet bruine pigmenten, de melanoidinen, en ruikt noot, brood, gebraden vlees of koffie. Het is niet één reactie. Ze hangt af van de suiker en van de aminozuren, en ze wil een droog oppervlak. Water belet dat oppervlak om boven het kookpunt te klimmen, en het verdunt de partners.
 
-U ontmoet haar in elke service: de korst van een brood, de socarrat van een paella, dulce de leche dat in de pan donkerder wordt, een steak op de plancha, gebrande koffie. De gemeenschappelijke voorwaarde is dezelfde. De contactzone ligt niet in vloeistof, en ze is heet genoeg om de reactie te laten lopen.
+U ontmoet haar in elke service: de korst van een brood, de socarrat van een paella, dulce de leche dat in de pan donkerder wordt, een steak op de plancha, gebrande koffie (waarom die geroosterde tonen bij andere ingrediënten passen, leest u in [foodpairing](https://aichef.pro/nl/blog/foodpairing)). De gemeenschappelijke voorwaarde is dezelfde. De contactzone ligt niet in vloeistof, en ze is heet genoeg om de reactie te laten lopen.
 
 Gezocht wordt Maillardreactie, ook Maillard-reactie met een streepje, en vaak alleen Maillard. De oude Spaanse slug die op -2 eindigde, wijst naar de Spaanse fiche. Deze pagina is de Nederlandse.
 
