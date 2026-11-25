@@ -2147,7 +2147,7 @@
       },
       {
         "title": "Allergènes & Réglementation",
-        "description": "Contrôle des 14 allergènes selon le Règlement UE 1169/2011. Évitez les sanctions et protégez vos clients.",
+        "description": "Relecture des 14 allergènes de l'annexe II à partir de ce que vous saisissez. Le cuisinier confronte l'étiquette, la recette et le contact croisé.",
         "keywords": [
           "allergènes restaurant",
           "réglementation allergènes UE",
@@ -2665,7 +2665,7 @@
       },
       {
         "title": "Vérificateur d'Allergènes",
-        "description": "Identifiez les 14 allergènes à déclaration obligatoire dans n'importe quel plat.",
+        "description": "Compare les ingrédients du plat aux 14 allergènes de l'annexe II et renvoie un brouillon.",
         "badge": "Légal",
         "color": "red"
       },
@@ -3272,14 +3272,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Vérificateur d'Allergènes Restaurant Gratuit | AI Chef Pro",
-      "description": "Détectez les 14 allergènes à déclaration obligatoire dans n'importe quel plat. Saisissez les ingrédients et obtenez la déclaration. Gratuit, sans inscription.",
+      "description": "Il compare les ingrédients que vous saisissez aux 14 allergènes de l'annexe II et renvoie un brouillon. La validation finale est au cuisinier. Gratuit, sans inscription.",
       "keywords": "vérificateur allergènes restaurant, allergènes obligatoires restaurant, déclaration allergènes"
     },
     "breadcrumb": "Vérificateur d'Allergènes",
     "hero": {
       "badge": "Gratuit — Sans inscription — Obligatoire par loi",
       "h1": "Vérificateur d'Allergènes pour Restaurants",
-      "subtitle": "Identifiez les 14 allergènes à déclaration obligatoire (Règlement UE 1169/2011) dans n'importe quel plat instantanément.",
+      "subtitle": "Vous saisissez les ingrédients et il les compare aux 14 allergènes de l'annexe II du règlement (UE) 1169/2011. Il renvoie un brouillon : le cuisinier ou le responsable fait la validation finale, avec l'étiquette du fournisseur, la recette et le contact croisé.",
       "cta_tool": "Aller au vérificateur ↓",
       "cta_premium": "Plan Premium →"
     },
@@ -3293,7 +3293,7 @@
       "result_title": "Allergènes détectés",
       "allergens_found": "Allergènes présents",
       "no_allergens": "✅ Aucun allergène à déclaration obligatoire détecté",
-      "warning": "⚠️ Vérifiez toujours manuellement — cet outil est indicatif",
+      "warning": "⚠️ Brouillon indicatif. Le cuisinier confronte l'étiquette du fournisseur, la recette et le contact croisé.",
       "legal_note": "Déclaration obligatoire selon Règlement UE 1169/2011",
       "copy": "Copier la déclaration",
       "copied": "Copié !",
@@ -3314,7 +3314,7 @@
       "pdf_present": "PRÉSENT",
       "pdf_not_detected": "Non détecté",
       "pdf_no_allergens": "Aucun allergène à déclaration obligatoire détecté",
-      "pdf_warning": "⚠ Outil indicatif. Toujours vérifier manuellement avant utilisation.",
+      "pdf_warning": "⚠ Brouillon indicatif. Confronter l'étiquette du fournisseur, la recette et le contact croisé.",
       "pdf_generated_by": "Généré avec AI Chef Pro — aichef.pro | Suite IA pour Chefs et Restaurants"
     },
     "allergens": [
@@ -3561,18 +3561,18 @@
         },
         {
           "step": "3",
-          "title": "Copiez la déclaration",
-          "description": "Obtenez la déclaration d'allergènes prête pour votre carte ou système de gestion."
+          "title": "Relisez le brouillon",
+          "description": "Avant de le passer à la carte, le cuisinier ou le responsable confronte le brouillon à l'étiquette du fournisseur, à la recette et au contact croisé."
         }
       ]
     },
     "benefits": {
       "title": "Pourquoi utiliser le vérificateur d'allergènes",
       "items": [
-        "Conformité au Règlement UE 1169/2011 (obligatoire)",
-        "Protégez vos clients allergiques",
-        "Évitez des amendes jusqu'à 600 000€",
-        "Déclaration prête pour votre carte digitale"
+        "Compare ce que vous saisissez aux 14 allergènes de l'annexe II",
+        "Vous aide à ne pas oublier un allergène de cette liste en relisant le plat",
+        "Le brouillon ne remplace pas la déclaration de l'établissement",
+        "Un brouillon pour la carte, après la relecture en cuisine"
       ]
     },
     "testimonial": {
@@ -3628,7 +3628,7 @@
       },
       {
         "q": "Cet outil est-il 100% fiable légalement ?",
-        "a": "Cet outil est indicatif. La responsabilité légale incombe toujours à l'établissement. Vérifiez manuellement les ingrédients et les contaminations croisées possibles."
+        "a": "Cet outil est indicatif. La responsabilité légale incombe toujours à l'établissement. Le cuisinier ou le responsable confronte l'étiquette du fournisseur, la recette et le contact croisé avant d'utiliser le brouillon."
       }
     ],
     "cta_section": {

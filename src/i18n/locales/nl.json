@@ -2413,7 +2413,7 @@
       },
       {
         "title": "Allergenen & Regelgeving",
-        "description": "Controle van de 14 allergenen conform EU-verordening 1169/2011. Vermijd boetes en bescherm uw gasten.",
+        "description": "Controle van de 14 allergenen van bijlage II op basis van wat u invoert. De kok legt etiket, recept en kruiscontact ernaast.",
         "keywords": [
           "restaurantallergenen",
           "EU-allergerenverordening",
@@ -2911,7 +2911,7 @@
       },
       {
         "title": "Allergenen Checker",
-        "description": "Identificeer alle 14 verplicht te vermelden allergenen in elk gerecht direct.",
+        "description": "Vergelijkt de ingrediënten van het gerecht met de 14 allergenen van bijlage II en geeft een concept terug.",
         "badge": "Juridisch",
         "color": "red"
       },
@@ -3514,14 +3514,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Allergenendetector Restaurant Gratis | AI Chef Pro",
-      "description": "Detecteer de 14 verplicht te vermelden allergenen in elk gerecht direct. Voer de ingrediënten in en krijg de allergenendeclaratie. Gratis, zonder registratie.",
+      "description": "Het vergelijkt de ingrediënten die u invoert met de 14 allergenen van bijlage II en geeft een concept terug. De eindcontrole is aan de kok. Gratis, zonder registratie.",
       "keywords": "allergenendetector restaurant, verplichte allergenen restaurant, allergenendeclaratie gerecht, verordening 1169 2011"
     },
     "breadcrumb": "Allergenendetector",
     "hero": {
       "badge": "Gratis — Geen registratie — Wettelijk verplicht",
       "h1": "Allergenendetector voor Restaurants",
-      "subtitle": "Identificeer de 14 verplicht te vermelden allergenen (EU-Verordening 1169/2011) in elk gerecht direct. Kopieer de declaratie voor uw menukaart.",
+      "subtitle": "U voert de ingrediënten in en de tool vergelijkt ze met de 14 allergenen van bijlage II van Verordening (EU) 1169/2011. U krijgt een concept: de kok of de verantwoordelijke doet de eindcontrole, met het etiket van de leverancier, het recept en kruiscontact.",
       "cta_tool": "Naar de detector ↓",
       "cta_premium": "Premium Plan →"
     },
@@ -3535,7 +3535,7 @@
       "result_title": "Gedetecteerde allergenen",
       "allergens_found": "Aanwezige allergenen",
       "no_allergens": "✅ Er zijn geen verplicht te vermelden allergenen gedetecteerd",
-      "warning": "⚠️ Altijd handmatig controleren — dit tool is oriënterend",
+      "warning": "⚠️ Oriënterend concept. De kok legt het etiket van de leverancier, het recept en het kruiscontact ernaast.",
       "legal_note": "Verplichte declaratie conform EU-Verordening 1169/2011",
       "copy": "Declaratie kopiëren",
       "copied": "Gekopieerd!",
@@ -3556,7 +3556,7 @@
       "pdf_present": "AANWEZIG",
       "pdf_not_detected": "Niet gedetecteerd",
       "pdf_no_allergens": "Geen verplicht te vermelden allergenen gedetecteerd",
-      "pdf_warning": "⚠ Indicatief hulpmiddel. Altijd handmatig controleren voor gebruik.",
+      "pdf_warning": "⚠ Oriënterend concept. Etiket van de leverancier, recept en kruiscontact ernaast leggen.",
       "pdf_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI-suite voor Chefs en Restaurants"
     },
     "allergens": [
@@ -3804,18 +3804,18 @@
         },
         {
           "step": "3",
-          "title": "Declaratie kopiëren",
-          "description": "Ontvang de allergenendeclaratie klaar om toe te voegen aan uw menukaart, website of beheersysteem."
+          "title": "Controleer het concept",
+          "description": "Voordat het op de kaart komt, legt de kok of de verantwoordelijke het concept naast het etiket van de leverancier, het recept en het kruiscontact."
         }
       ]
     },
     "benefits": {
       "title": "Waarom de allergenendetector gebruiken",
       "items": [
-        "Voldoe aan EU-Verordening 1169/2011 (verplicht)",
-        "Bescherm uw klanten met allergieën",
-        "Vermijd boetes tot 600.000 €",
-        "Declaratie klaar voor uw digitale menukaart"
+        "Vergelijkt wat u invoert met de 14 allergenen van bijlage II",
+        "Helpt u geen allergeen van die lijst over het hoofd te zien bij het nakijken van een gerecht",
+        "Het concept vervangt niet de verklaring van de zaak",
+        "Een concept voor de kaart, na de controle in de keuken"
       ]
     },
     "testimonial": {
@@ -3871,7 +3871,7 @@
       },
       {
         "q": "Is dit tool 100% juridisch betrouwbaar?",
-        "a": "Dit tool is oriënterend en ondersteunend bedoeld. De juridische verantwoordelijkheid ligt altijd bij het etablissement. U moet de ingrediënten en mogelijke kruisbesmettingen handmatig controleren. Voor volledig en gecertificeerd beheer, gebruik AI Chef Pro Premium."
+        "a": "Dit tool is oriënterend. De juridische verantwoordelijkheid ligt altijd bij de zaak. De kok of de verantwoordelijke legt het etiket van de leverancier, het recept en het kruiscontact ernaast voordat het concept wordt gebruikt."
       }
     ],
     "cta_section": {

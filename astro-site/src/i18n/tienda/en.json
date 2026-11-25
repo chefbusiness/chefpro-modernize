@@ -29,7 +29,7 @@
     },
     {
       "title": "Allergen Detector",
-      "desc": "Spot the allergens in your recipes automatically",
+      "desc": "Compares the ingredients you type with the 14 Annex II allergens. The cook checks the draft.",
       "href": "/en/restaurant-allergen-detector"
     },
     {

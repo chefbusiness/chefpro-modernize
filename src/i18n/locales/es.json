@@ -2125,7 +2125,7 @@
       },
       {
         "title": "Alérgenos y Normativa",
-        "description": "Control de los 14 alérgenos según el Reglamento UE 1169/2011. Evita sanciones y protege a tus clientes.",
+        "description": "Revisión de los 14 alérgenos del anexo II a partir de lo que escribes. El cocinero contrasta etiqueta, receta y contacto cruzado.",
         "keywords": [
           "alérgenos restaurante",
           "normativa alérgenos UE",
@@ -2209,7 +2209,7 @@
       },
       {
         "question": "¿AI Chef Pro cumple con la normativa de alérgenos?",
-        "answer": "Sí. El sistema identifica los 14 alérgenos según el Reglamento UE 1169/2011 y genera fichas técnicas que cumplen con la normativa europea vigente. Fundamental para evitar sanciones y proteger la salud de tus clientes."
+        "answer": "Revisas los 14 alérgenos del Reglamento (UE) 1169/2011 a partir de los ingredientes que escribes. La herramienta devuelve un borrador y la validación final es del cocinero o del responsable, contrastando la etiqueta del proveedor, la receta y el contacto cruzado. Esa revisión puede ir en la ficha técnica."
       },
       {
         "question": "¿Necesito instalar algún programa en mi ordenador?",
@@ -2631,7 +2631,7 @@
       },
       {
         "title": "Detector de Alérgenos",
-        "description": "Identifica los 14 alérgenos de obligatoria declaración en cualquier plato al instante.",
+        "description": "Compara los ingredientes del plato con los 14 alérgenos del anexo II y devuelve un borrador.",
         "badge": "Legal",
         "color": "red"
       },
@@ -3234,14 +3234,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Detector Alérgenos Restaurante Gratis | AI Chef Pro",
-      "description": "Detecta los 14 alérgenos de declaración obligatoria en cualquier plato al instante. Introduce los ingredientes y obtén la ficha de alérgenos. Gratis, sin registro.",
+      "description": "Compara los ingredientes que escribes con los 14 alérgenos del anexo II y devuelve un borrador. La validación final es del cocinero. Gratis, sin registro.",
       "keywords": "detector alergenos restaurante, alergenos obligatorios restaurante, ficha alergenos plato, reglamento 1169 2011"
     },
     "breadcrumb": "Detector de Alérgenos",
     "hero": {
       "badge": "Gratis — Sin registro — Obligatorio por ley",
       "h1": "Detector de Alérgenos para Restaurantes",
-      "subtitle": "Identifica los 14 alérgenos de declaración obligatoria (Reglamento EU 1169/2011) en cualquier plato al instante. Copia la ficha para tu carta.",
+      "subtitle": "Escribes los ingredientes y los compara con los 14 alérgenos del anexo II del Reglamento (UE) 1169/2011. Devuelve un borrador: la validación final es del cocinero o del responsable, con la etiqueta del proveedor, la receta y el contacto cruzado.",
       "cta_tool": "Ir al detector ↓",
       "cta_premium": "Plan Premium →"
     },
@@ -3255,7 +3255,7 @@
       "result_title": "Alérgenos detectados",
       "allergens_found": "Alérgenos presentes",
       "no_allergens": "✅ No se han detectado alérgenos de declaración obligatoria",
-      "warning": "⚠️ Revisa siempre manualmente — esta herramienta es orientativa",
+      "warning": "⚠️ Borrador orientativo. El cocinero contrasta la etiqueta del proveedor, la receta y el contacto cruzado.",
       "legal_note": "Declaración obligatoria según Reglamento EU 1169/2011",
       "copy": "Copiar ficha",
       "copied": "¡Copiado!",
@@ -3276,7 +3276,7 @@
       "pdf_present": "PRESENTE",
       "pdf_not_detected": "No detectado",
       "pdf_no_allergens": "No se han detectado alérgenos de declaración obligatoria",
-      "pdf_warning": "⚠ Herramienta orientativa. Verificar siempre manualmente antes de su uso.",
+      "pdf_warning": "⚠ Borrador orientativo. Contrastar etiqueta del proveedor, receta y contacto cruzado.",
       "pdf_generated_by": "Generado con AI Chef Pro — aichef.pro | Suite de IA para Chefs y Restaurantes"
     },
     "allergens": [
@@ -3523,18 +3523,18 @@
         },
         {
           "step": "3",
-          "title": "Copia la ficha",
-          "description": "Obtén la ficha de alérgenos lista para añadir a tu carta, web o sistema de gestión."
+          "title": "Revisa el borrador",
+          "description": "Antes de pasarlo a la carta, el cocinero o el responsable contrasta el borrador con la etiqueta del proveedor, la receta y el contacto cruzado."
         }
       ]
     },
     "benefits": {
       "title": "Por qué usar el detector de alérgenos",
       "items": [
-        "Cumple con el Reglamento EU 1169/2011 (obligatorio)",
-        "Protege a tus clientes con alergias",
-        "Evita sanciones de hasta 600.000€",
-        "Ficha lista para incluir en tu carta digital"
+        "Compara lo que escribes con los 14 alérgenos del anexo II",
+        "Te ayuda a no dejar fuera un alérgeno de esa lista al revisar el plato",
+        "El borrador no sustituye la declaración del establecimiento",
+        "Sirve de borrador para la carta, después de la revisión en cocina"
       ]
     },
     "testimonial": {
@@ -3590,7 +3590,7 @@
       },
       {
         "q": "¿Esta herramienta es 100% fiable legalmente?",
-        "a": "Esta herramienta es orientativa y de ayuda. La responsabilidad legal recae siempre en el establecimiento. Debes verificar manualmente los ingredientes y sus posibles contaminaciones cruzadas. Para una gestión completa y auditada, usa AI Chef Pro Premium."
+        "a": "Esta herramienta es orientativa y de ayuda. La responsabilidad legal recae siempre en el establecimiento. El cocinero o el responsable contrasta la etiqueta del proveedor, la receta y el contacto cruzado antes de usar el borrador."
       }
     ],
     "cta_section": {

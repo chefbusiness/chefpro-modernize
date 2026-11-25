@@ -1937,7 +1937,7 @@
         "Erstellen Sie eine vollständige Karte in Stunden, nicht Wochen",
         "Identifizieren Sie Star-Gerichte, die Marge und Umsatz maximieren",
         "Schreiben Sie Beschreibungen, die Appetit machen und den Bon erhöhen",
-        "Verwalten Sie die 14 gesetzlichen Allergene fehlerlos",
+        "Hilft Ihnen, die 14 gesetzlichen Allergene der Karte zu prüfen; die letzte Kontrolle liegt bei Ihnen",
         "Erneuern Sie die Karte jede Saison ohne von vorne anzufangen",
         "Passen Sie das Menü für internationale Gäste in verschiedene Sprachen an"
       ]
@@ -2431,7 +2431,7 @@
       },
       {
         "title": "Allergene & Compliance",
-        "description": "Kontrolle der 14 Allergene gemäß EU-Verordnung 1169/2011. Vermeiden Sie Bußgelder und schützen Sie Ihre Gäste.",
+        "description": "Prüfung der 14 Allergene des Anhangs II anhand dessen, was Sie eingeben. Der Koch gleicht Etikett, Rezeptur und Kreuzkontakt ab.",
         "keywords": [
           "Restaurant-Allergene",
           "EU-Allergenverordnung",
@@ -2933,7 +2933,7 @@
       },
       {
         "title": "Allergen-Checker",
-        "description": "Identifizieren Sie alle 14 kennzeichnungspflichtigen Allergene in jedem Gericht sofort.",
+        "description": "Vergleicht die Zutaten des Gerichts mit den 14 Allergenen des Anhangs II und gibt einen Entwurf zurück.",
         "badge": "Legal",
         "color": "red"
       },
@@ -3540,14 +3540,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Allergenkontrolle Restaurant Kostenlos | AI Chef Pro",
-      "description": "Erkennen Sie die 14 deklarationspflichtigen Allergene in jedem Gericht sofort. Geben Sie die Zutaten ein und erhalten Sie die Allergendeklaration. Kostenlos, ohne Registrierung.",
+      "description": "Es vergleicht die Zutaten, die Sie eingeben, mit den 14 Allergenen des Anhangs II und gibt einen Entwurf zurück. Die letzte Prüfung macht der Koch. Kostenlos, ohne Registrierung.",
       "keywords": "allergenkontrolle restaurant, pflichtallergene restaurant, allergendeklaration gericht, verordnung 1169 2011"
     },
     "breadcrumb": "Allergendetektor",
     "hero": {
       "badge": "Kostenlos — Keine Registrierung — Gesetzlich vorgeschrieben",
       "h1": "Allergendetektor für Restaurants",
-      "subtitle": "Identifizieren Sie die 14 deklarationspflichtigen Allergene (EU-Verordnung 1169/2011) in jedem Gericht sofort. Kopieren Sie die Deklaration für Ihre Speisekarte.",
+      "subtitle": "Sie geben die Zutaten ein und das Tool vergleicht sie mit den 14 Allergenen des Anhangs II der EU-Verordnung 1169/2011. Es gibt einen Entwurf zurück: der Koch oder die verantwortliche Person prüft Etikett des Lieferanten, Rezeptur und Kreuzkontakt.",
       "cta_tool": "Zum Detektor ↓",
       "cta_premium": "Premium-Plan →"
     },
@@ -3561,7 +3561,7 @@
       "result_title": "Erkannte Allergene",
       "allergens_found": "Vorhandene Allergene",
       "no_allergens": "✅ Es wurden keine deklarationspflichtigen Allergene erkannt",
-      "warning": "⚠️ Immer manuell prüfen — dieses Tool ist orientierend",
+      "warning": "⚠️ Orientierender Entwurf. Der Koch gleicht Lieferantenetikett, Rezeptur und Kreuzkontakt ab.",
       "legal_note": "Pflichtdeklaration gemäß EU-Verordnung 1169/2011",
       "copy": "Deklaration kopieren",
       "copied": "Kopiert!",
@@ -3582,7 +3582,7 @@
       "pdf_present": "VORHANDEN",
       "pdf_not_detected": "Nicht erkannt",
       "pdf_no_allergens": "Keine deklarationspflichtigen Allergene erkannt",
-      "pdf_warning": "⚠ Orientierungstool. Immer manuell prüfen vor Verwendung.",
+      "pdf_warning": "⚠ Orientierender Entwurf. Lieferantenetikett, Rezeptur und Kreuzkontakt abgleichen.",
       "pdf_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche und Restaurants"
     },
     "allergens": [
@@ -3833,18 +3833,18 @@
         },
         {
           "step": "3",
-          "title": "Deklaration kopieren",
-          "description": "Erhalten Sie die Allergendeklaration, die Sie in Ihre Speisekarte, Website oder Ihr Verwaltungssystem einfügen können."
+          "title": "Entwurf prüfen",
+          "description": "Bevor er auf die Karte kommt, gleicht der Koch oder die verantwortliche Person den Entwurf mit dem Lieferantenetikett, der Rezeptur und dem Kreuzkontakt ab."
         }
       ]
     },
     "benefits": {
       "title": "Warum den Allergendetektor verwenden",
       "items": [
-        "Erfüllen Sie die EU-Verordnung 1169/2011 (Pflicht)",
-        "Schützen Sie Ihre Kunden mit Allergien",
-        "Vermeiden Sie Bußgelder von bis zu 600.000 €",
-        "Deklaration bereit für Ihre digitale Speisekarte"
+        "Vergleicht Ihre Eingabe mit den 14 Allergenen des Anhangs II",
+        "Hilft Ihnen, bei der Prüfung eines Gerichts kein Allergen dieser Liste zu übersehen",
+        "Der Entwurf ersetzt nicht die Angabe des Betriebs",
+        "Ein Entwurf für die Karte, nach der Prüfung in der Küche"
       ]
     },
     "testimonial": {
@@ -3900,7 +3900,7 @@
       },
       {
         "q": "Ist dieses Tool 100 % rechtlich zuverlässig?",
-        "a": "Dieses Tool ist orientierend und zur Unterstützung gedacht. Die rechtliche Verantwortung liegt immer beim Betrieb. Sie müssen die Zutaten und mögliche Kreuzkontaminationen manuell überprüfen. Für eine vollständige und geprüfte Verwaltung verwenden Sie AI Chef Pro Premium."
+        "a": "Dieses Tool ist orientierend. Die rechtliche Verantwortung liegt immer beim Betrieb. Der Koch oder die verantwortliche Person gleicht Lieferantenetikett, Rezeptur und Kreuzkontakt ab, bevor der Entwurf verwendet wird."
       }
     ],
     "cta_section": {
