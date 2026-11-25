@@ -145,7 +145,7 @@ Voici un exemple chiffré, avec six verres de 8 cl et des bouteilles de 75 cl. L
 | Coteaux-du-layon | 15,00 € | 1,60 € |
 | Total | | 10,45 € |
 
-Avec un coût boisson cible de 25 % (exemple), la formule doit se vendre 10,45 ÷ 0,25 = 41,80 € HT. Avec la TVA à 20 % sur les boissons alcoolisées, cela donne 50,16 € TTC. Affichée à 52,00 € TTC sur la carte, la formule laisse un coût boisson réel de 24,1 % : vous êtes dans la cible, avec un peu de marge.
+Avec un coût boisson cible de 25 % (exemple), la formule doit se vendre 10,45 ÷ 0,25 = 41,80 € HT. Avec la TVA à 20 % sur les boissons alcoolisées, cela donne 50,16 € TTC. Affichée à 52,00 € TTC sur la carte, la formule laisse un coût boisson réel de 24,1 % : vous êtes dans la cible, avec un peu de marge. Pour chiffrer le menu que ces verres accompagnent, voyez comment se construit et se tarife un [menu dégustation](https://aichef.pro/fr/blog/menu-degustation).
 
 Pour simplifier, le tableau n'applique pas de perte : en pratique, on compte 9 verres par bouteille, pas 9,4. Les liquoreux viennent souvent en plus petit format : adaptez le calcul à vos bouteilles réelles. Pour intégrer ce coût dans votre carte et arbitrer vos marges plat par plat, appuyez-vous sur le [menu engineering](https://aichef.pro/fr/blog/menu-engineering).
 
