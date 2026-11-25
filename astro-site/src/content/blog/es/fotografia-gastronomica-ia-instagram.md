@@ -103,6 +103,9 @@ Los tres ángulos que debes dominar se resumen en esta tabla:
 
 Con estas pautas, cada plato encuentra su encuadre natural. Y si dudas entre dos ángulos, haz ambas tomas; la edición posterior te ayudará a decidir.
 
+Si además quieres grabar el plato en vídeo, tienes [cómo hacer vídeos de recetas con IA](https://aichef.pro/blog/como-hacer-videos-de-recetas-con-ia).
+
+
 ## Edición con IA paso a paso, sin exagerar
 
 El objetivo de la edición no es convertir tu plato en una ilustración. Es **devolver a la imagen lo que el ojo veía en la mesa** y prepararla para el formato de Instagram. Este flujo te lleva de una foto cruda a una imagen lista para publicar en pocos toques:

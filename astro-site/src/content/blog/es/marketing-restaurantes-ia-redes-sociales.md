@@ -69,7 +69,7 @@ La IA te ayuda a sacar los copys para cada pieza en el tono de tu casa. Antes de
 
 TikTok es el canal donde muestras lo que el comensal nunca ve. Sin maquillar. Una cámara apoyada en la encimera grabando cómo montas 12 raciones en tres minutos puede tener más alcance que un anuncio pagado. No necesitas ediciones perfectas; el algoritmo premia la autenticidad y la retención.
 
-Piensa en piezas como “llega el proveedor de verdura a las 7 a. m.”, “cómo limpiamos el horno en 30 segundos” o “el plato que más sale un sábado noche”. Son vídeos de 15 a 40 segundos que grabas durante el servicio con el móvil. La IA te redacta el guion en segundos y te sugiere hashtags según tendencia local.
+Piensa en piezas como “llega el proveedor de verdura a las 7 a. m.”, “cómo limpiamos el horno en 30 segundos” o “el plato que más sale un sábado noche”. Son vídeos de 15 a 40 segundos que grabas durante el servicio con el móvil. La IA te redacta el guion en segundos y te sugiere hashtags según tendencia local. Tienes el paso a paso, con un guion de 30 segundos por planos, en [cómo hacer vídeos de recetas con IA](https://aichef.pro/blog/como-hacer-videos-de-recetas-con-ia).
 
 Para que no se convierta en otra obligación, asigna un día fijo de grabación (el martes a primera hora funciona bien) y edita en lote con una app sencilla. Dos tiktoks semanales bastan para que el canal empuje tu visibilidad.
 
