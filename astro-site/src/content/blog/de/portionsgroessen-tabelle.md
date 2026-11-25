@@ -1,8 +1,8 @@
 ---
-title: "Portionsgrößen-Tabelle für die Gastronomie: Wie viel Gramm pro Person — von à la carte bis Buffet"
-description: "Portionsgrößen-Tabelle für Erwachsene à la carte: Gramm pro Person für Fleisch, Gemüse, Kartoffeln, Suppe und Dessert, plus Buffet und Menü."
+title: "Wie viel Gramm pro Person? Portionsgrößen-Tabelle: Kartoffeln, Fleisch, Gemüse"
+description: "Pro Person: 200–250 g Kartoffeln, 150–200 g Gemüse, 150–200 g Fleisch (roh, ohne Knochen), 80–100 g Nudeln. Tabelle für à la carte, Menü und Buffet."
 pubDate: 2026-08-19
-modDate: 2026-10-22
+modDate: 2026-11-25
 category: restaurant-management
 tags: ["portionsgrößen", "portionsgrößen tabelle", "kalkulation", "gastronomie"]
 image: /blog-assets/2026/08/portionen-destacada.jpg
@@ -30,6 +30,8 @@ faq:
 <p>In Küche A und Küche B hängt dieselbe Karte, und beide Küchen führen dasselbe Schnitzel als Aushängeschild. In Küche A kommt jeden Abend ein 180-Gramm-Stück auf den Teller – gewogen, vorportioniert, kompromisslos gleich. In Küche B entscheidet die Tagesform: Mal sind es 150 Gramm, mal 220, an hektischen Abenden auch 230. Der Gast merkt den Unterschied selten, aber die Bilanz am Monatsende merkt ihn sehr genau. Wer vier Wochen lang ohne System portioniert, verschenkt Monat für Monat eine vierstellige Summe – ohne dass ein einziger Gast mehr bestellt oder besser gegessen hätte. Dabei würde der Unterschied sofort auffallen, wenn man zwei Teller nebeneinanderstellte: Das eine Schnitzel wirkt karg, das andere üppig – und beide kommen aus derselben Küche.</p>
 
 <p>Portionsgrößen sind in der Gastronomie kein Thema für Ernährungsportale, sondern die Grundlage Ihrer Kalkulation. Als Richtwert rechnet die Profiküche pro Person mit 150 bis 200 g Fleisch (Rohgewicht, ohne Knochen), 150 bis 200 g Gemüse und einer Sättigungsbeilage von 60 bis 100 g Rohgewicht bei Reis oder Nudeln bzw. 200 bis 250 g bei Kartoffeln – im mehrgängigen Menü entsprechend weniger. Wer diese Zahlen kennt und konsequent einhält, arbeitet nicht gegen die Kalkulation, sondern mit ihr. In diesem Artikel zeigen wir Ihnen, wo die klassischen Fehler lauern, wie Sie Portionsgrößen für Menü, Buffet und Gemeinschaftsverpflegung planen und welche Werkzeuge Ihnen helfen, jeden Teller zur gleichen Rechnung zu machen.</p>
+
+<p>Für die Küchenwand: Die <a href="https://aichef.pro/descargas/portionsgroessen-tabelle-gastronomie-aichef.pdf">Portionsgrößen-Tabelle als PDF</a> passt auf eine A4-Seite, kostenlos und ohne Anmeldung.</p>
 
 <h2>Wie viel Gramm pro Person? Die Richtwerte im Überblick</h2>
 
@@ -63,6 +65,8 @@ faq:
 <tr><td>Dessert</td><td>80 bis 120 g</td><td>im Menü am unteren Ende</td></tr>
 </tbody>
 </table>
+
+<p>Diese Tabelle gibt es auch <a href="https://aichef.pro/descargas/portionsgroessen-tabelle-gastronomie-aichef.pdf">als PDF zum Ausdrucken</a>, auf einer A4-Seite, mit den Regeln für Menü und Buffet aus diesem Artikel.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/portionen-waage.jpg" alt="Die Hände eines Kochs legen ein rohes Steak auf eine digitale Küchenwaage, daneben ein Blech mit vakuumierten, vorportionierten Steaks" width="1376" height="768" loading="lazy" decoding="async" />
