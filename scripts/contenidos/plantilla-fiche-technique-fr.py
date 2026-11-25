@@ -87,7 +87,7 @@ def feuille(wb, nom, exemple):
     ws.merge_cells('A2:G2')
 
     titre(ws, 4, 'Informations générales')
-    infos = [('Plat', 'Blanquette de veau' if exemple else ''), ('Catégorie', 'Viandes' if exemple else ''),
+    infos = [('Plat', 'Blanquette de veau' if exemple else ''), ('Catégorie', 'Plat principal' if exemple else ''),
              ('Nombre de portions', 1 if exemple else None), ('Temps total', 'Environ 2 h 20' if exemple else ''),
              ('Auteur', ''), ('Date et version', 'jj-mm-aaaa · v1.0')]
     for i, (k, v) in enumerate(infos):
@@ -96,7 +96,7 @@ def feuille(wb, nom, exemple):
         cel(ws, lg, 2, v or None, entree=True)
         ws.merge_cells(start_row=lg, start_column=2, end_row=lg, end_column=7)
 
-    titre(ws, 12, 'Ingrédients (pour une portion)')
+    titre(ws, 12, 'Ingrédients (pour le nombre de portions indiqué)')
     entetes = ['Ingrédient', 'Grammage net (g)', 'Perte (%)', 'Grammage brut (g)', "Prix d'achat HT (€/kg)", 'Coût portion (€)', 'Allergènes']
     for col, txt in enumerate(entetes, start=1):
         c = cel(ws, 13, col, txt, gras=True)
@@ -118,14 +118,14 @@ def feuille(wb, nom, exemple):
                 cel(ws, lg, col, None, fmt, entree=True)
             forfait = None
         # brut = net / (1 − perte), arrondi au gramme supérieur
-        cel(ws, lg, 4, f'=IF(OR(B{lg}="",N(C{lg})>=1),"",ROUNDUP(B{lg}/(1-N(C{lg})),0))', '0')
+        cel(ws, lg, 4, f'=IF(B{lg}="","",IF(N(C{lg})>=1,"perte ≥ 100 %",ROUNDUP(B{lg}/(1-N(C{lg})),0)))', '0')
         if forfait is not None:
             cel(ws, lg, 6, forfait, EUR, entree=True)  # forfait saisi à la main
         else:
             cel(ws, lg, 6, f'=IF(OR(D{lg}="",E{lg}=""),"",ROUND(D{lg}/1000*E{lg},2))', EUR)
     derniere = premiere + len(lignes) - 1
     dvp = DataValidation(type='decimal', operator='between', formula1='0', formula2='0.99',
-                         error='La perte va de 0 % à 99 %.', errorTitle='Perte')
+                         error='La perte va de 0 % à 99 % (tapez 20 % ou 0,2).', errorTitle='Perte', showErrorMessage=True)
     ws.add_data_validation(dvp)
     dvp.add(f'C{premiere}:C{derniere}')
 
@@ -147,22 +147,23 @@ def feuille(wb, nom, exemple):
 
     fa = fp + 2 + len(etapes) + 1
     titre(ws, fa, 'Allergènes (règlement INCO, UE 1169/2011)')
-    dv = DataValidation(type='list', formula1='"Contient,Peut contenir des traces,Ne contient pas"', allow_blank=True)
+    dv = DataValidation(type='list', formula1='"Contient,Peut contenir des traces,Ne contient pas"', allow_blank=True,
+                        showErrorMessage=True, errorTitle='Allergène', error='Choisissez : Contient, Peut contenir des traces ou Ne contient pas.')
     ws.add_data_validation(dv)
     for i, a in enumerate(ALLERGENES):
         lg = fa + 1 + i
         cel(ws, lg, 1, a)
-        v = ('Contient' if a in CONTIENT_BLANQUETTE else 'Ne contient pas') if exemple else None
+        v = (None if a == 'Céleri' else 'Contient' if a in CONTIENT_BLANQUETTE else 'Ne contient pas') if exemple else None
         c = cel(ws, lg, 2, v, entree=True)
         dv.add(c.coordinate)
     if exemple:
         ws.cell(row=fa + 1 + ALLERGENES.index('Céleri'), column=3,
-                value='À vérifier si votre bouquet garni contient du céleri.').font = Font(italic=True, color='555555')
+                value='À renseigner : « Contient » si votre bouquet garni comporte du céleri.').font = Font(italic=True, color='555555')
 
     fc = fa + 1 + len(ALLERGENES) + 1
     titre(ws, fc, 'Conservation et HACCP')
     for i, (k, v) in enumerate([('Conservation', 'Refroidir rapidement, filmer, étiqueter et conserver au froid positif.' if exemple else ''),
-                                ('Points critiques (selon votre PMS)', 'Refroidissement après cuisson ; remise en température.' if exemple else ''),
+                                ('Points critiques (selon votre PMS)', 'Cuisson à cœur ; refroidissement rapide après cuisson ; remise en température.' if exemple else ''),
                                 ('Durée de vie', 'Celle fixée par votre plan de maîtrise sanitaire.' if exemple else '')]):
         lg = fc + 1 + i
         cel(ws, lg, 1, k, gras=True)
@@ -181,12 +182,12 @@ def feuille(wb, nom, exemple):
     titre(ws, fx, 'Coût et prix')
     b = fx + 1
     bloc = [
-        ('Coût matière par portion', f'=SUM(F{premiere}:F{derniere})', EUR, False),
+        ('Coût matière par portion', f'=IF(N(B7)>1,SUM(F{premiere}:F{derniere})/B7,SUM(F{premiere}:F{derniere}))', EUR, False),
         ('Prix carte TTC', 19.50 if exemple else None, EUR, True),
         ('TVA (restauration sur place en France : 10 %)', 0.10, '0%', True),
         ('Prix de vente HT', f'=IF(B{b + 1}="","",B{b + 1}/(1+B{b + 2}))', EUR, False),
         ('Ratio matière (coût ÷ prix HT)', f'=IF(OR(B{b + 3}="",B{b}=0),"",B{b}/B{b + 3})', '0.0%', False),
-        ('Coefficient multiplicateur (prix HT ÷ coût)', f'=IF(OR(B{b + 3}="",B{b}=0),"",B{b + 3}/B{b})', '0.00', False),
+        ('Coefficient multiplicateur (prix HT ÷ coût)', f'=IF(OR(B{b + 3}="",B{b}=0),"",B{b + 3}/B{b})', '0.0', False),
     ]
     for i, (k, v, fmt, ent) in enumerate(bloc):
         cel(ws, b + i, 1, k, gras=True)
@@ -202,6 +203,11 @@ def feuille(wb, nom, exemple):
     for col, w in {'A': 34, 'B': 13, 'C': 10, 'D': 13, 'E': 16, 'F': 14, 'G': 20}.items():
         ws.column_dimensions[col].width = w
     ws.sheet_view.showGridLines = False
+    ws.page_setup.orientation = 'landscape'
+    ws.page_setup.paperSize = ws.PAPERSIZE_A4
+    ws.page_setup.fitToWidth = 1
+    ws.page_setup.fitToHeight = 0
+    ws.sheet_properties.pageSetUpPr.fitToPage = True
     return premiere, b
 
 
@@ -229,7 +235,7 @@ def pdf_vierge():
     info = Table([['Plat', '', 'Catégorie', ''], ['Nombre de portions', '', 'Temps total', ''], ['Auteur', '', 'Date et version', '']],
                  colWidths=[W * 0.18, W * 0.32, W * 0.18, W * 0.32], rowHeights=16)
     info.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#999999')), ('FONTSIZE', (0, 0), (-1, -1), 8)]))
-    el += [info, Paragraph('Ingrédients (pour une portion)', h)]
+    el += [info, Paragraph('Ingrédients (pour le nombre de portions indiqué)', h)]
     ing = Table([['Ingrédient', 'Net (g)', 'Perte (%)', 'Brut (g)', 'Prix HT (€/kg)', 'Coût (€)', 'Allergènes']] + [[''] * 7 for _ in range(11)],
                 colWidths=[W * x for x in (0.27, 0.09, 0.09, 0.09, 0.13, 0.1, 0.23)], rowHeights=15)
     ing.setStyle(grille)
@@ -245,7 +251,7 @@ def pdf_vierge():
     cons = Table([['Conservation', ''], ['Points critiques (PMS)', ''], ['Dressage et vaisselle', '']], colWidths=[W * 0.25, W * 0.75], rowHeights=18)
     cons.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#999999')), ('FONTSIZE', (0, 0), (-1, -1), 8)]))
     el += [cons, Paragraph('Coût et prix', h)]
-    cout = Table([['Coût matière par portion', '', 'Prix carte TTC', ''], ['Prix de vente HT (TTC ÷ 1,10)', '', 'Ratio matière (coût ÷ HT)', ''],
+    cout = Table([['Coût par portion (total ÷ portions)', '', 'Prix carte TTC', ''], ['Prix de vente HT (TTC ÷ 1,10)', '', 'Ratio matière (coût ÷ HT)', ''],
                   ['Coefficient (HT ÷ coût)', '', '', '']], colWidths=[W * 0.3, W * 0.2, W * 0.3, W * 0.2], rowHeights=16)
     cout.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#999999')), ('FONTSIZE', (0, 0), (-1, -1), 8)]))
     el += [cout, Spacer(1, 4), Paragraph('Modèle gratuit AI Chef Pro · Guide et exemple chiffré : aichef.pro/fr/blog/fiche-technique-cuisine', st['Italic'])]
@@ -257,6 +263,7 @@ def main():
     wb.remove(wb.active)
     p_ex, b_ex = feuille(wb, 'Exemple blanquette', True)
     feuille(wb, 'Fiche vierge', False)
+    wb.active = 1
     XLSX.parent.mkdir(parents=True, exist_ok=True)
     wb.save(XLSX)
     subprocess.run([sys.executable, str(RAIZ / 'scripts/productos-digitales/inject_cache.py'), str(XLSX)],

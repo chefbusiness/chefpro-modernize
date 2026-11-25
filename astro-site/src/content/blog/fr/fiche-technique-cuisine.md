@@ -16,18 +16,20 @@ faq:
   - q: "Comment faire une fiche technique ?"
     a: "Pour faire une fiche technique, partez de la recette réellement servie. Pesez chaque ingrédient sur une portion, ou sur une base de dix si les quantités sont faibles. Relevez les prix d'achat du moment, puis calculez le coût matière. Joignez la photo du dressage et la liste des allergènes. Faites valider par le chef, datez la fiche et mettez-la à jour à chaque changement de carte ou de tarif fournisseur."
   - q: "Comment calculer le coût matière d'une fiche technique ?"
-    a: "Le coût matière d'une fiche technique se calcule en additionnant le coût de chaque ingrédient. Pour un ingrédient, multipliez le grammage par le prix d'achat au kilo, puis ramenez au gramme. La somme donne le coût matière de la portion. Divisez ce montant par le prix de vente hors taxes pour obtenir le ratio. Attention : diviser par le prix TTC embellit artificiellement le ratio et fausse votre rentabilité."
+    a: "Le coût matière d'une fiche technique se calcule en additionnant le coût de chaque ingrédient. Pour un ingrédient, multipliez le grammage brut (en kilo) par le prix d'achat HT au kilo. La somme donne le coût matière de la portion. Divisez ce montant par le prix de vente hors taxes pour obtenir le ratio. Attention : diviser par le prix TTC embellit artificiellement le ratio et fausse votre rentabilité."
   - q: "Quel est le meilleur logiciel gratuit pour créer des fiches techniques de cuisine ?"
     a: "Pour démarrer, un tableur suffit : créez une feuille par plat et une ligne par ingrédient, avec les colonnes grammage, prix d'achat et coût portion. Les outils dédiés prennent le relais à l'échelle, car ils mettent à jour les prix en un seul endroit. Mais aucun logiciel ne remplace des grammages pesés et des prix d'achat réels. La fiabilité de la fiche dépend avant tout de vos données terrain."
   - q: "Où trouver une fiche technique de cuisine vierge gratuite ?"
-    a: "Vous pouvez télécharger gratuitement, sans inscription, notre fiche technique de cuisine vierge en Excel (avec les formules de coût, de ratio matière et de coefficient, et l'exemple de la blanquette) et sa version PDF d'une page A4, prête à imprimer et à remplir à la main."
+    a: "Vous pouvez télécharger gratuitement, sans inscription, notre fiche technique de cuisine vierge en Excel (avec les formules de coût, de ratio matière et de coefficient, et l'exemple de la blanquette) et sa version PDF d'une page A4, prête à imprimer et à remplir à la main (section « Fiche technique vierge gratuite » de cet article)."
   - q: "Comment calculer une fiche technique de cuisine ?"
-    a: "Quatre calculs : le grammage brut (net divisé par 1 moins la perte), le coût de chaque ingrédient (grammage brut en kilo multiplié par le prix d'achat HT au kilo), le ratio matière (coût de la portion divisé par le prix de vente HT) et le coefficient multiplicateur (prix HT divisé par le coût). Toujours sur le prix hors taxes."
+    a: "Cinq calculs : le grammage brut (net divisé par 1 moins la perte), le coût de chaque ingrédient (grammage brut en kilo multiplié par le prix d'achat HT au kilo), le prix de vente HT (prix carte TTC divisé par 1,10 pour la TVA à 10 % sur place), le ratio matière (coût de la portion divisé par le prix de vente HT) et le coefficient multiplicateur (prix HT divisé par le coût). Toujours sur le prix hors taxes."
 ---
 
 <p>Le second est en repos. Vous jetez un œil en cuisine, et vous le savez déjà : la blanquette du jour n’a ni le même goût, ni la même taille, ni la même sauce que celle de mardi. Le client ne dira rien. Il ne reviendra pas. Et il aura raison.</p>
 
 <p>Ce n’est pas une question de talent, mais de système. Dans une cuisine professionnelle, un plat servi doit être identique à chaque service, à chaque service suivant. Pour cela, il existe un outil simple, précis, et pourtant souvent négligé : la fiche technique de cuisine. Posons la définition tout de suite, pour qu’elle serve de référence : la fiche technique est la carte d’identité d’un plat. Elle contient la recette standardisée — ingrédients, grammages précis, progression de réalisation, photo du dressage, allergènes — et son chiffrage complet, avec le coût unitaire de chaque ingrédient, le coût matière de la portion, et le ratio par rapport au prix de vente. Une recette dit comment faire. Une fiche technique dit comment faire pareil à chaque service, et combien ça coûte.</p>
+
+<p>Besoin d’un modèle tout de suite ? Téléchargez la <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.xlsx">fiche technique vierge en Excel</a> ou sa <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.pdf">version PDF à imprimer</a>, gratuites et sans inscription.</p>
 
 <h2>C'est quoi une fiche technique (et en quoi ce n'est pas une recette)</h2>
 
@@ -64,7 +66,7 @@ faq:
 
 <h2>L'exemple chiffré : la blanquette, ligne par ligne</h2>
 
-<p>Prenons une blanquette de veau servie dans un restaurant français classique. La fiche est établie pour une portion. Les grammages sont nets, les prix d’achat sont ceux du dernier relevé fournisseur. Le coût de chaque ingrédient est calculé au gramme près.</p>
+<p>Prenons une blanquette de veau servie dans un restaurant français classique. La fiche est établie pour une portion. Les grammages sont ceux pesés à la mise en place : l’épaule est achetée désossée et parée, la perte est donc comptée à 0 %. Les prix d’achat sont ceux du dernier relevé fournisseur. Le coût de chaque ingrédient est calculé au gramme près.</p>
 
 <table>
 <thead>
@@ -96,18 +98,19 @@ faq:
 
 <p>Pourquoi cette erreur est-elle si fréquente ? Parce que le prix affiché au client est presque toujours un prix TTC. En France, le restaurateur a l’habitude de raisonner en TTC, car c’est le prix qu’il voit, qu’il annonce, et qu’il encaisse. Mais la rentabilité, elle, se calcule hors taxes. Le prix de vente HT est le chiffre qui correspond à ce que le restaurant gagne réellement avant de reverser la TVA à l’État. C’est donc lui qu’il faut utiliser pour tous les ratios de gestion.</p>
 
-<h3>Comment calculer une fiche technique de cuisine : les quatre formules</h3>
+<h3>Comment calculer une fiche technique de cuisine : les cinq formules</h3>
 
-<p>Toute la fiche technique tient en quatre calculs, toujours dans cet ordre :</p>
+<p>Toute la fiche technique tient en cinq calculs, toujours dans cet ordre :</p>
 
 <ul>
 <li><strong>Grammage brut</strong> = grammage net ÷ (1 − perte). Avec 20 % de perte, 180 g nets demandent 225 g bruts à l’achat.</li>
-<li><strong>Coût d’un ingrédient</strong> = grammage brut (en kg) × prix d’achat HT au kilo. Dans la blanquette : 0,180 kg × 14,00 € = 2,52 €.</li>
+<li><strong>Coût d’un ingrédient</strong> = grammage brut (en kg) × prix d’achat HT au kilo. Dans la blanquette (épaule achetée parée, perte à 0 %) : 0,180 kg × 14,00 €/kg = 2,52 €.</li>
+<li><strong>Prix de vente HT</strong> = prix carte TTC ÷ 1,10 (TVA à 10 % sur place). Ici : 19,50 ÷ 1,10 = 17,73 €.</li>
 <li><strong>Ratio matière</strong> = coût matière de la portion ÷ prix de vente HT. Ici : 3,65 ÷ 17,73 = 20,6 %.</li>
 <li><strong>Coefficient multiplicateur</strong> = prix de vente HT ÷ coût matière. Ici : 17,73 ÷ 3,65 ≈ 4,9.</li>
 </ul>
 
-<p>Le modèle vierge ci-dessous fait ces calculs pour vous : vous saisissez le grammage net, la perte et le prix d’achat, et il remplit le reste.</p>
+<p>Le <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.xlsx">modèle vierge</a> fait ces calculs pour vous : vous saisissez le grammage net, la perte et le prix d’achat, et il remplit le reste.</p>
 
 <h2>Ce que la fiche change vraiment dans une brigade</h2>
 
@@ -159,15 +162,15 @@ faq:
 
 <p>En revanche, plus votre carte est grande, plus le tableur devient lourd. C’est là qu’un outil dédié prend tout son sens. Ces outils permettent de mettre à jour les prix en un seul endroit, et de voir les coûts de tous les plats se recalculer automatiquement. Les allergènes se propagent partout, les fiches sont toujours à jour, et la brigade accède à la version officielle sans risque d’erreur. Mais vous n’avez pas besoin de tout cela pour démarrer.</p>
 
-<h3>Fiche technique vierge gratuite (Excel et PDF)</h3>
-
-<p>Pour démarrer tout de suite, nous avons mis en ligne une <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.xlsx">fiche technique de cuisine vierge en Excel</a>, gratuite et sans inscription. Elle contient deux feuilles : l’exemple de la blanquette, avec les chiffres de cet article, et une fiche vierge avec les mêmes formules (grammage brut, coût par portion, ratio matière sur le prix HT, coefficient), les 14 allergènes du règlement INCO en liste déroulante, la progression, la conservation et le dressage.</p>
-
-<p>Vous préférez le papier ? La <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.pdf">fiche technique vierge en PDF</a> tient sur une page A4, prête à imprimer et à remplir au crayon pour une fiche technique de restaurant ou de restauration collective.</p>
-
 <p>Ce qui compte, ce n’est pas l’outil. C’est la discipline. Commencez avec votre tableur, créez vos premières fiches, prenez les photos de dressage, notez les prix, calculez les ratios. Dès que vous sentez que la gestion devient un frein, passez à un outil plus structuré. Mais ne passez pas des mois à comparer des solutions sans avoir la moindre fiche technique en place.</p>
 
 <p>Et maintenant, revenons à la scène du début. Le second est en repos. Vous jetez un œil en cuisine. Avec une fiche technique complète, la blanquette qui est en train de mijoter est exactement la même que celle de mardi. Même grammage, même cuisson, même sauce, même coût. Le client ne le dira pas, car c’est normal que ce soit bon. Mais il reviendra. Et c’est exactement cela, une cuisine professionnelle.</p>
+
+<h3>Fiche technique vierge gratuite (Excel et PDF)</h3>
+
+<p>Pour démarrer tout de suite, nous avons mis en ligne une <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.xlsx">fiche technique de cuisine vierge en Excel</a>, gratuite et sans inscription. Elle contient deux feuilles : l’exemple de la blanquette, avec les chiffres de cet article, et une fiche vierge avec les mêmes formules (grammage brut, coût par portion divisé par le nombre de portions, ratio matière sur le prix HT, coefficient), les 14 allergènes du règlement INCO, chacun avec une liste déroulante (contient, traces, ne contient pas), la progression, la conservation et le dressage.</p>
+
+<p>Vous préférez le papier ? La <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.pdf">fiche technique vierge en PDF</a> tient sur une page A4, prête à imprimer et à remplir au crayon, en restaurant comme en restauration collective.</p>
 
 <h2>Les grammages sont à vous, les fiches s'accélèrent</h2>
 
