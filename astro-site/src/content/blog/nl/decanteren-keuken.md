@@ -2,7 +2,7 @@
 title: "Decanteren in de keuken: de heldere fond, het bezinksel, de wijn"
 description: "Decanteren is een afgezette vloeistof rand aan rand overgieten en vóór het bezinksel stoppen. Het is niet afgieten van pasta, en halfdroog is het etiketwoord."
 pubDate: 2026-11-10
-modDate: 2026-11-10
+modDate: 2026-11-25
 category: glossarium
 tags: ["decanteren", "fond", "wijn", "bezinksel"]
 lang: nl
@@ -29,7 +29,7 @@ faq:
   - q: "Wat is een vino abocado?"
     a: "Een Spaans proefwoord, vooral voor een sherrystijl: een wijn die niet helemaal droog is en geen dessertwijn. Een Nederlands etiket van een stille wijn zegt niet abocado. Het zegt droog, halfdroog, halfzoet of zoet, naar de restsuiker in bijlage III van verordening (EU) 2019/33. In de smaak ligt een abocado dicht bij halfdroog."
   - q: "Decanteert u wijn en fond op dezelfde manier?"
-    a: "De zorg lijkt op elkaar: het bezinksel blijft achter. In de keuken brengt u de randen van twee vaten bij elkaar, een fond, een maceratie, een saus. In de bediening giet u een belegen wijn heel langzaam in een karaf, zodat het depot in de fles blijft. Oversteken in de kelder is wijn van de droesem halen."
+    a: "De zorg lijkt op elkaar: het bezinksel blijft achter. In de keuken brengt u de randen van twee vaten bij elkaar, een fond, een maceratie, een saus. In de bediening giet u een belegen wijn heel langzaam in een karaf, zodat het depot in de fles blijft (hoe u de wijn daarna bij het eten kiest, leest u in [wijn-spijscombinatie](https://aichef.pro/nl/blog/wijn-spijscombinatie)). Oversteken in de kelder is wijn van de droesem halen."
   - q: "Waarom niet tot de laatste druppel leegmaken?"
     a: "De laatste honderd milliliter dragen meestal het slechtste. Het is goedkoper ze te verliezen dan een troebele consommé of een maceratie met bezinksel in het glas te serveren."
 faqInBody: true
@@ -131,7 +131,7 @@ Wilt u de vloeistof helderder, zeef dan alleen wat u al hebt overgegoten, door e
 Een Spaans proefwoord, vooral voor een sherrystijl: een wijn die niet helemaal droog is en geen dessertwijn. Een Nederlands etiket van een stille wijn zegt niet abocado. Het zegt droog, halfdroog, halfzoet of zoet, naar de restsuiker in bijlage III van verordening (EU) 2019/33. In de smaak ligt een abocado dicht bij halfdroog.
 
 **Decanteert u wijn en fond op dezelfde manier?**
-De zorg lijkt op elkaar: het bezinksel blijft achter. In de keuken brengt u de randen van twee vaten bij elkaar, een fond, een maceratie, een saus. In de bediening giet u een belegen wijn heel langzaam in een karaf, zodat het depot in de fles blijft. Oversteken in de kelder is wijn van de droesem halen.
+De zorg lijkt op elkaar: het bezinksel blijft achter. In de keuken brengt u de randen van twee vaten bij elkaar, een fond, een maceratie, een saus. In de bediening giet u een belegen wijn heel langzaam in een karaf, zodat het depot in de fles blijft (hoe u de wijn daarna bij het eten kiest, leest u in [wijn-spijscombinatie](https://aichef.pro/nl/blog/wijn-spijscombinatie)). Oversteken in de kelder is wijn van de droesem halen.
 
 **Waarom niet tot de laatste druppel leegmaken?**
 De laatste honderd milliliter dragen meestal het slechtste. Het is goedkoper ze te verliezen dan een troebele consommé of een maceratie met bezinksel in het glas te serveren.
