@@ -29,7 +29,7 @@ faq:
 
 A bakery uses AI as a drafting partner, not a decision-maker. You hand an agent what you already know — your formula, your flour prices, last week's sales, the room temperature — and it comes back with a formula sheet, a cost per loaf, a par-level draft, a waste plan or an allergen list you can check, correct and put to work. The oven, the levain and the final call stay with you.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">AI agents for bakers</p><p class="mt-2 text-foreground">Formula sheets, cost per loaf, par levels, waste and allergens, drafted by the agents and signed off by the baker. AI Chef Member is €10/month for 10,000 credits.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/concept/bakery-pastry-shop?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-for-bakeries">See AI for bakeries and pastry shops</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">AI agents for bakers</p><p class="mt-2 text-foreground">Formula sheets, cost per loaf, par levels, waste and allergens, drafted by the agents and signed off by the baker. AI Chef Member is €10/month for 10,000 credits.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/artisan-baker?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-for-bakeries">See AI for artisan bakers</a></p></aside>
 
 ## 1. Formulas and fermentation: the baker's judgment, with a faster draft
 
@@ -39,7 +39,7 @@ Redrafting for another batch size is where the time goes. Say you have been baki
 
 Seasonal shifts are the same conversation. Tell the agent the room temperature and the forecast, and ask for starting points: water temperature, bulk time, whether to shorten the retard. Treat the answer as a starting point, not a rule. You will still put your hand on the dough and know.
 
-Production schedule is the other place a draft saves an hour. Ask for a timeline that runs from levain build through mix, bulk, divide, bench rest and preshape, shape, retard and bake, built around your oven capacity and how many decks you can load at once. You will move the blocks around; the blank page is what you are avoiding.
+The production schedule is the other place a draft saves an hour. Ask for a timeline that runs from levain build through mix, bulk, divide, preshape, bench rest, shape, retard and bake, built around your oven capacity and how many decks you can load at once. You will move the blocks around; the blank page is what you are avoiding.
 
 ### AI baking recipe generator
 
@@ -49,13 +49,13 @@ Ask Creative Bakery for a new loaf or pastry built from the flours you actually 
 
 ## 2. Cost per loaf: the real margin of each bread
 
-Many bakeries price by feel or by a multiplier on flour, and the number that decides the month is cost per loaf with labor inside it. Here is a worked example with example numbers, not benchmarks, for a 1.5 lb sourdough loaf.
+Many bakeries price by feel or by a multiplier on flour, and the number that decides the month is cost per loaf with labor inside it. Here is a worked example with example numbers, not benchmarks, for a sourdough loaf scaled at about 2 lb of dough (about 1.7 lb baked).
 
 | Item | Per loaf | Unit cost | Cost per loaf |
 | :--- | :--- | :--- | :--- |
 | Bread flour | 1.0 lb | $0.60/lb | $0.60 |
 | Water | — | — | $0.01 |
-| Levain | 0.2 lb | $0.40/lb (flour cost) | $0.08 |
+| Levain (stiff, 50% hydration) | 0.2 lb | $0.40/lb (flour cost) | $0.08 |
 | Salt | 0.02 lb | $0.50/lb | $0.01 |
 | Oven and proofer energy | 1.2 kWh | $0.17/kWh | $0.20 |
 | Direct labor (mix, shape, bake) | 0.12 h | $18.00/h | $2.16 |
@@ -88,7 +88,7 @@ Waste happens at every step of the process, and each point has its own kind of l
 
 | Point in the process | Type of waste | How AI helps |
 | :--- | :--- | :--- |
-| Mixing and dividing | dough left in the bowl, scraps | batch sizes that fit your divider; fold scraps into the next levain or an old-dough preferment |
+| Mixing and dividing | dough left in the bowl, scraps | batch sizes that fit your divider; fold scraps into the next mix as old dough (pâte fermentée) |
 | Fermentation | over-proofed dough | starting points for times from your room temperature |
 | Baking | burnt or under-scored loaves | a checklist of oven settings per product to test |
 | Cooling and handling | breakage, crumbs | handling and cooling routine for the team |
@@ -100,7 +100,7 @@ Waste GenCal works the yield percentage, the cost of what you threw away and the
 
 Wheat is in almost everything you bake, and the allergens that catch bakers are the ones hiding in toppings, washes and fillings: sesame, milk, eggs, tree nuts and soy. The US list of nine major allergens — milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans and sesame — is the frame to check every product against, including the ones you think are plain.
 
-Ask Allergen ID for the direct and hidden allergens in each product and for cross-contact risks on shared equipment — the same bench, the same mixer, the same screens. Then check your supplier labels, because a substitution you made last month may have changed the answer. The free [allergen detector](https://aichef.pro/en/restaurant-allergen-detector) on the site is a fast first pass.
+Ask Allergen ID for the direct and hidden allergens in each product and for cross-contact risks on shared equipment — the same bench, the same mixer, the same screens. Then check your supplier labels, because a substitution you made last month may have changed the answer. The free [allergen detector](https://aichef.pro/en/restaurant-allergen-detector) on the site is a fast first pass; it checks the EU list of 14, which includes the US nine.
 
 ## 6. Local marketing: the bakery on the block and on the phone
 
@@ -122,4 +122,4 @@ There are [ready-made Creative Bakery prompts](https://aichef.pro/en/blog/prompt
 
 ## AI Chef Pro plans
 
-AI Chef Pro is a suite of 75+ AI agents for hospitality, including the bakery agents above. To see how they fit a bakery or pastry shop, start with [AI for bakeries and pastry shops](https://aichef.pro/en/use-cases/concept/bakery-pastry-shop). AI Chef Member is €10/month with 10,000 credits; Premium plans start at €25/month. All plans are billed in euros, and there is no free plan and no free trial. The free tools on aichef.pro — the food cost calculator and the allergen detector — need no sign-up.
+AI Chef Pro is a suite of 75+ AI agents for hospitality, including the bakery agents above. To see how they fit your operation, start with [AI for artisan bakers](https://aichef.pro/en/use-cases/role/artisan-baker) or, for a pastry shop or production kitchen, [AI for pastry shops](https://aichef.pro/en/use-cases/concept/bakery-pastry-shop). AI Chef Member is €10/month with 10,000 credits; Premium plans start at €25/month. All plans are billed in euros, and there is no free plan and no free trial. The free tools on aichef.pro — the food cost calculator and the allergen detector — need no sign-up.
