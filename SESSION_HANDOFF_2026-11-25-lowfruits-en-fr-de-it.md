@@ -36,7 +36,9 @@
 | #281 | NL | Hygiënecode/HACCP/alérgenos contra la normativa + HACCP-lijsten (Excel + PDF 4 págs.) |
 | #283 | IT | Scheda tecnica ricetta + Excel (y fórmulas de IVA del Excel NL corregidas) |
 
-**Abierto al cerrar (sesión Claude Code, noche del 25-nov):** #284 (IT manuale HACCP semplificato: post + modelo Word/PDF) con auditoría adversarial en curso. Criterio: aplicar la auditoría, preview verde del último commit, merge squash. **GitHub GraphQL falló a ratos** (crear y fusionar PR): usar la API REST (`gh api repos/chefbusiness/chefpro-modernize/pulls -X POST --input pr.json`; merge con `.../pulls/N/merge -X PUT -f merge_method=squash`).
+| #284 | IT | Manuale HACCP semplificato: guía nueva (Opus) + modelo Word editable y PDF de 12 páginas; diffida «no darla por supuesta» (DL 91/2014) |
+
+**Al cerrar (noche del 25-nov) no queda ningún PR de esta sesión abierto**; verificado en producción (title, FAQPage, 0 NUL, descargas 200). Los PR abiertos (#80, #142, #185, #239, #240) son de Cursor. **GitHub GraphQL falló a ratos** (crear y fusionar PR): usar la API REST (`gh api repos/chefbusiness/chefpro-modernize/pulls -X POST --input pr.json`; merge con `.../pulls/N/merge -X PUT -f merge_method=squash`).
 
 ## 3. Normativa verificada (en memoria, con fuentes)
 
@@ -48,7 +50,6 @@
 
 ## 4. Pendiente
 
-- **Fusionar #284** tras su auditoría.
 - **Descartados por intención (SERP de TPV/software comercial; AI Chef Pro no es TPV):** PT «software restauração», IT «gestionale ristorante», NL «horeca software». **PT-BR**: `/pt/` es pt-PT; las keywords BR (CMV 880, sistema para restaurante gratuito 260, harmonização de vinhos 320, planilha CMV 90) piden decidir si se abre locale BR → **decisión de John** (modo plan).
 - **IT:** generatore di ricette / ia cucina (20 + 20, landing) sin empezar.
 - **NL:** AI recepten generator (20 + 20) y menukaart maken met AI (30): landings (código), sin empezar.
