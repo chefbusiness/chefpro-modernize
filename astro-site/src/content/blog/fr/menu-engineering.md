@@ -143,6 +143,7 @@ faq:
 <p>Pour les chevaux de labour, concentrez-vous sur la fiche technique. Peut-être pouvez-vous réduire la portion de viande de 10 grammes, changer de fournisseur pour les frites ou négocier un meilleur tarif sur le pain à burger. Chaque euro économisé sur le coût matière se répercute directement sur votre marge. Si nécessaire, un ajustement de prix, même minime, peut faire la différence, mais toujours avec précaution.</p>
 <p>Pour les énigmes, le levier est avant tout commercial. La position sur la carte, la qualité de la description, une photo quand elle sert le propos, et la suggestion active du personnel en salle peuvent tout changer. Formez vos équipes à proposer ce plat avec conviction. Si après plusieurs semaines rien n’y fait, il est peut-être temps de se demander s’il est à sa place.</p>
 <p>Enfin, pour les poids morts, le remplacement est souvent la solution la plus saine. Libérez de la place pour de nouvelles créations, testez de nouvelles recettes et laissez la place à l’innovation. Si une raison stratégique les maintient à la carte, écrivez-la noir sur blanc pour ne pas l’oublier.</p>
+<p>Les boissons se pilotent avec la même logique. Pour chiffrer une formule d'accords au verre, coût du verre et TVA à 20 % compris, voyez l'exemple de notre guide des <a href="https://aichef.pro/fr/blog/accord-mets-vins">accords mets-vins</a>.</p>
 
 <h2>Les pièges de lecture (la matrice ne pense pas à votre place)</h2>
 

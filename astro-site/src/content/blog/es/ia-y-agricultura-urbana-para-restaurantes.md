@@ -1088,7 +1088,7 @@ margin: 10px auto !important;
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Beneficios para Agricultura Urbana</th></tr></thead><tbody><tr><td>Pro</td><td>10€/mes</td><td>Restaurantes pequeños con cultivo inicial</td><td>Planificación básica de menús con producción propia</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos con granja establecida</td><td>Optimización completa de rendimientos y creatividad</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes grandes o grupos con múltiples cultivos</td><td>Análisis avanzado, múltiples locales, contenido ilimitado</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadenas o consultoras especializadas</td><td>Uso ilimitado, soporte prioritario, funciones exclusivas</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Beneficios para Agricultura Urbana</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Restaurantes pequeños con cultivo inicial</td><td>Todos los agentes con 10.000 créditos al mes</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Restaurantes medianos con granja establecida</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Restaurantes grandes o grupos con múltiples cultivos</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Cadenas o consultoras especializadas</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 
@@ -1366,7 +1366,7 @@ margin: 10px auto !important;
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-y-agricultura-urbana-para-restaurantes" style="background-color: #000; color: #FFD700; padding: 18px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; text-align: center; font-size: 18px; margin: 8px; width: calc(50% - 20px); max-width: 350px; box-sizing: border-box;">Contrata AI Chef Miembro</a>
 <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-y-agricultura-urbana-para-restaurantes" style="background-color: #fff; color: #000; padding: 18px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; text-align: center; font-size: 18px; border: 2px solid #000; margin: 8px; width: calc(50% - 20px); max-width: 350px; box-sizing: border-box;">Mentoría Especializada</a>
 </div>
-<p style="color: #000; margin-top: 20px; font-size: 14px;">Sin compromiso • Acceso inmediato • Soporte en español</p>
+<p style="color: #000; margin-top: 20px; font-size: 14px;">Sin permanencia • Acceso inmediato • Soporte en español</p>
 </div>
 
 <style>

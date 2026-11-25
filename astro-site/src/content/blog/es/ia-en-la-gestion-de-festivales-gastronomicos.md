@@ -514,7 +514,7 @@ wpId: 2021
 <div style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);">
 <p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Suite Completa de Herramientas IA</p>
 <h3 style="color: #ffffff; font-size: 26px; margin: 0 0 15px 0; font-weight: 700;">AI Chef Pro: Tu Aliado para Eventos Gastronómicos</h3>
-<p style="color: #dfe6e9; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Accede a más de 55 herramientas especializadas: Catering AI+, Mermas GenCal, ID Alérgenos, <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI y mucho más. Planes desde 10€/mes.</p>
+<p style="color: #dfe6e9; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Accede a más de 80 agentes especializados: Catering AI+, Mermas GenCal, ID Alérgenos, <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI y mucho más. Planes desde 10€/mes.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-gestion-de-festivales-gastronomicos" target="_blank" style="display: inline-block; background-color: #ffffff; color: #6c5ce7; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">Ver Planes y Precios</a>
 </div>
 
@@ -751,7 +751,7 @@ wpId: 2021
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>10.000 créditos al mes y acceso a todos los agentes</td><td>Eventos pequeños, primeras pruebas</td><td>Primeros pasos con inversión mínima</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Acceso completo con límites mensuales ampliados</td><td>Eventos medianos (hasta 500 asistentes)</td><td>300-500% mensual</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Límites expandidos y funciones avanzadas</td><td>Eventos de 500-2000 asistentes</td><td>400-700% mensual</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Usos extensivos y análisis avanzado</td><td>Festivales medianos (2000-5000 asistentes)</td><td>700-1000% mensual</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Uso ilimitado, prioridad en soporte, funciones exclusivas</td><td>Grandes festivales, organizadores profesionales</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>10.000 créditos al mes y acceso a todos los agentes</td><td>Eventos pequeños y medianos (hasta 500 asistentes)</td><td>300-500% mensual</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>85.000 créditos al mes y acceso a todos los agentes</td><td>Eventos de 500-2000 asistentes</td><td>400-700% mensual</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>175.000 créditos al mes y acceso a todos los agentes</td><td>Festivales medianos (2000-5000 asistentes)</td><td>700-1000% mensual</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Créditos ilimitados y acceso a todos los agentes</td><td>Grandes festivales, organizadores profesionales</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
 
 
 
@@ -891,7 +891,7 @@ wpId: 2021
 <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 8px 25px rgba(0, 184, 148, 0.4);">
 <p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Comienza Hoy</p>
 <h3 style="color: #ffffff; font-size: 26px; margin: 0 0 15px 0; font-weight: 700;">Transforma Tu Próximo Festival Gastronómico</h3>
-<p style="color: #e0f7fa; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Únete a los miles de profesionales de la hostelería que ya utilizan AI Chef Pro para optimizar sus eventos. Prueba y descubre el poder de la IA aplicada a la gastronomía.</p>
+<p style="color: #e0f7fa; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Prueba AI Chef Pro para optimizar tus eventos y descubre el poder de la IA aplicada a la gastronomía.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-gestion-de-festivales-gastronomicos" target="_blank" style="display: inline-block; background-color: #ffffff; color: #00b894; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">Probar AI Chef Pro</a>
 </div>
 
@@ -957,7 +957,7 @@ wpId: 2021
 
 
 
-<p class="wp-block-paragraph">La inversión varía según la escala del evento y las herramientas seleccionadas. Con AI Chef Pro, puedes comenzar desde 10€/mes con el plan AI Chef Miembro, o desde 25€/mes para acceso completo. Para eventos de gran escala, la inversión típica en tecnología representa entre el 2% y el 5% del presupuesto total del evento, con retornos que frecuentemente superan el 1000%.</p>
+<p class="wp-block-paragraph">La inversión varía según la escala del evento y las herramientas seleccionadas. Con AI Chef Pro, puedes comenzar con el plan AI Chef Miembro (10 €/mes, con acceso a todos los agentes) y subir a Premium Pro (25 €/mes) o a un plan superior cuando necesites más créditos. Para eventos de gran escala, la inversión típica en tecnología representa entre el 2% y el 5% del presupuesto total del evento, con retornos que frecuentemente superan el 1000%.</p>
 
 
 
@@ -1029,7 +1029,7 @@ wpId: 2021
 
 
 
-<p class="wp-block-paragraph">AI Chef Pro ofrece múltiples niveles de soporte: documentación completa y tutoriales en video, chat de asistencia durante horario comercial, webinars mensuales de formación, y para planes Premium, sesiones de consultoría personalizada. Adicionalmente, el programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-gestion-de-festivales-gastronomicos" target="_blank">mentoría online</a> ofrece acompañamiento intensivo para proyectos específicos.</p>
+<p class="wp-block-paragraph">AI Chef Pro ofrece múltiples niveles de soporte: documentación completa y tutoriales en video, chat de asistencia durante horario comercial y webinars mensuales de formación. Adicionalmente, el programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-gestion-de-festivales-gastronomicos" target="_blank">mentoría online</a> ofrece acompañamiento intensivo para proyectos específicos.</p>
 
 
 

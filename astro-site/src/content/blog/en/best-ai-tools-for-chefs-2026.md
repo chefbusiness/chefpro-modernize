@@ -86,7 +86,7 @@ For the chatbot side on its own, read [ChatGPT for restaurants](https://aichef.p
 
 ## Where a chatbot stops
 
-A chatbot is useful. It drafts a special, a staff-meal idea, a first pass at wording. It does not keep your yields, and it does not know this week’s invoice unless you paste it. An agent is the place those jobs live so the brigade is not starting from a blank box every service.
+A chatbot is useful. It drafts a special, a staff-meal idea, a first pass at wording (here is how to brief an [AI recipe generator from ingredients](https://aichef.pro/en/blog/ai-recipe-generator-from-ingredients) so the draft fits your line). It does not keep your yields, and it does not know this week’s invoice unless you paste it. An agent is the place those jobs live so the brigade is not starting from a blank box every service.
 
 Keep both, and don’t ask the chatbot to do the agent’s job. You can browse the English agents in the [guest workspace](https://enapp.aichef.pro/guest?utm_source=aichef.pro&utm_medium=blog&utm_campaign=best-ai-tools-for-chefs-2026) and compare plans on the [pricing page](https://aichef.pro/en/pricing).
 

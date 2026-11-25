@@ -475,7 +475,7 @@ wpId: 1965
 
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-<h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px;">⚡ +55 Herramientas de IA para tu Cocina Profesional</h3>
+<h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px;">⚡ +80 Agentes de IA para tu Cocina Profesional</h3>
 <p style="color: #e8e8e8; font-size: 16px; margin-bottom: 20px;">AI Chef Pro incluye ID Alérgenos, Mermas GenCal, Food Pairing AI y docenas de aplicaciones más diseñadas específicamente para profesionales de la hostelería.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ffd700; color: #333333; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Ver Planes y Precios</a>
 </div>
@@ -790,7 +790,7 @@ wpId: 1965
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Funcionalidades de alérgenos</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10€/mes</td><td>Prueba inicial, pequeños establecimientos</td><td>Análisis de alérgenos con 10.000 créditos al mes</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Restaurantes pequeños (hasta 30 pax)</td><td>ID Alérgenos completo, fichas técnicas</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes medianos, cafeterías</td><td>Funciones avanzadas, más capacidad</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Restaurantes grandes, grupos</td><td>Análisis extensivo, reportes avanzados</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas, caterings, consultorías</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Funcionalidades de alérgenos</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Pequeños establecimientos (hasta 30 pax)</td><td>ID Alérgenos, fichas técnicas y todos los agentes con 10.000 créditos al mes</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Restaurantes medianos, cafeterías</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Restaurantes grandes, grupos</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Cadenas, caterings, consultorías</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 
@@ -868,7 +868,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">Sí, especialmente con los planes Premium Pro y Premium Plus, puedes gestionar múltiples establecimientos desde una cuenta centralizada, manteniendo consistencia en la información de alérgenos mientras permites adaptaciones locales según sea necesario.</p>
+<p class="wp-block-paragraph">Sí. Todos los planes dan acceso a los mismos agentes; para varios locales conviene uno con más créditos, como Premium Plus o Premium Max. Puedes gestionar múltiples establecimientos desde una cuenta centralizada, manteniendo consistencia en la información de alérgenos mientras permites adaptaciones locales según sea necesario.</p>
 
 
 
@@ -920,7 +920,7 @@ wpId: 1965
 
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
 <h3 style="color: #ffffff; font-size: 26px; margin-bottom: 15px;">🚀 Comienza Hoy tu Transformación Digital</h3>
-<p style="color: #e8e8e8; font-size: 17px; margin-bottom: 25px;">Únete a miles de profesionales de la hostelería que ya utilizan AI Chef Pro para gestionar alérgenos, optimizar costes y revolucionar su cocina.</p>
+<p style="color: #e8e8e8; font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu cocina para gestionar alérgenos, optimizar costes y revolucionar tu servicio.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 18px 45px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 10px rgba(255,107,53,0.4);">Acceder a AI Chef Pro Miembro</a>
 </div>
 

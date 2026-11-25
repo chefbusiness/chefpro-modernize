@@ -12,7 +12,7 @@ faq:
   - q: "¿Qué herramientas de IA necesita de verdad un chef?"
     a: "Depende del momento del negocio, pero las de mayor retorno inmediato son las de escandallos y food cost, y las de creatividad para I+D de platos. Con ellas ahorras horas de cálculo y desbloqueas ideas. Si además manejas redes, suma las de fotografía y copy."
   - q: "¿Cuánto cuesta empezar con AI Chef Pro?"
-    a: "Sí. El plan AI Chef Miembro da 10.000 créditos al mes por 10 €, sin permanencia. Es suficiente para probar varios escandallos, generar recetas o preparar fichas técnicas y decidir si te encaja antes de pagar nada."
+    a: "El plan de entrada, AI Chef Miembro, cuesta 10 € al mes e incluye 10.000 créditos, sin permanencia. Es suficiente para probar varios escandallos, generar recetas o preparar fichas técnicas y decidir si te encaja antes de subir de plan."
   - q: "¿La IA sustituye la creatividad del cocinero?"
     a: "No. La IA propone combinaciones y variaciones a partir de datos, pero la decisión final, el ajuste de sazón y el criterio son del chef. Es una herramienta de apoyo, como un bloc de notas muy rápido, no un sustituto del oficio."
   - q: "¿Sirve para una cocina pequeña o solo para grandes restaurantes?"
@@ -155,14 +155,14 @@ Desde preparar el temario de una oposición a la hostelería hasta practicar voc
 
 La mayoría de estas herramientas están al alcance de cualquier cocina, sin necesidad de grandes inversiones. Mi recomendación es empezar por las categorías que más impacto tienen en la cuenta de resultados: escandallos y creatividad. Con solo esas dos, ya ahorras tiempo y ajustas márgenes.
 
-AI Chef Pro reúne más de 70 agentes de IA culinarios en español, pensados para cubrir recetas, escandallos, cartas, marketing y formación en una sola plataforma. Tiene un plan AI Chef Miembro que te da 10.000 créditos al mes por 10 €, sin permanencia. Cuando veas que el volumen de trabajo pide más, subes de plan.
+AI Chef Pro reúne más de 80 agentes de IA culinarios en español, pensados para cubrir recetas, escandallos, cartas, marketing y formación en una sola plataforma. Tiene un plan AI Chef Miembro que te da 10.000 créditos al mes por 10 €, sin permanencia. Cuando veas que el volumen de trabajo pide más, subes de plan.
 
 | Plan | Precio | Créditos/mes | Ideal para |
 | :--- | :--- | :--- | :--- |
 | Miembro | 10 € | 10.000 | Probar herramientas y uso ocasional. |
 | Premium Pro | 25 € | 85.000 | Cocinas con volumen medio de creación y escandallos. |
-| Plus | 50 € | 175.000 | Equipos que generan contenido y gestionan costes a diario. |
-| Max | 95 € | Ilimitados | Uso intensivo en restaurantes con alta rotación de carta. |
-| Max Anual | 950 € | Ilimitados | Ahorro para quien ya sabe que lo va a usar todo el año. |
+| Premium Plus | 50 € | 175.000 | Equipos que generan contenido y gestionan costes a diario. |
+| Premium Max | 95 € | Ilimitados | Uso intensivo en restaurantes con alta rotación de carta. |
+| Premium Max anual | 950 € | Ilimitados | Ahorro para quien ya sabe que lo va a usar todo el año. |
 
 Puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=15-herramientas) y experimentar con 2 o 3 herramientas de las que más te urjan. La curva de aprendizaje es baja: si sabes escribir una orden de comanda, sabes pedirle algo a la IA.
