@@ -69,7 +69,9 @@
   `blog-aichef` (§ «Duplicar un post ES a otro idioma»): aside pegado al `##` (H2 en texto plano), asides y huérfanas,
   nombres de agentes localizados, recursos que no existen en el idioma, FAQ que solo valen en español, calcos de DeepSeek
   («escandilhar», «criterium»), IVA por país, pycel sin caché.
-- **Reg. 2021/382, anexo II cap. IX punto 9** habla de equipos y recipientes de **recolección, transporte y almacenaje**:
-  no escribir que obliga a limpiar «cualquier equipo entre usos».
+- **Reg. 2021/382, anexo II cap. IX punto 9** = equipos, vehículos y recipientes usados para **transformar, manipular,
+  transportar o almacenar** un alérgeno: no se usan con alimentos sin él salvo limpieza y control (al menos, sin restos
+  visibles). La freidora y la tabla SÍ entran. Lo de «recolección, transporte y almacenaje» es el anexo I (producción
+  primaria). Un agente lo confundió y se corrigió en #279/#281.
 - Normativa verificada nueva en memoria: NL (`reference_normativa-neerlandesa-hygienecode-allergenen`) y PT
   (`reference_normativa-portuguesa-haccp-alergenios`); la IT se matizó (DPR 327/80 con salvaguardia, pescado y Anisakis).
