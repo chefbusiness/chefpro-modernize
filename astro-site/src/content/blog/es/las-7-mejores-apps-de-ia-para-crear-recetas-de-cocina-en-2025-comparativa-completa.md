@@ -19,7 +19,7 @@ faq:
   - q: "¿Cuál es la mejor app de IA para crear recetas en 2026?"
     a: "Depende de tu perfil. Para cocina casera de aprovechamiento, SuperCook o Mr. Cook son muy ágiles. Si controlas macros y menús semanales, ChefGPT destaca. Y para hostelería profesional, la suite más completa es AI Chef Pro, con escandallos, alérgenos y desarrollo de carta en español."
   - q: "¿Hay apps de IA para recetas completamente gratis?"
-    a: "Sí, varias ofrecen planes gratuitos con límites. SuperCook se financia con anuncios y Mr. Cook permite generaciones diarias sin registro. AI Chef Pro no tiene plan gratuito: su plan Miembro cuesta 10 € al mes con 10.000 créditos, aunque en su web hay herramientas gratuitas sin registro, como la calculadora de food cost. La gratuidad es real, aunque las funcionalidades avanzadas suelen ser de pago."
+    a: "Sí, varias ofrecen planes gratuitos con límites: SuperCook se financia con anuncios y Mr. Cook permite generaciones diarias sin registro. En esas apps la gratuidad es real, aunque las funcionalidades avanzadas suelen ser de pago. AI Chef Pro no tiene plan gratuito: su plan Miembro cuesta 10 € al mes con 10.000 créditos, aunque en su web hay herramientas gratuitas sin registro, como la calculadora de food cost."
   - q: "¿Sirven estas apps para restaurantes y cocinas profesionales?"
     a: "La mayoría están pensadas para el hogar. Solo plataformas como AI Chef Pro incorporan utilidades profesionales: cálculo de escandallos, fichas de alérgenos, adaptación de cartas y gestión de costes. Sin estas funciones, una app de recetas se queda corta en un obrador real."
   - q: "¿Son fiables las recetas generadas por inteligencia artificial?"

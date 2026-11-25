@@ -111,7 +111,7 @@ wpId: 1804
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Fotografía Tradicional</th><th>Generador IA (AI Chef Pro)</th><th>Ahorro</th></tr></thead><tbody><tr><td>Sesión fotográfica básica (10 platos)</td><td>800-1.500€</td><td>10-95€/mes</td><td>750-1.450€</td></tr><tr><td>Equipamiento fotográfico profesional</td><td>3.000-8.000€</td><td>0€</td><td>3.000-8.000€</td></tr><tr><td>Estilista de alimentos (sesión)</td><td>300-600€</td><td>0€</td><td>300-600€</td></tr><tr><td>Ingredientes para fotografía</td><td>150-400€</td><td>0€</td><td>150-400€</td></tr><tr><td>Postproducción y edición</td><td>200-500€</td><td>Incluido</td><td>200-500€</td></tr><tr><td><strong>TOTAL (por sesión)</strong></td><td><strong>4.450-11.000€</strong></td><td><strong>10-95€/mes</strong></td><td><strong>4.400-10.950€</strong></td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Fotografía Tradicional</th><th>Generador IA (AI Chef Pro)</th><th>Ahorro</th></tr></thead><tbody><tr><td>Sesión fotográfica básica (10 platos)</td><td>800-1.500€</td><td>10-95€/mes</td><td>705-1.405€</td></tr><tr><td>Equipamiento fotográfico profesional</td><td>3.000-8.000€</td><td>0€</td><td>3.000-8.000€</td></tr><tr><td>Estilista de alimentos (sesión)</td><td>300-600€</td><td>0€</td><td>300-600€</td></tr><tr><td>Ingredientes para fotografía</td><td>150-400€</td><td>0€</td><td>150-400€</td></tr><tr><td>Postproducción y edición</td><td>200-500€</td><td>Incluido</td><td>200-500€</td></tr><tr><td><strong>TOTAL (por sesión)</strong></td><td><strong>4.450-11.000€</strong></td><td><strong>10-95€/mes</strong></td><td><strong>4.355-10.905€</strong></td></tr></tbody></table></div></figure>
 
 
 
@@ -1431,7 +1431,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph">No hay funciones reservadas a los planes superiores: todos dan acceso a todos los agentes. Lo único que cambia es la cantidad de créditos mensuales:</p>
+<p class="wp-block-paragraph">Todos los planes incluyen todos los agentes. Lo que cambia es la cantidad de créditos mensuales y, en los planes superiores, el soporte (prioritario en Premium Pro, 24/7 en Premium Plus y Max) y las herramientas avanzadas de negocio:</p>
 
 
 
@@ -1453,7 +1453,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph">Ningún plan de AI Chef Pro tiene <strong>permanencia</strong>: puedes subir, bajar de plan o cancelar cuando quieras, así que no te atas a nada si la herramienta no encaja en tu cocina.</p>
+<p class="wp-block-paragraph">Los planes mensuales de AI Chef Pro no tienen <strong>permanencia</strong>: puedes subir, bajar de plan o cancelar cuando quieras, así que no te atas a nada si la herramienta no encaja en tu cocina.</p>
 
 
 

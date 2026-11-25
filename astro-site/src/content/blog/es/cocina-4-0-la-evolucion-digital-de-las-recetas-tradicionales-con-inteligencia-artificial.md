@@ -369,7 +369,7 @@ wpId: 1606
 
 
 
-<li><strong>Semana 3-4:</strong> Prueba <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5779">AI Chef Pro Miembro</a> para evaluar funcionalidades avanzadas</li>
+<li><strong>Semana 3-4:</strong> Prueba <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5779">AI Chef Pro</a> con el plan Miembro (10 €/mes, de pago) para evaluar funcionalidades avanzadas</li>
 
 
 
@@ -533,7 +533,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Esperado</th><th>ROI Proyectado</th><th>Período de Amortización</th></tr></thead><tbody><tr><td>Restaurante Pequeño (30 pax)</td><td>€15-25</td><td>€300-500</td><td>1200-2000%</td><td>1 mes</td></tr><tr><td>Restaurante Mediano (60 pax)</td><td>€25-50</td><td>€800-1200</td><td>1600-2400%</td><td>3-4 semanas</td></tr><tr><td>Empresa Catering</td><td>€50-100</td><td>€2000-4000</td><td>2000-4000%</td><td>2-3 semanas</td></tr><tr><td>Cadena Restaurantes</td><td>€100-200</td><td>€5000-15000</td><td>2500-7500%</td><td>1-2 semanas</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Esperado</th><th>ROI Proyectado</th><th>Período de Amortización</th></tr></thead><tbody><tr><td>Restaurante Pequeño (30 pax)</td><td>€10-25</td><td>€300-500</td><td>1200-2000%</td><td>1 mes</td></tr><tr><td>Restaurante Mediano (60 pax)</td><td>€25-50</td><td>€800-1200</td><td>1600-2400%</td><td>3-4 semanas</td></tr><tr><td>Empresa Catering</td><td>€50-100</td><td>€2000-4000</td><td>2000-4000%</td><td>2-3 semanas</td></tr><tr><td>Cadena Restaurantes</td><td>€100-200</td><td>€5000-15000</td><td>2500-7500%</td><td>1-2 semanas</td></tr></tbody></table></div></figure>
 
 
 

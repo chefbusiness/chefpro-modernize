@@ -1752,7 +1752,7 @@ Parámetros económicos:
 <li>Incremento de ventas: 12% × 180,000€ = 21,600€ (anual promedio)</li>
 <li>Eficiencias de escala: 1,200€ mensuales</li>
 <li><strong>Total beneficios: 7,350€/mes</strong></li>
-<li><strong>ROI neto: 17,640% anual</strong></li>
+<li><strong>ROI neto: 14.600 % anual</strong></li>
 </ul>
 </div>
 
