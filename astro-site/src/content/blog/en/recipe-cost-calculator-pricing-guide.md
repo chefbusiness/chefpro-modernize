@@ -22,6 +22,8 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <h3>The Profitability Blind Spot</h3>
 <p>The restaurant industry operates on notoriously thin margins. According to the National Restaurant Association, the average restaurant earns a net profit of only 6-9% of total revenue. In this environment, the difference between a profitable menu item and a money-losing dish often comes down to understanding your numbers—yet most operators skip this critical step.</p>
 <p>Industry benchmarks suggest that food cost should represent <strong>28-35% of your menu price</strong> for most restaurant concepts. This range isn&#8217;t arbitrary; it&#8217;s the mathematical sweet spot that allows you to cover food costs, labor, overhead, and still generate meaningful profit. But here&#8217;s the problem: you can&#8217;t hit a target you haven&#8217;t measured.</p>
+
+<p>Once you have the plate cost, the free <a href="https://aichef.pro/en/menu-pricing-calculator">menu pricing calculator</a> turns it into a menu price at your target food cost %, with the markup and the gross profit per plate.</p>
 <h3>The Danger of Guessing</h3>
 <p>When restaurant owners and chefs set prices without calculating actual recipe costs, they make one of three common mistakes:</p>
 <ul>

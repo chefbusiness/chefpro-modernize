@@ -20,6 +20,8 @@ imageAlt: "Menu Pricing Strategy"
 <h3>The Most Common Menu Pricing Errors</h3>
 <p><strong>Error #1: Cost-Plus Pricing Blindness</strong></p>
 <p>The traditional approach of calculating food cost and adding a standard markup (typically 3-4x) seems logical but ignores critical factors. A dish with 20% food costs priced at $20 might seem reasonable, but what if customers would happily pay $28? You&#8217;ve just given away $8 per order multiplied by hundreds of orders monthly. Conversely, a dish priced at $24 based on cost-plus might fail because customers perceive it as overpriced compared to alternatives.</p>
+
+<p>Cost-based pricing is still the floor you start from: the free <a href="https://aichef.pro/en/menu-pricing-calculator">menu pricing calculator</a> gives you that starting price from plate cost and target food cost %, before you adjust for demand.</p>
 <p><strong>Error #2: Competitor Mirroring</strong></p>
 <p>Many restaurants simply look at what competitors charge and price accordingly. This strategy assumes your costs, quality, and brand positioning are identical—which they never are. If your steak costs 15% more to source than the restaurant down the street but you price identically, you&#8217;re eroding your margin without any competitive advantage.</p>
 <p><strong>Error #3: Psychological Pricing Neglect</strong></p>
