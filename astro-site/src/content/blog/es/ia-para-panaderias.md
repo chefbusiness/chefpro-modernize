@@ -6,6 +6,8 @@ modDate: 2026-09-10
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/ia-para-panaderias-1.jpeg
 imageAlt: "IA para Panaderías: Guía Completa de Inteligencia Artificial para Panaderos Profesionales [2026]"
+translations:
+  en: "ai-for-bakeries"
 lang: es
 wpId: 2594
 faq:
