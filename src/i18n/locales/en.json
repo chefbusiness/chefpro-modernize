@@ -2280,7 +2280,7 @@
     "seo": {
       "title": "AI Recipe Generator for Restaurants & Chefs | AI Chef Pro",
       "description": "AI recipe generator for restaurants: give the agents your ingredients or a dish and get a draft the chef checks before service. 27 world cuisines.",
-      "keywords": "AI recipe generator, AI recipe generator from ingredients, AI recipe maker, AI recipes restaurants, professional recipe generator, AI chef recipes, recipe tech sheets, 27 world cuisines recipes"
+      "keywords": "AI recipe generator, AI recipe maker, AI recipes restaurants, professional recipe generator, AI chef recipes, recipe tech sheets, 27 world cuisines recipes"
     },
     "breadcrumb": "AI Recipes for Restaurants",
     "hero": {
@@ -2449,10 +2449,6 @@
       {
         "question": "Can AI create professional recipes for restaurants?",
         "answer": "Yes. AI Chef Pro generates recipes with correct culinary technical vocabulary, including precise techniques, cooking points, presentation and pairings. Unlike a generic AI, it understands the logic of each world cuisine."
-      },
-      {
-        "question": "Can it generate a recipe from the ingredients I have?",
-        "answer": "Yes. Type what is on hand with quantities and condition, add your constraints (station, cover count, allergens to avoid) and ask for two or three options. The agents don't see your inventory or invoices: they work from what you write, and you taste and cost the draft before it goes on the menu."
       },
       {
         "question": "What world cuisines does AI Chef Pro include?",

@@ -1,6 +1,6 @@
 ---
 title: "AI Recipe Generator vs Traditional Recipe Development"
-description: "For centuries, recipe development was an art form passed down through generations of chefs—requiring years of training, countless hours of testing, and an…"
+description: "AI recipe generator vs. traditional recipe development: what changes in time, cost and quality, and what the chef still has to cook, taste and sign off."
 pubDate: 2026-02-28
 modDate: 2026-11-25
 category: ai-in-gastronomy

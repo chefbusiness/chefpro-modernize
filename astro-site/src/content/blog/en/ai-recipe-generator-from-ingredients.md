@@ -6,14 +6,14 @@ modDate: 2026-11-25
 category: ai-in-gastronomy
 lang: en
 image: /blog-assets/en/2026/11/ai-recipe-generator-featured.jpg
-imageAlt: "A cook lays out chicken thighs, zucchini, cream and basil from the walk-in on a stainless prep counter, next to a tablet"
+imageAlt: "A cook lays out zucchini, basil, lemons and shallots from the walk-in on a stainless prep counter, next to a tablet"
 faq:
   - q: "Can AI make a recipe from the ingredients I have?"
     a: "Yes. You type the ingredients with quantities and condition, add the limits of your kitchen such as station, equipment, cover count and allergens, and ask for two or three options with method and yields. The draft is a starting point: you still check ratios, seasoning and times, cost the plate and cook a test batch before it goes on the menu."
   - q: "Which AI is best for giving recipes?"
     a: "It depends on the job. Free generators are fine for home cooking and quick ideas from a few ingredients. For a professional kitchen you want a tool that knows technique, yields, scaling and allergens, and that lets you set the constraints of your line. AI Chef Pro is built for that, from €10/month."
   - q: "Is there a free AI recipe generator?"
-    a: "Yes, several free generators exist and they work well for home cooks. AI Chef Pro itself has no free plan and no free trial; Member is €10/month with 10,000 credits and Premium plans start at €25/month. The tools on aichef.pro that are free and need no sign-up are the food cost calculator, the allergen detector and the tasting menu generator."
+    a: "Yes, several free generators exist and they work well for home cooks. AI Chef Pro itself has no free plan and no free trial; Member is €10/month with 10,000 credits and Premium plans start at €25/month. The free tools on aichef.pro, which need no sign-up, include a food cost calculator, an allergen detector and a tasting menu generator."
   - q: "Can an AI recipe generator handle food allergies?"
     a: "As a drafting aid, yes. Name the allergens to remove, ask for hidden sources in stocks, sauces, marinades and fryer oil, and ask for substitutions that hold up under heat. Then check labels, supplier specs and your cross-contact rules on the line. The AI drafts and you verify, because your guest is eating your food, not the draft."
   - q: "Can it scale a recipe for a banquet?"
@@ -68,7 +68,7 @@ For longer, more structured prompts, read the libraries before you write your ow
 
 An allergy-safe version starts with naming the allergens out loud in the prompt and asking where they hide, not with asking for "an allergy-friendly dish." In the US the 9 major food allergens are milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans and sesame, and those are the ones a guest will ask you about.
 
-Ask in this order: name the allergens to remove; ask for the hidden sources, which are usually stocks, sauces, marinades, dressings and fryer oil; ask for substitutions that hold up under heat rather than ones that collapse at the pass; then check labels and run your own cross-contact rules on the line. The Allergen ID agent is built for that second question, direct and hidden allergens plus cross-contact risks and safe substitutions, and the [Allergen ID prompt library](https://aichef.pro/en/blog/prompt-library-allergen-identification) shows how to ask so you get a list instead of a reassurance. There is also a free [allergen detector](https://aichef.pro/en/restaurant-allergen-detector) that needs no account.
+Ask in this order: name the allergens to remove; ask for the hidden sources, which are usually stocks, sauces, marinades, dressings and fryer oil; ask for substitutions that hold up under heat rather than ones that collapse at the pass; then check labels and run your own cross-contact rules on the line. The Allergen ID agent is built for that second question, direct and hidden allergens plus cross-contact risks and safe substitutions, and the [Allergen ID prompt library](https://aichef.pro/en/blog/prompt-library-allergen-identification) shows how to ask so you get a list instead of a reassurance. There is also a free [allergen detector](https://aichef.pro/en/restaurant-allergen-detector) that needs no account; it works from the EU list of 14 allergens, which includes the US nine.
 
 Then verify. The AI drafts, you check the labels, the supplier specs and the board. A substitution that works in the pan can still fail on the label of a sauce you bought in, and your guest is the one eating it.
 
@@ -87,7 +87,7 @@ A free generator is fine for home cooking and quick inspiration, and it is not b
 | Costing the plate | No | Pair it with the food cost calculator |
 | Price | Free | From €10/month (Member, 10,000 credits) |
 
-If you cook at home on a Sunday and want to use up a squash, a free generator will do the job and you should use it. In a restaurant the recipe has a cost, a station, a yield and an allergen profile, and that is where the free tools run out. AI Chef Pro is a suite of 75+ AI agents for hospitality, including Avant-garde Cuisine, 27 world-cuisine recipe agents (12 from Europe, 11 from Latin America, 4 from Asia), Staff Meal, Waste GenCal, Allergen ID, Food Pairing AI, Calcula Pax and VegChef Plant-Based. There is no free plan and no free trial: Member is €10/month for 10,000 credits, Premium plans from €25/month, all billed in euros. The free tools on aichef.pro, the food cost calculator, the allergen detector and the tasting menu generator, need no sign-up.
+If you cook at home on a Sunday and want to use up a squash, a free generator will do the job and you should use it. In a restaurant the recipe has a cost, a station, a yield and an allergen profile, and that is where the free tools run out. AI Chef Pro is a suite of 75+ AI agents for hospitality, including Avant-garde Cuisine, 27 world-cuisine recipe agents (12 from Europe, 11 from Latin America, 4 from Asia), Staff Meal, Waste GenCal, Allergen ID, Food Pairing AI, Calcula Pax and VegChef Plant-Based. There is no free plan and no free trial: Member is €10/month for 10,000 credits, Premium plans from €25/month, all billed in euros. The free tools on aichef.pro, which include a food cost calculator, an allergen detector and a tasting menu generator, need no sign-up.
 
 ## Where AI recipes go wrong (and how to catch it)
 
@@ -99,7 +99,7 @@ It goes wrong in the same six places almost every time, and all six are caught b
 - **Ratios and seasoning.** A draft can be structurally right and still oversalted or thin. Taste and correct.
 - **Cooking times at volume.** A time that works for 4 portions is not a time for 40. Recalculate it, and check with your own probe.
 - **Hidden allergens.** Stocks, bases, marinades and fryer oil carry allergens nobody listed. Read labels.
-- **Food safety.** Cook to the internal temperatures in your own HACCP plan, never to a number the AI gave you.
+- **Food safety.** Cook to the internal temperatures in the FDA Food Code, your local health code and your HACCP plan, never to a number the AI gave you.
 - **Authenticity of regional dishes.** A generator can flatten a regional dish into a generic one. If you sell it as a classic, check it against a source you trust.
 - **Confident but wrong facts.** The tool states things with the same calm whether or not they are true. Verify anything that carries a cost or a risk.
 
