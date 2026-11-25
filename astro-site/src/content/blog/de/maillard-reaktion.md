@@ -43,7 +43,7 @@ Die Maillard-Reaktion bräunt und gibt Röstaroma, wenn Aminosäuren und Zucker 
 
 1912 beschrieb der französische Chemiker Louis-Camille Maillard, wie Aminogruppen in Proteinen auf die Carbonylgruppe bestimmter Zucker treffen, sobald Hitze dazukommt. Dieses erste Treffen läuft in eine Kaskade. Der Koch sieht braune Pigmente, die Melanoidine, und riecht Nuss, Brot, gebratenes Fleisch oder Kaffee. Es ist nicht eine einzige Reaktion. Sie hängt vom Zucker und von den Aminosäuren ab, und sie will eine trockene Fläche. Wasser hindert diese Fläche, über den Siedepunkt zu steigen, und es verdünnt die Partner.
 
-Sie begegnet ihr in jedem Service: die Kruste eines Brotes, der Socarrat einer Paella, Dulce de leche, das in der Pfanne nachdunkelt, ein Steak auf der Plancha, gerösteter Kaffee. Die gemeinsame Bedingung ist dieselbe. Die Kontaktzone liegt nicht in Flüssigkeit, und sie ist heiß genug, dass die Reaktion läuft.
+Sie begegnet ihr in jedem Service: die Kruste eines Brotes, der Socarrat einer Paella, Dulce de leche, das in der Pfanne nachdunkelt, ein Steak auf der Plancha, gerösteter Kaffee. Dass Röstnoten Kaffee und gebratenes Schweinefleisch verbinden, nutzt das [Foodpairing](https://aichef.pro/de/blog/foodpairing). Die gemeinsame Bedingung ist dieselbe. Die Kontaktzone liegt nicht in Flüssigkeit, und sie ist heiß genug, dass die Reaktion läuft.
 
 Gesucht wird Maillard-Reaktion, auch Maillard Reaktion ohne Bindestrich, und oft nur Maillard. Der alte spanische Slug mit der Endung -2 führt auf die spanische Fiche. Diese Seite ist die deutsche.
 
@@ -104,7 +104,7 @@ Diese Kruste ist auch der Anfang eines [braunen Fonds](https://aichef.pro/de/blo
 
 Eine dunkle Kruste ist nicht automatisch eine bessere. Zu weit getrieben wird der Geschmack bitter und die Textur kohlig. Bei Stärke, Pommes, Brot und Keksen, ist derselbe Schritt der Bereich, in dem Acrylamid entsteht. Die Arbeitsregel dieser Fiche ist die, die in der Küche schon gilt: haselnussbraun, nicht schwarz.
 
-Die Reaktion bindet auch manche Aminosäuren, Lysin besonders. Eine verbrannte Grillkruste ist nicht dasselbe Lebensmittel wie ein leichtes Anbraten. Das Vergnügen sitzt im Aroma. Welche Zutaten ihre Aromastoffe teilen und sich deshalb ergänzen, erklärt der Artikel über [Foodpairing](https://aichef.pro/de/blog/foodpairing). Der Überschuss kostet das Produkt.
+Die Reaktion bindet auch manche Aminosäuren, Lysin besonders. Eine verbrannte Grillkruste ist nicht dasselbe Lebensmittel wie ein leichtes Anbraten. Das Vergnügen sitzt im Aroma. Der Überschuss kostet das Produkt.
 
 ## Fehler
 
