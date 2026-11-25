@@ -25,7 +25,7 @@ faq:
 <p>Questa guida è pensata per chi lavora davvero ai fornelli. Trovi la tabella ufficiale degli allergeni, con la numerazione dell’Allegato II del Reg. (UE) 1169/2011, gli esempi concreti che trovi nella tua cucina e i punti critici dove si nascondono gli ingredienti insospettabili. Stampala, appendila, usala. E se hai dubbi su come dichiarare gli allergeni nel tuo menù, qui sotto trovi anche <a href="https://aichef.pro/it/blog/etichettatura-allergeni">le modalità ammesse</a> e gli errori che l’ASL contesta più spesso.</p>
 
 <h2>La tabella dei 14 allergeni con la numerazione ufficiale</h2>
-<p>Questa è la numerazione ufficiale dell’Allegato II del Reg. (UE) 1169/2011. È l’ordine in cui l’Allegato II elenca gli allergeni: seguirlo non è un obbligo, ma è una buona pratica che anche le ASL usano nei loro esempi (tipo «Pizza margherita (1, 7)»), purché accompagnata da una legenda con il nome di ciascun allergene. Quello che non devi fare è inventare voci. La tabella che trovi qui sotto è pensata per essere stampata e usata in cucina, con la colonna “Dove si nasconde” che ti aiuta a riconoscere gli allergeni nei prodotti trasformati.</p>
+<p>Questa è la numerazione ufficiale dell’Allegato II del Reg. (UE) 1169/2011. È l’ordine in cui l’Allegato II elenca gli allergeni: seguirlo non è un obbligo, ma è una buona pratica che anche l’AUSL di Bologna usa nei suoi esempi (ad esempio «Pizza margherita (1, 7)»), purché i numeri rimandino a una legenda con il nome di ciascun allergene. Quello che non devi fare è inventare voci. La tabella che trovi qui sotto è pensata per essere stampata e usata in cucina, con la colonna “Dove si nasconde” che ti aiuta a riconoscere gli allergeni nei prodotti trasformati.</p>
 
 <table>
 <thead>
@@ -133,7 +133,7 @@ faq:
 
 <h2>Perché la numerazione conta (e quando NON si usano i numeri)</h2>
 <p>La numerazione da 1 a 14 non è un’invenzione editoriale: è l’ordine dell’Allegato II del Reg. (UE) 1169/2011. Usarla ti aiuta a parlare la stessa lingua degli ispettori, dei fornitori e dei colleghi. Se in cucina dici “attenzione, c’è il numero 7”, tutti sanno che si tratta di latte e derivati, senza dover rileggere l’etichetta.</p>
-<p>Però attenzione: il Regolamento non impone di usare i numeri sul menù. Puoi scrivere il nome dell’allergene per esteso, oppure usare i numeri in una legenda. La cosa importante è che il cliente riceva un’informazione chiara e inequivocabile. Se usi i numeri, devi essere certo che il cliente li capisca: non tutti sanno che il numero 12 corrisponde ai solfiti. E il numero da solo non vale: l’art. 9, par. 2, del Reg. (UE) 1169/2011 chiede indicazioni «espresse mediante parole e numeri», quindi ogni numero deve rimandare a una legenda che riporti il nome dell’allergene. Per questo, nella pratica, molti ristoratori preferiscono scrivere il nome dell’allergene accanto alla pietanza, oppure usare la numerazione in una tabella ben visibile e spiegata.</p>
+<p>Però attenzione: il Regolamento non impone di usare i numeri sul menù. Puoi scrivere il nome dell’allergene per esteso, oppure usare i numeri in una legenda. La cosa importante è che il cliente riceva un’informazione chiara e inequivocabile. Se usi i numeri, devi essere certo che il cliente li capisca: non tutti sanno che il numero 12 corrisponde ai solfiti. E il numero da solo non vale: l’art. 9, par. 2, del Reg. (UE) 1169/2011 vuole le indicazioni «espresse mediante parole e numeri» e ammette pittogrammi o simboli solo in aggiunta: un numero-codice fa le veci di un simbolo, quindi deve rimandare a una legenda con il nome dell’allergene. Per questo, nella pratica, molti ristoratori preferiscono scrivere il nome dell’allergene accanto alla pietanza, oppure usare la numerazione in una tabella ben visibile e spiegata.</p>
 <p>Quando NON si usano i numeri? Quando il menù è descrittivo e l’allergene è già evidente nel nome del piatto, per esempio “tagliatelle al ragù” non ha senso mettere solo un numero: devi comunque specificare che il piatto contiene glutine, uova, latte e sedano, se presenti. I numeri sono un supporto, non un sostituto della chiarezza.</p>
 
 <h2>Come dichiarare gli allergeni sul menù: le tre modalità ammesse</h2>
@@ -163,7 +163,7 @@ faq:
 </tr>
 <tr>
 <td>3. Avviso scritto che rimanda al personale + documentazione scritta</td>
-<td>Nel menù, nel registro o su un cartello avvisi per iscritto che i piatti possono contenere allergeni e che il personale è a disposizione; chi è in sala risponde consultando una documentazione scritta piatto per piatto, facilmente reperibile sia per il cliente sia per l’autorità di controllo</td>
+<td>Nel menù, nel registro o su un cartello avvisi per iscritto che i piatti possono contenere allergeni e che il personale è a disposizione (è un rimando al personale, non una dicitura «può contenere» al posto della dichiarazione); chi è in sala risponde consultando una documentazione scritta piatto per piatto, facilmente reperibile sia per il cliente sia per l’autorità di controllo</td>
 <td>Flessibile, utile per menù che cambiano spesso</td>
 <td>Rischio di errori umani, serve personale formato e un documento sempre aggiornato</td>
 </tr>
