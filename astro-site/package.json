@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/strip-nul-bytes.mjs",
     "preview": "astro preview",
     "test": "node src/lib/llms-glossary.mjs && node --experimental-strip-types --test src/lib/date-placeholders.test.mjs src/lib/llms-glossary.test.mjs ../src/lib/medicion-compra.test.mjs ../netlify/shared/purchase-measurement.test.mjs"
   },
