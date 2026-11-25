@@ -74,7 +74,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { name: 'Casual Restaurants AI+', category: 'Geschäftskonzepte', description: 'Spezialist für Bistros, Gastrobars, Tapas und Mediterranes: deckt das Casual-Spektrum ab.' },
       { name: 'Kreativküche', category: 'Kulinarische Kreativität', description: 'Gerichteentwicklung mit Rezept + Kalkulations-CSV zum Laden in das Kalkulations-Kit Pro des Kunden.' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Präzise Schwund- und Ertragswerte pro Zutat: entscheidend für realistische Kalkulationen in Audits.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Gericht: notwendig für Compliance-Berichte.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene je Gericht, mit abschließender Kontrolle durch den Koch: notwendig für Compliance-Berichte.' },
       { name: 'MenuDish Local SEO', category: 'Inhalte und Social Media', description: 'Diagnose der Gerichtebeschreibungen des Kunden und optimierter lokaler SEO-Vorschlag.' },
       { name: 'BlogPost SEO Gen+', category: 'Inhalte und Social Media', description: 'Redaktionsplan für Blog zur lokalen organischen Traffic-Gewinnung: direkter Liefergegenstand für den Kunden.' },
       { name: 'Keyword Discovery AI+', category: 'Inhalte und Social Media', description: 'Recherche lokaler gastronomischer Keywords nach Postleitzahl: fertige Wettbewerbsanalyse.' },
@@ -299,7 +299,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Kreativküche Pro', category: 'Kulinarische Kreativität', description: 'Entwicklung von Sorten und Basen mit POD/PAC/Trockensubstanz-Balance + Kalkulations-CSV.' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Schwund und Erträge von Obst, Nüssen und Milchbasen.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Sorte.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene je Sorte, mit abschließender Kontrolle durch den Koch.' },
       { name: 'Conversor Ing', category: 'Werkzeuge und Utilities', description: 'Gewichts- und Maßumrechner für die handwerkliche Backstube.' },
       { name: 'Calcula Pax', category: 'Werkzeuge und Utilities', description: 'Skalierung von Basen für verschiedene Eismaschinenvolumen.' },
       { name: 'Profi Restaurantmanager', category: 'Gastro Profile Pro', description: 'Betrieb und Reporting an den Eigentümer der Kundeneisdiele.' },
@@ -412,7 +412,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Kreativküche Pro', category: 'Kulinarische Kreativität', description: 'Entwicklung von Pralinen, Tafeln und Desserts mit detailliertem Rezept und Temperierkurve.' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Schwund und Erträge von Couverture, Kakaobutter und Nüssen.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Pralinenrezept.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene je Pralinenrezept, mit abschließender Kontrolle durch den Koch.' },
       { name: 'Conversor Ing', category: 'Werkzeuge und Utilities', description: 'Gewichts- und Maßumrechner für die Chocolaterie-Backstube.' },
       { name: 'Calcula Pax', category: 'Werkzeuge und Utilities', description: 'Skalierung von Rezepten für Produktion in verschiedenen Volumen.' },
       { name: 'Profi Restaurantmanager', category: 'Gastro Profile Pro', description: 'Betrieb und Reporting an den Eigentümer des Kunden-Chocolate-Shops.' },
@@ -525,7 +525,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Kreativküche Pro', category: 'Kulinarische Kreativität', description: 'Entwicklung von Desserts, Teigen, Blätterteig und Gebäck mit detailliertem Rezept.' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Schwund und Erträge von Butter, Mehl, Milchprodukten und Schokolade.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Dessert und Gebäck.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene je Dessert und je Gebäck, mit abschließender Kontrolle durch den Koch.' },
       { name: 'Conversor Ing', category: 'Werkzeuge und Utilities', description: 'Gewichts- und Maßumrechner für die professionelle Backstube.' },
       { name: 'Calcula Pax', category: 'Werkzeuge und Utilities', description: 'Skalierung von Rezepten auf verschiedene Produktionsvolumen.' },
       { name: 'Profi Restaurantmanager', category: 'Gastro Profile Pro', description: 'Betrieb und Reporting an den Eigentümer der Kundenkonditorei.' },
@@ -638,7 +638,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Kreativküche Pro', category: 'Kulinarische Kreativität', description: 'Entwicklung von Pizzas mit detailliertem Rezept (Teig, Sauce, Mozzarella, Toppings).' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Schwund und Erträge von Mehl, Mozzarella, Tomate und Öl.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Pizza.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene je Pizza, mit abschließender Kontrolle durch den Koch.' },
       { name: 'Conversor Ing', category: 'Werkzeuge und Utilities', description: 'Gewichts- und Maßumrechner für die Pizzeria-Backstube.' },
       { name: 'Calcula Pax', category: 'Werkzeuge und Utilities', description: 'Skalierung von Teigrezepten für verschiedene Tagesvolumen.' },
       { name: 'Profi Restaurantmanager', category: 'Gastro Profile Pro', description: 'Betrieb und Reporting an den Eigentümer der Kundenpizzeria.' },
@@ -1090,7 +1090,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Kreativküche Pro', category: 'Kulinarische Kreativität', description: 'Entwicklung von Broten, Sauerteigen, Blätterteig und Brioches mit detailliertem Rezept.' },
       { name: 'Lebensmittelabfälle AI', category: 'Werkzeuge und Utilities', description: 'Schwund und Erträge von Mehlen, Butter und Milchprodukten.' },
-      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch pro Brot und Gebäck.' },
+      { name: 'Allergen-ID', category: 'Werkzeuge und Utilities', description: 'Prüfung der 14 Allergene je Brot und je Gebäck, mit abschließender Kontrolle durch den Koch.' },
       { name: 'Conversor Ing', category: 'Werkzeuge und Utilities', description: 'Gewichts- und Maßumrechner für die professionelle Backstube.' },
       { name: 'Calcula Pax', category: 'Werkzeuge und Utilities', description: 'Skalierung von Rezepten für verschiedene Tagesvolumen der Backstube.' },
       { name: 'Profi Restaurantmanager', category: 'Gastro Profile Pro', description: 'Betrieb und Reporting an den Eigentümer der Kundenbäckerei.' },

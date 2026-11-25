@@ -8,9 +8,11 @@
 // nl se preservan verbatim a propósito (decisión de catálogo pendiente,
 // ver CATALOGO_ITALIANO_PENDIENTE.md — aplica a los 5 idiomas).
 //
-// NO editar a mano campo a campo: productIds, galleryImages, features[].icon,
-// seo.ogImage y testimonialAuthor se preservan verbatim desde el ES y el
-// validador del script lo comprueba. Regenerar PISA ediciones manuales.
+// NO editar a mano campo a campo: productIds, galleryImages, features[].icon
+// y seo.ogImage se preservan verbatim desde el ES y el validador del script
+// lo comprueba. Regenerar PISA ediciones manuales.
+// Los testimonios (cita, nombre y cargo) se quitaron: eran prueba social inventada
+// y no se muestran en la página.
 
 import type { UseCaseContent } from './use-cases';
 
@@ -97,9 +99,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Vroeger besteedde ik 6 uur per week alleen aan het kloppend maken van cijfers tussen Excel en servetten. Met AI Chef Pro sluit ik het af in een uur met professionele dashboards. Ik heb de financiële controle over mijn twee zaken terug en de marge steeg 3 punten in het eerste kwartaal.",
-    "testimonialAuthor": "Carlos Méndez",
-    "testimonialRole": "Eigenaar, groep mediterrane bistro's (2 zaken)",
     "faqTitle": "Veelgestelde Vragen van Eigenaren",
     "faqs": [
       {
@@ -329,9 +328,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-escandallos",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Vroeger was ik 8 uur per week bezig met het opstellen van roosters en bestellingen bij leveranciers. Nu doe ik dat in 2 uur met de Kit Gestión de Personal en de Kit Inventario. AI Chef Pro heeft me tijd teruggegeven om in de zaal met het team te zijn, waar een manager hoort te zijn.",
-    "testimonialAuthor": "Marta Ruiz",
-    "testimonialRole": "Manager, casual restaurant met 80 zitplaatsen",
     "faqTitle": "Veelgestelde Vragen van Managers",
     "faqs": [
       {
@@ -556,9 +552,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-tareas"
     ],
-    "testimonialQuote": "We beheren 7 locaties en voorheen werkte elke locatie anders: verschillende Excel-bestanden, verschillende handleidingen, verschillende HACCP. Met AI Chef Pro hebben we dezelfde standaard overal en geconsolideerde rapportage in één overzicht. Het detecteren van de locatie met problemen ging van 2 weken naar 1 dag.",
-    "testimonialAuthor": "Javier Ortega",
-    "testimonialRole": "Operationeel directeur, restaurantgroep met 7 locaties",
     "faqTitle": "Veelgestelde vragen van operationeel directeuren",
     "faqs": [
       {
@@ -782,9 +775,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Vroeger had ik 15 tot 20 dagen nodig om een nieuwe kaart rond te krijgen, met ideeën, tests, kostprijsberekeningen, technische fiches en interne communicatie. Met AI Chef Pro doe ik dat in 2 tot 3 dagen, afhankelijk van de omvang van de kaart en of het een volledige of gedeeltelijke herziening is. Het verschil zit niet alleen in de tijd: het team krijgt professionele documentatie die het kan herhalen, geen handgeschreven notities.",
-    "testimonialAuthor": "Diego Saavedra",
-    "testimonialRole": "Executive chef, groep van 5 mediterrane restaurants",
     "faqTitle": "Veelgestelde vragen van executive chefs",
     "faqs": [
       {
@@ -797,7 +787,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is het voor een gevorderde gastronomische keuken, of alleen voor casual dining?",
-        "a": "Voor het hele spectrum. Er zijn specifieke agenten: Creatieve Keuken voor auteurskeuken, Creatieve Patisserie, Fermentus Con AI+ voor de avant-garde, VegChef Plantaardig voor plantaardige keuken, plus 27 receptenboeken per land. Er zijn toepassingen in Michelinkeuens, in keukens met Repsol-zonnen en in casual groepen tot 25 vestigingen."
+        "a": "Voor het hele spectrum. Er zijn specifieke agenten: Creatieve Keuken voor auteurskeuken, Creatieve Patisserie, Fermentus Con AI+ voor de avant-garde, VegChef Plantaardig voor plantaardige keuken, plus 27 receptenboeken per land. Er zijn toepassingen in Michelinkeukens, in keukens met Repsol-zonnen en in casual groepen tot 25 vestigingen."
       },
       {
         "q": "Hoe past het systeem zich aan mijn manier van werken aan?",
@@ -1024,9 +1014,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Het Kit de Escandallos en het Pack APPCC hebben mij 5 uur administratie per week bespaard. Maar wat ik het meest gebruik is Creatieve Keuken voor gerechten buiten de kaart in het weekend: in één ochtend rond ik recept, kostprijsberekening en technische fiche af. Vroeger was dat een hele week.",
-    "testimonialAuthor": "Lucía Romero",
-    "testimonialRole": "Keukenchef, mediterraan restaurant met 70 plaatsen",
     "faqTitle": "Veelgestelde vragen van keukenchefs",
     "faqs": [
       {
@@ -1256,9 +1243,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Sous chef zijn is op honderd plaatsen tegelijk zijn. De mise en place-lijsten van het Kit de Tareas en de APPCC-registraties vanaf de mobiel hebben mijn chaos georganiseerd. Wanneer de chef-kok er niet is, blijft alles werken omdat de procedures zijn gedocumenteerd.",
-    "testimonialAuthor": "Nicolás Vega",
-    "testimonialRole": "Sous Chef, restaurant met 100 zitplaatsen",
     "faqTitle": "Veelgestelde Vragen van Sous Chefs",
     "faqs": [
       {
@@ -1483,9 +1467,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-inventario"
     ],
-    "testimonialQuote": "De kostenberekeningen per evenement besparen mij uren. Ik sluit een menu voor 200 gasten af met gevalideerde marge in 30 minuten. Vroeger was ik een halve middag bezig met rekenmachine en servetten. En het hebben van APPCC aangepast aan evenementen buiten de locatie heeft ons een enorme hoofdpijn bespaard met zakelijke klanten.",
-    "testimonialAuthor": "Andrea Costa",
-    "testimonialRole": "Cateringchef, specialist in zakelijke evenementen en bruiloften",
     "faqTitle": "Veelgestelde vragen van cateringchefs",
     "faqs": [
       {
@@ -1710,9 +1691,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "kit-inventario"
     ],
-    "testimonialQuote": "AI Chef Pro heeft mij echte financiële controle gegeven. Ik weet precies bij welke evenementen ik geld verdien en bij welke niet, en dat heeft mij in staat gesteld om nee te zeggen tegen klanten die niet rendabel waren. In het eerste kwartaal zijn we 4 punten marge gestegen zonder prijzen te wijzigen. Alleen door menu's aan te passen en slechte evenementen te weigeren.",
-    "testimonialAuthor": "Roberto Iglesias",
-    "testimonialRole": "Eigenaar, zakelijk cateringbedrijf (€2M jaarlijkse omzet)",
     "faqTitle": "Veelgestelde vragen van cateringondernemers",
     "faqs": [
       {
@@ -1942,9 +1920,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "AI Chef Pro heeft mijn manier van het afronden van cocktailkaarten veranderd. Vroeger was het een week van servetten en rekenmachine; nu is het een dag met professionele kostprijsberekening, technische fiche met storytelling en gevalideerde pairing, klaar voor mijn team om te repliceren. We verhoogden de marge met 5 punten en verdrievoudigden de engagement op Instagram met GastroIMG.",
-    "testimonialAuthor": "Hugo Vázquez",
-    "testimonialRole": "Bartender, signature cocktailbar",
     "faqTitle": "Veelgestelde vragen van bartenders",
     "faqs": [
       {
@@ -2170,9 +2145,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben pizza voor pizza doorgerekend en ontdekt dat 4 verliesgevend waren ondanks dat ze goed verkochten. We hebben ze opnieuw ontworpen met Italiaanse Keuken, toppings vereenvoudigd zonder identiteit te verliezen en de marge met 4 punten verhoogd zonder de prijs te wijzigen. Fermentus veranderde ons deeg: 70 % hydratatie, 48 uur fermentatie, perfecte kruimstructuur.",
-    "testimonialAuthor": "Giovanni Russo",
-    "testimonialRole": "Pizzaiolo en eigenaar, Napolitaanse pizzeria",
     "faqTitle": "Veelgestelde vragen van pizzabakkers",
     "faqs": [
       {
@@ -2398,9 +2370,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We zijn overgestapt van losse vellen naar een systeem. We weten precijk welk stuk rendeert en welk niet, inclusief het uurtarief van de bakkerij. De verspilling daalde met 30% in 3 maanden en we ontdekten dat twee historische broden niet rendabel waren zonder uurtarief — we hebben ze opnieuw ontworpen door het proces te vereenvoudigen zonder kwaliteitsverlies en de marge met 5 punten verhoogd.",
-    "testimonialAuthor": "Ana Iglesias",
-    "testimonialRole": "Ambachtelijk bakker, eigen bakkerij",
     "faqTitle": "Veelgestelde Vragen van Bakkers",
     "faqs": [
       {
@@ -2627,9 +2596,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "12.000 bonbons produceren voor Kerst zonder systeem was chaos. Met Creatieve Chocolaterie voor ontwerp, Sosa Ingredients Agent voor technische couverture, Kit de Escandallos Pro voor echte marge met actuele cacao en Gastro Calendar voor seizoensplanning, hebben we het seizoen gered en de marge met 7 punten verhoogd. De bedrijfsdozen worden afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Mónica Salazar",
-    "testimonialRole": "Meester-chocolatier en eigenaresse",
     "faqTitle": "Veelgestelde vragen van chocolatiers",
     "faqs": [
       {
@@ -2854,9 +2820,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-inventario"
     ],
-    "testimonialQuote": "Privé Chef Pro heeft mijn commerciële voorstel veranderd. Nu krijgt elke klant een gepersonaliseerd menu met professionele kostprijsberekening en storytelling, en de acquisitie via Instagram met GastroIMG Gen+ is vermenigvuldigd. Ik sluit voorstellen af in één gesprek omdat ik dezelfde dag het technisch blad + factuur lever. We verhoogden de gemiddelde besteding met 35 % per diner.",
-    "testimonialAuthor": "Andrea Gómez",
-    "testimonialRole": "Freelance privékok, Madrid + kust",
     "faqTitle": "Veelgestelde Vragen van Privékoks",
     "faqs": [
       {
@@ -3082,9 +3045,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Vijf outlets beheren zonder systeem was chaos. Pro Restaurant Manager + Catering AI+ coördineren voor ons de kruislingse menukaart, banketten en roomservice met geïntegreerde kostprijsberekening. De planning van bruiloften voor 120 personen die voorheen een week duurde, is nu een dag met een professioneel voorstel. We hebben de marge met 5 punten verhoogd door outlets te kruisen en sluiten premium evenementen veel sneller af.",
-    "testimonialAuthor": "Roberto Castaño",
-    "testimonialRole": "F&B-directeur, 5-sterrenhotel",
     "faqTitle": "Veelgestelde vragen van F&B-managers",
     "faqs": [
       {
@@ -3310,9 +3270,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-inventario"
     ],
-    "testimonialQuote": "Pro Restaurant Manager + Bar & Lounge AI+ + Food Pairing AI hebben het niveau van mijn zaalteam compleet verhoogd. De dagelijkse briefing met gegenereerde storytelling van elk gerecht en wetenschappelijk gevalideerde pairing is nu professioneel. Klanten merken het verschil: we verhoogden de gemiddelde ticketwaarde met 20% en het aandeel terugkerende premium gasten groeide met 40% in zes maanden.",
-    "testimonialAuthor": "Sofía Vega",
-    "testimonialRole": "Maître en Restaurantleider, fine dining restaurant",
     "faqTitle": "Veelgestelde Vragen van Maîtres",
     "faqs": [
       {
@@ -3538,9 +3495,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Bar & Lounge AI+ en Food Pairing AI hebben mijn aanbod veranderd. Elke pairing in het proefmenu heeft nu een gedocumenteerde wetenschappelijke basis die het bedieningsteam professioneel aan de gast communiceert. Het wijnmagazijnbeheer met kostprijs per glas heeft onze wijnmarge met 6 punten verhoogd. Privéproeverijen voor VIP's worden afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Eduardo Lara",
-    "testimonialRole": "Head sommelier, restaurant met 1 Michelinster",
     "faqTitle": "Veelgestelde vragen van sommeliers",
     "faqs": [
       {
@@ -3766,9 +3720,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Argentijnse Keuken + Creatieve Keuken hebben mijn niveau verhoogd. Mijn team reproduceert nu de gaarheid met gedocumenteerde technische criteria, de kostprijsberekeningen van premium cuts weerspiegelen het verlies van de dry-aged en we hebben de marge met 5 punten verhoogd. De planning voor Vaderdag met Gastro Calendar heeft onze omzet verdrievoudigd.",
-    "testimonialAuthor": "Pedro Aguirre",
-    "testimonialRole": "Meester grillmeester, premium grill met dry-aged",
     "faqTitle": "Veelgestelde Vragen van Meester Grillmeesters",
     "faqs": [
       {
@@ -3994,9 +3945,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Creatief IJs heeft onze keuken veranderd. We balanceren suikers en vaste stoffen met technisch inzicht, de berekeningen per bol met premium pistache weerspiegelen reële marge. Creatieve Patisserie opende de ijsgebakken die de winter rendabel maken. We stegen 5 punten.",
-    "testimonialAuthor": "Federico Riva",
-    "testimonialRole": "Meester-gelatiere, premium ambachtelijke gelateria",
     "faqTitle": "Veelgestelde vragen van meester-ijsbereiders",
     "faqs": [
       {
@@ -4222,9 +4170,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Creatieve Patisserie + Sosa Ingredients Agent hebben mijn aanbod veranderd. Mijn signature-desserts hebben nu gedocumenteerde techniek die mijn team consistent repliceert, de kostprijsberekeningen met werkplaatsuurtarief gaven mij 6 punten meer marge en op maat gemaakte taartbestellingen worden afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Eva Mata",
-    "testimonialRole": "Chef pâtissière, signatuurpatisserie",
     "faqTitle": "Veelgestelde Vragen van Banketbakkers",
     "faqs": [
       {
@@ -4450,9 +4395,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "We hebben 80 zitplaatsen en een hoog personeelsverloop. De Kit de Tareas Restaurante Casual en de Pack APPCC hebben onze hele operatie op orde gebracht. We lopen als een Zwitserse klok en de foodcost is in het eerste kwartaal met 3 punten gedaald, alleen al door nauwkeurige kostprijsberekening.",
-    "testimonialAuthor": "Sandra López",
-    "testimonialRole": "Manager, mediterraan casual restaurant met 80 zitplaatsen",
     "faqTitle": "Veelgestelde vragen over casual restaurants",
     "faqs": [
       {
@@ -4682,9 +4624,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben brunch in het weekend en specialty koffie door de week. De Kit de Tareas Cafetería en de contentgeneration for Instagram hebben me de middagen teruggegeven. Pinterest Pins Gen was een ontdekking: het heeft ons organische traffic gebracht dat ik nog nooit gezien had.",
-    "testimonialAuthor": "Marcos Rivera",
-    "testimonialRole": "Eigenaar, specialty coffee shop en brunch",
     "faqTitle": "Veelgestelde Vragen van Coffee Shops",
     "faqs": [
       {
@@ -4910,9 +4849,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Wei maakte escandall pizza voor pizza mei de Kit de Escandallos Pro en ontdekte dat 4 variante in verleies ware omdat wei te veul mozzarella wooge. Wei pasten grammage en prijs aan. De marge van de lokaal steeg 4 punten in 2 maanden zonder de kwaliteit te raken.",
-    "testimonialAuthor": "Giovanni Russo",
-    "testimonialRole": "Pizzaiolo en eigenaar, napoletana pizzeria",
     "faqTitle": "Fais Vraogen van Pizzerias",
     "faqs": [
       {
@@ -5133,9 +5069,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We verlaagden de foodcost van 36% naar 31% in 60 dagen met nauwkeurige kostprijzen en systematische controle van verliezen. De investering in AI Chef Pro was in één week terugverdiend, alleen al hiermee. De AI-foto voor Glovo bracht onze ranking van plaats 8 naar 3.",
-    "testimonialAuthor": "Pablo Hernández",
-    "testimonialRole": "Eigenaar, gourmet burgerrestaurant met 2 merken in delivery",
     "faqTitle": "Veelgestelde Vragen voor Burgerrestaurants",
     "faqs": [
       {
@@ -5357,9 +5290,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-plan-financiero",
       "kit-inventario"
     ],
-    "testimonialQuote": "We exploiteren 4 virtuele merken in één keuken. Zonder kostprijsberekening per merk en per platform verloren we marge zonder te weten waar. AI Chef Pro heeft het voor ons opgelost in een week: we ontdekten dat één merk een foodcost van 41% had op Glovo. We hebben het herontworpen en de marge steeg met 7 punten zonder de prijs te wijzigen.",
-    "testimonialAuthor": "Iván Domínguez",
-    "testimonialRole": "Operator, dark kitchen met 4 virtuele merken",
     "faqTitle": "Veelgestelde vragen van Dark Kitchen-operators",
     "faqs": [
       {
@@ -5595,9 +5525,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "De receptcalculaties per stuk met uurkosten van de bakkerij hebben mijn ogen geopend. Ik ontdekte dat sommige complexe bereidingen niet rendabel waren, ondanks dat ze goed verkochten. We hebben ze opnieuw ontworpen met Creatieve Patisserie door het proces te vereenvoudigen zonder kwaliteitsverlies en we hebben de marge met 6 punten verhoogd.",
-    "testimonialAuthor": "Eva Mata",
-    "testimonialRole": "Eigenaresse, ambachtelijke patisserie met eigen bakkerij",
     "faqTitle": "Veelgestelde vragen van patisserieën",
     "faqs": [
       {
@@ -5823,9 +5750,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Dat elke cocktail is doorberekend en de kaart in één ochtend klaar is, heeft mijn manier van werken veranderd. Voorheen deed ik dat met een rekenmachine, een servet en veel intuïtie. Nu stel ik met Bar & Lounge AI+ en Kit de Escandallos Pro in 2 uur een nieuwe kaart samen met gevalideerde marge.",
-    "testimonialAuthor": "Hugo Vázquez",
-    "testimonialRole": "Bartender en eigenaar, cocktailbar met eigen signatuur",
     "faqTitle": "Veelgestelde vragen van bartenders en cocktailmakers",
     "faqs": [
       {
@@ -6051,9 +5975,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We sluiten evenementen af in een derde van de tijd. De kostprijsberekeningen per evenement passen zich tot in detail aan op het aantal gasten, de logistieke sjablonen zijn goud waard en de voorstellen met professionele fotografie sluiten zakelijke contracten die ons eerder ontgingen. Marge +5 punten in het eerste kwartaal alleen al door betere kostprijsberekening.",
-    "testimonialAuthor": "Sara Pérez",
-    "testimonialRole": "Cateringbedrijf voor zakelijke evenementen en bruiloften (200 evenementen per jaar)",
     "faqTitle": "Veelgestelde Vragen van Cateringbedrijven",
     "faqs": [
       {
@@ -6279,9 +6200,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Het coördineren van 6 F&B-verkooppunten in een hotel met 200 kamers was een constante nachtmerrie. AI Chef Pro heeft alles voor ons geordend. De Kit de Tareas Hotel is goud waard en de rapportage aan de hoteldirecteur is nu automatisch in PDF. We hebben de RevPASH van het restaurant in 4 maanden met 12 % verhoogd, alleen al door betere controle.",
-    "testimonialAuthor": "Cristina Núñez",
-    "testimonialRole": "F&B Manager, hotel 4 sterren met 200 kamers",
     "faqTitle": "Veelgestelde Vragen van F&B Managers",
     "faqs": [
       {
@@ -6506,9 +6424,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We gingen van losse vellen naar een systeem. Met Creatief IJs balanceren we suikers en vaste stoffen met technisch inzicht, en de Kit de Escandallos Pro bevestigt de werkelijke marge per bol en per kg met de actuele fruitprijzen. De uitval daalde met 40 % in 3 maanden en we ontdekten dat twee klassieke smaken niet rendabel waren.",
-    "testimonialAuthor": "Laura Costa",
-    "testimonialRole": "Eigenaresse, ambachtelijke ijssalon met eigen productieatelier",
     "faqTitle": "Veelgestelde Vragen van IJssalons",
     "faqs": [
       {
@@ -6734,9 +6649,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "12.000 bonbons produceren voor Kerst zonder systeem was chaos. Met Creatieve Chocolaterie voor ontwerp, Kit de Escandallos Pro voor echte marge met actuele cacao en Gastro Calendar voor seizoensplanning, hebben we het seizoen gered en de marge met 7 punten verhoogd. De bedrijfsdozen worden nu afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Mónica Salazar",
-    "testimonialRole": "Chocolatier en eigenaresse",
     "faqTitle": "Veelgestelde vragen over chocolaterieën",
     "faqs": [
       {
@@ -6962,9 +6874,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "kit-inventario"
     ],
-    "testimonialQuote": "Ik verander het menu elke 6 weken en vroeger was het een week administratief afsluitwerk alleen al tussen kostprijsberekeningen, fiches en storytelling. Nu met AI Chef Pro gebeurt die afsluiting in 2 dagen: Creatieve Keuken stelt voor, Fermentus geeft mij R&D-ondersteuning, Sonar Deep Research levert trends op, en de Kit de Escandallos Pro sluit de marge. Het is letterlijk alsof u een extra R&D-team heeft.",
-    "testimonialAuthor": "Adrián Lago",
-    "testimonialRole": "Chef en eigenaar, auteur restaurant met 30 zitplaatsen",
     "faqTitle": "Veelgestelde Vragen van Creatieve Restaurants",
     "faqs": [
       {
@@ -7194,9 +7103,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "kit-inventario"
     ],
-    "testimonialQuote": "Het hebben van kostprijsberekening, technische fiche, gedocumenteerde fermenten en communicatie met gidsen in één systeem heeft de creatieve chaos van elke haute cuisine geordend. De Guía Restaurante Gastronómico was essentieel bij de opening van het tweede project: een professioneel businessplan dat de kandidatuur ondersteunt. Recente bekroning met gegevens in de hand.",
-    "testimonialAuthor": "David Aramburu",
-    "testimonialRole": "Executive Chef, gastronomisch restaurant met Michelin/Repsol-erkenning",
     "faqTitle": "Veelgestelde Vragen van Gastronomische Restaurants",
     "faqs": [
       {
@@ -7426,9 +7332,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben taco voor taco doorgerekend en ontdekten dat drie signature-gerechten verliesgevend waren ondanks dat ze het best verkochten. We hebben ze opnieuw ontworpen met Mexicaanse Keuken, de marinade en de vleesopbrengst aangepast zonder de prijs te wijzigen, en de marge steeg met 5 punten. De planning van Día de Muertos met Gastro Calendar verdrievoudigde de omzet van die week.",
-    "testimonialAuthor": "María José Hernández",
-    "testimonialRole": "Chef en eigenaresse, hedendaags Mexicaans restaurant",
     "faqTitle": "Veelgestelde vragen over Mexicaanse restaurants",
     "faqs": [
       {
@@ -7654,9 +7557,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Peruaanse Keuken veranderde onze keuken. De tijgermelk heeft nu een gedocumenteerd technisch evenwicht, de ceviches komen in elke dienst hetzelfde uit, en de kostenberekeningen met verse vis tegen de dagprijs werken in realtime. De voorbereiding van het speciale menu van 28 juli met Gastro Calendar verdrievoudigde onze omzet.",
-    "testimonialAuthor": "Carlos Fernández",
-    "testimonialRole": "Chef en eigenaar, hedendaagse Peruaanse cevicherie",
     "faqTitle": "Veelgestelde vragen over Peruaanse restaurants",
     "faqs": [
       {
@@ -7882,9 +7782,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Japanse Keuken heeft onze operatie veranderd. De balans van de shari is nu consistent, de tonkotsu komt elke dag hetzelfde uit, en de omakase heeft professionele kostenberekening met gevalideerde marge per stuk. Fermentus heeft ons geholpen bij het opzetten van het programma voor zelfgemaakte miso dat ons aanbod volledig onderscheidt.",
-    "testimonialAuthor": "Hiroshi Tanaka",
-    "testimonialRole": "Itamae en eigenaar, hedendaags Japans restaurant",
     "faqTitle": "Veelgestelde Vragen van Japanse Restaurants",
     "faqs": [
       {
@@ -8110,9 +8007,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "De combinatie van de AI-agenten Japanse Keuken en Peruaanse Keuken heeft onze propositie veranderd. De tiradito's hebben nu een gedocumenteerd technisch evenwicht, de omakase-nikkei gaat uit met een per stuk gevalideerde kostprijs, en het programma voor zelfgemaakte miso met panca-peper van Fermentus onderscheidt ons volledig. We hebben de marge met 7 procentpunten verhoogd.",
-    "testimonialAuthor": "Yui Sato",
-    "testimonialRole": "Chef en eigenaresse, signatuur-nikkei-restaurant",
     "faqTitle": "Veelgestelde vragen over Nikkei-restaurants",
     "faqs": [
       {
@@ -8338,9 +8232,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "VegChef + Fermentus hebben onze propositie veranderd. We bereiken diepe umami zonder industriële shortcuts dankzij zelfgemaakte miso en plantaardige koji, en de kostprijsberekeningen per bowl met gemarineerde tempeh bevestigen dat plantaardig een hoge marge kan hebben. We stegen 6 punten en de acquisitie via Instagram met GastroIMG is x3.",
-    "testimonialAuthor": "Lucía Ferrer",
-    "testimonialRole": "Chef en eigenaresse, plantaardig auteurrestaurant",
     "faqTitle": "Veelgestelde vragen voor plantaardige restaurants",
     "faqs": [
       {
@@ -8566,9 +8457,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben de kosten per snede berekend en ontdekten dat de T-bone die we het meest verkochten eigenlijk verliesgevend was vanwege het dry-aged verlies dat we niet berekenden. We hebben het opnieuw ontworpen met Creatieve Keuken door portie en bijgerechten aan te passen, zonder de prijs te wijzigen, en de marge steeg met 5 punten. De planning voor Vaderdag met Gastro Calendar verdrievoudigde onze omzet van die week.",
-    "testimonialAuthor": "Pedro Aguirre",
-    "testimonialRole": "Meester-grillmeester en eigenaar, premium grill",
     "faqTitle": "Veelgestelde Vragen van Grillrestaurants",
     "faqs": [
       {
@@ -8794,9 +8682,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Creatieve Keuken + Creatieve Patisserie hebben ons aanbod veranderd. We lanceren seizoensgebonden signatures met professionele kostprijsberekening, het eigen banket verhoogde de gemiddelde besteding met 30% en de barista-opleiding is nu consistent. Lokale acquisitie met MenuDish + GastroIMG Gen+ is in 4 maanden verdubbeld.",
-    "testimonialAuthor": "Marta Esteve",
-    "testimonialRole": "Eigenaresse, specialty coffee third-wave",
     "faqTitle": "Veelgestelde Vragen van Coffee Shops",
     "faqs": [
       {
@@ -9022,9 +8907,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Japanse Keuken veranderde onze operatie. De balans van de shari is nu consistent, de omakase heeft professionele kostenberekening met per stuk gevalideerde marge. De acquisitie van premium klanten met GastroIMG Gen+ steeg 40% in 6 maanden.",
-    "testimonialAuthor": "Akio Yamamoto",
-    "testimonialRole": "Itamae en eigenaar, hedendaagse sushi bar",
     "faqTitle": "Veelgestelde Vragen van Sushi Bars",
     "faqs": [
       {
@@ -9250,9 +9132,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Spaanse Keuken + Bar & Lounge AI+ hebben ons niveau verhoogd. De signature tapas hebben nu professionele kostprijsberekening met gevalideerde marge, de pairing met wijnen per glas is consistent en we hebben het gemiddelde ticket met 15% verhoogd in 4 maanden. De lokale acquisitie met MenuDish + GastroIMG is x2.",
-    "testimonialAuthor": "Iñaki Etxeberria",
-    "testimonialRole": "Eigenaar, eigentijdse gastrobar in Donostia",
     "faqTitle": "Veelgestelde vragen over gastrobars",
     "faqs": [
       {
@@ -9478,9 +9357,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Food Truck AI+ + Creatieve Keuken hebben onze operatie veranderd. De menukaart is compacter, de kostprijsberekeningen per gerecht weerspiegelen de echte marge met inkoop afgestemd op het evenementsvolume, en de acquisitie met InstaFlow + GastroIMG heeft onze reserveringen voor privé-evenementen in 6 maanden verdrievoudigd.",
-    "testimonialAuthor": "Marcos Bermúdez",
-    "testimonialRole": "Eigenaar, ambachtelijke food truck",
     "faqTitle": "Veelgestelde vragen over food trucks",
     "faqs": [
       {
@@ -9706,9 +9582,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Italiaanse Keuken + Bar & Lounge AI+ hebben ons restaurant veranderd. Consistente verse pasta, traditionele sauzen met technische balans, gedocumenteerde wijnspijscombinaties met Italiaanse wijnen per glas. We verhoogden de marge met 5 punten en het aantal terugkerende klanten groeide met 30% in 6 maanden.",
-    "testimonialAuthor": "Lorenzo Bianchi",
-    "testimonialRole": "Chef en eigenaar, hedendaagse trattoria",
     "faqTitle": "Veelgestelde Vragen van Italiaanse Restaurants",
     "faqs": [
       {
@@ -9930,9 +9803,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Wat vroeger een week rekenen was, is nu 30 minuten. Creatieve Keuken levert de CSV-kostprijsberekening, Mermas GenCal verrijkt deze met echte gegevens en het Kit de Escandallos Pro geeft me een gevalideerde marge. We hebben de kaart van 28 gerechten in één dag vernieuwd en de marge met 6 punten verhoogd door gerechten te ontdekken die verliesgevend waren zonder dat we het wisten.",
-    "testimonialAuthor": "Pablo Ruiz",
-    "testimonialRole": "Chef en eigenaar, casual restaurant met 4 vestigingen",
     "faqTitle": "Veelgestelde vragen over kostprijsberekening met AI",
     "faqs": [
       {
@@ -10155,9 +10025,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Creatieve Keuken + Food Pairing AI hebben de ontwikkeling van onze degustatiemenu's veranderd. De reeks van 9 gangen wordt nu al opgeleverd met gedocumenteerd technisch evenwicht, de wijnarrangementen per glas zijn consistent en de totale kostprijsberekening met Kit de Escandallos Pro levert ons een gevalideerde marge op. Wat voorheen een week was, is nu een dag.",
-    "testimonialAuthor": "Joan Mestre",
-    "testimonialRole": "Executive chef, restaurant met 1 Michelinster",
     "faqTitle": "Veelgestelde Vragen over Degustatiemenu met AI",
     "faqs": [
       {
@@ -10379,9 +10246,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Het documenteren van 28 gerechten met een professionele technische fiche kostte ons 2 weken. Creatieve Keuken levert nu elke volledige fiche in minuten op: ingrediënten, techniek, een controle van de 14 allergenen; de eindcontrole is aan u, kostprijs en storytelling voor de bediening. Nu kan elke kok consistent repliceren en bij inspecties hebben we alles getraceerd.",
-    "testimonialAuthor": "Carla Mendoza",
-    "testimonialRole": "Chef-kok, casual restaurant met 3 locaties",
     "faqTitle": "Veelgestelde vragen over technische fiches met AI",
     "faqs": [
       {
@@ -10603,9 +10467,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Food Pairing AI heeft de manier waarop ik wijn-spijscombinaties afrond veranderd. Elk gerecht van het proefmenu heeft nu een wetenschappelijk onderbouwde wijn-spijscombinatie die mijn bedieningsteam met professionele basis communiceert. We hebben de marge in de wijnkelder met 6 punten verhoogd en het aantal vaste premiumklanten is in 6 maanden met 35 % gestegen.",
-    "testimonialAuthor": "Eduardo Lara",
-    "testimonialRole": "Head Sommelier, restaurant met 1 Michelinster",
     "faqTitle": "Veelgestelde Vragen over Wijn-spijscombinaties met AI",
     "faqs": [
       {
@@ -10827,9 +10688,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Mermas GenCal + Creatieve Keuken hebben onze werkwijze veranderd. We gingen van geschatte verspilling (we gingen uit van 12-15%) naar echte gegevens van 22-28% in sommige processen. We reorganiseerden het uitsnijden en de benutting met gedocumenteerde techniek en verminderden de verspilling met 35% in 4 maanden. De kostprijsberekening weerspiegelt nu de werkelijke kostprijs, niet de ideale.",
-    "testimonialAuthor": "Sofía Cano",
-    "testimonialRole": "Sous-chef, casual restaurant met zero-waste-engagement",
     "faqTitle": "Veelgestelde vragen over het verminderen van verspilling met AI",
     "faqs": [
       {
@@ -11051,9 +10909,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack APPCC + Allergenen ID hebben onze voedselveiligheid getransformeerd. We zijn overgestapt van verspreid bedrukt papier naar 17 digitale sjablonen met geïntegreerde APPCC per dienst en een controle van de 14 allergenen; de eindcontrole is aan u per recept. De hygiëne-inspectie is vlekkeloos en het juridisch risico is naar nul gedaald.",
-    "testimonialAuthor": "Roberto Castaño",
-    "testimonialRole": "F&B-directeur, 5-sterrenhotel met 4 outlets",
     "faqTitle": "Veelgestelde vragen over APPCC met AI",
     "faqs": [
       {
@@ -11276,9 +11131,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Gastro Calendar + Creatieve Keuken hebben onze seizoensmenu-afsluiting veranderd. Wat vroeger een week was, is nu een dag met professionele kostenberekening, getraceerd lokaal product en storytelling van producenten voor de bediening. We verhoogden de marge met 6 punten en de acquisitie met Pinterest Pins Gen voor seizoensproduct verdubbelde.",
-    "testimonialAuthor": "Marina Lozano",
-    "testimonialRole": "Executive chef, auteur restaurant met lokaal product",
     "faqTitle": "Veelgestelde vragen over seizoensmenu met AI",
     "faqs": [
       {
@@ -11500,9 +11352,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "GastroIMG Gen+ heeft mijn fotografie-workflow veranderd. Voorheen deed ik food styling-sessies zonder duidelijke richtlijn, nu genereer ik het professionele referentiebeeld met AI, valideer ik het palet en de compositie met het team, en daarna maak ik de definitieve foto met mijn echte gerecht. De sessies kosten 70% minder tijd en de visuele consistentie van Instagram + Glovo + web is nu professioneel.",
-    "testimonialAuthor": "Carmen Vera",
-    "testimonialRole": "Chef en eigenaresse, restaurant met sterke digitale aanwezigheid",
     "faqTitle": "Veelgestelde Vragen over Foodfotografie met AI",
     "faqs": [
       {

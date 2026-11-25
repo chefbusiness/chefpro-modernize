@@ -84,11 +84,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'pack-appcc',
     url: '/pack-appcc',
     price: '€14',
-    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Food Safety Kit Pro', nl: 'Pack APPCC' },
+    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Food Safety Kit Pro', nl: 'Pack HACCP' },
     description: {
       es: 'APPCC y trazabilidad listos para inspección.',
       en: 'HACCP and traceability templates ready for inspection.',
-      nl: 'APPCC en traceerbaarheid, klaar voor een inspectie.',
+      nl: 'HACCP en traceerbaarheid, klaar voor een inspectie.',
     },
     // Tienda EN (3-oct-2026): producto propio, `haccp-templates`, $19 USD.
     urlByLang: { en: '/en/digital-products/haccp-templates' },
@@ -132,7 +132,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-plan-financiero',
     url: '/kit-plan-financiero',
     price: '€39',
-    name: { es: 'Kit Plan Financiero', en: 'Restaurant Financial Plan Kit Pro', nl: 'Kit Plan Financiero' },
+    name: { es: 'Kit Plan Financiero', en: 'Restaurant Financial Plan Kit Pro', nl: 'Kit financieel plan voor restaurants' },
     description: {
       es: 'Cash flow, P&L, escenarios y dashboard de ratios financieros.',
       en: 'Cash flow, P&L, scenarios, and a financial ratios dashboard.',

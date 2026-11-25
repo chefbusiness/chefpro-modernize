@@ -868,9 +868,9 @@
       },
       "id_alergenos": {
         "name": "ID Allergènes",
-        "description": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient",
-        "preview": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient",
-        "v2_blurb": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient"
+        "description": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient",
+        "preview": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient",
+        "v2_blurb": "Il vous aide à passer en revue les 14 allergènes de chaque recette ; la validation finale vous appartient"
       },
       "mental_coach": {
         "name": "Mental Coach",

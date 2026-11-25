@@ -743,21 +743,22 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           </div>
         </section>
 
-        {/* Testimonio */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <Card className={`max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
-              <CardContent className="pt-10 pb-10 text-center">
-                <Sparkles className={`h-10 w-10 ${theme.text} mx-auto mb-4`} />
-                <p className="text-xl text-foreground italic mb-6 text-balance">"{content.testimonialQuote}"</p>
-                <div>
-                  <p className="font-bold text-foreground">{content.testimonialAuthor}</p>
-                  <p className="text-sm text-muted-foreground">{content.testimonialRole}</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        {content.testimonialQuote ? (
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <Card className={`max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
+                <CardContent className="pt-10 pb-10 text-center">
+                  <Sparkles className={`h-10 w-10 ${theme.text} mx-auto mb-4`} />
+                  <p className="text-xl text-foreground italic mb-6 text-balance">"{content.testimonialQuote}"</p>
+                  <div>
+                    <p className="font-bold text-foreground">{content.testimonialAuthor}</p>
+                    <p className="text-sm text-muted-foreground">{content.testimonialRole}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        ) : null}
 
         {/* FAQ */}
         <section className="py-20 bg-muted/30">

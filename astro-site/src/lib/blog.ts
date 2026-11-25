@@ -442,13 +442,30 @@ export type BlogPost = CollectionEntry<'blog'>;
 export const postSlug = (post: BlogPost): string =>
   post.id.split('/').pop()!.replace(/\.md$/, '');
 
-/** Posts publicados de un idioma, más recientes primero. */
+/**
+ * Posts publicados de un idioma, más recientes primero.
+ *
+ * Desempate, en este orden y siempre el mismo entre builds:
+ * 1. `pubDate` descendente (el instante, no el día civil).
+ * 2. slug público ascendente (`localeCompare` con `en`).
+ * 3. id de la colección (ruta del fichero) ascendente, por si dos slugs coincidieran.
+ *
+ * Sin el segundo criterio el orden de los posts con la misma fecha dependía de
+ * cómo el disco devolvía los `.md` y las páginas de listado cambiaban de un
+ * build a otro sin cambio editorial.
+ */
 export async function getPublishedPosts(lang: Locale = 'es'): Promise<BlogPost[]> {
   const posts = await getCollection(
     'blog',
     (p) => p.data.lang === lang && !p.data.draft
   );
-  return posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return posts.sort((a, b) => {
+    const byDate = b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    if (byDate !== 0) return byDate;
+    const bySlug = postSlug(a).localeCompare(postSlug(b), 'en');
+    if (bySlug !== 0) return bySlug;
+    return a.id.localeCompare(b.id, 'en');
+  });
 }
 
 /** Minutos de lectura estimados a partir del HTML/markdown del cuerpo. */
