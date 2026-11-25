@@ -19,16 +19,16 @@ const standardsEn: Standard[] = [
 
 export const ABOUT: Record<ParityLang, PageCopy> = {
   en: {
-    title: 'About AI Chef Pro and its 75+ AI agents | John Guerrero',
+    title: 'About AI Chef Pro and its more than 80 AI agents | John Guerrero',
     description:
-      'About AI Chef Pro: 75+ AI agents built by Chef John Guerrero, in kitchens since age 17. Read the story and email info@aichef.pro. A person reads it.',
+      'About AI Chef Pro: More than 80 AI agents built by Chef John Guerrero, in kitchens since age 17. Read the story and email info@aichef.pro. A person reads it.',
     keywords: 'about AI Chef Pro, John Guerrero chef, ChefBusiness, who made AI Chef Pro',
     eyebrow: 'About',
     h1: 'A kitchen tool built by someone who worked a pass',
     lead: 'AI Chef Pro is John Guerrero’s suite for professional kitchens, inside the ChefBusiness group.',
     answerLabel: 'Direct answer',
     answer:
-      'John Guerrero has been in professional kitchens since he was 17 and a gastronomic consultant since 2010. He has 29 years in hospitality and founded the ChefBusiness group. AI Chef Pro is the suite he built for cooks. The English pricing page states 75+ agents, seven languages, and a Member plan at €10 per month with 10,000 credits.',
+      'John Guerrero has been in professional kitchens since he was 17 and a gastronomic consultant since 2010. He has 29 years in hospitality and founded the ChefBusiness group. AI Chef Pro is the suite he built for cooks. The English pricing page states more than 80 agents, seven languages, and a Member plan at €10 per month with 10,000 credits.',
     homeLabel: 'Home',
     crumb: 'About',
     faqHeading: 'About questions',
@@ -39,7 +39,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       'Gastronomic consultant since 2010',
     ],
     stats: [
-      { big: '75+', label: 'Agents on the English pricing page' },
+      { big: 'More than 80', label: 'Agents on the English pricing page' },
       { big: '7', label: 'Languages, Spanish first' },
       { big: '10,000', label: 'Credits on the Member plan' },
       { big: '€10', label: 'Monthly plan, no lock-in' },
@@ -63,7 +63,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'What is AI Chef Pro?',
-        a: 'A suite of specialized AI agents for hospitality professionals: costing, menus, allergens, content, local search and the daily paperwork of a kitchen. The English pricing page states 75+ agents. Member is €10 per month with 10,000 credits. Monthly plan, no lock-in.',
+        a: 'A suite of specialized AI agents for hospitality professionals: costing, menus, allergens, content, local search and the daily paperwork of a kitchen. The English pricing page states more than 80 agents. Member is €10 per month with 10,000 credits. Monthly plan, no lock-in.',
       },
       {
         q: 'Who founded it?',
@@ -80,16 +80,16 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'See plans and pricing',
   },
   fr: {
-    title: 'À propos d’AI Chef Pro : 75+ agents IA | John Guerrero',
+    title: 'À propos d’AI Chef Pro : Plus de 80 agents IA | John Guerrero',
     description:
-      'À propos d’AI Chef Pro : 75+ agents IA créés par le chef John Guerrero, en cuisine depuis ses 17 ans. Lisez l’histoire et écrivez à info@aichef.pro.',
+      'À propos d’AI Chef Pro : Plus de 80 agents IA créés par le chef John Guerrero, en cuisine depuis ses 17 ans. Lisez l’histoire et écrivez à info@aichef.pro.',
     keywords: 'à propos AI Chef Pro, John Guerrero chef, ChefBusiness, qui a créé AI Chef Pro',
     eyebrow: 'À propos',
     h1: 'Un outil de cuisine construit par quelqu’un qui a tenu un passe',
     lead: 'AI Chef Pro est la suite de John Guerrero pour les cuisines professionnelles, dans le groupe ChefBusiness.',
     answerLabel: 'Réponse directe',
     answer:
-      'John Guerrero est en cuisine professionnelle depuis ses 17 ans et consultant en restauration depuis 2010. Il a 29 ans de métier et a fondé le groupe ChefBusiness. AI Chef Pro est la suite qu’il a construite pour les cuisiniers. La page tarifs en français indique aujourd’hui 75+ agents. Le forfait Membre est à 10 € par mois avec 10 000 crédits.',
+      'John Guerrero est en cuisine professionnelle depuis ses 17 ans et consultant en restauration depuis 2010. Il a 29 ans de métier et a fondé le groupe ChefBusiness. AI Chef Pro est la suite qu’il a construite pour les cuisiniers. La page tarifs en français indique aujourd’hui plus de 80 agents. Le forfait Membre est à 10 € par mois avec 10 000 crédits.',
     homeLabel: 'Accueil',
     crumb: 'À propos',
     faqHeading: 'Questions',
@@ -100,7 +100,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       'Consultant depuis 2010',
     ],
     stats: [
-      { big: '75+', label: 'Agents indiqués sur la page tarifs FR' },
+      { big: 'Plus de 80', label: 'Agents indiqués sur la page tarifs FR' },
       { big: '7', label: 'Langues, espagnol d’origine' },
       { big: '10 000', label: 'Crédits du forfait Membre' },
       { big: '10 €', label: 'Forfait mensuel, sans engagement' },
@@ -137,7 +137,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Qu’est-ce qu’AI Chef Pro ?',
-        a: 'Une suite d’agents spécialisés pour la restauration : fiches, carte, allergènes, contenu et recherche locale. La page tarifs française indique 75+ agents aujourd’hui. Le forfait Membre est à 10 € par mois avec 10 000 crédits, forfait mensuel sans engagement.',
+        a: 'Une suite d’agents spécialisés pour la restauration : fiches, carte, allergènes, contenu et recherche locale. La page tarifs française indique plus de 80 agents aujourd’hui. Le forfait Membre est à 10 € par mois avec 10 000 crédits, forfait mensuel sans engagement.',
       },
       {
         q: 'Qui a fondé le projet ?',
@@ -154,16 +154,16 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Voir les tarifs',
   },
   de: {
-    title: 'Über AI Chef Pro und seine 75+ KI-Agenten | John Guerrero',
+    title: 'Über AI Chef Pro und seine mehr als 80 KI-Agenten | John Guerrero',
     description:
-      'Über AI Chef Pro: 75+ KI-Agenten von Koch John Guerrero, seit dem 17. Lebensjahr in der Küche. Lesen Sie die Geschichte und schreiben Sie an info@aichef.pro.',
+      'Über AI Chef Pro: Mehr als 80 KI-Agenten von Koch John Guerrero, seit dem 17. Lebensjahr in der Küche. Lesen Sie die Geschichte und schreiben Sie an info@aichef.pro.',
     keywords: 'über AI Chef Pro, John Guerrero Koch, ChefBusiness, Gründer AI Chef Pro',
     eyebrow: 'Über uns',
     h1: 'Ein Küchenwerkzeug von jemandem, der am Pass gestanden hat',
     lead: 'AI Chef Pro ist die Suite von John Guerrero für Profiküchen, in der Gruppe ChefBusiness.',
     answerLabel: 'Kurzantwort',
     answer:
-      'John Guerrero arbeitet seit seinem 17. Lebensjahr in der Profiküche und ist seit 2010 gastronomischer Berater. Er hat 29 Jahre Berufserfahrung und hat die Gruppe ChefBusiness gegründet. AI Chef Pro ist die Suite, die er für Köche gebaut hat. Die deutsche Preisseite nennt heute 75+ Agenten. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits.',
+      'John Guerrero arbeitet seit seinem 17. Lebensjahr in der Profiküche und ist seit 2010 gastronomischer Berater. Er hat 29 Jahre Berufserfahrung und hat die Gruppe ChefBusiness gegründet. AI Chef Pro ist die Suite, die er für Köche gebaut hat. Die deutsche Preisseite nennt heute mehr als 80 Agenten. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits.',
     homeLabel: 'Startseite',
     crumb: 'Über uns',
     faqHeading: 'Fragen',
@@ -174,7 +174,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       'Berater seit 2010',
     ],
     stats: [
-      { big: '75+', label: 'Agenten auf der deutschen Preisseite' },
+      { big: 'Mehr als 80', label: 'Agenten auf der deutschen Preisseite' },
       { big: '7', label: 'Sprachen, Spanisch zuerst' },
       { big: '10.000', label: 'Credits im Mitgliedsplan' },
       { big: '10 €', label: 'Im Monat, ohne Bindung' },
@@ -211,7 +211,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Was ist AI Chef Pro?',
-        a: 'Eine Suite spezialisierter Agenten für die Gastronomie: Kalkulation, Karte, Allergene, Inhalte und lokale Suche. Die deutsche Preisseite nennt heute 75+ Agenten. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits, ohne Bindung.',
+        a: 'Eine Suite spezialisierter Agenten für die Gastronomie: Kalkulation, Karte, Allergene, Inhalte und lokale Suche. Die deutsche Preisseite nennt heute mehr als 80 Agenten. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits, ohne Bindung.',
       },
       {
         q: 'Wer hat das gegründet?',
@@ -228,16 +228,16 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Preise ansehen',
   },
   it: {
-    title: 'Chi siamo: AI Chef Pro e 75+ agenti IA | John Guerrero',
+    title: 'Chi siamo: AI Chef Pro e oltre 80 agenti IA | John Guerrero',
     description:
-      'Chi siamo: 75+ agenti IA creati dallo chef John Guerrero, in cucina dai 17 anni. Leggi la storia e scrivi oggi stesso a info@aichef.pro. Sette lingue.',
+      'Chi siamo: Oltre 80 agenti IA creati dallo chef John Guerrero, in cucina dai 17 anni. Leggi la storia e scrivi oggi stesso a info@aichef.pro. Sette lingue.',
     keywords: 'chi siamo AI Chef Pro, John Guerrero chef, ChefBusiness, fondatore AI Chef Pro',
     eyebrow: 'Chi siamo',
     h1: 'Uno strumento di cucina fatto da chi ha tenuto un passe',
     lead: 'AI Chef Pro è la suite di John Guerrero per le cucine professionali, nel gruppo ChefBusiness.',
     answerLabel: 'Risposta diretta',
     answer:
-      'John Guerrero è in cucina professionale dai 17 anni e consulente gastronomico dal 2010. Ha 29 anni di mestiere e ha fondato il gruppo ChefBusiness. AI Chef Pro è la suite che ha costruito per i cuochi. La pagina prezzi in italiano indica oggi 75+ agenti. Il piano Membro costa 10 € al mese con 10.000 crediti.',
+      'John Guerrero è in cucina professionale dai 17 anni e consulente gastronomico dal 2010. Ha 29 anni di mestiere e ha fondato il gruppo ChefBusiness. AI Chef Pro è la suite che ha costruito per i cuochi. La pagina prezzi in italiano indica oggi oltre 80 agenti. Il piano Membro costa 10 € al mese con 10.000 crediti.',
     homeLabel: 'Home',
     crumb: 'Chi siamo',
     faqHeading: 'Domande',
@@ -248,7 +248,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       'Consulente dal 2010',
     ],
     stats: [
-      { big: '75+', label: 'Agenti indicati sulla pagina prezzi IT' },
+      { big: 'Oltre 80', label: 'Agenti indicati sulla pagina prezzi IT' },
       { big: '7', label: 'Lingue, spagnolo d’origine' },
       { big: '10.000', label: 'Crediti del piano Membro' },
       { big: '10 €', label: 'Piano mensile, senza vincoli' },
@@ -285,7 +285,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Che cos’è AI Chef Pro?',
-        a: 'Una suite di agenti specializzati per la ristorazione: schede, menu, allergeni, contenuti e ricerca locale. La pagina prezzi italiana indica oggi 75+ agenti. Il piano Membro costa 10 € al mese con 10.000 crediti. Piano mensile, senza vincoli.',
+        a: 'Una suite di agenti specializzati per la ristorazione: schede, menu, allergeni, contenuti e ricerca locale. La pagina prezzi italiana indica oggi oltre 80 agenti. Il piano Membro costa 10 € al mese con 10.000 crediti. Piano mensile, senza vincoli.',
       },
       {
         q: 'Chi l’ha fondato?',
@@ -302,16 +302,16 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Vedi i prezzi',
   },
   pt: {
-    title: 'Sobre o AI Chef Pro: 75+ agentes de IA | John Guerrero',
+    title: 'Sobre o AI Chef Pro: Mais de 80 agentes de IA | John Guerrero',
     description:
-      'Sobre o AI Chef Pro: 75+ agentes de IA criados pelo chef John Guerrero, na cozinha desde os 17 anos. Leia a história e escreva para info@aichef.pro.',
+      'Sobre o AI Chef Pro: Mais de 80 agentes de IA criados pelo chef John Guerrero, na cozinha desde os 17 anos. Leia a história e escreva para info@aichef.pro.',
     keywords: 'sobre AI Chef Pro, John Guerrero chef, ChefBusiness, fundador AI Chef Pro',
     eyebrow: 'Sobre',
     h1: 'Uma ferramenta de cozinha feita por quem segurou um passe',
     lead: 'O AI Chef Pro é a suite de John Guerrero para cozinhas profissionais, no grupo ChefBusiness.',
     answerLabel: 'Resposta direta',
     answer:
-      'John Guerrero está na cozinha profissional desde os 17 anos e é consultor gastronómico desde 2010. Tem 29 anos de ofício e fundou o grupo ChefBusiness. O AI Chef Pro é a suite que construiu para cozinheiros. A página de preços em português indica hoje 75+ agentes. O plano Membro custa 10 € por mês com 10.000 créditos.',
+      'John Guerrero está na cozinha profissional desde os 17 anos e é consultor gastronómico desde 2010. Tem 29 anos de ofício e fundou o grupo ChefBusiness. O AI Chef Pro é a suite que construiu para cozinheiros. A página de preços em português indica hoje mais de 80 agentes. O plano Membro custa 10 € por mês com 10.000 créditos.',
     homeLabel: 'Início',
     crumb: 'Sobre',
     faqHeading: 'Perguntas',
@@ -322,7 +322,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       'Consultor desde 2010',
     ],
     stats: [
-      { big: '75+', label: 'Agentes na página de preços PT' },
+      { big: 'Mais de 80', label: 'Agentes na página de preços PT' },
       { big: '7', label: 'Línguas, espanhol de origem' },
       { big: '10.000', label: 'Créditos do plano Membro' },
       { big: '10 €', label: 'Plano mensal, sem fidelização' },
@@ -359,7 +359,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'O que é o AI Chef Pro?',
-        a: 'Uma suite de agentes especializados para a restauração: fichas, carta, alergénios, conteúdo e pesquisa local. A página de preços em português indica hoje 75+ agentes. O plano Membro custa 10 € por mês com 10.000 créditos. Plano mensal, sem fidelização.',
+        a: 'Uma suite de agentes especializados para a restauração: fichas, carta, alergénios, conteúdo e pesquisa local. A página de preços em português indica hoje mais de 80 agentes. O plano Membro custa 10 € por mês com 10.000 créditos. Plano mensal, sem fidelização.',
       },
       {
         q: 'Quem fundou o projeto?',
@@ -376,16 +376,16 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Ver preços',
   },
   nl: {
-    title: 'Over AI Chef Pro en 75+ AI-agenten | John Guerrero',
+    title: 'Over AI Chef Pro en meer dan 80 AI-agenten | John Guerrero',
     description:
-      'Over AI Chef Pro: 75+ AI-agenten van chef John Guerrero, sinds zijn 17e in de keuken. Lees het verhaal en mail vandaag nog naar info@aichef.pro.',
+      'Over AI Chef Pro: Meer dan 80 AI-agenten van chef John Guerrero, sinds zijn 17e in de keuken. Lees het verhaal en mail vandaag nog naar info@aichef.pro.',
     keywords: 'over AI Chef Pro, John Guerrero chef, ChefBusiness, oprichter AI Chef Pro',
     eyebrow: 'Over ons',
     h1: 'Een keukentool van iemand die op de pass heeft gestaan',
     lead: 'AI Chef Pro is de suite van John Guerrero voor professionele keukens, binnen de groep ChefBusiness.',
     answerLabel: 'Kort antwoord',
     answer:
-      'John Guerrero werkt sinds zijn 17e in de professionele keuken en is sinds 2010 gastronomisch adviseur. Hij heeft 29 jaar horeca achter zich en richtte de groep ChefBusiness op. AI Chef Pro is de suite die hij voor koks bouwde. De Nederlandse prijspagina noemt vandaag 75+ agenten. Het Lid-abonnement kost € 10 per maand met 10.000 credits.',
+      'John Guerrero werkt sinds zijn 17e in de professionele keuken en is sinds 2010 gastronomisch adviseur. Hij heeft 29 jaar horeca achter zich en richtte de groep ChefBusiness op. AI Chef Pro is de suite die hij voor koks bouwde. De Nederlandse prijspagina noemt vandaag meer dan 80 agenten. Het Lid-abonnement kost € 10 per maand met 10.000 credits.',
     homeLabel: 'Home',
     crumb: 'Over ons',
     faqHeading: 'Vragen',
@@ -396,7 +396,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
       'Adviseur sinds 2010',
     ],
     stats: [
-      { big: '75+', label: 'Agenten op de Nederlandse prijspagina' },
+      { big: 'Meer dan 80', label: 'Agenten op de Nederlandse prijspagina' },
       { big: '7', label: 'Talen, Spaans als oorsprong' },
       { big: '10.000', label: 'Credits in het Lid-abonnement' },
       { big: '€ 10', label: 'Maandabonnement, zonder verplichting' },
@@ -433,7 +433,7 @@ export const ABOUT: Record<ParityLang, PageCopy> = {
     faqs: [
       {
         q: 'Wat is AI Chef Pro?',
-        a: 'Een suite van gespecialiseerde agenten voor de horeca: kostprijs, kaart, allergenen, content en lokale zoekopdrachten. De Nederlandse prijspagina noemt vandaag 75+ agenten. Lid kost € 10 per maand met 10.000 credits. Maandabonnement, zonder verplichting.',
+        a: 'Een suite van gespecialiseerde agenten voor de horeca: kostprijs, kaart, allergenen, content en lokale zoekopdrachten. De Nederlandse prijspagina noemt vandaag meer dan 80 agenten. Lid kost € 10 per maand met 10.000 credits. Maandabonnement, zonder verplichting.',
       },
       {
         q: 'Wie heeft het opgericht?',
