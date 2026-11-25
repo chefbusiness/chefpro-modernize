@@ -345,12 +345,14 @@ export function bannerHref(productUrl, medium, slug) {
  * build, sin tocar el Markdown ni los posts de otros idiomas.
  *
  * Solo entran productos de `products-catalog.ts` cuyo tema es el de la ficha
- * (técnica, salsas, fondos, recetario, producción, escandallo). Una ficha de
- * IA no tiene ninguno de esos productos: se le quitan los banners. Nombre,
- * precio y URL salen del catálogo.
+ * (técnica, salsas, fondos, recetario, producción, escandallo). El catálogo no
+ * tiene un producto de salsas, fondos o técnica distinto de estos dos: el
+ * Manual del Chef Ejecutivo cubre brigada, producción y fichas técnicas, y la
+ * Guía Food Cost cubre escandallo y carta. El Kit de Escandallos Pro no se
+ * promociona en estos banners. Una ficha de IA no tiene ninguno de esos
+ * productos: se le quitan los banners. Nombre, precio y URL salen del catálogo.
  */
 const GLOSSARY_ES_PRODUCT_IDS = [
-  'kit-escandallos',
   'manual-chef-ejecutivo',
   'guia-food-cost-ingenieria-menu',
 ];
