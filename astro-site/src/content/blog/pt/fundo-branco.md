@@ -2,7 +2,7 @@
 title: "Fundo branco: o que é, e o que não é"
 description: "O fundo branco são ossos que nunca se torram, cozidos com legumes crus e ervas. A base discreta de veloutés e sopas claras."
 pubDate: 2026-11-19
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossario
 tags: ["fundo branco", "velouté", "fundo", "caldo"]
 lang: pt
@@ -74,13 +74,13 @@ Um [fumet de peixe](https://aichef.pro/pt/blog/fumet-de-peixe) é o fundo claro 
 
 Uma [demi-glace](https://aichef.pro/pt/blog/demi-glace) não é este fundo. É um molho construído sobre fundo escuro e reduzido até napar. Uma [glace de viande](https://aichef.pro/pt/blog/glace-de-viande) é o fundo escuro reduzido mais longe, até gelificar duro a frio. O fundo branco pode reduzir-se, mas não se torna nenhum dos dois. A cor e a torra faltam de propósito.
 
-O velouté é o molho mãe que começa aqui: fundo pálido e um roux loiro. Ainda não há ficha portuguesa do velouté. O fundo é o líquido. O roux é outro gesto. Não finja que o fundo já tem o corpo do molho.
+O [velouté](https://aichef.pro/pt/blog/veloute) é o molho mãe que começa aqui: fundo pálido e um [roux](https://aichef.pro/pt/blog/o-que-e-um-roux) loiro. O fundo é o líquido. O roux é outro gesto. Não finja que o fundo já tem o corpo do molho.
 
 ## No passe
 
 Não se bebe fundo branco numa chávena, embora se prove. Uma concha é o líquido de um velouté, a base de um creme que deve saber a legume e não a assado, e o caldo de um risotto quando um cubo salgado taparia o arroz. Peixe escalfado, um peito de ave ou legumes pequenos glaceados levam um pouco no fim, com manteiga. A gelatina ajuda. O sabor fica atrás.
 
-Se a ficha diz velouté, o fundo vai sem sal e pálido, e a ligação é à parte. Se a ficha diz molho espanhol ou molho de pimenta, o que queria era [fundo escuro](https://aichef.pro/pt/blog/fundo-escuro). Fundo branco nesse lugar dá um molho sem nota torrada, e reduzir não inventa a torra que ficou de fora.
+Se a ficha diz [velouté](https://aichef.pro/pt/blog/veloute), o fundo vai sem sal e pálido, e a ligação é à parte. Se a ficha diz [molho espanhol](https://aichef.pro/pt/blog/molho-espanhol) ou molho de pimenta, o que queria era [fundo escuro](https://aichef.pro/pt/blog/fundo-escuro). Fundo branco nesse lugar dá um molho sem nota torrada, e reduzir não inventa a torra que ficou de fora.
 
 Tempere quando souber o volume final. Uma sopa que mal reduz pode levar sal no fim da cozedura. Um molho que vai a metade não pode.
 

@@ -446,7 +446,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 {content.h1}
               </h1>
               <p className="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto text-balance">
-                <LinkifyText text={content.heroSubtitle} appUrl={APP_URL} />
+                <LinkifyText text={content.heroSubtitle} appUrl={APP_URL} lang={lang} />
               </p>
               <p className={`text-lg font-semibold ${theme.text} ${content.captureLink ? 'mb-4' : 'mb-10'}`}>
                 {content.heroTagline}
@@ -516,7 +516,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                         <Badge className="mb-3 text-xs">{ui.onboardingBadge}</Badge>
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">{content.personalizationTitle}</h2>
                         <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                          <LinkifyText text={content.personalizationBody!} appUrl={APP_URL} />
+                          <LinkifyText text={content.personalizationBody!} appUrl={APP_URL} lang={lang} />
                         </p>
                       </div>
                     </div>
@@ -580,12 +580,12 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                         <Icon className={`h-7 w-7 ${theme.text}`} />
                       </div>
                       <CardTitle className="text-xl">
-                        <LinkifyText text={feature.title} appUrl={APP_URL} />
+                        <LinkifyText text={feature.title} appUrl={APP_URL} lang={lang} />
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">
-                        <LinkifyText text={feature.description} appUrl={APP_URL} />
+                        <LinkifyText text={feature.description} appUrl={APP_URL} lang={lang} />
                       </p>
                     </CardContent>
                   </Card>
@@ -620,7 +620,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                         </div>
                         <Badge variant="secondary" className="text-xs mb-2">{app.category}</Badge>
                         <p className="text-sm text-muted-foreground leading-snug">
-                          <LinkifyText text={app.description} appUrl={APP_URL} />
+                          <LinkifyText text={app.description} appUrl={APP_URL} lang={lang} />
                         </p>
                       </CardContent>
                     </Card>
@@ -650,7 +650,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       {i + 1}
                     </div>
                     <p className="text-foreground pt-1">
-                      <LinkifyText text={step} appUrl={APP_URL} />
+                      <LinkifyText text={step} appUrl={APP_URL} lang={lang} />
                     </p>
                   </CardContent>
                 </Card>
@@ -678,7 +678,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       {content.beforeAfter.beforeItems.map((item, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                           <X className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                          <span><LinkifyText text={item} appUrl={APP_URL} /></span>
+                          <span><LinkifyText text={item} appUrl={APP_URL} lang={lang} /></span>
                         </li>
                       ))}
                     </ul>
@@ -695,7 +695,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       {content.beforeAfter.afterItems.map((item, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-foreground">
                           <Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-                          <span><LinkifyText text={item} appUrl={APP_URL} /></span>
+                          <span><LinkifyText text={item} appUrl={APP_URL} lang={lang} /></span>
                         </li>
                       ))}
                     </ul>
@@ -743,21 +743,22 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           </div>
         </section>
 
-        {/* Testimonio */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <Card className={`max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
-              <CardContent className="pt-10 pb-10 text-center">
-                <Sparkles className={`h-10 w-10 ${theme.text} mx-auto mb-4`} />
-                <p className="text-xl text-foreground italic mb-6 text-balance">"{content.testimonialQuote}"</p>
-                <div>
-                  <p className="font-bold text-foreground">{content.testimonialAuthor}</p>
-                  <p className="text-sm text-muted-foreground">{content.testimonialRole}</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        {content.testimonialQuote ? (
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <Card className={`max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
+                <CardContent className="pt-10 pb-10 text-center">
+                  <Sparkles className={`h-10 w-10 ${theme.text} mx-auto mb-4`} />
+                  <p className="text-xl text-foreground italic mb-6 text-balance">"{content.testimonialQuote}"</p>
+                  <div>
+                    <p className="font-bold text-foreground">{content.testimonialAuthor}</p>
+                    <p className="text-sm text-muted-foreground">{content.testimonialRole}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        ) : null}
 
         {/* FAQ */}
         <section className="py-20 bg-muted/30">
@@ -771,7 +772,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                   <CardContent className="pt-6">
                     <h3 className="font-bold text-lg text-foreground mb-2">{faq.q}</h3>
                     <p className="text-muted-foreground">
-                      <LinkifyText text={faq.a} appUrl={APP_URL} />
+                      <LinkifyText text={faq.a} appUrl={APP_URL} lang={lang} />
                     </p>
                   </CardContent>
                 </Card>

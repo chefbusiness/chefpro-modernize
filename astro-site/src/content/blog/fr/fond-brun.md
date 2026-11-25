@@ -2,7 +2,7 @@
 title: "Fond brun : ce qu'il est, et ce qu'il n'est pas"
 description: "Le fond brun, ce sont des os et des parures rôtis, puis mijotés avec légumes, tomate et herbes. Couleur acajou, base des sauces brunes."
 pubDate: 2026-11-17
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossaire
 tags: ["fond brun", "fond de veau", "demi-glace", "sauce"]
 lang: fr
@@ -73,13 +73,13 @@ Un [fumet](https://aichef.pro/fr/blog/fumet-de-poisson) est le fond clair des ar
 
 Une [demi-glace](https://aichef.pro/fr/blog/demi-glace) n'est pas le fond. C'est la sauce que vous bâtissez sur le fond brun et que vous réduisez jusqu'à ce qu'elle nappe. Une [glace de viande](https://aichef.pro/fr/blog/glace-de-viande) est le fond réduit plus loin, jusqu'à gélifier à froid. Le fond est le liquide de départ. Les deux autres sont ce que vous en faites.
 
-Le [fond blanc](https://aichef.pro/fr/blog/fond-blanc) est le frère pâle. Les os ne sont pas rôtis, la tomate reste dehors, et le goût reste discret pour qu'un velouté ou un potage clair porte autre chose. Le contraste, c'est le rôtissage.
+Le [fond blanc](https://aichef.pro/fr/blog/fond-blanc) est le frère pâle. Les os ne sont pas rôtis, la tomate reste dehors, et le goût reste discret pour qu'un [velouté](https://aichef.pro/fr/blog/veloute) ou un potage clair porte autre chose. Le contraste, c'est le rôtissage.
 
 ## Au passe
 
 On ne boit pas un fond brun à la tasse. Une louche mouille un braisé à la place de l'eau ou d'un bouillon salé du commerce, et la gélatine aide la sauce à se lier pendant que la viande cuit. Une cuillerée de la sauce réduite, pas du fond tel quel, finit un steak grillé.
 
-L'espagnole, sauce mère brune, est un fond brun lié d'un roux brun et réduit. Si votre fiche dit espagnole, le fond est le liquide et le roux est un autre geste. Ne faites pas comme si le fond avait déjà le corps de la sauce.
+L'[espagnole](https://aichef.pro/fr/blog/sauce-espagnole), sauce mère brune, est un fond brun lié d'un [roux](https://aichef.pro/fr/blog/qu-est-ce-qu-un-roux) brun et réduit. Si votre fiche dit espagnole, le fond est le liquide et le roux est un autre geste. Ne faites pas comme si le fond avait déjà le corps de la sauce.
 
 Les sauces au poivre, aux champignons, et le jus sous un rôti partent d'ici, puis prennent crème, beurre ou vin à la fin. Le gibier, chevreuil ou sanglier, est là où un fond brun travaille le plus : il porte la note rôtie et adoucit le goût de fer. Salez après la réduction, pas dans la marmite.
 
