@@ -1,8 +1,8 @@
 ---
-title: "Fiche technique de cuisine : le modèle, l'exemple chiffré et la méthode pour la tenir à jour"
-description: "Fiche technique de cuisine : modèle, exemple chiffré (blanquette), piège TVA et méthode pour la tenir à jour. Optimisez vos coûts et marges."
+title: "Fiche technique de cuisine : modèle vierge (Excel, PDF) et exemple chiffré"
+description: "Fiche technique de cuisine : modèle vierge gratuit en Excel et PDF, exemple chiffré (blanquette), formules de calcul, piège de la TVA et méthode de mise à jour."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-25
 category: gestion-restaurant
 tags: ["fiche technique", "food cost", "gestion restaurant", "coûts"]
 image: /blog-assets/2026/08/fiche-destacada.jpg
@@ -19,6 +19,10 @@ faq:
     a: "Le coût matière d'une fiche technique se calcule en additionnant le coût de chaque ingrédient. Pour un ingrédient, multipliez le grammage par le prix d'achat au kilo, puis ramenez au gramme. La somme donne le coût matière de la portion. Divisez ce montant par le prix de vente hors taxes pour obtenir le ratio. Attention : diviser par le prix TTC embellit artificiellement le ratio et fausse votre rentabilité."
   - q: "Quel est le meilleur logiciel gratuit pour créer des fiches techniques de cuisine ?"
     a: "Pour démarrer, un tableur suffit : créez une feuille par plat et une ligne par ingrédient, avec les colonnes grammage, prix d'achat et coût portion. Les outils dédiés prennent le relais à l'échelle, car ils mettent à jour les prix en un seul endroit. Mais aucun logiciel ne remplace des grammages pesés et des prix d'achat réels. La fiabilité de la fiche dépend avant tout de vos données terrain."
+  - q: "Où trouver une fiche technique de cuisine vierge gratuite ?"
+    a: "Vous pouvez télécharger gratuitement, sans inscription, notre fiche technique de cuisine vierge en Excel (avec les formules de coût, de ratio matière et de coefficient, et l'exemple de la blanquette) et sa version PDF d'une page A4, prête à imprimer et à remplir à la main."
+  - q: "Comment calculer une fiche technique de cuisine ?"
+    a: "Quatre calculs : le grammage brut (net divisé par 1 moins la perte), le coût de chaque ingrédient (grammage brut en kilo multiplié par le prix d'achat HT au kilo), le ratio matière (coût de la portion divisé par le prix de vente HT) et le coefficient multiplicateur (prix HT divisé par le coût). Toujours sur le prix hors taxes."
 ---
 
 <p>Le second est en repos. Vous jetez un œil en cuisine, et vous le savez déjà : la blanquette du jour n’a ni le même goût, ni la même taille, ni la même sauce que celle de mardi. Le client ne dira rien. Il ne reviendra pas. Et il aura raison.</p>
@@ -92,6 +96,19 @@ faq:
 
 <p>Pourquoi cette erreur est-elle si fréquente ? Parce que le prix affiché au client est presque toujours un prix TTC. En France, le restaurateur a l’habitude de raisonner en TTC, car c’est le prix qu’il voit, qu’il annonce, et qu’il encaisse. Mais la rentabilité, elle, se calcule hors taxes. Le prix de vente HT est le chiffre qui correspond à ce que le restaurant gagne réellement avant de reverser la TVA à l’État. C’est donc lui qu’il faut utiliser pour tous les ratios de gestion.</p>
 
+<h3>Comment calculer une fiche technique de cuisine : les quatre formules</h3>
+
+<p>Toute la fiche technique tient en quatre calculs, toujours dans cet ordre :</p>
+
+<ul>
+<li><strong>Grammage brut</strong> = grammage net ÷ (1 − perte). Avec 20 % de perte, 180 g nets demandent 225 g bruts à l’achat.</li>
+<li><strong>Coût d’un ingrédient</strong> = grammage brut (en kg) × prix d’achat HT au kilo. Dans la blanquette : 0,180 kg × 14,00 € = 2,52 €.</li>
+<li><strong>Ratio matière</strong> = coût matière de la portion ÷ prix de vente HT. Ici : 3,65 ÷ 17,73 = 20,6 %.</li>
+<li><strong>Coefficient multiplicateur</strong> = prix de vente HT ÷ coût matière. Ici : 17,73 ÷ 3,65 ≈ 4,9.</li>
+</ul>
+
+<p>Le modèle vierge ci-dessous fait ces calculs pour vous : vous saisissez le grammage net, la perte et le prix d’achat, et il remplit le reste.</p>
+
 <h2>Ce que la fiche change vraiment dans une brigade</h2>
 
 <p>La fiche technique n’est pas un document administratif de plus. C’est un outil de terrain qui change le quotidien de la brigade, pour peu qu’on l’utilise avec rigueur. Voici ce qu’elle change vraiment.</p>
@@ -141,6 +158,12 @@ faq:
 <p>Un tableur vous permet de créer une fiche technique avec une ligne par ingrédient, les colonnes du tableau que nous avons présenté plus haut, et une feuille par plat. Vous y saisissez vos grammages, vos prix d’achat, et les formules de calcul font le reste. C’est simple, gratuit, et immédiat. Si vous avez dix plats à la carte, un tableur est parfaitement adapté.</p>
 
 <p>En revanche, plus votre carte est grande, plus le tableur devient lourd. C’est là qu’un outil dédié prend tout son sens. Ces outils permettent de mettre à jour les prix en un seul endroit, et de voir les coûts de tous les plats se recalculer automatiquement. Les allergènes se propagent partout, les fiches sont toujours à jour, et la brigade accède à la version officielle sans risque d’erreur. Mais vous n’avez pas besoin de tout cela pour démarrer.</p>
+
+<h3>Fiche technique vierge gratuite (Excel et PDF)</h3>
+
+<p>Pour démarrer tout de suite, nous avons mis en ligne une <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.xlsx">fiche technique de cuisine vierge en Excel</a>, gratuite et sans inscription. Elle contient deux feuilles : l’exemple de la blanquette, avec les chiffres de cet article, et une fiche vierge avec les mêmes formules (grammage brut, coût par portion, ratio matière sur le prix HT, coefficient), les 14 allergènes du règlement INCO en liste déroulante, la progression, la conservation et le dressage.</p>
+
+<p>Vous préférez le papier ? La <a href="https://aichef.pro/descargas/fiche-technique-cuisine-vierge-aichef.pdf">fiche technique vierge en PDF</a> tient sur une page A4, prête à imprimer et à remplir au crayon pour une fiche technique de restaurant ou de restauration collective.</p>
 
 <p>Ce qui compte, ce n’est pas l’outil. C’est la discipline. Commencez avec votre tableur, créez vos premières fiches, prenez les photos de dressage, notez les prix, calculez les ratios. Dès que vous sentez que la gestion devient un frein, passez à un outil plus structuré. Mais ne passez pas des mois à comparer des solutions sans avoir la moindre fiche technique en place.</p>
 
