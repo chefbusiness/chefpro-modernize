@@ -100,9 +100,9 @@ NOTA_TEOR = ('É a conta teórica de uma dose. O food cost do mês (existências
 RODAPE_GUIA = 'Modelo gratuito do AI Chef Pro · Guia:'
 RODAPE_CALC = 'Calculadora de food cost gratuita:'
 BRUTO_KO = 'verifique o bruto'
-AVISO_1 = ('Atenção: 1 linha tem quantidade, mas não tem preço (ou tem texto em vez de um número). '
+AVISO_1 = ('Atenção: 1 linha tem quantidade, mas não tem preço (ou tem texto em vez de um número, ou o peso bruto não é válido). '
            'O custo está incompleto.')
-AVISO_N = (' linhas têm quantidade, mas não têm preço (ou têm texto em vez de um número). '
+AVISO_N = (' linhas têm quantidade, mas não têm preço (ou têm texto em vez de um número, ou o peso bruto não é válido). '
            'O custo está incompleto.')
 
 # Linhas fixas (as duas folhas têm a mesma estrutura → as mesmas células)

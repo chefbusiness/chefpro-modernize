@@ -1,6 +1,6 @@
 ---
-title: "Ficha técnica de cozinha em Excel: capitações, custo e alergénios"
-description: "A ficha técnica de pratos da restauração: capitações, rendimento, custo por porção, alergénios e modo de preparação, com um modelo de Excel grátis."
+title: "Ficha técnica de pratos em Excel: capitações, custo e alergénios"
+description: "Ficha técnica de cozinha para restauração: capitações, rendimento, custo por porção, alergénios e modo de preparação, com um modelo de Excel grátis."
 pubDate: 2026-10-28
 modDate: 2026-11-25
 category: gestao-de-restaurantes
@@ -134,9 +134,10 @@ Junta-se tudo numa folha só. Cada valor continua a ser exemplo. Se copiar a est
 | Modo | Temperar, panar, fritar, servir com arroz e limão. Sem minutos inventados |
 | Compra para 40 doses, exemplo | 40 × 230 g = 9,2 kg brutos de pescada |
 
-Pode descarregar a [ficha técnica em Excel](https://aichef.pro/descargas/ficha-tecnica-cozinha-excel-gratis-aichef.xlsx), gratuita e sem registo. Tem duas folhas: o exemplo deste artigo já preenchido (160 g de pescada limpa de 230 g brutos, 23,65 € para 10 doses, 2,365 € por dose, 21,5 % de food cost a 11,00 € sem IVA) e uma ficha em branco que calcula o rendimento, o bruto a comprar, o custo por porção, o food cost e o bruto a encomendar, com os 14 alergénios para marcar. Para contas rápidas de um prato, tem também a [calculadora de food cost](https://aichef.pro/pt/calculadora-food-cost-restaurante).
 
 A última linha é a ponte para a compra. A capitação limpa não se encomenda. Encomenda-se o bruto. 9,2 kg é a conta deste exemplo para 40 doses, não uma previsão de serviço.
+
+Pode descarregar a [ficha técnica em Excel](https://aichef.pro/descargas/ficha-tecnica-cozinha-excel-gratis-aichef.xlsx), gratuita e sem registo. Tem duas folhas: o exemplo deste artigo já preenchido (160 g de pescada limpa de 230 g brutos, 23,65 € para 10 doses, 2,365 € por dose, 21,5 % de food cost a 11,00 € sem IVA) e uma ficha em branco que calcula o rendimento, o bruto a comprar, o custo por porção, o food cost e o bruto a encomendar, com os 14 alergénios para marcar. Para contas rápidas de um prato, tem também a [calculadora de food cost](https://aichef.pro/pt/calculadora-food-cost-restaurante).
 
 Uma receita nova, ainda em rascunho, pode começar em [receitas com IA para restaurantes](https://aichef.pro/pt/receitas-ia-restaurantes). Só entra na ficha quando tiver pesos, custo e alergénios. Até lá é uma ideia, não uma folha de serviço.
 

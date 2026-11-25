@@ -193,8 +193,8 @@ def folha(wb, nome, ex):
         c = cel(ws, R_CAB, col, txt, negrito=True, cinzento=True)
         c.alignment = Alignment(wrap_text=True, vertical='center', horizontal='center')
     ws.row_dimensions[R_CAB].height = 48
-    d_rend = dv(ws, 'decimal', 'greaterThan', '0', None, 'Rendimento',
-                'Escreva o rendimento em percentagem, maior do que 0 (por exemplo 80 % ou 0,8). Vazio = sem perdas.')
+    d_rend = dv(ws, 'decimal', 'between', '0.01', '5', 'Rendimento',
+                'Escreva o rendimento em percentagem, de 1 % a 500 % (por exemplo 80 % ou 0,8). Vazio = sem perdas.')
     linhas = (EXEMPLO if ex else []) + [None] * (N_ING - (len(EXEMPLO) if ex else 0))
     for i, item in enumerate(linhas):
         r = R_ING1 + i
@@ -245,7 +245,7 @@ def folha(wb, nome, ex):
          EUR, False),
         (R_PE, 'Preço na ementa, com IVA (o que o cliente paga)', PRECO_EMENTA if ex else None, EUR, True),
         (R_PVS, 'Preço de venda sem IVA', f'=IF(OR(N({pe})<=0,{iva}=""),"",ROUND({pe}/(1+N({iva})),2))', EUR, False),
-        (R_FCR, 'Food cost real com esse preço', f'=IF(OR({cd}="",{pvs}=""),"",{cd}/{pvs})', PCT1, False),
+        (R_FCR, 'Food cost com o preço da ementa', f'=IF(OR({cd}="",{pvs}=""),"",{cd}/{pvs})', PCT1, False),
         (R_MARG, 'Margem bruta por dose', f'=IF(OR({cd}="",{pvs}=""),"",{pvs}-{cd})', EUR, False),
     ]
     for r, rotulo, valor, fmt, inp in bloco:
@@ -527,7 +527,7 @@ PRE_AO90 = ['objectivo', 'factura', 'facturas', 'acção', 'actual', 'actualizar
             'direcção', 'selecção', 'protecção', 'inspecção', 'efectivo', 'colecção', 'electrónico', 'adoptar',
             'correcto', 'correcta', 'projecto']
 TIPOGRAFIA_OK = set('·€≥÷×«»–—−’…')
-PCT_OK = {'9', '12', '13', '23', '28', '35', '80', '100'}
+PCT_OK = {'1', '9', '12', '13', '23', '28', '35', '80', '100', '500'}
 
 
 def textos_xlsx():
