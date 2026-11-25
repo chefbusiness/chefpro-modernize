@@ -120,7 +120,7 @@ def main():
         celda(ws, f, 5, f'=IF(OR(B{f}="",N(D{f})>=1),"",ROUNDUP(B{f}/(1-N(D{f})),0))', '0')
     ultima_ing = primera + len(filas) - 1
     dvm = DataValidation(type='decimal', operator='between', formula1='0', formula2='0.99',
-                         error='La merma va de 0 % a 99 %.', errorTitle='Merma')
+                         error='La merma va de 0 % a 99 % (escribe 20 % o 0,2).', errorTitle='Merma', showErrorMessage=True)
     ws.add_data_validation(dvm)
     dvm.add(f'D{primera}:D{ultima_ing}')
 
@@ -145,7 +145,8 @@ def main():
     # Alérgenos (14, con desplegable)
     fa = fe + 2 + len(pasos) + 1
     titulo(ws, fa, 'Alérgenos (Reglamento UE 1169/2011)')
-    dv = DataValidation(type='list', formula1='"Contiene,Puede contener trazas,No contiene"', allow_blank=True)
+    dv = DataValidation(type='list', formula1='"Contiene,Puede contener trazas,No contiene"', allow_blank=True,
+                        showErrorMessage=True, errorTitle='Alérgeno', error='Elige: Contiene, Puede contener trazas o No contiene.')
     ws.add_data_validation(dv)
     for i, a in enumerate(ALERGENOS):
         f = fa + 1 + i

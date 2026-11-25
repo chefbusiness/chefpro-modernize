@@ -84,7 +84,7 @@ wpId: 2141
 
 
 
-<p class="wp-block-paragraph">El <em>Wok Hei</em> (气锅 o «aliento del wok») es el sabor ahumado característico que solo se logra con temperaturas extremas. Los parámetros profesionales son:</p>
+<p class="wp-block-paragraph">El <em>Wok Hei</em> (鑊氣 o «aliento del wok») es el sabor ahumado característico que solo se logra con temperaturas extremas. Los parámetros profesionales son:</p>
 
 
 

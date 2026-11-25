@@ -640,7 +640,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Diseño Tradicional</th><th>Diseño con IA</th><th>Ahorro</th></tr></thead><tbody><tr><td>Conceptualización inicial</td><td>2.000-5.000€</td><td>50-200€</td><td>90-95%</td></tr><tr><td>Renders 3D profesionales</td><td>500-1.500€/imagen</td><td>Incluido en suscripción</td><td>100%</td></tr><tr><td>Tiempo de desarrollo</td><td>4-8 semanas</td><td>1-2 semanas</td><td>70-80%</td></tr><tr><td>Iteraciones/cambios</td><td>Coste adicional por cambio</td><td>Ilimitadas</td><td>Variable</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Diseño Tradicional</th><th>Diseño con IA</th><th>Ahorro</th></tr></thead><tbody><tr><td>Conceptualización inicial</td><td>2.000-5.000€</td><td>50-200€</td><td>90-95%</td></tr><tr><td>Renders 3D profesionales</td><td>500-1.500€/imagen</td><td>Incluido en suscripción</td><td>100%</td></tr><tr><td>Tiempo de desarrollo</td><td>4-8 semanas</td><td>1-2 semanas</td><td>70-80%</td></tr><tr><td>Iteraciones/cambios</td><td>Coste adicional por cambio</td><td>Las que cubran los créditos de tu plan (ilimitadas en Premium Max)</td><td>Variable</td></tr></tbody></table></div></figure>
 
 
 
