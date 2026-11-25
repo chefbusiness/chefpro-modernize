@@ -1007,7 +1007,7 @@
         "uses": "10.000/mês",
         "description": "Ideal para auxiliares de cozinha, cozinheiros e chefs de partida",
         "features": {
-          "0": "75+ agentes de IA incluídos",
+          "0": "Mais de 80 agentes de IA incluídos",
           "1": "10.000 créditos mensais",
           "2": "Receituários mundiais",
           "3": "Suporte por email"
@@ -1019,7 +1019,7 @@
         "v2_hint": "≈ um mês de receitas, fichas técnicas e ementas para um cozinheiro",
         "v2_cta": "Começar com Membro",
         "v2_features": [
-          "75+ agentes de IA incluídos",
+          "Mais de 80 agentes de IA incluídos",
           "10.000 créditos mensais",
           "27 livros de cozinha do mundo",
           "Suporte por e-mail"
@@ -1033,7 +1033,7 @@
         "uses": "85.000/mês",
         "description": "Para Chefs de Cozinha, Chefs Executivos e Gerentes de Restaurantes",
         "features": {
-          "0": "75+ agentes de IA incluídos",
+          "0": "Mais de 80 agentes de IA incluídos",
           "1": "85.000 créditos mensais",
           "2": "Acesso a todas as cozinhas do mundo",
           "3": "Ferramentas avançadas de negócio",
@@ -1053,7 +1053,7 @@
         "uses": "175.000/mês",
         "description": "Para empresários gastronômicos e redes de restaurantes",
         "features": {
-          "0": "75+ agentes de IA incluídos",
+          "0": "Mais de 80 agentes de IA incluídos",
           "1": "175.000 créditos mensais",
           "2": "Acesso a todas as cozinhas do mundo",
           "3": "Ferramentas avançadas de negócio",
@@ -1073,7 +1073,7 @@
         "uses": "∞",
         "description": "Créditos ilimitados mensais para profissionais exigentes",
         "features": {
-          "0": "75+ agentes de IA incluídos",
+          "0": "Mais de 80 agentes de IA incluídos",
           "1": "Créditos ilimitados mensais",
           "2": "Acesso a todas as cozinhas do mundo",
           "3": "Ferramentas avançadas de negócio",
@@ -1097,7 +1097,7 @@
         "discount": "Poupe 2 meses",
         "description": "Ideal para empresários gastronômicos, donos de restaurantes e executivos",
         "features": {
-          "0": "75+ agentes de IA incluídos",
+          "0": "Mais de 80 agentes de IA incluídos",
           "1": "Créditos ilimitados durante todo o ano",
           "2": "Acesso a todas as cozinhas do mundo",
           "3": "Ferramentas avançadas de negócio",
@@ -1245,7 +1245,7 @@
     "glosario_ia": "Glossário IA",
     "glosario_culinario": "Glossário Científico Culinário",
     "roadmap": "Roadmap AI Chef Pro",
-    "app_tools": "75+ agentes de IA",
+    "app_tools": "Mais de 80 agentes de IA",
     "app_login": "Entrar",
     "free_tools_hub": "Ferramentas Gratuitas",
     "mentoria_online": "Mentoria Online",
