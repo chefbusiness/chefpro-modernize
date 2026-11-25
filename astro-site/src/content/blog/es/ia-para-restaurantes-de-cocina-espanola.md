@@ -461,7 +461,7 @@ wpId: 2346
 
 
 <div style="background: linear-gradient(135deg, #e65100 0%, #ff8f00 100%); border-radius: 12px; padding: 30px; margin: 35px 0; text-align: center; box-shadow: 0 8px 25px rgba(230, 81, 0, 0.3);">
-<p style="color: #ffffff; font-size: 22px; font-weight: bold; margin: 0 0 12px 0; line-height: 1.3;">🇪🇸 +55 Herramientas de IA para Profesionales de la Hostelería</p>
+<p style="color: #ffffff; font-size: 22px; font-weight: bold; margin: 0 0 12px 0; line-height: 1.3;">🇪🇸 +80 Agentes de IA para Profesionales de la Hostelería</p>
 <p style="color: #fff3e0; font-size: 16px; margin: 0 0 20px 0; line-height: 1.5;">Accede a generadores de recetas españolas, calculadoras de mermas, food pairing y mucho más.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank" style="display: inline-block; background-color: #ffffff; color: #e65100; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Ver Planes y Precios →</a>
 </div>
@@ -495,7 +495,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>Probar la plataforma sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Bares de tapas pequeños</td><td>Todas las herramientas con límites</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos</td><td>Límites expandidos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes con alta rotación</td><td>Uso extensivo + análisis</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Grupos de restauración</td><td>Uso ilimitado + prioridad</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Bares de tapas pequeños, sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Restaurantes medianos</td><td>85.000 créditos al mes y todos los agentes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Restaurantes con alta rotación</td><td>175.000 créditos al mes y todos los agentes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Grupos de restauración</td><td>Créditos ilimitados y todos los agentes</td></tr></tbody></table></div></figure>
 
 
 
@@ -696,7 +696,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 
 
-<p class="wp-block-paragraph">Los costes son muy accesibles. AI Chef Pro ofrece un plan de entrada desde 10€/mes, y planes profesionales superiores. Para un bar de tapas típico, la inversión puede recuperarse en el primer mes solo con la optimización de mermas.</p>
+<p class="wp-block-paragraph">Los costes son muy accesibles. AI Chef Pro ofrece un plan de entrada, Miembro, por 10 €/mes, y planes superiores desde 25 €/mes. Para un bar de tapas típico, la inversión puede recuperarse en el primer mes solo con la optimización de mermas.</p>
 
 
 
@@ -788,7 +788,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 <div style="background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 8px 25px rgba(26, 95, 42, 0.3);">
 <p style="color: #ffffff; font-size: 24px; font-weight: bold; margin: 0 0 15px 0; line-height: 1.3;">🚀 Transforma tu Restaurante Español con IA</p>
-<p style="color: #e8f5e9; font-size: 17px; margin: 0 0 25px 0; line-height: 1.5;">Únete a cientos de profesionales de la hostelería española que ya utilizan AI Chef Pro para optimizar su cocina.</p>
+<p style="color: #e8f5e9; font-size: 17px; margin: 0 0 25px 0; line-height: 1.5;">Prueba AI Chef Pro y optimiza tu cocina española.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank" style="display: inline-block; background-color: #ffffff; color: #1a5f2a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Comenzar Ahora →</a>
 </div>
 

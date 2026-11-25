@@ -95,8 +95,8 @@ wpId: 2244
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #000; margin: 0 0 15px 0; font-size: 24px;">🚀 Impulsa tu Proyecto Gastronómico con AI Chef Pro</h3>
-<p style="color: #333; font-size: 16px; margin: 0 0 20px 0;">Más de 55 herramientas de IA especializadas para chefs y emprendedores gastronómicos. Desde el estudio de mercado hasta la operación diaria.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #000; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">AI Chef Miembro desde 10 €/mes</a>
+<p style="color: #333; font-size: 16px; margin: 0 0 20px 0;">Más de 80 agentes de IA especializados para chefs y emprendedores gastronómicos. Desde el estudio de mercado hasta la operación diaria.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #000; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">AI Chef Miembro: 10 €/mes</a>
 </div>
 
 
@@ -594,7 +594,7 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 
 
-<p class="wp-block-paragraph">La suite completa de AI Chef Pro incluye más de 55 aplicaciones especializadas organizadas en módulos:</p>
+<p class="wp-block-paragraph">La suite completa de AI Chef Pro incluye más de 80 agentes especializados organizados en módulos:</p>
 
 
 
@@ -647,7 +647,7 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Sin IA</th><th>Con IA</th><th>Diferencia</th></tr></thead><tbody><tr><td>Consultoría plan de negocio</td><td>3.000€</td><td>300€ (herramientas IA)</td><td>-2.700€</td></tr><tr><td>Desarrollo de carta (tiempo chef)</td><td>80 horas x 20€/h = 1.600€</td><td>30 horas x 20€/h = 600€</td><td>-1.000€</td></tr><tr><td>Marketing mensual (agencia)</td><td>800€/mes</td><td>200€/mes (AI + herramientas)</td><td>-600€/mes</td></tr><tr><td>Mermas de materia prima</td><td>8% del food cost</td><td>5% del food cost</td><td>-3% (ahorro)</td></tr><tr><td>Suscripción AI Chef Pro Premium</td><td>0€</td><td>15€/mes</td><td>+15€/mes</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Sin IA</th><th>Con IA</th><th>Diferencia</th></tr></thead><tbody><tr><td>Consultoría plan de negocio</td><td>3.000€</td><td>300€ (herramientas IA)</td><td>-2.700€</td></tr><tr><td>Desarrollo de carta (tiempo chef)</td><td>80 horas x 20€/h = 1.600€</td><td>30 horas x 20€/h = 600€</td><td>-1.000€</td></tr><tr><td>Marketing mensual (agencia)</td><td>800€/mes</td><td>200€/mes (AI + herramientas)</td><td>-600€/mes</td></tr><tr><td>Mermas de materia prima</td><td>8% del food cost</td><td>5% del food cost</td><td>-3% (ahorro)</td></tr><tr><td>Suscripción AI Chef Pro Premium Pro</td><td>0€</td><td>25€/mes</td><td>+25€/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -657,11 +657,10 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%); padding: 35px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
 <h3 style="color: #000; margin: 0 0 15px 0; font-size: 26px;">📊 Planes AI Chef Pro para Cada Necesidad</h3>
-<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Miembro (10 €/mes)</strong> &#8211; 10.000 créditos al mes para probar la plataforma sin permanencia</p>
-<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Pro (10€/mes)</strong> &#8211; Ideal para chefs individuales o pequeños establecimientos</p>
-<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Premium (15€/mes)</strong> &#8211; Para cocinas activas con uso frecuente</p>
-<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Premium Pro (25€/mes)</strong> &#8211; Desarrollo, liderazgo y creación de alto volumen</p>
-<p style="color: #333; font-size: 16px; margin: 0 0 20px 0;"><strong>Premium Plus (50€/mes)</strong> &#8211; Uso ilimitado para los más exigentes</p>
+<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Miembro (10 €/mes)</strong> &#8211; 10.000 créditos al mes, ideal para chefs individuales o pequeños establecimientos, sin permanencia</p>
+<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Premium Pro (25 €/mes)</strong> &#8211; 85.000 créditos al mes, para cocinas activas con uso frecuente</p>
+<p style="color: #333; font-size: 16px; margin: 0 0 10px 0;"><strong>Premium Plus (50 €/mes)</strong> &#8211; 175.000 créditos al mes, para desarrollo, liderazgo y creación de alto volumen</p>
+<p style="color: #333; font-size: 16px; margin: 0 0 20px 0;"><strong>Premium Max (95 €/mes o 950 €/año)</strong> &#8211; Créditos ilimitados para los más exigentes</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #000; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">Elige tu Plan Ahora</a>
 </div>
 
@@ -832,7 +831,7 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 
 
-<p class="wp-block-paragraph"><strong>¿Listo para dar el primer paso?</strong> Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener">explorar AI Chef Pro</a> y descubrir cómo más de 55 herramientas especializadas pueden impulsar tu proyecto gastronómico desde el día uno. Y si deseas un acompañamiento más personalizado, nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener">mentoría online</a> te ofrece asesoría directa con expertos en gastronomía y tecnología.</p>
+<p class="wp-block-paragraph"><strong>¿Listo para dar el primer paso?</strong> Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener">explorar AI Chef Pro</a> y descubrir cómo más de 80 agentes especializados pueden impulsar tu proyecto gastronómico desde el día uno. Y si deseas un acompañamiento más personalizado, nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener">mentoría online</a> te ofrece asesoría directa con expertos en gastronomía y tecnología.</p>
 
 
 
@@ -842,9 +841,9 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 <div style="background: linear-gradient(135deg, #000 0%, #1a1a1a 100%); padding: 40px; border-radius: 15px; margin: 40px 0; text-align: center; border: 3px solid #FFD700; box-shadow: 0 8px 25px rgba(255,215,0,0.3);">
 <h3 style="color: #FFD700; margin: 0 0 20px 0; font-size: 28px;">🎯 Comienza Tu Viaje Gastronómico con IA</h3>
-<p style="color: #fff; font-size: 18px; margin: 0 0 25px 0;">Únete a cientos de profesionales que ya están transformando sus cocinas con AI Chef Pro. Con AI Chef Miembro usa todas las herramientas y descubre el potencial de la inteligencia artificial en tu restaurante.</p>
+<p style="color: #fff; font-size: 18px; margin: 0 0 25px 0;">Prueba AI Chef Pro en tu cocina. Con AI Chef Miembro usas todos los agentes y descubres el potencial de la inteligencia artificial en tu restaurante.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #FFD700; color: #000; padding: 18px 50px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 20px; margin-bottom: 15px;">Empieza con AI Chef Miembro</a>
-<p style="color: #aaa; font-size: 14px; margin: 15px 0 0 0;">Pago con tarjeta de crédito · Acceso inmediato · +55 herramientas disponibles</p>
+<p style="color: #aaa; font-size: 14px; margin: 15px 0 0 0;">Sin permanencia · Acceso inmediato · +80 agentes disponibles</p>
 </div>
 
 

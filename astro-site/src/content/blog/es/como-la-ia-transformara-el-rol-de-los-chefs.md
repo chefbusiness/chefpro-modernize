@@ -52,7 +52,7 @@ wpId: 2238
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 15px; font-weight: bold;">🚀 Transforma Tu Cocina con Inteligencia Artificial</h3>
-<p style="color: #333; font-size: 16px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Descubre AI Chef Pro, la suite de herramientas de IA diseñada específicamente para chefs y profesionales de la hostelería. Más de 55 aplicaciones especializadas para revolucionar tu cocina.</p>
+<p style="color: #333; font-size: 16px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Descubre AI Chef Pro, la suite de herramientas de IA diseñada específicamente para chefs y profesionales de la hostelería. Más de 80 agentes especializados para revolucionar tu cocina.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-la-ia-transformara-el-rol-de-los-chefs" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; transition: all 0.3s ease;">Prueba AI Chef Miembro</a>
 </div>
 
@@ -621,7 +621,7 @@ wpId: 2238
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 15px; font-weight: bold;">⭐ Planes Adaptados a Cada Necesidad</h3>
-<p style="color: #333; font-size: 16px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Desde el plan Miembro hasta Premium Plus con usos ilimitados. Encuentra el plan perfecto para tu cocina y comienza tu transformación digital hoy.</p>
+<p style="color: #333; font-size: 16px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Desde el plan Miembro (10 €/mes) hasta Premium Max con créditos ilimitados. Encuentra el plan perfecto para tu cocina y comienza tu transformación digital hoy.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-la-ia-transformara-el-rol-de-los-chefs" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; transition: all 0.3s ease;">Ver Planes y Precios</a>
 </div>
 
@@ -824,7 +824,7 @@ wpId: 2238
 
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%); border-radius: 12px; padding: 40px; margin: 40px 0; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
 <h3 style="color: #FFD700; font-size: 28px; margin-bottom: 20px; font-weight: bold;">🎯 Comienza Tu Transformación Digital Hoy</h3>
-<p style="color: #ffffff; font-size: 18px; margin-bottom: 25px; max-width: 700px; margin-left: auto; margin-right: auto;">Únete a miles de chefs y profesionales de la hostelería que ya están revolucionando sus cocinas con AI Chef Pro. Más de 55 herramientas de IA especializadas esperan por ti.</p>
+<p style="color: #ffffff; font-size: 18px; margin-bottom: 25px; max-width: 700px; margin-left: auto; margin-right: auto;">Prueba AI Chef Pro en tu cocina. Más de 80 agentes de IA especializados esperan por ti.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-la-ia-transformara-el-rol-de-los-chefs" target="_blank" rel="noopener" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 18px 50px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 20px; transition: all 0.3s ease;">Regístrate en AI Chef Pro como Miembro</a>
 </div>
 
