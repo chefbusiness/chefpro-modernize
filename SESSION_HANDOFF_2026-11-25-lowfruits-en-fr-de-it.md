@@ -38,7 +38,9 @@
 
 | #284 | IT | Manuale HACCP semplificato: guía nueva (Opus) + modelo Word editable y PDF de 12 páginas; diffida «no darla por supuesta» (DL 91/2014) |
 
-**Al cerrar (noche del 25-nov) no queda ningún PR de esta sesión abierto**; verificado en producción (title, FAQPage, 0 NUL, descargas 200). Los PR abiertos (#80, #142, #185, #239, #240) son de Cursor. **GitHub GraphQL falló a ratos** (crear y fusionar PR): usar la API REST (`gh api repos/chefbusiness/chefpro-modernize/pulls -X POST --input pr.json`; merge con `.../pulls/N/merge -X PUT -f merge_method=squash`).
+| #285 | — | Sitemap: lastmod de 3 posts ES del 24-nov (ver gotcha de `sitemap-lastmod.json`) |
+
+**Cierre:** sitemap reenviado a GSC (`sc-domain:aichef.pro`, `sitemap-index.xml`, 25-nov 17:20, 1.534 URL; GSC tenía 1.526 de las 16:59); comprobado que el sitemap de producción contiene los 20 posts nuevos y los 45 actualizados del 24-25 nov y que `llms.txt` y `llms-full.txt` recogen los 20 nuevos. **No queda ningún PR de esta sesión abierto**; verificado en producción (title, FAQPage, 0 NUL, descargas 200). Los PR abiertos (#80, #142, #185, #239, #240) son de Cursor. **GitHub GraphQL falló a ratos** (crear y fusionar PR): usar la API REST (`gh api repos/chefbusiness/chefpro-modernize/pulls -X POST --input pr.json`; merge con `.../pulls/N/merge -X PUT -f merge_method=squash`).
 
 ## 3. Normativa verificada (en memoria, con fuentes)
 
@@ -74,6 +76,7 @@
   `blog-aichef` (§ «Duplicar un post ES a otro idioma»): aside pegado al `##` (H2 en texto plano), asides y huérfanas,
   nombres de agentes localizados, recursos que no existen en el idioma, FAQ que solo valen en español, calcos de DeepSeek
   («escandilhar», «criterium»), IVA por país, pycel sin caché.
+- **`astro.config.mjs` da prioridad a `sitemap-lastmod.json` (instantánea antigua) sobre `blog-lastmod.json`**: un post que esté en las dos conserva la fecha vieja en el sitemap aunque su `modDate` cambie. Al tocar posts, comprobar que `sitemap-lastmod.json` no tenga una fecha anterior (pasó con 3 posts ES, #285).
 - **Reg. 2021/382, anexo II cap. IX punto 9** = equipos, vehículos y recipientes usados para **transformar, manipular,
   transportar o almacenar** un alérgeno: no se usan con alimentos sin él salvo limpieza y control (al menos, sin restos
   visibles). La freidora y la tabla SÍ entran. Lo de «recolección, transporte y almacenaje» es el anexo I (producción

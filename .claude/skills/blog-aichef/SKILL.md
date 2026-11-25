@@ -236,6 +236,7 @@ Resultado, medido en GSC: **27 URLs sin poder rastrearse desde el 1 de agosto** 
 - **DeepSeek inventa palabras y calcos**: «escandilhar» (PT; el blog usa «escandallo»), «criterium», «parcours», «palet», «passe» como plato del menú (PT = «momento»), «prato do dia» por «menu do dia». Comparar cifras/enlaces por script y pasar SIEMPRE auditoría de nativo.
 - **IVA por país en los ejemplos de precio**: NL comida 9 %, alcohol 21 % · PT comida 13 %, alcohol y refrigerantes 23 % (continente) · IT somministrazione 10 % · DE comida 7 %, bebidas 19 % · FR comida 10 %, alcohol 20 %. Recalcular con python antes del brief.
 - **Reg. 2021/382 → 852, anexo II cap. IX punto 9**: equipos, vehículos y recipientes para **transformar, manipular, transportar o almacenar** un alérgeno solo se reutilizan con alimentos sin él tras limpiarlos y controlarlos (mínimo: sin restos visibles). Cubre freidora, tablas y bancada. «Recolección, transporte, almacenaje» es el anexo I (producción primaria): no confundirlos.
+- **Sitemap: `sitemap-lastmod.json` manda sobre `blog-lastmod.json`** (`astro.config.mjs`, `LASTMOD[path] ?? BLOG_LASTMOD[path]`). Tras regenerar `blog-lastmod.json`, comprobar que ningún post tenga en `sitemap-lastmod.json` una fecha anterior; si la tiene, actualizarla (edición de texto, no `json.dumps`).
 - **Plantillas descargables**: duplicar el generador ES/FR del mismo producto y pasar pycel sobre copia SIN caché con celdas vacías (el Excel ES de ficha técnica daba `#DIV/0!`; el FR ya estaba arreglado).
 
 ### Banners de productos digitales: política obligatoria
