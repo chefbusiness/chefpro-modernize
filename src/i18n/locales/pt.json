@@ -3013,7 +3013,7 @@
       "status_ok": "✅ Excelente food cost — O seu prato é muito rentável",
       "status_warn": "⚠️ Food cost ajustado — Reveja preços ou ingredientes",
       "status_bad": "🔴 Food cost alto — Considere aumentar o preço ou reduzir custos",
-      "tip": "💡 Referência do setor: food cost entre 25% e 32% é saudável para restaurantes",
+      "tip": "💡 Para se orientar: o food cost costuma ficar entre 25% e 35%; o semáforo é indicativo (verde até 32%, amarelo até 35%)",
       "cta_after": "Quer fazer o escandallo de toda a carta com IA e validar o resultado?",
       "reset": "Novo cálculo",
       "export_excel": "Baixar Excel",
@@ -3102,10 +3102,10 @@
     "faq": [
       {
         "question": "O que é o food cost?",
-        "answer": "O food cost é a percentagem do preço de venda que representa o custo dos ingredientes. Fórmula: Food cost % = (Custo ingredientes / Preço de venda) × 100. Um food cost saudável situa-se entre 25% e 32%."
+        "answer": "O food cost é a percentagem do preço de venda que representa o custo dos ingredientes. Fórmula: Food cost % = (Custo ingredientes / Preço de venda) × 100. Como referência, costuma ficar entre 25% e 35%, conforme o tipo de casa."
       },
       {
-        "question": "Porquê é importante controlá-lo?",
+        "question": "Porque é importante controlá-lo?",
         "answer": "Um food cost descontrolado pode significar que está a perder dinheiro em pratos que julga rentáveis. Controlá-lo permite tomar decisões de preços e maximizar a margem."
       },
       {

@@ -1,8 +1,8 @@
 ---
-title: "Ficha técnica de pratos: capitações, custo e alergénios"
-description: "A ficha técnica de pratos da restauração: capitações, custo por porção, alergénios e modo de preparação. Com um exemplo marcado como exemplo."
+title: "Ficha técnica de pratos em Excel: capitações, custo e alergénios"
+description: "Ficha técnica de cozinha para restauração: capitações, rendimento, custo por porção, alergénios e modo de preparação, com um modelo de Excel grátis."
 pubDate: 2026-10-28
-modDate: 2026-10-28
+modDate: 2026-11-25
 category: gestao-de-restaurantes
 tags: ["ficha técnica de pratos", "capitação", "custo por porção", "alergénios", "food cost", "HACCP"]
 image: /blog-assets/2026/10/pt-7-apps-ia-ficha.jpg
@@ -24,6 +24,8 @@ faq:
     a: "Não, quando a usa um operador de restauração. O trabalho escolar explica o prato. A ficha da cozinha fixa a capitação, o custo por porção, os alergénios e o modo de preparação para a praça repetir o mesmo prato no serviço seguinte."
   - q: "Qual é a diferença entre a ficha e o food cost do mês?"
     a: "A ficha é a conta teórica de uma dose, com os pesos e os preços que deviam acontecer. O food cost do mês é a conta real: existências, compras e vendas do período. Não têm de coincidir. A diferença é o que se perdeu entre a ficha e a caixa. A conta do mês está no artigo de food cost."
+  - q: "Onde descarrego uma ficha técnica de cozinha em Excel?"
+    a: "Neste artigo: um modelo de ficha técnica em Excel, gratuito e sem registo, com o exemplo da pescada já preenchido e uma ficha em branco que calcula o rendimento, o peso bruto a comprar e a encomendar, o custo por porção e o food cost, com os 14 alergénios para marcar."
 ---
 
 <div class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Resposta direta</p><p class="mt-2 text-foreground">A ficha técnica de pratos é a folha que a cozinha de restauração usa para repetir um prato: capitações, custo por porção, alergénios e modo de preparação. Não é um trabalho escolar. Não conta a história do prato. Diz o que a praça pesa, o que a sala declara e o que a compra encomenda.</p></div>
@@ -63,7 +65,7 @@ Não há, nesta lista, um campo de «introdução» nem de «conclusão». Isso 
 
 A capitação é a quantidade de um ingrediente numa dose. «Uma pescada» não é uma capitação. «160 g de pescada limpa» é.
 
-O peso limpo não é o peso que se compra. No exemplo — só no exemplo — 160 g de pescada limpa saem de 230 g brutos. O rendimento desse exemplo é 160 ÷ 230, cerca de 70 %. A fatura paga os 230 g. A ficha que lança o custo sobre os 160 g, ao preço do quilo limpo inventado, mente para baixo.
+O peso limpo não é o peso que se compra. No exemplo — só no exemplo — 160 g de pescada limpa saem de 230 g brutos. O rendimento desse exemplo é 160 ÷ 230, cerca de 70 %. A fatura paga os 230 g. A ficha que aplica aos 160 g o preço do quilo bruto, como se não houvesse aparas, mente para baixo.
 
 Quem escreve a capitação pesa uma dose a sério, uma vez, e copia o número. A [mise en place](https://aichef.pro/pt/blog/mise-en-place) é o sítio onde essa dose se repete. Sem balança, a capitação é uma intenção.
 
@@ -132,13 +134,16 @@ Junta-se tudo numa folha só. Cada valor continua a ser exemplo. Se copiar a est
 | Modo | Temperar, panar, fritar, servir com arroz e limão. Sem minutos inventados |
 | Compra para 40 doses, exemplo | 40 × 230 g = 9,2 kg brutos de pescada |
 
+
 A última linha é a ponte para a compra. A capitação limpa não se encomenda. Encomenda-se o bruto. 9,2 kg é a conta deste exemplo para 40 doses, não uma previsão de serviço.
+
+Pode descarregar a [ficha técnica em Excel](https://aichef.pro/descargas/ficha-tecnica-cozinha-excel-gratis-aichef.xlsx), gratuita e sem registo. Tem duas folhas: o exemplo deste artigo já preenchido (160 g de pescada limpa de 230 g brutos, 23,65 € para 10 doses, 2,365 € por dose, 21,5 % de food cost a 11,00 € sem IVA) e uma ficha em branco que calcula o rendimento, o bruto a comprar, o custo por porção, o food cost e o bruto a encomendar, com os 14 alergénios para marcar. Para contas rápidas de um prato, tem também a [calculadora de food cost](https://aichef.pro/pt/calculadora-food-cost-restaurante).
 
 Uma receita nova, ainda em rascunho, pode começar em [receitas com IA para restaurantes](https://aichef.pro/pt/receitas-ia-restaurantes). Só entra na ficha quando tiver pesos, custo e alergénios. Até lá é uma ideia, não uma folha de serviço.
 
 ## Erros que deixam a ficha inútil
 
-**Peso bruto tratado como peso no prato.** O custo fica baixo de mais e o food cost do mês não bate com a ficha. A diferença não é um mistério: é a aparas que a ficha esqueceu.
+**Peso bruto tratado como peso no prato.** O custo fica baixo de mais e o food cost do mês não bate com a ficha. A diferença não é um mistério: são as aparas que a ficha esqueceu.
 
 **Alergénio de memória.** «O pão ralado é só pão» dura até à marca que leva mostarda. A sala responde com a ficha velha. O rótulo novo não chegou à folha.
 
