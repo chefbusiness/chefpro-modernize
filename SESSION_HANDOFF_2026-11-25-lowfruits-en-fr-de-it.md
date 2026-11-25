@@ -32,7 +32,11 @@
 | #277 | PT | Glosarios menu de degustação, harmonização de vinhos y food pairing (IVA 13 %/23 %) |
 | #278 | — | Skill `blog-aichef`: gotchas de duplicar posts a otros idiomas |
 
-**Abiertos al cerrar (sesión Claude Code, tarde del 25-nov), con auditoría adversarial en curso:** #279 (PT HACCP/temperaturas/alérgenos contra la normativa portuguesa) · #280 (PT Excel de food cost y ficha técnica con los ejemplos de los posts) · #281 (NL hygiënecode/HACCP/alérgenos contra la normativa + HACCP-lijsten Excel/PDF). Criterio: aplicar la auditoría, preview verde del último commit, `gh pr merge --squash`.
+| #279, #280, #282 | PT | HACCP/temperaturas/alérgenos contra la normativa portuguesa (DL 113/2006, DL 251/91, **DL 37/2004** pescado −18 °C, AHRESP 2015) · Excel de food cost y ficha técnica · registo de temperaturas (Excel + PDF) |
+| #281 | NL | Hygiënecode/HACCP/alérgenos contra la normativa + HACCP-lijsten (Excel + PDF 4 págs.) |
+| #283 | IT | Scheda tecnica ricetta + Excel (y fórmulas de IVA del Excel NL corregidas) |
+
+**Abierto al cerrar (sesión Claude Code, noche del 25-nov):** #284 (IT manuale HACCP semplificato: post + modelo Word/PDF) con auditoría adversarial en curso. Criterio: aplicar la auditoría, preview verde del último commit, merge squash. **GitHub GraphQL falló a ratos** (crear y fusionar PR): usar la API REST (`gh api repos/chefbusiness/chefpro-modernize/pulls -X POST --input pr.json`; merge con `.../pulls/N/merge -X PUT -f merge_method=squash`).
 
 ## 3. Normativa verificada (en memoria, con fuentes)
 
@@ -44,15 +48,15 @@
 
 ## 4. Pendiente
 
-- **Fusionar #279, #280 y #281** tras sus auditorías (ver arriba).
-- **PT:** registo de temperaturas PT (duplicar `plantilla-haccp-lijsten-nl.py` con los valores AHRESP 2015: 0-7 °C, ≥ 65 °C, registro 1×día; ley solo −18 °C) enlazado desde `pt/haccp` y `pt/controlo-de-temperaturas`; comparativo «software restauração» (70 + 70 + 20); **PT-BR**: `/pt/` es pt-PT; las keywords BR (CMV 880, sistema para restaurante gratuito 260, harmonização de vinhos 320, planilha CMV 90) piden decidir si se abre locale BR → **decisión de John** (modo plan).
-- **IT:** manuale HACCP semplificato y gestionale ristorante (590): sin empezar.
-- **NL:** horeca software (70 + 70), AI recepten generator, menukaart met AI: sin empezar.
+- **Fusionar #284** tras su auditoría.
+- **Descartados por intención (SERP de TPV/software comercial; AI Chef Pro no es TPV):** PT «software restauração», IT «gestionale ristorante», NL «horeca software». **PT-BR**: `/pt/` es pt-PT; las keywords BR (CMV 880, sistema para restaurante gratuito 260, harmonização de vinhos 320, planilha CMV 90) piden decidir si se abre locale BR → **decisión de John** (modo plan).
+- **IT:** generatore di ricette / ia cucina (20 + 20, landing) sin empezar.
+- **NL:** AI recepten generator (20 + 20) y menukaart maken met AI (30): landings (código), sin empezar.
 - **Deuda anotada, fuera de LowFruits:** breadcrumb del JSON-LD de las calculadoras con el hub en español en todos los
   idiomas (`marketing-heads/calculadora-food-cost.ts:46`) · breadcrumb `/de/de/` en landings DE · «27 Weltküchen» sin
   verificar en `landingRecetas` · FAQ duplicadas DE preexistentes (Kreuzkontamination, Mise en Place) · landing EN de
   costes con cifras de capa comercial · «14 allergens» en `use-cases-content.en.ts` · formatos de duración `[h] u mm` de
-  las plantillas DE y FR se ven mal en la vista previa de Mac/iPhone (el NL ya usa `[h]:mm`) · `fase8d-faq-duplicadas.py`
+  las plantillas DE y FR se ven mal en la vista previa de Mac/iPhone (el NL ya usa `[h]:mm`) · Excel ES (`plantilla-ficha-tecnica-gratis.py`) y FR (`plantilla-fiche-technique-fr.py`): revisar que IVA vacía/texto no dé un precio «con IVA» falso (arreglado hoy en IT y NL) · el layout inyecta tarjetas de producto en INGLÉS («View product →», Bar Business Plan Kit…) en posts IT/NL/PT · `fase8d-faq-duplicadas.py`
   no admite `--lang nl` · tarjetas de producto EN poco afines en posts de vino NL (Ice Cream Shop, Bakery Plan).
 - **GSC:** medir en 2-3 semanas las páginas retituladas (raciones DE, calculadoras, landings, IT/NL/PT de hoy).
 
