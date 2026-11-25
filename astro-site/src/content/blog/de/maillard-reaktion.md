@@ -104,7 +104,7 @@ Diese Kruste ist auch der Anfang eines [braunen Fonds](https://aichef.pro/de/blo
 
 Eine dunkle Kruste ist nicht automatisch eine bessere. Zu weit getrieben wird der Geschmack bitter und die Textur kohlig. Bei Stärke, Pommes, Brot und Keksen, ist derselbe Schritt der Bereich, in dem Acrylamid entsteht. Die Arbeitsregel dieser Fiche ist die, die in der Küche schon gilt: haselnussbraun, nicht schwarz.
 
-Die Reaktion bindet auch manche Aminosäuren, Lysin besonders. Eine verbrannte Grillkruste ist nicht dasselbe Lebensmittel wie ein leichtes Anbraten. Das Vergnügen sitzt im Aroma. Der Überschuss kostet das Produkt.
+Die Reaktion bindet auch manche Aminosäuren, Lysin besonders. Eine verbrannte Grillkruste ist nicht dasselbe Lebensmittel wie ein leichtes Anbraten. Das Vergnügen sitzt im Aroma. Welche Zutaten ihre Aromastoffe teilen und sich deshalb ergänzen, erklärt der Artikel über [Foodpairing](https://aichef.pro/de/blog/foodpairing). Der Überschuss kostet das Produkt.
 
 ## Fehler
 
