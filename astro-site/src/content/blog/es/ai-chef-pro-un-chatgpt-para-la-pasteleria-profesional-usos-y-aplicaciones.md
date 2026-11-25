@@ -150,9 +150,9 @@ Eliges el plan que se ajusta a tu ritmo:
 
 - **Plan AI Chef Miembro**: 10.000 créditos al mes. Con tarjeta. Ideal para probar los agentes con tus propias recetas.
 - **Premium Pro**: 25 €/mes (85.000 créditos). Para obradores que quieran sistematizar fichas, escandallos y campañas.
-- **Plus**: 50 €/mes (175.000 créditos). Si produces muchas referencias o tienes varios puntos de venta.
-- **Max**: 95 €/mes. Créditos ilimitados. Para obradores con alta rotación de carta y producción escalada.
-- **Max Anual**: 950 €/año. Todo ilimitado con un descuento equivalente a dos meses.
+- **Premium Plus**: 50 €/mes (175.000 créditos). Si produces muchas referencias o tienes varios puntos de venta.
+- **Premium Max**: 95 €/mes. Créditos ilimitados. Para obradores con alta rotación de carta y producción escalada.
+- **Premium Max anual**: 950 €/año. Todo ilimitado con un descuento equivalente a dos meses.
 
 Ninguno te va a sustituir la manga pastelera. Pero sí te devuelven tiempo, datos y margen.
 

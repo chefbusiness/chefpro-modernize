@@ -161,8 +161,8 @@ AI Chef Pro reúne más de 70 agentes de IA culinarios en español, pensados par
 | :--- | :--- | :--- | :--- |
 | Miembro | 10 € | 10.000 | Probar herramientas y uso ocasional. |
 | Premium Pro | 25 € | 85.000 | Cocinas con volumen medio de creación y escandallos. |
-| Plus | 50 € | 175.000 | Equipos que generan contenido y gestionan costes a diario. |
-| Max | 95 € | Ilimitados | Uso intensivo en restaurantes con alta rotación de carta. |
-| Max Anual | 950 € | Ilimitados | Ahorro para quien ya sabe que lo va a usar todo el año. |
+| Premium Plus | 50 € | 175.000 | Equipos que generan contenido y gestionan costes a diario. |
+| Premium Max | 95 € | Ilimitados | Uso intensivo en restaurantes con alta rotación de carta. |
+| Premium Max anual | 950 € | Ilimitados | Ahorro para quien ya sabe que lo va a usar todo el año. |
 
 Puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=15-herramientas) y experimentar con 2 o 3 herramientas de las que más te urjan. La curva de aprendizaje es baja: si sabes escribir una orden de comanda, sabes pedirle algo a la IA.

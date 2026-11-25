@@ -307,36 +307,32 @@ wpId: 1410
 
 
 
-<h3 class="wp-block-heading">3. Herramientas de Pago vs Premium: Análisis Comparativo Detallado</h3>
+<h3 class="wp-block-heading">3. Gratis o de Pago: Qué Te Da Cada Opción</h3>
 
 
 
-<p class="wp-block-paragraph">El mercado ofrece opciones tanto gratuitas como premium, cada una con ventajas y limitaciones específicas. Hemos realizado un análisis exhaustivo para ayudarte a tomar la decisión más informada según tus necesidades.</p>
+<p class="wp-block-paragraph">Hay generadores de recetas gratuitos y plataformas de pago, y cada uno sirve para una cosa. Esta es la diferencia real con AI Chef Pro, que es de pago desde 10 €/mes y no tiene plan gratuito.</p>
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Herramientas de Pago</th><th>AI Chef Pro (Premium)</th><th>Otras Premium</th></tr></thead><tbody><tr><td>Recetas mensuales</td><td>5-10 límite</td><td>Ilimitadas</td><td>50-100 límite</td></tr><tr><td>Personalización dietética</td><td>Básica</td><td>Avanzada (50+ opciones)</td><td>Intermedia</td></tr><tr><td>Análisis nutricional</td><td>No disponible</td><td>Completo + recomendaciones</td><td>Básico</td></tr><tr><td>Recetarios especializados</td><td>No</td><td>25+ cocinas del mundo</td><td>5-8 opciones</td></tr><tr><td>Optimización de mermas</td><td>No</td><td>Sí, con cálculos precisos</td><td>No</td></tr><tr><td>Soporte técnico</td><td>Comunidad</td><td>Profesional dedicado</td><td>Email básico</td></tr><tr><td>Actualizaciones</td><td>Irregulares</td><td>Semanales</td><td>Mensuales</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Qué necesitas</th><th>Herramientas gratuitas</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Recetas a partir de tus ingredientes</td><td>Sí, con límites según la app</td><td>Sí, con los créditos de tu plan (10.000 al mes en Miembro)</td></tr><tr><td>Recetarios por país</td><td>Depende de la app</td><td>27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia</td></tr><tr><td>Mermas y coste del plato</td><td>No suele</td><td>Sí: Mermas GenCal y escandallo con los precios que escribes</td></tr><tr><td>Alérgenos</td><td>Variable</td><td>ID Alérgenos, con revisión del chef</td></tr><tr><td>Pensado para</td><td>Cocina de casa</td><td>Cocina profesional y hostelería</td></tr></tbody></table></div></figure>
 
 
 
-<p class="wp-block-paragraph"><strong>ROI análisis por tipo de usuario:</strong></p>
+<p class="wp-block-paragraph"><strong>Qué te conviene según tu uso:</strong></p>
 
 
 
 <ul class="wp-block-list">
-<li><strong>Usuario ocasional (2-3 recetas/semana):</strong> Herramientas gratuitas pueden ser suficientes</li>
+<li><strong>Cocinas en casa de vez en cuando:</strong> un generador gratuito te basta</li>
 
 
 
-<li><strong>Entusiasta culinario (5+ recetas/semana):</strong> Premium se amortiza en 2-3 meses</li>
+<li><strong>Cocinas mucho y quieres variedad:</strong> prueba primero lo gratuito y decide después</li>
 
 
 
-<li><strong>Cocinero profesional o semi-profesional:</strong> AI Chef Pro esencial, ROI inmediato</li>
-
-
-
-<li><strong>Familia numerosa (planificación semanal):</strong> Premium imprescindible para optimización</li>
+<li><strong>Cocinas de forma profesional o semiprofesional:</strong> AI Chef Pro, porque además de la receta te da merma, coste y alérgenos</li>
 </ul>
 
 
@@ -1602,7 +1598,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Recetas Incluidas</th><th>Valor por Receta</th><th>ROI Mensual Estimado</th></tr></thead><tbody><tr><td>De pago</td><td>0€</td><td>10 recetas</td><td>0€</td><td>Ahorro básico en desperdicio</td></tr><tr><td>Pro</td><td>10€</td><td>Ilimitadas básicas</td><td>~0,30€</td><td>50-100€ (optimización compras)</td></tr><tr><td>Premium</td><td>15€</td><td>Ilimitadas + especialización</td><td>~0,20€</td><td>75-150€ (tiempo + dinero)</td></tr><tr><td>Premium Pro</td><td>25€</td><td>Suite completa</td><td>~0,15€</td><td>150-300€ (optimización total)</td></tr><tr><td>Premium Plus</td><td>50€</td><td>Acceso completo + prioridad</td><td>~0,10€</td><td>300-600€ (profesional)</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan de AI Chef Pro</th><th>Precio</th><th>Créditos al mes</th><th>Para quién</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>10.000</td><td>Probar y uso puntual</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>85.000</td><td>Uso diario en cocina</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>175.000</td><td>Equipos y varios usuarios</td></tr><tr><td>Premium Max</td><td>95 €/mes (o 950 €/año)</td><td>Ilimitados</td><td>Uso intensivo</td></tr></tbody></table></div></figure>
 
 
 
@@ -1611,23 +1607,19 @@ wpId: 1410
 
 
 <ul class="wp-block-list">
-<li><strong>Estudiante/Principiante:</strong> Plan de pago para explorar funcionalidades básicas</li>
+<li><strong>Cocina de casa:</strong> empieza por un generador gratuito; AI Chef Pro está pensado para hostelería</li>
 
 
 
-<li><strong>Familia típica:</strong> Plan Pro ofrece el mejor balance precio-funcionalidad</li>
+<li><strong>Cocinero profesional que quiere probar:</strong> plan Miembro, sin permanencia</li>
 
 
 
-<li><strong>Entusiasta culinario:</strong> Plan Premium para acceso a recetarios especializados</li>
+<li><strong>Restaurante o catering que lo usa a diario:</strong> Premium Pro</li>
 
 
 
-<li><strong>Semi-profesional/Catering:</strong> Premium Pro para optimización de costes</li>
-
-
-
-<li><strong>Profesional/Consultor:</strong> Premium Plus para capacidades completas</li>
+<li><strong>Grupos, cadenas o consultores:</strong> Premium Plus o Premium Max</li>
 </ul>
 
 
@@ -1658,16 +1650,16 @@ wpId: 1410
 
 
 
-<p class="wp-block-paragraph"><strong>Opciones completamente de pago:</strong></p>
+<p class="wp-block-paragraph"><strong>Opciones gratuitas:</strong></p>
 
 
 
 <ul class="wp-block-list">
-<li><strong>Herramientas básicas web:</strong> 5-10 recetas mensuales con funcionalidades limitadas</li>
+<li><strong>Herramientas básicas web:</strong> recetas con funcionalidades limitadas</li>
 
 
 
-<li><strong>AI Chef Pro (Plan de pago):</strong> 10 recetas mensuales + acceso básico a Food Pairing</li>
+<li><strong>AI Chef Pro:</strong> no tiene plan gratuito (es de pago desde 10 €/mes), pero en aichef.pro tienes herramientas gratuitas sin registro, como el generador de textos de carta o la calculadora de food cost</li>
 
 
 

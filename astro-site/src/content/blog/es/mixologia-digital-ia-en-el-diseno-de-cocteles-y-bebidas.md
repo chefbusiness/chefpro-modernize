@@ -1236,19 +1236,15 @@ wpId: 1753
 
 
 
-<li><strong>Plan Pro</strong>: 10€/mes para bares pequeños</li>
+<li><strong>Premium Pro</strong>: 25 €/mes con 85.000 créditos, para cocktail bars con más volumen</li>
 
 
 
-<li><strong>Plan Premium</strong>: 15€/mes para operaciones medianas</li>
+<li><strong>Premium Plus</strong>: 50 €/mes con 175.000 créditos, para cadenas o grupos</li>
 
 
 
-<li><strong>Plan Premium Pro</strong>: 25€/mes para cocktail bars profesionales</li>
-
-
-
-<li><strong>Plan Premium Plus</strong>: 50€/mes para cadenas o grupos</li>
+<li><strong>Premium Max</strong>: 95 €/mes con créditos ilimitados (o 950 € al año)</li>
 </ul>
 
 
@@ -1283,7 +1279,7 @@ wpId: 1753
 
 
 
-<p class="wp-block-paragraph">¡Absolutamente! De hecho, <strong>AI Chef Pro es particularmente valioso para bares pequeños y emprendedores</strong> precisamente porque ofrece capacidades que normalmente solo estarían al alcance de grandes operaciones con equipos extensos. El plan AI Chef Miembro (10€/mes) y el Plan Pro (25€/mes) están específicamente diseñados para bares pequeños, ofreciendo acceso a herramientas que democratizan la innovación en mixología. Muchos de nuestros usuarios más exitosos son bartenders independientes, pop-ups y bares boutique que han logrado diferenciarse gracias a la IA.</p>
+<p class="wp-block-paragraph">¡Absolutamente! De hecho, <strong>AI Chef Pro es particularmente valioso para bares pequeños y emprendedores</strong> precisamente porque ofrece capacidades que normalmente solo estarían al alcance de grandes operaciones con equipos extensos. El plan Miembro (10 €/mes) basta para un bar pequeño que quiera probar, y Premium Pro (25 €/mes) para quien lo use a diario. Los dos dan acceso a todos los agentes, así que un bartender independiente, un pop-up o un bar boutique trabajan con las mismas herramientas que una cadena.</p>
 
 
 

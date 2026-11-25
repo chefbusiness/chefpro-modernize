@@ -132,9 +132,9 @@ Estos son los <a href="https://aichef.pro/precios" target="_blank">planes y prec
 
 - **Plan AI Chef Miembro:** 10 €/mes, 10.000 créditos, sin permanencia. Ideal para probar la herramienta y hacer tus propios cálculos de ahorro.
 - **Premium Pro:** 25 €/mes con 85.000 créditos.
-- **Plus:** 50 €/mes con 175.000 créditos.
-- **Max:** 95 €/mes con créditos ilimitados.
-- **Max Anual:** 950 €/año.
+- **Premium Plus:** 50 €/mes con 175.000 créditos.
+- **Premium Max:** 95 €/mes con créditos ilimitados.
+- **Premium Max anual:** 950 €/año.
 
 Ahora haz la cuenta conmigo. Un restaurante mediano que recupera entre 24 y 40 horas al mes con la IA está pagando entre 25 y 95 euros por ese tiempo. Si la hora de un jefe de cocina ronda los 18-25 euros, el retorno es evidente sin que yo tenga que prometértelo. Las matemáticas hablan solas.
 

@@ -123,9 +123,9 @@ Los agentes de AI Chef Pro te ayudan a generar nombres, definir el tono de voz, 
 
 - Plan AI Chef Miembro: 10.000 créditos al mes por 10 €.
 - Premium Pro: 25 €/mes con 85.000 créditos.
-- Plus: 50 €/mes con 175.000 créditos.
-- Max: 95 €/mes con créditos ilimitados.
-- Max Anual: 950 €/año.
+- Premium Plus: 50 €/mes con 175.000 créditos.
+- Premium Max: 95 €/mes con créditos ilimitados.
+- Premium Max anual: 950 €/año.
 
 Si estás listo para darle a tu restaurante una identidad de marca que se recuerde, [empieza con AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=branding) y descubre cómo la IA puede ser el mejor sous-chef de tu proyecto.
 

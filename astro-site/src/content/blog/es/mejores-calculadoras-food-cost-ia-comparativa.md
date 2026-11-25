@@ -101,7 +101,7 @@ He probado y visto en acción bastantes herramientas. No voy a hacer leña del �
 
 | Herramienta | Tipo | IA / mermas | Idioma español | Coste (orientativo) |
 | :--- | :--- | :--- | :--- | :--- |
-| AI Chef Pro (calculadora de food cost / escandallos) | Suite de agentes IA | Sí (IA + mermas) | Nativo | Plan AI Chef Miembro 10.000 créditos/mes (10 €/mes), y Pro desde 25 €/mes |
+| AI Chef Pro (calculadora de food cost / escandallos) | Suite de agentes IA | Sí (IA + mermas) | Nativo | Plan AI Chef Miembro 10.000 créditos/mes (10 €/mes), y Premium Pro desde 25 €/mes |
 | Hoja de cálculo (Excel / Google Sheets) | Manual | No | Depende de la plantilla | Gratis |
 | Software de gestión integral (tipo ERP hostelero) | Suite completa | Parcial | Variable | Gama alta (contrato anual habitual) |
 | Apps móviles de food cost | App puntual | No | Variable | Freemium |
@@ -148,9 +148,9 @@ Si después de probar el plan AI Chef Miembro ves que la herramienta te encaja, 
 | :--- | :--- | :--- | :--- |
 | Miembro | 10 € | 10.000 | Probar sin compromiso, calcular algunos escandallos. |
 | Premium Pro | 25 €/mes | 85.000 | Cocina profesional con uso frecuente. |
-| Plus | 50 €/mes | 175.000 | Restaurantes con carta amplia y varios usuarios. |
-| Max | 95 €/mes | Ilimitados | Grupos, cadenas o consultores gastronómicos. |
-| Max Anual | 950 €/año | Ilimitados | Máximo ahorro para uso intensivo todo el año. |
+| Premium Plus | 50 €/mes | 175.000 | Restaurantes con carta amplia y varios usuarios. |
+| Premium Max | 95 €/mes | Ilimitados | Grupos, cadenas o consultores gastronómicos. |
+| Premium Max anual | 950 €/año | Ilimitados | Máximo ahorro para uso intensivo todo el año. |
 
 Mi consejo: empieza por el plan AI Chef Miembro. Dedícale una tarde a montar los escandallos de tus platos más representativos y comprueba si el flujo de trabajo te agiliza la operativa. Si la respuesta es sí, el Premium Pro cubre de sobra las necesidades de la mayoría de restaurantes independientes. [Empieza aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadoras-food-cost).
 

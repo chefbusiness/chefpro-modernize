@@ -148,24 +148,20 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro Disponible:</h4>
+<h4 class="wp-block-heading">Planes:</h4>
 
 
 
 <ul class="wp-block-list">
-<li>Acceso a herramientas básicas con límites mensuales</li>
+<li>Plan Miembro: 10 €/mes con 10.000 créditos al mes, sin permanencia</li>
 
 
 
-<li>5 recetas generadas por mes</li>
+<li>Acceso a todos los agentes, incluidos los recetarios por país y Food Pairing AI</li>
 
 
 
-<li>Acceso limitado a 3 recetarios regionales</li>
-
-
-
-<li>Funciones básicas de Food Pairing</li>
+<li>No hay plan gratuito; las herramientas gratuitas de la web (calculadora de food cost, generador de textos de carta…) sí lo son</li>
 </ul>
 
 
@@ -262,12 +258,12 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
 <ul class="wp-block-list">
-<li>5 recetas mensuales con AI Chef Miembro</li>
+<li>5 recetas mensuales gratuitas</li>
 
 
 
@@ -378,7 +374,7 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
@@ -550,7 +546,7 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
@@ -752,7 +748,7 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
@@ -1042,7 +1038,7 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
@@ -1150,7 +1146,7 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
@@ -1258,7 +1254,7 @@ wpId: 1500
 
 
 
-<h4 class="wp-block-heading">Plan AI Chef Miembro:</h4>
+<h4 class="wp-block-heading">Plan gratuito:</h4>
 
 
 
@@ -2257,7 +2253,7 @@ wpId: 1500
 
 
 <ol class="wp-block-list">
-<li><strong>AI Chef Pro</strong> (Plan AI Chef Miembro) &#8211; Acceso a conocimientos profesionales</li>
+<li><strong>AI Chef Pro</strong> (plan Miembro, desde 10 €/mes) &#8211; Acceso a conocimientos profesionales</li>
 
 
 
@@ -2300,7 +2296,7 @@ wpId: 1500
 
 
 
-<p class="wp-block-paragraph"><strong>Plan AI Chef Miembro</strong>:</p>
+<p class="wp-block-paragraph"><strong>Plan gratuito permanente</strong>:</p>
 
 
 

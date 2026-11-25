@@ -681,7 +681,7 @@ wpId: 2028
 
 <div style="background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%); border-radius: 12px; padding: 35px; margin: 35px 0; text-align: center; color: white;">
 <h3 style="color: white; margin-top: 0; font-size: 26px;">🎯 Comienza tu Transformación Digital Hoy</h3>
-<p style="font-size: 17px; margin-bottom: 25px;">Únete a miles de profesionales de la hostelería que ya están revolucionando sus cocinas con AI Chef Pro. Plan AI Chef Miembro desde €10/mes para uso profesional.</p>
+<p style="font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu cocina. Plan Miembro desde 10 €/mes, sin permanencia.</p>
 <a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gamificacion-en-restaurantes-con-ia" target="_blank" style="display: inline-block; background-color: #ffffff; color: #0984e3; padding: 16px 36px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Empieza desde 10 €/mes →</a>
 </div>
 
