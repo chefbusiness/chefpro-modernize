@@ -113,6 +113,8 @@ imageAlt: "Tablet showing restaurant profit margin dashboard with analytics"
 <h3>Step 3: Opportunity Identification (Days 8-14)</h3>
 <p>Based on the analysis, the system generates specific recommendations prioritized by impact and ease of implementation. These might include menu price adjustments, portion standardization, vendor renegotiation opportunities, and waste reduction strategies.</p>
 
+<p>To test a menu price adjustment on a single dish, try the free <a href="https://aichef.pro/en/menu-pricing-calculator">menu pricing calculator</a>: plate cost in, menu price, real food cost % and gross profit per plate out.</p>
+
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Burger Joint Checklists Kit Pro</h3><p class="mt-2 text-muted-foreground">Burger joint checklists for opening and closing, the grill and smash burgers, the make line, the fry station, delivery and takeout, the manager, duties by role, cleaning and the cash drawer: 346 tasks already written.</p><a href="/en/digital-products/burger-joint-checklist-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-profit-margin-calculator" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Burger Joint Checklists Kit Pro for $19</a></aside>
 
 <h3>Step 4: Implementation (Days 15-45)</h3>
