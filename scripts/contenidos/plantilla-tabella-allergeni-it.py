@@ -86,8 +86,8 @@ def it(s):
 
 
 # ---------------------------------------------------------------- Testi (note al piede: letterali del brief)
-LEGGE = ('Dal 9 maggio 2018 l’informazione sugli allergeni nella ristorazione è legge: art. 19, comma 8, del D.Lgs. '
-         '231/2017. Deve essere riconducibile a ciascun piatto e data prima che venga servito, su menù, registro, '
+LEGGE = ('L’obbligo viene dal Reg. (UE) 1169/2011; le modalità le fissa l’art. 19, comma 8, del D.Lgs. 231/2017, in '
+         'vigore dal 9 maggio 2018: l’informazione deve essere riconducibile a ciascun piatto e data prima che venga servito, su menù, registro, '
          'cartello o sistema equivalente, in italiano, visibile e leggibile.')
 AVVISO_BASE = ('In alternativa puoi esporre un avviso che rimanda al personale, purché esista una documentazione scritta '
                'piatto per piatto, facilmente reperibile per il cliente e per l’autorità.')
@@ -100,7 +100,7 @@ TIPO_NOTA = 'Indica il cereale o il frutto a guscio: «glutine» o «frutta a gu
 TRACCE_NOTA = ('L’indicazione delle tracce («può contenere») è facoltativa: usala solo per un rischio reale di '
                'contaminazione crociata.')
 AGGIORNA = 'Aggiorna la tabella a ogni cambio di ricetta, menù o fornitore.'
-NOTE = [LEGGE, AVVISO, NUMERI_NOTA, TIPO_NOTA, TRACCE_NOTA, AGGIORNA]
+NOTE = [LEGGE, AVVISO, None, NUMERI_NOTA, TIPO_NOTA, TRACCE_NOTA, AGGIORNA]  # None = legenda (dopo ALLERGENI)
 LEGENDA = ('X = presente · vuoto = assente · nelle colonne «1 · Cereali contenenti glutine» e «8 · Frutta a guscio» '
            'scrivi il tipo (per esempio grano, orzo, nocciole, mandorle) · la colonna «Codici per il menù» si compila '
            'da sola')
@@ -119,13 +119,14 @@ ESEMPIO = [
     ('Pizza margherita (impasto con farina di grano, pomodoro, mozzarella fior di latte, basilico, olio '
      'extravergine d’oliva)', {1: 'grano', 7: 'X'}, '1, 7'),
     ('Tortellini al ragù (sfoglia all’uovo con farina di grano, ripieno di carne e Parmigiano Reggiano; ragù con '
-     'soffritto di sedano, carota e cipolla, senza vino: se lo sfumi con il vino aggiungi il 12)',
+     'soffritto di sedano, carota e cipolla, senza vino: se lo sfumi con il vino aggiungi il 12; se la mortadella del '
+     'ripieno ha il pistacchio, aggiungi l’8)',
      {1: 'grano', 3: 'X', 7: 'X', 9: 'X'}, '1, 3, 7, 9'),
     ('Trofie al pesto alla genovese (trofie di farina di grano; pesto con basilico, pinoli, Parmigiano Reggiano, '
      'Pecorino, aglio e olio: i pinoli non rientrano nella frutta a guscio dell’allegato II, quindi l’8 non si '
      'segna)', {1: 'grano', 7: 'X'}, '1, 7'),
-    ('Spaghetti alle vongole (spaghetti di grano duro, vongole, aglio, prezzemolo, olio; sfumati con vino bianco: i '
-     'solfiti del vino restano anche se l’alcol evapora, quindi c’è il 12)', {1: 'grano duro', 12: 'X', 14: 'X'},
+    ('Spaghetti alle vongole (spaghetti di grano duro, vongole, aglio, prezzemolo, olio; sfumati con vino bianco: il '
+     'vino porta solfiti e la cottura non garantisce di scendere sotto i 10 mg/kg di SO2: nel dubbio si segna il 12)', {1: 'grano duro', 12: 'X', 14: 'X'},
      '1, 12, 14'),
     ('Tiramisù (savoiardi con farina di grano e uova, crema di mascarpone e uova, caffè, cacao; senza liquore)',
      {1: 'grano', 3: 'X', 7: 'X'}, '1, 3, 7'),
@@ -137,7 +138,9 @@ CODICI_ATTESI = [c for _, _, c in ESEMPIO]
 assert CODICI_ATTESI[:2] == ['1, 7', '1, 3, 7, 9']  # i due esempi dell'AUSL Bologna
 
 # Nelle colonne del tipo (1, 8) queste voci vogliono dire «assente»: arancione e non contano nei codici.
-PAROLE_NO = ('no', 'nessuno', 'nessuna')
+PAROLE_NO = ('no', 'nessuno', 'nessuna', 'nessun', 'assente', 'non presente', 'senza', 'senza glutine', 'pinoli')
+LEGENDA_NOTE = 'Legenda – ' + ' · '.join(f'{n} {nome}' for n, nome, _ in ALLERGENI)
+NOTE[NOTE.index(None)] = LEGENDA_NOTE
 # … e queste sono generiche (manca il tipo): arancione, ma contano (l'allergene c'è).
 PAROLE_GENERICHE = ('glutine', 'cereali', 'cereale', 'frutta a guscio', 'frutto a guscio', 'frutta secca', 'x')
 
@@ -326,6 +329,7 @@ def foglio(wb, nome, esempio):
     ws.page_setup.fitToHeight = 0
     ws.sheet_properties.pageSetUpPr.fitToPage = True
     ws.page_margins.left = ws.page_margins.right = 0.4
+    ws.page_margins.top = ws.page_margins.bottom = 0.5
     return ws
 
 
@@ -412,7 +416,8 @@ def pdf_vuoto():
            Paragraph(t(LEGGE), s_nota), Spacer(1, 1.5),
            Paragraph(t(f'{AVVISO_BASE} Esempio di avviso: <b>«{CARTELLO}»</b>'), s_nota), Spacer(1, 1.5),
            Paragraph(t(f'{NUMERI_NOTA} {TRACCE_NOTA} {AGGIORNA}'), s_nota), Spacer(1, 3),
-           Paragraph(t('Modello gratuito di AI Chef Pro · Guida: aichef.pro/it/blog/lista-allergeni-alimentari'),
+           Paragraph(t('Modello gratuito di AI Chef Pro · Guida: <a href="https://aichef.pro/it/blog/lista-allergeni-alimentari" '
+                       'color="#1a5fb4">aichef.pro/it/blog/lista-allergeni-alimentari</a>'),
                      s_piede)]
     doc.build(el)
 
@@ -556,7 +561,7 @@ def gate_pdf():
         testo = ' '.join(p.extract_text().replace(NB, ' ').split())
     mancanti = [m for m in ('Cereali contenenti glutine', 'Frutta a guscio', 'Anidride solforosa e solfiti',
                             'Molluschi', 'Locale', 'Aggiornata il', 'Verificata da', 'Può contenere tracce',
-                            'Codici per il menù', 'Dal 9 maggio 2018', 'art. 19, comma 8, del D.Lgs. 231/2017',
+                            'Codici per il menù', 'in vigore dal 9 maggio 2018', 'art. 19, comma 8, del D.Lgs. 231/2017',
                             '«' + CARTELLO + '»', 'allegato II del Reg. (UE) 1169/2011', 'da soli non bastano',
                             'contaminazione crociata', 'ricetta, menù o fornitore', TITOLO,
                             'aichef.pro/it/blog/lista-allergeni-alimentari')

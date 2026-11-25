@@ -1,5 +1,5 @@
 ---
-title: "I 14 allergeni alimentari: elenco e tabella da esporre e stampare (gratis)"
+title: "I 14 allergeni alimentari: elenco e tabella da stampare ed esporre (gratis)"
 description: "I 14 allergeni alimentari con i numeri da 1 a 14, dove si nascondono, come dichiararli sul menù (D.Lgs. 231/2017) e una tabella gratis in Excel e PDF."
 pubDate: 2026-08-08
 modDate: 2026-11-25
@@ -16,7 +16,7 @@ faq:
   - q: "Quali sono i 9 allergeni?"
     a: "Probabilmente pensi ai 9 allergeni maggiori degli Stati Uniti, dove dal 2023 è stato aggiunto il sesamo. In Europa, però, la normativa parla di 14 allergeni: glutine, crostacei, uova, pesce, arachidi, soia, latte, frutta a guscio, sedano, senape, sesamo, solfiti, lupini e molluschi. Se operi in Italia, attieniti sempre alla lista europea, che è quella obbligatoria."
   - q: "Come si fa la lista degli allergeni per il menù?"
-    a: "Parti dalla ricetta effettiva: pesa ogni ingrediente e controlla le etichette dei fornitori. Poi abbina ogni piatto ai 14 allergeni, indicandoli in modo chiaro, ad esempio con simboli o note. Aggiorna la lista quando modifichi ricette o cambi prodotto. Tieni una copia in cucina e una per il personale di sala, così chi serve sa rispondere con precisione."
+    a: "Parti dalla ricetta effettiva: pesa ogni ingrediente e controlla le etichette dei fornitori. Poi abbina ogni piatto ai 14 allergeni, indicandoli in modo chiaro, con il nome o con il numero accompagnato da una legenda. Aggiorna la lista quando modifichi ricette o cambi prodotto. Tieni una copia in cucina e una per il personale di sala, così chi serve sa rispondere con precisione."
   - q: "Quali sono le allergie alimentari più comuni?"
     a: "Le più frequenti in Italia e in Europa sono: latte, uova, arachidi, frutta a guscio, pesce, crostacei, soia e grano. Attenzione però: un cliente può essere allergico a qualsiasi alimento, anche a sedano o lupini. Per questo non basarti solo sulle allergie più note: devi conoscere tutti i 14 allergeni previsti dalla legge e dichiarare sempre quelli presenti nei tuoi piatti."
   - q: "Dove trovo una tabella allergeni da stampare gratis?"
@@ -137,7 +137,7 @@ faq:
 
 <h3>Tabella allergeni da stampare: il modello gratuito (Excel e PDF)</h3>
 
-<p>La <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.xlsx">tabella allergeni in Excel</a> ha due fogli: una tabella vuota per 30 piatti con i 14 allergeni numerati da 1 a 14 e un esempio con cinque piatti italiani (margherita «1, 7», tortellini al ragù «1, 3, 7, 9»…). Per i cereali e la frutta a guscio scrivi il tipo, per esempio grano o nocciole, e la colonna «Codici per il menù» si compila da sola. In fondo trovi la legenda, le regole del D.Lgs. 231/2017 e un esempio di avviso che rimanda al personale. La <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.pdf">versione PDF</a> sta su una pagina A4 orizzontale, da compilare a mano.</p>
+<p>La <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.xlsx">tabella allergeni in Excel</a> ha due fogli: una tabella vuota per 30 piatti con i 14 allergeni numerati da 1 a 14 e un esempio con cinque piatti italiani (margherita «1, 7», tortellini al ragù «1, 3, 7, 9»…). Per i cereali e la frutta a guscio scrivi il tipo, per esempio grano o nocciole, e la colonna «Codici per il menù» si compila da sola. In fondo trovi la legenda con il nome dei 14 allergeni, le regole del D.Lgs. 231/2017 e un esempio di avviso che rimanda al personale. La <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.pdf">versione PDF</a> sta su una pagina A4 orizzontale, da compilare a mano.</p>
 
 <h2>Perché la numerazione conta (e quando NON si usano i numeri)</h2>
 <p>La numerazione da 1 a 14 non è un’invenzione editoriale: è l’ordine dell’Allegato II del Reg. (UE) 1169/2011. Usarla ti aiuta a parlare la stessa lingua degli ispettori, dei fornitori e dei colleghi. Se in cucina dici “attenzione, c’è il numero 7”, tutti sanno che si tratta di latte e derivati, senza dover rileggere l’etichetta.</p>
