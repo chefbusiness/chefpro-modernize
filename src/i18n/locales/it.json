@@ -2994,14 +2994,14 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "Calcolatore Food Cost Ristorante Gratis | AI Chef Pro",
-      "description": "Calcola il food cost dei tuoi piatti gratis: ingredienti, grammi e prezzo di vendita. Risultato istantaneo con semaforo di redditività. Senza registrazione.",
-      "keywords": "calcolatore food cost ristorante, calcolare food cost gratis, food cost percentuale, costo piatto ristorante"
+      "title": "Calcolo food cost gratis online per ristoranti | AI Chef Pro",
+      "description": "Calcolo del food cost gratis e senza registrazione: ingredienti, grammi, prezzo di vendita IVA esclusa. Risultato immediato con semaforo di redditività.",
+      "keywords": "calcolo food cost, calcolo food cost gratis, calcolo food cost online, calcolare food cost, calcolatore food cost ristorante, calcolare food cost gratis, food cost percentuale, costo piatto ristorante"
     },
     "breadcrumb": "Calcolatore Food Cost",
     "hero": {
       "badge": "Gratis — Senza registrazione",
-      "h1": "Calcolatore di Food Cost per Ristoranti",
+      "h1": "Calcolo del food cost: calcolatore gratuito per ristoranti",
       "subtitle": "Calcola la percentuale di food cost di qualsiasi piatto in secondi. Aggiungi ingredienti, grammature e prezzo di vendita.",
       "cta_tool": "Vai al calcolatore ↓",
       "cta_premium": "Piano Premium →"
@@ -3011,11 +3011,11 @@
       "dish_name_label": "Nome del piatto",
       "dish_name_placeholder": "Es: Risotto ai funghi",
       "portions_label": "Numero di porzioni",
-      "sale_price_label": "Prezzo di vendita per porzione (€)",
+      "sale_price_label": "Prezzo di vendita IVA esclusa per porzione (€)",
       "ingredients_title": "Ingredienti",
       "ingredient_name": "Ingrediente",
       "ingredient_qty": "Quantità (g)",
-      "ingredient_cost": "Prezzo/kg (€)",
+      "ingredient_cost": "Prezzo d'acquisto IVA esclusa/kg (€)",
       "add_ingredient": "+ Aggiungi ingrediente",
       "calculate": "Calcola Food Cost",
       "result_title": "Risultato",
@@ -3026,7 +3026,7 @@
       "status_ok": "✅ Food cost eccellente — Il tuo piatto è molto redditizio",
       "status_warn": "⚠️ Food cost stretto — Rivedi prezzi o ingredienti",
       "status_bad": "🔴 Food cost alto — Considera di aumentare il prezzo o ridurre i costi",
-      "tip": "💡 Riferimento del settore: food cost tra 25% e 32% è sano per i ristoranti",
+      "tip": "💡 Orientamento: nella ristorazione tradizionale il food cost sta di solito tra il 25 % e il 35 %; il semaforo è indicativo (verde fino al 32 %, giallo fino al 35 %).",
       "cta_after": "Vuoi fare il food cost di tutta la carta con l'IA e far validare il risultato?",
       "reset": "Nuovo calcolo",
       "export_excel": "Scarica Excel",
@@ -3061,7 +3061,7 @@
         {
           "step": "2",
           "title": "Indica porzioni e prezzo di vendita",
-          "description": "Quante porzioni dà la ricetta e a quale prezzo la vendi al cliente."
+          "description": "Quante porzioni dà la ricetta e qual è il prezzo di vendita IVA esclusa per porzione (prezzo in carta ÷ 1,10)."
         },
         {
           "step": "3",
@@ -3115,7 +3115,7 @@
     "faq": [
       {
         "question": "Cos'è il food cost?",
-        "answer": "Il food cost è la percentuale del prezzo di vendita che rappresenta il costo degli ingredienti. Formula: Food cost % = (Costo ingredienti / Prezzo di vendita) × 100. Un food cost sano è tra il 25% e il 32%."
+        "answer": "Il food cost è la percentuale del prezzo di vendita che rappresenta il costo degli ingredienti. Formula: Food cost % = (Costo ingredienti / Prezzo di vendita IVA esclusa) × 100. Nella ristorazione tradizionale si sta di solito tra il 25 % e il 35 %; sono riferimenti orientativi, non regole."
       },
       {
         "question": "Perché è importante controllarlo?",
@@ -3128,6 +3128,10 @@
       {
         "question": "Come migliorare un food cost alto?",
         "answer": "Puoi aumentare il prezzo di vendita, cambiare fornitori più economici, ridurre le grammature degli ingredienti costosi o sostituire componenti ad alto costo."
+      },
+      {
+      "question": "Esiste un programma gratuito per il calcolo del food cost?",
+      "answer": "Sì: questo calcolatore è gratuito e senza registrazione e ti dà il costo per porzione, il food cost e il margine di un piatto. Per salvare i tuoi scandagli, con il calo e l'esempio della pasta fresca, c'è anche un modello Excel gratuito: lo scarichi dall'articolo del blog sul food cost."
       }
     ],
     "cta_section": {

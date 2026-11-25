@@ -1,8 +1,8 @@
 ---
-title: "Food cost: la formula giusta, la tabella per calcolarlo e le percentuali di riferimento"
-description: "Scopri la formula del food cost, la tabella per calcolarlo, il confronto teorico vs consuntivo e le percentuali di riferimento per ottimizzare i profitti."
+title: "Food cost: come si calcola, formula, tabella ed esempio (con Excel gratis)"
+description: "Come si calcola il food cost: formula sul prezzo IVA esclusa, scandaglio di un piatto, pasta fresca, percentuali di riferimento e un modello Excel gratis."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-25
 category: gestione-ristorante
 tags: ["food cost", "gestione ristorante", "costi", "scandaglio"]
 image: /blog-assets/2026/08/foodcost-destacada.jpg
@@ -19,6 +19,8 @@ faq:
     a: "Il food cost teorico è quello che esce dallo scandaglio: indica quanto dovrebbe costare il piatto secondo la ricetta standard e le quantità indicate. Il consuntivo, invece, esce da inventari e acquisti: racconta cosa è successo davvero nel periodo. Il confronto tra i due è il controllo di gestione della cucina. Se il consuntivo è più alto del teorico, ci sono perdite, sprechi o porzioni fuori standard. Il consuntivo non si può truccare: i numeri reali arrivano da ciò che hai comprato e consumato."
   - q: "Dove posso trovare le tabelle di food cost?"
     a: "Puoi costruire le tabelle di food cost in un foglio di calcolo: bastano poche colonne — ingrediente, quantità per porzione, costo unitario, costo porzione, totale, prezzo netto e percentuale — con una riga per ogni ingrediente e uno scandaglio per piatto. In questo articolo trovi una tabella già compilata, pronta da copiare e adattare al tuo menu. In alternativa, esistono template online, ma crearne una con le tue ricette è il modo più affidabile per avere dati reali e aggiornati."
+  - q: "Come si calcola il food cost della pasta fresca?"
+    a: "Calcola prima il costo al chilo dell'impasto: con 1 kg di farina 00 a 1,20 €/kg e 10 uova a 0,30 € l'una spendi 4,20 € per circa 1,6 kg di pasta, quindi circa 2,63 €/kg, ovvero 0,32 € per una porzione da 120 g (prezzi indicativi). Poi usa quel costo al chilo nello scandaglio del piatto. Il conto non include la manodopera né il calo dell'impasto."
 ---
 
 Fine mese. Il commercialista ti manda il conto economico e tu lo apri dopo il turno, stanco, con la schiena che ti parla e i numeri che non tornano. I tavoli erano pieni, i coperti buoni, il personale ha lavorato bene. Eppure il margine non c'è, o è molto meno di quello che “sentivi” in cucina. Se ti è capitato, il problema non è la bravura: è il food cost, il ponte fra la pentola e il bilancio. Quando non lo conosci, non lo controlli; quando non lo controlli, lavori per fare contenti gli altri.
@@ -65,6 +67,16 @@ Con un prezzo in carta di 12,00 € IVA inclusa, il prezzo netto è 10,91 €. I
 Che cosa significa 16,5%? Per un primo piatto è un valore molto buono. Ti lascia un margine interessante sull'ingrediente, ma non devi guardare solo il singolo piatto: devi guardare quanto pesa nel tuo mix di vendita, cioè quante volte esce rispetto agli altri. Un primo al 16,5% venduto poco sposta pochissimo; un secondo al 38% venduto tantissimo può trascinare l'intero conto economico. Lo scandaglio, da solo, è una fotografia: il menu è un film.
 
 Lo scandaglio non è una foto da appendere al muro. Quando il fornitore alza il prezzo della carne, quando cambi marca di pasta o quando la qualità del ragù peggiora e devi aumentare la quantità, la tabella invecchia. Se non la aggiorni, continui a lavorare con un'illusione: il tuo teorico non corrisponde più alla realtà. Per questo chi lavora bene rifà lo scandaglio a ogni nuovo listino e a ogni cambio ricetta, non quando il numero è già scappato.
+
+<h3>Modello Excel gratuito per il calcolo del food cost</h3>
+
+<p>Lo scandaglio delle tagliatelle lo trovi già pronto nel <a href="https://aichef.pro/descargas/calcolo-food-cost-excel-gratis-aichef.xlsx">modello Excel per il calcolo del food cost</a>, gratuito e senza registrazione. Ha tre fogli: l'esempio di questa tabella (1,80 € di costo, 16,5 % di food cost), uno scandaglio vuoto in cui inserisci quantità nette, calo e prezzi d'acquisto IVA esclusa, con il food cost calcolato sul prezzo IVA esclusa, e il conto della pasta fresca fatta in casa. Per un calcolo veloce di un solo piatto c'è anche il <a href="https://aichef.pro/it/calcolatore-food-cost-ristorante">calcolatore online</a>.</p>
+
+<h2>Il food cost della pasta fresca: fatta in casa o comprata?</h2>
+
+<p>Per la pasta fresca all'uovo la regola classica è 100 g di farina e un uovo a persona. Con prezzi indicativi, farina 00 a 1,20 €/kg e uova a 0,30 € l'una, un impasto con 1 kg di farina e 10 uova costa 4,20 € di materie prime e pesa circa 1,6 kg: circa 2,63 € al chilo, cioè 0,32 € per una porzione da 120 g. Le tagliatelle fresche comprate a 4,50 €/kg, come nella tabella qui sopra, costano 0,54 € a porzione.</p>
+
+<p>Sulla carta la pasta fatta in casa costa meno, ma questo conto non include la manodopera né il calo dell'impasto: il risparmio sulla materia prima va confrontato con le ore di lavoro. Se la fai tu, nello scandaglio inserisci il costo al chilo del tuo impasto, non quello della farina.</p>
 
 <h2>Food cost teorico e consuntivo: due numeri che non puoi truccare</h2>
 
@@ -132,6 +144,8 @@ All'inizio sembra noioso. Dopo due mesi diventa una seconda natura: impari a leg
 <h2>I numeri sono tuoi, i conti li acceleri</h2>
 
 <p>Pesare le porzioni e fare gli inventari è mestiere; ricalcolare venti scandagli ogni volta che il fornitore ritocca il listino è la parte che divora le serate — ed è esattamente quella che puoi accelerare.</p>
+
+<p>Vuoi fare subito il conto? Usa il <a href="https://aichef.pro/it/calcolatore-food-cost-ristorante">calcolo del food cost gratuito online</a> oppure scarica il <a href="https://aichef.pro/descargas/calcolo-food-cost-excel-gratis-aichef.xlsx">modello Excel per il calcolo del food cost</a>, gratis e senza registrazione.</p>
 
 <p>Su <a href="https://itapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=food-cost" target="_blank" rel="noopener noreferrer">itapp.aichef.pro</a> trovi oltre 50 strumenti di AI Chef Pro per chef e ristoratori: <strong><a href="https://itapp.aichef.pro/gerente-de-restaurante-pro-dumn4-it?utm_source=blog&utm_medium=cta&utm_content=food-cost" target="_blank" rel="noopener noreferrer">Manager Ristorante Pro</a></strong> ti affianca su costi, margini e decisioni di carta, e l'<a href="https://itapp.aichef.pro/tspoonlab-agent-w7rey-it?utm_source=blog&utm_medium=cta&utm_content=food-cost" target="_blank" rel="noopener noreferrer">agente tSpoonLab</a> è dedicato proprio a scandagli e food cost. La tabella di questo articolo è il punto di partenza; loro sono il modo di non rifarla a mano ogni mese.</p>
 
