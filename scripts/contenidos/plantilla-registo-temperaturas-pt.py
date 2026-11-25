@@ -102,7 +102,7 @@ NOTA_REGISTADOR = ('Num restaurante comum, o registador automático de temperatu
                    'ultracongelados de 10 m³ ou mais (Regulamento (CE) n.º 37/2005; Esclarecimento Técnico n.º '
                    '4/DGAV/2025).')
 NOTA_GUARDAR = 'Guarde os registos durante o tempo que o seu plano definir.'
-NOTA_AUXILIAR = 'Esta folha é um auxiliar, não um impresso oficial da ASAE, da DGAV ou da AHRESP.'
+NOTA_AUXILIAR = 'Esta folha é um documento de apoio, não um impresso oficial da ASAE, da DGAV ou da AHRESP.'
 NOTA_RECECAO = ('Meça à chegada, antes de assinar a guia: entre duas embalagens e, se houver dúvida, no centro do '
                 'produto. As normas por defeito são as do armazenamento (lei e código da AHRESP); se o seu plano fixar '
                 'outras, escreva-as nas células amarelas.')
@@ -115,7 +115,7 @@ ORIG_CONG = 'Código AHRESP 2015: congelados (não ultracongelados, exceto pesca
 ORIG_REFR = 'Código AHRESP 2015: refrigeração de 0 a 7 °C (0 a 4 °C se houver uma única câmara)'
 # Valores que NÃO são normas portuguesas (de outros países ou inventados) e não podem aparecer em texto
 VETADOS = [r'(?<![\d,])60\s?°C', r'(?<![\d,])63\s?°C', r'(?<![\d,])70\s?°C', r'(?<![\d,])72\s?°C',
-           r'(?<![\d,])74\s?°C', r'(?<![\d,])100\s?°C', r'(?<![\d,])20\s?°C', r'(?<![\d,])3\s?°C(?!: ajuste a norma se a aceitar)', r'\b180\b',
+           r'(?<![\d,])74\s?°C', r'(?<![\d,])100\s?°C', r'(?<![\d,])20\s?°C', r'(?<![\d,])3\s?°C(?! acima deste valor)', r'\b180\b',
            r'[−–-]15\b', r'\b24\s?h', r'seis meses', r'um ano', r'duas vezes por dia', r'AIHSA', r'FDA',
            r'±\s?1(?:,0)?\s?°C', r'(?<!\d)1\s?a\s?4\s?°C', r'ASAE exige', r'obrigatório registar duas']
 
@@ -168,7 +168,7 @@ OK_COL = {tp: next(k1 for _, k1, _, s in cols if s == 'ok') for tp, cols in COLS
 RECECAO = [('Refrigerado', 7, 'Código AHRESP 2015 (refrigeração de 0 a 7 °C)'),
            ('Congelado (exceto pescado)', -12, 'Código AHRESP 2015 (congelados que não sejam ultracongelados)'),
            ('Ultracongelado ou pescado congelado', -18, 'Lei: Decreto-Lei n.º 251/91 e Decreto-Lei n.º 37/2004 '
-            '(no transporte de ultracongelados, o DL 251/91 tolera subidas breves até 3 °C: ajuste a norma se a aceitar)')]
+            '(ambos admitem, no transporte, uma tolerância máxima de 3 °C acima deste valor: ajuste a norma se a aceitar)')]
 R0 = 7                    # cabeçalho das normas de receção (linhas 8–10)
 R_CAB, R_N = 13, 20       # cabeçalho e número de linhas da lista de receção
 TH_TOL = 8                # célula C8: tolerância
@@ -384,7 +384,7 @@ def tabela_equipamentos(ws):
         juntar(ws, r, 2, 4)
         celula(ws, r, 5, mn, '0', ent=True, neg=True, meio=True)
         celula(ws, r, 6, mx, '0', ent=True, neg=True, meio=True)
-        c = celula(ws, r, 7, f'=IF(NOT(ISNUMBER(F{r})),"",IF(F{r}<=-18,"{lei}",IF(F{r}<0,"{cong}","{refr}")))', tam=9)
+        c = celula(ws, r, 7, f'=IF(NOT(ISNUMBER(F{r})),"",IF(F{r}<=-18,"{lei}",IF(F{r}=-12,"{cong}",IF(OR(F{r}=7,F{r}=4),"{refr}","Norma do seu plano"))))', tam=9)
         c.alignment = Alignment(vertical='center', wrap_text=True)
         bordas(ws, r, 7, 13)
         juntar(ws, r, 7, 13)
@@ -407,8 +407,8 @@ def bloco_semana(ws, r, semana=None, dados=None, rubricas=None):
     c.border = borda
     c.alignment = Alignment(horizontal='right', vertical='center')
     celula(ws, r, 2, semana, '0', ent=True, neg=True, meio=True)
-    b = ws.cell(row=r, column=3, value=pt('Leitura diária (°C): pelo menos uma vez por dia, à abertura (código da '
-                                          'AHRESP); a leitura do fecho é opcional'))
+    b = ws.cell(row=r, column=3, value=pt('Leitura diária (°C): pelo menos uma vez por dia (código da AHRESP), '
+                                          'por exemplo à abertura; a leitura do fecho é opcional'))
     b.font = Font(italic=True, color='FFFFFF')
     b.alignment = Alignment(vertical='center')
     bordas(ws, r, 3, 13, preto)
@@ -480,8 +480,8 @@ def formula_bloco(tipo, tipo_col, z, v):
             return f'=IF({nao_num(f"C{z}", f"E{z}")},"",MOD(E{z}-C{z},1))'
         # início, fim e temperatura final são necessários; a temperatura no início é opcional, mas texto nela → vazio
         falta = nao_num(f'G{z}', f'F{z}', v['arref_d'], v['arref_t'])
-        return (f'=IF(OR({falta},AND(D{z}<>"",NOT(ISNUMBER(D{z})))),"",IF(AND(ROUND(G{z}*1440,0)<={v["arref_d"]}*60,'
-                f'F{z}<={v["arref_t"]}),"Sim","NÃO"))')
+        return (f'=IF(OR({falta},AND(D{z}<>"",NOT(ISNUMBER(D{z})))),"",IF(ROUND(G{z}*1440,0)=0,"",IF(AND(ROUND(G{z}*1440,0)<={v["arref_d"]}*60,'
+                f'F{z}<={v["arref_t"]}),"Sim","NÃO")))')
     # reaquecimento: temperatura + «1.º reaquecimento?» (Sim/Não) necessários; «Não» = já reaquecido → NÃO
     return (f'=IF(OR({nao_num(f"D{z}", v["reaq_t"])},AND(E{z}<>"Sim",E{z}<>"Não")),"",'
             f'IF(AND(D{z}>={v["reaq_t"]},E{z}="Sim"),"Sim","NÃO"))')
@@ -860,8 +860,8 @@ def pdf_imprimir():
     # Página 1 — frio, duas semanas
     el = [faixa_pdf('Registo de temperaturas – frio (câmaras, frigoríficos e arcas)'), Spacer(1, 4), info(),
           Spacer(1, 4),
-          Paragraph(t('Leia a temperatura de cada equipamento pelo menos uma vez por dia, à abertura (código da AHRESP); '
-                      'a leitura do fecho é opcional. Se houver um desvio: ação corretiva e rubrica.'), s_txt)]
+          Paragraph(t('Leia a temperatura de cada equipamento pelo menos uma vez por dia (código da AHRESP), por exemplo à '
+                      'abertura; a leitura do fecho é opcional. Se houver um desvio: ação corretiva e rubrica.'), s_txt)]
     for _ in range(2):
         el += [Paragraph(t('Semana: ……………    De ……………… a ………………'), s_h), tabela_frio()]
     el += [Spacer(1, 6), Paragraph(t(NOTA_LEI), s_nota), Spacer(1, 2),
@@ -875,7 +875,7 @@ def pdf_imprimir():
     a7 = [0.09, 0.24, 0.07, 0.10, 0.09, 0.34, 0.07]
     el += [faixa_pdf('Confeção, arrefecimento, reaquecimento e manutenção a quente', 12), Spacer(1, 4), info(),
            Spacer(1, 2),
-           Paragraph(t('<b>Semana: ……………</b>    Uma linha por medição. Se houver um desvio: ação corretiva e rubrica.'),
+           Paragraph(t('<b>Data ou semana: ……………</b>    Uma linha por medição; imprima as folhas de que precisar. Se houver um desvio: ação corretiva e rubrica.'),
                      s_txt),
            Paragraph(t('Confeção'), s_h),
            Paragraph(t('Pelo menos 65 °C no centro do alimento, na parte mais espessa (código da AHRESP), ou ……… °C se o '
@@ -1237,7 +1237,7 @@ def gate_pdf():
     for p in rd.pages:
         assert abs(float(p.mediabox.width) - 595.28) < 1 and abs(float(p.mediabox.height) - 841.89) < 1, p.mediabox
     textos = [' '.join(p.extract_text().replace(NB, ' ').split()) for p in rd.pages]
-    comum = ('Esta folha é um auxiliar, não um impresso oficial da ASAE, da DGAV ou da AHRESP',
+    comum = ('Esta folha é um documento de apoio, não um impresso oficial da ASAE, da DGAV ou da AHRESP',
              'Guarde os registos durante o tempo que o seu plano definir', 'aichef.pro/pt/blog/haccp')
     esperado = [
         ('Registo de temperaturas – frio (câmaras, frigoríficos e arcas)', '0 a 7 °C', '–12 °C ou menos',
