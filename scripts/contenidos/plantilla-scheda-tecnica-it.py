@@ -69,12 +69,12 @@ PASSI = [
      'cotte e croccanti, non stufate.', '4 min', 'fuoco vivo'),
     ('Segnare il salmone con i 5 ml di olio EVO rimanenti dal lato della pelle e finire la cottura dall\'altro lato.',
      '6 min', 'piastra ben calda'),
-    ('Ritirare il salmone e lasciarlo riposare prima di impiattare.', '1 min', ''),
+    ('Togliere il salmone dalla piastra e lasciarlo riposare prima di impiattare.', '1 min', ''),
     ("Impiattare le verdure alla base, appoggiare il salmone sopra con la pelle verso l'alto e finire con lo spicchio "
      'di limone e il prezzemolo.', '2 min', ''),
 ]
 ALLERGENI = [
-    'Cereali contenenti glutine (grano, segale, orzo, avena, farro, kamut o ceppi ibridati: indica quale)',
+    'Cereali contenenti glutine (grano, compresi farro e grano khorasan, segale, orzo, avena o i loro ceppi ibridati: indica quale)',
     'Crostacei', 'Uova', 'Pesce', 'Arachidi', 'Soia', 'Latte (compreso il lattosio)',
     'Frutta a guscio (mandorle, nocciole, noci, noci di acagiù, noci di pecan, noci del Brasile, pistacchi, noci '
     'macadamia o del Queensland: indica quale)',
@@ -166,10 +166,10 @@ def generar():
 
     # Dati generali (righe 5-12)
     titulo(ws, 4, 'Dati generali')
-    dati = [('Piatto', 'Salmone alla piastra con verdure saltate'), ('Categoria', 'Pesci'),
-            ('Numero di porzioni', 1), ('Peso per porzione', 'Circa 410 g a crudo (somma dei netti)'),
+    dati = [('Piatto', 'Salmone alla piastra con verdure saltate'), ('Categoria', 'Secondi di pesce'),
+            ('Numero di porzioni', 1), ('Grammatura per porzione', 'Circa 410 g a crudo (somma dei netti)'),
             ('Tempo di preparazione', '20 min'), ('Autore', 'Chef di cucina'), ('Verificata da', ''),
-            ('Data e versione', 'gg-mm-aaaa · v1.0')]
+            ('Data e versione', 'gg/mm/aaaa · v1.0')]
     for i, (k, v) in enumerate(dati):
         f = 5 + i
         celda(ws, f, 1, k, negrita=True)
@@ -229,7 +229,7 @@ def generar():
     # Allergeni: due colonne da segnare con X (Contiene / Può contenere) + tipo
     fa = fp + 2 + len(passi) + 1
     titulo(ws, fa, 'Allergeni (Reg. (UE) n. 1169/2011, allegato II): metti una X nella colonna giusta')
-    for c0, c1, txt in ((1, 1, 'Allergene'), (2, 2, 'Contiene'), (3, 4, 'Può contenere (contaminazione crociata)'),
+    for c0, c1, txt in ((1, 1, 'Allergene'), (2, 2, 'Contiene'), (3, 4, 'Può contenere (contaminazione crociata, indicazione volontaria)'),
                         (5, 6, 'Tipo / ingrediente da cui proviene')):
         c = celda(ws, fa + 1, c0, txt, negrita=True)
         c.fill = PatternFill('solid', fgColor=GRIS)
@@ -264,7 +264,7 @@ def generar():
                               f'frigo. Tempi e temperature {HACCP}.'),
             ('Punti critici (CCP)', 'Catena del freddo del pesce fino al momento di segnarlo; cottura del salmone. '
                                     f'Limiti e chi li verifica: {HACCP}.'),
-            ('Vita utile delle preparazioni precedenti', f'{HACCP[0].upper()}{HACCP[1:]}.')]):
+            ('Shelf life dei semilavorati', f'{HACCP[0].upper()}{HACCP[1:]}.')]):
         f = fc + 1 + i
         celda(ws, f, 1, k, negrita=True)
         celda(ws, f, 2, v, es_entrada=True)
@@ -273,7 +273,7 @@ def generar():
     fi = fc + 5
     titulo(ws, fi, 'Impiattamento')
     for i, (k, v) in enumerate([
-            ('Montaggio e guarnizione', "Verdure al centro come base, salmone sopra con la pelle verso l'alto, uno "
+            ('Composizione e guarnizione', "Verdure al centro come base, salmone sopra con la pelle verso l'alto, uno "
                                         'spicchio di limone e prezzemolo tritato.'),
             ('Stoviglie', 'Piatto piano.'), ('Foto di riferimento', 'Incolla qui la foto del piatto finito.')]):
         f = fi + 1 + i
@@ -289,11 +289,11 @@ def generar():
     blocco = [
         ('Costo per porzione (dal tuo calcolo del food cost)', 4.29, EUR, True),
         ('Food cost obiettivo (%)', 0.30, PCT0, True),
-        ('Prezzo di vendita IVA esclusa', f'=IF(OR(B{b}="",N(B{b + 1})=0),"",B{b}/B{b + 1})', EUR, False),
+        ('Prezzo di vendita IVA esclusa', f'=IF(OR(NOT(ISNUMBER(B{b})),N(B{b + 1})=0),"",B{b}/B{b + 1})', EUR, False),
         ('IVA (somministrazione di alimenti e bevande in Italia: 10 %)', 0.10, PCT0, True),
-        ('Prezzo di vendita IVA inclusa', f'=IF(B{b + 2}="","",B{b + 2}*(1+N(B{b + 3})))', EUR, False),
+        ('Prezzo di vendita IVA inclusa', f'=IF(OR(B{b + 2}="",NOT(ISNUMBER(B{b + 3}))),"",B{b + 2}*(1+B{b + 3}))', EUR, False),
         ('Prezzo in carta (IVA inclusa, arrotondato a tua scelta)', 15.90, EUR, True),
-        ('Food cost reale a quel prezzo (%)', f'=IF(OR(B{b}="",N(B{b + 5})=0),"",B{b}/(B{b + 5}/(1+N(B{b + 3}))))', PCT1, False),
+        ('Food cost reale a quel prezzo (%)', f'=IF(OR(NOT(ISNUMBER(B{b})),NOT(ISNUMBER(B{b + 3})),N(B{b + 5})=0),"",B{b}/(B{b + 5}/(1+B{b + 3})))', PCT1, False),
     ]
     for i, (k, v, fmt, ent) in enumerate(blocco):
         celda(ws, b + i, 1, k, negrita=True)
@@ -366,7 +366,7 @@ def gate_fichero(p):
     # allergeni: i 14 nomi ufficiali, una sola lista «X» su Contiene + Può contenere; esempio = solo pesce
     assert [ws.cell(row=p['primo_all'] + i, column=1).value for i in range(14)] == ALLERGENI
     assert ws.cell(row=p['primo_all'] - 1, column=2).value == 'Contiene'
-    assert ws.cell(row=p['primo_all'] - 1, column=3).value == 'Può contenere (contaminazione crociata)'
+    assert ws.cell(row=p['primo_all'] - 1, column=3).value == 'Può contenere (contaminazione crociata, indicazione volontaria)'
     lista = [d for d in ws.data_validations.dataValidation if d.type == 'list']
     assert len(lista) == 1 and lista[0].formula1 == '"X"', lista
     assert str(lista[0].sqref) == f'B{p["primo_all"]}:C{p["ultimo_all"]}', lista[0].sqref
@@ -453,6 +453,17 @@ def gate_pycel(p):
         poner(f'B{b + 1}', 0.30)
         poner(f'B{b + 5}', 15.90)
         assert val(f'B{b + 2}') in (None, '') and val(f'B{b + 6}') in (None, '')
+        # Casi nuovi: IVA vuota o testo → né prezzo falso né errore; costo come testo → né #VALUE! né 0
+        poner(f'B{b + 3}', 0.10)
+        poner(f'B{b}', 4.29)
+        assert round(val(f'B{b + 2}'), 2) == 14.30 and round(val(f'B{b + 4}'), 2) == 15.73
+        for iva in ('', '10%'):
+            poner(f'B{b + 3}', iva)
+            assert val(f'B{b + 4}') in (None, ''), (iva, val(f'B{b + 4}'))
+            assert val(f'B{b + 6}') in (None, ''), (iva, val(f'B{b + 6}'))
+        poner(f'B{b + 3}', 0.10)
+        poner(f'B{b}', '4,29')  # costo come testo
+        assert [val(f'B{b + i}') in (None, '') for i in (2, 4, 6)] == [True] * 3, [val(f'B{b + i}') for i in (2, 4, 6)]
     return res
 
 
@@ -493,7 +504,7 @@ def main():
     parche = gate_parche()
     print(f'OK {SALIDA.relative_to(RAIZ)} · {cache} · lordo {lordo} · '
           'Esempio salmone: costo per porzione € 4,29 · 14,30 / 15,73 / 15,90 · 29,7 %')
-    print(f'   gates: data_only OK · pycel sin caché OK (+4 casos de lógica, +5 de celdas vacías/texto) · idioma OK '
+    print(f'   gates: data_only OK · pycel sin caché OK (+4 casos de lógica, +5 de celdas vacías/texto, +4 de IVA vacía/texto y costo texto) · idioma OK '
           f'({n} textos, sin neerlandés, español, inglés ni «tracce») · parche --check: {parche}')
 
 
