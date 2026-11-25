@@ -1,6 +1,6 @@
 ---
 title: "Wie viel Gramm pro Person? Portionsgrößen-Tabelle: Kartoffeln, Fleisch, Gemüse"
-description: "Pro Person: 200–250 g Kartoffeln, 150–200 g Gemüse, 150–200 g Fleisch (roh, ohne Knochen), 80–100 g Nudeln. Tabelle für à la carte, Menü und Buffet."
+description: "Für Erwachsene pro Person: 200–250 g Kartoffeln und 150–200 g Gemüse als Beilage, 150–200 g Fleisch (roh, ohne Knochen), 200–250 ml klare Suppe. Mit PDF."
 pubDate: 2026-08-19
 modDate: 2026-11-25
 category: restaurant-management
@@ -43,7 +43,7 @@ faq:
 
 <p>Der wichtigste Satz zu jeder Portionsangabe steht nicht in der Tabelle selbst, sondern darüber: Roh oder gegart? Eine Portionsangabe ohne den Zusatz „roh“ oder „gegart“ ist in der Profiküche wertlos, denn die beiden Gewichte haben fast nichts miteinander zu tun. Fleisch verliert beim Garen rund 20 bis 30 Prozent Gewicht: Aus 180 g roh werden etwa 130 bis 145 g auf dem Teller. Wer also glaubt, 180 g gegart entsprächen 180 g Einkauf, kauft systematisch zu viel ein und wundert sich später über den <a href="https://aichef.pro/de/blog/wareneinsatz-berechnen">Wareneinsatz</a>.</p>
 
-<p>Umgekehrt verhält es sich bei den Beilagen. Nudeln verdoppeln ihr Gewicht beim Kochen ungefähr – 100 g roh ergeben etwa 230 bis 250 g gekocht. Reis verdreifacht es ungefähr: 60 g roh ergeben etwa 180 g gekocht. Eine Tabelle ohne die Angabe „roh oder gegart“ ist wertlos, und genau deshalb legt Ihnen der nächste Abschnitt eine Tabelle vor, die diese Angabe konsequent macht. Für die Bestellung und die Kalkulation zählt das Rohgewicht, denn das ist das Gewicht, das Sie einkaufen und einwiegen. Für die Optik und die Erwartung des Gastes zählt das gegarte Gewicht. Wer beides sauber auseinanderhält, kann einen Teller kalkulieren, der ehrlich satt macht – ohne dass der Gast das Gefühl hat, zu wenig zu bekommen.</p>
+<p>Umgekehrt verhält es sich bei den Beilagen. Nudeln verdoppeln ihr Gewicht beim Kochen ungefähr – 100 g roh ergeben etwa 200 bis 250 g gekocht. Reis verdreifacht sein Gewicht ungefähr: 60 g roh ergeben etwa 180 g gekocht. Eine Tabelle ohne die Angabe „roh oder gegart“ ist wertlos, und genau deshalb legt Ihnen der nächste Abschnitt eine Tabelle vor, die diese Angabe konsequent macht. Für die Bestellung und die Kalkulation zählt das Rohgewicht, denn das ist das Gewicht, das Sie einkaufen und einwiegen. Für die Optik und die Erwartung des Gastes zählt das gegarte Gewicht. Wer beides sauber auseinanderhält, kann einen Teller kalkulieren, der ehrlich satt macht – ohne dass der Gast das Gefühl hat, zu wenig zu bekommen.</p>
 
 <h2>Die Portionsgrößen-Tabelle für die Profiküche</h2>
 

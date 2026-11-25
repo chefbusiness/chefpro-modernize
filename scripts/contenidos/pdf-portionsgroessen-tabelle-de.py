@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 POST = ROOT / 'astro-site/src/content/blog/de/portionsgroessen-tabelle.md'
 PDF = ROOT / 'astro-site/public/descargas/portionsgroessen-tabelle-gastronomie-aichef.pdf'
 NOTA = 'Richtwerte für Erwachsene. Planen Sie mit Ihren eigenen Rezepturen und Garverlusten.'
-PIE = 'Kostenlose Vorlage von AI Chef Pro · Artikel: aichef.pro/de/blog/portionsgroessen-tabelle'
+PIE = 'Kostenlose Tabelle von AI Chef Pro · Artikel: <a href="https://aichef.pro/de/blog/portionsgroessen-tabelle" color="#0563C1">aichef.pro/de/blog/portionsgroessen-tabelle</a>'
 
 
 class Tablas(HTMLParser):
@@ -63,7 +63,7 @@ def main():
         if len(r) != 1: sys.exit(f'FALLO: frase «{ancla}» encontrada {len(r)} veces en el post')
         return r[0]
 
-    garverlust = [frase('Fleisch verliert beim Garen'), frase('Nudeln verdoppeln ihr Gewicht'), frase('Reis verdreifacht es')]
+    garverlust = [frase('Fleisch verliert beim Garen'), frase('Nudeln verdoppeln ihr Gewicht'), frase('Reis verdreifacht sein Gewicht')]
     reglas = [
         ('Menü', frase('Im Menü mit drei oder mehr Gängen')),
         ('Buffet', frase('Für das Abendbuffet gilt')),
@@ -99,12 +99,12 @@ def main():
     t.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.5, gris), ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#F3F3F3')),
                            ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('TOPPADDING', (0, 0), (-1, -1), 4), ('BOTTOMPADDING', (0, 0), (-1, -1), 4)]))
     el += [t, Paragraph('Roh oder gegart? Das Garen verändert das Gewicht', h)]
-    el += [Paragraph('• ' + esc(g), base) for g in garverlust]
+    el += [Paragraph('– ' + esc(g), base) for g in garverlust]
     el += [Paragraph('Menü, Buffet und mehr', h)]
     rt = Table([[Paragraph(esc(k), cab), Paragraph(esc(v), base)] for k, v in reglas], colWidths=[W * 0.2, W * 0.8])
     rt.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.5, gris), ('BACKGROUND', (0, 0), (0, -1), colors.HexColor('#F3F3F3')),
                             ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('TOPPADDING', (0, 0), (-1, -1), 4), ('BOTTOMPADDING', (0, 0), (-1, -1), 4)]))
-    el += [rt, Spacer(1, 8), Paragraph(esc(NOTA), cur), Spacer(1, 3), Paragraph(esc(PIE), cur)]
+    el += [rt, Spacer(1, 8), Paragraph(esc(NOTA), cur), Spacer(1, 3), Paragraph(PIE, cur)]
     doc.build(el)
 
     from pypdf import PdfReader
