@@ -27,7 +27,7 @@ faq:
 
 <p>La réglementation est claire : en restauration, vous devez informer par écrit vos clients sur les allergènes présents dans vos plats. Pas une option, pas une faveur. Et cette obligation repose sur une liste précise, fixée au niveau européen : les 14 allergènes à déclaration obligatoire. Dans cet article, nous vous donnons la liste complète, les endroits où ces allergènes se cachent réellement dans une cuisine professionnelle, et la méthode pour construire un tableau plat par plat qui reste à jour à chaque changement de carte. Vous repartez avec votre affichage prêt.</p>
 
-<p>Besoin d’un support tout de suite ? Téléchargez notre <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.xlsx">tableau des allergènes vierge en Excel</a> ou sa <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.pdf">version PDF à imprimer</a>, gratuits et sans inscription.</p>
+<p>Besoin d'un support tout de suite ? Téléchargez notre <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.xlsx">tableau des allergènes vierge en Excel</a> ou sa <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.pdf">version PDF à imprimer</a>, gratuits et sans inscription.</p>
 
 <h2>Les 14 allergènes à déclaration obligatoire</h2>
 
@@ -119,7 +119,7 @@ faq:
 
 <p>Certaines cachettes sont moins intuitives que d'autres. Le céleri, par exemple, se fond dans les mirepoix et les fonds de sauce : il est presque invisible dans un velouté ou un jus de viande, mais il est bien présent. Les sulfites, eux, se nichent dans le vin que vous utilisez pour déglacer une poêle ou déglacer un fond : la réduction ne les élimine pas, et ils restent dans la sauce finale. Quant au gluten, il ne se limite pas aux pâtes et au pain : les liaisons à la farine, les roux, la sauce soja et même certaines bières utilisées en marinade en contiennent. Un œil averti sur ces points vous évitera bien des surprises.</p>
 
-<h2>Ce que la réglementation exige vraiment (et ce qui n'est que recommandé)</h2>
+<h2>Ce que la réglementation exige vraiment (et ce qui reste facultatif)</h2>
 
 <p>Le cadre est simple. Le règlement (UE) n° 1169/2011, dit « INCO », fixe dans son annexe II la liste des 14 allergènes à déclaration obligatoire. En France, pour les denrées non préemballées — c'est-à-dire la restauration — l'application est précisée par le Code de la consommation, articles R412-12 à R412-16. Ce que la règle exige, concrètement (article R412-14, issu du décret n° 2015-447) : une information écrite, lisible et visible des lieux où le client est admis. Soit l'information elle-même — mention sur la carte, ardoise, tableau affiché —, soit l'indication écrite de l'endroit où elle est tenue à sa disposition, par écrit, et où il peut la consulter directement et librement. L'information orale seule ne suffit pas.</p>
 
@@ -178,7 +178,7 @@ faq:
 
 <h3>Tableau des allergènes vierge gratuit (Excel et PDF)</h3>
 
-<p>Pour démarrer sans repartir de zéro, nous avons mis en ligne un <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.xlsx">tableau des allergènes vierge en Excel</a>, gratuit et sans inscription. Il contient deux feuilles : un tableau vierge de 30 lignes, avec les 14 allergènes du règlement INCO en colonnes et une liste déroulante dans chaque case (C = contient, T = peut contenir des traces, N = ne contient pas), et l’exemple des cinq plats ci-dessus. Le nombre d’allergènes de chaque plat se calcule seul, et des notes rappellent les règles d’affichage.</p>
+<p>Pour démarrer sans repartir de zéro, nous avons mis en ligne un <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.xlsx">tableau des allergènes vierge en Excel</a>, gratuit et sans inscription. Il contient deux feuilles : un tableau vierge de 30 lignes, avec les 14 allergènes du règlement INCO en colonnes et une liste déroulante dans chaque case (C = contient, T = peut contenir des traces, N = ne contient pas), et l'exemple des cinq plats ci-dessus. Le nombre d'allergènes de chaque plat se calcule seul, et des notes rappellent les règles d'affichage.</p>
 
 <p>Vous préférez le papier ? La <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.pdf">version PDF</a> tient sur une page A4 paysage, à imprimer pour le classeur de salle ou à afficher. Remplissez-la toujours depuis vos fiches techniques : notre <a href="https://aichef.pro/fr/blog/fiche-technique-cuisine">fiche technique de cuisine vierge</a>, gratuite elle aussi, a déjà une case pour chacun des 14 allergènes.</p>
 
@@ -191,7 +191,7 @@ faq:
 <li><strong>L'information donnée seulement à l'oral par le serveur.</strong> Le serveur peut se tromper, oublier, ou ne pas avoir le temps de vérifier. L'écrit est une protection pour le client et pour vous. L'oral ne remplace jamais l'écrit.</li>
 <li><strong>Confondre « traces » et ingrédients volontaires.</strong> Une mention « traces de fruits à coque » ne couvre pas un plat qui contient réellement des noix dans la recette. La réglementation exige de déclarer ce qui est volontairement mis en œuvre. Les « traces » sont un supplément, pas un substitut.</li>
 <li><strong>Oublier les allergènes des produits achetés.</strong> Un fond de veau industriel, une sauce soja, un bouillon en cube : ces produits ont leurs propres listes d'ingrédients. Si vous ne les vérifiez pas, vous risquez de manquer un allergène. Un changement de fournisseur peut aussi modifier la composition d'un produit sans que vous le sachiez.</li>
-<li><strong>Un document que le client doit réclamer au lieu de le trouver seul.</strong> Si le client doit demander le cahier au serveur, ou chercher une ardoise cachée, l'information n'est pas « directement accessible ». La règle est claire : le client doit pouvoir la trouver sans intermédiaire.</li>
+<li><strong>Un document que le client doit réclamer au lieu de le trouver seul.</strong> Si le client doit demander le cahier au serveur, ou chercher une ardoise cachée, l'information n'est pas consultable « directement et librement ». La règle est claire : le client doit pouvoir la trouver sans intermédiaire.</li>
 </ul>
 
 <p>Ces erreurs ne sont pas des fatalités. Elles se corrigent avec une méthode simple et une responsabilité claire. Le coût d'une erreur, lui, peut être lourd : une réaction allergique, une urgence médicale, une inspection défavorable. Mieux vaut prévenir.</p>
