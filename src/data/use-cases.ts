@@ -56,9 +56,10 @@ export interface UseCaseContent {
   workflow: string[];
   productsTitle: string;
   productIds: string[];
-  testimonialQuote: string;
-  testimonialAuthor: string;
-  testimonialRole: string;
+  /** Prueba social. En NL no se rellena: las citas y los nombres eran inventados. */
+  testimonialQuote?: string;
+  testimonialAuthor?: string;
+  testimonialRole?: string;
   faqTitle: string;
   faqs: UseCaseFAQ[];
   ctaTitle: string;

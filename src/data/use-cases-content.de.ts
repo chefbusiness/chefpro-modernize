@@ -306,7 +306,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Gericht, bereit für Vorschriften und den Service."
+        "description": "Prüfung der 14 Allergene je Gericht, mit abschließender Kontrolle durch den Koch, bereit für Vorschriften und den Service."
       }
     ],
     "workflowTitle": "Ein echter Tag eines Managers mit AI Chef Pro",
@@ -394,7 +394,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Werkzeuge und Hilfsprogramme",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Rezept und Gericht."
+        "description": "Prüfung der 14 Allergene je Rezept und je Gericht, mit abschließender Kontrolle durch den Koch."
       },
       {
         "name": "Conversor Ing",
@@ -750,7 +750,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID und Lebensmittelabfälle AI",
-        "description": "Prüfung der 14 Allergene mit abschließender Kontrolle durch den Koch, pro Gericht, und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
+        "description": "Prüfung der 14 Allergene je Gericht, mit abschließender Kontrolle durch den Koch, und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
       },
       {
         "icon": "Search",
@@ -861,7 +861,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Werkzeuge und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Rezept und pro Gericht."
+        "description": "Prüfung der 14 Allergene je Rezept und je Gericht, mit abschließender Kontrolle durch den Koch."
       },
       {
         "name": "Kreative Patisserie",
@@ -1001,7 +1001,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Allergen-ID und Lebensmittelabfälle AI",
-        "description": "Prüfung der 14 Allergene mit abschließender Kontrolle durch den Koch, pro Gericht, und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
+        "description": "Prüfung der 14 Allergene je Gericht, mit abschließender Kontrolle durch den Koch, und präzise Daten zu Lebensmittelabfällen und Ausbeuten pro Zutat."
       }
     ],
     "workflowTitle": "Ein echter Tag eines Küchenchefs mit AI Chef Pro",
@@ -1336,7 +1336,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Rezept und Gericht."
+        "description": "Prüfung der 14 Allergene je Rezept und je Gericht, mit abschließender Kontrolle durch den Koch."
       },
       {
         "name": "Mitarbeiteressen AI",
@@ -1558,7 +1558,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Gericht, entscheidend für große Events."
+        "description": "Prüfung der 14 Allergene je Gericht, mit abschließender Kontrolle durch den Koch, entscheidend für große Events."
       },
       {
         "name": "Lebensmittelabfälle AI",
@@ -1780,7 +1780,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Rezept, entscheidend für große Events."
+        "description": "Prüfung der 14 Allergene je Rezept, mit abschließender Kontrolle durch den Koch, entscheidend für große Events."
       },
       {
         "name": "BlogPost SEO Gen+",
@@ -2236,7 +2236,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Pizza: Gluten, Milchprodukte, Nüsse, Ei."
+        "description": "Prüfung der 14 Allergene je Pizza, mit abschließender Kontrolle durch den Koch: Gluten, Milchprodukte, Nüsse, Ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2469,7 +2469,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Stück: Gluten, Milchprodukte, Nüsse, Ei."
+        "description": "Prüfung der 14 Allergene je Stück, mit abschließender Kontrolle durch den Koch: Gluten, Milchprodukte, Nüsse, Ei."
       },
       {
         "name": "GastroIMG Gen+",
@@ -2698,7 +2698,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Werkzeuge und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Praline: Milchprodukte, Nüsse, Gluten, Alkohole."
+        "description": "Prüfung der 14 Allergene je Praline, mit abschließender Kontrolle durch den Koch: Milchprodukte, Nüsse, Gluten, Alkohole."
       },
       {
         "name": "GastroIMG Gen+",
@@ -4515,7 +4515,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Rezept und Gericht."
+        "description": "Prüfung der 14 Allergene je Rezept und je Gericht, mit abschließender Kontrolle durch den Koch."
       },
       {
         "name": "Mitarbeiteressen AI",
@@ -5676,7 +5676,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools & Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Stück – entscheidend in der Patisserie."
+        "description": "Prüfung der 14 Allergene je Stück, mit abschließender Kontrolle durch den Koch: entscheidend in der Patisserie."
       },
       {
         "name": "GastroIMG Gen+",
@@ -6805,7 +6805,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Werkzeuge und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Praline: Milchprodukte, Nüsse, Gluten, Alkohol."
+        "description": "Prüfung der 14 Allergene je Praline, mit abschließender Kontrolle durch den Koch: Milchprodukte, Nüsse, Gluten, Alkohol."
       },
       {
         "name": "GastroIMG Gen+",
@@ -7492,7 +7492,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "name": "Allergen-ID",
         "category": "Tools und Utilities",
-        "description": "Prüfung der 14 Allergene, mit abschließender Kontrolle durch den Koch, pro Gericht: Gluten, Milchprodukte, Nüsse, Soja."
+        "description": "Prüfung der 14 Allergene je Gericht, mit abschließender Kontrolle durch den Koch: Gluten, Milchprodukte, Nüsse, Soja."
       },
       {
         "name": "GastroIMG Gen+",
