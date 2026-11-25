@@ -12,6 +12,7 @@ translations:
   es: "que-es-el-maridaje"
   fr: "accord-mets-vins"
   it: "abbinamento-cibo-vino"
+  pt: "harmonizacao-de-vinhos"
 definedTerm:
   name: "Wijn-spijscombinatie"
   description: "Een wijn-spijscombinatie is het combineren van eten en drinken zodat het samen beter smaakt dan apart. Het beperkt zich niet tot wijn: ook bier, cider, sake, cocktails of alcoholvrije dranken kunt u combineren. In de gastronomie bepaalt het welk drankje u bij elke gang schenkt, of welk gerecht u bij een wijn serveert."

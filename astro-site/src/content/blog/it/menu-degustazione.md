@@ -8,6 +8,7 @@ tags: ["menu degustazione", "alta cucina", "scandaglio"]
 translations:
   es: "que-es-un-menu-degustacion"
   fr: "menu-degustation"
+  pt: "menu-degustacao"
 lang: it
 image: /blog-assets/2026/11/menu-degustacion-destacada.jpg
 imageAlt: "Un cuoco termina con le pinze una portata di menu degustazione su un piatto di ceramica"

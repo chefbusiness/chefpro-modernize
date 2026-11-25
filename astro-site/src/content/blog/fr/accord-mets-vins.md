@@ -9,6 +9,7 @@ translations:
   es: "que-es-el-maridaje"
   it: "abbinamento-cibo-vino"
   nl: "wijn-spijscombinatie"
+  pt: "harmonizacao-de-vinhos"
 lang: fr
 image: /blog-assets/2026/11/accord-mets-vins-destacada.jpg
 imageAlt: "Un serveur verse un vin blanc à côté d'un bar grillé au beurre blanc sur une nappe blanche de bistrot"

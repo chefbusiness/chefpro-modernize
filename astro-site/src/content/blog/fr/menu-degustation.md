@@ -8,6 +8,7 @@ tags: ["menu dégustation", "haute cuisine", "coût matière"]
 translations:
   es: "que-es-un-menu-degustacion"
   it: "menu-degustazione"
+  pt: "menu-degustacao"
 lang: fr
 image: /blog-assets/2026/11/menu-degustacion-destacada.jpg
 imageAlt: "Un cuisinier termine à la pince une séquence de menu dégustation sur une assiette en céramique"

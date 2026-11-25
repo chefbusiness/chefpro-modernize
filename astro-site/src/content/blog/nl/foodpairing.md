@@ -11,6 +11,7 @@ imageAlt: "Zes foodpairingcombinaties van bovenaf op een eikenhouten plank: aard
 translations:
   es: "que-es-el-food-pairing"
   de: "foodpairing"
+  pt: "food-pairing"
 definedTerm:
   name: "Foodpairing"
   description: "Foodpairing is een culinaire techniek waarbij u ingrediënten combineert op basis van hun aromastoffen: producten die belangrijke aromaverbindingen delen, vullen elkaar meestal aan en geven harmonieuze, vaak verrassende combinaties."

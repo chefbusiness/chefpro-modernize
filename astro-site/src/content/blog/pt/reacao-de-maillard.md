@@ -2,7 +2,7 @@
 title: "Reação de Maillard: o que é, e o que não é"
 description: "A reação de Maillard doura aminoácidos e açúcares numa superfície seca. A água trava-a. Não é a caramelização, que só precisa de açúcar."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-25
 category: glossario
 tags: ["reação de Maillard", "dourar", "caramelização", "selar"]
 lang: pt
@@ -41,7 +41,7 @@ A reação de Maillard doura e dá aroma a tostado quando aminoácidos e açúca
 
 ## O que é
 
-Em 1912, o químico francês Louis-Camille Maillard descreveu como os grupos amino das proteínas encontram o carbonilo de certos açúcares quando chega o calor. Esse primeiro encontro abre-se em cascata. O cozinheiro vê pigmentos castanhos, as melanoidinas, e cheira avelã, pão, carne assada ou café. Não é uma só reação. Depende do açúcar e dos aminoácidos, e quer uma superfície seca. A água impede essa superfície de passar da fervura, e dilui os reagentes.
+Em 1912, o químico francês Louis-Camille Maillard descreveu como os grupos amino das proteínas encontram o carbonilo de certos açúcares quando chega o calor. Esse primeiro encontro abre-se em cascata. O cozinheiro vê pigmentos castanhos, as melanoidinas, e cheira avelã, pão, carne assada ou café. Os aromas de tostado que a reação cria também explicam algumas combinações do [food pairing](https://aichef.pro/pt/blog/food-pairing), como café e carne de porco. Não é uma só reação. Depende do açúcar e dos aminoácidos, e quer uma superfície seca. A água impede essa superfície de passar da fervura, e dilui os reagentes.
 
 Encontra-a em cada serviço: a côdea de um pão, o socarrat de uma paella, um doce de leite que escurece na frigideira, um bife na chapa, o café torrado. A condição comum é a mesma. A zona de contacto não está num líquido, e está quente o suficiente para a reação arrancar.
 
