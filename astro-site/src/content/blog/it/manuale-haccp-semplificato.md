@@ -1,6 +1,6 @@
 ---
-title: "Manuale HACCP semplificato per ristoranti: modello gratis"
-description: "Chi può usare il manuale HACCP semplificato, cosa deve contenere, chi lo scrive e quali sanzioni rischi. Con un modello gratis in Word e PDF."
+title: "Manuale HACCP semplificato PDF: modello gratis per ristoranti e bar"
+description: "Modello gratis di manuale HACCP semplificato in PDF e Word per ristoranti e bar: chi può usarlo, cosa deve contenere, chi lo scrive e le sanzioni."
 pubDate: 2026-11-25
 modDate: 2026-11-25
 category: gestione-ristorante
@@ -12,11 +12,11 @@ faq:
   - q: "Il manuale HACCP è obbligatorio per un ristorante?"
     a: "Sì, nella sostanza. Il Reg. CE 852/2004 (art. 5) obbliga ogni operatore del settore alimentare ad avere procedure di autocontrollo basate sui principi HACCP, con documenti adeguati alle dimensioni dell'impresa: il manuale è il documento che le raccoglie. Non esiste però un modello ufficiale da usare. Se le procedure mancano, il D.Lgs. 193/2007 (art. 6, comma 6) prevede una sanzione da 1.000 a 6.000 euro."
   - q: "Chi può utilizzare il manuale HACCP semplificato?"
-    a: "Le piccole attività, se la Regione o la ASL lo prevede. L'Intesa Stato-Regioni del 2016 dice che l'autorità «può autorizzare» la semplificazione per ristoranti, bar con piccola ristorazione e agriturismi fino a 10 addetti. In Piemonte il limite è di 5 addetti, o 10 se la ASL li ritiene idonei; in Emilia-Romagna è di 10. La flessibilità non vale se servi gruppi vulnerabili, se dichiari piatti «senza allergeni» o se produci conserve."
+    a: "Le piccole attività, se la Regione o la ASL lo prevede. L'Intesa Stato-Regioni del 2016 dice che l'autorità «può autorizzare» la semplificazione per ristoranti, bar con piccola ristorazione e agriturismi fino a 10 addetti. In Piemonte il limite è di 5 addetti, o 10 se la ASL li ritiene idonei; in Emilia-Romagna è di 10. Se prepari alimenti per gruppi vulnerabili, dichiari piatti «senza allergeni» o fai conserve, la Comunicazione 2022/C 355/01 chiede un'analisi dei pericoli completa anche nei locali piccoli: chiedi alla ASL che cosa puoi semplificare."
   - q: "Cosa deve contenere un manuale HACCP semplificato?"
-    a: "I dati dell'impresa e del responsabile dell'autocontrollo, la descrizione dell'attività, le procedure di base (locali, fornitori, rifiuti, infestanti, pulizia, acqua, temperature, allergeni, personale, formazione, rintracciabilità, materiali a contatto con gli alimenti), l'analisi dei pericoli con misure di controllo e azioni correttive, le registrazioni e le regole per verificarlo e rivederlo. I limiti li fissi tu e li motivi con l'analisi dei pericoli."
+    a: "I dati dell'impresa e del responsabile dell'autocontrollo, la descrizione dell'attività, le procedure di base (locali, fornitori, rifiuti, infestanti, pulizia, acqua, temperature, allergeni, personale, formazione, rintracciabilità, materiali a contatto con gli alimenti), l'analisi dei pericoli con misure di controllo e azioni correttive, le registrazioni e le regole per verificarlo e rivederlo. Salvo quelli fissati dalla legge (surgelati a −18 °C, bonifica del pesce crudo), i limiti li fissi tu e li motivi con l'analisi dei pericoli."
   - q: "Chi deve scrivere il manuale HACCP?"
-    a: "L'operatore del settore alimentare, cioè chi gestisce l'attività. Può farsi aiutare da un consulente, ma la responsabilità resta sua e la legge non chiede la firma di un tecnico. Il manuale va tenuto a disposizione dell'autorità di controllo, su carta o in formato digitale, e aggiornato quando in cucina cambia qualcosa: un piatto, un fornitore, un'attrezzatura."
+    a: "L'operatore del settore alimentare, cioè chi gestisce l'attività. Può farsi aiutare da un consulente, ma la responsabilità resta sua e la legge non chiede la firma di un tecnico; chi prepara e aggiorna le procedure, però, deve avere una formazione adeguata sui principi HACCP (Reg. CE 852/2004, All. II, cap. XII). Il manuale va tenuto a disposizione dell'autorità di controllo, su carta o in formato digitale, e aggiornato quando in cucina cambia qualcosa: un piatto, un fornitore, un'attrezzatura."
   - q: "Serve un consulente per fare il manuale HACCP?"
     a: "Non è obbligatorio. Se la tua attività è piccola e lineare puoi compilarlo da solo, partendo da un modello e dalle linee guida della tua Regione. Un consulente è utile quando il menù è lungo e cambia spesso, quando non sei sicuro di poter usare la versione semplificata o quando vuoi una seconda lettura prima di un controllo. In ogni caso il manuale deve descrivere la tua cucina, non un locale qualsiasi."
   - q: "Dove si scarica un manuale HACCP semplificato in PDF gratis?"
@@ -47,13 +47,13 @@ La base è l'Intesa Stato-Regioni del 10 novembre 2016 (Rep. 212/CSR), capitolo 
 
 | Riferimento | Chi rientra | Cosa cambia |
 | --- | --- | --- |
-| Intesa Stato-Regioni 10-11-2016 (Rep. 212/CSR), cap. 17 | Ristoranti, bar con piccola ristorazione e agriturismi fino a 10 addetti | L'autorità regionale o locale «può autorizzare» la semplificazione |
+| Intesa Stato-Regioni 10-11-2016 (Rep. 212/CSR), cap. 17 | Ristoranti, bar (anche quelli che servono soprattutto bevande), bar con piccola ristorazione e agriturismi, fino a 10 addetti | L'autorità regionale o locale «può autorizzare» la semplificazione |
 | Piemonte, D.D. 27-5-2024 n. 359 | Fino a 5 addetti, o fino a 10 se la ASL li ritiene idonei | Le registrazioni possono limitarsi alle non conformità e alle azioni correttive; 14 procedure da applicare «ove pertinenti» |
 | Emilia-Romagna, DGR 1869/2008 | Fino a 10 addetti | Prerequisiti, pericoli e misure di controllo, sorveglianza di freddo, cottura e riscaldamento anche visiva, registro delle non conformità |
 
-Le 14 procedure piemontesi non sono l'indice obbligatorio del manuale, ma ciò che devi coprire se ti riguarda. E se il tuo locale sta a cavallo tra due categorie, chiedi alla ASL prima del controllo, non dopo.
+Le 14 procedure piemontesi non sono l'indice obbligatorio del manuale, ma ciò che devi coprire se ti riguarda. E se sei al limite (per numero di addetti o tipo di attività), chiedi alla ASL prima del controllo, non dopo.
 
-Poi ci sono le eccezioni: la Comunicazione della Commissione europea 2022/C 355/01 esclude la flessibilità se servi gruppi vulnerabili, se dichiari piatti «senza allergeni» o se produci conserve. In questi casi la versione semplificata non fa per te, anche con tre addetti. E semplificato non vuol dire senza HACCP: i principi restano, cambia quanto scrivi.
+Poi ci sono le eccezioni: secondo la Comunicazione della Commissione europea 2022/C 355/01, anche in un locale piccolo non puoi concludere con un'analisi generica che non ci sono pericoli significativi se, per esempio, prepari alimenti per gruppi vulnerabili, dichiari piatti «senza allergeni» o fai conserve. In questi casi l'analisi dei pericoli va fatta per intero, anche con tre addetti: chiedi alla ASL che cosa puoi semplificare nel resto. E semplificato non vuol dire senza HACCP: i principi restano, cambia quanto scrivi.
 
 ## Cosa deve contenere un manuale HACCP semplificato
 
@@ -80,14 +80,14 @@ Le procedure di base sono la parte più lunga, ed è giusto così: in una piccol
 - **Allergeni**: la documentazione scritta piatto per piatto (art. 19, c. 8, D.Lgs. 231/2017) e la pulizia di attrezzature e contenitori prima di riusarli senza l'allergene (Reg. CE 852/2004, All. II, cap. IX, punto 9).
 - **Igiene e salute del personale**: divise, mani, cosa fa chi sta male.
 - **Formazione**: chi è formato e quando, secondo le regole della tua Regione.
-- **Rintracciabilità e ritiro o richiamo**: come risali a un lotto.
+- **Rintracciabilità e ritiro o richiamo**: come risali a un lotto e come avvisi la ASL se un alimento non è sicuro.
 - **Materiali a contatto con gli alimenti (MOCA)**: contenitori, pellicole e utensili idonei.
 
 <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" src="/blog-assets/2026/11/manuale-haccp-it-pulizia.jpg" alt="Foglio a griglia del piano di pulizia appeso con una puntina a una parete di piastrelle bianche, sopra il lavamani in acciaio di una cucina professionale"/><figcaption>Il piano di pulizia sta dove si lava, non in ufficio: cosa si pulisce, con cosa, ogni quanto e chi lo fa.</figcaption></figure>
 
 Sulle temperature il modello è volutamente asciutto: l'unica cifra precompilata è quella dei surgelati, a −18 °C o meno (D.Lgs. 110/1992). Gli altri limiti li fissi tu nel piano e li motivi con l'analisi dei pericoli; i valori di riferimento alimento per alimento, con la norma di ciascuno, sono nella [tabella delle temperature HACCP](https://aichef.pro/it/blog/temperature-frigorifero-haccp).
 
-La sezione 4 è il cuore HACCP del manuale: per ogni fase (ricevimento, conservazione a freddo, preparazione, cottura, raffreddamento, mantenimento a caldo, riscaldamento, servizio) scrivi pericolo, misura di controllo, limite, come lo controlli e cosa fai se salta. Nel modello la colonna del limite è vuota di proposito: «da definire nel tuo piano». E non tutto è un punto critico di controllo: la Comunicazione 2022/C 355/01 riconosce che in un piccolo ristorante friggere o grigliare «potrebbe non essere un CCP» e che lo si può gestire con le buone prassi.
+La sezione 4 è il cuore HACCP del manuale: per ogni fase (ricevimento, conservazione a freddo, preparazione, cottura, raffreddamento, mantenimento a caldo, riscaldamento, servizio) scrivi pericolo, misura di controllo, limite, come lo controlli e cosa fai se salta. Nel modello la colonna del limite è vuota di proposito: «da definire nel tuo piano». E non tutto è un punto critico di controllo: la Comunicazione 2022/C 355/01 riconosce che in un ristorante friggere o grigliare «potrebbe non essere un CCP», perché la temperatura dell'olio o del grasso si vede facilmente.
 
 ## Le registrazioni: cosa scrivere davvero
 
@@ -95,16 +95,15 @@ Scrivi quello che il tuo piano prevede, e nei piani semplificati spesso bastano 
 
 Il passaggio è nell'Allegato I, punto 5, della Comunicazione 2022/C 355/01: «mantenere la temperatura corretta è di gran lunga più importante che registrarla e le registrazioni possono essere prodotte solo in caso di anomalie». Il Piemonte va nella stessa direzione: per la D.D. 359/2024 «le registrazioni possono [...] limitarsi a riportare le non conformità e le azioni correttive». L'Emilia-Romagna, con la DGR 1869/2008, ammette una sorveglianza di freddo, cottura e riscaldamento anche visiva, accompagnata da un registro delle non conformità.
 
-In cucina vuol dire: controlli ogni giorno come prima, ma scrivi solo quando qualcosa esce dai limiti del tuo piano. Il frigo di linea a fine servizio è sopra il limite? Una riga: data, cosa è successo, cosa hai fatto (merce spostata, tecnico chiamato), chi, firma. Un registro vuoto deve voler dire «tutto in regola», non «nessuno ha guardato».
+Dove è ammesso, in cucina vuol dire: controlli ogni giorno come prima, ma scrivi solo quando qualcosa esce dai limiti del tuo piano. Il frigo di linea a fine servizio è sopra il limite? Una riga: data, cosa è successo, cosa hai fatto (merce spostata, tecnico chiamato), chi, firma. Un registro vuoto deve voler dire «tutto in regola», non «nessuno ha guardato».
 
 <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" src="/blog-assets/2026/11/manuale-haccp-it-registro.jpg" alt="Primo piano di una mano che compila a penna un modulo di non conformità appoggiato su un bancone d'acciaio, in una cucina professionale"/><figcaption>Nel piano semplificato il registro si riempie quando qualcosa va storto: cosa è successo, cosa hai fatto, chi l'ha fatto e la firma.</figcaption></figure>
 
-Ma «solo non conformità» non vuol dire «niente carta». Alcuni fogli restano: due perché lo chiede la legge, gli altri perché provano che le procedure di base esistono.
+Ma «solo non conformità» non vuol dire «niente carta». Alcuni documenti li chiede la legge; gli altri sono consigliati, perché provano che le procedure di base esistono (nelle imprese molto piccole la Comunicazione 2022/C 355/01 ammette perfino di non scrivere la procedura di pulizia, e il Piemonte anche quella sugli infestanti: decidilo con la tua ASL).
 
-- La documentazione scritta degli allergeni piatto per piatto: è legge (art. 19, c. 8, D.Lgs. 231/2017) e l'informazione solo a voce non basta.
-- Se servi pesce crudo, l'attestazione del fornitore sulla bonifica preventiva, obbligatoria anche al ristorante (i dettagli sono nella tabella delle temperature).
-- Il registro della formazione, l'elenco dei fornitori e il piano di pulizia.
-- Il registro degli avvistamenti di infestanti, con la pianta delle esche.
+- **Per legge**: le procedure e le registrazioni del tuo piano di autocontrollo, adeguate alle dimensioni dell'impresa (art. 5 del Reg. CE 852/2004), e l'informazione scritta sugli allergeni piatto per piatto, nel menù o, se rimandi al personale, in una documentazione scritta che cliente e controllo possono consultare (art. 19, c. 8, D.Lgs. 231/2017). Solo a voce non basta.
+- **Per legge, se servi pesce crudo**: l'attestazione del fornitore sulla bonifica anti-Anisakis, obbligatoria anche al ristorante (i dettagli sono nella tabella delle temperature).
+- **Consigliati**: il registro della formazione, l'elenco dei fornitori, il piano di pulizia e il registro degli avvistamenti di infestanti, con la pianta delle esche.
 
 Se la tua Regione non prevede di registrare le sole non conformità, valgono il tuo piano e le indicazioni della ASL.
 
@@ -131,7 +130,7 @@ Le sanzioni HACCP stanno nell'art. 6 del D.Lgs. 193/2007: da 1.000 a 6.000 euro 
 | Non dai l'informazione sugli allergeni | D.Lgs. 231/2017, art. 23 | da 3.000 a 24.000 € |
 | La dai con modalità diverse da quelle previste | D.Lgs. 231/2017, art. 23 | da 1.000 a 8.000 € |
 
-Per gli allergeni, se è la prima volta e l'irregolarità si può sanare, arriva prima una diffida di 30 giorni, e per le microimprese le sanzioni del D.Lgs. 231/2017 sono «ridotte fino a un terzo» (art. 27, c. 3). Meglio non arrivarci. Gli errori più comuni nei manuali dei piccoli locali:
+Per gli allergeni, se è la prima volta e l'irregolarità si può sanare, l'organo di controllo può diffidarti a metterti in regola entro 30 giorni (DL 91/2014, art. 1, c. 3, richiamato dall'art. 27, c. 2, del D.Lgs. 231/2017), ma la diffida non si applica se i prodotti non conformi sono già stati immessi in commercio, anche solo in parte: al ristorante, quindi, non darla per scontata. Per le microimprese la sanzione è ridotta sino a un terzo (art. 27, c. 3). Meglio non arrivarci. Gli errori più comuni nei manuali dei piccoli locali:
 
 - **Il manuale di un altro**: del gestore precedente o di un'altra Regione, con il tuo nome in copertina. Se non descrive i tuoi piatti e le tue attrezzature, non è il tuo piano.
 - **La semplificazione data per scontata**: 14 addetti, o un pubblico vulnerabile, e la versione semplificata usata lo stesso, senza chiedere alla ASL.

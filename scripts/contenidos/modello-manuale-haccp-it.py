@@ -3,8 +3,10 @@
 
 Un solo origen de textos (CONTENUTO) y dos renderizadores, para que el Word y el PDF digan lo mismo:
   - astro-site/public/descargas/manuale-haccp-semplificato-ristorante-aichef.docx — Word editable: estilos reales
-    (Titolo, Heading 1/2, «Nota di guida», «Cella»), índice como campo TOC (se genera con «Aggiorna campo»), tablas
-    editables con cabecera repetida, A4 con la sección 4 en apaisado, pie con PAGE/NUMPAGES, idioma it-IT.
+    (Titolo, Heading 1/2, «Nota di guida», «Cella»), índice como campo TOC PRE-RELLENADO con las 7 entradas
+    (enlaces a marcadores de cada H1, visible en cualquier visor) + `w:updateFields` en settings.xml para que Word
+    añada los números de página al abrir, tablas editables con cabecera repetida, A4 con la sección 4 en apaisado,
+    pie con PAGE/NUMPAGES, idioma it-IT, core.xml con fecha real y sin la miniatura en blanco de la plantilla.
   - astro-site/public/descargas/manuale-haccp-semplificato-ristorante-aichef.pdf — para imprimir: Arial incrustada
     (signo menos real en «−18 °C» y casillas ☐ con Arial Unicode; en Linux, Liberation Sans + DejaVu Sans), índice con
     páginas, marcadores, pie «Pagina N di M», texto ≥ 9 pt, palabras nunca partidas (se comprueba celda a celda).
@@ -40,7 +42,9 @@ BADGE = 'Modello gratuito · non è un modello ufficiale'
 PIEDE = f'Modello gratuito di AI Chef Pro · non è un modello ufficiale · Guida: {GUIDA}'
 NOTA_COPERTINA = ('Le note in corsivo grigio ti guidano nella compilazione: nella versione Word puoi cancellarle. '
                   'Verifica sempre le indicazioni della tua Regione e della tua ASL.')
-TOC_SEGNAPOSTO = 'Per generare l’indice fai clic con il tasto destro qui e scegli «Aggiorna campo».'
+TOC_NOTA = ('In Word, se l’indice non mostra i numeri di pagina, fai clic con il tasto destro sull’indice e scegli '
+            '«Aggiorna campo».')
+DATA_DOCUMENTO = (2026, 11, 25)  # docProps/core.xml: creazione e ultima modifica
 CAMPI_COPERTINA = [('Ragione sociale', 1), ('Insegna del locale', 1), ('Indirizzo del locale', 1),
                    ('Responsabile del piano', 1), ('Data di stesura', 1), ('Revisione n. e data', 1)]
 SEGNAPOSTO = 'da definire nel tuo piano'
@@ -132,7 +136,7 @@ SEZ_0 = [
       'compilarla.'),
     P('In Italia non c’è una legge nazionale sul manuale HACCP semplificato e non esiste un modello ufficiale. La '
       'possibilità di semplificare nasce dalla flessibilità prevista dal Reg. (CE) 852/2004 e dalla Comunicazione '
-      'della Commissione 2022/C 355/01; chi può usarla, e a quali condizioni, lo stabilisce la tua Regione. Due '
+      'della Commissione 2022/C 355/01; chi può usarla, e a quali condizioni, lo stabiliscono la tua Regione o la tua ASL. Due '
       'esempi:'),
     L('<b>Piemonte</b> (D.D. 359/2024): imprese fino a 5 addetti, oppure fino a 10 se la ASL le ritiene idonee;',
       '<b>Emilia-Romagna</b> (DGR 1869/2008): imprese fino a 10 addetti.'),
@@ -177,9 +181,10 @@ SEZ_2 = [
            ('Prepari piatti dichiarati «senza allergeni»?', ['sì', 'no']),
            ('Produci conserve?', ['sì', 'no']),
            ('Servi pesce crudo o poco cotto?', ['sì', 'no'])),
-    P('<b>Attenzione:</b> secondo la Comunicazione 2022/C 355/01 la flessibilità non vale se servi gruppi '
-      'vulnerabili, se prepari piatti dichiarati «senza allergeni» o se produci conserve: in questi casi chiedi alla '
-      'tua ASL come impostare il piano. Se servi pesce crudo o poco cotto, vedi la scheda 3.2.'),
+    P('<b>Attenzione:</b> secondo la Comunicazione 2022/C 355/01, se prepari alimenti per gruppi vulnerabili, piatti '
+      'dichiarati «senza allergeni» o conserve, l’analisi dei pericoli va fatta per intero anche in un locale '
+      'piccolo: chiedi alla tua ASL che cosa puoi semplificare. Se servi pesce crudo o poco cotto, vedi la scheda '
+      '3.2.'),
 ]
 
 LIMITI_37 = TAB(['Cosa controllo', 'Limite (fissato da te)', 'Come lo misuro', 'Ogni quanto'],
@@ -205,9 +210,9 @@ SEZ_3 = [
     SCHEDA('3.2 Materie prime e fornitori (ricevimento)',
            'Indica come scegli i fornitori e cosa controlli quando arriva la merce: integrità delle confezioni, '
            'etichetta, data di scadenza e temperatura dei prodotti refrigerati e surgelati (i limiti sono quelli '
-           'della scheda 3.7). Se servi pesce crudo o poco cotto, il pesce deve aver subito la bonifica '
-           'anti-Anisakis (Reg. (CE) 853/2004, allegato III, sezione VIII): se la fa il fornitore, conserva la sua '
-           'attestazione; se la fai tu, descrivila nella scheda 3.7.'),
+           'della scheda 3.7). Se servi pesce o cefalopodi crudi o poco cotti (anche marinati), devono aver subito la '
+           'bonifica anti-Anisakis, salvo le esenzioni previste (Reg. (CE) 853/2004, allegato III, sezione VIII): se '
+           'la fa il fornitore, conserva la sua attestazione; se la fai tu, descrivila nella scheda 3.7.'),
     SCHEDA('3.3 Rifiuti',
            'Indica dove raccogli i rifiuti (contenitori chiudibili, lontani dagli alimenti), ogni quanto li svuoti e '
            'chi li ritira, compresi gli oli di frittura esausti.'),
@@ -244,13 +249,16 @@ SEZ_3 = [
            'corte e niente anelli o bracciali durante le preparazioni. Chi ha disturbi come diarrea, vomito o febbre, '
            'o ferite infette, lo comunica al responsabile e non manipola alimenti.'),
     SCHEDA('3.10 Formazione',
-           'Chi manipola alimenti deve essere formato. Non esiste un attestato HACCP nazionale: durata dei corsi, '
+           'Chi manipola alimenti deve essere formato, e chi prepara e aggiorna le procedure deve avere una '
+           'formazione adeguata sui principi HACCP (Reg. (CE) 852/2004, allegato II, capitolo XII). Non esiste un '
+           'attestato HACCP nazionale: durata dei corsi, '
            'aggiornamenti e chi li organizza dipendono dalla tua Regione (in Lombardia e in Emilia-Romagna, per '
            'esempio, la formazione è responsabilità dell’operatore). Annota i corsi nel registro della sezione 5.'),
     SCHEDA('3.11 Rintracciabilità e ritiro/richiamo',
            'Conserva fatture e documenti di trasporto (DDT) per sapere da chi hai comprato ogni prodotto. Se un '
            'fornitore o l’autorità ritira o richiama un prodotto, toglilo subito dall’uso, separalo con un cartello '
-           '«non utilizzare» e segui le istruzioni ricevute.'),
+           '«non utilizzare» e segui le istruzioni ricevute. Se sei tu a sospettare che un alimento che hai servito '
+           'o venduto non sia sicuro, ritiralo e informa subito la ASL (art. 19 Reg. (CE) 178/2002).'),
     SCHEDA('3.12 Materiali a contatto con gli alimenti (MOCA)',
            'Usa solo materiali e oggetti adatti al contatto con gli alimenti (lo indicano l’etichetta, il simbolo del '
            'bicchiere e della forchetta o il fornitore), conserva le dichiarazioni di conformità che ti consegnano i '
@@ -299,12 +307,13 @@ SEZ_4 = [
       'servono e aggiungine altre.'),
     P('La colonna «Limite» è vuota di proposito: il limite lo fissi tu e lo motivi nel piano. Se una fase è un punto '
       'critico di controllo (CCP), scrivi «CCP» accanto al nome della fase. La Comunicazione 2022/C 355/01 riconosce '
-      'che in un piccolo ristorante friggere o grigliare «potrebbe non essere un CCP»: quel pericolo si può tenere '
-      'sotto controllo con le buone prassi igieniche della sezione 3.'),
+      'che in un ristorante friggere o grigliare «potrebbe non essere un CCP», perché la temperatura dell’olio o del '
+      'grasso si vede facilmente: quel pericolo si può tenere sotto controllo con le buone prassi igieniche della '
+      'sezione 3.'),
     ANALISI,
 ]
 
-PULIZIA_AREE = ['Piani di lavoro', 'Taglieri e utensili', 'Affettatrice', 'Frigoriferi e congelatori',
+PULIZIA_AREE = ['Piani di lavoro', 'Taglieri e utensili', 'Affettatrice (se c’è)', 'Frigoriferi e congelatori',
                 'Forno e piano cottura', 'Friggitrice', 'Cappa e filtri', 'Lavelli', 'Lavastoviglie', 'Pavimenti',
                 'Pareti e porte', 'Spogliatoio e servizi igienici del personale', 'Contenitori dei rifiuti']
 NOTA_REGISTRAZIONI = ('Dove la tua Regione lo ammette (per esempio in Piemonte), puoi registrare solo le non '
@@ -371,7 +380,11 @@ NOTE_CHIAVE = ['Piemonte', 'D.D. 359/2024', 'Emilia-Romagna', 'DGR 1869/2008', '
                'aichef.pro/it/blog/manuale-haccp-semplificato', 'aichef.pro/it/blog/lista-allergeni-alimentari',
                'non serve la firma di un tecnico', 'anche in formato digitale', 'bonifica anti-Anisakis',
                'Cosa faccio', 'Ogni quanto', 'Cosa registro', 'Azione correttiva', 'Limite (fissato da te)',
-               'almeno una volta l’anno']
+               'almeno una volta l’anno',
+               # arreglos de la auditoría jurídica del PR #284
+               'va fatta per intero', 'la tua Regione o la tua ASL', 'cefalopodi', 'salvo le esenzioni previste',
+               '178/2002', 'informa subito la ASL', 'capitolo XII', 'formazione adeguata sui principi HACCP',
+               'Affettatrice (se c’è)', 'si vede facilmente']
 
 
 # ================================================================ Tipografia
@@ -402,7 +415,7 @@ def genera_docx():
     from docx.enum.section import WD_ORIENT, WD_SECTION
     from docx.enum.style import WD_STYLE_TYPE
     from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_ROW_HEIGHT_RULE, WD_TABLE_ALIGNMENT
-    from docx.enum.text import WD_TAB_ALIGNMENT
+    from docx.enum.text import WD_TAB_ALIGNMENT, WD_TAB_LEADER
     from docx.opc.constants import RELATIONSHIP_TYPE as RT
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
@@ -516,6 +529,10 @@ def genera_docx():
     imposta_font(lb.element.get_or_add_rPr())
     lb.font.size = Pt(10)
     lb.paragraph_format.space_after = Pt(3)
+    toc1 = nuovo_stile('toc 1', dim=10.5, dopo=3)  # nome e id dello stile integrato di Word per l'indice
+    toc1.element.attrib.pop(qn('w:customStyle'), None)
+    toc1.element.styleId = 'TOC1'
+    toc1.paragraph_format.tab_stops.add_tab_stop(Mm(170), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
     # --- Pagina A4
     sez = doc.sections[0]
@@ -774,6 +791,54 @@ def genera_docx():
         altezza(t.rows[1], alt)
         spaziatore()
 
+    # --- Indice: campo TOC con il risultato già scritto (7 voci che portano al titolo), così non è vuoto in nessun
+    #     visore; Word lo rigenera con i numeri di pagina all'apertura (w:updateFields in settings.xml).
+    def segnalibro(par, i):
+        nome = '_Toc_sez%d' % i
+        bs = OxmlElement('w:bookmarkStart')
+        bs.set(qn('w:id'), str(100 + i))
+        bs.set(qn('w:name'), nome)
+        be = OxmlElement('w:bookmarkEnd')
+        be.set(qn('w:id'), str(100 + i))
+        pPr = par._p.pPr
+        if pPr is not None:
+            pPr.addnext(bs)
+        else:
+            par._p.insert(0, bs)
+        par._p.append(be)
+
+    def fld_run(tipo):
+        r = OxmlElement('w:r')
+        f = OxmlElement('w:fldChar')
+        f.set(qn('w:fldCharType'), tipo)
+        r.append(f)
+        return r
+
+    def indice_precompilato():
+        for i, titolo in enumerate(TITOLI):
+            par = doc.add_paragraph(style=stili['toc 1'])
+            if i == 0:
+                par._p.append(fld_run('begin'))
+                r = OxmlElement('w:r')
+                istr = OxmlElement('w:instrText')
+                istr.set(qn('xml:space'), 'preserve')
+                istr.text = ' TOC \\o "1-1" \\h \\z \\u '
+                r.append(istr)
+                par._p.append(r)
+                par._p.append(fld_run('separate'))
+            h = OxmlElement('w:hyperlink')
+            h.set(qn('w:anchor'), '_Toc_sez%d' % i)
+            h.set(qn('w:history'), '1')
+            r = OxmlElement('w:r')
+            t = OxmlElement('w:t')
+            t.text = it(titolo)
+            t.set(qn('xml:space'), 'preserve')
+            r.append(t)
+            h.append(r)
+            par._p.append(h)
+            if i == len(TITOLI) - 1:
+                par._p.append(fld_run('end'))
+
     # --- Copertina
     p = doc.add_paragraph(style=stili['Etichetta di gruppo'])
     p.paragraph_format.space_before = Pt(40)
@@ -788,8 +853,9 @@ def genera_docx():
     tabella_campi(CAMPI_COPERTINA, frazioni=(0.32, 0.68))
     p = doc.add_paragraph('Indice', style=stili['Etichetta di gruppo'])
     p.paragraph_format.space_before = Pt(14)
-    p = doc.add_paragraph()
-    campo(p, 'TOC \\o "1-1" \\h \\z \\u', TOC_SEGNAPOSTO)
+    indice_precompilato()
+    p = doc.add_paragraph(style=stili['Nota di guida'])
+    scrivi(p, TOC_NOTA)
     p = doc.add_paragraph(style=stili['Nota di guida'])
     p.paragraph_format.space_before = Pt(18)
     scrivi(p, NOTA_COPERTINA)
@@ -800,6 +866,7 @@ def genera_docx():
         if tipo == 'h1':
             p = doc.add_paragraph(it(b[1]), style=stili['Heading 1'])
             p.paragraph_format.page_break_before = b[2]
+            segnalibro(p, TITOLI.index(b[1]))
         elif tipo == 'h2':
             doc.add_paragraph(it(b[1]), style=stili['Heading 2'])
         elif tipo == 'g':
@@ -861,6 +928,22 @@ def genera_docx():
     cp.title, cp.author, cp.subject = TITOLO, 'AI Chef Pro', BADGE
     cp.language, cp.keywords = 'it-IT', 'manuale HACCP semplificato, piano di autocontrollo, ristorante'
     cp.comments = 'Modello gratuito. Guida: ' + GUIDA
+    from datetime import datetime
+    cp.created = cp.modified = datetime(*DATA_DOCUMENTO, 9, 0, 0)
+    cp.last_modified_by, cp.revision = 'AI Chef Pro', 1
+
+    # Word aggiorna i campi (indice con i numeri di pagina) all'apertura
+    impost = doc.settings.element
+    uf = OxmlElement('w:updateFields')
+    uf.set(qn('w:val'), 'true')
+    impost.insert_element_before(uf, 'w:hdrShapeDefaults', 'w:footnotePr', 'w:endnotePr', 'w:compat', 'w:docVars',
+                                 'w:rsids')
+    # via la miniatura bianca della plantilla di python-docx
+    pkg = doc.part.package
+    for rId, rel in list(pkg.rels.items()):
+        if rel.reltype.endswith('/metadata/thumbnail'):
+            del pkg.rels[rId]
+            pkg.rels.related_parts.pop(rId, None)
     DOCX.parent.mkdir(parents=True, exist_ok=True)
     doc.save(str(DOCX))
 
@@ -1198,7 +1281,9 @@ def controlli_testo(testo, dove):
     assert not (parole & SPAGNOLO), (dove, parole & SPAGNOLO)
     assert not (parole & INGLESE), (dove, parole & INGLESE)
     assert not re.search('[ñ¿¡áíóúÁÍÓÚ]', n), (dove, re.findall('.{20}[ñ¿¡áíóúÁÍÓÚ].{20}', n))
-    for vietato in ('193/2007', 'sanzion', '1.000', '6.000', '60 °C', '65 °C', 'è obbligatorio registrare'):
+    for vietato in ('193/2007', 'sanzion', '1.000', '6.000', '60 °C', '65 °C', 'è obbligatorio registrare',
+                    'arriva prima una diffida', 'flessibilità non vale', 'flessibilità non si applica',
+                    'piccolo ristorante', 'lo stabilisce la tua Regione'):
         assert vietato not in n, (dove, vietato)
     return n
 
@@ -1209,7 +1294,25 @@ def gate_docx():
     from docx.shared import Mm
     with zipfile.ZipFile(DOCX) as z:
         assert z.testzip() is None
+        nomi = z.namelist()
+        impost = z.read('word/settings.xml').decode('utf-8')
+        core = z.read('docProps/core.xml').decode('utf-8')
+    assert not any('thumbnail' in x for x in nomi), nomi
+    assert '<w:updateFields w:val="true"/>' in impost
+    data = '%04d-%02d-%02dT' % DATA_DOCUMENTO
+    for tag in ('dcterms:created', 'dcterms:modified'):
+        assert re.search('<%s [^>]*>%s' % (tag, data), core), (tag, core)
+    assert '<dc:creator>AI Chef Pro</dc:creator>' in core and '<cp:lastModifiedBy>AI Chef Pro<' in core, core
     d = Document(str(DOCX))
+    # indice: 7 voci dentro il campo TOC, ognuna collegata al segnalibro del suo titolo
+    voci = [p for p in d.paragraphs if p.style.name == 'toc 1']
+    assert [normalizza(''.join(x.text or '' for x in p._p.iter(qn('w:t')))) for p in voci] == \
+        [normalizza(x) for x in TITOLI], [p._p.xml[:200] for p in voci]
+    segnalibri = {b.get(qn('w:name')) for b in d.element.body.iter(qn('w:bookmarkStart'))}
+    ancore = [h.get(qn('w:anchor')) for p in voci for h in p._p.iter(qn('w:hyperlink'))]
+    assert len(ancore) == len(TITOLI) and set(ancore) <= segnalibri, (ancore, segnalibri)
+    tipi = [f.get(qn('w:fldCharType')) for p in voci for f in p._p.iter(qn('w:fldChar'))]
+    assert tipi == ['begin', 'separate', 'end'], tipi
     h1 = [normalizza(p.text) for p in d.paragraphs if p.style.name == 'Heading 1']
     assert h1 == [normalizza(x) for x in TITOLI], h1
     h2 = [normalizza(p.text).split(' ')[0] for p in d.paragraphs if p.style.name == 'Heading 2']
