@@ -503,11 +503,11 @@ wpId: 2096
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">ROI Estimado</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes (10.000 créditos)</td><td>Ayudantes, cocineros, chefs individuales, restaurantes pequeños (hasta 30 pax)</td><td>300-500% mensual</td></tr><tr><td>Premium Pro</td><td>25 €/mes (85.000 créditos)</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td><td>400-700% mensual</td></tr><tr><td>Premium Plus</td><td>50 €/mes (175.000 créditos)</td><td>Restaurantes grandes, desarrollo y liderazgo</td><td>700-1000% mensual</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año (créditos ilimitados)</td><td>Cadenas, catering, consultorías gastronómicas</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes (10.000 créditos)</td><td>Ayudantes, cocineros, chefs individuales, restaurantes pequeños (hasta 30 pax)</td></tr><tr><td>Premium Pro</td><td>25 €/mes (85.000 créditos)</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td></tr><tr><td>Premium Plus</td><td>50 €/mes (175.000 créditos)</td><td>Restaurantes grandes, desarrollo y liderazgo</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año (créditos ilimitados)</td><td>Cadenas, catering, consultorías gastronómicas</td></tr></tbody></table></div></figure>
 
 
 
-<p class="wp-block-paragraph">Para más detalles, visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios de AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">El retorno de cada plan depende de tu volumen: calcúlalo con tus cifras como (ahorro − coste) / coste. Para más detalles, visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios de AI Chef Pro</a>.</p>
 
 
 
@@ -1007,7 +1007,7 @@ wpId: 2096
 
 
 
-<p class="wp-block-paragraph">Los costes varían enormemente según el alcance. AI Chef Pro ofrece planes desde 10€/mes (AI Chef Miembro) hasta 95€/mes para uso ilimitado. El ROI típico supera el 300-500% mensual incluso en establecimientos pequeños, principalmente por ahorro en mermas y optimización de tiempos. Visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios</a> para más detalles.</p>
+<p class="wp-block-paragraph">Los costes varían enormemente según el alcance. AI Chef Pro ofrece planes desde 10 €/mes (AI Chef Miembro) hasta 95 €/mes para uso ilimitado (Premium Max). El retorno depende de tu volumen; en los establecimientos pequeños llega, sobre todo, por el ahorro en mermas y la optimización de tiempos. Visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios</a> para más detalles.</p>
 
 
 

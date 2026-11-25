@@ -577,11 +577,11 @@ wpId: 2034
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes (10.000 créditos)</td><td>Emprendedores, estudiantes, chefs individuales, restaurantes pequeños (hasta 30 pax)</td><td>300-500% mensual</td></tr><tr><td>Premium Pro</td><td>25 €/mes (85.000 créditos)</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td><td>400-700% mensual</td></tr><tr><td>Premium Plus</td><td>50 €/mes (175.000 créditos)</td><td>Restaurantes grandes, grupos con varios locales</td><td>700-1000% mensual</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año (créditos ilimitados)</td><td>Cadenas, empresas de catering, consultorías gastronómicas</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes (10.000 créditos)</td><td>Emprendedores, estudiantes, chefs individuales, restaurantes pequeños (hasta 30 pax)</td></tr><tr><td>Premium Pro</td><td>25 €/mes (85.000 créditos)</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td></tr><tr><td>Premium Plus</td><td>50 €/mes (175.000 créditos)</td><td>Restaurantes grandes, grupos con varios locales</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año (créditos ilimitados)</td><td>Cadenas, empresas de catering, consultorías gastronómicas</td></tr></tbody></table></div></figure>
 
 
 
-<p class="wp-block-paragraph">Para más información sobre planes y precios, visita nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=consejos-de-expertos-para-optimizar-tu-cocina-con-ia" target="_blank">página de precios</a>.</p>
+<p class="wp-block-paragraph">El retorno de cada plan depende de tu volumen: calcúlalo con tus cifras como (ahorro − coste) / coste. Para más información sobre planes y precios, visita nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=consejos-de-expertos-para-optimizar-tu-cocina-con-ia" target="_blank">página de precios</a>.</p>
 
 
 
@@ -657,7 +657,7 @@ wpId: 2034
 
 
 
-<p class="wp-block-paragraph">La mayoría de soluciones funcionan bajo modelo SaaS con costes muy accesibles. Plataformas como AI Chef Pro ofrecen planes desde 10 €/mes hasta 95 €/mes según las necesidades. El ROI típico supera el 300% mensual, lo que significa que la inversión se recupera rápidamente.</p>
+<p class="wp-block-paragraph">La mayoría de soluciones funcionan bajo modelo SaaS con costes muy accesibles. Plataformas como AI Chef Pro ofrecen planes desde 10 €/mes hasta 95 €/mes según las necesidades. El retorno depende de tu volumen: si el tiempo y las mermas que te ahorra valen más que la cuota, la inversión se recupera pronto.</p>
 
 
 

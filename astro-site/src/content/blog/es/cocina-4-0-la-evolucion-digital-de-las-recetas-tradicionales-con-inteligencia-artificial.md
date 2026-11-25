@@ -397,7 +397,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro</th><th>Beneficio Diferencial</th></tr></thead><tbody><tr><td>Precisión de Recetas</td><td>60-70%</td><td>95%</td><td>+35% precisión validada</td></tr><tr><td>Personalización</td><td>Básica</td><td>Hiperespecífica</td><td>Adaptación total a necesidades</td></tr><tr><td>Soporte Técnico</td><td>Limitado/Inexistente</td><td>24/7 Especializado</td><td>Resolución inmediata de problemas</td></tr><tr><td>Integración</td><td>Herramientas aisladas</td><td>Ecosistema completo</td><td>Flujo de trabajo unificado</td></tr><tr><td>Escalabilidad</td><td>Limitada</td><td>Ilimitada</td><td>Crecimiento sin restricciones</td></tr><tr><td>ROI Demostrable</td><td>Difícil de medir</td><td>300-1000% mensual</td><td>Retorno de inversión documentado</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro</th><th>Beneficio Diferencial</th></tr></thead><tbody><tr><td>Precisión de Recetas</td><td>60-70%</td><td>95%</td><td>+35% precisión validada</td></tr><tr><td>Personalización</td><td>Básica</td><td>Hiperespecífica</td><td>Adaptación total a necesidades</td></tr><tr><td>Soporte Técnico</td><td>Limitado/Inexistente</td><td>Por email en Miembro, prioritario en Premium Pro y 24/7 en Premium Plus y Max</td><td>Ayuda especializada según tu plan</td></tr><tr><td>Integración</td><td>Herramientas aisladas</td><td>Ecosistema completo</td><td>Flujo de trabajo unificado</td></tr><tr><td>Escalabilidad</td><td>Limitada</td><td>De 10.000 créditos al mes a ilimitados (Premium Max)</td><td>Subes de plan cuando crece tu volumen</td></tr><tr><td>ROI</td><td>Difícil de medir</td><td>Medible con tus cifras: (ahorro − coste) / coste</td><td>Depende de tu volumen</td></tr></tbody></table></div></figure>
 
 
 
@@ -533,7 +533,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Esperado</th><th>ROI Proyectado</th><th>Período de Amortización</th></tr></thead><tbody><tr><td>Restaurante Pequeño (30 pax)</td><td>€10-25</td><td>€300-500</td><td>1200-2000%</td><td>1 mes</td></tr><tr><td>Restaurante Mediano (60 pax)</td><td>€25-50</td><td>€800-1200</td><td>1600-2400%</td><td>3-4 semanas</td></tr><tr><td>Empresa Catering</td><td>€50-100</td><td>€2000-4000</td><td>2000-4000%</td><td>2-3 semanas</td></tr><tr><td>Cadena Restaurantes</td><td>€100-200</td><td>€5000-15000</td><td>2500-7500%</td><td>1-2 semanas</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Esperado</th><th>ROI Proyectado</th><th>Período de Amortización</th></tr></thead><tbody><tr><td>Restaurante Pequeño (30 pax)</td><td>10-25 €</td><td>€300-500</td><td>1.100-1.900 %</td><td>1 mes</td></tr><tr><td>Restaurante Mediano (60 pax)</td><td>25-50 €</td><td>€800-1200</td><td>1.500-2.300 %</td><td>3-4 semanas</td></tr><tr><td>Empresa Catering</td><td>50-95 €</td><td>€2000-4000</td><td>2.000-4.100 %</td><td>2-3 semanas</td></tr><tr><td>Cadena Restaurantes</td><td>Plan enterprise bajo consulta</td><td>€5000-15000</td><td>Depende del presupuesto</td><td>Depende del presupuesto</td></tr></tbody></table></div></figure>
 
 
 

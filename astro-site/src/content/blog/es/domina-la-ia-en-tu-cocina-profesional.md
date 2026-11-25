@@ -902,7 +902,7 @@ wpId: 1394
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Todos los agentes, 10.000 créditos al mes, sin permanencia</td><td>Estudiantes, emprendedores, chefs individuales, restaurantes pequeños</td><td>300-500% mensual</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Todos los agentes, 85.000 créditos al mes</td><td>Restaurantes medianos, alta rotación</td><td>400-700% mensual</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Todos los agentes, 175.000 créditos al mes</td><td>Restaurantes grandes, múltiples locales</td><td>700-1000% mensual</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Todos los agentes, créditos ilimitados</td><td>Cadenas, empresas de catering, consultorías</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Todos los agentes, 10.000 créditos al mes, sin permanencia</td><td>Estudiantes, emprendedores, chefs individuales, restaurantes pequeños</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Todos los agentes, 85.000 créditos al mes</td><td>Restaurantes medianos, alta rotación</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Todos los agentes, 175.000 créditos al mes</td><td>Restaurantes grandes, múltiples locales</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Todos los agentes, créditos ilimitados</td><td>Cadenas, empresas de catering, consultorías</td></tr></tbody></table></div></figure>
 
 
 
@@ -932,7 +932,7 @@ wpId: 1394
 
 
 
-<p class="wp-block-paragraph">Para obtener información detallada sobre planes y precios, visita nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=domina-la-ia-en-tu-cocina-profesional" target="_blank" rel="noopener" data-lasso-id="3172">página de precios</a> actualizada.</p>
+<p class="wp-block-paragraph">El retorno de cada plan depende de tu volumen: calcúlalo con tus cifras como (ahorro − coste) / coste. Para obtener información detallada sobre planes y precios, visita nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=domina-la-ia-en-tu-cocina-profesional" target="_blank" rel="noopener" data-lasso-id="3172">página de precios</a> actualizada.</p>
 
 
 
