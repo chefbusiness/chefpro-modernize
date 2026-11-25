@@ -340,6 +340,143 @@ export function bannerHref(productUrl, medium, slug) {
   return u.toString();
 }
 
+/**
+ * Glosario ES: los `<aside>` con `utm_medium=banner` se reescriben aquí, en el
+ * build, sin tocar el Markdown ni los posts de otros idiomas.
+ *
+ * Solo entran productos de `products-catalog.ts` cuyo tema es el de la ficha
+ * (técnica, salsas, fondos, recetario, producción, escandallo). El catálogo no
+ * tiene un producto de salsas, fondos o técnica distinto de estos dos: el
+ * Manual del Chef Ejecutivo cubre brigada, producción y fichas técnicas, y la
+ * Guía Food Cost cubre escandallo y carta. El Kit de Escandallos Pro no se
+ * promociona en estos banners. Una ficha de IA no tiene ninguno de esos
+ * productos: se le quitan los banners. Nombre, precio y URL salen del catálogo.
+ */
+const GLOSSARY_ES_PRODUCT_IDS = [
+  'manual-chef-ejecutivo',
+  'guia-food-cost-ingenieria-menu',
+];
+
+/** Fichas cuyo tema no es cocina, salsa, fondo, recetario, producción ni escandallo. */
+const GLOSSARY_ES_NO_PRODUCT = [
+  'inteligencia artificial',
+  'machine learning',
+  'aprendizaje automatico',
+  'large language',
+  'context window',
+  'ventana de contexto',
+  'procesamiento de lenguaje',
+  'lenguaje natural',
+  'interfaz de programacion',
+  'prompt',
+  'token',
+];
+
+let esCatalogById = null;
+
+function catalogTsPath() {
+  const candidates = [
+    fileURLToPath(new URL('../../../src/data/products-catalog.ts', import.meta.url)),
+    path.join(process.cwd(), '..', 'src', 'data', 'products-catalog.ts'),
+    path.join(process.cwd(), 'src', 'data', 'products-catalog.ts'),
+  ];
+  for (const candidate of candidates) {
+    if (existsSync(candidate)) return candidate;
+  }
+  throw new Error('products-catalog.ts no encontrado para los banners del glosario ES');
+}
+
+function loadEsCatalog() {
+  if (esCatalogById) return esCatalogById;
+  const src = readFileSync(catalogTsPath(), 'utf8');
+  const starts = [];
+  const re = /\n {2}'([a-z0-9-]+)': \{/g;
+  let m;
+  while ((m = re.exec(src))) starts.push({ id: m[1], index: m.index });
+  const byId = new Map();
+  for (let i = 0; i < starts.length; i += 1) {
+    const slice = src.slice(starts[i].index, starts[i + 1]?.index ?? src.length);
+    const url = /url: '([^']+)'/.exec(slice)?.[1];
+    const price = /price: '([^']+)'/.exec(slice)?.[1];
+    const name = /name: \{[\s\S]*?\bes: '((?:\\'|[^'])*)'/.exec(slice)?.[1];
+    const description = /description: \{[\s\S]*?\bes: '((?:\\'|[^'])*)'/.exec(slice)?.[1];
+    if (!url || !price || !name || !description) {
+      throw new Error(`Catálogo ES incompleto en «${starts[i].id}»`);
+    }
+    byId.set(starts[i].id, {
+      id: starts[i].id,
+      url,
+      price,
+      name: name.replace(/\\'/g, "'"),
+      description: description.replace(/\\'/g, "'"),
+    });
+  }
+  for (const id of GLOSSARY_ES_PRODUCT_IDS) {
+    if (!byId.has(id)) throw new Error(`El glosario ES pide «${id}» y no está en products-catalog.ts`);
+  }
+  esCatalogById = byId;
+  return byId;
+}
+
+function glossaryEsProducts(entry) {
+  const hay = fold(`${entry.slug} ${entry.title}`).replace(/[^a-z0-9]+/g, ' ');
+  const padded = ` ${hay} `;
+  const skip = GLOSSARY_ES_NO_PRODUCT.some((phrase) => {
+    const p = fold(phrase).replace(/[^a-z0-9]+/g, ' ').trim();
+    return padded.includes(` ${p} `);
+  });
+  if (skip) return [];
+  const catalog = loadEsCatalog();
+  return GLOSSARY_ES_PRODUCT_IDS.map((id) => catalog.get(id));
+}
+
+function renderGlossaryEsBanner(product, slug) {
+  const href = esc(`${product.url}?utm_source=blog&utm_medium=banner&utm_content=${slug}`);
+  return (
+    `<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6">` +
+    `<p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p>` +
+    `<h3 class="mt-2 text-xl font-bold text-foreground">${esc(product.name)}</h3>` +
+    `<p class="mt-2 text-muted-foreground">${esc(product.description)}</p>` +
+    `<a href="${href}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">` +
+    `${esc(`Ver ${product.name} por ${product.price}`)}</a></aside>`
+  );
+}
+
+function isBodyBannerAside(block) {
+  return /utm_medium=banner/.test(String(block).replace(/&amp;/g, '&'));
+}
+
+/**
+ * Sustituye o quita los banners ya escritos en el cuerpo. No inserta banners
+ * nuevos: si la ficha no tiene producto de tema, el aside sale y no entra
+ * otro por rotación.
+ */
+export function rewriteEsGlossaryBanners(tree, entry) {
+  const products = glossaryEsProducts(entry);
+  const state = { i: 0 };
+  const visit = (node) => {
+    if (!node || typeof node !== 'object') return;
+    if (node.type === 'html' && typeof node.value === 'string') {
+      node.value = node.value.replace(/<aside\b[^>]*>[\s\S]*?<\/aside>/gi, (block) => {
+        if (!isBodyBannerAside(block)) return block;
+        const product = products[state.i];
+        state.i += 1;
+        if (!product) return '';
+        return renderGlossaryEsBanner(product, entry.slug);
+      });
+    }
+    if (Array.isArray(node.children)) {
+      for (const child of node.children) visit(child);
+      node.children = node.children.filter((child) => {
+        if (child?.type === 'html' && !String(child.value || '').trim()) return false;
+        return true;
+      });
+    }
+  };
+  visit(tree);
+  return state.i;
+}
+
 export function renderProductBanner(product) {
   const chrome = CHROME[product.catalogue] || CHROME.en;
   const href = esc(product.href || product.url);
@@ -696,7 +833,7 @@ function pickSlots(sections, k) {
  * Inserta los banners del plan en el árbol. No reparsea el artículo, así que
  * no deshace smartypants ni las tablas. Devuelve cuántos ha metido.
  */
-export function applyProductBanners(tree, entry) {
+export function applyProductBanners(tree, entry, render = renderProductBanner) {
   const products = entry?.add || [];
   if (!products.length) return 0;
   const headings = collectHeadings(tree);
@@ -704,7 +841,7 @@ export function applyProductBanners(tree, entry) {
   const content = (faqAt === -1 ? headings : headings.slice(0, faqAt)).filter((h) => h.level === 2 && !h.faq);
   if (!content.length) {
     // Sin h2: al final del cuerpo, que sigue estando antes de la FAQ del layout y del CTA.
-    tree.children.push({ type: 'html', value: products.map(renderProductBanner).join('\n') });
+    tree.children.push({ type: 'html', value: products.map((product) => render(product)).join('\n') });
     return products.length;
   }
   const sections = content.map((h) => {
@@ -715,7 +852,7 @@ export function applyProductBanners(tree, entry) {
   const htmlEdits = [];
   const siblingEdits = [];
   slots.forEach((si, k) => {
-    const html = renderProductBanner(products[k]);
+    const html = render(products[k]);
     const h = sections[si].h;
     const next = headings[sections[si].abs + 1];
     if (h.kind === 'html' && next && next.kind === 'html' && next.node === h.node) {
@@ -769,7 +906,29 @@ export function remarkProductBanners() {
     const key = keyFromVFile(file);
     if (!key) return;
     const entry = plan.byKey.get(key);
-    if (!entry?.add?.length) return;
+    if (!entry) return;
+    // Solo el glosario en español. El resto de idiomas y el blog que no es
+    // glosario siguen con el plan de rotación, banners incluidos.
+    if (entry.lang === 'es' && entry.category === 'glosario') {
+      const found = rewriteEsGlossaryBanners(tree, entry);
+      // Sin aside en el Markdown, el plan metía banners por rotación (otro
+      // tema, utm_medium=glosario). En el glosario ES solo entran los
+      // productos de tema, con el mismo molde y utm_medium=banner.
+      if (found === 0) {
+        const products = glossaryEsProducts(entry).slice(0, entry.target || 3);
+        if (products.length) {
+          applyProductBanners(
+            tree,
+            { add: products },
+            (product) => renderGlossaryEsBanner(product, entry.slug),
+          );
+        }
+      }
+      tree.data = tree.data || {};
+      tree.data.dpBannersApplied = true;
+      return;
+    }
+    if (!entry.add?.length) return;
     applyProductBanners(tree, entry);
     tree.data = tree.data || {};
     tree.data.dpBannersApplied = true;

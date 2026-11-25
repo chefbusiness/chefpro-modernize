@@ -2418,7 +2418,7 @@
       },
       {
         "title": "Alergénios & Regulamentação",
-        "description": "Controlo dos 14 alergénios segundo o Regulamento UE 1169/2011. Evite sanções e proteja os seus clientes.",
+        "description": "Revisão dos 14 alergénios do anexo II a partir do que escreve. O cozinheiro confronta o rótulo, a receita e o contacto cruzado.",
         "keywords": [
           "alergénios restaurante",
           "regulamento alergénios UE",
@@ -2920,7 +2920,7 @@
       },
       {
         "title": "Verificador de Alérgenos",
-        "description": "Identifique os 14 alergénios de declaração obrigatória em qualquer prato instantaneamente.",
+        "description": "Compara os ingredientes do prato com os 14 alergénios do anexo II e devolve um rascunho.",
         "badge": "Legal",
         "color": "red"
       },
@@ -3523,14 +3523,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Detector Alergénios Restaurante Grátis | AI Chef Pro",
-      "description": "Detecte os 14 alergénios de declaração obrigatória em qualquer prato instantaneamente. Introduza os ingredientes e obtenha a ficha de alergénios. Grátis, sem registo.",
+      "description": "Compara os ingredientes que escreve com os 14 alergénios do anexo II e devolve um rascunho. A validação final é do cozinheiro. Grátis, sem registo.",
       "keywords": "detector alergénios restaurante, alergénios obrigatórios restaurante, ficha alergénios prato, regulamento 1169 2011"
     },
     "breadcrumb": "Detector de Alergénios",
     "hero": {
       "badge": "Grátis — Sem registo — Obrigatório por lei",
       "h1": "Detector de Alergénios para Restaurantes",
-      "subtitle": "Identifique os 14 alergénios de declaração obrigatória (Regulamento UE 1169/2011) em qualquer prato instantaneamente. Copie a ficha para a sua ementa.",
+      "subtitle": "Introduza os ingredientes e a ferramenta compara-os com os 14 alergénios do anexo II do Regulamento (UE) 1169/2011. Devolve um rascunho: a validação final é do cozinheiro ou do responsável, com o rótulo do fornecedor, a receita e o contacto cruzado.",
       "cta_tool": "Ir ao detector ↓",
       "cta_premium": "Plano Premium →"
     },
@@ -3544,7 +3544,7 @@
       "result_title": "Alergénios detectados",
       "allergens_found": "Alergénios presentes",
       "no_allergens": "✅ Não foram detectados alergénios de declaração obrigatória",
-      "warning": "⚠️ Verifique sempre manualmente — esta ferramenta é orientativa",
+      "warning": "⚠️ Rascunho orientativo. O cozinheiro confronta o rótulo do fornecedor, a receita e o contacto cruzado.",
       "legal_note": "Declaração obrigatória nos termos do Regulamento UE 1169/2011",
       "copy": "Copiar ficha",
       "copied": "Copiado!",
@@ -3565,7 +3565,7 @@
       "pdf_present": "PRESENTE",
       "pdf_not_detected": "Não detetado",
       "pdf_no_allergens": "Nenhum alergénio de declaração obrigatória detetado",
-      "pdf_warning": "⚠ Ferramenta indicativa. Verificar sempre manualmente antes do uso.",
+      "pdf_warning": "⚠ Rascunho orientativo. Confrontar o rótulo do fornecedor, a receita e o contacto cruzado.",
       "pdf_generated_by": "Gerado com AI Chef Pro — aichef.pro | Suite de IA para Chefs e Restaurantes"
     },
     "allergens": [
@@ -3814,18 +3814,18 @@
         },
         {
           "step": "3",
-          "title": "Copie a ficha",
-          "description": "Obtenha a ficha de alergénios pronta para adicionar à sua ementa, website ou sistema de gestão."
+          "title": "Reveja o rascunho",
+          "description": "Antes de o passar à ementa, o cozinheiro ou o responsável confronta o rascunho com o rótulo do fornecedor, a receita e o contacto cruzado."
         }
       ]
     },
     "benefits": {
       "title": "Porquê usar o detector de alergénios",
       "items": [
-        "Cumpra o Regulamento UE 1169/2011 (obrigatório)",
-        "Proteja os seus clientes com alergias",
-        "Evite coimas de até 600.000 €",
-        "Ficha pronta para incluir na sua ementa digital"
+        "Compara o que escreve com os 14 alergénios do anexo II",
+        "Ajuda a não deixar de fora um alergénio dessa lista ao rever o prato",
+        "O rascunho não substitui a declaração do estabelecimento",
+        "Serve de rascunho para a ementa, depois da revisão na cozinha"
       ]
     },
     "testimonial": {
@@ -3881,7 +3881,7 @@
       },
       {
         "q": "Esta ferramenta é 100% fiável do ponto de vista legal?",
-        "a": "Esta ferramenta é orientativa e de apoio. A responsabilidade legal recai sempre sobre o estabelecimento. Deve verificar manualmente os ingredientes e possíveis contaminações cruzadas. Para uma gestão completa e auditada, use AI Chef Pro Premium."
+        "a": "Esta ferramenta é orientativa. A responsabilidade legal recai sempre sobre o estabelecimento. O cozinheiro ou o responsável confronta o rótulo do fornecedor, a receita e o contacto cruzado antes de usar o rascunho."
       }
     ],
     "cta_section": {

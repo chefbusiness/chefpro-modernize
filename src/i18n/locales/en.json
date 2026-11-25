@@ -2166,7 +2166,7 @@
       },
       {
         "title": "Allergens & Compliance",
-        "description": "Control of the 14 allergens under EU Regulation 1169/2011. Avoid fines and protect your customers.",
+        "description": "A review of the 14 Annex II allergens from what you type. The cook checks the label, the recipe and cross-contact.",
         "keywords": [
           "restaurant allergens",
           "EU allergen regulation",
@@ -2676,7 +2676,7 @@
       },
       {
         "title": "Allergen Checker",
-        "description": "Identify all 14 mandatory declaration allergens in any dish instantly.",
+        "description": "Compares the dish ingredients with the 14 Annex II allergens and returns a draft.",
         "badge": "Legal",
         "color": "red"
       },
@@ -3283,14 +3283,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Free Restaurant Allergen Checker | AI Chef Pro",
-      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Free, no registration.",
+      "description": "It compares the ingredients you type with the 14 Annex II allergens and returns a draft. The cook makes the final check. Free, no sign-up.",
       "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
     },
     "breadcrumb": "Allergen Checker",
     "hero": {
       "badge": "Free — No registration — Legally required",
       "h1": "Allergen Checker for Restaurants",
-      "subtitle": "Identify the 14 mandatory declaration allergens (EU Regulation 1169/2011) in any dish instantly. Copy the declaration for your menu.",
+      "subtitle": "You type the ingredients and it compares them with the 14 allergens in Annex II of Regulation (EU) 1169/2011. It returns a draft: the cook or the person in charge makes the final check against the supplier label, the recipe and cross-contact.",
       "cta_tool": "Go to checker ↓",
       "cta_premium": "Premium Plan →"
     },
@@ -3304,7 +3304,7 @@
       "result_title": "Allergens detected",
       "allergens_found": "Allergens present",
       "no_allergens": "✅ No mandatory declaration allergens detected",
-      "warning": "⚠️ Always verify manually — this tool is advisory",
+      "warning": "⚠️ Advisory draft. The cook checks the supplier label, the recipe and cross-contact.",
       "legal_note": "Mandatory declaration under EU Regulation 1169/2011",
       "copy": "Copy declaration",
       "copied": "Copied!",
@@ -3325,7 +3325,7 @@
       "pdf_present": "PRESENT",
       "pdf_not_detected": "Not detected",
       "pdf_no_allergens": "No mandatory declaration allergens detected",
-      "pdf_warning": "⚠ Indicative tool. Always verify manually before use.",
+      "pdf_warning": "⚠ Advisory draft. Check the supplier label, the recipe and cross-contact.",
       "pdf_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants"
     },
     "allergens": [
@@ -3549,18 +3549,18 @@
         },
         {
           "step": "3",
-          "title": "Copy the declaration",
-          "description": "Get the allergen declaration ready to add to your menu, website or management system."
+          "title": "Review the draft",
+          "description": "Before it goes on the menu, the cook or the person in charge checks the draft against the supplier label, the recipe and cross-contact."
         }
       ]
     },
     "benefits": {
       "title": "Why use the allergen checker",
       "items": [
-        "Comply with EU Regulation 1169/2011 (mandatory)",
-        "Protect customers with allergies",
-        "Avoid fines up to €600,000",
-        "Declaration ready for your digital menu"
+        "Compares what you type with the 14 Annex II allergens",
+        "Helps you not miss an allergen from that list when you review a dish",
+        "The draft does not replace the establishment's declaration",
+        "A draft for the menu, after the kitchen has checked it"
       ]
     },
     "testimonial": {
@@ -3616,7 +3616,7 @@
       },
       {
         "q": "Is this tool 100% legally reliable?",
-        "a": "This tool is advisory and helpful. Legal responsibility always falls on the establishment. You must manually verify ingredients and possible cross-contaminations. For complete audited management, use AI Chef Pro Premium."
+        "a": "This tool is advisory and helpful. Legal responsibility always stays with the establishment. The cook or the person in charge checks the supplier label, the recipe and cross-contact before using the draft."
       }
     ],
     "cta_section": {

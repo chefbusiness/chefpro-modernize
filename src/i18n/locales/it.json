@@ -2431,7 +2431,7 @@
       },
       {
         "title": "Allergeni & Normativa",
-        "description": "Controllo dei 14 allergeni secondo il Regolamento UE 1169/2011. Evita sanzioni e proteggi i tuoi clienti.",
+        "description": "Revisione dei 14 allergeni dell'allegato II a partire da ciò che scrivi. Il cuoco confronta etichetta, ricetta e contatto crociato.",
         "keywords": [
           "allergeni ristorante",
           "normativa allergeni UE",
@@ -2933,7 +2933,7 @@
       },
       {
         "title": "Verificatore Allergeni",
-        "description": "Identifica i 14 allergeni a dichiarazione obbligatoria in qualsiasi piatto all'istante.",
+        "description": "Confronta gli ingredienti del piatto con i 14 allergeni dell'allegato II e restituisce una bozza.",
         "badge": "Legale",
         "color": "red"
       },
@@ -3540,14 +3540,14 @@
   "toolAlergenos": {
     "seo": {
       "title": "Rilevatore Allergeni Ristorante Gratis | AI Chef Pro",
-      "description": "Rileva i 14 allergeni a dichiarazione obbligatoria in qualsiasi piatto all'istante. Inserisci gli ingredienti e ottieni la scheda allergeni. Gratis, senza registrazione.",
+      "description": "Confronta gli ingredienti che scrivi con i 14 allergeni dell'allegato II e restituisce una bozza. La verifica finale è del cuoco. Gratis, senza registrazione.",
       "keywords": "rilevatore allergeni ristorante, allergeni obbligatori ristorante, scheda allergeni piatto, regolamento 1169 2011"
     },
     "breadcrumb": "Rilevatore Allergeni",
     "hero": {
       "badge": "Gratis — Senza registrazione — Obbligatorio per legge",
       "h1": "Rilevatore di Allergeni per Ristoranti",
-      "subtitle": "Identifica i 14 allergeni a dichiarazione obbligatoria (Regolamento UE 1169/2011) in qualsiasi piatto all'istante. Copia la scheda per il tuo menu.",
+      "subtitle": "Scrivi gli ingredienti e li confronta con i 14 allergeni dell'allegato II del regolamento (UE) 1169/2011. Restituisce una bozza: la verifica finale è del cuoco o del responsabile, con l'etichetta del fornitore, la ricetta e il contatto crociato.",
       "cta_tool": "Vai al rilevatore ↓",
       "cta_premium": "Piano Premium →"
     },
@@ -3561,7 +3561,7 @@
       "result_title": "Allergeni rilevati",
       "allergens_found": "Allergeni presenti",
       "no_allergens": "✅ Non sono stati rilevati allergeni a dichiarazione obbligatoria",
-      "warning": "⚠️ Verifica sempre manualmente — questo strumento è orientativo",
+      "warning": "⚠️ Bozza orientativa. Il cuoco confronta l'etichetta del fornitore, la ricetta e il contatto crociato.",
       "legal_note": "Dichiarazione obbligatoria ai sensi del Regolamento UE 1169/2011",
       "copy": "Copia scheda",
       "copied": "Copiato!",
@@ -3582,7 +3582,7 @@
       "pdf_present": "PRESENTE",
       "pdf_not_detected": "Non rilevato",
       "pdf_no_allergens": "Nessun allergene a dichiarazione obbligatoria rilevato",
-      "pdf_warning": "⚠ Strumento indicativo. Verificare sempre manualmente prima dell'uso.",
+      "pdf_warning": "⚠ Bozza orientativa. Confrontare etichetta del fornitore, ricetta e contatto crociato.",
       "pdf_generated_by": "Generato con AI Chef Pro — aichef.pro | Suite IA per Chef e Ristoranti"
     },
     "allergens": [
@@ -3830,18 +3830,18 @@
         },
         {
           "step": "3",
-          "title": "Copia la scheda",
-          "description": "Ottieni la scheda allergeni pronta per aggiungere al tuo menu, sito web o sistema gestionale."
+          "title": "Controlla la bozza",
+          "description": "Prima di portarla in carta, il cuoco o il responsabile confronta la bozza con l'etichetta del fornitore, la ricetta e il contatto crociato."
         }
       ]
     },
     "benefits": {
       "title": "Perché usare il rilevatore di allergeni",
       "items": [
-        "Rispetta il Regolamento UE 1169/2011 (obbligatorio)",
-        "Proteggi i tuoi clienti con allergie",
-        "Evita sanzioni fino a 600.000 €",
-        "Scheda pronta per il tuo menu digitale"
+        "Confronta ciò che scrivi con i 14 allergeni dell'allegato II",
+        "Ti aiuta a non lasciare fuori un allergene di quell'elenco quando rivedi il piatto",
+        "La bozza non sostituisce la dichiarazione del locale",
+        "Una bozza per la carta, dopo il controllo in cucina"
       ]
     },
     "testimonial": {
@@ -3897,7 +3897,7 @@
       },
       {
         "q": "Questo strumento è affidabile al 100% dal punto di vista legale?",
-        "a": "Questo strumento è orientativo e di supporto. La responsabilità legale ricade sempre sull'esercizio. Devi verificare manualmente gli ingredienti e le possibili contaminazioni crociate. Per una gestione completa e certificata, usa AI Chef Pro Premium."
+        "a": "Questo strumento è orientativo. La responsabilità legale resta sempre del locale. Il cuoco o il responsabile confronta l'etichetta del fornitore, la ricetta e il contatto crociato prima di usare la bozza."
       }
     ],
     "cta_section": {
