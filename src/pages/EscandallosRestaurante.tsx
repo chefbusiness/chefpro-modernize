@@ -202,6 +202,19 @@ export default function EscandallosRestaurante() {
                 junta ingredientes, elaboración, alérgenos y ese coste en la misma hoja.
               </p>
             )}
+            {currentLanguage === 'fr' && (
+              <p className="mt-10 max-w-2xl mx-auto text-center text-muted-foreground">
+                Pour un seul plat, le{' '}
+                <a href="/fr/calculateur-food-cost-restaurant" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  calcul du food cost gratuit
+                </a>{' '}
+                donne le pourcentage sans inscription, et la{' '}
+                <a href="/fr/blog/fiche-technique-cuisine" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  fiche technique vierge en Excel
+                </a>{' '}
+                se télécharge gratuitement.
+              </p>
+            )}
           </div>
         </section>
 

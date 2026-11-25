@@ -3043,7 +3043,7 @@
         {
           "step": "1",
           "title": "Adicione os ingredientes",
-          "description": "Introduza cada ingrediente com a sua gramagem por dose e preço de compra por quilo."
+          "description": "Introduza cada ingrediente com a quantidade total da receita (em gramas) e o preço de compra por quilo."
         },
         {
           "step": "2",

@@ -15,7 +15,7 @@ const catalogs = [
 
 export const PROMPTS: Record<PromptLang, PageCopy> = {
   fr: {
-    title: 'Agents IA : bibliothèques de prompts | AI Chef Pro',
+    title: 'Bibliothèques de prompts de cuisine pour agents IA | AI Chef Pro',
     description:
       'Agents IA pour la cuisine : la suite en publie 75+. Cette page explique les prompts et ouvre les catalogues en espagnol et en anglais. Consultez-les.',
     keywords: 'bibliothèque de prompts restauration, prompts cuisine professionnelle, prompts IA restaurant, prompt chef',

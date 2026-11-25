@@ -3034,7 +3034,7 @@
         {
           "step": "1",
           "title": "Ingrediënten toevoegen",
-          "description": "Voer elk ingrediënt in met zijn gewicht per portie en inkoopprijs per kilo."
+          "description": "Voer elk ingrediënt in met de totale hoeveelheid in het recept (in gram) en de inkoopprijs per kilo."
         },
         {
           "step": "2",

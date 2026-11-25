@@ -3052,7 +3052,7 @@
         {
           "step": "1",
           "title": "Zutaten hinzufügen",
-          "description": "Geben Sie jede Zutat mit ihrer Menge pro Portion und dem Einkaufspreis pro Kilo ein."
+          "description": "Geben Sie jede Zutat mit der Gesamtmenge im Rezept (in Gramm) und dem Einkaufspreis pro Kilo ein."
         },
         {
           "step": "2",
