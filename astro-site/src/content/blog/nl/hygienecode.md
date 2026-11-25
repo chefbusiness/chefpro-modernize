@@ -1,8 +1,8 @@
 ---
-title: "Hygiënecode voor de horeca: wat een restaurant verplicht is"
-description: "Hygiënecode voor de horeca: de gids van KHN die de NVWA goedkeurde als voedselveiligheidsplan. Wat een restaurant verplicht is. In Vlaanderen geldt deze code niet."
+title: "Hygiënecode horeca: wat verplicht is, en gratis HACCP-lijsten"
+description: "Wat de Hygiënecode voor de Horeca is, wat de wet echt eist (7 °C, 60 °C, −18 °C), wat verandert met de code van 2026, en gratis HACCP-lijsten."
 pubDate: 2026-11-04
-modDate: 2026-11-06
+modDate: 2026-11-25
 category: voedselveiligheid
 tags: ["hygiënecode", "hygienecode", "hygiëne", "haccp", "nvwa", "horeca"]
 image: /blog-assets/2026/08/hygiene5-plan.jpg
@@ -10,47 +10,49 @@ imageAlt: "Een papier met een rooster en initialen, vastgepind op een witte tege
 lang: nl
 definedTerm:
   name: "Hygiënecode voor de horeca"
-  description: "De gids van Koninklijke Horeca Nederland die de NVWA heeft goedgekeurd als voedselveiligheidsplan voor horecabedrijven. Wie ermee werkt, voldoet aan de plicht om een HACCP-plan te gebruiken. Het boek kopen is op zichzelf geen wettelijke plicht. In Vlaanderen geldt deze code niet."
+  description: "De nationale gids voor goede praktijken van Koninklijke Horeca Nederland (artikel 7 van Verordening (EG) nr. 852/2004), goedgekeurd door de minister van VWS op advies van de NVWA. De code zelf is niet verplicht: verplicht is werken volgens HACCP, en wie met de goedgekeurde code werkt, voldoet aan die plicht. Het boek kopen is geen wettelijke plicht. In Vlaanderen geldt deze code niet."
 faq:
   - q: "Wat is de hygiënecode voor de horeca?"
-    a: "Het is de gids van Koninklijke Horeca Nederland die de NVWA heeft goedgekeurd als voedselveiligheidsplan. De gids beschrijft gevaren bij het werken met voedsel en hoe u die beheerst, op de zeven basisprincipes van HACCP. Dit antwoord is geen juridisch advies."
+    a: "Het is de nationale gids voor goede praktijken van Koninklijke Horeca Nederland, goedgekeurd door de minister van VWS op advies van de NVWA. De gids beschrijft de gevaren bij het werken met voedsel en hoe u die beheerst, op de zeven basisprincipes van HACCP. Nu geldt nog de Hygiënecode voor de Horeca 2016; de nieuwe code is op 9 november 2026 verschenen. Dit antwoord is geen juridisch advies."
   - q: "Is hygienecode hetzelfde als hygiënecode?"
     a: "Ja. Zonder trema zoekt u dezelfde Nederlandse code. De officiële schrijfwijze op de pagina's van de NVWA en van KHN is hygiënecode. Dit artikel gaat over die code, niet over een tweede document."
   - q: "Is de hygiënecode verplicht voor een restaurant?"
-    a: "Verplicht is een voedselveiligheidsplan op basis van HACCP. De NVWA schrijft dat u voldoet aan die plicht als u werkt met een door haar goedgekeurde hygiënecode, zoals die van KHN. U mag ook zelf een plan opstellen. De NVWA beoordeelt dat plan bij een inspectie."
+    a: "De code zelf niet. Verplicht is werken volgens HACCP (artikel 5 van Verordening (EG) nr. 852/2004). Werkt u met een goedgekeurde hygiënecode, zoals die van KHN, dan voldoet u aan die plicht (artikel 5 lid 2 van het Warenwetbesluit Hygiëne van levensmiddelen). U mag ook zelf een plan opstellen. De NVWA beoordeelt dat plan bij een inspectie."
   - q: "Moet ik het Hygiënecodeboek kopen?"
-    a: "KHN zegt op haar veelgestelde vraag dat u niet wettelijk verplicht bent het boek in huis te hebben. Wel bent u verplicht een voedselveiligheidsplan op basis van HACCP te hebben. Werken volgens de goedgekeurde code voldoet aan die voorschriften. Een boek in de kast waar niemand in kijkt, is geen plan."
+    a: "Nee. Volgens de veelgestelde vragen van KHN, bijgewerkt op 13 november 2026, bent u niet wettelijk verplicht het boek te kopen. Verplicht is werken volgens HACCP, en werken volgens de goedgekeurde code voldoet daaraan. De Hygiënecode voor de Horeca 2016 mag u nog gebruiken tot en met 31 maart 2027. Een boek in de kast waar niemand in kijkt, is geen plan."
   - q: "Wanneer geldt de nieuwe hygiënecode?"
-    a: "KHN schrijft op 30 oktober 2026 dat de nieuwe Hygiënecode Horeca op 9 november 2026 verschijnt en vanaf 1 april 2027 verplicht is. Vanaf die datum inspecteert de NVWA volgens KHN op basis van de nieuwe code. Dit artikel kopieert de infographic van KHN niet."
+    a: "De nieuwe hygiënecode voor de horeca is op 9 november 2026 verschenen. De Hygiënecode voor de Horeca 2016 mag u nog gebruiken tot en met 31 maart 2027. Vanaf 1 april 2027 controleert de NVWA met de nieuwe code."
   - q: "Geldt de Nederlandse hygiënecode in Vlaanderen?"
     a: "Nee. In België houdt het FAVV, in het Frans AFSCA, toezicht. Horecazaken werken daar met een autocontrolegids. De gids voor de horecasector is G-023. Dit artikel legt die gids niet uit."
   - q: "Vervangt een AI-agent de hygiënecode?"
     a: "Nee. Een AI-agent kan een concept van een registratie of een werkinstructie naast uw processen leggen. Hij vervangt de goedgekeurde code niet, hij vervangt uw eigen plan niet en hij vervangt de NVWA niet."
+  - q: "Zijn er gratis HACCP-lijsten voor de horeca?"
+    a: "Ja: bij dit artikel hoort een gratis Excel met HACCP-lijsten (en een pdf om af te drukken) voor koelingen en vriezers, kritische punten, ontvangst en de controle van de thermometer, met de wettelijke grenzen (7 °C, 60 °C, −18 °C) en de normen van de hygiënecode 2026. Registreer wat uw hygiënecode of HACCP-plan vraagt; de lijsten zijn een hulpmiddel, geen officieel formulier."
 howto:
   name: "Werken met een voedselveiligheidsplan in de horeca"
-  description: "Vijf stappen uit wat de NVWA en KHN zelf zeggen. Geen temperaturen en geen frequenties uit dit artikel."
+  description: "Vijf stappen uit de wet en uit wat de NVWA en KHN zeggen. De grenzen en frequenties van uw zaak haalt u uit de code of uit uw eigen plan."
   steps:
     - name: "Kies het plan"
-      text: "Een eigen HACCP-plan, of een hygiënecode die de NVWA heeft goedgekeurd. Voor de meeste horeca is dat de code van KHN. Ketens kunnen de code van STOR op de lijst van de NVWA tegenkomen. IJs, bakkerij en viswinkel hebben eigen codes als dat de activiteit is."
+      text: "Een eigen HACCP-plan, of een goedgekeurde hygiënecode. Voor de meeste horeca is dat de code van KHN; de goedkeuring komt van de minister van VWS, op advies van de NVWA. Ketens kunnen de code van STOR op de lijst van de NVWA tegenkomen. IJs, bakkerij en viswinkel hebben eigen codes als dat de activiteit is."
     - name: "Leg het plan waar de brigade het kan lezen"
       text: "KHN vraagt dat u en uw medewerkers de code kunnen raadplegen. Een exemplaar op kantoor dat de keuken niet kent, telt niet als werkwijze."
     - name: "Instrueer het team"
-      text: "Een cursus of een diploma is volgens KHN niet verplicht. Wel moeten medewerkers de inhoud kennen en een instructie hebben gehad over veilig voedsel bereiden. De NVWA gaat na in hoeverre zij die inhoud kennen."
+      text: "Een wettelijk diploma voedselhygiëne bestaat niet. Verordening (EG) nr. 852/2004, bijlage II, hoofdstuk XII, eist wel dat medewerkers passend zijn opgeleid en dat wie het HACCP-plan beheert de nodige opleiding in HACCP heeft. Sociale Hygiëne hoort bij de Alcoholwet, niet bij voedselveiligheid."
     - name: "Houd de registraties bij die bij uw processen horen"
-      text: "De code beschrijft processen, hoe vaak u registreert en geeft voorbeeldformulieren. Welke frequentie bij uw zaak hoort, staat in de code of in uw eigen plan, niet in dit artikel."
+      text: "De wet schrijft geen dagelijkse lijst voor: registraties passen bij de aard en omvang van uw zaak. De code van 2026 vraagt koelingen altijd te meten, koken, terugkoelen en regenereren elke week te meten en vast te leggen, en de thermometer jaarlijks te controleren. Volgens KHN bewaart u registraties minimaal zes maanden."
     - name: "Vergelijk vóór 1 april 2027 de nieuwe code met de huidige werkwijze"
-      text: "KHN noemt ontvangst, koeling, bereiding, allergeneninformatie, schoonmaak en plaagdierbeheersing als processen om na te lopen. De nieuwe code is volgens KHN pas verplicht op 1 april 2027."
+      text: "Leg ontvangst, koeling, bereiding, allergeneninformatie, schoonmaak en plaagdierbeheersing naast de nieuwe code. Met de code van 2016 mag u werken tot en met 31 maart 2027; vanaf 1 april 2027 controleert de NVWA met de nieuwe code."
 ---
 
-<div class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Direct antwoord</p><p class="mt-2 text-foreground">De Hygiënecode voor de Horeca is de gids van Koninklijke Horeca Nederland die de NVWA heeft goedgekeurd als voedselveiligheidsplan. Een restaurant in Nederland werkt met een HACCP-plan. Wie deze goedgekeurde code volgt, voldoet aan die plicht. Het boek kopen is op zichzelf geen wettelijke plicht. In Vlaanderen geldt deze code niet.</p></div>
+<div class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Direct antwoord</p><p class="mt-2 text-foreground">De Hygiënecode voor de Horeca is de gids van Koninklijke Horeca Nederland, goedgekeurd door de minister van VWS op advies van de NVWA. De code zelf is niet verplicht: verplicht is werken volgens HACCP, en wie de goedgekeurde code volgt, voldoet aan die plicht. Het boek kopen is geen wettelijke plicht. De code van 2016 mag u gebruiken tot en met 31 maart 2027; vanaf 1 april 2027 controleert de NVWA met de nieuwe code, die op 9 november 2026 is verschenen. In Vlaanderen geldt deze code niet.</p></div>
 
-Wie in de horeca op «hygiënecode» zoekt, of zonder trema op «hygienecode», zoekt hetzelfde document. Het is geen poster met temperaturen en geen lijst van de 14 allergenen. Het is het voedselveiligheidsplan waarmee een restaurant in Nederland laat zien hoe het voedsel veilig ontvangt, bereidt, bewaart en serveert. Dit artikel zegt wat die code een zaak verplicht, volgens de pagina's van de NVWA en van KHN. Het is geen juridisch advies. De tekst van de code zelf koopt u bij KHN. Dit artikel kopieert die tekst niet.
+Wie in de horeca op «hygiënecode» zoekt, of zonder trema op «hygienecode», zoekt hetzelfde document. Het is geen poster met temperaturen en geen lijst van de 14 allergenen. Het is het voedselveiligheidsplan waarmee een restaurant in Nederland laat zien hoe het voedsel veilig ontvangt, bereidt, bewaart en serveert. Dit artikel zegt wat die code een zaak verplicht, volgens de wetteksten en de pagina's van de NVWA en van KHN. Het is geen juridisch advies. De tekst van de code zelf koopt u bij KHN. Dit artikel kopieert die tekst niet.
 
 ## Wat de hygiënecode is
 
-De NVWA beschrijft een hygiënecode als het voedselveiligheidsplan van een branchevereniging. Voor de horeca wijst zij naar de code van Koninklijke Horeca Nederland. Die code is door de NVWA goedgekeurd als voedselveiligheidsplan. Op de pagina [werken volgens HACCP](https://www.nvwa.nl/onderwerpen/voedselveiligheid/haccp/werken-volgens-haccp-systeem) noemt de NVWA hem een gids op de zeven basisprincipes van HACCP: de gevaren die in uw bedrijf aanwezig kunnen zijn, en hoe u die beheerst.
+De NVWA beschrijft een hygiënecode als het voedselveiligheidsplan van een branchevereniging. Juridisch is het een «nationale gids voor goede praktijken» in de zin van artikel 7 van Verordening (EG) nr. 852/2004. Voor de horeca is dat de code van Koninklijke Horeca Nederland. De goedkeuring komt van de minister van VWS, op advies van de NVWA, en niet van de NVWA zelf (artikel 4 van het Warenwetbesluit Hygiëne van levensmiddelen). De versie die nu geldt, is de Hygiënecode voor de Horeca 2016: goedgekeurd op 12 januari 2016 en van kracht sinds 1 april 2016 (Staatscourant 2016, nr. 2044). Op de pagina [werken volgens HACCP](https://www.nvwa.nl/onderwerpen/voedselveiligheid/haccp/werken-volgens-haccp-systeem) noemt de NVWA hem een gids op de zeven basisprincipes van HACCP: de gevaren die in uw bedrijf aanwezig kunnen zijn, en hoe u die beheerst.
 
-HACCP is de plicht. De code is de uitgewerkte weg die de branche daarvoor aanbiedt. Wat die plicht in de keuken betekent, met gevarenanalyse, CCP en monitoring, staat in [HACCP betekenis voor de horeca](https://aichef.pro/nl/blog/haccp-betekenis). De afkorting staat voor Hazard Analysis and Critical Control Points. De NVWA vertaalt hazard als gevaar: u brengt de gevaren in kaart en beschrijft hoe u ze voorkomt en beheerst. Een voorbeeld dat de NVWA zelf geeft, is voedsel op de juiste temperatuur bewaren. Welke graad dat in uw proces is, staat in de code of in uw plan. Dit artikel vult die graad niet in.
+HACCP is de plicht. De code is de uitgewerkte weg die de branche daarvoor aanbiedt. Wat die plicht in de keuken betekent, met gevarenanalyse, CCP en monitoring, staat in [HACCP betekenis voor de horeca](https://aichef.pro/nl/blog/haccp-betekenis). De afkorting staat voor Hazard Analysis and Critical Control Points. De NVWA vertaalt hazard als gevaar: u brengt de gevaren in kaart en beschrijft hoe u ze voorkomt en beheerst. Een voorbeeld dat de NVWA zelf geeft, is voedsel op de juiste temperatuur bewaren. Drie grenzen staan in de wet zelf: gekoeld ten hoogste 7 °C, warmhouden ten minste 60 °C en diepgevroren ten hoogste −18 °C. De rest, zoals de kerntemperatuur bij koken en het terugkoelen, werkt de code of uw eigen plan uit. De tabel verderop in dit artikel zet wet, code en advies van de NVWA naast elkaar.
 
 Dezelfde NVWA-pagina zet naast de horecacode andere goedgekeurde codes: ambachtelijk ijs, contract- en inflightcatering, en de code van Stichting Overlegplatform Restaurantketens (STOR). Een restaurant dat ter plaatse eten en drinken bereidt, valt bij de horecacode. Een zaak waarvan de activiteit ijsbereiding, bakkerij of visdetailhandel is, kijkt op die lijst of er een eigen code staat. Dit artikel werkt die andere codes niet uit.
 
@@ -60,7 +62,7 @@ Dezelfde NVWA-pagina zet naast de horecacode andere goedgekeurde codes: ambachte
 
 De plicht staat in twee zinnen van de NVWA, op de pagina [voedselveiligheidsplan of hygiënecode](https://www.nvwa.nl/onderwerpen/voedselveiligheid/voedselveilig-werken-in-horeca-ambacht-en-retail/hygienecode). Bereidt, verwerkt of verkoopt u voedsel, dan moet u werken met een HACCP-voedselveiligheidsplan. U kunt dat plan zelf opstellen. Makkelijker, schrijft de NVWA, is werken met het plan van uw branchevereniging.
 
-Werkt u met een goedgekeurde hygiënecode, dan voldoet u aan de wettelijke plicht om een HACCP-voedselveiligheidsplan te gebruiken. Dat is de zin die telt. De code vervangt de plicht niet door een abonnement. Hij is een manier om aan de plicht te voldoen.
+Werkt u met een goedgekeurde hygiënecode, dan voldoet u aan de wettelijke plicht om een HACCP-voedselveiligheidsplan te gebruiken. Dat is de zin die telt, en hij staat ook in de wet: de plicht zelf in artikel 5 van Verordening (EG) nr. 852/2004, de goedgekeurde code als manier om eraan te voldoen in artikel 5 lid 2 van het Warenwetbesluit Hygiëne van levensmiddelen. De code zelf is dus niet verplicht. Hij is een manier om aan de plicht te voldoen.
 
 De voorwaarden voor een plan dat u zelf schrijft, staan volgens de NVWA in [Verordening (EG) nr. 852/2004](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32004R0852). De NVWA beoordeelt dat plan als zij langskomt, en keurt het goed als het aan de wettelijke eisen voldoet. Dit artikel somt die eisen niet opnieuw op. Wie een eigen plan schrijft, leest de verordening en de NVWA-pagina, niet een samenvatting op een blog.
 
@@ -70,53 +72,83 @@ De regels over veilig en hygiënisch werken noemt de NVWA op haar pagina over [h
 
 ## Het boek is niet de wet
 
-KHN beantwoordt de vraag [of u het Hygiënecodeboek wettelijk moet aanschaffen](https://khn.nl/veelgestelde-vragen/ben-ik-wettelijk-verplicht-om-het-hygienecodeboek-voor-de-horeca-aan-te-schaffen). Het antwoord op die pagina: u bent niet wettelijk verplicht het boek in huis te hebben. U bent wel verplicht een voedselveiligheidsplan op te stellen op basis van HACCP. Werkt u volgens de meest recente hygiënecode, dan voldoet u daarmee aan de wettelijke voorschriften van voedselveiligheid.
+KHN beantwoordt de vraag [of u het Hygiënecodeboek wettelijk moet aanschaffen](https://khn.nl/veelgestelde-vragen/ben-ik-wettelijk-verplicht-om-het-hygienecodeboek-voor-de-horeca-aan-te-schaffen). Het antwoord op die pagina, bijgewerkt op 13 november 2026: er is geen wettelijke plicht om het boek te kopen. U bent wel verplicht te werken volgens HACCP. Werkt u volgens de hygiënecode, dan voldoet u daarmee aan de wettelijke voorschriften van voedselveiligheid. Tot en met 31 maart 2027 mag dat nog de Hygiënecode voor de Horeca 2016 zijn.
 
-Een cursus of een diploma is op diezelfde pagina niet verplicht. Medewerkers moeten de inhoud kennen en een instructie hebben gehad over hoe zij voedsel veilig bereiden. KHN schrijft dat de NVWA bij een inspectie nagaat in hoeverre de medewerkers de inhoud kennen. De instructie mag u zelf geven, aan de hand van de werkinstructies uit de code.
+Ook een wettelijk diploma voedselhygiëne bestaat niet. Wat de wet wel vraagt, staat in Verordening (EG) nr. 852/2004, bijlage II, hoofdstuk XII: medewerkers die met voedsel werken, zijn passend opgeleid, en wie het HACCP-plan beheert, heeft de nodige opleiding in HACCP. Hoe u dat invult, met een cursus of met een instructie in de eigen keuken aan de hand van de werkinstructies uit de code, schrijft de wet niet voor. Het diploma Sociale Hygiëne is iets anders: dat hoort bij de Alcoholwet en gaat over alcohol, niet over voedselveiligheid.
 
 Wat wel blijft, ook zonder aankoopplicht voor het papier: de code of het plan moet te raadplegen zijn door de mensen die ermee werken. Een pdf die niemand kan vinden, is hetzelfde gat als een boek op een afgesloten kantoor.
+
+## Welke temperaturen wet zijn, en welke uit de code komen
+
+Een hygiënecode is geen wet, maar een paar temperaturen zijn dat wel. De tabel zet ze naast de normen van de hygiënecode van 2026, zoals die op de registratieformulieren van KHN staan, en naast het advies van de NVWA. Alleen de rijen met «wet» zijn wettelijke grenzen. Een advies van de NVWA is geen wet, en de code is een manier om aan de wet te voldoen.
+
+| Stap | Waarde | Bron |
+| --- | --- | --- |
+| Gekoeld bewaren | Ten hoogste 7 °C. Bij voorverpakt voedsel geldt de temperatuur die de fabrikant opgeeft | Wet: artikel 15 lid 1 van het Warenwetbesluit Bereiding en behandeling van levensmiddelen |
+| Warmhouden | Ten minste 60 °C | Wet: artikel 15 lid 2 van hetzelfde besluit. De code van 2026 houdt dezelfde 60 °C aan |
+| Diepgevroren bewaren | Ten hoogste −18 °C | Wet: Warenwetregeling Diepgevroren levensmiddelen |
+| Koken | Kerntemperatuur ten minste 75 °C | Hygiënecode 2026 |
+| Kip en gehakt | Door en door ten minste 75 °C | Advies NVWA, geen wet |
+| Terugkoelen | Van 75 °C of meer naar 7 °C of minder binnen 5 uur; richtwaarde 20 °C of minder na 2 uur | Hygiënecode 2026 |
+| Afkoelen | Binnen 5 uur onder de 7 °C | Advies NVWA, geen wet |
+| Regenereren | Tot ten minste 60 °C binnen 60 minuten | Hygiënecode 2026 |
+
+Hoe vaak u meet en wat u opschrijft, staat verderop bij de nieuwe code.
+
+<p>Wilt u meteen beginnen met registreren? Download de gratis <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.xlsx">HACCP-lijsten in Excel</a> (of de <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.pdf">pdf om af te drukken</a>): koelingen en vriezers per week, kritische punten (koken, terugkoelen, regenereren, warmhouden), ontvangst en de jaarlijkse controle van de thermometer, met de wettelijke grenzen en de normen van de hygiënecode 2026 erbij en een ingevuld voorbeeld met één afwijking. Het is een hulpmiddel, geen officieel formulier van de NVWA of KHN.</p>
 
 ## Wat de NVWA bij een inspectie vraagt
 
 Op de pagina over [toezicht in horeca, retail en ambacht](https://www.nvwa.nl/onderwerpen/voedselveiligheid/voedselveilig-werken-in-horeca-ambacht-en-retail/inspecties) vraagt de inspecteur naar de hygiënecode of een ander goedgekeurd voedselveiligheidsplan. Dat plan beschrijft wat belangrijk is voor het veilig ontvangen, bereiden, produceren, verpakken, opslaan en vervoeren van levensmiddelen. Naast hygiëne staan er ook regels in over onder meer allergenen en plaagdieren. Werken volgens een hygiënecode of een goedgekeurd plan is verplicht, schrijft die pagina.
 
-Daarna kijkt de inspecteur naar de keuken: of die schoon is, of plafonds, wanden en vloeren goed schoon te maken zijn, of er gaten en kieren zijn waar plaagdieren binnenkomen, of u materiaal hebt om schoon te houden, en of eten op een veilige manier wordt bewaard. Dit artikel maakt van die rondgang geen checklist met minuten of merken. De rondgang is van de inspecteur. Uw blad is het plan.
+Daarna kijkt de inspecteur naar de keuken: of die schoon is, of plafonds, wanden en vloeren goed schoon te maken zijn, of er gaten en kieren zijn waar plaagdieren binnenkomen, of u materiaal hebt om schoon te houden, en of eten op een veilige manier wordt bewaard. Een inspectie wordt niet aangekondigd. De inspecteur meet de temperatuur van koelingen en bain-marie, wil een digitale insteekthermometer zien en kijkt of gekoelde producten een sticker met datum hebben. De rondgang is van de inspecteur. Uw blad is het plan.
 
 | Wat het plan dekt | Waar u het vandaan haalt |
 | --- | --- |
 | Ontvangen, bereiden, produceren, verpakken, opslaan, vervoeren | De omschrijving van de NVWA van een voedselveiligheidsplan |
 | Allergenen en plaagdieren | Dezelfde inspectiepagina noemt die twee naast de hygiëne |
 | Gevaren en beheersing, op zeven HACCP-principes | De pagina van de NVWA over werken volgens HACCP |
-| Processen, registratiefrequentie, voorbeeldformulieren | De kennispagina van KHN over de code. De frequentie kopieert dit artikel niet |
+| Processen, registratiefrequentie, voorbeeldformulieren | De code zelf. Wat de code van 2026 over meten en registreren vraagt, staat hieronder |
 | Een plan dat u zelf schreef | Verordening (EG) nr. 852/2004, beoordeeld door de NVWA bij inspectie |
 
 De [allergenenlijst](https://aichef.pro/nl/blog/allergenenlijst) is een ander blad. De code zegt dat allergeneninformatie bij de werkwijze hoort. Het blad zegt welke van de 14 in het gerecht van vandaag zitten. U hebt allebei. Het ene vervangt het andere niet.
 
-## De nieuwe code van 9 november 2026
+Wat een overtreding kost, staat in het Warenwetbesluit bestuurlijke boeten. Het bedrag hangt af van de grootte van de zaak.
 
-Op 30 oktober 2026 publiceerde KHN het bericht [Nieuwe Hygiënecode Horeca komt eraan](https://khn.nl/nieuws/nieuwe-hygienecode-horeca-komt-eraan-bereid-je-op-tijd-voor). Drie data staan in de tabel op die pagina. Dit artikel herhaalt ze en vult er niets bij.
+| Overtreding | Tot en met 50 werknemers | Meer dan 50 werknemers |
+| --- | --- | --- |
+| Temperatuur (artikel 15 van het Warenwetbesluit Bereiding en behandeling van levensmiddelen) | € 525 | € 1.050 |
+| Allergeneninformatie bij niet-voorverpakt voedsel | € 525 | € 1.050 |
+| Schoonmaak en onderhoud, ongediertebestrijding | € 1.050 | € 2.100 |
 
-| Datum | Wat KHN schrijft |
+In de horeca krijgt u bij dezelfde middelzware overtreding eerst twee waarschuwingen; daarna volgt de boete. Dat het geen papieren risico is, bleek in de zomer van 2026: bij 61 van de 154 horecazaken die de NVWA controleerde, klopte de allergeneninformatie niet. Dat is 40 procent.
+
+## De nieuwe hygiënecode van 9 november 2026
+
+De nieuwe hygiënecode voor de horeca is op 9 november 2026 verschenen. Hij vervangt de Hygiënecode voor de Horeca 2016, maar niet van de ene dag op de andere.
+
+| Datum | Wat er gebeurt |
 | --- | --- |
-| 9 november 2026 | Publicatie van de nieuwe Hygiënecode Horeca, te koop via de webshop van KHN |
-| 24 november 2026 | Webinar van KHN over de nieuwe code, van 10.00 tot 11.00 uur |
-| 1 april 2027 | De nieuwe code wordt verplicht. De NVWA inspecteert vanaf die datum op basis van de nieuwe regels |
+| 1 april 2016 | De Hygiënecode voor de Horeca 2016 treedt in werking, na goedkeuring op 12 januari 2016 |
+| 9 november 2026 | De nieuwe hygiënecode verschijnt |
+| 31 maart 2027 | Laatste dag waarop u met de code van 2016 mag werken |
+| 1 april 2027 | De NVWA controleert met de nieuwe code |
 
-KHN schrijft dat de nieuwe versie aansluit op actuele wetgeving, nieuwe inzichten en de praktijk. Genoemd worden aangepaste richtlijnen voor allergenen, het bewaren en koelen van voedsel, plaagdierbeheersing, schoonmaak, en werkwijzen die de afgelopen jaren in de sector zijn gekomen. De belangrijkste wijzigingen staan volgens KHN in een infographic op die pagina. Dit artikel leest die infographic niet over en zet er geen graden, uren of pH-waarden uit. Die getallen horen in de code, niet in een parafrase.
+Wat verandert er in de praktijk? De wet zelf schrijft geen dagelijkse lijst voor: Verordening (EG) nr. 852/2004 (artikel 5 lid 2, onder g) vraagt registraties die passen bij de aard en omvang van uw zaak. De nieuwe code maakt dat concreet. Koelingen meet u altijd, door elke dag het display af te lezen en elke week te controleren met een gekalibreerde thermometer; opschrijven wordt aanbevolen en is verplicht zodra er een afwijking is. De kritische punten koken, terugkoelen en regenereren meet en registreert u elke week, en de thermometer zelf controleert u jaarlijks, met een afwijking van hoogstens ±1,0 °C. Volgens KHN bewaart u registraties minimaal zes maanden.
 
-De nieuwe code wordt volgens KHN pas verplicht op 1 april 2027. Tot die datum is de aankondiging geen vervanging van de code waarmee u nu werkt, als die door de NVWA is goedgekeurd. KHN raadt aan de processen al eerder na te lopen: ontvangst van goederen, koeling, bereiding, allergeneninformatie, schoonmaak en plaagdierbeheersing. Medewerkers horen te weten wat er in de dagelijkse praktijk verandert. Werkinstructies, formulieren en registraties worden bijgewerkt vóór 1 april 2027.
+Tot en met 31 maart 2027 mag u met de code van 2016 werken. Gebruik die tijd om ontvangst, koeling, bereiding, allergeneninformatie, schoonmaak en plaagdierbeheersing naast de nieuwe code te leggen. Medewerkers horen te weten wat er in de dagelijkse praktijk verandert, en werkinstructies, formulieren en registraties zijn bijgewerkt vóór 1 april 2027.
 
 <figure><img src="/blog-assets/2026/08/hygiene-produits.jpg" alt="Stellingen met bakken en zakken in een droog magazijn, zonder personen. Etiketten in het Frans, geen Nederlands ontvangstformulier." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /><figcaption>Een magazijn. De foto toont voorraad, geen ontvangstregistratie en geen pagina uit de hygiënecode.</figcaption></figure>
 
 ## Allergenen horen op een ander blad
 
-De code noemt allergenen. Zij somt de 14 niet uit, en dit artikel ook niet. De genummerde lijst, en waar elk allergeen in een saus of een paneermeel verstopt zit, staat in [de 14 allergenen](https://aichef.pro/nl/blog/14-allergenen). Het blad dat u aan de gerechten van vandaag koppelt, staat in [de allergenenlijst](https://aichef.pro/nl/blog/allergenenlijst). Wat er op het bord komt terwijl het niet in het recept staat, via plank, frituur of tang, staat in [kruisbesmetting](https://aichef.pro/nl/blog/kruisbesmetting).
+De hygiënecode van 2026 heeft een eigen onderdeel allergenenbeheer. Dit artikel somt de 14 niet op. De genummerde lijst, en waar elk allergeen in een saus of een paneermeel verstopt zit, staat in [de 14 allergenen](https://aichef.pro/nl/blog/14-allergenen). Het blad dat u aan de gerechten van vandaag koppelt, staat in [de allergenenlijst](https://aichef.pro/nl/blog/allergenenlijst). Wat er op het bord komt terwijl het niet in het recept staat, via plank, frituur of tang, staat in [kruisbesmetting](https://aichef.pro/nl/blog/kruisbesmetting).
 
-Die drie stukken zijn geen hoofdstukken van de hygiënecode. De NVWA houdt ze uit elkaar: het plan dekt de werkwijze, het allergenenblad dekt de informatie aan de gast, en de scheiding op de pass dekt wat het recept niet noemt. Een «kan bevatten» onderaan de kaart vervangt geen van de drie. De Nederlandse beleidsregel daarover staat in het artikel over kruisbesmetting. Dit artikel herhaalt die regel niet.
+Juridisch gaat het om twee verschillende regels. Kruisbesmetting met allergenen voorkomen is hygiëne en hoort in uw voedselveiligheidsplan; Verordening (EG) nr. 852/2004 (bijlage II, hoofdstuk IX, punt 9) eist bijvoorbeeld dat materiaal en bakken waarin een allergeen is bewaard of vervoerd, eerst worden schoongemaakt en gecontroleerd op zichtbare resten voordat er voedsel zonder dat allergeen in gaat. De informatie aan de gast staat in de Warenwetregeling allergeneninformatie niet-voorverpakte levensmiddelen. Het plan dekt de werkwijze, het allergenenblad dekt de informatie aan de gast, en de scheiding op de pass dekt wat het recept niet noemt. Een «kan bevatten» onderaan de kaart vervangt geen van de drie. De Nederlandse beleidsregel daarover staat in het artikel over kruisbesmetting. Dit artikel herhaalt die regel niet.
 
 ## Vlaanderen
 
-De Hygiënecode voor de Horeca is een Nederlandse code, goedgekeurd door de NVWA. In Vlaanderen geldt zij niet. Toezicht in België ligt bij het FAVV, in het Frans AFSCA. Horecazaken werken daar met een autocontrolegids. Voor de horecasector publiceert het FAVV de gids G-023, op de pagina [horeca](https://favv-afsca.be/nl/horeca-g-023). Dit artikel legt G-023 niet uit, en het legt de versoepelingen, de audit en het koninklijk besluit niet uit. Een zaak in Antwerpen leest het FAVV. Een zaak in Rotterdam leest de NVWA. Dezelfde Europees verordening over levensmiddelenhygiëne ligt eronder. De gids die u op de pass legt, is niet dezelfde.
+De Hygiënecode voor de Horeca is een Nederlandse code, goedgekeurd door de minister van VWS op advies van de NVWA. In Vlaanderen geldt zij niet. Toezicht in België ligt bij het FAVV, in het Frans AFSCA. Horecazaken werken daar met een autocontrolegids. Voor de horecasector publiceert het FAVV de gids G-023, op de pagina [horeca](https://favv-afsca.be/nl/horeca-g-023). Dit artikel legt G-023 niet uit, en het legt de versoepelingen, de audit en het koninklijk besluit niet uit. Een zaak in Antwerpen leest het FAVV. Een zaak in Rotterdam leest de NVWA. Dezelfde Europese verordening over levensmiddelenhygiëne ligt eronder. De gids die u op de pass legt, is niet dezelfde.
 
 ## Wat u daarna in de zaak doet
 

@@ -2,7 +2,7 @@
 title: "Kruisbesmetting in de horeca: allergenen scheiden op de pass"
 description: "Kruisbesmetting met allergenen op de pass: wat op het bord komt zonder in het recept te staan, en hoe u plank, frituur en tang scheidt. Geen medisch advies."
 pubDate: 2026-11-02
-modDate: 2026-11-06
+modDate: 2026-11-25
 category: voedselveiligheid
 tags: ["kruisbesmetting", "allergenen", "horeca", "pass"]
 image: /blog-assets/2026/08/allergenkz-matrix.jpg
@@ -106,7 +106,7 @@ De bediening leest voor wat er op papier staat. Zij verzint geen uitzondering. W
 
 ## «Kan bevatten» vervangt de scheiding niet
 
-Op 15 april 2025 stelde de staatssecretaris van Volksgezondheid, Welzijn en Sport de [Beleidsregel allergenenetikettering uit voorzorg](https://www.officielebekendmakingen.nl/stcrt-2025-14337.html) vast, Staatscourant 2025, 14337. De regel gaat over de zin die waarschuwt voor een allergeen dat u er niet bewust in stopt.
+Op 15 april 2025 stelde de staatssecretaris van Volksgezondheid, Welzijn en Sport de [Beleidsregel allergenenetikettering uit voorzorg](https://www.officielebekendmakingen.nl/stcrt-2025-14337.html) vast, Staatscourant 2025, 14337. Hij geldt sinds 1 januari 2026. Volgens de NVWA zijn alleen de formuleringen «Kan … bevatten» en «Niet geschikt voor …» toegestaan; het woord «sporen» niet. De regel gaat over de zin die waarschuwt voor een allergeen dat u er niet bewust in stopt.
 
 Kort, en alleen wat die tekst zelf zegt. De etikettering uit voorzorg rust op een risicobeoordeling van de exploitant. De bewoording is «Kan xxx bevatten» of «Niet geschikt voor xxx». Preventie komt eerst: de zin is geen vervanging van maatregelen die de besmetting moeten beperken. Voor ambachtelijke levensmiddelen mag de zin ook als uit de risicobeoordeling blijkt dat kruisbesmetting in de praktijk mogelijk is. De referentiewaarden staan in de bijlage van het besluit. Dit artikel kopieert die getallen niet. Dit is geen juridisch advies. Bij twijfel leest u het besluit, niet deze alinea.
 

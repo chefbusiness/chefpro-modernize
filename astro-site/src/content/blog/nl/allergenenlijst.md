@@ -1,8 +1,8 @@
 ---
 title: "Allergenenlijst maken voor de horeca: de 14 allergenen op één blad"
-description: "Zo maak je een allergenenlijst voor je zaak. De 14 allergenen uit bijlage II van Verordening (EU) nr. 1169/2011, in de officiële volgorde, plus wat de NVWA zegt over mondeling informeren."
+description: "Zo maak je een allergenenlijst voor je zaak: de 14 allergenen van bijlage II in de officiële volgorde en de regels voor schriftelijk en mondeling informeren."
 pubDate: 2026-10-22
-modDate: 2026-11-06
+modDate: 2026-11-25
 category: voedselveiligheid
 tags: ["allergenenlijst", "allergenen", "horeca", "nvwa"]
 image: /blog-assets/2026/08/allergeni-destacada.jpg
@@ -12,9 +12,9 @@ faq:
   - q: "Hoe maak ik een allergenenlijst?"
     a: "Pak de receptuur die je echt serveert, lees de etiketten van de leveranciers en koppel elk gerecht aan de 14 allergenen uit bijlage II. Hang hetzelfde blad in de keuken en geef hetzelfde blad aan de bediening. Werk de lijst bij zodra een recept of een leverancier verandert."
   - q: "Wat zijn de 14 allergenen?"
-    a: "In de volgorde van bijlage II van Verordening (EU) nr. 1169/2011: glutenbevattende granen, schaaldieren, eieren, vis, aardnoten, soja, melk inclusief lactose, noten, selderij, mosterd, sesamzaad, zwaveldioxide en sulfieten boven 10 mg/kg of 10 mg/liter, lupine en weekdieren. De uitzonderingen staan in de wettekst, niet in dit artikel."
+    a: "In de volgorde van bijlage II van Verordening (EU) nr. 1169/2011: glutenbevattende granen, schaaldieren, eieren, vis, aardnoten, soja, melk inclusief lactose, noten, selderij, mosterd, sesamzaad, zwaveldioxide en sulfieten in concentraties van meer dan 10 mg/kg of 10 mg/l (uitgedrukt als totaal SO2), lupine en weekdieren. De uitzonderingen staan in de wettekst, niet in dit artikel."
   - q: "Is mondeling informeren genoeg?"
-    a: "De NVWA schrijft dat je bij onverpakte producten ook mondeling mag informeren, maar dan moet ergens staan dat gasten ernaar kunnen vragen, en ze moeten de informatie vóór de aankoop hebben. De keuken heeft daarvoor een geschreven bron nodig. Dit artikel is geen juridisch advies."
+    a: "Bij niet-voorverpakte levensmiddelen mag het, maar alleen als je aan alle voorwaarden van artikel 3 van de Warenwetregeling allergeneninformatie niet-voorverpakte levensmiddelen voldoet. Je personeel kan de informatie te allen tijde onverwijld en op een juiste manier mondeling geven, vóór de aankoop. De informatie is te allen tijde schriftelijk of elektronisch beschikbaar voor het personeel en voor de NVWA. En een duidelijk zichtbare melding nodigt de gast uit het personeel ernaar te vragen. Zonder geschreven bron in de keuken voldoe je dus niet. Dit artikel is geen juridisch advies."
   - q: "Geldt deze lijst ook in Vlaanderen?"
     a: "De 14 allergenen komen uit dezelfde Europese bijlage. In België houdt het FAVV (AFSCA) toezicht. De Nederlandse hygiënecode geldt daar niet."
 howto:
@@ -33,39 +33,43 @@ howto:
       text: "Een wissel van merk is een nieuwe lijst, ook als de gerechtnaam op de kaart gelijk blijft."
 ---
 
-<p>Een allergenenlijst is het blad met de 14 allergenen uit bijlage II van Verordening (EU) nr. 1169/2011, gekoppeld aan de gerechten die je vandaag serveert. Je maakt hem uit de echte receptuur en de etiketten van je leveranciers, niet uit de kaarttekst. Hang hetzelfde blad in de keuken en geef hetzelfde blad aan de bediening. Dit artikel is die Europese lijst plus een keukenmethode. Het is geen juridisch advies en geen vervanging van je hygiënecode.</p>
+<p>Een allergenenlijst is het blad met de 14 allergenen uit bijlage II van Verordening (EU) nr. 1169/2011, gekoppeld aan de gerechten die je vandaag serveert. Je maakt hem uit de echte <a href="https://aichef.pro/nl/blog/receptuur">receptuur</a> en de etiketten van je leveranciers, niet uit de kaarttekst. Hang hetzelfde blad in de keuken en geef hetzelfde blad aan de bediening. Dit artikel is die Europese lijst plus een keukenmethode. Het is geen juridisch advies en geen vervanging van je hygiënecode.</p>
 
-<p>De NVWA houdt in Nederland toezicht op allergeneninformatie. Op <a href="https://www.nvwa.nl/onderwerpen/allergenen">nvwa.nl/onderwerpen/allergenen</a> staat dat je klanten moet informeren over de 14 allergenen uit Verordening (EU) nr. 1169/2011. De genummerde tekst en de uitzonderingen (onder meer bepaalde glucosestropen) staan in <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32011R1169">de Nederlandse tekst op EUR-Lex</a>. Dit artikel somt die uitzonderingen niet opnieuw op.</p>
+<p>De NVWA houdt in Nederland toezicht op allergeneninformatie. Op <a href="https://www.nvwa.nl/onderwerpen/voedselveiligheid/allergenen">nvwa.nl, de pagina over allergenen</a> staat dat je klanten moet informeren over de 14 allergenen uit Verordening (EU) nr. 1169/2011. De genummerde tekst en de uitzonderingen (onder meer bepaalde glucosestropen) staan in <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32011R1169">de Nederlandse tekst op EUR-Lex</a>. Dit artikel somt die uitzonderingen niet opnieuw op.</p>
 
 <h2>De 14 allergenen in de volgorde van bijlage II</h2>
 
-<p>Dit is de officiële volgorde. Houd die nummers aan op je blad, ook als een poster van een leverancier ze door elkaar zet. In de keuken zegt bijna iedereen pinda; de wettekst zegt aardnoten. Zwaveldioxide en sulfieten horen erbij boven 10 mg/kg of 10 mg/liter, uitgedrukt als SO2. Dat staat in punt 12 van de bijlage, niet als een losse vuistregel van deze site.</p>
+<p>Dit is de officiële volgorde. Officiële nummers of iconen bestaan niet: 1 tot en met 14 is alleen de volgorde van bijlage II. Houd die volgorde aan op je blad, ook als een poster van een leverancier ze door elkaar zet, en zet bij nummers of iconen altijd een legenda met de naam van elk allergeen. In de keuken zegt bijna iedereen pinda; de wettekst zegt aardnoten. Zwaveldioxide en sulfieten horen erbij in concentraties van meer dan 10 mg/kg of 10 mg/l, uitgedrukt als totaal SO2. Dat staat in punt 12 van de bijlage, niet als een losse vuistregel van deze site.</p>
 
 <table>
 <thead>
 <tr><th>Nr.</th><th>Allergeen</th><th>Wat je in de keuken ziet</th></tr>
 </thead>
 <tbody>
-<tr><td>1</td><td>Glutenbevattende granen (tarwe, ook spelt en khorasan, rogge, gerst, haver) en producten daarvan</td><td>Brood, pasta, paneermeel, bier, bindmiddel. Sojasaus en bouillonblokjes bevatten vaak tarwe.</td></tr>
+<tr><td>1</td><td>Glutenbevattende granen, namelijk tarwe (zoals spelt en khorasantarwe), rogge, gerst, haver of de hybride soorten daarvan, en producten op basis daarvan</td><td>Brood, pasta, paneermeel, bier, bindmiddel. Sojasaus en bouillonblokjes bevatten vaak tarwe.</td></tr>
 <tr><td>2</td><td>Schaaldieren en producten op basis van schaaldieren</td><td>Garnalen, kreeft, krab, bisque.</td></tr>
 <tr><td>3</td><td>Eieren en producten op basis van eieren</td><td>Mayonaise, verse pasta met ei, deegwaren, sommige paneermengsels.</td></tr>
 <tr><td>4</td><td>Vis en producten op basis van vis</td><td>Filet, ansjovis, vissaus. Worcestersaus bevat vaak ansjovis.</td></tr>
 <tr><td>5</td><td>Aardnoten en producten op basis van aardnoten</td><td>Pinda, pindakaas, satésaus.</td></tr>
 <tr><td>6</td><td>Soja en producten op basis van soja</td><td>Sojasaus, tofu, tempeh. Staat vaak als plantaardig eiwit op een etiket.</td></tr>
 <tr><td>7</td><td>Melk en producten op basis van melk, inclusief lactose</td><td>Boter, room, kaas. Ook in sommige kant-en-klare sauzen en worst.</td></tr>
-<tr><td>8</td><td>Noten: amandelen, hazelnoten, walnoten, cashewnoten, pecannoten, paranoten, pistachenoten en macadamia- of Queenslandnoten, en producten daarvan</td><td>Pesto, nougat, garnering. Dit is een andere regel dan pinda.</td></tr>
+<tr><td>8</td><td>Noten, namelijk amandelen, hazelnoten, walnoten, cashewnoten, pecannoten, paranoten, pistachenoten en macadamianoten, en producten op basis daarvan</td><td>Pesto, nougat, garnering. Dit is een andere regel dan pinda.</td></tr>
 <tr><td>9</td><td>Selderij en producten op basis van selderij</td><td>Bouillon, sauzen, kruidenmixen. Selderijzout telt mee.</td></tr>
 <tr><td>10</td><td>Mosterd en producten op basis van mosterd</td><td>Mosterd, dressings, sommige marinades.</td></tr>
 <tr><td>11</td><td>Sesamzaad en producten op basis van sesamzaad</td><td>Sesamolie, tahin, broodjes, furikake.</td></tr>
-<tr><td>12</td><td>Zwaveldioxide en sulfieten, meer dan 10 mg/kg of 10 mg/liter, uitgedrukt als SO2</td><td>Wijn, gedroogd fruit, sommige augurken. Onder de drempel valt het buiten deze regel.</td></tr>
+<tr><td>12</td><td>Zwaveldioxide en sulfieten in concentraties van meer dan 10 mg/kg of 10 mg/l, uitgedrukt als totaal SO2</td><td>Wijn, gedroogd fruit, sommige augurken. Onder de drempel valt het buiten deze regel.</td></tr>
 <tr><td>13</td><td>Lupine en producten op basis van lupine</td><td>Lupinemeel in sommige broden en degen. Lees het etiket, het zit niet in elk meel.</td></tr>
 <tr><td>14</td><td>Weekdieren en producten op basis van weekdieren</td><td>Mosselen, oesters, inktvis, slakken. Dit is een andere regel dan schaaldieren.</td></tr>
 </tbody>
 </table>
 
-<h2>Mondeling informeren</h2>
+<h2>Schriftelijk of mondeling informeren</h2>
 
-<p>Bij onverpakte levensmiddelen, en daar valt de horeca onder, mag je de informatie ook mondeling geven. De NVWA zegt er twee dingen bij op de pagina die hierboven staat: er moet ergens staan dat gasten ernaar kunnen vragen, en de gast moet de informatie vóór de aankoop hebben. Een mondeling antwoord zonder blad in de keuken is een gok van de bediening. Het blad is de bron waar dat antwoord vandaan komt.</p>
+<p>Bij niet-voorverpakte levensmiddelen, en daar valt de horeca onder, staan de regels in de Warenwetregeling allergeneninformatie niet-voorverpakte levensmiddelen, van kracht sinds 13 december 2014. Het zijn wettelijke eisen, geen tips. Je kiest een van twee manieren.</p>
+
+<p>Schriftelijk (artikel 2): je vermeldt duidelijk zichtbaar waar de allergeneninformatie beschikbaar is, en dat op elke plek waar je verkoopt afzonderlijk. De informatie zelf staat schriftelijk of elektronisch en is vrij toegankelijk, begrijpelijk en duidelijk leesbaar.</p>
+
+<p>Mondeling (artikel 3) mag alleen als je aan drie voorwaarden tegelijk voldoet. Je personeel kan de informatie te allen tijde onverwijld en op een juiste manier mondeling geven, vóór de aankoop. De informatie is te allen tijde schriftelijk of elektronisch beschikbaar voor het personeel en voor de NVWA. En een duidelijk zichtbare melding nodigt de gast uit het personeel ernaar te vragen. Een mondeling antwoord zonder blad in de keuken is dus niet alleen een gok van de bediening: het voldoet niet aan de regeling. Het blad is de bron waar dat antwoord vandaan komt.</p>
 
 <h2>Vlaanderen</h2>
 
