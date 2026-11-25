@@ -1,8 +1,8 @@
 ---
 title: "Qué es el maridaje: tipos, reglas y ejemplos"
-description: "Qué es el maridaje y por qué se dice así: los 4 tipos, las reglas básicas, 8 maridajes clásicos y cómo se monta y se pone precio al maridaje de un menú."
+description: "Qué es el maridaje y por qué se dice así: 4 tipos, reglas básicas, 8 maridajes clásicos, vino y queso, y cómo montar y poner precio al maridaje de un menú."
 pubDate: 2026-11-24
-modDate: 2026-11-24
+modDate: 2026-11-25
 category: glosario
 tags: ["maridaje", "vino", "sumiller"]
 lang: es
@@ -24,6 +24,10 @@ faq:
     a: "Es un evento con menú cerrado en el que cada plato se sirve con una bebida elegida para él. Habitualmente la presenta el sumiller, la bodega o la cervecera. Se diferencia de una cena normal en que no hay carta abierta: el recorrido está pensado de principio a fin y el precio suele ser fijo."
   - q: "¿Cuánto vino se sirve en un maridaje?"
     a: "Depende del número de pases, pero conviene hacer la cuenta. Seis vinos de 80 ml son 480 ml por persona, casi dos tercios de botella. Por eso conviene ofrecer media copa o una alternativa sin alcohol, sobre todo en menús largos y en comidas de mediodía."
+  - q: "¿Qué vino va con una tabla de quesos?"
+    a: "Si solo vas a poner una botella, elige un espumoso brut o un blanco con cuerpo y buena acidez: aguantan quesos frescos, semicurados y cremosos sin pelearse con ninguno. Si puedes abrir más de una, reserva un tinto joven de tempranillo para el manchego semicurado y un dulce, como Pedro Ximénez u oporto, aparte para el azul. Saca los quesos de la cámara entre 30 y 60 minutos antes, según el tamaño de la pieza."
+  - q: "¿Qué queso va con vino tinto?"
+    a: "Los quesos semicurados y curados, porque su intensidad aguanta el tanino: manchego semicurado con un tinto joven de tempranillo, zamorano curado con un tinto de Toro. Evita los frescos y los muy cremosos, que con tinto se apagan y dejan un regusto amargo. Si el queso es azul, mejor un dulce que un tinto seco."
 ---
 
 El maridaje es la combinación de un plato y una bebida buscando que el conjunto sepa mejor que cada cosa por su lado. No es un ritual de sumiller ni una regla escrita en piedra: es criterio de cocina aplicado a la bebida, y se aprende probando.
@@ -96,6 +100,40 @@ Estos ocho maridajes aguantan cualquier carta y sirven para explicar el oficio a
 | Chocolate negro | Pedro Ximénez u oporto | Armonía | Dulzor e intensidad a la par |
 | Curry picante | Riesling semiseco | Complemento | El azúcar residual calma el picante |
 | Pizza margarita | Tinto joven con buena acidez | Armonía | La acidez acompaña al tomate |
+
+## Maridaje de Vino y Queso
+
+Con el queso, lo primero es la intensidad: un queso fresco pide un vino ligero y uno curado, un vino con más cuerpo. Y hay un detalle que conviene saber en sala: los blancos y los espumosos casan con más quesos que los tintos, porque con los quesos frescos, cremosos o de cabra el tanino se vuelve áspero o metálico, mientras que la acidez y la burbuja van bien con casi todos. Con los curados de pasta dura, en cambio, el tinto funciona.
+
+Piensa en el queso antes que en la uva. Cuanta más grasa y más curación tiene la pieza, más estructura necesita el vino para no quedar tapado; y cuanto más joven y láctico es el queso, más acidez le hace falta al vino para refrescar sin taparlo. Después vienen la sal y el ahumado: con un queso salino funcionan la burbuja, la acidez o un dulce; con uno ahumado, un vino que lo limpie.
+
+| Queso | Vino | Por qué funciona |
+| :--- | :--- | :--- |
+| Queso fresco de cabra | Blanco joven con buena acidez (verdejo o sauvignon blanc) | La acidez acompaña al lácteo fresco |
+| Tetilla gallega | Albariño | Regional: frescura con un queso suave y mantecoso |
+| Manchego semicurado | Tinto joven de tempranillo | Intensidad media con intensidad media |
+| Zamorano curado | Tinto de Toro | Regional: intensidad alta, grasa con tanino |
+| Idiazábal | Txakoli | Regional: la acidez del txakoli limpia la grasa y el ahumado, si lo tiene |
+| Cabrales u otro queso azul | Pedro Ximénez u oporto | Contraste: el dulce equilibra la sal |
+| Brie o camembert | Cava o Champagne brut | La burbuja limpia la cremosidad |
+| Parmigiano Reggiano | Lambrusco | Regional: burbuja y fruta con un queso salino |
+
+Fíjate en que casi todas las filas van en la misma dirección: acidez, burbuja o dulzor contra grasa, sal y ahumado. Cuando dudes, vuelve a esa idea y aciertas más que siguiendo una lista de memoria.
+
+<figure class="wp-block-image size-large">
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/maridaje-vino-queso.jpg" alt="Tabla de quesos ordenada de suave a intenso con membrillo, nueces, uvas e higos junto a una copa de blanco, una de tinto y una de vino dulce"/><figcaption>Una tabla de quesos de suave a intenso, con un blanco, un tinto y un dulce para el azul</figcaption></figure>
+
+### Cómo Maridar una Tabla de Quesos
+
+Una tabla funciona cuando tiene un recorrido claro de sabor y no cuando acumula piezas sueltas. De tres a cinco quesos bien elegidos se defienden mejor que ocho amontonados.
+
+- Elige de 3 a 5 quesos y colócalos **del más suave al más intenso**, para que el comensal no sature el paladar en el primer bocado.
+- Si solo vas a poner una botella, un **espumoso o un blanco con cuerpo** aguanta casi toda la tabla sin desentonar.
+- Si hay azul, ponlo al final y separado, con su **dulce aparte**.
+- Acompaña con membrillo, frutos secos, uvas, higos y un pan **sin sabores fuertes** que no compita con el queso.
+- Sácalos de la cámara entre 30 y 60 minutos antes, según el tamaño de la pieza, para que suelten aroma y textura.
+
+Y si la tabla va en carta, escandállala por gramos de cada queso ([cómo hacer un escandallo](https://aichef.pro/blog/escandallos-ia-cocina-profesional)): es la única forma de saber qué te deja cada tabla antes de que la sirvas.
 
 ## Maridaje en un Menú: Cómo Se Monta y Cuánto Cuesta
 
