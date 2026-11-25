@@ -48,7 +48,7 @@ const guideBanner = bannerFor('food-cost-menu-engineering-guide');
 const faqs = [
   { q: "How do I price my restaurant menu?", a: "Cost every ingredient on the plate after trim and waste to get your plate cost. Choose a target food cost percentage for that dish, then divide the plate cost by that percentage to get a starting price. Round it to a number your guests accept, then divide the rounded price back into the plate cost to confirm the real percentage. Repeat dish by dish, then review the whole menu blend." },
   { q: "What is the menu pricing formula?", a: "Menu price equals plate cost divided by target food cost percentage. The markup multiplier is one divided by the target percentage, so a 30 percent target means multiplying plate cost by 3.33. Round only after you calculate, then check the real food cost percentage on the rounded price. For example, a $4.29 plate cost at a 30% target gives a $14.30 menu price." },
-  { q: "What is a good food cost percentage for a restaurant?", a: "There is no single right number. As a common rule of thumb, many full-service restaurants work somewhere around 28 to 35 percent on food. High-labor dishes and premium proteins usually carry a higher percentage, while sides, starters and desserts carry a lower one. Price each dish on its own, then watch the blend across the menu rather than forcing one number." },
+  { q: "What is a good food cost percentage for a restaurant?", a: "There is no single right number. As a rule of thumb, many restaurants work somewhere around 25 to 35 percent on food. Premium proteins and high-cost ingredients usually carry a higher percentage, while sides, starters and desserts carry a lower one; a dish with long prep may need a lower one to cover its labor. Price each dish on its own, then watch the blend across the menu rather than forcing one number." },
   { q: "Is there a free menu pricing calculator?", a: "Yes. The calculator on this page is free and needs no sign-up, like the other calculators and generators on the site. Enter your plate cost and your target food cost percentage, and it gives you the menu price, the markup multiplier and the gross profit per plate. Nothing is stored and no account is required." },
   { q: "How do you calculate actual food cost?", a: "Actual food cost comes from inventory, not from recipes. Take beginning inventory plus purchases minus ending inventory, then divide that figure by food sales for the same period. Compare it with your theoretical food cost from recipe costing. The difference between the two is waste, over-portioning, theft or recipe drift, and it is worth chasing every stock count." },
   { q: "Should menu prices include sales tax?", a: "In the US, menu prices usually exclude sales tax, which the guest pays on top of the listed price. In the UK and the EU, menu prices include VAT. If you work in a VAT market, remove the VAT before calculating your food cost percentage, otherwise you divide plate cost by money your restaurant never keeps and your percentages read better than they really are." },
@@ -119,19 +119,19 @@ const label = 'block text-sm font-medium text-foreground';
           <input id="mpc-cost" class={input} type="number" inputmode="decimal" min="0" step="0.01" value="4.29" />
         </label>
         <label class={label}>Target food cost %
-          <input id="mpc-target" class={input} type="number" inputmode="decimal" min="1" max="99" step="0.5" value="30" />
+          <input id="mpc-target" class={input} type="number" inputmode="decimal" min="1" max="99" step="any" value="30" />
         </label>
         <label class={label}>Round menu price up to
           <select id="mpc-rounding" class={input}>
             <option value="0.95" selected>.95</option>
             <option value="0.99">.99</option>
-            <option value="0.5">.50</option>
+            <option value="0.5">.00 or .50 (half-dollar steps)</option>
             <option value="0">whole number</option>
             <option value="none">no rounding</option>
           </select>
         </label>
         <label class={label}>Sales tax or VAT % (optional)
-          <input id="mpc-tax" class={input} type="number" inputmode="decimal" min="0" max="50" step="0.5" value="0" />
+          <input id="mpc-tax" class={input} type="number" inputmode="decimal" min="0" max="50" step="any" value="0" />
         </label>
         <label class="flex items-start gap-3 pt-6 text-sm text-foreground">
           <input id="mpc-tax-included" type="checkbox" class="mt-1 h-4 w-4" />
@@ -141,10 +141,10 @@ const label = 'block text-sm font-medium text-foreground';
 
       <div id="mpc-error" class="mt-4 hidden rounded-md border border-destructive/40 bg-destructive/10 p-3 text-sm text-foreground" role="alert"></div>
 
-      <dl id="mpc-results" class="mt-6 grid gap-4 sm:grid-cols-3" aria-live="polite">
+      <dl id="mpc-results" class="mt-6 grid gap-4 sm:grid-cols-3">
         <div class="rounded-xl border border-border bg-background p-4">
           <dt class="text-sm text-muted-foreground">Menu price</dt>
-          <dd id="mpc-out-menu" class="mt-1 text-2xl font-bold text-foreground">—</dd>
+          <dd id="mpc-out-menu" class="mt-1 text-2xl font-bold text-foreground" aria-live="polite">—</dd>
           <dd id="mpc-out-menu-note" class="mt-1 text-xs text-muted-foreground"></dd>
         </div>
         <div class="rounded-xl border border-border bg-background p-4">
@@ -158,6 +158,7 @@ const label = 'block text-sm font-medium text-foreground';
         <div class="rounded-xl border border-border bg-background p-4">
           <dt class="text-sm text-muted-foreground">Exact price at your target</dt>
           <dd id="mpc-out-exact" class="mt-1 text-lg font-semibold text-foreground">—</dd>
+          <dd id="mpc-out-exact-note" class="mt-1 text-xs text-muted-foreground"></dd>
         </div>
         <div class="rounded-xl border border-border bg-background p-4">
           <dt class="text-sm text-muted-foreground">Markup multiplier</dt>
@@ -244,13 +245,14 @@ const label = 'block text-sm font-medium text-foreground';
     function mpcRoundUp(price, ending) {
       if (ending === 'none') return Math.round(price * 100) / 100;
       var end = Number(ending);
+      if (end === 0.5) return Math.ceil(price * 2 - 1e-9) / 2;
       var base = Math.floor(price);
       var candidate = end === 0 ? Math.ceil(price - 1e-9) : base + end;
       if (end !== 0 && candidate < price - 1e-9) candidate = base + 1 + end;
       return Math.round(candidate * 100) / 100;
     }
     function mpcCompute(cost, targetPct, ending, taxPct, taxIncluded) {
-      if (!(cost > 0) || !(targetPct > 0) || !(targetPct < 100) || !(taxPct >= 0)) return null;
+      if (!(cost >= 0.01) || !(targetPct >= 1) || !(targetPct <= 99) || !(taxPct >= 0) || !(taxPct <= 50)) return null;
       var tax = taxPct / 100;
       var exactNet = cost / (targetPct / 100);
       var exactShown = taxIncluded ? exactNet * (1 + tax) : exactNet;
@@ -268,7 +270,7 @@ const label = 'block text-sm font-medium text-foreground';
       };
     }
     function mpcReverse(cost, menuPrice, taxPct, taxIncluded) {
-      if (!(cost > 0) || !(menuPrice > 0)) return null;
+      if (!(cost >= 0.01) || !(menuPrice >= 0.01) || !(taxPct >= 0) || !(taxPct <= 50)) return null;
       var net = taxIncluded ? menuPrice / (1 + taxPct / 100) : menuPrice;
       return (cost / net) * 100;
     }
@@ -288,10 +290,11 @@ const label = 'block text-sm font-medium text-foreground';
         var r = mpcCompute(cost, target, ending, tax, included);
         var err = $('mpc-error');
         if (!r) {
-          err.textContent = 'Enter a plate cost above 0 and a target food cost between 1% and 99%.';
+          err.textContent = 'Enter a plate cost of at least 0.01, a target food cost between 1% and 99%, and a tax rate between 0% and 50%.';
           err.classList.remove('hidden');
           ['mpc-out-menu', 'mpc-out-real', 'mpc-out-gp', 'mpc-out-exact', 'mpc-out-markup', 'mpc-out-net'].forEach(function (id) { $(id).textContent = '—'; });
           $('mpc-out-menu-note').textContent = '';
+          $('mpc-out-exact-note').textContent = '';
           $('mpc-table').innerHTML = '';
           $('mpc-reverse-out').textContent = '—';
           return;
@@ -304,6 +307,7 @@ const label = 'block text-sm font-medium text-foreground';
         $('mpc-out-real').textContent = pct(r.realPct);
         $('mpc-out-gp').textContent = money(cur, r.gp);
         $('mpc-out-exact').textContent = money(cur, r.exactShown);
+        $('mpc-out-exact-note').textContent = included ? 'Tax included (the table below is before tax)' : 'Before rounding';
         $('mpc-out-markup').textContent = '×' + (Math.round(r.markup * 100) / 100).toFixed(2);
         $('mpc-out-net').textContent = money(cur, r.menuNet);
         var rows = '';

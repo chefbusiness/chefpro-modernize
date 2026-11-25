@@ -16,9 +16,9 @@ Pricing a menu means costing every plate first, then dividing that plate cost by
 
 Menu price = plate cost ÷ target food cost %. That is the whole formula — everything else is judgment about which target to use and how to round.
 
-The markup multiplier is the same idea flipped over: markup multiplier = 1 ÷ target food cost %. At a 30% target, 1 ÷ 0.30 = ×3.33. Multiply your plate cost by 3.33 and you get the same answer as dividing by 0.30. Chefs who talk in markups and chefs who talk in percentages are describing one calculation.
+The markup multiplier is the same idea flipped over: markup multiplier = 1 ÷ target food cost %. At a 30% target, 1 ÷ 0.30 = ×3.33. Multiply your plate cost by 3.333 and you get the same answer as dividing by 0.30 (rounded to 3.33, it lands a cent lower). Chefs who talk in markups and chefs who talk in percentages are describing one calculation.
 
-Here is a worked example with example numbers, not your numbers:
+Here is a worked example (example numbers):
 
 - Plate cost: $4.29
 - Target food cost: 30%
@@ -35,13 +35,13 @@ On the menu you would round that to $14.95. Now check it again: $4.29 ÷ $14.95 
 | 32% | $13.41 | $9.12 |
 | 35% | $12.26 | $7.97 |
 
-Same plate cost of $4.29 throughout. The column on the right is what a five-point swing in your target costs you per plate — multiply that by covers and the argument for costing properly makes itself.
+Same plate cost of $4.29 throughout. Compare the rows: moving the target from 30% to 35% takes $2.04 of gross profit off every plate — multiply that by covers and the argument for costing properly makes itself.
 
 ## What food cost percentage should you aim for?
 
 There is no single right number. It depends on your concept, the dish itself and the price your guests will accept without flinching.
 
-As a common rule of thumb — not data, just the range most full-service kitchens work inside — many restaurants land somewhere around 28-35% on food. High-labor dishes and premium proteins usually carry a higher percentage because guests expect to pay for the ingredient, and you are buying that plate's margin back elsewhere. Sides, starters, desserts and drinks usually carry a lower one. A pasta dish at 22% and a dry-aged steak at 38% can both be correct on the same menu.
+As a rule of thumb, many restaurants work somewhere around 25-35% on food. Premium proteins and high-cost ingredients usually carry a higher percentage because guests expect to pay for the ingredient, and you buy that plate's margin back elsewhere. Sides, starters, desserts and drinks usually carry a lower one. A pasta dish at 22% and a dry-aged steak at 38% can both be correct on the same menu.
 
 So price dish by dish, then step back and watch the blend across the whole menu. One high-cost plate is a choice. A menu full of them is a problem you will only see in the blend.
 
