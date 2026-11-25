@@ -2,7 +2,7 @@
 title: "Prompt Library for Bartender Consultant Pro: Menu, Cost & Training"
 description: "Unlock Bartender Consultant Pro: prompts for cocktail menus, beverage costing, bar setup, and team training. Work faster, pour smarter."
 pubDate: 2026-08-01
-modDate: 2026-10-18
+modDate: 2026-11-25
 category: prompt-library
 tags: []
 translations:
@@ -34,7 +34,17 @@ faq:
 draft: false
 ---
 <p>Bartender Consultant Pro is the AI agent inside AI Chef Pro that helps bar managers, beverage directors, and chef-owners build profitable, technically sound cocktail programs. It tackles everything from menu architecture and classic-to-modern technique selection to costed recipes, bar layout, and team training scripts. Whether you run a high-volume sports bar in Chicago, a craft cocktail lounge in Austin, or a hotel bar in Miami, the agent gives you prompts that think like a working bartender — not a generic chatbot. It speaks in ounces, dollars, and FDA Food Code terms where relevant, but also flags UK, EU, and ANZ regulatory equivalents when the answer changes by market.</p>
-<p>Recipes and costing only pay off when the bar runs the same way every shift. The <a href="https://aichef.pro/en/digital-products/bar-checklist-templates">Bar Checklists Kit Pro</a> writes that routine down: bar opening and closing, the cocktail, draft beer and wine stations, daily duties for the head bartender, bartender and barback, and a weekly inventory by category, ready to print and initial.</p><h2 class="wp-block-heading">Why prompts matter with Bartender Consultant Pro</h2>
+<p>Recipes and costing only pay off when the bar runs the same way every shift. The <a href="https://aichef.pro/en/digital-products/bar-checklist-templates">Bar Checklists Kit Pro</a> writes that routine down: bar opening and closing, the cocktail, draft beer and wine stations, daily duties for the head bartender, bartender and barback, and a weekly inventory by category, ready to print and initial.</p><h2 class="wp-block-heading">AI cocktail recipe generator: prompts that work</h2>
+<p>A generic generator hands you a drink. A bar needs a spec — something you can batch, cost per pour and repeat on a busy Saturday. That gap is where your prompt does the work.</p>
+<p>Bartender Consultant Pro builds cocktail programs: menu architecture, classic-to-modern technique, costed recipes, bar layout and training, and it speaks in ounces and dollars. So feed it the same information you would give a new bartender: the base spirit and what is actually on your back bar, the flavor direction you want, the glassware and ice you have, the prep you can do ahead (syrups, infusions, cordials), and a target cost per drink or menu price. Ask for a zero-proof version in the same prompt — you will need it.</p>
+<ul class="wp-block-list">
+<li>"Build a seasonal cocktail from what is on my back bar: rye whiskey, an artichoke amaro, fresh pear and cinnamon syrup (example back bar). Give me the full spec in ounces, batch it for 1 liter, and tell me the cost per drink at my pour cost."</li>
+<li>"Take our house signature drink and write a zero-proof version that keeps the same texture and acid balance. Spec it in ounces, tell me what to build fresh versus batch, and how to price it next to the original."</li>
+<li>"Draft a 6-drink menu — for example, two stirred, two shaken, one highball and one zero-proof — with a balance of spirits, styles and price points. Spec each in ounces and flag which ones batch well for service."</li>
+</ul>
+<p>Test it behind the bar, adjust dilution and sweetness to your ice and your pace, and write the spec card.</p>
+<p>To price it, run the spec through the cost-per-pour math in <a href="https://aichef.pro/en/blog/bar-profit-margins-beverage-costing">bar profit margins and beverage costing</a>.</p>
+<h2 class="wp-block-heading">Why prompts matter with Bartender Consultant Pro</h2>
 <p>Precise prompts are the difference between a generic recipe and a bar-ready asset. When you tell the agent “Build a house margarita with our well tequila ($18/L), fresh lime, agave syrup, 32% pour cost, in a 12 oz rocks glass, half-salted rim, with a costed card and 30-second training script,” you get a working document. Vague requests like “clarify a piña colada” yield theory; adding “milk punch method, 12% ABV, vegan, and TTB labeling notes” forces the agent to deliver a spec you can execute tonight.</p>
 <p>Regulatory precision matters just as much. US bars follow FDA Food Code and TTB rules; UK bars answer to the FSA and Natasha’s Law; Australia/New Zealand to FSANZ; India to FSSAI. A prompt that names the relevant regulator and the exact obligation — sulfite disclosure, egg allergen warning, ABV tolerance — ensures the output is legally sound for your market. This library’s prompts embed that specificity so you don’t have to guess.</p>
 <figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/07/bartcon-destilados-backbar.jpg" alt="Cocktail backbar with premium whisky, gin, rum and bitters bottles backlit on dark wood shelves" loading="lazy" /></figure>

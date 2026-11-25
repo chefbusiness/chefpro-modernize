@@ -2,7 +2,7 @@
 title: "Prompt Library for Catering AI+: Unlock Efficiency & Creativity"
 description: "🚀 60 prompts for Catering AI+ inside AI Chef Pro. Transform your exec chef workflow—menu R&D, costing, production, sales—to save hours daily."
 pubDate: 2026-08-01
-modDate: 2026-10-18
+modDate: 2026-11-25
 category: prompt-library
 tags: []
 translations:
@@ -27,7 +27,8 @@ faq:
     a: "Yes, Catering AI+ can build out recipes and complete menus from a prompt. It’ll suggest dishes, scale yields, and outline methods. Always apply your own tasting and operational judgment—use the output as a strong first draft, not a final plate."
 draft: false
 ---
-<p>As an executive chef or catering director, you carry the whole business on your shoulders—from creative menu development and flawless execution to tight margins and client relationships. Whether you run a high-volume off-premise operation or an elite boutique catering firm, Catering AI+ is the AI Chef Pro module built specifically for that pressure. It helps you ideate seasonal menus, scale recipes, cost plates in real time, generate production schedules, and even draft client proposals—so you can lead from the front instead of drowning in admin. In this library, you’ll find 60 precise prompts that turn the agent into your extra sous chef, R&D partner, and ops manager.</p>
+<p>As an executive chef or catering director, you carry the whole business on your shoulders—from creative menu development and flawless execution to tight margins and client relationships. Whether you run a high-volume off-premise operation or an elite boutique catering firm, Catering AI+ is the AI Chef Pro module built specifically for that pressure. It helps you ideate seasonal menus, scale recipes, cost plates from the prices you give it, generate production schedules, and even draft client proposals—so you can lead from the front instead of drowning in admin. In this library, you’ll find 60 precise prompts that turn the agent into your extra sous chef, R&D partner, and ops manager.</p>
+<p>Cooking in clients’ homes rather than running events? See <a href="https://aichef.pro/en/use-cases/role/private-personal-chef">AI for private and personal chefs</a>: per-client menus, costing every private dinner and mise in a home kitchen.</p>
 <h2 class="wp-block-heading">Why prompts matter with Catering AI+</h2>
 <p>In catering, the gap between inspiration and execution is measured in ounces and dollars. Ask an AI, “Suggest a summer menu,” and you’ll get pleasant fluff. But feed Catering AI+ a precise prompt—“Develop a plated summer dinner menu for 200 guests at $42 per person, dairy-free and nut-free, using Mid-Atlantic produce, with batch cooking instructions and a cold-holding HACCP checklist”—and you get a battle-ready menu with scaled recipes, a sourcing list, and a production timeline. Precision isn’t just a luxury; it’s how you turn a language model into a trusted kitchen tool.</p>
 <p>Every detail you add—guest count, budget, allergen set, service style (buffet, plated, passed), equipment constraints, even the temperature of the holding cabinet—shapes the output. The agent can reference the FDA Food Code for safe holding and cooling, flag the Big 9 allergens, and calculate costs down to the ounce of olive oil. Vague prompts lead to generic suggestions that waste your time; specific prompts mirror the real-world decisions an executive chef makes daily. That’s why this library offers ready-to-adapt templates: so you can stop prompt engineering and start running a smarter, safer, more profitable catering kitchen.</p>

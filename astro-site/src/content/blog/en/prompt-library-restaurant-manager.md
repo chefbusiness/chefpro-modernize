@@ -2,7 +2,7 @@
 title: "Prompt Library for Restaurant Manager Pro: P&L, Labor, Service & More"
 description: "105 prompts to manage your restaurant’s profit and loss, scheduling, marketing, guest experience, and daily operations with Restaurant Manager Pro in AI Chef Pro."
 pubDate: 2026-08-01
-modDate: 2026-10-17
+modDate: 2026-11-25
 category: prompt-library
 tags: []
 translations:
@@ -34,6 +34,16 @@ faq:
 draft: false
 ---
 <p>You’re the Director of Daily Ops. Every shift has to start on time, the line and floor stay in sync, guest complaints get handled before they become Yelp reviews, and the close leaves nothing to chance. “Restaurant Manager Pro” inside AI Chef Pro builds the playbooks, checklists, and contingency plans your crew needs to execute night after night — on budget and on brand. From writing a weekend prep list that slashes 86’d items to designing a 15-minute pre-shift huddle agenda, this agent turns your hard-won experience into documented systems any team member can follow.</p>
+<h2 class="wp-block-heading">AI restaurant shift scheduling: what the agent can draft</h2>
+<p>Give the agent your team, their roles, availability, forecast covers and labor budget, and it can draft a shift plan you can work from. It will not clock anyone in or run payroll — it drafts, you decide.</p>
+<p>Restaurant Manager Pro builds playbooks, checklists and plans for daily operations. It can draft a shift plan from what you give it: team list, roles, availability, cross-training, forecast covers, labor budget, and your state's predictive scheduling rules if they apply to you. It is not scheduling software — no clock-in, no shift-swap app, no payroll, no POS connection. Check the draft against your labor laws and against your team before it goes on the wall.</p>
+<ul class="wp-block-list">
+<li>"Draft a weekly schedule for a team of 14 (example roles: 4 line cooks, 3 prep, 2 dish, 2 servers, 2 hosts, 1 bar lead). Here is their availability and my forecast covers by day. Keep it inside a labor budget of [your number] and show hours per person."</li>
+<li>"It is Saturday night and my grill cook just called in sick. Using this cross-training matrix, give me three coverage options, who moves where, and what I have to pull from another station."</li>
+<li>"Build a predictive-scheduling checklist for posting the weekly schedule in my state. Here are the rules that apply to us — turn them into steps my manager can follow before the schedule goes up."</li>
+</ul>
+<p>The agent drafts; the manager posts the schedule.</p>
+<p>If you would rather work from a ready-made spreadsheet, the <a href="https://aichef.pro/en/digital-products/restaurant-schedule-templates">Restaurant Staff Scheduling Kit Pro</a> is a one-time purchase.</p>
 <h2 class="wp-block-heading">Why prompts matter with Restaurant Manager Pro</h2>
 <p>Vague prompts produce generic checklists that ignore your concept, your local health code, and your team’s actual workflow. Ask for a “closing checklist” and you might get a list that forgets the sanitizer concentration log required by the FDA Food Code or skips the nightly line-breakdown tasks your equipment warranty demands. A precise prompt — specifying your station layout, your county inspector’s hot buttons, and the shift-change handoff format — forces the agent to produce a document your crew will actually use, not delete.</p>
 <p>The same precision pays off in financial management. Tell Restaurant Manager Pro that your prime cost calculation must include employer-side payroll taxes and benefits, not just hourly wages, and it will generate a P&L analysis that reveals your true labor burden. Give it your state’s predictive scheduling rules and the cross-training matrix for your front-of-house team, and the schedule it drafts won’t just fill slots — it will help you avoid a costly compliance misstep. In restaurant management, the prompt is the difference between theory and what works on a Saturday night.</p>
