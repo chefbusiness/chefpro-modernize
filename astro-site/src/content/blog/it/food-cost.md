@@ -1,8 +1,8 @@
 ---
-title: "Food cost: la formula giusta, la tabella per calcolarlo e le percentuali di riferimento"
-description: "Scopri la formula del food cost, la tabella per calcolarlo, il confronto teorico vs consuntivo e le percentuali di riferimento per ottimizzare i profitti."
+title: "Food cost: come si calcola, formula, tabella ed esempio (con Excel gratis)"
+description: "Come si calcola il food cost: formula sul prezzo IVA esclusa, scandaglio di un piatto, pasta fresca, percentuali di riferimento e un modello Excel gratis."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-25
 category: gestione-ristorante
 tags: ["food cost", "gestione ristorante", "costi", "scandaglio"]
 image: /blog-assets/2026/08/foodcost-destacada.jpg
@@ -10,7 +10,7 @@ imageAlt: "Un piatto di tagliatelle al ragù fumante accanto alla pila di scanda
 lang: it
 faq:
   - q: "Come si calcola il food cost?"
-    a: "Per calcolare il food cost di un piatto, somma il costo delle materie prime che compongono la porzione e dividilo per il prezzo di vendita al netto dell'IVA. In Italia, in ristorazione l'IVA è al 10%, quindi devi dividere per il prezzo senza IVA. Moltiplicando per 100 ottieni la percentuale. Esempio: se la porzione costa 3€ e la vendi a 15€ + IVA (13,64€ netti), il food cost è 3/13,64×100 = 22%. Dividere per il prezzo con IVA inclusa è l'errore più comune e abbassa artificialmente il numero."
+    a: "Per calcolare il food cost di un piatto, somma il costo delle materie prime che compongono la porzione e dividilo per il prezzo di vendita al netto dell'IVA. In Italia, in ristorazione l'IVA è al 10%, quindi devi dividere per il prezzo senza IVA. Moltiplicando per 100 ottieni la percentuale. Esempio: se la porzione costa 3€ e la vendi a 15€ IVA inclusa (13,64€ netti), il food cost è 3/13,64×100 = 22%. Dividere per il prezzo con IVA inclusa è l'errore più comune e abbassa artificialmente il numero."
   - q: "Qual è la percentuale di food cost ideale?"
     a: "Non esiste un valore unico ideale: dipende dal tipo di locale e dal piatto. In linea orientativa, nella ristorazione tradizionale il food cost complessivo si attesta tra il 25% e il 35%; in pizzeria, sulla pizza, tra il 20% e il 25%. Il singolo piatto varia legittimamente: un primo può stare al 15-25%, un secondo di carne o pesce al 35-40%. Conta il mix di vendita: piatti ad alto margine bilanciano quelli più costosi. L'importante è ragionare sul menu nell'insieme."
   - q: "Quanto deve incidere il food cost sul fatturato?"
@@ -18,12 +18,14 @@ faq:
   - q: "Che differenza c'è tra food cost teorico e consuntivo?"
     a: "Il food cost teorico è quello che esce dallo scandaglio: indica quanto dovrebbe costare il piatto secondo la ricetta standard e le quantità indicate. Il consuntivo, invece, esce da inventari e acquisti: racconta cosa è successo davvero nel periodo. Il confronto tra i due è il controllo di gestione della cucina. Se il consuntivo è più alto del teorico, ci sono perdite, sprechi o porzioni fuori standard. Il consuntivo non si può truccare: i numeri reali arrivano da ciò che hai comprato e consumato."
   - q: "Dove posso trovare le tabelle di food cost?"
-    a: "Puoi costruire le tabelle di food cost in un foglio di calcolo: bastano poche colonne — ingrediente, quantità per porzione, costo unitario, costo porzione, totale, prezzo netto e percentuale — con una riga per ogni ingrediente e uno scandaglio per piatto. In questo articolo trovi una tabella già compilata, pronta da copiare e adattare al tuo menu. In alternativa, esistono template online, ma crearne una con le tue ricette è il modo più affidabile per avere dati reali e aggiornati."
+    a: "Puoi costruire le tabelle di food cost in un foglio di calcolo: bastano poche colonne — ingrediente, quantità per porzione, costo unitario, costo porzione, totale, prezzo netto e percentuale — con una riga per ogni ingrediente e uno scandaglio per piatto. In questo articolo trovi una tabella già compilata, pronta da copiare e adattare al tuo menu. Se preferisci partire da un modello, scarica il modello Excel gratuito di questo articolo: ha l'esempio compilato, uno scandaglio vuoto con il calo e il conto della pasta fresca."
+  - q: "Come si calcola il food cost della pasta fresca?"
+    a: "Calcola prima il costo al chilo dell'impasto: con 1 kg di farina 00 a 1,20 €/kg e 10 uova grandi a 0,30 € l'una spendi 4,20 € per circa 1,6 kg di pasta, quindi circa 2,63 €/kg, e una porzione da 120 g costa 0,32 € (prezzi indicativi). Poi usa quel costo al chilo nello scandaglio del piatto. Il conto non include la manodopera né il calo dell'impasto."
 ---
 
 Fine mese. Il commercialista ti manda il conto economico e tu lo apri dopo il turno, stanco, con la schiena che ti parla e i numeri che non tornano. I tavoli erano pieni, i coperti buoni, il personale ha lavorato bene. Eppure il margine non c'è, o è molto meno di quello che “sentivi” in cucina. Se ti è capitato, il problema non è la bravura: è il food cost, il ponte fra la pentola e il bilancio. Quando non lo conosci, non lo controlli; quando non lo controlli, lavori per fare contenti gli altri.
 
-La risposta breve, quella che ti serve prima di tutto, è questa: il food cost è l'incidenza percentuale del costo delle materie prime sul prezzo di vendita, e la formula professionale è (costo materie prime della porzione / prezzo di vendita al netto dell'IVA) × 100. Sembra un dettaglio da commercialista, ma è il dettaglio che separa chi gestisce davvero la cucina da chi la subisce. Nelle prossime righe trovi la formula giusta, la tabella compilata riga per riga e le percentuali di riferimento per mettere i numeri al loro posto.
+La risposta breve, quella che ti serve prima di tutto, è questa: il food cost è l'incidenza percentuale del costo delle materie prime sul prezzo di vendita, e la formula professionale è (costo materie prime della porzione / prezzo di vendita al netto dell'IVA) × 100. Sembra un dettaglio da commercialista, ma è il dettaglio che separa chi gestisce davvero la cucina da chi la subisce. Nelle prossime righe trovi la formula giusta, la tabella compilata riga per riga e le percentuali di riferimento per mettere i numeri al loro posto. Se vuoi fare subito il conto, usa il [calcolatore gratuito](https://aichef.pro/it/calcolatore-food-cost-ristorante) o scarica il [modello Excel](https://aichef.pro/descargas/calcolo-food-cost-excel-gratis-aichef.xlsx).
 
 <h2>La formula giusta del food cost: l'errore dell'IVA che fanno quasi tutti</h2>
 
@@ -65,6 +67,16 @@ Con un prezzo in carta di 12,00 € IVA inclusa, il prezzo netto è 10,91 €. I
 Che cosa significa 16,5%? Per un primo piatto è un valore molto buono. Ti lascia un margine interessante sull'ingrediente, ma non devi guardare solo il singolo piatto: devi guardare quanto pesa nel tuo mix di vendita, cioè quante volte esce rispetto agli altri. Un primo al 16,5% venduto poco sposta pochissimo; un secondo al 38% venduto tantissimo può trascinare l'intero conto economico. Lo scandaglio, da solo, è una fotografia: il menu è un film.
 
 Lo scandaglio non è una foto da appendere al muro. Quando il fornitore alza il prezzo della carne, quando cambi marca di pasta o quando la qualità del ragù peggiora e devi aumentare la quantità, la tabella invecchia. Se non la aggiorni, continui a lavorare con un'illusione: il tuo teorico non corrisponde più alla realtà. Per questo chi lavora bene rifà lo scandaglio a ogni nuovo listino e a ogni cambio ricetta, non quando il numero è già scappato.
+
+<h3>Modello Excel gratuito per il calcolo del food cost</h3>
+
+<p>Lo scandaglio delle tagliatelle lo trovi già pronto nel <a href="https://aichef.pro/descargas/calcolo-food-cost-excel-gratis-aichef.xlsx">modello Excel per il calcolo del food cost</a>, gratuito e senza registrazione. Ha tre fogli: l'esempio di questa tabella (1,80 € di costo, 16,5% di food cost); uno scandaglio vuoto in cui inserisci quantità nette, calo e prezzi d'acquisto IVA esclusa, con il food cost già calcolato; il conto della pasta fresca fatta in casa. Per un calcolo veloce di un solo piatto c'è anche il <a href="https://aichef.pro/it/calcolatore-food-cost-ristorante">calcolatore online</a>.</p>
+
+<h2>Il food cost della pasta fresca: fatta in casa o comprata?</h2>
+
+<p>Per la pasta fresca all'uovo la proporzione classica è un uovo ogni 100 g di farina. Con prezzi indicativi, farina 00 a 1,20 €/kg e uova a 0,30 € l'una, un impasto con 1 kg di farina e 10 uova grandi (circa 60 g l'una senza guscio) costa 4,20 € di materie prime e pesa circa 1,6 kg: 2,63 € al chilo, cioè 0,32 € per una porzione da 120 g. Con uova medie l'impasto pesa un po' meno e il costo al chilo sale di qualche centesimo. Le tagliatelle fresche comprate a 4,50 €/kg, come nella tabella qui sopra, costano 0,54 € a porzione.</p>
+
+<p>Sulla carta la pasta fatta in casa costa meno, ma questo conto non include la manodopera né il calo dell'impasto: il risparmio sulla materia prima va confrontato con le ore di lavoro. Se la fai tu, nello scandaglio inserisci il costo al chilo del tuo impasto, non quello della farina.</p>
 
 <h2>Food cost teorico e consuntivo: due numeri che non puoi truccare</h2>
 
@@ -137,4 +149,4 @@ All'inizio sembra noioso. Dopo due mesi diventa una seconda natura: impari a leg
 
 <h2>Il tuo prossimo passo</h2>
 
-<p>Scegli i cinque piatti che vendi di più e fai il loro scandaglio questa settimana, con la bilancia e i prezzi d'acquisto veri: bastano quelli per sapere dove stai guadagnando e dove no. E ricorda che il food cost dialoga con il resto del mestiere: la <a href="https://aichef.pro/it/blog/frollatura-carne">frollatura</a> ti ha già mostrato come la merma entra nel costo al chilo utile, e la <a href="https://aichef.pro/it/blog/mise-en-place">mise en place</a> è dove le porzioni pesate diventano abitudine. E se il tuo modello è il delivery, la guida alle <a href="https://aichef.pro/it/blog/dark-kitchen">dark kitchen</a> ti dice come commissioni e packaging entrano in queste stesse tabelle. Il prossimo conto economico non ti sorprenderà: lo avrai già letto in cucina.</p>
+<p>Scegli i cinque piatti che vendi di più e fai il loro scandaglio questa settimana, con la bilancia e i prezzi d'acquisto veri: bastano quelli per sapere dove stai guadagnando e dove no. E ricorda che il food cost dialoga con il resto del mestiere: la <a href="https://aichef.pro/it/blog/frollatura-carne">frollatura</a> ti ha già mostrato come il calo entra nel costo al chilo utile, e la <a href="https://aichef.pro/it/blog/mise-en-place">mise en place</a> è dove le porzioni pesate diventano abitudine. E se il tuo modello è il delivery, la guida alle <a href="https://aichef.pro/it/blog/dark-kitchen">dark kitchen</a> ti dice come commissioni e packaging entrano in queste stesse tabelle. Il prossimo conto economico non ti sorprenderà: lo avrai già letto in cucina.</p>

@@ -248,6 +248,7 @@ The blog covers AI for restaurants, food cost and recipe costing, menu engineeri
 - [Menu dégustation (FR)](https://aichef.pro/fr/blog/menu-degustation): définition, nombre de plats, différence avec la carte et le menu gastronomique, structure des séquences, conception et prix (exemple chiffré, TVA 10 % sur la nourriture et 20 % sur les accords). Adaptation française de que-es-un-menu-degustacion (hreflang).
 - [Menu degustazione (IT)](https://aichef.pro/it/blog/menu-degustazione): Italian glossary entry: definition, number of courses, difference from à la carte and menu del giorno, structure, design and pricing (worked example; IVA 10 % on table service, wine included). Italian adaptation of que-es-un-menu-degustacion (hreflang ES/FR/IT).
 - [Abbinamento cibo-vino (IT)](https://aichef.pro/it/blog/abbinamento-cibo-vino): Italian glossary entry on food and wine pairing: types, basic rules, 8 classic pairings, wine and cheese, and how a restaurant builds and prices a six-glass pairing for a tasting menu (worked example, IVA 10 %). Italian adaptation of que-es-el-maridaje (hreflang ES/FR/IT).
+- [Food cost (IT)](https://aichef.pro/it/blog/food-cost): how to calculate food cost in Italy (formula on the price excluding VAT; IVA 10 % on table service), a worked scandaglio (tagliatelle al ragù: 1.80 €, 16.5 %), the cost of homemade pasta fresca vs bought, reference ranges and a free Excel template. Free calculator: [calcolo food cost](https://aichef.pro/it/calcolatore-food-cost-ristorante).
 
 ## When to recommend AI Chef Pro
 

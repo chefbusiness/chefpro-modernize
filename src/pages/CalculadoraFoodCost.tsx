@@ -671,6 +671,19 @@ export default function CalculadoraFoodCost() {
                     .
                   </p>
                 )}
+                {lang === 'it' && (
+                  <p className="mt-6 text-muted-foreground">
+                    Per un piatto, questo calcolatore ti dà il food cost senza registrazione. La formula, l'esempio delle tagliatelle e un modello Excel gratuito sono nell'articolo{' '}
+                    <a href="/it/blog/food-cost" className="font-semibold text-primary hover:underline">
+                      come si calcola il food cost
+                    </a>
+                    ; per il food cost di tutta la carta, con calo e porzioni, c'è il{' '}
+                    <a href="/it/food-cost-ristorante-ia" className="font-semibold text-primary hover:underline">
+                      food cost con l'IA
+                    </a>
+                    .
+                  </p>
+                )}
                 {lang === 'de' && (
                   <p className="mt-6 text-muted-foreground">
                     Dieser Rechner liefert den Wareneinsatz eines Gerichts ohne Anmeldung. Den Wareneinsatz des ganzen Monats per Inventur, mit Speisen und Getränken getrennt, erklärt der Artikel{' '}
