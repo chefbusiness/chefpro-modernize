@@ -2,7 +2,7 @@
 title: "Food cost: como calcular, o que é um bom valor e por onde se perde dinheiro no seu restaurante"
 description: "Perceba porque o food cost do prato e o do mês nunca coincidem e descubra os cinco buracos por onde o dinheiro foge na sua cozinha."
 pubDate: 2026-08-22
-modDate: 2026-08-22
+modDate: 2026-11-25
 category: gestao-de-restaurantes
 tags: ["food cost", "ficha técnica", "gestão de restaurantes", "custos", "restauração"]
 image: /blog-assets/2026/08/foodcost-pt-destacada.jpg
@@ -61,7 +61,7 @@ faq:
 </figure>
 
 <h2>Qual é o food cost ideal — e porque a percentagem sozinha mente</h2>
-<p>Entre 28 e 35 por cento é a banda de referência que o setor usa como ponto de partida para a restauração. Mas essa banda varia com o formato do negócio: uma casa de massas ou de sopas, com ingredientes baratos e produção simples, pode operar confortavelmente abaixo dos 28 por cento; uma casa de peixe e marisco, com produtos caros e perecíveis, vai frequentemente ultrapassar os 35 por cento sem estar a fazer nada de errado.</p>
+<p>Entre 28 e 35 por cento é a banda de referência que o setor usa como ponto de partida para a restauração. Mas essa banda varia com o formato do negócio: uma casa de massas ou de sopas, com ingredientes baratos e produção simples, pode operar confortavelmente abaixo dos 28 por cento; uma casa de peixe e marisco, com produtos caros e perecíveis, vai frequentemente ultrapassar os 35 por cento sem estar a fazer nada de errado. Num menu de degustação a percentagem costuma fixar-se mais baixa, porque a mão de obra pesa mais: o exemplo, momento a momento, está em <a href="https://aichef.pro/pt/blog/menu-degustacao">menu de degustação</a>.</p>
 <p>A percentagem sozinha mente porque não diz nada sobre o valor absoluto que fica na caixa. Um prato com um food cost de 20 por cento pode deixar menos de três euros por dose, enquanto um prato com 40 por cento deixa mais de onze. A percentagem é uma proporção — o que interessa ao fim do mês é o montante em euros que sobra para pagar as contas. E esse montante depende do preço de venda, não apenas da percentagem.</p>
 <p>Veja a comparação entre três pratos de uma ementa típica. Os valores são um exemplo, com preços sem IVA, para ilustrar o princípio.</p>
 
