@@ -1,8 +1,8 @@
 ---
-title: "Tableau des allergènes : la liste des 14 allergènes à déclaration obligatoire (INCO) et comment l'afficher"
-description: "Tableau des allergènes : les 14 allergènes à déclaration obligatoire, leurs cachettes, exemple plat par plat et mise à jour. Guide complet."
+title: "Tableau des allergènes restaurant : les 14 allergènes et un modèle gratuit"
+description: "Tableau des allergènes pour restaurant : les 14 allergènes obligatoires, l'affichage exigé, un exemple plat par plat et un modèle gratuit (Excel, PDF)."
 pubDate: 2026-08-16
-modDate: 2026-08-16
+modDate: 2026-11-25
 category: gestion-restaurant
 tags: ["allergènes", "hygiène alimentaire", "réglementation", "INCO"]
 image: /blog-assets/2026/08/tableau-allergenes-destacada.jpg
@@ -12,9 +12,11 @@ faq:
   - q: "Quels sont les 14 allergènes à déclaration obligatoire ?"
     a: "Les 14 allergènes à déclaration obligatoire, fixés par l'annexe II du règlement INCO, sont : céréales contenant du gluten, crustacés, œufs, poissons, arachides, soja, lait (y compris lactose), fruits à coque, céleri, moutarde, graines de sésame, anhydride sulfureux et sulfites (au-delà de 10 mg/kg ou 10 mg/l en SO2), lupin et mollusques. En cuisine professionnelle, vous devez les identifier précisément dans chacune de vos recettes pour informer vos clients en toute transparence."
   - q: "Comment afficher les allergènes dans un restaurant ?"
-    a: "En France, pour les denrées non préemballées, l'information doit être écrite, lisible, visible et directement accessible, sans que le client ait à la demander. Vous pouvez choisir le support qui vous convient : carte, ardoise, cahier ou registre consultable. Cette obligation s'appuie sur le règlement (UE) n° 1169/2011 et le Code de la consommation (articles R412-12 à R412-16). Seuls les allergènes volontairement mis en œuvre dans la recette doivent être déclarés."
+    a: "En France, pour les denrées non préemballées, l'information doit être écrite, lisible et visible dans la salle : soit l'information elle-même (carte, ardoise, tableau affiché), soit l'indication écrite de l'endroit où le client peut la consulter directement et librement, par exemple un classeur. L'information orale seule ne suffit pas. Cette obligation s'appuie sur le règlement (UE) n° 1169/2011 et le Code de la consommation (articles R412-12 à R412-16, issus du décret n° 2015-447). Seuls les allergènes volontairement mis en œuvre dans la recette doivent être déclarés."
   - q: "Faut-il déclarer les traces d'allergènes ?"
-    a: "Non, la déclaration des traces éventuelles n'est pas obligatoire. Les mentions comme « traces éventuelles de… » sont recommandées, mais la réglementation ne vous impose de déclarer que les allergènes que vous intégrez volontairement dans vos préparations. Toutefois, par précaution et pour la sécurité de vos clients, il est judicieux de signaler les risques de contamination croisée, même si cela reste une démarche volontaire, non une obligation légale."
+    a: "Non. Les mentions comme « traces éventuelles de… » sont facultatives : la réglementation ne vous impose de déclarer que les allergènes que vous intégrez volontairement dans vos préparations. La DGCCRF les considère comme un dernier recours, à réserver à un risque de contamination croisée réel et évalué en cuisine, et non comme une précaution automatique sur toute la carte."
+  - q: "Où trouver un tableau des allergènes gratuit pour restaurant ?"
+    a: "Vous pouvez télécharger gratuitement, sans inscription, notre tableau des allergènes vierge : un Excel avec les 14 allergènes en colonnes, une liste déroulante par case (contient, traces, ne contient pas) et un exemple de cinq plats, et sa version PDF en A4 paysage, prête à imprimer et à remplir à la main (section « Tableau des allergènes vierge gratuit » de cet article)."
   - q: "Qu'est-ce que le règlement INCO ?"
     a: "Le règlement INCO, ou règlement (UE) n° 1169/2011, concerne l'information des consommateurs sur les denrées alimentaires. Il fixe, dans son annexe II, la liste des 14 allergènes à déclaration obligatoire. Ce texte s'applique aussi bien aux produits emballés qu'à la restauration. En tant que professionnel, vous devez vous y conformer pour garantir une information claire et précise à vos clients, tout en respectant les dispositions complémentaires du Code de la consommation français."
   - q: "Quelles sont les allergies alimentaires les plus courantes chez l'adulte ?"
@@ -24,6 +26,8 @@ faq:
 <p>Vendredi soir, 20 h 30. La salle est pleine, le service enchaîne les couverts. Une cliente interpelle le serveur : « La sauce du magret, elle contient des fruits à coque ? » Le serveur se tourne vers la cuisine, le chef est en train de dresser trois assiettes, personne n'a le temps de répondre. Cette scène, vous la connaissez. Elle se joue pourtant AVANT le service, dans le calme de la préparation, avec un outil simple : un tableau des allergènes à jour, affiché, lisible, que le client peut consulter seul. La réponse existe déjà, par écrit. Pas besoin de courir, pas besoin de deviner.</p>
 
 <p>La réglementation est claire : en restauration, vous devez informer par écrit vos clients sur les allergènes présents dans vos plats. Pas une option, pas une faveur. Et cette obligation repose sur une liste précise, fixée au niveau européen : les 14 allergènes à déclaration obligatoire. Dans cet article, nous vous donnons la liste complète, les endroits où ces allergènes se cachent réellement dans une cuisine professionnelle, et la méthode pour construire un tableau plat par plat qui reste à jour à chaque changement de carte. Vous repartez avec votre affichage prêt.</p>
+
+<p>Besoin d'un support tout de suite ? Téléchargez notre <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.xlsx">tableau des allergènes vierge en Excel</a> ou sa <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.pdf">version PDF à imprimer</a>, gratuits et sans inscription.</p>
 
 <h2>Les 14 allergènes à déclaration obligatoire</h2>
 
@@ -115,13 +119,13 @@ faq:
 
 <p>Certaines cachettes sont moins intuitives que d'autres. Le céleri, par exemple, se fond dans les mirepoix et les fonds de sauce : il est presque invisible dans un velouté ou un jus de viande, mais il est bien présent. Les sulfites, eux, se nichent dans le vin que vous utilisez pour déglacer une poêle ou déglacer un fond : la réduction ne les élimine pas, et ils restent dans la sauce finale. Quant au gluten, il ne se limite pas aux pâtes et au pain : les liaisons à la farine, les roux, la sauce soja et même certaines bières utilisées en marinade en contiennent. Un œil averti sur ces points vous évitera bien des surprises.</p>
 
-<h2>Ce que la réglementation exige vraiment (et ce qui n'est que recommandé)</h2>
+<h2>Ce que la réglementation exige vraiment (et ce qui reste facultatif)</h2>
 
-<p>Le cadre est simple. Le règlement (UE) n° 1169/2011, dit « INCO », fixe dans son annexe II la liste des 14 allergènes à déclaration obligatoire. En France, pour les denrées non préemballées — c'est-à-dire la restauration — l'application est précisée par le Code de la consommation, articles R412-12 à R412-16. Ce que la règle exige, concrètement : une information écrite, lisible, visible et directement accessible, sans que le client ait à la demander. Le support est libre : mention sur la carte, ardoise, cahier ou registre consultable. L'important est que le client puisse la trouver seul, sans intermédiaire.</p>
+<p>Le cadre est simple. Le règlement (UE) n° 1169/2011, dit « INCO », fixe dans son annexe II la liste des 14 allergènes à déclaration obligatoire. En France, pour les denrées non préemballées — c'est-à-dire la restauration — l'application est précisée par le Code de la consommation, articles R412-12 à R412-16. Ce que la règle exige, concrètement (article R412-14, issu du décret n° 2015-447) : une information écrite, lisible et visible des lieux où le client est admis. Soit l'information elle-même — mention sur la carte, ardoise, tableau affiché —, soit l'indication écrite de l'endroit où elle est tenue à sa disposition, par écrit, et où il peut la consulter directement et librement. L'information orale seule ne suffit pas.</p>
 
-<p>Cette distinction est cruciale. L'affichage obligatoire ne concerne que les allergènes mis en œuvre volontairement dans la recette. Si vous ajoutez de la crème dans une sauce, le lait doit être déclaré. Si vous utilisez de la farine pour lier un jus, le gluten doit être déclaré. En revanche, les mentions du type « traces éventuelles de… » ou « fabriqué dans un atelier qui utilise… » sont recommandées mais non obligatoires. Elles relèvent de la démarche volontaire de l'établissement, pas d'une exigence réglementaire. Beaucoup de restaurateurs les ajoutent par prudence, et c'est une bonne pratique, mais il faut savoir que la loi ne les impose pas.</p>
+<p>Cette distinction est cruciale. L'affichage obligatoire ne concerne que les allergènes mis en œuvre volontairement dans la recette. Si vous ajoutez de la crème dans une sauce, le lait doit être déclaré. Si vous utilisez de la farine pour lier un jus, le gluten doit être déclaré. En revanche, les mentions du type « traces éventuelles de… » ou « fabriqué dans un atelier qui utilise… » sont facultatives : elles relèvent de la démarche volontaire de l'établissement, pas d'une exigence réglementaire. La DGCCRF les considère comme un dernier recours, à réserver à un risque de contamination croisée réel et évalué. Une mention « traces » sur tous les plats n'informe plus personne, et elle ne vous dispense pas de maîtriser ce risque en cuisine.</p>
 
-<p>Autre point souvent mal compris : l'information doit être accessible sans demande préalable. Un client qui doit réclamer un cahier au serveur, ou qui doit insister pour obtenir une réponse, n'est pas dans une situation conforme. Le document doit être visible, à l'endroit où le client peut le consulter de lui-même. Cela ne signifie pas qu'il doit être affiché sur chaque table, mais qu'il doit être disponible dans un lieu clairement indiqué, sans qu'on ait à le solliciter.</p>
+<p>Autre point souvent mal compris : si l'information n'est pas sur la carte, un affichage écrit doit dire où la trouver, et le client doit pouvoir y accéder directement et librement. Un client qui doit insister pour obtenir une réponse, ou qui n'a qu'une réponse orale, n'est pas correctement informé. Cela ne signifie pas que le tableau doit être affiché sur chaque table, mais qu'il doit être disponible à un endroit clairement indiqué.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/tableau-allergenes-affichage.jpg" alt="Une ardoise avec le mot ALLERGÈNES bien lisible posée sur le comptoir d'un restaurant, à côté des menus" width="1376" height="768" loading="lazy" decoding="async" />
@@ -172,6 +176,12 @@ faq:
 <figcaption>Le tableau se construit depuis les fiches techniques, jamais de mémoire : chaque composant du plat passe par les 14 cases.</figcaption>
 </figure>
 
+<h3>Tableau des allergènes vierge gratuit (Excel et PDF)</h3>
+
+<p>Pour démarrer sans repartir de zéro, nous avons mis en ligne un <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.xlsx">tableau des allergènes vierge en Excel</a>, gratuit et sans inscription. Il contient deux feuilles : un tableau vierge de 30 lignes, avec les 14 allergènes du règlement INCO en colonnes et une liste déroulante dans chaque case (C = contient, T = peut contenir des traces, N = ne contient pas), et l'exemple des cinq plats ci-dessus. Le nombre d'allergènes de chaque plat se calcule seul, et des notes rappellent les règles d'affichage.</p>
+
+<p>Vous préférez le papier ? La <a href="https://aichef.pro/descargas/tableau-allergenes-restaurant-vierge-aichef.pdf">version PDF</a> tient sur une page A4 paysage, à imprimer pour le classeur de salle ou à afficher. Remplissez-la toujours depuis vos fiches techniques : notre <a href="https://aichef.pro/fr/blog/fiche-technique-cuisine">fiche technique de cuisine vierge</a>, gratuite elle aussi, a déjà une case pour chacun des 14 allergènes.</p>
+
 <h2>Les erreurs qui coûtent cher</h2>
 
 <p>Voici les erreurs les plus fréquentes, celles que l'on voit dans les cuisines professionnelles. Les éviter, c'est gagner du temps, de la crédibilité et la confiance de vos clients.</p>
@@ -181,7 +191,7 @@ faq:
 <li><strong>L'information donnée seulement à l'oral par le serveur.</strong> Le serveur peut se tromper, oublier, ou ne pas avoir le temps de vérifier. L'écrit est une protection pour le client et pour vous. L'oral ne remplace jamais l'écrit.</li>
 <li><strong>Confondre « traces » et ingrédients volontaires.</strong> Une mention « traces de fruits à coque » ne couvre pas un plat qui contient réellement des noix dans la recette. La réglementation exige de déclarer ce qui est volontairement mis en œuvre. Les « traces » sont un supplément, pas un substitut.</li>
 <li><strong>Oublier les allergènes des produits achetés.</strong> Un fond de veau industriel, une sauce soja, un bouillon en cube : ces produits ont leurs propres listes d'ingrédients. Si vous ne les vérifiez pas, vous risquez de manquer un allergène. Un changement de fournisseur peut aussi modifier la composition d'un produit sans que vous le sachiez.</li>
-<li><strong>Un document que le client doit réclamer au lieu de le trouver seul.</strong> Si le client doit demander le cahier au serveur, ou chercher une ardoise cachée, l'information n'est pas « directement accessible ». La règle est claire : le client doit pouvoir la trouver sans intermédiaire.</li>
+<li><strong>Un document que le client doit réclamer au lieu de le trouver seul.</strong> Si le client doit demander le cahier au serveur, ou chercher une ardoise cachée, l'information n'est pas consultable « directement et librement ». La règle est claire : le client doit pouvoir la trouver sans intermédiaire.</li>
 </ul>
 
 <p>Ces erreurs ne sont pas des fatalités. Elles se corrigent avec une méthode simple et une responsabilité claire. Le coût d'une erreur, lui, peut être lourd : une réaction allergique, une urgence médicale, une inspection défavorable. Mieux vaut prévenir.</p>
