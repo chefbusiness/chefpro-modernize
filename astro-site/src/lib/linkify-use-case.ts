@@ -95,6 +95,13 @@ const PRODUCT_ALIASES: Record<string, string> = {
 
 const ALL_PRODUCT_LINKS: Record<string, string> = { ...PRODUCT_LINKS, ...PRODUCT_ALIASES };
 
+// Nombres visibles en las páginas NL (products-catalog.ts name.nl). El href sigue
+// siendo la landing ES: estas páginas no tienen tienda propia en neerlandés.
+const NL_PRODUCT_ALIASES: Record<string, string> = {
+  'Pack HACCP': '/pack-appcc',
+  'Kit financieel plan voor restaurants': '/kit-plan-financiero',
+};
+
 // Agentes / apps de la suite — enlazan a la home del app (VERBATIM del original).
 const AGENT_NAMES: string[] = [
   // Gastro Profile Pro
@@ -142,9 +149,12 @@ const AGENT_NAMES: string[] = [
   'Keyword Discovery AI+',
 ];
 
-function buildPattern(): { regex: RegExp; entries: Array<{ text: string; type: 'product' | 'agent'; href: string }> } {
+function buildPattern(extraAliases: Record<string, string> = {}): {
+  regex: RegExp;
+  byText: Record<string, { type: 'product' | 'agent'; href: string }>;
+} {
   const entries: Array<{ text: string; type: 'product' | 'agent'; href: string }> = [];
-  for (const [name, url] of Object.entries(ALL_PRODUCT_LINKS)) {
+  for (const [name, url] of Object.entries({ ...ALL_PRODUCT_LINKS, ...extraAliases })) {
     entries.push({ text: name, type: 'product', href: url });
   }
   for (const name of AGENT_NAMES) {
@@ -154,17 +164,15 @@ function buildPattern(): { regex: RegExp; entries: Array<{ text: string; type: '
   entries.sort((a, b) => b.text.length - a.text.length);
   const escaped = entries.map(e => e.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   const regex = new RegExp(`(${escaped.join('|')})`, 'g');
-  return { regex, entries };
+  const byText: Record<string, { type: 'product' | 'agent'; href: string }> = {};
+  for (const entry of entries) {
+    if (!byText[entry.text]) byText[entry.text] = { type: entry.type, href: entry.href };
+  }
+  return { regex, byText };
 }
 
-const { regex: LINK_REGEX, entries: LINK_ENTRIES } = buildPattern();
-const LINK_BY_TEXT: Record<string, { type: 'product' | 'agent'; href: string }> = LINK_ENTRIES.reduce(
-  (acc, e) => {
-    if (!acc[e.text]) acc[e.text] = { type: e.type, href: e.href };
-    return acc;
-  },
-  {} as Record<string, { type: 'product' | 'agent'; href: string }>
-);
+const BASE_PATTERN = buildPattern();
+const NL_PATTERN = buildPattern(NL_PRODUCT_ALIASES);
 
 const LINK_CLASS = 'text-primary font-semibold underline-offset-2 hover:underline';
 
@@ -181,11 +189,12 @@ function escapeHtml(s: string): string {
  * para set:html. Productos → <a> interno; agentes → <a> externo al app (target=_blank).
  * El texto NO enlazado se escapa (los enlaces envuelven el texto escapado).
  */
-export function linkifyHtml(text: string, appUrl: string): string {
-  const parts = text.split(LINK_REGEX);
+export function linkifyHtml(text: string, appUrl: string, lang?: string): string {
+  const { regex, byText } = lang === 'nl' ? NL_PATTERN : BASE_PATTERN;
+  const parts = text.split(new RegExp(regex.source, 'g'));
   return parts
     .map(part => {
-      const link = LINK_BY_TEXT[part];
+      const link = byText[part];
       if (!link) return escapeHtml(part);
       const label = escapeHtml(part);
       if (link.type === 'product') {

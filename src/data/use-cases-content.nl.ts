@@ -41,7 +41,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "FileText",
         "title": "Professioneel financieel plan",
-        "description": "Kit Plan Financiero: cashflow, break-evenpunt, maandelijkse P&L en ratio-dashboard. Sjablonen klaar voor investeerders en banken."
+        "description": "Kit financieel plan voor restaurants: cashflow, break-evenpunt, maandelijkse P&L en ratio-dashboard. Sjablonen klaar voor investeerders en banken."
       },
       {
         "icon": "Calculator",
@@ -51,7 +51,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en voedselveiligheid",
-        "description": "Pack APPCC met 19 registraties klaar voor inspectie, registraties vanaf mobiel en afdrukklare A4-bladen."
+        "description": "Pack HACCP met 19 registraties klaar voor inspectie, registraties vanaf mobiel en afdrukklare A4-bladen."
       },
       {
         "icon": "Users",
@@ -81,11 +81,11 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Een Echte Dag van een Eigenaar met AI Chef Pro",
     "workflow": [
-      "08:30 · Koffie en dashboard — u opent het Kit Plan Financiero en bekijkt de ratio's van de vorige dag. U detecteert dat de foodcost is gestegen naar 33 % door verliezen bij vis.",
+      "08:30 · Koffie en dashboard — u opent het Kit financieel plan voor restaurants en bekijkt de ratio's van de vorige dag. U detecteert dat de foodcost is gestegen naar 33 % door verliezen bij vis.",
       "09:30 · Pro Restaurant Manager — u vraagt de agent om een oorzaakanalyse en krijgt 3 concrete acties voor deze week.",
       "10:30 · MenuDish Lokale SEO — u actualiseert de beschrijving van de 4 topgerechten in Google Business en op de website met zoekwoorden die Keyword Discovery AI+ heeft gedetecteerd.",
       "12:30 · Middagdienst — u superviseert de zaal ondersteund door de checklist van het Kit de Tareas Restaurante Casual.",
-      "15:30 · Overleg met beheerder — u exporteert maandelijkse P&L, ratio-dashboard en personeelsrooster als PDF rechtstreeks uit het Kit Plan Financiero. Overleg afgerond in 30 minuten.",
+      "15:30 · Overleg met beheerder — u exporteert maandelijkse P&L, ratio-dashboard en personeelsrooster als PDF rechtstreeks uit het Kit financieel plan voor restaurants. Overleg afgerond in 30 minuten.",
       "17:00 · Creatieve Keuken — u vraagt ideeën voor het komende seizoensmenu. De agent levert 8 gerechten met recept en foodcost CSV.",
       "18:30 · Team beslissing — u gebruikt Mentale Coach om het moeilijke gesprek met een sleutelmedewerker voor te bereiden. U gaat met structuur en argumenten naar het overleg.",
       "21:00 · Afsluiting — de manager stuurt u het automatische dagrapport via WhatsApp. U gaat naar huis zonder openstaand papierwerk."
@@ -230,7 +230,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterItems": [
         "1 uur per week om professionele dashboards met duidelijke KPI's af te sluiten",
         "Menu- en prijsbeslissingen met professionele foodcost en margeanalyse",
-        "Rapportage aan de beheerder in PDF rechtstreeks vanuit het Kit Plan Financiero",
+        "Rapportage aan de beheerder in PDF rechtstreeks vanuit het Kit financieel plan voor restaurants",
         "Geautomatiseerde lokale SEO en AI-marketing suite die uitgaven aan bureaus verlaagt",
         "Gemoedsrust: het team stuurt u automatische rapporten via WhatsApp"
       ]
@@ -280,7 +280,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en traceerbaarheid",
-        "description": "Pack APPCC met 17 registers, temperatuuralerts via mobiel en export die klaar is voor inspectie."
+        "description": "Pack HACCP met 17 registers, temperatuuralerts via mobiel en export die klaar is voor inspectie."
       },
       {
         "icon": "BarChart3",
@@ -313,7 +313,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "08:30 · Opening — u print de checklist voor de dienst vanuit de Kit de Tareas en controleert in 10 minuten de voorraad.",
       "09:30 · Pro Restaurant Manager — de agent vat de incidenten van de vorige dag en de openstaande acties voor u samen.",
       "10:30 · Kit Inventario — u valideert bestellingen bij leveranciers met een prijsvergelijking en meldingen bij minimale voorraad.",
-      "12:30 · Middagservice — het team registreert verlies en temperaturen via de mobiele telefoon met de Pack APPCC.",
+      "12:30 · Middagservice — het team registreert verlies en temperaturen via de mobiele telefoon met de Pack HACCP.",
       "15:30 · Rooster voor volgende week — u opent de Kit Gestión de Personal en sluit het rooster in 20 minuten af met inachtneming van de cao.",
       "17:00 · Personeelsmaaltijden — u genereert het personeelsmenu voor de komende week met ingrediënten die u al op voorraad heeft.",
       "19:00 · Moeilijk gesprek — u gebruikt Mentale Coach om het gesprek voor te bereiden met een kok die herhaaldelijk te laat komt.",
@@ -454,7 +454,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterItems": [
         "2 uur per week roosters afsluiten met een professioneel sjabloon met inachtneming van de cao",
         "HACCP via mobiel met registers, temperaturen en meldingen, klaar voor inspectie",
-        "Rapportage aan de eigenaar in PDF rechtstreeks vanuit de Kit Plan Financiero, met duidelijke dashboards",
+        "Rapportage aan de eigenaar in PDF rechtstreeks vanuit de Kit financieel plan voor restaurants, met duidelijke dashboards",
         "Systematische controle van verlies met nauwkeurige gegevens en voorraadmeldingen",
         "Personeelsmaaltijden gegenereerd met AI, met respect voor de doelstelling op kosten en teammotivatie"
       ]
@@ -494,7 +494,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "Geconsolideerde dashboards",
-        "description": "Kit Plan Financiero: vergelijk foodcost, productiviteit, verliezen en gemiddeld besteedbaar bedrag tussen al uw restaurants in één overzicht."
+        "description": "Kit financieel plan voor restaurants: vergelijk foodcost, productiviteit, verliezen en gemiddeld besteedbaar bedrag tussen al uw restaurants in één overzicht."
       },
       {
         "icon": "ChefHat",
@@ -534,13 +534,13 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Een echte dag van een operationeel directeur met AI Chef Pro",
     "workflow": [
-      "08:30 · Koffie en Kit Plan Financiero — u opent het geconsolideerde dashboard van de 7 locaties van de groep en detecteert dat locatie 4 een foodcost van 33% heeft (+3 pp boven doel).",
+      "08:30 · Koffie en Kit financieel plan voor restaurants — u opent het geconsolideerde dashboard van de 7 locaties van de groep en detecteert dat locatie 4 een foodcost van 33% heeft (+3 pp boven doel).",
       "09:30 · Pro Restaurant Manager — u vraagt de agent om een geautomatiseerde analyse van de oorzaak per locatie. Het identificeert een probleem met visverliezen.",
-      "10:30 · Videogesprek met de manager van locatie 4, ondersteund door echte gegevens uit het Kit Plan Financiero, niet op intuïtie.",
+      "10:30 · Videogesprek met de manager van locatie 4, ondersteund door echte gegevens uit het Kit financieel plan voor restaurants, niet op intuïtie.",
       "12:00 · Executive Chef Pro — u werkt de procedure voor het hanteren van vis bij en deze wordt gerepliceerd naar de 7 keukens als nieuwe versie van de handleiding.",
       "15:30 · Geconsolideerde roosters — u bekijkt het Kit Gestión de Personal met productiviteitsratio's van alle locaties en ondertekent de onboarding van de nieuwe manager van locatie 8.",
       "17:00 · Sonar Deep Research — u onderzoekt de markt voor de volgende opening in een andere stad: analyse van gebieden, gemiddeld besteedbaar bedrag en concurrentie.",
-      "19:00 · Vergadering met het comité — u exporteert de KPI's van het kwartaal naar PDF rechtstreeks vanuit het Kit Plan Financiero. Vergadering afgerond in 45 minuten.",
+      "19:00 · Vergadering met het comité — u exporteert de KPI's van het kwartaal naar PDF rechtstreeks vanuit het Kit financieel plan voor restaurants. Vergadering afgerond in 45 minuten.",
       "21:30 · Afsluiting — de 7 managers sturen u het automatische dagrapport via WhatsApp. U gaat naar huis met een volledig beeld van de groep."
     ],
     "productsTitle": "Downloadbare sjablonen en kits voor restaurantgroepen",
@@ -568,7 +568,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe wordt dezelfde standaard in alle units gegarandeerd?",
-        "a": "Executive Chef Pro standaardiseert recepten en technische fiches; het Pack APPCC verenigt traceerbaarheid; het Kit de Escandallos Pro handhaaft dezelfde berekeningen in alle locaties. De handleidingen worden met één klik gerepliceerd en vanuit één punt bijgewerkt."
+        "a": "Executive Chef Pro standaardiseert recepten en technische fiches; het Pack HACCP verenigt traceerbaarheid; het Kit de Escandallos Pro handhaaft dezelfde berekeningen in alle locaties. De handleidingen worden met één klik gerepliceerd en vanuit één punt bijgewerkt."
       },
       {
         "q": "Zijn er kortingen voor groepen met meerdere locaties?",
@@ -677,9 +677,9 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "Dezelfde standaard gerepliceerd in alle 7 units: recepten, handleidingen en HACCP uniform",
-        "Locatie met afwijkingen detecteren in 1 dag met geconsolideerd dashboard van het Kit Plan Financiero",
+        "Locatie met afwijkingen detecteren in 1 dag met geconsolideerd dashboard van het Kit financieel plan voor restaurants",
         "Onboarding van een nieuwe manager in 1 week met repliceerbare handleidingen en training",
-        "Rapportage aan het comité in PDF rechtstreeks uit het Kit Plan Financiero met geconsolideerde KPI's",
+        "Rapportage aan het comité in PDF rechtstreeks uit het Kit financieel plan voor restaurants met geconsolideerde KPI's",
         "Expansiebeslissingen ondersteund door Sonar Deep Research en professionele Cómo Montar…-gidsen"
       ]
     },
@@ -795,7 +795,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is er iets specifieks voor groepen met meerdere vestigingen en restaurantketens?",
-        "a": "Ja. De agent Executive Chef Pro is bedoeld voor standaardisatie: dezelfde technische fiche, dezelfde kostprijsberekening en dezelfde handboeken, herhaald in alle vestigingen. Samen met de Kit Plan Financiero consolideert u de KPI-rapportage per vestiging en per groep."
+        "a": "Ja. De agent Executive Chef Pro is bedoeld voor standaardisatie: dezelfde technische fiche, dezelfde kostprijsberekening en dezelfde handboeken, herhaald in alle vestigingen. Samen met de Kit financieel plan voor restaurants consolideert u de KPI-rapportage per vestiging en per groep."
       },
       {
         "q": "Is er een bibliotheek met prompts voor chefs?",
@@ -976,7 +976,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC en traceerbaarheid",
-        "description": "Pack APPCC met 19 registraties: temperaturen, verliezen, allergenen en traceerbaarheid vanaf de mobiel van het team."
+        "description": "Pack HACCP met 19 registraties: temperaturen, verliezen, allergenen en traceerbaarheid vanaf de mobiel van het team."
       },
       {
         "icon": "Beaker",
@@ -999,7 +999,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "08:00 · Opening — u print de mise en place van de dag vanuit het Kit de Tareas en valideert bestellingen bij leveranciers met het Kit Inventario.",
       "09:00 · Creatieve Keuken — u ontwikkelt een gerecht buiten de kaart voor het weekend met product dat goed geprijsd was. U ontvangt recept + kostprijsberekening CSV.",
       "10:30 · Kit de Escandallos Pro — u laadt de CSV, past uw reële prijzen toe en valideert dat de foodcost klopt op 28 %.",
-      "12:30 · Service — het team registreert verliezen en temperaturen vanaf de mobiel met het Pack APPCC. U bent in de keuken, niet op kantoor.",
+      "12:30 · Service — het team registreert verliezen en temperaturen vanaf de mobiel met het Pack HACCP. U bent in de keuken, niet op kantoor.",
       "15:30 · Korte briefing met de brigade om het gerecht van de dag door te nemen en de mise aan te passen.",
       "17:00 · Pro Prompts eBook — u vraagt de agent om het script te genereren voor de training van een nieuwe kok die morgen begint.",
       "19:30 · Avondservice — u coördineert de service met het team, ondersteund door de gecentraliseerde technische fiches.",
@@ -1018,7 +1018,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "faqs": [
       {
         "q": "Moet u een Excel-expert zijn?",
-        "a": "Nee. De sjablonen van het Kit de Escandallos Pro en het Pack APPCC hebben vooraf geladen formules, u voert alleen gegevens in. Er is een video-tutorial van 5 minuten om te starten."
+        "a": "Nee. De sjablonen van het Kit de Escandallos Pro en het Pack HACCP hebben vooraf geladen formules, u voert alleen gegevens in. Er is een video-tutorial van 5 minuten om te starten."
       },
       {
         "q": "Werkt het als onze menukaart elke maand of elk seizoen verandert?",
@@ -1195,7 +1195,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC vanaf de mobiel",
-        "description": "Pack APPCC met registraties, temperatuuralarmen en PDF-export. Het team registreert vanaf de mobiel zonder papierwerk."
+        "description": "Pack HACCP met registraties, temperatuuralarmen en PDF-export. Het team registreert vanaf de mobiel zonder papierwerk."
       },
       {
         "icon": "Calculator",
@@ -1227,7 +1227,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "workflow": [
       "07:30 · Opening – u opent het Kit de Tareas en controleert de mise en place van de dag. U tekent de kritieke voorraad met het Kit Inventario.",
       "08:30 · Korte briefing met de brigade – u doorloopt de gangen van de dag met gecentraliseerde technische fiches in de hand.",
-      "12:00 · Middagservice – u superviseert de partijen, het team registreert verliezen en temperaturen vanaf de mobiel met het Pack APPCC.",
+      "12:00 · Middagservice – u superviseert de partijen, het team registreert verliezen en temperaturen vanaf de mobiel met het Pack HACCP.",
       "15:30 · Creatieve Keuken – de chef-kok vraagt u om een speciaal gerecht voor zaterdag. U genereert gerecht + kostprijs-CSV in 20 minuten.",
       "16:00 · Kit de Escandallos Pro – u laadt de CSV met uw werkelijke prijzen, valideert dat de foodcost op 28% klopt en exporteert het technische fiche.",
       "17:30 · Personeelsmaaltijden – u bereidt het personeelsmenu voor de komende week, rekening houdend met de doelkost en de voorraad in de koeling.",
@@ -1429,7 +1429,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC buiten de locatie",
-        "description": "Pack APPCC met sjablonen aangepast aan product dat onderweg is: traceerbaarheid, temperatuur tijdens transport en registraties op externe locatie."
+        "description": "Pack HACCP met sjablonen aangepast aan product dat onderweg is: traceerbaarheid, temperatuur tijdens transport en registraties op externe locatie."
       },
       {
         "icon": "Image",
@@ -1454,7 +1454,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "10:30 · Calcula Pax + Kit de Escandallos Pro — u schaalt op naar 180 gasten, laadt de CSV met uw werkelijke prijzen en valideert de doelwinstmarge.",
       "12:00 · Validatie met klant — u exporteert het voorstel met technische fiches en gastronomische fotografie van GastroIMG Gen+.",
       "14:00 · Kit de Tareas Catering — u plant productie, transport, opbouw, service en afbouw van het evenement van zaterdag.",
-      "16:00 · APPCC buiten de locatie — u bereidt temperatuurregistraties tijdens transport en traceerbaarheid op externe locatie voor met het Pack APPCC.",
+      "16:00 · APPCC buiten de locatie — u bereidt temperatuurregistraties tijdens transport en traceerbaarheid op externe locatie voor met het Pack HACCP.",
       "18:00 · Allergenen ID — u genereert het allergenenoverzicht per gerecht, klaar voor de zaal en voor gasten met beperkingen.",
       "19:30 · Brief aan het team — u stelt de servicebrief samen met het keuken- en zaalteam van het evenement, alles vanuit één bron."
     ],
@@ -1479,7 +1479,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Deckt het APPCC buiten de vaste locatie?",
-        "a": "Ja. Het Pack APPCC heeft specifieke sjablonen voor product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locatie."
+        "a": "Ja. Het Pack HACCP heeft specifieke sjablonen voor product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locatie."
       },
       {
         "q": "Zijn er specifieke sjablonen voor catering?",
@@ -1632,7 +1632,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "FileText",
-        "title": "Kit Plan Financiero",
+        "title": "Kit financieel plan voor restaurants",
         "description": "Cashflow, maandelijkse P&L, dashboard met ratio's en winstgevendheid per evenement en per klant. Professionele sjablonen aangepast aan catering."
       },
       {
@@ -1648,7 +1648,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en certificeringen",
-        "description": "Pack APPCC met sjablonen aangepast aan catering: traceerbaarheid, transport en registraties klaar voor inspectie en zakelijke klanten."
+        "description": "Pack HACCP met sjablonen aangepast aan catering: traceerbaarheid, transport en registraties klaar voor inspectie en zakelijke klanten."
       },
       {
         "icon": "Sparkles",
@@ -1673,12 +1673,12 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Een echte dag van een cateringondernemer met AI Chef Pro",
     "workflow": [
-      "08:30 · Kit Plan Financiero — u opent het dashboard en ontdekt dat een evenement van het weekend een marge heeft van 18%, onder de doelstelling (28%).",
+      "08:30 · Kit financieel plan voor restaurants — u opent het dashboard en ontdekt dat een evenement van het weekend een marge heeft van 18%, onder de doelstelling (28%).",
       "09:30 · Kit de Escandallos Pro — u analyseert de kostprijsberekening van het evenement en past het menu of de prijs aan voordat u het contract sluit.",
       "11:00 · Catering AI+ — u sluit een voorstel voor een zakelijke klant met een door AI gegenereerde presentatie die met de agent is gevalideerd.",
       "12:30 · GastroIMG Gen+ — u genereert de foto's van de gerechten van het voorgestelde menu om in de presentatie op te nemen.",
       "14:00 · Overleg met zakelijke klant — u presenteert een voorstel dat in 1 uur is afgerond in plaats van de traditionele 3 dagen.",
-      "16:30 · Kit Plan Financiero — u valideert de kwartaalprognose en exporteert naar PDF voor overleg met partners.",
+      "16:30 · Kit financieel plan voor restaurants — u valideert de kwartaalprognose en exporteert naar PDF voor overleg met partners.",
       "18:00 · Kit Gestión de Personal — u controleert het weekendrooster met vast en tijdelijk personeel en ondertekent contracten per evenement.",
       "20:00 · BlogPost SEO Gen+ — u publiceert een bericht over het laatste grote zakelijke evenement om organisch nieuwe klanten aan te trekken."
     ],
@@ -1715,7 +1715,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is het veilig om het financiële plan aan een AI toe te vertrouwen?",
-        "a": "Ja. Het Kit Plan Financiero is een professionele Excel-sjabloon met vooraf geladen formules, geen AI. U voert de werkelijke gegevens in en de tool berekent. De AI-agenten worden alleen gebruikt om beslissingen te ondersteunen, voorstellen op te stellen en analyses uit te voeren, niet voor kritieke financiële berekeningen."
+        "a": "Ja. Het Kit financieel plan voor restaurants is een professionele Excel-sjabloon met vooraf geladen formules, geen AI. U voert de werkelijke gegevens in en de tool berekent. De AI-agenten worden alleen gebruikt om beslissingen te ondersteunen, voorstellen op te stellen en analyses uit te voeren, niet voor kritieke financiële berekeningen."
       }
     ],
     "ctaTitle": "Laat uw catering groeien met echte marge, niet met intuïtie.",
@@ -1881,7 +1881,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC bar",
+        "title": "Pack HACCP bar",
         "description": "Traceerbaarheid van ijs, verse garnishes, zelfgemaakte infusies en kritische temperaturen."
       },
       {
@@ -1940,7 +1940,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met de seizoensgebondenheid van de kaart?",
-        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst, kerst, Valentijn) vooraf. Het Kit Plan Financiero projecteert een realistische seizoenscashflow zodat u met voorraad en kas bij elke piek aankomt."
+        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst, kerst, Valentijn) vooraf. Het Kit financieel plan voor restaurants projecteert een realistische seizoenscashflow zodat u met voorraad en kas bij elke piek aankomt."
       }
     ],
     "ctaTitle": "Uw cocktailbar met reële marge en signature techniek.",
@@ -2101,7 +2101,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC pizzeria",
+        "title": "Pack HACCP pizzeria",
         "description": "Traceerbaarheid van meel, zuurdesem, mozzarella, sauzen en kritische temperaturen in oven en koelcel."
       },
       {
@@ -2165,7 +2165,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met seizoensgebondenheid en evenementen?",
-        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst met paddenstoelen en truffel, speciaal voor Valentijnsdag, Pasen, Kerstmis). Het Kit Plan Financiero projecteert de realistische seizoenscashflow zodat u met voldoende voorraad en kasgeld elke piek haalt."
+        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst met paddenstoelen en truffel, speciaal voor Valentijnsdag, Pasen, Kerstmis). Het Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow zodat u met voldoende voorraad en kasgeld elke piek haalt."
       }
     ],
     "ctaTitle": "Uw pizzeria met echte marge en authentieke techniek.",
@@ -2331,7 +2331,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC bakkerij",
+        "title": "Pack HACCP bakkerij",
         "description": "Traceerbaarheid van meel, zuurdesem, preferments, conservering en kritische temperaturen in de rijsruimte."
       },
       {
@@ -2390,7 +2390,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met seizoensgebondenheid en evenementen?",
-        "a": "Gastro Calendar plant de belangrijkste seizoenen (Pasen met mona's en paasbrood, Kerst met Roscón en panettone, Sint-Jan, lokale evenementen) ruim van tevoren. Het Kit Plan Financiero projecteert een realistische seizoensgebonden cashflow."
+        "a": "Gastro Calendar plant de belangrijkste seizoenen (Pasen met mona's en paasbrood, Kerst met Roscón en panettone, Sint-Jan, lokale evenementen) ruim van tevoren. Het Kit financieel plan voor restaurants projecteert een realistische seizoensgebonden cashflow."
       }
     ],
     "ctaTitle": "Uw ambachtelijke bakkerij met duidelijke marge en professionele techniek.",
@@ -2556,7 +2556,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC chocolaterie",
+        "title": "Pack HACCP chocolaterie",
         "description": "Traceerbaarheid van cacao, zuivel, noten, alcohol en professionele bewaring met gedocumenteerde curven."
       },
       {
@@ -2616,7 +2616,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het u met de sterke seizoensgebondenheid?",
-        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit Plan Financiero projecteert de realistische seizoenscashflow zodat u met productie en kas bij elke piek aankomt."
+        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow zodat u met productie en kas bij elke piek aankomt."
       }
     ],
     "ctaTitle": "Uw chocolaterie met duidelijke marge en authentieke techniek.",
@@ -3011,7 +3011,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC hotelero",
+        "title": "Pack HACCP hotelero",
         "description": "Traceerbaarheid van buffet, banketten, roomservice en bar met kritische temperaturen en bewaring."
       },
       {
@@ -3231,7 +3231,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC zaal",
+        "title": "Pack HACCP zaal",
         "description": "Traceerbaarheid van de wijnkelder, conservering van wijnen, decanteren en serveertemperaturen."
       },
       {
@@ -3456,7 +3456,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC wijnkelder",
+        "title": "Pack HACCP wijnkelder",
         "description": "Traceerbaarheid van wijnen, conservering, mislukte ontkurking en serveertemperaturen per type."
       },
       {
@@ -3681,7 +3681,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC grill",
+        "title": "Pack HACCP grill",
         "description": "Traceerbaarheid van vlees, dry-aging, kerntemperatuur en conservering."
       },
       {
@@ -3911,7 +3911,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC ijsbereiding",
+        "title": "Pack HACCP ijsbereiding",
         "description": "Traceerbaarheid van melk, vers fruit, noten en kritische temperaturen."
       },
       {
@@ -4136,7 +4136,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC Patisserie",
+        "title": "Pack HACCP Patisserie",
         "description": "Traceerbaarheid van ei, crèmes, noten en professionele bewaring."
       },
       {
@@ -4347,7 +4347,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC en traceerbaarheid",
-        "description": "Pack APPCC met 19 registraties, registraties via mobiel, meldingen en afdrukklare A4-bladen voor de inspectie."
+        "description": "Pack HACCP met 19 registraties, registraties via mobiel, meldingen en afdrukklare A4-bladen voor de inspectie."
       },
       {
         "icon": "Users",
@@ -4361,7 +4361,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "BarChart3",
-        "title": "Kit Plan Financiero",
+        "title": "Kit financieel plan voor restaurants",
         "description": "Dashboard met ratio's, foodcost, productiviteit en gemiddeld ticket. Rapportage aan de eigenaar in PDF."
       },
       {
@@ -4381,10 +4381,10 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "10:00 · Casual Restaurants AI+ — u vraagt de agent om suggesties voor de dagschotel met producten die u op voorraad heeft.",
       "10:30 · Creatieve Keuken + Kit de Escandallos Pro — u calculeert de dagschotel met uw prijzen en valideert de marge.",
       "12:30 · Middagdienst — keuken, bediening en delivery gecoördineerd met sjablonen. Verliezen geregistreerd via de mobiel met APPCC.",
-      "15:30 · Kit Plan Financiero — u bekijkt de KPI's van de vorige dag en ontdekt dat de foodcost op maandag is gestegen naar 32%, u identificeert de oorzaak.",
+      "15:30 · Kit financieel plan voor restaurants — u bekijkt de KPI's van de vorige dag en ontdekt dat de foodcost op maandag is gestegen naar 32%, u identificeert de oorzaak.",
       "17:00 · MenuDish Local SEO — u werkt de beschrijvingen van de 6 topgerechten bij in Google Business en op de website.",
       "18:00 · Kit Inventario — u valideert bestellingen bij leveranciers met prijsvergelijking en meldingen voor minimale voorraad.",
-      "23:30 · Sluiting — APPCC ondertekend, dagelijks rapport aan de eigenaar in PDF direct vanuit het Kit Plan Financiero."
+      "23:30 · Sluiting — APPCC ondertekend, dagelijks rapport aan de eigenaar in PDF direct vanuit het Kit financieel plan voor restaurants."
     ],
     "productsTitle": "Downloadbare sjablonen en kits voor casual restaurants",
     "productIds": [
@@ -4581,7 +4581,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC vereenvoudigd",
-        "description": "Pack APPCC met minimale maar complete registraties for koffiebar: melk, conservatie, waschen, temperaturen."
+        "description": "Pack HACCP met minimale maar complete registraties for koffiebar: melk, conservatie, waschen, temperaturen."
       },
       {
         "icon": "Image",
@@ -4596,7 +4596,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "KPIs en gemiddelde ticket",
-        "description": "Kit Plan Financiero: bezetting ratio, gemiddelde ticket, productiviteit en upselling van brunch en koffie."
+        "description": "Kit financieel plan voor restaurants: bezetting ratio, gemiddelde ticket, productiviteit en upselling van brunch en koffie."
       },
       {
         "icon": "Search",
@@ -4805,7 +4805,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC",
+        "title": "Pack HACCP",
         "description": "Sjablonen aangepast aan pizzeria: ovetemperature, conservering van zuurdesem, traceerbaarheid voor delivery."
       },
       {
@@ -5020,7 +5020,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC + Allergenen ID",
+        "title": "Pack HACCP + Allergenen ID",
         "description": "Traceerbaarheid van vlees, garingcontrole, temperatuur en allergenen per burger."
       },
       {
@@ -5081,7 +5081,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is er specifieke controle van vlees en traceerbaarheid?",
-        "a": "Ja. Pack APPCC met traceerbaarheid van vlees, garingcontrole op punt, interne temperatuur en bewaring."
+        "a": "Ja. Pack HACCP met traceerbaarheid van vlees, garingcontrole op punt, interne temperatuur en bewaring."
       },
       {
         "q": "Genereert het ideeën voor combo's en promoties?",
@@ -5192,7 +5192,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
         "Burger Pro AI+ + Creatieve Keuken documenteren reproduceerbare techniek",
         "Foodcost op 31% met professionele kostprijs en gecontroleerde verliezen",
         "Professionele foto's met GastroIMG Gen+ die de ranking op platforms verhogen",
-        "Pack APPCC met traceerbaarheid van vlees en geregistreerde verliezen",
+        "Pack HACCP met traceerbaarheid van vlees en geregistreerde verliezen",
         "Kit de Tareas Hamburguesería met sjablonen voor delivery en locatie"
       ]
     },
@@ -5491,7 +5491,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC patisserie",
+        "title": "Pack HACCP patisserie",
         "description": "Traceerbaarheid van ei, crèmes met zuivel, noten en professionele conservering."
       },
       {
@@ -5716,7 +5716,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC Bar",
+        "title": "Pack HACCP Bar",
         "description": "Specifieke traceerbaarheid: verse sappen, crèmes, bewaring van garnituren, reiniging van glaswerk."
       },
       {
@@ -5936,7 +5936,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC buiten de vaste locatie",
+        "title": "Pack HACCP buiten de vaste locatie",
         "description": "Traceerbaarheid tijdens transport, op externe locaties en externe service met registraties vanaf mobiel."
       },
       {
@@ -5963,7 +5963,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "12:00 · GastroIMG Gen+ — u genereert foto's van de gerechten om op te nemen in de presentatie aan de klant.",
       "14:00 · Overleg met klant — voorstel afgerond met een professionele presentatie in plaats van de oude Word-sjablonen.",
       "16:00 · Kit de Tareas Catering — u plant centrale productie, transport, opbouw en service voor het evenement van zaterdag.",
-      "18:00 · Pack APPCC — u bereidt temperatuurregistraties voor voor transport en traceerbaarheid op externe locaties.",
+      "18:00 · Pack HACCP — u bereidt temperatuurregistraties voor voor transport en traceerbaarheid op externe locaties.",
       "20:00 · Brief aan het team — u stelt een productie-, transport-, opbouw- en servicebrief samen vanuit één bron."
     ],
     "productsTitle": "Downloadbare Sjablonen en Kits voor Catering",
@@ -5987,7 +5987,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is er specifieke HACCP buiten de vaste locatie?",
-        "a": "Ja. Het Pack APPCC heeft sjablonen aangepast aan product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locaties."
+        "a": "Ja. Het Pack HACCP heeft sjablonen aangepast aan product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locaties."
       },
       {
         "q": "Genereert het commerciële voorstellen voor bedrijven?",
@@ -6007,7 +6007,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "ogImage": "https://aichef.pro/og/use-cases/catering-eventos.jpg"
     },
     "personalizationTitle": "Gepersonaliseerd voor Uw Catering vanaf Minuut Eén",
-    "personalizationBody": "AI Chef Pro start met de agent «Wie Ben Ik?», een conversationele onboarding van 2 minuten waarin u vertelt welk type catering u runt (bruiloften, zakelijke evenementen, cocktails, gala's), gemiddelde grootte, stad en jaarlijks volume. Elke agent —van Catering AI+ tot het Kit Plan Financiero— reageert aangepast aan uw type evenement, schaal en reële markt.",
+    "personalizationBody": "AI Chef Pro start met de agent «Wie Ben Ik?», een conversationele onboarding van 2 minuten waarin u vertelt welk type catering u runt (bruiloften, zakelijke evenementen, cocktails, gala's), gemiddelde grootte, stad en jaarlijks volume. Elke agent —van Catering AI+ tot het Kit financieel plan voor restaurants— reageert aangepast aan uw type evenement, schaal en reële markt.",
     "appsTitle": "De AI-agenten die U in Uw Catering Zult Gebruiken",
     "apps": [
       {
@@ -6166,12 +6166,12 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC corporativo",
+        "title": "Pack HACCP corporativo",
         "description": "HACCP verdeeld over de keukenafdelingen maar geconsolideerd in één dashboard voor de F&B Director."
       },
       {
         "icon": "BarChart3",
-        "title": "Kit Plan Financiero",
+        "title": "Kit financieel plan voor restaurants",
         "description": "Dashboard met KPI's per verkooppunt: ontbijt, restaurant, bar, roomservice, banketten. Bezetting en productiviteitsratio's."
       },
       {
@@ -6186,7 +6186,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "09:30 · Catering AI+ — u bereidt het bruiloftsbanket van komende zaterdag voor: menu, kostenberekening en productie voor 220 gasten.",
       "11:00 · Executive Chef Pro — u werkt het technisch blad van het nieuwe restaurantgerecht bij en het wordt gerepliceerd naar de roomservice en het banketmenu met dezelfde standaardisatie.",
       "13:00 · Middagdienst — à-la-carterestaurant + lobbybar + roomservice actief. Het team coördineert met specifieke templates per outlet.",
-      "15:30 · Kit Plan Financiero — u exporteert de KPI's per outlet van het kwartaal voor de vergadering met de hoteldirectie.",
+      "15:30 · Kit financieel plan voor restaurants — u exporteert de KPI's per outlet van het kwartaal voor de vergadering met de hoteldirectie.",
       "17:00 · Bar & Lounge AI+ — u ontwerpt de nieuwe cocktailkaart voor de lobbybar met professionele kostenberekening.",
       "19:30 · Rooster volgende week — Kit Gestión de Personal met roterende diensten met respect voor de cao, urenregistratie en gegenereerde personeelsmaaltijden.",
       "23:00 · HACCP geconsolideerd — registers van de 6 verkooppunten ondertekend en geëxporteerd, rapport aan de F&B Director en aan corporate verzonden in PDF."
@@ -6224,7 +6224,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "En de kostenbeheersing per outlet?",
-        "a": "De Kit Plan Financiero maakt het mogelijk om foodcost, productiviteit en marge afzonderlijk te analyseren voor ontbijt, restaurant, lobbybar, roomservice en banketten. Dat geeft een reëel beeld van welke outlet presteert en welke niet."
+        "a": "De Kit financieel plan voor restaurants maakt het mogelijk om foodcost, productiviteit en marge afzonderlijk te analyseren voor ontbijt, restaurant, lobbybar, roomservice en banketten. Dat geeft een reëel beeld van welke outlet presteert en welke niet."
       }
     ],
     "ctaTitle": "Uw hotel-F&B gecoördineerd en zonder chaos.",
@@ -6327,7 +6327,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
         "Kit de Tareas Hotel met specifieke templates per outlet, alles gecoördineerd in één systeem",
         "HACCP geconsolideerd in dashboard: registers vanaf mobiel, klaar voor inspectie en voor corporate",
         "Banketten geïntegreerd met Catering AI+ dat de productie van de reguliere F&B respecteert",
-        "Rapportage aan de directeur en corporate in PDF rechtstreeks vanuit de Kit Plan Financiero",
+        "Rapportage aan de directeur en corporate in PDF rechtstreeks vanuit de Kit financieel plan voor restaurants",
         "Roosters met Kit Gestión de Personal: 24/7-diensten met respect voor de cao zonder verschuivingen"
       ]
     },
@@ -6385,7 +6385,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC ijssalon",
+        "title": "Pack HACCP ijssalon",
         "description": "Traceerbaarheid van melk, vers fruit, noten met allergenen en kritieke temperaturen in koelcel, ijsmachine en vitrine."
       },
       {
@@ -6436,7 +6436,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe beheren we de sterke seizoensgebondenheid van de ijssalon?",
-        "a": "Gastro Calendar plant de pieken vooraf (Moederdag, zomer, Valentijnsdag, Kerst met ijstaarten) en het winterdal met taarten, semifreddo's en lepeldesserts om de gemiddelde besteding op peil te houden. De Kit Plan Financiero projecteert de realistische seizoenscashflow."
+        "a": "Gastro Calendar plant de pieken vooraf (Moederdag, zomer, Valentijnsdag, Kerst met ijstaarten) en het winterdal met taarten, semifreddo's en lepeldesserts om de gemiddelde besteding op peil te houden. De Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow."
       },
       {
         "q": "Is er controle op uitval in het productieatelier en de vitrine?",
@@ -6605,7 +6605,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC chocolaterie",
+        "title": "Pack HACCP chocolaterie",
         "description": "Traceerbaarheid van cacao, zuivel, noten, alcohol en professionele bewaring met gedocumenteerde temperatuurcurves."
       },
       {
@@ -6669,7 +6669,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met de sterke seizoensgebondenheid?",
-        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit Plan Financiero projecteert de realistische seizoenscashflow zodat u met productie en kasgeld bij elke piek aankomt."
+        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow zodat u met productie en kasgeld bij elke piek aankomt."
       }
     ],
     "ctaTitle": "Uw chocolaterie met duidelijke marge en professionele branding.",
@@ -7288,7 +7288,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC mexicano",
+        "title": "Pack HACCP mexicano",
         "description": "Traceerbaarheid van chili's, nixtamalized masa, langzaam gegaarde eiwitten en kritische temperaturen."
       },
       {
@@ -7518,7 +7518,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC peruano",
+        "title": "Pack HACCP peruano",
         "description": "Traceerbaarheid van verse vis, zeevruchten, ajíes en kritische temperaturen in ceviche en tiradito."
       },
       {
@@ -7743,7 +7743,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC",
+        "title": "Pack HACCP",
         "description": "Traceerbaarheid van vis voor sushi, fermentaties, kritische temperaturen en conservering."
       },
       {
@@ -7968,7 +7968,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC nikkei",
+        "title": "Pack HACCP nikkei",
         "description": "Traceerbaarheid van vis, fermenten, pepers en kritische temperaturen bij rauwe producten."
       },
       {
@@ -8198,7 +8198,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC plantaardig",
+        "title": "Pack HACCP plantaardig",
         "description": "Traceerbaarheid van fermenten, zelfgemaakte plantaardige eiwitten, verse kruiden en kritische temperaturen."
       },
       {
@@ -8418,7 +8418,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC grill",
+        "title": "Pack HACCP grill",
         "description": "Traceerbaarheid van vlees, dry-aging, kritische temperaturen in de kamer en kerntemperatuur bij het koken."
       },
       {
@@ -8638,7 +8638,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC cafetaria",
+        "title": "Pack HACCP cafetaria",
         "description": "Traceerbaarheid van gemalen koffie, melk, plantaardige alternatieven en eigen banket."
       },
       {
@@ -8868,7 +8868,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC sushi",
+        "title": "Pack HACCP sushi",
         "description": "Traceerbaarheid van vis voor sushi en kritische temperaturen."
       },
       {
@@ -9093,7 +9093,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC bar",
+        "title": "Pack HACCP bar",
         "description": "Traceerbaarheid van ham, vleeswaren, ansjovis, verse zeevruchten."
       },
       {
@@ -9313,7 +9313,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC food truck",
+        "title": "Pack HACCP food truck",
         "description": "Traceerbaarheid aangepast aan mobiele operatie: temperaturen, water, afval."
       },
       {
@@ -9548,7 +9548,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC Italiaans",
+        "title": "Pack HACCP Italiaans",
         "description": "Traceerbaarheid van verse pasta, Italiaanse kazen, vleeswaren en sauzen."
       },
       {
@@ -10432,7 +10432,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "CheckSquare",
-        "title": "Pack APPCC wijnkelder",
+        "title": "Pack HACCP wijnkelder",
         "description": "Traceerbaarheid van de wijnkelder en serveertemperaturen per wijnsoort."
       },
       {
@@ -10648,7 +10648,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC traceerbaar",
+        "title": "Pack HACCP traceerbaar",
         "description": "Traceerbaarheid van verspilling per proces voor duurzaamheidsaudits en zero-waste-certificeringen."
       },
       {
@@ -10704,7 +10704,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Genereert het traceerbaarheid voor zero-waste-certificeringen?",
-        "a": "Ja. Pack APPCC + Mermas GenCal leveren gedocumenteerde traceerbaarheid voor duurzaamheidsaudits en zero-waste- of B-Corp-certificeringen."
+        "a": "Ja. Pack HACCP + Mermas GenCal leveren gedocumenteerde traceerbaarheid voor duurzaamheidsaudits en zero-waste- of B-Corp-certificeringen."
       },
       {
         "q": "Hoe helpt het mij met afgestemde inkopen?",
@@ -10849,7 +10849,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "features": [
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC met Excel-sjablonen",
+        "title": "Pack HACCP met Excel-sjablonen",
         "description": "17 downloadbare Excel-sjablonen: temperaturen, reiniging, traceerbaarheid, allergenen, ongedierte, olie en water."
       },
       {
@@ -10884,7 +10884,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "Wine",
-        "title": "Pack APPCC voor wijnkelder",
+        "title": "Pack HACCP voor wijnkelder",
         "description": "Traceerbaarheid van wijnen, ontkurking, bewaring en servicetemperaturen per type."
       },
       {
@@ -10895,7 +10895,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Hoe implementeert u digitale APPCC in 4 stappen",
     "workflow": [
-      "1. Pack APPCC (€14, downloadbare Excel-sjablonen) — u downloadt de 17 professionele sjablonen aangepast aan uw type keuken (patisserie, ijssalon, restaurant, enz.).",
+      "1. Pack HACCP (€14, downloadbare Excel-sjablonen) — u downloadt de 17 professionele sjablonen aangepast aan uw type keuken (patisserie, ijssalon, restaurant, enz.).",
       "2. Allergenen ID — kijkt de recepten na en sjablonen van uw menu om allergenen per gerecht te identificeren. Het integreert ze in de technische fiches en de zaal.",
       "3. Creatieve Keuken met geïntegreerde APPCC — elk nieuw recept levert APPCC-procedures (kritische temperatuur, bewaring, allergenen, opslag) geïntegreerd in de technische fiche.",
       "4. Kit de Tareas met APPCC — dienstsjablonen (opening, service, sluiting) met geïntegreerde APPCC. Het team ondertekent elke dienst digitaal vanaf mobiel."
@@ -10913,7 +10913,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "faqs": [
       {
         "q": "Is het geschikt voor elk type horecagelegenheid?",
-        "a": "Ja. Pack APPCC past sjablonen aan voor restaurant, cafetaria, patisserie, ijssalon, chocolaterie, pizzeria, dark kitchen, bar, catering, hotel."
+        "a": "Ja. Pack HACCP past sjablonen aan voor restaurant, cafetaria, patisserie, ijssalon, chocolaterie, pizzeria, dark kitchen, bar, catering, hotel."
       },
       {
         "q": "Hoe kijkt u de 14 allergenen na?",
@@ -10921,7 +10921,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Deckt u Europese en Latijns-Amerikaanse regelgeving?",
-        "a": "Ja. Pack APPCC dekt Europese regelgeving (EU 852/2004 + 178/2002 + 1169/2011 allergenen) en aanpassingen voor Latijns-Amerika. Sonar Deep Research maakt het mogelijk om specifieke regelgeving per land te raadplegen."
+        "a": "Ja. Pack HACCP dekt Europese regelgeving (EU 852/2004 + 178/2002 + 1169/2011 allergenen) en aanpassingen voor Latijns-Amerika. Sonar Deep Research maakt het mogelijk om specifieke regelgeving per land te raadplegen."
       },
       {
         "q": "Genereert het traceerbaarheid voor ISO-audits?",
@@ -10941,7 +10941,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Gepersonaliseerd voor uw horecagelegenheid vanaf minuut één",
-    "personalizationBody": "AI Chef Pro start met «Wie Ben Ik?»: u vertelt het type horecagelegenheid en het land. Pack APPCC past sjablonen aan uw concept en lokale regelgeving aan.",
+    "personalizationBody": "AI Chef Pro start met «Wie Ben Ik?»: u vertelt het type horecagelegenheid en het land. Pack HACCP past sjablonen aan uw concept en lokale regelgeving aan.",
     "appsTitle": "De AI-agenten die u gebruikt voor APPCC",
     "apps": [
       {
