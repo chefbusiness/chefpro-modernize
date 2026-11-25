@@ -14,7 +14,7 @@ faq:
   - q: "What is Creative Pastry?"
     a: "Creative Pastry is a specialized AI agent within AI Chef Pro, built as a digital master pastry chef. It covers restaurant plated desserts, viennoiserie, chocolate work, and artisan frozen desserts, delivering technical recipes with historical context, food-cost breakdowns, and image generation."
   - q: "Can it calculate the exact cost of a cake for my bakery in Chicago?"
-    a: "Yes. Provide the recipe, city, and number of servings. The costing module applies user-defined trim loss and returns a per-portion cost in US dollars, adjusted against local foodservice ingredient pricing data."
+    a: "Yes. Provide the recipe, city, and number of servings. The costing module applies user-defined trim loss and returns a per-portion cost in US dollars from the ingredient prices you give it; check them against your current supplier invoices."
   - q: "How do I request a viennoiserie recipe with professional measurements?"
     a: "Specify technical parameters in your prompt: flour strength (W index), butter percentage, lamination type and number of folds, and whether a preferment is used. Creative Pastry interprets these inputs to return a precise baker’s formula."
   - q: "Does it generate dessert images I can use on my menu?"
@@ -36,10 +36,10 @@ draft: false
 <p>As an Executive Pastry Chef, my day splits between the bench and the clipboard. The Creative Pastry agent inside AI Chef Pro is my digital right hand — it lets me concept out plated desserts, run a quick food-cost breakdown on a seasonal tart before I ever order fruit, and generate editorial-quality images that sell the vision to ownership. Whether I am building a new brunch pastry program, costing a sixteen-component entremet, or just need a clean, scaled production recipe for a 10-quart Hobart, this agent cuts the back-and-forth and lets me stay where I belong: tasting, tweaking, and running the pass. It is built for chefs who need precision and speed, not another chatbot that thinks pastry cream comes out of a box.</p>
 <h2 class="wp-block-heading">AI dessert recipe generator: what to ask for</h2>
 <p>Ask for components, textures, temperatures and grams — not just "a pear dessert." Pastry lives in the details, and a prompt without weights gives you a paragraph, not a recipe.</p>
-<p>Creative Pastry concepts plated desserts, runs a quick food-cost breakdown, scales production recipes and generates images for the concept. Pastry is weighed in grams for precision, so ask in grams: every component, its weight, the yield and a cost line. Name the textures and temperatures you want on the plate — warm, cold, creamy, crisp. Then check sugar, set and bake on your own equipment, because your oven and your humidity are not the model's.</p>
+<p>Pastry is weighed in grams for precision, so ask in grams: every component, its weight, the yield and a cost line. Name the textures and temperatures you want on the plate — warm, cold, creamy, crisp. Then check sugar, set and bake on your own equipment, because your oven and your humidity are not the model's.</p>
 <ul class="wp-block-list">
-<li>"Create a plated dessert from seasonal pears and brown butter with four components: a warm element, a cold element, a crunch and a sauce. Give me weights in grams, a cost per plate, and a prep timeline for service."</li>
-<li>"Scale this entremet recipe from 6 portions to 40 portions (example quantities). Give me the scaled weights in grams and a production order — what to make first, what to hold, and what to finish a la minute."</li>
+<li>"Create a plated dessert from seasonal pears and brown butter with four components: a warm element, a cold element, a crunch and a sauce. Here are my ingredient prices: [paste]. Give me weights in grams, a cost per plate, and a prep timeline for service."</li>
+<li>"Scale this entremet recipe from [6] portions to [40] portions: [paste the recipe]. Give me the scaled weights in grams and a production order — what to make first, what to hold, and what to finish à la minute."</li>
 <li>"Write an allergy-aware dessert free of tree nuts and peanuts for a guest with those allergies. List every component with weights in grams, and flag where cross-contact risk usually sits in a pastry kitchen."</li>
 </ul>
 <p>The formula is a draft; the bench is the test.</p>
