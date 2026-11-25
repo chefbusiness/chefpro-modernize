@@ -1238,7 +1238,7 @@
     "tools": [
       {
         "title": "AI Waste Control",
-        "description": "Detect waste patterns, identify the most costly ingredients and get alerts when waste levels exceed optimal thresholds.",
+        "description": "Log your waste and the agent works out the yield, the cost of each loss and where it comes from, so you can see the most costly ingredients.",
         "keywords": [
           "waste",
           "food loss",
@@ -1265,7 +1265,7 @@
       },
       {
         "title": "Smart Purchase Planner",
-        "description": "Generate shopping lists based on your sales history to avoid overstock and reduce perishable food waste.",
+        "description": "Paste your sales and stock counts and get a draft order sheet that helps you avoid overstock and perishable waste.",
         "keywords": [
           "restaurant purchasing",
           "kitchen inventory",
@@ -1274,7 +1274,7 @@
       },
       {
         "title": "Profitability Analytics",
-        "description": "Real-time dashboard with key KPIs: food cost %, prime cost, margin per table and profitability per service.",
+        "description": "Key KPIs worked out from the figures you give it: food cost %, prime cost, margin per dish and profitability per service.",
         "keywords": [
           "restaurant KPIs",
           "profitability",
@@ -1283,7 +1283,7 @@
       },
       {
         "title": "Staff Cost Optimizer",
-        "description": "Calculate staff cost per service and get suggestions to adjust shifts based on forecast demand and prime cost targets.",
+        "description": "Calculate staff cost per service from your schedule and wages, and get suggestions to fit shifts to the covers you expect and your prime cost target.",
         "keywords": [
           "staff cost",
           "prime cost",
@@ -1302,7 +1302,7 @@
       },
       {
         "title": "Operations Director",
-        "description": "Monitor profitability across multiple venues from a single panel. Detect deviations before they affect your bottom line."
+        "description": "Compare costs across venues with the same method, from the figures each venue reports, and spot deviations early."
       },
       {
         "title": "Head Chef",
@@ -1310,24 +1310,24 @@
       },
       {
         "title": "Restaurant Group",
-        "description": "Standardize cost control across all your restaurants with the same metrics and automatic alerts."
+        "description": "Standardize cost control across all your restaurants with the same metrics and templates."
       }
     ],
     "why_section": {
       "title": "Why do costs spiral without AI control?",
-      "body": "Most restaurants lose between 8% and 15% of their revenue to waste, costing errors and poorly planned purchasing. AI Chef Pro AI automatically closes those leaks.",
+      "body": "Waste, costing errors and poorly planned purchasing eat into the margin quietly. The AI Chef Pro agents help you find those leaks and plan the fix; you decide what changes in the kitchen.",
       "benefits": [
-        "Recipe costs recalculated in real time when supplier prices change",
-        "Automatic alerts when food cost exceeds your custom threshold",
+        "Recipe costs recalculated when you enter a new supplier price",
+        "Each dish checked against your food cost target",
         "Star dish vs. money-losing dish analysis",
-        "Purchase planning based on sales history to avoid overstock",
-        "Profitability dashboard accessible from mobile, tablet or desktop",
-        "Weekly KPI report with concrete improvement recommendations"
+        "Purchase planning from the sales and stock counts you paste in",
+        "Works in the browser on mobile, tablet or desktop",
+        "A weekly KPI review with improvement ideas, from the figures you give it"
       ]
     },
     "pricing_section": {
       "title": "Start reducing costs today",
-      "subtitle": "Start with the Member plan for €10 per month. The subscription pays for itself with what you save in the first month.",
+      "subtitle": "Start with the Member plan for €10 per month. Monthly plans, no lock-in.",
       "annual_note": "The annual Premium Max option costs €950 per year."
     },
     "faq_section": {
@@ -1336,7 +1336,7 @@
     "faq": [
       {
         "question": "How quickly will I see results in cost reduction?",
-        "answer": "Most of our clients spot the first saving opportunities within 3-7 days of use. Real cost reduction consolidates between weeks 2 and 4, depending on restaurant volume."
+        "answer": "You can cost your best sellers on day one. How fast that turns into savings depends on your volume and on what you change in the kitchen: prices, portions, purchasing or the menu."
       },
       {
         "question": "Do I need accounting or finance knowledge to use the tool?",
@@ -1344,11 +1344,11 @@
       },
       {
         "question": "Does the AI update ingredient costs automatically?",
-        "answer": "You can enter your supplier prices manually or import them from a spreadsheet. The system recalculates all costings instantly. Coming soon: direct supplier integration."
+        "answer": "No. The agents don't connect to suppliers or read invoices: you type or paste your supplier prices, and the agent recosts the recipe with them."
       },
       {
         "question": "Does it work for small restaurants or only large groups?",
-        "answer": "It works for any size. From the family restaurant with 40 covers to groups with 20 venues. The Member plan at €10/month is ideal to start risk-free."
+        "answer": "It works for any size, from a family restaurant to a group with several venues. The Member plan at €10/month is a good place to start: monthly, with no lock-in."
       }
     ],
     "cta_section": {
@@ -2874,7 +2874,7 @@
       },
       {
         "question": "Is there a food cost calculator app?",
-        "answer": "You don't need to install one: this calculator runs in your phone's browser, free and without sign-up. Add it to your home screen and it opens like an app. For costing every dish with yields and waste, the AI Chef Pro agents work in the browser too, from €10/month."
+        "answer": "You don't need to install one: this calculator runs in your phone's browser, and the calculation is free with no sign-up (the Excel export asks for an email). Save it as a bookmark or a home-screen shortcut. For costing every dish with yields and waste, the AI Chef Pro agents work in the browser too, from €10/month."
       }
     ],
     "cta_section": {
