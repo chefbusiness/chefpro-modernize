@@ -39,7 +39,7 @@ Perché il netto? Perché il tuo margine, le tue spese, il tuo stipendio e il tu
 
 <h2>La tabella del food cost: lo scandaglio di un piatto riga per riga</h2>
 
-Per calcolare il food cost di un piatto in pochi minuti, costruisci lo scandaglio: ingrediente, quantità, costo unitario e costo per porzione. La somma di quella colonna è il costo del piatto, e il gioco è fatto.
+Per calcolare il food cost di un piatto in pochi minuti, costruisci lo scandaglio: ingrediente, quantità, costo unitario e costo per porzione. La somma di quella colonna è il costo del piatto, e il gioco è fatto. Se vuoi tenere insieme grammature, calo, allergeni e costo di ogni piatto, usa la [scheda tecnica della ricetta](https://aichef.pro/it/blog/scheda-tecnica-ricetta).
 
 Prendiamo un esempio concreto, un classico della cucina italiana: le tagliatelle al ragù. Ecco lo scandaglio per una porzione, con i prezzi di acquisto reali di un fornitore medio.
 

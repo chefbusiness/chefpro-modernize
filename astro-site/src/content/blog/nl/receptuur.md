@@ -10,6 +10,7 @@ image: /blog-assets/2026/11/ficha-tecnica-destacada.jpg
 imageAlt: "Receptuur boven de pass naast een bord zalm van de grillplaat en een digitale keukenweegschaal"
 translations:
   es: "ficha-tecnica-de-cocina"
+  it: "scheda-tecnica-ricetta"
 definedTerm:
   name: "Receptuur"
   description: "Een receptuur is het document dat een gerecht zo gedetailleerd beschrijft dat het er altijd hetzelfde uitkomt, wie het ook maakt: ingrediënten met netto- en brutohoeveelheden, een bereiding stap voor stap met tijden en temperaturen, allergenen, bewaring, opmaak en de kostprijs per portie. Het dient om te standaardiseren, om het team op te leiden en om de food cost te beheersen."
