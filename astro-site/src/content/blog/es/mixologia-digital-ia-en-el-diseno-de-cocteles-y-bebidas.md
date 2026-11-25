@@ -1369,7 +1369,7 @@ wpId: 1753
 
 
 
-<p class="wp-block-paragraph">Además, todos los planes incluyen soporte técnico y acceso a todos los agentes; lo que cambia entre ellos es la cantidad de créditos.</p>
+<p class="wp-block-paragraph">Además, todos los planes incluyen todos los agentes y soporte técnico. Lo que cambia entre ellos es la cantidad de créditos y el nivel de soporte: por email en Miembro, prioritario en Premium Pro y 24/7 en Premium Plus y Premium Max.</p>
 
 
 
