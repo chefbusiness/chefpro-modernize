@@ -125,7 +125,7 @@ def alto(ws, fila, *textos_y_anchos):
 
 def formula_bruto(f):
     # bruto = netto / (1 − uitval), naar boven afgerond op de gram; uitval ≥ 100 % → aviso (como el gemelo FR)
-    return f'=IF(B{f}="","",IF(N(D{f})>=1,"{UITVAL_KO}",ROUNDUP(B{f}/(1-N(D{f})),0)))'
+    return f'=IF(OR(B{f}="",NOT(ISNUMBER(B{f}))),"",IF(N(D{f})>=1,"{UITVAL_KO}",ROUNDUP(B{f}/(1-N(D{f})),0)))'
 
 
 def generar():
@@ -233,11 +233,11 @@ def generar():
 
     # Bewaring en kritische controlepunten
     fc = laatste_all + 2
-    titulo(ws, fc, 'Bewaring en kritische controlepunten (CCP)')
+    titulo(ws, fc, 'Bewaring en kritische beheerspunten (CCP)')
     for i, (k, v) in enumerate([
             ('Bewaring', 'Zalm gekoeld tot het aanschroeien; gesneden groenten afgedekt en gekoeld. Tijden en '
                          f'temperaturen {HACCP}.'),
-            ('Kritische controlepunten (CCP)', f'Koude keten van de vis; bereiding van de zalm. Grenzen en wie ze '
+            ('Kritische beheerspunten (CCP)', f'Koude keten van de vis; bereiding van de zalm. Grenzen en wie ze '
                                                f'controleert: {HACCP}.'),
             ('Houdbaarheid van voorbereidingen', f'{HACCP[0].upper()}{HACCP[1:]}.')]):
         f = fc + 1 + i
@@ -264,11 +264,11 @@ def generar():
     blok = [
         ('Kostprijs per portie (uit uw kostprijsberekening)', 4.29, EUR, True),
         ('Beoogde food cost (%)', 0.30, '0%', True),
-        ('Verkoopprijs excl. btw', f'=B{b}/B{b + 1}', EUR, False),
+        ('Verkoopprijs excl. btw', f'=IF(OR(B{b}="",N(B{b + 1})=0),"",B{b}/B{b + 1})', EUR, False),
         ('Btw (eten in de horeca in Nederland: 9 %)', 0.09, '0%', True),
-        ('Verkoopprijs incl. btw', f'=B{b + 2}*(1+B{b + 3})', EUR, False),
+        ('Verkoopprijs incl. btw', f'=IF(B{b + 2}="","",B{b + 2}*(1+N(B{b + 3})))', EUR, False),
         ('Prijs op de kaart (incl. btw, zelf afgerond)', 15.90, EUR, True),
-        ('Werkelijke food cost bij die prijs (%)', f'=B{b}/(B{b + 5}/(1+B{b + 3}))', '0.0%', False),
+        ('Werkelijke food cost bij die prijs (%)', f'=IF(OR(B{b}="",N(B{b + 5})=0),"",B{b}/(B{b + 5}/(1+N(B{b + 3}))))', '0.0%', False),
     ]
     for i, (k, v, fmt, ent) in enumerate(blok):
         celda(ws, b + i, 1, k, negrita=True)
@@ -412,6 +412,18 @@ def gate_pycel(p):
         assert round(val(f'B{b + 6}') * 100, 1) == 28.3, val(f'B{b + 6}')  # 4,29 / (16,50 / 1,09)
         poner(f'B{b + 3}', 0.21)
         assert round(val(f'B{b + 4}'), 2) == 17.30, val(f'B{b + 4}')  # 14,30 × 1,21
+        # Casos con celdas vacías / texto: ni error ni 0 falso (patrón del gemelo FR)
+        poner(f'B{e}', '180 g')  # netto como texto
+        assert val(f'E{e}') in (None, ''), val(f'E{e}')
+        poner(f'B{b + 5}', '')  # prijs op de kaart vacío
+        assert val(f'B{b + 6}') in (None, ''), val(f'B{b + 6}')
+        poner(f'B{b + 1}', '')  # food cost objetivo vacío
+        assert val(f'B{b + 2}') in (None, '') and val(f'B{b + 4}') in (None, ''), (val(f'B{b + 2}'), val(f'B{b + 4}'))
+        poner(f'B{b}', '')  # sin kostprijs
+        assert val(f'B{b + 2}') in (None, '') and val(f'B{b + 6}') in (None, '')
+        poner(f'B{b + 1}', 0.30)
+        poner(f'B{b + 5}', 15.90)
+        assert val(f'B{b + 2}') in (None, '') and val(f'B{b + 6}') in (None, '')
     return res
 
 
@@ -452,7 +464,7 @@ def main():
     parche = gate_parche()
     print(f'OK {SALIDA.relative_to(RAIZ)} · {cache} · bruto {bruto} · '
           'Voorbeeld zalm: kostprijs per portie € 4,29 · verkoopprijs € 14,30 / € 15,59 / € 15,90 · 29,4 %')
-    print(f'   gates: data_only OK · pycel sin caché OK (+4 casos de lógica) · idioma OK ({n} textos, sin español '
+    print(f'   gates: data_only OK · pycel sin caché OK (+4 casos de lógica, +5 de celdas vacías/texto) · idioma OK ({n} textos, sin español '
           f'ni «sporen») · parche --check: {parche}')
 
 
