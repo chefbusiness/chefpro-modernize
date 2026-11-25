@@ -1,8 +1,8 @@
 ---
-title: "Menu engineering : la méthode pour savoir quels plats vous font gagner de l'argent (et lesquels vous en font perdre)"
-description: "Menu engineering : 4 familles (étoiles, chevaux, énigmes, poids morts) pour repérer vos plats rentables. Méthode pas à pas et exemple chiffré pour marges."
+title: "Menu engineering (ingénierie de menu) : la méthode et un exemple chiffré"
+description: "Menu engineering ou ingénierie de menu : les 4 familles de plats (étoiles, chevaux, énigmes, poids morts), la méthode pas à pas et un exemple chiffré."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-25
 category: gestion-restaurant
 tags: ["menu engineering", "gestion restaurant", "marges", "carte"]
 image: /blog-assets/2026/08/menueng-destacada.jpg
@@ -27,7 +27,7 @@ faq:
 <h2>Ce qu'est le menu engineering (et d'où ça vient)</h2>
 <p>Le menu engineering est une méthode d'analyse de la carte qui croise, plat par plat, la popularité (les ventes réelles, sorties du ticket de caisse) et la rentabilité (la marge brute : prix de vente hors taxes moins coût matière, issue de la fiche technique).</p>
 <p>Cette approche a été codifiée dans les années 1980 par Michael Kasavana et Donald Smith, chercheurs à l’université d’État du Michigan. Leur intuition était simple : la plupart des restaurateurs ne savent pas quels plats leur font gagner de l’argent, car ils ne regardent que le chiffre d’affaires ou la fréquentation globale.</p>
-<p>En français, on parle parfois d’« ingénierie des menus », mais le métier utilise le terme anglais. Vous l’entendrez aussi bien dans la bouche d’un chef étoilé que d’un exploitant de chaîne. Retenez ceci : le menu engineering ne remplace pas votre intuition, il la documente avec des faits concrets.</p>
+<p>En français, on parle d’« ingénierie de menu » (ou « ingénierie des menus »), mais le métier utilise le terme anglais. Vous l’entendrez aussi bien dans la bouche d’un chef étoilé que d’un exploitant de chaîne. Retenez ceci : le menu engineering ne remplace pas votre intuition, il la documente avec des faits concrets.</p>
 
 <h2>Les 4 familles : étoiles, chevaux de labour, énigmes, poids morts</h2>
 <p>Une fois que vous avez croisé la popularité et la rentabilité de chaque plat, tout se range dans quatre cases. Voici le tableau de bord à retenir :</p>
