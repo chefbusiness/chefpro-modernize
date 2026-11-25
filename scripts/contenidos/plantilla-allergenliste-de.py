@@ -6,7 +6,8 @@ Gemelo alemán de plantilla-tableau-allergenes-fr.py (mismo diseño, colores, in
     código oficial y la hoja lo dice con la nota literal;
   - columnas A (Getreide) y H (Schalenfrüchte) = texto libre con validación de longitud (hay que nombrar la ART:
     Weizen, Haselnuss…); el resto, desplegable «X» (enthalten) / vacío; «Spuren (freiwillig)» y «Zusatzstoffe
-    (§ 5 LMZDV)» de texto; «Anzahl Allergene» calculada (COUNTIF de las X + las dos celdas de texto no vacías);
+    (§ 5 LMZDV)» de texto; «Anzahl Allergene» calculada (COUNTIF de las X + las dos celdas de texto no vacías y distintas de
+    «nein/keine/kein», que además se marcan en naranja);
   - campos Betrieb / Stand (Datum der letzten Prüfung) / Geprüft von; notas literales de la LMIDV (§ 4 Abs. 4).
 Keywords DE (nov-2026): «allergenliste vorlage» 170, «allergene liste vorlage» 90, «allergenkennzeichnung vorlage» 70,
 «allergene tabelle vorlage» 70.
@@ -24,6 +25,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import textwrap
 import warnings
 import zipfile
 from pathlib import Path
@@ -72,28 +74,33 @@ ANZ_ZEILEN = 30
 ART_HINWEIS = 'Bitte die Art nennen, z. B. Weizen / Haselnuss – „Gluten“ oder „Nüsse“ allein genügt nicht.'
 CODE_HINWEIS = ('In Deutschland gibt es keinen amtlichen Buchstaben-Code. Diese Vorlage nutzt die österreichische '
                 'Empfehlung (A–R); verwenden Sie den Code nur mit Legende.')
-MUENDLICH = ('Mündliche Information ist erlaubt, wenn das Personal hinreichend unterrichtet ist, eine schriftliche '
-             'oder elektronische Dokumentation der Zutaten vorliegt und ein Hinweis darauf aufmerksam macht '
-             '(§ 4 Abs. 4 LMIDV). Beispiel für den Hinweis: „Informationen zu Allergenen erhalten Sie mündlich von '
-             'unserem Personal; eine schriftliche Dokumentation liegt auf Nachfrage zur Einsicht bereit.“')
+MUENDLICH = ('Mündliche Information ist erlaubt (§ 4 Abs. 4 LMIDV), wenn hinreichend unterrichtetes Personal sie auf '
+             'Nachfrage unverzüglich vor der Bestellung gibt, eine schriftliche oder elektronische Dokumentation der '
+             'allergenen Zutaten vorliegt, die der Behörde und auf Nachfrage dem Gast leicht zugänglich ist, und ein '
+             'gut sichtbarer Hinweis auf beides aufmerksam macht. Beispiel für den Hinweis: „Informationen zu '
+             'Allergenen erhalten Sie mündlich von unserem Personal; eine schriftliche Dokumentation liegt auf '
+             'Nachfrage zur Einsicht bereit.“')
 PRUEFEN = 'Prüfen Sie die Liste bei jeder Rezeptur- oder Lieferantenänderung.'
 SPUREN_HINWEIS = ('„Spuren“ ist freiwillig: Tragen Sie dort nur ein echtes Risiko einer Kreuzkontamination ein. '
                   'Ein Spurenhinweis ersetzt nie die Angabe eines Allergens, das als Zutat enthalten ist.')
 REZEPTUR_HINWEIS = ('Füllen Sie jede Zeile anhand der Rezeptur aus, nie aus dem Gedächtnis: Grundrezept, Soße, Beilage, '
                     'Dressing, zugekaufte Produkte (Zutatenliste bzw. Produktdatenblatt) und Frittierfett.')
 NOTIZEN = [CODE_HINWEIS, ART_HINWEIS, SPUREN_HINWEIS, REZEPTUR_HINWEIS, MUENDLICH, PRUEFEN]
-LEGENDE = ('X = enthalten · leer = nicht enthalten · Allergen-Spalten A (Getreide) und H (Schalenfrüchte): die Art '
-           'eintragen (z. B. Weizen, Haselnuss) · „Anzahl Allergene“ berechnet sich automatisch')
-ANLEITUNG = ('Füllen Sie die gelben Zellen aus: eine Zeile pro Gericht. In den Allergen-Spalten A (Getreide) und H '
-             '(Schalenfrüchte) nennen Sie die Art, in den übrigen Allergen-Spalten wählen Sie „X“ aus der Liste.')
+LEGENDE = ('X = enthalten · leer = nicht enthalten · in die Spalten „A · Glutenhaltiges Getreide“ und „H · '
+           'Schalenfrüchte“ die Art eintragen (z. B. Weizen, Haselnuss) · „Anzahl Allergene“ berechnet sich automatisch')
+ANLEITUNG = ('Füllen Sie die gelben Zellen aus: eine Zeile pro Gericht. In den Spalten „A · Glutenhaltiges Getreide“ '
+             'und „H · Schalenfrüchte“ nennen Sie die Art, in den übrigen Allergen-Spalten wählen Sie „X“ aus der '
+             'Liste.')
 BEISPIEL_HINWEIS = ('Fiktives Beispiel zur Veranschaulichung – typische Rezeptur, an Ihre Rezeptur anpassen. Die Allergene '
                     'Ihrer Gerichte hängen von Ihren Rezepturen und Lieferanten ab. Spuren und Zusatzstoffe sind hier '
-                    'nicht angegeben (angenommen: alles hausgemacht).')
+                    'nicht ausgefüllt; prüfen Sie zugekaufte Produkte, z. B. Speck (meist Nitritpökelsalz: „mit '
+                    'Konservierungsstoff“).')
 
 # (Gericht mit angenommener Rezeptur, {Buchstabe: Wert}) — «X» oder die Art (A, H); alles andere bleibt leer.
 BEISPIEL = [
-    ('Wiener Schnitzel (Kalb, Panade aus Weizenmehl, Ei und Semmelbröseln, in Pflanzenöl ausgebacken) mit '
-     'Kartoffelsalat (Essig-Öl-Marinade mit Senf)', {'A': 'Weizen', 'C': 'X', 'M': 'X'}),
+    ('Wiener Schnitzel (Kalb, Panade aus Weizenmehl, Ei und Semmelbröseln, in Butterschmalz ausgebacken) mit '
+     'Kartoffelsalat (mit Gemüsebrühe mit Sellerie, Essig-Öl-Marinade mit Senf)',
+     {'A': 'Weizen', 'C': 'X', 'G': 'X', 'L': 'X', 'M': 'X'}),
     ('Rinderroulade (Füllung mit Senf, Speck und Gewürzgurke) mit Rotweinsoße (Röstgemüse mit Sellerie, mit '
      'Weizenmehl gebunden)', {'A': 'Weizen', 'L': 'X', 'M': 'X', 'O': 'X'}),
     ('Forelle Müllerin (in Weizenmehl gewendet, in Butter gebraten) mit Petersilienkartoffeln',
@@ -103,7 +110,7 @@ BEISPIEL = [
     ('Apfelstrudel (Strudelteig aus Weizenmehl, Butterbrösel, Füllung mit Mandeln) mit Vanillesoße (Milch, Eigelb)',
      {'A': 'Weizen', 'C': 'X', 'G': 'X', 'H': 'Mandel'}),
 ]
-ANZAHLEN = [3, 4, 3, 3, 4]
+ANZAHLEN = [5, 4, 3, 3, 4]
 assert [len(w) for _, w in BEISPIEL] == ANZAHLEN
 assert all(set(w) <= set(BUCHSTABEN) for _, w in BEISPIEL)
 assert all((v != 'X') == dict((b, a) for b, _, a in ALLERGENE)[b] for _, w in BEISPIEL for b, v in w.items())
@@ -118,9 +125,19 @@ def de(s):
     return re.sub(r'(\d) (°C|%)(?!\w)', r'\1' + NB + r'\2', s)
 
 
+# In den Art-Spalten (A, H) bedeuten diese Einträge «nicht enthalten»: orange markiert und nicht mitgezählt.
+NEIN_WOERTER = ('nein', 'keine', 'kein')
+
+
+def art_zaehlt(ref):
+    """WAHR (= 1), wenn die Art-Zelle ausgefüllt ist und nicht «nein», «keine» oder «kein» sagt."""
+    return 'AND(' + ','.join([f'{ref}<>""'] + [f'LOWER(TRIM({ref}))<>"{w}"' for w in NEIN_WOERTER]) + ')'
+
+
 def formel_anzahl(z):
-    """X in den Kreuz-Spalten + nicht leere Art-Zellen (A, H); leer, solange kein Gericht eingetragen ist."""
-    return (f'=IF(A{z}="","",COUNTIF(C{z}:H{z},"X")+COUNTIF(J{z}:O{z},"X")+(B{z}<>"")+(I{z}<>""))')
+    """X in den Kreuz-Spalten + ausgefüllte Art-Zellen (A, H) ohne «nein/keine/kein»; leer ohne Gericht."""
+    return (f'=IF(A{z}="","",COUNTIF(C{z}:H{z},"X")+COUNTIF(J{z}:O{z},"X")+{art_zaehlt(f"B{z}")}'
+            f'+{art_zaehlt(f"I{z}")})')
 
 
 def block(ws, zeile, s1, s2, wert=None, eingabe_zelle=False, fett=False, fmt=None, ausr=None):
@@ -178,9 +195,11 @@ def blatt(wb, name, beispiel):
     ws.add_data_validation(dv_datum)
     dv_datum.add(f'B{Z_FELD2}')
 
-    ws.cell(row=Z_LEGENDE, column=1, value=de(LEGENDE)).font = Font(bold=True, size=10)
+    leg = ws.cell(row=Z_LEGENDE, column=1, value=de(LEGENDE))
+    leg.font = Font(bold=True, size=10)
+    leg.alignment = Alignment(wrap_text=True, vertical='center')
     ws.merge_cells(start_row=Z_LEGENDE, start_column=1, end_row=Z_LEGENDE, end_column=S_ANZAHL)
-    ws.row_dimensions[Z_LEGENDE].height = 18
+    ws.row_dimensions[Z_LEGENDE].height = 27
 
     for s in range(1, S_ANZAHL + 1):
         ws.cell(row=Z_GRUPPE, column=s).fill = schwarz
@@ -221,7 +240,8 @@ def blatt(wb, name, beispiel):
         anz = block(ws, z, S_ANZAHL, S_ANZAHL, formel_anzahl(z), fmt='0', ausr=mitte)
         anz.fill = grau
         anz.font = Font(bold=True)
-        ws.row_dimensions[z].height = 44 if beispiel else 22
+        # Beispiel: 15 pt je geschätzte Zeile in Spalte A (Breite 44, ~46 Zeichen je Zeile), mindestens 3 Zeilen
+        ws.row_dimensions[z].height = 15 * max(3, len(textwrap.wrap(gericht, 46))) if beispiel else 22
 
     art_bereich = ' '.join(f'{get_column_letter(s)}{ERSTE}:{get_column_letter(s)}{letzte}' for s in S_ART)
     kreuz_bereich = f'C{ERSTE}:H{letzte} J{ERSTE}:O{letzte}'
@@ -243,12 +263,14 @@ def blatt(wb, name, beispiel):
     ws.add_data_validation(dv_text)
     dv_text.add(f'P{ERSTE}:Q{letzte}')
 
-    # Auf einen Blick: enthalten = rot; «Gluten», «Nüsse» … allein in A/H = orange Warnung (Art fehlt).
+    # Auf einen Blick: enthalten = rot; «Gluten», «Nüsse» … allein in A/H = orange Warnung (Art fehlt), ebenso
+    # «nein», «keine», «kein» (dort leer lassen; die Zelle zählt nicht mit).
     rot = PatternFill('solid', fgColor='F8D7DA', bgColor='F8D7DA')
     orange = PatternFill('solid', fgColor='FFE3B3', bgColor='FFE3B3')
     for b in art_bereich.split():
         erste = b.split(':')[0]
-        pruef = ','.join(f'LOWER(TRIM({erste}))="{w}"' for w in ('gluten', 'getreide', 'nüsse', 'nuss', 'schalenfrüchte'))
+        pruef = ','.join(f'LOWER(TRIM({erste}))="{w}"' for w in ('gluten', 'getreide', 'nüsse', 'nuss', 'schalenfrüchte')
+                         + NEIN_WOERTER)
         ws.conditional_formatting.add(b, FormulaRule(formula=[f'OR({pruef})'], stopIfTrue=True,
                                                      font=Font(bold=True, color='8A5300'), fill=orange))
         ws.conditional_formatting.add(b, FormulaRule(formula=[f'{erste}<>""'], font=Font(bold=True, color='9C1C1C'),
@@ -263,7 +285,8 @@ def blatt(wb, name, beispiel):
         c.font = Font(italic=True, color='555555', size=10)
         c.alignment = Alignment(wrap_text=True, vertical='top')
         ws.merge_cells(start_row=fz + i, start_column=1, end_row=fz + i, end_column=S_ANZAHL)
-        ws.row_dimensions[fz + i].height = 40 if len(notiz) > 280 else 27 if len(notiz) > 140 else 15
+        ws.row_dimensions[fz + i].height = (54 if len(notiz) > 420 else 40 if len(notiz) > 280
+                                            else 27 if len(notiz) > 140 else 15)
     zl = fz + len(NOTIZEN)
     ws.cell(row=zl, column=1, value='Ausführlicher Leitfaden zur Allergenkennzeichnung:').font = Font(size=10)
     link = ws.cell(row=zl, column=2, value=ARTIKEL)
@@ -467,6 +490,10 @@ def gate_logik():
         ({}, None, 'leere Zeile → leer'),
         ({1: 'Alle 14', **{s: ('Weizen' if s == 2 else 'Pistazie' if s == 9 else 'X') for s in range(2, 16)}}, 14,
          'alle 14 Allergene → 14'),
+        ({1: 'Salat', 2: 'nein', 9: 'kein'}, 0, '„nein“ in A und „kein“ in H zählen nicht → 0'),
+        # «Keine» groß geschrieben; Leerzeichen am Rand nicht testbar: TRIM von pycel 1.0b30 kürzt nur
+        # Mehrfach-Leerzeichen, das von Excel/LibreOffice entfernt sie auch am Anfang und Ende.
+        ({1: 'Omelett', 2: 'Keine', 4: 'X', 9: 'Haselnuss'}, 2, '„Keine“ in A zählt nicht, C + H zählen → 2'),
     ]
     with tempfile.TemporaryDirectory() as tmp:
         kopie = Path(tmp) / 'test.xlsx'

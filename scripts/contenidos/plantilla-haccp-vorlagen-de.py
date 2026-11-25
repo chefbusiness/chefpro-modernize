@@ -61,8 +61,8 @@ F_DATUM = 'dd.mm.yyyy'
 # (Bezeichnung, Höchstwert °C, Vorgabe und Quelle) — nur belegte Werte, sonst nichts
 GERAETE = [
     ('Kühlraum – Fleischzubereitungen und Geflügel', 4,
-     'VO (EG) Nr. 853/2004: Fleischzubereitungen und Geflügelfleisch höchstens +4 °C'),
-    ('Kühlschrank – Hackfleisch', 2, 'VO (EG) Nr. 853/2004: Hackfleisch höchstens +2 °C'),
+     'Höchstwert +4 °C aus VO (EG) Nr. 853/2004 (für Ware, die den Betrieb verlässt)'),
+    ('Kühlschrank – Hackfleisch', 2, 'Höchstwert +2 °C aus VO (EG) Nr. 853/2004 (für Ware, die den Betrieb verlässt)'),
     ('Tiefkühlung', -18, 'TLMV: −18 °C oder kälter; Abweichung nach oben höchstens 3 °C, nur kurzzeitig'),
 ]
 ALLGEMEIN = ('Eine tägliche Temperaturkontrolle ist gute Praxis; gesetzlich vorgeschrieben ist eine dokumentierte '
@@ -74,7 +74,7 @@ REINIGUNG_HINWEIS = 'Beispielwerte; Mittel und Dosierung laut Herstellerangabe.'
 # Vorgaben der Hitzeschritte (Schlüssel, Beschriftung, Wert, Einheit) — BfR-Empfehlungen, in gelben Zellen änderbar
 VORGABEN = [
     ('heiss_t', 'Heißhalten – Temperatur an allen Stellen mindestens', 60, '°C'),
-    ('heiss_d', 'Heißhalten – Dauer höchstens', 180, 'Minuten (= 3 Stunden)'),
+    ('heiss_d', 'Heißhalten – Dauer höchstens', 180, 'Minuten'),
     ('abk_start', 'Abkühlen – Zeitmessung ab einer Kerntemperatur von', 60, '°C'),
     ('abk_ende', 'Abkühlen – Kerntemperatur am Ende höchstens', 7, '°C'),
     ('abk_d', 'Abkühlen – Dauer höchstens', 120, 'Minuten'),
@@ -284,15 +284,18 @@ def blatt_kuehlung(wb):
         zelle(ws, z, 1, f'Gerät {i + 1}', fett=True)
         zelle(ws, z, 3, name, eing=True)
         zelle(ws, z, 6, tmax, F_GRENZE, eing=True, fett=True, mitte=True)
-        zelle(ws, z, 7, quelle)
+        zelle(ws, z, 7, quelle).font = Font(size=9)
+        ws.cell(row=z, column=7).alignment = Alignment(vertical='center', wrap_text=True)
         for a, b in ((1, 2), (3, 5), (7, 9)):
             rahmen_bereich(ws, z, a, b)
             verbinden(ws, z, a, b)
-        ws.row_dimensions[z].height = 30
+        # 18 pt statt 30: Zeilen 1–14 sind fixiert (D15), so bleibt beim Blättern mehr Platz für die Messungen
+        ws.row_dimensions[z].height = 18
     pruefung_temp(ws, 'F8:F10', -40, 30)
     grenze = ['$F$8', '$F$9', '$F$10']
     notizen(ws, 11, ['Tragen Sie Ihre Geräte und die Grenzwerte aus Ihrem HACCP-Konzept ein. Die Vorgaben gelten für die '
-                     'genannte Ware; lagern Sie verschiedene Waren zusammen, gilt der strengste Wert.'], 9, 30)
+                     'genannte Ware; lagern Sie verschiedene Waren zusammen, gilt der strengste Wert.'], 9, 18)
+    ws['A11'].font = Font(italic=True, color='555555', size=10)  # 10 pt: eine Zeile über A:I
 
     # Kopf der Liste (2 Zeilen: Gerätename, dann Grenzwert — beide folgen den Angaben oben)
     kz = 13
@@ -375,14 +378,16 @@ BLOECKE = [
 
 
 def formel_ok(art, z):
-    """«In Ordnung?» je Block; Dauer in G (MOD … 1: über Mitternacht), auf ganze Minuten gerundet."""
+    """«In Ordnung?» je Block; Dauer in G (MOD … 1: über Mitternacht), auf ganze Minuten gerundet. Abkühlen prüft
+    auch die Starttemperatur in D, wenn eingetragen."""
     if art == 'heiss':
         return (f'=IF(OR(G{z}="",F{z}=""),"",IF(AND(ROUND(G{z}*1440,0)<={V["heiss_d"]},F{z}>={V["heiss_t"]},'
                 f'OR(D{z}="",D{z}>={V["heiss_t"]})),"Ja","NEIN"))')
     if art == 'abk':
-        return (f'=IF(OR(G{z}="",F{z}=""),"",IF(AND(ROUND(G{z}*1440,0)<={V["abk_d"]},F{z}<={V["abk_ende"]}),'
-                f'"Ja","NEIN"))')
-    return (f'=IF(OR(G{z}="",D{z}=""),"",IF(AND(ROUND(G{z}*1440,0)>={V["garen_d"]},D{z}>={V["garen_t"]},'
+        return (f'=IF(OR(G{z}="",F{z}=""),"",IF(AND(ROUND(G{z}*1440,0)<={V["abk_d"]},F{z}<={V["abk_ende"]},'
+                f'OR(D{z}="",D{z}>={V["abk_start"]})),"Ja","NEIN"))')
+    # Garen: G < 0,5 (unter 12 h) fängt vertauschte Uhrzeiten ab (12:05 → 12:00 ergäbe sonst 1435 min und «Ja»)
+    return (f'=IF(OR(G{z}="",D{z}=""),"",IF(AND(ROUND(G{z}*1440,0)>={V["garen_d"]},G{z}<0.5,D{z}>={V["garen_t"]},'
             f'OR(F{z}="",F{z}>={V["garen_t"]})),"Ja","NEIN"))')
 
 
@@ -518,8 +523,9 @@ def pdf_druck():
     from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
     def t(s):
-        """PDF-Text: deutsche Typografie + WinAnsi der Standardschrift (Helvetica: ä, ö, ü, ß, „ “, –, °)."""
-        s = de(s).replace('−', '-')
+        """PDF-Text: deutsche Typografie + WinAnsi der Standardschrift (Helvetica: ä, ö, ü, ß, „ “, –, °). Das
+        Minuszeichen U+2212 fehlt in WinAnsi: der Halbgeviertstrich «–» (0x96) ersetzt es, nicht der Bindestrich."""
+        s = de(s).replace('−', '–')
         s.encode('cp1252')  # UnicodeEncodeError, falls ein Zeichen nicht darstellbar wäre (≤, ≥ …)
         return s
 
@@ -570,7 +576,7 @@ def pdf_druck():
                               ('VALIGN', (0, 0), (-1, -1), 'BOTTOM')]))
     el += [info, Spacer(1, 5)]
     namen = [('Kühlraum (Fleischzubereitungen, Geflügel)', 'max. +4 °C'), ('Kühlschrank (Hackfleisch)', 'max. +2 °C'),
-             ('Tiefkühlung', 'max. -18 °C')]
+             ('Tiefkühlung', 'max. –18 °C')]
     s_th0 = ParagraphStyle('th0', parent=s_th, fontSize=7, leading=8)
     z0 = [Paragraph('Tag', s_th0)] + sum([[Paragraph(t(n), s_th0), ''] for n, _ in namen], []) + \
          [Paragraph(t('Maßnahme (bei Abweichung)'), s_th0), Paragraph(t('Kürzel'), s_th0)]
@@ -598,10 +604,11 @@ def pdf_druck():
             stil.append(('BACKGROUND', (0, 2 + j), (0, 2 + j), colors.HexColor('#F3F3F3')))
     tb.setStyle(TableStyle(stil))
     el += [tb, Spacer(1, 4),
-           Paragraph(t('Beispiel-Grenzwerte: Fleischzubereitungen und Geflügelfleisch höchstens +4 °C, Hackfleisch '
-                       'höchstens +2 °C (VO (EG) Nr. 853/2004); Tiefkühlung −18 °C oder kälter, nach oben höchstens 3 °C '
-                       'Abweichung und nur kurzzeitig (TLMV). Tragen Sie Ihre Geräte und die Grenzwerte Ihres '
-                       'HACCP-Konzepts ein; die Messung am Abend ist optional.'), s_note),
+           Paragraph(t('Beispiel-Grenzwerte – Höchstwerte aus VO (EG) Nr. 853/2004 (für Ware, die den Betrieb '
+                       'verlässt) und TLMV: Fleischzubereitungen und Geflügelfleisch höchstens +4 °C, Hackfleisch '
+                       'höchstens +2 °C; Tiefkühlung −18 °C oder kälter, nach oben höchstens 3 °C Abweichung und nur '
+                       'kurzzeitig. Tragen Sie Ihre Geräte und die Grenzwerte Ihres HACCP-Konzepts ein; die Messung am '
+                       'Abend ist optional.'), s_note),
            Spacer(1, 2), Paragraph(t(ALLGEMEIN), s_note), PageBreak()]
 
     # Seite 2 — Heißhalten, Abkühlen, Garen + Reinigungsplan (Kurzfassung)
@@ -730,6 +737,8 @@ def gate_logik(p1, st):
         (H, a + 4, {3: hm(23, 15), 4: 60, 5: hm(0, 45), 6: 6}, 8, 'Ja', 'Abkühlen 23:15 → 00:45 (Mitternacht)'),
         (H, a + 5, {2: 'Rinderbrühe', 3: hm(14, 0), 4: 60}, 8, None, 'Abkühlen ohne Ende → leer'),
         (H, a + 6, {}, 8, None, 'leere Zeile → leer'),
+        (H, a + 7, {3: hm(14, 0), 4: 50, 5: hm(15, 0), 6: 5}, 8, 'NEIN', 'Abkühlen beginnt mit 50 °C (Start unter 60)'),
+        (H, a + 8, {3: hm(14, 0), 5: hm(15, 0), 6: 5}, 8, 'Ja', 'Abkühlen ohne Starttemperatur: Dauer und Ende'),
         (H, g + 0, {3: hm(12, 0), 4: 74, 5: hm(12, 2), 6: 73}, 8, 'Ja', 'Garen 74 °C, 2 min gehalten'),
         (H, g + 1, {3: hm(12, 0), 4: 72, 5: hm(12, 3)}, 8, 'Ja', 'Garen genau 72 °C, 3 min, ohne Endmessung'),
         (H, g + 2, {3: hm(12, 0), 4: 75, 5: hm(12, 1), 6: 75}, 8, 'NEIN', 'Garen nur 1 min gehalten'),
@@ -737,11 +746,13 @@ def gate_logik(p1, st):
         (H, g + 4, {3: hm(12, 0), 4: 74, 5: hm(12, 4), 6: 69}, 8, 'NEIN', 'Garen: Kern fällt in der Haltezeit auf 69 °C'),
         (H, g + 5, {3: hm(23, 59), 4: 75, 5: hm(0, 2), 6: 74}, 8, 'Ja', 'Garen 23:59 → 00:02 (Mitternacht)'),
         (H, g + 6, {}, 8, None, 'leere Zeile → leer'),
+        (H, g + 7, {3: hm(12, 5), 4: 75, 5: hm(12, 0), 6: 74}, 8, 'NEIN', 'Garen: Uhrzeiten vertauscht (1435 min)'),
     ]
     erg, dauern = faelle_pruefen(faelle)
     assert abs(minuten(dauern[(H, h)]) - 150) < 1e-6, dauern[(H, h)]
     assert abs(minuten(dauern[(H, a)]) - 100) < 1e-6, dauern[(H, a)]
     assert abs(minuten(dauern[(H, g + 5)]) - 3) < 1e-6, dauern[(H, g + 5)]
+    assert abs(minuten(dauern[(H, g + 7)]) - 1435) < 1e-6, dauern[(H, g + 7)]
     # Die Vorgaben sind änderbar: Heißhalten auf 65 °C, Kühlraum auf +5 °C → dieselben Formeln folgen.
     z_heiss_t = int(V['heiss_t'].split('$')[-1])
     faelle2 = [(H, h, {3: hm(12, 0), 4: 75, 5: hm(13, 0), 6: 63}, 8, 'NEIN', 'Vorgabe Heißhalten 65 °C: 63 °C'),
@@ -803,7 +814,7 @@ def gate_pdf():
     n = len(rd.pages)
     assert n == 2, n
     texte = [' '.join(p.extract_text().replace(NB, ' ').split()) for p in rd.pages]
-    for erwartet in ('Temperaturliste Kühlung und Tiefkühlung', 'max. +4 °C', 'max. +2 °C', 'max. -18 °C',
+    for erwartet in ('Temperaturliste Kühlung und Tiefkühlung', 'max. +4 °C', 'max. +2 °C', 'max. –18 °C',
                      'VO (EG) Nr. 853/2004', 'TLMV', 'VO (EG) Nr. 852/2004', 'Morgens', 'Abends',
                      'aichef.pro/de/blog/haccp-konzept'):
         assert erwartet in texte[0], ('Seite 1', erwartet)
