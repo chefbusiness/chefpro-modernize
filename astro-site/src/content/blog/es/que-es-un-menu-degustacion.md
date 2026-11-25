@@ -5,6 +5,8 @@ pubDate: 2026-11-24
 modDate: 2026-11-24
 category: glosario
 tags: ["menú degustación", "alta cocina", "escandallo"]
+translations:
+  fr: "menu-degustation"
 lang: es
 image: /blog-assets/2026/11/menu-degustacion-destacada.jpg
 imageAlt: "Un cocinero termina con pinzas un pase de menú degustación sobre un plato de cerámica"
