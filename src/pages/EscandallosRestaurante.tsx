@@ -215,6 +215,19 @@ export default function EscandallosRestaurante() {
                 se télécharge gratuitement.
               </p>
             )}
+            {currentLanguage === 'de' && (
+              <p className="mt-10 max-w-2xl mx-auto text-center text-muted-foreground">
+                Für ein einzelnes Gericht liefert der{' '}
+                <a href="/de/food-cost-rechner-restaurant" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  kostenlose Wareneinsatz-Rechner
+                </a>{' '}
+                die Quote ohne Anmeldung. Wie Sie den Wareneinsatz des Monats per Inventur berechnen, zeigt der Artikel{' '}
+                <a href="/de/blog/wareneinsatz-berechnen" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  Wareneinsatz berechnen
+                </a>
+                .
+              </p>
+            )}
           </div>
         </section>
 
