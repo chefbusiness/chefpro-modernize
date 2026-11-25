@@ -1,8 +1,8 @@
 ---
-title: "APPCC Restaurante: Guía {year} para Pasar la Inspección"
-description: "Guía práctica de APPCC para restaurantes en {year}: prerrequisitos, PCC, registros e inspecciones, y cómo la IA genera tu plan y automatiza los registros."
+title: "APPCC: qué es, ejemplo en un restaurante y plantilla gratis"
+description: "Qué es el APPCC, sus 7 principios, un ejemplo de plan en un restaurante con sus PCC, los registros que pide Sanidad y una plantilla gratis de temperaturas."
 pubDate: 2026-04-03
-modDate: 2026-09-06
+modDate: 2026-11-24
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b6-1.jpg
 imageAlt: "Chef comprobando la temperatura de los alimentos con termómetro digital"
@@ -10,7 +10,7 @@ lang: es
 wpId: 3459
 faq:
   - q: "¿Es obligatorio el APPCC en mi restaurante?"
-    a: "Sí. Desde 2006, toda empresa alimentaria en la Unión Europea debe tener implantado un sistema de autocontrol basado en los principios del APPCC. No importa si tienes un bar de tapas, un restaurante gastronómico o una cafetería: la obligación es la misma. La Agencia Española de Seguridad Alimentaria y Nutrición exige documentación proporcional al tamaño de tu negocio, pero no exime a nadie."
+    a: "Sí. Desde 2006, toda empresa alimentaria de la Unión Europea (salvo la producción primaria) debe tener implantado un sistema de autocontrol basado en los principios del APPCC. No importa si tienes un bar de tapas, un restaurante gastronómico o una cafetería: la obligación es la misma. La Agencia Española de Seguridad Alimentaria y Nutrición exige documentación proporcional al tamaño de tu negocio, pero no exime a nadie."
   - q: "¿Qué prerrequisitos necesito?"
     a: "Los nueve prerrequisitos esenciales son: plan de limpieza y desinfección, control de agua, control de plagas, formación de manipuladores, mantenimiento de instalaciones y equipos, trazabilidad, gestión de residuos, control de proveedores y gestión de alérgenos. Todos deben estar documentados y con registros activos. En 2026, alérgenos y trazabilidad son los que más revisan las inspecciones de Sanidad."
   - q: "¿Cuáles son los PCC de una cocina?"
@@ -21,15 +21,27 @@ faq:
     a: "La IA puede generar un borrador completo del plan APPCC, los prerrequisitos y las plantillas de registro adaptadas a tu restaurante. Pero siempre debe ser revisado y validado por el responsable de seguridad alimentaria. La responsabilidad legal sigue siendo tuya. La IA te ahorra horas de documentación; no sustituye el criterio humano ni la supervisión de un consultor cuando es necesario."
   - q: "¿Qué me piden en una inspección de Sanidad?"
     a: "El inspector solicita el plan APPCC firmado y actualizado, los registros de las últimas 4 semanas (temperaturas, limpieza, recepción de mercancía), los certificados de formación de manipuladores, las fichas de alérgenos accesibles en cocina y sala, y un ejercicio de trazabilidad: seguir un lote de ingrediente desde el albarán de entrada hasta el plato servido en menos de 4 horas."
+  - q: "¿Qué significa APPCC?"
+    a: "APPCC son las siglas de Análisis de Peligros y Puntos de Control Crítico. Es el sistema de autocontrol que aplica un negocio de alimentación para identificar los peligros de lo que sirve, decidir en qué puntos los controla y dejar constancia por escrito de que lo hace. En inglés se conoce como HACCP, y en la normativa europea es la base del autocontrol que deben aplicar las empresas alimentarias (salvo la producción primaria)."
+  - q: "¿Es lo mismo APPCC que HACCP?"
+    a: "Sí, es lo mismo. HACCP son las siglas inglesas de Hazard Analysis and Critical Control Points, y APPCC es su traducción al español. En los documentos oficiales de aquí verás APPCC; en normas internacionales, certificaciones y auditorías de clientes verás HACCP. Si en tu plan aparecen los dos términos, no hay contradicción: hablan del mismo sistema."
+  - q: "¿Hay una plantilla de registro de temperaturas APPCC gratis?"
+    a: "Sí. En este post tienes una plantilla de registro de temperaturas APPCC gratuita, sin darte de alta, que se abre en Excel, Google Sheets o LibreOffice. Cubre un mes completo, con cuatro lecturas al día, dos cámaras de refrigeración y un congelador. Los límites son editables, la columna de rango responde sola y las lecturas fuera de límite se pintan en rojo, con medida correctora y firma."
+  - q: "¿Es obligatoria la formación de manipulador de alimentos?"
+    a: "El Reglamento (CE) 852/2004 obliga a la empresa a que quien manipula alimentos esté formado en higiene según su actividad. En España, tras la derogación del Real Decreto 202/2000 por el Real Decreto 109/2010, el carné de manipulador ya no es un documento oficial obligatorio, pero la formación sí lo es y tiene que poder demostrarse. Guarda los certificados y las fichas de formación de cada persona de la plantilla."
 ---
+
+El APPCC (Análisis de Peligros y Puntos de Control Crítico; HACCP en inglés) es el sistema de autocontrol con el que un negocio de alimentación identifica los peligros de lo que sirve, fija en qué puntos tiene que controlarlos y lo deja por escrito.
+
+En un restaurante se traduce en tres cosas que se ven: un plan escrito, unos registros diarios (temperaturas, limpieza, recepción…) y medidas correctoras cuando algo se sale. Más abajo tienes una [plantilla gratis de registro de temperaturas](https://aichef.pro/descargas/plantilla-registro-temperaturas-appcc-gratis-aichef.xlsx).
 
 Si llevas años entre fogones, la palabra **appcc restaurante** no te suena a chino. Te suena a una carpeta que sabes que deberías tener actualizada, a un compañero de cocina que te dice «hoy toca registrar temperaturas», y a un inspector que puede aparecer cualquier mañana sin avisar.
 
 También te suena a marrón si no lo tienes al día.
 
-Voy al grano. El APPCC —Análisis de Peligros y Puntos Críticos de Control— es **el sistema de autocontrol obligatorio para cualquier negocio que manipule alimentos** en España y en toda la Unión Europea. No es un capricho ni una recomendación. Lo exige el Reglamento (CE) 852/2004 y, si no lo tienes montado y funcionando, te arriesgas a sanciones que duelen: desde multas de varios miles de euros hasta el cierre cautelar del local.
+Voy al grano: es **el sistema de autocontrol obligatorio para cualquier negocio que manipule alimentos** en España y en toda la Unión Europea. No es un capricho ni una recomendación. Lo exige el Reglamento (CE) 852/2004 y, si no lo tienes montado y funcionando, te arriesgas a sanciones que duelen: desde multas de varios miles de euros hasta el cierre cautelar del local.
 
-En este artículo te cuento, chef a chef, qué necesitas exactamente para tener tu **plan APPCC** listo en 2026: los prerrequisitos que no fallan, cómo identificar tus puntos críticos de control, qué registros te van a pedir sí o sí, y cómo la inteligencia artificial puede generarte los borradores y automatizar la parte más tediosa.
+En este artículo te cuento, chef a chef, qué necesitas exactamente para tener tu **plan APPCC** listo en 2026: los prerrequisitos que no fallan, cómo identificar tus puntos de control crítico, qué registros te van a pedir sí o sí, y cómo la inteligencia artificial puede generarte los borradores y automatizar la parte más tediosa.
 
 Sin teoría de consultor aburrida. Solo lo que funciona en la cocina real.
 
@@ -45,7 +57,7 @@ Sin teoría de consultor aburrida. Solo lo que funciona en la cocina real.
 
 El **sistema APPCC en hostelería** es un método preventivo de autocontrol sanitario. Su lógica es sencilla: en lugar de reaccionar cuando alguien se intoxica, identificas los peligros antes de que el plato llegue a la mesa y pones controles para eliminarlos o reducirlos a niveles seguros.
 
-Originalmente nació en los años 60 en el programa espacial de la NASA (necesitaban comida 100 % segura para los astronautas). Hoy es el estándar mundial respaldado por el **Codex Alimentarius** de la FAO y la OMS.
+Lo desarrollaron en los años 60 Pillsbury, la NASA y los laboratorios Natick del Ejército de Estados Unidos, para que la comida de los astronautas fuera segura. Hoy es el estándar mundial respaldado por el **Codex Alimentarius** de la FAO y la OMS.
 
 **Marco legal en España y la UE**:
 - **Reglamento (CE) 852/2004**: obliga a todos los operadores de empresas alimentarias a implantar un sistema de autocontrol basado en los principios del APPCC.
@@ -59,7 +71,7 @@ Originalmente nació en los años 60 en el programa espacial de la NASA (necesit
 Estos siete principios son la columna vertebral del sistema. Apréndetelos porque todo inspector los conoce de memoria:
 
 - **Principio 1**: Realizar un análisis de peligros (biológicos, químicos, físicos y —cada vez más relevantes— alérgenos).
-- **Principio 2**: Determinar los puntos críticos de control (PCC), es decir, las etapas exactas donde un peligro puede materializarse y no hay barrera posterior que lo pare.
+- **Principio 2**: Determinar los puntos de control crítico (PCC), es decir, las etapas exactas donde un peligro puede materializarse y no hay barrera posterior que lo pare.
 - **Principio 3**: Establecer límites críticos para cada PCC (por ejemplo, ≥ 72 °C en el centro del producto durante el cocinado).
 - **Principio 4**: Definir un sistema de vigilancia: quién mide, con qué instrumento y cada cuánto tiempo.
 - **Principio 5**: Determinar las acciones correctivas inmediatas si se supera un límite crítico.
@@ -69,6 +81,12 @@ Estos siete principios son la columna vertebral del sistema. Apréndetelos porqu
 Cada uno de estos principios se traduce en papeles, procedimientos y disciplina diaria en cocina.
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=appcc-seguridad-alimentaria-ia-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+
+### APPCC y HACCP: ¿Es lo Mismo?
+
+Sí: HACCP son las siglas en inglés (Hazard Analysis and Critical Control Points) y APPCC es su traducción al español. En los documentos oficiales en español verás APPCC; en normas y auditorías internacionales, HACCP.
+
+Dentro de una cocina también se habla de «plan de autocontrol», y conviene tenerlo claro: es el APPCC más los prerrequisitos. Es decir, el análisis de peligros y sus puntos de control, junto con la limpieza, el control de plagas, el agua, la formación y los proveedores. Cuando un inspector pide «el plan», normalmente se refiere a ese conjunto, no solo al documento de los siete principios. Si tu plan escrito solo recoge los PCC y no los prerrequisitos, te falta una parte importante de lo que te pueden pedir.
 
 ## Los prerrequisitos: la base antes de tocar los PCC
 
@@ -83,7 +101,7 @@ Aquí van los planes de prerrequisito que necesitas documentar y mantener actual
 | Plan de limpieza y desinfección (L+D) | Quién limpia, qué, cómo, con qué producto, cuándo y quién lo verifica. Incluye fichas técnicas de productos y dosificación | Hoja de control de L+D firmada por turno |
 | Control de agua apta para consumo | Origen del agua, análisis periódicos, mantenimiento de depósitos, control de cloro libre en red interna | Boletines de análisis, registro de cloro |
 | Control de plagas (DDD) | Contrato con empresa autorizada, plano de cebos, informe de incidencias, medidas pasivas (mosquiteras, burletes) | Certificado DDD, informe de cada visita, registro de incidencias |
-| Formación de manipuladores | Plan formativo inicial y continuo, temario, firma de asistencia y evaluación. Cada persona debe conocer los peligros de su puesto | Ficha de formación por trabajador, certificado oficial |
+| Formación de manipuladores | Plan formativo inicial y continuo, temario, firma de asistencia y evaluación. Cada persona debe conocer los peligros de su puesto | Ficha de formación por trabajador, certificado o constancia de la formación |
 | Mantenimiento de instalaciones y equipos | Revisiones de cámaras, abatidores, campanas, termómetros y sondas. Calibración de equipos de medición | Plan de mantenimiento, registro de incidencias y calibración |
 | Trazabilidad | Lote de cada ingrediente vinculado al plato servido. Debes poder reconstruir el camino de un lote en ambas direcciones en menos de 4 horas | Fichas de entrada de mercancía, fichas de trazabilidad de plato terminado |
 | Gestión de residuos | Contenedores estancos, circuito limpio-sucio, retirada por gestor autorizado, subproductos animales (SANDACH) | Albaranes de retirada, contrato con gestor |
@@ -104,7 +122,7 @@ Un PCC no es cualquier etapa donde conviene tener cuidado. Es un punto concreto 
 
 La diferencia con un prerrequisito operativo es sutil pero clave. Un prerrequisito operativo controla un peligro que, si se desvía, no suele derivar en un daño inmediato e irreversible (por ejemplo, la frecuencia de limpieza de campanas). Un PCC controla un peligro que, si se escapa, puede causar una toxiinfección alimentaria directa (por ejemplo, la temperatura de cocinado de un pollo). Para distinguirlos, se aplica el **árbol de decisiones del Codex Alimentarius**: una secuencia de preguntas que te obliga a justificar por qué algo es o no es un PCC. Si respondes sí a la pregunta «¿existe una etapa posterior que elimine o reduzca este peligro?», entonces no es un PCC. Si la respuesta es no, lo has encontrado.
 
-Aquí va una tabla de ejemplo con los PCC que aparecen en la mayoría de cocinas profesionales. Digo de ejemplo porque **cada restaurante debe determinar sus propios PCC en función de su carta, sus procesos y sus materias primas**. Esto no es copiar y pegar.
+Aquí va un ejemplo de APPCC en un restaurante: la tabla con los PCC que aparecen en la mayoría de cocinas profesionales. Digo de ejemplo porque **cada restaurante debe determinar sus propios PCC en función de su carta, sus procesos y sus materias primas**. Esto no es copiar y pegar.
 
 | Etapa / PCC | Peligro | Límite crítico | Vigilancia | Acción correctiva |
 | :--- | :--- | :--- | :--- | :--- |
@@ -140,9 +158,26 @@ El papel es el sistema que más he visto en inspecciones y el que más problemas
 
 El papel, además, no te avisa. Si una cámara se va a 10 °C durante la madrugada, el folio en la pared no te manda una alerta. Y cuando necesitas buscar una tendencia (por ejemplo, demostrar que una cámara ha ido perdiendo rendimiento durante tres semanas para justificar su sustitución), toca repasar hojas una a una.
 
-El registro digital, bien implementado, cambia las reglas: cada medición queda fechada y ordenada, las plantillas marcan en rojo al instante cuando un valor se sale del rango legal, y cuando el inspector pide los registros de las últimas cuatro semanas, los exportas en segundos. No es magia: es trazabilidad bien hecha. Si quieres verlo en tu propia cocina, puedes [llevar tus registros en plantillas digitales con alertas automáticas](https://aichef.pro/pack-appcc) y dejar el bolígrafo para la carta.
+El registro digital, bien implementado, cambia las reglas: cada medición queda fechada y ordenada, las plantillas marcan en rojo al instante cuando un valor se sale del rango que fija tu plan, y cuando el inspector pide los registros de las últimas cuatro semanas, los exportas en segundos. No es magia: es trazabilidad bien hecha. Si quieres verlo en tu propia cocina, puedes [llevar tus registros en plantillas digitales con alertas automáticas](https://aichef.pro/pack-appcc) y dejar el bolígrafo para la carta.
 
 
+
+## Plantilla Gratis de Registro de Temperaturas
+
+La tienes lista para descargar, gratis y sin darte de alta. Se abre en Excel, Google Sheets o LibreOffice, y puedes usarla el mismo día: [plantilla de registro de temperaturas APPCC en Excel](https://aichef.pro/descargas/plantilla-registro-temperaturas-appcc-gratis-aichef.xlsx).
+
+Está pensada para un mes completo: 31 días con cuatro lecturas al día, a las 08:00, 12:00, 16:00 y 20:00, cada cuatro horas, como pide la tabla para las cámaras de refrigeración. Cubre dos cámaras de refrigeración y un congelador.
+
+<figure class="wp-block-image size-large">
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/appcc-registro-temperaturas.jpg" alt="Un cocinero comprueba el termómetro de la puerta de la cámara frigorífica y lo anota en el registro de temperaturas"/><figcaption>Lectura de la cámara y registro en la misma ronda: así se rellena la plantilla</figcaption></figure>
+
+Los límites van en celdas editables y vienen cargados con los de la tabla: refrigeración de 0 a 4 °C y congelación a -18 °C o menos. Cada local pone los de su propio plan, que pueden ser más estrictos. La columna «¿En rango?» responde Sí o NO sola, y la lectura que se sale se pinta en rojo; al lado tienes la medida correctora y la firma de quien la aplica.
+
+Trae un ejemplo. El día 2, la cámara 2 marca 6,5 °C porque la puerta se había quedado mal cerrada: se cierra, el producto pasa a la cámara 1 y a las 08:30 se vuelve a leer, 3,5 °C. Así se escribe una medida correctora que un inspector entiende a la primera.
+
+Un límite honesto: es uno de los registros de un plan. El [Pack Plantillas APPCC](https://aichef.pro/pack-appcc), de pago único, trae 19 plantillas (limpieza, recepción y trazabilidad, alérgenos, plagas, aceite y agua, cocción y enfriamiento…).
+
+Un consejo de cocina: el registro vale lo que vale el termómetro. Compruébalo con un termómetro patrón con la frecuencia que fije tu plan, y anota esa comprobación también.
 
 ## Cómo la IA genera tu plan APPCC y automatiza los registros
 
@@ -156,7 +191,7 @@ Un asistente de IA entrenado en hostelería no hace milagros, pero sí te ahorra
 
 Ahora, déjame ser muy claro: **la IA elabora borradores y plantillas que siempre debe revisar y validar el responsable de seguridad alimentaria**. La responsabilidad legal del plan APPCC es tuya, no de un algoritmo. La IA no sustituye ni el criterio humano ni el conocimiento técnico de un consultor cuando hace falta. Pero te quita horas de papeleo y te permite centrarte en lo que de verdad importa: que la cocina funcione.
 
-Esa es la filosofía con la que está construido [AI Chef Pro](https://aichef.pro/pack-appcc): una plataforma con más de 70 agentes de IA culinarios, disponible en 7 idiomas con español nativo, que entiende cómo funciona una cocina de verdad. Tienes un [pack específico para montar el APPCC](https://aichef.pro/pack-appcc) que te guía paso a paso desde los prerrequisitos hasta los registros, y puedes [empezar a generar tu plan directamente desde la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=appcc).
+Esa es la filosofía con la que está construido [AI Chef Pro](https://aichef.pro/): una plataforma con más de 70 agentes de IA culinarios, disponible en 7 idiomas con español nativo, que entiende cómo funciona una cocina de verdad. Tienes un [pack específico para montar el APPCC](https://aichef.pro/pack-appcc) que te guía paso a paso desde los prerrequisitos hasta los registros, y puedes [empezar a generar tu plan directamente desde la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=appcc).
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pastelería / Obrador</h3><p class="mt-2 text-muted-foreground">Producción, conservación, vitrina, exposición.</p><a href="/kit-tareas-pasteleria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=appcc-seguridad-alimentaria-ia-hosteleria" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pastelería / Obrador por €12</a></aside>
 
