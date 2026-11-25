@@ -3056,7 +3056,7 @@
         {
           "step": "1",
           "title": "Aggiungi gli ingredienti",
-          "description": "Inserisci ogni ingrediente con la sua grammatura per porzione e il prezzo di acquisto al chilo."
+          "description": "Inserisci ogni ingrediente con la quantità totale della ricetta (in grammi) e il prezzo di acquisto al chilo."
         },
         {
           "step": "2",

@@ -1,5 +1,5 @@
 ---
-title: "Menu engineering (ingénierie de menu) : la méthode et un exemple chiffré"
+title: "Menu engineering (ingénierie de menu) : méthode et exemple chiffré"
 description: "Menu engineering ou ingénierie de menu : les 4 familles de plats (étoiles, chevaux, énigmes, poids morts), la méthode pas à pas et un exemple chiffré."
 pubDate: 2026-08-17
 modDate: 2026-11-25

@@ -106,7 +106,7 @@ export default function CalculadoraFoodCost() {
 
     let status: 'ok' | 'warn' | 'bad' = 'ok';
     if (foodCostPct > 35) status = 'bad';
-    else if (foodCostPct > 30) status = 'warn';
+    else if (foodCostPct > 32) status = 'warn';
 
     setResult({ totalCost, costPerPortion, foodCostPct, grossMargin, status });
   };
@@ -654,6 +654,19 @@ export default function CalculadoraFoodCost() {
                     Para un plato, esta calculadora da el porcentaje sin registro. Si quieres el escandallo de toda la carta, con mermas y raciones, está en{' '}
                     <a href="/escandallos-restaurante-ia" className="font-semibold text-primary hover:underline">
                       escandallos de restaurante con IA
+                    </a>
+                    .
+                  </p>
+                )}
+                {lang === 'fr' && (
+                  <p className="mt-6 text-muted-foreground">
+                    Pour un plat, ce calculateur donne le pourcentage sans inscription. Pour archiver la fiche avec les pertes et les allergènes, téléchargez la{' '}
+                    <a href="/fr/blog/fiche-technique-cuisine" className="font-semibold text-primary hover:underline">
+                      fiche technique vierge en Excel
+                    </a>
+                    {' '}; pour le coût de toute la carte, avec pertes et portions, voyez le{' '}
+                    <a href="/fr/calcul-food-cost-restaurant-ia" className="font-semibold text-primary hover:underline">
+                      logiciel food cost avec IA
                     </a>
                     .
                   </p>

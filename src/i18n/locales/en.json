@@ -2799,7 +2799,7 @@
         {
           "step": "1",
           "title": "Add ingredients",
-          "description": "Enter each ingredient with its weight per portion and purchase price per kilo."
+          "description": "Enter each ingredient with the total quantity used in the recipe (in grams) and its purchase price per kilo."
         },
         {
           "step": "2",
