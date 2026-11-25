@@ -1,8 +1,8 @@
 ---
-title: "Portionsgrößen-Tabelle für die Gastronomie: Wie viel Gramm pro Person — von à la carte bis Buffet"
-description: "Portionsgrößen-Tabelle für Erwachsene à la carte: Gramm pro Person für Fleisch, Gemüse, Kartoffeln, Suppe und Dessert, plus Buffet und Menü."
+title: "Wie viel Gramm pro Person? Portionsgrößen-Tabelle: Kartoffeln, Fleisch, Gemüse"
+description: "Für Erwachsene pro Person: 200–250 g Kartoffeln und 150–200 g Gemüse als Beilage, 150–200 g Fleisch (roh, ohne Knochen), 200–250 ml klare Suppe. Mit PDF."
 pubDate: 2026-08-19
-modDate: 2026-10-22
+modDate: 2026-11-25
 category: restaurant-management
 tags: ["portionsgrößen", "portionsgrößen tabelle", "kalkulation", "gastronomie"]
 image: /blog-assets/2026/08/portionen-destacada.jpg
@@ -31,6 +31,8 @@ faq:
 
 <p>Portionsgrößen sind in der Gastronomie kein Thema für Ernährungsportale, sondern die Grundlage Ihrer Kalkulation. Als Richtwert rechnet die Profiküche pro Person mit 150 bis 200 g Fleisch (Rohgewicht, ohne Knochen), 150 bis 200 g Gemüse und einer Sättigungsbeilage von 60 bis 100 g Rohgewicht bei Reis oder Nudeln bzw. 200 bis 250 g bei Kartoffeln – im mehrgängigen Menü entsprechend weniger. Wer diese Zahlen kennt und konsequent einhält, arbeitet nicht gegen die Kalkulation, sondern mit ihr. In diesem Artikel zeigen wir Ihnen, wo die klassischen Fehler lauern, wie Sie Portionsgrößen für Menü, Buffet und Gemeinschaftsverpflegung planen und welche Werkzeuge Ihnen helfen, jeden Teller zur gleichen Rechnung zu machen.</p>
 
+<p>Für die Küchenwand: Die <a href="https://aichef.pro/descargas/portionsgroessen-tabelle-gastronomie-aichef.pdf">Portionsgrößen-Tabelle als PDF</a> passt auf eine A4-Seite, kostenlos und ohne Anmeldung.</p>
+
 <h2>Wie viel Gramm pro Person? Die Richtwerte im Überblick</h2>
 
 <p>Die Profiküche rechnet pro Person mit 150 bis 200 g Fleisch roh (ohne Knochen), 150 bis 200 g Gemüse und einer Sättigungsbeilage von 60 bis 100 g Rohgewicht bei Reis oder Nudeln beziehungsweise 200 bis 250 g bei Kartoffeln.</p>
@@ -41,7 +43,7 @@ faq:
 
 <p>Der wichtigste Satz zu jeder Portionsangabe steht nicht in der Tabelle selbst, sondern darüber: Roh oder gegart? Eine Portionsangabe ohne den Zusatz „roh“ oder „gegart“ ist in der Profiküche wertlos, denn die beiden Gewichte haben fast nichts miteinander zu tun. Fleisch verliert beim Garen rund 20 bis 30 Prozent Gewicht: Aus 180 g roh werden etwa 130 bis 145 g auf dem Teller. Wer also glaubt, 180 g gegart entsprächen 180 g Einkauf, kauft systematisch zu viel ein und wundert sich später über den <a href="https://aichef.pro/de/blog/wareneinsatz-berechnen">Wareneinsatz</a>.</p>
 
-<p>Umgekehrt verhält es sich bei den Beilagen. Nudeln verdoppeln ihr Gewicht beim Kochen ungefähr – 100 g roh ergeben etwa 230 bis 250 g gekocht. Reis verdreifacht es ungefähr: 60 g roh ergeben etwa 180 g gekocht. Eine Tabelle ohne die Angabe „roh oder gegart“ ist wertlos, und genau deshalb legt Ihnen der nächste Abschnitt eine Tabelle vor, die diese Angabe konsequent macht. Für die Bestellung und die Kalkulation zählt das Rohgewicht, denn das ist das Gewicht, das Sie einkaufen und einwiegen. Für die Optik und die Erwartung des Gastes zählt das gegarte Gewicht. Wer beides sauber auseinanderhält, kann einen Teller kalkulieren, der ehrlich satt macht – ohne dass der Gast das Gefühl hat, zu wenig zu bekommen.</p>
+<p>Umgekehrt verhält es sich bei den Beilagen. Nudeln verdoppeln ihr Gewicht beim Kochen ungefähr – 100 g roh ergeben etwa 200 bis 250 g gekocht. Reis verdreifacht sein Gewicht ungefähr: 60 g roh ergeben etwa 180 g gekocht. Eine Tabelle ohne die Angabe „roh oder gegart“ ist wertlos, und genau deshalb legt Ihnen der nächste Abschnitt eine Tabelle vor, die diese Angabe konsequent macht. Für die Bestellung und die Kalkulation zählt das Rohgewicht, denn das ist das Gewicht, das Sie einkaufen und einwiegen. Für die Optik und die Erwartung des Gastes zählt das gegarte Gewicht. Wer beides sauber auseinanderhält, kann einen Teller kalkulieren, der ehrlich satt macht – ohne dass der Gast das Gefühl hat, zu wenig zu bekommen.</p>
 
 <h2>Die Portionsgrößen-Tabelle für die Profiküche</h2>
 
@@ -63,6 +65,8 @@ faq:
 <tr><td>Dessert</td><td>80 bis 120 g</td><td>im Menü am unteren Ende</td></tr>
 </tbody>
 </table>
+
+<p>Diese Tabelle gibt es auch <a href="https://aichef.pro/descargas/portionsgroessen-tabelle-gastronomie-aichef.pdf">als PDF zum Ausdrucken</a>, auf einer A4-Seite, mit den Regeln für Menü und Buffet aus diesem Artikel.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/portionen-waage.jpg" alt="Die Hände eines Kochs legen ein rohes Steak auf eine digitale Küchenwaage, daneben ein Blech mit vakuumierten, vorportionierten Steaks" width="1376" height="768" loading="lazy" decoding="async" />

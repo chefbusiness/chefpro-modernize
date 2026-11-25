@@ -1650,14 +1650,14 @@
   },
   "landingRestaurantes": {
     "seo": {
-      "title": "KI-Agenten für Restaurants: 75+ Spezialisten | AI Chef Pro",
-      "description": "KI-Agenten für Restaurants: 75+ Spezialisten für Kosten, Speisekarte, Allergene und Marketing. Ohne Bindung. Starten Sie heute ab 10 € im Monat.",
-      "keywords": "ki-agenten für restaurants, ki-agenten gastronomie, food cost ki, speisekarte ki, ai chef pro",
+      "title": "KI für Restaurants und Gastronomie: 75+ Agenten | AI Chef Pro",
+      "description": "KI für Restaurants und Gastronomie: 75+ KI-Agenten für Kosten, Speisekarte, Allergene und Marketing. Ohne Bindung, ab 10 € im Monat.",
+      "keywords": "ki für restaurants, ki gastronomie, ki in der gastronomie, ki-agenten für restaurants, ki-agenten gastronomie, food cost ki, speisekarte ki, ai chef pro",
       "url_slug": "ki-tools-restaurant"
     },
     "hero": {
       "badge": "75+ KI-Agenten für die Gastronomie",
-      "h1": "KI-Agenten für Restaurants",
+      "h1": "KI für Restaurants und Gastronomie",
       "subtitle": "75+ KI-Agenten für Restaurants, Bars und Cafés. Ohne technische Kenntnisse.",
       "tagline": "Kosten kontrollieren · Speisekarte gestalten · Marketing automatisieren · Abfall reduzieren",
       "cta_primary": "Jetzt starten",
@@ -1817,13 +1817,13 @@
   },
   "landingMenu": {
     "seo": {
-      "title": "Speisekarte Restaurant mit KI erstellen | AI Chef Pro",
-      "description": "Erstellen Sie die Speisekarte Ihres Restaurants mit künstlicher Intelligenz. Kartendesign, Menu Engineering, attraktive Beschreibungen und Allergenverwaltung. Starten Sie heute.",
-      "keywords": "speisekarte restaurant ki, menü restaurant ki, ki speisekarte erstellen, menu engineering ki, gerichtsbeschreibungen ki, digitale speisekarte, allergene speisekarte"
+      "title": "Speisekarte mit KI erstellen | AI Chef Pro",
+      "description": "Speisekarte mit KI erstellen: Gerichtsbeschreibungen, Menu Engineering, Allergene und saisonale Updates für Ihr Restaurant. Ab 10 € im Monat.",
+      "keywords": "speisekarte erstellen, speisekarte mit ki erstellen, speisekarte restaurant ki, menü restaurant ki, ki speisekarte erstellen, menu engineering ki, gerichtsbeschreibungen ki, digitale speisekarte, allergene speisekarte"
     },
     "hero": {
       "badge": "Speisekarte in Minuten mit KI gestalten",
-      "h1": "Speisekarte und Menü für Restaurants mit Künstlicher Intelligenz",
+      "h1": "Speisekarte mit KI erstellen: Texte, Menu Engineering und Allergene",
       "subtitle": "Gestalten, optimieren und erneuern Sie die Speisekarte Ihres Restaurants mit KI. Unwiderstehliche Beschreibungen, profitable Preise, Allergene verwaltet und Saisonmenüs in Minuten.",
       "tagline": "Karte gestalten · Preise optimieren · Allergene verwalten · Saisonal erneuern",
       "cta_primary": "Meine Karte erstellen",
@@ -2346,7 +2346,7 @@
       "h1": "KI-Küchenverwaltungssoftware für Restaurants",
       "subtitle": "Kontrollieren Sie Food Cost, Inventar, Rezepte und Allergene von einer einzigen Plattform. Die spezialisierte KI, die professionelle Küchen wirklich versteht.",
       "tagline": "Sparen Sie täglich bis zu 3 Stunden bei der Küchenverwaltung.",
-      "cta_primary": "Jetzt testen",
+      "cta_primary": "Jetzt starten",
       "cta_secondary": "Pläne und Preise ansehen",
       "no_card": "Ab 10 €/Monat · Monatliche Tarife ohne Vertragsbindung · Sofortiger Zugang"
     },
@@ -2525,23 +2525,23 @@
     "cta_section": {
       "title": "Beginnen Sie noch heute mit dem KI-gestützten Küchenmanagement",
       "subtitle": "75+ KI-Agenten in 7 Sprachen für die Küchenverwaltung.",
-      "primary": "Jetzt testen",
+      "primary": "Jetzt starten",
       "secondary": "Alle Pläne ansehen"
     }
   },
   "landingRecetas": {
     "seo": {
-      "title": "KI-Rezepte für Restaurants | AI Chef Pro",
-      "description": "Generieren Sie professionelle Rezepte mit KI: 27 Weltküchen, Saisonmenüs, technische Datenblätter und automatische Skalierung. 75+ KI-Agenten in 7 Sprachen.",
-      "keywords": "KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 27 Weltküchen Rezepte"
+      "title": "KI-Rezeptgenerator für Restaurants | AI Chef Pro",
+      "description": "Rezeptgenerator mit KI für Profis: Rezepte, Saisonmenüs, technische Datenblätter und Portionsskalierung. Ab 10 € im Monat, keine Gratis-Version.",
+      "keywords": "rezept generator, rezepte generator, ki rezepte, rezeptgenerator ki, KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 27 Weltküchen Rezepte"
     },
     "breadcrumb": "KI-Rezepte für Restaurants",
     "hero": {
       "badge": "Professioneller KI-Rezeptgenerator",
-      "h1": "KI-Rezepte für Restaurants: 27 Weltküchen",
+      "h1": "KI-Rezepte für Restaurants: der Rezeptgenerator für Profis",
       "subtitle": "Generieren Sie technisch korrekte Rezepte sofort. Saisonmenüs, professionelle technische Datenblätter und automatische Portionierung für Ihr Restaurant.",
       "tagline": "Vom Konzept zum Gericht in Minuten, nicht in Stunden.",
-      "cta_primary": "Jetzt testen",
+      "cta_primary": "Jetzt starten",
       "cta_secondary": "Pläne und Preise ansehen",
       "no_card": "Ab 10 €/Monat · Monatliche Tarife ohne Vertragsbindung · Sofortiger Zugang"
     },
@@ -2704,6 +2704,10 @@
         "answer": "Ja. AI Chef Pro generiert Rezepte mit korrektem kulinarischem Fachvokabular, einschließlich präziser Techniken, Garpunkten, Präsentation und Pairings. Im Gegensatz zu einer generischen KI versteht es die Logik jeder Weltküche."
       },
       {
+        "question": "Ist der KI-Rezeptgenerator kostenlos?",
+        "answer": "Nein. AI Chef Pro hat keine Gratis-Version. Der Plan „AI Chef Mitglied“ kostet 10 € im Monat mit 10.000 Credits und ist monatlich kündbar. Kostenlos und ohne Anmeldung sind die Web-Tools, etwa der Wareneinsatz-Rechner pro Gericht oder der Speisekarten-Text-Generator."
+      },
+      {
         "question": "Welche Weltküchen umfasst AI Chef Pro?",
         "answer": "AI Chef Pro umfasst Rezepte und Techniken aus 27 Küchen: Französisch, Italienisch, Japanisch, Spanisch, Peruanisch, Mexikanisch, Griechisch, Portugiesisch, Thailändisch, Indisch, Chinesisch und mehr."
       },
@@ -2719,7 +2723,7 @@
     "cta_section": {
       "title": "Beginnen Sie noch heute mit KI-Rezepten für Ihr Restaurant",
       "subtitle": "75+ KI-Agenten in 7 Sprachen",
-      "primary": "Jetzt testen",
+      "primary": "Jetzt starten",
       "secondary": "Alle Pläne ansehen"
     }
   },
@@ -4313,9 +4317,9 @@
   },
   "toolMenuCopy": {
     "seo": {
-      "title": "Kostenloser Speisekarten-Text-Generator | AI Chef Pro",
+      "title": "Speisekarten-Texte kostenlos mit KI erstellen | AI Chef Pro",
       "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. Kostenlos, ohne Anmeldung. Verbessern Sie Ihre Speisekarte.",
-      "keywords": "Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen kostenlos"
+      "keywords": "speisekarten texte kostenlos mit ki, Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen kostenlos"
     },
     "hero": {
       "badge": "Kostenlos — Ohne Anmeldung",
@@ -4439,7 +4443,7 @@
   },
   "toolDegustacion": {
     "seo": {
-      "title": "Kostenloses Degustationsmenü-Generator | AI Chef Pro",
+      "title": "Kostenloser Degustationsmenü-Generator | AI Chef Pro",
       "description": "Erstellen Sie ein vollständiges Degustationsmenü mit KI: poetischer Name, sensorische Beschreibung, Technik und Weinbegleitung für jeden Gang. Kostenlos.",
       "keywords": "degustationsmenü generator, degustationsmenü ki, degustationsmenü erstellen restaurant, degustationsmenü kostenlos"
     },
