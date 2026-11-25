@@ -33,7 +33,7 @@ KIT = 'https://aichef.pro/kit-escandallos?utm_source=plantilla-gratis&utm_medium
 # (ingrediente, bruto comprado en kg o L, merma, precio €/kg o €/L) — los del post.
 EJEMPLO = [
     ('Lomo de salmón fresco', 0.220, 0.18, 16.00),
-    ('Calabacín', 0.090, 0.10, 2.20),
+    ('Calabacín', 0.089, 0.10, 2.20),
     ('Pimiento rojo', 0.075, 0.20, 2.80),
     ('Cebolla morada', 0.046, 0.12, 1.50),
     ('Ajo', 0.006, 0.10, 6.00),

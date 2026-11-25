@@ -43,7 +43,7 @@ El escandallo de cocina es el cálculo detallado del coste de materia prima de c
 
 Un escandallo es la ficha económica de un plato. Desglosa cada ingrediente, su cantidad bruta (lo que compras), la merma que sufres al limpiar y cocinar, la cantidad neta que llega al plato y el coste real que eso supone. El resultado es el coste total de materia prima por ración.
 
-Muchos cocineros confunden el escandallo con la ficha técnica. No son lo mismo, pero se necesitan mutuamente. La ficha técnica describe la receta: elaboración, pesos netos, alérgenos, fotos de emplatado y cualquier información relevante para la seguridad alimentaria. El escandallo solo se ocupa del dinero: qué te cuesta cada gramo. Una buena ficha técnica es la base para un escandallo fiable, y un escandallo actualizado te dice si esa receta está ganando o perdiendo dinero. Si aún no tienes controladas tus fichas, vale la pena revisar [cómo la tecnología está ayudando a mejorar la seguridad alimentaria en restaurantes](https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes).
+Muchos cocineros confunden el escandallo con la [ficha técnica](https://aichef.pro/blog/ficha-tecnica-de-cocina). No son lo mismo, pero se necesitan mutuamente. La ficha técnica describe la receta: elaboración, pesos netos, alérgenos, fotos de emplatado y cualquier información relevante para la seguridad alimentaria. El escandallo solo se ocupa del dinero: qué te cuesta cada gramo. Una buena ficha técnica es la base para un escandallo fiable, y un escandallo actualizado te dice si esa receta está ganando o perdiendo dinero. Si aún no tienes controladas tus fichas, vale la pena revisar [cómo la tecnología está ayudando a mejorar la seguridad alimentaria en restaurantes](https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes).
 
 ### Qué Significa la Palabra «Escandallo»
 
@@ -141,7 +141,7 @@ Vamos a escandallar un plato real: **Salmón a la Plancha con Verduras Salteadas
 | Ingrediente | Neto emplatado | Merma | Bruto comprado | Precio | Coste |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Lomo de salmón fresco | 180 g | 18 % | 220 g | 16,00 €/kg | 3,52 € |
-| Calabacín | 80 g | 10 % | 90 g | 2,20 €/kg | 0,20 € |
+| Calabacín | 80 g | 10 % | 89 g | 2,20 €/kg | 0,20 € |
 | Pimiento rojo | 60 g | 20 % | 75 g | 2,80 €/kg | 0,21 € |
 | Cebolla morada | 40 g | 12 % | 46 g | 1,50 €/kg | 0,07 € |
 | Ajo | 5 g | 10 % | 6 g | 6,00 €/kg | 0,04 € |
