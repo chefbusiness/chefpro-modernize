@@ -261,7 +261,9 @@ def blatt_jahr(wb):
                   EUR, fett=True, grau=True)
         zelle(ws, j, ' ABCDEFGH'.index(qcol), f'=IF(OR({wcol}{j}="",N({ucol}{j})=0),"",{wcol}{j}/{ucol}{j})', PCT,
               fett=True, grau=True)
-    zelle(ws, j, 8, f'=IF(OR(D{j}="",G{j}=""),"",(B{j}+E{j})/(C{j}+F{j}))', PCT, fett=True, grau=True)
+    # Cuota global del año: solo los meses con cuota global (Speisen y Getränke completos), sin mezclar meses.
+    zelle(ws, j, 8, f'=IF(COUNT(H{a}:H{z})=0,"",SUMPRODUCT(--ISNUMBER(H{a}:H{z}),B{a}:B{z}+E{a}:E{z})'
+                    f'/SUMPRODUCT(--ISNUMBER(H{a}:H{z}),C{a}:C{z}+F{a}:F{z}))', PCT, fett=True, grau=True)
     ws.row_dimensions[j].height = 20
     # Aviso suave: la cuota sube más de 2 puntos frente al mes anterior (desde febrero; ROUND evita 0,32−0,30 > 0,02)
     for col in 'DGH':
@@ -381,7 +383,7 @@ def gate_logik():
     assert round(wert(j, 'B20')) == 32010 and round(wert(j, 'C20')) == 99000  # abril (sin Umsatz) no cuenta
     assert round(wert(j, 'D20'), 4) == round(32010 / 99000, 4)
     assert round(wert(j, 'E20')) == 5500 and round(wert(j, 'G20'), 2) == 0.25
-    assert round(wert(j, 'H20'), 4) == round((32010 + 5500) / (99000 + 22000), 4)
+    assert round(wert(j, 'H20'), 4) == round((9900 + 10560 + 2640 + 2860) / (33000 + 33000 + 11000 + 11000), 4)  # solo ene y feb
     # Regla del aviso: +2 puntos exactos no avisa, +3 sí (misma aritmética que la fórmula del formato condicional)
     assert not round(0.32 - 0.30, 4) > 0.02 and round(0.35 - 0.32, 4) > 0.02
     reglas = [r.formula[0] for rng in load_workbook(XLSX)[j].conditional_formatting for r in rng.rules]

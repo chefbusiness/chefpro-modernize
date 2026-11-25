@@ -677,7 +677,7 @@ export default function CalculadoraFoodCost() {
                     <a href="/de/blog/wareneinsatz-berechnen" className="font-semibold text-primary hover:underline">
                       Wareneinsatz berechnen
                     </a>
-                    , mit kostenloser Excel-Vorlage. Für die Kalkulation der ganzen Karte mit Abfall und Portionen gibt es die{' '}
+                    , mit kostenloser Excel-Vorlage. Für die Kalkulation der ganzen Karte mit Ausbeute und Portionen gibt es die{' '}
                     <a href="/de/food-cost-rechner-restaurant-ki" className="font-semibold text-primary hover:underline">
                       Kalkulation mit KI
                     </a>

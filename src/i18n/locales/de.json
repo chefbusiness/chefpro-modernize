@@ -2922,8 +2922,8 @@
     },
     "tools": [
       {
-        "title": "Food Cost Rechner",
-        "description": "Berechnen Sie die genauen Kosten jedes Gerichts und Ihren Food Cost-Prozentsatz in Sekunden.",
+        "title": "Wareneinsatz-Rechner (Food Cost)",
+        "description": "Berechnen Sie den Wareneinsatz und die Wareneinsatzquote jedes Gerichts in Sekunden.",
         "badge": "Rechner",
         "color": "green"
       },
@@ -2994,10 +2994,10 @@
       "description": "Wareneinsatz und Wareneinsatzquote pro Gericht kostenlos berechnen: Zutaten, Mengen, Einkaufspreise, Nettoverkaufspreis. Mit Ampel, ohne Anmeldung.",
       "keywords": "Wareneinsatz berechnen, Wareneinsatz Rechner, Wareneinsatzquote berechnen, Wareneinsatz pro Gericht, Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Gerichtkosten Restaurant"
     },
-    "breadcrumb": "Food Cost Rechner",
+    "breadcrumb": "Wareneinsatz-Rechner",
     "hero": {
       "badge": "Kostenlos — Keine Anmeldung",
-      "h1": "Wareneinsatz berechnen: kostenloser Rechner pro Gericht",
+      "h1": "Wareneinsatz-Rechner pro Gericht: kostenlos, ohne Anmeldung",
       "subtitle": "Berechnen Sie den Wareneinsatz und die Wareneinsatzquote (Food Cost) jedes Gerichts in Sekunden: Zutaten, Mengen, Einkaufspreise und Nettoverkaufspreis.",
       "cta_tool": "Zum Rechner ↓",
       "cta_premium": "Premium-Plan →"
@@ -3011,18 +3011,18 @@
       "ingredients_title": "Zutaten",
       "ingredient_name": "Zutat",
       "ingredient_qty": "Menge (g)",
-      "ingredient_cost": "Preis/kg (€)",
+      "ingredient_cost": "Einkaufspreis netto/kg (€)",
       "add_ingredient": "+ Zutat hinzufügen",
       "calculate": "Wareneinsatz berechnen",
       "result_title": "Ergebnis",
-      "total_cost_label": "Gesamtzutatenkosten",
-      "cost_per_portion_label": "Kosten pro Portion",
-      "food_cost_pct_label": "Food Cost %",
+      "total_cost_label": "Wareneinsatz gesamt (Rezept)",
+      "cost_per_portion_label": "Wareneinsatz pro Portion",
+      "food_cost_pct_label": "Wareneinsatzquote",
       "gross_margin_label": "Rohertrag (€/Portion)",
-      "status_ok": "✅ Gute Quote — Ihr Gericht ist sehr profitabel",
-      "status_warn": "⚠️ Knappe Quote — Überprüfen Sie Preise oder Zutaten",
-      "status_bad": "🔴 Hoher Wareneinsatz — Erwägen Sie Preiserhöhung oder Kostensenkung",
-      "tip": "💡 Orientierung: Übliche Wareneinsatzquoten liegen grob zwischen 25 und 35 %. Entscheidend ist Ihre Kalkulation, nicht ein Branchenwert.",
+      "status_ok": "✅ Gute Quote — solider Rohertrag",
+      "status_warn": "⚠️ Erhöhte Quote — Überprüfen Sie Preise oder Zutaten",
+      "status_bad": "🔴 Hohe Quote — Erwägen Sie Preiserhöhung oder Kostensenkung",
+      "tip": "💡 Die Ampel ist nur eine Orientierung (bis 32 % grün, bis 35 % gelb). Übliche Quoten liegen grob zwischen 25 und 35 %; entscheidend ist Ihre Kalkulation.",
       "cta_after": "Möchten Sie die ganze Karte mit KI kalkulieren und das Ergebnis prüfen lassen?",
       "reset": "Neue Berechnung",
       "export_excel": "Excel herunterladen",
@@ -3052,16 +3052,16 @@
         {
           "step": "1",
           "title": "Zutaten hinzufügen",
-          "description": "Geben Sie jede Zutat mit der Gesamtmenge im Rezept (in Gramm) und dem Einkaufspreis pro Kilo ein."
+          "description": "Geben Sie jede Zutat mit der Gesamtmenge im Rezept (in Gramm) und dem Netto-Einkaufspreis pro Kilo ein."
         },
         {
           "step": "2",
           "title": "Portionen und Verkaufspreis angeben",
-          "description": "Wie viele Portionen das Rezept ergibt und den Nettoverkaufspreis pro Portion (bei Speisen: Bruttopreis ÷ 1,07)."
+          "description": "Wie viele Portionen das Rezept ergibt und welcher Nettoverkaufspreis pro Portion gilt (bei Speisen: Bruttopreis ÷ 1,07)."
         },
         {
           "step": "3",
-          "title": "Wareneinsatz erhalten",
+          "title": "Ergebnis ablesen",
           "description": "Sie sehen den Wareneinsatz pro Portion, die Wareneinsatzquote und den Rentabilitätsstatus."
         }
       ]
@@ -3072,7 +3072,7 @@
         "Gerichte identifizieren, die Geld verlieren",
         "Verkaufspreise mit echten Daten anpassen",
         "Marge erhöhen ohne aggressive Preiserhöhungen",
-        "Totale Kontrolle in Sekunden, ohne Excel"
+        "Volle Kontrolle in Sekunden, direkt im Browser"
       ]
     },
     "pricing": {
@@ -3106,7 +3106,7 @@
       ]
     },
     "faq_section": {
-      "title": "Häufig gestellte Fragen zum Food Cost"
+      "title": "Häufige Fragen zum Wareneinsatz"
     },
     "faq": [
       {
@@ -3114,20 +3114,20 @@
         "answer": "Der Wareneinsatz pro Gericht sind die Kosten der Zutaten einer Portion. Die Wareneinsatzquote setzt sie ins Verhältnis zum Nettoverkaufspreis: Quote % = (Wareneinsatz ÷ Nettoverkaufspreis) × 100. Im Englischen heißt das Food Cost. Übliche Quoten liegen grob zwischen 25 und 35 %, einen allgemein richtigen Wert gibt es nicht."
       },
       {
-        "question": "Warum ist es wichtig, ihn zu kontrollieren?",
-        "answer": "Unkontrollierter Food Cost kann bedeuten, dass Sie bei Gerichten Geld verlieren, die Sie für profitabel halten. Die Kontrolle ermöglicht Preisentscheidungen und maximiert die Marge."
+        "question": "Warum sollte man den Wareneinsatz pro Gericht kontrollieren?",
+        "answer": "Ein unkontrollierter Wareneinsatz kann bedeuten, dass Sie mit Gerichten Geld verlieren, die Sie für profitabel halten. Die Kontrolle ermöglicht fundierte Preisentscheidungen und sichert die Marge."
       },
       {
         "question": "Beinhaltet dieser Rechner Abfälle?",
-        "answer": "Diese Version rechnet mit den Nettogewichten, die Sie eingeben. Für Putzen, Garen und Verdunstung nutzen Sie das Kalkulationswerkzeug von AI Chef Pro und der Koch prüft das Ergebnis."
+        "answer": "Nicht automatisch: Der Rechner multipliziert genau die Menge, die Sie eingeben, mit dem Kilopreis. Damit Putz- und Garverluste im Wareneinsatz stecken, tragen Sie die Einkaufsmenge vor dem Putzen ein. Für die ganze Karte mit Ausbeute nutzen Sie die Kalkulation mit KI von AI Chef Pro; der Koch prüft das Ergebnis."
       },
       {
         "question": "Wie senkt man einen hohen Wareneinsatz?",
         "answer": "Sie können den Verkaufspreis erhöhen, zu günstigeren Lieferanten wechseln, die Menge teurer Zutaten reduzieren oder Hochkostenkomponenten ersetzen."
       },
       {
-        "question": "Wie berechne ich den Wareneinsatz für den ganzen Monat?",
-        "answer": "Mit der Inventur: Anfangsbestand plus Einkäufe minus Endbestand, alles netto. Beispiel: 8.400 € + 12.600 € − 7.800 € = 13.200 €; bei 44.000 € Nettoumsatz ergibt das eine Quote von 30 %. Die Formel, das durchgerechnete Beispiel und eine kostenlose Excel-Vorlage finden Sie im Blog-Artikel „Wareneinsatz berechnen“."
+        "question": "Berechnet dieser Rechner auch den Wareneinsatz des Monats?",
+        "answer": "Nein, er rechnet pro Gericht. Den Wareneinsatz des Monats ermitteln Sie per Inventur (Anfangsbestand + Einkäufe − Endbestand, alles netto). Formel, durchgerechnetes Beispiel und kostenlose Excel-Vorlage finden Sie im Artikel „Wareneinsatz berechnen“."
       }
     ],
     "cta_section": {
