@@ -2,7 +2,7 @@
 title: "Keukenbrigade: wie wat draagt in de service"
 description: "Een keukenbrigade verdeelt mensen, partijen en de pass. Het model van Escoffier, een keuken van zes, en wat niet zonder verantwoordelijke mag blijven."
 pubDate: 2026-11-14
-modDate: 2026-11-14
+modDate: 2026-11-25
 category: glossarium
 tags: ["keukenbrigade", "brigade", "organisatie", "pass"]
 lang: nl
@@ -51,7 +51,7 @@ Ze ordent vier dingen tegelijk.
 
 **De pass.** Het punt waarop het bord de keuken verlaat. Als niemand hem leidt, stuurt elke partij wanneer het uitkomt, en de zaal krijgt de borden van één tafel in drie tijden.
 
-De allergenen van een nieuwe fiche horen in het briefing, niet pas als de gast al besteld heeft. De lijst van de [14 allergenen](https://aichef.pro/nl/blog/14-allergenen) zegt wat u moet kunnen aanwijzen. Ze zegt niet wie op de pass staat.
+De allergenen van een nieuwe [receptuur](https://aichef.pro/nl/blog/receptuur) horen in het briefing, niet pas als de gast al besteld heeft. De lijst van de [14 allergenen](https://aichef.pro/nl/blog/14-allergenen) zegt wat u moet kunnen aanwijzen. Ze zegt niet wie op de pass staat.
 
 ## Het model van Escoffier en een keuken van zes
 
@@ -65,7 +65,7 @@ Bij het inkrimpen blijft de verantwoordelijkheid. Iemand antwoordt voor de pass,
 
 | Vaknaam | Waar de persoon in het kort voor antwoordt |
 | --- | --- |
-| Chef-kok | Kaart, fiches, bestellingen van de week, en vaak de pass |
+| Chef-kok | Kaart, recepturen, bestellingen van de week, en vaak de pass |
 | Souschef | De service als de chef er niet is, en de lijn in het dagelijkse werk |
 | Executive chef | Meerdere keukens, als het huis die heeft. Dat is niet de souschef |
 | Chef de partie | Eén partij: de mise en place, de kwaliteit, de commissen eraan |
@@ -83,7 +83,7 @@ Dit is geen echt zaak en geen bezettingsnorm. Het is een voorbeeld om te zien ho
 
 | Persoon in het voorbeeld | Wat die draagt | Welke Franse namen de partij opneemt |
 | --- | --- | --- |
-| Chef-kok | De pass bij de lunch, de bestellingen van de week, de fiche van de dag | Wie afroept, en een deel van de sauzen |
+| Chef-kok | De pass bij de lunch, de bestellingen van de week, de receptuur van de dag | Wie afroept, en een deel van de sauzen |
 | Souschef | Het diner, en de lunch als de chef vrij is | Souschef |
 | Vuurpartij | Plancha, oven en warme saus | Grill, braadstukken en saucier |
 | Koude partij | Koude voorgerechten en het eenvoudige nagerecht van de kaart | Garde-manger |
@@ -104,7 +104,7 @@ De pass schrijft u in vijf gebaren. Een toespraak is niet nodig.
 4. Tussen de tafels wordt de pass schoongemaakt. De rand van het bord veegt wie dresseert, niet «wie toevallig langskomt».
 5. Is de chef er niet, dan roept de souschef af. Zijn ze allebei afwezig, dan heeft de service van die dag sinds de ochtend een andere naam op het bord. Om kwart over een improviseert u niet.
 
-De briefing gaat staand, aan de lege pass, voor het openen. Tien minuten volstaan om couverts, afwezigen van de dag, allergenen van nieuwe fiches, wat op is en wie afroept, op te schrijven.
+De briefing gaat staand, aan de lege pass, voor het openen. Tien minuten volstaan om couverts, afwezigen van de dag, allergenen van nieuwe recepturen, wat op is en wie afroept, op te schrijven.
 
 <figure><img src="/blog-assets/2026/11/brigada-de-cocina-briefing.jpg" alt="Drie koks in een wit jasje lopen aan de pass een klembord na, voor de service opent" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
