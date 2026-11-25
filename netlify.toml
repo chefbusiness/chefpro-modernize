@@ -64,6 +64,13 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Robots-Tag = "index, follow"
 
+# Descargas gratuitas (plantillas .xlsx de los posts): que Google mande el tráfico al
+# post que las explica, no al fichero suelto. Netlify suma esta cabecera a la de "/*".
+[[headers]]
+  for = "/descargas/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
 # Assets con hash de Astro → caché inmutable
 [[headers]]
   for = "/_astro/*"

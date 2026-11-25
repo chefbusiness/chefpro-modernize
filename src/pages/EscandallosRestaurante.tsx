@@ -202,6 +202,45 @@ export default function EscandallosRestaurante() {
                 junta ingredientes, elaboración, alérgenos y ese coste en la misma hoja.
               </p>
             )}
+            {currentLanguage === 'fr' && (
+              <p className="mt-10 max-w-2xl mx-auto text-center text-muted-foreground">
+                Pour un seul plat, le{' '}
+                <a href="/fr/calculateur-food-cost-restaurant" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  calcul du food cost gratuit
+                </a>{' '}
+                donne le pourcentage sans inscription, et la{' '}
+                <a href="/fr/blog/fiche-technique-cuisine" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  fiche technique vierge en Excel
+                </a>{' '}
+                se télécharge gratuitement.
+              </p>
+            )}
+            {currentLanguage === 'it' && (
+              <p className="mt-10 max-w-2xl mx-auto text-center text-muted-foreground">
+                Per un singolo piatto, il{' '}
+                <a href="/it/calcolatore-food-cost-ristorante" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  calcolo del food cost gratuito
+                </a>{' '}
+                ti dà la percentuale senza registrazione; la formula e l'esempio sono nell'articolo{' '}
+                <a href="/it/blog/food-cost" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  come si calcola il food cost
+                </a>
+                .
+              </p>
+            )}
+            {currentLanguage === 'de' && (
+              <p className="mt-10 max-w-2xl mx-auto text-center text-muted-foreground">
+                Für ein einzelnes Gericht liefert der{' '}
+                <a href="/de/food-cost-rechner-restaurant" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  kostenlose Wareneinsatz-Rechner
+                </a>{' '}
+                die Quote ohne Anmeldung. Wie Sie den Wareneinsatz des Monats per Inventur berechnen, zeigt der Artikel{' '}
+                <a href="/de/blog/wareneinsatz-berechnen" className="font-semibold text-primary underline-offset-2 hover:underline">
+                  Wareneinsatz berechnen
+                </a>
+                .
+              </p>
+            )}
           </div>
         </section>
 

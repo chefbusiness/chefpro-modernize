@@ -2247,14 +2247,14 @@
   },
   "landingRecetas": {
     "seo": {
-      "title": "IA recette cuisine pour restaurants | AI Chef Pro",
-      "description": "IA recette cuisine pour restaurants : fiches techniques, menus de saison et portions. Dès 10 €/mois, forfait mensuel sans engagement. Pas d'offre gratuite.",
-      "keywords": "ia recette cuisine, ia recette, meilleure ia recette, recettes ia restaurants, applications ia recettes"
+      "title": "IA recette cuisine : générateur pour restaurants | AI Chef Pro",
+      "description": "IA cuisine pour restaurants : générateur de recettes de pro avec fiche technique, allergènes et portions. Dès 10 €/mois, sans engagement. Pas d'offre gratuite.",
+      "keywords": "ia cuisine, générateur de recette, générateur de recettes ia, ia recette cuisine, ia recette, meilleure ia recette, recettes ia restaurants, applications ia recettes"
     },
     "breadcrumb": "Recettes IA pour Restaurants",
     "hero": {
       "badge": "Générateur de Recettes Professionnelles avec IA",
-      "h1": "IA recette cuisine : recettes professionnelles pour restaurants",
+      "h1": "IA recette cuisine : générateur de recettes professionnelles pour restaurants",
       "subtitle": "Fiches techniques, allergènes et portions pour votre cuisine. Le plan Membre commence à 10 €/mois. Il n'y a pas d'offre gratuite.",
       "tagline": "Du concept à l'assiette en minutes, pas en heures.",
       "cta_primary": "Essayer AI Chef Pro",
@@ -2418,6 +2418,10 @@
       {
         "question": "Existe-t-il une IA recette cuisine gratuite ?",
         "answer": "Un chatbot grand public a souvent un palier gratuit pour une recette à la maison. AI Chef Pro n'a pas d'offre gratuite : le plan Membre coûte 10 €/mois et inclut 10 000 crédits. Les plans mensuels n'ont pas de durée minimale. Cette page décrit l'usage en restaurant (fiche technique, allergènes, portions), pas un classement d'applications domestiques."
+      },
+      {
+        "question": "Qu'est-ce qu'un générateur de recettes IA pour restaurant ?",
+        "answer": "C'est un outil qui rédige une recette à partir de vos contraintes : produits disponibles, technique, nombre de couverts, saison. La plupart des générateurs grand public s'arrêtent à la recette maison. Pour un restaurant, AI Chef Pro produit aussi la fiche technique, les grammages par portion et les allergènes à déclarer, que le chef valide avant le service. C'est un service payant, dès 10 €/mois avec le plan Membre."
       },
       {
         "question": "L'IA peut-elle créer des recettes professionnelles pour les restaurants ?",
@@ -2722,14 +2726,14 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "Calculateur Food Cost Restaurant Gratuit | AI Chef Pro",
-      "description": "Calculez le food cost de vos plats gratuitement : ingrédients, grammages et prix de vente. Résultat instantané avec feu tricolore de rentabilité.",
-      "keywords": "calculateur food cost restaurant, calculer food cost gratuit, food cost pourcentage, coût plat restaurant"
+      "title": "Calcul food cost gratuit pour restaurant | AI Chef Pro",
+      "description": "Calcul du food cost et du prix de revient, gratuit et sans inscription : ingrédients, grammages, prix de vente HT. Résultat immédiat avec feu tricolore.",
+      "keywords": "calcul food cost, calcul prix de revient, logiciel calcul prix de revient cuisine gratuit, calculateur food cost restaurant, calculer food cost gratuit, food cost pourcentage, coût plat restaurant"
     },
     "breadcrumb": "Calculateur Food Cost",
     "hero": {
       "badge": "Gratuit — Sans inscription",
-      "h1": "Calculateur de Food Cost pour Restaurants",
+      "h1": "Calcul du food cost : calculateur gratuit pour restaurants",
       "subtitle": "Calculez le pourcentage de food cost de n'importe quel plat en secondes. Ajoutez les ingrédients, grammages et prix de vente.",
       "cta_tool": "Aller au calculateur ↓",
       "cta_premium": "Plan Premium →"
@@ -2739,7 +2743,7 @@
       "dish_name_label": "Nom du plat",
       "dish_name_placeholder": "Ex : Risotto aux champignons",
       "portions_label": "Nombre de portions",
-      "sale_price_label": "Prix de vente par portion (€)",
+      "sale_price_label": "Prix de vente HT par portion (€)",
       "ingredients_title": "Ingrédients",
       "ingredient_name": "Ingrédient",
       "ingredient_qty": "Quantité (g)",
@@ -2784,12 +2788,12 @@
         {
           "step": "1",
           "title": "Ajoutez les ingrédients",
-          "description": "Saisissez chaque ingrédient avec son grammage par portion et son prix d'achat au kilo."
+          "description": "Saisissez chaque ingrédient avec la quantité totale de la recette (en grammes) et son prix d'achat au kilo."
         },
         {
           "step": "2",
           "title": "Indiquez les portions et le prix",
-          "description": "Combien de portions donne la recette et à quel prix vous la vendez."
+          "description": "Combien de portions donne la recette et son prix de vente HT par portion (prix carte TTC ÷ 1,10 pour la TVA à 10 %)."
         },
         {
           "step": "3",
@@ -2843,7 +2847,7 @@
     "faq": [
       {
         "question": "Qu'est-ce que le food cost ?",
-        "answer": "Le food cost est le pourcentage du prix de vente qui représente le coût des ingrédients. Formule : Food cost % = (Coût ingrédients / Prix de vente) × 100. Un food cost sain se situe entre 25% et 32%."
+        "answer": "Le food cost est le pourcentage du prix de vente qui représente le coût des ingrédients. Formule : Food cost % = (Coût ingrédients / Prix de vente HT) × 100. Un food cost sain se situe entre 25% et 32%."
       },
       {
         "question": "Pourquoi est-il important de le contrôler ?",
@@ -2851,11 +2855,15 @@
       },
       {
         "question": "Ce calculateur inclut-il les pertes ?",
-        "answer": "Cette version utilise les grammages nets que vous saisissez. Pour inclure les pertes de parage, de cuisson et d'évaporation, utilisez l'outil de fiche de coût d'AI Chef Pro et validez le résultat."
+        "answer": "Cette version utilise les quantités nettes que vous saisissez. Pour inclure les pertes de parage, de cuisson et d'évaporation, utilisez l'outil de fiche de coût d'AI Chef Pro et validez le résultat, ou notre fiche technique vierge en Excel, gratuite, qui calcule le grammage brut à partir de la perte."
       },
       {
         "question": "Comment améliorer un food cost élevé ?",
         "answer": "Vous pouvez augmenter le prix de vente, changer de fournisseurs, réduire les grammages des ingrédients coûteux ou substituer des composants à coût élevé."
+      },
+      {
+        "question": "Existe-t-il un logiciel gratuit de calcul du prix de revient en cuisine ?",
+        "answer": "Oui : ce calculateur est gratuit et sans inscription. Il donne le coût matière par portion, le food cost et la marge brute d'un plat à partir des grammages, des prix d'achat au kilo et du prix de vente HT. Pour archiver vos calculs avec les pertes, la progression et les allergènes, notre fiche technique de cuisine vierge en Excel est gratuite elle aussi : elle se télécharge depuis l'article du blog sur la fiche technique de cuisine."
       }
     ],
     "cta_section": {

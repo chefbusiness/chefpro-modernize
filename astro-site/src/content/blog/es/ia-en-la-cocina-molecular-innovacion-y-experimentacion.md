@@ -28,7 +28,7 @@ wpId: 1818
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 35px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
 <h3 style="color: #1a1a1a; margin-top: 0; font-size: 24px;">🧪 Revoluciona tu Cocina Molecular con IA</h3>
-<p style="color: #333; font-size: 16px; line-height: 1.7;">Accede a más de <strong>55 herramientas especializadas</strong> de inteligencia artificial diseñadas para chefs profesionales. Descubre combinaciones moleculares únicas, optimiza tus técnicas de vanguardia y crea experiencias gastronómicas inolvidables.</p>
+<p style="color: #333; font-size: 16px; line-height: 1.7;">Accede a más de <strong>80 agentes especializados</strong> de inteligencia artificial diseñados para chefs profesionales. Descubre combinaciones moleculares únicas, optimiza tus técnicas de vanguardia y crea experiencias gastronómicas inolvidables.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">Probar AI Chef Pro →</a>
 </div>
 
@@ -375,7 +375,7 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 
 <div style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); border-radius: 12px; padding: 30px; margin: 35px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #fff; margin-top: 0; font-size: 24px;">⚗️ Suite Completa de Herramientas Gastronómicas</h3>
-<p style="color: #ecf0f1; font-size: 16px; line-height: 1.7;">AI Chef Pro incluye más de <strong>55 aplicaciones especializadas</strong>: generadores de recetas por cocina regional, herramientas de gestión de <a href="https://aichef.pro/blog/que-son-las-mermas-en-cocina" target="_blank" rel="noopener" style="color: #FFD700;">mermas</a>, identificación de <a href="https://aichef.pro/blog/alergenos" target="_blank" rel="noopener" style="color: #FFD700;">alérgenos</a>, coaching para chefs y mucho más.</p>
+<p style="color: #ecf0f1; font-size: 16px; line-height: 1.7;">AI Chef Pro incluye más de <strong>80 agentes especializados</strong>: generadores de recetas por cocina regional, herramientas de gestión de <a href="https://aichef.pro/blog/que-son-las-mermas-en-cocina" target="_blank" rel="noopener" style="color: #FFD700;">mermas</a>, identificación de <a href="https://aichef.pro/blog/alergenos" target="_blank" rel="noopener" style="color: #FFD700;">alérgenos</a>, coaching para chefs y mucho más.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">Ver Planes y Precios →</a>
 </div>
 
@@ -535,7 +535,7 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 35px; margin: 35px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.15); text-align: center;">
 <h3 style="color: #1a1a1a; margin-top: 0; font-size: 26px;">🚀 Transforma Tu Cocina con IA</h3>
-<p style="color: #333; font-size: 17px; line-height: 1.7; max-width: 600px; margin: 0 auto 20px;">Únete a miles de chefs profesionales que ya utilizan AI Chef Pro para revolucionar sus creaciones culinarias. Desde cocina molecular hasta gestión de costes, tenemos la herramienta perfecta para ti.</p>
+<p style="color: #333; font-size: 17px; line-height: 1.7; max-width: 600px; margin: 0 auto 20px;">Prueba AI Chef Pro y revoluciona tus creaciones culinarias. Desde cocina molecular hasta gestión de costes, tenemos la herramienta perfecta para ti.</p>
 <div style="margin-top: 20px;">
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; margin: 5px;">Comenzar ahora</a>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener" style="display: inline-block; background-color: transparent; color: #1a1a1a; padding: 14px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; border: 2px solid #1a1a1a; margin: 5px;">Ver Planes</a>
@@ -650,7 +650,7 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 
 
 
-<p class="wp-block-paragraph">Para experimentación básica, el plan Pro (10€/mes) ofrece acceso a Food Pairing AI y Cocina Creativa AI. Para desarrollo intensivo de conceptos moleculares, recomendamos Premium Pro (25€/mes) que incluye usos extensivos y acceso a todas las herramientas especializadas. Consulta todos los <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">planes y precios disponibles</a>.</p>
+<p class="wp-block-paragraph">Para experimentación básica, el plan Miembro (10 €/mes, 10.000 créditos) ya da acceso a Food Pairing AI, Cocina Creativa AI y al resto de agentes. Para desarrollo intensivo de conceptos moleculares, recomendamos Premium Pro (25 €/mes), con 85.000 créditos al mes. Consulta todos los <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">planes y precios disponibles</a>.</p>
 
 
 

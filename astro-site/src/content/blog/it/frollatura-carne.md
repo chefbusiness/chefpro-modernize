@@ -138,7 +138,7 @@ faq:
 
 <h2>La cella è tua, la carta la acceleri</h2>
 
-<p>La frollatura non si delega: la cella, i controlli, il naso sono mestiere tuo. Quello che puoi accelerare è come la metti a frutto — il piatto, il racconto in carta, l'abbinamento che giustifica quei sessanta giorni di attesa.</p>
+<p>La frollatura non si delega: la cella, i controlli, il naso sono mestiere tuo. Quello che puoi accelerare è come la metti a frutto — il piatto, il racconto in carta, l'<a href="https://aichef.pro/it/blog/abbinamento-cibo-vino">abbinamento</a> che giustifica quei sessanta giorni di attesa.</p>
 
 <p>Su <a href="https://itapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=frollatura-carne" target="_blank" rel="noopener noreferrer">itapp.aichef.pro</a> trovi oltre 50 strumenti di AI Chef Pro per chef e ristoratori; per questo lavoro, <strong><a href="https://itapp.aichef.pro/0UGX4TMPB2?utm_source=blog&utm_medium=cta&utm_content=frollatura-carne" target="_blank" rel="noopener noreferrer">Cucina Creativa</a></strong> parte dal tuo taglio frollato e ti propone piatti, guarnizioni e abbinamenti che ne rispettano il carattere — invece di coprirlo.</p>
 

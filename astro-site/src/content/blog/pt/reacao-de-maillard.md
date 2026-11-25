@@ -2,7 +2,7 @@
 title: "Reação de Maillard: o que é, e o que não é"
 description: "A reação de Maillard doura aminoácidos e açúcares numa superfície seca. A água trava-a. Não é a caramelização, que só precisa de açúcar."
 pubDate: 2026-11-17
-modDate: 2026-11-17
+modDate: 2026-11-25
 category: glossario
 tags: ["reação de Maillard", "dourar", "caramelização", "selar"]
 lang: pt
@@ -23,7 +23,7 @@ faq:
   - q: "A que temperatura começa a reação de Maillard?"
     a: "Torna-se visível por volta dos 140 a 150 °C. Acelera entre 160 e 180 °C. Uma superfície um pouco alcalina pode arrancar mais cedo. Abaixo de cerca de 130 °C a mudança é tão lenta que, num tempo normal de cozedura, não se vê cor. Acima de 200 °C o risco é o amargo e, no amido, a acrilamida."
   - q: "A reação de Maillard pode acontecer num estufado?"
-    a: "Não no líquido. A água mantém essa superfície perto da fervura e dilui os reagentes. A parede seca do tacho, ou a carne que se sela antes de ir para a panela, pode passar dos 140 °C e dourar. Por isso um estufado começa com a selagem, e um fundo escuro começa com ossos torrados."
+    a: "Não no líquido. A água mantém essa superfície perto da fervura e dilui os reagentes. Os aromas de tostado que a reação cria também explicam algumas combinações do [food pairing](https://aichef.pro/pt/blog/food-pairing), como café e carne de porco. A parede seca do tacho, ou a carne que se sela antes de ir para a panela, pode passar dos 140 °C e dourar. Por isso um estufado começa com a selagem, e um fundo escuro começa com ossos torrados."
   - q: "Selar carne é sempre reação de Maillard?"
     a: "A crosta castanha de um bife é quase toda Maillard. A carne tem aminoácidos, e o pouco açúcar que traz chega. A caramelização mal entra, porque o açúcar livre na carne é baixo. A crosta só se forma onde a superfície secou."
   - q: "Porque é que a côdea do pão cheira tanto a tostado?"

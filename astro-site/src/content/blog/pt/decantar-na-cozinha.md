@@ -2,7 +2,7 @@
 title: "Decantar na cozinha: o fundo límpido, a borra e o vinho meio seco"
 description: "Decantar um fundo é verter o líquido límpido juntando os bordos e deixar a borra. Não é coar nem escorrer a massa. Meio seco é a menção do rótulo."
 pubDate: 2026-11-10
-modDate: 2026-11-10
+modDate: 2026-11-25
 category: glossario
 tags: ["decantar", "fundo", "vinho", "borra"]
 lang: pt
@@ -29,7 +29,7 @@ faq:
   - q: "O que é um vinho abocado?"
     a: "É uma palavra de prova espanhola, sobretudo para um estilo de xerez: um vinho que não está seco de todo e não é um vinho de sobremesa. O rótulo português de um vinho tranquilo não diz abocado. Diz seco, meio seco, meio doce ou doce, conforme o açúcar residual do anexo III do Regulamento (UE) 2019/33. No gosto, um abocado cai perto do meio seco."
   - q: "Decantar o vinho e decantar o fundo é o mesmo trabalho?"
-    a: "O cuidado parece-se: a borra fica para trás. Na cozinha juntam-se os bordos de dois recipientes, um fundo, uma maceração, um molho. Na sala verte-se muito devagar um vinho de guarda para um decantador. Trasfegar, na adega, é separar um vinho das borras. Verter de alto mexe o que se queria deixar quieto."
+    a: "O cuidado parece-se: a borra fica para trás. Na cozinha juntam-se os bordos de dois recipientes, um fundo, uma maceração, um molho. Na sala verte-se muito devagar um vinho de guarda para um decantador. Trasfegar, na adega, é separar um vinho das borras. Verter de alto mexe o que se queria deixar quieto. Que vinho servir com cada prato já é outra conversa: a [harmonização de vinhos](https://aichef.pro/pt/blog/harmonizacao-de-vinhos)."
   - q: "Porque não se esgota até à última gota?"
     a: "Os últimos centilitros costumam levar o pior. Sai mais barato perdê-los do que servir um consommé opaco ou uma maceração com pó no fundo do copo."
 faqInBody: true

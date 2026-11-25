@@ -1650,14 +1650,14 @@
   },
   "landingRestaurantes": {
     "seo": {
-      "title": "KI-Agenten für Restaurants: 75+ Spezialisten | AI Chef Pro",
-      "description": "KI-Agenten für Restaurants: 75+ Spezialisten für Kosten, Speisekarte, Allergene und Marketing. Ohne Bindung. Starten Sie heute ab 10 € im Monat.",
-      "keywords": "ki-agenten für restaurants, ki-agenten gastronomie, food cost ki, speisekarte ki, ai chef pro",
+      "title": "KI für Restaurants und Gastronomie: 75+ Agenten | AI Chef Pro",
+      "description": "KI für Restaurants und Gastronomie: 75+ KI-Agenten für Kosten, Speisekarte, Allergene und Marketing. Ohne Bindung, ab 10 € im Monat.",
+      "keywords": "ki für restaurants, ki gastronomie, ki in der gastronomie, ki-agenten für restaurants, ki-agenten gastronomie, food cost ki, speisekarte ki, ai chef pro",
       "url_slug": "ki-tools-restaurant"
     },
     "hero": {
       "badge": "75+ KI-Agenten für die Gastronomie",
-      "h1": "KI-Agenten für Restaurants",
+      "h1": "KI für Restaurants und Gastronomie",
       "subtitle": "75+ KI-Agenten für Restaurants, Bars und Cafés. Ohne technische Kenntnisse.",
       "tagline": "Kosten kontrollieren · Speisekarte gestalten · Marketing automatisieren · Abfall reduzieren",
       "cta_primary": "Jetzt starten",
@@ -1817,13 +1817,13 @@
   },
   "landingMenu": {
     "seo": {
-      "title": "Speisekarte Restaurant mit KI erstellen | AI Chef Pro",
-      "description": "Erstellen Sie die Speisekarte Ihres Restaurants mit künstlicher Intelligenz. Kartendesign, Menu Engineering, attraktive Beschreibungen und Allergenverwaltung. Starten Sie heute.",
-      "keywords": "speisekarte restaurant ki, menü restaurant ki, ki speisekarte erstellen, menu engineering ki, gerichtsbeschreibungen ki, digitale speisekarte, allergene speisekarte"
+      "title": "Speisekarte mit KI erstellen | AI Chef Pro",
+      "description": "Speisekarte mit KI erstellen: Gerichtsbeschreibungen, Menu Engineering, Allergene und saisonale Updates für Ihr Restaurant. Ab 10 € im Monat.",
+      "keywords": "speisekarte erstellen, speisekarte mit ki erstellen, speisekarte restaurant ki, menü restaurant ki, ki speisekarte erstellen, menu engineering ki, gerichtsbeschreibungen ki, digitale speisekarte, allergene speisekarte"
     },
     "hero": {
       "badge": "Speisekarte in Minuten mit KI gestalten",
-      "h1": "Speisekarte und Menü für Restaurants mit Künstlicher Intelligenz",
+      "h1": "Speisekarte mit KI erstellen: Texte, Menu Engineering und Allergene",
       "subtitle": "Gestalten, optimieren und erneuern Sie die Speisekarte Ihres Restaurants mit KI. Unwiderstehliche Beschreibungen, profitable Preise, Allergene verwaltet und Saisonmenüs in Minuten.",
       "tagline": "Karte gestalten · Preise optimieren · Allergene verwalten · Saisonal erneuern",
       "cta_primary": "Meine Karte erstellen",
@@ -2346,7 +2346,7 @@
       "h1": "KI-Küchenverwaltungssoftware für Restaurants",
       "subtitle": "Kontrollieren Sie Food Cost, Inventar, Rezepte und Allergene von einer einzigen Plattform. Die spezialisierte KI, die professionelle Küchen wirklich versteht.",
       "tagline": "Sparen Sie täglich bis zu 3 Stunden bei der Küchenverwaltung.",
-      "cta_primary": "Jetzt testen",
+      "cta_primary": "Jetzt starten",
       "cta_secondary": "Pläne und Preise ansehen",
       "no_card": "Ab 10 €/Monat · Monatliche Tarife ohne Vertragsbindung · Sofortiger Zugang"
     },
@@ -2525,23 +2525,23 @@
     "cta_section": {
       "title": "Beginnen Sie noch heute mit dem KI-gestützten Küchenmanagement",
       "subtitle": "75+ KI-Agenten in 7 Sprachen für die Küchenverwaltung.",
-      "primary": "Jetzt testen",
+      "primary": "Jetzt starten",
       "secondary": "Alle Pläne ansehen"
     }
   },
   "landingRecetas": {
     "seo": {
-      "title": "KI-Rezepte für Restaurants | AI Chef Pro",
-      "description": "Generieren Sie professionelle Rezepte mit KI: 27 Weltküchen, Saisonmenüs, technische Datenblätter und automatische Skalierung. 75+ KI-Agenten in 7 Sprachen.",
-      "keywords": "KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 27 Weltküchen Rezepte"
+      "title": "KI-Rezeptgenerator für Restaurants | AI Chef Pro",
+      "description": "Rezeptgenerator mit KI für Profis: Rezepte, Saisonmenüs, technische Datenblätter und Portionsskalierung. Ab 10 € im Monat, keine Gratis-Version.",
+      "keywords": "rezept generator, rezepte generator, ki rezepte, rezeptgenerator ki, KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 27 Weltküchen Rezepte"
     },
     "breadcrumb": "KI-Rezepte für Restaurants",
     "hero": {
       "badge": "Professioneller KI-Rezeptgenerator",
-      "h1": "KI-Rezepte für Restaurants: 27 Weltküchen",
+      "h1": "KI-Rezepte für Restaurants: der Rezeptgenerator für Profis",
       "subtitle": "Generieren Sie technisch korrekte Rezepte sofort. Saisonmenüs, professionelle technische Datenblätter und automatische Portionierung für Ihr Restaurant.",
       "tagline": "Vom Konzept zum Gericht in Minuten, nicht in Stunden.",
-      "cta_primary": "Jetzt testen",
+      "cta_primary": "Jetzt starten",
       "cta_secondary": "Pläne und Preise ansehen",
       "no_card": "Ab 10 €/Monat · Monatliche Tarife ohne Vertragsbindung · Sofortiger Zugang"
     },
@@ -2704,6 +2704,10 @@
         "answer": "Ja. AI Chef Pro generiert Rezepte mit korrektem kulinarischem Fachvokabular, einschließlich präziser Techniken, Garpunkten, Präsentation und Pairings. Im Gegensatz zu einer generischen KI versteht es die Logik jeder Weltküche."
       },
       {
+        "question": "Ist der KI-Rezeptgenerator kostenlos?",
+        "answer": "Nein. AI Chef Pro hat keine Gratis-Version. Der Plan „AI Chef Mitglied“ kostet 10 € im Monat mit 10.000 Credits und ist monatlich kündbar. Kostenlos und ohne Anmeldung sind die Web-Tools, etwa der Wareneinsatz-Rechner pro Gericht oder der Speisekarten-Text-Generator."
+      },
+      {
         "question": "Welche Weltküchen umfasst AI Chef Pro?",
         "answer": "AI Chef Pro umfasst Rezepte und Techniken aus 27 Küchen: Französisch, Italienisch, Japanisch, Spanisch, Peruanisch, Mexikanisch, Griechisch, Portugiesisch, Thailändisch, Indisch, Chinesisch und mehr."
       },
@@ -2719,7 +2723,7 @@
     "cta_section": {
       "title": "Beginnen Sie noch heute mit KI-Rezepten für Ihr Restaurant",
       "subtitle": "75+ KI-Agenten in 7 Sprachen",
-      "primary": "Jetzt testen",
+      "primary": "Jetzt starten",
       "secondary": "Alle Pläne ansehen"
     }
   },
@@ -2922,8 +2926,8 @@
     },
     "tools": [
       {
-        "title": "Food Cost Rechner",
-        "description": "Berechnen Sie die genauen Kosten jedes Gerichts und Ihren Food Cost-Prozentsatz in Sekunden.",
+        "title": "Wareneinsatz-Rechner (Food Cost)",
+        "description": "Berechnen Sie den Wareneinsatz und die Wareneinsatzquote jedes Gerichts in Sekunden.",
         "badge": "Rechner",
         "color": "green"
       },
@@ -2990,15 +2994,15 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "Kostenloser Restaurant Food Cost Rechner | AI Chef Pro",
-      "description": "Berechnen Sie den Food Cost Ihrer Gerichte kostenlos: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. Ohne Anmeldung.",
-      "keywords": "Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Food Cost Prozentsatz, Gerichtkosten Restaurant"
+      "title": "Wareneinsatz-Rechner pro Gericht (kostenlos) | AI Chef Pro",
+      "description": "Wareneinsatz und Wareneinsatzquote pro Gericht kostenlos berechnen: Zutaten, Mengen, Einkaufspreise, Nettoverkaufspreis. Mit Ampel, ohne Anmeldung.",
+      "keywords": "Wareneinsatz berechnen, Wareneinsatz Rechner, Wareneinsatzquote berechnen, Wareneinsatz pro Gericht, Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Gerichtkosten Restaurant"
     },
-    "breadcrumb": "Food Cost Rechner",
+    "breadcrumb": "Wareneinsatz-Rechner",
     "hero": {
       "badge": "Kostenlos — Keine Anmeldung",
-      "h1": "Food Cost Rechner für Restaurants",
-      "subtitle": "Berechnen Sie den Food Cost-Prozentsatz jedes Gerichts in Sekunden. Fügen Sie Zutaten, Mengen und Verkaufspreis hinzu.",
+      "h1": "Wareneinsatz-Rechner pro Gericht: kostenlos, ohne Anmeldung",
+      "subtitle": "Berechnen Sie den Wareneinsatz und die Wareneinsatzquote (Food Cost) jedes Gerichts in Sekunden: Zutaten, Mengen, Einkaufspreise und Nettoverkaufspreis.",
       "cta_tool": "Zum Rechner ↓",
       "cta_premium": "Premium-Plan →"
     },
@@ -3007,22 +3011,22 @@
       "dish_name_label": "Gerichtname",
       "dish_name_placeholder": "Z.B.: Pilzrisotto",
       "portions_label": "Anzahl der Portionen",
-      "sale_price_label": "Verkaufspreis pro Portion (€)",
+      "sale_price_label": "Verkaufspreis netto pro Portion (€)",
       "ingredients_title": "Zutaten",
       "ingredient_name": "Zutat",
       "ingredient_qty": "Menge (g)",
-      "ingredient_cost": "Preis/kg (€)",
+      "ingredient_cost": "Einkaufspreis netto/kg (€)",
       "add_ingredient": "+ Zutat hinzufügen",
-      "calculate": "Food Cost berechnen",
+      "calculate": "Wareneinsatz berechnen",
       "result_title": "Ergebnis",
-      "total_cost_label": "Gesamtzutatenkosten",
-      "cost_per_portion_label": "Kosten pro Portion",
-      "food_cost_pct_label": "Food Cost %",
+      "total_cost_label": "Wareneinsatz gesamt (Rezept)",
+      "cost_per_portion_label": "Wareneinsatz pro Portion",
+      "food_cost_pct_label": "Wareneinsatzquote",
       "gross_margin_label": "Rohertrag (€/Portion)",
-      "status_ok": "✅ Ausgezeichneter Food Cost — Ihr Gericht ist sehr profitabel",
-      "status_warn": "⚠️ Knapper Food Cost — Überprüfen Sie Preise oder Zutaten",
-      "status_bad": "🔴 Hoher Food Cost — Erwägen Sie Preiserhöhung oder Kostensenkung",
-      "tip": "💡 Branchenreferenz: Food Cost zwischen 25% und 32% ist gesund für Restaurants",
+      "status_ok": "✅ Gute Quote — solider Rohertrag",
+      "status_warn": "⚠️ Erhöhte Quote — Überprüfen Sie Preise oder Zutaten",
+      "status_bad": "🔴 Hohe Quote — Erwägen Sie Preiserhöhung oder Kostensenkung",
+      "tip": "💡 Die Ampel ist nur eine Orientierung (bis 32 % grün, bis 35 % gelb). Übliche Quoten liegen grob zwischen 25 und 35 %; entscheidend ist Ihre Kalkulation.",
       "cta_after": "Möchten Sie die ganze Karte mit KI kalkulieren und das Ergebnis prüfen lassen?",
       "reset": "Neue Berechnung",
       "export_excel": "Excel herunterladen",
@@ -3052,27 +3056,27 @@
         {
           "step": "1",
           "title": "Zutaten hinzufügen",
-          "description": "Geben Sie jede Zutat mit ihrer Menge pro Portion und dem Einkaufspreis pro Kilo ein."
+          "description": "Geben Sie jede Zutat mit der Gesamtmenge im Rezept (in Gramm) und dem Netto-Einkaufspreis pro Kilo ein."
         },
         {
           "step": "2",
           "title": "Portionen und Verkaufspreis angeben",
-          "description": "Wie viele Portionen das Rezept ergibt und zu welchem Preis Sie es verkaufen."
+          "description": "Wie viele Portionen das Rezept ergibt und welcher Nettoverkaufspreis pro Portion gilt (bei Speisen: Bruttopreis ÷ 1,07)."
         },
         {
           "step": "3",
-          "title": "Food Cost erhalten",
-          "description": "Sie sehen die genauen Kosten pro Portion, den Food Cost-Prozentsatz und den Rentabilitätsstatus."
+          "title": "Ergebnis ablesen",
+          "description": "Sie sehen den Wareneinsatz pro Portion, die Wareneinsatzquote und den Rentabilitätsstatus."
         }
       ]
     },
     "benefits": {
-      "title": "Warum Ihren Food Cost berechnen",
+      "title": "Warum Sie den Wareneinsatz berechnen sollten",
       "items": [
         "Gerichte identifizieren, die Geld verlieren",
         "Verkaufspreise mit echten Daten anpassen",
         "Marge erhöhen ohne aggressive Preiserhöhungen",
-        "Totale Kontrolle in Sekunden, ohne Excel"
+        "Volle Kontrolle in Sekunden, direkt im Browser"
       ]
     },
     "pricing": {
@@ -3106,24 +3110,28 @@
       ]
     },
     "faq_section": {
-      "title": "Häufig gestellte Fragen zum Food Cost"
+      "title": "Häufige Fragen zum Wareneinsatz"
     },
     "faq": [
       {
-        "question": "Was ist Food Cost?",
-        "answer": "Food Cost ist der Prozentsatz des Verkaufspreises, der die Zutatenkosten darstellt. Formel: Food Cost % = (Zutatenkosten / Verkaufspreis) × 100. Ein gesunder Food Cost liegt zwischen 25% und 32%."
+        "question": "Was ist der Wareneinsatz pro Gericht (Food Cost)?",
+        "answer": "Der Wareneinsatz pro Gericht sind die Kosten der Zutaten einer Portion. Die Wareneinsatzquote setzt sie ins Verhältnis zum Nettoverkaufspreis: Quote % = (Wareneinsatz ÷ Nettoverkaufspreis) × 100. Im Englischen heißt das Food Cost. Übliche Quoten liegen grob zwischen 25 und 35 %, einen allgemein richtigen Wert gibt es nicht."
       },
       {
-        "question": "Warum ist es wichtig, ihn zu kontrollieren?",
-        "answer": "Unkontrollierter Food Cost kann bedeuten, dass Sie bei Gerichten Geld verlieren, die Sie für profitabel halten. Die Kontrolle ermöglicht Preisentscheidungen und maximiert die Marge."
+        "question": "Warum sollte man den Wareneinsatz pro Gericht kontrollieren?",
+        "answer": "Ein unkontrollierter Wareneinsatz kann bedeuten, dass Sie mit Gerichten Geld verlieren, die Sie für profitabel halten. Die Kontrolle ermöglicht fundierte Preisentscheidungen und sichert die Marge."
       },
       {
         "question": "Beinhaltet dieser Rechner Abfälle?",
-        "answer": "Diese Version rechnet mit den Nettogewichten, die Sie eingeben. Für Putzen, Garen und Verdunstung nutzen Sie das Kalkulationswerkzeug von AI Chef Pro und der Koch prüft das Ergebnis."
+        "answer": "Nicht automatisch: Der Rechner multipliziert genau die Menge, die Sie eingeben, mit dem Kilopreis. Damit Putz- und Garverluste im Wareneinsatz stecken, tragen Sie die Einkaufsmenge vor dem Putzen ein. Für die ganze Karte mit Ausbeute nutzen Sie die Kalkulation mit KI von AI Chef Pro; der Koch prüft das Ergebnis."
       },
       {
-        "question": "Wie verbessert man einen hohen Food Cost?",
+        "question": "Wie senkt man einen hohen Wareneinsatz?",
         "answer": "Sie können den Verkaufspreis erhöhen, zu günstigeren Lieferanten wechseln, die Menge teurer Zutaten reduzieren oder Hochkostenkomponenten ersetzen."
+      },
+      {
+        "question": "Berechnet dieser Rechner auch den Wareneinsatz des Monats?",
+        "answer": "Nein, er rechnet pro Gericht. Den Wareneinsatz des Monats ermitteln Sie per Inventur (Anfangsbestand + Einkäufe − Endbestand, alles netto). Formel, durchgerechnetes Beispiel und kostenlose Excel-Vorlage finden Sie im Artikel „Wareneinsatz berechnen“."
       }
     ],
     "cta_section": {
@@ -4309,9 +4317,9 @@
   },
   "toolMenuCopy": {
     "seo": {
-      "title": "Kostenloser Speisekarten-Text-Generator | AI Chef Pro",
+      "title": "Speisekarten-Texte kostenlos mit KI erstellen | AI Chef Pro",
       "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. Kostenlos, ohne Anmeldung. Verbessern Sie Ihre Speisekarte.",
-      "keywords": "Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen kostenlos"
+      "keywords": "speisekarten texte kostenlos mit ki, Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen kostenlos"
     },
     "hero": {
       "badge": "Kostenlos — Ohne Anmeldung",
@@ -4435,7 +4443,7 @@
   },
   "toolDegustacion": {
     "seo": {
-      "title": "Kostenloses Degustationsmenü-Generator | AI Chef Pro",
+      "title": "Kostenloser Degustationsmenü-Generator | AI Chef Pro",
       "description": "Erstellen Sie ein vollständiges Degustationsmenü mit KI: poetischer Name, sensorische Beschreibung, Technik und Weinbegleitung für jeden Gang. Kostenlos.",
       "keywords": "degustationsmenü generator, degustationsmenü ki, degustationsmenü erstellen restaurant, degustationsmenü kostenlos"
     },

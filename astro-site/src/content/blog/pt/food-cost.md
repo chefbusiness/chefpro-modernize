@@ -1,8 +1,8 @@
 ---
-title: "Food cost: como calcular, o que é um bom valor e por onde se perde dinheiro no seu restaurante"
-description: "Perceba porque o food cost do prato e o do mês nunca coincidem e descubra os cinco buracos por onde o dinheiro foge na sua cozinha."
+title: "Food cost: o que é, como calcular e qual o valor ideal (Excel grátis)"
+description: "Food cost: significado, como se calcula por prato e por mês, porque a percentagem sozinha engana e um modelo de Excel grátis com o bacalhau à Brás."
 pubDate: 2026-08-22
-modDate: 2026-08-22
+modDate: 2026-11-25
 category: gestao-de-restaurantes
 tags: ["food cost", "ficha técnica", "gestão de restaurantes", "custos", "restauração"]
 image: /blog-assets/2026/08/foodcost-pt-destacada.jpg
@@ -19,6 +19,8 @@ faq:
     a: "O custo dos ingredientes da dose divide-se pela percentagem de food cost pretendida, expressa em forma decimal. No exemplo, 3,80 € dividido por 0,28 dá um preço de 13,57 € sem IVA. Esse valor é apenas o ponto de partida: arredonda-se para um preço com sentido na ementa e confirma-se se o mercado e o posicionamento da casa o aguentam. O preço nunca sai só de uma divisão."
   - q: "Porque é que o food cost do prato não bate certo com o do fim do mês?"
     a: "Porque são contas diferentes. O food cost do prato é teórico, feito na ficha técnica com os valores que deviam acontecer. A conta do período é real e calcula-se com existências iniciais, mais compras, menos existências finais, sobre as vendas do período. A diferença entre elas mede as quebras, as doses a olho, os preços desatualizados nas fichas, as ofertas, a comida de pessoal e a mercadoria perdida. Essa diferença é o diagnóstico mais valioso para a cozinha."
+  - q: "Há um modelo de Excel para calcular o food cost?"
+    a: "Sim: neste artigo pode descarregar um modelo de Excel gratuito e sem registo, com o exemplo do bacalhau à Brás já preenchido (3,80 € por dose, 28,1 % a 13,50 € sem IVA) e uma folha em branco com 15 linhas que calcula o custo por dose, o preço sem e com IVA e o food cost ao preço da ementa."
 ---
 
 <p>Ao sábado à noite, o prato que mais sai da sua cozinha é o mesmo que, no fecho do mês, menos dinheiro deixa na caixa. Toda a gente o elogia, os clientes pedem-no sempre, e ainda assim as contas não fecham — e ninguém percebe porquê.</p>
@@ -55,13 +57,15 @@ faq:
 
 <p>Vendido a 13,50 euros sem IVA, este prato tem um food cost de 28,1 por cento e deixa uma margem bruta de 9,70 euros por dose. É uma conta limpa, que mostra exatamente quanto o prato contribui para pagar as despesas fixas e, depois, para o lucro. Mas é uma conta teórica — não inclui o que acontece quando o cozinheiro deita fora um resto de cebola, quando uma dose cai ao chão ou quando um cliente devolve o prato.</p>
 
+<p>O exemplo do bacalhau à Brás está no <a href="https://aichef.pro/descargas/calculo-food-cost-excel-gratis-aichef.xlsx">modelo de Excel para calcular o food cost</a>, gratuito e sem registo: a tabela deste artigo já preenchida (3,80 € por dose, 28,1 % a 13,50 € sem IVA, 9,70 € de margem), uma folha em branco com 15 linhas para a quantidade limpa, o rendimento e o preço da fatura sem IVA, e a conta do quilo limpo (1 kg de peixe a 10,00 € que dá 800 g limpos: 12,50 € o quilo limpo). Para um prato só, a <a href="https://aichef.pro/pt/calculadora-food-cost-restaurante">calculadora de food cost</a> faz a conta de uma dose no browser.</p>
+
 <figure>
 <img src="/blog-assets/2026/08/foodcost-pt-balanca.jpg" alt="Balança digital de cozinha sobre bancada de inox com uma taça de bacalhau desfiado no prato e o mostrador a marcar 120 g, com batata palha e dois ovos ao lado" width="1376" height="768" loading="lazy" decoding="async" />
 <figcaption>A dose da ficha, pesada: 120 g de bacalhau demolhado. Sem balança, o food cost teórico é apenas uma intenção.</figcaption>
 </figure>
 
 <h2>Qual é o food cost ideal — e porque a percentagem sozinha mente</h2>
-<p>Entre 28 e 35 por cento é a banda de referência que o setor usa como ponto de partida para a restauração. Mas essa banda varia com o formato do negócio: uma casa de massas ou de sopas, com ingredientes baratos e produção simples, pode operar confortavelmente abaixo dos 28 por cento; uma casa de peixe e marisco, com produtos caros e perecíveis, vai frequentemente ultrapassar os 35 por cento sem estar a fazer nada de errado.</p>
+<p>Entre 28 e 35 por cento é a banda de referência que o setor usa como ponto de partida para a restauração. Mas essa banda varia com o formato do negócio: uma casa de massas ou de sopas, com ingredientes baratos e produção simples, pode operar confortavelmente abaixo dos 28 por cento; uma casa de peixe e marisco, com produtos caros e perecíveis, vai frequentemente ultrapassar os 35 por cento sem estar a fazer nada de errado. Num menu de degustação a percentagem costuma fixar-se mais baixa, porque a mão de obra pesa mais: o exemplo, momento a momento, está em <a href="https://aichef.pro/pt/blog/menu-degustacao">menu de degustação</a>.</p>
 <p>A percentagem sozinha mente porque não diz nada sobre o valor absoluto que fica na caixa. Um prato com um food cost de 20 por cento pode deixar menos de três euros por dose, enquanto um prato com 40 por cento deixa mais de onze. A percentagem é uma proporção — o que interessa ao fim do mês é o montante em euros que sobra para pagar as contas. E esse montante depende do preço de venda, não apenas da percentagem.</p>
 <p>Veja a comparação entre três pratos de uma ementa típica. Os valores são um exemplo, com preços sem IVA, para ilustrar o princípio.</p>
 

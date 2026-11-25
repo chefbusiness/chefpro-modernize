@@ -74,7 +74,7 @@ wpId: 1901
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #1a1a1a; font-size: 24px; margin: 0 0 15px 0; font-weight: bold;">🍳 Descubre el Poder de la IA en Tu Cocina Profesional</h3>
-<p style="color: #333; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">AI Chef Pro te ofrece más de 55 herramientas especializadas para revolucionar tu creatividad culinaria, incluyendo acceso a conocimiento gastronómico histórico y técnicas ancestrales.</p>
+<p style="color: #333; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">AI Chef Pro te ofrece más de 80 agentes especializados para revolucionar tu creatividad culinaria, incluyendo acceso a conocimiento gastronómico histórico y técnicas ancestrales.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-recuperacion-recetas-historicas-patrimonio-gastronomico" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Prueba AI Chef Pro</a>
 </div>
 
@@ -630,7 +630,7 @@ wpId: 1901
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Acceso a Herramientas Históricas</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Explorar funcionalidades</td><td>Básico limitado</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chefs individuales</td><td>Completo</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Cocinas activas</td><td>Completo + Exportación</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Desarrollo e I+D</td><td>Completo + Prioridad</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Chef ejecutivo/corporativo</td><td>Ilimitado + Soporte VIP</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Acceso a Herramientas Históricas</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Chefs individuales</td><td>Completo · 10.000 créditos/mes</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Cocinas activas</td><td>Completo · 85.000 créditos/mes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Desarrollo e I+D</td><td>Completo · 175.000 créditos/mes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Chef ejecutivo/corporativo</td><td>Completo · créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 

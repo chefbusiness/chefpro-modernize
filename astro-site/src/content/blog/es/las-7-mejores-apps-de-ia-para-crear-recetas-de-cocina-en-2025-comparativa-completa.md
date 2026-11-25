@@ -18,8 +18,8 @@ translations:
 faq:
   - q: "¿Cuál es la mejor app de IA para crear recetas en 2026?"
     a: "Depende de tu perfil. Para cocina casera de aprovechamiento, SuperCook o Mr. Cook son muy ágiles. Si controlas macros y menús semanales, ChefGPT destaca. Y para hostelería profesional, la suite más completa es AI Chef Pro, con escandallos, alérgenos y desarrollo de carta en español."
-  - q: "¿Hay apps de IA para recetas con plan de pago?"
-    a: "Sí, varias ofrecen planes de pago con límites. SuperCook se financia con anuncios, Mr. Cook permite generaciones diarias sin registro y AI Chef Pro ofrece el plan AI Chef Miembro por 10 € al mes con 10.000 créditos. La gratuidad es real, aunque las funcionalidades avanzadas suelen ser de pago."
+  - q: "¿Hay apps de IA para recetas completamente gratis?"
+    a: "Sí, varias ofrecen planes gratuitos con límites: SuperCook se financia con anuncios y Mr. Cook permite generaciones diarias sin registro. En esas apps la gratuidad es real, aunque las funcionalidades avanzadas suelen ser de pago. AI Chef Pro no tiene plan gratuito: su plan Miembro cuesta 10 € al mes con 10.000 créditos, aunque en su web hay herramientas gratuitas sin registro, como la calculadora de food cost."
   - q: "¿Sirven estas apps para restaurantes y cocinas profesionales?"
     a: "La mayoría están pensadas para el hogar. Solo plataformas como AI Chef Pro incorporan utilidades profesionales: cálculo de escandallos, fichas de alérgenos, adaptación de cartas y gestión de costes. Sin estas funciones, una app de recetas se queda corta en un obrador real."
   - q: "¿Son fiables las recetas generadas por inteligencia artificial?"
@@ -31,7 +31,7 @@ faq:
 ---
 
 ## Introducción: la respuesta rápida por tipo de cocinero  
-Si lo que buscas es una app de IA para crear recetas, en 2026 la respuesta ya no es única. Para un cocinero casero que quiere aprovechar lo que tiene en la nevera, SuperCook o Mr. Cook te dan una receta en segundos sin rodeos. El aficionado que planifica menús semanales controlando macronutrientes encontrará en ChefGPT un asistente conversacional muy afinado. Y si hablamos de un chef o un restaurante que necesita escandallos, fichas de alérgenos y desarrollo de carta con coherencia técnica, la herramienta que está ganando terreno en hostelería es AI Chef Pro, una suite con más de 70 agentes de IA culinarios, disponible en español y con el plan AI Chef Miembro por 10 € al mes sin permanencia. Pero vayamos por partes; aquí tienes una comparativa con los pies en el fogón y sin humo.
+Si lo que buscas es una app de IA para crear recetas, en 2026 la respuesta ya no es única. Para un cocinero casero que quiere aprovechar lo que tiene en la nevera, SuperCook o Mr. Cook te dan una receta en segundos sin rodeos. El aficionado que planifica menús semanales controlando macronutrientes encontrará en ChefGPT un asistente conversacional muy afinado. Y si hablamos de un chef o un restaurante que necesita escandallos, fichas de alérgenos y desarrollo de carta con coherencia técnica, la herramienta que está ganando terreno en hostelería es AI Chef Pro, una suite con más de 80 agentes de IA culinarios, disponible en español y con el plan AI Chef Miembro por 10 € al mes sin permanencia. Pero vayamos por partes; aquí tienes una comparativa con los pies en el fogón y sin humo.
 
 [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=7-mejores-apps)
 
@@ -83,13 +83,13 @@ Con esos mimbres, estas son las 7 mejores opciones hoy.
 **Mejor para:** chefs, jefes de cocina y dueños de restaurante que necesitan escandallos, fichas de alérgenos, desarrollo de carta y recetas técnicas en español.  
 **Veredicto:** la más potente del listado si trabajas en una cocina profesional, pero excesiva si solo quieres ideas para la cena del jueves.
 
-AI Chef Pro no es una única herramienta, sino un ecosistema con [más de 70 agentes de IA culinarios](https://aichef.pro) especializados en tareas concretas: desde el generador de recetas por ingredientes hasta el agente de escandallos, el de maridajes, el de adaptación para alérgenos o el que te sugiere una carta completa según estacionalidad y costes. Todo en 7 idiomas, con español nativo (nada de traducciones robóticas).
+AI Chef Pro no es una única herramienta, sino un ecosistema con [más de 80 agentes de IA culinarios](https://aichef.pro) especializados en tareas concretas: desde el generador de recetas por ingredientes hasta el agente de escandallos, el de maridajes, el de adaptación para alérgenos o el que te sugiere una carta completa según estacionalidad y costes. Todo en 7 idiomas, con español nativo (nada de traducciones robóticas).
 
-El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, que permiten probar casi todos los agentes sin permanencia. Para un uso más intensivo en cocina profesional, los planes de pago escalan así:
+El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 € y da acceso a todos los agentes, sin permanencia. Para un uso más intensivo en cocina profesional, los planes superiores escalan así:
 - **Premium Pro:** 25 €/mes (85.000 créditos)  
-- **Plus:** 50 €/mes (175.000 créditos)  
-- **Max:** 95 €/mes (créditos ilimitados)  
-- **Max Anual:** 950 €/año  
+- **Premium Plus:** 50 €/mes (175.000 créditos)  
+- **Premium Max:** 95 €/mes (créditos ilimitados)  
+- **Premium Max anual:** 950 €/año  
 
 Si trabajas escandallos reales, necesitas generar variaciones de una receta para cubrir alérgenos o quieres que la IA te lea la foto de unos albaranes, AI Chef Pro es actualmente la opción más completa. Eso sí, la interfaz está pensada para productividad, no para un scroll rápido en el metro. Si eres cocinero de casa, seguramente te sobren botones.
 
@@ -99,7 +99,7 @@ Si trabajas escandallos reales, necesitas generar variaciones de una receta para
 **Mejor para:** aficionados que entrenan, cuentan calorías o quieren menús semanales equilibrados sin romperse la cabeza.  
 **Veredicto:** un asistente nutricional muy afinado, aunque la experiencia conversacional no es la más rápida para recetas exprés.
 
-ChefGPT funciona como un chatbot que te pregunta preferencias, restricciones y objetivos calóricos, y te genera planes de comida con recetas detalladas. El plan básico de ChefGPT permite cierta interacción y los planes superiores desbloquean planes ilimitados y ajustes más finos. Para quien necesita saber exactamente cuántos gramos de proteína lleva cada plato y tener la compra organizada, es difícil encontrar una alternativa tan cómoda. Aunque si buscas una receta con lo primero que pillas de la nevera, te irá mejor SuperCook o Mr. Cook.
+ChefGPT funciona como un chatbot que te pregunta preferencias, restricciones y objetivos calóricos, y te genera planes de comida con recetas detalladas. La versión gratuita de ChefGPT permite cierta interacción y la de pago desbloquea planes ilimitados y ajustes más finos. Para quien necesita saber exactamente cuántos gramos de proteína lleva cada plato y tener la compra organizada, es difícil encontrar una alternativa tan cómoda. Aunque si buscas una receta con lo primero que pillas de la nevera, te irá mejor SuperCook o Mr. Cook.
 
 [Reseña completa de ChefGPT y alternativas](https://aichef.pro/blog/chef-gpt)
 
@@ -173,4 +173,4 @@ Después de probarlas a fondo, te comparto cuatro claves que a mí me funcionan:
 ## Conclusión y próximos pasos  
 En 2026 las mejores apps de IA para crear recetas cubren todo el espectro, desde la cena improvisada del lunes hasta la ingeniería de carta de un restaurante. La clave está en elegir la que se alinea con tu realidad: no necesitas un Ferrari para ir al súper ni un patinete para cruzar el país.
 
-Si tu cocina es profesional o aspiras a que lo sea, la decisión más inteligente es probar una herramienta que entienda tu lenguaje y tus números. Tienes la opción de [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=7-mejores-apps), con 10.000 créditos al mes por 10 €, y comprobar por ti mismo si los más de 70 agentes de IA te ahorran tiempo real en escandallos, alérgenos y creación de recetas. Luego, decides.
+Si tu cocina es profesional o aspiras a que lo sea, la decisión más inteligente es probar una herramienta que entienda tu lenguaje y tus números. Tienes la opción de [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=7-mejores-apps), con 10.000 créditos al mes por 10 €, y comprobar por ti mismo si los más de 80 agentes de IA te ahorran tiempo real en escandallos, alérgenos y creación de recetas. Luego, decides.

@@ -32,7 +32,7 @@ wpId: 1845
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #1a1a1a 100%); border-radius: 12px; padding: 30px; margin: 30px 0;">
 <h3 style="color: #1a1a1a; margin-top: 0; font-size: 24px;">🚀 Transforma tu Restaurante con AI Chef Pro</h3>
-<p style="color: #1a1a1a; font-size: 16px; margin-bottom: 20px;">Accede a más de 55 herramientas de IA diseñadas específicamente para profesionales de la hostelería. Genera imágenes de diseño con <strong>Nano Banana Pro</strong>, optimiza costes con <strong>Mermas GenCal</strong> y revoluciona tu creatividad culinaria.</p>
+<p style="color: #1a1a1a; font-size: 16px; margin-bottom: 20px;">Accede a más de 80 agentes de IA diseñados específicamente para profesionales de la hostelería. Genera imágenes de diseño con <strong>Nano Banana Pro</strong>, optimiza costes con <strong>Mermas GenCal</strong> y revoluciona tu creatividad culinaria.</p>
 <p><a style="background-color: #1a1a1a; color: #ffd700; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">PRUEBA AI CHEF MIEMBRO →</a></p>
 </div>
 
@@ -640,7 +640,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Diseño Tradicional</th><th>Diseño con IA</th><th>Ahorro</th></tr></thead><tbody><tr><td>Conceptualización inicial</td><td>2.000-5.000€</td><td>50-200€</td><td>90-95%</td></tr><tr><td>Renders 3D profesionales</td><td>500-1.500€/imagen</td><td>Incluido en suscripción</td><td>100%</td></tr><tr><td>Tiempo de desarrollo</td><td>4-8 semanas</td><td>1-2 semanas</td><td>70-80%</td></tr><tr><td>Iteraciones/cambios</td><td>Coste adicional por cambio</td><td>Ilimitadas</td><td>Variable</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Diseño Tradicional</th><th>Diseño con IA</th><th>Ahorro</th></tr></thead><tbody><tr><td>Conceptualización inicial</td><td>2.000-5.000€</td><td>50-200€</td><td>90-95%</td></tr><tr><td>Renders 3D profesionales</td><td>500-1.500€/imagen</td><td>Incluido en suscripción</td><td>100%</td></tr><tr><td>Tiempo de desarrollo</td><td>4-8 semanas</td><td>1-2 semanas</td><td>70-80%</td></tr><tr><td>Iteraciones/cambios</td><td>Coste adicional por cambio</td><td>Las que cubran los créditos de tu plan (ilimitadas en Premium Max)</td><td>Variable</td></tr></tbody></table></div></figure>
 
 
 
@@ -652,7 +652,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generación de Imágenes</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>Acceso limitado</td><td>Prueba inicial</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Moderado</td><td>Proyectos pequeños</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Amplio</td><td>Restaurantes medianos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Extensivo</td><td>Grupos y cadenas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Ilimitado</td><td>Consultoras, arquitectos</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generación de Imágenes</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>10.000 créditos/mes</td><td>Prueba inicial y proyectos pequeños</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>85.000 créditos/mes</td><td>Restaurantes medianos</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>175.000 créditos/mes</td><td>Grupos y cadenas</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Créditos ilimitados</td><td>Consultoras, arquitectos</td></tr></tbody></table></div></figure>
 
 
 
@@ -705,8 +705,8 @@ wpId: 1845
 
 
 <div style="background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 30px 0;">
-<h3 style="color: #1a1a1a; margin-top: 0; font-size: 24px;">🏆 Únete a Miles de Profesionales que ya Usan AI Chef Pro</h3>
-<p style="color: #1a1a1a; font-size: 16px; margin-bottom: 20px;">Más de 55 herramientas de IA diseñadas exclusivamente para el sector hostelero. Desde diseño de espacios con <strong>Nano Banana Pro</strong> hasta optimización de menús con <strong><a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI</strong>.</p>
+<h3 style="color: #1a1a1a; margin-top: 0; font-size: 24px;">🏆 Prueba AI Chef Pro en tu Proyecto</h3>
+<p style="color: #1a1a1a; font-size: 16px; margin-bottom: 20px;">Más de 80 agentes de IA diseñados exclusivamente para el sector hostelero. Desde diseño de espacios con <strong>Nano Banana Pro</strong> hasta optimización de menús con <strong><a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI</strong>.</p>
 <div style="gap: 15px; flex-wrap: wrap;"><a style="background-color: #1a1a1a; color: #ffd700; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">COMENZAR CON AI CHEF MIEMBRO</a><br><a style="background-color: transparent; color: #1a1a1a; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; border: 2px solid #1a1a1a;" href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">VER PLANES →</a></div>
 </div>
 

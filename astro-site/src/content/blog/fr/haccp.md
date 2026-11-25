@@ -1,8 +1,8 @@
 ---
-title: "HACCP : la méthode expliquée à un chef — les 7 principes, ce qui est vraiment obligatoire et par où commencer"
-description: "HACCP décrypté pour chefs : les 7 principes appliqués à une blanquette, ce qui est vraiment obligatoire et par où commencer. Guide pratique et clair."
+title: "HACCP en restauration : 7 principes, normes de température et relevé gratuit"
+description: "HACCP en restauration : les 7 principes sur une blanquette, les températures de l'arrêté du 21 décembre 2009 et un relevé de températures gratuit (Excel, PDF)."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-25
 category: gestion-restaurant
 tags: ["HACCP", "hygiène alimentaire", "sécurité alimentaire", "réglementation"]
 image: /blog-assets/2026/08/haccp-destacada.jpg
@@ -19,11 +19,17 @@ faq:
     a: "En restauration, on distingue trois grandes familles de dangers : biologiques (bactéries, virus, parasites), chimiques (résidus de produits d'entretien ou de pesticides) et physiques (corps étrangers comme du verre ou du métal). La pratique professionnelle ajoute aujourd'hui les allergènes comme quatrième catégorie, car leur présence peut déclencher des réactions graves. Maîtriser ces dangers est au cœur de la méthode HACCP, en identifiant les points critiques où ils peuvent survenir pour les prévenir efficacement."
   - q: "Qu'est-ce qu'un CCP en HACCP ?"
     a: "Un CCP (point critique de contrôle) est une étape où un danger peut être maîtrisé de façon mesurable et décisive. Cuisson, refroidissement rapide et maintien au chaud en sont des exemples types. Chaque CCP exige une limite critique, une surveillance enregistrée et une action corrective formalisée. Distinguez-le des prérequis — nettoyage, formation et lutte contre les nuisibles — qui restent indispensables, mais ne relèvent pas d'un CCP."
+  - q: "Quelles températures respecter en restauration selon les normes HACCP ?"
+    a: "En France, les températures de conservation sont fixées par l'arrêté du 21 décembre 2009 : +3 °C maximum pour les préparations élaborées à l'avance, +2 °C pour les viandes hachées et le poisson frais, +4 °C pour les denrées très périssables, −18 °C pour les glaces et les viandes hachées congelées, et au moins +63 °C pour les plats servis chauds. Le refroidissement (de +63 °C à +10 °C en moins de 2 heures) est obligatoire en restauration collective ; en restaurant, le GBPH vise moins de +6 °C à cœur en 2 heures."
+  - q: "Où trouver une fiche de relevé de températures HACCP gratuite ?"
+    a: "Vous pouvez télécharger gratuitement, sans inscription, notre relevé de températures HACCP : un Excel avec les enceintes froides sur un mois, le refroidissement rapide et la remise en température, où la conformité se calcule seule, et sa version PDF prête à imprimer (section « Relevé de températures HACCP gratuit » de cet article)."
 ---
 
 <p>Le classeur est là, sur l'étagère, près du bureau. Relié, propre, couvert d'une pellicule transparente. Il est arrivé il y a trois ans, livré par un consultant en hygiène qui a passé une après-midi à vous expliquer son plan de maîtrise sanitaire. Vous avez signé, payé, rangé. Et aujourd'hui, le jour du contrôle, ce n'est pas ce classeur que l'inspecteur vous demande. Il vous demande la preuve que votre cuisine, la vôtre, maîtrise ses dangers. Pas ceux du consultant. Les vôtres, ceux de votre production, de votre froid, de vos plats. En une phrase, HACCP signifie <i>Hazard Analysis Critical Control Point</i>, soit l'analyse des dangers et la maîtrise des points critiques : une méthode de prévention, née du Codex Alimentarius, ni une norme, ni un diplôme, ni une certification. Personne n'est « certifié HACCP » par obligation légale.</p>
 
 <p>Et c'est là que tout se joue. Depuis des mois, vous entendez des collègues parler de leur « plan HACCP », de leur « certification », de leur « formation obligatoire ». Vous vous demandez ce qui est réel, ce qui relève du marketing, et surtout par où commencer pour aborder un contrôle sereinement. Ce que vous lirez ici n'est pas une définition académique de plus, mais une méthode appliquée, de chef à chef, avec ce que la réglementation impose vraiment et ce qui relève de la construction de votre propre maîtrise. On va démêler le vrai du faux, et prendre un plat que vous connaissez par cœur — une blanquette de veau — pour appliquer les principes HACCP dans votre réalité.</p>
+
+<p>Besoin d'un support tout de suite ? Téléchargez notre <a href="https://aichef.pro/descargas/releve-temperatures-haccp-gratuit-aichef.xlsx">relevé de températures HACCP en Excel</a> ou sa <a href="https://aichef.pro/descargas/releve-temperatures-haccp-gratuit-aichef.pdf">version PDF</a>, gratuits et sans inscription.</p>
 
 <h2>Ce que veut dire HACCP (et ce que ça n'est pas)</h2>
 
@@ -61,11 +67,11 @@ faq:
 <tr><th>Principe</th><th>En clair</th><th>Sur la blanquette</th></tr>
 </thead>
 <tbody>
-<tr><td>1. Analyser les dangers</td><td>Identifier ce qui peut rendre le plat dangereux : biologique, chimique, physique, allergènes.</td><td>Veau cru : dangers biologiques (viande hachée ou non, salmonelle), physiques (esquilles d'os), chimiques (produits de nettoyage à proximité), allergènes (si le bouillon contient des céleri, par exemple).</td></tr>
+<tr><td>1. Analyser les dangers</td><td>Identifier ce qui peut rendre le plat dangereux : biologique, chimique, physique, allergènes.</td><td>Veau cru : dangers biologiques (viande hachée ou non, salmonelle), physiques (esquilles d'os), chimiques (produits de nettoyage à proximité), allergènes (si le bouillon contient du céleri, par exemple).</td></tr>
 <tr><td>2. Déterminer les CCP</td><td>Choisir les points où une action de maîtrise est décisive et mesurable.</td><td>La cuisson à cœur, le refroidissement rapide, et la remise en température au service. Ce sont les CCP de la blanquette.</td></tr>
-<tr><td>3. Fixer les limites critiques</td><td>Définir des seuils précis pour chaque CCP.</td><td>Cuisson à cœur : 63 °C minimum. Maintien au chaud : +63 °C minimum. Refroidissement : 0 à +3 °C pour les préparations réfrigérées, et un chrono de refroidissement fixé par votre plan. Remise en température : à cœur, 74 °C.</td></tr>
-<tr><td>4. Surveiller les CCP</td><td>Mesurer et relever à des fréquences définies.</td><td>Relevé de température de la cuisson, du refroidissement toutes les heures, et du maintien au chaud, daté et signé sur une fiche.</td></tr>
-<tr><td>5. Définir les actions correctives</td><td>Ce qu'on fait si un relevé sort des limites.</td><td>Si la température de refroidissement est trop lente, la procédure écrite prévoit de remettre au chaud et de refroidir à nouveau, ou de jeter la préparation. L'action est écrite, datée, signée.</td></tr>
+<tr><td>3. Fixer les limites critiques</td><td>Définir des seuils précis pour chaque CCP.</td><td>Cuisson à cœur : la valeur fixée dans votre plan (aucun texte n'impose un chiffre unique). Maintien au chaud : +63 °C minimum. Refroidissement : moins de 2 heures entre +63 °C et +10 °C à cœur (règle de la restauration collective ; en restaurant, le GBPH vise moins de +6 °C à cœur en 2 heures), puis stockage entre 0 et +3 °C. Remise en température : +63 °C à cœur en moins d'une heure.</td></tr>
+<tr><td>4. Surveiller les CCP</td><td>Mesurer et relever à des fréquences définies.</td><td>Relevé de la température à cœur en fin de cuisson, au début et à la fin du refroidissement, et pendant le maintien au chaud, daté et signé sur une fiche.</td></tr>
+<tr><td>5. Définir les actions correctives</td><td>Ce qu'on fait si un relevé sort des limites.</td><td>Si le refroidissement est trop lent, la procédure écrite prévoit de le poursuivre en adaptant la méthode (bacs moins profonds, portions plus petites) et, si l'objectif n'est pas atteint, de jeter la préparation : on ne la remet pas au chaud pour la refroidir une seconde fois. L'action est écrite, datée, signée.</td></tr>
 <tr><td>6. Vérifier que le système fonctionne</td><td>Contrôler la validité du plan.</td><td>Un point hebdomadaire sur les relevés de température, pour vérifier que les écarts sont rares et que les actions correctives ont été faites.</td></tr>
 <tr><td>7. Documenter et enregistrer</td><td>La preuve écrite de tout ce qui précède.</td><td>La fiche de relevé de température de la blanquette, datée, signée, archivée dans le plan de maîtrise sanitaire.</td></tr>
 </tbody>
@@ -76,8 +82,74 @@ faq:
 <figcaption>Cuisson, refroidissement, remise en température : sur une blanquette, les CCP sautent aux yeux — et chacun laisse une trace écrite.</figcaption>
 </figure>
 
-<p>Imaginons la journée de la blanquette. Le matin, vous recevez le veau, vous le contrôlez : la viande est à 2 °C, la chaîne du froid est respectée. Vous la découpez, vous la mettez en cuisson avec le bouillon, et vous mesurez la température à cœur : 75 °C, c'est bon. Vous laissez mijoter, puis vous devez la refroidir. Votre plan de maîtrise a fixé un chrono : vous devez passer de 74 °C à 10 °C en moins de 2 heures, puis de 10 °C à 3 °C en moins de 2 heures. Vous le notez. À la fin du repas, vous remettez en température la portion servie : à cœur, 74 °C, et vous le notez. Chaque relevé est daté, signé, et archivé.</p>
+<p>Imaginons la journée de la blanquette. Le matin, vous recevez le veau, vous le contrôlez : la viande est à 2 °C, la chaîne du froid est respectée. Vous la découpez, vous la mettez en cuisson avec le bouillon, et vous mesurez la température à cœur : 75 °C, au-dessus de la valeur fixée dans votre plan. Vous laissez mijoter, puis vous devez la refroidir. Votre plan de maîtrise a fixé un chrono : passer de +63 °C à moins de +6 °C à cœur en moins de 2 heures (référence du GBPH Restaurateur ; +10 °C en restauration collective), puis stocker entre 0 et +3 °C. Vous le notez. Au service suivant, vous remettez en température la portion à servir : +63 °C à cœur en moins d'une heure, et vous le notez. Chaque relevé est daté, signé, et archivé.</p>
 <p>Le lendemain, vous vérifiez les fiches : les températures sont dans les limites, les actions correctives sont notées. Le plan fonctionne. Et si un jour, un relevé sort des limites, vous ne paniquez pas. Vous appliquez l'action corrective écrite, vous la notez, et vous vérifiez que le problème ne se reproduit pas. C'est ça, HACCP en pratique : une méthode de vigilance, pas un classeur qui dort.</p>
+
+<h2>Normes HACCP en restauration : les températures à respecter</h2>
+<p>En France, les températures de conservation applicables en restauration sont fixées par l'arrêté du 21 décembre 2009 (annexe I). Elles s'appliquent « en tous points du produit » : c'est la température de la denrée elle-même qui compte, pas seulement celle qu'affiche l'enceinte. Pour les plats maintenus au chaud, la référence est d'au moins +63 °C. Ces valeurs forment le socle de votre plan de maîtrise sanitaire et servent de base aux contrôles.</p>
+<table>
+<thead>
+<tr>
+<th>Denrée</th>
+<th>Température à respecter (maximale, sauf mention)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Préparations culinaires élaborées à l'avance (réfrigérées)</td>
+<td>+3 °C</td>
+</tr>
+<tr>
+<td>Viandes hachées</td>
+<td>+2 °C</td>
+</tr>
+<tr>
+<td>Préparations de viandes</td>
+<td>+4 °C</td>
+</tr>
+<tr>
+<td>Volailles</td>
+<td>+4 °C</td>
+</tr>
+<tr>
+<td>Produits de la pêche frais</td>
+<td>+2 °C (glace fondante : 0 à +2 °C)</td>
+</tr>
+<tr>
+<td>Autres denrées très périssables</td>
+<td>+4 °C</td>
+</tr>
+<tr>
+<td>Autres denrées périssables</td>
+<td>+8 °C</td>
+</tr>
+<tr>
+<td>Glaces, viandes hachées et produits de la pêche congelés</td>
+<td>−18 °C</td>
+</tr>
+<tr>
+<td>Autres denrées congelées</td>
+<td>−12 °C</td>
+</tr>
+<tr>
+<td>Plats livrés ou servis chauds (liaison chaude)</td>
+<td>+63 °C minimum</td>
+</tr>
+</tbody>
+</table>
+<p>L'arrêté admet cependant une exception, à son article 3 : une autre température peut être appliquée si elle est prévue par un guide de bonnes pratiques d'hygiène (GBPH) validé, ou si elle découle d'une analyse des dangers elle aussi validée. Autrement dit, l'écart doit être documenté, jamais improvisé.</p>
+<h3>Refroidissement et remise en température : ce qui est obligatoire, et pour qui</h3>
+<p>En restauration collective, le refroidissement rapide est une obligation. L'annexe IV de l'arrêté impose que la température à cœur ne reste pas plus de deux heures entre +63 °C et +10 °C. La préparation est ensuite stockée entre 0 et +3 °C. À la remise en température, elle ne doit pas rester plus d'une heure entre +10 °C et la température de service, laquelle ne peut être inférieure à +63 °C. La préparation se consomme dans la continuité et n'est jamais refroidie une seconde fois. Sans étude de durée de vie, la date limite ne dépasse pas le troisième jour après la fabrication (J+3).</p>
+<p>Un restaurant commercial — traditionnel, brasserie, bistrot — relève de la remise directe au consommateur. L'annexe IV ne s'impose donc pas à vous. Le GBPH Restaurateur n'en fournit pas moins les références à reprendre dans votre plan de maîtrise sanitaire : refroidir en 2 heures jusqu'à moins de +6 °C à cœur, sauf pour les pièces volumineuses non portionnables, dont le cas est à déterminer par chaque professionnel ; remettre en température à +63 °C minimum en moins d'une heure ; maintenir au chaud à +63 °C minimum. La durée de vie de vos préparations reste sous votre responsabilité.</p>
+<p>Aucun texte ne fixe une température de cuisson à cœur unique : c'est vous qui la déterminez dans votre plan. Le GBPH propose des barèmes indicatifs, par exemple 71 °C à cœur pour les viandes hachées, ou 2 minutes à 70 °C. Ces repères vous aident à construire votre justification ; ils ne remplacent pas votre propre analyse des dangers.</p>
+<h3>Les relevés : ce que vous devez vraiment noter</h3>
+<p>Le GBPH recommande de contrôler les enceintes froides au moins une fois par jour avec un thermomètre, en plus de l'affichage. Il prévoit aussi un enregistrement automatique pour les équipements de froid négatif de plus de 10 m³. Lorsque la surveillance est visuelle, l'obligation d'enregistrement se limite aux non-conformités et aux actions correctives (instruction technique DGAL 2023-756). En pratique, un relevé écrit, daté et signé reste la meilleure preuve lors d'un contrôle : il montre ce que vous avez mesuré, quand, et ce que vous avez corrigé.</p>
+
+<h3>Relevé de températures HACCP gratuit (Excel et PDF)</h3>
+
+<p>Pour démarrer vos relevés dès demain, téléchargez notre <a href="https://aichef.pro/descargas/releve-temperatures-haccp-gratuit-aichef.xlsx">relevé de températures HACCP en Excel</a>, gratuit et sans inscription. Il contient trois feuilles : les enceintes froides sur un mois (matin et soir, avec la limite de chaque enceinte à adapter à votre plan), le refroidissement rapide et la remise en température. La colonne « Conforme ? » se remplit seule, et une case attend l’action corrective et le visa.</p>
+
+<p>Vous préférez le papier, accroché à côté de la chambre froide ? La <a href="https://aichef.pro/descargas/releve-temperatures-haccp-gratuit-aichef.pdf">version PDF</a> est prête à imprimer et à remplir au stylo.</p>
 
 <h2>CCP ou simple prérequis ? L'erreur qui noie les plans</h2>
 
@@ -105,7 +177,7 @@ faq:
 <li>Récupérer le GBPH de votre branche (gratuit, validé par l'État).</li>
 <li>Dessiner le flux réel de votre cuisine : réception, stockage, préparation, cuisson, refroidissement, service.</li>
 <li>Identifier, sur ce flux, les dangers et les CCP : cuisson, refroidissement, maintien au chaud, remise en température.</li>
-<li>Fixer les limites critiques et les fréquences de relevé : à cœur, +63 °C au maintien, 0/+3 °C au froid, et le chrono de refroidissement que vous déterminez.</li>
+<li>Fixer les limites critiques et les fréquences de relevé : +63 °C minimum au maintien au chaud, les températures de l'arrêté du 21 décembre 2009 au froid (+3 °C pour les préparations élaborées à l'avance), et le chrono de refroidissement de votre plan.</li>
 <li>Écrire les actions correctives pour chaque point critique : que faites-vous si un relevé sort des limites ?</li>
 <li>Former l'équipe à l'hygiène (obligation générale) et identifier la personne qui suivra la formation de 14 heures si personne ne l'a.</li>
 <li>Faire vivre les enregistrements : les fiches de relevé, les actions correctives, les vérifications. C'est la preuve.</li>

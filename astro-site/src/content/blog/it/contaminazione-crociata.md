@@ -2,7 +2,7 @@
 title: "Contaminazione crociata in cucina: esempi reali, allergeni e come evitarla in servizio"
 description: "Contaminazione crociata: scopri il codice colore dei 7 taglieri, i rischi in servizio (pinze, panni, friggitrice) e cosa verifica l'ispettore."
 pubDate: 2026-08-14
-modDate: 2026-08-16
+modDate: 2026-11-25
 category: gestione-ristorante
 tags: ["contaminazione crociata", "haccp", "sicurezza alimentare", "allergeni"]
 image: /blog-assets/2026/08/contaminazione-destacada.jpg
@@ -119,7 +119,7 @@ faq:
 <li><strong>La documentazione</strong>: verifica le schede di sanificazione, <a href="https://aichef.pro/it/blog/temperature-frigorifero-haccp">le temperature del frigo</a>, i menù con le indicazioni degli allergeni e le registrazioni della formazione del personale.</li>
 <li><strong>I prodotti chimici</strong>: controlla che detergenti e disinfettanti siano stoccati in un luogo separato dagli alimenti e mai sopra i piani di lavoro.</li>
 </ul>
-<p>L'ispettore non ti chiede di essere perfetto, ma di essere organizzato. Un sistema semplice, rispettato tutti i giorni, vale più di un manuale spesso che nessuno segue. La contaminazione crociata si controlla con la costanza, non con la fortuna.</p>
+<p>L'ispettore non ti chiede di essere perfetto, ma di essere organizzato. Un sistema semplice, rispettato tutti i giorni, vale più di un manuale spesso che nessuno segue (se il tuo locale è piccolo, guarda come impostare un <a href="https://aichef.pro/it/blog/manuale-haccp-semplificato">manuale HACCP semplificato</a>). La contaminazione crociata si controlla con la costanza, non con la fortuna.</p>
 
 <h2>Il controllo che non puoi fare a memoria</h2>
 <p>Hai visto che la contaminazione crociata si gioca nei dettagli: il colore del tagliere, l'ordine di lavorazione, la gestione degli allergeni. Ogni giorno in cucina fai scelte che proteggono i tuoi ospiti, ma quando il menù è lungo e la brigata corre, affidarsi solo alla memoria è un rischio che non puoi permetterti.</p>

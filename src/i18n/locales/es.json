@@ -2754,7 +2754,7 @@
         {
           "step": "1",
           "title": "Añade los ingredientes",
-          "description": "Introduce cada ingrediente con su gramaje por ración y precio de compra por kilo."
+          "description": "Introduce cada ingrediente con la cantidad total de la receta (en gramos) y su precio de compra por kilo."
         },
         {
           "step": "2",

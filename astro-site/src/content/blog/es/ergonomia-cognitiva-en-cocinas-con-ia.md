@@ -84,8 +84,8 @@ wpId: 2135
 
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #f4d03f; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">🧠 Reduce la Carga Mental en Tu Cocina con IA</h3>
-<p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">AI Chef Pro ofrece más de 55 herramientas diseñadas para automatizar decisiones repetitivas y liberar tu creatividad culinaria. Desde gestión de alérgenos hasta coaching mental para chefs.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px; transition: all 0.3s ease;">Prueba AI Chef Pro</a>
+<p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">AI Chef Pro ofrece más de 80 agentes diseñados para automatizar decisiones repetitivas y liberar tu creatividad culinaria. Desde gestión de alérgenos hasta coaching mental para chefs.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px; transition: all 0.3s ease;">Descubre AI Chef Pro</a>
 </div>
 
 
@@ -440,7 +440,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">La plataforma AI Chef Pro integra más de 55 herramientas especializadas que, aunque no fueron diseñadas explícitamente como soluciones de ergonomía cognitiva, cumplen precisamente esa función al reducir la carga mental en diferentes aspectos de la operativa culinaria.</p>
+<p class="wp-block-paragraph">La plataforma AI Chef Pro integra más de 80 agentes especializados que, aunque no fueron diseñados explícitamente como soluciones de ergonomía cognitiva, cumplen precisamente esa función al reducir la carga mental en diferentes aspectos de la operativa culinaria.</p>
 
 
 
@@ -533,9 +533,9 @@ wpId: 2135
 
 
 <div style="background: linear-gradient(135deg, #2d3436 0%, #000000 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; border: 2px solid #f4d03f; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-<h3 style="color: #f4d03f; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">🍳 +55 Herramientas de IA para Tu Cocina</h3>
-<p style="color: #ffffff; font-size: 16px; margin: 0 0 10px 0; line-height: 1.6;">Desde <strong>10€/mes</strong> accede a toda la suite de AI Chef Pro: recetarios de más de 20 cocinas del mundo, Food Pairing AI, Mermas GenCal, ID Alérgenos, Mental Coach y mucho más.</p>
-<p style="color: #cccccc; font-size: 14px; margin: 0 0 20px 0;">Plan de entrada desde 10€/mes con 10.000 créditos.</p>
+<h3 style="color: #f4d03f; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">🍳 +80 Agentes de IA para Tu Cocina</h3>
+<p style="color: #ffffff; font-size: 16px; margin: 0 0 10px 0; line-height: 1.6;">Desde <strong>10 €/mes</strong> accede a toda la suite de AI Chef Pro: recetarios de más de 20 cocinas del mundo, Food Pairing AI, Mermas GenCal, ID Alérgenos, Mental Coach y mucho más.</p>
+<p style="color: #cccccc; font-size: 14px; margin: 0 0 20px 0;">Plan de entrada AI Chef Miembro: 10.000 créditos al mes, sin permanencia.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #000000; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -883,7 +883,7 @@ wpId: 2135
 <div style="background: linear-gradient(135deg, #4a4a4a 0%, #1a1a1a 100%); border-radius: 12px; padding: 35px 25px; margin: 35px 0; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
 <p style="color: #f4d03f; font-size: 14px; margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 2px;">Transformación Digital Gastronómica</p>
 <h3 style="color: #ffffff; font-size: 26px; margin: 0 0 15px 0; font-weight: 700;">¿Listo para Revolucionar Tu Cocina?</h3>
-<p style="color: #cccccc; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Únete a los miles de profesionales que ya utilizan AI Chef Pro para reducir la carga mental, optimizar flujos de trabajo y potenciar su creatividad culinaria.</p>
+<p style="color: #cccccc; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Lleva AI Chef Pro a tu cocina para reducir la carga mental, optimizar flujos de trabajo y potenciar tu creatividad culinaria.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 17px;">Comienza Ahora</a>
 </div>
 
@@ -897,7 +897,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>Acceso a todas las herramientas con 10.000 créditos al mes</td><td>Prueba inicial, estudiantes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>ID Alérgenos, Mermas GenCal, Recetarios básicos</td><td>Chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium</td><td>15€/mes</td><td>+ Food Pairing AI, Mental Coach, más recetarios</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>+ Herramientas de análisis, uso extensivo</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Uso ilimitado, prioridad soporte, exclusivas</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Todas las herramientas con 10.000 créditos al mes</td><td>Estudiantes, chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Todas las herramientas con 85.000 créditos al mes</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Todas las herramientas con 175.000 créditos al mes</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Todas las herramientas con créditos ilimitados</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
 
 
 
@@ -947,7 +947,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">No necesariamente. Aunque la tecnología avanzada potencia significativamente los resultados, muchas mejoras pueden implementarse con inversión mínima: reorganización física del espacio, estandarización de procedimientos, mejora de la comunicación verbal, sistemas visuales simples. Herramientas como AI Chef Pro ofrecen planes desde 10€/mes que proporcionan acceso a funcionalidades de alto impacto cognitivo.</p>
+<p class="wp-block-paragraph">No necesariamente. Aunque la tecnología avanzada potencia significativamente los resultados, muchas mejoras pueden implementarse con inversión mínima: reorganización física del espacio, estandarización de procedimientos, mejora de la comunicación verbal, sistemas visuales simples. Herramientas como AI Chef Pro ofrecen planes desde 10 €/mes que proporcionan acceso a funcionalidades de alto impacto cognitivo.</p>
 
 
 
@@ -1006,8 +1006,8 @@ wpId: 2135
 
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%); border-radius: 12px; padding: 40px 25px; margin: 40px 0; text-align: center; border: 3px solid #f4d03f; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
 <h3 style="color: #f4d03f; font-size: 28px; margin: 0 0 15px 0; font-weight: 700;">🚀 Transforma Tu Cocina con Inteligencia Artificial</h3>
-<p style="color: #ffffff; font-size: 17px; margin: 0 0 10px 0; line-height: 1.6;">Únete a <strong>AI Chef Pro</strong> y accede a más de 55 herramientas diseñadas para reducir tu carga mental y potenciar tu creatividad culinaria.</p>
-<p style="color: #cccccc; font-size: 15px; margin: 0 0 25px 0;">Planes desde 10€/mes • Sin permanencia • Más de 20 recetarios del mundo</p>
+<p style="color: #ffffff; font-size: 17px; margin: 0 0 10px 0; line-height: 1.6;">Empieza con <strong>AI Chef Pro</strong> y accede a más de 80 agentes diseñados para reducir tu carga mental y potenciar tu creatividad culinaria.</p>
+<p style="color: #cccccc; font-size: 15px; margin: 0 0 25px 0;">Sin permanencia • Más de 20 recetarios del mundo</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 16px 45px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px;">Empieza desde 10 €/mes</a>
 </div>
 

@@ -1,8 +1,8 @@
 ---
-title: "I 14 allergeni alimentari: elenco completo e tabella da stampare per il menù"
-description: "Elenco ufficiale dei 14 allergeni del Reg. UE 1169/2011 con la numerazione, la tabella da stampare per il menù e gli ingredienti dove si nascondono."
+title: "I 14 allergeni alimentari: elenco e tabella da stampare ed esporre (gratis)"
+description: "I 14 allergeni alimentari con i numeri da 1 a 14, dove si nascondono, come dichiararli sul menù (D.Lgs. 231/2017) e una tabella gratis in Excel e PDF."
 pubDate: 2026-08-08
-modDate: 2026-08-16
+modDate: 2026-11-25
 category: gestione-ristorante
 tags: ["allergeni", "haccp", "sicurezza alimentare", "normativa"]
 image: /blog-assets/2026/08/allergeni-destacada.jpg
@@ -10,22 +10,26 @@ imageAlt: "Uno chef confronta una scheda stampata con il menù del ristorante al
 lang: it
 faq:
   - q: "Quali sono i 14 allergeni alimentari?"
-    a: "In Europa sono 14: cereali contenenti glutine, crostacei, uova, pesce, arachidi, soia, latte, frutta a guscio, sedano, senape, sesamo, solfiti, lupini e molluschi. Devi dichiararli sempre, anche se usati come ingredienti o in tracce. Ti consiglio di tenerli ben visibili nel tuo piano di autocontrollo e di aggiornare il menù ogni volta che cambi un piatto o un fornitore."
+    a: "In Europa sono 14: cereali contenenti glutine, crostacei, uova, pesce, arachidi, soia, latte, frutta a guscio, sedano, senape, sesamo, solfiti, lupini e molluschi. Dichiararli è obbligatorio quando sono presenti nel piatto come ingrediente o coadiuvante tecnologico; l'indicazione delle tracce («può contenere») è invece volontaria. Ti consiglio di tenerli ben visibili nel tuo piano di autocontrollo e di aggiornare il menù ogni volta che cambi un piatto o un fornitore."
   - q: "Cosa sono gli allergeni HACCP?"
     a: "Nessuna categoria speciale: sono gli stessi 14 allergeni visti dal lato del piano di autocontrollo. In pratica, nella tua analisi HACCP devi individuare dove un allergene può entrare in un piatto, come evitare contaminazioni incrociate e come comunicarlo al cliente. Non serve inventare nuovi nomi, basta integrare la gestione allergeni in ogni fase: ricevimento merci, stoccaggio, preparazione e servizio."
   - q: "Quali sono i 9 allergeni?"
     a: "Probabilmente pensi ai 9 allergeni maggiori degli Stati Uniti, dove dal 2023 è stato aggiunto il sesamo. In Europa, però, la normativa parla di 14 allergeni: glutine, crostacei, uova, pesce, arachidi, soia, latte, frutta a guscio, sedano, senape, sesamo, solfiti, lupini e molluschi. Se operi in Italia, attieniti sempre alla lista europea, che è quella obbligatoria."
   - q: "Come si fa la lista degli allergeni per il menù?"
-    a: "Parti dalla ricetta effettiva: pesa ogni ingrediente e controlla le etichette dei fornitori. Poi abbina ogni piatto ai 14 allergeni, indicandoli in modo chiaro, ad esempio con simboli o note. Aggiorna la lista quando modifichi ricette o cambi prodotto. Tieni una copia in cucina e una per il personale di sala, così chi serve sa rispondere con precisione."
+    a: "Parti dalla ricetta effettiva: pesa ogni ingrediente e controlla le etichette dei fornitori. Poi abbina ogni piatto ai 14 allergeni, indicandoli in modo chiaro, con il nome o con il numero accompagnato da una legenda. Aggiorna la lista quando modifichi ricette o cambi prodotto. Tieni una copia in cucina e una per il personale di sala, così chi serve sa rispondere con precisione."
   - q: "Quali sono le allergie alimentari più comuni?"
-    a: "Le più frequenti in Italia e in Europa sono: latte, uova, arachidi, frutta a guscio, pesce, crostacei, soia e grano. Attenzione però: un cliente può essere allergico a qualsiasi alimento, anche a sedano o lupini. Per questo non basarti solo sulle allergie più note: devi conoscere e dichiarare sempre tutti i 14 allergeni previsti dalla legge."
+    a: "Le più frequenti in Italia e in Europa sono: latte, uova, arachidi, frutta a guscio, pesce, crostacei, soia e grano. Attenzione però: un cliente può essere allergico a qualsiasi alimento, anche a sedano o lupini. Per questo non basarti solo sulle allergie più note: devi conoscere tutti i 14 allergeni previsti dalla legge e dichiarare sempre quelli presenti nei tuoi piatti."
+  - q: "Dove trovo una tabella allergeni da stampare gratis?"
+    a: "La trovi in questo articolo: una tabella allergeni gratuita, senza registrazione, in Excel (30 piatti, i 14 allergeni numerati da 1 a 14, un esempio compilato e i codici per il menù calcolati da soli) e in PDF da stampare su un A4 orizzontale. Ricorda che la tabella va compilata piatto per piatto e accompagnata da una legenda con il nome degli allergeni."
 ---
 
 <p>Ti è mai capitato? Arriva una comanda con scritto “allergia al sedano” e tu, in mezzo al servizio, devi capire al volo se quel piatto è sicuro. Oppure un cliente ti chiede informazioni sugli allergeni e tu non hai un documento chiaro da consultare. In questi casi non serve una lezione di diritto alimentare: serve la tabella numerata da 1 a 14, quella da appendere in cucina o da allegare al menù.</p>
 <p>Questa guida è pensata per chi lavora davvero ai fornelli. Trovi la tabella ufficiale degli allergeni, con la numerazione dell’Allegato II del Reg. (UE) 1169/2011, gli esempi concreti che trovi nella tua cucina e i punti critici dove si nascondono gli ingredienti insospettabili. Stampala, appendila, usala. E se hai dubbi su come dichiarare gli allergeni nel tuo menù, qui sotto trovi anche <a href="https://aichef.pro/it/blog/etichettatura-allergeni">le modalità ammesse</a> e gli errori che l’ASL contesta più spesso.</p>
 
+<p>Ti serve subito una tabella da esporre? Scarica la <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.xlsx">tabella allergeni in Excel</a> o la <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.pdf">versione PDF da stampare</a>, gratis e senza registrazione.</p>
+
 <h2>La tabella dei 14 allergeni con la numerazione ufficiale</h2>
-<p>Questa è la numerazione ufficiale dell’Allegato II del Reg. (UE) 1169/2011. È l’ordine esatto da seguire: non modificarlo, non riordinarlo, non inventare voci. La tabella che trovi qui sotto è pensata per essere stampata e usata in cucina, con la colonna “Dove si nasconde” che ti aiuta a riconoscere gli allergeni nei prodotti trasformati.</p>
+<p>Questa è la numerazione ufficiale dell’Allegato II del Reg. (UE) 1169/2011. È l’ordine in cui l’Allegato II elenca gli allergeni: seguirlo non è un obbligo, ma è una buona pratica che anche l’AUSL di Bologna usa nei suoi esempi (ad esempio «Pizza margherita (1, 7)»), purché i numeri rimandino a una legenda con il nome di ciascun allergene. Quello che non devi fare è inventare voci. La tabella che trovi qui sotto è pensata per essere stampata e usata in cucina, con la colonna “Dove si nasconde” che ti aiuta a riconoscere gli allergeni nei prodotti trasformati.</p>
 
 <table>
 <thead>
@@ -39,7 +43,7 @@ faq:
 <tbody>
 <tr>
 <td>1</td>
-<td>Cereali contenenti glutine (grano, segale, orzo, avena, farro, kamut e prodotti derivati)</td>
+<td>Cereali contenenti glutine, vale a dire: grano (tra cui farro e grano khorasan), segale, orzo, avena o i loro ceppi ibridati e prodotti derivati</td>
 <td>Pane, pasta, pizza, birra, dolci, panature, farina, cous cous, bulgur</td>
 <td>Salsa di soia, dado da brodo granulare, insaccati, gelati con biscotti, zuppe in busta, alcuni surimi</td>
 </tr>
@@ -105,7 +109,7 @@ faq:
 </tr>
 <tr>
 <td>12</td>
-<td>Anidride solforosa e solfiti in concentrazioni superiori a 10 mg/kg o 10 mg/l espressi come SO2</td>
+<td>Anidride solforosa e solfiti in concentrazioni superiori a 10 mg/kg o 10 mg/litro in termini di SO2 totale</td>
 <td>Vino, aceto di vino, frutta secca, patate disidratate, mostarda</td>
 <td>Uvetta, albicocche secche, succo di limone confezionato, patatine fritte surgelate, vino usato in cottura</td>
 </tr>
@@ -131,13 +135,17 @@ faq:
 
 <p>Questa tabella non è un documento burocratico: è uno strumento di lavoro. Stampala in formato A4, plastificala e tienila vicino alla postazione di cottura. Quando un collega ha un dubbio su un ingrediente, la risposta è a portata di mano. E quando metti a punto un piatto nuovo, scrivi i suoi ingredienti nel <a href="/it/rilevatore-allergeni-ristorante">rilevatore di allergeni per ristoranti</a>: in pochi secondi vedi quali dei 14 sono presenti e ottieni la scheda da aggiungere al menù.</p>
 
+<h3>Tabella allergeni da stampare: il modello gratuito (Excel e PDF)</h3>
+
+<p>La <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.xlsx">tabella allergeni in Excel</a> ha due fogli: una tabella vuota per 30 piatti con i 14 allergeni numerati da 1 a 14 e un esempio con cinque piatti italiani (margherita «1, 7», tortellini al ragù «1, 3, 7, 9»…). Per i cereali e la frutta a guscio scrivi il tipo, per esempio grano o nocciole, e la colonna «Codici per il menù» si compila da sola. In fondo trovi la legenda con il nome dei 14 allergeni, le regole del D.Lgs. 231/2017 e un esempio di avviso che rimanda al personale. La <a href="https://aichef.pro/descargas/tabella-allergeni-ristorante-aichef.pdf">versione PDF</a> sta su una pagina A4 orizzontale, da compilare a mano.</p>
+
 <h2>Perché la numerazione conta (e quando NON si usano i numeri)</h2>
 <p>La numerazione da 1 a 14 non è un’invenzione editoriale: è l’ordine dell’Allegato II del Reg. (UE) 1169/2011. Usarla ti aiuta a parlare la stessa lingua degli ispettori, dei fornitori e dei colleghi. Se in cucina dici “attenzione, c’è il numero 7”, tutti sanno che si tratta di latte e derivati, senza dover rileggere l’etichetta.</p>
-<p>Però attenzione: il Regolamento non impone di usare i numeri sul menù. Puoi scrivere il nome dell’allergene per esteso, oppure usare i numeri in una legenda. La cosa importante è che il cliente riceva un’informazione chiara e inequivocabile. Se usi i numeri, devi essere certo che il cliente li capisca: non tutti sanno che il numero 12 corrisponde ai solfiti. Per questo, nella pratica, molti ristoratori preferiscono scrivere il nome dell’allergene accanto alla pietanza, oppure usare la numerazione in una tabella ben visibile e spiegata.</p>
+<p>Però attenzione: il Regolamento non impone di usare i numeri sul menù. Puoi scrivere il nome dell’allergene per esteso, oppure usare i numeri in una legenda. La cosa importante è che il cliente riceva un’informazione chiara e inequivocabile. Se usi i numeri, devi essere certo che il cliente li capisca: non tutti sanno che il numero 12 corrisponde ai solfiti. E il numero da solo non vale: l’art. 9, par. 2, del Reg. (UE) 1169/2011 vuole le indicazioni «espresse mediante parole e numeri» e ammette pittogrammi o simboli solo in aggiunta: un numero-codice fa le veci di un simbolo, quindi deve rimandare a una legenda con il nome dell’allergene. Per questo, nella pratica, molti ristoratori preferiscono scrivere il nome dell’allergene accanto alla pietanza, oppure usare la numerazione in una tabella ben visibile e spiegata.</p>
 <p>Quando NON si usano i numeri? Quando il menù è descrittivo e l’allergene è già evidente nel nome del piatto, per esempio “tagliatelle al ragù” non ha senso mettere solo un numero: devi comunque specificare che il piatto contiene glutine, uova, latte e sedano, se presenti. I numeri sono un supporto, non un sostituto della chiarezza.</p>
 
 <h2>Come dichiarare gli allergeni sul menù: le tre modalità ammesse</h2>
-<p>Il Reg. (UE) 1169/2011 ti chiede di mettere a disposizione del cliente informazioni precise sugli allergeni presenti in ogni piatto. Non esiste un unico formato obbligatorio, ma la prassi e i controlli ufficiali hanno individuato tre modalità che funzionano. Ecco come si applicano in un ristorante.</p>
+<p>Il Reg. (UE) 1169/2011 ti chiede di mettere a disposizione del cliente informazioni precise sugli allergeni presenti in ogni piatto. Non esiste un unico formato obbligatorio, ma le modalità le fissa l’art. 19, comma 8, del D.Lgs. 231/2017, in vigore dal 9 maggio 2018: l’informazione va data prima di servire, deve essere riconducibile a ciascun piatto e va scritta in italiano, in modo visibile e leggibile. Ecco come si applicano in un ristorante.</p>
 
 <table>
 <thead>
@@ -162,8 +170,8 @@ faq:
 <td>Il cliente deve sapere che il documento esiste: va indicato nel menù</td>
 </tr>
 <tr>
-<td>3. Dichiarazione verbale integrata da supporto scritto</td>
-<td>Il personale comunica gli allergeni a voce, ma deve avere un riferimento scritto da consultare e mostrare</td>
+<td>3. Avviso scritto che rimanda al personale + documentazione scritta</td>
+<td>Nel menù, nel registro o su un cartello avvisi per iscritto che i piatti possono contenere allergeni e che il personale è a disposizione (è un rimando al personale, non una dicitura «può contenere» al posto della dichiarazione); chi è in sala risponde consultando una documentazione scritta piatto per piatto, facilmente reperibile sia per il cliente sia per l’autorità di controllo</td>
 <td>Flessibile, utile per menù che cambiano spesso</td>
 <td>Rischio di errori umani, serve personale formato e un documento sempre aggiornato</td>
 </tr>
@@ -202,13 +210,13 @@ faq:
 <h2>Errori che l’ASL contesta più spesso</h2>
 <p>Durante i controlli ufficiali, gli ispettori non cercano solo la tabella degli allergeni: verificano che il sistema funzioni davvero. Questi sono gli errori che emergono più di frequente nelle cucine professionali.</p>
 <p><strong>1. Menù senza indicazione degli allergeni</strong> – Il menù non riporta né gli allergeni né l’invito a chiedere al personale. È la violazione più elementare e la più facile da contestare.</p>
-<p><strong>2. Supporto scritto assente o non aggiornato</strong> – Il personale dichiara a voce, ma non esiste un documento consultabile. Oppure il documento c’è, ma non è stato aggiornato dopo un cambio di ricetta. L’ASL chiede di vedere il documento, non si fida delle dichiarazioni verbali.</p>
+<p><strong>2. Supporto scritto assente o non aggiornato</strong> – Il personale dichiara a voce, ma non esiste un documento consultabile. Oppure il documento c’è, ma non è stato aggiornato dopo un cambio di ricetta: per evitarlo, gli allergeni di ogni piatto si segnano nella sua <a href="https://aichef.pro/it/blog/scheda-tecnica-ricetta">scheda tecnica</a>. L’ASL chiede di vedere il documento, non si fida delle dichiarazioni verbali.</p>
 <p><strong>3. Personale non formato</strong> – Il cameriere non sa rispondere alla domanda “questo piatto contiene frutta a guscio?”. Oppure dà informazioni vaghe come “non credo”. La formazione del personale è un obbligo, non un optional.</p>
 <p><strong>4. Etichette dei fornitori non verificate</strong> – Usi un prodotto trasformato senza controllarne l’etichetta. Il fornitore ha cambiato ricetta e ora il prodotto contiene un allergene che prima non c’era. È il tuo compito verificare, non quello del cliente.</p>
 <p><strong>5. Contaminazione crociata evidente</strong> – L’ispettore vede la stessa pinza usata per il pane e per le verdure, o la friggitrice unica per prodotti impanati e non. Anche se il menù è perfetto, la pratica scorretta è una violazione.</p>
 <p><strong>6. Informazioni non veritiere</strong> – Scrivi “senza glutine” su un piatto che contiene salsa di soia (che ha glutine). Oppure dichiari “senza lattosio” su un piatto cotto nel burro. Le informazioni false sono più gravi di quelle mancanti.</p>
-<p><strong>7. Mancata indicazione per i prodotti sfusi e il catering</strong> – Nel banco dei dolci, nel buffet o nel catering, gli allergeni devono essere dichiarati allo stesso modo. Un cartello generico “può contenere allergeni” non basta: deve essere specifico.</p>
-<p>Se vuoi evitare contestazioni, fai una verifica interna ogni settimana: controlla le etichette, aggiorna il documento degli allergeni, parla con il personale di sala. Un sistema semplice e funzionante vale più di un manuale perfetto ma mai applicato. E se vuoi inquadrare tutto questo dentro il tuo piano di autocontrollo, qui trovi <a href="https://aichef.pro/it/blog/7-principi-haccp">i 7 principi HACCP applicati a una cucina vera</a> e <a href="https://aichef.pro/it/blog/temperature-frigorifero-haccp">le temperature di frigo e freezer</a> da tenere sotto controllo.</p>
+<p><strong>7. Mancata indicazione per i prodotti sfusi e il catering</strong> – Nel banco dei dolci, nel buffet o nel catering, gli allergeni devono essere dichiarati allo stesso modo. Un avviso generico che rimanda al personale è ammesso solo se dietro c’è la documentazione scritta piatto per piatto, facilmente consultabile; quello che non basta è un cartello unico che non permette di sapere quali allergeni contiene ciascun prodotto.</p>
+<p>Se vuoi evitare contestazioni, fai una verifica interna ogni settimana: controlla le etichette, aggiorna il documento degli allergeni, parla con il personale di sala. Un sistema semplice e funzionante vale più di un manuale perfetto ma mai applicato: per questo il <a href="https://aichef.pro/it/blog/manuale-haccp-semplificato">modello di manuale HACCP semplificato</a> dedica agli allergeni una scheda breve. E se vuoi inquadrare tutto questo dentro il tuo piano di autocontrollo, qui trovi <a href="https://aichef.pro/it/blog/7-principi-haccp">i 7 principi HACCP applicati a una cucina vera</a> e <a href="https://aichef.pro/it/blog/temperature-frigorifero-haccp">le temperature di frigo e freezer</a> da tenere sotto controllo.</p>
 
 <p>La lista dei 14 allergeni non è un ostacolo burocratico: è uno strumento per proteggere i tuoi clienti e la tua reputazione. Stampala, usala, rendila parte del tuo lavoro quotidiano. Quando tutto il team conosce la tabella e sa dove guardare, il servizio diventa più sicuro e il cliente si fida di te. E in un settore dove la fiducia si costruisce piatto dopo piatto, questa è una differenza che si sente.</p>
 <h2>Fare tutto questo a mano è il vero problema</h2>

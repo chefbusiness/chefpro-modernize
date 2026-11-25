@@ -2,7 +2,7 @@
 title: "Hygiène alimentaire en restauration : les règles de base, les 5 clés de l'OMS et le GBPH de votre branche"
 description: "Découvrez les règles de base de l'hygiène alimentaire en restauration : les 4 règles, les 5 clés de l'OMS et le GBPH pour bâtir votre socle quotidien."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-25
 category: gestion-restaurant
 tags: ["hygiène alimentaire", "GBPH", "règles d'hygiène", "formation"]
 image: /blog-assets/2026/08/hygiene-destacada.jpg
@@ -45,7 +45,7 @@ faq:
 <tr><td>Nettoyer</td><td>Laver les mains, les surfaces, les ustensiles au fil du service, pas seulement en fin de journée. Nettoyer et désinfecter sont deux opérations différentes : le nettoyage enlève la saleté visible, la désinfection détruit les micro-organismes. Les deux sont nécessaires, dans cet ordre.</td><td>La contamination croisée par contact : une planche sale qui contamine les aliments suivants, des mains qui transportent des bactéries d’une zone à l’autre.</td></tr>
 <tr><td>Séparer</td><td>Le cru et le cuit ne se touchent jamais, ni dans l’espace, ni dans le temps. Planches, couteaux, ustensiles, zones de stockage dédiés. Si vous n’avez pas la place de séparer physiquement, séparez dans le temps : nettoyez et désinfectez entre les deux usages.</td><td>La contamination croisée directe : des jus de viande crue qui tombent sur une salade prête à servir, un couteau utilisé pour le poulet cru puis pour le pain.</td></tr>
 <tr><td>Cuire</td><td>Cuire à cœur, jusqu’à ce que la température interne atteigne le seuil qui détruit les micro-organismes pathogènes. Pour la plupart des viandes, volailles et poissons, cela signifie une cuisson complète, sans zone rosée, avec une température à cœur vérifiée si vous avez un doute.</td><td>Les bactéries qui survivent dans les parties mal cuites, notamment au centre des pièces épaisses ou des préparations reconstituées comme les steaks hachés.</td></tr>
-<tr><td>Réfrigérer</td><td>Refroidir rapidement et maintenir le froid sans jamais rompre la chaîne. Les aliments sensibles ne restent pas à température ambiante : ils vont au froid dès que possible, et le froid est contrôlé régulièrement.</td><td>La multiplication bactérienne rapide entre 10 °C et 60 °C, la zone de danger où les micro-organismes prolifèrent en quelques heures.</td></tr>
+<tr><td>Réfrigérer</td><td>Refroidir rapidement et maintenir le froid sans jamais rompre la chaîne. Les aliments sensibles ne restent pas à température ambiante : ils vont au froid dès que possible, et le froid est contrôlé régulièrement.</td><td>La multiplication bactérienne rapide entre 5 °C et 60 °C, la zone de danger où les micro-organismes prolifèrent en quelques heures.</td></tr>
 </tbody>
 </table>
 
@@ -63,7 +63,7 @@ faq:
 <tr><td>Prendre l’habitude de la propreté</td><td>Se laver les mains systématiquement, porter une tenue propre, garder les surfaces et le matériel propres.</td><td>Un coup de chiffon sur le plan de travail entre deux préparations n’est pas un luxe, c’est un réflexe. Les mains se lavent en arrivant, entre le cru et le cuit, après chaque tâche contaminante, après les toilettes.</td></tr>
 <tr><td>Séparer les aliments crus des aliments cuits</td><td>Utiliser des planches, couteaux et récipients différents pour les produits crus et les produits cuits ou prêts à consommer.</td><td>La planche rouge pour la viande crue, la planche verte pour les légumes prêts à servir. Si vous n’avez qu’une planche, lavez-la et désinfectez-la entre chaque usage.</td></tr>
 <tr><td>Faire bien cuire les aliments</td><td>Cuire à cœur, à une température suffisante pour détruire les micro-organismes.</td><td>Une volaille doit être cuite jusqu’à ce que le jus soit clair et qu’il n’y ait plus aucune partie rosée. Un steak haché se cuit à cœur, pas simplement saisi.</td></tr>
-<tr><td>Maintenir les aliments à bonne température</td><td>Garder les aliments chauds au chaud (au-dessus de 60 °C) et les aliments froids au froid (en dessous de 4 °C), sans rupture de la chaîne du froid.</td><td>Un buffet froid reste sous climatisation ou sur lit de glace. Une sauce chaude ne reste pas sur le coin du piano pendant des heures : elle est remise à température ou refroidie rapidement.</td></tr>
+<tr><td>Maintenir les aliments à bonne température</td><td>Garder les aliments chauds au chaud (à plus de 60 °C) et les aliments froids au froid (de préférence à moins de 5 °C), sans rupture de la chaîne du froid.</td><td>Un buffet froid reste sous climatisation ou sur lit de glace. Une sauce chaude ne reste pas sur le coin du piano pendant des heures : elle est remise à température ou refroidie rapidement.</td></tr>
 <tr><td>Utiliser de l’eau et des produits sûrs</td><td>Choisir une eau potable, des matières premières saines, des produits avec une date limite de consommation respectée.</td><td>Les légumes sont lavés à l’eau potable. Les produits livrés sont contrôlés à réception : température, intégrité des emballages, dates de durabilité.</td></tr>
 </tbody>
 </table>

@@ -61,7 +61,7 @@ wpId: 3965
 <p>En el panel de operación ves el estado de cada lista como un semáforo: <strong>verde</strong> significa que la lista se completó dentro de su franja horaria; <strong>ámbar</strong>, que se completó pero fuera de plazo; <strong>rojo</strong>, que el turno terminó y nadie completó ni cerró la lista. Cada hora, un proceso automático marca como «no completadas» las listas que hayan quedado pendientes tras pasar su franja. Así sabes, sin preguntar a nadie, si los checklists de apertura y cierre se están ejecutando como tocan.</p>
 
 
-<div style="background:#0B1220;border-radius:16px;padding:30px 26px;text-align:center;margin:2.4em 0;color:#ffffff;"><p style="font-size:1.2em;font-weight:700;margin:0 0 8px;color:#ffffff;">Pon orden en las tareas diarias de tu negocio</p><p style="margin:0 0 20px;color:#cbd5e1;font-size:1em;">Crea tus primeros checklists digitales en minutos. Plan gratuito para siempre, sin tarjeta.</p><a href="https://timlup.pro/" target="_blank" rel="noopener" style="display:inline-block;background:#FACC15;color:#0B1220;font-weight:700;padding:14px 34px;border-radius:9999px;text-decoration:none;font-size:1.05em;">Empieza hoy en Timlup &rarr;</a></div>
+<div style="background:#0B1220;border-radius:16px;padding:30px 26px;text-align:center;margin:2.4em 0;color:#ffffff;"><p style="font-size:1.2em;font-weight:700;margin:0 0 8px;color:#ffffff;">Pon orden en las tareas diarias de tu negocio</p><p style="margin:0 0 20px;color:#cbd5e1;font-size:1em;">Crea tus primeros checklists digitales en minutos. Plan gratuito para siempre, sin tarjeta.</p><a href="https://timlup.pro/" target="_blank" rel="noopener" style="display:inline-block;background:#FACC15;color:#0B1220;font-weight:700;padding:14px 34px;border-radius:9999px;text-decoration:none;font-size:1.05em;">Empieza gratis en Timlup &rarr;</a></div>
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Parrillero para Eventos</h3><p class="mt-2 text-muted-foreground">Asador y parrilla para eventos, con 11 entregables.</p><a href="/plan-negocio-parrillero-asador-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=timlup-checklist-digital-tareas-recurrentes" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Parrillero para Eventos por €45</a></aside>
 
@@ -191,7 +191,7 @@ wpId: 3965
 
 <p>Aquí viene uno de los puntos que me parecen más diferenciales y que conecta directamente con el ecosistema de herramientas con IA que usas cada día.</p>
 
-<p>En la propia web de <a href="https://timlup.pro/" target="_blank" rel="noopener">timlup.pro</a> encontrarás un <strong>Agente IA conversacional</strong> llamado «Agente Timlup», especializado en listas de tareas recurrentes. Te resuelve dudas sobre la plataforma, pero va más allá: te ayuda a diseñar los checklists adaptados a tu sector concreto —no es lo mismo un obrador de panadería que un restaurante de alta cocina— y te acompaña para que empieces con el plan AI Chef Miembro sin tropiezos. Es como tener un consultor de operaciones al otro lado del chat.</p>
+<p>En la propia web de <a href="https://timlup.pro/" target="_blank" rel="noopener">timlup.pro</a> encontrarás un <strong>Agente IA conversacional</strong> llamado «Agente Timlup», especializado en listas de tareas recurrentes. Te resuelve dudas sobre la plataforma, pero va más allá: te ayuda a diseñar los checklists adaptados a tu sector concreto —no es lo mismo un obrador de panadería que un restaurante de alta cocina— y te acompaña para que empieces gratis sin tropiezos. Es como tener un consultor de operaciones al otro lado del chat.</p>
 
 <p>Pero la integración que más valor aporta para los usuarios de AI Chef Pro es que ese mismo agente está disponible con <strong>características ampliadas</strong> dentro del módulo «Otras Plataformas» de la app de AI Chef Pro. Puedes acceder en español desde <a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=timlup-checklist-digital-tareas-recurrentes">app.aichef.pro</a> o en inglés desde <a href="https://enapp.aichef.pro/" target="_blank" rel="noopener">enapp.aichef.pro</a>. Esto significa que no necesitas saltar entre aplicaciones: convives con el especialista de Timlup junto al resto de agentes y recetarios de la plataforma. Si ya usas AI Chef Pro para generar fichas de platos, calcular escandallos o gestionar alérgenos, ahora también tienes a un experto en checklists operativos integrado en el mismo entorno. Es una simbiosis que cierra el círculo entre la cocina creativa y la cocina operativa.</p>
 
@@ -248,7 +248,7 @@ wpId: 3965
   </thead>
   <tbody>
 <tr>
-<td>Miembro</td>
+<td>Gratis</td>
 <td>1</td>
 <td>5</td>
 <td>2</td>
@@ -282,7 +282,7 @@ wpId: 3965
   </tbody>
 </table></div>
 
-<p>El plan AI Chef Miembro cuesta 10€ al mes y requiere tarjeta; es ideal para probar la plataforma con un local pequeño y un par de empleados. Las funciones de IA aplicada a la gestión que comentaba antes —agente que aprende, reseñas de Google a tareas, listas por voz— estarán disponibles en los planes Pro y Avanzado cuando se activen.</p>
+<p>El plan Gratis no caduca ni requiere tarjeta; es ideal para probar la plataforma con un local pequeño y un par de empleados. Las funciones de IA aplicada a la gestión que comentaba antes —agente que aprende, reseñas de Google a tareas, listas por voz— estarán disponibles en los planes Pro y Avanzado cuando se activen.</p>
 
 <p>Además, ahora mismo hay una <strong>promoción de lanzamiento Early Bird</strong>: usando el código <strong>EARLYBIRD</strong> obtienes un 40 % de descuento durante los tres primeros meses en cualquier plan de pago. Si venías dándole vueltas, es el momento de saltar con red.</p>
 
@@ -315,7 +315,7 @@ wpId: 3965
 <p>No necesitas instalar nada, no necesitas formaciones complicadas y no necesitas ser un experto en tecnología. Solo necesitas tener claro que las tareas recurrentes de tu negocio merecen el mismo rigor que el resto de la operación.</p>
 
 
-<div style="background:#0B1220;border-radius:16px;padding:32px 26px;text-align:center;margin:2.6em 0;color:#ffffff;"><p style="font-size:1.3em;font-weight:700;margin:0 0 8px;color:#ffffff;">Empieza hoy con Timlup hoy</p><p style="margin:0 0 22px;color:#cbd5e1;">Digitaliza tus checklists, firma las tareas y controla tu operativa en tiempo real.</p><a href="https://timlup.pro/" target="_blank" rel="noopener" style="display:inline-block;background:#FACC15;color:#0B1220;font-weight:700;padding:15px 36px;border-radius:9999px;text-decoration:none;font-size:1.08em;margin:6px;">Crear mi cuenta gratis &rarr;</a><a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=timlup-checklist-digital-tareas-recurrentes" target="_blank" rel="noopener" style="display:inline-block;background:transparent;color:#FACC15;font-weight:700;padding:15px 28px;border-radius:9999px;text-decoration:none;border:2px solid #FACC15;margin:6px;">Probar el Agente IA en AI Chef Pro</a></div>
+<div style="background:#0B1220;border-radius:16px;padding:32px 26px;text-align:center;margin:2.6em 0;color:#ffffff;"><p style="font-size:1.3em;font-weight:700;margin:0 0 8px;color:#ffffff;">Empieza gratis con Timlup hoy</p><p style="margin:0 0 22px;color:#cbd5e1;">Digitaliza tus checklists, firma las tareas y controla tu operativa en tiempo real.</p><a href="https://timlup.pro/" target="_blank" rel="noopener" style="display:inline-block;background:#FACC15;color:#0B1220;font-weight:700;padding:15px 36px;border-radius:9999px;text-decoration:none;font-size:1.08em;margin:6px;">Crear mi cuenta gratis &rarr;</a><a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=timlup-checklist-digital-tareas-recurrentes" target="_blank" rel="noopener" style="display:inline-block;background:transparent;color:#FACC15;font-weight:700;padding:15px 28px;border-radius:9999px;text-decoration:none;border:2px solid #FACC15;margin:6px;">Probar el Agente IA en AI Chef Pro</a></div>
 <h2>Preguntas frecuentes sobre Timlup</h2>
 
 <h3>¿Necesito instalar una app en el móvil o en la tablet?</h3>
