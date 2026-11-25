@@ -2,12 +2,20 @@
 title: "Salsa velouté: cómo se hace y derivadas"
 description: "La velouté es una salsa madre de fondo blanco y roux rubio. Te contamos su elaboración paso a paso, las proporciones según el uso y sus salsas derivadas."
 pubDate: 2026-02-18
-modDate: 2026-08-31
+modDate: 2026-11-24
 category: glosario
 image: /blog-assets/2026/05/veloute-destacada.jpg
 imageAlt: "Salsa velouté clara y aterciopelada"
 lang: es
 wpId: 2732
+translations:
+  es: "salsa-veloute-concepto-y-definicion"
+  en: "what-is-veloute"
+  fr: "veloute"
+  de: "veloute"
+  it: "vellutata"
+  nl: "veloute"
+  pt: "veloute"
 ---
 
 <p>La velouté es una de las cinco salsas madres de la cocina clásica francesa, caracterizada por su textura ligera y aterciopelada. Para entender <strong>qué es la velouté</strong>, imagina un <a href="https://aichef.pro/blog/fondo-blanco-concepto-y-definicion">fondo blanco</a> —de ave, ternera o pescado— que se liga suavemente con un <a href="https://aichef.pro/blog/roux-concepto-y-definicion">roux</a> rubio hasta conseguir una salsa fluida, brillante y con cuerpo. No lleva leche ni nata en su forma base: su sabor depende completamente de la calidad del caldo con el que la prepares.</p>

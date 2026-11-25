@@ -2,7 +2,7 @@
 title: "Bruine fond: wat het is, en wat het niet is"
 description: "Bruine fond is botten en snijsel, eerst geroosterd, dan met groente, tomaat en kruiden gekookt. Mahoniekleur, basis van de bruine sauzen."
 pubDate: 2026-11-17
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossarium
 tags: ["bruine fond", "fond", "demi-glace", "saus"]
 lang: nl
@@ -73,13 +73,13 @@ Een [visfumet](https://aichef.pro/nl/blog/visfumet) is de bleke fond van graten.
 
 Een [demi-glace](https://aichef.pro/nl/blog/demi-glace) is niet de fond. Het is de saus die u uit bruine fond bouwt en reduceert tot ze nappt. Een [vleesglace](https://aichef.pro/nl/blog/vleesglace) is de fond verder gereduceerd, tot hij koud geleert. De fond is de uitgangsvloeistof. De andere twee zijn wat u ermee doet.
 
-[Witte fond](https://aichef.pro/nl/blog/witte-fond), in de brigade ook blanke fond, is het bleke tegenstuk. De botten worden niet geroosterd, tomaat blijft buiten, en de smaak blijft stil zodat een velouté of een heldere soep iets anders kan dragen. Het contrast is het roosteren.
+[Witte fond](https://aichef.pro/nl/blog/witte-fond), in de brigade ook blanke fond, is het bleke tegenstuk. De botten worden niet geroosterd, tomaat blijft buiten, en de smaak blijft stil zodat een [velouté](https://aichef.pro/nl/blog/veloute) of een heldere soep iets anders kan dragen. Het contrast is het roosteren.
 
 ## Op de passe
 
 Bruine fond drinkt niemand uit een kop. Een pollepel bevochtigt een stoof in plaats van water of een zoute kant-en-klare bouillon, en de gelatine helpt de saus te binden terwijl het vlees gaart. Een lepel van de gereduceerde saus, niet van de fond zoals hij is, maakt een gegrilde steak af.
 
-De Spaanse saus, de bruine basissaus, is bruine fond, gebonden met een donkere roux en gereduceerd. Zegt uw kaart Spaanse saus, dan is de fond de vloeistof en de roux een eigen stap. Doe niet alsof de fond al het lichaam van de saus heeft.
+De [Spaanse saus](https://aichef.pro/nl/blog/spaanse-saus), de bruine basissaus, is bruine fond, gebonden met een donkere [roux](https://aichef.pro/nl/blog/wat-is-een-roux) en gereduceerd. Zegt uw kaart Spaanse saus, dan is de fond de vloeistof en de roux een eigen stap. Doe niet alsof de fond al het lichaam van de saus heeft.
 
 Peperauzen, champignonsauzen en de jus onder een braadstuk beginnen hier en nemen op het eind room, boter of wijn. Bij wild, hert of everzwijn, doet een bruine fond het meeste werk: hij draagt de roosternoot en verzacht de ijzersmaak. Zout na de reductie, niet in de fondpan.
 

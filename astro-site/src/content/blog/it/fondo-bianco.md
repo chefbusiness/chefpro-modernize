@@ -2,7 +2,7 @@
 title: "Fondo bianco: che cos'è, e che cosa non è"
 description: "Il fondo bianco sono ossa mai tostate, sobbollite con verdure crude e aromi. La base quieta di vellutate e zuppe chiare."
 pubDate: 2026-11-19
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossario
 tags: ["fondo bianco", "vellutata", "fondo", "brodo"]
 lang: it
@@ -74,13 +74,13 @@ Un [fumetto](https://aichef.pro/it/blog/fumetto) è il fondo chiaro delle lische
 
 Una [demi-glace](https://aichef.pro/it/blog/demi-glace) non è questo fondo. È una salsa costruita sul fondo bruno e ridotta fino a nappare. Una [glace de viande](https://aichef.pro/it/blog/glace-de-viande) è il fondo bruno ridotto oltre, fino a gelificare duro a freddo. Il fondo bianco si può ridurre, ma non diventa né l'una né l'altra. Colore e tostatura mancano apposta.
 
-La vellutata è la salsa madre che parte da qui: fondo pallido e roux biondo. Non c'è ancora una scheda italiana della vellutata. Il fondo è il liquido. Il roux è un altro gesto. Non fare come se il fondo avesse già il corpo della salsa.
+La [vellutata](https://aichef.pro/it/blog/vellutata) è la salsa madre che parte da qui: fondo pallido e [roux](https://aichef.pro/it/blog/roux) biondo. Il fondo è il liquido. Il roux è un altro gesto. Non fare come se il fondo avesse già il corpo della salsa.
 
 ## Al pass
 
 Il fondo bianco non si beve in tazza, anche se lo assaggi. Un mestolo è il liquido di una vellutata, la base di una crema che deve sapere di verdura e non di arrosto, e il bagnare di un risotto quando un dado salato coprirebbe il riso. Un pesce affogato, un petto di pollame o piccole verdure glassate ne prendono un po', con burro alla fine. La gelatina aiuta. Il gusto resta indietro.
 
-Se la scheda dice vellutata, il fondo è non salato e pallido, e la legatura è a parte. Se la scheda dice salsa spagnola o al pepe, volevi il [fondo bruno](https://aichef.pro/it/blog/fondo-bruno). Un fondo bianco lì ti dà una salsa senza nota tostata, e ridurre non inventa la tostatura che hai saltato.
+Se la scheda dice [vellutata](https://aichef.pro/it/blog/vellutata), il fondo è non salato e pallido, e la legatura è a parte. Se la scheda dice [salsa spagnola](https://aichef.pro/it/blog/salsa-spagnola) o al pepe, volevi il [fondo bruno](https://aichef.pro/it/blog/fondo-bruno). Un fondo bianco lì ti dà una salsa senza nota tostata, e ridurre non inventa la tostatura che hai saltato.
 
 Sala quando conosci il volume finale. Una zuppa che riduce appena può prendere il sale a fine cottura. Una salsa che porterai a metà no.
 

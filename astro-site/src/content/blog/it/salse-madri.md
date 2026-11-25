@@ -2,7 +2,7 @@
 title: "Salse madri: quali sono le 5 della cucina classica (e le derivate che ne escono)"
 description: "Scopri le 5 salse madri di Escoffier: basi, derivate, i 3 tipi di roux e le varianti 3/5/7. Guida completa per chef."
 pubDate: 2026-08-17
-modDate: 2026-08-17
+modDate: 2026-11-24
 category: tecnica-e-ricette
 tags: ["salse madri", "salse", "tecnica di cucina", "cucina classica"]
 image: /blog-assets/2026/08/salse-madri-destacada.jpg
@@ -23,11 +23,11 @@ faq:
 
 <p>Immagina la linea di una cucina professionale alle 19:00. Cinque pentolini su altrettanti fuochi, cinque consistenze diverse, cinque profili di sapore che aspettano di diventare qualcos'altro. Non sono cinque ricette da imparare a memoria: sono cinque famiglie, cinque sistemi. Chi le domina non memorizza cento salse, ne impara cinque e le declina all'infinito. Questa è la differenza tra chi copia e chi cucina.</p>
 
-<p>Le salse madri sono la grammatica della cucina classica. Se le conosci, qualsiasi piatto della tradizione europea ti si apre davanti come un libro già letto. E la domanda che tutti si fanno, prima o poi, è sempre la stessa: quali sono le 5 salse madri? La risposta è netta: besciamella, vellutata, salsa spagnola, salsa di pomodoro e salsa olandese. In questo articolo le vediamo una per una, capiamo da dove vengono, come si legano e soprattutto cosa puoi farci in carta, senza trasformare il blog in un ricettario.</p>
+<p>Le salse madri sono la grammatica della cucina classica. Se le conosci, qualsiasi piatto della tradizione europea ti si apre davanti come un libro già letto. E la domanda che tutti si fanno, prima o poi, è sempre la stessa: quali sono le 5 salse madri? La risposta è netta: besciamella, <a href="https://aichef.pro/it/blog/vellutata">vellutata</a>, <a href="https://aichef.pro/it/blog/salsa-spagnola">salsa spagnola</a>, salsa di pomodoro e salsa olandese. In questo articolo le vediamo una per una, capiamo da dove vengono, come si legano e soprattutto cosa puoi farci in carta, senza trasformare il blog in un ricettario.</p>
 
 <h2>Cosa sono le salse madri (e chi le ha messe in fila)</h2>
 
-<p>Le salse madri sono le preparazioni di base della cucina classica da cui, per aggiunta di altri ingredienti, nascono le salse derivate, dette anche composte. In parole povere: una madre è un punto di partenza, non un punto di arrivo. La besciamella da sola è una base, ma quando ci aggiungi formaggio e tuorlo diventa Mornay. La vellutata di pollame con la panna diventa suprema. La salsa spagnola ridotta diventa demi-glace. Ogni madre è un sistema aperto, pensato per essere modificato.</p>
+<p>Le salse madri sono le preparazioni di base della cucina classica da cui, per aggiunta di altri ingredienti, nascono le salse derivate, dette anche composte. In parole povere: una madre è un punto di partenza, non un punto di arrivo. La besciamella da sola è una base, ma quando ci aggiungi formaggio e tuorlo diventa Mornay. La <a href="https://aichef.pro/it/blog/vellutata">vellutata</a> di pollame con la panna diventa suprema. La <a href="https://aichef.pro/it/blog/salsa-spagnola">salsa spagnola</a> ridotta diventa demi-glace. Ogni madre è un sistema aperto, pensato per essere modificato.</p>
 
 <p>Questa architettura non è nata per caso. Il primo a mettere ordine nel caos delle salse francesi fu Antonin Carême, chef dell'Ottocento che classificò le preparazioni in famiglie. Ma la codificazione moderna, quella che ancora oggi si insegna nelle scuole alberghiere, arriva da Auguste Escoffier e dalla sua «Guide culinaire» del 1903. Escoffier prese il lavoro di Carême, lo semplificò e lo rese replicabile su larga scala. Lui capì che una cucina industriale, o anche solo un grande ristorante, non può permettersi cento salse diverse pronte all'uso. Può permettersi cinque basi ben fatte, e poi il cuoco le trasforma al momento. Questa è la logica delle madri: ridurre la complessità senza perdere la profondità.</p>
 
@@ -35,7 +35,7 @@ faq:
 
 <h2>Il roux: la tecnica che regge tre madri su cinque</h2>
 
-<p>Il roux è l'alleanza tra burro e farina in parti uguali, cotti insieme per eliminare il sapore di crudo e creare un legante. Sembra semplice, ma è la chiave di tre salse madri su cinque. Senza roux non esiste besciamella, non esiste vellutata, non esiste salsa spagnola. Le altre due, pomodoro e olandese, seguono strade diverse: la prima si addensa per riduzione, la seconda per emulsione. Ma il roux è il cuore tecnico del canone classico.</p>
+<p>Il roux è l'alleanza tra burro e farina in parti uguali, cotti insieme per eliminare il sapore di crudo e creare un legante. Sembra semplice, ma è la chiave di tre salse madri su cinque. Senza roux non esiste besciamella, non esiste <a href="https://aichef.pro/it/blog/vellutata">vellutata</a>, non esiste <a href="https://aichef.pro/it/blog/salsa-spagnola">salsa spagnola</a>. Le altre due, pomodoro e olandese, seguono strade diverse: la prima si addensa per riduzione, la seconda per emulsione. Ma il roux è il cuore tecnico del canone classico.</p>
 
 <table>
 <thead>
@@ -78,11 +78,11 @@ faq:
 
 <h3>Vellutata: la madre elegante</h3>
 
-<p>La vellutata è la madre della raffinatezza. Si fa con un fondo bianco — di vitello, pollame o pesce — legato con roux biondo. Il risultato è una salsa liscia, vellutata appunto, che non ha la potenza del fondo bruno ma ha una delicatezza che esalta gli ingredienti più fini. La suprema, che nasce dalla vellutata di pollame con l'aggiunta di panna, è la salsa classica del pollo lessato o al vapore. L'allemande, legata con tuorlo e panna, è più ricca e corposa. La salsa al vino bianco, invece, è la compagna ideale del pesce: si fa con la vellutata di pesce e una riduzione di vino bianco. In cucina, la vellutata è la madre che richiede più precisione: se il fondo non è perfetto, la salsa non può essere perfetta. Ma quando riesce, è una delle cose più belle che esistano.</p>
+<p>La <a href="https://aichef.pro/it/blog/vellutata">vellutata</a> è la madre della raffinatezza. Si fa con un fondo bianco — di vitello, pollame o pesce — legato con roux biondo. Il risultato è una salsa liscia, vellutata appunto, che non ha la potenza del fondo bruno ma ha una delicatezza che esalta gli ingredienti più fini. La suprema, che nasce dalla vellutata di pollame con l'aggiunta di panna, è la salsa classica del pollo lessato o al vapore. L'allemande, legata con tuorlo e panna, è più ricca e corposa. La salsa al vino bianco, invece, è la compagna ideale del pesce: si fa con la vellutata di pesce e una riduzione di vino bianco. In cucina, la vellutata è la madre che richiede più precisione: se il fondo non è perfetto, la salsa non può essere perfetta. Ma quando riesce, è una delle cose più belle che esistano.</p>
 
 <h3>Salsa spagnola: la madre potente</h3>
 
-<p>La salsa spagnola è il ponte con il fondo bruno. Si fa con fondo bruno e roux bruno, e il suo carattere è deciso, tostato, profondo. È la madre delle salse scure per le carni rosse. La demi-glace, che è la sua riduzione, è considerata da molti il vertice della cucina classica: una salsa densa, lucida, concentrata, che da sola può accompagnare un filetto o una costata. Dalla demi-glace nascono poi la bordolese, con vino rosso e midollo, la Madeira, con il vino omonimo, e la cacciatora, con funghi e aromi. In carta, la salsa spagnola è la madre che dà carattere ai secondi di carne: un brasato, uno stufato, un arrosto. Non è una salsa per chi ha fretta, ma per chi sa aspettare.</p>
+<p>La <a href="https://aichef.pro/it/blog/salsa-spagnola">salsa spagnola</a> è il ponte con il fondo bruno. Si fa con fondo bruno e roux bruno, e il suo carattere è deciso, tostato, profondo. È la madre delle salse scure per le carni rosse. La demi-glace, che è la sua riduzione, è considerata da molti il vertice della cucina classica: una salsa densa, lucida, concentrata, che da sola può accompagnare un filetto o una costata. Dalla demi-glace nascono poi la bordolese, con vino rosso e midollo, la Madeira, con il vino omonimo, e la cacciatora, con funghi e aromi. In carta, la salsa spagnola è la madre che dà carattere ai secondi di carne: un brasato, uno stufato, un arrosto. Non è una salsa per chi ha fretta, ma per chi sa aspettare.</p>
 
 <h3>Salsa di pomodoro: la madre mediterranea</h3>
 

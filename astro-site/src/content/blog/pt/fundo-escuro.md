@@ -2,7 +2,7 @@
 title: "Fundo escuro: o que é, e o que não é"
 description: "O fundo escuro são ossos e aparas torrados, depois cozidos com legumes, tomate e ervas. Cor de mogno, base dos molhos de carne."
 pubDate: 2026-11-17
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossario
 tags: ["fundo escuro", "fundo castanho", "demi-glace", "molho"]
 lang: pt
@@ -73,13 +73,13 @@ Um [fumet](https://aichef.pro/pt/blog/fumet-de-peixe) é o fundo claro das espin
 
 Uma [demi-glace](https://aichef.pro/pt/blog/demi-glace) não é o fundo. É o molho que se constrói sobre o fundo escuro e se reduz até napar. Uma [glace de viande](https://aichef.pro/pt/blog/glace-de-viande) é o fundo reduzido mais longe, até gelificar em frio. O fundo é o líquido de partida. Os outros dois são o que se faz com ele.
 
-O [fundo branco](https://aichef.pro/pt/blog/fundo-branco) é o irmão pálido. Os ossos não se torram, o tomate fica de fora, e o sabor fica discreto para um velouté ou uma sopa clara levarem outra coisa. O contraste é a torra.
+O [fundo branco](https://aichef.pro/pt/blog/fundo-branco) é o irmão pálido. Os ossos não se torram, o tomate fica de fora, e o sabor fica discreto para um [velouté](https://aichef.pro/pt/blog/veloute) ou uma sopa clara levarem outra coisa. O contraste é a torra.
 
 ## No passe
 
 Não se bebe fundo escuro numa chávena. Uma concha humedece um estufado em vez de água ou de um caldo salgado de compra, e a gelatina ajuda o molho a ligar enquanto a carne coze. Uma colher do molho reduzido, não do fundo tal como está, acaba um bife grelhado.
 
-O molho espanhol, molho mãe escuro, é fundo escuro ligado com um roux escuro e reduzido. Se a ficha diz molho espanhol, o fundo é o líquido e o roux é outro gesto. Não finja que o fundo já tem o corpo do molho.
+O [molho espanhol](https://aichef.pro/pt/blog/molho-espanhol), molho mãe escuro, é fundo escuro ligado com um [roux](https://aichef.pro/pt/blog/o-que-e-um-roux) escuro e reduzido. Se a ficha diz molho espanhol, o fundo é o líquido e o roux é outro gesto. Não finja que o fundo já tem o corpo do molho.
 
 Molhos de pimenta, de cogumelos, e o jus debaixo de um assado partem daqui e levam natas, manteiga ou vinho no fim. Na caça, veado ou javali, é onde um fundo escuro trabalha mais: leva a nota torrada e amacia o sabor a ferro. Tempere depois da redução, não na panela do fundo.
 

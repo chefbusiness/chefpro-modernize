@@ -2,7 +2,7 @@
 title: "Roux: what it is and how to make it"
 description: "A roux is flour cooked in fat before the liquid goes in. Here is Escoffier's ratio, the three colors, and how much you need for a liter."
 pubDate: 2026-10-22
-modDate: 2026-10-23
+modDate: 2026-11-24
 category: glossary
 tags: ["roux", "sauce"]
 lang: en
@@ -35,7 +35,7 @@ faq:
 faqInBody: true
 ---
 
-A roux is flour cooked in fat, before the liquid of the sauce goes in. The fat cooks the flour and keeps it from lumping. In Le Guide Culinaire (1903), Auguste Escoffier gives 500 g of clarified butter and 600 g of flour, and he calls those the proportions for 1 kilo. With whole butter, which still contains water, equal weights come close to that ratio. The color of the cooking changes the flavor and the thickening power: white for béchamel, blond for velouté, and a light hazelnut for espagnole.
+A roux is flour cooked in fat, before the liquid of the sauce goes in. The fat cooks the flour and keeps it from lumping. In Le Guide Culinaire (1903), Auguste Escoffier gives 500 g of clarified butter and 600 g of flour, and he calls those the proportions for 1 kilo. With whole butter, which still contains water, equal weights come close to that ratio. The color of the cooking changes the flavor and the thickening power: white for béchamel, blond for [velouté](https://aichef.pro/en/blog/what-is-veloute), and a light hazelnut for [espagnole](https://aichef.pro/en/blog/what-is-espagnole).
 
 ## What a roux is
 
@@ -51,9 +51,9 @@ Roux means "reddish" in French, after the color flour takes on as it toasts. In 
 
 The white one cooks for only a few minutes, long enough to take away the raw-flour taste, without taking color. It is the roux for béchamel.
 
-The blond one stops at a light blond. In the 1903 French text he stops it as soon as it has a slightly blond tint. The 1907 English text says to stop as soon as the color begins to change, before any real color shows. In the pan, that is a pale straw color. It is the roux for velouté.
+The blond one stops at a light blond. In the 1903 French text he stops it as soon as it has a slightly blond tint. The 1907 English text says to stop as soon as the color begins to change, before any real color shows. In the pan, that is a pale straw color. It is the roux for [velouté](https://aichef.pro/en/blog/what-is-veloute).
 
-The brown one cooks slowly to a light hazelnut color, with a hazelnut smell, the smell of baked flour. It is the roux for espagnole. It wants clarified butter or a clean fat, because the water and the milk solids in whole butter get in the way of a long, even cooking.
+The brown one cooks slowly to a light hazelnut color, with a hazelnut smell, the smell of baked flour. It is the roux for [espagnole](https://aichef.pro/en/blog/what-is-espagnole). It wants clarified butter or a clean fat, because the water and the milk solids in whole butter get in the way of a long, even cooking.
 
 He gives 500 g of clarified butter, or clean clarified drippings from the pot, and 600 g of flour, and he labels that batch the proportions for 1 kilo. The 1907 English edition rounds the same idea to 8 oz of clarified butter and 9 oz of flour for about 1 lb of roux.
 
@@ -122,7 +122,7 @@ A sauce that still tastes of flour is not fixed with salt or with cream. It need
 
 ## What you use it for
 
-Use it to make béchamel, velouté, and espagnole, and all the sauces built on them. Also to thicken a stew from the start, when you want the flavor of cooked flour. Hollandaise, béarnaise, and mayonnaise contain no roux: they are emulsions of egg yolk with butter (the first two) or with oil (mayonnaise).
+Use it to make béchamel, [velouté](https://aichef.pro/en/blog/what-is-veloute), and [espagnole](https://aichef.pro/en/blog/what-is-espagnole), and all the sauces built on them. Also to thicken a stew from the start, when you want the flavor of cooked flour. Hollandaise, béarnaise, and mayonnaise contain no roux: they are emulsions of egg yolk with butter (the first two) or with oil (mayonnaise).
 
 ## More from the glossary
 

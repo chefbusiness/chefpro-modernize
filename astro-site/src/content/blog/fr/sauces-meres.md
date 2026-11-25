@@ -2,7 +2,7 @@
 title: "Les 5 sauces mères de la cuisine française : le tableau des dérivées, les 3 roux et pourquoi elles étaient 4"
 description: "Découvrez les 5 sauces mères d'Escoffier, leurs dérivées, les 3 types de roux et les conseils de conservation pour les professionnels de la restauration."
 pubDate: 2026-08-18
-modDate: 2026-08-18
+modDate: 2026-11-24
 category: technique-et-recettes
 tags: ["sauces mères", "cuisine française", "technique de cuisine", "sauces"]
 image: /blog-assets/2026/08/sauces-meres-destacada.jpg
@@ -23,7 +23,7 @@ faq:
 
 <p>Entrez dans une cuisine professionnelle un soir de service, et regardez le saucier travailler. Sur son plan de travail, il n'y a pas trente-six casseroles : il y a quelques bases, un roux, un fouet, et une organisation qui semble couler de source. Derrière les centaines de sauces qui composent le répertoire de la cuisine française, il n'existe en réalité que cinq portes d'entrée. Cinq sauces mères, cinq logiques de base, cinq grammaires qui permettent de lire n'importe quelle carte comme on lit un arbre généalogique. Qui les maîtrise ne récite pas des recettes : il comprend des filiations.</p>
 
-<p>Cette généalogie, c'est Auguste Escoffier qui l'a fixée en 1903 dans <em>Le Guide culinaire</em>. Les cinq sauces mères, les voici, nommées une fois pour toutes : l'espagnole, le velouté, la béchamel, la tomate et la hollandaise. Si vous êtes chef, cuisinier ou restaurateur en France, vous avez appris cette liste — mais savez-vous d'où elle vient, pourquoi elle aurait pu n'être que quatre, et surtout comment elle s'incarne concrètement au poste, entre les roux, la tenue au service et la mise en place ? C'est ce que nous allons dérouler, de chef à chef.</p>
+<p>Cette généalogie, c'est Auguste Escoffier qui l'a fixée en 1903 dans <em>Le Guide culinaire</em>. Les cinq sauces mères, les voici, nommées une fois pour toutes : l'<a href="https://aichef.pro/fr/blog/sauce-espagnole">espagnole</a>, le <a href="https://aichef.pro/fr/blog/veloute">velouté</a>, la béchamel, la tomate et la hollandaise. Si vous êtes chef, cuisinier ou restaurateur en France, vous avez appris cette liste — mais savez-vous d'où elle vient, pourquoi elle aurait pu n'être que quatre, et surtout comment elle s'incarne concrètement au poste, entre les roux, la tenue au service et la mise en place ? C'est ce que nous allons dérouler, de chef à chef.</p>
 
 <h2>Ce que sont les sauces mères (la réponse courte)</h2>
 
@@ -65,9 +65,9 @@ faq:
 
 <p><strong>La béchamel</strong> est la plus douce, la plus accessible. À partir d'un roux blanc et de lait, elle donne la Mornay (avec du gruyère et du parmesan), la crème (avec de la crème fraîche), la Soubise (avec des oignons blanchis et réduits). Elle règne sur les gratins, les légumes, les œufs, les croque-monsieur, les lasagnes. C'est la sauce des plats généreux et rassurants, celle qu'on apprend en premier et qu'on n'oublie jamais.</p>
 
-<p><strong>Le velouté</strong> est plus fin, plus technique. Il naît d'un fond blanc de volaille ou de veau, ou d'un fumet de poisson, lié à un roux blond. Ses dérivées sont nombreuses : allemande (jaunes d'œufs et crème), suprême (crème et beurre), Bercy (échalote, vin blanc, glace de poisson), vin blanc. Il accompagne les volailles pochées et les poissons, avec cette texture soyeuse qui caractérise la cuisine classique. C'est la sauce des cuissons douces et des plats délicats.</p>
+<p><strong><a href="https://aichef.pro/fr/blog/veloute">Le velouté</a></strong> est plus fin, plus technique. Il naît d'un fond blanc de volaille ou de veau, ou d'un fumet de poisson, lié à un roux blond. Ses dérivées sont nombreuses : allemande (jaunes d'œufs et crème), suprême (crème et beurre), Bercy (échalote, vin blanc, glace de poisson), vin blanc. Il accompagne les volailles pochées et les poissons, avec cette texture soyeuse qui caractérise la cuisine classique. C'est la sauce des cuissons douces et des plats délicats.</p>
 
-<p><strong>L'espagnole</strong> est la plus puissante, la plus charpentée. Elle est faite d'un fond brun, d'un roux brun, d'une <a href="https://aichef.pro/fr/blog/tailles-de-decoupe">mirepoix</a> et de tomate. Elle est la mère de la demi-glace, cette sauce réduite et brillante qui sert de base à la bordelaise, à la chasseur, au madère, à la Périgueux. Elle est taillée pour les viandes rôties et braisées, pour les plats qui demandent de la profondeur et de la couleur. C'est la sauce des grandes pièces, des soirées d'hiver, des cuissons longues.</p>
+<p><strong><a href="https://aichef.pro/fr/blog/sauce-espagnole">L'espagnole</a></strong> est la plus puissante, la plus charpentée. Elle est faite d'un fond brun, d'un roux brun, d'une <a href="https://aichef.pro/fr/blog/tailles-de-decoupe">mirepoix</a> et de tomate. Elle est la mère de la demi-glace, cette sauce réduite et brillante qui sert de base à la bordelaise, à la chasseur, au madère, à la Périgueux. Elle est taillée pour les viandes rôties et braisées, pour les plats qui demandent de la profondeur et de la couleur. C'est la sauce des grandes pièces, des soirées d'hiver, des cuissons longues.</p>
 
 <p><strong>La tomate</strong> est plus récente dans le canon, mais elle s'est imposée comme une évidence. Elle se fait à partir de tomates et de fond blanc, liée à l'ancienne par un roux ou simplement réduite. Ses dérivées portugaise et provençale sentent le sud, l'huile d'olive, l'ail, les herbes. Elle accompagne les pâtes, les œufs, les viandes blanches, et elle est la base de tant de plats de bistrot qu'on oublie parfois qu'elle est une mère à part entière.</p>
 
