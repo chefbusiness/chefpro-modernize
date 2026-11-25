@@ -1,6 +1,6 @@
 ---
-title: "Food cost: como calcular, o que é um bom valor e por onde se perde dinheiro no seu restaurante"
-description: "Perceba porque o food cost do prato e o do mês nunca coincidem e descubra os cinco buracos por onde o dinheiro foge na sua cozinha."
+title: "Food cost: o que é, como calcular e qual o valor ideal (Excel grátis)"
+description: "O que é o food cost, como se calcula por prato e por mês, porque a percentagem sozinha engana e um modelo de Excel grátis com o exemplo do bacalhau à Brás."
 pubDate: 2026-08-22
 modDate: 2026-11-25
 category: gestao-de-restaurantes
@@ -19,6 +19,8 @@ faq:
     a: "O custo dos ingredientes da dose divide-se pela percentagem de food cost pretendida, expressa em forma decimal. No exemplo, 3,80 € dividido por 0,28 dá um preço de 13,57 € sem IVA. Esse valor é apenas o ponto de partida: arredonda-se para um preço com sentido na ementa e confirma-se se o mercado e o posicionamento da casa o aguentam. O preço nunca sai só de uma divisão."
   - q: "Porque é que o food cost do prato não bate certo com o do fim do mês?"
     a: "Porque são contas diferentes. O food cost do prato é teórico, feito na ficha técnica com os valores que deviam acontecer. A conta do período é real e calcula-se com existências iniciais, mais compras, menos existências finais, sobre as vendas do período. A diferença entre elas mede as quebras, as doses a olho, os preços desatualizados nas fichas, as ofertas, a comida de pessoal e a mercadoria perdida. Essa diferença é o diagnóstico mais valioso para a cozinha."
+  - q: "Há um modelo de Excel para calcular o food cost?"
+    a: "Sim: neste artigo pode descarregar um modelo de Excel gratuito e sem registo, com o exemplo do bacalhau à Brás já preenchido (3,80 € por dose, 28,1 % a 13,50 € sem IVA) e uma folha em branco com 15 linhas que calcula o custo por dose, o preço sem e com IVA e o food cost real."
 ---
 
 <p>Ao sábado à noite, o prato que mais sai da sua cozinha é o mesmo que, no fecho do mês, menos dinheiro deixa na caixa. Toda a gente o elogia, os clientes pedem-no sempre, e ainda assim as contas não fecham — e ninguém percebe porquê.</p>
@@ -54,6 +56,8 @@ faq:
 </table>
 
 <p>Vendido a 13,50 euros sem IVA, este prato tem um food cost de 28,1 por cento e deixa uma margem bruta de 9,70 euros por dose. É uma conta limpa, que mostra exatamente quanto o prato contribui para pagar as despesas fixas e, depois, para o lucro. Mas é uma conta teórica — não inclui o que acontece quando o cozinheiro deita fora um resto de cebola, quando uma dose cai ao chão ou quando um cliente devolve o prato.</p>
+
+<p>O exemplo do bacalhau à Brás está no <a href="https://aichef.pro/descargas/calculo-food-cost-excel-gratis-aichef.xlsx">modelo de Excel para calcular o food cost</a>, gratuito e sem registo: a tabela deste artigo já preenchida (3,80 € por dose, 28,1 % a 13,50 € sem IVA, 9,70 € de margem), uma folha em branco com 15 linhas para a quantidade limpa, o rendimento e o preço da fatura sem IVA, e a conta do quilo limpo (10,00 €/kg com 800 g limpos dão 12,50 €/kg). Para um prato só, a <a href="https://aichef.pro/pt/calculadora-food-cost-restaurante">calculadora de food cost</a> faz a mesma conta no browser.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/foodcost-pt-balanca.jpg" alt="Balança digital de cozinha sobre bancada de inox com uma taça de bacalhau desfiado no prato e o mostrador a marcar 120 g, com batata palha e dois ovos ao lado" width="1376" height="768" loading="lazy" decoding="async" />
