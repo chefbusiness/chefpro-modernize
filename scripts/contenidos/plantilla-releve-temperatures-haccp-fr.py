@@ -48,7 +48,7 @@ rouge = PatternFill('solid', fgColor='F8CBAD')
 gris = PatternFill('solid', fgColor=GRIS)
 NB = '\u00a0'
 F_TEMP = '+0.0;-0.0;0.0'
-F_LIM = '+0;-0;0'
+F_LIM = '+0.0;-0.0;0'
 F_HEURE = 'hh:mm'
 F_DUREE = '[h]" h "mm'
 F_DATE = 'dd/mm/yyyy'
@@ -61,7 +61,7 @@ ENCEINTES = [
     ('Congélateur', -18,
      'Glaces, viandes hachées et produits de la pêche congelés : −18 °C (autres denrées congelées : −12 °C)'),
 ]
-OBJECTIF_REFROIDISSEMENT = 10
+OBJECTIF_REFROIDISSEMENT = 6
 N_LIGNES = 20
 
 
@@ -281,7 +281,7 @@ def feuille_refroidissement(wb):
     en_tete_feuille(ws, 'Relevé de refroidissement rapide (HACCP)',
                     'Remplissez les cellules jaunes (heures au format hh:mm). La durée et la colonne « Conforme ? » '
                     'se calculent seules.', 10)
-    cel(ws, 4, 1, 'Objectif de température à cœur en fin de refroidissement (°C)', gras=True)
+    cel(ws, 4, 1, 'Objectif à cœur en fin de refroidissement (°C) — restaurant : +6 °C (GBPH) ; collectivité : +10 °C (annexe IV)', gras=True)
     fusion(ws, 4, 1, 5)
     cel(ws, 4, 6, OBJECTIF_REFROIDISSEMENT, F_LIM, entree=True, gras=True, centre=True)
     validation_temp(ws, 'F4', -10, 30)
@@ -314,6 +314,7 @@ def feuille_refroidissement(wb):
     ws.conditional_formatting.add(f'H{q1}:H{qn}', CellIsRule(operator='equal', formula=['"NON"'], fill=rouge,
                                                              font=Font(bold=True)))
     ws.conditional_formatting.add(f'F{q1}:F{qn}', FormulaRule(formula=[f'AND(F{q1}<>"",F{q1}>$F$4)'], fill=rouge))
+    ws.conditional_formatting.add(f'D{q1}:D{qn}', FormulaRule(formula=[f'AND(D{q1}<>"",D{q1}<63)'], fill=rouge))
     ws.conditional_formatting.add(f'G{q1}:G{qn}', FormulaRule(formula=[f'AND(ISNUMBER(G{q1}),G{q1}*1440>120.5)'],
                                                               fill=rouge))
     fn = notes(ws, qn + 2, ['« Conforme ? » : durée de 2 h au plus et température à cœur finale inférieure ou égale à '
@@ -465,7 +466,7 @@ def pdf_imprimable():
 
     el += [bandeau('Refroidissement rapide et remise en température'), Paragraph(t('Refroidissement rapide'), s_h),
            Paragraph(t('Départ : au moins +63 °C à cœur. Objectif en fin de refroidissement : ……… °C à cœur en 2 h '
-                       'maximum (par défaut +10 °C ; voir les repères ci-dessous). Colonne « Conforme ? » : oui ou non.'), s_txt),
+                       'maximum (restaurant : moins de +6 °C, référence du GBPH ; collectivité : +10 °C). Colonne « Conforme ? » : oui ou non.'), s_txt),
            Spacer(1, 3),
            grille_saisie(['Date', 'Préparation', 'Heure début', 'T° à cœur début', 'Heure fin', 'T° à cœur fin',
                           'Durée', 'Conforme ?', 'Action corrective', 'Visa'],
@@ -538,11 +539,11 @@ def gate_logique(p1, q1_ref, q1_rem):
             (E, p1 + 6, {3: hm(18, 0), 4: 2.5, 5: 4.5, 6: -19}, 'NON', 'une seule enceinte hors limite (réfrigérateur 4,5)'),
             (E, p1 + 7, {3: hm(9, 0), 8: 'texte seul', 9: 'MG'}, None, 'heure + action + visa, sans lecture → vide'),
             (E, p1 + 8, {}, None, 'ligne vide → vide'),
-            (R, q1_ref + 0, {3: hm(12, 0), 4: 65, 5: hm(13, 40), 6: 9}, 'Oui', '1 h 40, de 65 °C à 9 °C, objectif 10'),
-            (R, q1_ref + 1, {3: hm(12, 0), 4: 65, 5: hm(14, 10), 6: 9}, 'NON', '2 h 10, de 65 °C à 9 °C'),
-            (R, q1_ref + 2, {3: hm(12, 0), 4: 65, 5: hm(14, 0), 6: 10}, 'Oui', '2 h 00 pile à 10 °C (bornes incluses)'),
-            (R, q1_ref + 3, {3: hm(12, 0), 4: 65, 5: hm(13, 30), 6: 11}, 'NON', '1 h 30 mais 11 °C > objectif 10'),
-            (R, q1_ref + 4, {3: hm(23, 30), 4: 70, 5: hm(1, 0), 6: 8}, 'Oui', '23:30 → 01:00 (minuit), 8 °C'),
+            (R, q1_ref + 0, {3: hm(12, 0), 4: 65, 5: hm(13, 40), 6: 5}, 'Oui', '1 h 40, de 65 °C à 5 °C, objectif 6'),
+            (R, q1_ref + 1, {3: hm(12, 0), 4: 65, 5: hm(14, 10), 6: 5}, 'NON', '2 h 10, de 65 °C à 5 °C'),
+            (R, q1_ref + 2, {3: hm(12, 0), 4: 65, 5: hm(14, 0), 6: 6}, 'Oui', '2 h 00 pile à 6 °C (bornes incluses)'),
+            (R, q1_ref + 3, {3: hm(12, 0), 4: 65, 5: hm(13, 30), 6: 9}, 'NON', '1 h 30 mais 9 °C > objectif 6 (conforme en collectivité à +10)'),
+            (R, q1_ref + 4, {3: hm(23, 30), 4: 70, 5: hm(1, 0), 6: 4}, 'Oui', '23:30 → 01:00 (minuit), 4 °C'),
             (R, q1_ref + 5, {2: 'Blanquette', 3: hm(12, 0), 4: 65}, None, 'sans heure ni T° de fin → vide'),
             (R, q1_ref + 6, {}, None, 'ligne vide → vide'),
             (M, q1_rem + 0, {3: hm(12, 0), 4: hm(12, 45), 5: 66}, 'Oui', '45 min, 66 °C à cœur'),
