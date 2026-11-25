@@ -234,6 +234,9 @@ def foglio_scandaglio(wb, nome, esempio):
     nota(ws, R_NOTA_CALO, f'Se nella colonna «Quantità lorda» compare «{CALO_KO}», correggi il calo: costo, food cost '
                           'e margine restano in errore finché non lo fai.', 6, altezza=30)
     ws.conditional_formatting.add(
+        f'E{R_ING1}:E{R_INGN}',
+        FormulaRule(formula=[f'AND($B{R_ING1}<>"",$E{R_ING1}="")'], fill=errore_fill))
+    ws.conditional_formatting.add(
         f'D{R_ING1}:F{R_INGN}',
         FormulaRule(formula=[f'OR(ISERROR($F{R_ING1}),AND($D{R_ING1}<>"",NOT(ISNUMBER($D{R_ING1}))))'],
                     fill=errore_fill, font=Font(bold=True, color='9C1C1C')))
@@ -286,15 +289,17 @@ def foglio_pasta(wb):
     dv.add(cella(ws, f, 3, 1.20, '#,##0.00 "€/kg"', inp=True).coordinate)
     cella(ws, f, 4, f'=IF(B{f}="","",B{f})', GR, grigio=True)
     cella(ws, f, 5, f'=IF(OR(B{f}="",C{f}=""),"",ROUND(B{f}/1000*C{f},2))', EUR, grigio=True)
-    cella(ws, u, 1, 'Uova', grassetto=True)
-    dv.add(cella(ws, u, 2, 10, '0 "uova"', inp=True).coordinate)
+    cella(ws, u, 1, 'Uova (numero)', grassetto=True)
+    dv.add(cella(ws, u, 2, 10, '0', inp=True).coordinate)
     dv.add(cella(ws, u, 3, 0.30, '#,##0.00 "€ l\'uno"', inp=True).coordinate)
-    dv.add(cella(ws, u, 4, 600, GR, inp=True).coordinate)
+    cella(ws, u, 4, f'=IF(OR(B{u}="",B8=""),"",B{u}*B8)', GR, grigio=True)
     cella(ws, u, 5, f'=IF(OR(B{u}="",C{u}=""),"",ROUND(B{u}*C{u},2))', EUR, grigio=True)
     for r in (f, u):
         ws.row_dimensions[r].height = 20
-    nota(ws, 8, f'Peso delle uova indicativo (circa 600{NB}g per 10 uova): se vuoi più precisione, pesale e scrivi il '
-                'peso reale.', 5, altezza=30)
+    cella(ws, 8, 1, 'Peso di un uovo senza guscio (g)', grassetto=True)
+    dv.add(cella(ws, 8, 2, 60, GR, inp=True).coordinate)
+    nota(ws, 8, f'Indicativo: circa 60{NB}g per un uovo grande senza guscio; con uova medie conta 50-55{NB}g. '
+                'Pesale sgusciate e scrivi il peso reale.', 5, altezza=30, col=3)
 
     barra(ws, 10, 'Costo della pasta fresca fatta in casa', 5)
     acq = f'B{P_ACQ_PREZZO}'
