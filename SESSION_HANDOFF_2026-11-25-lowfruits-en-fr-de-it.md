@@ -1,4 +1,4 @@
-# Handoff 25 nov 2026 — LowFruits EN, FR, DE e IT (sesión Claude Code, Mac)
+# Handoff 25 nov 2026 — LowFruits EN, FR, DE, IT, NL y PT (sesión Claude Code, Mac)
 
 > Sesión Claude Code en el Mac. Retoma la sesión nocturna que se cortó a las 02:20 (el Mac se apagó sin batería):
 > se recuperó desde el transcript `e21f2d81…jsonl`. Las correcciones de la auditoría de #256 estaban en disco sin commit.
@@ -26,7 +26,13 @@
 | #269 | DE | Alérgenos, HACCP y LMHV contra la normativa alemana (código A–R austriaco, 60 °C BfR, LMIDV § 4 Abs. 4, IfSG § 43) |
 | #270 | IT | Glosarios menu degustazione (1.300/mes) y abbinamento cibo-vino (1.180/mes); IVA somministrazione 10 % vino incluido |
 
-**Abierto al escribir esto:** #271 (DE plantillas Allergenliste A–R + HACCP-Vorlagen), con la auditoría aplicándose.
+| #271 | DE | Plantillas Allergenliste (A–R) y HACCP-Vorlagen |
+| #272, #273, #274 | IT | Alérgenos/HACCP/temperaturas contra la normativa (DPR 327/80 con salvaguardia; 853 sí aplica al pescado en el restaurante: hielo y anti-Anisakis) · calcolo food cost (calculadora, artículo y Excel) · tabella allergeni 1-14 (Excel + PDF) |
+| #275, #276 | NL | Glosarios wijn-spijscombinatie y foodpairing · receptuur + Excel (btw 9 %) |
+| #277 | PT | Glosarios menu de degustação, harmonização de vinhos y food pairing (IVA 13 %/23 %) |
+| #278 | — | Skill `blog-aichef`: gotchas de duplicar posts a otros idiomas |
+
+**Abiertos al cerrar (sesión Claude Code, tarde del 25-nov), con auditoría adversarial en curso:** #279 (PT HACCP/temperaturas/alérgenos contra la normativa portuguesa) · #280 (PT Excel de food cost y ficha técnica con los ejemplos de los posts) · #281 (NL hygiënecode/HACCP/alérgenos contra la normativa + HACCP-lijsten Excel/PDF). Criterio: aplicar la auditoría, preview verde del último commit, `gh pr merge --squash`.
 
 ## 3. Normativa verificada (en memoria, con fuentes)
 
@@ -38,15 +44,17 @@
 
 ## 4. Pendiente
 
-- **IT:** alérgenos (los posts `lista-allergeni-alimentari` y `etichettatura-allergeni` tienen cientos de impresiones en
-  pos. 20-40), calcolo food cost (la calculadora IT existe: retitular), manuale HACCP, gestionale ristorante (590).
-- **NL** y **PT** (PT-PT y PT-BR): sin empezar.
+- **Fusionar #279, #280 y #281** tras sus auditorías (ver arriba).
+- **PT:** registo de temperaturas PT (duplicar `plantilla-haccp-lijsten-nl.py` con los valores AHRESP 2015: 0-7 °C, ≥ 65 °C, registro 1×día; ley solo −18 °C) enlazado desde `pt/haccp` y `pt/controlo-de-temperaturas`; comparativo «software restauração» (70 + 70 + 20); **PT-BR**: `/pt/` es pt-PT; las keywords BR (CMV 880, sistema para restaurante gratuito 260, harmonização de vinhos 320, planilha CMV 90) piden decidir si se abre locale BR → **decisión de John** (modo plan).
+- **IT:** manuale HACCP semplificato y gestionale ristorante (590): sin empezar.
+- **NL:** horeca software (70 + 70), AI recepten generator, menukaart met AI: sin empezar.
 - **Deuda anotada, fuera de LowFruits:** breadcrumb del JSON-LD de las calculadoras con el hub en español en todos los
-  idiomas (`marketing-heads/calculadora-food-cost.ts:46`; patrón del generador Fase 6) · breadcrumb `/de/de/` en
-  landings DE (conocido) · «27 Weltküchen» sin verificar en `landingRecetas` · FAQ duplicadas DE preexistentes
-  (Kreuzkontamination, Mise en Place) · landing EN de costes con cifras de capa comercial · «14 allergens» en
-  `use-cases-content.en.ts`.
-- **GSC:** medir en 2-3 semanas las páginas retituladas (raciones DE, calculadoras, landings).
+  idiomas (`marketing-heads/calculadora-food-cost.ts:46`) · breadcrumb `/de/de/` en landings DE · «27 Weltküchen» sin
+  verificar en `landingRecetas` · FAQ duplicadas DE preexistentes (Kreuzkontamination, Mise en Place) · landing EN de
+  costes con cifras de capa comercial · «14 allergens» en `use-cases-content.en.ts` · formatos de duración `[h] u mm` de
+  las plantillas DE y FR se ven mal en la vista previa de Mac/iPhone (el NL ya usa `[h]:mm`) · `fase8d-faq-duplicadas.py`
+  no admite `--lang nl` · tarjetas de producto EN poco afines en posts de vino NL (Ice Cream Shop, Bakery Plan).
+- **GSC:** medir en 2-3 semanas las páginas retituladas (raciones DE, calculadoras, landings, IT/NL/PT de hoy).
 
 ## 5. Gotchas nuevos
 
@@ -57,3 +65,13 @@
   la confusión abbinare/marinare): comparar cifras y enlaces por script y leer las secciones delicadas.
 - La SERP de «KI Restaurant» (DE) es de un restaurante llamado «Ki»: LowFruits no distingue intención navegacional.
 - `mediaanalysisd` (análisis de Fotos de macOS) sube la CPU al 80 % tras un reinicio: no lanzar más de un agente entonces.
+- **Tarde del 25-nov (IT/NL/PT):** el detalle de lo que cazan las auditorías al duplicar posts está ya en la skill
+  `blog-aichef` (§ «Duplicar un post ES a otro idioma»): aside pegado al `##` (H2 en texto plano), asides y huérfanas,
+  nombres de agentes localizados, recursos que no existen en el idioma, FAQ que solo valen en español, calcos de DeepSeek
+  («escandilhar», «criterium»), IVA por país, pycel sin caché.
+- **Reg. 2021/382, anexo II cap. IX punto 9** = equipos, vehículos y recipientes usados para **transformar, manipular,
+  transportar o almacenar** un alérgeno: no se usan con alimentos sin él salvo limpieza y control (al menos, sin restos
+  visibles). La freidora y la tabla SÍ entran. Lo de «recolección, transporte y almacenaje» es el anexo I (producción
+  primaria). Un agente lo confundió y se corrigió en #279/#281.
+- Normativa verificada nueva en memoria: NL (`reference_normativa-neerlandesa-hygienecode-allergenen`) y PT
+  (`reference_normativa-portuguesa-haccp-alergenios`); la IT se matizó (DPR 327/80 con salvaguardia, pescado y Anisakis).
