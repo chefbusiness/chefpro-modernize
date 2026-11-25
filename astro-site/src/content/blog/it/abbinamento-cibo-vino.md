@@ -8,6 +8,7 @@ tags: ["abbinamento cibo-vino", "vino", "sommelier"]
 translations:
   es: "que-es-el-maridaje"
   fr: "accord-mets-vins"
+  nl: "wijn-spijscombinatie"
 lang: it
 image: /blog-assets/2026/11/maridaje-destacada.jpg
 imageAlt: "Un sommelier versa vino bianco a una tavola con ostriche sul ghiaccio e un piatto di prosciutto iberico"
