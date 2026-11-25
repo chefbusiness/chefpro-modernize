@@ -1,5 +1,5 @@
 ---
-title: "Hygiënecode horeca: wat verplicht is, en gratis HACCP-lijsten"
+title: "Hygiënecode horeca: wat verplicht is + gratis HACCP-lijsten"
 description: "Wat de Hygiënecode voor de Horeca is, wat de wet echt eist (7 °C, 60 °C, −18 °C), wat verandert met de code van 2026, en gratis HACCP-lijsten."
 pubDate: 2026-11-04
 modDate: 2026-11-25
@@ -37,7 +37,7 @@ howto:
     - name: "Leg het plan waar de brigade het kan lezen"
       text: "KHN vraagt dat u en uw medewerkers de code kunnen raadplegen. Een exemplaar op kantoor dat de keuken niet kent, telt niet als werkwijze."
     - name: "Instrueer het team"
-      text: "Een wettelijk diploma voedselhygiëne bestaat niet. Verordening (EG) nr. 852/2004, bijlage II, hoofdstuk XII, eist wel dat medewerkers passend zijn opgeleid en dat wie het HACCP-plan beheert de nodige opleiding in HACCP heeft. Sociale Hygiëne hoort bij de Alcoholwet, niet bij voedselveiligheid."
+      text: "Een wettelijk diploma voedselhygiëne bestaat niet. Verordening (EG) nr. 852/2004, bijlage II, hoofdstuk XII, eist wel dat medewerkers onder toezicht staan en geïnstrueerd en/of opgeleid zijn in voedselhygiëne, passend bij hun werk, en dat wie het HACCP-plan beheert de nodige opleiding in HACCP heeft. Sociale Hygiëne hoort bij de Alcoholwet, niet bij voedselveiligheid."
     - name: "Houd de registraties bij die bij uw processen horen"
       text: "De wet schrijft geen dagelijkse lijst voor: registraties passen bij de aard en omvang van uw zaak. De code van 2026 vraagt koelingen altijd te meten, koken, terugkoelen en regenereren elke week te meten en vast te leggen, en de thermometer jaarlijks te controleren. Volgens KHN bewaart u registraties minimaal zes maanden."
     - name: "Vergelijk vóór 1 april 2027 de nieuwe code met de huidige werkwijze"
@@ -74,7 +74,7 @@ De regels over veilig en hygiënisch werken noemt de NVWA op haar pagina over [h
 
 KHN beantwoordt de vraag [of u het Hygiënecodeboek wettelijk moet aanschaffen](https://khn.nl/veelgestelde-vragen/ben-ik-wettelijk-verplicht-om-het-hygienecodeboek-voor-de-horeca-aan-te-schaffen). Het antwoord op die pagina, bijgewerkt op 13 november 2026: er is geen wettelijke plicht om het boek te kopen. U bent wel verplicht te werken volgens HACCP. Werkt u volgens de hygiënecode, dan voldoet u daarmee aan de wettelijke voorschriften van voedselveiligheid. Tot en met 31 maart 2027 mag dat nog de Hygiënecode voor de Horeca 2016 zijn.
 
-Ook een wettelijk diploma voedselhygiëne bestaat niet. Wat de wet wel vraagt, staat in Verordening (EG) nr. 852/2004, bijlage II, hoofdstuk XII: medewerkers die met voedsel werken, zijn passend opgeleid, en wie het HACCP-plan beheert, heeft de nodige opleiding in HACCP. Hoe u dat invult, met een cursus of met een instructie in de eigen keuken aan de hand van de werkinstructies uit de code, schrijft de wet niet voor. Het diploma Sociale Hygiëne is iets anders: dat hoort bij de Alcoholwet en gaat over alcohol, niet over voedselveiligheid.
+Ook een wettelijk diploma voedselhygiëne bestaat niet. Wat de wet wel vraagt, staat in Verordening (EG) nr. 852/2004, bijlage II, hoofdstuk XII: medewerkers die met voedsel werken, staan onder toezicht en zijn geïnstrueerd en/of opgeleid in voedselhygiëne, passend bij hun werk, en wie het HACCP-plan beheert, heeft de nodige opleiding in HACCP. Hoe u dat invult, met een cursus of met een instructie in de eigen keuken aan de hand van de werkinstructies uit de code, schrijft de wet niet voor. Het diploma Sociale Hygiëne is iets anders: dat hoort bij de Alcoholwet en gaat over alcohol, niet over voedselveiligheid.
 
 Wat wel blijft, ook zonder aankoopplicht voor het papier: de code of het plan moet te raadplegen zijn door de mensen die ermee werken. Een pdf die niemand kan vinden, is hetzelfde gat als een boek op een afgesloten kantoor.
 
@@ -95,13 +95,13 @@ Een hygiënecode is geen wet, maar een paar temperaturen zijn dat wel. De tabel 
 
 Hoe vaak u meet en wat u opschrijft, staat verderop bij de nieuwe code.
 
-<p>Wilt u meteen beginnen met registreren? Download de gratis <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.xlsx">HACCP-lijsten in Excel</a> (of de <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.pdf">pdf om af te drukken</a>): koelingen en vriezers per week, kritische punten (koken, terugkoelen, regenereren, warmhouden), ontvangst en de jaarlijkse controle van de thermometer, met de wettelijke grenzen en de normen van de hygiënecode 2026 erbij en een ingevuld voorbeeld met één afwijking. Het is een hulpmiddel, geen officieel formulier van de NVWA of KHN.</p>
+<p>Wilt u meteen beginnen met registreren? Download de gratis <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.xlsx">HACCP-lijsten in Excel</a> (of de <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.pdf">pdf om af te drukken</a>): koelingen en vriezers per week, kritische punten (koken, terugkoelen, regenereren) en warmhouden, ontvangst en de jaarlijkse controle van de thermometer, met de wettelijke grenzen en de normen van de hygiënecode 2026 erbij en een ingevuld voorbeeld met één afwijking. Het is een hulpmiddel, geen officieel formulier van de NVWA of KHN.</p>
 
 ## Wat de NVWA bij een inspectie vraagt
 
 Op de pagina over [toezicht in horeca, retail en ambacht](https://www.nvwa.nl/onderwerpen/voedselveiligheid/voedselveilig-werken-in-horeca-ambacht-en-retail/inspecties) vraagt de inspecteur naar de hygiënecode of een ander goedgekeurd voedselveiligheidsplan. Dat plan beschrijft wat belangrijk is voor het veilig ontvangen, bereiden, produceren, verpakken, opslaan en vervoeren van levensmiddelen. Naast hygiëne staan er ook regels in over onder meer allergenen en plaagdieren. Werken volgens een hygiënecode of een goedgekeurd plan is verplicht, schrijft die pagina.
 
-Daarna kijkt de inspecteur naar de keuken: of die schoon is, of plafonds, wanden en vloeren goed schoon te maken zijn, of er gaten en kieren zijn waar plaagdieren binnenkomen, of u materiaal hebt om schoon te houden, en of eten op een veilige manier wordt bewaard. Een inspectie wordt niet aangekondigd. De inspecteur meet de temperatuur van koelingen en bain-marie, wil een digitale insteekthermometer zien en kijkt of gekoelde producten een sticker met datum hebben. De rondgang is van de inspecteur. Uw blad is het plan.
+Daarna kijkt de inspecteur naar de keuken: of die schoon is, of plafonds, wanden en vloeren goed schoon te maken zijn, of er gaten en kieren zijn waar plaagdieren binnenkomen, of u materiaal hebt om schoon te houden, en of eten op een veilige manier wordt bewaard. Een inspectie wordt niet aangekondigd. De inspecteur meet de temperatuur van koelingen en bain-marie, wil een digitale kernthermometer zien en kijkt of gekoelde producten een sticker met datum hebben. De rondgang is van de inspecteur. Uw blad is het plan.
 
 | Wat het plan dekt | Waar u het vandaan haalt |
 | --- | --- |
@@ -121,7 +121,7 @@ Wat een overtreding kost, staat in het Warenwetbesluit bestuurlijke boeten. Het 
 | Allergeneninformatie bij niet-voorverpakt voedsel | € 525 | € 1.050 |
 | Schoonmaak en onderhoud, ongediertebestrijding | € 1.050 | € 2.100 |
 
-In de horeca krijgt u bij dezelfde middelzware overtreding eerst twee waarschuwingen; daarna volgt de boete. Dat het geen papieren risico is, bleek in de zomer van 2026: bij 61 van de 154 horecazaken die de NVWA controleerde, klopte de allergeneninformatie niet. Dat is 40 procent.
+In de horeca krijgt u bij dezelfde middelzware overtreding eerst twee waarschuwingen; daarna volgt de boete (interventiebeleid NVWA); bij een ernstige overtreding volgt de boete meteen. Dat het geen papieren risico is, blijkt uit de cijfers: bij 40 procent van de 154 zomerse horecalocaties (strand, camping, recreatieplas) die de NVWA in juli en augustus 2026 controleerde, werden allergenen niet of niet juist vermeld.
 
 ## De nieuwe hygiënecode van 9 november 2026
 
@@ -142,9 +142,9 @@ Tot en met 31 maart 2027 mag u met de code van 2016 werken. Gebruik die tijd om 
 
 ## Allergenen horen op een ander blad
 
-De hygiënecode van 2026 heeft een eigen onderdeel allergenenbeheer. Dit artikel somt de 14 niet op. De genummerde lijst, en waar elk allergeen in een saus of een paneermeel verstopt zit, staat in [de 14 allergenen](https://aichef.pro/nl/blog/14-allergenen). Het blad dat u aan de gerechten van vandaag koppelt, staat in [de allergenenlijst](https://aichef.pro/nl/blog/allergenenlijst). Wat er op het bord komt terwijl het niet in het recept staat, via plank, frituur of tang, staat in [kruisbesmetting](https://aichef.pro/nl/blog/kruisbesmetting).
+Volgens KHN besteedt de code van 2026 apart aandacht aan allergenenbeheer en PAL. Dit artikel somt de 14 niet op. De genummerde lijst, en waar elk allergeen in een saus of een paneermeel verstopt zit, staat in [de 14 allergenen](https://aichef.pro/nl/blog/14-allergenen). Het blad dat u aan de gerechten van vandaag koppelt, staat in [de allergenenlijst](https://aichef.pro/nl/blog/allergenenlijst). Wat er op het bord komt terwijl het niet in het recept staat, via plank, frituur of tang, staat in [kruisbesmetting](https://aichef.pro/nl/blog/kruisbesmetting).
 
-Juridisch gaat het om twee verschillende regels. Kruisbesmetting met allergenen voorkomen is hygiëne en hoort in uw voedselveiligheidsplan; Verordening (EG) nr. 852/2004 (bijlage II, hoofdstuk IX, punt 9) eist bijvoorbeeld dat materiaal en bakken waarin een allergeen is bewaard of vervoerd, eerst worden schoongemaakt en gecontroleerd op zichtbare resten voordat er voedsel zonder dat allergeen in gaat. De informatie aan de gast staat in de Warenwetregeling allergeneninformatie niet-voorverpakte levensmiddelen. Het plan dekt de werkwijze, het allergenenblad dekt de informatie aan de gast, en de scheiding op de pass dekt wat het recept niet noemt. Een «kan bevatten» onderaan de kaart vervangt geen van de drie. De Nederlandse beleidsregel daarover staat in het artikel over kruisbesmetting. Dit artikel herhaalt die regel niet.
+Juridisch gaat het om twee verschillende regels. Kruisbesmetting met allergenen voorkomen is hygiëne en hoort in uw voedselveiligheidsplan; Verordening (EG) nr. 852/2004 (bijlage II, hoofdstuk IX, punt 9) eist bijvoorbeeld dat apparatuur en bakken waarmee een allergeen is verwerkt, gehanteerd, vervoerd of bewaard, zoals plank, tang of kom, eerst worden schoongemaakt en ten minste gecontroleerd op zichtbare resten voordat ze worden gebruikt voor voedsel zonder dat allergeen. De informatie aan de gast staat in de Warenwetregeling allergeneninformatie niet-voorverpakte levensmiddelen. Het plan dekt de werkwijze, het allergenenblad dekt de informatie aan de gast, en de scheiding op de pass dekt wat het recept niet noemt. Een «kan bevatten» onderaan de kaart vervangt geen van de drie. De Nederlandse beleidsregel daarover staat in het artikel over kruisbesmetting. Dit artikel herhaalt die regel niet.
 
 ## Vlaanderen
 

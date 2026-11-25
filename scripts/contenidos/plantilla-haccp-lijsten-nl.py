@@ -7,9 +7,14 @@ pestaña seleccionada, A4), ADAPTADO a la Hygiënecode voor de Horeca 2026 de KH
 SOLO para saber qué se registra y con qué norma; ni su maquetación ni sus textos se copian. Solo valores dados:
   - «Koelingen en vriezers»: 6 apparaten editables (4 koelingen ≤ 7 °C, 2 vriezers ≤ −18 °C, ley) y 5 semanas: display
     Ma–Zo + meting semanal con thermometer gekalibreerd; «In orde?» = MAX de la fila ≤ norm de la fila.
-  - «Kritische punten»: koken ≥ 75 °C; terugkoelen ≥ 75 → ≤ 7 °C en ≤ 5 uur con tijd/temp start, na 2 uur
-    (richtwaarde ≤ 20 °C: si solo falla eso, «Let op» y no «NEE») y eind; regenereren ≥ 60 °C en ≤ 60 min;
-    warmhouden ≥ 60 °C. Normas en celdas amarillas; duración con MOD(…;1) (medianoche).
+  - «Kritische punten»: los CCP de la code 2026 son koken ≥ 75 °C, terugkoelen ≥ 75 → ≤ 7 °C en ≤ 5 uur con
+    tijd/temp start (obligatoria), na 2 uur (richtwaarde ≤ 20 °C: si solo falla eso, «Let op» y no «NEE»; F en ámbar,
+    rojo solo con «NEE») y eind, y regenereren ≥ 60 °C en ≤ 60 min; warmhouden ≥ 60 °C (ley) NO es CCP: se mide cada
+    semana y se apunta (recomendado; obligatorio con afwijking). Normas en celdas amarillas; duración con MOD(…;1)
+    (medianoche). Fuentes: 75 °C de inicio, 60 minuten y 75 °C para todo = solo la code 2026 (formularios KHN); la
+    NVWA solo aconseja kip en gehakt ≥ 75 °C, afkoelen binnen 5 uur onder 7 °C y opwarmen ≥ 60 °C.
+  - «In orde?» = "" si falta un dato necesario o si hay TEXTO en una celda numérica (dato o norma): «abc» >= 75 es
+    VERDADERO en Excel y daba «Ja». Gate con texto en cada bloque, también en «Voorbeeld».
   - «Ontvangst»: solo desviaciones; gekoeld max. 7 °C, rauw gevogelte max. 4 °C, diepvries −15 °C of kouder.
   - «Thermometer»: control anual, afwijking max. ±1,0 °C (bijv. smeltend ijs 0 °C).
   - «Voorbeeld»: semana 48 (23–29 nov 2026) rellenada; UNA afwijking (koelwerkbank wo 9,0 °C) con su maatregel.
@@ -20,7 +25,8 @@ Keywords NL (LowFruits, nov-2026): «hygiënecode horeca» 260, «haccp horeca l
 
 Uso:  python3 scripts/contenidos/plantilla-haccp-lijsten-nl.py
 Sale: astro-site/public/descargas/haccp-lijsten-horeca-aichef.xlsx  (5 hojas; las 4 plantillas sin valores de prueba)
-      astro-site/public/descargas/haccp-lijsten-horeca-aichef.pdf   (A4, 2 páginas, a mano)
+      astro-site/public/descargas/haccp-lijsten-horeca-aichef.pdf   (A4, 4 páginas, a mano: koelingen, kritische punten,
+      ontvangst, thermometer, como las 4 plantillas del Excel)
 Después:
   python3 scripts/productos-digitales/parche_xml_xlsx.py --check astro-site/public/descargas/haccp-lijsten-horeca-aichef.xlsx
 `/descargas/*` está en noindex (netlify.toml). Sesión Claude Code, 25-nov-2026.
@@ -71,8 +77,11 @@ F_DATUM = 'dd-mm-yyyy'
 NOTA_WET = ('Wettelijke grenzen: gekoeld ten hoogste 7 °C (art. 15 Warenwetbesluit Bereiding en behandeling van '
             'levensmiddelen; voorverpakt: de temperatuur van de fabrikant), warmhouden ten minste 60 °C (art. 15 lid 2), '
             'diepgevroren ten hoogste −18 °C (Warenwetregeling Diepgevroren levensmiddelen).')
-NOTA_CODE = ('Koken ≥ 75 °C, terugkoelen binnen 5 uur naar ≤ 7 °C en regenereren binnen 60 minuten tot ≥ 60 °C zijn '
-             'normen uit de Hygiënecode voor de Horeca 2026 en advies van de NVWA, geen wetsartikelen.')
+NOTA_CODE = ('Koken ≥ 75 °C, terugkoelen van ≥ 75 °C naar ≤ 7 °C binnen 5 uur en regenereren binnen 60 minuten tot '
+             '≥ 60 °C zijn normen uit de nieuwe Hygiënecode Horeca (2026), zoals op de formulieren van KHN; geen '
+             'wetsartikelen. De NVWA adviseert kip en gehakt tot ≥ 75 °C te verhitten, binnen 5 uur af te koelen tot '
+             'onder 7 °C en op te warmen tot ≥ 60 °C.')
+NOTA_WARM = 'Warmhouden: elke week meten; vastleggen wordt aanbevolen en is verplicht bij een afwijking.'
 NOTA_REGISTRATIE = ('De wet schrijft geen dagelijkse lijst voor: registreer wat uw hygiënecode of HACCP-plan vraagt. In de '
                     'hygiënecode 2026 is meten van koelingen verplicht en registreren verplicht bij een afwijking; '
                     'kritische punten meet en registreert u wekelijks.')
@@ -82,7 +91,10 @@ NOTA_2016 = ('De Hygiënecode voor de Horeca 2016 mag u gebruiken tot en met 31 
 NOTA_HULP = 'Dit is een hulpmiddel, geen officieel formulier van de NVWA of KHN.'
 NOTA_ONTVANGST = ('Meten bij ontvangst blijft verplicht; vastleggen hoeft alleen bij een afwijking, samen met de actie '
                   '(Hygiënecode voor de Horeca 2026).')
-BRON_CODE = 'Hygiënecode voor de Horeca 2026 en advies van de NVWA'
+BRON_CODE = 'Hygiënecode voor de Horeca 2026 en advies van de NVWA'  # alleen 7 °C en 5 uur (NVWA: afkoelen)
+BRON_CODE26 = 'Hygiënecode voor de Horeca 2026'
+BRON_KOKEN = 'Hygiënecode 2026 (NVWA-advies: kip en gehakt ≥ 75 °C)'
+BRON_REGEN = 'Hygiënecode 2026; NVWA: opwarmen tot ≥ 60 °C'
 WET_KOEL = 'Gekoeld: ten hoogste 7 °C (art. 15 Warenwetbesluit Bereiding en behandeling van levensmiddelen)'
 WET_VRIES = 'Diepgevroren: ten hoogste −18 °C (Warenwetregeling Diepgevroren levensmiddelen)'
 VERBODEN = ('100 °C', '80 °C', '72 °C', '74 °C', '3 dagen', 'DIN', 'BfR', 'FAVV', 'Vlaanderen')
@@ -103,14 +115,14 @@ BREEDTE_GRID = {'A': 26, 'B': 16, 'C': 9, 'D': 9, 'E': 9, 'F': 9, 'G': 9, 'H': 9
 
 # Normen kritische punten (sleutel, omschrijving, waarde, eenheid, bron) — in gele cellen aan te passen
 NORMEN = [
-    ('koken_t', 'Koken – kerntemperatuur ten minste', 75, '°C', BRON_CODE),
-    ('terug_start', 'Terugkoelen – kerntemperatuur bij de start ten minste', 75, '°C', BRON_CODE),
+    ('koken_t', 'Koken – kerntemperatuur ten minste', 75, '°C', BRON_KOKEN),
+    ('terug_start', 'Terugkoelen – kerntemperatuur bij de start ten minste', 75, '°C', BRON_CODE26),
     ('terug_2u', 'Terugkoelen – na 2 uur ten hoogste (richtwaarde)', 20, '°C', 'Hygiënecode voor de Horeca 2026 '
                                                                                '(richtwaarde)'),
     ('terug_eind', 'Terugkoelen – kerntemperatuur aan het eind ten hoogste', 7, '°C', BRON_CODE),
     ('terug_d', 'Terugkoelen – duur ten hoogste', 5, 'uur', BRON_CODE),
-    ('regen_t', 'Regenereren – kerntemperatuur ten minste', 60, '°C', BRON_CODE),
-    ('regen_d', 'Regenereren – duur ten hoogste', 60, 'minuten', BRON_CODE),
+    ('regen_t', 'Regenereren – kerntemperatuur ten minste', 60, '°C', BRON_REGEN),
+    ('regen_d', 'Regenereren – duur ten hoogste', 60, 'minuten', BRON_CODE26),
     ('warm_t', 'Warmhouden – temperatuur ten minste', 60, '°C',
      'Wet: art. 15 lid 2 Warenwetbesluit Bereiding en behandeling van levensmiddelen'),
 ]
@@ -342,8 +354,16 @@ def apparaten_tabel(ws):
     toets_geheel(ws, f'E{T0 + 1}:E{T0 + N_APP}', -40, 30, 'Norm')
 
 
+def geen_getal(*refs):
+    """Formuledeel, WAAR als een van de cellen geen getal is (leeg of tekst). Nodig omdat Excel tekst groter vindt dan
+    elk getal: «abc» >= 75 is WAAR en gaf «Ja»."""
+    return 'OR(' + ','.join(f'NOT(ISNUMBER({r}))' for r in refs) + ')'
+
+
 def formule_koel(z, t):
-    return f'=IF(OR($E${t}="",COUNT(C{z}:J{z})=0),"",IF(MAX(C{z}:J{z})<=$E${t},"Ja","NEE"))'
+    # MAX en COUNT slaan tekst over: «9,0» als tekst in een dagcel gaf «Ja» → tekst in de rij geeft leeg
+    return (f'=IF(OR({geen_getal(f"$E${t}")},COUNT(C{z}:J{z})=0,SUMPRODUCT(--ISTEXT(C{z}:J{z}))>0),"",'
+            f'IF(MAX(C{z}:J{z})<=$E${t},"Ja","NEE"))')
 
 
 def week_blok(ws, r, week=None, data=None):
@@ -395,23 +415,27 @@ def band_ccp(art, v):
     if art == 'regen':
         return (f'="Regenereren – binnen "&{v["regen_d"]}&"{NB}minuten tot een kerntemperatuur van ten minste "'
                 f'&{v["regen_t"]}&"{NB}°C"')
-    return f'="Warmhouden – ten minste "&{v["warm_t"]}&"{NB}°C, gemeten op de koudste plek"'
+    return (f'="Warmhouden – ten minste "&{v["warm_t"]}&"{NB}°C, gemeten op de koudste plek · elke week meten; '
+            f'vastleggen aanbevolen, verplicht bij een afwijking"')
 
 
 def formule_ccp(art, soort, z, v):
-    if art == 'koken':
-        return f'=IF(D{z}="","",IF(D{z}>={v["koken_t"]},"Ja","NEE"))'
-    if art == 'warm':
-        return f'=IF(D{z}="","",IF(D{z}>={v["warm_t"]},"Ja","NEE"))'
+    if art in ('koken', 'warm'):
+        n = v['koken_t' if art == 'koken' else 'warm_t']
+        return f'=IF({geen_getal(f"D{z}", n)},"",IF(D{z}>={n},"Ja","NEE"))'
     if art == 'terug':
         if soort == 'duur_u':
-            return f'=IF(OR(C{z}="",G{z}=""),"",MOD(G{z}-C{z},1))'
-        # eindnorm en duur zijn de norm; alleen de richtwaarde na 2 uur overschreden → «Let op», niet «NEE»
-        return (f'=IF(OR(I{z}="",H{z}=""),"",IF(AND(ROUND(I{z}*1440,0)<={v["terug_d"]}*60,H{z}<={v["terug_eind"]},'
-                f'OR(D{z}="",D{z}>={v["terug_start"]})),IF(OR(F{z}="",F{z}<={v["terug_2u"]}),"Ja","Let op"),"NEE"))')
+            return f'=IF({geen_getal(f"C{z}", f"G{z}")},"",MOD(G{z}-C{z},1))'
+        # start, eind en duur zijn nodig (zonder starttemperatuur: leeg, geen «Ja»); de 2-uursmeting mag ontbreken,
+        # maar tekst erin geeft leeg. Alleen de richtwaarde na 2 uur overschreden → «Let op», niet «NEE».
+        nodig = geen_getal(f'I{z}', f'H{z}', f'D{z}', v['terug_d'], v['terug_eind'], v['terug_start'], v['terug_2u'])
+        return (f'=IF(OR({nodig},AND(F{z}<>"",NOT(ISNUMBER(F{z})))),"",IF(AND(ROUND(I{z}*1440,0)<={v["terug_d"]}*60,'
+                f'H{z}<={v["terug_eind"]},D{z}>={v["terug_start"]}),IF(OR(F{z}="",F{z}<={v["terug_2u"]}),"Ja",'
+                f'"Let op"),"NEE"))')
     if soort == 'duur_m':
-        return f'=IF(OR(C{z}="",D{z}=""),"",ROUND(MOD(D{z}-C{z},1)*1440,0))'
-    return f'=IF(OR(F{z}="",E{z}=""),"",IF(AND(F{z}<={v["regen_d"]},E{z}>={v["regen_t"]}),"Ja","NEE"))'
+        return f'=IF({geen_getal(f"C{z}", f"D{z}")},"",ROUND(MOD(D{z}-C{z},1)*1440,0))'
+    return (f'=IF({geen_getal(f"F{z}", f"E{z}", v["regen_d"], v["regen_t"])},"",'
+            f'IF(AND(F{z}<={v["regen_d"]},E{z}>={v["regen_t"]}),"Ja","NEE"))')
 
 
 def ccp_blok(ws, r, art, n, v, data=None):
@@ -458,9 +482,12 @@ def ccp_blok(ws, r, art, n, v, data=None):
         regels = [('D', f'AND(ISNUMBER(D{e}),D{e}<{v["warm_t"]})')]
     elif art == 'terug':
         regels = [('D', f'AND(ISNUMBER(D{e}),D{e}<{v["terug_start"]})'),
-                  ('F', f'AND(ISNUMBER(F{e}),F{e}>{v["terug_2u"]})'),
+                  ('F', f'AND(ISNUMBER(F{e}),F{e}>{v["terug_2u"]},K{e}="NEE")'),
                   ('H', f'AND(ISNUMBER(H{e}),H{e}>{v["terug_eind"]})'),
                   ('I', f'AND(ISNUMBER(I{e}),I{e}*1440>{v["terug_d"]}*60+0.5)')]
+        # 2-uursmeting boven de richtwaarde: rood alleen als het resultaat «NEE» is, anders oranje (zoals «Let op»)
+        ws.conditional_formatting.add(f'F{e}:F{l}', FormulaRule(
+            formula=[f'AND(ISNUMBER(F{e}),F{e}>{v["terug_2u"]},K{e}<>"NEE")'], fill=oranje))
         ws.conditional_formatting.add(f'K{e}:K{l}', CellIsRule(operator='equal', formula=['"Let op"'], fill=oranje,
                                                                font=Font(bold=True)))
     else:
@@ -496,9 +523,10 @@ def blad_koelingen(wb):
 # ------------------------------------------------------------------ Blad 2: Kritische punten
 def blad_kritisch(wb):
     ws = wb.create_sheet('Kritische punten')
-    bladkop(ws, 'HACCP-lijst kritische punten – koken, terugkoelen, regenereren, warmhouden',
-            'Meet en registreer de kritische punten één keer per week. Vul de gele cellen in (tijden als uu:mm). Duur '
-            'en “In orde?” worden automatisch berekend met de normen in de tabel hieronder.', 13)
+    bladkop(ws, 'HACCP-lijst kritische punten (koken, terugkoelen, regenereren) en warmhouden',
+            'Meet en registreer de kritische punten één keer per week. ' + NOTA_WARM + ' Vul de gele cellen in '
+            '(tijden als uu:mm). Duur en “In orde?” worden automatisch berekend met de normen in de tabel hieronder.', 13)
+    ws.row_dimensions[2].height = 44
     velden(ws, ['Bedrijf', 'Week/maand', 'Verantwoordelijke'], 1, 4)
     for (a, b), txt in (((1, 4), 'Norm (aan te passen)'), ((5, 5), 'Waarde'), ((6, 7), 'Eenheid'), ((8, 13), 'Bron')):
         cel(ws, N0, a, txt, vet=True, fond=grijs)
@@ -527,7 +555,7 @@ def blad_kritisch(wb):
     c.font = Font(bold=True, italic=True, color='555555')
     c.alignment = Alignment(wrap_text=True, vertical='top')
     samen(ws, nl_rij, 1, 13)
-    ws.row_dimensions[nl_rij].height = 30
+    ws.row_dimensions[nl_rij].height = 44
     starts, r = {}, nl_rij + 2
     breuken = []
     for art in CCP_ORDE:
@@ -541,7 +569,9 @@ def blad_kritisch(wb):
         'starttemperatuur uit de normen. “Let op” betekent: de richtwaarde na 2 uur is overschreden, de eindnorm is wel '
         'gehaald.',
         'Regenereren: noteer de tijd waarop u begint met opwarmen en de tijd waarop de kern de norm haalt.',
-        'Warmhouden: meet op de koudste plek en noteer de laagste temperatuur.',
+        'Warmhouden: meet elke week op de koudste plek en noteer de laagste temperatuur; vastleggen wordt aanbevolen '
+        'en is verplicht bij een afwijking.',
+        '“In orde?” blijft leeg zolang een nodig gegeven ontbreekt of als er tekst staat waar een getal hoort.',
         NOTA_BEWAAR, NOTA_HULP], 13, 18)
     artikel_link(ws, fz + 1, 13)
     pagina(ws, 'C3', BREEDTE_GRID, breuken=breuken)
@@ -591,7 +621,8 @@ def blad_ontvangst(wb):
         cel(ws, z, 4, None, inv=True, mid=True)
         cel(ws, z, 5, '=' + norm_ontvangst(z, refs, norm_tekst), mid=True)
         cel(ws, z, 6, None, F_TEMP, inv=True, mid=True)
-        cel(ws, z, 7, f'=IF(OR(E{z}="",F{z}=""),"",IF(F{z}<={norm_ontvangst(z, refs)},"Ja","NEE"))', mid=True)
+        norm = norm_ontvangst(z, refs)
+        cel(ws, z, 7, f'=IF(OR(E{z}="",{geen_getal(f"F{z}", norm)}),"",IF(F{z}<={norm},"Ja","NEE"))', mid=True)
         cel(ws, z, 8, None, inv=True)
         cel(ws, z, 9, None, inv=True, mid=True)
         ws.row_dimensions[z].height = 22
@@ -634,8 +665,8 @@ def blad_thermometer(wb):
         cel(ws, z, 2, None, inv=True)
         cel(ws, z, 3, 0, F_TEMP, inv=True, mid=True)  # smeltend ijs; andere referentie: overschrijven
         cel(ws, z, 4, None, F_TEMP, inv=True, mid=True)
-        cel(ws, z, 5, f'=IF(OR(C{z}="",D{z}=""),"",ROUND(D{z}-C{z},1))', F_AFW, mid=True)
-        cel(ws, z, 6, f'=IF(E{z}="","",IF(ABS(E{z})<={n},"Ja","NEE"))', mid=True)
+        cel(ws, z, 5, f'=IF({geen_getal(f"C{z}", f"D{z}")},"",ROUND(D{z}-C{z},1))', F_AFW, mid=True)
+        cel(ws, z, 6, f'=IF({geen_getal(f"E{z}", n)},"",IF(ABS(E{z})<={n},"Ja","NEE"))', mid=True)
         cel(ws, z, 7, None, inv=True)
         cel(ws, z, 8, None, inv=True, mid=True)
         ws.row_dimensions[z].height = 22
@@ -680,6 +711,7 @@ def pdf_druk():
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.units import mm
+    from reportlab.pdfbase.pdfmetrics import stringWidth
     from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
     def t(s):
@@ -700,10 +732,11 @@ def pdf_druk():
     s_norm = ParagraphStyle('norm', fontName='Helvetica-Bold', fontSize=7, leading=8, alignment=1)
     W = A4[0] - 28 * mm
 
-    def band(tekst):
+    def band(tekst, grootte=13):
+        assert stringWidth(t(tekst), 'Helvetica-Bold', grootte) < W - 12, tekst  # één regel, binnen de balk
         b = Table([[t(tekst)]], colWidths=[W])
         b.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, -1), zw), ('TEXTCOLOR', (0, 0), (-1, -1), goud),
-                               ('FONTNAME', (0, 0), (-1, -1), 'Helvetica-Bold'), ('FONTSIZE', (0, 0), (-1, -1), 13),
+                               ('FONTNAME', (0, 0), (-1, -1), 'Helvetica-Bold'), ('FONTSIZE', (0, 0), (-1, -1), grootte),
                                ('TOPPADDING', (0, 0), (-1, -1), 5), ('BOTTOMPADDING', (0, 0), (-1, -1), 7)]))
         return b
 
@@ -733,9 +766,11 @@ def pdf_druk():
         return tb
 
     doc = SimpleDocTemplate(str(PDF), pagesize=A4, leftMargin=14 * mm, rightMargin=14 * mm, topMargin=11 * mm,
-                            bottomMargin=14 * mm, title=t('HACCP-lijsten horeca: koelingen en kritische punten'),
+                            bottomMargin=14 * mm, title=t('HACCP-lijsten horeca: koelingen, kritische punten, ontvangst '
+                                                          'en thermometer'),
                             author='AI Chef Pro',
-                            subject=t('Koelingen, vriezers, koken, terugkoelen, regenereren en warmhouden'))
+                            subject=t('Koelingen, vriezers, koken, terugkoelen, regenereren, warmhouden, ontvangst en '
+                                      'controle van de thermometers'))
     # Pagina 1 — koelingen en vriezers, twee weken
     el = [band('HACCP-lijst koelingen en vriezers'), Spacer(1, 4), info(), Spacer(1, 4),
           Paragraph(t('Lees elke dag het display af en noteer de temperatuur. Meet één keer per week met een '
@@ -767,8 +802,10 @@ def pdf_druk():
                        + NOTA_HULP), s_note), PageBreak()]
 
     # Pagina 2 — kritische punten
-    el += [band('HACCP-lijst kritische punten – week ……………'), Spacer(1, 4), info(), Spacer(1, 2),
-           Paragraph(t('Meet en registreer de kritische punten één keer per week.'), s_txt)]
+    el += [band('HACCP-lijst kritische punten (koken, terugkoelen, regenereren) en warmhouden', 12), Spacer(1, 4),
+           info(), Spacer(1, 2),
+           Paragraph(t('<b>Week: ……………</b>    Meet en registreer de kritische punten één keer per week. ' + NOTA_WARM),
+                     s_txt)]
     a7 = [0.09, 0.25, 0.07, 0.10, 0.08, 0.34, 0.07]
     el += [Paragraph(t('Koken'), s_h), Paragraph(t('Kerntemperatuur ten minste 75 °C.'), s_txt), Spacer(1, 2),
            raster(['Datum', 'Product', 'Tijd', 'Kerntemp. (°C)', 'In orde? (ja/nee)', 'Correctieve maatregel',
@@ -785,16 +822,57 @@ def pdf_druk():
                    'In orde? (ja/nee)', 'Correctieve maatregel', 'Paraaf'],
                   [0.08, 0.20, 0.07, 0.08, 0.07, 0.08, 0.07, 0.28, 0.07], 4),
            Paragraph(t('Warmhouden'), s_h),
-           Paragraph(t('Ten minste 60 °C; meet op de koudste plek en noteer de laagste temperatuur.'), s_txt),
+           Paragraph(t('Ten minste 60 °C. Meet elke week op de koudste plek en noteer de laagste temperatuur; '
+                       'vastleggen wordt aanbevolen en is verplicht bij een afwijking.'), s_txt),
            Spacer(1, 2),
            raster(['Datum', 'Product', 'Tijd', 'Laagste temp. (°C)', 'In orde? (ja/nee)', 'Correctieve maatregel',
                    'Paraaf'], a7, 4),
            Spacer(1, 6),
-           Paragraph(t('Koken ten minste 75 °C, terugkoelen binnen 5 uur naar ten hoogste 7 °C en regenereren binnen '
-                       '60 minuten tot ten minste 60 °C zijn normen uit de Hygiënecode voor de Horeca 2026 en advies '
-                       'van de NVWA, geen wetsartikelen; 20 °C na 2 uur is een richtwaarde. Warmhouden ten minste 60 °C '
-                       'staat in de wet (art. 15 lid 2 Warenwetbesluit Bereiding en behandeling van levensmiddelen).'),
+           Paragraph(t('Koken ten minste 75 °C, terugkoelen van ten minste 75 °C naar ten hoogste 7 °C binnen 5 uur en '
+                       'regenereren binnen 60 minuten tot ten minste 60 °C zijn normen uit de nieuwe Hygiënecode Horeca '
+                       '(2026), zoals op de formulieren van KHN, geen wetsartikelen; 20 °C na 2 uur is een richtwaarde. '
+                       'De NVWA adviseert kip en gehakt tot ten minste 75 °C te verhitten, binnen 5 uur af te koelen tot '
+                       'onder 7 °C en op te warmen tot ten minste 60 °C. Warmhouden ten minste 60 °C staat in de wet '
+                       '(art. 15 lid 2 Warenwetbesluit Bereiding en behandeling van levensmiddelen).'),
                      s_note), Spacer(1, 2),
+           Paragraph(t(NOTA_BEWAAR + ' ' + NOTA_HULP), s_note), PageBreak()]
+
+    def normtabel(rijen, anteile):
+        tb = Table([[Paragraph(t(x), s_th) for x in ('Soort', 'Norm', 'Bron')]]
+                   + [[Paragraph(t(a), s_txt), Paragraph(t(b), s_norm), Paragraph(t(c), s_lab)] for a, b, c in rijen],
+                   colWidths=[W * x for x in anteile])
+        tb.setStyle(TableStyle([('GRID', (0, 0), (-1, -1), 0.5, lijn), ('BACKGROUND', (0, 0), (-1, 0), zw),
+                                ('BACKGROUND', (1, 1), (1, -1), colors.HexColor('#F3F3F3')),
+                                ('VALIGN', (0, 0), (-1, -1), 'MIDDLE')]))
+        return tb
+
+    # Pagina 3 — ontvangst, alleen afwijkingen (zoals het tabblad «Ontvangst»)
+    bron_o = 'Hygiënecode voor de Horeca 2026'
+    el += [band('HACCP-lijst ontvangst – alleen afwijkingen'), Spacer(1, 4), info(), Spacer(1, 4),
+           Paragraph(t('Meet bij ontvangst de temperatuur. Noteer hier alleen een levering die afwijkt, en wat u ermee '
+                       'hebt gedaan.'), s_txt), Spacer(1, 4),
+           normtabel([(soort, f'–{abs(n)} °C of kouder' if n < 0 else f'max. {n} °C', bron_o) for soort, n in ONTVANGST],
+                     [0.3, 0.2, 0.5]), Spacer(1, 3),
+           Paragraph(t(NOTA_ONTVANGST), s_note), Spacer(1, 4),
+           raster(['Datum', 'Leverancier', 'Product', 'Soort', 'Norm', 'Gemeten (°C)', 'Binnen de norm? (ja/nee)',
+                   'Afwijking en actie (bijv. geweigerd, teruggestuurd)', 'Paraaf'],
+                  [0.08, 0.14, 0.15, 0.10, 0.08, 0.08, 0.08, 0.23, 0.06], 18, hoogte=25, kop_h=30),
+           Spacer(1, 6), Paragraph(t(NOTA_BEWAAR + ' ' + NOTA_HULP), s_note), PageBreak()]
+
+    # Pagina 4 — controle van de thermometers, jaarlijks (zoals het tabblad «Thermometer»)
+    el += [band('Controle van de thermometers – jaarlijks'), Spacer(1, 4), info(), Spacer(1, 4),
+           Paragraph(t('<b>Jaar: ……………</b>    Controleer elke thermometer minimaal één keer per jaar, bijvoorbeeld in '
+                       'smeltend ijs (0 °C).'), s_txt), Spacer(1, 4),
+           normtabel([('Afwijking ten hoogste (+ of –)', '± 1,0 °C', 'Hygiënecode voor de Horeca 2026: minimaal één '
+                       'keer per jaar controleren')], [0.3, 0.2, 0.5]), Spacer(1, 6),
+           raster(['Datum', 'Thermometer (naam of nummer)', 'Referentie (°C)', 'Gemeten (°C)', 'Afwijking (°C)',
+                   'In orde? (ja/nee)', 'Correctieve maatregel (bij afwijking)', 'Paraaf'],
+                  [0.09, 0.20, 0.09, 0.09, 0.09, 0.08, 0.30, 0.06], TH_N, hoogte=28, kop_h=30),
+           Spacer(1, 6),
+           Paragraph(t('Smeltend ijs: een bak met ijsblokjes en een beetje koud water; de referentie is dan 0 °C. Gebruikt '
+                       'u een andere referentie, vul die dan in de kolom Referentie in.'), s_note), Spacer(1, 2),
+           Paragraph(t('Is de afwijking groter dan de norm, laat de thermometer dan kalibreren of vervang hem, en noteer '
+                       'dat als correctieve maatregel.'), s_note), Spacer(1, 2),
            Paragraph(t(NOTA_BEWAAR + ' ' + NOTA_HULP), s_note)]
     doc.build(el, onFirstPage=voet, onLaterPages=voet)
 
@@ -856,7 +934,7 @@ def minuten(d):
     return d.total_seconds() / 60 if hasattr(d, 'total_seconds') else d * 1440  # openpyxl leest [h]:mm als timedelta
 
 
-def gate_logica(wk, st, o1, t1):
+def gate_logica(wk, st, o1, t1, vb):
     p = wk[0]
     kk, tk, rk, hk = st['koken'], st['terug'], st['regen'], st['warm']
     gevallen = [  # (blad, rij, {kolom: waarde}, kolom «In orde?», verwacht, omschrijving)
@@ -874,6 +952,7 @@ def gate_logica(wk, st, o1, t1):
         (KP, kk + 1, {4: 82.0}, 5, 'Ja', 'koken 82 °C'),
         (KP, kk + 2, {4: 74.9}, 5, 'NEE', 'koken 74,9 °C'),
         (KP, kk + 3, {1: 'Kip', 3: hm(12, 0)}, 5, None, 'koken zonder temperatuur → leeg'),
+        (KP, kk + 4, {4: 'tachtig'}, 5, None, 'koken: tekst als kerntemperatuur → leeg (was «Ja»)'),
         (KP, tk + 0, {3: hm(14, 0), 4: 85.0, 5: hm(16, 0), 6: 18.0, 7: hm(18, 30), 8: 6.0}, 11, 'Ja',
          'terugkoelen 4 u 30, 18 °C na 2 uur, eind 6 °C'),
         (KP, tk + 1, {3: hm(14, 0), 4: 80.0, 7: hm(19, 0), 8: 7.0}, 11, 'Ja',
@@ -896,6 +975,7 @@ def gate_logica(wk, st, o1, t1):
         (KP, hk + 1, {4: 60.0}, 5, 'Ja', 'warmhouden precies 60 °C'),
         (KP, hk + 2, {4: 59.5}, 5, 'NEE', 'warmhouden 59,5 °C'),
         (KP, hk + 3, {}, 5, None, 'warmhouden lege rij → leeg'),
+        (KP, hk + 4, {4: 'warm'}, 5, None, 'warmhouden: tekst als temperatuur → leeg (was «Ja»)'),
         (O, o1 + 0, {4: 'Gekoeld', 6: 7.0}, 7, 'Ja', 'ontvangst gekoeld 7,0 °C'),
         (O, o1 + 1, {4: 'Gekoeld', 6: 7.5}, 7, 'NEE', 'ontvangst gekoeld 7,5 °C'),
         (O, o1 + 2, {4: 'Rauw gevogelte', 6: 4.0}, 7, 'Ja', 'ontvangst rauw gevogelte 4,0 °C'),
@@ -930,10 +1010,39 @@ def gate_logica(wk, st, o1, t1):
                  (O, o1, {4: 'Rauw gevogelte', 6: 3.5}, 7, 'NEE', 'norm gevogelte 3 °C: 3,5 °C')]
     res2, _ = gevallen_toetsen(gevallen2, {(K, f'E{T0 + 1}'): 5, (KP, V['koken_t'].replace('$', '')): 80,
                                            (O, f'C{O0 + 2}'): 3})
-    for blad, omschr, verw, w in res + res2:
+    # Tekst in getalcellen (gegevens én normen) en ontbrekende verplichte gegevens → leeg, nooit «Ja»; ook «Voorbeeld».
+    e_vb, vst = vb
+    gevallen3 = [
+        (K, p, {3: 3.0, 4: '9,0'}, 11, None, 'koelcel: «9,0» als tekst in een dagcel → leeg (was «Ja»)'),
+        (K, p + 1, {3: 3.0}, 11, None, 'norm koelkast als tekst → leeg'),
+        (KP, tk + 0, {3: hm(14, 0), 7: hm(18, 0), 8: 5.0}, 11, None,
+         'terugkoelen zonder starttemperatuur → leeg (was «Ja»)'),
+        (KP, tk + 1, {3: hm(14, 0), 4: 'heet', 7: hm(18, 0), 8: 5.0}, 11, None, 'terugkoelen: starttemp. als tekst → leeg'),
+        (KP, tk + 2, {3: hm(14, 0), 4: 80.0, 5: hm(16, 0), 6: 'koud', 7: hm(18, 0), 8: 5.0}, 11, None,
+         'terugkoelen: 2-uursmeting als tekst → leeg'),
+        (KP, tk + 3, {3: '14.00', 4: 80.0, 7: hm(18, 0), 8: 5.0}, 11, None, 'terugkoelen: starttijd als tekst → leeg'),
+        (KP, tk + 4, {3: hm(14, 0), 4: 80.0, 7: hm(18, 0), 8: 'zes'}, 11, None, 'terugkoelen: eindtemp. als tekst → leeg'),
+        (KP, tk + 5, {3: hm(14, 0), 4: 80.0, 7: hm(18, 0)}, 11, None, 'terugkoelen zonder eindtemperatuur → leeg'),
+        (KP, rk, {3: hm(17, 30), 4: hm(17, 55), 5: 'heet'}, 7, None, 'regenereren: kerntemp. als tekst → leeg (was «Ja»)'),
+        (KP, rk + 1, {3: '17.30', 4: hm(17, 55), 5: 70.0}, 7, None, 'regenereren: starttijd als tekst → leeg'),
+        (KP, hk, {4: 65.0}, 5, None, 'norm warmhouden als tekst → leeg'),
+        (O, o1, {4: 'Gekoeld', 6: 'koud'}, 7, None, 'ontvangst: tekst als temperatuur → leeg'),
+        (T, t1, {4: 'nul'}, 6, None, 'thermometer: tekst als meting → leeg'),
+        (VB, e_vb + 1, {5: '4,0'}, 11, None, 'Voorbeeld koelkast: tekst in een dagcel → leeg'),
+        (VB, vst['koken'], {4: 'tachtig'}, 5, None, 'Voorbeeld koken: tekst → leeg'),
+        (VB, vst['terug'], {4: None}, 11, None, 'Voorbeeld terugkoelen zonder starttemperatuur → leeg'),
+        (VB, vst['regen'], {5: 'heet'}, 7, None, 'Voorbeeld regenereren: tekst → leeg'),
+        (VB, vst['warm'], {4: 'warm'}, 5, None, 'Voorbeeld warmhouden: tekst → leeg'),
+        (VB, e_vb + 3, {}, 11, 'Ja', 'Voorbeeld barkoeling ongewijzigd → Ja'),
+    ]
+    extra3 = [(KP, tk + 3, 9), (KP, rk + 1, 6), (T, t1, 5)]
+    res3, ex3 = gevallen_toetsen(gevallen3, {(K, f'E{T0 + 2}'): 'zeven', (KP, V['warm_t'].replace('$', '')): 'zestig'},
+                                 extra=extra3)
+    assert all(ex3[x] in (None, '') for x in extra3), ex3  # duur en afwijking met tekst: leeg, geen #WAARDE!
+    for blad, omschr, verw, w in res + res2 + res3:
         print(f'  {"OK " if verw == w else "KO "} [{blad}] {omschr} → {w!r} (verwacht {verw!r})')
-    assert all(verw == w for _, _, verw, w in res + res2), 'Gate logica KO'
-    return len(res) + len(res2)
+    assert all(verw == w for _, _, verw, w in res + res2 + res3), 'Gate logica KO'
+    return len(res) + len(res2) + len(res3)
 
 
 def gate_gepubliceerd(wk, st, o1, t1, vb):
@@ -958,12 +1067,19 @@ def gate_gepubliceerd(wk, st, o1, t1, vb):
             assert ws.cell(row=e + i, column=11).value in (None, ''), (e + i, 11)
     ks = wv[KP]
     assert [ks.cell(row=N0 + 1 + i, column=5).value for i in range(len(NORMEN))] == [75, 75, 20, 7, 5, 60, 60, 60]
+    assert ks['A1'].value == 'HACCP-lijst kritische punten (koken, terugkoelen, regenereren) en warmhouden', ks['A1'].value
+    assert NOTA_WARM in ks['A2'].value.replace(NB, ' '), ks['A2'].value
+    bronnen = [ks.cell(row=N0 + 1 + i, column=8).value.replace(NB, ' ') for i in range(len(NORMEN))]
+    assert bronnen == [BRON_KOKEN, BRON_CODE26, 'Hygiënecode voor de Horeca 2026 (richtwaarde)', BRON_CODE, BRON_CODE,
+                       BRON_REGEN, BRON_CODE26, 'Wet: art. 15 lid 2 Warenwetbesluit Bereiding en behandeling van '
+                       'levensmiddelen'], bronnen
     banden = [ks.cell(row=st[a] - 2, column=1).value.replace(NB, ' ') for a in CCP_ORDE]
     assert banden == ['Koken – kerntemperatuur ten minste 75 °C',
                       'Terugkoelen – van ten minste 75 °C naar ten hoogste 7 °C binnen 5 uur · richtwaarde na 2 uur: '
                       'ten hoogste 20 °C',
                       'Regenereren – binnen 60 minuten tot een kerntemperatuur van ten minste 60 °C',
-                      'Warmhouden – ten minste 60 °C, gemeten op de koudste plek'], banden
+                      'Warmhouden – ten minste 60 °C, gemeten op de koudste plek · elke week meten; vastleggen '
+                      'aanbevolen, verplicht bij een afwijking'], banden
     for a in CCP_ORDE:
         for z in range(st[a], st[a] + N_RIJEN):
             for k in range(1, 14):
@@ -1008,6 +1124,15 @@ def gate_gepubliceerd(wk, st, o1, t1, vb):
         assert all(d.showErrorMessage and d.error for d in b.data_validations.dataValidation), b.title
         assert str(b.page_setup.paperSize) == '9', b.title  # A4
     z = zipfile.ZipFile(XLSX)
+    # Kleur van de 2-uursmeting (terugkoelen) volgt het resultaat: rood alleen bij «NEE», oranje anders (Let op)
+    for blad, e in ((KP, st['terug']), (VB, vb[1]['terug'])):
+        regels = {}
+        for bereik in wf[blad].conditional_formatting:
+            if str(bereik.sqref).split(':')[0] == f'F{e}':  # «F33» als het blok één rij heeft
+                for regel in bereik.rules:
+                    regels[regel.dxf.fill.fgColor.rgb[-6:]] = regel.formula[0]
+        assert regels.get('F8CBAD', '').endswith(f'K{e}="NEE")') and regels.get('FFE699', '').endswith(
+            f'K{e}<>"NEE")'), (blad, regels)
     gekozen = [n for n in z.namelist() if re.match(r'xl/worksheets/sheet\d+\.xml$', n)
                and 'tabSelected="1"' in z.read(n).decode('utf-8')]
     assert gekozen == ['xl/worksheets/sheet1.xml'], gekozen
@@ -1019,7 +1144,7 @@ def gate_pdf():
     from pypdf import PdfReader
     rd = PdfReader(str(PDF))
     n = len(rd.pages)
-    assert n == 2, n
+    assert n == 4, n
     for p in rd.pages:
         assert abs(float(p.mediabox.width) - 595.28) < 1 and abs(float(p.mediabox.height) - 841.89) < 1, p.mediabox
     teksten = [' '.join(p.extract_text().replace(NB, ' ').split()) for p in rd.pages]
@@ -1029,10 +1154,27 @@ def gate_pdf():
                  'minimaal zes maanden (advies KHN)', '31 maart 2027', 'geen officieel formulier van de NVWA of KHN',
                  'aichef.pro/nl/blog/hygienecode'):
         assert verw in teksten[0], ('pagina 1', verw)
-    for verw in ('HACCP-lijst kritische punten', 'Koken', 'Terugkoelen', 'Regenereren', 'Warmhouden',
-                 'ten minste 75 °C', 'binnen 5 uur', 'na 2 uur: ten hoogste 20 °C', 'Binnen 60 minuten',
-                 'geen wetsartikelen', 'art. 15 lid 2', 'aichef.pro/nl/blog/hygienecode'):
+    for verw in ('HACCP-lijst kritische punten (koken, terugkoelen, regenereren) en warmhouden', 'Koken', 'Terugkoelen',
+                 'Regenereren', 'Warmhouden', 'ten minste 75 °C', 'binnen 5 uur', 'na 2 uur: ten hoogste 20 °C',
+                 'Binnen 60 minuten', 'geen wetsartikelen', 'art. 15 lid 2', 'nieuwe Hygiënecode Horeca (2026)',
+                 'formulieren van KHN', 'De NVWA adviseert kip en gehakt', 'Warmhouden: elke week meten',
+                 'verplicht bij een afwijking', 'aichef.pro/nl/blog/hygienecode'):
         assert verw in teksten[1], ('pagina 2', verw)
+    assert 'Hygiënecode voor de Horeca 2026 en advies van de NVWA' not in teksten[1]
+    for verw in ('HACCP-lijst ontvangst – alleen afwijkingen', 'Gekoeld', 'max. 7 °C', 'Rauw gevogelte', 'max. 4 °C',
+                 'Diepvries', '–15 °C of kouder', 'vastleggen hoeft alleen bij een afwijking', 'Leverancier',
+                 'Binnen de norm?', 'geweigerd', 'geen officieel formulier van de NVWA of KHN',
+                 'aichef.pro/nl/blog/hygienecode'):
+        assert verw in teksten[2], ('pagina 3', verw)
+    for verw in ('Controle van de thermometers – jaarlijks', 'minimaal één keer per jaar', 'smeltend ijs', '± 1,0 °C',
+                 'Referentie (°C)', 'Afwijking (°C)', 'kalibreren', 'geen officieel formulier van de NVWA of KHN',
+                 'aichef.pro/nl/blog/hygienecode'):
+        assert verw in teksten[3], ('pagina 4', verw)
+    lettergrootten = set()
+    for pg in rd.pages:
+        pg.extract_text(visitor_text=lambda tekst, cm, tm, fd, fs: lettergrootten.add(round(fs * tm[0], 2))
+                        if tekst.strip() else None)
+    assert min(lettergrootten) >= 6.5, sorted(lettergrootten)
     alles = ' '.join(teksten)
     assert not any(x in alles for x in VERBODEN), [x for x in VERBODEN if x in alles]
     return n
@@ -1055,7 +1197,7 @@ def main():
     wb.save(XLSX)
     print(injecteren(XLSX))
     afw = gate_gepubliceerd(wk, st, o1, t1, vb)
-    n = gate_logica(wk, st, o1, t1)
+    n = gate_logica(wk, st, o1, t1, vb)
     pdf_druk()
     paginas = gate_pdf()
     print(f'OK {XLSX.name} · 5 tabbladen · {N_WEKEN} weken × {N_APP} apparaten · kritische punten 4 × {N_RIJEN} · '

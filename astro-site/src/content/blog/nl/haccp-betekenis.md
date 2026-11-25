@@ -99,11 +99,11 @@ De principes drie tot en met zeven horen bij de CCP. De NVWA zet ze onder elkaar
 | Controleer regelmatig of uw HACCP-aanpak effectief is | U weet of u voedselveilig werkt, niet alleen of het formulier vol is | Geen auditkalender |
 | Leg vast hoe u de regels naleeft, inclusief de resultaten van controles op overschrijdingen | U kunt laten zien dat u de gevaren beheerst | Geen formulier om over te nemen. De wet vraagt registraties die passen bij de aard en omvang van uw zaak (Verordening (EG) nr. 852/2004, artikel 5 lid 2, onder g), geen dagelijkse lijst |
 
-De zeven principes zijn beschreven in de Codex Alimentarius, de commissie van de FAO en de Wereldgezondheidsorganisatie (WHO). Dit artikel citeert de NVWA-pagina, niet een paragraafnummer uit die Codex.
+De zeven principes zijn beschreven in de Codex Alimentarius, de voedselcode van de FAO en de Wereldgezondheidsorganisatie (WHO). Dit artikel citeert de NVWA-pagina, niet een paragraafnummer uit die Codex.
 
 <figure><img src="/blog-assets/2026/08/hygiene-produits.jpg" alt="Stellingen met bakken en zakken in een droog magazijn, zonder personen. Etiketten in het Frans, geen Nederlands ontvangstformulier." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /><figcaption>Een magazijn. De foto toont voorraad. De Franse etiketten zijn geen ontvangstregistratie en geen CCP uit uw plan.</figcaption></figure>
 
-<p>Om te registreren hoeft u niet bij nul te beginnen: de gratis <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.xlsx">HACCP-lijsten voor de horeca</a> (Excel, ook als <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.pdf">pdf</a>) hebben bladen voor koelingen en vriezers, de kritische punten koken, terugkoelen, regenereren en warmhouden, ontvangst en de thermometer. Een rode cel laat zien wanneer een waarde buiten de grens valt, zodat u de correctieve maatregel meteen ernaast schrijft.</p>
+<p>Om te registreren hoeft u niet bij nul te beginnen: de gratis <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.xlsx">HACCP-lijsten voor de horeca</a> (Excel, ook als <a href="https://aichef.pro/descargas/haccp-lijsten-horeca-aichef.pdf">pdf</a>) hebben bladen voor koelingen en vriezers, de kritische punten koken, terugkoelen en regenereren, plus warmhouden, ontvangst en de thermometer. Een rode cel laat zien wanneer een waarde buiten de grens valt, zodat u de correctieve maatregel meteen ernaast schrijft.</p>
 
 ## HACCP en de hygiënecode
 
