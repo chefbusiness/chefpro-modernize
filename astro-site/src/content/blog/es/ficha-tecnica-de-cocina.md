@@ -8,6 +8,7 @@ tags: ["ficha técnica", "cocina profesional", "alérgenos"]
 lang: es
 translations:
   nl: "receptuur"
+  it: "scheda-tecnica-ricetta"
 image: /blog-assets/2026/11/ficha-tecnica-destacada.jpg
 imageAlt: "Ficha técnica colgada sobre el pase junto a un plato de salmón a la plancha y una báscula digital"
 definedTerm:

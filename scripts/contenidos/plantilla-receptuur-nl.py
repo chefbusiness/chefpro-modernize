@@ -264,11 +264,11 @@ def generar():
     blok = [
         ('Kostprijs per portie (uit uw kostprijsberekening)', 4.29, EUR, True),
         ('Beoogde food cost (%)', 0.30, '0%', True),
-        ('Verkoopprijs excl. btw', f'=IF(OR(B{b}="",N(B{b + 1})=0),"",B{b}/B{b + 1})', EUR, False),
+        ('Verkoopprijs excl. btw', f'=IF(OR(NOT(ISNUMBER(B{b})),N(B{b + 1})=0),"",B{b}/B{b + 1})', EUR, False),
         ('Btw (eten in de horeca in Nederland: 9 %)', 0.09, '0%', True),
-        ('Verkoopprijs incl. btw', f'=IF(B{b + 2}="","",B{b + 2}*(1+N(B{b + 3})))', EUR, False),
+        ('Verkoopprijs incl. btw', f'=IF(OR(B{b + 2}="",NOT(ISNUMBER(B{b + 3}))),"",B{b + 2}*(1+B{b + 3}))', EUR, False),
         ('Prijs op de kaart (incl. btw, zelf afgerond)', 15.90, EUR, True),
-        ('Werkelijke food cost bij die prijs (%)', f'=IF(OR(B{b}="",N(B{b + 5})=0),"",B{b}/(B{b + 5}/(1+N(B{b + 3}))))', '0.0%', False),
+        ('Werkelijke food cost bij die prijs (%)', f'=IF(OR(NOT(ISNUMBER(B{b})),NOT(ISNUMBER(B{b + 3})),N(B{b + 5})=0),"",B{b}/(B{b + 5}/(1+B{b + 3})))', '0.0%', False),
     ]
     for i, (k, v, fmt, ent) in enumerate(blok):
         celda(ws, b + i, 1, k, negrita=True)
@@ -424,6 +424,17 @@ def gate_pycel(p):
         poner(f'B{b + 1}', 0.30)
         poner(f'B{b + 5}', 15.90)
         assert val(f'B{b + 2}') in (None, '') and val(f'B{b + 6}') in (None, '')
+        # Casos nuevos: btw vacío o texto → ni precio falso ni error; kostprijs como texto → ni #VALUE! ni 0
+        poner(f'B{b + 3}', 0.09)
+        poner(f'B{b}', 4.29)
+        assert round(val(f'B{b + 2}'), 2) == 14.30 and round(val(f'B{b + 4}'), 2) == 15.59
+        for btw in ('', '9%'):
+            poner(f'B{b + 3}', btw)
+            assert val(f'B{b + 4}') in (None, ''), (btw, val(f'B{b + 4}'))
+            assert val(f'B{b + 6}') in (None, ''), (btw, val(f'B{b + 6}'))
+        poner(f'B{b + 3}', 0.09)
+        poner(f'B{b}', '4,29')  # kostprijs como texto
+        assert [val(f'B{b + i}') in (None, '') for i in (2, 4, 6)] == [True] * 3, [val(f'B{b + i}') for i in (2, 4, 6)]
     return res
 
 
@@ -464,7 +475,7 @@ def main():
     parche = gate_parche()
     print(f'OK {SALIDA.relative_to(RAIZ)} · {cache} · bruto {bruto} · '
           'Voorbeeld zalm: kostprijs per portie € 4,29 · verkoopprijs € 14,30 / € 15,59 / € 15,90 · 29,4 %')
-    print(f'   gates: data_only OK · pycel sin caché OK (+4 casos de lógica, +5 de celdas vacías/texto) · idioma OK ({n} textos, sin español '
+    print(f'   gates: data_only OK · pycel sin caché OK (+4 casos de lógica, +5 de celdas vacías/texto, +4 de btw vacío/texto y kostprijs texto) · idioma OK ({n} textos, sin español '
           f'ni «sporen») · parche --check: {parche}')
 
 
