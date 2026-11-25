@@ -1702,7 +1702,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Prompts/mes</th><th>Templates</th><th>Herramientas</th><th>Soporte</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>0€</td><td>50</td><td>5 básicos</td><td>3 básicas</td><td>Comunidad</td><td>Exploración inicial</td></tr><tr><td><strong>Pro</strong></td><td>10€</td><td>500</td><td>15 intermedios</td><td>Suite completa</td><td>Email + Docs</td><td>Chef individual</td></tr><tr><td><strong>Premium</strong></td><td>15€</td><td>1,000</td><td>25 avanzados</td><td>Suite + Analytics</td><td>Chat prioritario</td><td>Restaurante pequeño</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€</td><td>3,000</td><td>Todos + Custom</td><td>Suite + Integraciones</td><td>Soporte prioridad</td><td>Múltiples conceptos</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€</td><td>Ilimitado</td><td>Todos + AI Custom</td><td>Ecosistema completo</td><td>Sesiones 1-on-1</td><td>Grupos gastronómicos</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Créditos/mes</th><th>Agentes</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10€</td><td>10.000</td><td>Todos</td><td>Chef individual, exploración inicial</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€</td><td>85.000</td><td>Todos</td><td>Restaurante pequeño o mediano</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€</td><td>175.000</td><td>Todos</td><td>Múltiples conceptos, cadenas pequeñas</td></tr><tr><td><strong>Premium Max</strong></td><td>95€ (o 950 €/año)</td><td>Ilimitados</td><td>Todos</td><td>Grupos gastronómicos</td></tr></tbody></table></div></figure>
 
 
 
@@ -1715,7 +1715,7 @@ Parámetros económicos:
 
 
 <div class="wp-block-group has-background" style="background-color: #e8f5e8; padding: 20px;">
-<h4>Plan Pro (10€/mes) &#8211; ROI Típico: 300-500%</h4>
+<h4>Plan Miembro (10€/mes) &#8211; ROI Típico: 300-500%</h4>
 <p><strong>Beneficios mensuales estimados:</strong></p>
 <ul>
 <li>Ahorro en tiempo de planificación: 15 horas × 25€/hora = 375€</li>
@@ -1729,7 +1729,7 @@ Parámetros económicos:
 
 
 <div class="wp-block-group has-background" style="background-color: #fff3cd; padding: 20px;">
-<h4>Plan Premium (15€/mes) &#8211; ROI Típico: 400-700%</h4>
+<h4>Plan Premium Pro (25€/mes) &#8211; ROI Típico: 400-700%</h4>
 <p><strong>Beneficios mensuales estimados:</strong></p>
 <ul>
 <li>Ahorro en tiempo: 25 horas × 30€/hora = 750€</li>
@@ -1737,7 +1737,7 @@ Parámetros económicos:
 <li>Mejora en satisfacción del cliente: +8% ventas = 400€</li>
 <li>Reducción de desperdicios: 280€</li>
 <li><strong>Total beneficios: 1,955€/mes</strong></li>
-<li><strong>ROI neto: 12,933% anual</strong></li>
+<li><strong>ROI neto: 7,720% anual</strong></li>
 </ul>
 </div>
 
@@ -1752,7 +1752,7 @@ Parámetros económicos:
 <li>Incremento de ventas: 12% × 180,000€ = 21,600€ (anual promedio)</li>
 <li>Eficiencias de escala: 1,200€ mensuales</li>
 <li><strong>Total beneficios: 7,350€/mes</strong></li>
-<li><strong>ROI neto: 17,640% anual</strong></li>
+<li><strong>ROI neto: 14.600 % anual</strong></li>
 </ul>
 </div>
 
@@ -1767,32 +1767,32 @@ Parámetros económicos:
 
 
 <ul class="wp-block-list">
-<li><strong>Chef freelance o consultor</strong>: Plan Pro &#8211; Ideal para desarrollo de propuestas cliente</li>
+<li><strong>Chef freelance o consultor</strong>: Plan Miembro &#8211; Ideal para desarrollo de propuestas cliente</li>
 
 
 
-<li><strong>Restaurante independiente (20-50 pax)</strong>: Plan Premium &#8211; Balance perfecto entre funcionalidades y coste</li>
+<li><strong>Restaurante independiente (20-50 pax)</strong>: Plan Premium Pro &#8211; Balance perfecto entre créditos y coste</li>
 
 
 
-<li><strong>Cadena pequeña (2-4 locales)</strong>: Plan Premium Pro &#8211; Escalabilidad y herramientas de gestión</li>
+<li><strong>Cadena pequeña (2-4 locales)</strong>: Plan Premium Plus &#8211; Escalabilidad y más créditos para varios equipos</li>
 
 
 
-<li><strong>Grupo gastronómico o cadena grande</strong>: Plan Premium Plus &#8211; Ecosistema completo y soporte personalizado</li>
+<li><strong>Grupo gastronómico o cadena grande</strong>: Plan Premium Max &#8211; Créditos ilimitados para todo el grupo</li>
 
 
 
-<li><strong>Empresa de catering</strong>: Plan Premium Pro/Plus según volumen &#8211; Herramientas especializadas críticas</li>
+<li><strong>Empresa de catering</strong>: Plan Premium Pro o Premium Plus según volumen &#8211; Herramientas especializadas críticas</li>
 
 
 
-<li><strong>Escuela de hostelería</strong>: Planes educativos especiales disponibles bajo consulta</li>
+<li><strong>Escuela de hostelería</strong>: Premium Plus o Premium Max, según el número de usuarios y el volumen de trabajo</li>
 </ul>
 
 
 
-<p class="wp-block-paragraph">Para obtener información detallada sobre todos los planes y opciones de personalización, visita nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3511">página de precios oficial</a> donde también encontrarás calculadoras de ROI personalizadas según tu perfil de negocio.</p>
+<p class="wp-block-paragraph">Para obtener información detallada sobre todos los planes y opciones de personalización, visita nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3511">página de precios oficial</a>.</p>
 
 
 
@@ -1850,7 +1850,7 @@ Parámetros económicos:
 
 <div class="wp-block-group has-background" style="background-color: #e8f5e8; padding: 25px;">
 <h3>🚀 Da el Primer Paso Hoy Mismo</h3>
-<p><strong>Inicia tu transformación gastronómica:</strong><br>👉 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3512"><strong>Prueba AI Chef Pro desde 10 €</strong></a> y experimenta la diferencia de los prompts profesionales<br>👉 Accede a templates descargables y casos de estudio reales<br>👉 Únete a más de 2,500 profesionales que ya están revolucionando sus cocinas</p>
+<p><strong>Inicia tu transformación gastronómica:</strong><br>👉 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3512"><strong>Prueba AI Chef Pro desde 10 €</strong></a> y experimenta la diferencia de los prompts profesionales<br>👉 Accede a templates descargables y casos de estudio reales</p>
 <p><strong>¿Tienes preguntas específicas sobre implementación?</strong><br>💬 <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3513"><strong>Contacta con nuestro equipo especializado</strong></a> para una consulta personalizada gratuita</p>
 </div>
 
@@ -1896,7 +1896,7 @@ Parámetros económicos:
 
 
 
-<p class="wp-block-paragraph">Ofrecemos múltiples niveles de soporte adaptados a cada plan: documentación detallada 24/7, tutoriales interactivos, base de conocimiento especializada, soporte por chat en vivo, webinars mensuales y sesiones de consultoría personalizada para planes Premium. Nuestro equipo está formado por profesionales con experiencia gastronómica que entienden los retos específicos del sector.</p>
+<p class="wp-block-paragraph">Ofrecemos varias vías de soporte: documentación detallada 24/7, tutoriales interactivos, base de conocimiento especializada, soporte por chat en vivo y webinars mensuales. Nuestro equipo está formado por profesionales con experiencia gastronómica que entienden los retos específicos del sector.</p>
 
 
 

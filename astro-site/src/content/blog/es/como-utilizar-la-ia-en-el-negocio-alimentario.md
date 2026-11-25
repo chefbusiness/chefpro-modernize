@@ -191,7 +191,7 @@ wpId: 2113
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 30px; margin: 40px 0; border-radius: 10px; text-align: center;">
 <h3 style="color: #000000; margin-top: 0; font-size: 24px;">🚀 Transforma Tu Negocio Alimentario con IA</h3>
-<p style="color: #333333; font-size: 16px; margin-bottom: 20px;">Accede a más de 55 herramientas de inteligencia artificial diseñadas específicamente para chefs y profesionales de la hostelería. Desde generadores de recetas hasta control de mermas y alérgenos.</p>
+<p style="color: #333333; font-size: 16px; margin-bottom: 20px;">Accede a más de 80 agentes de inteligencia artificial diseñados específicamente para chefs y profesionales de la hostelería. Desde generadores de recetas hasta control de mermas y alérgenos.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px;">Prueba AI Chef Pro</a>
 </div>
 
@@ -883,7 +883,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">explorar AI Chef Pro</a> y descubrir cómo más de 55 herramientas especializadas pueden transformar tu aproximación al negocio alimentario. Con planes desde 10 €/mes, no hay excusa para no comenzar hoy mismo tu viaje hacia la cocina del futuro.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">explorar AI Chef Pro</a> y descubrir cómo más de 80 agentes especializados pueden transformar tu aproximación al negocio alimentario. Con planes desde 10 €/mes, no hay excusa para no comenzar hoy mismo tu viaje hacia la cocina del futuro.</p>
 
 
 
@@ -897,7 +897,7 @@ wpId: 2113
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 35px; margin: 40px 0; border-radius: 10px; text-align: center;">
 <h3 style="color: #000000; margin-top: 0; font-size: 26px;">🍳 Comienza Tu Transformación Digital Hoy</h3>
-<p style="color: #333333; font-size: 17px; margin-bottom: 25px;">Únete a miles de profesionales de la hostelería que ya están aprovechando el poder de la IA para optimizar sus negocios. Acceso de pago a herramientas profesionales sin compromiso.</p>
+<p style="color: #333333; font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu negocio y aprovecha el poder de la IA: acceso a herramientas profesionales, sin permanencia.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 20px;">Empieza con AI Chef Pro desde 10€</a>
 </div>
 

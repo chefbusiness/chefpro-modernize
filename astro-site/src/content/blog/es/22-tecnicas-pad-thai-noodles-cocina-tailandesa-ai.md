@@ -138,7 +138,7 @@ wpId: 2141
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 30px 25px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #1a1a1a; margin: 0 0 15px 0; font-size: 24px; font-weight: bold;">🍜 Domina la Cocina Tailandesa con IA</h3>
-<p style="color: #333; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Accede a más de 55 herramientas de inteligencia artificial diseñadas para chefs profesionales. Genera recetas, optimiza costes y eleva tu creatividad culinaria.</p>
+<p style="color: #333; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Accede a más de 80 agentes de inteligencia artificial diseñados para chefs profesionales. Genera recetas, optimiza costes y eleva tu creatividad culinaria.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=22-tecnicas-pad-thai-noodles-cocina-tailandesa-ai" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: all 0.3s ease;">Prueba AI Chef Pro</a>
 </div>
 
@@ -692,7 +692,7 @@ wpId: 2141
 
 <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); padding: 30px 25px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #fff; margin: 0 0 15px 0; font-size: 24px; font-weight: bold;">🔥 Suscríbete a AI Chef Pro</h3>
-<p style="color: #fff; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Desde solo 10€/mes accede a Cocina Tailandesa AI, <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, Mermas GenCal y más de 55 herramientas profesionales para revolucionar tu cocina.</p>
+<p style="color: #fff; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Desde solo 10€/mes accede a Cocina Tailandesa AI, <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, Mermas GenCal y más de 80 agentes profesionales para revolucionar tu cocina.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=22-tecnicas-pad-thai-noodles-cocina-tailandesa-ai" target="_blank" style="display: inline-block; background-color: #fff; color: #c0392b; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -850,7 +850,7 @@ wpId: 2141
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal para</th><th class="has-text-align-left" data-align="left">Herramientas incluidas</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>Gratis</td><td>Explorar la plataforma</td><td>Acceso básico limitado</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs individuales</td><td>Cocina Tailandesa AI + 10 herramientas</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes pequeños</td><td>Suite completa + límites expandidos</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Chefs ejecutivos</td><td>Todas las herramientas + análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas y consultorías</td><td>Uso ilimitado + soporte prioritario</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal para</th><th class="has-text-align-left" data-align="left">Herramientas incluidas</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Chefs individuales y para empezar</td><td>Todos los agentes · 10.000 créditos/mes</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Restaurantes pequeños y chefs ejecutivos</td><td>Todos los agentes · 85.000 créditos/mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Cadenas y consultorías</td><td>Todos los agentes · 175.000 créditos/mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Uso intensivo</td><td>Todos los agentes · créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 
@@ -939,7 +939,7 @@ wpId: 2141
 
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); padding: 35px 25px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <h3 style="color: #FFD700; margin: 0 0 15px 0; font-size: 26px; font-weight: bold;">🥢 Comienza Tu Transformación Culinaria Hoy</h3>
-<p style="color: #fff; margin: 0 0 25px 0; font-size: 17px; line-height: 1.7;">Únete a miles de chefs profesionales que ya utilizan AI Chef Pro para revolucionar sus cocinas. Acceso inmediato con el plan AI Chef Miembro (10€/mes) a herramientas de inteligencia artificial diseñadas específicamente para la gastronomía.</p>
+<p style="color: #fff; margin: 0 0 25px 0; font-size: 17px; line-height: 1.7;">Prueba AI Chef Pro en tu cocina. Acceso inmediato con el plan AI Chef Miembro (10 €/mes) a herramientas de inteligencia artificial diseñadas específicamente para la gastronomía.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=22-tecnicas-pad-thai-noodles-cocina-tailandesa-ai" target="_blank" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Crear Cuenta en AI Chef Pro</a>
 </div>
 
