@@ -72,7 +72,7 @@ wpId: 2028
 
 <div style="background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%); border-radius: 12px; padding: 30px; margin: 35px 0; text-align: center; color: white;">
 <h3 style="color: white; margin-top: 0; font-size: 24px;">🎮 Revoluciona la Experiencia de tu Restaurante con IA</h3>
-<p style="font-size: 16px; margin-bottom: 20px;">Descubre cómo AI Chef Pro puede ayudarte a implementar estrategias de gamificación inteligentes con más de 55 herramientas especializadas para profesionales de la hostelería.</p>
+<p style="font-size: 16px; margin-bottom: 20px;">Descubre cómo AI Chef Pro puede ayudarte a implementar estrategias de gamificación inteligentes con más de 80 agentes especializados para profesionales de la hostelería.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gamificacion-en-restaurantes-con-ia" target="_blank" style="display: inline-block; background-color: #ffffff; color: #1a5f7a; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Prueba AI Chef Pro</a>
 </div>
 
@@ -535,7 +535,7 @@ wpId: 2028
 
 <div style="background: linear-gradient(135deg, #2d3436 0%, #636e72 100%); border-radius: 12px; padding: 30px; margin: 35px 0; text-align: center; color: white;">
 <h3 style="color: white; margin-top: 0; font-size: 24px;">🚀 Transforma tu Restaurante con Inteligencia Artificial</h3>
-<p style="font-size: 16px; margin-bottom: 20px;">Desde €10/mes, accede a más de 55 herramientas de IA especializadas para profesionales de la hostelería. <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, Mermas GenCal, Mental Coach y mucho más.</p>
+<p style="font-size: 16px; margin-bottom: 20px;">Desde €10/mes, accede a más de 80 agentes de IA especializados para profesionales de la hostelería. <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, Mermas GenCal, Mental Coach y mucho más.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gamificacion-en-restaurantes-con-ia" target="_blank" style="display: inline-block; background-color: #00cec9; color: #2d3436; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -681,7 +681,7 @@ wpId: 2028
 
 <div style="background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%); border-radius: 12px; padding: 35px; margin: 35px 0; text-align: center; color: white;">
 <h3 style="color: white; margin-top: 0; font-size: 26px;">🎯 Comienza tu Transformación Digital Hoy</h3>
-<p style="font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu cocina. Plan Miembro desde 10 €/mes, sin permanencia.</p>
+<p style="font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu cocina con el plan Miembro, sin permanencia.</p>
 <a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gamificacion-en-restaurantes-con-ia" target="_blank" style="display: inline-block; background-color: #ffffff; color: #0984e3; padding: 16px 36px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Empieza desde 10 €/mes →</a>
 </div>
 
