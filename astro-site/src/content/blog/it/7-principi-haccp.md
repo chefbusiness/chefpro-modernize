@@ -23,7 +23,7 @@ faq:
 
 <p>Ti è mai capitato? L'ispettore dell'autorità di controllo entra in cucina, osserva la tua brigata e ti chiede: «Mi mostri come controlla l'abbattimento?». Tu apri il manuale HACCP fotocopiato che ti ha consegnato il consulente tre anni fa, quello con il nome del ristorante scritto a penna sulla copertina. Le pagine sono intonse. Nessuno le ha mai lette. E in quel momento capisci che il manuale non è il tuo sistema di autocontrollo: è solo un oggetto che occupa spazio vicino alla fotocopiatrice.</p>
 
-<p>Questo articolo non è un elenco generico di principi. È il racconto di cosa succede davvero quando prepari una lasagna al ragù, la abbatti, la conservi e la rigeneri al servizio. Perché i 7 principi HACCP, quelli dell'art. 5 del Regolamento (CE) 852/2004, funzionano solo se li applichi al piatto che cucini ogni giorno. E la differenza tra un manuale che descrive la tua cucina e uno fotocopiato è la differenza tra una cucina che controlla i pericoli e una che spera che non succeda nulla.</p>
+<p>Questo articolo non è un elenco generico di principi. È il racconto di cosa succede davvero quando prepari una lasagna al ragù, la abbatti, la conservi e la rigeneri al servizio. Perché i 7 principi HACCP, quelli dell'art. 5 del Regolamento (CE) 852/2004, funzionano solo se li applichi al piatto che cucini ogni giorno. E la differenza tra un manuale che descrive la tua cucina e uno fotocopiato è la differenza tra una cucina che controlla i pericoli e una che spera che non succeda nulla. Se vuoi partire da una base, qui trovi un <a href="https://aichef.pro/it/blog/manuale-haccp-semplificato">modello di manuale HACCP semplificato</a> da adattare al tuo locale.</p>
 
 <h2>Da dove vengono i 7 principi (e perché ti riguardano anche se hai un bar)</h2>
 
