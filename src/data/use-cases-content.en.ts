@@ -561,7 +561,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
   },
   'sous-chef': {
-      h1: 'AI for Sous Chefs',
+      h1: 'AI Sous Chef for Professional Kitchens',
       heroSubtitle: 'Organize stations, run mise en place, train and supervise the line, and free up admin hours with an AI agent suite built for the sous chef in a professional kitchen.',
       heroTagline: 'The head chef\'s right hand, with a real system',
       badge: 'For sous chefs',

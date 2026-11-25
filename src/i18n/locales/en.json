@@ -1205,8 +1205,8 @@
       "keywords": "reduce restaurant costs, restaurant food cost control, reduce kitchen waste, digital recipe costing, optimize kitchen costs, restaurant profitability AI, AI to cut costs"
     },
     "hero": {
-      "badge": "💰 Save from the first month",
-      "h1": "Cut your restaurant costs by up to 35% with AI",
+      "badge": "💰 Food cost under control",
+      "h1": "Cut your restaurant costs with AI",
       "subtitle": "Control waste, optimize food cost and improve each dish margin — no spreadsheets, no manual calculations.",
       "tagline": "75+ AI agents in 7 languages for the professional kitchen.",
       "cta_primary": "Start saving",
@@ -2737,14 +2737,14 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "AI Food Cost Calculator — Free for Restaurants | AI Chef Pro",
-      "description": "Free AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. No registration.",
-      "keywords": "ai food cost calculator, food cost calculator restaurant, food cost calculator free, calculate food cost, food cost percentage, restaurant food cost, dish cost calculator"
+      "title": "AI Food Cost & Recipe Cost Calculator — Free | AI Chef Pro",
+      "description": "Free food cost and recipe cost calculator for restaurants: add ingredients, weights and selling price to get plate cost and food cost %. No registration.",
+      "keywords": "ai food cost calculator, recipe cost calculator, free recipe cost calculator, food cost calculator restaurant, food cost calculator free, calculate food cost, food cost percentage, plate cost calculator"
     },
     "breadcrumb": "Food Cost Calculator",
     "hero": {
       "badge": "Free — No registration",
-      "h1": "Food Cost Calculator for Restaurants",
+      "h1": "Food Cost & Recipe Cost Calculator for Restaurants",
       "subtitle": "Calculate the food cost percentage of any dish in seconds. Add ingredients, quantities and selling price.",
       "cta_tool": "Go to calculator ↓",
       "cta_premium": "Premium Plan →"
