@@ -2871,6 +2871,10 @@
       {
         "question": "How to improve a high food cost?",
         "answer": "You can raise the selling price, switch to cheaper suppliers, reduce the weight of expensive ingredients, or substitute high-cost components with similar alternatives."
+      },
+      {
+        "question": "Is there a food cost calculator app?",
+        "answer": "You don't need to install one: this calculator runs in your phone's browser, free and without sign-up. Add it to your home screen and it opens like an app. For costing every dish with yields and waste, the AI Chef Pro agents work in the browser too, from €10/month."
       }
     ],
     "cta_section": {

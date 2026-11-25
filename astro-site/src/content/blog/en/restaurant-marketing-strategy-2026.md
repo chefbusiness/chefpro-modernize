@@ -235,7 +235,7 @@ faq:
 <li><strong>Social Sharing:</strong> Encourage members to share achievements on social media.</li>
 </ul>
 <h2>AI-Powered Marketing: The Competitive Advantage</h2>
-<p>Artificial intelligence has transformed restaurant marketing from guesswork to precision targeting. <strong>AI Chef Pro</strong> (<a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a>) offers over 55 AI-powered tools specifically designed for foodservice professionals, with an AI Chef Member plan that allows chefs and restaurant owners to test capabilities before committing.</p>
+<p>Artificial intelligence has transformed restaurant marketing from guesswork to precision targeting. <strong>AI Chef Pro</strong> (<a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a>) offers 75+ AI agents built for foodservice professionals, from €10/month (AI Chef Member, 10,000 credits, no lock-in). See what the marketing agents do for social posts, Google reviews and campaigns in <a href="https://aichef.pro/en/restaurant-marketing-ai">AI marketing for restaurants</a>.</p>
 <h3>Practical AI Applications</h3>
 <ul>
 <li><strong>Menu Optimization:</strong> AI analyzes sales data to identify high-margin items and suggests menu engineering improvements.</li>
