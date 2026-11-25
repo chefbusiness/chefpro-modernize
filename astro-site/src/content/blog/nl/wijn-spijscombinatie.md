@@ -23,7 +23,7 @@ faq:
   - q: "Waarom heet het in het Spaans 'maridaje'?"
     a: "Omdat het van maridar komt, dat trouwen betekent. Het beeld is dat van een koppel: gerecht en drankje houden elkaar overeind en het geheel werkt beter dan elk apart. Daar komen ook synoniemen als harmonie of koppeling vandaan, en de Engelse term pairing. In het Nederlands spreken we van een wijn-spijscombinatie of van wijn bij het eten."
   - q: "Wat kost een wijnarrangement voor de gast?"
-    a: "Dat hangt af van wat de wijn u per couvert kost en van de drankkostprijs die u nastreeft. Rekenvoorbeeld: kost het arrangement u 9,60 € per couvert en mikt u op 25 %, dan is de prijs 38,40 € exclusief btw. Met 21 % btw (alcohol valt in Nederland onder het hoge tarief) wordt dat 46,46 €, en op de kaart zet u 47,00 €: de werkelijke drankkostprijs is dan 24,7 %. Rond niet naar beneden af, want dan zakt uw marge bij elke couvert."
+    a: "Dat hangt af van wat de wijn u per couvert kost en van de drankkostprijs die u nastreeft. Rekenvoorbeeld: kost het arrangement u € 9,60 per couvert en mikt u op 25 %, dan is de prijs € 38,40 exclusief btw. Met 21 % btw (alcohol valt in Nederland onder het hoge tarief) wordt dat € 46,46, en op de kaart zet u € 47,00: de werkelijke drankkostprijs is dan 24,7 %. Rond niet naar beneden af, want dan zakt uw marge bij elke couvert."
   - q: "Wat is een diner met wijnarrangement?"
     a: "Het is een evenement met een vast menu waarbij elke gang met een speciaal daarbij gekozen drankje wordt geserveerd. Meestal presenteert de sommelier, het wijnhuis of de brouwerij het. Het verschil met een gewoon diner is dat er geen open kaart is: het parcours is van begin tot eind uitgedacht en de prijs is meestal vast."
   - q: "Hoeveel wijn schenkt u bij een arrangement?"
