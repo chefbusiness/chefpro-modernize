@@ -17,7 +17,7 @@ faq:
   - q: "Qu'est-ce qu'un accord mets-vin ?"
     a: "C'est la rencontre réfléchie entre un plat et une boisson, où chacun fait ressortir le meilleur de l'autre sans l'écraser. On parle aussi de mariage mets et vins. Ce n'est pas une science exacte : des règles de métier donnent un cap, puis la dégustation tranche, car deux bouteilles du même domaine peuvent se comporter différemment selon le millésime."
   - q: "Comment savoir quel vin va avec quel plat ?"
-    a: "Partez de trois repères : l'intensité du plat, sa texture grasse ou maigre, et la sensation que vous voulez créer. Un plat léger appelle un vin léger, un plat gras appelle de la fraîcheur, un plat sucré appelle un vin au moins aussi sucré. Ajoutez le mode de cuisson et la sauce, puis goûtez le plat et le vin ensemble avant de servir."
+    a: "Regardez d'abord la sauce et la cuisson plutôt que la viande ou le poisson : un poulet à la crème et un poulet rôti n'appellent pas le même vin. Accordez ensuite l'intensité, cherchez la fraîcheur face au gras et un vin au moins aussi sucré que le dessert. Puis goûtez le plat et le vin ensemble avant de servir."
   - q: "Quel vin rouge avec du poulet ?"
     a: "Un rouge léger et fruité, peu tannique : un beaujolais, par exemple fleurie ou morgon, ou un bourgogne rouge. Un rouge structuré écraserait la volaille. Si le poulet est servi à la crème, préférez plutôt un blanc ample, comme un chardonnay de Bourgogne, qui accompagne le gras de la sauce sans le dominer."
   - q: "Quel vin avec un plateau de fromages ?"
@@ -28,6 +28,8 @@ faq:
     a: "Oui, avec un rouge léger et peu tannique, sur un poisson à chair ferme ou en sauce au vin rouge. En revanche, évitez le rouge avec le poisson gras : hareng, maquereau ou sardine prennent un goût métallique au contact du tanin. Sur ces poissons, un blanc sec et vif reste plus sûr."
   - q: "Combien facturer un accord mets-vins au restaurant ?"
     a: "Calculez le coût de vos verres, puis appliquez votre coût boisson cible. Avec six verres de 8 cl à 10,45 € de coût total et une cible de 25 %, la formule se vend 41,80 € HT, soit 50,16 € TTC avec une TVA à 20 %. À 52,00 € TTC, le coût réel est de 24,1 %. Ces montants sont des exemples à adapter."
+  - q: "Peut-on proposer un accord sans alcool ?"
+    a: "Oui. Jus pressés, infusions froides, kombucha, eaux aromatisées ou bières sans alcool se choisissent avec les mêmes règles : l'acidité face au gras, l'intensité avec l'intensité, un peu de sucre face au piment. Au restaurant, proposez-le au même rythme que l'accord vin, plat par plat, pour que le convive qui ne boit pas ait aussi sa formule."
   - q: "L'IA peut-elle proposer des accords mets-vins ?"
     a: "Oui, elle peut proposer des pistes et des combinaisons d'ingrédients, ce qui fait gagner du temps de brouillon avant une dégustation. Elle ne remplace pas le palais du sommelier ni du chef : l'accord se valide en goûtant le plat et le vin ensemble. L'IA explore plus vite, elle ne décide pas à votre place."
 ---
@@ -84,7 +86,7 @@ Voici les accords sur lesquels vous pouvez vous appuyer sans hésiter, classés 
 
 | Plat | Type de vin | Exemples d'appellations |
 | :--- | :--- | :--- |
-| Huîtres et fruits de mer | blanc sec, vif | muscadet sèvre-et-maine, chablis, picpoul-de-pinet |
+| Huîtres et fruits de mer | blanc sec, vif | muscadet-sèvre-et-maine, chablis, picpoul-de-pinet |
 | Poisson grillé | blanc sec | sancerre, pouilly-fumé |
 | Poisson en sauce au beurre | blanc plus ample | meursault, chablis premier cru |
 | Saumon | rouge léger ou blanc ample | sancerre rouge, bourgogne blanc |
@@ -95,11 +97,10 @@ Voici les accords sur lesquels vous pouvez vous appuyer sans hésiter, classés 
 | Gibier et civet | rouge puissant | côte-rôtie, gigondas, pommard |
 | Charcuterie | rouge fruité | beaujolais, côtes-du-rhône |
 | Choucroute | blanc d'Alsace | riesling |
-| Cuisine épicée | blanc aromatique, peu alcoolisé | gewurztraminer, riesling |
+| Cuisine épicée | blanc aromatique, avec un peu de sucre résiduel | riesling demi-sec, vouvray demi-sec |
 | Dessert au chocolat | vin doux naturel | banyuls, maury |
 | Tarte aux fruits | blanc moelleux ou champagne demi-sec | coteaux-du-layon, jurançon |
 
-« Quel vin rouge avec du poulet ? » C'est la question la plus fréquente en salle, et la réponse est simple : un rouge léger et fruité, peu tannique, comme un beaujolais ou un bourgogne rouge. Un rouge structuré écraserait la volaille ; un rouge souple accompagne la chair sans la dominer.
 
 ## Accord vin et fromage
 
@@ -115,7 +116,7 @@ Les blancs et les liquoreux s'accordent avec plus de fromages que les rouges. Av
 | Roquefort | sauternes | contraste sel-sucre |
 | Munster | gewurztraminer | par terroir, puissance aromatique |
 | Brie ou camembert | champagne brut ou cidre | les bulles nettoient la crème |
-| Époisses | bourgogne blanc ou marc de Bourgogne | par terroir |
+| Époisses | bourgogne blanc (ou, en digestif, un marc de Bourgogne) | par terroir |
 | Beaufort | roussette de Savoie | par terroir |
 | Tomme ou cantal jeune | rouge léger (saint-pourçain) | intensité moyenne |
 
@@ -130,11 +131,11 @@ Gardez le bleu pour la fin, avec son liquoreux : le sauternes sur le roquefort e
 L'accord se conçoit en même temps que le menu, pas après : un vin par plat ou par séquence, servi dans des verres de 8 cl. Six verres de 8 cl font 48 cl par personne, soit près des deux tiers d'une bouteille de 75 cl. C'est beaucoup pour un seul convive : proposez un demi-accord ou une version sans alcool, et laissez le client choisir son rythme.
 
 <figure class="wp-block-image size-large">
-<img decoding="async" loading="lazy" src="/blog-assets/2026/11/accord-mets-vins-degustation.jpg" alt="Six verres alignés au passe à côté de six assiettes d'un menu dégustation"/><figcaption>Un vin par plat, en verres de 8 cl : l'accord se pense en même temps que le menu</figcaption></figure>
+<img decoding="async" loading="lazy" src="/blog-assets/2026/11/accord-mets-vins-degustation.jpg" alt="Des verres alignés au passe à côté des six assiettes d'un menu dégustation"/><figcaption>Un vin par plat, en verres de 8 cl : l'accord se pense en même temps que le menu</figcaption></figure>
 
 Voici un exemple chiffré, avec six verres de 8 cl et des bouteilles de 75 cl. Les prix sont des prix d'exemple.
 
-| Vin | Prix de la bouteille (75 cl) | Coût du verre de 8 cl |
+| Vin | Prix d'achat HT de la bouteille (75 cl) | Coût du verre de 8 cl |
 | :--- | :--- | :--- |
 | Champagne brut | 22,00 € | 2,35 € |
 | Muscadet | 9,00 € | 0,96 € |
