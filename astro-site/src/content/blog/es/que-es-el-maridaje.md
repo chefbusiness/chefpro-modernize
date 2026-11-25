@@ -5,6 +5,8 @@ pubDate: 2026-11-24
 modDate: 2026-11-25
 category: glosario
 tags: ["maridaje", "vino", "sumiller"]
+translations:
+  fr: "accord-mets-vins"
 lang: es
 image: /blog-assets/2026/11/maridaje-destacada.jpg
 imageAlt: "Un sumiller sirve vino blanco en una mesa con ostras sobre hielo y un plato de jamón ibérico"

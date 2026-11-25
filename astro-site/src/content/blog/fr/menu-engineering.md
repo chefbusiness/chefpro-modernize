@@ -134,6 +134,7 @@ faq:
 
 <h2>Et après l'analyse ? Les leviers qui marchent</h2>
 <p>Une fois que vous avez identifié vos familles, il est temps d’agir. Voici les leviers concrets à actionner, sans psychologie de comptoir mais avec le bon sens du métier.</p>
+<p>Les boissons se pilotent avec la même logique. Pour chiffrer une formule d'accords au verre, coût du verre et TVA à 20 % compris, voyez l'exemple de notre guide des <a href="https://aichef.pro/fr/blog/accord-mets-vins">accords mets-vins</a>.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/menueng-sala.jpg" alt="Un serveur suggère un plat à une table en montrant la carte ouverte, dans une salle chaleureuse" width="1376" height="768" loading="lazy" decoding="async" />
