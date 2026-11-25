@@ -1,0 +1,330 @@
+---
+// Herramienta gratuita EN, solo este idioma (LowFruits EN, nov-2026): «menu pricing calculator» /
+// «menu price calculator» / «menu cost calculator» (1.900/mes en EE. UU., mismo cluster). No pasa por
+// fase6-generate-marketing.py (no hay gemelas). Mismo BaseLayout/Header/Footer que /en/recipe-costing-software;
+// hreflang solo en. La calculadora es JS plano (is:inline) sin dependencias: la lógica vive entre las marcas
+// MPC-CALC-START/END y la prueba scripts/contenidos/test-menu-pricing-calculator.mjs la ejecuta en node.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ProductBanner from '../../components/blog/ProductBanner.astro';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { SITE } from '../../i18n/config';
+import { Content as Guide } from '../../data/landings/en-menu-pricing-calculator.md';
+
+type CatalogueRow = { url: string; title: string; image: string; price: string };
+const catalogue = JSON.parse(
+  readFileSync(join(process.cwd(), 'src/data/digital-products-catalogue.json'), 'utf8'),
+) as { en: CatalogueRow[] };
+
+const lang = 'en';
+const basePath = '/menu-pricing-calculator';
+const canonical = `${SITE}/en/menu-pricing-calculator`;
+
+const title = 'Free Menu Pricing Calculator for Restaurants | AI Chef Pro';
+const description =
+  'Free menu pricing calculator: enter plate cost and target food cost % to get your menu price, markup and gross profit per plate. Formula, examples and FAQ.';
+const keywords =
+  'menu pricing calculator, menu price calculator, menu cost calculator, restaurant menu price calculator, menu pricing formula, food cost percentage';
+const h1 = 'Menu pricing calculator';
+
+const ctaHref =
+  'https://enapp.aichef.pro/?utm_source=aichef&utm_medium=tool&utm_campaign=menu-pricing-calculator';
+
+function bannerFor(slug: string) {
+  const row = catalogue.en.find((product) => product.url.split('/').filter(Boolean).pop() === slug);
+  if (!row) throw new Error(`EN catalogue has no product «${slug}»`);
+  const href = new URL(row.url);
+  href.searchParams.set('utm_source', 'aichef');
+  href.searchParams.set('utm_medium', 'tool');
+  href.searchParams.set('utm_campaign', 'productos-digitales');
+  href.searchParams.set('utm_content', 'menu-pricing-calculator');
+  return { id: slug, title: row.title, price: row.price, image: row.image, href: href.toString(), catalogue: 'en' as const };
+}
+const kitBanner = bannerFor('food-cost-templates');
+const guideBanner = bannerFor('food-cost-menu-engineering-guide');
+
+const faqs = [
+  { q: "How do I price my restaurant menu?", a: "Cost every ingredient on the plate after trim and waste to get your plate cost. Choose a target food cost percentage for that dish, then divide the plate cost by that percentage to get a starting price. Round it to a number your guests accept, then divide the rounded price back into the plate cost to confirm the real percentage. Repeat dish by dish, then review the whole menu blend." },
+  { q: "What is the menu pricing formula?", a: "Menu price equals plate cost divided by target food cost percentage. The markup multiplier is one divided by the target percentage, so a 30 percent target means multiplying plate cost by 3.33. Round only after you calculate, then check the real food cost percentage on the rounded price. For example, a $4.29 plate cost at a 30% target gives a $14.30 menu price." },
+  { q: "What is a good food cost percentage for a restaurant?", a: "There is no single right number. As a rule of thumb, many restaurants work somewhere around 25 to 35 percent on food. Premium proteins and high-cost ingredients usually carry a higher percentage, while sides, starters and desserts carry a lower one; a dish with long prep may need a lower one to cover its labor. Price each dish on its own, then watch the blend across the menu rather than forcing one number." },
+  { q: "Is there a free menu pricing calculator?", a: "Yes. The calculator on this page is free and needs no sign-up, like the other calculators and generators on the site. Enter your plate cost and your target food cost percentage, and it gives you the menu price, the markup multiplier and the gross profit per plate. Nothing is stored and no account is required." },
+  { q: "How do you calculate actual food cost?", a: "Actual food cost comes from inventory, not from recipes. Take beginning inventory plus purchases minus ending inventory, then divide that figure by food sales for the same period. Compare it with your theoretical food cost from recipe costing. The difference between the two is waste, over-portioning, theft or recipe drift, and it is worth chasing every stock count." },
+  { q: "Should menu prices include sales tax?", a: "In the US, menu prices usually exclude sales tax, which the guest pays on top of the listed price. In the UK and the EU, menu prices include VAT. If you work in a VAT market, remove the VAT before calculating your food cost percentage, otherwise you divide plate cost by money your restaurant never keeps and your percentages read better than they really are." },
+];
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Menu Pricing Calculator',
+    url: canonical,
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Any',
+    isAccessibleForFree: true,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    description,
+    inLanguage: 'en',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: `${SITE}/en` },
+      { '@type': 'ListItem', position: 2, name: 'Free tools', item: `${SITE}/en/free-tools-restaurants` },
+      { '@type': 'ListItem', position: 3, name: h1, item: canonical },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({ '@type': 'Question', name: faq.q, acceptedAnswer: { '@type': 'Answer', text: faq.a } })),
+  },
+];
+
+const input = 'mt-1 h-11 w-full rounded-md border border-border bg-background px-3 text-base text-foreground';
+const label = 'block text-sm font-medium text-foreground';
+---
+
+<BaseLayout title={title} description={description} keywords={keywords} lang={lang} locales={['en']} basePath={basePath} ogImage={`${SITE}/og-image.jpg`}>
+  <Fragment slot="head">
+    {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+    <header class="mx-auto mb-10 max-w-3xl text-center">
+      <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
+        Free tool · No sign-up
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">{h1}</h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
+        Enter your plate cost and the food cost % you want, and get the menu price, the markup and the gross profit per plate. Nothing is stored.
+      </p>
+    </header>
+
+    <section id="calculator" class="mx-auto max-w-3xl rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8" aria-labelledby="calc-title">
+      <h2 id="calc-title" class="text-2xl font-bold text-foreground">Price one plate</h2>
+      <form id="mpc-form" class="mt-6 grid gap-5 sm:grid-cols-2" novalidate>
+        <label class={label}>Currency
+          <select id="mpc-currency" class={input}>
+            <option value="$">$ US dollar</option>
+            <option value="€">€ Euro</option>
+            <option value="£">£ Pound</option>
+          </select>
+        </label>
+        <label class={label}>Plate cost
+          <input id="mpc-cost" class={input} type="number" inputmode="decimal" min="0" step="0.01" value="4.29" />
+        </label>
+        <label class={label}>Target food cost %
+          <input id="mpc-target" class={input} type="number" inputmode="decimal" min="1" max="99" step="any" value="30" />
+        </label>
+        <label class={label}>Round menu price up to
+          <select id="mpc-rounding" class={input}>
+            <option value="0.95" selected>.95</option>
+            <option value="0.99">.99</option>
+            <option value="0.5">.00 or .50 (half-dollar steps)</option>
+            <option value="0">whole number</option>
+            <option value="none">no rounding</option>
+          </select>
+        </label>
+        <label class={label}>Sales tax or VAT % (optional)
+          <input id="mpc-tax" class={input} type="number" inputmode="decimal" min="0" max="50" step="any" value="0" />
+        </label>
+        <label class="flex items-start gap-3 pt-6 text-sm text-foreground">
+          <input id="mpc-tax-included" type="checkbox" class="mt-1 h-4 w-4" />
+          <span>My menu prices include tax (UK, EU). Leave unticked in the US, where tax is added at the register.</span>
+        </label>
+      </form>
+
+      <div id="mpc-error" class="mt-4 hidden rounded-md border border-destructive/40 bg-destructive/10 p-3 text-sm text-foreground" role="alert"></div>
+
+      <dl id="mpc-results" class="mt-6 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-border bg-background p-4">
+          <dt class="text-sm text-muted-foreground">Menu price</dt>
+          <dd id="mpc-out-menu" class="mt-1 text-2xl font-bold text-foreground" aria-live="polite">—</dd>
+          <dd id="mpc-out-menu-note" class="mt-1 text-xs text-muted-foreground"></dd>
+        </div>
+        <div class="rounded-xl border border-border bg-background p-4">
+          <dt class="text-sm text-muted-foreground">Real food cost after rounding</dt>
+          <dd id="mpc-out-real" class="mt-1 text-2xl font-bold text-foreground">—</dd>
+        </div>
+        <div class="rounded-xl border border-border bg-background p-4">
+          <dt class="text-sm text-muted-foreground">Gross profit per plate</dt>
+          <dd id="mpc-out-gp" class="mt-1 text-2xl font-bold text-foreground">—</dd>
+        </div>
+        <div class="rounded-xl border border-border bg-background p-4">
+          <dt class="text-sm text-muted-foreground">Exact price at your target</dt>
+          <dd id="mpc-out-exact" class="mt-1 text-lg font-semibold text-foreground">—</dd>
+          <dd id="mpc-out-exact-note" class="mt-1 text-xs text-muted-foreground"></dd>
+        </div>
+        <div class="rounded-xl border border-border bg-background p-4">
+          <dt class="text-sm text-muted-foreground">Markup multiplier</dt>
+          <dd id="mpc-out-markup" class="mt-1 text-lg font-semibold text-foreground">—</dd>
+        </div>
+        <div class="rounded-xl border border-border bg-background p-4">
+          <dt class="text-sm text-muted-foreground">Price before tax</dt>
+          <dd id="mpc-out-net" class="mt-1 text-lg font-semibold text-foreground">—</dd>
+        </div>
+      </dl>
+
+      <h3 class="mt-8 text-lg font-semibold text-foreground">The same plate at other food cost targets</h3>
+      <div class="mt-3 overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="border-b border-border text-muted-foreground">
+              <th class="py-2 pr-4 font-medium">Target food cost</th>
+              <th class="py-2 pr-4 font-medium">Menu price (before tax)</th>
+              <th class="py-2 font-medium">Gross profit per plate</th>
+            </tr>
+          </thead>
+          <tbody id="mpc-table" class="text-foreground"></tbody>
+        </table>
+      </div>
+
+      <div class="mt-8 rounded-xl border border-border bg-background p-5">
+        <h3 class="text-lg font-semibold text-foreground">Already have a menu price? Check its food cost %</h3>
+        <label class={`${label} mt-3`}>Menu price on your menu
+          <input id="mpc-reverse-price" class={input} type="number" inputmode="decimal" min="0" step="0.01" value="14.95" />
+        </label>
+        <p class="mt-3 text-sm text-foreground">Food cost %: <strong id="mpc-reverse-out">—</strong> <span class="text-muted-foreground">(uses the plate cost and tax settings above)</span></p>
+      </div>
+
+      <p class="mt-6 text-sm text-muted-foreground">
+        Need the plate cost first? Cost the recipe ingredient by ingredient with the free
+        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">food cost calculator</a>.
+      </p>
+    </section>
+
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ProductBanner {...kitBanner} />
+    </div>
+
+    <article class="blog-prose prose prose-lg mx-auto mt-16 max-w-3xl dark:prose-invert prose-headings:font-bold prose-a:text-primary">
+      <Guide />
+    </article>
+
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ProductBanner {...guideBanner} />
+    </div>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="faq">
+      <h2 id="faq" class="text-3xl font-bold text-foreground">Frequently asked questions</h2>
+      <div class="mt-6 space-y-4">
+        {faqs.map((faq) => (
+          <details class="rounded-xl border border-border bg-card p-5">
+            <summary class="cursor-pointer font-semibold text-foreground">{faq.q}</summary>
+            <p class="mt-3 leading-7 text-muted-foreground">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-card p-8 text-center">
+      <h2 class="text-2xl font-bold text-foreground">Cost and price the whole menu</h2>
+      <p class="mt-3 text-muted-foreground">
+        The agents in AI Chef Pro build a costed recipe card from your ingredient prices and suggest a menu price. AI Chef Member is €10/month for 10,000 credits; no free plan.
+      </p>
+      <a href={ctaHref} target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+        Start with Member
+      </a>
+      <p class="mt-3 text-sm text-muted-foreground">
+        <a href="/en/pricing" class="hover:underline">See all plans</a> ·
+        <a href="/en/recipe-costing-software" class="hover:underline">Recipe costing software</a> ·
+        <a href="/en/free-tools-restaurants" class="hover:underline">More free tools</a>
+      </p>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+
+  <script is:inline>
+    /* MPC-CALC-START */
+    function mpcRoundUp(price, ending) {
+      if (ending === 'none') return Math.round(price * 100) / 100;
+      var end = Number(ending);
+      if (end === 0.5) return Math.ceil(price * 2 - 1e-9) / 2;
+      var base = Math.floor(price);
+      var candidate = end === 0 ? Math.ceil(price - 1e-9) : base + end;
+      if (end !== 0 && candidate < price - 1e-9) candidate = base + 1 + end;
+      return Math.round(candidate * 100) / 100;
+    }
+    function mpcCompute(cost, targetPct, ending, taxPct, taxIncluded) {
+      if (!(cost >= 0.01) || !(targetPct >= 1) || !(targetPct <= 99) || !(taxPct >= 0) || !(taxPct <= 50)) return null;
+      var tax = taxPct / 100;
+      var exactNet = cost / (targetPct / 100);
+      var exactShown = taxIncluded ? exactNet * (1 + tax) : exactNet;
+      var menu = mpcRoundUp(exactShown, ending);
+      var menuNet = taxIncluded ? menu / (1 + tax) : menu;
+      return {
+        exactNet: exactNet,
+        exactShown: exactShown,
+        menu: menu,
+        menuNet: menuNet,
+        withTax: taxIncluded ? menu : menu * (1 + tax),
+        markup: 100 / targetPct,
+        realPct: (cost / menuNet) * 100,
+        gp: menuNet - cost,
+      };
+    }
+    function mpcReverse(cost, menuPrice, taxPct, taxIncluded) {
+      if (!(cost >= 0.01) || !(menuPrice >= 0.01) || !(taxPct >= 0) || !(taxPct <= 50)) return null;
+      var net = taxIncluded ? menuPrice / (1 + taxPct / 100) : menuPrice;
+      return (cost / net) * 100;
+    }
+    /* MPC-CALC-END */
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      if (!$('mpc-form')) return;
+      var money = function (cur, v) { return cur + (Math.round(v * 100) / 100).toFixed(2); };
+      var pct = function (v) { return (Math.round(v * 10) / 10).toFixed(1) + '%'; };
+      function render() {
+        var cur = $('mpc-currency').value;
+        var cost = parseFloat($('mpc-cost').value);
+        var target = parseFloat($('mpc-target').value);
+        var ending = $('mpc-rounding').value;
+        var tax = parseFloat($('mpc-tax').value) || 0;
+        var included = $('mpc-tax-included').checked;
+        var r = mpcCompute(cost, target, ending, tax, included);
+        var err = $('mpc-error');
+        if (!r) {
+          err.textContent = 'Enter a plate cost of at least 0.01, a target food cost between 1% and 99%, and a tax rate between 0% and 50%.';
+          err.classList.remove('hidden');
+          ['mpc-out-menu', 'mpc-out-real', 'mpc-out-gp', 'mpc-out-exact', 'mpc-out-markup', 'mpc-out-net'].forEach(function (id) { $(id).textContent = '—'; });
+          $('mpc-out-menu-note').textContent = '';
+          $('mpc-out-exact-note').textContent = '';
+          $('mpc-table').innerHTML = '';
+          $('mpc-reverse-out').textContent = '—';
+          return;
+        }
+        err.classList.add('hidden');
+        $('mpc-out-menu').textContent = money(cur, r.menu);
+        $('mpc-out-menu-note').textContent = included
+          ? 'Tax included'
+          : (tax > 0 ? 'Guest pays ' + money(cur, r.withTax) + ' with tax' : 'Before tax');
+        $('mpc-out-real').textContent = pct(r.realPct);
+        $('mpc-out-gp').textContent = money(cur, r.gp);
+        $('mpc-out-exact').textContent = money(cur, r.exactShown);
+        $('mpc-out-exact-note').textContent = included ? 'Tax included (the table below is before tax)' : 'Before rounding';
+        $('mpc-out-markup').textContent = '×' + (Math.round(r.markup * 100) / 100).toFixed(2);
+        $('mpc-out-net').textContent = money(cur, r.menuNet);
+        var rows = '';
+        [25, 28, 30, 32, 35].forEach(function (t) {
+          var net = cost / (t / 100);
+          rows += '<tr class="border-b border-border/60"><td class="py-2 pr-4">' + t + '%</td><td class="py-2 pr-4">' + money(cur, net) + '</td><td class="py-2">' + money(cur, net - cost) + '</td></tr>';
+        });
+        $('mpc-table').innerHTML = rows;
+        var rp = mpcReverse(cost, parseFloat($('mpc-reverse-price').value), tax, included);
+        $('mpc-reverse-out').textContent = rp === null ? '—' : pct(rp);
+      }
+      ['mpc-currency', 'mpc-cost', 'mpc-target', 'mpc-rounding', 'mpc-tax', 'mpc-tax-included', 'mpc-reverse-price'].forEach(function (id) {
+        $(id).addEventListener('input', render);
+        $(id).addEventListener('change', render);
+      });
+      $('mpc-form').addEventListener('submit', function (e) { e.preventDefault(); });
+      render();
+    })();
+  </script>
+</BaseLayout>

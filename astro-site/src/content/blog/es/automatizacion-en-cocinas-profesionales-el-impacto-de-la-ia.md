@@ -18,7 +18,7 @@ faq:
   - q: "¿La automatización sirve para un restaurante pequeño?"
     a: "Sí, y en muchos casos es donde más impacto tiene. Un restaurante pequeño sufre igual o más el papeleo porque el chef suele hacer también de gestor. Automatizar escandallos, pedidos y APPCC libera horas que en un equipo ajustado son críticas para el día a día."
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
-    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta. Premium Pro cuesta 25 € al mes con 85.000 créditos, Plus 50 € al mes con 175.000 créditos, y Max 95 € al mes con créditos ilimitados. También hay plan Max Anual por 950 € al año."
+    a: "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos y acceso a todos los agentes, sin permanencia. Premium Pro cuesta 25 € al mes con 85.000 créditos, Premium Plus 50 € al mes con 175.000 créditos, y Premium Max 95 € al mes con créditos ilimitados. También hay plan Premium Max anual por 950 € al año."
   - q: "¿En cuántos idiomas está disponible AI Chef Pro?"
     a: "AI Chef Pro funciona en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. El español es nativo, no una traducción automática, lo que garantiza precisión en términos del oficio como escandallos, fichas técnicas o registros APPCC."
 ---
@@ -141,19 +141,19 @@ He visto estos cinco errores repetirse en cocinas de todos los niveles. Aprénde
 
 ## Empieza a Automatizar con AI Chef Pro
 
-AI Chef Pro es una suite de más de 70 agentes de IA culinarios diseñada para cubrir justo las áreas que hemos visto que sí se automatizan: documentación, escandallos, pedidos y planificación. No viene a cocinar por ti ni a prometerte magia. Viene a quitarte el papeleo para que vuelvas a los fogones.
+AI Chef Pro es una suite de más de 80 agentes de IA culinarios diseñada para cubrir justo las áreas que hemos visto que sí se automatizan: documentación, escandallos, pedidos y planificación. No viene a cocinar por ti ni a prometerte magia. Viene a quitarte el papeleo para que vuelvas a los fogones.
 
 Trabaja en siete idiomas con español nativo (inglés, francés, alemán, italiano, portugués y neerlandés además del español) y está pensada para cocinas reales, con agentes como Mermas GenCal para control de mermas, ID Alérgenos para gestión de alérgenos, Calcula Pax para previsiones de comensales o el Gerente de Restaurante Pro para planificación integral de gestión. Cada agente está entrenado con conocimiento específico del sector: no es una IA genérica a la que tienes que explicarle lo que es un escandallo o una ficha técnica; lo sabe de entrada y habla tu idioma de cocina.
 
 Los planes son directos y sin letra pequeña:
 
-- **Plan AI Chef Miembro:** 10.000 créditos al mes, con tarjeta. Entras, pruebas y decides si te sirve.
+- **Plan AI Chef Miembro:** 10 € al mes con 10.000 créditos, sin permanencia. Entras, pruebas y decides si te sirve.
 - **Premium Pro:** 25 € al mes con 85.000 créditos.
-- **Plus:** 50 € al mes con 175.000 créditos.
-- **Max:** 95 € al mes con créditos ilimitados.
-- **Max Anual:** 950 € al año.
+- **Premium Plus:** 50 € al mes con 175.000 créditos.
+- **Premium Max:** 95 € al mes con créditos ilimitados.
+- **Premium Max anual:** 950 € al año.
 
-Puedes [contratar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=automatizacion) y empezar por donde más te duele: escandallos, APPCC o pedidos. Sin compromiso, con tarjeta y sin discursos.
+Puedes [contratar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=automatizacion) y empezar por donde más te duele: escandallos, APPCC o pedidos. Sin permanencia y sin discursos.
 
 ## Conclusión: Automatiza el Papeleo, Protege el Oficio
 
