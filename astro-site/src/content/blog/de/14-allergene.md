@@ -25,6 +25,8 @@ faq:
 
 <p>Dieser Artikel ist die Liste selbst. Er beantwortet das Was: Welche 14 Allergene es gibt, wo sie sich in der Profiküche verstecken, wie die Code-Systeme auf Speisekarten funktionieren und wie Sie aus der trockenen Verordnung eine Legende machen, die Ihr Team versteht und Ihre Gäste schützt. Das Wie der Kennzeichnung – wer dokumentiert, wie die Allergen-Matrix pro Gericht entsteht, was bei mündlicher Auskunft gilt – ist separat geregelt und bleibt hier bewusst außen vor. Wir bleiben bei den 14 Positionen, die Sie kennen müssen, vom ersten Lehrjahr bis zur letzten Servicekraft.</p>
 
+<p>Für Ihre Karte: Die <a href="https://aichef.pro/descargas/allergenliste-vorlage-gastronomie-aichef.xlsx">Allergenliste als Excel-Vorlage</a> und die <a href="https://aichef.pro/descargas/allergenliste-vorlage-gastronomie-aichef.pdf">PDF-Version</a> nutzen denselben Buchstaben-Code A bis R mit Legende, kostenlos und ohne Anmeldung.</p>
+
 <h2>Die 14 Allergene mit Buchstaben (A bis R) auf einen Blick</h2>
 
 <p>Anhang II der LMIV listet 14 Stoffe und Erzeugnisse, über die informiert werden muss – jeweils einschließlich der daraus gewonnenen Erzeugnisse (mit einzelnen Ausnahmen, die Anhang II ausdrücklich nennt, etwa vollständig raffiniertes Sojaöl oder Glukosesirupe auf Weizenbasis). Diese 14 Positionen sind die Grundlage jeder Speisekarte, jeder Allergen-Matrix und jedes Gesprächs mit einem Gast, der nach Allergien fragt. Die folgende Tabelle zeigt die Buchstaben-Codes (die Abkürzungen auf der Karte), die offiziellen Bezeichnungen und die Stellen, an denen sich die Allergene in der Profiküche typischerweise verstecken. Die Buchstaben folgen dem österreichischen Code A bis R – warum, erklären wir im Abschnitt zu den Code-Systemen.</p>
