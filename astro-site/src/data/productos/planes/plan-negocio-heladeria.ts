@@ -12,7 +12,7 @@
 //    recién nacido, sin una sola venta. OJO: PlanNegocioLandingPage.astro pinta marquee + avatares con 5 estrellas
 //    cuando `data.testimonials` es un objeto (aunque `items` esté vacío), así que la clave se OMITE por completo.
 //  · Nunca «verificado contra el BOE», «cumple la normativa» ni «quedarás legal»; ni promesas de rentabilidad;
-//    ni «España 2026» como sello; ni «prueba gratis» (AI Chef Pro va «desde 10 €»); ni «validado».
+//    ni «España 2026» como sello; ni «prueba gratis» (AI Chef Pro va «desde 25 €»); ni «validado».
 //    Lo que la research marca 🟡 se dice como «consúltalo con tu gestoría / tu ayuntamiento / tu inspector».
 //  · Sin siglas (IAE, RGSEAA, APPCC, ET…) en el hero ni en los titulares.
 //  · Sin cifras movibles: nada de DSCR, payback, saldos ni holguras. Solo las CIFRAS de abajo.

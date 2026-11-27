@@ -611,7 +611,7 @@
       }
     },
     "v2_title": "Trouvez votre formule en 10 secondes",
-    "v2_description": "Associez votre profil à une formule. Les crédits s'adaptent à ce que vous automatisez — du travail quotidien d'une cuisine à la gestion complète d'un groupe multi-restaurants.",
+    "v2_description": "Associez votre profil à une formule. Les crédits s'adaptent à ce que vous automatisez — du quotidien d'une cuisine à la gestion complète d'un groupe multi-restaurants.",
     "v2_role_premium_pro": "Cuisinier ou chef de cuisine",
     "v2_role_premium_plus": "Propriétaire ou groupe",
     "v2_role_premium_max": "Utilisateur intensif",
@@ -1341,7 +1341,7 @@
   "landingRestaurantes": {
     "seo": {
       "title": "Agents IA pour restaurants : 75+ spécialistes | AI Chef Pro",
-      "description": "Agents IA pour restaurants : 75+ spécialistes des coûts, de la carte, des allergènes et du marketing. Forfaits mensuels sans engagement. Commencez dès 25 € par mois.",
+      "description": "Agents IA pour restaurants : 75+ spécialistes des coûts, de la carte, des allergènes et du marketing. Forfaits mensuels sans engagement, dès 25 € par mois.",
       "keywords": "agents ia pour restaurants, agents ia restauration, food cost ia, carte restaurant ia, ai chef pro",
       "url_slug": "outils-ia-restaurant"
     },
@@ -4219,7 +4219,7 @@
   },
   "schema": {
     "offers": {
-      "premium_pro": "Pour les cuisiniers, chefs de cuisine, chefs exécutifs et gérants de restaurant. 85 000 crédits/mois.",
+      "premium_pro": "Formule d'entrée pour les cuisiniers, chefs de cuisine, chefs exécutifs et gérants de restaurant. 85 000 crédits/mois.",
       "premium_plus": "Pour les entrepreneurs gastronomiques et les chaînes de restaurants. 175 000 crédits/mois.",
       "premium_max": "Crédits illimités mensuels pour les professionnels exigeants.",
       "premium_max_anual": "Idéal pour les entrepreneurs gastronomiques, propriétaires de restaurants et cadres dirigeants. Économisez 2 mois."

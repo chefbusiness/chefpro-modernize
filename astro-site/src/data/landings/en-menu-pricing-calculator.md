@@ -75,6 +75,6 @@ The free calculator prices one plate at a time, which is exactly what you need w
 
 Inside AI Chef Pro, the agents build a costed recipe card from your ingredient prices, including yield and waste, and suggest a menu price from the food cost target you set. You check it against your invoices — the agent does not know your supplier raised the price of cream last Tuesday, and you do. See how it works on the [recipe costing software](https://aichef.pro/en/recipe-costing-software) page.
 
-AI Chef Member is €10/month for 10,000 credits, and Premium plans start at €25/month. There is no free plan and no free trial, and all plans are billed in euros. The calculators and generators on the site are free and need no sign-up.
+AI Chef Premium Pro is €25/month for 85,000 credits, and Premium Plus is €50/month for 175,000 credits. There is no free plan and no free trial, and all plans are billed in euros. The calculators and generators on the site are free and need no sign-up.
 
 If you would rather keep it in a spreadsheet you own, the [Food Cost Kit Pro templates](https://aichef.pro/en/digital-products/food-cost-templates) are a one-time purchase — the same formulas above, already built.
