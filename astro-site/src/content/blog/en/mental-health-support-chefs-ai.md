@@ -18,7 +18,7 @@ imageAlt: "Mental Health Support"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🧠 Your Mental Health Matters</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI-powered support designed specifically for chefs.<br />    Confidential • Available 24/7 • Built by culinary professionals  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START YOUR WELLNESS JOURNEY →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    First consultation free • Cancel anytime.  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    From €25/month • Cancel anytime.  </p>
 </div>
 <h2>The Mental Health Crisis in Professional Kitchens</h2>
 <p></p>
@@ -57,14 +57,14 @@ imageAlt: "Mental Health Support"
 <li><strong>Career Transition Support:</strong> Counseling for chefs considering leaving the industry or facing restaurant closure</li>
 <li><strong>Conflict Resolution Guidance:</strong> AI-assisted strategies for managing kitchen politics and difficult conversations</li>
 </ul>
-<p><strong>Pricing:</strong> Free tier with basic support; Professional at $19/month; Unlimited counseling at $39/month</p>
+<p><strong>Pricing:</strong> Included in every AI Chef Pro plan, from €25/month (Premium Pro, 85,000 credits a month)</p>
 <p><strong>Pros:</strong> Deep culinary industry understanding, evidence-based therapeutic approaches, completely anonymous, available in 20+ languages</p>
 <p><strong>Cons:</strong> Cannot replace emergency psychiatric care, requires consistent use for best results</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">⚡ Ready to Prioritize Your Mental Health?</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Mental Chef has supported 25,000+ culinary professionals.<br />    From line cooks to executive chefs—help is here when you need it.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET FREE SUPPORT NOW →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    No commitment required • First month free with code CHEFWELLNESS  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET SUPPORT NOW →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    No commitment required • From €25/month  </p>
 </div>
 <h2>Stress Manager: Real-Time Emotional Regulation</h2>
 <p><strong>Best for:</strong> chefs dealing with acute stress, anger management issues, or seeking daily mindfulness practices</p>
@@ -79,7 +79,7 @@ imageAlt: "Mental Health Support"
 <li><strong>Team Stress Monitoring:</strong> For executive chefs managing kitchen team wellbeing (aggregate anonymous data)</li>
 <li><strong>Sound Therapy:</strong> Specialized audio environments designed for kitchen acoustics</li>
 </ul>
-<p><strong>Pricing:</strong> Free basic version; Pro at $12/month; Kitchen Team package at $49/month for up to 10 users</p>
+<p><strong>Pricing:</strong> Included in every AI Chef Pro plan, from €25/month (Premium Pro, 85,000 credits a month)</p>
 <p><strong>Pros:</strong> Instant relief during shifts, wearable integration, very short time commitments, excellent for anger management</p>
 <p><strong>Cons:</strong> Less deep therapeutic work than Mental Chef, requires smartwatch for full features</p>
 <h2>How These AI Tools Prevent Chef Burnout</h2>
@@ -93,7 +93,7 @@ imageAlt: "Mental Health Support"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🧘 Break the Burnout Cycle Today</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    89% of chefs using Mental Chef report reduced anxiety within 30 days.<br />    Your wellbeing is worth investing in.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €10/MONTH →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €25/MONTH →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    Join 25,000+ culinary professionals prioritizing mental health  </p>
 </div>
 
@@ -153,8 +153,8 @@ imageAlt: "Mental Health Support"
 </tr>
 <tr>
 <td style="padding: 12px;"><strong>Starting Price</strong></td>
-<td style="padding: 12px; text-align: center;">Free / $19/mo</td>
-<td style="padding: 12px; text-align: center;">Free / $12/mo</td>
+<td style="padding: 12px; text-align: center;">From €25/mo (AI Chef Pro)</td>
+<td style="padding: 12px; text-align: center;">From €25/mo (AI Chef Pro)</td>
 </tr>
 </tbody>
 </table></div>
@@ -183,7 +183,7 @@ imageAlt: "Mental Health Support"
 <div style="background: linear-gradient(135deg: #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">💛 You Don&#8217;t Have to Suffer in Silence</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Kitchen culture is changing. Mental health is becoming a priority.<br />    Take the first step toward wellness today.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    ACCESS FREE MENTAL HEALTH SUPPORT →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    ACCESS MENTAL HEALTH SUPPORT →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    Confidential • Judgment-free • Available 24/7/365  </p>
 </div>
 <h2>Frequently Asked Questions About Chef Mental Health</h2>
@@ -201,12 +201,12 @@ imageAlt: "Mental Health Support"
 <h3>How quickly will I see results?</h3>
 <p>Most users report immediate relief during acute stress episodes using Stress Manager&#8217;s real-time tools. Mental Chef&#8217;s therapeutic benefits typically become noticeable after 2-3 weeks of consistent use. Both platforms track your progress so you can see measurable improvements over time.</p>
 <h3>Can these apps help with kitchen team dynamics?</h3>
-<p>Yes. Stress Manager offers team packages that help executive chefs monitor aggregate stress levels and identify systemic issues. Mental Chef includes modules on leadership psychology, conflict resolution, and creating healthier kitchen cultures.</p>
+<p>Yes. Stress Manager offers team features that help executive chefs monitor aggregate stress levels and identify systemic issues. Mental Chef includes modules on leadership psychology, conflict resolution, and creating healthier kitchen cultures.</p>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🧠 Your Best Work Comes From a Healthy Mind</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join the movement prioritizing mental health in professional kitchens.<br />    Mental Chef + Stress Manager = Complete wellness support.  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START YOUR WELLNESS JOURNEY →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    From €10/month • No commitment • Instant access  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    From €25/month • No commitment • Instant access  </p>
 </div>
 <h2>Conclusion: A New Era for Chef Mental Health</h2>
 <p>The culinary industry is at a turning point. The old model of suffering in silence, self-medicating with substances, and accepting burnout as inevitable is finally giving way to a culture that values mental health as essential to professional success.</p>

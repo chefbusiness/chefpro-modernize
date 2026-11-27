@@ -15,8 +15,8 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <p>Whether you run a fine dining establishment, a fast-casual café, or a high-volume quick-service restaurant, understanding your true food costs is the foundation of sustainable profitability. This comprehensive guide walks you through everything you need to know about recipe cost calculators—from basic formulas to advanced AI-powered solutions that automate the entire process.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Calculate Your Recipe Costs in Seconds</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro includes AI-powered recipe costing, menu engineering, and food cost analysis — all in one platform. AI Chef Member with 10,000 credits/month.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member for €10 →</a></div>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro includes AI-powered recipe costing, menu engineering, and food cost analysis — all in one platform. AI Chef Premium Pro with 85,000 credits/month.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post12-ingredient-pricing.png" alt="Hands organizing supplier invoices next to fresh produce on commercial kitchen counter" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Accurate supplier pricing is the foundation of precise recipe costing.</figcaption></figure>
 <h2>Why Every Restaurant Needs a Recipe Cost Calculator</h2>
 <h3>The Profitability Blind Spot</h3>
@@ -304,51 +304,44 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <th>Starting Price</th>
 <th>Key Features</th>
 <th>Best For</th>
-<th>AI Chef Member</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>AI Chef Pro</strong></td>
-<td>€10/month (10,000 credits)</td>
+<td>€25/month (85,000 credits)</td>
 <td>75+ AI tools, recipe scaling, menu engineering, supplier integration, automated price updates</td>
 <td>Professional chefs and restaurant owners seeking comprehensive AI-powered solution</td>
-<td>✓ Yes</td>
 </tr>
 <tr>
 <td>Recipe Costing Calculator by Apicbase</td>
 <td>$99/month</td>
 <td>Inventory management, batch costing, supplier portal, nutritional analysis</td>
 <td>Mid-to-large restaurants requiring full inventory integration</td>
-<td>✗ No</td>
 </tr>
 <tr>
 <td>MarketMan</td>
 <td>$95/month</td>
 <td>Inventory tracking, order management, vendor coordination, recipe costing</td>
 <td>Restaurants prioritizing inventory and order management</td>
-<td>✗ No</td>
 </tr>
 <tr>
 <td>Meez</td>
 <td>$49/month</td>
 <td>Recipe management, costing, scaling, menu engineering, team collaboration</td>
 <td>Chef-owned restaurants and growing concepts</td>
-<td>✗ No</td>
 </tr>
 <tr>
 <td>Galley Solutions</td>
 <td>$150/month</td>
 <td>Production planning, recipe costing, inventory, purchasing, analytics</td>
 <td>Multi-location restaurants and high-volume operations</td>
-<td>✗ No</td>
 </tr>
 <tr>
 <td>Spreadsheet Templates</td>
 <td>Free</td>
 <td>Basic costing, manual calculations, customizable formulas</td>
 <td>Startups and very small operations with limited budgets</td>
-<td>✓ Yes</td>
 </tr>
 </tbody>
 </table></div>
@@ -361,7 +354,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <li><strong>Integrate with supplier systems</strong> for automatic price updates</li>
 <li><strong>Perform menu engineering analysis</strong> to optimize profitability across the entire menu</li>
 </ul>
-<p>The AI Chef Member plan provides 10,000 credits per month—enough to cost out your signature dishes and understand the platform&#8217;s value before committing to a premium plan. For professional chefs and restaurant owners serious about profitability, AI Chef Pro represents the most comprehensive and accessible solution available.</p>
+<p>The AI Chef Premium Pro plan provides 85,000 credits per month—enough to cost out your full menu and develop new recipes every week—and you can move up to Premium Plus (€50/month, 175,000 credits) whenever you need more. For professional chefs and restaurant owners serious about profitability, AI Chef Pro represents the most comprehensive and accessible solution available.</p>
 <p>Once every dish has its cost, the next questions are the price and what to do with the dishes that don't pay their way. The <a href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide">Food Cost + Menu Engineering Guide</a> takes your plate costs through four pricing methods and four menu engineering methods, dish by dish.</p><h2>How to Use Recipe Costing to Set Menu Prices</h2>
 <p>Knowing your food costs is only half the battle. Applying this knowledge strategically to menu pricing requires understanding industry benchmarks, pricing methodologies, and when to deviate from standard practices.</p>
 <h3>Target Food Cost Percentages by Dish Type</h3>
@@ -430,7 +423,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <p>The key is intentionality. Know your numbers and make conscious decisions rather than accidental sacrifices.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Still Using Spreadsheets for Recipe Costing?</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro automates recipe cost calculations, accounts for waste and trim loss, and alerts you when ingredient prices change. 75+ AI tools from €10/month.</p>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro automates recipe cost calculations, accounts for waste and trim loss, and alerts you when ingredient prices change. 75+ AI tools from €25/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Upgrade Your Costing →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post12-menu-costing.png" alt="Restaurant manager and chef reviewing menu with food cost percentages on tablet" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Data-driven menu pricing turns recipe costs into strategic decisions.</figcaption></figure>
 <h2>Advanced Recipe Costing Strategies</h2>

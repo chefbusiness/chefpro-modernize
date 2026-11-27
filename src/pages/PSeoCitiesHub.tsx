@@ -191,7 +191,7 @@ const PSeoCitiesHub = () => {
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             AI Chef Pro tiene +30 herramientas de IA específicas para hostelería + 26 productos digitales descargables.
-            Pruébalo con el plan Miembro (10 €/mes).
+            Pruébalo con el plan Premium Pro (25 €/mes).
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">

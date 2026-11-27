@@ -17,7 +17,7 @@ translations:
   nl: beste-ai-apps-recepten-2026
 faq:
   - q: "Was sind die besten KI-Apps für Rezepte im Jahr 2026?"
-    a: "Für das Abendessen zu Hause reichen ChatGPT, KptnCook oder eine Vorratssuche. Für ein Restaurant brauchen Sie einen KI-Agenten, der eine Rezeptkarte, Allergene und den Wareneinsatz liefert. AI Chef Pro ist für diese Aufgabe gebaut: Tarif Mitglied 10 € im Monat, 10.000 Credits, ohne Bindung. Wir vergeben keine Noten für die anderen sechs. Einen Punkttest haben wir nicht wiederholt."
+    a: "Für das Abendessen zu Hause reichen ChatGPT, KptnCook oder eine Vorratssuche. Für ein Restaurant brauchen Sie einen KI-Agenten, der eine Rezeptkarte, Allergene und den Wareneinsatz liefert. AI Chef Pro ist für diese Aufgabe gebaut: Tarif Premium Pro 25 € im Monat, 85.000 Credits, ohne Bindung. Wir vergeben keine Noten für die anderen sechs. Einen Punkttest haben wir nicht wiederholt."
   - q: "Ist KptnCook eine KI-App?"
     a: "KptnCook ist zuerst eine Rezept-App mit täglich drei kostenlosen Rezepten, so steht es auf der eigenen Preisseite. Der KI-Assistent Skippi gehört zu den kostenpflichtigen Stufen. Es ist ein Werkzeug für den Haushalt, keine Kalkulation für die Gastronomie. Den Euro-Preis der Stufe nennen wir hier nicht: er steht beim Anbieter und ändert sich."
   - q: "Ist Chefkoch eine KI?"
@@ -25,14 +25,14 @@ faq:
   - q: "Was unterscheidet eine Rezept-App von einem KI-Agenten?"
     a: "Die App schlägt ein Gericht vor, meist für zu Hause. Der KI-Agent erledigt eine Aufgabe der Profiküche: Rezeptkarte, Speisekarte, Wareneinsatz, Allergene nach der Verordnung 1169/2011. 2026 mischt die Suche beides."
   - q: "Gibt es einen kostenlosen KI-Rezeptgenerator?"
-    a: "Allgemeine Assistenten haben einen begrenzten Gratiszugang. ChefGPT lässt sich kostenlos laden; der Herausgeber schreibt im App Store, dass die Funktionen ein Abo brauchen. AI Chef Pro hat keinen Gratistarif. Der erste Tarif ist Mitglied, 10 € im Monat."
+    a: "Allgemeine Assistenten haben einen begrenzten Gratiszugang. ChefGPT lässt sich kostenlos laden; der Herausgeber schreibt im App Store, dass die Funktionen ein Abo brauchen. AI Chef Pro hat keinen Gratistarif. Der erste Tarif ist Premium Pro, 25 € im Monat."
   - q: "Sind KI-Rezepte verlässlich?"
     a: "Sie sind ein Entwurf. Mengen, Garzeiten und Allergene prüfen Sie in der Küche. Kein Werkzeug auf dieser Liste, auch AI Chef Pro nicht, ersetzt die Person, die abschmeckt und unterschreibt."
 ---
 
 Wenn Sie die 7 besten KI-Apps für Rezepte 2026 suchen, ist die kurze Antwort diese: Die deutsche Suche mischt Haushalts-Apps, Rezeptsammlungen und Chatbots. Für den Dienst am Abend brauchen Sie keinen weiteren Chat. Sie brauchen einen KI-Agenten, der eine Karte, einen Wareneinsatz und eine Allergenangabe liefert.
 
-Wir vergeben keine Sterne und übernehmen keine Preise aus Partnervergleichen. Wir beschreiben die Aufgabe jedes Produkts, so wie sie sich im Oktober 2026 zeigt. Den einzigen Preis, den wir nennen, veröffentlichen wir selbst auf der [Preisseite](https://aichef.pro/de/preise): Tarif Mitglied, 10 € im Monat, 10.000 Credits, ohne Bindung.
+Wir vergeben keine Sterne und übernehmen keine Preise aus Partnervergleichen. Wir beschreiben die Aufgabe jedes Produkts, so wie sie sich im Oktober 2026 zeigt. Den einzigen Preis, den wir nennen, veröffentlichen wir selbst auf der [Preisseite](https://aichef.pro/de/preise): Tarif Premium Pro, 25 € im Monat, 85.000 Credits, ohne Bindung.
 
 [Den Gästebereich auf Deutsch öffnen](https://deapp.aichef.pro/guest?utm_source=blog&utm_medium=cta&utm_content=beste-ki-apps-rezepte-2026)
 
@@ -67,7 +67,7 @@ Die Kriterien, in dieser Reihenfolge:
 
 | Werkzeug | Für wen | Was es wirklich tut | Preis, den wir nennen | Profiküche |
 | --- | --- | --- | --- | --- |
-| AI Chef Pro | Küchenchef, Betreiber, Brigade | Agenten für Karten, Speisekarte, Wareneinsatz, Allergene | Mitglied 10 €/Monat (10.000 Credits); Pro 25 €; Plus 50 €; Max 95 €; Max jährlich 950 € | Ja |
+| AI Chef Pro | Küchenchef, Betreiber, Brigade | Agenten für Karten, Speisekarte, Wareneinsatz, Allergene | Pro 25 €/Monat (85.000 Credits); Plus 50 €; Max 95 €; Max jährlich 950 € | Ja |
 | ChatGPT | Alle | Rezeptentwurf und Umformulierung | Hier nicht genannt | Nein, nur als Entwurf |
 | KptnCook | Haushalt | Täglich drei kostenlose Rezepte; KI-Assistent in der Bezahlstufe | Gratisstufe mit 3 Rezepten/Tag, so die eigene Seite | Nein |
 | Chefkoch | Wer ein vorhandenes Rezept sucht | Rezeptgemeinschaft, keine KI | Hier nicht genannt | Nein, das ist ein Archiv |
@@ -81,7 +81,7 @@ Die Kriterien, in dieser Reihenfolge:
 
 **Für wen.** Ein Restaurant, ein Catering, eine Küche, die das Gericht morgen mit einer anderen Person wiederholen muss.
 
-**Was es ist.** Eine Suite von Agenten, kein einzelner Chat. Der deutsche Bereich nennt dieselbe öffentliche Zahl wie der Rest der Website: 75+ Agenten, Tarif Mitglied 10 € im Monat. Einen Gratistarif gibt es nicht. Die [Kalkulation](https://aichef.pro/de/blog/kalkulation-gastronomie) und die [Portionsgrößen](https://aichef.pro/de/blog/portionsgroessen-tabelle) bleiben Aufgaben der Küche. Ein Agent ersetzt die Tabelle am Pass nicht. Er hilft, die Karte daran auszurichten.
+**Was es ist.** Eine Suite von Agenten, kein einzelner Chat. Der deutsche Bereich nennt dieselbe öffentliche Zahl wie der Rest der Website: 75+ Agenten, Tarif Premium Pro 25 € im Monat. Einen Gratistarif gibt es nicht. Die [Kalkulation](https://aichef.pro/de/blog/kalkulation-gastronomie) und die [Portionsgrößen](https://aichef.pro/de/blog/portionsgroessen-tabelle) bleiben Aufgaben der Küche. Ein Agent ersetzt die Tabelle am Pass nicht. Er hilft, die Karte daran auszurichten.
 
 **Die Grenze.** Wenn Sie nur wissen wollen, was Sie mit drei Eiern kochen, ist das zu viel Werkzeug. Nehmen Sie einen Chatbot.
 
@@ -147,6 +147,6 @@ Drei Fragen. Keine davon endet mit einer Sternebewertung.
 2. **Liegt der Wareneinsatz im Werkzeug oder in einer zweiten Tabelle?** Der [Food-Cost-Rechner](https://aichef.pro/de/food-cost-rechner-restaurant) beantwortet das, noch vor einem Abo. Wie sich der [Wareneinsatz berechnet](https://aichef.pro/de/blog/wareneinsatz-berechnen), steht daneben.
 3. **Wer prüft das Allergen?** Das Werkzeug schlägt vor. Die verantwortliche Person unterschreibt.
 
-Der Tarif Mitglied (10 € im Monat, 10.000 Credits) dient dazu, die Agenten ohne Bindung zu prüfen. Die Tarife darüber — 25 €, 50 €, 95 € im Monat oder 950 € im Jahr als Max — stehen auf der [Preisseite](https://aichef.pro/de/preise), nicht in einem Satz, den ein Vergleich erfunden hat.
+Der Tarif Premium Pro (25 € im Monat, 85.000 Credits) dient dazu, die Agenten ohne Bindung zu prüfen. Die Tarife darüber — 50 € und 95 € im Monat oder 950 € im Jahr als Max — stehen auf der [Preisseite](https://aichef.pro/de/preise), nicht in einem Satz, den ein Vergleich erfunden hat.
 
 Wenn Ihre Suche «KI Rezept» für heute Abend ist, beginnen Sie bei einem Assistenten oder bei KptnCook. Wenn Ihre Suche die Speisekarte der nächsten Woche ist, öffnen Sie den deutschen Bereich und verlangen Sie eine Karte, keine Idee.

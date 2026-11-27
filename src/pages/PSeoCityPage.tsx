@@ -374,7 +374,7 @@ const PSeoCityPage = ({ modifier }: PSeoCityPageProps) => {
                   Probar AI Chef Pro <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <p className="text-xs text-muted-foreground mt-4">10.000 créditos/mes · Plan Miembro 10 €/mes</p>
+              <p className="text-xs text-muted-foreground mt-4">85.000 créditos/mes · Plan Premium Pro 25 €/mes</p>
             </CardContent>
           </Card>
         </div>

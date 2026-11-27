@@ -166,4 +166,4 @@ Dans AI Chef Pro, l'agent Food Pairing AI propose des combinaisons d'ingrédient
 
 Le générateur de menu dégustation est gratuit et sans inscription : pour chaque plat, il propose un nom, une description, une technique et un accord. Vous pouvez essayer le [générateur de menu dégustation](https://aichef.pro/fr/generateur-menu-degustation).
 
-Côté formule, AI Chef Membre coûte 10 €/mois avec 10 000 crédits, et Premium démarre à 25 €/mois. Il n'y a pas de plan gratuit ni d'essai gratuit ; les outils gratuits du site, eux, restent accessibles sans inscription. Le détail est sur la page des [tarifs](https://aichef.pro/fr/tarifs).
+Côté formule, l'accès commence avec AI Chef Premium Pro, à 25 €/mois avec 85 000 crédits. Il n'y a pas de plan gratuit ni d'essai gratuit ; les outils gratuits du site, eux, restent accessibles sans inscription. Le détail est sur la page des [tarifs](https://aichef.pro/fr/tarifs).

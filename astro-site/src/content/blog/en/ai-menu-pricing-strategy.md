@@ -14,7 +14,7 @@ faq:
   - q: "How much can AI menu pricing increase restaurant profits?"
     a: "Most operators see 2-5 percentage point margin improvement. On a $1M annual volume restaurant, that’s $20,000-$50,000 in additional profit per year. Results vary based on your current pricing accuracy, concept type, and how well you implement the recommendations."
   - q: "Do I need expensive software to use AI for menu pricing?"
-    a: "No. Tools like AI Chef Pro offer a paid membership starting at €10/month to get started. You don’t need enterprise-level software to benefit from AI-assisted pricing analysis. Start with what you can afford and scale up as you see results."
+    a: "No. Tools like AI Chef Pro offer paid plans starting at €25/month to get started. You don’t need enterprise-level software to benefit from AI-assisted pricing analysis. Start with what you can afford and scale up as you see results."
   - q: "Will customers notice if I use dynamic pricing?"
     a: "If done correctly, no. Gradual price changes that align with market conditions and ingredient costs feel natural to guests. The key is phasing changes slowly (5-10% per period) and not making dramatic shifts. Most customers won’t notice incremental adjustments."
   - q: "How often should AI update my menu prices?"
@@ -28,7 +28,7 @@ faq:
 <p>The industry is paying attention. According to recent research, 38.75% of restaurant executives are already investing in AI and machine learning technologies, with an additional 48% planning to adopt these solutions within the next two years. If you&#8217;re not yet using data-driven menu pricing, your competitors almost certainly are—or soon will be. This comprehensive guide breaks down exactly how <strong>dynamic menu pricing restaurant</strong> systems work, why traditional methods fail, and which strategies deliver measurable ROI.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Stop Guessing Your Menu Prices</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ AI tools built for gastronomy — including menu engineering, food cost analysis, and pricing optimization. AI Chef Member: €10/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ AI tools built for gastronomy — including menu engineering, food cost analysis, and pricing optimization. AI Chef Premium Pro: €25/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;">
@@ -116,8 +116,8 @@ faq:
 <p><strong>AI Chef Pro</strong> — <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro/en</a></p>
 <ul>
 <li>75+ AI tools including dedicated menu engineering and pricing analysis</li>
-<li>AI Chef Member: €10/month for 10,000 credits (enough to get started)</li>
-<li>Pro plan: €25/month</li>
+<li>AI Chef Premium Pro: €25/month for 85,000 credits (enough to get started)</li>
+<li>Premium Plus plan: €50/month for 175,000 credits</li>
 <li>Best for: Independent operators and small chains who want a complete toolkit</li>
 </ul>
 <p><strong>Fourth iQ:</strong> Enterprise-level analytics with deep labor scheduling integration. Best for multi-unit operators who need system-wide visibility.</p>
@@ -245,7 +245,7 @@ faq:
 <p>The strategic edge of knowing your competitor&#8217;s pricing in real time cannot be overstated. You&#8217;re no longer guessing whether you&#8217;re overpriced or leaving money on the table—you&#8217;re making data-driven decisions that align your pricing with market reality. In a margin-thin industry where a 3% price adjustment can mean the difference between profitability and loss, that intelligence isn&#8217;t just useful. It&#8217;s essential for survival.</p>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Price Every Dish With Real Data, Not Guesswork</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI Chef Pro analyzes competitor menus, tracks cost movements, and suggests price adjustments — across 75+ tools starting at €10/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI Chef Pro analyzes competitor menus, tracks cost movements, and suggests price adjustments — across 75+ tools starting at €25/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a>
 </div>
 
@@ -262,13 +262,13 @@ faq:
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Ready to Maximize Your Menu Profits?</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Join thousands of hospitality professionals using AI Chef Pro to optimize pricing, reduce waste, and boost margins. Start today.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started Free →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started from €25/month →</a>
 </div>
 <h2>The Future of Menu Pricing Is Intelligent</h2>
 <p>Here&#8217;s the truth: restaurant margins are too thin to leave pricing to chance. The operators who embrace AI-assisted pricing will outlast those who don&#8217;t. It&#8217;s that simple.</p>
 <p>AI menu pricing isn&#8217;t about squeezing every dollar from every guest. It&#8217;s about finding the optimal balance between profitability and guest satisfaction—the sweet spot where your restaurant thrives and your guests keep coming back.</p>
 <p>The data is there. You&#8217;re already collecting it. Now it&#8217;s time to put it to work.</p>
-<p><strong>Start analyzing your menu with AI Chef Pro&#8217;s €10/month plan at <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro/en</a> — see exactly where your pricing opportunities are hiding.</strong></p>
+<p><strong>Start analyzing your menu with AI Chef Pro&#8217;s €25/month Premium Pro plan at <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro/en</a> — see exactly where your pricing opportunities are hiding.</strong></p>
 <h2>Related Reading</h2>
 <ul>
 <li><a href="https://aichef.pro/en/blog/ai-menu-engineering-software">AI Menu Engineering Software: The Complete Guide</a></li>

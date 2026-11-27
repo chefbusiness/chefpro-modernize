@@ -21,7 +21,7 @@ faq:
   - q: "Comment demander l'amélioration d'un agent ?"
     a: "Écrivez-nous à info@aichef.pro ou répondez à la newsletter en indiquant le nom de l'agent et ce qui vous manque. Nous lisons toutes les réponses et les modifications de chaque semaine en sont issues."
   - q: "AI Chef Pro propose-t-il une formule gratuite ?"
-    a: "Non. L'accès commence à partir de 10 € par mois avec la formule Membre, qui inclut 10 000 crédits et ne comporte aucun engagement. Avec cette formule, vous avez déjà accès aux 59 agents et à la section des modèles."
+    a: "Non. L'accès commence à partir de 25 € par mois avec la formule Premium Pro, qui inclut 85 000 crédits et ne comporte aucun engagement. Avec cette formule, vous avez déjà accès aux 59 agents et à la section des modèles."
 ---
 
 Il y a quelques jours, entre le 25 août et le 1er septembre 2026, les agents d'AI Chef Pro ont franchi le cap du million de requêtes traitées depuis l'ouverture de la plateforme. Ce n'est pas un chiffre marketing : c'est un million de fois où quelqu'un, depuis une cuisine, une pâtisserie, une boulangerie ou un bureau, a posé une question à un agent et a obtenu une réponse utile. Une recette, un coût matière, une carte, une fiche technique, un business plan ou une question de service. Un million de moments où l'IA a fait le travail de fond pour que le professionnel puisse se consacrer à ce qui compte vraiment.
@@ -100,4 +100,4 @@ Le million de requêtes, c'est un point de départ, pas une ligne d'arrivée. Ch
 
 <figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-agentes-afinados.jpg" alt="Mains d'un pâtissier tempérant du chocolat sur marbre dans un laboratoire" loading="lazy" /></figure>
 
-Si vous n'avez pas encore accès à la plateforme, vous pouvez la rejoindre depuis [frapp.aichef.pro](https://frapp.aichef.pro/). Le plan Membre démarre à 10 € par mois, sans engagement, avec 10 000 crédits pour commencer à travailler avec les 59 agents spécialisés en français. Toutes les informations sur les plans sont disponibles sur [aichef.pro/tarifs](https://aichef.pro/fr/tarifs). Sans engagement, sans mauvaises surprises.
+Si vous n'avez pas encore accès à la plateforme, vous pouvez la rejoindre depuis [frapp.aichef.pro](https://frapp.aichef.pro/). Le plan Premium Pro démarre à 25 € par mois, sans engagement, avec 85 000 crédits pour commencer à travailler avec les 59 agents spécialisés en français. Toutes les informations sur les plans sont disponibles sur [aichef.pro/tarifs](https://aichef.pro/fr/tarifs). Sans engagement, sans mauvaises surprises.

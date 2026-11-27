@@ -128,7 +128,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Beheer uw restaurant met data, niet met intuïtie.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Restaurant Eigenaren: Financieel Plan, Foodcost, SEO | AI Chef Pro",
       "description": "AI-suite voor restauranteigenaren: gespecialiseerde agenten, financieel plan, professionele foodcost, HACCP, marketing en lokale SEO. Start vandaag.",
@@ -360,7 +360,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Breng de operatie van uw restaurant naar een hoger niveau.",
-    "ctaSubtitle": "Start met de kennismaking van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de kennismaking van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Restaurantmanagers: Roosters, HACCP en Rapportage | AI Chef Pro",
       "description": "AI-suite voor restaurantmanagers: roosters, voorraad, HACCP, KPI's en rapportage aan de eigenaar met gespecialiseerde agenten voor de horeca. Begin vandaag.",
@@ -587,7 +587,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Standaardiseer uw groep. Dezelfde standaard in alle locaties.",
-    "ctaSubtitle": "Neem contact met ons op voor een gepersonaliseerde onboarding voor uw groep of start met het lidmaatschapsplan: €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Neem contact met ons op voor een gepersonaliseerde onboarding voor uw groep of start met Premium Pro: €25 per maand met 85.000 credits.",
     "seo": {
       "title": "AI voor operationeel directeuren van restaurantgroepen | AI Chef Pro",
       "description": "AI-suite voor multi-locatie restaurantgroepen: geconsolideerde dashboards, standaardisatie van recepten, HACCP voor de groep, repliceerbare handleidingen en financieel plan per unit.",
@@ -817,7 +817,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Maak, bereken en herhaal recepten op het tempo van een gesprek.",
-    "ctaSubtitle": "Begin met de kennismaking van 2 minuten. Lidmaatschap voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de kennismaking van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor de executive chef: recepten, kostprijs en handboeken | AI Chef Pro",
       "description": "AI-suite voor de executive en de corporate chef: de agent Executive Chef Pro, kostprijsberekeningen die de kok controleert, technische fiches en handboeken voor meerdere vestigingen. Begin vandaag.",
@@ -1055,7 +1055,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Meer koken, minder administratie. Win uren terug voor wat er toe doet.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor chef-kok en keukenchef: Kostprijsberekeningen, Fiches en APPCC | AI Chef Pro",
       "description": "AI-suite voor professionele keukenchefs: gespecialiseerde agenten, kostprijsberekeningen, technische fiches, mise en place en APPCC met echte gastronomische ondersteuning. Begin vandaag.",
@@ -1275,7 +1275,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Werkt het als ik niet degene ben die over de tools in de keuken beslist?",
-        "a": "U kunt beginnen met het Lidmaatschapsplan (€10 per maand, 10.000 credits) voor uw eigen lijsten en voorstellen. Wanneer u het 1-2 weken heeft gebruikt, stel het dan voor aan de chef-kok met concrete gegevens: bespaarde tijd, gevalideerde kostprijsberekeningen, georganiseerde mise en place."
+        "a": "U kunt beginnen met Premium Pro (€25 per maand, 85.000 credits) voor uw eigen lijsten en voorstellen. Wanneer u het 1-2 weken heeft gebruikt, stel het dan voor aan de chef-kok met concrete gegevens: bespaarde tijd, gevalideerde kostprijsberekeningen, georganiseerde mise en place."
       },
       {
         "q": "Hoe helpt het mij tijdens servicepieken?",
@@ -1287,7 +1287,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Organiseer uw keuken zonder losse papieren.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Sous Chef: Mise en Place, Technische Fiches en APPCC | AI Chef Pro",
       "description": "AI-suite voor sous chef in de professionele keuken: mise en place, gecentraliseerde technische fiches, kostprijsberekeningen, APPCC vanaf de mobiel en teamopleiding. Begin vandaag.",
@@ -1514,7 +1514,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ontwerp, bereken kosten en produceer evenementen zonder losse papieren.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor cateringchefs: menu's, kostenberekeningen en evenement-APPCC | AI Chef Pro",
       "description": "AI-suite voor cateringchefs: Catering AI+, Creatieve Keuken, Calcula Pax, kostenberekeningen per evenement, APPCC buiten de locatie en productieplanning op schaal. Begin vandaag.",
@@ -1741,7 +1741,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Laat uw catering groeien met echte marge, niet met intuïtie.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor eigenaren van cateringbedrijven: winstgevendheid en financieel plan | AI Chef Pro",
       "description": "AI-suite voor cateringbedrijven: winstgevendheid per evenement, productie op schaal, tijdelijke teams, financieel plan en het aantrekken van zakelijke klanten. Begin vandaag.",
@@ -1969,7 +1969,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw cocktailbar met reële marge en signature techniek.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Bartenders en Mixologen: Kaarten, Kostprijsberekeningen en Storytelling | AI Chef Pro",
       "description": "AI-suite voor professionele bartenders: Bar & Lounge AI+, Food Pairing AI, kostprijs per drankje, technische fiches met storytelling en visuele branding. Start vandaag.",
@@ -2197,7 +2197,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw pizzeria met echte marge en authentieke techniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor pizzabakkers en pizzaioli: Deeg, Kostprijsberekeningen en Italiaanse Techniek | AI Chef Pro",
       "description": "AI-suite voor professionele pizzabakkers: Italiaanse Keuken, Fermentus voor deeg en biga, kostprijsberekeningen per pizza, sjablonen en authentieke techniek. Begin vandaag.",
@@ -2425,7 +2425,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw ambachtelijke bakkerij met duidelijke marge en professionele techniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschap voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor de Ambachtelijke Bakker: Zuurdesem, Kostenberekeningen en Professionele Techniek | AI Chef Pro",
       "description": "AI-suite voor ambachtelijke bakkers: Creatieve Bakkerij, Fermentus Con AI+ voor zuurdesem, kostenberekeningen per stuk met uurtarief van de bakkerij. Begin vandaag.",
@@ -2654,7 +2654,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw chocolaterie met duidelijke marge en authentieke techniek.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Chocolatier en Bonbonmaker: Tempereren, Kostprijzen en Seizoensgebondenheid | AI Chef Pro",
       "description": "AI-suite voor professionele chocolatiers: Creatieve Chocolaterie, kostprijs per stuk met werkplaatsuurtarief, seizoensplanning en APPCC. Begin vandaag.",
@@ -2881,7 +2881,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw privé chef-dienst met reële marge en een voorstel met signatuur.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Privé Chef en Personal Chef: Menu's, Kostprijsberekeningen en Service | AI Chef Pro",
       "description": "AI-suite voor professionele privékoks: Privé Chef Pro, kostprijsberekeningen per diner, gepersonaliseerde menu's, branding en acquisitie. Begin vandaag.",
@@ -3109,7 +3109,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw hotel-F&B met geïntegreerde marge en professionele bedrijfsvoering.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor hotel-F&B-managers: multi-outlet, banketten en kostprijsberekening | AI Chef Pro",
       "description": "AI-suite voor hotel-F&B-managers: Pro Manager, Catering AI+, kruislingse kostprijsberekening, multi-outlet branding en geïntegreerde APPCC. Begin vandaag.",
@@ -3337,7 +3337,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw Zaal met Professionele Techniek en Memorabele Ervaring.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschap voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Maître en Restaurantleider: Service, Pairing en Storytelling | AI Chef Pro",
       "description": "AI-suite voor professionele maîtres: Pro Manager, Bar & Lounge AI+, Food Pairing AI, teamtraining en premium acquisitie. Start vandaag.",
@@ -3565,7 +3565,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw wijnkelder met professionele criteria en wetenschappelijke pairings.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor sommeliers: wijnkelder, pairings en professionele proeverijen | AI Chef Pro",
       "description": "AI-suite voor professionele sommeliers: Bar & Lounge AI+, Food Pairing AI, kostprijs per glas, privéproeverijen en wine-driven branding. Begin vandaag.",
@@ -3793,7 +3793,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw grill met vuurtechniek en echte marge.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Meester Grillmeester en Barbecuechef: Cuts, Vuur en Dry-Aged | AI Chef Pro",
       "description": "AI-suite voor meester grillmeesters: Argentijnse + Braziliaanse Keuken, kostprijsberekening per cut, dry-aged, branding en APPCC. Begin vandaag.",
@@ -4021,7 +4021,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw ijs met authentieke techniek en reële marge.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor meester-ijsbereider en gelatiere: Bases, kostprijsberekeningen en seizoensgebondenheid | AI Chef Pro",
       "description": "AI-suite voor meester-ijsbereiders: Creatief IJs, technische balans, kostprijsberekeningen per smaak, branding en APPCC. Start vandaag.",
@@ -4249,7 +4249,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw banketbakkerij met signatuurtechniek en echte marge.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Ledenplan voor € 10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor Banketbakkers en Patissiers: Techniek, Kostprijsberekeningen en Seizoensplanning | AI Chef Pro",
       "description": "AI-suite voor professionele banketbakkers: Creatieve Patisserie, kostprijsberekeningen met werkplaatsuurtarief, seizoensplanning en branding. Begin vandaag.",
@@ -4481,7 +4481,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Breng orde in uw casual restaurant.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Casual Restaurant: Operatie, Kostprijsberekeningen en Lokale SEO | AI Chef Pro",
       "description": "AI-suite voor casual restaurants en bistro's: gespecialiseerde agenten, kostprijsberekeningen, APPCC, roosters, lokale SEO en marketing met professionele basis. Begin vandaag.",
@@ -4709,7 +4709,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw koffiebar met gepolijste bedrijfsvoering en organische klantenwerving.",
-    "ctaSubtitle": "Start met de 2-minuten onboarding. Lidplan for €10 per maand met 10.000 credits om alle agents te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agents te gebruiken.",
     "seo": {
       "title": "AI for Koffiebar en Brunch: Bedrijfsvoering, Pinterest en Lokale SEO | AI Chef Pro",
       "description": "AI-suite for coffee shops en brunchlocaties: gespecialiseerde agents, kostprijs, APPCC, content for Instagram en Pinterest, lokale SEO. Start vandaag.",
@@ -4937,7 +4937,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Pizza mei echte marge, neet intuïtie.",
-    "ctaSubtitle": "Start mei de 2-minuten onboarding. Lidmaan Plan voor 10 € per maand mei 10.000 crédits om alle agente te gebruken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Pizzeria: Zuurdesem, Escandallos per Pizza en Delivery | AI Chef Pro",
       "description": "AI-suite voor professionnel pizzerias: Italiaanse Keuken, Fermentus voor deege, escandallos per pizza, pizza-shop sjablonen en lokaal SEO. Start vandaag.",
@@ -5160,7 +5160,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Burger met echte marge, geen intuïtie.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Burgerrestaurants: Kostprijzen, Smash Burger en Delivery | AI Chef Pro",
       "description": "AI-suite voor professionele burgerrestaurants: Burger Pro AI+, kostprijzen per burger, burger-shop sjablonen, HACCP en multi-platform delivery. Begin vandaag.",
@@ -5392,7 +5392,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw dark kitchen, met echte marge en gegevens per merk.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Dark Kitchen en Virtuele Keukens: Kostprijsberekening en SEO | AI Chef Pro",
       "description": "AI-suite voor dark kitchen en ghost kitchen: multi-merk kostprijsberekening, marge na commissie van Glovo en Uber Eats, lokale SEO, APPCC en gids om uw virtuele keuken te openen.",
@@ -5622,7 +5622,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw bakkerij met duidelijke marge en professionele branding.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor patisserie en bakkerij: Receptcalculaties, Seizoensgebondenheid en Branding | AI Chef Pro",
       "description": "AI-suite voor ambachtelijke patisserieën: Creatieve Patisserie, receptcalculaties per stuk met uurkosten van de bakkerij, HACCP, seizoensplanning en branding. Begin vandaag.",
@@ -5850,7 +5850,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Cocktailbar met echte marge en professionele branding.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Bar en Cocktails: Cocktails met eigen signatuur, kostprijsberekening en branding | AI Chef Pro",
       "description": "AI-suite voor professionele bars en cocktailbars: Bar & Lounge AI+, Food Pairing AI, kostprijsberekening per cocktail, kaarten, HACCP en visuele branding. Begin vandaag.",
@@ -6078,7 +6078,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Catering met echte marge en zonder chaos.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Catering en Evenementen: Bruiloften, Zakelijke Evenementen en Cocktails | AI Chef Pro",
       "description": "AI-suite voor professionele cateringbedrijven: Catering AI+, kostprijsberekeningen per evenement, productie op schaal, HACCP buiten de locatie en commerciële voorstellen. Begin vandaag.",
@@ -6310,7 +6310,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw hotel-F&B gecoördineerd en zonder chaos.",
-    "ctaSubtitle": "Praat met ons voor een gepersonaliseerde onboarding of start met het Lid-plan: € 10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Praat met ons voor een gepersonaliseerde onboarding of start met Premium Pro: € 25 per maand met 85.000 credits.",
     "seo": {
       "title": "AI voor Compleet Hotel (F&B + Housekeeping): Restaurant, Bar, Banketten | AI Chef Pro",
       "description": "AI-suite voor F&B Managers van hotels: ontbijtbuffet, restaurant, lobbybar, roomservice, banketten en housekeeping met gespecialiseerde agenten. Begin vandaag.",
@@ -6533,7 +6533,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw ijssalon met duidelijke marge en professionele branding.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Ambachtelijke IJssalons: Kostprijsberekening per Smaak, Seizoensgebondenheid en Branding | AI Chef Pro",
       "description": "AI-suite voor ambachtelijke ijssalons: Creatief IJs, kostprijsberekening per smaak met technische balans, APPCC, seizoensplanning en visuele branding. Begin vandaag.",
@@ -6761,7 +6761,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw chocolaterie met duidelijke marge en professionele branding.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Chocolaterie en Bonbonnerie: Kostprijzen, Seizoensgebondenheid en Branding | AI Chef Pro",
       "description": "AI-suite voor ambachtelijke chocolaterieën: Creatieve Chocolaterie, kostprijzen per bonbon met uurkosten van het atelier, HACCP, seizoensplanning en branding. Begin vandaag.",
@@ -6993,7 +6993,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Creativiteit met systeem, avant-garde met marge.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Creatief en Auteur Restaurant: R&D, Avant-garde en Storytelling | AI Chef Pro",
       "description": "AI-suite voor creatieve en auteur restaurants: Creatieve Keuken, Fermentus, Sonar Deep Research, geavanceerde kostprijsberekeningen, technische fiches en professionele storytelling.",
@@ -7225,7 +7225,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Haute cuisine met systeem, avant-garde met richting.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Gastronomisch Restaurant (Michelin/Repsol): Degustatiemenu, R&D en Communicatie | AI Chef Pro",
       "description": "AI-suite voor haute cuisine: Creatieve Keuken, Fermentus, Sonar Deep Research, premium kostprijsberekeningen, technische fiches, communicatie met Michelin- en Repsol-gidsen. Begin vandaag.",
@@ -7453,7 +7453,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw Mexicaans restaurant met echte marge en authentieke techniek",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Mexicaans restaurant: sauzen, kostprijsberekening en authentieke techniek | AI Chef Pro",
       "description": "AI-suite voor Mexicaanse restaurants: Mexicaanse Keuken, kostprijs per taco, planning van feestdagen, branding en APPCC. Begin vandaag.",
@@ -7681,7 +7681,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw Peruaans restaurant met echte marge en authentieke techniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Peruaans Restaurant: Ceviches, Kostenberekeningen en Authentieke Techniek | AI Chef Pro",
       "description": "AI-suite voor Peruaanse restaurants: Peruaanse Keuken, kostenberekeningen per ceviche, planning van feestdagen, branding en APPCC. Begin vandaag.",
@@ -7909,7 +7909,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw Japanse restaurant met echte marge en authentieke techniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Japans Restaurant: Sushi, Kostenberekening en Itamae-techniek | AI Chef Pro",
       "description": "AI-suite voor Japanse restaurants: Japanse Keuken, Fermentus voor koji en miso, kostenberekening per stuk, planning van feestdagen. Begin vandaag.",
@@ -8137,7 +8137,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw nikkei-restaurant met echte marge en authentieke techniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits om alle AI-agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits om alle AI-agenten te gebruiken.",
     "seo": {
       "title": "AI voor Nikkei-restaurants: Tiradito's, kostprijsberekening en fusiontechniek | AI Chef Pro",
       "description": "AI-suite voor nikkei-restaurants: Japanse Keuken + Peruaanse Keuken, kostprijsberekening per tiradito, omakase-nikkei, branding en APPCC. Begin vandaag.",
@@ -8365,7 +8365,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw plantaardige restaurant met reële marge en auteursttechniek.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor plantaardige en veganistische restaurants: Bowls, Kostprijsberekeningen en Fermenten | AI Chef Pro",
       "description": "AI-suite voor plantaardige restaurants: VegChef, Fermentus voor plantaardige umami, kostprijsberekeningen per bowl, branding en APPCC. Begin vandaag.",
@@ -8593,7 +8593,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw grill met echte marge en vuurtechniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits om alle agenten te gebruiken.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits om alle agenten te gebruiken.",
     "seo": {
       "title": "AI voor Grill, Parrilla en Steakhouse: Sneden, Kostenberekening en Dry-Aged | AI Chef Pro",
       "description": "AI-suite voor grillrestaurants en steakhouses: Argentijnse + Braziliaanse Keuken, kostenberekening per snede, dry-aged, branding en HACCP. Begin vandaag.",
@@ -8821,7 +8821,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw coffee shop met reële marge en third-wave werkwijze.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor Coffee Shop en Specialty Coffee: Menu's, Kostprijsberekeningen en Branding | AI Chef Pro",
       "description": "AI-suite voor coffee shops: Creatieve Keuken, eigen banket, kostprijsberekening per drankje, minimalistische branding en lokale acquisitie. Begin vandaag.",
@@ -9049,7 +9049,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw sushi bar met authentieke techniek en echte marge.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor Sushi Bar: Itamae, Omakase en Kostenberekening | AI Chef Pro",
       "description": "AI-suite voor sushi bars: Japanse Keuken, Fermentus, kostenberekening per nigiri, omakase en minimalistische branding. Begin vandaag.",
@@ -9277,7 +9277,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw gastrobar met echte marge en authentieke techniek.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor gastrobar en tapasbar: tapas, kostprijsberekeningen en pairing | AI Chef Pro",
       "description": "AI-suite voor gastrobars: Spaanse Keuken, Bar & Lounge AI+, kostprijs per tapa, vermout en wijnen per glas. Begin vandaag.",
@@ -9505,7 +9505,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw food truck met echte marge en strakke operatie.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor Food Trucks: Menukaart, Kostprijzen en Evenementen | AI Chef Pro",
       "description": "AI-suite voor food trucks: Food Truck AI+, kostprijsberekening per gerecht, evenementplanning, virale branding en APPCC. Begin vandaag.",
@@ -9733,7 +9733,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw Italiaanse restaurant met authentieke techniek en echte marge.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "AI voor Italiaans Restaurant: Pasta, Kostprijs en Wijnen | AI Chef Pro",
       "description": "AI-suite voor Italiaanse restaurants: Italiaanse Keuken, kostprijsberekening, verse pasta, Italiaanse wijnen en trattoria-branding. Begin vandaag.",
@@ -9957,7 +9957,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw kostprijsberekeningen in minuten met gevalideerde marge.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Kostprijsberekening met AI: werkelijke kostprijs, marge en foodcost | AI Chef Pro",
       "description": "AI-suite voor professionele kostprijsberekening: recept + CSV met uurkostprijs atelier, geïntegreerde verliezen, gevalideerde marge. Begin vandaag.",
@@ -10182,7 +10182,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw professionele degustatiemenu in uren, niet in weken.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Hoe Ontwerpt U een Degustatiemenu met AI: Gangenvolgorde, Kostprijsberekening en Pairings | AI Chef Pro",
       "description": "AI-suite voor degustatiemenu: technische gangenvolgorde, totale kostprijsberekening, wetenschappelijke pairings en storytelling. Begin vandaag.",
@@ -10406,7 +10406,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw professionele technische fiches in minuten.",
-    "ctaSubtitle": "Start met de onboarding van 2 minuten. Lidmaatschapsplan voor 10 € per maand met 10.000 credits.",
+    "ctaSubtitle": "Start met de onboarding van 2 minuten. Premium Pro voor 25 € per maand, met 85.000 credits.",
     "seo": {
       "title": "Technische Fiches Maken met AI: Allergenen, Kostprijs en Storytelling | AI Chef Pro",
       "description": "AI-suite voor technische fiches: een controle van de 14 allergenen; de eindcontrole is aan u, geïntegreerde kostprijs, plating photo en storytelling. Start vandaag.",
@@ -10630,7 +10630,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw wetenschappelijk onderbouwde wijn-spijscombinaties binnen enkele minuten.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor € 10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor € 25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Wijn-spijscombinaties valideren met AI: Wijn, Sake en Alcoholvrij | AI Chef Pro",
       "description": "AI-suite voor wijn-spijscombinaties: Food Pairing AI met wetenschappelijke basis, wijnkelderselectie, storytelling voor de bediening. Begin vandaag.",
@@ -10854,7 +10854,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw keuken met minder verspilling en echte gegevens.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Hoe u verspilling in de keuken vermindert met AI: Echte gegevens en hergebruik | AI Chef Pro",
       "description": "AI-suite om verspilling te verminderen: Mermas GenCal met echte gegevens, professioneel hergebruik, traceerbare kostprijsberekening. Begin vandaag.",
@@ -11078,7 +11078,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw professionele APPCC vanaf mobiel zonder papier.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Hoe u digitale APPCC met AI beheert: Sjablonen, Allergenen en Traceerbaarheid | AI Chef Pro",
       "description": "AI-suite voor digitale APPCC: Excel-sjablonen, een controle van de 14 allergenen; de eindcontrole is aan u, ISO-traceerbaarheid. Begin vandaag.",
@@ -11303,7 +11303,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw seizoensmenu met lokaal product en echte marge.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Hoe ontwerpt u een seizoensmenu met AI: lokaal product, kostenberekening en storytelling | AI Chef Pro",
       "description": "AI-suite voor seizoensmenu: Gastro Calendar, lokaal product, kostenberekening en storytelling van producenten. Begin vandaag.",
@@ -11527,7 +11527,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Uw foodfotografie met professionele richtlijn.",
-    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Lidmaatschapsplan voor €10 per maand met 10.000 credits.",
+    "ctaSubtitle": "Begin met de onboarding van 2 minuten. Premium Pro voor €25 per maand, met 85.000 credits.",
     "seo": {
       "title": "Hoe Maakt U Foodfotografie met AI: Referentiebeeld en Definitieve Foto | AI Chef Pro",
       "description": "AI-suite voor foodfotografie: GastroIMG Gen+ genereert een referentiebeeld, daarna maakt u de definitieve foto met uw echte gerecht. Begin vandaag.",

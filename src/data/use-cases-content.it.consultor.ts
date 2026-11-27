@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso usarlo per clienti fuori dalla Spagna?', a: 'Sì. Ci sono versioni in 7 lingue e il database HORECA copre Spagna, LATAM, Italia, Francia, Portogallo, Germania, Paesi Bassi e mercato anglosassone.' },
     ],
     ctaTitle: 'Accelera i Tuoi Progetti senza Perdere Rigore Tecnico.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Consulente Gastronomico · AI/IA per Consulenza Ristorazione | AICP',
       description: 'Agente AI/IA Consulente Gastronomico: consulenza ristorazione HORECA, due diligence, diagnosi di redditività e piano d\'apertura per gruppi, hotel e investitori. Inizia oggi.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso usarlo con clienti fuori dalla Spagna?', a: 'Sì. 7 lingue e database HORECA in Spagna, LATAM, Italia, Francia, Portogallo, Germania, Paesi Bassi e mercato anglosassone.' },
     ],
     ctaTitle: 'Più Progetti, Senza Rinunciare al Criterio Tecnico.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Chef Consulente Pro · AI/IA per Executive Chef e Consulting | AICP',
       description: 'Agente AI/IA Chef Consulente Pro per gruppi della ristorazione, hotel e franchising: sviluppo menù, scandagli professionali, schede tecniche e formazione brigata. Inizia oggi.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso lavorare con clienti in LATAM o Italia?', a: 'Sì. 7 lingue disponibili e database HORECA in Spagna, Italia, LATAM, Francia, Portogallo, Germania e Paesi Bassi.' },
     ],
     ctaTitle: 'Più Progetti di Gelateria, Senza Perdere Rigore Tecnico.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Gelatiere Consulente Pro · AI/IA Gelateria Artigianale | AICP',
       description: 'Agente AI/IA Gelatiere Consulente (Maestro Gelatiere): formulazione POD/PAC, carte stagionali, scandaglio gelateria artigianale e HACCP. Aprire gelateria. Inizia oggi.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso usarlo con clienti internazionali?', a: 'Sì. 7 lingue e database prezzi HORECA in Europa, LATAM e mercato anglosassone.' },
     ],
     ctaTitle: 'Accelera i Tuoi Progetti di Cioccolato, Senza Perdere Artigianalità.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Cioccolatiere Consulente Pro · AI/IA Bean-to-Bar | AICP',
       description: 'Agente AI/IA Cioccolatiere Consulente (Maestro Cioccolatiere): collezioni di pralineria, tavolette bean-to-bar, scandaglio cacao premium e HACCP. Inizia oggi.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso lavorare con clienti internazionali?', a: 'Sì. 7 lingue e database HORECA in Europa, LATAM e mercato anglosassone.' },
     ],
     ctaTitle: 'Più Carte di Dessert, Senza Perdere Criterio Tecnico.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Pasticciere Consulente Pro · AI/IA Pastry Chef Consulting | AICP',
       description: 'Agente AI/IA Pasticciere Consulente (Pastry Chef Consultant): carte di dessert, scandaglio pasticceria, schede tecniche e manuali di laboratorio per alta cucina. Inizia oggi.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso lavorare con clienti internazionali?', a: 'Sì. 7 lingue e database HORECA in Europa, LATAM e mercato anglosassone.' },
     ],
     ctaTitle: 'Più Pizzerie Assistite, Senza Perdere Rigore Italiano.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Pizzaiolo Consulente Pro · AI/IA Pizza Napoletana AVPN | AICP',
       description: 'Agente AI/IA Pizzaiolo Consulente artigianale: formulazione impasti (AVPN), carte, scandaglio HORECA, manuali di lievitazione per pizzerie napoletane. Inizia oggi.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso lavorare con clienti internazionali?', a: 'Sì. 7 lingue e database HORECA in Europa, LATAM e mercato anglosassone.' },
     ],
     ctaTitle: 'Più Specialty Coffee Shop Assistite, Con Margine Reale.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Barista Consulente Pro · AI/IA Caffetteria e Specialty Coffee | AICP',
       description: 'Agente AI/IA Barista Consulente: carte caffè, calibrazione estrazione, scandaglio caffetteria HORECA e specialty coffee shop per bar, hotel e torrefazioni. Inizia oggi.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Copre la tracciabilità di cantina e HACCP?', a: 'Sì. Il Pack APPCC include registri di temperatura, umidità, tracciabilità delle annate e operatività di cantina.' },
     ],
     ctaTitle: 'Più Programmi Vini Assistiti, Senza Perdere Criterio Sommelier.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Sommelier Consulente Pro · AI/IA Carta dei Vini AIS | AI Chef Pro',
       description: 'Agente AI/IA Sommelier Consulente (Sommelier AIS): carte dei vini, beverage cost, ottimizzazione cantina e formazione sala per alta cucina e hotel di lusso. Inizia oggi.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso lavorare con clienti internazionali?', a: 'Sì. 7 lingue e database HORECA in Europa, LATAM e mercato anglosassone.' },
     ],
     ctaTitle: 'Più Cocktail Bar Assistiti, Con Beverage Cost Sotto Controllo.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Bartender Consulente Pro · AI/IA Bar Consultant Mixology | AICP',
       description: 'Agente AI/IA Bartender Consulente (Bar Consultant): carte cocktail, beverage cost, formazione team e progetti cocktail bar per bar d\'autore e hotel di lusso. Inizia oggi.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_IT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso lavorare con clienti internazionali?', a: 'Sì. 7 lingue e database HORECA in Europa, LATAM e mercato anglosassone.' },
     ],
     ctaTitle: 'Più Panetterie Assistite, Senza Perdere Identità Artigiana.',
-    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Piano Membro a 10 € al mese con 10.000 crediti per usare tutti gli agenti.',
+    ctaSubtitle: 'Inizia con l\'onboarding di 2 minuti. Premium Pro a 25 € al mese, con 85.000 crediti per usare tutti gli agenti.',
     seo: {
       title: 'Panettiere Consulente Pro · AI/IA Consulenza Panificio | AICP',
       description: 'Agente AI/IA Panettiere Consulente artigianale: consulenza panificio, formulazione, scandaglio HORECA, manuali di laboratorio e progetti bakery café. Aprire panificio. Inizia oggi.',

@@ -132,4 +132,4 @@ Il existe des outils qui vous donnent le premier brouillon du menu en quelques m
 
 Le [générateur de menu dégustation](https://aichef.pro/fr/generateur-menu-degustation) d'AI Chef Pro est gratuit et vous propose un menu dégustation complet, avec nom, description, technique et accords pour chaque séquence.
 
-Sur la plateforme, payante (à partir de 10 €/mois), un agent sommelier propose les accords plat par plat et [ID Allergènes](https://frapp.aichef.pro/pickaxe-project-45?utm_source=blog&utm_medium=cta&utm_content=menu-degustation) vous aide à vérifier les allergènes de chaque séquence. Prenez-le pour ce que c'est, un brouillon : le chef le goûte, le corrige et l'adapte à sa cuisine et à son chiffrage.
+Sur la plateforme, payante (à partir de 25 €/mois), un agent sommelier propose les accords plat par plat et [ID Allergènes](https://frapp.aichef.pro/pickaxe-project-45?utm_source=blog&utm_medium=cta&utm_content=menu-degustation) vous aide à vérifier les allergènes de chaque séquence. Prenez-le pour ce que c'est, un brouillon : le chef le goûte, le corrige et l'adapte à sa cuisine et à son chiffrage.

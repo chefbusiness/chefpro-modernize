@@ -21,7 +21,7 @@ faq:
   - q: "Wie kann ich eine Verbesserung eines Agenten vorschlagen?"
     a: "Schreiben Sie uns an info@aichef.pro oder antworten Sie auf den Newsletter mit dem Namen des Agenten und dem, was Ihnen fehlt. Wir lesen alle Rückmeldungen, und die wöchentlichen Änderungen entstehen genau daraus."
   - q: "Hat AI Chef Pro einen kostenlosen Plan?"
-    a: "Nein. Der Einstieg beginnt ab 10 € pro Monat mit dem Mitglieder-Plan, der 10.000 Credits umfasst und keine Mindestlaufzeit hat. Mit diesem Plan haben Sie bereits Zugang zu den 59 Agenten und zum Modellbereich."
+    a: "Nein. Der Einstieg beginnt ab 25 € pro Monat mit dem Plan Premium Pro, der 85.000 Credits umfasst und keine Mindestlaufzeit hat. Mit diesem Plan haben Sie bereits Zugang zu den 59 Agenten und zum Modellbereich."
 ---
 
 Vor einigen Tagen, zwischen dem 25. August und dem 1. September 2026, haben die Agenten von AI Chef Pro seit der Eröffnung der Plattform die Marke von einer Million bearbeiteter Anfragen überschritten. Das ist keine Marketingzahl: Es ist eine Million Mal, dass jemand aus einer Küche, einer Konditorei, einer Bäckerei oder einem Büro einem Agenten eine Frage gestellt und eine nützliche Antwort erhalten hat. Ein Rezept, eine Kalkulation, eine Speisekarte, ein technisches Datenblatt, ein Businessplan oder eine Frage zum Service. Eine Million Momente, in denen die KI die Grundlagenarbeit übernommen hat, damit sich der Profi auf das konzentrieren kann, was wirklich zählt.
@@ -101,4 +101,4 @@ Eine Million Anfragen ist ein Ausgangspunkt, kein Ziel. Jede Woche verfeinern wi
 
 <figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-agentes-afinados.jpg" alt="Hände eines Konditors beim Temperieren von Schokolade auf Marmor in einer Backstube" loading="lazy" /></figure>
 
-Wenn Sie noch nicht auf der Plattform sind, können Sie jetzt einsteigen: [deapp.aichef.pro](https://deapp.aichef.pro/). Das Mitglieder-Abo startet bei 10 € pro Monat, ohne Mindestlaufzeit, mit 10.000 Credits – und damit sofortigem Zugang zu den 59 agentes especializados en Deutsch. Alle Informationen zu den Tarifen finden Sie unter [aichef.pro/precios](https://aichef.pro/de/preise). Keine Verpflichtungen, kein Kleingedrucktes.
+Wenn Sie noch nicht auf der Plattform sind, können Sie jetzt einsteigen: [deapp.aichef.pro](https://deapp.aichef.pro/). Das Abo Premium Pro startet bei 25 € pro Monat, ohne Mindestlaufzeit, mit 85.000 Credits – und damit sofortigem Zugang zu den 59 agentes especializados en Deutsch. Alle Informationen zu den Tarifen finden Sie unter [aichef.pro/precios](https://aichef.pro/de/preise). Keine Verpflichtungen, kein Kleingedrucktes.

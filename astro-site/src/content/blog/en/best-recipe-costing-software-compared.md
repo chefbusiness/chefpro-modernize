@@ -12,11 +12,11 @@ faq:
   - q: "What is recipe costing software?"
     a: "Recipe costing software records the ingredient price, the usable yield after trim and the waste, then adds them up for each dish. Menu engineering uses that number to decide whether a dish stays, moves or comes off the menu. A spreadsheet can do the sum once, but it won’t update when a supplier invoice changes unless someone edits it."
   - q: "How much does recipe costing software cost?"
-    a: "Prices were checked on each vendor’s own website on 6 November 2026. Third-party tools list their prices in US dollars; AI Chef Pro is billed in euros. AI Chef Pro Member is €10 a month with 10,000 credits, Premium Pro is €25 a month and Premium Plus is €50 a month, with no free plan. MarketMan lists Starter at $249 a month, Growth at $299 and Enterprise from $449. WISK lists a single venue at $249 a month for beverage or for food. Galley’s SMB Accelerator starts at $99 a month. CookKeepBook’s standard account is free, and Plus is $9 a month or $69 a year. reciProfity lists add-on prices but no base plan, and costbrain.com shows no recipe-costing price. meez, BlueCart and Kitchen CUT quote on request. Vendors change prices, so check their page before you buy."
+    a: "Prices were checked on each vendor’s own website on 6 November 2026. Third-party tools list their prices in US dollars; AI Chef Pro is billed in euros. AI Chef Premium Pro is €25 a month with 85,000 credits and Premium Plus is €50 a month, with no free plan. MarketMan lists Starter at $249 a month, Growth at $299 and Enterprise from $449. WISK lists a single venue at $249 a month for beverage or for food. Galley’s SMB Accelerator starts at $99 a month. CookKeepBook’s standard account is free, and Plus is $9 a month or $69 a year. reciProfity lists add-on prices but no base plan, and costbrain.com shows no recipe-costing price. meez, BlueCart and Kitchen CUT quote on request. Vendors change prices, so check their page before you buy."
   - q: "Can I use Excel for recipe costing?"
     a: "Yes. Plenty of kitchens start with a spreadsheet, and it can cost a dish perfectly well. The catch is upkeep: the total doesn’t change when a supplier invoice does unless someone edits the cell, and one wrong formula can throw the cost off without anyone noticing."
   - q: "What is the best free recipe costing software?"
-    a: "CookKeepBook is the one tool on this list with a free plan: its standard account includes unlimited ingredients and recipes (checked 6 November 2026). Plus is $9 a month or $69 a year. AI Chef Pro has no free plan; it starts at €10 a month with 10,000 credits."
+    a: "CookKeepBook is the one tool on this list with a free plan: its standard account includes unlimited ingredients and recipes (checked 6 November 2026). Plus is $9 a month or $69 a year. AI Chef Pro has no free plan; it starts at €25 a month with 85,000 credits."
   - q: "How does AI improve recipe costing?"
     a: "On AI Chef Pro, you enter a new ingredient price and the AI agents recalculate the dish, suggest a menu price and use that cost for menu engineering: which dishes to keep, reprice or take off. You still supply the prices; the agents do the arithmetic and the analysis."
   - q: "What ROI can I expect from recipe costing software?"
@@ -28,7 +28,7 @@ faq:
 <p>Below are the ten tools restaurants shortlist most often, from a free account to enterprise platforms. Prices come from each vendor’s own website, checked on 6 November 2026.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Recipe costing software, with AI agents for chefs</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro brings recipe costing, menu engineering and food cost together in one workspace of AI agents for chefs. Plans start at €10/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro brings recipe costing, menu engineering and food cost together in one workspace of AI agents for chefs. Plans start at €25/month.</p>
 <p><a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;">
@@ -63,10 +63,10 @@ faq:
 <li>Works in 7 languages</li>
 <li>Sub-recipe and mother recipe costing</li>
 </ul>
-<p><strong>Pricing:</strong> Member is €10/month with 10,000 credits, Premium Pro is €25/month and Premium Plus is €50/month. All plans are on the <a href="https://aichef.pro/en/pricing">pricing page</a>. There is no free plan.</p>
+<p><strong>Pricing:</strong> Premium Pro is €25/month with 85,000 credits, Premium Plus is €50/month and Premium Max is €95/month. All plans are on the <a href="https://aichef.pro/en/pricing">pricing page</a>. There is no free plan.</p>
 <p><strong>Best for:</strong> Independent operators and small restaurant groups that want costing, menu engineering and other kitchen work in one place</p>
 <ul>
-<li><strong>Pros:</strong> Costing, menu engineering and dozens of other kitchen agents in one workspace; €10/month entry plan; 7 languages; new agents added regularly</li>
+<li><strong>Pros:</strong> Costing, menu engineering and dozens of other kitchen agents in one workspace; €25/month entry plan; 7 languages; new agents added regularly</li>
 <li><strong>Cons:</strong> Newer than the established players; no invoice scanning, stock counts or POS integration, so you keep your inventory system alongside it</li>
 </ul>
 <h3>2. meez</h3>
@@ -229,7 +229,7 @@ faq:
 <tbody>
 <tr>
 <td><strong>AI Chef Pro</strong></td>
-<td>€10/mo</td>
+<td>€25/mo</td>
 <td>No</td>
 <td>No</td>
 <td>Not listed</td>
@@ -325,11 +325,11 @@ faq:
 <h2>How to Choose the Right Recipe Costing Software</h2>
 <p>The right tool depends on your size, your team and the problem you’re trying to fix. Here’s a quick guide:</p>
 <ul>
-<li><strong>Small Operations (1-2 locations):</strong> AI Chef Pro’s Member plan (€10 a month, 10,000 credits) gives you recipe costing plus 75+ other AI agents for the kitchen. If you just want to try costing on a zero budget, CookKeepBook’s standard account is free for unlimited recipes and ingredients.</li>
+<li><strong>Small Operations (1-2 locations):</strong> AI Chef Pro’s Premium Pro plan (€25 a month, 85,000 credits) gives you recipe costing plus 75+ other AI agents for the kitchen. If you just want to try costing on a zero budget, CookKeepBook’s standard account is free for unlimited recipes and ingredients.</li>
 <li><strong>Mid-Size Operations (3-10 locations):</strong> meez and MarketMan are strong on recipe standards and purchasing. meez quotes on request; MarketMan’s Starter plan is $249 a month. Ask each one what the multi-location plan includes before you compare it with a single-site tool.</li>
 <li><strong>Large/Enterprise Operations (10+ locations):</strong> Galley’s SMB Accelerator starts at $99 a month, but a large group will want the enterprise quote. Kitchen CUT is worth a look for hotel groups and caterers. WISK’s single-venue price is $249 a month, and 11 or more outlets is a quote.</li>
 <li><strong>Bar-Focused Operations:</strong> WISK is built for drinks, with recipe costing, pour tracking and 60+ POS integrations, from $249 a month for a single venue.</li>
-<li><strong>Budget-Conscious Operators:</strong> CookKeepBook’s standard account is free, with unlimited recipes and ingredients; Plus is $9 a month or $69 a year. AI Chef Pro starts at €10 a month.</li>
+<li><strong>Budget-Conscious Operators:</strong> CookKeepBook’s standard account is free, with unlimited recipes and ingredients; Plus is $9 a month or $69 a year. AI Chef Pro starts at €25 a month.</li>
 <li><strong>AI agents for chefs:</strong> AI Chef Pro is the option on this list built around AI agents. Recipe costing and menu engineering sit in the same workspace, alongside agents for recipes, allergens, scaling and more.</li>
 </ul>
 
@@ -340,13 +340,13 @@ faq:
 
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Cost your menu with AI agents for chefs</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Recipe costing and menu engineering in one workspace. Plans start at €10/month with 10,000 credits.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Recipe costing and menu engineering in one workspace. Plans start at €25/month with 85,000 credits.</p>
 <p><a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Open the guest workspace →</a>
 </div>
 
 <h2>Conclusion</h2>
 <p>The ten tools above range from a free account to enterprise platforms that only quote. CookKeepBook is the free starting point. MarketMan, WISK and Galley’s SMB plan publish monthly prices. meez, BlueCart and Kitchen CUT quote on request, and reciProfity lists add-ons but not a base plan.</p>
-<p>For an independent kitchen that wants costing and menu engineering without a big software contract, <strong>AI Chef Pro</strong> starts at €10 a month with 10,000 credits, and its AI agents for chefs cover much more than costing. You can <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">explore the app as a guest</a> first and pick a plan when you’re ready.</p>
+<p>For an independent kitchen that wants costing and menu engineering without a big software contract, <strong>AI Chef Pro</strong> starts at €25 a month with 85,000 credits, and its AI agents for chefs cover much more than costing. You can <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=best-recipe-costing-software-compared" target="_blank" rel="noopener">explore the app as a guest</a> first and pick a plan when you’re ready.</p>
 <p>Whatever you choose, a dish cost is only as good as the invoice prices, yield and waste you enter. Run a few of your own dishes through any tool before you commit, and check the vendor’s price page again before you pay.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>

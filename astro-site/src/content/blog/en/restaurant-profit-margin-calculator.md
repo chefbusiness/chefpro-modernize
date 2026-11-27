@@ -126,7 +126,7 @@ imageAlt: "Tablet showing restaurant profit margin dashboard with analytics"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">💰 Start Optimizing Your Profits Today</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro: Restaurant profit calculator powered by advanced AI.<br />    ROI Analyzer • Profit Optimizer • Real-time insights • 75+ tools  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    CALCULATE YOUR PROFITS →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    From €25/month • No lock-in  </p>
 </div>
 <h2>Key Benefits of AI-Powered Profit Management</h2>
 <p>Beyond the obvious margin improvements, AI profit calculators deliver transformative benefits for restaurant operations:</p>
@@ -155,12 +155,12 @@ imageAlt: "Tablet showing restaurant profit margin dashboard with analytics"
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Financial Plan Kit Pro</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, scenarios, and a financial ratios dashboard.</p><a href="/en/digital-products/restaurant-financial-plan-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-profit-margin-calculator" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Financial Plan Kit Pro for $49</a></aside>
 
 <h3>How much does AI profit optimization cost?</h3>
-<p>AI Chef Pro uses a credit-based system with no subscription required. You purchase credits as needed, with each analysis or optimization using one credit. New users receive 10,000 credits with AI Chef Member. Most restaurants see ROI within the first month of use.</p>
+<p>AI Chef Pro is a monthly subscription with credits included and no lock-in. The entry plan, AI Chef Premium Pro, costs €25/month and includes 85,000 credits a month. Most restaurants see ROI within the first month of use.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Transform Your Restaurant&#8217;s Profitability</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro&#8217;s profit calculator.<br />    Real-time insights • Menu optimization • Waste reduction • Maximum ROI  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET AI CHEF MEMBER →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use • No subscription required  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET AI CHEF PREMIUM PRO →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    €25/month • No lock-in  </p>
 </div>
 <h2>Conclusion: The New Standard for Restaurant Profitability</h2>
 <p>The restaurant industry has always been challenging, but today&#8217;s operators face unprecedented pressure from rising costs, labor shortages, and fierce competition. In this environment, guessing isn&#8217;t a strategy—it&#8217;s a liability.</p>
@@ -170,6 +170,6 @@ imageAlt: "Tablet showing restaurant profit margin dashboard with analytics"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🎯 Your Complete Restaurant Intelligence Platform</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Profit optimization • Financial analytics • Menu engineering • Waste control<br />    Join 50,000+ hospitality professionals using AI Chef Pro.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED FREE →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED FROM €25 →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    ROI Analyzer • Profit Optimizer • 75+ AI apps   </p>
 </div>

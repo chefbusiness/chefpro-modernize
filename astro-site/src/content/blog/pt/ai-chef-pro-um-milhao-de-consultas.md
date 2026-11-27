@@ -21,7 +21,7 @@ faq:
   - q: "Como se pode pedir a melhoria de um agente?"
     a: "Escreva-nos para info@aichef.pro ou responda à newsletter com o nome do agente e o que considera que está em falta. Lemos todas as respostas e as alterações de cada semana partem daí."
   - q: "O AI Chef Pro tem plano gratuito?"
-    a: "Não. O acesso começa a partir de 10 € por mês com o plano Membro, que inclui 10.000 créditos e não tem permanência. Com esse plano já tem acesso aos 59 agentes e à secção de modelos."
+    a: "Não. O acesso começa a partir de 25 € por mês com o plano Premium Pro, que inclui 85.000 créditos e não tem permanência. Com esse plano já tem acesso aos 59 agentes e à secção de modelos."
 ---
 
 Há uns dias, entre 25 de agosto e 1 de setembro de 2026, os agentes da AI Chef Pro ultrapassaram um milhão de consultas resolvidas desde que abrimos a plataforma. Não é um número de marketing: é um milhão de vezes que alguém, a partir de uma cozinha, uma pastelaria, uma padaria ou uma mesa de trabalho, fez uma pergunta a um agente e recebeu uma resposta útil. Uma receita, um escandallo, uma ementa, uma ficha técnica, um plano de negócio ou uma dúvida de serviço. Um milhão de momentos em que a IA fez o trabalho de base para que o profissional pudesse dedicar-se ao que realmente importa.
@@ -100,4 +100,4 @@ Um milhão de consultas é um ponto de partida, não de chegada. Todas as semana
 
 <figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-agentes-afinados.jpg" alt="Mãos de um pasteleiro a temperar chocolate sobre mármore num laboratório de pastelaria" loading="lazy" /></figure>
 
-Se ainda não entrou na plataforma, pode fazê-lo em [ptapp.aichef.pro](https://ptapp.aichef.pro/). O plano Membro começa nos 10 € por mês, sem fidelização, com 10.000 créditos para começar a trabalhar com os 59 agentes especializados em Português de Portugal. Toda a informação sobre planos está em [aichef.pro/preços](https://aichef.pro/pt/precos). Sem compromissos, sem letra pequena.
+Se ainda não entrou na plataforma, pode fazê-lo em [ptapp.aichef.pro](https://ptapp.aichef.pro/). O plano Premium Pro começa nos 25 € por mês, sem fidelização, com 85.000 créditos para começar a trabalhar com os 59 agentes especializados em Português de Portugal. Toda a informação sobre planos está em [aichef.pro/preços](https://aichef.pro/pt/precos). Sem compromissos, sem letra pequena.

@@ -97,36 +97,6 @@ export default function PricingV2({ medium }: PricingV2Props) {
   const feat = (id: string, n: number) =>
     Array.from({ length: n }, (_, i) => t(`pricing.plans.${id}.features.${i}`) as string);
 
-  // Sólo para campos ESTRUCTURALES opcionales (period): i18next devuelve la
-  // propia clave cuando no existe en ningún idioma. El COPY no se oculta: una
-  // clave v2_ sin traducir tiene que verse para que el gate la cace.
-  const opt = (id: string, key: string) => {
-    const full = `pricing.plans.${id}.${key}`;
-    const value = t(full) as string;
-    return value === full ? undefined : value;
-  };
-
-  // member es el único con lista propia v2 (v2_features[4]); si un idioma aún no
-  // la tiene, cae a sus features de siempre en vez de quedarse sin lista.
-  const rawMemberFeatures = t('pricing.plans.member.v2_features', {
-    returnObjects: true,
-  }) as unknown as string[];
-  const memberFeatures = Array.isArray(rawMemberFeatures) ? rawMemberFeatures : [];
-
-  const member: PlanV2 = {
-    id: 'member',
-    slug: 'member',
-    name: p('member', 'name'),
-    eyebrow: p('member', 'v2_eyebrow'),
-    description: p('member', 'v2_description'),
-    price: p('member', 'price'),
-    period: opt('member', 'period'),
-    credits: p('member', 'v2_credits'),
-    hint: p('member', 'v2_hint'),
-    cta: p('member', 'v2_cta'),
-    features: memberFeatures.length ? memberFeatures : feat('member', 4),
-  };
-
   const premiumPro: PlanV2 = {
     id: 'premium_pro',
     slug: 'premium-pro',
@@ -189,15 +159,14 @@ export default function PricingV2({ medium }: PricingV2Props) {
     features: feat('premium_plus_annual', 6),
   };
 
-  // Fila 1 = los 3 planes mensuales de entrada; fila 2 = ilimitado y compromiso anual.
+  // Fila 1 = los 3 planes mensuales; fila 2 = el compromiso anual, solo.
   const rows = [
-    { grid: 'mx-auto grid max-w-5xl gap-6 md:grid-cols-3', plans: [member, premiumPro, premiumPlus] },
-    { grid: 'mx-auto grid max-w-3xl gap-6 md:grid-cols-2', plans: [premiumMax, premiumPlusAnnual] },
+    { grid: 'mx-auto grid max-w-5xl gap-6 md:grid-cols-3', plans: [premiumPro, premiumPlus, premiumMax] },
+    { grid: 'mx-auto grid max-w-md gap-6', plans: [premiumPlusAnnual] },
   ];
 
-  // Chips de rol → plan. Sólo los 4 mensuales (el anual no es un «rol»).
+  // Chips de rol → plan. Sólo los 3 mensuales (el anual no es un «rol»).
   const roleChips = [
-    { plan: member, role: t('pricing.v2_role_member') as string, short: p('member', 'v2_short') },
     { plan: premiumPro, role: t('pricing.v2_role_premium_pro') as string, short: p('premium_pro', 'v2_short') },
     { plan: premiumPlus, role: t('pricing.v2_role_premium_plus') as string, short: p('premium_plus', 'v2_short') },
     { plan: premiumMax, role: t('pricing.v2_role_premium_max') as string, short: p('premium_max', 'v2_short') },

@@ -11,9 +11,9 @@ faq:
   - q: "Can AI make a recipe from the ingredients I have?"
     a: "Yes. You type the ingredients with quantities and condition, add the limits of your kitchen such as station, equipment, cover count and allergens, and ask for two or three options with method and yields. The draft is a starting point: you still check ratios, seasoning and times, cost the plate and cook a test batch before it goes on the menu."
   - q: "Which AI is best for giving recipes?"
-    a: "It depends on the job. Free generators are fine for home cooking and quick ideas from a few ingredients. For a professional kitchen you want a tool that knows technique, yields, scaling and allergens, and that lets you set the constraints of your line. AI Chef Pro is built for that, from €10/month."
+    a: "It depends on the job. Free generators are fine for home cooking and quick ideas from a few ingredients. For a professional kitchen you want a tool that knows technique, yields, scaling and allergens, and that lets you set the constraints of your line. AI Chef Pro is built for that, from €25/month."
   - q: "Is there a free AI recipe generator?"
-    a: "Yes, several free generators exist and they work well for home cooks. AI Chef Pro itself has no free plan and no free trial; Member is €10/month with 10,000 credits and Premium plans start at €25/month. The free tools on aichef.pro, which need no sign-up, include a food cost calculator, an allergen detector and a tasting menu generator."
+    a: "Yes, several free generators exist and they work well for home cooks. AI Chef Pro itself has no free plan and no free trial; plans start at €25/month with Premium Pro, which includes 85,000 credits. The free tools on aichef.pro, which need no sign-up, include a food cost calculator, an allergen detector and a tasting menu generator."
   - q: "Can an AI recipe generator handle food allergies?"
     a: "As a drafting aid, yes. Name the allergens to remove, ask for hidden sources in stocks, sauces, marinades and fryer oil, and ask for substitutions that hold up under heat. Then check labels, supplier specs and your cross-contact rules on the line. The AI drafts and you verify, because your guest is eating your food, not the draft."
   - q: "Can it scale a recipe for a banquet?"
@@ -24,7 +24,7 @@ faq:
 
 How do you get a recipe from the ingredients you have? You write down what is actually in the walk-in, with quantities and condition, add the constraints of your kitchen, and ask for options instead of a single answer. Then you pick one, cost it, cook a small batch and taste it before it goes anywhere near the menu. The tool does the drafting; the decisions stay with you.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Give the recipe agents what is in your walk-in and get drafts you can cost, test and put on the board. AI Chef Member is €10/month for 10,000 credits.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/ai-recipes-for-restaurants?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-recipe-generator-from-ingredients">See AI recipes for restaurants</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Give the recipe agents what is in your walk-in and get drafts you can cost, test and put on the board. AI Chef Premium Pro is €25/month for 85,000 credits.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/ai-recipes-for-restaurants?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-recipe-generator-from-ingredients">See AI recipes for restaurants</a></p></aside>
 
 ## What an AI recipe generator from ingredients does (and doesn't)
 
@@ -85,9 +85,9 @@ A free generator is fine for home cooking and quick inspiration, and it is not b
 | Scaling to more covers | Rarely | Calcula Pax, you check seasoning |
 | Allergens | Basic | Allergen ID with hidden sources |
 | Costing the plate | No | Pair it with the food cost calculator |
-| Price | Free | From €10/month (Member, 10,000 credits) |
+| Price | Free | From €25/month (Premium Pro, 85,000 credits) |
 
-If you cook at home on a Sunday and want to use up a squash, a free generator will do the job and you should use it. In a restaurant the recipe has a cost, a station, a yield and an allergen profile, and that is where the free tools run out. AI Chef Pro is a suite of 75+ AI agents for hospitality, including Avant-garde Cuisine, 27 world-cuisine recipe agents (12 from Europe, 11 from Latin America, 4 from Asia), Staff Meal, Waste GenCal, Allergen ID, Food Pairing AI, Calcula Pax and VegChef Plant-Based. There is no free plan and no free trial: Member is €10/month for 10,000 credits, Premium plans from €25/month, all billed in euros. The free tools on aichef.pro, which include a food cost calculator, an allergen detector and a tasting menu generator, need no sign-up.
+If you cook at home on a Sunday and want to use up a squash, a free generator will do the job and you should use it. In a restaurant the recipe has a cost, a station, a yield and an allergen profile, and that is where the free tools run out. AI Chef Pro is a suite of 75+ AI agents for hospitality, including Avant-garde Cuisine, 27 world-cuisine recipe agents (12 from Europe, 11 from Latin America, 4 from Asia), Staff Meal, Waste GenCal, Allergen ID, Food Pairing AI, Calcula Pax and VegChef Plant-Based. There is no free plan and no free trial: plans start at €25/month with Premium Pro (85,000 credits), all billed in euros. The free tools on aichef.pro, which include a food cost calculator, an allergen detector and a tasting menu generator, need no sign-up.
 
 ## Where AI recipes go wrong (and how to catch it)
 
@@ -111,4 +111,4 @@ That last one is the habit worth building. The comparison of [AI-assisted and tr
 
 Use the generator to start, not to finish. A recipe earns its place on the menu when it is costed, tested and written down, and the tool only helps with the first draft of that chain.
 
-That is the whole discipline: the walk-in list, the constraints, three options, the cost, the test batch, the recipe card. Do it five times and you have a week of specials instead of a Tuesday panic. To see how the recipe agents fit together, start with [AI recipes for restaurants](https://aichef.pro/en/ai-recipes-for-restaurants), and remember the entry point is Member at €10/month for 10,000 credits, with no free plan.
+That is the whole discipline: the walk-in list, the constraints, three options, the cost, the test batch, the recipe card. Do it five times and you have a week of specials instead of a Tuesday panic. To see how the recipe agents fit together, start with [AI recipes for restaurants](https://aichef.pro/en/ai-recipes-for-restaurants), and remember the entry point is Premium Pro at €25/month for 85,000 credits, with no free plan.

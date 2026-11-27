@@ -269,7 +269,7 @@ imageAlt: "Restaurant manager looking at Google search results for restaurant on
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Your Menu Is Your Best SEO Asset</p>
 <p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro helps you build menus optimized for both profitability and search visibility. Recipe content, pricing, descriptions — all AI-powered.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Try Free →</a></div>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a></div>
 <h2>Review Management: Your Online Reputation</h2>
 <p>Online reviews directly influence purchasing decisions and search rankings. Google confirms that review quantity and quality affect local pack visibility. A strategic approach to reviews transforms customer feedback into a competitive advantage.</p>
 <h3>Proactive Review Generation</h3>
@@ -346,7 +346,7 @@ imageAlt: "Restaurant manager looking at Google search results for restaurant on
 <p>The fundamentals covered in this guide—Google Business Profile optimization, on-page SEO, content marketing, review management, and technical foundations—create a comprehensive framework for local search success. Start with quick wins like GBP optimization and review responses, then build toward comprehensive content and technical strategies.</p>
 <p>Remember that SEO serves your customers first. When you optimize for search engines, you&#8217;re ultimately making it easier for hungry diners to find exactly what your restaurant offers. Great food deserves to be discovered—make that discovery possible with strategic SEO.</p>
 <p><strong>Ready to elevate your restaurant&#8217;s digital presence?</strong> <a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a> provides over 55 AI-powered tools specifically designed for foodservice professionals. From generating SEO-optimized content to managing reviews and analyzing competitors, our platform handles the heavy lifting so you can focus on what you do best—creating exceptional dining experiences.</p>
-<p><a href="https://aichef.pro/en" style="display:inline-block; background-color:#e63946; color:#ffffff; padding:16px 32px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:18px;" target="_blank" rel="noopener">Start Your AI Chef Member</a></p>
+<p><a href="https://aichef.pro/en" style="display:inline-block; background-color:#e63946; color:#ffffff; padding:16px 32px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:18px;" target="_blank" rel="noopener">Start Your AI Chef Premium Pro</a></p>
 <p><em>AI Chef Pro — Empowering chefs and restaurants with intelligent solutions for the modern foodservice industry.</em></p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>

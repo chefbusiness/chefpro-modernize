@@ -15,7 +15,7 @@ imageAlt: "Kitchen display system at expediting station in commercial restaurant
 <p>This comprehensive guide explains exactly how a <strong>kitchen display system</strong> works, compares the top systems on the market, and helps you choose the perfect solution for your operation. By the end, you&#8217;ll have the knowledge to make an informed decision that will pay dividends in efficiency, accuracy, and profitability.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Turn KDS Data Into Actionable Intelligence</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro connects your kitchen data with 75+ AI tools for demand forecasting, menu engineering, and cost optimization. Member plan — €10/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro connects your kitchen data with 75+ AI tools for demand forecasting, menu engineering, and cost optimization. Premium Pro plan — €25/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/kds-screen-orders-restaurant.png" alt="KDS screen showing color-coded orders" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Color-coded KDS screens help kitchen teams prioritize orders — green for new, yellow for in progress, red for delayed.</figcaption></figure>
 <h2>What Is a Kitchen Display System?</h2>
@@ -227,7 +227,7 @@ imageAlt: "Kitchen display system at expediting station in commercial restaurant
 <li><strong>Kitchen optimization recommendations</strong> identifying bottlenecks and efficiency opportunities</li>
 <li><strong>Staff scheduling suggestions</strong> aligned with predicted demand patterns</li>
 </ul>
-<p>Get started with AI Chef Member—10,000 credits per month for €10, no commitment. Experience how AI transforms kitchen operations from reactive management to predictive excellence.</p>
+<p>Get started with AI Chef Premium Pro—85,000 credits per month for €25, no commitment. Experience how AI transforms kitchen operations from reactive management to predictive excellence.</p>
 </div>
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Inventory Kit Pro</h3><p class="mt-2 text-muted-foreground">Inventory, purchasing, waste tracking, and supplier management.</p><a href="/en/digital-products/restaurant-inventory-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=kitchen-display-systems-kds-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Inventory Kit Pro for $19</a></aside>
@@ -235,8 +235,8 @@ imageAlt: "Kitchen display system at expediting station in commercial restaurant
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Upgrade Your Kitchen Intelligence</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">From KDS to AI — take your kitchen operations to the next level with 75+ AI-powered tools. AI Chef Member available.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started Free →</a></div>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">From KDS to AI — take your kitchen operations to the next level with 75+ AI-powered tools. AI Chef Premium Pro available.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started from €25 →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/kds-kitchen-performance-analytics.png" alt="KDS analytics showing kitchen performance data" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">KDS analytics reveal ticket times, station throughput, and peak period performance — data that drives continuous improvement.</figcaption></figure>
 <div itemscope itemtype="https://schema.org/FAQPage">
 <div itemscope itemtype="https://schema.org/Question">
@@ -280,7 +280,7 @@ imageAlt: "Kitchen display system at expediting station in commercial restaurant
 <p>A Kitchen Display System represents one of the highest-return technology investments available to restaurants today. By replacing error-prone paper tickets with real-time digital displays, KDS reduces mistakes, accelerates service, and provides the data needed for continuous kitchen improvement.</p>
 <p>Whether you operate a small quick-service café or a multi-location full-service restaurant, the right KDS configuration transforms kitchen operations. The key lies in matching technology to your specific needs—proper station planning, appropriate hardware selection, and thoughtful implementation.</p>
 <p>Your KDS generates valuable data every service. That data becomes exponentially more powerful when connected to artificial intelligence. <strong><a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a></strong> provides the bridge between your kitchen display system and actionable intelligence. Our 75+ AI tools help you forecast demand, engineer menus based on performance data, and optimize kitchen operations continuously.</p>
-<p>Start with AI Chef Member today—10,000 credits per month for €10, no commitment. Experience how AI transforms kitchen operations from reactive problem-solving to predictive excellence. Your kitchen already has the data; let AI help you use it.</p>
+<p>Start with AI Chef Premium Pro today—85,000 credits per month for €25, no commitment. Experience how AI transforms kitchen operations from reactive problem-solving to predictive excellence. Your kitchen already has the data; let AI help you use it.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>
 <ul>

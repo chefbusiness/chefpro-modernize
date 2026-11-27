@@ -17,9 +17,9 @@ translations:
   nl: beste-ai-apps-recepten-2026
 faq:
   - q: "Quelle est la meilleure application d'IA pour créer des recettes en 2026 ?"
-    a: "Cela dépend de la cuisine. Pour une idée du soir, un assistant général comme ChatGPT ou une appli de garde-manger suffit. Pour un restaurant, il faut un agent qui sort une fiche technique, les allergènes et un coût matière. AI Chef Pro est conçu pour ce second métier : le plan Membre est à 10 € par mois, 10 000 crédits, sans engagement. Nous ne publions pas de note : nous n'avons pas refait un banc d'essai chiffré des six autres outils."
+    a: "Cela dépend de la cuisine. Pour une idée du soir, un assistant général comme ChatGPT ou une appli de garde-manger suffit. Pour un restaurant, il faut un agent qui sort une fiche technique, les allergènes et un coût matière. AI Chef Pro est conçu pour ce second métier : le plan Premium Pro est à 25 € par mois, 85 000 crédits, sans engagement. Nous ne publions pas de note : nous n'avons pas refait un banc d'essai chiffré des six autres outils."
   - q: "Existe-t-il une IA recette cuisine gratuite ?"
-    a: "Plusieurs assistants généraux ont un accès gratuit limité. ChefGPT se télécharge gratuitement, mais son éditeur indique sur l'App Store que l'accès aux fonctions demande un abonnement. AI Chef Pro n'a pas de plan gratuit : le premier plan est le Membre, à 10 € par mois. Une recette gratuite qui oublie un allergène coûte plus cher qu'un abonnement."
+    a: "Plusieurs assistants généraux ont un accès gratuit limité. ChefGPT se télécharge gratuitement, mais son éditeur indique sur l'App Store que l'accès aux fonctions demande un abonnement. AI Chef Pro n'a pas de plan gratuit : le premier plan est le Premium Pro, à 25 € par mois. Une recette gratuite qui oublie un allergène coûte plus cher qu'un abonnement."
   - q: "Quelle différence entre une application de recettes et un agent IA ?"
     a: "Une application de recettes propose un plat, souvent pour la maison. Un agent IA culinaire enchaîne une tâche de métier : fiche technique, adaptation d'une carte, coût matière, allergènes du règlement 1169/2011. Le même mot « IA » recouvre les deux. En cuisine professionnelle, c'est la tâche qui compte, pas le chatbot."
   - q: "Ces applications conviennent-elles à un restaurant ?"
@@ -32,7 +32,7 @@ faq:
 
 Si vous cherchez les 7 meilleures applications d'IA pour créer des recettes en 2026, la réponse courte est celle-ci : six des noms qui occupent Google sont faits pour la maison, et un seul est une suite d'agents pour la restauration. ChatGPT, ChefGPT, SuperCook, Samsung Food, DishGen et Jow aident à décider du dîner. AI Chef Pro sert à produire une fiche, un coût et une carte. Ce n'est pas la même commande.
 
-Nous n'avons pas noté ces outils sur 5, et nous ne recopions pas les prix lus sur des comparatifs affiliés. Ce qui suit décrit le métier de chaque produit, à partir de ce que son éditeur ou la page de résultats montre en octobre 2026. Le prix que nous citons est le nôtre, publié sur [les tarifs](https://aichef.pro/fr/tarifs) : plan Membre à 10 € par mois, 10 000 crédits, sans engagement. Les autres tarifs se lisent chez l'éditeur, le jour où vous vous inscrivez.
+Nous n'avons pas noté ces outils sur 5, et nous ne recopions pas les prix lus sur des comparatifs affiliés. Ce qui suit décrit le métier de chaque produit, à partir de ce que son éditeur ou la page de résultats montre en octobre 2026. Le prix que nous citons est le nôtre, publié sur [les tarifs](https://aichef.pro/fr/tarifs) : plan Premium Pro à 25 € par mois, 85 000 crédits, sans engagement. Les autres tarifs se lisent chez l'éditeur, le jour où vous vous inscrivez.
 
 [Ouvrir l'espace invité en français](https://frapp.aichef.pro/guest?utm_source=blog&utm_medium=cta&utm_content=meilleures-applications-ia-recettes-2026)
 
@@ -67,7 +67,7 @@ Les critères, dans l'ordre :
 
 | Outil | Pour qui | Ce qu'il fait vraiment | Prix que nous publions | Cuisine pro |
 | --- | --- | --- | --- | --- |
-| AI Chef Pro | Chef, gérant, brigade | Agents de fiches, cartes, coût matière, allergènes | Membre 10 €/mois (10 000 crédits) ; Pro 25 € ; Plus 50 € ; Max 95 € ; Max annuel 950 € | Oui |
+| AI Chef Pro | Chef, gérant, brigade | Agents de fiches, cartes, coût matière, allergènes | Pro 25 €/mois (85 000 crédits) ; Plus 50 € ; Max 95 € ; Max annuel 950 € | Oui |
 | ChatGPT | Tout le monde | Brouillon de recette et reformulation | Non publié ici | Non, sauf comme brouillon |
 | ChefGPT | Foyer, suivi de calories | Modes garde-manger, plat, macros et menu de la semaine | Téléchargement gratuit ; l'éditeur exige un abonnement pour les fonctions | Non |
 | SuperCook | Foyer, anti-gaspi | Trouve des recettes à partir de ce que vous avez | Non publié ici | Non |
@@ -83,7 +83,7 @@ Les cellules de prix vides ne sont pas un oubli. Un prix recopié d'un blog conc
 
 **Pour qui.** Un restaurant, un traiteur, un chef qui doit refaire le plat demain avec quelqu'un d'autre en poste.
 
-**Ce que c'est.** Une suite d'agents, pas un seul chat. L'espace français annonce la même offre publique que les autres langues du site : 75+ agents, plan Membre à 10 € par mois. Il n'y a pas de plan gratuit. La [fiche technique](https://aichef.pro/fr/blog/fiche-technique-cuisine) et le [menu engineering](https://aichef.pro/fr/blog/menu-engineering) sont des tâches de cet espace, pas des fonctions à coller après coup sur une appli de dîner.
+**Ce que c'est.** Une suite d'agents, pas un seul chat. L'espace français annonce la même offre publique que les autres langues du site : 75+ agents, plan Premium Pro à 25 € par mois. Il n'y a pas de plan gratuit. La [fiche technique](https://aichef.pro/fr/blog/fiche-technique-cuisine) et le [menu engineering](https://aichef.pro/fr/blog/menu-engineering) sont des tâches de cet espace, pas des fonctions à coller après coup sur une appli de dîner.
 
 **La limite.** Si vous voulez seulement « quoi faire avec trois œufs », c'est trop d'outil. Prenez un chatbot.
 
@@ -151,6 +151,6 @@ Trois questions suffisent, et aucune ne se règle avec une note d'étoiles.
 2. **Le coût matière est-il dans l'outil, ou dans un tableur à part ?** Le [calculateur de food cost](https://aichef.pro/fr/calculateur-food-cost-restaurant) existe pour cette question, avant même un abonnement.
 3. **Qui valide l'allergène ?** L'outil propose. Le responsable d'établissement signe. Le règlement 1169/2011 ne se délègue pas à une appli de dîner.
 
-Le plan Membre (10 € par mois, 10 000 crédits) sert à tester les agents sans engagement. Les plans au-dessus — 25 €, 50 €, 95 € par mois, ou 950 € l'année en Max — sont sur la [page tarifs](https://aichef.pro/fr/tarifs), pas dans une promo de cet article.
+Le plan Premium Pro (25 € par mois, 85 000 crédits) sert à tester les agents sans engagement. Les plans au-dessus — 50 € et 95 € par mois, ou 950 € l'année en Max — sont sur la [page tarifs](https://aichef.pro/fr/tarifs), pas dans une promo de cet article.
 
 Si votre question est « ia recette cuisine gratuit », commencez par un assistant général et une appli de garde-manger. Si votre question est la carte de la semaine prochaine, ouvrez l'espace français et demandez une fiche, pas une idée.

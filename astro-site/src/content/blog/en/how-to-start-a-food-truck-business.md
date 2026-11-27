@@ -347,4 +347,4 @@ AI Chef Pro gives you AI agents that help with the daily work of a truck: design
 
 The Food Truck AI+ agent is specialized in food trucks and mobile kitchens, with a focus on menu, recipe costing and events. You can see how it works on our <a href="https://aichef.pro/en/use-cases/concept/food-truck">AI for food trucks</a> page. It is one of more than 75 AI agents for hospitality on the platform.
 
-<a href="https://enapp.aichef.pro/?utm_source=blog&amp;utm_medium=cta-inline&amp;utm_content=how-to-start-a-food-truck-business">Try AI Chef Pro</a>, with plans from €10/month.
+<a href="https://enapp.aichef.pro/?utm_source=blog&amp;utm_medium=cta-inline&amp;utm_content=how-to-start-a-food-truck-business">Try AI Chef Pro</a>, with plans from €25/month.

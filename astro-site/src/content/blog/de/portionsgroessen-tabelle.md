@@ -157,7 +157,7 @@ faq:
 
 <p>Dieselben Grammzahlen gehören in die Kalkulation. Der <a href="https://aichef.pro/de/blog/wareneinsatz-berechnen">Wareneinsatz</a> und die <a href="https://aichef.pro/de/blog/kalkulation-gastronomie">Kalkulation in der Gastronomie</a> rechnen mit dem Rohgewicht, das Sie einkaufen. Garzeiten, die das Gewicht auf dem Teller verändern, stehen in der <a href="https://aichef.pro/de/blog/sous-vide-tabelle">Sous-vide-Tabelle</a>. Die Vorbereitung, bevor die Portion auf den Pass kommt, ist die <a href="https://aichef.pro/de/blog/mise-en-place">Mise en Place</a>. Wer die Menge erst in der Rezeptur festlegt, findet die Einordnung der Küchen-Apps 2026 unter <a href="https://aichef.pro/de/blog/beste-ki-apps-rezepte-2026">beste KI-Apps für Rezepte</a>.</p>
 
-<p>Die Tellerrückläufe einer Woche erfassen Sie in der <a href="https://deapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=portionsgroessen-tabelle">deutschen Gäste-Startseite</a> von AI Chef Pro (75+ Agenten, Mitglied ab 10 € im Monat, keine Einzel-Agenten-URL). Welcher Gang überportioniert ist, sehen Sie an dem, was zurückkommt — nicht an einer neuen Grammzahl, die diese Tabelle nicht enthält.</p>
+<p>Die Tellerrückläufe einer Woche erfassen Sie in der <a href="https://deapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=portionsgroessen-tabelle">deutschen Gäste-Startseite</a> von AI Chef Pro (75+ Agenten, Premium Pro ab 25 € im Monat, keine Einzel-Agenten-URL). Welcher Gang überportioniert ist, sehen Sie an dem, was zurückkommt — nicht an einer neuen Grammzahl, die diese Tabelle nicht enthält.</p>
 
 <h2>Ihr nächster Schritt</h2>
 

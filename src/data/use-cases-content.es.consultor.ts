@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo usarlo para clientes fuera de España?', a: 'Sí. Hay versiones en 7 idiomas y la base de datos HORECA cubre España, LATAM, Italia, Francia, Portugal, Alemania, Países Bajos y mercado anglosajón.' },
     ],
     ctaTitle: 'Acelera Tus Proyectos sin Perder Rigor Técnico.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Consultor Gastronómico Pro · IA Asesor Restaurantes | AI Chef Pro',
       description: 'Agente IA Consultor Gastronómico: asesor de restaurantes, due diligence, diagnóstico rentabilidad y plan financiero para grupos, hoteles e inversores. Empieza hoy.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo usarlo con clientes fuera de España?', a: 'Sí. 7 idiomas y base HORECA en España, LATAM, Italia, Francia, Portugal, Alemania, Países Bajos y mercado anglosajón.' },
     ],
     ctaTitle: 'Más Proyectos, Sin Renunciar al Criterio Técnico.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Chef Consultor Pro · IA Desarrollo Menú e Ingeniería | AI Chef Pro',
       description: 'Agente IA Chef Consultor Pro: desarrollo de menús, escandallos profesionales, ingeniería de menú, fichas técnicas y formación de brigadas para grupos y hoteles. Empieza hoy.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo trabajar con clientes en LATAM o Italia?', a: 'Sí. 7 idiomas disponibles y base HORECA en España, Italia, LATAM, Francia, Portugal, Alemania y Países Bajos.' },
     ],
     ctaTitle: 'Más Proyectos de Heladería, Sin Perder Rigor Técnico.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Heladero Consultor Pro · IA Heladería Artesanal | AI Chef Pro',
       description: 'Agente IA Heladero Consultor Pro: maestro heladero con IA para formulación POD/PAC, cartas temporada, escandallo heladería artesanal y APPCC. Empieza hoy.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo usar con clientes internacionales?', a: 'Sí. 7 idiomas y base de precios HORECA en Europa, LATAM y mercado anglosajón.' },
     ],
     ctaTitle: 'Acelera Tus Proyectos de Chocolate, Sin Perder Artesanía.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Chocolatero Consultor Pro · IA Bean to Bar y Bombonería | AI Chef Pro',
       description: 'Agente IA Chocolatero Consultor Pro: maestro chocolatero con IA para colecciones bombonería, tabletas bean-to-bar, escandallo cacao premium y APPCC. Empieza hoy.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo trabajar con clientes internacionales?', a: 'Sí. 7 idiomas y base HORECA en Europa, LATAM y mercado anglosajón.' },
     ],
     ctaTitle: 'Más Cartas de Postres, Sin Perder Criterio Técnico.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Pastelero Consultor Pro · IA Obrador Pastelería | AI Chef Pro',
       description: 'Agente IA Pastelero Consultor Pro: chef pastelero con IA para cartas de postres, escandallo de pastelería, fichas técnicas y manuales de obrador. Empieza hoy.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo trabajar con clientes internacionales?', a: 'Sí. 7 idiomas y base HORECA en Europa, LATAM y mercado anglosajón.' },
     ],
     ctaTitle: 'Más Pizzerías Asesoradas, Sin Perder Rigor Italiano.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Pizzero Consultor Pro · IA Pizza Napolitana AVPN | AI Chef Pro',
       description: 'Agente IA Pizzero Consultor Pro: maestro pizzaiolo con IA para formulación de masas, cartas, escandallo y manuales de fermentación (AVPN). Empieza hoy.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo trabajar con clientes internacionales?', a: 'Sí. 7 idiomas y base HORECA en Europa, LATAM y mercado anglosajón.' },
     ],
     ctaTitle: 'Más Specialty Coffee Shops Asesoradas, Con Margen Real.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Barista Consultor Pro · IA Café de Especialidad | AI Chef Pro',
       description: 'Agente IA Barista Consultor Pro: cartas de café, calibración de extracción, latte art profesional y escandallo de cafetería de especialidad. Empieza hoy.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Cubre la trazabilidad de bodega y APPCC?', a: 'Sí. Pack APPCC incluye registros de temperatura, humedad, trazabilidad de añadas y operativa de bodega.' },
     ],
     ctaTitle: 'Más Programas de Vinos Asesorados, Sin Perder Criterio Sumiller.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Sommelier Consultor Pro · IA Sumiller Carta de Vinos | AI Chef Pro',
       description: 'Agente IA Sommelier Consultor Pro: el sumiller/sommelier con IA para cartas de vinos, beverage cost, optimización de bodega y maridajes. Empieza hoy.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo trabajar con clientes internacionales?', a: 'Sí. 7 idiomas y base HORECA en Europa, LATAM y mercado anglosajón.' },
     ],
     ctaTitle: 'Más Cocktail Bars Asesoradas, Con Beverage Cost Bajo Control.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Bartender Consultor Pro · IA Coctelería y Mixología | AI Chef Pro',
       description: 'Agente IA Bartender Consultor Pro: cartas de cócteles, escandallo de bebidas, beverage cost y mixología profesional para bares de autor y hoteles. Empieza hoy.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_ES_CONSULTOR: Record<string, UseCaseContent> = {
       { q: '¿Puedo trabajar con clientes internacionales?', a: 'Sí. 7 idiomas y base HORECA en Europa, LATAM y mercado anglosajón.' },
     ],
     ctaTitle: 'Más Panaderías Asesoradas, Sin Perder Identidad Artesana.',
-    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Plan Miembro por 10 € al mes con 10.000 créditos para usar todos los agentes.',
+    ctaSubtitle: 'Empieza con el onboarding de 2 minutos. Premium Pro por 25 € al mes, con 85.000 créditos para usar todos los agentes.',
     seo: {
       title: 'Panadero Consultor Pro · IA Masa Madre y Obrador | AI Chef Pro',
       description: 'Agente IA Panadero Consultor Pro: panadería artesanal con IA, masa madre, escandallo, fichas técnicas y manuales de obrador para bakery cafés y hoteles. Empieza hoy.',

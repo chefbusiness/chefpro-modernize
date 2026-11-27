@@ -241,13 +241,13 @@ faq:
 <li>Supplier analysis and negotiation support</li>
 </ul>
 <p>While robots handle the consistent execution of established recipes, AI tools empower your culinary team to create those recipes, optimize their profitability, and continuously improve based on data-driven insights.</p>
-<p><strong>AI Chef Pro</strong> offers a <a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Member: €10/month, 10k credits</a>, allowing restaurant professionals to explore these capabilities without commitment. For operators ready to embrace the augmented kitchen model, this combination of robotic execution and AI-powered creativity represents the most practical path forward.</p>
+<p><strong>AI Chef Pro</strong> offers <a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Premium Pro: €25/month, 85k credits</a>, allowing restaurant professionals to explore these capabilities without commitment. For operators ready to embrace the augmented kitchen model, this combination of robotic execution and AI-powered creativity represents the most practical path forward.</p>
 </section>
 <section class="article-content">
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">The Future Kitchen: Human Creativity + AI Intelligence</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Let robots handle the repetitive. Let AI handle the data. Let your team handle the creativity. AI Chef Pro — 75+ tools, entry plan €10/month</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Let robots handle the repetitive. Let AI handle the data. Let your team handle the creativity. AI Chef Pro — 75+ tools, entry plan €25/month</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Start Now →</a></div>
 
 </section>

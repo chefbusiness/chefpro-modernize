@@ -128,7 +128,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Führen Sie Ihr Restaurant mit Daten, nicht mit Bauchgefühl.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Restaurantbesitzer: Finanzplan, Kalkulationen, SEO | AI Chef Pro",
       "description": "KI-Suite für Restaurantbesitzer: spezialisierte Agenten, Finanzplan, professionelle Kalkulationen, HACCP, Marketing und lokales SEO. Starten Sie noch heute.",
@@ -360,7 +360,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Bringen Sie den Betrieb Ihres Restaurants auf die nächste Stufe.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Restaurantleiter und Manager: Dienstpläne, APPCC und Reporting | AI Chef Pro",
       "description": "KI-Suite für Restaurantmanager: Dienstpläne, Inventar, APPCC, KPIs und Reporting an den Eigentümer mit spezialisierten Agenten für die Gastronomie. Starten Sie noch heute.",
@@ -587,7 +587,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Standardisieren Sie Ihre Gruppe. Gleicher Standard an allen Standorten.",
-    "ctaSubtitle": "Sprechen Sie mit uns für ein personalisiertes Onboarding für Ihre Gruppe oder starten Sie mit dem Mitgliederplan: 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Sprechen Sie mit uns für ein personalisiertes Onboarding für Ihre Gruppe oder starten Sie mit Premium Pro: 25 € pro Monat mit 85.000 Credits.",
     "seo": {
       "title": "KI für Betriebsleiter von Gastronomiegruppen | AI Chef Pro",
       "description": "KI-Suite für Multi-Standort-Gastronomiegruppen: konsolidierte Dashboards, Rezeptstandardisierung, unternehmensweites HACCP, replizierbare Handbücher und Finanzplan pro Einheit.",
@@ -817,7 +817,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Erstellen, kalkulieren und replizieren Sie Rezepte in der Geschwindigkeit eines Gesprächs.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für Executive Chef: Rezepte, Kalkulationen und Handbücher | AI Chef Pro",
       "description": "KI-Suite für Executive und Corporate Chef: Agent Executive Chef Pro, Kalkulationen mit KI, die der Koch prüft, technische Rezeptblätter und replizierbare Multi-Standort-Handbücher. Beginnen Sie noch heute.",
@@ -1055,7 +1055,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Mehr Küche, weniger Papierkram. Gewinnen Sie Stunden für das zurück, was zählt.",
-    "ctaSubtitle": "Start mit dem 2-Minuten-Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Start mit dem 2-Minuten-Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Küchenchefs und Chefköche: Kalkulationen, Rezeptblätter und HACCP | AI Chef Pro",
       "description": "KI-Suite für professionelle Küchenchefs: spezialisierte Agenten, Kalkulationen, Rezeptblätter, Mise en Place und HACCP mit echter gastronomischer Unterstützung. Starten Sie heute.",
@@ -1275,7 +1275,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       },
       {
         "q": "Nützt es, wenn nicht ich über die Werkzeuge in der Küche entscheide?",
-        "a": "Sie können mit dem Mitgliederplan beginnen (10 € pro Monat, 10.000 Credits) für Ihre eigenen Listen und Vorschläge. Nach 1–2 Wochen Nutzung schlagen Sie dem Küchenchef konkrete Daten vor: gesparte Zeit, validierte Kalkulationen, organisierte Mise en Place."
+        "a": "Sie können mit Premium Pro (25 € pro Monat, 85.000 Credits) für Ihre eigenen Listen und Vorschläge beginnen. Nach 1–2 Wochen Nutzung schlagen Sie dem Küchenchef konkrete Daten vor: gesparte Zeit, validierte Kalkulationen, organisierte Mise en Place."
       },
       {
         "q": "Wie hilft es mir in Service-Spitzenzeiten?",
@@ -1287,7 +1287,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Organisieren Sie Ihre Küche ohne lose Zettel.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für Sous Chef: Mise en Place, Rezepturen und APPCC | AI Chef Pro",
       "description": "KI-Suite für Sous Chefs in der Profiküche: Mise en Place, zentralisierte Rezepturen, Kalkulationen, APPCC vom Handy und Team-Schulung. Starten Sie noch heute.",
@@ -1514,7 +1514,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Gestalten, kalkulieren und produzieren Sie Events ohne lose Zettel.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Catering-Köche: Menüs, Kalkulationen und Event-APPCC | AI Chef Pro",
       "description": "KI-Suite für Catering-Köche: Catering AI+, Kreativküche, Calcula Pax, Kalkulation pro Event, APPCC außer Haus und Produktionsplanung in großem Maßstab. Starten Sie noch heute.",
@@ -1741,7 +1741,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Lassen Sie Ihr Catering mit echter Marge wachsen, nicht mit Bauchgefühl.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für Catering-Unternehmer: Rentabilität und Finanzplan | AI Chef Pro",
       "description": "KI-Suite für Catering-Unternehmen: Rentabilität pro Event, skalierte Produktion, Aushilfsteams, Finanzplan und Gewinnung von Corporate-Kunden. Starten Sie noch heute.",
@@ -1969,7 +1969,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Cocktailbar mit echtem Gewinn und Autorentechnik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Barkeeper und Mixologen: Karten, Kalkulationen und Storytelling | AI Chef Pro",
       "description": "KI-Suite für professionelle Barkeeper: Bar & Lounge AI+, Food Pairing AI, Kalkulation pro Drink, technische Datenblätter mit Storytelling und visuellem Branding. Starten Sie noch heute.",
@@ -2197,7 +2197,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Pizzeria mit echtem Gewinn und authentischer Technik.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Pizzabäcker und Pizzaioli: Teige, Kalkulation und italienische Technik | AI Chef Pro",
       "description": "KI-Suite für professionelle Pizzabäcker: Italienische Küche, Fermentus für Teige und Biga, Kalkulation pro Pizza, Vorlagen und authentische Technik. Starten Sie noch heute.",
@@ -2425,7 +2425,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre handwerkliche Bäckerei mit klarer Marge und professioneller Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für den handwerklichen Bäcker: Sauerteig, Kalkulationen und professionelle Technik | AI Chef Pro",
       "description": "KI-Suite für handwerkliche Bäcker: Kreative Boulangerie, Fermentus mit AI+ für Sauerteig, Stückkalkulation mit Backstuben-Stundensatz. Starten Sie noch heute.",
@@ -2654,7 +2654,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Schokoladenmanufaktur mit klarer Marge und Autorentechnik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Chocolatier und Pralinenhersteller: Temperieren, Kalkulation und Saisonalität | AI Chef Pro",
       "description": "KI-Suite für professionelle Chocolatiers: Kreative Schokolade, Kalkulation pro Stück mit Produktionsstundenkosten, saisonale Planung und APPCC. Starten Sie noch heute.",
@@ -2881,7 +2881,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Privatkoch-Service mit echtem Gewinn und eigener Handschrift.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits, um alle Agenten zu nutzen.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits, um alle Agenten zu nutzen.",
     "seo": {
       "title": "KI für Privatkoch und Personal Chef: Menüs, Kalkulationen und Service | AI Chef Pro",
       "description": "KI-Suite für professionelle Privatköche: Privatkoch Pro, Kalkulationen pro Abendessen, personalisierte Menüs, Branding und Akquise. Starten Sie noch heute.",
@@ -3109,7 +3109,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Hotel-F&B mit integrierter Marge und professioneller Betriebsführung.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für F&B-Manager im Hotel: Multi-Outlet, Bankette und Kalkulationen | AI Chef Pro",
       "description": "KI-Suite für Hotel-F&B-Manager: Profi Restaurantmanager, Catering AI+, übergreifende Kalkulationen, Multi-Outlet-Branding und integriertes APPCC. Starten Sie noch heute.",
@@ -3337,7 +3337,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Servicebereich mit professioneller Technik und unvergesslichem Erlebnis.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Maître und Serviceleiter: Service, Pairings und Storytelling | AI Chef Pro",
       "description": "KI-Suite für professionelle Maîtres: Profi Restaurantmanager, Bar & Lounge AI+, Food Pairing AI, Teamtraining und Premium-Akquise. Starten Sie noch heute.",
@@ -3565,7 +3565,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Weinkeller mit professionellem Anspruch und wissenschaftlichen Weinbegleitungen.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Sommeliers: Weinkeller, Weinbegleitungen und professionelle Verkostungen | AI Chef Pro",
       "description": "KI-Suite für professionelle Sommeliers: Bar & Lounge AI+, Food Pairing AI, Kalkulation pro Glas, private Verkostungen und wine-driven Branding. Starten Sie noch heute.",
@@ -3793,7 +3793,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Grill mit Feuertechnik und echter Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Grillmeister und Parrillero: Cuts, Glut und Dry-Aged | AI Chef Pro",
       "description": "KI-Suite für Grillmeister: Argentinische + Brasilianische Küche, Kalkulation pro Cut, Dry-Aged, Branding und APPCC. Starten Sie heute.",
@@ -4021,7 +4021,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Eis mit authentischer Technik und echter Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für Eismeister und Gelatiere: Grundmischungen, Kalkulationen und Saisonalität | AI Chef Pro",
       "description": "KI-Suite für Eismeister: Kreative Gelateria, technisches Gleichgewicht, Kalkulation pro Geschmack, Branding und APPCC. Starten Sie noch heute.",
@@ -4249,7 +4249,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Konditorei mit eigener Technik und echter Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für Konditoren und Patissiers: Technik, Kalkulationen und Saisonalität | AI Chef Pro",
       "description": "KI-Suite für professionelle Konditoren: Kreative Patisserie, Kalkulationen mit Backstuben-Stundensatz, saisonale Planung und Branding. Starten Sie heute.",
@@ -4481,7 +4481,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Bringen Sie Ordnung in Ihr Casual-Restaurant.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits, um alle Agenten zu nutzen.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits, um alle Agenten zu nutzen.",
     "seo": {
       "title": "KI für Casual-Restaurants: Abläufe, Rezeptkalkulation und lokales SEO | AI Chef Pro",
       "description": "KI-Suite für Casual-Restaurants und Bistros: spezialisierte Agenten, Rezeptkalkulation, HACCP, Dienstpläne, lokales SEO und professionelles Marketing. Starten Sie noch heute.",
@@ -4709,7 +4709,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Café mit optimierten Abläufen und organischer Kundenakquise.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Café und Brunch: Abläufe, Pinterest und lokales SEO | AI Chef Pro",
       "description": "KI-Suite für Coffee Shops und Brunch-Lokale: spezialisierte Agenten, Kalkulationen, HACCP, Content für Instagram und Pinterest, lokales SEO. Starten Sie noch heute.",
@@ -4937,7 +4937,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Pizza mit echter Marge, nicht Bauchgefühl.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits, um alle Agenten zu nutzen.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits, um alle Agenten zu nutzen.",
     "seo": {
       "title": "KI für Pizzerien: Sauerteig, Kalkulation pro Pizza und Lieferservice | AI Chef Pro",
       "description": "KI-Suite für professionelle Pizzerien: Italienische Küche, Fermentus für Teige, Kalkulation pro Pizza, Pizzeria-Vorlagen und lokales SEO. Starten Sie noch heute.",
@@ -5160,7 +5160,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Burger mit echter Marge, nicht Intuition.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für Burger-Restaurants: Kalkulation, Smash Burger und Lieferung | AI Chef Pro",
       "description": "KI-Suite für professionelle Burger-Restaurants: Burger Pro AI+, Kalkulation pro Burger, Burger-Shop-Vorlagen, APPCC und Multi-Plattform-Lieferung. Starten Sie noch heute.",
@@ -5392,7 +5392,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Dark Kitchen mit echter Marge und Daten pro Marke.",
-    "ctaSubtitle": "Starten Sie mit dem 2-Minuten-Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-Minuten-Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Dark Kitchens und virtuelle Küchen: Kalkulationen und SEO | AI Chef Pro",
       "description": "KI-Suite für Dark Kitchens und Ghost Kitchens: Multi-Marken-Kalkulationen, Marge nach Provision von Glovo und Uber Eats, lokales SEO, HACCP und Leitfaden zur Eröffnung Ihrer virtuellen Küche.",
@@ -5622,7 +5622,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Backstube mit klarer Marge und professionellem Branding.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Patisserie & Produktion: Kalkulation, Saisonalität & Branding | AI Chef Pro",
       "description": "KI-Suite für handwerkliche Patisserien: Kreative Patisserie, Stückkalkulation mit Produktionsstundensatz, APPCC, saisonale Planung und Branding. Starten Sie noch heute.",
@@ -5850,7 +5850,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Cocktailkunst mit echter Marge und professionellem Branding.",
-    "ctaSubtitle": "Beginnen Sie mit dem Onboarding von 2 Minuten. Mitgliederplan für 10 € pro Monat mit 10.000 Krediten für alle Agenten.",
+    "ctaSubtitle": "Beginnen Sie mit dem Onboarding von 2 Minuten. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Bar und Cocktail: Signature Cocktails, Preisberechnung und Branding | AI Chef Pro",
       "description": "KI Suite für Bars & Cocktail: Bar & Lounge AI+, Food Pairing AI, Cocktail Kalkulation, Karten, HACCP und visuelle Marken. Start heute.",
@@ -6078,7 +6078,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Catering mit echtem Gewinn und ohne Chaos.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Catering und Veranstaltungen: Hochzeiten, Firmen und Cocktails | AI Chef Pro",
       "description": "KI-Suite für professionelle Cateringunternehmen: Catering AI+, Kalkulation pro Veranstaltung, Produktion in großem Maßstab, HACCP außer Haus und Geschäftsangebote. Starten Sie noch heute.",
@@ -6310,7 +6310,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Hotel-F&B koordiniert und ohne Chaos.",
-    "ctaSubtitle": "Sprechen Sie mit uns für ein persönliches Onboarding oder starten Sie mit dem Mitgliederplan: 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Sprechen Sie mit uns für ein persönliches Onboarding oder starten Sie mit Premium Pro: 25 € pro Monat mit 85.000 Credits.",
     "seo": {
       "title": "KI für das gesamte Hotel (F&B + Housekeeping): Restaurant, Bar, Bankette | AI Chef Pro",
       "description": "KI-Suite für Hotel-F&B-Manager: Frühstücksbuffet, Restaurant, Lobby-Bar, Zimmerservice, Bankette und Housekeeping mit spezialisierten Agenten. Starten Sie noch heute.",
@@ -6533,7 +6533,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Eisdiele mit klarer Marge und professionellem Branding.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für handwerkliche Eisdielen: Kalkulation pro Sorte, Saisonalität und Branding | AI Chef Pro",
       "description": "KI-Suite für handwerkliche Eisdielen: Kreative Gelateria, Kalkulation pro Sorte mit technischem Abgleich, APPCC, saisonale Planung und visuelles Branding. Starten Sie noch heute.",
@@ -6761,7 +6761,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Schokoladenmanufaktur mit klarer Marge und professionellem Branding.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Schokoladenmanufaktur und Pralinenmanufaktur: Kalkulationen, Saisonalität und Branding | AI Chef Pro",
       "description": "KI-Suite für handwerkliche Schokoladenmanufakturen: Kreative Schokolade, Pralinenkalkulation mit Manufaktur-Stundensatz, APPCC, saisonale Planung und Branding. Starten Sie noch heute.",
@@ -6993,7 +6993,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Kreativität mit System, Avantgarde mit Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits zur Nutzung aller Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits zur Nutzung aller Agenten.",
     "seo": {
       "title": "KI für kreative Restaurants und Autorenküche: F&E, Avantgarde und Storytelling | AI Chef Pro",
       "description": "KI-Suite für kreative Restaurants und Autorenküche: Kreativküche, Fermentus, Sonar Deep Research, fortgeschrittene Kalkulationen, Rezeptkarten und professionelles Storytelling.",
@@ -7225,7 +7225,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Haute Cuisine mit System, Avantgarde mit Führung.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für Gourmetrestaurants (Michelin/Repsol): Degustationsmenü, F&E und Kommunikation | AI Chef Pro",
       "description": "KI-Suite für die gehobene Gastronomie: Kreativküche, Fermentus, Sonar Deep Research, Premium-Kalkulationen, technische Rezepturen, Kommunikation mit Michelin- und Repsol-Guides. Starten Sie noch heute.",
@@ -7453,7 +7453,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr mexikanisches Restaurant mit echter Marge und authentischer Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für mexikanische Restaurants: Salsas, Kalkulationen und authentische Technik | AI Chef Pro",
       "description": "KI-Suite für mexikanische Restaurants: Mexikanische Küche, Taco-Kalkulationen, Feiertagsplanung, Branding und APPCC. Starten Sie noch heute.",
@@ -7681,7 +7681,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr peruanisches Restaurant mit echter Marge und authentischer Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits, um alle Agenten zu nutzen.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits, um alle Agenten zu nutzen.",
     "seo": {
       "title": "KI für peruanische Restaurants: Ceviches, Kalkulationen und authentische Technik | AI Chef Pro",
       "description": "KI-Suite für peruanische Restaurants: Peruanische Küche, Kalkulationen pro Ceviche, Planung von Feiertagen, Branding und APPCC. Starten Sie noch heute.",
@@ -7909,7 +7909,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr japanisches Restaurant mit echter Marge und authentischer Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für japanische Restaurants: Sushi, Kalkulation und Itamae-Technik | AI Chef Pro",
       "description": "KI-Suite für japanische Restaurants: Japanische Küche, Fermentus für Koji und Miso, Kalkulation pro Stück, Planung von Festlichkeiten. Starten Sie noch heute.",
@@ -8137,7 +8137,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Nikkei-Restaurant mit echter Marge und authentischer Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für die Nutzung aller Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für die Nutzung aller Agenten.",
     "seo": {
       "title": "KI für Nikkei-Restaurants: Tiraditos, Kalkulationen und Fusionstechnik | AI Chef Pro",
       "description": "KI-Suite für Nikkei-Restaurants: Japanische + Peruanische Küche, Kalkulation pro Tiradito, Nikkei-Omakase, Branding und APPCC. Starten Sie noch heute.",
@@ -8365,7 +8365,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Plant-Based-Restaurant mit echter Marge und kreativer Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Plant-Based- und vegane Restaurants: Bowls, Kalkulationen und Fermente | AI Chef Pro",
       "description": "KI-Suite für Plant-Based-Restaurants: VegChef, Fermentus für pflanzliches Umami, Bowl-Kalkulationen, Branding und APPCC. Starten Sie noch heute.",
@@ -8593,7 +8593,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Grillrestaurant mit echter Marge und Feuertechnik.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits für alle Agenten.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.",
     "seo": {
       "title": "KI für Grillrestaurant, Parrilla und Steakhouse: Schnitte, Kalkulationen und Dry-Aged | AI Chef Pro",
       "description": "KI-Suite für Grillrestaurants und Steakhäuser: Argentinische + Brasilianische Küche, Kalkulation pro Schnitt, Dry-Aged, Branding und APPCC. Starten Sie noch heute.",
@@ -8821,7 +8821,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Coffee Shop mit echter Marge und Third-Wave-Technik.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für Coffee Shop und Specialty Coffee: Karten, Kalkulationen und Branding | AI Chef Pro",
       "description": "KI-Suite für Coffee Shops: Kreativküche, eigene Konditorei, Getränkekalkulation, minimalistisches Branding und lokale Kundenakquise. Starten Sie noch heute.",
@@ -9049,7 +9049,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Sushi-Bar mit authentischer Technik und echter Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für Sushi-Bars: Itamae, Omakase und Kalkulation | AI Chef Pro",
       "description": "KI-Suite für Sushi-Bars: Japanische Küche, Fermentus, Kalkulation pro Nigiri, Omakase und minimalistisches Branding. Starten Sie noch heute.",
@@ -9277,7 +9277,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Gastrobar mit echter Marge und authentischer Technik.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für Gastrobar und Tapas-Bar: Tapas, Kalkulationen und Weinbegleitungen | AI Chef Pro",
       "description": "KI-Suite für Gastrobars: Spanische Küche, Bar & Lounge AI+, Kalkulation pro Tapa, Vermut und Weine pro Glas. Beginnen Sie heute.",
@@ -9505,7 +9505,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr Foodtruck mit echter Marge und angepasstem Betrieb.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für Foodtrucks: Karte, Kalkulationen und Events | AI Chef Pro",
       "description": "KI-Suite für Foodtrucks: Food Truck AI+, Kalkulationen pro Gericht, Eventplanung, virales Branding und APPCC. Starten Sie noch heute.",
@@ -9733,7 +9733,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr italienisches Restaurant mit authentischer Technik und echter Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "KI für italienische Restaurants: Pasta, Kalkulation und Weine | AI Chef Pro",
       "description": "KI-Suite für italienische Restaurants: Italienische Küche, Kalkulationen, frische Pasta, italienische Weine und Trattoria-Branding. Starten Sie noch heute.",
@@ -9957,7 +9957,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Kalkulationen in Minuten mit validierter Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "So erstellen Sie Kalkulationen mit KI: echte Kosten, Marge und Food Cost | AI Chef Pro",
       "description": "KI-Suite für professionelle Kalkulationen: Rezept + CSV mit Backstuben-Stundensatz, integrierten Lebensmittelabfällen, validierter Marge. Starten Sie noch heute.",
@@ -10182,7 +10182,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr professionelles Degustationsmenü in Stunden, nicht in Wochen.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "So entwerfen Sie ein Degustationsmenü mit KI: Sequenz, Kalkulation und Pairings | AI Chef Pro",
       "description": "KI-Suite für Degustationsmenüs: technische Sequenz, Gesamtkalkulation, wissenschaftlich fundierte Pairings und Storytelling. Starten Sie noch heute.",
@@ -10406,7 +10406,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre professionellen Rezeptblätter in Minuten.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "So erstellen Sie Rezeptblätter mit KI: Allergene, Kosten und Storytelling | AI Chef Pro",
       "description": "KI-Suite für Rezeptblätter: eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, integrierte Kosten, Plating-Foto und Storytelling. Starten Sie noch heute.",
@@ -10630,7 +10630,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Pairings mit wissenschaftlicher Basis in Minuten.",
-    "ctaSubtitle": "Starten Sie mit dem 2-Minuten-Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-Minuten-Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "Pairings mit KI validieren: Weine, Sake und alkoholfreie Optionen | AI Chef Pro",
       "description": "KI-Suite für Pairings: Food Pairing AI mit wissenschaftlicher Basis, Kellerauswahl und Storytelling für Service. Noch heute starten.",
@@ -10854,7 +10854,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Küche mit weniger Abfall und echten Daten.",
-    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Beginnen Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "So reduzieren Sie Lebensmittelabfälle in der Küche mit KI: Echte Daten und Wiederverwertung | AI Chef Pro",
       "description": "KI-Suite zur Reduzierung von Lebensmittelabfällen: Lebensmittelabfälle AI mit echten Daten, professionelle Wiederverwertung, nachvollziehbare Rezepturkalkulation. Legen Sie heute los.",
@@ -11078,7 +11078,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihr professionelles APPCC vom Handy aus ohne Papier.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "So verwalten Sie digitales APPCC mit KI: Vorlagen, Allergene und Rückverfolgbarkeit | AI Chef Pro",
       "description": "KI-Suite für digitales APPCC: Excel-Vorlagen, eine Prüfung der 14 Allergene; die Schlusskontrolle bleibt bei Ihnen, ISO-Rückverfolgbarkeit. Starten Sie noch heute.",
@@ -11303,7 +11303,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Saisonkarte mit lokalen Produkten und realer Marge.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliederplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "Saisonkarte mit KI entwerfen: Lokale Produkte, Kalkulation und Storytelling | AI Chef Pro",
       "description": "KI-Suite für Saisonkarten: Gastro Calendar, lokale Produkte, Kalkulation und Erzeuger-Storytelling. Starten Sie noch heute.",
@@ -11527,7 +11527,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ihre Foodfotografie mit professionellem Anspruch.",
-    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Mitgliedsplan für 10 € pro Monat mit 10.000 Credits.",
+    "ctaSubtitle": "Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits.",
     "seo": {
       "title": "Foodfotografie mit KI: Referenzbild und Endfoto | AI Chef Pro",
       "description": "KI-Suite für Foodfotografie: GastroIMG Gen+ generiert das Referenzbild, danach machen Sie das endgültige Foto mit Ihrem echten Gericht. Starten Sie heute.",
