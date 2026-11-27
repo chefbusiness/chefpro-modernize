@@ -29,8 +29,8 @@ const ctaUrl = (slug: string) => appCtaUrl(lang, 'pricing', slug);
 const profiles = [
   {
     title: 'Chef o Cocinero Individual',
-    body: 'Empieza con el plan Miembro (10 €/mes, 10.000 créditos) y prueba los más de 75 agentes. Cuando la IA se convierta en parte de tu día a día, Premium Pro te da holgura de sobra con 85.000 créditos al mes.',
-    plan: 'Recomendado: Miembro → Premium Pro',
+    body: 'Empieza con Premium Pro (25 €/mes, 85.000 créditos) y usa los más de 75 agentes con holgura de sobra para el día a día: el escandallo completo de tu carta y la I+D de recetas de cada semana.',
+    plan: 'Recomendado: Premium Pro',
   },
   {
     title: 'Restaurante',
@@ -47,11 +47,11 @@ const profiles = [
 const faqs = [
   {
     q: '¿Cuál es el plan de entrada?',
-    a: 'El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos, con acceso a los más de 75 agentes de IA. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras.',
+    a: 'El plan de entrada es Premium Pro: cuesta 25 €/mes e incluye 85.000 créditos, con acceso a los más de 75 agentes de IA. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras.',
   },
   {
     q: '¿Necesito tarjeta de crédito?',
-    a: 'Miembro, Pro, Plus y Max se pagan mes a mes con tarjeta desde el alta. Premium Max también tiene una opción anual de 950 €. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras desde tu cuenta.',
+    a: 'Pro, Plus y Max se pagan mes a mes con tarjeta desde el alta. Premium Max también tiene una opción anual de 950 €. Los planes mensuales no tienen permanencia: puedes cambiarlos o cancelarlos cuando quieras desde tu cuenta.',
   },
   {
     q: '¿Puedo cambiar de plan cuando quiera?',
@@ -73,7 +73,7 @@ const faqs = [
 
 const title = 'Precios de agentes de IA para restaurantes | AI Chef Pro';
 const description =
-  'Precios de agentes de IA para restaurantes: el plan Miembro cuesta 10 €/mes e incluye 10.000 créditos y 75+ agentes. Los planes mensuales no tienen permanencia. Elige tu plan y empieza hoy.';
+  'Precios de agentes de IA para restaurantes: Premium Pro cuesta 25 €/mes e incluye 85.000 créditos y 75+ agentes. Los planes mensuales no tienen permanencia. Elige tu plan y empieza hoy.';
 const keywords =
   'precios ai chef pro, planes ai chef pro, ai chef pro precio mensual, créditos ai chef pro, ia para restaurantes precio, software cocina ia precio';
 
@@ -122,9 +122,9 @@ const schemas = [
         Precios de AI Chef Pro: Planes para Chefs y Restaurantes
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos. Cuando quieras más,
-        los planes Premium van desde 25 €/mes, y solo el plan Max te da créditos
-        ilimitados. Todos incluyen los más de 75 agentes de IA y 7 idiomas.
+        El plan de entrada, Premium Pro, cuesta 25 €/mes e incluye 85.000 créditos. Cuando
+        quieras más, Premium Plus (50 €/mes) sube a 175.000 créditos, y solo el plan Max te da
+        créditos ilimitados. Todos incluyen los más de 75 agentes de IA y 7 idiomas.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
@@ -150,8 +150,8 @@ const schemas = [
         sencillas gastan pocos y las más elaboradas, algo más.
       </p>
       <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
-        Los 10.000 créditos del plan Miembro dan para usar la suite de verdad, no solo para
-        echar un vistazo. Y si tu operación necesita usar la IA sin pensar en el
+        Los 85.000 créditos de Premium Pro dan holgura de sobra para el día a día: el
+        escandallo completo de tu carta y la I+D de recetas de cada semana. Y si tu operación necesita usar la IA sin pensar en el
         contador, el plan Premium Max te da créditos ilimitados.
       </p>
     </section>
@@ -164,7 +164,6 @@ const schemas = [
           <thead>
             <tr class="bg-muted/50 text-left">
               <th class="p-4 font-semibold text-foreground">Característica</th>
-              <th class="p-4 text-center font-semibold text-foreground">Miembro</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Pro</th>
               <th class="p-4 text-center font-semibold text-primary">Premium Plus</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Max</th>
@@ -174,7 +173,6 @@ const schemas = [
           <tbody class="divide-y divide-border">
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Precio</th>
-              <td class="p-4 text-center text-foreground">10 €/mes</td>
               <td class="p-4 text-center text-foreground">25 €/mes</td>
               <td class="p-4 text-center text-foreground">50 €/mes</td>
               <td class="p-4 text-center text-foreground">95 €/mes</td>
@@ -182,7 +180,6 @@ const schemas = [
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Créditos / mes</th>
-              <td class="p-4 text-center text-foreground">10.000</td>
               <td class="p-4 text-center text-foreground">85.000</td>
               <td class="p-4 text-center text-foreground">175.000</td>
               <td class="p-4 text-center font-semibold text-accent-dark">Ilimitados</td>
@@ -194,7 +191,6 @@ const schemas = [
               <td class="p-4 text-center text-foreground">+70</td>
               <td class="p-4 text-center text-foreground">+70</td>
               <td class="p-4 text-center text-foreground">+70</td>
-              <td class="p-4 text-center text-foreground">+70</td>
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Idiomas</th>
@@ -202,11 +198,9 @@ const schemas = [
               <td class="p-4 text-center text-foreground">7</td>
               <td class="p-4 text-center text-foreground">7</td>
               <td class="p-4 text-center text-foreground">7</td>
-              <td class="p-4 text-center text-foreground">7</td>
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Soporte</th>
-              <td class="p-4 text-center text-foreground">Email</td>
               <td class="p-4 text-center text-foreground">Prioritario</td>
               <td class="p-4 text-center text-foreground">Premium 24/7</td>
               <td class="p-4 text-center text-foreground">Premium 24/7</td>
@@ -214,7 +208,6 @@ const schemas = [
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Tarjeta requerida</th>
-              <td class="p-4 text-center text-foreground">Sí</td>
               <td class="p-4 text-center text-foreground">Sí</td>
               <td class="p-4 text-center text-foreground">Sí</td>
               <td class="p-4 text-center text-foreground">Sí</td>
@@ -259,7 +252,7 @@ const schemas = [
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
       <h2 class="text-2xl font-bold text-foreground md:text-3xl">Empieza hoy. Los planes mensuales no tienen permanencia</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Crea tu cuenta en un minuto, elige el plan Miembro, que cuesta 10 €/mes e incluye 10.000
+        Crea tu cuenta en un minuto, empieza con Premium Pro, que cuesta 25 €/mes e incluye 85.000
         créditos, y usa los más de 75 agentes de IA para chefs y restaurantes.
         Subes de plan solo cuando lo necesites.
       </p>

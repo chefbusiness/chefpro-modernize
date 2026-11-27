@@ -14,7 +14,7 @@
 // Tailwind: `ring-4` y `ring-accent/50` sólo aparecen dentro del <script> del
 // resalte de los chips. El escáner de Tailwind lee este .astro como TEXTO, así
 // que las genera igual; si alguien reescribe ese script, que no las pierda.
-import { t, tList } from '../i18n/translations';
+import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { appCtaUrl } from '../lib/app-url';
 
@@ -52,36 +52,7 @@ interface PlanV2 {
 const feat = (id: string, n: number) =>
   Array.from({ length: n }, (_, i) => t(lang, `pricing.plans.${id}.features.${i}`));
 
-// member es el único con lista propia v2 (v2_features[4]); si un idioma aún no la
-// tiene traducida, cae a sus features de siempre en vez de quedarse sin lista.
-const memberFeatures = tList(lang, 'pricing.plans.member.v2_features');
-
 const p = (id: string, key: string) => t(lang, `pricing.plans.${id}.${key}`);
-
-// Sólo para campos ESTRUCTURALES opcionales (period): t() devuelve la propia
-// clave cuando no existe en ningún idioma, y `pricing.plans.member.period` la
-// añade merge-keak-copy.py. Hasta entonces el plan se pinta sin sufijo, como en
-// la v1, en vez de imprimir la clave al lado del precio. El COPY no se oculta:
-// una clave v2_ sin traducir tiene que verse para que el gate la cace.
-const opt = (id: string, key: string) => {
-  const full = `pricing.plans.${id}.${key}`;
-  const value = t(lang, full);
-  return value === full ? undefined : value;
-};
-
-const member: PlanV2 = {
-  id: 'member',
-  slug: 'member',
-  name: p('member', 'name'),
-  eyebrow: p('member', 'v2_eyebrow'),
-  description: p('member', 'v2_description'),
-  price: p('member', 'price'),
-  period: opt('member', 'period'),
-  credits: p('member', 'v2_credits'),
-  hint: p('member', 'v2_hint'),
-  cta: p('member', 'v2_cta'),
-  features: memberFeatures.length ? memberFeatures : feat('member', 4),
-};
 
 const premiumPro: PlanV2 = {
   id: 'premium_pro',
@@ -145,15 +116,14 @@ const premiumPlusAnnual: PlanV2 = {
   features: feat('premium_plus_annual', 6),
 };
 
-// Fila 1 = los 3 planes mensuales de entrada; fila 2 = ilimitado y compromiso anual.
+// Fila 1 = los 3 planes mensuales; fila 2 = el compromiso anual.
 const rows = [
-  { grid: 'mx-auto grid max-w-5xl gap-6 md:grid-cols-3', plans: [member, premiumPro, premiumPlus] },
-  { grid: 'mx-auto grid max-w-3xl gap-6 md:grid-cols-2', plans: [premiumMax, premiumPlusAnnual] },
+  { grid: 'mx-auto grid max-w-5xl gap-6 md:grid-cols-3', plans: [premiumPro, premiumPlus, premiumMax] },
+  { grid: 'mx-auto grid max-w-md gap-6', plans: [premiumPlusAnnual] },
 ];
 
-// Chips de rol → plan. Sólo los 4 mensuales (el anual no es un «rol»).
+// Chips de rol → plan. Sólo los 3 mensuales (el anual no es un «rol»).
 const roleChips = [
-  { plan: member, role: t(lang, 'pricing.v2_role_member'), short: p('member', 'v2_short') },
   { plan: premiumPro, role: t(lang, 'pricing.v2_role_premium_pro'), short: p('premium_pro', 'v2_short') },
   { plan: premiumPlus, role: t(lang, 'pricing.v2_role_premium_plus'), short: p('premium_plus', 'v2_short') },
   { plan: premiumMax, role: t(lang, 'pricing.v2_role_premium_max'), short: p('premium_max', 'v2_short') },
@@ -175,7 +145,7 @@ const ctaClass = (plan: PlanV2) =>
   }`;
 
 // JSON-LD Product (idéntico al que emitía la v1; sólo cambia de dónde salen los planes).
-const allPlans = [member, premiumPro, premiumPlus, premiumMax, premiumPlusAnnual];
+const allPlans = [premiumPro, premiumPlus, premiumMax, premiumPlusAnnual];
 const pricingSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',

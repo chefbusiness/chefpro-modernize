@@ -74,7 +74,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'See the platform while you decide',
     ctaBody:
-      'The Member plan is €10 per month with 10,000 credits. The English pricing page includes the 75+ agents. Cancel any time.',
+      'Plans start at €25 per month with Premium Pro and its 85,000 credits. The English pricing page includes the 75+ agents. Cancel any time.',
     ctaPrimary: 'Email info@aichef.pro',
     ctaSecondary: 'See plans and pricing',
   },
@@ -148,7 +148,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Découvrez la plateforme avant de trancher',
     ctaBody:
-      'Le forfait Membre est à 10 € par mois, avec 10 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Vous résiliez quand vous voulez.',
+      'Le forfait Premium Pro est à 25 € par mois, avec 85 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Vous résiliez quand vous voulez.',
     ctaPrimary: 'Écrire à info@aichef.pro',
     ctaSecondary: 'Voir les tarifs',
   },
@@ -222,7 +222,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Sehen Sie sich die Plattform an, bevor Sie entscheiden',
     ctaBody:
-      'Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Sie kündigen, wann Sie wollen.',
+      'Der Tarif Premium Pro kostet 25 € im Monat mit 85.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Sie kündigen, wann Sie wollen.',
     ctaPrimary: 'E-Mail an info@aichef.pro',
     ctaSecondary: 'Preise ansehen',
   },
@@ -296,7 +296,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Scopri la piattaforma mentre decidi',
     ctaBody:
-      'Il piano Membro costa 10 € al mese, con 10.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Disdici quando vuoi.',
+      'Il piano Premium Pro costa 25 € al mese, con 85.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Disdici quando vuoi.',
     ctaPrimary: 'Scrivi a info@aichef.pro',
     ctaSecondary: 'Vedi i prezzi',
   },
@@ -370,7 +370,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Vê a plataforma enquanto decides',
     ctaBody:
-      'O plano Membro custa 10 € por mês, com 10.000 créditos. A página de preços em português indica hoje 75+ agentes. Cancelas quando quiseres.',
+      'O plano Premium Pro custa 25 € por mês, com 85.000 créditos. A página de preços em português indica hoje 75+ agentes. Cancelas quando quiseres.',
     ctaPrimary: 'Escrever para info@aichef.pro',
     ctaSecondary: 'Ver preços',
   },
@@ -444,7 +444,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Bekijk het platform terwijl je nadenkt',
     ctaBody:
-      'Het Lid-abonnement kost € 10 per maand, met 10.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Je zegt op wanneer je wilt.',
+      'Het Premium Pro-abonnement kost € 25 per maand, met 85.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Je zegt op wanneer je wilt.',
     ctaPrimary: 'Mail info@aichef.pro',
     ctaSecondary: 'Bekijk de prijzen',
   },
