@@ -37,7 +37,7 @@ faqInBody: true
 
 El risotto es un plato italiano de arroz que se tuesta en grasa y se cuece despacio con caldo caliente, añadido poco a poco y removiendo. El grano suelta almidón y el plato queda cremoso, con el arroz entero y al dente. Se termina fuera del fuego con mantequilla fría y queso, en un paso que se llama mantecatura.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Genera con los agentes de IA de AI Chef Pro tus recetas de risotto y su escandallo: ración, merma y coste por plato. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-el-risotto">Ver la ficha de chef jefe de cocina</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Genera con los agentes de IA de AI Chef Pro tus recetas de risotto y su escandallo: ración, merma y coste por plato. Planes desde 25 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-el-risotto">Ver la ficha de chef jefe de cocina</a></p></aside>
 
 ## Qué es un risotto
 

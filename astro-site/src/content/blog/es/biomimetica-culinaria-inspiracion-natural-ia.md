@@ -106,7 +106,7 @@ wpId: 2071
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #000000; margin: 0 0 15px 0; font-size: 24px;">🌿 Descubre el Poder de la IA Culinaria</h3>
 <p style="color: #1a1a1a; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Transforma tu creatividad con AI Chef Pro. Accede a herramientas de <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a>, Cocina Creativa y más de 50 aplicaciones especializadas para chefs profesionales.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">AI Chef Miembro: 10 € al mes</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">AI Chef Premium Pro: 25 € al mes</a>
 </div>
 
 
@@ -628,7 +628,7 @@ wpId: 2071
 
 <div style="background: linear-gradient(135deg, #228B22 0%, #006400 100%); padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; margin: 0 0 15px 0; font-size: 24px;">🌱 Transforma tu Cocina con IA</h3>
-<p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Desde solo 10€/mes accede a más de 55 herramientas de IA especializadas en gastronomía. Food Pairing, Cocina Creativa, Mermas GenCal y mucho más.</p>
+<p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Desde 25€/mes accede a más de 55 herramientas de IA especializadas en gastronomía. Food Pairing, Cocina Creativa, Mermas GenCal y mucho más.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank" style="display: inline-block; background-color: #FFD700; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -846,14 +846,14 @@ wpId: 2071
 
 
 
-<p class="wp-block-paragraph">Para dar tus primeros pasos en la biomimética culinaria con IA, <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank">prueba AI Chef Pro desde 10 €</a> y descubre cómo nuestras herramientas pueden transformar tu aproximación a la innovación gastronómica. Si buscas una guía más personalizada, nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank">mentoría online</a> te ofrece acompañamiento experto en tu camino hacia la excelencia culinaria.</p>
+<p class="wp-block-paragraph">Para dar tus primeros pasos en la biomimética culinaria con IA, <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank">prueba AI Chef Pro desde 25 €</a> y descubre cómo nuestras herramientas pueden transformar tu aproximación a la innovación gastronómica. Si buscas una guía más personalizada, nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank">mentoría online</a> te ofrece acompañamiento experto en tu camino hacia la excelencia culinaria.</p>
 
 
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FF8C00 50%, #FFD700 100%); padding: 35px; border-radius: 15px; margin: 40px 0; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
 <h3 style="color: #000000; margin: 0 0 15px 0; font-size: 26px;">🚀 Comienza Tu Revolución Culinaria Hoy</h3>
 <p style="color: #1a1a1a; font-size: 17px; margin: 0 0 25px 0; line-height: 1.7;">Únete a miles de chefs que ya están transformando sus cocinas con IA. Accede a Food Pairing AI, Cocina Creativa, Mermas GenCal y más de 50 herramientas especializadas.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 18px; text-transform: uppercase; letter-spacing: 1px;">AI Chef Miembro: 10 € al mes</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=biomimetica-culinaria-inspiracion-natural-ia" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 18px; text-transform: uppercase; letter-spacing: 1px;">AI Chef Premium Pro: 25 € al mes</a>
 </div>
 
 

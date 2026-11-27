@@ -1,6 +1,6 @@
 ---
 title: "IA para Pastelería Profesional: Usos Reales en el Obrador"
-description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Plan AI Chef Miembro: 10.000 créditos por 10 €/mes."
+description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Plan AI Chef Premium Pro: 85.000 créditos por 25 €/mes."
 pubDate: 2025-02-21
 modDate: 2026-09-10
 category: ia-en-gastronomia
@@ -16,7 +16,7 @@ faq:
   - q: "¿Sirve para planificar campañas como el roscón de Reyes?"
     a: "Sí. Puedes planificar la producción semanal, prever la compra de materias primas según demanda estimada y ajustar el escalado de recetas. Ayuda a reducir roturas de stock y a coordinar al equipo en campañas de alta exigencia como Navidad o San Valentín."
   - q: "¿Hay plan de entrada para probarlo en el obrador?"
-    a: "AI Chef Pro ofrece el plan AI Chef Miembro con 10.000 créditos al mes por 10 €, sin permanencia. Es suficiente para probar varios agentes con tus propias recetas. Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos."
+    a: "AI Chef Pro ofrece el plan AI Chef Premium Pro con 85.000 créditos al mes por 25 €, sin permanencia. Es suficiente para probar varios agentes con tus propias recetas. Si necesitas más capacidad, el plan Premium Plus cuesta 50 €/mes con 175.000 créditos."
   - q: "¿Ajusta recetas y escalado de tandas sin descuadrar la fórmula?"
     a: "Sí. El agente de pastelería recalcula cada ingrediente respetando los porcentajes de hidratación, grasa y azúcares. Puedes pasar de 5 kg de harina a 18 kg en segundos o modificar la proporción de mantequilla manteniendo la coherencia de toda la receta."
   - q: "¿Está en español de España y usa terminología de pastelería?"
@@ -148,7 +148,6 @@ AI Chef Pro pone a tu disposición más de 80 agentes de IA culinarios en 7 idio
 
 Eliges el plan que se ajusta a tu ritmo:
 
-- **Plan AI Chef Miembro**: 10 €/mes (10.000 créditos). Sin permanencia. Ideal para probar los agentes con tus propias recetas.
 - **Premium Pro**: 25 €/mes (85.000 créditos). Para obradores que quieran sistematizar fichas, escandallos y campañas.
 - **Premium Plus**: 50 €/mes (175.000 créditos). Si produces muchas referencias o tienes varios puntos de venta.
 - **Premium Max**: 95 €/mes. Créditos ilimitados. Para obradores con alta rotación de carta y producción escalada.
@@ -156,7 +155,7 @@ Eliges el plan que se ajusta a tu ritmo:
 
 Ninguno te va a sustituir la manga pastelera. Pero sí te devuelven tiempo, datos y margen.
 
-[Probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=pasteleria) cuesta 10 €/mes con el plan Miembro y en menos de diez minutos estarás sacando tu primer escandallo con precios reales.
+[Probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=pasteleria) cuesta 25 €/mes con el plan Premium Pro y en menos de diez minutos estarás sacando tu primer escandallo con precios reales.
 
 ## Conclusión
 

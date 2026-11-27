@@ -650,7 +650,7 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 
 
 
-<p class="wp-block-paragraph">Para experimentación básica, el plan Miembro (10 €/mes, 10.000 créditos) ya da acceso a Food Pairing AI, Cocina Creativa AI y al resto de agentes. Para desarrollo intensivo de conceptos moleculares, recomendamos Premium Pro (25 €/mes), con 85.000 créditos al mes. Consulta todos los <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">planes y precios disponibles</a>.</p>
+<p class="wp-block-paragraph">Para empezar, el plan Premium Pro (25 €/mes, 85.000 créditos) ya da acceso a Food Pairing AI, Cocina Creativa AI y al resto de agentes. Para desarrollo intensivo de conceptos moleculares, recomendamos Premium Plus (50 €/mes), con 175.000 créditos al mes. Consulta todos los <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">planes y precios disponibles</a>.</p>
 
 
 
@@ -704,7 +704,7 @@ Esta creación rinde homenaje al gazpacho tradicional andaluz, transformando su 
 
 
 
-<p class="wp-block-paragraph">Si estás listo para transformar tu aproximación a la gastronomía molecular, te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">probar AI Chef Pro desde 10 €</a> y descubrir cómo la inteligencia artificial puede potenciar tu creatividad culinaria. Para un acompañamiento más personalizado en tu viaje hacia la cocina molecular de vanguardia, considera nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">mentoría online</a>.</p>
+<p class="wp-block-paragraph">Si estás listo para transformar tu aproximación a la gastronomía molecular, te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">probar AI Chef Pro desde 25 €</a> y descubrir cómo la inteligencia artificial puede potenciar tu creatividad culinaria. Para un acompañamiento más personalizado en tu viaje hacia la cocina molecular de vanguardia, considera nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-cocina-molecular-innovacion-y-experimentacion" target="_blank" rel="noopener">mentoría online</a>.</p>
 
 
 

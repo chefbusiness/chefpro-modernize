@@ -16,7 +16,7 @@ faq:
   - q: "¿Cómo puedo adaptar un mismo plato a varias dietas sin volverme loco en cocina?"
     a: "El truco está en planificar sustituciones base desde la receta matriz. Por ejemplo, una crema de verduras puede espesarse con patata (sin gluten), con almidón de maíz (disfagia) o con bebida vegetal y anacardos (vegano, sin lactosa). Una inteligencia artificial especializada puede generar estas variantes en segundos, con fichas independientes y alérgenos actualizados, para que el pase no se atasque."
   - q: "¿Cuánto cuesta empezar a usar AI Chef Pro para menús personalizados?"
-    a: "El plan AI Chef Miembro ofrece 10.000 créditos al mes y se paga con tarjeta. Si necesitas más capacidad porque tu carta tiene muchas referencias o trabajas con colectividades, el plan Premium Pro cuesta 25 euros al mes (85.000 créditos), el Plus 50 euros al mes (175.000 créditos) y el Max 95 euros al mes con créditos ilimitados. También existe la modalidad Max Anual por 950 euros al año."
+    a: "El plan de entrada, AI Chef Premium Pro, cuesta 25 euros al mes con 85.000 créditos y sin permanencia. Si necesitas más capacidad porque tu carta tiene muchas referencias o trabajas con colectividades, el Plus cuesta 50 euros al mes (175.000 créditos) y el Max 95 euros al mes con créditos ilimitados. También existe la modalidad Max Anual por 950 euros al año."
   - q: "¿Qué diferencia hay entre intolerancia y alergia alimentaria en el contexto de un restaurante?"
     a: "La intolerancia implica un problema digestivo o metabólico sin reacción inmunitaria inmediata; una persona con intolerancia a la lactosa puede tolerar pequeñas cantidades. La alergia, en cambio, es una respuesta del sistema inmunológico que puede desencadenar un shock anafiláctico incluso con trazas ínfimas. En cocina, una alergia obliga a extremar la limpieza, la separación de utensilios y la trazabilidad total del plato."
   - q: "¿Puede la IA ayudar a gestionar menús en colegios u hospitales?"
@@ -174,7 +174,7 @@ Puedes empezar a construir este flujo sin compromiso y comprobar si encaja en tu
 
 AI Chef Pro es una suite con más de 70 agentes de IA culinarios, entrenada en 7 idiomas y con español nativo, pensada para que el chef tenga un copiloto digital sin tener que aprender prompts complicados.
 
-El plan AI Chef Miembro te da 10.000 créditos al mes con tarjeta, para que explores las funcionalidades reales, no una demo capada. Si necesitas más capacidad porque tu volumen de platos y adaptaciones crece, los planes de pago son estos:
+El plan de entrada, AI Chef Premium Pro, te da las funcionalidades reales, no una demo capada. Si necesitas más capacidad porque tu volumen de platos y adaptaciones crece, puedes subir de plan cuando quieras. Los planes son estos:
 
 - **Premium Pro**: 25 €/mes, con 85.000 créditos.
 - **Plus**: 50 €/mes, con 175.000 créditos.
@@ -189,4 +189,4 @@ La personalización nutricional en restauración ha dejado de ser una tendencia 
 
 Pero que quede claro: la IA no cocina por ti ni firma por ti. Es un copiloto que multiplica la capacidad de tu cocina, mientras el criterio gastronómico, la validación clínica y la responsabilidad legal siguen siendo humanos. Si entiendes ese equilibrio, tienes mucho ganado.
 
-Si te apetece ver hasta dónde puede llegar tu carta con un copiloto así, date una vuelta por el plan AI Chef Miembro y trabaja con datos reales de tu restaurante. Sin trampa ni tarjeta.
+Si te apetece ver hasta dónde puede llegar tu carta con un copiloto así, date una vuelta por el plan AI Chef Premium Pro y trabaja con datos reales de tu restaurante. Sin trampa ni permanencia.

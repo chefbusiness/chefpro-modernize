@@ -153,7 +153,7 @@ wpId: 1500
 
 
 <ul class="wp-block-list">
-<li>Plan Miembro: 10 €/mes con 10.000 créditos, sin permanencia</li>
+<li>Plan Premium Pro: 25 €/mes con 85.000 créditos, sin permanencia</li>
 
 
 
@@ -1320,7 +1320,7 @@ wpId: 1500
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Plan gratis</th><th>Enfoque principal</th><th>Para quién</th></tr></thead><tbody><tr><td><strong>AI Chef Pro</strong></td><td>No (desde 10 €/mes)</td><td>Suite de agentes para cocina profesional</td><td>Chefs, restaurantes, catering, escuelas y consultores</td></tr><tr><td><strong>ChefGPT</strong></td><td>Sí</td><td>Modos para despensa, macros, menús y maridaje</td><td>Cocina de casa y pequeños negocios</td></tr><tr><td><strong>Mr. Cook</strong></td><td>Sí</td><td>Sencillez y reconocimiento de ingredientes por foto</td><td>Principiantes</td></tr><tr><td><strong>Smart CookAI</strong></td><td>Sí</td><td>Recetas adaptadas a Thermomix, freidora de aire y robots de cocina</td><td>Quien cocina con electrodomésticos concretos</td></tr><tr><td><strong>Plant Jammer</strong></td><td>Sí</td><td>Cocina vegetariana y vegana</td><td>Menús plant-based</td></tr><tr><td><strong>Samsung Food</strong></td><td>Sí</td><td>Integración con electrodomésticos Samsung</td><td>Hogares con ecosistema Samsung</td></tr><tr><td><strong>Let&#8217;s Foodie</strong></td><td>Sí</td><td>Cocinas del mundo según tu nivel</td><td>Aficionados que quieren explorar</td></tr><tr><td><strong>DishGen</strong></td><td>Sí</td><td>Creatividad libre y fusiones</td><td>Chefs experimentales y estudiantes</td></tr><tr><td><strong>Crooked Recipes</strong></td><td>Sí</td><td>Aprovechamiento de sobras</td><td>Quien quiere tirar menos comida</td></tr><tr><td><strong>FoodAI</strong></td><td>Prueba de 30 días</td><td>Filtros avanzados por dieta, tiempo y equipo</td><td>Dietas y restricciones combinadas</td></tr><tr><td><strong>Yummly</strong></td><td>Sí</td><td>Recomendaciones y comunidad</td><td>Cocina casera</td></tr><tr><td><strong>Cookpad Live</strong></td><td>Sí</td><td>Clases en directo y comunidad</td><td>Quien aprende viendo</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Plan gratis</th><th>Enfoque principal</th><th>Para quién</th></tr></thead><tbody><tr><td><strong>AI Chef Pro</strong></td><td>No (desde 25 €/mes)</td><td>Suite de agentes para cocina profesional</td><td>Chefs, restaurantes, catering, escuelas y consultores</td></tr><tr><td><strong>ChefGPT</strong></td><td>Sí</td><td>Modos para despensa, macros, menús y maridaje</td><td>Cocina de casa y pequeños negocios</td></tr><tr><td><strong>Mr. Cook</strong></td><td>Sí</td><td>Sencillez y reconocimiento de ingredientes por foto</td><td>Principiantes</td></tr><tr><td><strong>Smart CookAI</strong></td><td>Sí</td><td>Recetas adaptadas a Thermomix, freidora de aire y robots de cocina</td><td>Quien cocina con electrodomésticos concretos</td></tr><tr><td><strong>Plant Jammer</strong></td><td>Sí</td><td>Cocina vegetariana y vegana</td><td>Menús plant-based</td></tr><tr><td><strong>Samsung Food</strong></td><td>Sí</td><td>Integración con electrodomésticos Samsung</td><td>Hogares con ecosistema Samsung</td></tr><tr><td><strong>Let&#8217;s Foodie</strong></td><td>Sí</td><td>Cocinas del mundo según tu nivel</td><td>Aficionados que quieren explorar</td></tr><tr><td><strong>DishGen</strong></td><td>Sí</td><td>Creatividad libre y fusiones</td><td>Chefs experimentales y estudiantes</td></tr><tr><td><strong>Crooked Recipes</strong></td><td>Sí</td><td>Aprovechamiento de sobras</td><td>Quien quiere tirar menos comida</td></tr><tr><td><strong>FoodAI</strong></td><td>Prueba de 30 días</td><td>Filtros avanzados por dieta, tiempo y equipo</td><td>Dietas y restricciones combinadas</td></tr><tr><td><strong>Yummly</strong></td><td>Sí</td><td>Recomendaciones y comunidad</td><td>Cocina casera</td></tr><tr><td><strong>Cookpad Live</strong></td><td>Sí</td><td>Clases en directo y comunidad</td><td>Quien aprende viendo</td></tr></tbody></table></div></figure>
 
 
 
@@ -1472,7 +1472,7 @@ wpId: 1500
 
 
 
-<p class="wp-block-paragraph"><strong>Para Aprendizaje Avanzado</strong>: AI Chef Pro (plan Miembro, 10 €/mes) proporciona acceso a conocimientos profesionales adaptados a nivel doméstico.</p>
+<p class="wp-block-paragraph"><strong>Para Aprendizaje Avanzado</strong>: AI Chef Pro (plan Premium Pro, 25 €/mes) proporciona acceso a conocimientos profesionales adaptados a nivel doméstico.</p>
 
 
 
@@ -2275,7 +2275,7 @@ wpId: 1500
 
 
 <ol class="wp-block-list">
-<li><strong>AI Chef Pro</strong> (plan Miembro, desde 10 €/mes) &#8211; Acceso a conocimientos profesionales</li>
+<li><strong>AI Chef Pro</strong> (plan Premium Pro, desde 25 €/mes) &#8211; Acceso a conocimientos profesionales</li>
 
 
 
@@ -2341,7 +2341,7 @@ wpId: 1500
 
 
 <ul class="wp-block-list">
-<li><strong>Mejor opción</strong>: ChefGPT o AI Chef Pro (plan Miembro)</li>
+<li><strong>Mejor opción</strong>: ChefGPT</li>
 
 
 
@@ -2359,7 +2359,7 @@ wpId: 1500
 
 
 <ul class="wp-block-list">
-<li><strong>Mejor opción</strong>: AI Chef Pro (planes Premium)</li>
+<li><strong>Mejor opción</strong>: AI Chef Pro (plan Premium Pro)</li>
 
 
 

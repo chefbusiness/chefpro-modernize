@@ -49,7 +49,7 @@ wpId: 1923
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <p style="color: #1a1a1a; font-size: 24px; font-weight: bold; margin: 0 0 15px 0;">🚀 Transforma tu Cocina con IA</p>
 <p style="color: #333; font-size: 16px; margin: 0 0 20px 0;">Descubre AI Chef Pro: la suite de más de 80 agentes de inteligencia artificial diseñados específicamente para profesionales de la gastronomía.</p>
-<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Empieza desde 10 €/mes →</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Empieza desde 25 €/mes →</a>
 </div>
 
 
@@ -548,7 +548,7 @@ wpId: 1923
 
 
 
-<p class="wp-block-paragraph">Inversión estimada: 10-50€/mes. ROI esperado: 300-500%.</p>
+<p class="wp-block-paragraph">Inversión estimada: 25-50€/mes. ROI esperado: 300-500%.</p>
 
 
 
@@ -622,7 +622,7 @@ wpId: 1923
 
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <p style="color: #FFD700; font-size: 24px; font-weight: bold; margin: 0 0 15px 0;">🏆 Planes Adaptados a Cada Necesidad</p>
-<p style="color: #fff; font-size: 16px; margin: 0 0 20px 0;">Accede a herramientas profesionales de IA para cocina. Plan AI Chef Miembro: 10 €/mes con 10.000 créditos, sin permanencia.</p>
+<p style="color: #fff; font-size: 16px; margin: 0 0 20px 0;">Accede a herramientas profesionales de IA para cocina. Plan AI Chef Premium Pro: 25 €/mes con 85.000 créditos, sin permanencia.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Comparar Planes</a>
 </div>
 
@@ -748,7 +748,7 @@ wpId: 1923
 
 
 
-<p class="wp-block-paragraph">Los costes varían enormemente según el nivel de implementación. Herramientas de software como AI Chef Pro están disponibles desde 10€/mes, mientras que equipamiento robótico avanzado puede superar los 40.000€. Lo recomendable es comenzar con soluciones de bajo coste y escalar progresivamente según los resultados obtenidos.</p>
+<p class="wp-block-paragraph">Los costes varían enormemente según el nivel de implementación. Herramientas de software como AI Chef Pro están disponibles desde 25€/mes, mientras que equipamiento robótico avanzado puede superar los 40.000€. Lo recomendable es comenzar con soluciones de bajo coste y escalar progresivamente según los resultados obtenidos.</p>
 
 
 
@@ -795,7 +795,7 @@ wpId: 1923
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <p style="color: #1a1a1a; font-size: 26px; font-weight: bold; margin: 0 0 15px 0;">🌟 El Futuro de la Cocina Está Aquí</p>
 <p style="color: #333; font-size: 17px; margin: 0 0 25px 0;">Prueba AI Chef Pro en tu cocina: más de 80 agentes de IA pensados para chefs y hosteleros.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Comienza con AI Chef Miembro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Comienza con AI Chef Premium Pro</a>
 </div>
 
 

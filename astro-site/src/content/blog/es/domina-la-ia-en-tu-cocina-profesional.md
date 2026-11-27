@@ -902,7 +902,7 @@ wpId: 1394
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Todos los agentes, 10.000 créditos al mes, sin permanencia</td><td>Estudiantes, emprendedores, chefs individuales, restaurantes pequeños</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Todos los agentes, 85.000 créditos al mes</td><td>Restaurantes medianos, alta rotación</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Todos los agentes, 175.000 créditos al mes</td><td>Restaurantes grandes, múltiples locales</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Todos los agentes, créditos ilimitados</td><td>Cadenas, empresas de catering, consultorías</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Todos los agentes, 85.000 créditos al mes, sin permanencia</td><td>Chefs individuales, restaurantes pequeños y medianos</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Todos los agentes, 175.000 créditos al mes</td><td>Restaurantes grandes, múltiples locales</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Todos los agentes, créditos ilimitados</td><td>Cadenas, empresas de catering, consultorías</td></tr></tbody></table></div></figure>
 
 
 
@@ -1057,7 +1057,7 @@ wpId: 1394
 
 
 <ol class="wp-block-list">
-<li><strong>Explora sin permanencia:</strong> Inicia con nuestro <a data-lasso-id="3173" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=domina-la-ia-en-tu-cocina-profesional" target="_blank" rel="noopener">plan AI Chef Miembro</a></li>
+<li><strong>Explora sin permanencia:</strong> Inicia con nuestro <a data-lasso-id="3173" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=domina-la-ia-en-tu-cocina-profesional" target="_blank" rel="noopener">plan AI Chef Premium Pro</a></li>
 
 
 

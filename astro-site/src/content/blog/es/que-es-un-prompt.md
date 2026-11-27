@@ -153,7 +153,7 @@ Los más de 70 agentes de AI Chef Pro están entrenados específicamente en host
 
 Esto significa que donde antes necesitabas un prompt de doce líneas, ahora te basta con algo como: “Calcula el escandallo de mi tartar de atún rojo con los precios actualizados de mi proveedor” y subir la foto de la factura. El agente entiende el contexto culinario, te pide lo que le falte y te devuelve el resultado en el formato que necesitas.
 
-Puedes [probar los agentes de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=que-es-prompt) con el plan AI Chef Miembro, que incluye 10.000 créditos al mes por 10 €, sin permanencia. Si el volumen de trabajo crece, tienes el plan Premium Pro por 25 € al mes (85.000 créditos), el Plus por 50 € al mes (175.000 créditos) o el Max por 95 € al mes con créditos ilimitados. Y si prefieres el pago anual, el plan Max Anual sale por 950 € al año.
+Puedes [probar los agentes de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=que-es-prompt) con el plan AI Chef Premium Pro, que incluye 85.000 créditos al mes por 25 €, sin permanencia. Si el volumen de trabajo crece, tienes el Plus por 50 € al mes (175.000 créditos) o el Max por 95 € al mes con créditos ilimitados. Y si prefieres el pago anual, el plan Max Anual sale por 950 € al año.
 
 
 

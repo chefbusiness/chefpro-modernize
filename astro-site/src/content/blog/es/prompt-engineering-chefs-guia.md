@@ -20,7 +20,7 @@ faq:
   - q: "¿Cuántos ejemplos debo dar en un prompt para que la IA entienda el formato?"
     a: "Con uno o dos ejemplos breves (técnica few-shot) suele bastar. Muestra la estructura deseada con datos inventados o de otro plato. La IA capta el patrón y replica el estilo. No hace falta dar muchos; lo importante es que el ejemplo refleje el nivel de detalle y el tono que esperas."
   - q: "¿AI Chef Pro es de pago?"
-    a: "No, AI Chef Pro es de pago. El plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos, con tarjeta. Incluye acceso a todos los agentes de IA culinarios en español. Si necesitas más capacidad, hay planes de pago desde 25 € al mes. Puedes empezar con AI Chef Miembro y escalar cuando tu volumen de trabajo lo requiera."
+    a: "Sí, AI Chef Pro es de pago. El plan de entrada es AI Chef Premium Pro: 25 € al mes con 85.000 créditos, con tarjeta. Incluye acceso a todos los agentes de IA culinarios en español. Si necesitas más capacidad, hay planes desde 50 € al mes. Puedes empezar con AI Chef Premium Pro y escalar cuando tu volumen de trabajo lo requiera."
 ---
 
 ## Prompt engineering para chefs: guía práctica para dejar de recibir respuestas genéricas
@@ -120,8 +120,7 @@ Aplicar el *prompt engineering* en tu día a día no significa que tengas que di
 
 Estos son los planes disponibles en 2026:
 
-- **AI Chef Miembro**: 10 €/mes, 10.000 créditos, con tarjeta, acceso a todos los agentes.
-- **Premium Pro**: 25 €/mes (85.000 créditos).
+- **AI Chef Premium Pro**: 25 €/mes, 85.000 créditos, con tarjeta, acceso a todos los agentes.
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).
 - **Max Anual**: 950 €/año (créditos ilimitados, un 17% de ahorro frente al plan mensual).

@@ -630,7 +630,7 @@ wpId: 1901
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Acceso a Herramientas Históricas</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Chefs individuales</td><td>Completo · 10.000 créditos/mes</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Cocinas activas</td><td>Completo · 85.000 créditos/mes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Desarrollo e I+D</td><td>Completo · 175.000 créditos/mes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Chef ejecutivo/corporativo</td><td>Completo · créditos ilimitados</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Acceso a Herramientas Históricas</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25 €/mes</td><td>Cocinas activas</td><td>Completo · 85.000 créditos/mes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Desarrollo e I+D</td><td>Completo · 175.000 créditos/mes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Chef ejecutivo/corporativo</td><td>Completo · créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 

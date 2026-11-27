@@ -17,8 +17,8 @@ faq:
     a: "Montando bases madre distintas y no usando una sola salsa comodín para todo. Una bhuna masala clásica, una base makhani con mantequilla y tomate, una base blanca tipo korma sin tomate, y un tadka de dal con su propia personalidad. Cada plato parte de una base distinta y se remata con especias frescas y un tadka al momento. Si todo sale de la misma olla, tu carta cojea."
   - q: "¿Cómo escalo una receta india para 40 o 60 cubiertos sin desequilibrar las especias?"
     a: "Las especias no escalan de forma lineal: multiplicar por ocho el comino puede saturar el plato. La mejor práctica es escalar por tandas pequeñas partiendo de la receta probada, anotar ajustes reales, y usar un agente de IA culinaria para calcular proporciones y fichas técnicas. La suite de AI Chef Pro hace ese trabajo de cálculo y estandarización sin que pierdas el equilibrio aromático."
-  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
-    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes, con tarjeta. Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos), y el Max 95 €/mes con créditos ilimitados. También hay plan Max Anual por 950 €/año. La suite incluye más de 70 agentes de IA culinarios para recetas, fichas técnicas, escandallos y menús."
+  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Premium Pro?"
+    a: "El plan AI Chef Premium Pro cuesta 25 €/mes e incluye 85.000 créditos al mes, con tarjeta. Si necesitas más capacidad, el Plus cuesta 50 €/mes (175.000 créditos), y el Max 95 €/mes con créditos ilimitados. También hay plan Max Anual por 950 €/año. La suite incluye más de 70 agentes de IA culinarios para recetas, fichas técnicas, escandallos y menús."
   - q: "¿En qué idiomas está disponible AI Chef Pro?"
     a: "La suite funciona en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. Está pensada y escrita en español nativo por chefs, lo que significa que la terminología técnica de cocina no sufre las pérdidas de traducción que se ven en herramientas concebidas primero en inglés y luego traducidas de forma automática."
 ---
@@ -165,7 +165,6 @@ El valor real para un chef no está en que la IA “cocine por ti” —no lo ha
 
 | Plan | Créditos mensuales | Precio |
 | :--- | :--- | :--- |
-| AI Chef Miembro | 10.000 créditos al mes, con tarjeta | 10 € |
 | Premium Pro | 85.000 créditos | 25 €/mes |
 | Plus | 175.000 créditos | 50 €/mes |
 | Max (créditos ilimitados) | Ilimitados | 95 €/mes |

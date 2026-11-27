@@ -115,4 +115,4 @@ wpId: 3591
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Cocina Uruguaya Pro</h3>
-<p>   <a href="https://aichef.pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR AI CHEF MIEMBRO →</a> </div>
+<p>   <a href="https://aichef.pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR AI CHEF PREMIUM PRO →</a> </div>

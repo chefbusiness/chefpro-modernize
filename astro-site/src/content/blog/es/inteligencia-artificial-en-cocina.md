@@ -67,7 +67,7 @@ wpId: 2096
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
 <h3 style="color: #1a1a1a; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">🚀 Descubre AI Chef Pro: Tu Suite de IA Gastronómica</h3>
 <p style="color: #2d2d2d; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Más de 80 agentes de inteligencia artificial diseñados específicamente para chefs, cocineros y profesionales de la hostelería. Desde recetas creativas hasta control de mermas.</p>
-<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">Empieza desde 10 €/mes →</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">Empieza desde 25 €/mes →</a>
 </div>
 
 
@@ -503,7 +503,7 @@ wpId: 2096
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes (10.000 créditos)</td><td>Ayudantes, cocineros, chefs individuales, restaurantes pequeños (hasta 30 pax)</td></tr><tr><td>Premium Pro</td><td>25 €/mes (85.000 créditos)</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td></tr><tr><td>Premium Plus</td><td>50 €/mes (175.000 créditos)</td><td>Restaurantes grandes, desarrollo y liderazgo</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año (créditos ilimitados)</td><td>Cadenas, catering, consultorías gastronómicas</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25 €/mes (85.000 créditos)</td><td>Ayudantes, cocineros, chefs individuales, restaurantes pequeños y medianos (hasta 60 pax), cafeterías, pastelerías</td></tr><tr><td>Premium Plus</td><td>50 €/mes (175.000 créditos)</td><td>Restaurantes grandes, desarrollo y liderazgo</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año (créditos ilimitados)</td><td>Cadenas, catering, consultorías gastronómicas</td></tr></tbody></table></div></figure>
 
 
 
@@ -607,7 +607,7 @@ wpId: 2096
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
 <h3 style="color: #1a1a1a; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">📊 Ver Planes y Precios</h3>
-<p style="color: #2d2d2d; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Encuentra el plan perfecto para tu cocina profesional. Desde el plan AI Chef Miembro hasta soluciones enterprise para grupos de restauración.</p>
+<p style="color: #2d2d2d; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Encuentra el plan perfecto para tu cocina profesional. Desde el plan AI Chef Premium Pro hasta Premium Max para grupos de restauración.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">Comparar Planes →</a>
 </div>
 
@@ -1007,7 +1007,7 @@ wpId: 2096
 
 
 
-<p class="wp-block-paragraph">Los costes varían enormemente según el alcance. AI Chef Pro ofrece planes desde 10 €/mes (AI Chef Miembro) hasta 95 €/mes para uso ilimitado (Premium Max). El retorno depende de tu volumen; en los establecimientos pequeños llega, sobre todo, por el ahorro en mermas y la optimización de tiempos. Visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios</a> para más detalles.</p>
+<p class="wp-block-paragraph">Los costes varían enormemente según el alcance. AI Chef Pro ofrece planes desde 25 €/mes (AI Chef Premium Pro) hasta 95 €/mes para uso ilimitado (Premium Max). El retorno depende de tu volumen; en los establecimientos pequeños llega, sobre todo, por el ahorro en mermas y la optimización de tiempos. Visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios</a> para más detalles.</p>
 
 
 
@@ -1104,7 +1104,7 @@ wpId: 2096
 
 
 
-<p class="wp-block-paragraph">Te invitamos a dar el primer paso. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener"><strong>Prueba AI Chef Pro desde 10 €</strong></a> y descubre por ti mismo cómo la inteligencia artificial puede transformar tu cocina. Nuestro plan AI Chef Miembro te da acceso a todos los agentes por 10 €/mes, sin permanencia, para experimentar de primera mano el potencial de esta tecnología revolucionaria.</p>
+<p class="wp-block-paragraph">Te invitamos a dar el primer paso. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener"><strong>Prueba AI Chef Pro desde 25 €</strong></a> y descubre por ti mismo cómo la inteligencia artificial puede transformar tu cocina. Nuestro plan AI Chef Premium Pro te da acceso a todos los agentes por 25 €/mes, sin permanencia, para experimentar de primera mano el potencial de esta tecnología revolucionaria.</p>
 
 
 

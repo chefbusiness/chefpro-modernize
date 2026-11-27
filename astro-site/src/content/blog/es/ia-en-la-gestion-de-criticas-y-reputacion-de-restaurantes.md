@@ -20,7 +20,7 @@ faq:
   - q: "¿Cómo ayuda la IA a responder reseñas sin sonar a robot?"
     a: "La IA analiza el sentimiento, clasifica la queja y genera un borrador de respuesta con el tono de tu marca. Tú revisas, añades el toque personal y publicas. Así ganas velocidad y coherencia, pero la decisión final y la empatía auténtica las pones tú."
   - q: "¿Cuánto cuesta AI Chef Pro?"
-    a: "AI Chef Pro ofrece el plan AI Chef Miembro por 10 €/mes con 10.000 créditos, con tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
+    a: "AI Chef Pro ofrece tres planes mensuales sin permanencia: Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
 ---
 
 Cuando un cliente insatisfecho deja una reseña negativa en Google o Tripadvisor, la mayoría de hosteleros se bloquea. Pero hay una fórmula clara para **responder reseñas negativas restaurante** sin empeorar la situación: contesta rápido (idealmente en 24-48 horas), agradece el comentario, asume la parte de responsabilidad que te toca sin excusas, ofrece una solución concreta y, sobre todo, lleva la conversación fuera del hilo público. En este artículo te doy plantillas, ejemplos orientativos de antes y después con IA y una tabla de impacto de la nota en tus reservas.
@@ -140,7 +140,7 @@ Las ventajas son claras:
 - **Idiomas**: AI Chef Pro trabaja en 7 idiomas con español nativo. Si tienes turismo extranjero, puedes responder en el idioma del cliente sin depender de un traductor externo.
 - **Más allá de las reseñas**: la misma plataforma incluye agentes para otras tareas, como [generar los textos de tu carta o menú](https://aichef.pro/generador-textos-carta-restaurante), crear contenido para redes o planificar menús.
 
-AI Chef Pro es una suite con más de 70 agentes de IA culinarios. El plan de entrada es AI Chef Miembro (10 €/mes, 10.000 créditos) y los planes de pago incluyen Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000) y Max (95 €/mes, ilimitados), todos con tarjeta. Si necesitas más volumen, tienes Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). Para el que quiera compromiso anual, Max Anual cuesta 950 €/año.
+AI Chef Pro es una suite con más de 70 agentes de IA culinarios. El plan de entrada es AI Chef Premium Pro (25 €/mes, 85.000 créditos), con tarjeta y sin permanencia. Si necesitas más volumen, tienes Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). Para el que quiera compromiso anual, Max Anual cuesta 950 €/año.
 
 ## 7. Conclusión: responde hoy, factura mañana
 

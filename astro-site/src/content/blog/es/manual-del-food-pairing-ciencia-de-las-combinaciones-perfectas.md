@@ -20,7 +20,7 @@ wpId: 1689
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 25px 0; color: white; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
 <h3 style="color: white; margin-bottom: 15px; font-size: 1.4em;">🔬 Lleva el Food Pairing a tu Cocina con IA</h3>
-<p style="font-size: 1.1em; margin-bottom: 20px;">Food Pairing AI, uno de los agentes de AI Chef Pro, te ayuda a encontrar combinaciones para tus platos. Planes desde 10 €/mes, sin permanencia.</p>
+<p style="font-size: 1.1em; margin-bottom: 20px;">Food Pairing AI, uno de los agentes de AI Chef Pro, te ayuda a encontrar combinaciones para tus platos. Planes desde 25 €/mes, sin permanencia.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: #fff; color: #667eea; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Conocer AI Chef Pro →</a>
 </div>
 
@@ -756,7 +756,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Herramienta Recomendada</th><th>Presupuesto Mensual</th><th>Características Clave</th></tr></thead><tbody><tr><td>Restaurante Independiente</td><td>AI Chef Pro &#8211; Plan Miembro</td><td>10 €</td><td>Food Pairing AI, recetarios y todos los agentes · 10.000 créditos/mes</td></tr><tr><td>Grupo Gastronómico</td><td>AI Chef Pro &#8211; Plan Premium Pro</td><td>25 €</td><td>Todos los agentes · 85.000 créditos/mes</td></tr><tr><td>Empresa de Catering</td><td>AI Chef Pro &#8211; Plan Premium Plus</td><td>50 €</td><td>Todos los agentes · 175.000 créditos/mes</td></tr><tr><td>Escuela de Hostelería</td><td>AI Chef Pro &#8211; Plan enterprise</td><td>Bajo consulta</td><td>Todos los agentes · volumen a medida para grupos (habla con el equipo de AI Chef Pro)</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Herramienta Recomendada</th><th>Presupuesto Mensual</th><th>Características Clave</th></tr></thead><tbody><tr><td>Restaurante Independiente</td><td>AI Chef Pro &#8211; Plan Premium Pro</td><td>25 €</td><td>Food Pairing AI, recetarios y todos los agentes · 85.000 créditos/mes</td></tr><tr><td>Grupo Gastronómico</td><td>AI Chef Pro &#8211; Plan Premium Pro</td><td>25 €</td><td>Todos los agentes · 85.000 créditos/mes</td></tr><tr><td>Empresa de Catering</td><td>AI Chef Pro &#8211; Plan Premium Plus</td><td>50 €</td><td>Todos los agentes · 175.000 créditos/mes</td></tr><tr><td>Escuela de Hostelería</td><td>AI Chef Pro &#8211; Plan enterprise</td><td>Bajo consulta</td><td>Todos los agentes · volumen a medida para grupos (habla con el equipo de AI Chef Pro)</td></tr></tbody></table></div></figure>
 
 
 
@@ -1034,7 +1034,7 @@ wpId: 1689
 <h3 style="color: white; margin-bottom: 20px; font-size: 1.5em;">🚀 Comienza tu Revolución Culinaria Hoy</h3>
 <p style="font-size: 1.2em; margin-bottom: 25px;">Prueba AI Chef Pro y transforma tu cocina con food pairing científico e IA generativa.</p>
 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: #fff; color: #667eea; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Empezar Miembro →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: #fff; color: #667eea; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Empezar con Premium Pro →</a>
 <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: transparent; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; border: 2px solid #fff; transition: all 0.3s ease;">Mentoría Personalizada →</a>
 </div>
 </div>

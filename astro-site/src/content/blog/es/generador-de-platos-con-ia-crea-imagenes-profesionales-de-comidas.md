@@ -33,7 +33,7 @@ wpId: 1804
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 15px; margin: 30px 0; text-align: center;">
 <h3 style="color: #ffffff; margin-top: 0; font-size: 28px;">🚀 Genera Imágenes Profesionales de tus Platos en Segundos</h3>
 <p style="color: #f0f0f0; font-size: 18px; margin: 20px 0;">AI Chef Pro integra Seedream, Flux e Ideogram para crear imágenes fotorrealistas de calidad profesional</p>
-<p><a style="background-color: #ffffff; color: #667eea; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; margin-top: 15px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Empieza con AI Chef Pro desde 10 € →</a></p>
+<p><a style="background-color: #ffffff; color: #667eea; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; margin-top: 15px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Empieza con AI Chef Pro desde 25 € →</a></p>
 <p style="color: #f0f0f0; font-size: 14px; margin-top: 15px;">✓ Sin permanencia ✓ Acceso inmediato ✓ 80+ agentes especializados</p>
 </div>
 
@@ -111,7 +111,7 @@ wpId: 1804
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Fotografía Tradicional</th><th>Generador IA (AI Chef Pro)</th><th>Ahorro</th></tr></thead><tbody><tr><td>Sesión fotográfica básica (10 platos)</td><td>800-1.500€</td><td>10-95 €/mes</td><td>705-1.405€</td></tr><tr><td>Equipamiento fotográfico profesional</td><td>3.000-8.000€</td><td>0€</td><td>3.000-8.000€</td></tr><tr><td>Estilista de alimentos (sesión)</td><td>300-600€</td><td>0€</td><td>300-600€</td></tr><tr><td>Ingredientes para fotografía</td><td>150-400€</td><td>0€</td><td>150-400€</td></tr><tr><td>Postproducción y edición</td><td>200-500€</td><td>Incluido</td><td>200-500€</td></tr><tr><td><strong>TOTAL (por sesión)</strong></td><td><strong>4.450-11.000€</strong></td><td><strong>10-95 €/mes</strong></td><td><strong>4.355-10.905€</strong></td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Fotografía Tradicional</th><th>Generador IA (AI Chef Pro)</th><th>Ahorro</th></tr></thead><tbody><tr><td>Sesión fotográfica básica (10 platos)</td><td>800-1.500€</td><td>25-95 €/mes</td><td>705-1.405€</td></tr><tr><td>Equipamiento fotográfico profesional</td><td>3.000-8.000€</td><td>0€</td><td>3.000-8.000€</td></tr><tr><td>Estilista de alimentos (sesión)</td><td>300-600€</td><td>0€</td><td>300-600€</td></tr><tr><td>Ingredientes para fotografía</td><td>150-400€</td><td>0€</td><td>150-400€</td></tr><tr><td>Postproducción y edición</td><td>200-500€</td><td>Incluido</td><td>200-500€</td></tr><tr><td><strong>TOTAL (por sesión)</strong></td><td><strong>4.450-11.000€</strong></td><td><strong>25-95 €/mes</strong></td><td><strong>4.355-10.905€</strong></td></tr></tbody></table></div></figure>
 
 
 
@@ -437,7 +437,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph">Lo primero es registrarte en <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">AI Chef Pro</a>. El registro es rápido y sencillo, con planes de pago desde 10 €/mes. Una vez dentro:</p>
+<p class="wp-block-paragraph">Lo primero es registrarte en <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">AI Chef Pro</a>. El registro es rápido y sencillo, con planes de pago desde 25 €/mes. Una vez dentro:</p>
 
 
 
@@ -1324,7 +1324,7 @@ wpId: 1804
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>Generadores Genéricos (Midjourney, DALL-E)</th><th>Generadores de Comida Específicos (FoodAI)</th></tr></thead><tbody><tr><td><strong>Modelos especializados</strong></td><td>✅ 3 modelos premium (Seedream, Flux, Ideogram)</td><td>⚠️ Modelos generalistas</td><td>✅ Especializado en comida</td></tr><tr><td><strong>Comprensión términos culinarios</strong></td><td>✅ Entrenamiento específico gastronómico</td><td>⚠️ Limitada</td><td>✅ Buena</td></tr><tr><td><strong>Herramientas complementarias</strong></td><td>✅ 80+ agentes (recetas, food pairing, mermas, etc.)</td><td>❌ Solo generación de imágenes</td><td>⚠️ Limitadas</td></tr><tr><td><strong>Generación de recetas integrada</strong></td><td>✅ 20+ generadores especializados por tipo de cocina</td><td>❌ No disponible</td><td>⚠️ Básica</td></tr><tr><td><strong>Velocidad de generación</strong></td><td>✅ 1.8-30 segundos (Seedream 4.0)</td><td>⚠️ 30-120 segundos</td><td>⚠️ 20-60 segundos</td></tr><tr><td><strong>Resolución máxima</strong></td><td>✅ Hasta 4K</td><td>✅ Hasta 4K</td><td>⚠️ Generalmente 2K</td></tr><tr><td><strong>Uso comercial incluido</strong></td><td>✅ Sí, sin restricciones</td><td>⚠️ Depende del plan</td><td>⚠️ Depende del plan</td></tr><tr><td><strong>Interfaz en español</strong></td><td>✅ Completamente en español</td><td>⚠️ Principalmente inglés</td><td>⚠️ Variable</td></tr><tr><td><strong>Soporte especializado gastronómico</strong></td><td>✅ Equipo con experiencia en hostelería</td><td>❌ Soporte técnico general</td><td>⚠️ Limitado</td></tr><tr><td><strong>Consistencia de marca</strong></td><td>✅ Herramientas para mantener identidad visual</td><td>⚠️ Requiere configuración manual compleja</td><td>⚠️ Limitada</td></tr><tr><td><strong>Precio mensual</strong></td><td>10-95 €/mes (planes desde 10 €)</td><td>20-60€/mes</td><td>0-30€/mes</td></tr><tr><td><strong>Relación calidad-precio para gastronomía</strong></td><td>⭐⭐⭐⭐⭐ Excepcional</td><td>⭐⭐⭐ Buena pero no especializada</td><td>⭐⭐⭐⭐ Muy buena pero limitada en funciones</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>Generadores Genéricos (Midjourney, DALL-E)</th><th>Generadores de Comida Específicos (FoodAI)</th></tr></thead><tbody><tr><td><strong>Modelos especializados</strong></td><td>✅ 3 modelos premium (Seedream, Flux, Ideogram)</td><td>⚠️ Modelos generalistas</td><td>✅ Especializado en comida</td></tr><tr><td><strong>Comprensión términos culinarios</strong></td><td>✅ Entrenamiento específico gastronómico</td><td>⚠️ Limitada</td><td>✅ Buena</td></tr><tr><td><strong>Herramientas complementarias</strong></td><td>✅ 80+ agentes (recetas, food pairing, mermas, etc.)</td><td>❌ Solo generación de imágenes</td><td>⚠️ Limitadas</td></tr><tr><td><strong>Generación de recetas integrada</strong></td><td>✅ 20+ generadores especializados por tipo de cocina</td><td>❌ No disponible</td><td>⚠️ Básica</td></tr><tr><td><strong>Velocidad de generación</strong></td><td>✅ 1.8-30 segundos (Seedream 4.0)</td><td>⚠️ 30-120 segundos</td><td>⚠️ 20-60 segundos</td></tr><tr><td><strong>Resolución máxima</strong></td><td>✅ Hasta 4K</td><td>✅ Hasta 4K</td><td>⚠️ Generalmente 2K</td></tr><tr><td><strong>Uso comercial incluido</strong></td><td>✅ Sí, sin restricciones</td><td>⚠️ Depende del plan</td><td>⚠️ Depende del plan</td></tr><tr><td><strong>Interfaz en español</strong></td><td>✅ Completamente en español</td><td>⚠️ Principalmente inglés</td><td>⚠️ Variable</td></tr><tr><td><strong>Soporte especializado gastronómico</strong></td><td>✅ Equipo con experiencia en hostelería</td><td>❌ Soporte técnico general</td><td>⚠️ Limitado</td></tr><tr><td><strong>Consistencia de marca</strong></td><td>✅ Herramientas para mantener identidad visual</td><td>⚠️ Requiere configuración manual compleja</td><td>⚠️ Limitada</td></tr><tr><td><strong>Precio mensual</strong></td><td>25-95 €/mes (planes desde 25 €)</td><td>20-60€/mes</td><td>0-30€/mes</td></tr><tr><td><strong>Relación calidad-precio para gastronomía</strong></td><td>⭐⭐⭐⭐⭐ Excepcional</td><td>⭐⭐⭐ Buena pero no especializada</td><td>⭐⭐⭐⭐ Muy buena pero limitada en funciones</td></tr></tbody></table></div></figure>
 
 
 
@@ -1374,7 +1374,7 @@ wpId: 1804
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generaciones de Imágenes/mes</th><th>Ideal Para</th><th>ROI en el ejemplo</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Las que cubran 10.000 créditos</td><td>Estudiantes, emprendedores, chefs individuales, restaurantes pequeños (hasta 30 pax), food bloggers</td><td>4.900 % (restaurante pequeño)</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Las que cubran 85.000 créditos</td><td>Restaurantes medianos (30-60 pax), cafeterías activas, pastelerías</td><td>4.100 % (pastelería)</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Las que cubran 175.000 créditos</td><td>Restaurantes grandes, chefs ejecutivos, consultores gastronómicos</td><td>17.500 % (catering)</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Créditos ilimitados</td><td>Cadenas, grupos gastronómicos, empresas de catering corporativo</td><td>Depende de tu volumen</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generaciones de Imágenes/mes</th><th>Ideal Para</th><th>ROI en el ejemplo</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Las que cubran 85.000 créditos</td><td>Chefs individuales, restaurantes pequeños y medianos (hasta 60 pax), cafeterías activas, pastelerías</td><td>4.100 % (pastelería)</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Las que cubran 175.000 créditos</td><td>Restaurantes grandes, chefs ejecutivos, consultores gastronómicos</td><td>17.500 % (catering)</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Créditos ilimitados</td><td>Cadenas, grupos gastronómicos, empresas de catering corporativo</td><td>Depende de tu volumen</td></tr></tbody></table></div></figure>
 
 
 
@@ -1387,14 +1387,14 @@ wpId: 1804
 
 
 <div class="wp-block-group has-background" style="background-color: #e8f5e9; padding: 20px;">
-<p><strong>Restaurante pequeño (30 pax) &#8211; Plan Miembro (10 €/mes):</strong></p>
+<p><strong>Restaurante pequeño (30 pax) &#8211; Plan Premium Pro (25 €/mes):</strong></p>
 <ul>
 <li>Ahorro en fotografía profesional: 600€ cada 3 meses = 200€/mes</li>
 <li>Ahorro en estilista de alimentos: 150€/mes</li>
 <li>Tiempo ahorrado valorado: 100€/mes</li>
 <li>Incremento estimado en conversión por mejor contenido visual: 50€/mes</li>
 <li><strong>Valor total generado: 500€/mes</strong></li>
-<li><strong>ROI: 4.900% (retorno de 50x la inversión)</strong></li>
+<li><strong>ROI: 1.900% (retorno de 20x la inversión)</strong></li>
 </ul>
 </div>
 
@@ -1436,7 +1436,7 @@ wpId: 1804
 
 
 <ul class="wp-block-list">
-<li><strong>Miembro y Premium Pro:</strong> 10.000 y 85.000 créditos al mes, suficientes para la mayoría de chefs y restaurantes</li>
+<li><strong>Premium Pro:</strong> 85.000 créditos al mes, suficientes para la mayoría de chefs y restaurantes</li>
 
 
 
@@ -1464,7 +1464,7 @@ wpId: 1804
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 15px; margin: 30px 0; text-align: center;">
 <h3 style="color: #ffffff; margin-top: 0; font-size: 28px;">📸 Lleva AI Chef Pro a tu Cocina</h3>
 <p style="color: #f0f0f0; font-size: 18px; margin: 20px 0;">Comienza hoy mismo y descubre cómo la IA puede transformar tu cocina</p>
-<p><a style="background-color: #ffffff; color: #667eea; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 20px; margin-top: 15px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Empieza por 10 € Ahora →</a></p>
+<p><a style="background-color: #ffffff; color: #667eea; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 20px; margin-top: 15px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Empieza por 25 € Ahora →</a></p>
 <p style="color: #f0f0f0; font-size: 14px; margin-top: 15px;">✓ Sin permanencia ✓ Acceso inmediato ✓ Cancela cuando quieras</p>
 </div>
 
@@ -1689,7 +1689,6 @@ wpId: 1804
 
 
 <ul class="wp-block-list">
-<li><strong>Plan Miembro (10 €/mes):</strong> 10.000 créditos al mes</li>
 
 
 
@@ -1702,7 +1701,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph">Los créditos se renuevan cada mes. Para la mayoría de profesionales, los planes Miembro o Premium Pro ofrecen más que suficiente capacidad de generación para sus necesidades operativas habituales.</p>
+<p class="wp-block-paragraph">Los créditos se renuevan cada mes. Para la mayoría de profesionales, el plan Premium Pro ofrece más que suficiente capacidad de generación para sus necesidades operativas habituales.</p>
 
 
 
@@ -1740,7 +1739,7 @@ wpId: 1804
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>ChatGPT + DALL-E</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Modelos de generación</td><td>DALL-E únicamente</td><td>3 modelos premium (Seedream, Flux, Ideogram)</td></tr><tr><td>Comprensión gastronómica</td><td>General, no especializada</td><td>Entrenamiento específico con términos técnicos culinarios</td></tr><tr><td>Herramientas adicionales</td><td>Solo chat conversacional</td><td>80+ agentes (recetas, food pairing, mermas, etc.)</td></tr><tr><td>Interfaz</td><td>Chat genérico</td><td>Interfaz estructurada optimizada para gastronomía</td></tr><tr><td>Templates y prompts</td><td>Requiere escribirlo todo manualmente</td><td>Biblioteca de templates profesionales predefinidos</td></tr><tr><td>Resolución máxima</td><td>1024&#215;1024 px (aprox. 1MP)</td><td>Hasta 4K (8MP+)</td></tr><tr><td>Precio</td><td>20 USD/mes (ChatGPT Plus)</td><td>Desde 10 €/mes</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>ChatGPT + DALL-E</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Modelos de generación</td><td>DALL-E únicamente</td><td>3 modelos premium (Seedream, Flux, Ideogram)</td></tr><tr><td>Comprensión gastronómica</td><td>General, no especializada</td><td>Entrenamiento específico con términos técnicos culinarios</td></tr><tr><td>Herramientas adicionales</td><td>Solo chat conversacional</td><td>80+ agentes (recetas, food pairing, mermas, etc.)</td></tr><tr><td>Interfaz</td><td>Chat genérico</td><td>Interfaz estructurada optimizada para gastronomía</td></tr><tr><td>Templates y prompts</td><td>Requiere escribirlo todo manualmente</td><td>Biblioteca de templates profesionales predefinidos</td></tr><tr><td>Resolución máxima</td><td>1024&#215;1024 px (aprox. 1MP)</td><td>Hasta 4K (8MP+)</td></tr><tr><td>Precio</td><td>20 USD/mes (ChatGPT Plus)</td><td>Desde 25 €/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -1869,7 +1868,7 @@ wpId: 1804
 <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 40px; border-radius: 15px; margin: 40px 0; text-align: center;">
 <h3 style="color: #ffffff; margin-top: 0; font-size: 32px;">🚀 Comienza Tu Transformación Digital Hoy</h3>
 <p style="color: #f0f0f0; font-size: 19px; margin: 25px 0; line-height: 1.6;">Crea con AI Chef Pro las imágenes de tu carta y renueva tu contenido visual</p>
-<p><a style="background-color: #ffffff; color: #f5576c; padding: 20px 50px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 22px; margin: 20px 10px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Prueba por 10 € Ahora →</a><br><a style="background-color: transparent; color: #ffffff; padding: 20px 50px; border: 3px solid #ffffff; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 22px; margin: 20px 10px;" href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Ver Mentoría Premium →</a></p>
+<p><a style="background-color: #ffffff; color: #f5576c; padding: 20px 50px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 22px; margin: 20px 10px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Prueba por 25 € Ahora →</a><br><a style="background-color: transparent; color: #ffffff; padding: 20px 50px; border: 3px solid #ffffff; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 22px; margin: 20px 10px;" href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas" target="_blank" rel="noopener">Ver Mentoría Premium →</a></p>
 <p style="color: #f0f0f0; font-size: 15px; margin-top: 25px; line-height: 1.5;">✓ Sin permanencia ✓ Cancela cuando quieras<br>✓ Acceso inmediato a 80+ agentes ✓ Soporte en español (24/7 en Premium Plus y Max)</p>
 </div>
 

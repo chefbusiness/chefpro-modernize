@@ -18,7 +18,7 @@ faq:
   - q: "¿Qué datos del cliente puedo guardar sin problemas de privacidad?"
     a: "Puedes guardar nombre, teléfono o email, alergias e intolerancias (con consentimiento), preferencias de consumo y fechas especiales. Evita datos sensibles como DNI, dirección postal completa o historial médico ajeno a la alimentación. Pide siempre permiso al anotar preferencias y nunca comentes alergias en voz alta ante otros comensales."
   - q: "¿Cuánto cuesta AI Chef Pro para gestionar la personalización?"
-    a: "AI Chef Pro tiene un plan de entrada AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta. El plan Premium Pro cuesta 25 € al mes (85.000 créditos), el Plus 50 € al mes (175.000 créditos) y el Max 95 € al mes con créditos ilimitados. Para un restaurante que trabaje personalización de forma constante, el plan Premium Pro o Plus suele ser más que suficiente."
+    a: "AI Chef Pro tiene un plan de entrada, AI Chef Premium Pro, con 85.000 créditos al mes por 25 €, con tarjeta. El Plus cuesta 50 € al mes (175.000 créditos) y el Max 95 € al mes con créditos ilimitados. Para un restaurante que trabaje personalización de forma constante, el plan Premium Pro o Plus suele ser más que suficiente."
   - q: "¿La IA no quita el trato humano en la sala?"
     a: "Al contrario: la IA te quita el trabajo pesado de documentar, redactar y calcular, para que tú y tu equipo dediquéis más tiempo a las personas. Ella genera el borrador del correo o la ficha de alérgenos; tú pones la voz, la mirada y el gesto. La calidez la sigues aportando tú; la IA te da horas extra para ejercerla."
 ---
@@ -118,7 +118,7 @@ Te cuento cómo lo uso yo en consultoría y cómo pueden aplicarlo dueños de re
 
 Y todo esto sin volverte loco con la tecnología. La interfaz es conversacional: hablas con los agentes como si le pidieras algo a tu jefe de cocina.
 
-En cuanto a precios, AI Chef Pro tiene un plan de entrada AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta. Si necesitas más capacidad, el plan Premium Pro son 25 € al mes (85.000 créditos), el Plus 50 € al mes (175.000 créditos) y el Max 95 € al mes con créditos ilimitados, además de la opción Max Anual por 950 € al año. Para un restaurante que quiera trabajar la personalización de forma constante, el plan Premium Pro o Plus cubre de sobra la generación de variantes de platos, fichas de alérgenos y comunicaciones segmentadas.
+En cuanto a precios, AI Chef Pro tiene un plan de entrada, AI Chef Premium Pro, con 85.000 créditos al mes por 25 €, con tarjeta. Si necesitas más capacidad, el Plus son 50 € al mes (175.000 créditos) y el Max 95 € al mes con créditos ilimitados, además de la opción Max Anual por 950 € al año. Para un restaurante que quiera trabajar la personalización de forma constante, el plan Premium Pro o Plus cubre de sobra la generación de variantes de platos, fichas de alérgenos y comunicaciones segmentadas.
 
 
 

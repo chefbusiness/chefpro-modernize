@@ -596,7 +596,7 @@ wpId: 2612
 
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 30px 25px; border-radius: 12px; margin: 35px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-<h3 style="color: #1a1a1a; margin: 0 0 15px 0; font-size: 24px; font-weight: bold;">💼 Planes Profesionales desde 10 €/mes</h3>
+<h3 style="color: #1a1a1a; margin: 0 0 15px 0; font-size: 24px; font-weight: bold;">💼 Planes Profesionales desde 25 €/mes</h3>
 <p style="color: #333; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Accede a herramientas avanzadas de IA para restaurantes: Food Pairing AI, Mermas GenCal, Mental Coach y más de 80 agentes especializados.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-gestion-de-temperatura-emocional-en-restaurantes" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Ver Planes y Precios</a>
 </div>
@@ -843,7 +843,7 @@ wpId: 2612
 
 <div style="background-color: #1a1a1a; padding: 35px 25px; border-radius: 12px; margin: 40px 0; text-align: center; border: 3px solid #FFD700;">
 <h3 style="color: #FFD700; margin: 0 0 15px 0; font-size: 26px; font-weight: bold;">🌟 Comienza tu Transformación Digital Hoy</h3>
-<p style="color: #ffffff; font-size: 17px; margin: 0 0 20px 0; line-height: 1.6;">Prueba AI Chef Pro en tu cocina. Plan Miembro: 10 €/mes, sin permanencia.</p>
+<p style="color: #ffffff; font-size: 17px; margin: 0 0 20px 0; line-height: 1.6;">Prueba AI Chef Pro en tu cocina. Plan Premium Pro: 25 €/mes, sin permanencia.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-gestion-de-temperatura-emocional-en-restaurantes" target="_blank" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Acceder a AI Chef Pro</a>
 </div>
 

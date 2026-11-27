@@ -20,7 +20,7 @@ faq:
   - q: "¿De verdad ayuda la IA a salvar un restaurante o es humo?"
     a: "La IA no salva restaurantes; los hosteleros sí. Pero te da velocidad y claridad en el diagnóstico: escandallos en minutos, análisis de carta, previsiones de compra y borradores de comunicación. Te quita horas de trabajo manual para que tú puedas decidir con datos. Es un copiloto, no un piloto automático. Si esperas magia, te vas a decepcionar."
   - q: "¿Cuánto cuesta empezar con AI Chef Pro?"
-    a: "Puedes empezar hoy mismo con el plan AI Chef Miembro de 10.000 créditos al mes, sin permanencia. Te da acceso a los agentes de IA para hacer un primer diagnóstico de tu restaurante. Si necesitas más capacidad, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos. No hay permanencia ni letra pequeña."
+    a: "Puedes empezar hoy mismo con el plan AI Chef Premium Pro: 25 € al mes con 85.000 créditos. Te da acceso a los agentes de IA para hacer un primer diagnóstico de tu restaurante. Si necesitas más capacidad, el plan Premium Plus cuesta 50 € al mes con 175.000 créditos. No hay permanencia ni letra pequeña."
 ---
 
 Si estás leyendo esto con el estómago encogido porque la caja de ayer no cuadró, el ticket medio sigue bajando y el proveedor te ha llamado tres veces esta semana, respira hondo. Cómo salvar un restaurante en crisis empieza por una decisión incómoda: en las próximas cuatro horas no vas a reinventar nada. Vas a hacer un diagnóstico exprés de dónde se escapa el dinero y vas a cortar la hemorragia. Punto. La reinvención del concepto, el plan de marketing y la nueva carta de temporada vienen después, cuando el paciente esté estable.
@@ -148,13 +148,12 @@ Esto es lo que puedes hacer desde hoy mismo, sin permanencia y sin compromiso:
 
 | Plan | Créditos/mes | Precio |
 | :--- | :--- | :--- |
-| AI Chef Miembro | 10.000 | 10 € |
 | Premium Pro | 85.000 | 25 €/mes |
 | Plus | 175.000 | 50 €/mes |
 | Max | Ilimitados | 95 €/mes |
 | Max Anual | Ilimitados | 950 €/año |
 
-Con el plan AI Chef Miembro de 10.000 créditos al mes puedes empezar el diagnóstico de tu restaurante ahora mismo. Sin letra pequeña. Sin permanencia. [Prueba AI Chef Pro aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rescate).
+Con el plan AI Chef Premium Pro de 85.000 créditos al mes puedes empezar el diagnóstico de tu restaurante ahora mismo. Sin letra pequeña. Sin permanencia. [Prueba AI Chef Pro aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rescate).
 
 La IA te da velocidad y claridad en el diagnóstico. Pero el bisturí lo manejas tú.
 
@@ -174,4 +173,4 @@ Lo que viene después, en ese plan de 90 días, es:
 
 Pero todo eso empieza cuando la hemorragia se ha detenido. Si ahora mismo estás con el agua al cuello, no te pongas a diseñar la nueva carta de cócteles. Primero, el torniquete. Luego, la rehabilitación.
 
-Empieza hoy el diagnóstico. Los números no mienten y, si los miras a tiempo, tu restaurante tiene muchas más posibilidades de las que crees. [Accede al plan AI Chef Miembro de AI Chef Pro y ponle números a la crisis antes de que ella te los ponga a ti](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rescate).
+Empieza hoy el diagnóstico. Los números no mienten y, si los miras a tiempo, tu restaurante tiene muchas más posibilidades de las que crees. [Accede al plan AI Chef Premium Pro de AI Chef Pro y ponle números a la crisis antes de que ella te los ponga a ti](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rescate).

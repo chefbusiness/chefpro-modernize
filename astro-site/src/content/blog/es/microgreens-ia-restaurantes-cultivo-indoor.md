@@ -679,7 +679,7 @@ wpId: 2160
 <div style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); border-radius: 16px; padding: 35px 25px; margin: 40px 0; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.35);">
 <p style="color: #a8d8ff; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px;">💼 Planes Profesionales</p>
 <h3 style="color: #ffffff; font-size: 26px; margin-bottom: 15px; line-height: 1.3;">Accede a Todas las Herramientas de AI Chef Pro</h3>
-<p style="color: #c5d8e8; font-size: 16px; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">Desde 10€/mes, obtén acceso a más de 55 herramientas de IA diseñadas para chefs profesionales: <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, Mermas GenCal, Cocina Creativa y mucho más.</p>
+<p style="color: #c5d8e8; font-size: 16px; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">Desde 25€/mes, obtén acceso a más de 55 herramientas de IA diseñadas para chefs profesionales: <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, Mermas GenCal, Cocina Creativa y mucho más.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=microgreens-ia-restaurantes-cultivo-indoor" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #00d4ff, #0099ff); color: #ffffff; padding: 14px 40px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 16px;">Ver Planes y Precios →</a>
 </div>
 
@@ -855,8 +855,8 @@ wpId: 2160
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 16px; padding: 40px 25px; margin: 40px 0; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.3); border: 2px solid #FFD700;">
 <p style="color: #FFD700; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px;">🚀 Comienza Hoy</p>
 <h3 style="color: #ffffff; font-size: 28px; margin-bottom: 15px; line-height: 1.3;">Transforma Tu Cocina con Inteligencia Artificial</h3>
-<p style="color: #b8c5d6; font-size: 17px; margin-bottom: 25px; max-width: 650px; margin-left: auto; margin-right: auto;">Únete a cientos de chefs profesionales que ya utilizan AI Chef Pro para innovar, optimizar costes y crear experiencias gastronómicas memorables. Prueba todas las herramientas con AI Chef Miembro.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=microgreens-ia-restaurantes-cultivo-indoor" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #FFD700, #FFA500); color: #1a1a2e; padding: 16px 50px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 18px;">Acceder a AI Chef Pro Miembro →</a>
+<p style="color: #b8c5d6; font-size: 17px; margin-bottom: 25px; max-width: 650px; margin-left: auto; margin-right: auto;">Únete a cientos de chefs profesionales que ya utilizan AI Chef Pro para innovar, optimizar costes y crear experiencias gastronómicas memorables. Prueba todas las herramientas con AI Chef Premium Pro.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=microgreens-ia-restaurantes-cultivo-indoor" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #FFD700, #FFA500); color: #1a1a2e; padding: 16px 50px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 18px;">Acceder a AI Chef Premium Pro →</a>
 </div>
 
 

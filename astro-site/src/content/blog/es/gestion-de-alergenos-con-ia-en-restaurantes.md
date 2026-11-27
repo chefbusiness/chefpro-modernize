@@ -53,7 +53,7 @@ wpId: 1965
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px;">🛡️ Gestiona los Alérgenos de tu Restaurante con IA</h3>
 <p style="color: #e8e8e8; font-size: 16px; margin-bottom: 20px;">ID Alérgenos de AI Chef Pro te ayuda con la revisión de los 14 alérgenos obligatorios en tus recetas y platos, con validación final del cocinero.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Probar AI Chef Pro Miembro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Probar AI Chef Premium Pro</a>
 </div>
 
 
@@ -790,7 +790,7 @@ wpId: 1965
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Funcionalidades de alérgenos</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Pequeños establecimientos (hasta 30 pax)</td><td>ID Alérgenos, fichas técnicas y todos los agentes con 10.000 créditos al mes</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Restaurantes medianos, cafeterías</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Restaurantes grandes, grupos</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Cadenas, caterings, consultorías</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Funcionalidades de alérgenos</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Pequeños y medianos restaurantes, cafeterías</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Restaurantes grandes, grupos</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Cadenas, caterings, consultorías</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 
@@ -906,7 +906,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank"><strong>probar AI Chef Pro desde 10 €</strong></a> y descubrir cómo puede transformar la gestión de alérgenos en tu establecimiento. Si tienes dudas específicas sobre implementación o necesitas orientación personalizada, nuestro equipo está disponible para ayudarte a través de la <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank">página de contacto</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank"><strong>probar AI Chef Pro desde 25 €</strong></a> y descubrir cómo puede transformar la gestión de alérgenos en tu establecimiento. Si tienes dudas específicas sobre implementación o necesitas orientación personalizada, nuestro equipo está disponible para ayudarte a través de la <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank">página de contacto</a>.</p>
 
 
 
@@ -921,7 +921,7 @@ wpId: 1965
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #667eea 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
 <h3 style="color: #ffffff; font-size: 26px; margin-bottom: 15px;">🚀 Comienza Hoy tu Transformación Digital</h3>
 <p style="color: #e8e8e8; font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu cocina para gestionar alérgenos, optimizar costes y revolucionar tu servicio.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 18px 45px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 10px rgba(255,107,53,0.4);">Acceder a AI Chef Pro Miembro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=gestion-de-alergenos-con-ia-en-restaurantes" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 18px 45px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 10px rgba(255,107,53,0.4);">Acceder a AI Chef Premium Pro</a>
 </div>
 
 

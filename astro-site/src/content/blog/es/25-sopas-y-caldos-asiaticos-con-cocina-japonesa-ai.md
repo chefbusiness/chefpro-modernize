@@ -35,7 +35,7 @@ wpId: 2147
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffd700; margin: 0 0 15px 0; font-size: 24px;">🍜 Domina la Cocina Japonesa con IA</h3>
 <p style="color: #ffffff; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Accede a Cocina Japonesa AI y más de 80 agentes especializados para profesionales de la hostelería</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank" style="display: inline-block; background: #ffd700; color: #1a1a2e; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Probar AI Chef Pro Miembro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank" style="display: inline-block; background: #ffd700; color: #1a1a2e; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Probar AI Chef Premium Pro</a>
 </div>
 
 
@@ -850,7 +850,6 @@ wpId: 2147
 <h3 style="color: #ffd700; margin: 0 0 20px 0; font-size: 26px;">💼 Planes AI Chef Pro para Profesionales</h3>
 <p style="color: #ffffff; margin: 0 0 25px 0; font-size: 16px; line-height: 1.6;">Elige el plan que mejor se adapte a las necesidades de tu cocina profesional</p>
 <div style="margin-bottom: 25px;">
-<p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Miembro (10 €/mes)</strong> &#8211; 10.000 créditos al mes, para chefs individuales o pequeños establecimientos, sin permanencia</p>
 <p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Premium Pro (25 €/mes)</strong> &#8211; 85.000 créditos al mes, para cocinas más activas con uso frecuente</p>
 <p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Premium Plus (50 €/mes)</strong> &#8211; 175.000 créditos al mes, para desarrollo, liderazgo y creación de alto volumen</p>
 <p style="color: #90EE90; margin: 5px 0; font-size: 14px;">✓ <strong>Premium Max (95 €/mes o 950 €/año)</strong> &#8211; Créditos ilimitados para los más exigentes</p>
@@ -1052,7 +1051,7 @@ Este ramen rinde homenaje a las tradiciones de Hakata, donde los puestos calleje
 
 
 <ol class="wp-block-list">
-<li><strong>Crea tu cuenta Miembro:</strong> Regístrate en <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">aichef.pro</a> con el plan Miembro (10 €/mes, 10.000 créditos) y accede a todos los agentes.</li>
+<li><strong>Crea tu cuenta Premium Pro:</strong> Regístrate en <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">aichef.pro</a> con el plan Premium Pro (25 €/mes, 85.000 créditos) y accede a todos los agentes.</li>
 
 
 
@@ -1182,7 +1181,7 @@ Este ramen rinde homenaje a las tradiciones de Hakata, donde los puestos calleje
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">probar AI Chef Pro desde 10 €</a> y descubrir cómo la inteligencia artificial puede transformar tu aproximación a la cocina japonesa profesional. Y si buscas una guía personalizada para implementar estas herramientas en tu establecimiento, considera nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">mentoría online especializada</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">probar AI Chef Pro desde 25 €</a> y descubrir cómo la inteligencia artificial puede transformar tu aproximación a la cocina japonesa profesional. Y si buscas una guía personalizada para implementar estas herramientas en tu establecimiento, considera nuestra <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">mentoría online especializada</a>.</p>
 
 
 

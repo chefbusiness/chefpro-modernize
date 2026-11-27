@@ -72,7 +72,7 @@ wpId: 2337
 
 <div style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px; font-weight: bold;">🎯 ¿Quieres implementar IA en tu restaurante con resultados medibles?</h3>
-<p style="color: #e0e0e0; font-size: 16px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">AI Chef Pro te ofrece más de 55 herramientas de IA específicas para la hostelería con métricas de rendimiento integradas. Desde €10/mes.</p>
+<p style="color: #e0e0e0; font-size: 16px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">AI Chef Pro te ofrece más de 55 herramientas de IA específicas para la hostelería con métricas de rendimiento integradas. Desde €25/mes.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: background-color 0.3s;">Ver Planes y Precios</a>
 </div>
 
@@ -320,7 +320,7 @@ wpId: 2337
 <div style="background: linear-gradient(135deg, #2d8a4e 0%, #1e6b3a 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; font-size: 22px; margin-bottom: 15px; font-weight: bold;">📊 Optimiza tus mermas y controla tu food cost con IA</h3>
 <p style="color: #e0e0e0; font-size: 15px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">Mermas GenCal de AI Chef Pro calcula rendimientos precisos y sugiere aprovechamientos creativos para subproductos. Reduce desperdicios desde el primer día.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ffc107; color: #1a1a1a; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Probar AI Chef Pro desde 10€</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ffc107; color: #1a1a1a; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Probar AI Chef Pro desde 25€</a>
 </div>
 
 
@@ -804,8 +804,8 @@ wpId: 2337
 
 <div style="background: linear-gradient(135deg, #e63946 0%, #c1121f 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px; font-weight: bold;">🍳 Comienza hoy a medir el impacto de la IA en tu cocina</h3>
-<p style="color: #ffffff; font-size: 16px; margin-bottom: 20px; max-width: 650px; margin-left: auto; margin-right: auto;">AI Chef Pro te proporciona las herramientas de IA especializadas que necesitas, con métricas de uso integradas para que siempre sepas el valor que estás obteniendo. Pruébalo por 10€.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ffffff; color: #c1121f; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Empieza desde 10 €/mes</a>
+<p style="color: #ffffff; font-size: 16px; margin-bottom: 20px; max-width: 650px; margin-left: auto; margin-right: auto;">AI Chef Pro te proporciona las herramientas de IA especializadas que necesitas, con métricas de uso integradas para que siempre sepas el valor que estás obteniendo. Pruébalo desde 25€.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante" target="_blank" style="display: inline-block; background-color: #ffffff; color: #c1121f; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 17px;">Empieza desde 25 €/mes</a>
 </div>
 
 

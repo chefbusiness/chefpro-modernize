@@ -142,7 +142,7 @@ En AI Chef Pro hemos construido una suite con más de 70 agentes de IA culinario
 
 Si quieres profundizar en cómo integrar esta gestión en tu operativa diaria, en el artículo [gestión de alérgenos con IA en hostelería](https://aichef.pro/blog/ia-gestion-alergenos-hosteleria) explicamos el paso a paso. Y para una visión más amplia sobre cómo la tecnología está ayudando a cocinas de todo tipo, échale un vistazo a [cómo la IA está mejorando la seguridad alimentaria en restaurantes](https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes).
 
-Para que puedas probarlo sin compromiso, en AI Chef Pro tienes el plan AI Chef Miembro por 10 € al mes con 10.000 créditos y sin permanencia. Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos; el plan Plus, 50 €/mes con 175.000 créditos; y el plan Max, 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Puedes crear tu cuenta y empezar en [app.aichef.pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=alergenos-lista).
+Para que puedas probarlo sin compromiso, en AI Chef Pro tienes el plan AI Chef Premium Pro por 25 € al mes con 85.000 créditos y sin permanencia. Si necesitas más capacidad, el plan Plus cuesta 50 €/mes con 175.000 créditos, y el plan Max, 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Puedes crear tu cuenta y empezar en [app.aichef.pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=alergenos-lista).
 
 
 
@@ -152,4 +152,4 @@ Para que puedas probarlo sin compromiso, en AI Chef Pro tienes el plan AI Chef M
 
 ## Conclusión
 
-La lista de los 14 alérgenos no es un trámite administrativo más: es la frontera entre un servicio profesional y un riesgo inasumible. Como chefs, nuestra responsabilidad es garantizar que cada plato que sale de cocina lleva la información que el comensal necesita para no jugarse la salud. Apoyarse en herramientas que automaticen la detección y mantengan la carta actualizada no es un lujo, es la manera más sensata de evitar errores caros y de dormir tranquilos. Si aún no lo has hecho, prueba el plan AI Chef Miembro y descubre cuánto tiempo y preocupaciones te ahorras.
+La lista de los 14 alérgenos no es un trámite administrativo más: es la frontera entre un servicio profesional y un riesgo inasumible. Como chefs, nuestra responsabilidad es garantizar que cada plato que sale de cocina lleva la información que el comensal necesita para no jugarse la salud. Apoyarse en herramientas que automaticen la detección y mantengan la carta actualizada no es un lujo, es la manera más sensata de evitar errores caros y de dormir tranquilos. Si aún no lo has hecho, prueba el plan AI Chef Premium Pro y descubre cuánto tiempo y preocupaciones te ahorras.

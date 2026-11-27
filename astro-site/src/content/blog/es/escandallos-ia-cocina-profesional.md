@@ -293,7 +293,7 @@ No hay una herramienta mejor que otra: hay una para cada momento. Empieza con lo
 | Plantilla Excel gratis | escandallar un plato con las fórmulas puestas | un plato por hoja; los precios se cambian a mano | gratis |
 | Kit de Escandallos Pro (Excel) | toda la carta: menús, cócteles, mermas, test de rendimiento y PVP | los precios nuevos los copias tú a cada ficha | pago único |
 | Miselup (software de gestión) | guardar tus recetas y escandallos como base de datos: escandallo dinámico con merma y semáforo de margen, importador con IA de foto o PDF a escandallo | es una herramienta de gestión: guarda y ordena lo que tú le das | desde 19 €/mes por local, sin IVA (plan Mise Esencial, hasta 250 recetas) |
-| AI Chef Pro (IA generativa) | crear la receta y su ficha y sacar un borrador de escandallo con los precios que escribes; Mermas GenCal anota merma y rendimiento y Calcula Pax pasa la receta a otro número de raciones | el borrador lo revisas tú contra el albarán y la báscula | desde 10 €/mes (plan Miembro, 10.000 créditos) |
+| AI Chef Pro (IA generativa) | crear la receta y su ficha y sacar un borrador de escandallo con los precios que escribes; Mermas GenCal anota merma y rendimiento y Calcula Pax pasa la receta a otro número de raciones | el borrador lo revisas tú contra el albarán y la báscula | desde 25 €/mes (plan Premium Pro, 85.000 créditos) |
 
 La idea que resume todo esto es «uno crea, el otro guarda». AI Chef Pro genera: receta, ficha técnica, borrador de escandallo y el cálculo de la merma con Mermas GenCal a partir de tus pesos. Miselup gestiona y guarda: tu recetario con sus escandallos, márgenes y fichas, y también lo que hayas creado con los agentes. Puedes usar uno, el otro o los dos, según cómo trabajes.
 
@@ -303,17 +303,16 @@ Eso sí: la herramienta no sustituye a la báscula ni al albarán; el escandallo
 
 ### Planes y Precios de AI Chef Pro
 
-Antes de decidir nada, puedes empezar con el plan Miembro, por 10 € al mes, y ver si la herramienta encaja en tu operativa. Todos los planes incluyen acceso a los agentes de IA, pero la capacidad de uso varía según los créditos mensuales.
+Antes de decidir nada, puedes empezar con el plan Premium Pro, por 25 € al mes, y ver si la herramienta encaja en tu operativa. Todos los planes incluyen acceso a los agentes de IA, pero la capacidad de uso varía según los créditos mensuales.
 
 | Plan | Precio | Créditos/mes |
 | :--- | :---: | :--- |
-| Miembro | 10 €/mes | 10.000 |
 | Premium Pro | 25 €/mes | 85.000 |
 | Premium Plus | 50 €/mes | 175.000 |
 | Premium Max | 95 €/mes | Ilimitados |
 | Premium Max anual | 950 €/año | Ilimitados |
 
-Los créditos ilimitados son exclusivos de Premium Max, mensual o anual. Si tu volumen de trabajo es alto, la opción anual te da margen de sobra sin preocuparte por el contador. Para empezar con el plan Miembro y probar los escandallos con IA, solo tienes que [acceder a la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=escandallos).
+Los créditos ilimitados son exclusivos de Premium Max, mensual o anual. Si tu volumen de trabajo es alto, la opción anual te da margen de sobra sin preocuparte por el contador. Para empezar con el plan Premium Pro y probar los escandallos con IA, solo tienes que [acceder a la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=escandallos).
 
 ## Preguntas que Deberías Hacerte Antes de Fijar tu Carta
 

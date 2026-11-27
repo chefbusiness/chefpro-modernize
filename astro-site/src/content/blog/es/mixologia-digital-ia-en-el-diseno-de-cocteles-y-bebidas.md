@@ -27,7 +27,7 @@ wpId: 1753
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 15px; margin: 30px 0;">
 <h3 style="color: #ffffff; margin-top: 0; font-size: 24px; text-align: center;">🍸 Revoluciona Tu Bar con AI Chef Pro</h3>
 <p style="color: #ffffff; font-size: 16px; line-height: 1.6; text-align: center;">Descubre cómo <strong>Bar &amp; Lounge AI+</strong> puede transformar tu carta de cócteles con combinaciones innovadoras basadas en <a href="https://aichef.pro/blog/que-es-la-inteligencia-artificial-generativa">inteligencia artificial generativa</a>. Crea bebidas únicas que sorprenderán a tus clientes.</p>
-<div style="text-align: center; margin-top: 20px;"><a style="background-color: #ffffff; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">AI Chef Miembro</a></div>
+<div style="text-align: center; margin-top: 20px;"><a style="background-color: #ffffff; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">AI Chef Premium Pro</a></div>
 </div>
 
 
@@ -320,7 +320,7 @@ wpId: 1753
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>Robots Bartender Físicos</th><th>Apps Genéricas de Recetas</th><th>Sistemas POS con IA</th></tr></thead><tbody><tr><td><strong>Generación creativa de recetas</strong></td><td>✅ Avanzada, contextual</td><td>❌ Limitada a recetas precargadas</td><td>⚠️ Básica, poco especializada</td><td>❌ No disponible</td></tr><tr><td><strong>Adaptación a ingredientes disponibles</strong></td><td>✅ Total flexibilidad</td><td>⚠️ Limitada a 12-20 ingredientes</td><td>⚠️ Sustituciones genéricas</td><td>❌ No aplicable</td></tr><tr><td><strong>Personalización según perfil del bar</strong></td><td>✅ Aprende de tus preferencias</td><td>❌ Sin personalización</td><td>❌ Genérico</td><td>⚠️ Básica</td></tr><tr><td><strong>Optimización de carta</strong></td><td>✅ Análisis integral</td><td>❌ No disponible</td><td>❌ No disponible</td><td>✅ Basada en ventas históricas</td></tr><tr><td><strong>Gestión de costes y mermas</strong></td><td>✅ Herramientas específicas</td><td>⚠️ Control básico de inventario</td><td>❌ No disponible</td><td>✅ Gestión completa</td></tr><tr><td><strong>Preparación física de bebidas</strong></td><td>❌ Requiere bartender humano</td><td>✅ Automatizada</td><td>❌ Requiere bartender humano</td><td>❌ Requiere bartender humano</td></tr><tr><td><strong>Idioma español especializado</strong></td><td>✅ Nativo y optimizado</td><td>⚠️ Limitado o inexistente</td><td>⚠️ Traducciones genéricas</td><td>✅ Depende del proveedor</td></tr><tr><td><strong>Coste de implementación</strong></td><td>💰 Desde 10€/mes</td><td>💰💰💰 15,000-50,000€</td><td>💰 Gratis-20€/mes</td><td>💰💰 100-500€/mes</td></tr><tr><td><strong>Formación y soporte</strong></td><td>✅ Mentoría especializada disponible</td><td>⚠️ Técnico, no mixológico</td><td>❌ Mínimo o inexistente</td><td>✅ Soporte técnico completo</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>Robots Bartender Físicos</th><th>Apps Genéricas de Recetas</th><th>Sistemas POS con IA</th></tr></thead><tbody><tr><td><strong>Generación creativa de recetas</strong></td><td>✅ Avanzada, contextual</td><td>❌ Limitada a recetas precargadas</td><td>⚠️ Básica, poco especializada</td><td>❌ No disponible</td></tr><tr><td><strong>Adaptación a ingredientes disponibles</strong></td><td>✅ Total flexibilidad</td><td>⚠️ Limitada a 12-20 ingredientes</td><td>⚠️ Sustituciones genéricas</td><td>❌ No aplicable</td></tr><tr><td><strong>Personalización según perfil del bar</strong></td><td>✅ Aprende de tus preferencias</td><td>❌ Sin personalización</td><td>❌ Genérico</td><td>⚠️ Básica</td></tr><tr><td><strong>Optimización de carta</strong></td><td>✅ Análisis integral</td><td>❌ No disponible</td><td>❌ No disponible</td><td>✅ Basada en ventas históricas</td></tr><tr><td><strong>Gestión de costes y mermas</strong></td><td>✅ Herramientas específicas</td><td>⚠️ Control básico de inventario</td><td>❌ No disponible</td><td>✅ Gestión completa</td></tr><tr><td><strong>Preparación física de bebidas</strong></td><td>❌ Requiere bartender humano</td><td>✅ Automatizada</td><td>❌ Requiere bartender humano</td><td>❌ Requiere bartender humano</td></tr><tr><td><strong>Idioma español especializado</strong></td><td>✅ Nativo y optimizado</td><td>⚠️ Limitado o inexistente</td><td>⚠️ Traducciones genéricas</td><td>✅ Depende del proveedor</td></tr><tr><td><strong>Coste de implementación</strong></td><td>💰 Desde 25€/mes</td><td>💰💰💰 15,000-50,000€</td><td>💰 Gratis-20€/mes</td><td>💰💰 100-500€/mes</td></tr><tr><td><strong>Formación y soporte</strong></td><td>✅ Mentoría especializada disponible</td><td>⚠️ Técnico, no mixológico</td><td>❌ Mínimo o inexistente</td><td>✅ Soporte técnico completo</td></tr></tbody></table></div></figure>
 
 
 
@@ -675,7 +675,7 @@ wpId: 1753
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Ideal Para</th><th>Características Clave</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Bartenders freelance, bares pequeños, cafeterías con cócteles</td><td>Todos los agentes con 10.000 créditos al mes, sin permanencia</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Bares medianos, restaurantes con bar completo</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Cocktail bars, lounges premium</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Cadenas, grupos de restauración, consultores</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Ideal Para</th><th>Características Clave</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Bartenders freelance, bares pequeños y medianos, restaurantes con bar completo</td><td>Todos los agentes con 85.000 créditos al mes, sin permanencia</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Cocktail bars, lounges premium</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Cadenas, grupos de restauración, consultores</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 
@@ -1156,8 +1156,8 @@ wpId: 1753
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 15px; margin: 30px 0;">
 <h3 style="color: #ffffff; margin-top: 0; font-size: 24px; text-align: center;">🚀 Únete a la Revolución de la Mixología Digital</h3>
-<p style="color: #ffffff; font-size: 16px; line-height: 1.6; text-align: center;">Prueba <strong>AI Chef Pro</strong> en tu bar. Comienza hoy mismo con nuestro plan AI Chef Miembro y descubre el potencial de la inteligencia artificial aplicada a la coctelería profesional.</p>
-<div style="text-align: center; margin-top: 20px;"><a style="background-color: #ffffff; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">Empieza con AI Chef Miembro</a></div>
+<p style="color: #ffffff; font-size: 16px; line-height: 1.6; text-align: center;">Prueba <strong>AI Chef Pro</strong> en tu bar. Comienza hoy mismo con nuestro plan AI Chef Premium Pro y descubre el potencial de la inteligencia artificial aplicada a la coctelería profesional.</p>
+<div style="text-align: center; margin-top: 20px;"><a style="background-color: #ffffff; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">Empieza con AI Chef Premium Pro</a></div>
 </div>
 
 
@@ -1232,11 +1232,7 @@ wpId: 1753
 
 
 <ul class="wp-block-list">
-<li><strong>Plan AI Chef Miembro</strong>: 10 €/mes con 10.000 créditos para probar toda la plataforma sin permanencia</li>
-
-
-
-<li><strong>Premium Pro</strong>: 25 €/mes con 85.000 créditos, para cocktail bars con más volumen</li>
+<li><strong>Plan AI Chef Premium Pro</strong>: 25 €/mes con 85.000 créditos para trabajar con toda la plataforma sin permanencia</li>
 
 
 
@@ -1279,7 +1275,7 @@ wpId: 1753
 
 
 
-<p class="wp-block-paragraph">¡Absolutamente! De hecho, <strong>AI Chef Pro es particularmente valioso para bares pequeños y emprendedores</strong> precisamente porque ofrece capacidades que normalmente solo estarían al alcance de grandes operaciones con equipos extensos. El plan Miembro (10 €/mes) basta para un bar pequeño que quiera probar, y Premium Pro (25 €/mes) para quien lo use a diario. Los dos dan acceso a todos los agentes, así que un bartender independiente, un pop-up o un bar boutique trabajan con las mismas herramientas que una cadena.</p>
+<p class="wp-block-paragraph">¡Absolutamente! De hecho, <strong>AI Chef Pro es particularmente valioso para bares pequeños y emprendedores</strong> precisamente porque ofrece capacidades que normalmente solo estarían al alcance de grandes operaciones con equipos extensos. El plan Premium Pro (25 €/mes) basta para un bar pequeño que lo use a diario, y Premium Plus (50 €/mes) para quien necesite más volumen. Los dos dan acceso a todos los agentes, así que un bartender independiente, un pop-up o un bar boutique trabajan con las mismas herramientas que una cadena.</p>
 
 
 
@@ -1369,7 +1365,7 @@ wpId: 1753
 
 
 
-<p class="wp-block-paragraph">Además, todos los planes incluyen todos los agentes y soporte técnico. Lo que cambia entre ellos es la cantidad de créditos y el nivel de soporte: por email en Miembro, prioritario en Premium Pro y 24/7 en Premium Plus y Premium Max.</p>
+<p class="wp-block-paragraph">Además, todos los planes incluyen todos los agentes y soporte técnico. Lo que cambia entre ellos es la cantidad de créditos y el nivel de soporte: prioritario en Premium Pro y 24/7 en Premium Plus y Premium Max.</p>
 
 
 
@@ -1419,7 +1415,7 @@ wpId: 1753
 
 
 
-<p class="wp-block-paragraph"><strong>AI Chef Pro</strong>, con su suite completa de herramientas especializadas lideradas por <strong>Bar &amp; Lounge AI+</strong>, representa la plataforma más completa y accesible para profesionales hispanohablantes que desean integrar IA en su práctica mixológica. Con planes desde 10€/mes hasta soluciones enterprise, existe una opción para cada tipo de establecimiento y presupuesto.</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro</strong>, con su suite completa de herramientas especializadas lideradas por <strong>Bar &amp; Lounge AI+</strong>, representa la plataforma más completa y accesible para profesionales hispanohablantes que desean integrar IA en su práctica mixológica. Con planes desde 25€/mes hasta soluciones enterprise, existe una opción para cada tipo de establecimiento y presupuesto.</p>
 
 
 
@@ -1429,8 +1425,8 @@ wpId: 1753
 
 <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 40px; border-radius: 15px; margin: 40px 0; text-align: center;">
 <h3 style="color: #ffffff; margin-top: 0; font-size: 28px;">🍹 Comienza Tu Transformación Digital Hoy</h3>
-<p style="color: #ffffff; font-size: 18px; line-height: 1.8; margin: 20px 0;">No esperes a que tus competidores te adelanten. <strong>Prueba AI Chef Pro con AI Chef Miembro</strong> y descubre cómo la inteligencia artificial puede revolucionar tu bar. Sin permanencia.</p>
-<div style="margin: 30px 0;"><a style="background-color: #ffffff; color: #f5576c; padding: 18px 50px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 18px; margin: 10px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">AI Chef Miembro</a><br><a style="background-color: transparent; border: 2px solid #ffffff; color: #ffffff; padding: 16px 48px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 18px; margin: 10px;" href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">Mentoría</a></div>
+<p style="color: #ffffff; font-size: 18px; line-height: 1.8; margin: 20px 0;">No esperes a que tus competidores te adelanten. <strong>Prueba AI Chef Pro con el plan Premium Pro</strong> y descubre cómo la inteligencia artificial puede revolucionar tu bar. Sin permanencia.</p>
+<div style="margin: 30px 0;"><a style="background-color: #ffffff; color: #f5576c; padding: 18px 50px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 18px; margin: 10px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">AI Chef Premium Pro</a><br><a style="background-color: transparent; border: 2px solid #ffffff; color: #ffffff; padding: 16px 48px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 18px; margin: 10px;" href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">Mentoría</a></div>
 <p style="color: #ffffff; font-size: 14px; margin-top: 20px;">¿Tienes preguntas? <a style="color: #ffffff; text-decoration: underline;" href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas">Contáctanos</a> y nuestro equipo te asesorará personalmente.</p>
 </div>
 

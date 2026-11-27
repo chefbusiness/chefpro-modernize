@@ -627,7 +627,7 @@ wpId: 1948
 
 
 
-<p class="wp-block-paragraph">La inversión varía enormemente según el nivel de implementación. Ajustes básicos (música, iluminación, vajilla) pueden costar unos cientos de euros. Herramientas de IA como AI Chef Pro ofrecen planes desde 10€/mes. Instalaciones multisensoriales completas como las de Ultraviolet o Sublimotion requieren inversiones de cientos de miles de euros. Lo importante es comenzar con lo que tu presupuesto permita e ir escalando gradualmente.</p>
+<p class="wp-block-paragraph">La inversión varía enormemente según el nivel de implementación. Ajustes básicos (música, iluminación, vajilla) pueden costar unos cientos de euros. Herramientas de IA como AI Chef Pro ofrecen planes desde 25€/mes. Instalaciones multisensoriales completas como las de Ultraviolet o Sublimotion requieren inversiones de cientos de miles de euros. Lo importante es comenzar con lo que tu presupuesto permita e ir escalando gradualmente.</p>
 
 
 

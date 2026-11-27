@@ -656,7 +656,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph">El futuro de tu restaurante se construye hoy. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank">Empieza en AI Chef Miembro desde 10€</a> y aplica tu primer hack esta semana.</p>
+<p class="wp-block-paragraph">El futuro de tu restaurante se construye hoy. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank">Empieza en AI Chef Premium Pro desde 25€</a> y aplica tu primer hack esta semana.</p>
 
 
 

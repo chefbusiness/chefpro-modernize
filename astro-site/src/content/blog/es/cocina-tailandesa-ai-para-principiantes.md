@@ -814,7 +814,7 @@ wpId: 2666
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Plan 25€/mes</th><th>Plan 50€/mes</th><th>Plan 95€/mes</th></tr></thead><tbody><tr><td>Acceso a Cocina Tailandesa AI</td><td>✓ Completo</td><td>✓ Completo</td><td>✓ Completo</td></tr><tr><td>Recetas tailandesas disponibles</td><td>200 recetas</td><td>500 recetas</td><td>Ilimitadas</td></tr><tr><td>Generación de recetas personalizadas/mes</td><td>20 recetas</td><td>100 recetas</td><td>Ilimitadas</td></tr><tr><td>Food Pairing AI</td><td>50 consultas/mes</td><td>Ilimitado</td><td>Ilimitado + análisis avanzado</td></tr><tr><td>Mermas GenCal</td><td>✓ Básico</td><td>✓ Avanzado</td><td>✓ Profesional con informes</td></tr><tr><td>Sustitución de ingredientes tailandeses</td><td>✓ Básica</td><td>✓ Avanzada</td><td>✓ Con análisis molecular</td></tr><tr><td>Mental Coach AI</td><td>10 sesiones/mes</td><td>Ilimitado</td><td>Ilimitado + seguimiento personalizado</td></tr><tr><td>Ideal para</td><td>Principiantes explorando</td><td>Aprendices comprometidos</td><td>Profesionales y emprendedores</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Plan 25€/mes</th><th>Plan 50€/mes</th><th>Plan 95€/mes</th></tr></thead><tbody><tr><td>Acceso a Cocina Tailandesa AI</td><td>✓ Completo</td><td>✓ Completo</td><td>✓ Completo</td></tr><tr><td>Créditos al mes</td><td>85.000</td><td>175.000</td><td>Ilimitados</td></tr><tr><td>Food Pairing AI</td><td>✓ Incluido</td><td>✓ Incluido</td><td>✓ Incluido</td></tr><tr><td>Mermas GenCal</td><td>✓ Incluido</td><td>✓ Incluido</td><td>✓ Incluido</td></tr><tr><td>Sustitución de ingredientes tailandeses</td><td>✓ Incluida</td><td>✓ Incluida</td><td>✓ Incluida</td></tr><tr><td>Mental Coach AI</td><td>✓ Incluido</td><td>✓ Incluido</td><td>✓ Incluido</td></tr><tr><td>Ideal para</td><td>Principiantes explorando</td><td>Aprendices comprometidos</td><td>Profesionales y emprendedores</td></tr></tbody></table></div></figure>
 
 
 
@@ -824,10 +824,10 @@ wpId: 2666
 
 <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 30px; margin: 40px 0; border-radius: 12px; text-align: center; color: white;">
 <h3 style="color: white; margin-top: 0; font-size: 28px;">🎯 Comienza Tu Viaje en Cocina Tailandesa Hoy Mismo</h3>
-<p style="font-size: 18px; margin: 20px 0; line-height: 1.6;">Únete a más de 5,000 chefs que están dominando técnicas culinarias complejas en tiempo récord gracias a AI Chef Pro. Prueba <strong>AI Chef Miembro por 10 € al mes</strong></strong> sin compromiso.</p>
+<p style="font-size: 18px; margin: 20px 0; line-height: 1.6;">Únete a más de 5,000 chefs que están dominando técnicas culinarias complejas en tiempo récord gracias a AI Chef Pro. Prueba <strong>AI Chef Premium Pro por 25 € al mes</strong></strong> sin compromiso.</p>
 <p style="font-size: 16px; margin: 20px 0;"><strong>Incluye acceso inmediato a:</strong><br>✓ Cocina Tailandesa AI con 500+ recetas<br>✓ Food Pairing AI para combinaciones perfectas<br>✓ Mermas GenCal para optimización de costes<br>✓ Todos los recetarios regionales (20+ cocinas)</p>
 <div style="margin-top: 25px;">
-<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" style="display: inline-block; background-color: white; color: #00f2fe; padding: 18px 40px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 18px; transition: all 0.3s;">Empieza desde 10 €/mes →</a>
+<a href="https://app.aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" style="display: inline-block; background-color: white; color: #00f2fe; padding: 18px 40px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 18px; transition: all 0.3s;">Empieza desde 25 €/mes →</a>
 </div>
 </div>
 
@@ -1105,7 +1105,7 @@ wpId: 2666
 
 
 
-<p class="wp-block-paragraph">El siguiente paso es simple: <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">comienza con AI Chef Miembro por 10 € al mes</a> con pago por tarjeta de crédito. Accederás inmediatamente al módulo completo de Cocina Tailandesa AI, Food Pairing AI para combinaciones innovadoras, y todas las herramientas necesarias para comenzar tu transformación culinaria hoy mismo.</p>
+<p class="wp-block-paragraph">El siguiente paso es simple: <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">comienza con AI Chef Premium Pro por 25 € al mes</a> con pago por tarjeta de crédito. Accederás inmediatamente al módulo completo de Cocina Tailandesa AI, Food Pairing AI para combinaciones innovadoras, y todas las herramientas necesarias para comenzar tu transformación culinaria hoy mismo.</p>
 
 
 
@@ -1117,7 +1117,7 @@ wpId: 2666
 
 
 
-<p class="wp-block-paragraph"><strong>Empieza ahora:</strong> <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">Accede a AI Chef Pro desde 10 € al mes</a> y comienza a crear tu primer Pad Thai perfecto esta misma semana.</p>
+<p class="wp-block-paragraph"><strong>Empieza ahora:</strong> <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">Accede a AI Chef Pro desde 25 € al mes</a> y comienza a crear tu primer Pad Thai perfecto esta misma semana.</p>
 
 
 

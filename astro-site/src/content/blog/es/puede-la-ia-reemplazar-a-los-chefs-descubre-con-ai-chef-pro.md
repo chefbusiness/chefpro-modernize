@@ -18,7 +18,7 @@ faq:
   - q: "¿Corren peligro los puestos junior y de prácticas con la llegada de la IA?"
     a: "Se transforman, no desaparecen necesariamente. Las tareas puramente administrativas que solían recaer en becarios sí se automatizan. Pero el objetivo debería ser que ese tiempo liberado se dedique a lo que de verdad forma a un cocinero: mise en place, cuchillo, técnica y observación del servicio."
   - q: "¿Es caro empezar a usar IA en un restaurante pequeño?"
-    a: "No tiene por qué. Existen herramientas con planes desde 10 € al mes que permiten probar sin permanencia. AI Chef Pro, por ejemplo, ofrece el plan AI Chef Miembro por 10 € al mes con 10.000 créditos, sin permanencia. Con eso bastan varios escandallos y fichas para ver si la herramienta encaja en tu negocio antes de gastar un euro."
+    a: "No tiene por qué. Existen herramientas con planes desde 25 € al mes que permiten probar sin permanencia. AI Chef Pro, por ejemplo, ofrece el plan AI Chef Premium Pro por 25 € al mes con 85.000 créditos, sin permanencia. Con eso tienes margen de sobra para tus escandallos y fichas y para ver si la herramienta encaja en tu negocio antes de comprometerte."
   - q: "¿Qué diferencia a AI Chef Pro de otras herramientas de IA?"
     a: "Está entrenada específicamente para hostelería, con más de 70 agentes culinarios en 7 idiomas, español nativo incluido. No es una IA genérica adaptada: el vocabulario, las estructuras de ficha técnica y los cálculos de escandallo responden al oficio real. La han construido chefs y consultores, no solo ingenieros."
 ---
@@ -137,9 +137,9 @@ La clave es empezar por tareas concretas que ya te quitan tiempo y no te aportan
 
 AI Chef Pro ofrece más de 70 agentes de IA culinarios, en 7 idiomas, con español nativo. La mayoría de las herramientas que he visto en el mercado son genéricas; aquí hablamos de agentes entrenados específicamente para hostelería, lo cual se nota en la calidad del output.
 
-Lo sensato es empezar por el plan AI Chef Miembro: 10 € al mes con 10.000 créditos, sin permanencia. Si le ves utilidad real en tu día a día, el plan Premium Pro son 25 € al mes (85.000 créditos). Para quien quiera más margen, Plus por 50 € (175.000 créditos) y Max por 95 € al mes con créditos ilimitados. Si prefieres facturación anual, el Max Anual sale por 950 € al año.
+Lo sensato es empezar por el plan AI Chef Premium Pro: 25 € al mes con 85.000 créditos, sin permanencia. Si le ves utilidad real en tu día a día y quieres más margen, tienes Plus por 50 € (175.000 créditos) y Max por 95 € al mes con créditos ilimitados. Si prefieres facturación anual, el Max Anual sale por 950 € al año.
 
-¿Mi recomendación sincera? Prueba el plan AI Chef Miembro. Úsalo una semana para tus escandallos reales y alguna ficha técnica atrasada. Si te devuelve tres horas de vida a la semana, ya tienes tu respuesta. Puedes empezar aquí mismo: [prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=reemplazar-chefs).
+¿Mi recomendación sincera? Prueba el plan AI Chef Premium Pro. Úsalo una semana para tus escandallos reales y alguna ficha técnica atrasada. Si te devuelve tres horas de vida a la semana, ya tienes tu respuesta. Puedes empezar aquí mismo: [prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=reemplazar-chefs).
 
 ## Conclusión
 

@@ -16,7 +16,7 @@ faq:
   - q: "¿Qué es un TPV para restaurantes?"
     a: "Un TPV es el punto de venta, el programa donde cobras y donde nace la comanda que llega a cocina. Además de cobrar, cierra la caja del turno y te deja ver las ventas por plato, que es información muy valiosa para decidir la carta. Es la pieza central del software de un restaurante, porque casi todo lo demás se conecta a él. Muchos no calculan el coste real de cada plato ni gestionan reservas, o lo hacen con módulos aparte: pregúntalo."
   - q: "¿Cuánto cuesta un software de gestión para restaurantes?"
-    a: "Depende de cómo lo montes, porque la cuota mensual es solo una parte. Se suele cobrar por local o por terminal y mes (y hay TPV sin cuota que cobran una comisión por cada pago con tarjeta), y a eso se suman los módulos que necesites, el hardware (terminal del TPV, impresoras de cocina, tabletas) y la instalación o puesta en marcha. El consejo es calcular el coste total a doce meses y compararlo con lo que te ahorra en horas, mermas y errores. Como referencia propia, AI Chef Pro empieza en 10 euros al mes y Miselup en 19 euros al mes por local, sin IVA."
+    a: "Depende de cómo lo montes, porque la cuota mensual es solo una parte. Se suele cobrar por local o por terminal y mes (y hay TPV sin cuota que cobran una comisión por cada pago con tarjeta), y a eso se suman los módulos que necesites, el hardware (terminal del TPV, impresoras de cocina, tabletas) y la instalación o puesta en marcha. El consejo es calcular el coste total a doce meses y compararlo con lo que te ahorra en horas, mermas y errores. Como referencia propia, AI Chef Pro empieza en 25 euros al mes y Miselup en 19 euros al mes por local, sin IVA."
   - q: "¿Qué software necesito para abrir un restaurante?"
     a: "En un negocio con sala, lo mínimo para abrir es un TPV que cobre, mande comandas y cierre caja, más el cumplimiento de la normativa de facturación de tu país. Si vas a trabajar con reservas, añade gestión de sala. En cuanto empieces a servir, necesitarás controlar el coste de los platos con recetas y escandallos, y llevar el APPCC, que es obligatorio desde el primer día. En un local con equipo, los turnos también acaban pesando. El orden depende de tu tipo de negocio, pero el TPV suele ir primero."
   - q: "¿La IA sustituye al software de gestión del restaurante?"
@@ -25,7 +25,7 @@ faq:
 
 Montar o cambiar el software de un restaurante no va de comparar marcas: va de saber qué problema te está costando dinero hoy. Si cobras con una libreta y una calculadora, empieza por el TPV. Si no sabes cuánto te deja cada plato, empieza por el escandallo. Y si ya tienes las dos cosas, lo que te falta es que hablen entre ellas.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">La capa de IA de tu restaurante: recetas, fichas técnicas, carta, borradores de escandallo y alérgenos con los agentes de AI Chef Pro. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/herramientas-ia-para-restaurantes?utm_source=blog&amp;utm_medium=cta&amp;utm_content=software-para-restaurantes">Ver IA para restaurantes</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">La capa de IA de tu restaurante: recetas, fichas técnicas, carta, borradores de escandallo y alérgenos con los agentes de AI Chef Pro. Planes desde 25 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/herramientas-ia-para-restaurantes?utm_source=blog&amp;utm_medium=cta&amp;utm_content=software-para-restaurantes">Ver IA para restaurantes</a></p></aside>
 
 ## Qué Es un Software para Restaurantes
 
@@ -124,7 +124,7 @@ Piensa en cuatro cosas. Primero, la cuota mensual, por local o por terminal: si 
 
 El consejo práctico: calcula el coste a doce meses con todo incluido, hardware y puesta en marcha también, y compáralo con lo que te ahorra. Horas de administración, mermas que dejas de tirar, errores de cobro, platos con los que pierdes dinero sin saberlo. Si el número no te sale a favor, no es tu software.
 
-Solo te doy los precios que conozco de primera mano, los nuestros. AI Chef Pro empieza en 10 €/mes con el plan Miembro y 10.000 créditos. Miselup empieza en 19 €/mes por local, sin IVA, con el plan Mise Esencial.
+Solo te doy los precios que conozco de primera mano, los nuestros. AI Chef Pro empieza en 25 €/mes con el plan Premium Pro y 85.000 créditos. Miselup empieza en 19 €/mes por local, sin IVA, con el plan Mise Esencial.
 
 ## Dónde Encaja la IA en el Software de un Restaurante
 

@@ -33,7 +33,7 @@ wpId: 1838
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 5px solid #FFD700; padding: 25px 30px; margin: 35px 0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <p style="color: #FFD700; font-size: 1.3em; font-weight: bold; margin: 0 0 12px 0;">🍷 ¿Profesional del sector vitivinícola?</p>
 <p style="color: #ffffff; margin: 0 0 15px 0; line-height: 1.6;">Descubre cómo <strong style="color: #FFD700;">AI Chef Pro</strong> puede ayudarte a optimizar tus maridajes, desarrollar experiencias gastronómicas únicas y potenciar tu creatividad con herramientas como <strong style="color: #FFD700;"><a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI</strong> y <strong style="color: #FFD700;">Bar &amp; Lounge AI+</strong>.</p>
-<p style="margin: 0;"><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-elaboracion-de-vinos" target="_blank" rel="noopener" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s ease;">Prueba AI Chef Miembro →</a></p>
+<p style="margin: 0;"><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-elaboracion-de-vinos" target="_blank" rel="noopener" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s ease;">Prueba AI Chef Premium Pro →</a></p>
 </div>
 
 
@@ -271,7 +271,7 @@ wpId: 1838
 <div style="background: linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%); border-top: 4px solid #FFD700; border-bottom: 4px solid #FFD700; padding: 30px; margin: 40px 0; text-align: center;">
 <p style="color: #FFD700; font-size: 1.4em; font-weight: bold; margin: 0 0 15px 0;">🍾 Food Pairing AI + Bar &amp; Lounge AI+</p>
 <p style="color: #e0e0e0; font-size: 1.1em; margin: 0 0 20px 0; line-height: 1.6;">Domina el arte del maridaje y la coctelería con inteligencia artificial. Accede a más de 55 herramientas especializadas para profesionales de la hostelería.</p>
-<p style="margin: 0;"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-elaboracion-de-vinos" target="_blank" rel="noopener" style="display: inline-block; background-color: #FFD700; color: #0f0f0f; padding: 14px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em;">Ver Planes desde 10€/mes →</a></p>
+<p style="margin: 0;"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-elaboracion-de-vinos" target="_blank" rel="noopener" style="display: inline-block; background-color: #FFD700; color: #0f0f0f; padding: 14px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em;">Ver Planes desde 25€/mes →</a></p>
 </div>
 
 

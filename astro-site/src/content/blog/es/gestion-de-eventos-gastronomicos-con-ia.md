@@ -77,7 +77,7 @@ wpId: 1825
 <div style="flex: 1; min-width: 280px;">
 <h3 style="color: #1a1a1a; margin: 0 0 15px 0; font-size: 24px;">🎯 Revoluciona tu Servicio de Catering con IA</h3>
 <p style="color: #333; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Accede a <strong>Catering AI+</strong> y más de 80 agentes especializados para profesionales gastronómicos. Planifica eventos perfectos, calcula cantidades precisas y gestiona alérgenos sin errores.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank" style="display: inline-block; background: #1a1a1a; color: #FFD700; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: all 0.3s ease;">Empieza con AI Chef Miembro →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank" style="display: inline-block; background: #1a1a1a; color: #FFD700; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: all 0.3s ease;">Empieza con AI Chef Premium Pro →</a>
 </div>
 <div style="flex: 0 0 auto;">
 <div style="background: #1a1a1a; color: #FFD700; padding: 20px 25px; border-radius: 10px; text-align: center;">
@@ -877,7 +877,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Chefs freelance, eventos pequeños, sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Pequeñas empresas de catering</td><td>85.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Empresas de catering establecidas</td><td>175.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Grandes operadores, consultoras</td><td>Créditos ilimitados y acceso a todos los agentes</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Chefs freelance y pequeñas empresas de catering</td><td>85.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Empresas de catering establecidas</td><td>175.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Grandes operadores, consultoras</td><td>Créditos ilimitados y acceso a todos los agentes</td></tr></tbody></table></div></figure>
 
 
 
@@ -1019,7 +1019,7 @@ wpId: 1825
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">probar AI Chef Pro desde 10 €</a> y descubrir cómo puede transformar tu aproximación a los eventos gastronómicos. Para una implementación personalizada, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">contactar con nuestro equipo</a> o explorar nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">mentoría online</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">probar AI Chef Pro desde 25 €</a> y descubrir cómo puede transformar tu aproximación a los eventos gastronómicos. Para una implementación personalizada, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">contactar con nuestro equipo</a> o explorar nuestro programa de <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank">mentoría online</a>.</p>
 
 
 
@@ -1075,7 +1075,7 @@ wpId: 1825
 
 
 
-<p class="wp-block-paragraph">AI Chef Pro escala perfectamente desde eventos íntimos de 10-20 personas hasta grandes operaciones de miles de comensales. El plan AI Chef Miembro es ideal para probar las funcionalidades con eventos pequeños, mientras que Premium Pro, Premium Plus y Premium Max dan más créditos para operaciones de mayor volumen.</p>
+<p class="wp-block-paragraph">AI Chef Pro escala perfectamente desde eventos íntimos de 10-20 personas hasta grandes operaciones de miles de comensales. El plan Premium Pro es ideal para empezar con eventos pequeños, mientras que Premium Plus y Premium Max dan más créditos para operaciones de mayor volumen.</p>
 
 
 
@@ -1111,7 +1111,7 @@ wpId: 1825
 
 
 
-<p class="has-text-align-center wp-block-paragraph"><strong>¿Listo para revolucionar tu gestión de eventos gastronómicos?</strong><br><br><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank" style="color: #FF8C00; font-weight: bold;">Comienza con AI Chef Miembro en aichef.pro →</a></p>
+<p class="has-text-align-center wp-block-paragraph"><strong>¿Listo para revolucionar tu gestión de eventos gastronómicos?</strong><br><br><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=gestion-de-eventos-gastronomicos-con-ia" target="_blank" style="color: #FF8C00; font-weight: bold;">Comienza con AI Chef Premium Pro en aichef.pro →</a></p>
 
 
 

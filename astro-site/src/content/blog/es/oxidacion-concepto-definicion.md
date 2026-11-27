@@ -236,7 +236,7 @@ wpId: 3264
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Química Culinaria con AI Chef Pro</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para técnicas de conservación, prevención de oxidación y más.<br />     Recetas paso a paso y explicaciones científicas.   </p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=oxidacion-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     HAZTE MIEMBRO AHORA →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 10 € al mes · Sin permanencia · 48.733+ recetas generadas   </p>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=oxidacion-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     EMPIEZA CON PREMIUM PRO →   </a>   </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 25 € al mes · Sin permanencia · 48.733+ recetas generadas   </p>
 </p></div>
 <p><strong>¿Listo para mantener tus preparaciones perfectas?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=oxidacion-concepto-definicion">AI Chef Pro</a>.</p>
