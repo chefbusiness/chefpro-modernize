@@ -199,7 +199,33 @@ ES, ya publicado, con hreflang actualizado a las siete:
 - https://aichef.pro/blog/fondo-blanco-concepto-y-definicion
 - https://aichef.pro/blog/deglasear-concepto-definicion
 
-Velouté sigue solo en https://aichef.pro/blog/salsa-veloute-concepto-y-definicion. Las fichas nuevas lo nombran y no lo enlazan. Las horas y la temperatura del fondo blanco son las de la ficha española, no una medición nueva.
+Velouté y salsa española tienen las siete versiones desde el 2026-11-24 (sección siguiente). Las horas y la temperatura del fondo blanco son las de la ficha española, no una medición nueva.
+
+## Glosario — paridad de velouté y salsa española (2026-11-24)
+
+No se midieron volúmenes. Las dosis, los minutos de roux y de cocción, y los días de nevera y congelador son los de las fichas españolas. El slug sale del nombre que esa cocina usa. No había ficha previa en otro idioma: se buscaron velouté, velouté sauce, vellutata, espagnole, sauce espagnole, spanische Sauce, salsa spagnola, Spaanse saus y molho espanhol. Las imágenes de las fichas españolas se reutilizan, destacada y de cuerpo, sin banco de fotos.
+
+| Término | Keyword de cabeza | Slug | URL de producción |
+|---|---|---|---|
+| Velouté EN | velouté | `what-is-veloute` | https://aichef.pro/en/blog/what-is-veloute |
+| Velouté FR | velouté | `veloute` | https://aichef.pro/fr/blog/veloute |
+| Velouté DE | Velouté | `veloute` | https://aichef.pro/de/blog/veloute |
+| Velouté IT | vellutata (velouté es el nombre francés) | `vellutata` | https://aichef.pro/it/blog/vellutata |
+| Velouté NL | velouté | `veloute` | https://aichef.pro/nl/blog/veloute |
+| Velouté PT | velouté (PT-PT) | `veloute` | https://aichef.pro/pt/blog/veloute |
+| Salsa española EN | espagnole (Spanish sauce es el otro nombre) | `what-is-espagnole` | https://aichef.pro/en/blog/what-is-espagnole |
+| Salsa española FR | sauce espagnole | `sauce-espagnole` | https://aichef.pro/fr/blog/sauce-espagnole |
+| Salsa española DE | Espagnole (spanische Sauce es el otro nombre) | `espagnole` | https://aichef.pro/de/blog/espagnole |
+| Salsa española IT | salsa spagnola | `salsa-spagnola` | https://aichef.pro/it/blog/salsa-spagnola |
+| Salsa española NL | Spaanse saus | `spaanse-saus` | https://aichef.pro/nl/blog/spaanse-saus |
+| Salsa española PT | molho espanhol (PT-PT) | `molho-espanhol` | https://aichef.pro/pt/blog/molho-espanhol |
+
+ES, ya publicado, con hreflang actualizado a las siete:
+
+- https://aichef.pro/blog/salsa-veloute-concepto-y-definicion
+- https://aichef.pro/blog/salsa-espanola-concepto-y-definicion
+
+Siguen solo en español la holandesa, la bechamel y la bearnesa. Salsas madre: ya están `fr/sauces-meres`, `de/grundsaucen` e `it/salse-madri`, fuera del glosario; faltan EN, NL y PT. El roux neerlandés y el portugués no nombraban estas salsas y no se han tocado.
 
 ## ES estacional 2026-11-18
 

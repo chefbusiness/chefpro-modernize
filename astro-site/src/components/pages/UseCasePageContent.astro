@@ -405,7 +405,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
             <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
               {content.h1}
             </h1>
-            <p class="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto text-balance" set:html={linkifyHtml(content.heroSubtitle, APP_URL)} />
+            <p class="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto text-balance" set:html={linkifyHtml(content.heroSubtitle, APP_URL, lang)} />
             <p class={`text-lg font-semibold ${theme.text} ${content.captureLink ? 'mb-4' : 'mb-10'}`}>{content.heroTagline}</p>
             {content.captureLink && (
               <p class="text-base text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -468,7 +468,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                     <div>
                       <div class={`${BADGE_DEFAULT} mb-3 text-xs`}>{ui.onboardingBadge}</div>
                       <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">{content.personalizationTitle}</h2>
-                      <p class="text-base md:text-lg text-muted-foreground leading-relaxed" set:html={linkifyHtml(content.personalizationBody, APP_URL)} />
+                      <p class="text-base md:text-lg text-muted-foreground leading-relaxed" set:html={linkifyHtml(content.personalizationBody, APP_URL, lang)} />
                     </div>
                   </div>
                 </div>
@@ -528,10 +528,10 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                   <div class={`w-14 h-14 ${theme.bg} rounded-xl flex items-center justify-center mb-4`}>
                     <Icon name={feature.icon} class={`h-7 w-7 ${theme.text}`} />
                   </div>
-                  <h3 class={`${CARD_TITLE} text-xl`} set:html={linkifyHtml(feature.title, APP_URL)} />
+                  <h3 class={`${CARD_TITLE} text-xl`} set:html={linkifyHtml(feature.title, APP_URL, lang)} />
                 </div>
                 <div class={CARD_CONTENT}>
-                  <p class="text-muted-foreground" set:html={linkifyHtml(feature.description, APP_URL)} />
+                  <p class="text-muted-foreground" set:html={linkifyHtml(feature.description, APP_URL, lang)} />
                 </div>
               </div>
             ))}
@@ -557,7 +557,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                         <Icon name="ArrowRight" class={`h-4 w-4 ${theme.text} flex-shrink-0 mt-1 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-transform`} />
                       </div>
                       <div class={`${BADGE_SECONDARY} text-xs mb-2`}>{app.category}</div>
-                      <p class="text-sm text-muted-foreground leading-snug" set:html={linkifyHtml(app.description, APP_URL)} />
+                      <p class="text-sm text-muted-foreground leading-snug" set:html={linkifyHtml(app.description, APP_URL, lang)} />
                     </div>
                   </div>
                 </a>
@@ -585,7 +585,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                   <div class={`w-10 h-10 rounded-full ${theme.bg} flex items-center justify-center font-bold ${theme.text} flex-shrink-0`}>
                     {i + 1}
                   </div>
-                  <p class="text-foreground pt-1" set:html={linkifyHtml(step, APP_URL)} />
+                  <p class="text-foreground pt-1" set:html={linkifyHtml(step, APP_URL, lang)} />
                 </div>
               </div>
             ))}
@@ -612,7 +612,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                     {content.beforeAfter.beforeItems.map((item) => (
                       <li class="flex items-start gap-2 text-sm text-muted-foreground">
                         <Icon name="X" class="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                        <span set:html={linkifyHtml(item, APP_URL)} />
+                        <span set:html={linkifyHtml(item, APP_URL, lang)} />
                       </li>
                     ))}
                   </ul>
@@ -629,7 +629,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                     {content.beforeAfter.afterItems.map((item) => (
                       <li class="flex items-start gap-2 text-sm text-foreground">
                         <Icon name="Check" class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-                        <span set:html={linkifyHtml(item, APP_URL)} />
+                        <span set:html={linkifyHtml(item, APP_URL, lang)} />
                       </li>
                     ))}
                   </ul>
@@ -686,7 +686,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
               <div class={`${CARD} shadow-sm`}>
                 <div class={`${CARD_CONTENT} pt-6`}>
                   <h3 class="font-bold text-lg text-foreground mb-2">{faq.q}</h3>
-                  <p class="text-muted-foreground" set:html={linkifyHtml(faq.a, APP_URL)} />
+                  <p class="text-muted-foreground" set:html={linkifyHtml(faq.a, APP_URL, lang)} />
                 </div>
               </div>
             ))}

@@ -127,7 +127,7 @@ Los números hablan solos. Esta tabla compara el tiempo que cuesta hacer las tar
 
 | Tarea | A mano (forma tradicional) | Con un agente de IA |
 | :--- | :--- | :--- |
-| Escandallo de un plato | De 2 a 4 horas si hay que calcular mermas y actualizar precios | Menos de 10 minutos, incluyendo recálculo automático |
+| Escandallo de un plato | De 2 a 4 horas si hay que calcular mermas y actualizar precios | Menos de 10 minutos: la IA recalcula el escandallo y el cocinero valida la cifra |
 | Diseño de una carta nueva | De 15 a 30 días, con pruebas, fotos y redacción de textos | Borrador completo en un par de horas de trabajo interactivo |
 | Ficha técnica de elaboración | Una mañana para el primer plato, luego copiar y pegar con cambios | 5 minutos por plato, con formato estandarizado |
 | Cálculo de raciones para 150 pax | Media jornada con Excel y llamadas al proveedor | 3 minutos, a partir del menú y las recetas base |

@@ -2,12 +2,20 @@
 title: "Salsa española: qué es y cómo se hace"
 description: "La salsa española es una de las cinco salsas madre francesas y, pese al nombre, no es de España. Descubre su origen, elaboración, derivadas y usos en cocina."
 pubDate: 2026-02-20
-modDate: 2026-08-31
+modDate: 2026-11-24
 category: glosario
 image: /blog-assets/2026/05/espanola-destacada.jpg
 imageAlt: "Salsa española oscura en cazo"
 lang: es
 wpId: 2735
+translations:
+  es: "salsa-espanola-concepto-y-definicion"
+  en: "what-is-espagnole"
+  fr: "sauce-espagnole"
+  de: "espagnole"
+  it: "salsa-spagnola"
+  nl: "spaanse-saus"
+  pt: "molho-espanhol"
 ---
 
 <p>Para entender <strong>qué es la salsa española</strong> basta con imaginar la unión profunda entre un <strong>fondo oscuro</strong> de carne tostada, un <strong>roux</strong> llevado hasta el punto más moreno, la dulzura caramelizada de la mirepoix y el toque ácido del tomate. Se trata de una de las cinco <strong>salsas madre</strong> de la cocina clásica, fijada por Antonin Carême en el siglo XIX y destinada a ser la base de fórmulas que marcan la alta cocina de carnes.</p>

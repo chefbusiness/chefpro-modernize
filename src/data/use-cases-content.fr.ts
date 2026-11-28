@@ -44,7 +44,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques professionnelles",
-        "description": "Cuisine Créative fournit recette + fiche technique initiale CSV avec prix de référence ; le Kit de Escandallos Pro le gère avec vos prix réels."
+        "description": "Cuisine Créative fournit recette + fiche technique initiale CSV avec prix de référence ; le Kit de Escandallos Pro le gère avec vos prix réels."
       },
       {
         "icon": "ShieldCheck",
@@ -340,7 +340,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Remplace-t-il le logiciel de réservation ou le logiciel de caisse ?",
-        "a": "Non, il complète. Cover Manager ou The Fork gèrent les réservations et le logiciel de caisse gère les ventes ; AI Chef Pro gère les coûts, le personnel, l'APPCC, l'inventaire et l'opérationnel interne. Les données sont parfaitement compatibles via Excel."
+        "a": "Non, il complète. Cover Manager ou The Fork gèrent les réservations et le logiciel de caisse gère les ventes ; AI Chef Pro gère les coûts, le personnel, l'APPCC, l'inventaire et l'opérationnel interne. Les données sont parfaitement compatibles via Excel."
       },
       {
         "q": "L'équipe a-t-elle besoin de formation ?",
@@ -575,7 +575,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment garantit-on le même standard dans toutes les unités ?",
-        "a": "Chef Exécutif Pro standardise les recettes et les fiches techniques ; le Pack APPCC unifie la traçabilité ; le Kit de Escandallos Pro maintient les mêmes calculs dans tous les établissements. Les manuels se répliquent en un clic et se mettent à jour depuis un point unique."
+        "a": "Chef Exécutif Pro standardise les recettes et les fiches techniques ; le Pack APPCC unifie la traçabilité ; le Kit de Escandallos Pro maintient les mêmes calculs dans tous les établissements. Les manuels se répliquent en un clic et se mettent à jour depuis un point unique."
       },
       {
         "q": "Y a-t-il des réductions pour les groupes avec plusieurs établissements ?",
@@ -1162,7 +1162,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "afterTitle": "Avec AI Chef Pro",
       "afterItems": [
         "Recettes centralisées avec coût, allergènes, technique et storytelling",
-        "Fiche de coût avec IA que vous mettez à jour quand un prix change ; la validation finale est du cuisinier",
+        "Fiche de coût avec IA que vous mettez à jour quand un prix change ; la validation finale est du cuisinier",
         "APPCC depuis le mobile avec enregistrements et alertes, prêt pour l'inspection",
         "Renouveler la carte en 1-3 jours avec Cuisine Créative + Kit de Escandallos Pro",
         "Manuels de formation réplicables avec le script du Pro Prompts eBook"
@@ -1213,7 +1213,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs de coûts rapides",
-        "description": "Cuisine Créative fournit recette + calcul de coût CSV ; le Kit de Escandallos Pro le gère avec vos prix réels et vous validez la marge instantanément."
+        "description": "Cuisine Créative fournit recette + calcul de coût CSV ; le Kit de Escandallos Pro le gère avec vos prix réels et vous validez la marge instantanément."
       },
       {
         "icon": "GraduationCap",
@@ -1657,7 +1657,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques par événement",
-        "description": "Cuisine Créative fournit la recette + la fiche technique CSV ; Kit de Escandallos Pro la gère avec vos prix réels et votre marge cible."
+        "description": "Cuisine Créative fournit la recette + la fiche technique CSV ; Kit de Escandallos Pro la gère avec vos prix réels et votre marge cible."
       },
       {
         "icon": "Users",
@@ -1733,7 +1733,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment cela m'aide-t-il à attirer des clients d'entreprise ?",
-        "a": "BlogPost SEO Gen+ et MenuDish Local SEO attirent du trafic organique vers votre site web ; Traiteur IA+ aide à rédiger des propositions professionnelles ; GastroIMG Gen+ génère des photographies pour les présentations ; Keyword Discovery AI+ trouve les recherches réelles des entreprises dans votre région."
+        "a": "BlogPost SEO Gen+ et MenuDish Local SEO attirent du trafic organique vers votre site web ; Traiteur IA+ aide à rédiger des propositions professionnelles ; GastroIMG Gen+ génère des photographies pour les présentations ; Keyword Discovery AI+ trouve les recherches réelles des entreprises dans votre région."
       },
       {
         "q": "Est-il sûr de confier le plan financier à une IA ?",
@@ -1889,7 +1889,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs de coût par verre",
-        "description": "Bar & Lounge AI+ fournit la recette + le calcul de coût CSV avec la technique ; Kit de Escandallos Pro le gère avec le coût réel par verre, le food cost % et le prix suggéré."
+        "description": "Bar & Lounge AI+ fournit la recette + le calcul de coût CSV avec la technique ; Kit de Escandallos Pro le gère avec le coût réel par verre, le food cost % et le prix suggéré."
       },
       {
         "icon": "BookOpen",
@@ -1942,7 +1942,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "AI Chef Pro a changé ma façon de finaliser les cartes de cocktails. Avant, c'était une semaine de serviettes et de calculatrice ; maintenant, c'est une journée avec un calcul de coût professionnel, une fiche technique avec storytelling et accords validés, prête à être répliquée par mon équipe. Nous avons augmenté la marge de 5 points et triplé l'engagement sur Instagram avec GastroIMG.",
+    "testimonialQuote": "AI Chef Pro a changé ma façon de finaliser les cartes de cocktails. Avant, c'était une semaine de serviettes et de calculatrice ; maintenant, c'est une journée avec un calcul de coût professionnel, une fiche technique avec storytelling et accords validés, prête à être répliquée par mon équipe. Nous avons augmenté la marge de 5 points et triplé l'engagement sur Instagram avec GastroIMG.",
     "testimonialAuthor": "Hugo Vázquez",
     "testimonialRole": "Barman, bar à cocktails d'auteur",
     "faqTitle": "Questions Fréquentes des Barmans",
@@ -1961,7 +1961,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram et la carte ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de chaque verre pour Instagram, le web et la carte ; InstaFlow AI Pro planifie le contenu avec un calendrier éditorial. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la réalisez avec votre cocktail réellement dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de chaque verre pour Instagram, le web et la carte ; InstaFlow AI Pro planifie le contenu avec un calendrier éditorial. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la réalisez avec votre cocktail réellement dressé."
       },
       {
         "q": "Comment m'aide-t-il avec la saisonnalité de la carte ?",
@@ -2117,7 +2117,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs par pizza",
-        "description": "Cuisine Italienne fournit recette + fichier CSV de coût ; Kit de Escandallos Pro le gère avec coût réel par pizza, food cost % et prix suggéré."
+        "description": "Cuisine Italienne fournit recette + fichier CSV de coût ; Kit de Escandallos Pro le gère avec coût réel par pizza, food cost % et prix suggéré."
       },
       {
         "icon": "CheckSquare",
@@ -2189,7 +2189,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram, Glovo et Uber Eats ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour Instagram, les plateformes de livraison et la carte ; meilleure photo = plus de clics et un meilleur classement. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre pizza fraîchement cuite."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour Instagram, les plateformes de livraison et la carte ; meilleure photo = plus de clics et un meilleur classement. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre pizza fraîchement cuite."
       },
       {
         "q": "Comment m'aide-t-il avec la saisonnalité et les événements ?",
@@ -2350,7 +2350,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcul de coût par pièce avec coût horaire d'atelier",
-        "description": "Cuisine Créative fournit recette + calcul de coût CSV ; Kit de Escandallos Pro le gère avec coût horaire d'atelier intégré dans la marge réelle par miche, baguette ou brioche."
+        "description": "Cuisine Créative fournit recette + calcul de coût CSV ; Kit de Escandallos Pro le gère avec coût horaire d'atelier intégré dans la marge réelle par miche, baguette ou brioche."
       },
       {
         "icon": "CheckSquare",
@@ -2417,7 +2417,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour la vitrine, Instagram et Pinterest ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du pain pour la vitrine, le web et les réseaux ; Pinterest Pins Gen capte un trafic organique stable que la boulangerie artisanale exploite beaucoup. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre miche fraîchement cuite."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du pain pour la vitrine, le web et les réseaux ; Pinterest Pins Gen capte un trafic organique stable que la boulangerie artisanale exploite beaucoup. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre miche fraîchement cuite."
       },
       {
         "q": "Comment m'aide-t-il avec la saisonnalité et les événements ?",
@@ -2573,7 +2573,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques par pièce avec coût horaire du laboratoire",
-        "description": "Cuisine Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro la gère avec le coût horaire du laboratoire intégré dans la marge réelle par chocolat et par boîte."
+        "description": "Cuisine Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro la gère avec le coût horaire du laboratoire intégré dans la marge réelle par chocolat et par boîte."
       },
       {
         "icon": "Beaker",
@@ -2646,7 +2646,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu pour la vitrine, les réseaux sociaux et le packaging ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de chaque chocolat pour la vitrine, le site web et les réseaux sociaux ; Pinterest Pins Gen + InstaFlow AI Pro programment le contenu visuel ; MenuDish Local SEO capte les clients locaux. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre chocolat réellement dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de chaque chocolat pour la vitrine, le site web et les réseaux sociaux ; Pinterest Pins Gen + InstaFlow AI Pro programment le contenu visuel ; MenuDish Local SEO capte les clients locaux. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre chocolat réellement dressé."
       },
       {
         "q": "Comment m'aide-t-il avec la forte saisonnalité ?",
@@ -2807,7 +2807,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcula Pax + Escandallos",
-        "description": "Calcula Pax escalade les recettes à 2, 6, 12 convives ; Kit de Escandallos Pro le gère avec un coût réel par dîner privé et un prix personnalisé."
+        "description": "Calcula Pax escalade les recettes à 2, 6, 12 convives ; Kit de Escandallos Pro le gère avec un coût réel par dîner privé et un prix personnalisé."
       },
       {
         "icon": "CheckSquare",
@@ -2877,7 +2877,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment m'aide-t-il à attirer des clients récurrents ?",
-        "a": "GastroIMG Gen+ + InstaFlow AI Pro construisent un contenu visuel constant ; MenuDish Local SEO capture les clients locaux qui recherchent \"chef privé à [ville]\" ; Gastro Calendar aide à proposer des menus saisonniers (Noël intime, Saint-Valentin, anniversaires) pour fidéliser."
+        "a": "GastroIMG Gen+ + InstaFlow AI Pro construisent un contenu visuel constant ; MenuDish Local SEO capture les clients locaux qui recherchent \"chef privé à [ville]\" ; Gastro Calendar aide à proposer des menus saisonniers (Noël intime, Saint-Valentin, anniversaires) pour fidéliser."
       }
     ],
     "ctaTitle": "Votre service de chef privé avec une marge réelle et une proposition d'auteur.",
@@ -3039,7 +3039,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcul des coûts croisé",
-        "description": "Cuisine Créative fournit la recette + le calcul des coûts CSV ; Kit de Escandallos Pro le gère avec un coût croisé entre points de vente et une marge intégrée."
+        "description": "Cuisine Créative fournit la recette + le calcul des coûts CSV ; Kit de Escandallos Pro le gère avec un coût croisé entre points de vente et une marge intégrée."
       },
       {
         "icon": "CheckSquare",
@@ -3097,11 +3097,11 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment adapter les calculs de coûts pour des banquets de 50, 100 ou 300 pax ?",
-        "a": "Calcula Pax ajuste les recettes sans perdre en précision ; Kit de Escandallos Pro recalcule le coût par pax et la proposition économique pour le client corporatif ou de mariage."
+        "a": "Calcula Pax ajuste les recettes sans perdre en précision ; Kit de Escandallos Pro recalcule le coût par pax et la proposition économique pour le client corporatif ou de mariage."
       },
       {
         "q": "Génère-t-il un contenu visuel cohérent pour l'Instagram de l'hôtel ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour les quatre points de vente avec cohérence de marque ; InstaFlow AI Pro programme Instagram. N'oubliez pas que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre plat réellement dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour les quatre points de vente avec cohérence de marque ; InstaFlow AI Pro programme Instagram. N'oubliez pas que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre plat réellement dressé."
       },
       {
         "q": "Comment cela m'aide-t-il avec les événements corporatifs et les saisons ?",
@@ -3325,7 +3325,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment former l'équipe de salle aux accords mets-vins et au storytelling ?",
-        "a": "Food Pairing AI fonde chaque accord sur une base scientifique que l'équipe peut communiquer au client ; Bar & Lounge AI+ approfondit la cave, le débouchage et les techniques. Le briefing quotidien est désormais professionnel."
+        "a": "Food Pairing AI fonde chaque accord sur une base scientifique que l'équipe peut communiquer au client ; Bar & Lounge AI+ approfondit la cave, le débouchage et les techniques. Le briefing quotidien est désormais professionnel."
       },
       {
         "q": "Génère-t-il un contenu visuel élégant pour Instagram ?",
@@ -3946,7 +3946,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs de coût par saveur",
-        "description": "Glacerie Créative fournit recette + calcul de coût CSV avec équilibre technique ; Kit de Escandallos Pro le gère avec une marge réelle par kg, par boule et par cornet."
+        "description": "Glacerie Créative fournit recette + calcul de coût CSV avec équilibre technique ; Kit de Escandallos Pro le gère avec une marge réelle par kg, par boule et par cornet."
       },
       {
         "icon": "Beaker",
@@ -4009,7 +4009,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Comment m'aide-t-il avec la saisonnalité ?",
-        "a": "Pâtisserie Créative ouvre des tartes glacées et des semifreddos pour le creux hivernal ; Gastro Calendar planifie les pics (Fête des Mères, été)."
+        "a": "Pâtisserie Créative ouvre des tartes glacées et des semifreddos pour le creux hivernal ; Gastro Calendar planifie les pics (Fête des Mères, été)."
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram ?",
@@ -4174,7 +4174,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques avec coût horaire atelier",
-        "description": "Pâtisserie Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro la gère avec coût horaire atelier intégré dans la marge réelle par pièce."
+        "description": "Pâtisserie Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro la gère avec coût horaire atelier intégré dans la marge réelle par pièce."
       },
       {
         "icon": "Beaker",
@@ -4241,7 +4241,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-elle du contenu visuel pour la vitrine et les réseaux ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles ; Pinterest Pins Gen capte un trafic organique stable. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre pièce réelle."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles ; Pinterest Pins Gen capte un trafic organique stable. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre pièce réelle."
       },
       {
         "q": "Comment m'aide-t-elle pour les événements et les saisons ?",
@@ -4392,7 +4392,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs de coûts professionnels",
-        "description": "Cuisine Créative fournit recette + calcul CSV ; Kit de Escandallos Pro le gère avec vos prix réels et marge cible."
+        "description": "Cuisine Créative fournit recette + calcul CSV ; Kit de Escandallos Pro le gère avec vos prix réels et marge cible."
       },
       {
         "icon": "CheckSquare",
@@ -4465,7 +4465,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Remplace-t-il mon logiciel de caisse ou de réservation ?",
-        "a": "Non, il complète. Cover Manager ou The Fork gèrent les réservations et le logiciel de caisse gère les ventes ; AI Chef Pro gère les coûts, le personnel, l'HACCP, l'inventaire et le SEO local. Les données sont compatibles via Excel."
+        "a": "Non, il complète. Cover Manager ou The Fork gèrent les réservations et le logiciel de caisse gère les ventes ; AI Chef Pro gère les coûts, le personnel, l'HACCP, l'inventaire et le SEO local. Les données sont compatibles via Excel."
       },
       {
         "q": "Combien de temps l'équipe met-elle pour l'apprendre ?",
@@ -4624,7 +4624,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Escandallos de café, brunch et viennoiseries",
-        "description": "Cuisine Créative livre une recette + un escandallo CSV ; Kit de Escandallos Pro le gère avec vos prix réels."
+        "description": "Cuisine Créative livre une recette + un escandallo CSV ; Kit de Escandallos Pro le gère avec vos prix réels."
       },
       {
         "icon": "Sparkles",
@@ -4857,7 +4857,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcul de coût par pizza",
-        "description": "Cuisine Créative fournit recette + calcul de coût CSV ; Kit de Escandallos Pro le gère avec vos prix réels et marge cible par variante."
+        "description": "Cuisine Créative fournit recette + calcul de coût CSV ; Kit de Escandallos Pro le gère avec vos prix réels et marge cible par variante."
       },
       {
         "icon": "CheckSquare",
@@ -5075,7 +5075,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques par burger",
-        "description": "Cuisine Créative livre recette + fiche technique CSV ; Kit de Escandallos Pro le gère avec vos prix réels (viande, pain, fromage, toppings, sauces)."
+        "description": "Cuisine Créative livre recette + fiche technique CSV ; Kit de Escandallos Pro le gère avec vos prix réels (viande, pain, fromage, toppings, sauces)."
       },
       {
         "icon": "CheckSquare",
@@ -5552,7 +5552,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Coûts de revient avec coût horaire d'atelier",
-        "description": "Cuisine Créative fournit recette + coût de revient CSV ; Kit de Escandallos Pro le gère avec coût horaire d'atelier intégré dans la marge réelle par pièce."
+        "description": "Cuisine Créative fournit recette + coût de revient CSV ; Kit de Escandallos Pro le gère avec coût horaire d'atelier intégré dans la marge réelle par pièce."
       },
       {
         "icon": "CheckSquare",
@@ -5775,7 +5775,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Chiffrage par verre",
-        "description": "Cuisine Créative fournit la recette + le chiffrage CSV ; le Kit de Escandallos Pro le gère avec vos prix réels et une marge professionnelle par cocktail."
+        "description": "Cuisine Créative fournit la recette + le chiffrage CSV ; le Kit de Escandallos Pro le gère avec vos prix réels et une marge professionnelle par cocktail."
       },
       {
         "icon": "BookOpen",
@@ -5807,7 +5807,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "workflow": [
       "11:00 · Ouverture — check-list Kit de Tareas Bar : préparation des jus, sirops, infusions et garnitures.",
       "14:00 · Bar & Lounge AI+ + Food Pairing AI — vous développez un nouveau cocktail pour la carte de printemps en gardant l'accord en tête.",
-      "15:00 · Cuisine Créative fournit la recette + le chiffrage CSV ; le Kit de Escandallos Pro le gère avec vos prix réels (gin premium, sirops, garniture).",
+      "15:00 · Cuisine Créative fournit la recette + le chiffrage CSV ; le Kit de Escandallos Pro le gère avec vos prix réels (gin premium, sirops, garniture).",
       "16:00 · Test du cocktail avec l'équipe, ajustements finaux de l'équilibre et des proportions.",
       "17:00 · Pro Prompts eBook + BlogPost SEO Gen+ — vous rédigez le storytelling pour la nouvelle carte et la note pour la salle.",
       "18:00 · GastroIMG Gen+ + InstaFlow AI Pro — vous générez la photographie et les posts Instagram pour le lancement.",
@@ -5842,7 +5842,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Est-ce que ça fonctionne pour un bar d'hôtel ou un établissement indépendant ?",
-        "a": "Les deux. Le bar du lobby d'hôtel se gère depuis le cas /usos/concepto/hotel-completo-fb ; le bar indépendant depuis ici."
+        "a": "Les deux. Le bar du lobby d'hôtel se gère depuis le cas /usos/concepto/hotel-completo-fb ; le bar indépendant depuis ici."
       },
       {
         "q": "Comment est-ce que ça m'aide avec le branding visuel de mes cocktails ?",
@@ -6226,7 +6226,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Rendements par point de vente",
-        "description": "Cuisine Créative fournit la recette + le rendement CSV ; Kit de Escandallos Pro le gère avec vos prix réels en séparant la marge par point de vente."
+        "description": "Cuisine Créative fournit la recette + le rendement CSV ; Kit de Escandallos Pro le gère avec vos prix réels en séparant la marge par point de vente."
       },
       {
         "icon": "PartyPopper",
@@ -6261,7 +6261,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Une journée réelle d'un F&B Manager d'hôtel avec AI Chef Pro",
     "workflow": [
-      "07:00 · Ouverture du petit-déjeuner — l'équipe démarre le buffet avec la checklist du Kit de Tareas Hotel ; vous consultez le tableau de bord d'occupation de l'hôtel et ajustez la mise en place.",
+      "07:00 · Ouverture du petit-déjeuner — l'équipe démarre le buffet avec la checklist du Kit de Tareas Hotel ; vous consultez le tableau de bord d'occupation de l'hôtel et ajustez la mise en place.",
       "09:30 · Traiteur IA+ — vous préparez le banquet de mariage de samedi prochain : menu, rendement et production pour 220 invités.",
       "11:00 · Chef Exécutif Pro — vous mettez à jour la fiche technique du nouveau plat du restaurant et elle se réplique au room service et au menu de banquet avec la même standardisation.",
       "13:00 · Service de midi — restaurant à la carte + bar lobby + room service actifs. L'équipe coordonne avec des modèles spécifiques à chaque point de vente.",
@@ -6458,7 +6458,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Coûts de revient par parfum",
-        "description": "La Glacerie Créative fournit la recette + le coût de revient CSV avec équilibre technique (sucres, solides, matières grasses) ; le Kit de Escandallos Pro le gère avec marge réelle par kg, par boule et par cornet."
+        "description": "La Glacerie Créative fournit la recette + le coût de revient CSV avec équilibre technique (sucres, solides, matières grasses) ; le Kit de Escandallos Pro le gère avec marge réelle par kg, par boule et par cornet."
       },
       {
         "icon": "CheckSquare",
@@ -6517,7 +6517,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Couvre-t-il l'équilibrage technique des bases (sucres, solides, matières grasses) ?",
-        "a": "Oui. La Glacerie Créative raisonne comme un glacier professionnel : équilibre des sucres avec saccharose, dextrose et sucre inverti ; solides totaux et matières grasses selon la norme technique ; équilibre pour éviter la cristallisation et maintenir l'onctuosité."
+        "a": "Oui. La Glacerie Créative raisonne comme un glacier professionnel : équilibre des sucres avec saccharose, dextrose et sucre inverti ; solides totaux et matières grasses selon la norme technique ; équilibre pour éviter la cristallisation et maintenir l'onctuosité."
       },
       {
         "q": "Comment gérons-nous la forte saisonnalité de la glacerie ?",
@@ -6529,7 +6529,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu pour la vitrine, les réseaux et Google Maps ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour chaque parfum, pour la vitrine, le web et les réseaux ; InstaFlow AI Pro programme Instagram avec calendrier éditorial ; MenuDish Local SEO capte les clients locaux qui cherchent « glacier près de chez moi ». Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre bac et votre vrai dressage."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour chaque parfum, pour la vitrine, le web et les réseaux ; InstaFlow AI Pro programme Instagram avec calendrier éditorial ; MenuDish Local SEO capte les clients locaux qui cherchent « glacier près de chez moi ». Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre bac et votre vrai dressage."
       }
     ],
     "ctaTitle": "Votre glacier avec une marge claire et un branding professionnel.",
@@ -6681,7 +6681,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs de coût par pièce avec coût horaire d'atelier",
-        "description": "Chocolaterie Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro le gère avec coût horaire d'atelier intégré dans la marge réelle par chocolat et par boîte."
+        "description": "Chocolaterie Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro le gère avec coût horaire d'atelier intégré dans la marge réelle par chocolat et par boîte."
       },
       {
         "icon": "CheckSquare",
@@ -6753,7 +6753,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Est-ce que ça génère du contenu pour la vitrine, les réseaux et le packaging ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de chaque chocolat pour la vitrine, le web et les réseaux ; Pinterest Pins Gen + InstaFlow AI Pro programment du contenu visuel ; MenuDish Local SEO capte les clients locaux. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre chocolat réellement dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de chaque chocolat pour la vitrine, le web et les réseaux ; Pinterest Pins Gen + InstaFlow AI Pro programment du contenu visuel ; MenuDish Local SEO capte les clients locaux. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre chocolat réellement dressé."
       },
       {
         "q": "Comment ça m'aide avec la forte saisonnalité ?",
@@ -6977,7 +6977,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Couvre-t-il la R&D et le test de plats ?",
-        "a": "Oui. Sonar Deep Research apporte des tendances et des références ; Cuisine Créative + Fermentus développent des plats ; Pro Prompts eBook a 300+ prompts spécifiques pour la R&D itérative."
+        "a": "Oui. Sonar Deep Research apporte des tendances et des références ; Cuisine Créative + Fermentus développent des plats ; Pro Prompts eBook a 300+ prompts spécifiques pour la R&D itérative."
       },
       {
         "q": "Génère-t-il du storytelling pour la presse et les guides ?",
@@ -7373,7 +7373,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Rendement par taco et par plat",
-        "description": "Cuisine Mexicaine fournit recette + rendement CSV ; Kit de Escandallos Pro le gère avec coût réel par taco, food cost % et prix suggéré."
+        "description": "Cuisine Mexicaine fournit recette + rendement CSV ; Kit de Escandallos Pro le gère avec coût réel par taco, food cost % et prix suggéré."
       },
       {
         "icon": "CheckSquare",
@@ -7411,7 +7411,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "08:00 · Ouverture — checklist Kit de Tareas : torréfaction de piments pour salsa macha, préparation de masa nixtamalisée, marinade de cochinita pibil, mise en place de toppings frais.",
       "10:00 · Cuisine Mexicaine — vous développez un nouveau taco signature de barbacoa avec sauce au piment cascabel et avocat. Cuisine Créative fournit recette + rendement CSV.",
       "11:00 · Kit de Escandallos Pro — vous chargez le CSV avec vos prix réels de piments secs, viande, masa et avocat, validez la marge par taco et le food cost %.",
-      "13:00 · Service de midi — l'équipe réplique avec des modèles de mise en place ; le comal fonctionne à plein rendement.",
+      "13:00 · Service de midi — l'équipe réplique avec des modèles de mise en place ; le comal fonctionne à plein rendement.",
       "17:00 · Pause entre les services — Gastro Calendar planifie le menu spécial du Jour des Morts avec pan de muerto et mole negro.",
       "19:00 · GastroIMG Gen+ + InstaFlow AI Pro — vous générez l'image de référence du nouveau taco et les posts pour Instagram.",
       "21:00 · Service du dîner — pics coordonnés avec Repas du Personnel pour le staff avant le rush.",
@@ -7445,7 +7445,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram, Glovo et Uber Eats ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour les réseaux et la livraison ; meilleure photo = plus de clics et meilleur classement. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre plat réel dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles pour les réseaux et la livraison ; meilleure photo = plus de clics et meilleur classement. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre plat réel dressé."
       },
       {
         "q": "Comment m'aide-t-il avec les fêtes mexicaines ?",
@@ -7606,7 +7606,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Coûts de revient par plat",
-        "description": "Cuisine Péruvienne fournit la recette + le coût de revient CSV ; Kit de Escandallos Pro le gère avec le coût réel par ceviche, le food cost % et le prix suggéré."
+        "description": "Cuisine Péruvienne fournit la recette + le coût de revient CSV ; Kit de Escandallos Pro le gère avec le coût réel par ceviche, le food cost % et le prix suggéré."
       },
       {
         "icon": "CheckSquare",
@@ -7665,7 +7665,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Couvre-t-il la technique du ceviche et du lait de tigre professionnel ?",
-        "a": "Oui. Cuisine Péruvienne raisonne comme un cebichero professionnel : équilibre du lait de tigre avec acidité, piquant et sel ; fenêtre de marinade optimale par espèce ; intégration des piments avec technique."
+        "a": "Oui. Cuisine Péruvienne raisonne comme un cebichero professionnel : équilibre du lait de tigre avec acidité, piquant et sel ; fenêtre de marinade optimale par espèce ; intégration des piments avec technique."
       },
       {
         "q": "Comment m'aide-t-il avec le coût variable du poisson frais ?",
@@ -7673,7 +7673,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram, Glovo et Uber Eats ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du ceviche et du tiradito pour Instagram, le web et la livraison ; meilleure photo = plus de clics. N'oubliez pas que l'image IA est une référence visuelle : la photo finale, c'est vous qui la prenez avec votre vrai ceviche dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du ceviche et du tiradito pour Instagram, le web et la livraison ; meilleure photo = plus de clics. N'oubliez pas que l'image IA est une référence visuelle : la photo finale, c'est vous qui la prenez avec votre vrai ceviche dressé."
       },
       {
         "q": "Comment m'aide-t-il avec les fêtes et événements péruviens ?",
@@ -7834,7 +7834,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Escandallos par pièce",
-        "description": "Cuisine Japonaise fournit la recette + l'escandallo CSV ; Kit de Escandallos Pro le gère avec le coût réel par nigiri, ramen et omakase."
+        "description": "Cuisine Japonaise fournit la recette + l'escandallo CSV ; Kit de Escandallos Pro le gère avec le coût réel par nigiri, ramen et omakase."
       },
       {
         "icon": "CheckSquare",
@@ -7893,7 +7893,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Couvre-t-il la technique d'itamae et la fermentation japonaise ?",
-        "a": "Oui. Cuisine Japonaise raisonne comme un itamae professionnel : technique de filetage, équilibre du shari, neta et combinaisons ; Fermentus couvre le koji, le miso, le shoyu fait maison et l'amazake avec une technique professionnelle."
+        "a": "Oui. Cuisine Japonaise raisonne comme un itamae professionnel : technique de filetage, équilibre du shari, neta et combinaisons ; Fermentus couvre le koji, le miso, le shoyu fait maison et l'amazake avec une technique professionnelle."
       },
       {
         "q": "Comment m'aidez-vous avec le coût variable du poisson pour le sashimi ?",
@@ -7901,7 +7901,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram, Glovo et Uber Eats ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du sushi pour Instagram, le site web et la livraison ; meilleure photo = plus de clics. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre pièce réellement dressée."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du sushi pour Instagram, le site web et la livraison ; meilleure photo = plus de clics. Rappelez-vous que l'image IA est une référence visuelle : la photo finale, c'est vous qui la faites avec votre pièce réellement dressée."
       },
       {
         "q": "Comment m'aidez-vous avec les festivités japonaises ?",
@@ -8062,7 +8062,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Escandallos par plat",
-        "description": "Cuisine Créative livre la recette + l'escandallo CSV ; Kit de Escandallos Pro le gère avec le coût réel par tiradito et par omakase nikkei."
+        "description": "Cuisine Créative livre la recette + l'escandallo CSV ; Kit de Escandallos Pro le gère avec le coût réel par tiradito et par omakase nikkei."
       },
       {
         "icon": "CheckSquare",
@@ -8129,7 +8129,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Générez-vous du contenu visuel pour Instagram et la livraison ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du tiradito nikkei pour Instagram, le site web et la livraison. Rappel : l'image IA est une référence visuelle ; la photo finale, c'est vous qui la faites avec votre plat réellement dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles du tiradito nikkei pour Instagram, le site web et la livraison. Rappel : l'image IA est une référence visuelle ; la photo finale, c'est vous qui la faites avec votre plat réellement dressé."
       },
       {
         "q": "Comment m'aidez-vous avec les fêtes croisées péruano-japonaises ?",
@@ -8295,7 +8295,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques par bol et burger",
-        "description": "VegChef fournit la recette + la fiche technique CSV ; Kit de Escandallos Pro la gère avec le coût réel par bol, le % de food cost et le prix suggéré."
+        "description": "VegChef fournit la recette + la fiche technique CSV ; Kit de Escandallos Pro la gère avec le coût réel par bol, le % de food cost et le prix suggéré."
       },
       {
         "icon": "CheckSquare",
@@ -8357,7 +8357,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Génère-t-il du contenu visuel pour Instagram, Glovo et Uber Eats ?",
-        "a": "Oui. GastroIMG Gen+ génère des images vibrantes de référence des bols pour Instagram, le web et la livraison ; le plant-based vit de la couleur. N'oubliez pas que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre bol réellement dressé."
+        "a": "Oui. GastroIMG Gen+ génère des images vibrantes de référence des bols pour Instagram, le web et la livraison ; le plant-based vit de la couleur. N'oubliez pas que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre bol réellement dressé."
       },
       {
         "q": "Comment m'aide-t-il avec le Veganuary et les événements plant-based ?",
@@ -8518,7 +8518,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcul des coûts par coupe",
-        "description": "Cuisine Créative fournit recette + calcul des coûts CSV ; Kit de Escandallos Pro le gère avec un coût réel par côte de bœuf, picanha et T-bone."
+        "description": "Cuisine Créative fournit recette + calcul des coûts CSV ; Kit de Escandallos Pro le gère avec un coût réel par côte de bœuf, picanha et T-bone."
       },
       {
         "icon": "CheckSquare",
@@ -8552,7 +8552,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "11:00 · Cuisine Créative + Cuisine Argentine — vous développez une nouvelle coupe signature de côte de bœuf galicienne dry-aged 60 jours avec sel de Maldon fumé et chimichurri aux herbes fraîches. Recette + calcul des coûts CSV.",
       "12:00 · Kit de Escandallos Pro — vous chargez le CSV avec vos prix réels de viande et de dry-aged, vous calculez la perte par affinage, vous validez la marge par coupe.",
       "13:00 · Service de midi — grill à plein régime avec des coupes premium, mise en place du chimichurri, sauces et accompagnements.",
-      "17:00 · Pause entre les services — Bar & Lounge AI+ valide les accords avec des vins rouges pour les nouvelles coupes ; Gastro Calendar planifie le menu spécial de la Fête des Pères.",
+      "17:00 · Pause entre les services — Bar & Lounge AI+ valide les accords avec des vins rouges pour les nouvelles coupes ; Gastro Calendar planifie le menu spécial de la Fête des Pères.",
       "20:00 · Service du dîner — pics coordonnés, grill avec plusieurs coupes simultanées.",
       "22:00 · GastroIMG Gen+ + InstaFlow AI Pro — vous générez l'image de référence de la nouvelle côte de bœuf et les posts pour Instagram.",
       "00:00 · Fermeture — nettoyage en profondeur des grills, HACCP signé, contrôle de la chambre dry-aged."
@@ -8585,7 +8585,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Est-ce que ça génère du contenu visuel pour Instagram et les événements corporate ?",
-        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de coupes et de braises pour Instagram, le web et la carte ; le grill vit de l'impact visuel. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre vraie coupe."
+        "a": "Oui. GastroIMG Gen+ génère des images de référence professionnelles de coupes et de braises pour Instagram, le web et la carte ; le grill vit de l'impact visuel. Rappelez-vous que l'image IA est une référence visuelle : la photo définitive, c'est vous qui la faites avec votre vraie coupe."
       },
       {
         "q": "Comment m'aide-t-il avec les événements et les fêtes ?",
@@ -8741,7 +8741,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcul par boisson",
-        "description": "Cuisine Créative fournit recette + calcul CSV ; Kit de Escandallos Pro le gère avec un coût réel par café et lait, food cost % validé."
+        "description": "Cuisine Créative fournit recette + calcul CSV ; Kit de Escandallos Pro le gère avec un coût réel par café et lait, food cost % validé."
       },
       {
         "icon": "CheckSquare",
@@ -8974,7 +8974,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Coûts de revient par nigiri et omakase",
-        "description": "Cuisine Japonaise fournit recette + coût de revient CSV ; Kit de Escandallos Pro le gère avec coût réel par pièce et omakase."
+        "description": "Cuisine Japonaise fournit recette + coût de revient CSV ; Kit de Escandallos Pro le gère avec coût réel par pièce et omakase."
       },
       {
         "icon": "CheckSquare",
@@ -9197,7 +9197,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques par tapa et par portion",
-        "description": "Cuisine Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro gère le tout avec un coût réel par tapa et un food cost %."
+        "description": "Cuisine Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro gère le tout avec un coût réel par tapa et un food cost %."
       },
       {
         "icon": "Wine",
@@ -9425,7 +9425,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Fiches techniques par plat",
-        "description": "Cuisine Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro la gère avec un coût réel ajusté à l'exploitation mobile."
+        "description": "Cuisine Créative fournit recette + fiche technique CSV ; Kit de Escandallos Pro la gère avec un coût réel ajusté à l'exploitation mobile."
       },
       {
         "icon": "CheckSquare",
@@ -9663,7 +9663,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calculs de coût par plat",
-        "description": "Cuisine Italienne fournit recette + calcul de coût CSV ; Kit de Escandallos Pro le gère avec un coût réel par plat et le food cost %."
+        "description": "Cuisine Italienne fournit recette + calcul de coût CSV ; Kit de Escandallos Pro le gère avec un coût réel par plat et le food cost %."
       },
       {
         "icon": "CheckSquare",
@@ -9854,7 +9854,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
   },
   "task-escandallos-con-ia": {
     "h1": "Comment faire des calculs de coûts avec l'IA",
-    "heroSubtitle": "Vous voyez le coût réel par plat, le food cost et un prix suggéré. L'IA prépare la recette et la fiche ; le cuisinier valide le coût horaire d'atelier, les pertes et la marge.",
+    "heroSubtitle": "Vous voyez le coût réel par plat, le food cost et un prix suggéré. L'IA prépare la recette et la fiche ; le cuisinier valide le coût horaire d'atelier, les pertes et la marge.",
     "heroTagline": "Calculs de coûts professionnels en minutes, pas en heures",
     "badge": "Tâche : Calculs de coûts et costing",
     "painsTitle": "Ce que coûte le calcul de coûts à la main",
@@ -9886,7 +9886,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Sparkles",
         "title": "Calcula Pax + Conversor Ing",
-        "description": "Adapte les recettes à 2, 6, 12, 100 pax sans perdre en précision ; convertisseur automatique de poids et mesures."
+        "description": "Adapte les recettes à 2, 6, 12, 100 pax sans perdre en précision ; convertisseur automatique de poids et mesures."
       },
       {
         "icon": "CheckSquare",
@@ -9949,7 +9949,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Couvre-t-il l'adaptation pour les banquets et événements ?",
-        "a": "Oui. Calcula Pax adapte les recettes à tout nombre de convives sans perdre en précision ; le Kit de Escandallos Pro recalcule le coût par personne et la proposition économique pour le client corporatif."
+        "a": "Oui. Calcula Pax adapte les recettes à tout nombre de convives sans perdre en précision ; le Kit de Escandallos Pro recalcule le coût par personne et la proposition économique pour le client corporatif."
       },
       {
         "q": "Génère-t-il une image de référence du plat calculé ?",
@@ -10105,12 +10105,12 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Calcul de coût total intégré",
-        "description": "CSV avec calcul de coût de chaque service + total du menu ; Kit de Escandallos Pro valide le coût par pax et la proposition de prix."
+        "description": "CSV avec calcul de coût de chaque service + total du menu ; Kit de Escandallos Pro valide le coût par pax et la proposition de prix."
       },
       {
         "icon": "BookOpen",
         "title": "Storytelling pour la salle",
-        "description": "Description de chaque service avec technique, produit, fournisseur et histoire ; l'équipe de salle le récite avec professionnalisme."
+        "description": "Description de chaque service avec technique, produit, fournisseur et histoire ; l'équipe de salle le récite avec professionnalisme."
       },
       {
         "icon": "Sparkles",
@@ -10170,7 +10170,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Couvre-t-il les accords mets-vins au verre pour le menu ?",
-        "a": "Oui. Food Pairing AI valide chaque accord sur une base scientifique ; Bar & Lounge AI+ propose une sélection concrète de cave et un storytelling pour la salle."
+        "a": "Oui. Food Pairing AI valide chaque accord sur une base scientifique ; Bar & Lounge AI+ propose une sélection concrète de cave et un storytelling pour la salle."
       },
       {
         "q": "Génère-t-il une image de référence pour chaque service ?",
@@ -10178,7 +10178,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       },
       {
         "q": "Est-il extensible aux banquets et événements privés ?",
-        "a": "Oui. Calcula Pax met le menu à l'échelle pour tout nombre de convives ; Kit de Escandallos Pro recalcule le coût par pax et la proposition économique au client."
+        "a": "Oui. Calcula Pax met le menu à l'échelle pour tout nombre de convives ; Kit de Escandallos Pro recalcule le coût par pax et la proposition économique au client."
       }
     ],
     "ctaTitle": "Votre menu dégustation professionnel en heures, pas en semaines.",
@@ -10350,7 +10350,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "Conversor Ing + Calcula Pax",
-        "description": "Convertisseur de poids et mesures ; mise à l'échelle automatique pour banquets et événements."
+        "description": "Convertisseur de poids et mesures ; mise à l'échelle automatique pour banquets et événements."
       },
       {
         "icon": "BookOpen",
@@ -10366,7 +10366,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     "workflowTitle": "Comment Créer des Fiches Techniques en 4 Étapes",
     "workflow": [
       "1. Cuisine Créative (ou votre agent créatif) — vous développez ou chargez la recette. L'agent IA livre recette + fiche technique complète avec tous les champs professionnels.",
-      "2. ID Allergènes — sert à la révision des 14 allergènes, avec validation finale du cuisinier, par recette et les intègre à la fiche ; lorsque vous changez un ingrédient, il recalcule instantanément.",
+      "2. ID Allergènes — sert à la révision des 14 allergènes, avec validation finale du cuisinier, par recette et les intègre à la fiche ; lorsque vous changez un ingrédient, il recalcule instantanément.",
       "3. GastroIMG Gen+ — génère une image de référence du plat dressé à inclure dans la fiche comme guide visuel du cuisinier.",
       "4. Food Pairing AI + storytelling pour la salle — la fiche inclut un accord mets-vins recommandé et une description professionnelle pour le briefing de l'équipe."
     ],
@@ -11226,7 +11226,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "Calculator",
         "title": "Escandallo saisonnier",
-        "description": "Recette + escandallo CSV avec produits locaux ; Kit de Escandallos Pro recalcule la marge lors du changement de saison."
+        "description": "Recette + escandallo CSV avec produits locaux ; Kit de Escandallos Pro recalcule la marge lors du changement de saison."
       },
       {
         "icon": "BookOpen",

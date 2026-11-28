@@ -2,7 +2,7 @@
 title: "Witte fond: wat het is, en wat het niet is"
 description: "Witte fond, ook blanke fond, zijn botten die nooit geroosterd worden, met rauwe groente en kruiden. De stille basis van veloutés en heldere soepen."
 pubDate: 2026-11-19
-modDate: 2026-11-19
+modDate: 2026-11-24
 category: glossarium
 tags: ["witte fond", "blanke fond", "velouté", "fond"]
 lang: nl
@@ -74,13 +74,13 @@ Een [visfumet](https://aichef.pro/nl/blog/visfumet) is de bleke fond van graten,
 
 Een [demi-glace](https://aichef.pro/nl/blog/demi-glace) is niet deze fond. Het is een saus uit bruine fond, gereduceerd tot ze nappt. Een [vleesglace](https://aichef.pro/nl/blog/vleesglace) is bruine fond verder gereduceerd, tot hij koud hard geleert. Witte fond kunt u reduceren, maar hij wordt geen van beide. Kleur en roostering ontbreken met opzet.
 
-Velouté is de moedersaus die hier begint: bleke fond en een blonde roux. Een Nederlandse fiche voor velouté is er nog niet. De fond is het vocht. De roux is een aparte stap. Doe niet alsof de fond al het lichaam van de saus heeft.
+[Velouté](https://aichef.pro/nl/blog/veloute) is de moedersaus die hier begint: bleke fond en een blonde [roux](https://aichef.pro/nl/blog/wat-is-een-roux). De fond is het vocht. De roux is een aparte stap. Doe niet alsof de fond al het lichaam van de saus heeft.
 
 ## Op de passe
 
 Witte fond drinkt u niet uit een kop, al proeft u hem. Een pollepel is het vocht in een velouté, de basis van een romige soep die naar groente moet smaken en niet naar braad, en het nat maken van een risotto als een zout blokje de rijst zou overschreeuwen. Gepocheerde vis, een gevogelteborst of geglazuurde kleine groente nemen op het eind een beetje met boter. De gelatine helpt. De smaak blijft op de achtergrond.
 
-Zegt de fiche velouté, dan is de fond ongezouten en bleek, en de binding apart. Zegt de fiche Spaanse saus of pepersaus, dan wilde u [bruine fond](https://aichef.pro/nl/blog/bruine-fond). Witte fond op die plek geeft een saus zonder geroosterde noot, en inkoken verzint het roosteren niet dat u oversloeg.
+Zegt de fiche [velouté](https://aichef.pro/nl/blog/veloute), dan is de fond ongezouten en bleek, en de binding apart. Zegt de fiche [Spaanse saus](https://aichef.pro/nl/blog/spaanse-saus) of pepersaus, dan wilde u [bruine fond](https://aichef.pro/nl/blog/bruine-fond). Witte fond op die plek geeft een saus zonder geroosterde noot, en inkoken verzint het roosteren niet dat u oversloeg.
 
 Kruid als u het eindvolume kent. Een soep die nauwelijks inkookt, kan het zout op het eind in de pan verdragen. Een saus die u tot de helft trekt, kan dat niet.
 

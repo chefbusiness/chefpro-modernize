@@ -239,7 +239,7 @@ wpId: 1770
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Planificación manual</th><th>Planificación con IA</th></tr></thead><tbody><tr><td>Tiempo requerido</td><td>4-6 horas para menú semanal</td><td>30-45 minutos para menú semanal</td></tr><tr><td>Balance nutricional</td><td>Aproximado, requiere verificación externa</td><td>Cálculo automático y equilibrado</td></tr><tr><td>Variedad</td><td>Limitada por conocimiento del planificador</td><td>Acceso a miles de opciones y variaciones</td></tr><tr><td>Optimización de costes</td><td>Manual, con posibles errores</td><td>Automática considerando rendimientos reales</td></tr><tr><td>Gestión de alérgenos</td><td>Revisión manual punto por punto</td><td>Identificación y alternativas automáticas</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Planificación manual</th><th>Planificación con IA</th></tr></thead><tbody><tr><td>Tiempo requerido</td><td>4-6 horas para menú semanal</td><td>30-45 minutos para menú semanal</td></tr><tr><td>Balance nutricional</td><td>Aproximado, requiere verificación externa</td><td>Cálculo con IA del equilibrio nutricional, que conviene contrastar</td></tr><tr><td>Variedad</td><td>Limitada por conocimiento del planificador</td><td>Acceso a miles de opciones y variaciones</td></tr><tr><td>Optimización de costes</td><td>Manual, con posibles errores</td><td>Automática considerando rendimientos reales</td></tr><tr><td>Gestión de alérgenos</td><td>Revisión manual punto por punto</td><td>Identificación y alternativas automáticas</td></tr></tbody></table></div></figure>
 
 
 
@@ -332,7 +332,7 @@ wpId: 1770
 
 
 
-<li><strong>Optimización económica integrada:</strong> Cálculo automático de costes, rendimientos y mermas</li>
+<li><strong>Optimización económica integrada:</strong> Cálculo de costes, rendimientos y mermas con IA, con la validación del cocinero</li>
 
 
 
@@ -897,7 +897,7 @@ wpId: 1770
 
 
 
-<li><strong>Sostenibilidad integrada:</strong> Cálculo automático de huella de carbono y sugerencias para minimizar impacto</li>
+<li><strong>Sostenibilidad integrada:</strong> Cálculo con IA de la huella de carbono y sugerencias para bajar el impacto</li>
 </ul>
 
 

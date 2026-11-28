@@ -241,7 +241,7 @@ wpId: 1571
 
 
 
-<h3 class="wp-block-heading">3. Cálculo automático de mermas y rendimientos</h3>
+<h3 class="wp-block-heading">3. Cálculo de mermas y rendimientos con IA</h3>
 
 
 
@@ -340,7 +340,7 @@ wpId: 1571
 
 
 <ul class="wp-block-list">
-<li><strong>Cálculo automático de costes:</strong> Considerando mermas reales, mano de obra y overhead</li>
+<li><strong>Cálculo de costes con IA, que el cocinero valida:</strong> Considerando mermas reales, mano de obra y overhead</li>
 
 
 
@@ -1296,7 +1296,7 @@ wpId: 1571
 
 
 
-<li><strong>Tiempos de conservación:</strong> Cálculo automático de vida útil</li>
+<li><strong>Tiempos de conservación:</strong> Cálculo con IA de la vida útil, que el cocinero contrasta con la ficha</li>
 
 
 

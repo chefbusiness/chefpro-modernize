@@ -8,9 +8,11 @@
 // nl se preservan verbatim a propósito (decisión de catálogo pendiente,
 // ver CATALOGO_ITALIANO_PENDIENTE.md — aplica a los 5 idiomas).
 //
-// NO editar a mano campo a campo: productIds, galleryImages, features[].icon,
-// seo.ogImage y testimonialAuthor se preservan verbatim desde el ES y el
-// validador del script lo comprueba. Regenerar PISA ediciones manuales.
+// NO editar a mano campo a campo: productIds, galleryImages, features[].icon
+// y seo.ogImage se preservan verbatim desde el ES y el validador del script
+// lo comprueba. Regenerar PISA ediciones manuales.
+// Los testimonios (cita, nombre y cargo) se quitaron: eran prueba social inventada
+// y no se muestran en la página.
 
 import type { UseCaseContent } from './use-cases';
 
@@ -39,7 +41,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "FileText",
         "title": "Professioneel financieel plan",
-        "description": "Kit Plan Financiero: cashflow, break-evenpunt, maandelijkse P&L en ratio-dashboard. Sjablonen klaar voor investeerders en banken."
+        "description": "Kit financieel plan voor restaurants: cashflow, break-evenpunt, maandelijkse P&L en ratio-dashboard. Sjablonen klaar voor investeerders en banken."
       },
       {
         "icon": "Calculator",
@@ -49,7 +51,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en voedselveiligheid",
-        "description": "Pack APPCC met 19 registraties klaar voor inspectie, registraties vanaf mobiel en afdrukklare A4-bladen."
+        "description": "Pack HACCP met 19 registraties klaar voor inspectie, registraties vanaf mobiel en afdrukklare A4-bladen."
       },
       {
         "icon": "Users",
@@ -79,11 +81,11 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Een Echte Dag van een Eigenaar met AI Chef Pro",
     "workflow": [
-      "08:30 · Koffie en dashboard — u opent het Kit Plan Financiero en bekijkt de ratio's van de vorige dag. U detecteert dat de foodcost is gestegen naar 33 % door verliezen bij vis.",
+      "08:30 · Koffie en dashboard — u opent het Kit financieel plan voor restaurants en bekijkt de ratio's van de vorige dag. U detecteert dat de foodcost is gestegen naar 33 % door verliezen bij vis.",
       "09:30 · Pro Restaurant Manager — u vraagt de agent om een oorzaakanalyse en krijgt 3 concrete acties voor deze week.",
       "10:30 · MenuDish Lokale SEO — u actualiseert de beschrijving van de 4 topgerechten in Google Business en op de website met zoekwoorden die Keyword Discovery AI+ heeft gedetecteerd.",
       "12:30 · Middagdienst — u superviseert de zaal ondersteund door de checklist van het Kit de Tareas Restaurante Casual.",
-      "15:30 · Overleg met beheerder — u exporteert maandelijkse P&L, ratio-dashboard en personeelsrooster als PDF rechtstreeks uit het Kit Plan Financiero. Overleg afgerond in 30 minuten.",
+      "15:30 · Overleg met beheerder — u exporteert maandelijkse P&L, ratio-dashboard en personeelsrooster als PDF rechtstreeks uit het Kit financieel plan voor restaurants. Overleg afgerond in 30 minuten.",
       "17:00 · Creatieve Keuken — u vraagt ideeën voor het komende seizoensmenu. De agent levert 8 gerechten met recept en foodcost CSV.",
       "18:30 · Team beslissing — u gebruikt Mentale Coach om het moeilijke gesprek met een sleutelmedewerker voor te bereiden. U gaat met structuur en argumenten naar het overleg.",
       "21:00 · Afsluiting — de manager stuurt u het automatische dagrapport via WhatsApp. U gaat naar huis zonder openstaand papierwerk."
@@ -97,9 +99,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Vroeger besteedde ik 6 uur per week alleen aan het kloppend maken van cijfers tussen Excel en servetten. Met AI Chef Pro sluit ik het af in een uur met professionele dashboards. Ik heb de financiële controle over mijn twee zaken terug en de marge steeg 3 punten in het eerste kwartaal.",
-    "testimonialAuthor": "Carlos Méndez",
-    "testimonialRole": "Eigenaar, groep mediterrane bistro's (2 zaken)",
     "faqTitle": "Veelgestelde Vragen van Eigenaren",
     "faqs": [
       {
@@ -231,7 +230,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterItems": [
         "1 uur per week om professionele dashboards met duidelijke KPI's af te sluiten",
         "Menu- en prijsbeslissingen met professionele foodcost en margeanalyse",
-        "Rapportage aan de beheerder in PDF rechtstreeks vanuit het Kit Plan Financiero",
+        "Rapportage aan de beheerder in PDF rechtstreeks vanuit het Kit financieel plan voor restaurants",
         "Geautomatiseerde lokale SEO en AI-marketing suite die uitgaven aan bureaus verlaagt",
         "Gemoedsrust: het team stuurt u automatische rapporten via WhatsApp"
       ]
@@ -281,7 +280,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en traceerbaarheid",
-        "description": "Pack APPCC met 17 registers, temperatuuralerts via mobiel en export die klaar is voor inspectie."
+        "description": "Pack HACCP met 17 registers, temperatuuralerts via mobiel en export die klaar is voor inspectie."
       },
       {
         "icon": "BarChart3",
@@ -314,7 +313,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "08:30 · Opening — u print de checklist voor de dienst vanuit de Kit de Tareas en controleert in 10 minuten de voorraad.",
       "09:30 · Pro Restaurant Manager — de agent vat de incidenten van de vorige dag en de openstaande acties voor u samen.",
       "10:30 · Kit Inventario — u valideert bestellingen bij leveranciers met een prijsvergelijking en meldingen bij minimale voorraad.",
-      "12:30 · Middagservice — het team registreert verlies en temperaturen via de mobiele telefoon met de Pack APPCC.",
+      "12:30 · Middagservice — het team registreert verlies en temperaturen via de mobiele telefoon met de Pack HACCP.",
       "15:30 · Rooster voor volgende week — u opent de Kit Gestión de Personal en sluit het rooster in 20 minuten af met inachtneming van de cao.",
       "17:00 · Personeelsmaaltijden — u genereert het personeelsmenu voor de komende week met ingrediënten die u al op voorraad heeft.",
       "19:00 · Moeilijk gesprek — u gebruikt Mentale Coach om het gesprek voor te bereiden met een kok die herhaaldelijk te laat komt.",
@@ -329,9 +328,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-escandallos",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Vroeger was ik 8 uur per week bezig met het opstellen van roosters en bestellingen bij leveranciers. Nu doe ik dat in 2 uur met de Kit Gestión de Personal en de Kit Inventario. AI Chef Pro heeft me tijd teruggegeven om in de zaal met het team te zijn, waar een manager hoort te zijn.",
-    "testimonialAuthor": "Marta Ruiz",
-    "testimonialRole": "Manager, casual restaurant met 80 zitplaatsen",
     "faqTitle": "Veelgestelde Vragen van Managers",
     "faqs": [
       {
@@ -458,7 +454,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterItems": [
         "2 uur per week roosters afsluiten met een professioneel sjabloon met inachtneming van de cao",
         "HACCP via mobiel met registers, temperaturen en meldingen, klaar voor inspectie",
-        "Rapportage aan de eigenaar in PDF rechtstreeks vanuit de Kit Plan Financiero, met duidelijke dashboards",
+        "Rapportage aan de eigenaar in PDF rechtstreeks vanuit de Kit financieel plan voor restaurants, met duidelijke dashboards",
         "Systematische controle van verlies met nauwkeurige gegevens en voorraadmeldingen",
         "Personeelsmaaltijden gegenereerd met AI, met respect voor de doelstelling op kosten en teammotivatie"
       ]
@@ -498,7 +494,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "Geconsolideerde dashboards",
-        "description": "Kit Plan Financiero: vergelijk foodcost, productiviteit, verliezen en gemiddeld besteedbaar bedrag tussen al uw restaurants in één overzicht."
+        "description": "Kit financieel plan voor restaurants: vergelijk foodcost, productiviteit, verliezen en gemiddeld besteedbaar bedrag tussen al uw restaurants in één overzicht."
       },
       {
         "icon": "ChefHat",
@@ -538,13 +534,13 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Een echte dag van een operationeel directeur met AI Chef Pro",
     "workflow": [
-      "08:30 · Koffie en Kit Plan Financiero — u opent het geconsolideerde dashboard van de 7 locaties van de groep en detecteert dat locatie 4 een foodcost van 33% heeft (+3 pp boven doel).",
+      "08:30 · Koffie en Kit financieel plan voor restaurants — u opent het geconsolideerde dashboard van de 7 locaties van de groep en detecteert dat locatie 4 een foodcost van 33% heeft (+3 pp boven doel).",
       "09:30 · Pro Restaurant Manager — u vraagt de agent om een geautomatiseerde analyse van de oorzaak per locatie. Het identificeert een probleem met visverliezen.",
-      "10:30 · Videogesprek met de manager van locatie 4, ondersteund door echte gegevens uit het Kit Plan Financiero, niet op intuïtie.",
+      "10:30 · Videogesprek met de manager van locatie 4, ondersteund door echte gegevens uit het Kit financieel plan voor restaurants, niet op intuïtie.",
       "12:00 · Executive Chef Pro — u werkt de procedure voor het hanteren van vis bij en deze wordt gerepliceerd naar de 7 keukens als nieuwe versie van de handleiding.",
       "15:30 · Geconsolideerde roosters — u bekijkt het Kit Gestión de Personal met productiviteitsratio's van alle locaties en ondertekent de onboarding van de nieuwe manager van locatie 8.",
       "17:00 · Sonar Deep Research — u onderzoekt de markt voor de volgende opening in een andere stad: analyse van gebieden, gemiddeld besteedbaar bedrag en concurrentie.",
-      "19:00 · Vergadering met het comité — u exporteert de KPI's van het kwartaal naar PDF rechtstreeks vanuit het Kit Plan Financiero. Vergadering afgerond in 45 minuten.",
+      "19:00 · Vergadering met het comité — u exporteert de KPI's van het kwartaal naar PDF rechtstreeks vanuit het Kit financieel plan voor restaurants. Vergadering afgerond in 45 minuten.",
       "21:30 · Afsluiting — de 7 managers sturen u het automatische dagrapport via WhatsApp. U gaat naar huis met een volledig beeld van de groep."
     ],
     "productsTitle": "Downloadbare sjablonen en kits voor restaurantgroepen",
@@ -556,9 +552,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-tareas"
     ],
-    "testimonialQuote": "We beheren 7 locaties en voorheen werkte elke locatie anders: verschillende Excel-bestanden, verschillende handleidingen, verschillende HACCP. Met AI Chef Pro hebben we dezelfde standaard overal en geconsolideerde rapportage in één overzicht. Het detecteren van de locatie met problemen ging van 2 weken naar 1 dag.",
-    "testimonialAuthor": "Javier Ortega",
-    "testimonialRole": "Operationeel directeur, restaurantgroep met 7 locaties",
     "faqTitle": "Veelgestelde vragen van operationeel directeuren",
     "faqs": [
       {
@@ -575,7 +568,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe wordt dezelfde standaard in alle units gegarandeerd?",
-        "a": "Executive Chef Pro standaardiseert recepten en technische fiches; het Pack APPCC verenigt traceerbaarheid; het Kit de Escandallos Pro handhaaft dezelfde berekeningen in alle locaties. De handleidingen worden met één klik gerepliceerd en vanuit één punt bijgewerkt."
+        "a": "Executive Chef Pro standaardiseert recepten en technische fiches; het Pack HACCP verenigt traceerbaarheid; het Kit de Escandallos Pro handhaaft dezelfde berekeningen in alle locaties. De handleidingen worden met één klik gerepliceerd en vanuit één punt bijgewerkt."
       },
       {
         "q": "Zijn er kortingen voor groepen met meerdere locaties?",
@@ -684,9 +677,9 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "afterTitle": "Met AI Chef Pro",
       "afterItems": [
         "Dezelfde standaard gerepliceerd in alle 7 units: recepten, handleidingen en HACCP uniform",
-        "Locatie met afwijkingen detecteren in 1 dag met geconsolideerd dashboard van het Kit Plan Financiero",
+        "Locatie met afwijkingen detecteren in 1 dag met geconsolideerd dashboard van het Kit financieel plan voor restaurants",
         "Onboarding van een nieuwe manager in 1 week met repliceerbare handleidingen en training",
-        "Rapportage aan het comité in PDF rechtstreeks uit het Kit Plan Financiero met geconsolideerde KPI's",
+        "Rapportage aan het comité in PDF rechtstreeks uit het Kit financieel plan voor restaurants met geconsolideerde KPI's",
         "Expansiebeslissingen ondersteund door Sonar Deep Research en professionele Cómo Montar…-gidsen"
       ]
     },
@@ -782,9 +775,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Vroeger had ik 15 tot 20 dagen nodig om een nieuwe kaart rond te krijgen, met ideeën, tests, kostprijsberekeningen, technische fiches en interne communicatie. Met AI Chef Pro doe ik dat in 2 tot 3 dagen, afhankelijk van de omvang van de kaart en of het een volledige of gedeeltelijke herziening is. Het verschil zit niet alleen in de tijd: het team krijgt professionele documentatie die het kan herhalen, geen handgeschreven notities.",
-    "testimonialAuthor": "Diego Saavedra",
-    "testimonialRole": "Executive chef, groep van 5 mediterrane restaurants",
     "faqTitle": "Veelgestelde vragen van executive chefs",
     "faqs": [
       {
@@ -797,7 +787,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is het voor een gevorderde gastronomische keuken, of alleen voor casual dining?",
-        "a": "Voor het hele spectrum. Er zijn specifieke agenten: Creatieve Keuken voor auteurskeuken, Creatieve Patisserie, Fermentus Con AI+ voor de avant-garde, VegChef Plantaardig voor plantaardige keuken, plus 27 receptenboeken per land. Er zijn toepassingen in Michelinkeuens, in keukens met Repsol-zonnen en in casual groepen tot 25 vestigingen."
+        "a": "Voor het hele spectrum. Er zijn specifieke agenten: Creatieve Keuken voor auteurskeuken, Creatieve Patisserie, Fermentus Con AI+ voor de avant-garde, VegChef Plantaardig voor plantaardige keuken, plus 27 receptenboeken per land. Er zijn toepassingen in Michelinkeukens, in keukens met Repsol-zonnen en in casual groepen tot 25 vestigingen."
       },
       {
         "q": "Hoe past het systeem zich aan mijn manier van werken aan?",
@@ -805,7 +795,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is er iets specifieks voor groepen met meerdere vestigingen en restaurantketens?",
-        "a": "Ja. De agent Executive Chef Pro is bedoeld voor standaardisatie: dezelfde technische fiche, dezelfde kostprijsberekening en dezelfde handboeken, herhaald in alle vestigingen. Samen met de Kit Plan Financiero consolideert u de KPI-rapportage per vestiging en per groep."
+        "a": "Ja. De agent Executive Chef Pro is bedoeld voor standaardisatie: dezelfde technische fiche, dezelfde kostprijsberekening en dezelfde handboeken, herhaald in alle vestigingen. Samen met de Kit financieel plan voor restaurants consolideert u de KPI-rapportage per vestiging en per groep."
       },
       {
         "q": "Is er een bibliotheek met prompts voor chefs?",
@@ -986,7 +976,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC en traceerbaarheid",
-        "description": "Pack APPCC met 19 registraties: temperaturen, verliezen, allergenen en traceerbaarheid vanaf de mobiel van het team."
+        "description": "Pack HACCP met 19 registraties: temperaturen, verliezen, allergenen en traceerbaarheid vanaf de mobiel van het team."
       },
       {
         "icon": "Beaker",
@@ -1009,7 +999,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "08:00 · Opening — u print de mise en place van de dag vanuit het Kit de Tareas en valideert bestellingen bij leveranciers met het Kit Inventario.",
       "09:00 · Creatieve Keuken — u ontwikkelt een gerecht buiten de kaart voor het weekend met product dat goed geprijsd was. U ontvangt recept + kostprijsberekening CSV.",
       "10:30 · Kit de Escandallos Pro — u laadt de CSV, past uw reële prijzen toe en valideert dat de foodcost klopt op 28 %.",
-      "12:30 · Service — het team registreert verliezen en temperaturen vanaf de mobiel met het Pack APPCC. U bent in de keuken, niet op kantoor.",
+      "12:30 · Service — het team registreert verliezen en temperaturen vanaf de mobiel met het Pack HACCP. U bent in de keuken, niet op kantoor.",
       "15:30 · Korte briefing met de brigade om het gerecht van de dag door te nemen en de mise aan te passen.",
       "17:00 · Pro Prompts eBook — u vraagt de agent om het script te genereren voor de training van een nieuwe kok die morgen begint.",
       "19:30 · Avondservice — u coördineert de service met het team, ondersteund door de gecentraliseerde technische fiches.",
@@ -1024,14 +1014,11 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Het Kit de Escandallos en het Pack APPCC hebben mij 5 uur administratie per week bespaard. Maar wat ik het meest gebruik is Creatieve Keuken voor gerechten buiten de kaart in het weekend: in één ochtend rond ik recept, kostprijsberekening en technische fiche af. Vroeger was dat een hele week.",
-    "testimonialAuthor": "Lucía Romero",
-    "testimonialRole": "Keukenchef, mediterraan restaurant met 70 plaatsen",
     "faqTitle": "Veelgestelde vragen van keukenchefs",
     "faqs": [
       {
         "q": "Moet u een Excel-expert zijn?",
-        "a": "Nee. De sjablonen van het Kit de Escandallos Pro en het Pack APPCC hebben vooraf geladen formules, u voert alleen gegevens in. Er is een video-tutorial van 5 minuten om te starten."
+        "a": "Nee. De sjablonen van het Kit de Escandallos Pro en het Pack HACCP hebben vooraf geladen formules, u voert alleen gegevens in. Er is een video-tutorial van 5 minuten om te starten."
       },
       {
         "q": "Werkt het als onze menukaart elke maand of elk seizoen verandert?",
@@ -1208,7 +1195,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC vanaf de mobiel",
-        "description": "Pack APPCC met registraties, temperatuuralarmen en PDF-export. Het team registreert vanaf de mobiel zonder papierwerk."
+        "description": "Pack HACCP met registraties, temperatuuralarmen en PDF-export. Het team registreert vanaf de mobiel zonder papierwerk."
       },
       {
         "icon": "Calculator",
@@ -1240,7 +1227,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "workflow": [
       "07:30 · Opening – u opent het Kit de Tareas en controleert de mise en place van de dag. U tekent de kritieke voorraad met het Kit Inventario.",
       "08:30 · Korte briefing met de brigade – u doorloopt de gangen van de dag met gecentraliseerde technische fiches in de hand.",
-      "12:00 · Middagservice – u superviseert de partijen, het team registreert verliezen en temperaturen vanaf de mobiel met het Pack APPCC.",
+      "12:00 · Middagservice – u superviseert de partijen, het team registreert verliezen en temperaturen vanaf de mobiel met het Pack HACCP.",
       "15:30 · Creatieve Keuken – de chef-kok vraagt u om een speciaal gerecht voor zaterdag. U genereert gerecht + kostprijs-CSV in 20 minuten.",
       "16:00 · Kit de Escandallos Pro – u laadt de CSV met uw werkelijke prijzen, valideert dat de foodcost op 28% klopt en exporteert het technische fiche.",
       "17:30 · Personeelsmaaltijden – u bereidt het personeelsmenu voor de komende week, rekening houdend met de doelkost en de voorraad in de koeling.",
@@ -1256,9 +1243,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Sous chef zijn is op honderd plaatsen tegelijk zijn. De mise en place-lijsten van het Kit de Tareas en de APPCC-registraties vanaf de mobiel hebben mijn chaos georganiseerd. Wanneer de chef-kok er niet is, blijft alles werken omdat de procedures zijn gedocumenteerd.",
-    "testimonialAuthor": "Nicolás Vega",
-    "testimonialRole": "Sous Chef, restaurant met 100 zitplaatsen",
     "faqTitle": "Veelgestelde Vragen van Sous Chefs",
     "faqs": [
       {
@@ -1445,7 +1429,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC buiten de locatie",
-        "description": "Pack APPCC met sjablonen aangepast aan product dat onderweg is: traceerbaarheid, temperatuur tijdens transport en registraties op externe locatie."
+        "description": "Pack HACCP met sjablonen aangepast aan product dat onderweg is: traceerbaarheid, temperatuur tijdens transport en registraties op externe locatie."
       },
       {
         "icon": "Image",
@@ -1470,7 +1454,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "10:30 · Calcula Pax + Kit de Escandallos Pro — u schaalt op naar 180 gasten, laadt de CSV met uw werkelijke prijzen en valideert de doelwinstmarge.",
       "12:00 · Validatie met klant — u exporteert het voorstel met technische fiches en gastronomische fotografie van GastroIMG Gen+.",
       "14:00 · Kit de Tareas Catering — u plant productie, transport, opbouw, service en afbouw van het evenement van zaterdag.",
-      "16:00 · APPCC buiten de locatie — u bereidt temperatuurregistraties tijdens transport en traceerbaarheid op externe locatie voor met het Pack APPCC.",
+      "16:00 · APPCC buiten de locatie — u bereidt temperatuurregistraties tijdens transport en traceerbaarheid op externe locatie voor met het Pack HACCP.",
       "18:00 · Allergenen ID — u genereert het allergenenoverzicht per gerecht, klaar voor de zaal en voor gasten met beperkingen.",
       "19:30 · Brief aan het team — u stelt de servicebrief samen met het keuken- en zaalteam van het evenement, alles vanuit één bron."
     ],
@@ -1483,9 +1467,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-inventario"
     ],
-    "testimonialQuote": "De kostenberekeningen per evenement besparen mij uren. Ik sluit een menu voor 200 gasten af met gevalideerde marge in 30 minuten. Vroeger was ik een halve middag bezig met rekenmachine en servetten. En het hebben van APPCC aangepast aan evenementen buiten de locatie heeft ons een enorme hoofdpijn bespaard met zakelijke klanten.",
-    "testimonialAuthor": "Andrea Costa",
-    "testimonialRole": "Cateringchef, specialist in zakelijke evenementen en bruiloften",
     "faqTitle": "Veelgestelde vragen van cateringchefs",
     "faqs": [
       {
@@ -1498,7 +1479,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Deckt het APPCC buiten de vaste locatie?",
-        "a": "Ja. Het Pack APPCC heeft specifieke sjablonen voor product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locatie."
+        "a": "Ja. Het Pack HACCP heeft specifieke sjablonen voor product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locatie."
       },
       {
         "q": "Zijn er specifieke sjablonen voor catering?",
@@ -1651,7 +1632,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "FileText",
-        "title": "Kit Plan Financiero",
+        "title": "Kit financieel plan voor restaurants",
         "description": "Cashflow, maandelijkse P&L, dashboard met ratio's en winstgevendheid per evenement en per klant. Professionele sjablonen aangepast aan catering."
       },
       {
@@ -1667,7 +1648,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en certificeringen",
-        "description": "Pack APPCC met sjablonen aangepast aan catering: traceerbaarheid, transport en registraties klaar voor inspectie en zakelijke klanten."
+        "description": "Pack HACCP met sjablonen aangepast aan catering: traceerbaarheid, transport en registraties klaar voor inspectie en zakelijke klanten."
       },
       {
         "icon": "Sparkles",
@@ -1692,12 +1673,12 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Een echte dag van een cateringondernemer met AI Chef Pro",
     "workflow": [
-      "08:30 · Kit Plan Financiero — u opent het dashboard en ontdekt dat een evenement van het weekend een marge heeft van 18%, onder de doelstelling (28%).",
+      "08:30 · Kit financieel plan voor restaurants — u opent het dashboard en ontdekt dat een evenement van het weekend een marge heeft van 18%, onder de doelstelling (28%).",
       "09:30 · Kit de Escandallos Pro — u analyseert de kostprijsberekening van het evenement en past het menu of de prijs aan voordat u het contract sluit.",
       "11:00 · Catering AI+ — u sluit een voorstel voor een zakelijke klant met een door AI gegenereerde presentatie die met de agent is gevalideerd.",
       "12:30 · GastroIMG Gen+ — u genereert de foto's van de gerechten van het voorgestelde menu om in de presentatie op te nemen.",
       "14:00 · Overleg met zakelijke klant — u presenteert een voorstel dat in 1 uur is afgerond in plaats van de traditionele 3 dagen.",
-      "16:30 · Kit Plan Financiero — u valideert de kwartaalprognose en exporteert naar PDF voor overleg met partners.",
+      "16:30 · Kit financieel plan voor restaurants — u valideert de kwartaalprognose en exporteert naar PDF voor overleg met partners.",
       "18:00 · Kit Gestión de Personal — u controleert het weekendrooster met vast en tijdelijk personeel en ondertekent contracten per evenement.",
       "20:00 · BlogPost SEO Gen+ — u publiceert een bericht over het laatste grote zakelijke evenement om organisch nieuwe klanten aan te trekken."
     ],
@@ -1710,9 +1691,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "kit-inventario"
     ],
-    "testimonialQuote": "AI Chef Pro heeft mij echte financiële controle gegeven. Ik weet precies bij welke evenementen ik geld verdien en bij welke niet, en dat heeft mij in staat gesteld om nee te zeggen tegen klanten die niet rendabel waren. In het eerste kwartaal zijn we 4 punten marge gestegen zonder prijzen te wijzigen. Alleen door menu's aan te passen en slechte evenementen te weigeren.",
-    "testimonialAuthor": "Roberto Iglesias",
-    "testimonialRole": "Eigenaar, zakelijk cateringbedrijf (€2M jaarlijkse omzet)",
     "faqTitle": "Veelgestelde vragen van cateringondernemers",
     "faqs": [
       {
@@ -1737,7 +1715,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is het veilig om het financiële plan aan een AI toe te vertrouwen?",
-        "a": "Ja. Het Kit Plan Financiero is een professionele Excel-sjabloon met vooraf geladen formules, geen AI. U voert de werkelijke gegevens in en de tool berekent. De AI-agenten worden alleen gebruikt om beslissingen te ondersteunen, voorstellen op te stellen en analyses uit te voeren, niet voor kritieke financiële berekeningen."
+        "a": "Ja. Het Kit financieel plan voor restaurants is een professionele Excel-sjabloon met vooraf geladen formules, geen AI. U voert de werkelijke gegevens in en de tool berekent. De AI-agenten worden alleen gebruikt om beslissingen te ondersteunen, voorstellen op te stellen en analyses uit te voeren, niet voor kritieke financiële berekeningen."
       }
     ],
     "ctaTitle": "Laat uw catering groeien met echte marge, niet met intuïtie.",
@@ -1903,7 +1881,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC bar",
+        "title": "Pack HACCP bar",
         "description": "Traceerbaarheid van ijs, verse garnishes, zelfgemaakte infusies en kritische temperaturen."
       },
       {
@@ -1942,9 +1920,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "AI Chef Pro heeft mijn manier van het afronden van cocktailkaarten veranderd. Vroeger was het een week van servetten en rekenmachine; nu is het een dag met professionele kostprijsberekening, technische fiche met storytelling en gevalideerde pairing, klaar voor mijn team om te repliceren. We verhoogden de marge met 5 punten en verdrievoudigden de engagement op Instagram met GastroIMG.",
-    "testimonialAuthor": "Hugo Vázquez",
-    "testimonialRole": "Bartender, signature cocktailbar",
     "faqTitle": "Veelgestelde vragen van bartenders",
     "faqs": [
       {
@@ -1965,7 +1940,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met de seizoensgebondenheid van de kaart?",
-        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst, kerst, Valentijn) vooraf. Het Kit Plan Financiero projecteert een realistische seizoenscashflow zodat u met voorraad en kas bij elke piek aankomt."
+        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst, kerst, Valentijn) vooraf. Het Kit financieel plan voor restaurants projecteert een realistische seizoenscashflow zodat u met voorraad en kas bij elke piek aankomt."
       }
     ],
     "ctaTitle": "Uw cocktailbar met reële marge en signature techniek.",
@@ -2126,7 +2101,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC pizzeria",
+        "title": "Pack HACCP pizzeria",
         "description": "Traceerbaarheid van meel, zuurdesem, mozzarella, sauzen en kritische temperaturen in oven en koelcel."
       },
       {
@@ -2170,9 +2145,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben pizza voor pizza doorgerekend en ontdekt dat 4 verliesgevend waren ondanks dat ze goed verkochten. We hebben ze opnieuw ontworpen met Italiaanse Keuken, toppings vereenvoudigd zonder identiteit te verliezen en de marge met 4 punten verhoogd zonder de prijs te wijzigen. Fermentus veranderde ons deeg: 70 % hydratatie, 48 uur fermentatie, perfecte kruimstructuur.",
-    "testimonialAuthor": "Giovanni Russo",
-    "testimonialRole": "Pizzaiolo en eigenaar, Napolitaanse pizzeria",
     "faqTitle": "Veelgestelde vragen van pizzabakkers",
     "faqs": [
       {
@@ -2193,7 +2165,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met seizoensgebondenheid en evenementen?",
-        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst met paddenstoelen en truffel, speciaal voor Valentijnsdag, Pasen, Kerstmis). Het Kit Plan Financiero projecteert de realistische seizoenscashflow zodat u met voldoende voorraad en kasgeld elke piek haalt."
+        "a": "Gastro Calendar plant de seizoenskaarten (zomer, herfst met paddenstoelen en truffel, speciaal voor Valentijnsdag, Pasen, Kerstmis). Het Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow zodat u met voldoende voorraad en kasgeld elke piek haalt."
       }
     ],
     "ctaTitle": "Uw pizzeria met echte marge en authentieke techniek.",
@@ -2359,7 +2331,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC bakkerij",
+        "title": "Pack HACCP bakkerij",
         "description": "Traceerbaarheid van meel, zuurdesem, preferments, conservering en kritische temperaturen in de rijsruimte."
       },
       {
@@ -2398,9 +2370,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We zijn overgestapt van losse vellen naar een systeem. We weten precijk welk stuk rendeert en welk niet, inclusief het uurtarief van de bakkerij. De verspilling daalde met 30% in 3 maanden en we ontdekten dat twee historische broden niet rendabel waren zonder uurtarief — we hebben ze opnieuw ontworpen door het proces te vereenvoudigen zonder kwaliteitsverlies en de marge met 5 punten verhoogd.",
-    "testimonialAuthor": "Ana Iglesias",
-    "testimonialRole": "Ambachtelijk bakker, eigen bakkerij",
     "faqTitle": "Veelgestelde Vragen van Bakkers",
     "faqs": [
       {
@@ -2421,7 +2390,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met seizoensgebondenheid en evenementen?",
-        "a": "Gastro Calendar plant de belangrijkste seizoenen (Pasen met mona's en paasbrood, Kerst met Roscón en panettone, Sint-Jan, lokale evenementen) ruim van tevoren. Het Kit Plan Financiero projecteert een realistische seizoensgebonden cashflow."
+        "a": "Gastro Calendar plant de belangrijkste seizoenen (Pasen met mona's en paasbrood, Kerst met Roscón en panettone, Sint-Jan, lokale evenementen) ruim van tevoren. Het Kit financieel plan voor restaurants projecteert een realistische seizoensgebonden cashflow."
       }
     ],
     "ctaTitle": "Uw ambachtelijke bakkerij met duidelijke marge en professionele techniek.",
@@ -2587,7 +2556,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC chocolaterie",
+        "title": "Pack HACCP chocolaterie",
         "description": "Traceerbaarheid van cacao, zuivel, noten, alcohol en professionele bewaring met gedocumenteerde curven."
       },
       {
@@ -2627,9 +2596,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "12.000 bonbons produceren voor Kerst zonder systeem was chaos. Met Creatieve Chocolaterie voor ontwerp, Sosa Ingredients Agent voor technische couverture, Kit de Escandallos Pro voor echte marge met actuele cacao en Gastro Calendar voor seizoensplanning, hebben we het seizoen gered en de marge met 7 punten verhoogd. De bedrijfsdozen worden afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Mónica Salazar",
-    "testimonialRole": "Meester-chocolatier en eigenaresse",
     "faqTitle": "Veelgestelde vragen van chocolatiers",
     "faqs": [
       {
@@ -2650,7 +2616,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het u met de sterke seizoensgebondenheid?",
-        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit Plan Financiero projecteert de realistische seizoenscashflow zodat u met productie en kas bij elke piek aankomt."
+        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow zodat u met productie en kas bij elke piek aankomt."
       }
     ],
     "ctaTitle": "Uw chocolaterie met duidelijke marge en authentieke techniek.",
@@ -2854,9 +2820,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-inventario"
     ],
-    "testimonialQuote": "Privé Chef Pro heeft mijn commerciële voorstel veranderd. Nu krijgt elke klant een gepersonaliseerd menu met professionele kostprijsberekening en storytelling, en de acquisitie via Instagram met GastroIMG Gen+ is vermenigvuldigd. Ik sluit voorstellen af in één gesprek omdat ik dezelfde dag het technisch blad + factuur lever. We verhoogden de gemiddelde besteding met 35 % per diner.",
-    "testimonialAuthor": "Andrea Gómez",
-    "testimonialRole": "Freelance privékok, Madrid + kust",
     "faqTitle": "Veelgestelde Vragen van Privékoks",
     "faqs": [
       {
@@ -3048,7 +3011,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC hotelero",
+        "title": "Pack HACCP hotelero",
         "description": "Traceerbaarheid van buffet, banketten, roomservice en bar met kritische temperaturen en bewaring."
       },
       {
@@ -3082,9 +3045,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Vijf outlets beheren zonder systeem was chaos. Pro Restaurant Manager + Catering AI+ coördineren voor ons de kruislingse menukaart, banketten en roomservice met geïntegreerde kostprijsberekening. De planning van bruiloften voor 120 personen die voorheen een week duurde, is nu een dag met een professioneel voorstel. We hebben de marge met 5 punten verhoogd door outlets te kruisen en sluiten premium evenementen veel sneller af.",
-    "testimonialAuthor": "Roberto Castaño",
-    "testimonialRole": "F&B-directeur, 5-sterrenhotel",
     "faqTitle": "Veelgestelde vragen van F&B-managers",
     "faqs": [
       {
@@ -3271,7 +3231,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC zaal",
+        "title": "Pack HACCP zaal",
         "description": "Traceerbaarheid van de wijnkelder, conservering van wijnen, decanteren en serveertemperaturen."
       },
       {
@@ -3310,9 +3270,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-inventario"
     ],
-    "testimonialQuote": "Pro Restaurant Manager + Bar & Lounge AI+ + Food Pairing AI hebben het niveau van mijn zaalteam compleet verhoogd. De dagelijkse briefing met gegenereerde storytelling van elk gerecht en wetenschappelijk gevalideerde pairing is nu professioneel. Klanten merken het verschil: we verhoogden de gemiddelde ticketwaarde met 20% en het aandeel terugkerende premium gasten groeide met 40% in zes maanden.",
-    "testimonialAuthor": "Sofía Vega",
-    "testimonialRole": "Maître en Restaurantleider, fine dining restaurant",
     "faqTitle": "Veelgestelde Vragen van Maîtres",
     "faqs": [
       {
@@ -3499,7 +3456,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC wijnkelder",
+        "title": "Pack HACCP wijnkelder",
         "description": "Traceerbaarheid van wijnen, conservering, mislukte ontkurking en serveertemperaturen per type."
       },
       {
@@ -3538,9 +3495,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "pro-prompts-ebook",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Bar & Lounge AI+ en Food Pairing AI hebben mijn aanbod veranderd. Elke pairing in het proefmenu heeft nu een gedocumenteerde wetenschappelijke basis die het bedieningsteam professioneel aan de gast communiceert. Het wijnmagazijnbeheer met kostprijs per glas heeft onze wijnmarge met 6 punten verhoogd. Privéproeverijen voor VIP's worden afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Eduardo Lara",
-    "testimonialRole": "Head sommelier, restaurant met 1 Michelinster",
     "faqTitle": "Veelgestelde vragen van sommeliers",
     "faqs": [
       {
@@ -3727,7 +3681,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC grill",
+        "title": "Pack HACCP grill",
         "description": "Traceerbaarheid van vlees, dry-aging, kerntemperatuur en conservering."
       },
       {
@@ -3766,9 +3720,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Argentijnse Keuken + Creatieve Keuken hebben mijn niveau verhoogd. Mijn team reproduceert nu de gaarheid met gedocumenteerde technische criteria, de kostprijsberekeningen van premium cuts weerspiegelen het verlies van de dry-aged en we hebben de marge met 5 punten verhoogd. De planning voor Vaderdag met Gastro Calendar heeft onze omzet verdrievoudigd.",
-    "testimonialAuthor": "Pedro Aguirre",
-    "testimonialRole": "Meester grillmeester, premium grill met dry-aged",
     "faqTitle": "Veelgestelde Vragen van Meester Grillmeesters",
     "faqs": [
       {
@@ -3960,7 +3911,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC ijsbereiding",
+        "title": "Pack HACCP ijsbereiding",
         "description": "Traceerbaarheid van melk, vers fruit, noten en kritische temperaturen."
       },
       {
@@ -3994,9 +3945,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Creatief IJs heeft onze keuken veranderd. We balanceren suikers en vaste stoffen met technisch inzicht, de berekeningen per bol met premium pistache weerspiegelen reële marge. Creatieve Patisserie opende de ijsgebakken die de winter rendabel maken. We stegen 5 punten.",
-    "testimonialAuthor": "Federico Riva",
-    "testimonialRole": "Meester-gelatiere, premium ambachtelijke gelateria",
     "faqTitle": "Veelgestelde vragen van meester-ijsbereiders",
     "faqs": [
       {
@@ -4188,7 +4136,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC Patisserie",
+        "title": "Pack HACCP Patisserie",
         "description": "Traceerbaarheid van ei, crèmes, noten en professionele bewaring."
       },
       {
@@ -4222,9 +4170,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Creatieve Patisserie + Sosa Ingredients Agent hebben mijn aanbod veranderd. Mijn signature-desserts hebben nu gedocumenteerde techniek die mijn team consistent repliceert, de kostprijsberekeningen met werkplaatsuurtarief gaven mij 6 punten meer marge en op maat gemaakte taartbestellingen worden afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Eva Mata",
-    "testimonialRole": "Chef pâtissière, signatuurpatisserie",
     "faqTitle": "Veelgestelde Vragen van Banketbakkers",
     "faqs": [
       {
@@ -4402,7 +4347,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC en traceerbaarheid",
-        "description": "Pack APPCC met 19 registraties, registraties via mobiel, meldingen en afdrukklare A4-bladen voor de inspectie."
+        "description": "Pack HACCP met 19 registraties, registraties via mobiel, meldingen en afdrukklare A4-bladen voor de inspectie."
       },
       {
         "icon": "Users",
@@ -4416,7 +4361,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "BarChart3",
-        "title": "Kit Plan Financiero",
+        "title": "Kit financieel plan voor restaurants",
         "description": "Dashboard met ratio's, foodcost, productiviteit en gemiddeld ticket. Rapportage aan de eigenaar in PDF."
       },
       {
@@ -4436,10 +4381,10 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "10:00 · Casual Restaurants AI+ — u vraagt de agent om suggesties voor de dagschotel met producten die u op voorraad heeft.",
       "10:30 · Creatieve Keuken + Kit de Escandallos Pro — u calculeert de dagschotel met uw prijzen en valideert de marge.",
       "12:30 · Middagdienst — keuken, bediening en delivery gecoördineerd met sjablonen. Verliezen geregistreerd via de mobiel met APPCC.",
-      "15:30 · Kit Plan Financiero — u bekijkt de KPI's van de vorige dag en ontdekt dat de foodcost op maandag is gestegen naar 32%, u identificeert de oorzaak.",
+      "15:30 · Kit financieel plan voor restaurants — u bekijkt de KPI's van de vorige dag en ontdekt dat de foodcost op maandag is gestegen naar 32%, u identificeert de oorzaak.",
       "17:00 · MenuDish Local SEO — u werkt de beschrijvingen van de 6 topgerechten bij in Google Business en op de website.",
       "18:00 · Kit Inventario — u valideert bestellingen bij leveranciers met prijsvergelijking en meldingen voor minimale voorraad.",
-      "23:30 · Sluiting — APPCC ondertekend, dagelijks rapport aan de eigenaar in PDF direct vanuit het Kit Plan Financiero."
+      "23:30 · Sluiting — APPCC ondertekend, dagelijks rapport aan de eigenaar in PDF direct vanuit het Kit financieel plan voor restaurants."
     ],
     "productsTitle": "Downloadbare sjablonen en kits voor casual restaurants",
     "productIds": [
@@ -4450,9 +4395,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "We hebben 80 zitplaatsen en een hoog personeelsverloop. De Kit de Tareas Restaurante Casual en de Pack APPCC hebben onze hele operatie op orde gebracht. We lopen als een Zwitserse klok en de foodcost is in het eerste kwartaal met 3 punten gedaald, alleen al door nauwkeurige kostprijsberekening.",
-    "testimonialAuthor": "Sandra López",
-    "testimonialRole": "Manager, mediterraan casual restaurant met 80 zitplaatsen",
     "faqTitle": "Veelgestelde vragen over casual restaurants",
     "faqs": [
       {
@@ -4639,7 +4581,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC vereenvoudigd",
-        "description": "Pack APPCC met minimale maar complete registraties for koffiebar: melk, conservatie, waschen, temperaturen."
+        "description": "Pack HACCP met minimale maar complete registraties for koffiebar: melk, conservatie, waschen, temperaturen."
       },
       {
         "icon": "Image",
@@ -4654,7 +4596,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "BarChart3",
         "title": "KPIs en gemiddelde ticket",
-        "description": "Kit Plan Financiero: bezetting ratio, gemiddelde ticket, productiviteit en upselling van brunch en koffie."
+        "description": "Kit financieel plan voor restaurants: bezetting ratio, gemiddelde ticket, productiviteit en upselling van brunch en koffie."
       },
       {
         "icon": "Search",
@@ -4682,9 +4624,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben brunch in het weekend en specialty koffie door de week. De Kit de Tareas Cafetería en de contentgeneration for Instagram hebben me de middagen teruggegeven. Pinterest Pins Gen was een ontdekking: het heeft ons organische traffic gebracht dat ik nog nooit gezien had.",
-    "testimonialAuthor": "Marcos Rivera",
-    "testimonialRole": "Eigenaar, specialty coffee shop en brunch",
     "faqTitle": "Veelgestelde Vragen van Coffee Shops",
     "faqs": [
       {
@@ -4866,7 +4805,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC",
+        "title": "Pack HACCP",
         "description": "Sjablonen aangepast aan pizzeria: ovetemperature, conservering van zuurdesem, traceerbaarheid voor delivery."
       },
       {
@@ -4910,9 +4849,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Wei maakte escandall pizza voor pizza mei de Kit de Escandallos Pro en ontdekte dat 4 variante in verleies ware omdat wei te veul mozzarella wooge. Wei pasten grammage en prijs aan. De marge van de lokaal steeg 4 punten in 2 maanden zonder de kwaliteit te raken.",
-    "testimonialAuthor": "Giovanni Russo",
-    "testimonialRole": "Pizzaiolo en eigenaar, napoletana pizzeria",
     "faqTitle": "Fais Vraogen van Pizzerias",
     "faqs": [
       {
@@ -5084,7 +5020,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC + Allergenen ID",
+        "title": "Pack HACCP + Allergenen ID",
         "description": "Traceerbaarheid van vlees, garingcontrole, temperatuur en allergenen per burger."
       },
       {
@@ -5133,9 +5069,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We verlaagden de foodcost van 36% naar 31% in 60 dagen met nauwkeurige kostprijzen en systematische controle van verliezen. De investering in AI Chef Pro was in één week terugverdiend, alleen al hiermee. De AI-foto voor Glovo bracht onze ranking van plaats 8 naar 3.",
-    "testimonialAuthor": "Pablo Hernández",
-    "testimonialRole": "Eigenaar, gourmet burgerrestaurant met 2 merken in delivery",
     "faqTitle": "Veelgestelde Vragen voor Burgerrestaurants",
     "faqs": [
       {
@@ -5148,7 +5081,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is er specifieke controle van vlees en traceerbaarheid?",
-        "a": "Ja. Pack APPCC met traceerbaarheid van vlees, garingcontrole op punt, interne temperatuur en bewaring."
+        "a": "Ja. Pack HACCP met traceerbaarheid van vlees, garingcontrole op punt, interne temperatuur en bewaring."
       },
       {
         "q": "Genereert het ideeën voor combo's en promoties?",
@@ -5259,7 +5192,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
         "Burger Pro AI+ + Creatieve Keuken documenteren reproduceerbare techniek",
         "Foodcost op 31% met professionele kostprijs en gecontroleerde verliezen",
         "Professionele foto's met GastroIMG Gen+ die de ranking op platforms verhogen",
-        "Pack APPCC met traceerbaarheid van vlees en geregistreerde verliezen",
+        "Pack HACCP met traceerbaarheid van vlees en geregistreerde verliezen",
         "Kit de Tareas Hamburguesería met sjablonen voor delivery en locatie"
       ]
     },
@@ -5357,9 +5290,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-plan-financiero",
       "kit-inventario"
     ],
-    "testimonialQuote": "We exploiteren 4 virtuele merken in één keuken. Zonder kostprijsberekening per merk en per platform verloren we marge zonder te weten waar. AI Chef Pro heeft het voor ons opgelost in een week: we ontdekten dat één merk een foodcost van 41% had op Glovo. We hebben het herontworpen en de marge steeg met 7 punten zonder de prijs te wijzigen.",
-    "testimonialAuthor": "Iván Domínguez",
-    "testimonialRole": "Operator, dark kitchen met 4 virtuele merken",
     "faqTitle": "Veelgestelde vragen van Dark Kitchen-operators",
     "faqs": [
       {
@@ -5561,7 +5491,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC patisserie",
+        "title": "Pack HACCP patisserie",
         "description": "Traceerbaarheid van ei, crèmes met zuivel, noten en professionele conservering."
       },
       {
@@ -5595,9 +5525,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "De receptcalculaties per stuk met uurkosten van de bakkerij hebben mijn ogen geopend. Ik ontdekte dat sommige complexe bereidingen niet rendabel waren, ondanks dat ze goed verkochten. We hebben ze opnieuw ontworpen met Creatieve Patisserie door het proces te vereenvoudigen zonder kwaliteitsverlies en we hebben de marge met 6 punten verhoogd.",
-    "testimonialAuthor": "Eva Mata",
-    "testimonialRole": "Eigenaresse, ambachtelijke patisserie met eigen bakkerij",
     "faqTitle": "Veelgestelde vragen van patisserieën",
     "faqs": [
       {
@@ -5789,7 +5716,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC Bar",
+        "title": "Pack HACCP Bar",
         "description": "Specifieke traceerbaarheid: verse sappen, crèmes, bewaring van garnituren, reiniging van glaswerk."
       },
       {
@@ -5823,9 +5750,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Dat elke cocktail is doorberekend en de kaart in één ochtend klaar is, heeft mijn manier van werken veranderd. Voorheen deed ik dat met een rekenmachine, een servet en veel intuïtie. Nu stel ik met Bar & Lounge AI+ en Kit de Escandallos Pro in 2 uur een nieuwe kaart samen met gevalideerde marge.",
-    "testimonialAuthor": "Hugo Vázquez",
-    "testimonialRole": "Bartender en eigenaar, cocktailbar met eigen signatuur",
     "faqTitle": "Veelgestelde vragen van bartenders en cocktailmakers",
     "faqs": [
       {
@@ -6012,7 +5936,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC buiten de vaste locatie",
+        "title": "Pack HACCP buiten de vaste locatie",
         "description": "Traceerbaarheid tijdens transport, op externe locaties en externe service met registraties vanaf mobiel."
       },
       {
@@ -6039,7 +5963,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "12:00 · GastroIMG Gen+ — u genereert foto's van de gerechten om op te nemen in de presentatie aan de klant.",
       "14:00 · Overleg met klant — voorstel afgerond met een professionele presentatie in plaats van de oude Word-sjablonen.",
       "16:00 · Kit de Tareas Catering — u plant centrale productie, transport, opbouw en service voor het evenement van zaterdag.",
-      "18:00 · Pack APPCC — u bereidt temperatuurregistraties voor voor transport en traceerbaarheid op externe locaties.",
+      "18:00 · Pack HACCP — u bereidt temperatuurregistraties voor voor transport en traceerbaarheid op externe locaties.",
       "20:00 · Brief aan het team — u stelt een productie-, transport-, opbouw- en servicebrief samen vanuit één bron."
     ],
     "productsTitle": "Downloadbare Sjablonen en Kits voor Catering",
@@ -6051,9 +5975,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We sluiten evenementen af in een derde van de tijd. De kostprijsberekeningen per evenement passen zich tot in detail aan op het aantal gasten, de logistieke sjablonen zijn goud waard en de voorstellen met professionele fotografie sluiten zakelijke contracten die ons eerder ontgingen. Marge +5 punten in het eerste kwartaal alleen al door betere kostprijsberekening.",
-    "testimonialAuthor": "Sara Pérez",
-    "testimonialRole": "Cateringbedrijf voor zakelijke evenementen en bruiloften (200 evenementen per jaar)",
     "faqTitle": "Veelgestelde Vragen van Cateringbedrijven",
     "faqs": [
       {
@@ -6066,7 +5987,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Is er specifieke HACCP buiten de vaste locatie?",
-        "a": "Ja. Het Pack APPCC heeft sjablonen aangepast aan product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locaties."
+        "a": "Ja. Het Pack HACCP heeft sjablonen aangepast aan product dat reist in rugzak, motor, gekoelde bestelwagen of centrale keuken, inclusief traceerbaarheid op externe locaties."
       },
       {
         "q": "Genereert het commerciële voorstellen voor bedrijven?",
@@ -6086,7 +6007,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "ogImage": "https://aichef.pro/og/use-cases/catering-eventos.jpg"
     },
     "personalizationTitle": "Gepersonaliseerd voor Uw Catering vanaf Minuut Eén",
-    "personalizationBody": "AI Chef Pro start met de agent «Wie Ben Ik?», een conversationele onboarding van 2 minuten waarin u vertelt welk type catering u runt (bruiloften, zakelijke evenementen, cocktails, gala's), gemiddelde grootte, stad en jaarlijks volume. Elke agent —van Catering AI+ tot het Kit Plan Financiero— reageert aangepast aan uw type evenement, schaal en reële markt.",
+    "personalizationBody": "AI Chef Pro start met de agent «Wie Ben Ik?», een conversationele onboarding van 2 minuten waarin u vertelt welk type catering u runt (bruiloften, zakelijke evenementen, cocktails, gala's), gemiddelde grootte, stad en jaarlijks volume. Elke agent —van Catering AI+ tot het Kit financieel plan voor restaurants— reageert aangepast aan uw type evenement, schaal en reële markt.",
     "appsTitle": "De AI-agenten die U in Uw Catering Zult Gebruiken",
     "apps": [
       {
@@ -6245,12 +6166,12 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC corporativo",
+        "title": "Pack HACCP corporativo",
         "description": "HACCP verdeeld over de keukenafdelingen maar geconsolideerd in één dashboard voor de F&B Director."
       },
       {
         "icon": "BarChart3",
-        "title": "Kit Plan Financiero",
+        "title": "Kit financieel plan voor restaurants",
         "description": "Dashboard met KPI's per verkooppunt: ontbijt, restaurant, bar, roomservice, banketten. Bezetting en productiviteitsratio's."
       },
       {
@@ -6265,7 +6186,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "09:30 · Catering AI+ — u bereidt het bruiloftsbanket van komende zaterdag voor: menu, kostenberekening en productie voor 220 gasten.",
       "11:00 · Executive Chef Pro — u werkt het technisch blad van het nieuwe restaurantgerecht bij en het wordt gerepliceerd naar de roomservice en het banketmenu met dezelfde standaardisatie.",
       "13:00 · Middagdienst — à-la-carterestaurant + lobbybar + roomservice actief. Het team coördineert met specifieke templates per outlet.",
-      "15:30 · Kit Plan Financiero — u exporteert de KPI's per outlet van het kwartaal voor de vergadering met de hoteldirectie.",
+      "15:30 · Kit financieel plan voor restaurants — u exporteert de KPI's per outlet van het kwartaal voor de vergadering met de hoteldirectie.",
       "17:00 · Bar & Lounge AI+ — u ontwerpt de nieuwe cocktailkaart voor de lobbybar met professionele kostenberekening.",
       "19:30 · Rooster volgende week — Kit Gestión de Personal met roterende diensten met respect voor de cao, urenregistratie en gegenereerde personeelsmaaltijden.",
       "23:00 · HACCP geconsolideerd — registers van de 6 verkooppunten ondertekend en geëxporteerd, rapport aan de F&B Director en aan corporate verzonden in PDF."
@@ -6279,9 +6200,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Het coördineren van 6 F&B-verkooppunten in een hotel met 200 kamers was een constante nachtmerrie. AI Chef Pro heeft alles voor ons geordend. De Kit de Tareas Hotel is goud waard en de rapportage aan de hoteldirecteur is nu automatisch in PDF. We hebben de RevPASH van het restaurant in 4 maanden met 12 % verhoogd, alleen al door betere controle.",
-    "testimonialAuthor": "Cristina Núñez",
-    "testimonialRole": "F&B Manager, hotel 4 sterren met 200 kamers",
     "faqTitle": "Veelgestelde Vragen van F&B Managers",
     "faqs": [
       {
@@ -6306,7 +6224,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "En de kostenbeheersing per outlet?",
-        "a": "De Kit Plan Financiero maakt het mogelijk om foodcost, productiviteit en marge afzonderlijk te analyseren voor ontbijt, restaurant, lobbybar, roomservice en banketten. Dat geeft een reëel beeld van welke outlet presteert en welke niet."
+        "a": "De Kit financieel plan voor restaurants maakt het mogelijk om foodcost, productiviteit en marge afzonderlijk te analyseren voor ontbijt, restaurant, lobbybar, roomservice en banketten. Dat geeft een reëel beeld van welke outlet presteert en welke niet."
       }
     ],
     "ctaTitle": "Uw hotel-F&B gecoördineerd en zonder chaos.",
@@ -6409,7 +6327,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
         "Kit de Tareas Hotel met specifieke templates per outlet, alles gecoördineerd in één systeem",
         "HACCP geconsolideerd in dashboard: registers vanaf mobiel, klaar voor inspectie en voor corporate",
         "Banketten geïntegreerd met Catering AI+ dat de productie van de reguliere F&B respecteert",
-        "Rapportage aan de directeur en corporate in PDF rechtstreeks vanuit de Kit Plan Financiero",
+        "Rapportage aan de directeur en corporate in PDF rechtstreeks vanuit de Kit financieel plan voor restaurants",
         "Roosters met Kit Gestión de Personal: 24/7-diensten met respect voor de cao zonder verschuivingen"
       ]
     },
@@ -6467,7 +6385,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC ijssalon",
+        "title": "Pack HACCP ijssalon",
         "description": "Traceerbaarheid van melk, vers fruit, noten met allergenen en kritieke temperaturen in koelcel, ijsmachine en vitrine."
       },
       {
@@ -6506,9 +6424,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We gingen van losse vellen naar een systeem. Met Creatief IJs balanceren we suikers en vaste stoffen met technisch inzicht, en de Kit de Escandallos Pro bevestigt de werkelijke marge per bol en per kg met de actuele fruitprijzen. De uitval daalde met 40 % in 3 maanden en we ontdekten dat twee klassieke smaken niet rendabel waren.",
-    "testimonialAuthor": "Laura Costa",
-    "testimonialRole": "Eigenaresse, ambachtelijke ijssalon met eigen productieatelier",
     "faqTitle": "Veelgestelde Vragen van IJssalons",
     "faqs": [
       {
@@ -6521,7 +6436,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe beheren we de sterke seizoensgebondenheid van de ijssalon?",
-        "a": "Gastro Calendar plant de pieken vooraf (Moederdag, zomer, Valentijnsdag, Kerst met ijstaarten) en het winterdal met taarten, semifreddo's en lepeldesserts om de gemiddelde besteding op peil te houden. De Kit Plan Financiero projecteert de realistische seizoenscashflow."
+        "a": "Gastro Calendar plant de pieken vooraf (Moederdag, zomer, Valentijnsdag, Kerst met ijstaarten) en het winterdal met taarten, semifreddo's en lepeldesserts om de gemiddelde besteding op peil te houden. De Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow."
       },
       {
         "q": "Is er controle op uitval in het productieatelier en de vitrine?",
@@ -6690,7 +6605,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC chocolaterie",
+        "title": "Pack HACCP chocolaterie",
         "description": "Traceerbaarheid van cacao, zuivel, noten, alcohol en professionele bewaring met gedocumenteerde temperatuurcurves."
       },
       {
@@ -6734,9 +6649,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "12.000 bonbons produceren voor Kerst zonder systeem was chaos. Met Creatieve Chocolaterie voor ontwerp, Kit de Escandallos Pro voor echte marge met actuele cacao en Gastro Calendar voor seizoensplanning, hebben we het seizoen gered en de marge met 7 punten verhoogd. De bedrijfsdozen worden nu afgesloten in één gesprek met een professioneel voorstel.",
-    "testimonialAuthor": "Mónica Salazar",
-    "testimonialRole": "Chocolatier en eigenaresse",
     "faqTitle": "Veelgestelde vragen over chocolaterieën",
     "faqs": [
       {
@@ -6757,7 +6669,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Hoe helpt het mij met de sterke seizoensgebondenheid?",
-        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit Plan Financiero projecteert de realistische seizoenscashflow zodat u met productie en kasgeld bij elke piek aankomt."
+        "a": "Gastro Calendar plant de belangrijkste seizoenen (Kerst, Valentijnsdag, Pasen, Driekoningen, Moederdag) met 8-12 weken vooruit. Het Kit financieel plan voor restaurants projecteert de realistische seizoenscashflow zodat u met productie en kasgeld bij elke piek aankomt."
       }
     ],
     "ctaTitle": "Uw chocolaterie met duidelijke marge en professionele branding.",
@@ -6962,9 +6874,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "kit-inventario"
     ],
-    "testimonialQuote": "Ik verander het menu elke 6 weken en vroeger was het een week administratief afsluitwerk alleen al tussen kostprijsberekeningen, fiches en storytelling. Nu met AI Chef Pro gebeurt die afsluiting in 2 dagen: Creatieve Keuken stelt voor, Fermentus geeft mij R&D-ondersteuning, Sonar Deep Research levert trends op, en de Kit de Escandallos Pro sluit de marge. Het is letterlijk alsof u een extra R&D-team heeft.",
-    "testimonialAuthor": "Adrián Lago",
-    "testimonialRole": "Chef en eigenaar, auteur restaurant met 30 zitplaatsen",
     "faqTitle": "Veelgestelde Vragen van Creatieve Restaurants",
     "faqs": [
       {
@@ -7194,9 +7103,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "kit-inventario"
     ],
-    "testimonialQuote": "Het hebben van kostprijsberekening, technische fiche, gedocumenteerde fermenten en communicatie met gidsen in één systeem heeft de creatieve chaos van elke haute cuisine geordend. De Guía Restaurante Gastronómico was essentieel bij de opening van het tweede project: een professioneel businessplan dat de kandidatuur ondersteunt. Recente bekroning met gegevens in de hand.",
-    "testimonialAuthor": "David Aramburu",
-    "testimonialRole": "Executive Chef, gastronomisch restaurant met Michelin/Repsol-erkenning",
     "faqTitle": "Veelgestelde Vragen van Gastronomische Restaurants",
     "faqs": [
       {
@@ -7382,7 +7288,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC mexicano",
+        "title": "Pack HACCP mexicano",
         "description": "Traceerbaarheid van chili's, nixtamalized masa, langzaam gegaarde eiwitten en kritische temperaturen."
       },
       {
@@ -7426,9 +7332,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben taco voor taco doorgerekend en ontdekten dat drie signature-gerechten verliesgevend waren ondanks dat ze het best verkochten. We hebben ze opnieuw ontworpen met Mexicaanse Keuken, de marinade en de vleesopbrengst aangepast zonder de prijs te wijzigen, en de marge steeg met 5 punten. De planning van Día de Muertos met Gastro Calendar verdrievoudigde de omzet van die week.",
-    "testimonialAuthor": "María José Hernández",
-    "testimonialRole": "Chef en eigenaresse, hedendaags Mexicaans restaurant",
     "faqTitle": "Veelgestelde vragen over Mexicaanse restaurants",
     "faqs": [
       {
@@ -7615,7 +7518,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC peruano",
+        "title": "Pack HACCP peruano",
         "description": "Traceerbaarheid van verse vis, zeevruchten, ajíes en kritische temperaturen in ceviche en tiradito."
       },
       {
@@ -7654,9 +7557,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Peruaanse Keuken veranderde onze keuken. De tijgermelk heeft nu een gedocumenteerd technisch evenwicht, de ceviches komen in elke dienst hetzelfde uit, en de kostenberekeningen met verse vis tegen de dagprijs werken in realtime. De voorbereiding van het speciale menu van 28 juli met Gastro Calendar verdrievoudigde onze omzet.",
-    "testimonialAuthor": "Carlos Fernández",
-    "testimonialRole": "Chef en eigenaar, hedendaagse Peruaanse cevicherie",
     "faqTitle": "Veelgestelde vragen over Peruaanse restaurants",
     "faqs": [
       {
@@ -7843,7 +7743,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC",
+        "title": "Pack HACCP",
         "description": "Traceerbaarheid van vis voor sushi, fermentaties, kritische temperaturen en conservering."
       },
       {
@@ -7882,9 +7782,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Japanse Keuken heeft onze operatie veranderd. De balans van de shari is nu consistent, de tonkotsu komt elke dag hetzelfde uit, en de omakase heeft professionele kostenberekening met gevalideerde marge per stuk. Fermentus heeft ons geholpen bij het opzetten van het programma voor zelfgemaakte miso dat ons aanbod volledig onderscheidt.",
-    "testimonialAuthor": "Hiroshi Tanaka",
-    "testimonialRole": "Itamae en eigenaar, hedendaags Japans restaurant",
     "faqTitle": "Veelgestelde Vragen van Japanse Restaurants",
     "faqs": [
       {
@@ -8071,7 +7968,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC nikkei",
+        "title": "Pack HACCP nikkei",
         "description": "Traceerbaarheid van vis, fermenten, pepers en kritische temperaturen bij rauwe producten."
       },
       {
@@ -8110,9 +8007,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "De combinatie van de AI-agenten Japanse Keuken en Peruaanse Keuken heeft onze propositie veranderd. De tiradito's hebben nu een gedocumenteerd technisch evenwicht, de omakase-nikkei gaat uit met een per stuk gevalideerde kostprijs, en het programma voor zelfgemaakte miso met panca-peper van Fermentus onderscheidt ons volledig. We hebben de marge met 7 procentpunten verhoogd.",
-    "testimonialAuthor": "Yui Sato",
-    "testimonialRole": "Chef en eigenaresse, signatuur-nikkei-restaurant",
     "faqTitle": "Veelgestelde vragen over Nikkei-restaurants",
     "faqs": [
       {
@@ -8304,7 +8198,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC plantaardig",
+        "title": "Pack HACCP plantaardig",
         "description": "Traceerbaarheid van fermenten, zelfgemaakte plantaardige eiwitten, verse kruiden en kritische temperaturen."
       },
       {
@@ -8338,9 +8232,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "VegChef + Fermentus hebben onze propositie veranderd. We bereiken diepe umami zonder industriële shortcuts dankzij zelfgemaakte miso en plantaardige koji, en de kostprijsberekeningen per bowl met gemarineerde tempeh bevestigen dat plantaardig een hoge marge kan hebben. We stegen 6 punten en de acquisitie via Instagram met GastroIMG is x3.",
-    "testimonialAuthor": "Lucía Ferrer",
-    "testimonialRole": "Chef en eigenaresse, plantaardig auteurrestaurant",
     "faqTitle": "Veelgestelde vragen voor plantaardige restaurants",
     "faqs": [
       {
@@ -8527,7 +8418,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC grill",
+        "title": "Pack HACCP grill",
         "description": "Traceerbaarheid van vlees, dry-aging, kritische temperaturen in de kamer en kerntemperatuur bij het koken."
       },
       {
@@ -8566,9 +8457,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "We hebben de kosten per snede berekend en ontdekten dat de T-bone die we het meest verkochten eigenlijk verliesgevend was vanwege het dry-aged verlies dat we niet berekenden. We hebben het opnieuw ontworpen met Creatieve Keuken door portie en bijgerechten aan te passen, zonder de prijs te wijzigen, en de marge steeg met 5 punten. De planning voor Vaderdag met Gastro Calendar verdrievoudigde onze omzet van die week.",
-    "testimonialAuthor": "Pedro Aguirre",
-    "testimonialRole": "Meester-grillmeester en eigenaar, premium grill",
     "faqTitle": "Veelgestelde Vragen van Grillrestaurants",
     "faqs": [
       {
@@ -8750,7 +8638,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC cafetaria",
+        "title": "Pack HACCP cafetaria",
         "description": "Traceerbaarheid van gemalen koffie, melk, plantaardige alternatieven en eigen banket."
       },
       {
@@ -8794,9 +8682,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Creatieve Keuken + Creatieve Patisserie hebben ons aanbod veranderd. We lanceren seizoensgebonden signatures met professionele kostprijsberekening, het eigen banket verhoogde de gemiddelde besteding met 30% en de barista-opleiding is nu consistent. Lokale acquisitie met MenuDish + GastroIMG Gen+ is in 4 maanden verdubbeld.",
-    "testimonialAuthor": "Marta Esteve",
-    "testimonialRole": "Eigenaresse, specialty coffee third-wave",
     "faqTitle": "Veelgestelde Vragen van Coffee Shops",
     "faqs": [
       {
@@ -8983,7 +8868,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC sushi",
+        "title": "Pack HACCP sushi",
         "description": "Traceerbaarheid van vis voor sushi en kritische temperaturen."
       },
       {
@@ -9022,9 +8907,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Japanse Keuken veranderde onze operatie. De balans van de shari is nu consistent, de omakase heeft professionele kostenberekening met per stuk gevalideerde marge. De acquisitie van premium klanten met GastroIMG Gen+ steeg 40% in 6 maanden.",
-    "testimonialAuthor": "Akio Yamamoto",
-    "testimonialRole": "Itamae en eigenaar, hedendaagse sushi bar",
     "faqTitle": "Veelgestelde Vragen van Sushi Bars",
     "faqs": [
       {
@@ -9211,7 +9093,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC bar",
+        "title": "Pack HACCP bar",
         "description": "Traceerbaarheid van ham, vleeswaren, ansjovis, verse zeevruchten."
       },
       {
@@ -9250,9 +9132,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Spaanse Keuken + Bar & Lounge AI+ hebben ons niveau verhoogd. De signature tapas hebben nu professionele kostprijsberekening met gevalideerde marge, de pairing met wijnen per glas is consistent en we hebben het gemiddelde ticket met 15% verhoogd in 4 maanden. De lokale acquisitie met MenuDish + GastroIMG is x2.",
-    "testimonialAuthor": "Iñaki Etxeberria",
-    "testimonialRole": "Eigenaar, eigentijdse gastrobar in Donostia",
     "faqTitle": "Veelgestelde vragen over gastrobars",
     "faqs": [
       {
@@ -9434,7 +9313,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC food truck",
+        "title": "Pack HACCP food truck",
         "description": "Traceerbaarheid aangepast aan mobiele operatie: temperaturen, water, afval."
       },
       {
@@ -9478,9 +9357,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Food Truck AI+ + Creatieve Keuken hebben onze operatie veranderd. De menukaart is compacter, de kostprijsberekeningen per gerecht weerspiegelen de echte marge met inkoop afgestemd op het evenementsvolume, en de acquisitie met InstaFlow + GastroIMG heeft onze reserveringen voor privé-evenementen in 6 maanden verdrievoudigd.",
-    "testimonialAuthor": "Marcos Bermúdez",
-    "testimonialRole": "Eigenaar, ambachtelijke food truck",
     "faqTitle": "Veelgestelde vragen over food trucks",
     "faqs": [
       {
@@ -9672,7 +9548,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC Italiaans",
+        "title": "Pack HACCP Italiaans",
         "description": "Traceerbaarheid van verse pasta, Italiaanse kazen, vleeswaren en sauzen."
       },
       {
@@ -9706,9 +9582,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-gestion-personal",
       "pro-prompts-ebook"
     ],
-    "testimonialQuote": "Italiaanse Keuken + Bar & Lounge AI+ hebben ons restaurant veranderd. Consistente verse pasta, traditionele sauzen met technische balans, gedocumenteerde wijnspijscombinaties met Italiaanse wijnen per glas. We verhoogden de marge met 5 punten en het aantal terugkerende klanten groeide met 30% in 6 maanden.",
-    "testimonialAuthor": "Lorenzo Bianchi",
-    "testimonialRole": "Chef en eigenaar, hedendaagse trattoria",
     "faqTitle": "Veelgestelde Vragen van Italiaanse Restaurants",
     "faqs": [
       {
@@ -9930,9 +9803,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Wat vroeger een week rekenen was, is nu 30 minuten. Creatieve Keuken levert de CSV-kostprijsberekening, Mermas GenCal verrijkt deze met echte gegevens en het Kit de Escandallos Pro geeft me een gevalideerde marge. We hebben de kaart van 28 gerechten in één dag vernieuwd en de marge met 6 punten verhoogd door gerechten te ontdekken die verliesgevend waren zonder dat we het wisten.",
-    "testimonialAuthor": "Pablo Ruiz",
-    "testimonialRole": "Chef en eigenaar, casual restaurant met 4 vestigingen",
     "faqTitle": "Veelgestelde vragen over kostprijsberekening met AI",
     "faqs": [
       {
@@ -10155,9 +10025,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Creatieve Keuken + Food Pairing AI hebben de ontwikkeling van onze degustatiemenu's veranderd. De reeks van 9 gangen wordt nu al opgeleverd met gedocumenteerd technisch evenwicht, de wijnarrangementen per glas zijn consistent en de totale kostprijsberekening met Kit de Escandallos Pro levert ons een gevalideerde marge op. Wat voorheen een week was, is nu een dag.",
-    "testimonialAuthor": "Joan Mestre",
-    "testimonialRole": "Executive chef, restaurant met 1 Michelinster",
     "faqTitle": "Veelgestelde Vragen over Degustatiemenu met AI",
     "faqs": [
       {
@@ -10379,9 +10246,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "guia-restaurante-gastronomico"
     ],
-    "testimonialQuote": "Het documenteren van 28 gerechten met een professionele technische fiche kostte ons 2 weken. Creatieve Keuken levert nu elke volledige fiche in minuten op: ingrediënten, techniek, een controle van de 14 allergenen; de eindcontrole is aan u, kostprijs en storytelling voor de bediening. Nu kan elke kok consistent repliceren en bij inspecties hebben we alles getraceerd.",
-    "testimonialAuthor": "Carla Mendoza",
-    "testimonialRole": "Chef-kok, casual restaurant met 3 locaties",
     "faqTitle": "Veelgestelde vragen over technische fiches met AI",
     "faqs": [
       {
@@ -10568,7 +10432,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "CheckSquare",
-        "title": "Pack APPCC wijnkelder",
+        "title": "Pack HACCP wijnkelder",
         "description": "Traceerbaarheid van de wijnkelder en serveertemperaturen per wijnsoort."
       },
       {
@@ -10603,9 +10467,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Food Pairing AI heeft de manier waarop ik wijn-spijscombinaties afrond veranderd. Elk gerecht van het proefmenu heeft nu een wetenschappelijk onderbouwde wijn-spijscombinatie die mijn bedieningsteam met professionele basis communiceert. We hebben de marge in de wijnkelder met 6 punten verhoogd en het aantal vaste premiumklanten is in 6 maanden met 35 % gestegen.",
-    "testimonialAuthor": "Eduardo Lara",
-    "testimonialRole": "Head Sommelier, restaurant met 1 Michelinster",
     "faqTitle": "Veelgestelde Vragen over Wijn-spijscombinaties met AI",
     "faqs": [
       {
@@ -10787,7 +10648,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC traceerbaar",
+        "title": "Pack HACCP traceerbaar",
         "description": "Traceerbaarheid van verspilling per proces voor duurzaamheidsaudits en zero-waste-certificeringen."
       },
       {
@@ -10827,9 +10688,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Mermas GenCal + Creatieve Keuken hebben onze werkwijze veranderd. We gingen van geschatte verspilling (we gingen uit van 12-15%) naar echte gegevens van 22-28% in sommige processen. We reorganiseerden het uitsnijden en de benutting met gedocumenteerde techniek en verminderden de verspilling met 35% in 4 maanden. De kostprijsberekening weerspiegelt nu de werkelijke kostprijs, niet de ideale.",
-    "testimonialAuthor": "Sofía Cano",
-    "testimonialRole": "Sous-chef, casual restaurant met zero-waste-engagement",
     "faqTitle": "Veelgestelde vragen over het verminderen van verspilling met AI",
     "faqs": [
       {
@@ -10846,7 +10704,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Genereert het traceerbaarheid voor zero-waste-certificeringen?",
-        "a": "Ja. Pack APPCC + Mermas GenCal leveren gedocumenteerde traceerbaarheid voor duurzaamheidsaudits en zero-waste- of B-Corp-certificeringen."
+        "a": "Ja. Pack HACCP + Mermas GenCal leveren gedocumenteerde traceerbaarheid voor duurzaamheidsaudits en zero-waste- of B-Corp-certificeringen."
       },
       {
         "q": "Hoe helpt het mij met afgestemde inkopen?",
@@ -10991,7 +10849,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     "features": [
       {
         "icon": "ShieldCheck",
-        "title": "Pack APPCC met Excel-sjablonen",
+        "title": "Pack HACCP met Excel-sjablonen",
         "description": "17 downloadbare Excel-sjablonen: temperaturen, reiniging, traceerbaarheid, allergenen, ongedierte, olie en water."
       },
       {
@@ -11026,7 +10884,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "icon": "Wine",
-        "title": "Pack APPCC voor wijnkelder",
+        "title": "Pack HACCP voor wijnkelder",
         "description": "Traceerbaarheid van wijnen, ontkurking, bewaring en servicetemperaturen per type."
       },
       {
@@ -11037,7 +10895,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Hoe implementeert u digitale APPCC in 4 stappen",
     "workflow": [
-      "1. Pack APPCC (€14, downloadbare Excel-sjablonen) — u downloadt de 17 professionele sjablonen aangepast aan uw type keuken (patisserie, ijssalon, restaurant, enz.).",
+      "1. Pack HACCP (€14, downloadbare Excel-sjablonen) — u downloadt de 17 professionele sjablonen aangepast aan uw type keuken (patisserie, ijssalon, restaurant, enz.).",
       "2. Allergenen ID — kijkt de recepten na en sjablonen van uw menu om allergenen per gerecht te identificeren. Het integreert ze in de technische fiches en de zaal.",
       "3. Creatieve Keuken met geïntegreerde APPCC — elk nieuw recept levert APPCC-procedures (kritische temperatuur, bewaring, allergenen, opslag) geïntegreerd in de technische fiche.",
       "4. Kit de Tareas met APPCC — dienstsjablonen (opening, service, sluiting) met geïntegreerde APPCC. Het team ondertekent elke dienst digitaal vanaf mobiel."
@@ -11051,14 +10909,11 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack APPCC + Allergenen ID hebben onze voedselveiligheid getransformeerd. We zijn overgestapt van verspreid bedrukt papier naar 17 digitale sjablonen met geïntegreerde APPCC per dienst en een controle van de 14 allergenen; de eindcontrole is aan u per recept. De hygiëne-inspectie is vlekkeloos en het juridisch risico is naar nul gedaald.",
-    "testimonialAuthor": "Roberto Castaño",
-    "testimonialRole": "F&B-directeur, 5-sterrenhotel met 4 outlets",
     "faqTitle": "Veelgestelde vragen over APPCC met AI",
     "faqs": [
       {
         "q": "Is het geschikt voor elk type horecagelegenheid?",
-        "a": "Ja. Pack APPCC past sjablonen aan voor restaurant, cafetaria, patisserie, ijssalon, chocolaterie, pizzeria, dark kitchen, bar, catering, hotel."
+        "a": "Ja. Pack HACCP past sjablonen aan voor restaurant, cafetaria, patisserie, ijssalon, chocolaterie, pizzeria, dark kitchen, bar, catering, hotel."
       },
       {
         "q": "Hoe kijkt u de 14 allergenen na?",
@@ -11066,7 +10921,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       },
       {
         "q": "Deckt u Europese en Latijns-Amerikaanse regelgeving?",
-        "a": "Ja. Pack APPCC dekt Europese regelgeving (EU 852/2004 + 178/2002 + 1169/2011 allergenen) en aanpassingen voor Latijns-Amerika. Sonar Deep Research maakt het mogelijk om specifieke regelgeving per land te raadplegen."
+        "a": "Ja. Pack HACCP dekt Europese regelgeving (EU 852/2004 + 178/2002 + 1169/2011 allergenen) en aanpassingen voor Latijns-Amerika. Sonar Deep Research maakt het mogelijk om specifieke regelgeving per land te raadplegen."
       },
       {
         "q": "Genereert het traceerbaarheid voor ISO-audits?",
@@ -11086,7 +10941,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "ogImage": "https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg"
     },
     "personalizationTitle": "Gepersonaliseerd voor uw horecagelegenheid vanaf minuut één",
-    "personalizationBody": "AI Chef Pro start met «Wie Ben Ik?»: u vertelt het type horecagelegenheid en het land. Pack APPCC past sjablonen aan uw concept en lokale regelgeving aan.",
+    "personalizationBody": "AI Chef Pro start met «Wie Ben Ik?»: u vertelt het type horecagelegenheid en het land. Pack HACCP past sjablonen aan uw concept en lokale regelgeving aan.",
     "appsTitle": "De AI-agenten die u gebruikt voor APPCC",
     "apps": [
       {
@@ -11276,9 +11131,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-plan-financiero"
     ],
-    "testimonialQuote": "Gastro Calendar + Creatieve Keuken hebben onze seizoensmenu-afsluiting veranderd. Wat vroeger een week was, is nu een dag met professionele kostenberekening, getraceerd lokaal product en storytelling van producenten voor de bediening. We verhoogden de marge met 6 punten en de acquisitie met Pinterest Pins Gen voor seizoensproduct verdubbelde.",
-    "testimonialAuthor": "Marina Lozano",
-    "testimonialRole": "Executive chef, auteur restaurant met lokaal product",
     "faqTitle": "Veelgestelde vragen over seizoensmenu met AI",
     "faqs": [
       {
@@ -11500,9 +11352,6 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       "kit-tareas",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "GastroIMG Gen+ heeft mijn fotografie-workflow veranderd. Voorheen deed ik food styling-sessies zonder duidelijke richtlijn, nu genereer ik het professionele referentiebeeld met AI, valideer ik het palet en de compositie met het team, en daarna maak ik de definitieve foto met mijn echte gerecht. De sessies kosten 70% minder tijd en de visuele consistentie van Instagram + Glovo + web is nu professioneel.",
-    "testimonialAuthor": "Carmen Vera",
-    "testimonialRole": "Chef en eigenaresse, restaurant met sterke digitale aanwezigheid",
     "faqTitle": "Veelgestelde Vragen over Foodfotografie met AI",
     "faqs": [
       {
