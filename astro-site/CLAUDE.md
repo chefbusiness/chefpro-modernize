@@ -216,7 +216,7 @@ y `data/integraciones.ts`.
   justo el tipo de prompt donde el motor de razonamiento se cuelga.
 - ⚠️ **Revisar SIEMPRE las cifras de plan que invente el modelo.** El borrador del
   post decía «incluido el plan gratuito» y **en la web ya no hay plan gratuito**
-  (el Miembro son 10 €/mes). Habría salido publicado.
+  (y desde el 27-nov-2026 tampoco plan Miembro de 10 €: el de entrada es Premium Pro, 25 €/mes). Habría salido publicado.
 
 ### Gotcha de `faq.astro` (movido del CLAUDE.md raíz el 2026-10-24 con /doctor)
 
