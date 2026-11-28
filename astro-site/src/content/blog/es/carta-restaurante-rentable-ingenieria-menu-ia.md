@@ -20,7 +20,7 @@ faq:
   - q: "¿La ingeniería de menú sirve para restaurantes pequeños?"
     a: "Sí, y quizá más que en los grandes. Un negocio pequeño no puede permitirse platos que drenen margen. Con una carta de 15 referencias, clasificar a mano es rápido y el impacto de eliminar un perro o reposicionar un puzzle se nota enseguida en la cuenta. La matriz escala perfectamente hacia abajo."
   - q: "¿Cómo ayuda la IA a hacer la ingeniería de menú?"
-    a: "Automatiza la parte más pesada: actualiza escandallos, cruza datos con el TPV, clasifica los platos en la matriz y sugiere reprecios y reformulaciones. Con herramientas como AI Chef Pro puedes empezar con el plan AI Chef Miembro por 10 € al mes con 10.000 créditos y tener la matriz lista en minutos, sin depender de hojas de cálculo interminables."
+    a: "Automatiza la parte más pesada: actualiza escandallos, cruza datos con el TPV, clasifica los platos en la matriz y sugiere reprecios y reformulaciones. Con herramientas como AI Chef Pro puedes empezar con el plan AI Chef Premium Pro por 25 € al mes con 85.000 créditos y tener la matriz lista en minutos, sin depender de hojas de cálculo interminables."
   - q: "¿Qué es el menu engineering?"
     a: "Es el nombre en inglés de la ingeniería de menú: el mismo método, con las mismas cuatro categorías (stars, plowhorses, puzzles y dogs). En España se usan los dos nombres. Si buscas plantillas o software en inglés, verás menu engineering; en las guías en español, ingeniería de menú."
   - q: "¿Hay una plantilla de ingeniería de menú en Excel gratis?"
@@ -151,7 +151,7 @@ AI Chef Pro cuenta con **más de 70 agentes de IA culinarios** en 7 idiomas con 
 
 Para la parte más operativa de la carta, puedes usar directamente el [generador de carta de menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y, si trabajas menús cerrados o eventos, el [generador de menú degustación](https://aichef.pro/generador-menu-degustacion) te ahorra horas de composición. Y como la ingeniería de menú no vive aislada, te conviene tener a mano el marco financiero completo que explico en [KPIs y métricas de rentabilidad de restaurante](https://aichef.pro/blog/rentabilidad-restaurante-kpis-metricas-2026).
 
-Puedes empezar sin compromiso. El **plan AI Chef Miembro** te da 10.000 créditos al mes por 10 €, con tarjeta. Si necesitas más músculo, el plan **Premium Pro** son 25 €/mes (85.000 créditos), el **Premium Plus** 50 €/mes (175.000 créditos), y el plan **Premium Max** llega a 95 €/mes con créditos ilimitados. Si prefieres el pago anual, **Premium Max anual** cuesta 950 €/año. Lo sensato es arrancar con el plan AI Chef Miembro, probar la matriz con tu carta real y decidir después. [Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ingenieria-menu).
+Puedes empezar sin compromiso. El plan **Premium Pro** te da 85.000 créditos al mes por 25 €, con tarjeta. Si necesitas más músculo, el **Premium Plus** son 50 €/mes (175.000 créditos), y el plan **Premium Max** llega a 95 €/mes con créditos ilimitados. Si prefieres el pago anual, **Premium Max anual** cuesta 950 €/año. Lo sensato es arrancar con el plan Premium Pro, probar la matriz con tu carta real y decidir después. [Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ingenieria-menu).
 
 ## Plan de acción en 5 pasos
 

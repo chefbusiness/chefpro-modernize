@@ -37,7 +37,7 @@ faq:
 
 L'abbinamento cibo-vino, o tra cibo e vino, è la combinazione di un piatto e una bevanda cercando che l'insieme sia migliore di ciascuno dei due preso da solo. Non è un rituale da sommelier né una regola scritta nella pietra: è criterio di cucina applicato alla bevanda, e si impara assaggiando.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cucina con gli agenti IA</p><p class="mt-2 text-foreground">Proponi abbinamenti piatto per piatto con Sommelier Consulente Pro e prepara la carta dei vini e dei cocktail con gli agenti IA di AI Chef Pro. Piani da 10 €/mese.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/it/casi-uso/ruolo/sommelier?utm_source=web&amp;utm_medium=glosario&amp;utm_content=abbinamento-cibo-vino">Scopri cosa fa l'IA per i sommelier</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cucina con gli agenti IA</p><p class="mt-2 text-foreground">Proponi abbinamenti piatto per piatto con Sommelier Consulente Pro e prepara la carta dei vini e dei cocktail con gli agenti IA di AI Chef Pro. Piani da 25 €/mese.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/it/casi-uso/ruolo/sommelier?utm_source=web&amp;utm_medium=glosario&amp;utm_content=abbinamento-cibo-vino">Scopri cosa fa l'IA per i sommelier</a></p></aside>
 
 ## Che cos'è l'abbinamento cibo-vino
 

@@ -72,7 +72,7 @@
     "v2_stat_cookbooks": "regionale kookboeken",
     "v2_stat_roles": "keukenrollen gedekt",
     "v2_cta_pricing": "Bekijk abonnementen & prijzen",
-    "v2_microcopy": "Abonnementen vanaf €10/maand · 16 koppelbare tools (Gmail, Sheets, Outlook…)",
+    "v2_microcopy": "Abonnementen vanaf €25/maand · 16 koppelbare tools (Gmail, Sheets, Outlook…)",
     "v2_business_types": [
       "Restaurant",
       "Catering",
@@ -996,37 +996,12 @@
     "enterprise_question": "Heeft u een enterprise-plan nodig?",
     "contact_us": "Neem contact met ons op voor een gepersonaliseerde oplossing",
     "plans": {
-      "member": {
-        "name": "AI Chef Lid",
-        "price": "€10",
-        "uses": "10.000/maand",
-        "description": "Ideaal voor keukenhulpen, koks en postchefs",
-        "features": {
-          "0": "75+ AI-agenten inbegrepen",
-          "1": "10.000 maandelijkse credits",
-          "2": "Wereldwijde kookboeken",
-          "3": "E-mailondersteuning"
-        },
-        "v2_short": "Lid",
-        "v2_eyebrow": "Koks & postchefs",
-        "v2_description": "Ideaal voor keukenassistenten, koks en postchefs die beginnen met AI.",
-        "v2_credits": "10.000 credits/maand",
-        "v2_hint": "≈ een maand recepten, kostprijzen en menu's voor één kok",
-        "v2_cta": "Beginnen als Lid",
-        "v2_features": [
-          "75+ AI-agenten inbegrepen",
-          "10.000 maandelijkse credits",
-          "27 wereldkookboeken",
-          "E-mailondersteuning"
-        ],
-        "period": "/maand"
-      },
       "premium_pro": {
         "name": "AI Chef Premium Pro",
         "price": "€25",
         "period": "/maand",
         "uses": "85.000/maand",
-        "description": "Voor Keukenchefs, Chefkoks en Restaurantmanagers",
+        "description": "Voor koks, keukenchefs, executive chefs en restaurantmanagers",
         "features": {
           "0": "75+ AI-agenten inbegrepen",
           "1": "85.000 maandelijkse credits",
@@ -1035,8 +1010,8 @@
           "4": "Prioriteitsondersteuning"
         },
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Keukenchefs & managers",
-        "v2_description": "Voor keukenchefs, executive chefs en restaurantmanagers die dagelijks de service draaien.",
+        "v2_eyebrow": "Koks, keukenchefs & managers",
+        "v2_description": "Voor koks, keukenchefs, executive chefs en restaurantmanagers die dagelijks de service draaien.",
         "v2_credits": "85.000 credits/maand",
         "v2_hint": "≈ volledige menucosting + wekelijkse receptontwikkeling",
         "v2_cta": "Beginnen met Premium Pro"
@@ -1107,12 +1082,11 @@
       }
     },
     "v2_title": "Vind uw abonnement in 10 seconden",
-    "v2_description": "Koppel uw rol aan een niveau. Credits schalen mee met hoeveel van uw keuken en bedrijf u automatiseert — van recepthulp op één post tot een volledige multi-restaurantoperatie.",
-    "v2_role_member": "Kok of assistent",
-    "v2_role_premium_pro": "Keukenchef",
+    "v2_description": "Koppel uw rol aan een niveau. Credits schalen mee met hoeveel van uw keuken en bedrijf u automatiseert — van het dagelijkse keukenwerk tot een volledige multi-restaurantoperatie.",
+    "v2_role_premium_pro": "Kok of keukenchef",
     "v2_role_premium_plus": "Eigenaar of groep",
     "v2_role_premium_max": "Intensieve gebruiker",
-    "v2_divider": "Voor intensieve gebruikers & jaarlijkse commitment",
+    "v2_divider": "Jaarlijkse verbintenis",
     "v2_enterprise_question": "Beheert u een groep of heeft u een aangepast volume nodig?",
     "v2_enterprise_link": "Neem contact op voor een enterprise-abonnement"
   },
@@ -1182,8 +1156,8 @@
     "a1": "AI Chef Pro omvat 75+ gespecialiseerde gastronomische AI-agents, van culinaire creativiteit tot bedrijfstools. U krijgt toegang tot kookboeken van 27 wereldkeukens, AI-receptgeneratoren, wetenschappelijke food pairing, managementtools en veel meer.",
     "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
     "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
-    "q3": "Hoe werkt het AI Chef Lid-plan?",
-    "a3": "Het AI Chef Lid-plan kost €10 per maand en omvat 10.000 maandelijkse credits met toegang tot de 75+ AI-agenten. Wanneer u meer nodig heeft, kunt u overstappen naar AI Chef Premium Pro (€25/maand, 85.000 credits) of hoger. Maandabonnementen zonder verplichting: u wijzigt uw plan of annuleert wanneer u wilt.",
+    "q3": "Wat is het instapabonnement van AI Chef Pro?",
+    "a3": "Het instapabonnement is AI Chef Premium Pro: het kost €25 per maand en omvat 85.000 maandelijkse credits met toegang tot de 75+ AI-agenten. Wanneer u meer nodig heeft, kunt u overstappen naar AI Chef Premium Plus (€50/maand, 175.000 credits) of Premium Max (€95/maand, onbeperkte credits). Maandabonnementen zonder verplichting: u wijzigt uw plan of annuleert wanneer u wilt.",
     "q4": "Passen recepten zich aan aan verschillende portiegroottes?",
     "a4": "Ja, al onze tools bevatten automatische portieberekening. U kunt elk recept aanpassen voor 1 persoon of voor 1000 gasten, en ons systeem berekent automatisch de exacte hoeveelheden van elk ingrediënt.",
     "q5": "Bevat het ondersteuning voor voedingsbeperkingen?",
@@ -1366,14 +1340,14 @@
   },
   "seo": {
     "title": "AI-agenten voor koks, restaurants en horeca | AI Chef Pro",
-    "description": "AI-agenten voor koks en restaurants: 75+ specialisten voor foodcost, recepten, menukaart en marketing. Start vandaag vanaf € 10 per maand, zonder binding.",
+    "description": "AI-agenten voor koks en restaurants: 75+ specialisten voor foodcost, recepten, menukaart en marketing. Start vandaag vanaf € 25 per maand, zonder binding.",
     "keywords": "ai-agenten voor koks, ai-agenten restaurant, ai horeca, foodcost ai, ai chef pro",
     "og_image_alt": "AI-agenten voor koks, restaurants en horeca | AI Chef Pro"
   },
   "pages": {
     "index": {
       "seo_title": "AI-agenten voor koks, restaurants en horeca | AI Chef Pro",
-      "seo_description": "AI-agenten voor koks en restaurants: 75+ specialisten voor foodcost, recepten, menukaart en marketing. Start vandaag vanaf € 10 per maand, zonder binding.",
+      "seo_description": "AI-agenten voor koks en restaurants: 75+ specialisten voor foodcost, recepten, menukaart en marketing. Start vandaag vanaf € 25 per maand, zonder binding.",
       "seo_keywords": "ai-agenten voor koks, ai-agenten restaurant, ai horeca, foodcost ai, ai chef pro"
     },
     "mentoria_online": {
@@ -1447,7 +1421,7 @@
     },
     "services": {
       "seo_title": "Diensten met AI-agenten voor de horeca | AI Chef Pro",
-      "seo_description": "Diensten met AI-agenten voor de horeca: mentoring, training op locatie en een suite van 75+. Bekijk wat erin zit en start vanaf € 10 per maand.",
+      "seo_description": "Diensten met AI-agenten voor de horeca: mentoring, training op locatie en een suite van 75+. Bekijk wat erin zit en start vanaf € 25 per maand.",
       "seo_keywords": "diensten ai-agenten, ai-agenten horeca, mentoring chef, training op locatie, ai chef pro"
     }
   },
@@ -1478,7 +1452,7 @@
       "tagline": "75+ AI-agents in 7 talen voor de professionele keuken.",
       "cta_primary": "beginnen met besparen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
+      "no_card": "Vanaf € 25/maand · Maandabonnementen zonder verplichting · Directe toegang"
     },
     "results": [
       {
@@ -1594,7 +1568,7 @@
     },
     "pricing_section": {
       "title": "Begin vandaag nog met kostenverlaging",
-      "subtitle": "Start met het Lid-plan voor €10 per maand. Het abonnement betaalt zichzelf terug met wat u de eerste maand bespaart.",
+      "subtitle": "Start met het Premium Pro-abonnement voor €25 per maand. Maandabonnementen zonder vaste looptijd.",
       "annual_note": "De jaaroptie van Premium Max kost €950 per jaar."
     },
     "faq_section": {
@@ -1615,7 +1589,7 @@
       },
       {
         "question": "Werkt het voor kleine restaurants of alleen voor grote groepen?",
-        "answer": "Het werkt voor elke omvang. Van het familierestaurant met 40 couverts tot groepen met 20 locaties. Het Lid-plan is ideaal om zonder risico te beginnen voor €10 per maand."
+        "answer": "Het werkt voor elke omvang. Van het familierestaurant met 40 couverts tot groepen met 20 locaties. Het Premium Pro-abonnement is ideaal om mee te beginnen: €25 per maand, zonder vaste looptijd."
       }
     ],
     "cta_section": {
@@ -1633,7 +1607,7 @@
   "landingRestaurantes": {
     "seo": {
       "title": "AI-agenten voor restaurants: 75+ specialisten | AI Chef Pro",
-      "description": "AI-agenten voor restaurants: 75+ specialisten voor kosten, menukaart, allergenen en marketing. Zonder binding. Start vandaag vanaf € 10 per maand.",
+      "description": "AI-agenten voor restaurants: 75+ specialisten voor kosten, menukaart, allergenen en marketing. Zonder binding. Start vandaag vanaf € 25 per maand.",
       "keywords": "ai-agenten voor restaurants, ai-agenten horeca, foodcost ai, menukaart ai, ai chef pro",
       "url_slug": "ai-tools-restaurant"
     },
@@ -1760,7 +1734,7 @@
     },
     "pricing_section": {
       "title": "Plannen voor elk type horecabedrijf",
-      "subtitle": "Vanaf het Lid-plan voor €10 per maand tot onbeperkte credits voor grote operaties.",
+      "subtitle": "Vanaf het Premium Pro-abonnement voor €25 per maand tot onbeperkte credits voor grote operaties.",
       "annual_note": "Jaarplan ook beschikbaar: AI Chef Premium Max Jaarlijks voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -1781,7 +1755,7 @@
       },
       {
         "question": "Hoeveel kost het gebruik van AI voor restaurantbeheer?",
-        "answer": "Het plan Lid kost €10 per maand en omvat 10.000 credits. Premium Pro kost €25/maand en omvat 85.000 credits. Premium Max kost €95/maand, met onbeperkte credits. Maandabonnementen hebben geen minimumtermijn."
+        "answer": "Het plan Premium Pro kost €25 per maand en omvat 85.000 credits. Premium Plus kost €50/maand en omvat 175.000 credits. Premium Max kost €95/maand, met onbeperkte credits. Maandabonnementen hebben geen minimumtermijn."
       }
     ],
     "cta_section": {
@@ -1931,7 +1905,7 @@
     },
     "pricing_section": {
       "title": "Plannen voor grenzeloos menuontwerp",
-      "subtitle": "Vanaf het Lid-plan voor €10 per maand tot onbeperkte credits voor grote operaties met meerdere menukaarten.",
+      "subtitle": "Vanaf het Premium Pro-abonnement voor €25 per maand tot onbeperkte credits voor grote operaties met meerdere menukaarten.",
       "annual_note": "Ook beschikbaar als jaarplan: AI Chef Premium Max Jaarplan voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2089,7 +2063,7 @@
     },
     "pricing_section": {
       "title": "Plannen voor geautomatiseerde gastronomische marketing",
-      "subtitle": "Vanaf het Lid-plan voor €10 per maand tot onbeperkte credits voor groepen met meerdere vestigingen.",
+      "subtitle": "Vanaf het Premium Pro-abonnement voor €25 per maand tot onbeperkte credits voor groepen met meerdere vestigingen.",
       "annual_note": "Ook beschikbaar als jaarplan: AI Chef Premium Max Jaarplan voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2284,7 +2258,7 @@
     },
     "pricing_section": {
       "title": "Eerlijke prijs voor de AI die uw restaurant verdient",
-      "subtitle": "Vanaf €10 per maand tot onbeperkte credits voor grote operaties.",
+      "subtitle": "Vanaf €25 per maand tot onbeperkte credits voor grote operaties.",
       "annual_note": "Ook beschikbaar: AI Chef Premium Max Jaarplan voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2330,7 +2304,7 @@
       "tagline": "Bespaar dagelijks tot 3 uur op keukenbeheer.",
       "cta_primary": "Nu proberen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
+      "no_card": "Vanaf € 25/maand · Maandabonnementen zonder verplichting · Directe toegang"
     },
     "results": [
       {
@@ -2479,8 +2453,8 @@
       "role": "Chef-eigenaar, Restaurante Méndez, Madrid"
     },
     "pricing_section": {
-      "title": "AI keukenbeheersoftware vanaf € 10",
-      "subtitle": "Start met het Lid-plan en schaal op wanneer uw bedrijf dat nodig heeft. Maandelijks opzegbaar.",
+      "title": "AI keukenbeheersoftware vanaf € 25",
+      "subtitle": "Start met het Premium Pro-abonnement en schaal op wanneer uw bedrijf dat nodig heeft. Maandelijks opzegbaar.",
       "annual_note": "Jaarplan AI Chef Premium Max ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2525,7 +2499,7 @@
       "tagline": "Van concept tot gerecht in minuten, niet in uren.",
       "cta_primary": "Nu proberen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10/maand · Maandabonnementen zonder verplichting · Directe toegang"
+      "no_card": "Vanaf € 25/maand · Maandabonnementen zonder verplichting · Directe toegang"
     },
     "results": [
       {
@@ -2673,8 +2647,8 @@
       ]
     },
     "pricing_section": {
-      "title": "Toegang tot de AI-receptengenerator vanaf € 10",
-      "subtitle": "Start met het Lid-plan en schaal op wanneer uw bedrijf dat nodig heeft. Maandelijks opzegbaar.",
+      "title": "Toegang tot de AI-receptengenerator vanaf € 25",
+      "subtitle": "Start met het Premium Pro-abonnement en schaal op wanneer uw bedrijf dat nodig heeft. Maandelijks opzegbaar.",
       "annual_note": "Jaarplan AI Chef Premium Max ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2719,7 +2693,7 @@
       "tagline": "Stop met geld verliezen door ongecontroleerde food cost.",
       "cta_primary": "Mijn food cost berekenen",
       "cta_secondary": "Bekijk plannen en prijzen",
-      "no_card": "Vanaf € 10 per maand. Maandabonnementen hebben geen minimumtermijn"
+      "no_card": "Vanaf € 25 per maand. Maandabonnementen hebben geen minimumtermijn"
     },
     "results": [
       {
@@ -2855,8 +2829,8 @@
       ]
     },
     "pricing_section": {
-      "title": "Begin met food cost controle vanaf € 10",
-      "subtitle": "Reken de kaart door met het Lid-abonnement voor € 10 per maand. Maandabonnementen hebben geen minimumtermijn.",
+      "title": "Begin met food cost controle vanaf € 25",
+      "subtitle": "Reken de kaart door met het Premium Pro-abonnement voor € 25 per maand. Maandabonnementen hebben geen minimumtermijn.",
       "annual_note": "Jaarplan AI Chef Premium Max ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -3062,12 +3036,6 @@
       "subtitle": "De gratis calculator is slechts een voorbeeld. Met AI Chef Pro berekent u uw hele menukaart met verspillingscontrole.",
       "plans": [
         {
-          "name": "Lid",
-          "price": "€10/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/maand",
           "uses": "85.000 credits/maand",
@@ -3207,12 +3175,6 @@
       "title": "Volledige financiële analyse met AI Chef Pro",
       "subtitle": "De basissimulator is gratis. Met AI Chef Pro krijgt u per-gerecht analyses, jaarprognoses en kostenafwijkingswaarschuwingen.",
       "plans": [
-        {
-          "name": "Lid",
-          "price": "€10/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "€25/maand",
@@ -3457,12 +3419,6 @@
       "title": "Breng uw digitalisering naar het volgende niveau met AI Chef Pro",
       "subtitle": "De test vertelt u waar u staat. AI Chef Pro geeft u de tools om verder te gaan.",
       "plans": [
-        {
-          "name": "Lid",
-          "price": "10€/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
@@ -3828,12 +3784,6 @@
       "subtitle": "Met AI Chef Pro kijkt u de 14 allergenen van de kaart na, met eindcontrole door de kok.",
       "plans": [
         {
-          "name": "Lid",
-          "price": "10€/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "25€/maand",
           "uses": "85.000 credits/maand",
@@ -3991,12 +3941,6 @@
       "title": "Optimaliseer uw team met AI Chef Pro",
       "subtitle": "De basiscalculator is gratis. Met AI Chef Pro optimaliseert u diensten, personeelskosten en productiviteit van uw team.",
       "plans": [
-        {
-          "name": "Lid",
-          "price": "10€/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
@@ -4227,12 +4171,6 @@
       "note": "Maandabonnementen zonder verplichting",
       "plans": [
         {
-          "name": "Lid",
-          "price": "€10/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/maand",
           "uses": "85.000 credits/maand",
@@ -4386,12 +4324,6 @@
       "subtitle": "De gratis generator is een startpunt. Met AI Chef Pro Premium maakt u teksten voor uw volledige menukaart, geoptimaliseerd voor lokale SEO en conversie.",
       "plans": [
         {
-          "name": "Lid",
-          "price": "€10/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/maand",
           "uses": "85.000 credits/maand",
@@ -4508,12 +4440,6 @@
       "subtitle": "De gratis generator maakt de menustructuur. Met AI Chef Pro Premium genereert u volledige recepten en technische kaarten voor elke gang.",
       "plans": [
         {
-          "name": "Lid",
-          "price": "€10/maand",
-          "uses": "10.000 credits/maand",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/maand",
           "uses": "85.000 credits/maand",
@@ -4546,8 +4472,7 @@
   },
   "schema": {
     "offers": {
-      "miembro": "Instapplan: €10/maand met 10.000 maandelijkse credits.",
-      "premium_pro": "Voor keukenchefs, executive chefs en restaurantmanagers. 85.000 credits/maand.",
+      "premium_pro": "Instapabonnement voor koks, keukenchefs, executive chefs en restaurantmanagers. 85.000 credits/maand.",
       "premium_plus": "Voor horeca-ondernemers en restaurantketens. 175.000 credits/maand.",
       "premium_max": "Onbeperkte maandelijkse credits voor veeleisende professionals.",
       "premium_max_anual": "Ideaal voor horeca-ondernemers, restauranteigenaren en directeuren. Bespaar 2 maanden."

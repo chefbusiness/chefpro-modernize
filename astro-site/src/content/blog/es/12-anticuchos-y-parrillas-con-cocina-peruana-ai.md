@@ -759,7 +759,7 @@ wpId: 2511
 <div style="background: linear-gradient(135deg, #1A5276 0%, #2980B9 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 4px 15px rgba(26,82,118,0.4);">
 <p style="color: #F39C12; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🍳 Herramientas Profesionales</p>
 <h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; line-height: 1.3;">Calcula mermas, optimiza costes y genera recetas ilimitadas</h3>
-<p style="color: #D6EAF8; font-size: 16px; margin: 0 0 20px 0;">Plan Premium Plus con uso ilimitado para chefs ejecutivos y negocios de alto volumen. 50€/mes o 500€/año.</p>
+<p style="color: #D6EAF8; font-size: 16px; margin: 0 0 20px 0;">Plan Premium Plus (50€/mes, 175.000 créditos) para chefs ejecutivos, o Premium Max con créditos ilimitados para negocios de alto volumen: 95€/mes o 950€/año.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-anticuchos-y-parrillas-con-cocina-peruana-ai" target="_blank" style="display: inline-block; background-color: #F39C12; color: #1A5276; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -994,10 +994,10 @@ wpId: 2511
 
 
 <div style="background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 4px 15px rgba(39,174,96,0.4);">
-<p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🌟 Desde 10 €/mes</p>
-<h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; line-height: 1.3;">Prueba AI Chef Pro desde 10 €</h3>
-<p style="color: #D5F5E3; font-size: 16px; margin: 0 0 20px 0;">Regístrate con AI Chef Miembro por 10 € al mes: 10.000 créditos y acceso a todos los agentes, sin permanencia. Sube a Premium Pro (25 €/mes) cuando necesites más volumen.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-anticuchos-y-parrillas-con-cocina-peruana-ai" target="_blank" style="display: inline-block; background-color: #ffffff; color: #27AE60; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Empieza desde 10 €/mes</a>
+<p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🌟 Desde 25 €/mes</p>
+<h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; line-height: 1.3;">Prueba AI Chef Pro desde 25 €</h3>
+<p style="color: #D5F5E3; font-size: 16px; margin: 0 0 20px 0;">Regístrate con AI Chef Premium Pro por 25 € al mes: 85.000 créditos y acceso a todos los agentes, sin permanencia. Sube a Premium Plus (50 €/mes, 175.000 créditos) cuando necesites más volumen.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-anticuchos-y-parrillas-con-cocina-peruana-ai" target="_blank" style="display: inline-block; background-color: #ffffff; color: #27AE60; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Empieza desde 25 €/mes</a>
 </div>
 
 
@@ -1182,7 +1182,7 @@ wpId: 2511
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25€/mes</td><td>Parrillas y anticucherías individuales</td><td>Acceso completo a Cocina Peruana AI, Mermas GenCal, generación de recetas ilimitada</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadenas de parrillas, catering de eventos</td><td>Uso ilimitado, soporte prioritario, todas las herramientas de la suite</td></tr><tr><td>Business</td><td>95€/mes</td><td>Grupos gastronómicos, franquicias</td><td>Multiusuario, análisis avanzados, integración personalizada</td></tr><tr><td>Anual</td><td>500€/año</td><td>Cualquier negocio que busque ahorro</td><td>Equivalente a 41,67€/mes, todas las funcionalidades Premium Plus</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25€/mes</td><td>Parrillas y anticucherías individuales</td><td>Acceso completo a Cocina Peruana AI, Mermas GenCal, 85.000 créditos al mes</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadenas de parrillas, catering de eventos</td><td>175.000 créditos al mes, soporte prioritario, todas las herramientas de la suite</td></tr><tr><td>Premium Max</td><td>95€/mes</td><td>Grupos gastronómicos, franquicias</td><td>Créditos ilimitados para operaciones de alto volumen</td></tr><tr><td>Premium Max Anual</td><td>950€/año</td><td>Cualquier negocio que busque ahorro</td><td>Equivalente a 79,17€/mes, créditos ilimitados todo el año (ahorra 2 meses)</td></tr></tbody></table></div></figure>
 
 
 
@@ -1262,7 +1262,7 @@ wpId: 2511
 
 
 
-<p class="wp-block-paragraph">Para una anticuchería individual o pequeño negocio, el plan Premium Pro (25€/mes) ofrece todas las herramientas necesarias. Si manejas múltiples locales o alto volumen de catering, el Premium Plus (50€/mes) o el plan anual (500€/año) ofrecen mejor relación valor-precio con uso ilimitado.</p>
+<p class="wp-block-paragraph">Para una anticuchería individual o pequeño negocio, el plan Premium Pro (25€/mes) ofrece todas las herramientas necesarias. Si manejas múltiples locales o alto volumen de catering, el Premium Plus (50€/mes, 175.000 créditos) o el Premium Max con créditos ilimitados (95€/mes o 950€/año) ofrecen mejor relación valor-precio.</p>
 
 
 

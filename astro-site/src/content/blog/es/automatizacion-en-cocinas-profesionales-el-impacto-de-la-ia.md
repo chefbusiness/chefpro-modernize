@@ -17,8 +17,8 @@ faq:
     a: "Empieza por lo que tiene bajo esfuerzo de implantación y alto impacto: escandallos y fichas técnicas. En días lo tienes funcionando y el retorno en margen es inmediato. Después salta a documentación APPCC y luego a pedidos e inventario. No intentes automatizarlo todo de golpe."
   - q: "¿La automatización sirve para un restaurante pequeño?"
     a: "Sí, y en muchos casos es donde más impacto tiene. Un restaurante pequeño sufre igual o más el papeleo porque el chef suele hacer también de gestor. Automatizar escandallos, pedidos y APPCC libera horas que en un equipo ajustado son críticas para el día a día."
-  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
-    a: "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos y acceso a todos los agentes, sin permanencia. Premium Pro cuesta 25 € al mes con 85.000 créditos, Premium Plus 50 € al mes con 175.000 créditos, y Premium Max 95 € al mes con créditos ilimitados. También hay plan Premium Max anual por 950 € al año."
+  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Premium Pro?"
+    a: "El plan AI Chef Premium Pro cuesta 25 € al mes e incluye 85.000 créditos y acceso a todos los agentes, sin permanencia. Premium Plus cuesta 50 € al mes con 175.000 créditos, y Premium Max 95 € al mes con créditos ilimitados. También hay plan Premium Max anual por 950 € al año."
   - q: "¿En cuántos idiomas está disponible AI Chef Pro?"
     a: "AI Chef Pro funciona en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. El español es nativo, no una traducción automática, lo que garantiza precisión en términos del oficio como escandallos, fichas técnicas o registros APPCC."
 ---
@@ -147,8 +147,7 @@ Trabaja en siete idiomas con español nativo (inglés, francés, alemán, italia
 
 Los planes son directos y sin letra pequeña:
 
-- **Plan AI Chef Miembro:** 10 € al mes con 10.000 créditos, sin permanencia. Entras, pruebas y decides si te sirve.
-- **Premium Pro:** 25 € al mes con 85.000 créditos.
+- **Plan AI Chef Premium Pro:** 25 € al mes con 85.000 créditos, sin permanencia. Entras, pruebas y decides si te sirve.
 - **Premium Plus:** 50 € al mes con 175.000 créditos.
 - **Premium Max:** 95 € al mes con créditos ilimitados.
 - **Premium Max anual:** 950 € al año.

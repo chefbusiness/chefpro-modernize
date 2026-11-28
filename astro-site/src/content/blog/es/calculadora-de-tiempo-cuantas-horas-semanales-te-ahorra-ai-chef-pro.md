@@ -16,7 +16,7 @@ faq:
   - q: "¿La IA me quita el 100% del trabajo de una tarea?"
     a: "No. La IA te entrega un primer borrador sólido, pero tú revisas, corriges y validas el resultado final. El ahorro real suele estar entre el 60% y el 80% del tiempo original. Tareas como escandallos o información de alérgenos exigen supervisión humana por normativa, sin excepción."
   - q: "¿Cuánto cuesta empezar?"
-    a: "AI Chef Pro tiene un plan de entrada llamado AI Chef Miembro por 10 € al mes con 10.000 créditos, sin permanencia. Los planes superiores van de 25 a 95 euros al mes. Puedes empezar con el plan AI Chef Miembro, medir tu ahorro real durante unas semanas y decidir si te compensa subir de plan."
+    a: "AI Chef Pro tiene un plan de entrada llamado AI Chef Premium Pro por 25 € al mes con 85.000 créditos, sin permanencia. Los planes superiores van de 50 a 95 euros al mes. Puedes empezar con el plan AI Chef Premium Pro, medir tu ahorro real durante unas semanas y decidir si te compensa subir de plan."
   - q: "¿Ahorra tiempo la IA en escandallos y control de costes?"
     a: "Sí, y suele ser una de las tareas donde más se nota. Un escandallo de veinte platos con mermas y rendimientos puede llevarte horas manualmente. La IA lo calcula en minutos, pero luego debes revisar que los precios de proveedores estén actualizados y que las mermas cuadren con tu cocina real."
   - q: "¿En cuánto tiempo se nota el ahorro al empezar con IA?"
@@ -27,7 +27,7 @@ Te voy a dar una respuesta directa, de chef a chef, porque tú y yo sabemos que 
 
 La IA bien aplicada en un restaurante independiente típico ahorra entre 4 y 12 horas semanales. No es una cifra única, no es magia y desde luego no es "aprietas un botón y te vas a casa". Depende de cuántos servicios tengas, de quién haga hoy esas tareas y de cuánto esté ya digitalizada tu cocina.
 
-En este artículo te voy a desglosar por tareas concretas cuánto tiempo se te va cada semana y cuánto recuperas de forma realista. Al final tendrás una tabla con tres perfiles de restaurante para que ubiques el tuyo y, sobre todo, un método en cuatro pasos para calcular tu propio ahorro antes de rascarte el bolsillo. Si quieres ir directamente a probarlo, puedes <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-tiempo" target="_blank">probar AI Chef Pro</a> desde 10 €/mes, sin permanencia, y sacar tus propias conclusiones.
+En este artículo te voy a desglosar por tareas concretas cuánto tiempo se te va cada semana y cuánto recuperas de forma realista. Al final tendrás una tabla con tres perfiles de restaurante para que ubiques el tuyo y, sobre todo, un método en cuatro pasos para calcular tu propio ahorro antes de rascarte el bolsillo. Si quieres ir directamente a probarlo, puedes <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-tiempo" target="_blank">probar AI Chef Pro</a> desde 25 €/mes, sin permanencia, y sacar tus propias conclusiones.
 
 ## Por qué la respuesta honesta es "depende"
 
@@ -130,15 +130,14 @@ AI Chef Pro reúne más de 80 agentes de IA culinarios especializados en hostele
 
 Estos son los <a href="https://aichef.pro/precios" target="_blank">planes y precios</a> reales:
 
-- **Plan AI Chef Miembro:** 10 €/mes, 10.000 créditos, sin permanencia. Ideal para probar la herramienta y hacer tus propios cálculos de ahorro.
-- **Premium Pro:** 25 €/mes con 85.000 créditos.
+- **Premium Pro:** 25 €/mes con 85.000 créditos, sin permanencia. Ideal para empezar y hacer tus propios cálculos de ahorro.
 - **Premium Plus:** 50 €/mes con 175.000 créditos.
 - **Premium Max:** 95 €/mes con créditos ilimitados.
 - **Premium Max anual:** 950 €/año.
 
 Ahora haz la cuenta conmigo. Un restaurante mediano que recupera entre 24 y 40 horas al mes con la IA está pagando entre 25 y 95 euros por ese tiempo. Si la hora de un jefe de cocina ronda los 18-25 euros, el retorno es evidente sin que yo tenga que prometértelo. Las matemáticas hablan solas.
 
-Si empiezas con el plan AI Chef Miembro y notas que necesitas más créditos porque el ahorro es real, tengo un artículo sobre las <a href="https://aichef.pro/blog/de-gratis-a-pro-5-senales-de-que-necesitas-upgrade" target="_blank">5 señales de que necesitas pasar de AI Chef Miembro a Premium Pro</a> que te ayudará a decidir el momento justo para subir de plan sin gastar de más.
+Si empiezas con el plan Premium Pro y notas que necesitas más créditos porque el ahorro es real, tengo un artículo sobre las <a href="https://aichef.pro/blog/de-gratis-a-pro-5-senales-de-que-necesitas-upgrade" target="_blank">5 señales de que necesitas subir de plan</a> que te ayudará a decidir el momento justo para subir de plan sin gastar de más.
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=calculadora-de-tiempo-cuantas-horas-semanales-te-ahorra-ai-chef-pro" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
 
@@ -154,7 +153,7 @@ No te fíes de mis rangos ni de los de nadie. Lo sensato es que calcules tu prop
 
 **Paso 4: Resta y proyecta.** Resta el tiempo de revisión al tiempo original. Esa diferencia es tu ahorro estimado por tarea. Súmalo todo y multiplícalo por cuatro para ver el ahorro mensual. Luego compara esa cifra con el coste del plan que necesitarías.
 
-Si quieres validar tus cálculos con datos reales, puedes <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-tiempo" target="_blank">probar AI Chef Pro</a> durante un mes con el plan AI Chef Miembro (10 €, 10.000 créditos). Cronometra tus tareas antes y después. Los números no mienten.
+Si quieres validar tus cálculos con datos reales, puedes <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-tiempo" target="_blank">probar AI Chef Pro</a> durante un mes con el plan AI Chef Premium Pro (25 €, 85.000 créditos). Cronometra tus tareas antes y después. Los números no mienten.
 
 ## En resumen
 

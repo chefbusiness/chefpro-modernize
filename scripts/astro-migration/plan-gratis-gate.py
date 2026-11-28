@@ -3,8 +3,9 @@
 """
 plan-gratis-gate.py — AI Chef Pro NO tiene plan gratis desde el 2026-08-15.
 
-El plan de entrada es «AI Chef Miembro»: 10 €/mes, 10.000 créditos, sin
-permanencia. Este gate falla si alguna pieza del sitio vuelve a vender el SaaS
+El plan de entrada es «AI Chef Premium Pro»: 25 €/mes, 85.000 créditos, sin
+permanencia (el plan «AI Chef Miembro», de 10 €/mes, se retiró el 2026-11-27;
+por eso sus nombres siguen en MARCA y en los patrones). Este gate falla si alguna pieza del sitio vuelve a vender el SaaS
 como gratuito.
 
 POR QUE EXISTE
@@ -286,7 +287,7 @@ def main():
         print('  %s:%d  [%s]' % (rel, nlin, pat))
         if verbose:
             print('      %s' % frag[:220])
-    print('\nEl plan de entrada es AI Chef Miembro: 10 %s/mes, 10.000 creditos, '
+    print('\nEl plan de entrada es AI Chef Premium Pro: 25 %s/mes, 85.000 creditos, '
           'sin permanencia.' % EU)
     return 1
 

@@ -122,7 +122,7 @@ wpId: 2656
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #e94560; margin: 0 0 10px 0;">🎧 Optimización Sensorial con IA</p>
 <h3 style="font-size: 22px; margin: 0 0 15px 0; color: #ffffff; line-height: 1.3;">Transforma la Experiencia Gastronómica de tu Restaurante con AI Chef Pro</h3>
-<p style="font-size: 15px; color: #b0b0b0; margin: 0 0 20px 0; max-width: 600px; display: inline-block;">Desde la creación de menús hasta la optimización de costes operativos, AI Chef Pro ofrece más de 55 herramientas de IA diseñadas para profesionales de la hostelería. Planes de 25€, 50€ y 95€/mes o 500€/año.</p>
+<p style="font-size: 15px; color: #b0b0b0; margin: 0 0 20px 0; max-width: 600px; display: inline-block;">Desde la creación de menús hasta la optimización de costes operativos, AI Chef Pro ofrece más de 55 herramientas de IA diseñadas para profesionales de la hostelería. Planes de 25€, 50€ y 95€/mes o 950€/año.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial" target="_blank" style="display: inline-block; background-color: #e94560; color: #ffffff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Descubre los Planes de AI Chef Pro</a>
 </div>
 
@@ -793,15 +793,15 @@ wpId: 2656
 
 
 
-<p class="wp-block-paragraph">Para explorar todas las herramientas disponibles y encontrar el plan que mejor se adapte a las necesidades de tu establecimiento, visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial" target="_blank">página de precios de AI Chef Pro</a>. Ofrecemos planes de 25€, 50€ y 95€/mes, además de un plan anual de 500€ para adaptarnos a cada volumen operativo.</p>
+<p class="wp-block-paragraph">Para explorar todas las herramientas disponibles y encontrar el plan que mejor se adapte a las necesidades de tu establecimiento, visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial" target="_blank">página de precios de AI Chef Pro</a>. Ofrecemos planes de 25€, 50€ y 95€/mes, además de un plan anual de 950€ para adaptarnos a cada volumen operativo.</p>
 
 
 
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #ffd700; margin: 0 0 10px 0;">⭐ Plan Anual — Mejor Precio</p>
-<h3 style="font-size: 22px; margin: 0 0 15px 0; color: #ffffff; line-height: 1.3;">500€/año: Acceso Completo a Más de 55 Herramientas de IA Gastronómica</h3>
-<p style="font-size: 15px; color: #c0d6f7; margin: 0 0 20px 0; max-width: 600px; display: inline-block;">Food Pairing AI, Mermas GenCal, Catering AI+, generadores de recetas de 27 cocinas del mundo, Mental Coach, herramientas de contenido y RRSS, y mucho más. Ahorra frente a los planes mensuales de 25€, 50€ y 95€.</p>
-<a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial" target="_blank" style="display: inline-block; background-color: #ffd700; color: #1e3c72; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Ver el Plan Anual de 500€</a>
+<h3 style="font-size: 22px; margin: 0 0 15px 0; color: #ffffff; line-height: 1.3;">950€/año: Acceso Completo a Más de 55 Herramientas de IA Gastronómica</h3>
+<p style="font-size: 15px; color: #c0d6f7; margin: 0 0 20px 0; max-width: 600px; display: inline-block;">Food Pairing AI, Mermas GenCal, Catering AI+, generadores de recetas de 27 cocinas del mundo, Mental Coach, herramientas de contenido y RRSS, y mucho más. Créditos ilimitados todo el año: ahorras 2 meses frente a Premium Max mensual (95€/mes).</p>
+<a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial" target="_blank" style="display: inline-block; background-color: #ffd700; color: #1e3c72; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Ver el Plan Anual de 950€</a>
 </div>
 
 

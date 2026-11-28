@@ -15,8 +15,8 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <p>The global recipe app market reached <strong>$5.8 billion in 2024</strong> and is projected to hit <strong>$14 billion by 2033</strong>, driven largely by AI-powered innovations that address the real pain points of professional chefs and restaurant operators.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Scale Any Recipe in Seconds with AI</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ professional AI tools — recipe scaling, menu costing, inventory planning, and more. Start with the Member plan (€10/month).</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Member →</a>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ professional AI tools — recipe scaling, menu costing, inventory planning, and more. Start with the Premium Pro plan (€25/month).</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a>
 </div>
 <figure>
 <img loading="lazy" decoding="async" src="/blog-assets/en/2026/03/post1-recipe-prep-scaling.png" alt="Chef writing scaled recipe quantities on a prep whiteboard with measured ingredients" width="1024" height="576" /><figcaption>Precision scaling requires accounting for non-linear ingredient behavior at different batch sizes</figcaption></figure>
@@ -153,7 +153,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Stop Wasting Time on Manual Recipe Math</p>
 <p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">Professional chefs using AI Chef Pro save 65+ hours per year on recipe scaling alone. That is time back for menu development, staff training, and actual cooking.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Scale Your First Recipe Free →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Scale Your First Recipe from €25/month →</a>
 </div>
 <h2>Real Numbers: Time and Cost Savings</h2>
 <p>Let&#8217;s look at the tangible benefits of AI recipe scaling with real numbers:</p>
@@ -193,8 +193,8 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <tr>
 <td><strong><a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a></strong></td>
 <td>Professional kitchens seeking comprehensive AI tools</td>
-<td>75+ AI tools including recipe scaling, costing, menu planning, and more. AI Chef Member with 10,000 credits/month.</td>
-<td>AI Chef Member from €10/month</td></td>
+<td>75+ AI tools including recipe scaling, costing, menu planning, and more. AI Chef Premium Pro with 85,000 credits/month.</td>
+<td>AI Chef Premium Pro from €25/month</td></td>
 </tr>
 <tr>
 <td><strong>meez</strong></td>
@@ -212,11 +212,11 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <td><strong>DishGen</strong></td>
 <td>Recipe creation and adaptation</td>
 <td>AI recipe generation from ingredients or concepts. Includes scaling capabilities.</td>
-<td>AI Chef Member €10/mo; Pro €25/mo</td></td>
+<td>Free tier; Pro from $12.99/month</td></td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>AI Chef Pro</strong> stands out for professional kitchens because it offers a comprehensive suite of 75+ AI tools beyond just scaling—including menu costing, prep scheduling, inventory predictions, and supplier communication templates. The Member plan, €10/month with 10,000 credits and no commitment, is perfect for testing the technology, and the tool integrates seamlessly with existing kitchen workflows.</p>
+<p><strong>AI Chef Pro</strong> stands out for professional kitchens because it offers a comprehensive suite of 75+ AI tools beyond just scaling—including menu costing, prep scheduling, inventory predictions, and supplier communication templates. The Premium Pro plan, €25/month with 85,000 credits and no commitment, is perfect for testing the technology, and the tool integrates seamlessly with existing kitchen workflows.</p>
 <h2>How to Get Started with AI Recipe Scaling</h2>
 <p>Ready to transform your kitchen&#8217;s approach to recipe scaling? Here&#8217;s your implementation roadmap:</p>
 
@@ -224,7 +224,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 
 <h3>Step 2: Choose Your AI Tool</h3>
 <p>Selecting the right AI scaling platform depends on your operation&#8217;s size and complexity. For single-location restaurants, a focused recipe scaling tool may suffice. Multi-unit operations typically need full-suite solutions that integrate with inventory management and procurement systems.</p>
-<p><strong>AI Chef Pro</strong> offers an ideal starting point with its AI Chef Member plan, giving you 10,000 credits monthly to test the platform without commitment. This allows you to validate the technology before scaling adoption across your operation. The tool handles everything from simple yield adjustments to complex batch calculations across multiple measurement systems.</p>
+<p><strong>AI Chef Pro</strong> offers an ideal starting point with its AI Chef Premium Pro plan, giving you 85,000 credits monthly to test the platform without commitment. This allows you to validate the technology before scaling adoption across your operation. The tool handles everything from simple yield adjustments to complex batch calculations across multiple measurement systems.</p>
 <p>When evaluating tools, consider these factors:</p>
 <ul>
 <li><strong>Integration capabilities</strong> — Can it connect with your existing POS, inventory, or recipe management software?</li>

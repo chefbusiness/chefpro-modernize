@@ -145,7 +145,7 @@ faq:
 
 <p>Con él le preguntas por un producto y una técnica concreta (corte, limpieza, cocción o conservación) y te devuelve el porcentaje de merma y el rendimiento esperados, además del precio por kilo limpio. Con ese dato ya puedes llevar la pérdida a tu escandallo y traducirla a euros: pasas de intuir que pierdes dinero a saber exactamente cuánto y dónde.</p>
 
-<p>Puedes empezar hoy mismo con el <strong>plan de pago de AI Chef Pro</strong>: 10.000 créditos al mes, con acceso a todos los agentes, incluido Mermas GenCal. Si el volumen te pide más, los planes Premium arrancan en 25 €/mes y escalan hasta créditos ilimitados por 95 €/mes. Menos de lo que cuesta una sola cena de dos personas en tu propio restaurante.</p>
+<p>Puedes empezar hoy mismo con el <strong>plan Premium Pro de AI Chef Pro</strong>: 85.000 créditos al mes por 25 €, con acceso a todos los agentes, incluido Mermas GenCal. Si el volumen te pide más, los planes superiores arrancan en 50 €/mes y escalan hasta créditos ilimitados por 95 €/mes. Menos de lo que cuesta una sola cena de dos personas en tu propio restaurante.</p>
 
 <p><a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-mermas">Empieza a calcular tus mermas con AI Chef Pro →</a></p>
 

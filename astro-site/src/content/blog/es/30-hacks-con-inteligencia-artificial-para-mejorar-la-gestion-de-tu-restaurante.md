@@ -559,7 +559,7 @@ wpId: 2974
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Hacks accesibles</th><th>Ideal para</th><th>ROI estimado</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Hacks #1–18 con uso extensivo</td><td>Restaurantes medianos y grandes, jefes de cocina</td><td>700–1.000% mensual</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Los 30 hacks con uso ilimitado</td><td>Cadenas, catering, consultorías gastronómicas, grupos</td><td>1.000%+ mensual</td></tr><tr><td><strong>Plan Anual</strong></td><td>950€/año</td><td>Acceso completo con el mayor ahorro</td><td>Negocios comprometidos con la transformación digital</td><td>Máximo ROI con menor inversión mensual</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Hacks accesibles</th><th>Ideal para</th><th>ROI estimado</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Hacks #1–18 con uso extensivo</td><td>Restaurantes medianos y grandes, jefes de cocina</td><td>700–1.000% mensual</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Los 30 hacks con 175.000 créditos al mes</td><td>Cadenas, catering, consultorías gastronómicas, grupos</td><td>1.000%+ mensual</td></tr><tr><td><strong>Plan Anual</strong></td><td>950€/año</td><td>Acceso completo con el mayor ahorro</td><td>Negocios comprometidos con la transformación digital</td><td>Máximo ROI con menor inversión mensual</td></tr></tbody></table></div></figure>
 
 
 
@@ -656,7 +656,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph">El futuro de tu restaurante se construye hoy. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank">Empieza en AI Chef Miembro desde 10€</a> y aplica tu primer hack esta semana.</p>
+<p class="wp-block-paragraph">El futuro de tu restaurante se construye hoy. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank">Empieza en AI Chef Premium Pro desde 25€</a> y aplica tu primer hack esta semana.</p>
 
 
 

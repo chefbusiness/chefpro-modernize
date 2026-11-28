@@ -37,7 +37,7 @@ wpId: 1770
 <li>✅ Optimización de costes con Mermas GenCal</li>
 <li>✅ Adaptación a restricciones dietéticas y alérgenos</li>
 </ul>
-<div style="text-align: center; margin-top: 25px;"><a style="background: white; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial">AI Chef Pro: Plan Miembro, 10 €/mes</a></div>
+<div style="text-align: center; margin-top: 25px;"><a style="background: white; color: #667eea; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial">AI Chef Pro: Plan Premium Pro, 25 €/mes</a></div>
 </div>
 
 
@@ -353,7 +353,7 @@ wpId: 1770
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>ChefGPT</th><th>Smart CookAI</th><th>Mr. Cook</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Enfoque principal</td><td>Consumidor</td><td>Consumidor</td><td>Consumidor</td><td>Profesional</td></tr><tr><td>Recetas por región</td><td>Limitado</td><td>Básico</td><td>Medio</td><td>20+ recetarios regionales</td></tr><tr><td>Food Pairing</td><td>No</td><td>No</td><td>No</td><td>Sí, científico</td></tr><tr><td>Gestión de mermas</td><td>No</td><td>No</td><td>No</td><td>Sí, con GenCal</td></tr><tr><td>Identificación de alérgenos</td><td>Básico</td><td>Básico</td><td>Medio</td><td>Avanzado (ID Alérgenos)</td></tr><tr><td>Herramientas de catering</td><td>No</td><td>No</td><td>No</td><td>Sí, Catering AI+</td></tr><tr><td>Coaching mental</td><td>No</td><td>No</td><td>No</td><td>Sí, Mental Coach</td></tr><tr><td>Gastro Lexicum</td><td>No</td><td>No</td><td>No</td><td>Sí, diccionario especializado</td></tr><tr><td>Precio profesional</td><td>2.99$/mes</td><td>N/A</td><td>Variable</td><td>Desde 10€/mes</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>ChefGPT</th><th>Smart CookAI</th><th>Mr. Cook</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Enfoque principal</td><td>Consumidor</td><td>Consumidor</td><td>Consumidor</td><td>Profesional</td></tr><tr><td>Recetas por región</td><td>Limitado</td><td>Básico</td><td>Medio</td><td>20+ recetarios regionales</td></tr><tr><td>Food Pairing</td><td>No</td><td>No</td><td>No</td><td>Sí, científico</td></tr><tr><td>Gestión de mermas</td><td>No</td><td>No</td><td>No</td><td>Sí, con GenCal</td></tr><tr><td>Identificación de alérgenos</td><td>Básico</td><td>Básico</td><td>Medio</td><td>Avanzado (ID Alérgenos)</td></tr><tr><td>Herramientas de catering</td><td>No</td><td>No</td><td>No</td><td>Sí, Catering AI+</td></tr><tr><td>Coaching mental</td><td>No</td><td>No</td><td>No</td><td>Sí, Mental Coach</td></tr><tr><td>Gastro Lexicum</td><td>No</td><td>No</td><td>No</td><td>Sí, diccionario especializado</td></tr><tr><td>Precio profesional</td><td>2.99$/mes</td><td>N/A</td><td>Variable</td><td>Desde 25€/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -948,7 +948,7 @@ wpId: 1770
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características principales</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €/mes</td><td>Chefs individuales, restaurantes pequeños</td><td>Acceso a todos los agentes con 10.000 créditos al mes, sin permanencia</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Cocinas activas, chefs ejecutivos, desarrollo intensivo</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Operaciones grandes, grupos, consultorías</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Uso intensivo sin límites</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características principales</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €/mes</td><td>Chefs individuales, cocinas activas, chefs ejecutivos, desarrollo intensivo</td><td>Todos los agentes con 85.000 créditos al mes</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €/mes</td><td>Operaciones grandes, grupos, consultorías</td><td>Todos los agentes con 175.000 créditos al mes</td></tr><tr><td><strong>Premium Max</strong></td><td>95 €/mes o 950 €/año</td><td>Uso intensivo sin límites</td><td>Todos los agentes con créditos ilimitados</td></tr></tbody></table></div></figure>
 
 
 
@@ -1076,7 +1076,7 @@ wpId: 1770
 
 
 
-<p class="wp-block-paragraph"><strong>¿Listo para transformar tu forma de crear recetas?</strong> Comienza hoy mismo explorando AI Chef Pro. El plan AI Chef Miembro te permite experimentar sin permanencia, y nuestros planes profesionales ofrecen un ROI demostrable desde el primer mes.</p>
+<p class="wp-block-paragraph"><strong>¿Listo para transformar tu forma de crear recetas?</strong> Comienza hoy mismo explorando AI Chef Pro. El plan AI Chef Premium Pro te permite experimentar sin permanencia, y nuestros planes profesionales ofrecen un ROI demostrable desde el primer mes.</p>
 
 
 
@@ -1084,7 +1084,7 @@ wpId: 1770
 <h3 style="color: white; margin-top: 0; font-size: 28px;">🎯 Comienza Tu Transformación Culinaria Hoy</h3>
 <p style="font-size: 20px; line-height: 1.6; margin: 20px 0;">Prueba AI Chef Pro en tu cocina y lleva tu creatividad al siguiente nivel.</p>
 <div style="margin: 30px 0;"><a style="background: white; color: #667eea; padding: 20px 50px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 20px; margin: 10px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial">Prueba Ahora</a><br><a style="background: transparent; color: white; border: 2px solid white; padding: 18px 48px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 20px; margin: 10px;" href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial">Contacta con Nosotros</a></div>
-<p style="font-size: 16px; margin-top: 30px; opacity: 0.9;">✨ Planes desde 10€/mes • Acceso inmediato • Soporte en español</p>
+<p style="font-size: 16px; margin-top: 30px; opacity: 0.9;">✨ Planes desde 25€/mes • Acceso inmediato • Soporte en español</p>
 </div>
 
 

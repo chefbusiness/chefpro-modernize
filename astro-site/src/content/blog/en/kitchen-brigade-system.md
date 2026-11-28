@@ -224,7 +224,7 @@ Three prompts you can copy and adapt today:
 
 The more you tell the agent about your menu, team size and service volume, the more useful the output. Treat it as a very fast first draft that you, as the chef, review and adjust.
 
-Ready to try it? <a href="https://enapp.aichef.pro/?utm_source=blog&utm_medium=cta-inline&utm_content=kitchen-brigade-system">Try AI Chef Pro</a> and work with 75+ AI agents built for hospitality, with plans from €10/month.
+Ready to try it? <a href="https://enapp.aichef.pro/?utm_source=blog&utm_medium=cta-inline&utm_content=kitchen-brigade-system">Try AI Chef Pro</a> and work with 75+ AI agents built for hospitality, with plans from €25/month.
 
 ## Kitchen brigade glossary
 

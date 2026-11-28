@@ -42,7 +42,7 @@ wpId: 2313
 <p style="color: #f0a500; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🍳 Transforma tu cocina con IA</p>
 <h3 style="color: #ffffff; font-size: 28px; margin: 0 0 15px 0; line-height: 1.3;">Crea Platos de Autor Únicos con AI Chef Pro</h3>
 <p style="color: #b8b8b8; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Accede a más de 80 agentes de IA diseñados específicamente para profesionales de la gastronomía. Genera recetas innovadoras, optimiza costes y sorprende a tus comensales.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #f0a500, #ff6b35); color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Prueba AI Chef Miembro →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #f0a500, #ff6b35); color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Prueba AI Chef Premium Pro →</a>
 </div>
 
 
@@ -1188,8 +1188,8 @@ wpId: 2313
 <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); border-radius: 16px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
 <p style="color: #2d3436; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🚀 Empieza Hoy Mismo</p>
 <h3 style="color: #2d3436; font-size: 26px; margin: 0 0 15px 0; line-height: 1.3;">Accede a Más de 80 Agentes de IA Gastronómica</h3>
-<p style="color: #2d3436; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6; opacity: 0.9;">Desde 10€/mes. Genera recetas, optimiza mermas, identifica alérgenos y transforma tu cocina con inteligencia artificial profesional.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: #2d3436; color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px;">Crear Cuenta AI Chef Miembro →</a>
+<p style="color: #2d3436; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6; opacity: 0.9;">Desde 25€/mes. Genera recetas, optimiza mermas, identifica alérgenos y transforma tu cocina con inteligencia artificial profesional.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: #2d3436; color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px;">Crear Cuenta AI Chef Premium Pro →</a>
 </div>
 
 
@@ -1319,7 +1319,7 @@ wpId: 2313
 
 
 
-<p class="wp-block-paragraph">El plan <strong>Miembro (10 €/mes)</strong> incluye acceso a Cocina Creativa AI y al resto de agentes, con 10.000 créditos al mes, suficientes para un chef individual. Para establecimientos con necesidades intensivas de desarrollo, los planes <strong>Premium Pro (25 €/mes)</strong> o <strong>Premium Plus (50 €/mes)</strong> ofrecen más créditos. Consulta todos los detalles en la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank">página de precios</a>.</p>
+<p class="wp-block-paragraph">El plan <strong>Premium Pro (25 €/mes)</strong> incluye acceso a Cocina Creativa AI y al resto de agentes, con 85.000 créditos al mes, de sobra para un chef individual. Para establecimientos con necesidades intensivas de desarrollo, los planes <strong>Premium Plus (50 €/mes)</strong> o <strong>Premium Max (95 €/mes)</strong> ofrecen más créditos. Consulta todos los detalles en la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank">página de precios</a>.</p>
 
 
 
@@ -1347,7 +1347,7 @@ wpId: 2313
 
 
 
-<p class="wp-block-paragraph">¿Estás listo para crear tus propios platos de autor con inteligencia artificial? <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank">Prueba AI Chef Pro desde 10 €</a> y descubre cómo la tecnología puede elevar tu cocina a nuevas dimensiones de creatividad y excelencia.</p>
+<p class="wp-block-paragraph">¿Estás listo para crear tus propios platos de autor con inteligencia artificial? <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank">Prueba AI Chef Pro desde 25 €</a> y descubre cómo la tecnología puede elevar tu cocina a nuevas dimensiones de creatividad y excelencia.</p>
 
 
 

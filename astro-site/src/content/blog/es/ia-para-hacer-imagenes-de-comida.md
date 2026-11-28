@@ -14,13 +14,13 @@ faq:
   - q: "¿Cuál es la diferencia entre generar una imagen de comida con IA y mejorar una foto real?"
     a: "Generar una imagen desde texto (text-to-image) crea un plato ficticio a partir de una descripción. Mejorar una foto real (image-to-image) retoca una imagen de tu plato verdadero: ajusta luz, fondo o color. El primero es útil para conceptos; el segundo, para fotos de carta o delivery."
   - q: "¿Qué herramienta de IA para imágenes de comida me recomiendas para empezar?"
-    a: "Depende de tu objetivo. Midjourney destaca por su estética cuidada; ChatGPT/DALL-E sigue bien las instrucciones; AI Chef Pro es ideal si buscas un entorno gastronómico en español sin necesidad de aprender prompts complejos. Mi consejo: prueba varias con el plan AI Chef Miembro y elige la que se adapte a tu flujo de trabajo."
+    a: "Depende de tu objetivo. Midjourney destaca por su estética cuidada; ChatGPT/DALL-E sigue bien las instrucciones; AI Chef Pro es ideal si buscas un entorno gastronómico en español sin necesidad de aprender prompts complejos. Mi consejo: prueba varias con el plan AI Chef Premium Pro y elige la que se adapte a tu flujo de trabajo."
   - q: "¿Cómo escribo un buen prompt para generar imágenes de comida?"
     a: "Describe el plato de forma concreta, añade el estilo de luz (cenital, lateral, cálida), el ángulo (cenital, primer plano, picado), el fondo (madera, mármol, negro) y detalles realistas como vapor, miga o gotas. Piensa en el prompt como en una receta: cuanto más preciso seas, mejor será el resultado."
   - q: "¿Puedo usar imágenes de IA en la carta o en el delivery?"
     a: "No, si la imagen no representa fielmente el plato que sirves. Usar una imagen generada por IA de un plato ficticio en la carta o en apps de entrega a domicilio es publicidad engañosa. Para esos canales, utiliza siempre fotos reales de tus platos, retocadas con IA solo si no desvirtúan el producto."
   - q: "¿Cuánto cuesta hacer imágenes de comida con IA en AI Chef Pro?"
-    a: "AI Chef Pro ofrece el plan AI Chef Miembro por 10 € al mes con 10.000 créditos, sin permanencia y con pago con tarjeta. Si necesitas más, hay planes de pago desde 25 €/mes (Premium Pro, 85.000 créditos) hasta 95 €/mes (Max, créditos ilimitados). El plan Max Anual, por 950 €/año, también incluye créditos ilimitados."
+    a: "AI Chef Pro ofrece el plan AI Chef Premium Pro por 25 € al mes con 85.000 créditos, sin permanencia y con pago con tarjeta. Si necesitas más, hay planes superiores desde 50 €/mes (Premium Plus, 175.000 créditos) hasta 95 €/mes (Max, créditos ilimitados). El plan Max Anual, por 950 €/año, también incluye créditos ilimitados."
 ---
 
 Llevo casi tres décadas en cocina y sé que una imagen vale más que mil palabras, sobre todo cuando alguien decide qué pedir en delivery o qué restaurante visitar. La primera foto que ve un cliente en una app de entrega a domicilio decide el pedido en segundos. Por eso, cuando un cocinero o dueño de restaurante oye hablar de **ia para hacer imagenes de comida**, suele pensar en ahorrar tiempo y dinero en sesiones de fotografía. Pero antes de lanzarte a generar platos ficticios para tu carta, hay que poner los puntos sobre las íes. Una imagen generada por inteligencia artificial es una referencia, una inspiración, un boceto. Si la haces pasar por la foto real del plato que vas a servir, estás engañando a tu cliente y te metes en terreno pantanoso.
@@ -125,11 +125,10 @@ Como chef, mi recomendación es simple: utiliza la IA para hacer imágenes de co
 
 AI Chef Pro es un copiloto de cocina con inteligencia artificial pensado para restaurantes. No es una herramienta genérica de generación de imágenes que luego tienes que adaptar a la cocina; desde el minuto uno entiende de gastronomía y habla tu idioma. Cuenta con más de 70 agentes de IA culinarios, en 7 idiomas, con español nativo. Eso incluye la capacidad de generar imágenes de comida, pero también de ayudarte con fichas técnicas, recetas, cálculos de costes y mucho más.
 
-El plan AI Chef Miembro te da 10.000 créditos al mes por 10 €, con pago con tarjeta, para que puedas probar sin permanencia. Si tu restaurante necesita un volumen mayor, los planes de pago escalan:
+El plan AI Chef Premium Pro te da 85.000 créditos al mes por 25 €, con pago con tarjeta, para que puedas probar sin permanencia. Si tu restaurante necesita un volumen mayor, los planes de pago escalan:
 
 | Plan | Precio | Créditos/mes |
 | :--- | :--- | :--- |
-| AI Chef Miembro | 10 €/mes (con tarjeta) | 10.000 |
 | Premium Pro | 25 €/mes | 85.000 |
 | Plus | 50 €/mes | 175.000 |
 | Max | 95 €/mes | Ilimitados |

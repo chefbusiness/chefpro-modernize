@@ -20,7 +20,7 @@ faq:
   - q: "¿Qué son los precios dinámicos y cuándo tienen sentido?"
     a: "Son precios que varían según franja horaria, canal o disponibilidad. Tienen sentido cuando reflejan un coste distinto (menú de mediodía más económico) o una oferta para horas valle. Aplicarlos sin criterio ni comunicación transparente genera desconfianza y quema al cliente."
   - q: "¿Cuánto cuesta empezar con IA para la carta?"
-    a: "Puedes empezar sin gastar nada. AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. suficiente para generar descripciones, fichas de alérgenos y traducciones de una carta pequeña. Si necesitas más volumen, los planes de pago arrancan en 25 €/mes."
+    a: "Puedes empezar con una inversión pequeña. AI Chef Pro parte del plan Premium Pro: 25 € al mes con 85.000 créditos, suficiente para generar descripciones, fichas de alérgenos y traducciones de una carta pequeña. Si necesitas más volumen, los planes superiores arrancan en 50 €/mes."
 ---
 
 ## Carta digital restaurante QR: guía práctica para hosteleros en 2026
@@ -179,7 +179,7 @@ Aquí entra AI Chef Pro. Con sus más de 70 agentes de IA culinarios en español
 - Traducir la carta a siete idiomas manteniendo el sentido gastronómico.
 - Aplicar [ingeniería de menú para una carta más rentable](https://aichef.pro/blog/carta-restaurante-rentable-ingenieria-menu-ia) y detectar qué platos necesitan un ajuste de precio o un empujón en la carta.
 
-El plan AI Chef Miembro te da 10.000 créditos al mes por 10 €, suficientes para [crear tu carta o menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y probar el flujo sin compromiso. Si luego necesitas más volumen, los planes de pago arrancan en 25 €/mes (Premium Pro, 85.000 créditos), pasan por Plus a 50 €/mes (175.000 créditos) y llegan hasta Max a 95 €/mes con créditos ilimitados, o su versión anual por 950 €/año.
+El plan AI Chef Premium Pro te da 85.000 créditos al mes por 25 €, suficientes para [crear tu carta o menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y probar el flujo sin compromiso. Si luego necesitas más volumen, pasas a Plus a 50 €/mes (175.000 créditos) y, si hace falta, llegas hasta Max a 95 €/mes con créditos ilimitados, o su versión anual por 950 €/año.
 
 ### 4. Revisa, ajusta y publica
 
@@ -193,6 +193,6 @@ Un QR en cada mesa, otro en la entrada y, si trabajas con delivery, en el packag
 
 Si nunca has usado IA para la carta, empieza por una tarea pequeña: pide al sistema que te redacte la descripción de tres platos y te saque la ficha de alérgenos. En diez minutos verás si te sirve. Luego, si te convence, aborda la carta entera.
 
-Puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=carta-digital) con el plan AI Chef Miembro de 10.000 créditos al mes, por 10 €. Así pruebas cómo la IA te ayuda a [crear tu carta o menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y a [cómo usar la IA para crear menús](https://aichef.pro/blog/ia-para-crear-menus) sin arriesgar nada. Si luego necesitas más créditos, escalas al plan que mejor se ajuste a tu volumen de platos y frecuencia de cambios.
+Puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=carta-digital) con el plan AI Chef Premium Pro de 85.000 créditos al mes, por 25 €. Así pruebas cómo la IA te ayuda a [crear tu carta o menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y a [cómo usar la IA para crear menús](https://aichef.pro/blog/ia-para-crear-menus) sin arriesgar nada. Si luego necesitas más créditos, escalas al plan que mejor se ajuste a tu volumen de platos y frecuencia de cambios.
 
 Una carta digital QR bien hecha no es un gasto: es una herramienta de venta que trabaja las 24 horas, sin cansarse, sin errores de alérgenos y en el idioma que haga falta. Y con la IA, el mantenimiento te cuesta menos tiempo del que pierdes hoy persiguiendo al de la imprenta.

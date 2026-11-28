@@ -11,8 +11,8 @@ wpId: 2577
 faq:
   - q: "¿La IA puede sustituir al chef en un restaurante de alta cocina?"
     a: "No. La IA acelera la exploración de combinaciones, afina escandallos y ayuda a mantener la consistencia, pero el paladar, la técnica, la coherencia del menú y la ejecución en el pase son responsabilidad exclusiva del chef. Es una herramienta de apoyo, no un sustituto."
-  - q: "¿Cómo puedo empezar a probar la IA en mi cocina sin gastar dinero?"
-    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. Puedes registrarte, explorar los más de 70 agentes culinarios y probar generación de menús degustación, food pairing o escandallos sin compromiso."
+  - q: "¿Cómo puedo empezar a probar la IA en mi cocina sin permanencia?"
+    a: "AI Chef Pro parte del plan Premium Pro: 25 € al mes con 85.000 créditos y sin permanencia. Puedes registrarte, explorar los más de 70 agentes culinarios y probar generación de menús degustación, food pairing o escandallos sin compromiso."
   - q: "¿Sirve la IA para diseñar un menú degustación completo?"
     a: "Sí. Herramientas como el generador de menús degustación de AI Chef Pro analizan ingredientes, estacionalidad y restricciones para proponer secuencias de pases con lógica sensorial. El chef valida, ajusta y cierra la propuesta final; la IA entrega un prototipo estructurado sobre el que trabajar."
   - q: "¿Qué es el food pairing algorítmico y cómo lo aplica la IA?"
@@ -20,7 +20,7 @@ faq:
   - q: "¿La IA ayuda realmente a reducir mermas y controlar alérgenos?"
     a: "Sí. La IA propone el escandallo cuando cambia un precio y el cocinero lo valida. También puedes estimar mermas según la estacionalidad y hacer la revisión de los 14 alérgenos con validación final del cocinero."
   - q: "¿Cuánto cuesta usar AI Chef Pro de forma profesional?"
-    a: "El plan de entrada de pago es Premium Pro, por 25 € al mes con 85.000 créditos. El plan Plus cuesta 50 €/mes (175.000 créditos) y el plan Max ofrece créditos ilimitados por 95 €/mes. Existe también la opción Max Anual por 950 €/año."
+    a: "El plan de entrada es Premium Pro, por 25 € al mes con 85.000 créditos. El plan Plus cuesta 50 €/mes (175.000 créditos) y el plan Max ofrece créditos ilimitados por 95 €/mes. Existe también la opción Max Anual por 950 €/año."
 ---
 
 La inteligencia artificial en la alta cocina sirve para acelerar la exploración de combinaciones de sabor, reforzar la consistencia del pase servicio tras servicio y personalizar cada mesa sin perder el control. No cocina por ti: te da más opciones, más rápido, para que decidas con criterio.
@@ -129,17 +129,16 @@ Estos son los planes actuales:
 
 | Plan | Precio | Créditos/mes | Ideal para |
 | :--- | :--- | :--- | :--- |
-| AI Chef Miembro | 10 €/mes | 10.000 | Sin permanencia, cancela cuando quieras |
 | Premium Pro | 25 €/mes | 85.000 | Cocina que ya integra IA a diario |
 | Plus | 50 €/mes | 175.000 | Equipos con alto volumen de creación |
 | Max | 95 €/mes | Ilimitados | Uso intensivo sin límite de créditos |
 
-El plan AI Chef Miembro cuesta 10 € al mes, sin permanencia, y te da 10.000 créditos para explorar los agentes con total libertad. Si tu cocina empieza a apoyarse en la IA de forma recurrente, el plan Premium Pro (25 €/mes) amplía los créditos a 85.000, suficiente para un uso profesional diario. Para equipos que prototipan menús con frecuencia, el plan Plus ofrece 175.000 créditos. Y si necesitas uso intensivo sin preocuparte por el contador, el plan Max incluye créditos ilimitados por 95 € al mes. Existe también la opción Max Anual (950 €/año) para quien prefiera facturación anual.
+El plan AI Chef Premium Pro cuesta 25 € al mes, sin permanencia, y te da 85.000 créditos, suficiente para un uso profesional diario. Para equipos que prototipan menús con frecuencia, el plan Plus ofrece 175.000 créditos por 50 € al mes. Y si necesitas uso intensivo sin preocuparte por el contador, el plan Max incluye créditos ilimitados por 95 € al mes. Existe también la opción Max Anual (950 €/año) para quien prefiera facturación anual.
 
-Antes de elegir plan, conviene echar un vistazo a la [comparativa de herramientas de IA para restaurantes](https://aichef.pro/blog/mejores-ia-restaurantes-2026) y entender qué tipo de agente encaja mejor con tu operativa. Y si quieres empezar ya, puedes [contratar AI Chef Miembro aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=michelin).
+Antes de elegir plan, conviene echar un vistazo a la [comparativa de herramientas de IA para restaurantes](https://aichef.pro/blog/mejores-ia-restaurantes-2026) y entender qué tipo de agente encaja mejor con tu operativa. Y si quieres empezar ya, puedes [contratar AI Chef Premium Pro aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=michelin).
 
 ## Conclusión
 
 La IA en la alta cocina no va de atajos ni de fórmulas mágicas. Va de tener un ayudante que te acerca información que antes quedaba fuera de tu alcance, que te acelera las pruebas y que te ayuda a no descuidar la consistencia cuando el restaurante está lleno y el pase aprieta.
 
-El oficio sigue siendo el mismo: producto, técnica, sensibilidad y criterio. La diferencia es que ahora puedes dedicar más tiempo a lo que de verdad construye una estrella: probar, ajustar y decidir con el paladar. Si tienes curiosidad, el plan AI Chef Miembro está ahí para que lo compruebes sin más compromiso que 10 € al mes y unas cuantas preguntas bien formuladas.
+El oficio sigue siendo el mismo: producto, técnica, sensibilidad y criterio. La diferencia es que ahora puedes dedicar más tiempo a lo que de verdad construye una estrella: probar, ajustar y decidir con el paladar. Si tienes curiosidad, el plan AI Chef Premium Pro está ahí para que lo compruebes sin más compromiso que 25 € al mes y unas cuantas preguntas bien formuladas.

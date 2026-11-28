@@ -16,7 +16,7 @@ faq:
   - q: "¿Funciona con recetas de masa madre o solo con levadura comercial?"
     a: "Funciona perfectamente con masa madre, prefermentos, poolish y bigas. Puedes indicar el porcentaje de masa madre, su hidratación y el tiempo de fermentación deseado. El agente recalcula las cantidades, ajusta los tiempos según temperatura ambiente y te sugiere fases de autólisis o fermentación en frío, respetando siempre tu método artesano."
   - q: "¿Cuánto cuesta la herramienta y cuál es el plan inicial?"
-    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. Con esos créditos puedes hacer varios escandallos, generar fichas técnicas y probar los agentes de planificación. Si necesitas un uso diario, el plan Premium Pro cuesta 25 €/mes e incluye 85.000 créditos. No hay costes ocultos ni permanencia."
+    a: "AI Chef Pro parte del plan Premium Pro: 25 € al mes con 85.000 créditos. Con esos créditos puedes hacer escandallos, generar fichas técnicas y usar los agentes de planificación a diario. Si necesitas más, el plan Premium Plus cuesta 50 €/mes e incluye 175.000 créditos. No hay costes ocultos ni permanencia."
   - q: "¿Puedo integrar la IA con mi TPV o mi hoja de cálculo de ventas?"
     a: "Sí, aunque no requiere integración compleja. Puedes pegar en el chat los datos de ventas que exporte tu TPV o, simplemente, dictarle las cifras de la semana. Muchos panaderos empiezan con un registro manual de 5 minutos al día; el agente trabaja con lo que le das, sin conectar sistemas."
   - q: "¿Cómo gestiona los alérgenos y la información nutricional?"
@@ -134,7 +134,7 @@ La IA te redacta tres publicaciones semanales con el tono de tu panadería: una 
 
 No necesitas cambiar tu obrador de golpe. Con tres acciones esta semana ya notarás la diferencia:
 
-1. **Hazte miembro de AI Chef Pro** (10 € al mes, 10.000 créditos, sin permanencia).  
+1. **Date de alta en AI Chef Pro** (Premium Pro: 25 € al mes, 85.000 créditos, sin permanencia).  
 2. **Sube tu receta principal** de pan de masa madre o de bollería al agente de fichas técnicas y escandallo. Obtendrás en segundos el coste real por pieza y los porcentajes de panadero ajustados.  
 3. **Pide un plan de producción semanal** indicando tus ventas medias y el calendario de festivos de tu zona.  
 4. **Genera tres posts para Instagram** con fotos de tus piezas estrella y publícalos a lo largo de la semana.  
@@ -148,10 +148,9 @@ AI Chef Pro ofrece más de 70 agentes de IA culinarios en español nativo y otro
 
 | Plan | Precio | Créditos/mes | Ideal para |
 | :--- | :--- | :--- | :--- |
-| AI Chef Miembro | 10 € | 10.000 (con tarjeta) | Probar los agentes y resolver dudas puntuales de escandallo o fichas técnicas |
 | Premium Pro | 25 €/mes | 85.000 | Panaderías que quieren automatizar el cálculo de costes y planificar la producción semanal |
 | Plus | 50 €/mes | 175.000 | Obradores con varias líneas de producto y necesidad de marketing local recurrente |
 | Max | 95 €/mes | Ilimitados | Producción diaria intensiva, múltiples usuarios y generación de contenido constante |
 | Max Anual | 950 €/año | Ilimitados | Máximo ahorro para el obrador que integra la IA en todos sus procesos |
 
-Todos los planes incluyen agentes especializados en panadería, acceso a los 7 idiomas y soporte en español. El plan AI Chef Miembro se paga con tarjeta desde el alta y te permite comprobar en primera persona cómo la IA se adapta a tu manera de trabajar.
+Todos los planes incluyen agentes especializados en panadería, acceso a los 7 idiomas y soporte en español. El plan AI Chef Premium Pro se paga con tarjeta desde el alta y te permite comprobar en primera persona cómo la IA se adapta a tu manera de trabajar.

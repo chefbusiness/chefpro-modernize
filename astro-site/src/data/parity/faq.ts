@@ -13,14 +13,14 @@ export const FAQ: Record<ParityLang, PageCopy> = {
   en: {
     title: 'FAQ: AI agents for restaurant kitchens | AI Chef Pro',
     description:
-      'FAQ on AI agents for restaurants: what the suite of 75+ includes, the €10 a month plan and how to cancel. Get a straight answer and start today.',
+      'FAQ on AI agents for restaurants: what the suite of 75+ includes, plans from €25 a month and how to cancel. Get a straight answer and start today.',
     keywords: 'AI Chef Pro FAQ, AI Chef Pro pricing, restaurant AI credits, cancel AI Chef Pro',
     eyebrow: 'FAQ',
     h1: 'Questions operators actually ask',
     lead: 'Prices, credits, cancellation and what the allergen help does — and does not — decide for you.',
     answerLabel: 'Direct answer',
     answer:
-      'AI Chef Pro is a browser suite of specialized agents for professional kitchens, not a generic chatbot. The Member plan is €10 per month with 10,000 credits and, on the English pricing page, access to 75+ agents. There is no free plan. Monthly plans have no lock-in. Prices on this site are in euro.',
+      'AI Chef Pro is a browser suite of specialized agents for professional kitchens, not a generic chatbot. Premium Pro, the entry plan, is €25 per month with 85,000 credits and, on the English pricing page, access to 75+ agents. There is no free plan. Monthly plans have no lock-in. Prices on this site are in euro.',
     homeLabel: 'Home',
     crumb: 'FAQ',
     faqHeading: 'FAQ',
@@ -33,7 +33,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'What is AI Chef Pro?',
-            a: 'A suite of specialized AI agents for cooks and restaurant operators. It is not a general chatbot. The English pricing page states 75+ agents. You start on the Member plan at €10 per month with 10,000 credits.',
+            a: 'A suite of specialized AI agents for cooks and restaurant operators. It is not a general chatbot. The English pricing page states 75+ agents. You start on Premium Pro at €25 per month with 85,000 credits.',
           },
           {
             q: 'Who is behind it?',
@@ -49,15 +49,15 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'price',
         h2: 'Price, credits and VAT',
         answer:
-          'Member is €10/month (10,000 credits). Premium Pro is €25 (85,000). Premium Plus is €50 (175,000). Premium Max is €95 with unlimited credits, or €950 per year. Every plan is a card subscription. There is no free plan.',
+          'Premium Pro is €25/month (85,000 credits). Premium Plus is €50 (175,000). Premium Max is €95 with unlimited credits, or €950 per year. Every plan is a card subscription. There is no free plan.',
         faqs: [
           {
             q: 'Is there a free trial?',
-            a: 'No. There is no free plan. The entry price is the Member plan at €10 per month, and you can cancel from the account panel.',
+            a: 'No. There is no free plan. The entry price is Premium Pro at €25 per month, and you can cancel from the account panel.',
           },
           {
             q: 'What is a credit?',
-            a: 'A credit is the unit of work. A short prompt spends few credits; a full costing or a full menu spends more. Member includes 10,000 credits each month. They renew monthly. Premium Max removes the cap.',
+            a: 'A credit is the unit of work. A short prompt spends few credits; a full costing or a full menu spends more. Premium Pro includes 85,000 credits each month. They renew monthly. Premium Max removes the cap.',
           },
           {
             q: 'Do prices include VAT?',
@@ -95,21 +95,21 @@ export const FAQ: Record<ParityLang, PageCopy> = {
       },
     ],
     ctaTitle: 'See the plans before you write to us',
-    ctaBody: 'Member is €10 per month. If a line on this page is wrong, email info@aichef.pro with the URL.',
+    ctaBody: 'Plans start at €25 per month with Premium Pro. If a line on this page is wrong, email info@aichef.pro with the URL.',
     ctaPrimary: 'Open the app',
     ctaSecondary: 'See plans and pricing',
   },
   fr: {
     title: 'FAQ sur les agents IA pour restaurants | AI Chef Pro',
     description:
-      'FAQ sur les agents IA pour restaurants : ce que couvre la suite de 75+, le forfait à 10 € par mois et comment résilier. Trouvez la réponse et commencez.',
+      'FAQ sur les agents IA pour restaurants : ce que couvre la suite de 75+, les forfaits dès 25 € par mois et comment résilier. Trouvez la réponse et commencez.',
     keywords: 'FAQ AI Chef Pro, tarif AI Chef Pro, crédits IA restauration, résilier AI Chef Pro, allergènes restaurant',
     eyebrow: 'Questions fréquentes',
     h1: 'Les questions que se posent les restaurateurs',
     lead: 'Prix, crédits, résiliation et ce que l’aide aux allergènes couvre — et ne couvre pas.',
     answerLabel: 'Réponse directe',
     answer:
-      'AI Chef Pro est une suite d’agents spécialisés pour la cuisine professionnelle, dans le navigateur. Le forfait Membre coûte 10 € par mois avec 10 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Pas de forfait gratuit, pas d’engagement. Les prix restent en euros.',
+      'AI Chef Pro est une suite d’agents spécialisés pour la cuisine professionnelle, dans le navigateur. Le forfait d’entrée, Premium Pro, coûte 25 € par mois avec 85 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Pas de forfait gratuit, pas d’engagement. Les prix restent en euros.',
     homeLabel: 'Accueil',
     crumb: 'Questions fréquentes',
     faqHeading: 'Questions fréquentes',
@@ -122,7 +122,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Qu’est-ce qu’AI Chef Pro ?',
-            a: 'Une suite d’agents d’intelligence artificielle pour les cuisiniers et les exploitants, pas un chatbot généraliste. Le forfait Membre est à 10 € par mois avec 10 000 crédits. L’espace français affiche aujourd’hui 75+ agents.',
+            a: 'Une suite d’agents d’intelligence artificielle pour les cuisiniers et les exploitants, pas un chatbot généraliste. Le forfait Premium Pro est à 25 € par mois avec 85 000 crédits. L’espace français affiche aujourd’hui 75+ agents.',
           },
           {
             q: 'Qui est derrière le produit ?',
@@ -138,15 +138,15 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'prix',
         h2: 'Prix, crédits et TVA',
         answer:
-          'Membre : 10 €/mois (10 000 crédits). Premium Pro : 25 € (85 000). Premium Plus : 50 € (175 000). Premium Max : 95 € avec crédits illimités, ou 950 € par an. Paiement par carte. Pas de forfait gratuit.',
+          'Premium Pro : 25 €/mois (85 000 crédits). Premium Plus : 50 € (175 000). Premium Max : 95 € avec crédits illimités, ou 950 € par an. Paiement par carte. Pas de forfait gratuit.',
         faqs: [
           {
             q: 'Y a-t-il un essai gratuit ?',
-            a: 'Non. Il n’y a pas de forfait gratuit. L’entrée est le forfait Membre à 10 € par mois, résiliable depuis le compte.',
+            a: 'Non. Il n’y a pas de forfait gratuit. L’entrée est le forfait Premium Pro à 25 € par mois, résiliable depuis le compte.',
           },
           {
             q: 'C’est quoi un crédit ?',
-            a: 'Le crédit est l’unité de travail. Une idée courte en consomme peu ; une fiche complète ou une carte entière en consomme davantage. Le forfait Membre comprend 10 000 crédits par mois, renouvelés chaque mois. Premium Max retire le plafond.',
+            a: 'Le crédit est l’unité de travail. Une idée courte en consomme peu ; une fiche complète ou une carte entière en consomme davantage. Le forfait Premium Pro comprend 85 000 crédits par mois, renouvelés chaque mois. Premium Max retire le plafond.',
           },
           {
             q: 'Les prix sont-ils TTC ?',
@@ -184,21 +184,21 @@ export const FAQ: Record<ParityLang, PageCopy> = {
       },
     ],
     ctaTitle: 'Regardez les tarifs avant de nous écrire',
-    ctaBody: 'Le forfait Membre est à 10 € par mois. Si une phrase de cette page est fausse, écrivez à info@aichef.pro avec l’URL.',
+    ctaBody: 'Les forfaits commencent à 25 € par mois avec Premium Pro. Si une phrase de cette page est fausse, écrivez à info@aichef.pro avec l’URL.',
     ctaPrimary: 'Ouvrir l’application',
     ctaSecondary: 'Voir les tarifs',
   },
   de: {
     title: 'FAQ zu KI-Agenten für Restaurants und Köche | AI Chef Pro',
     description:
-      'FAQ zu KI-Agenten für Restaurants: was die Suite von 75+ enthält, das Abo ab 10 € im Monat und wie Sie kündigen. Holen Sie sich die Antwort und starten Sie.',
+      'FAQ zu KI-Agenten für Restaurants: was die Suite von 75+ enthält, das Abo ab 25 € im Monat und wie Sie kündigen. Holen Sie sich die Antwort und starten Sie.',
     keywords: 'AI Chef Pro FAQ, Preise AI Chef Pro, Credits Gastronomie KI, AI Chef Pro kündigen, Allergene Gastronomie',
     eyebrow: 'Häufige Fragen',
     h1: 'Fragen, die Betriebe wirklich stellen',
     lead: 'Preis, Credits, Kündigung und was die Allergen-Hilfe leistet — und was nicht.',
     answerLabel: 'Kurzantwort',
     answer:
-      'AI Chef Pro ist eine Suite spezialisierter Agenten für die Profiküche, im Browser. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Kein Gratisplan, keine Laufzeitbindung. Preise in Euro.',
+      'AI Chef Pro ist eine Suite spezialisierter Agenten für die Profiküche, im Browser. Der Einstiegstarif Premium Pro kostet 25 € im Monat mit 85.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Kein Gratisplan, keine Laufzeitbindung. Preise in Euro.',
     homeLabel: 'Startseite',
     crumb: 'Häufige Fragen',
     faqHeading: 'Häufige Fragen',
@@ -211,7 +211,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Was ist AI Chef Pro?',
-            a: 'Eine Suite spezialisierter KI-Agenten für Köche und Betriebe, kein allgemeiner Chatbot. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Der deutsche Arbeitsbereich nennt heute 75+ Agenten.',
+            a: 'Eine Suite spezialisierter KI-Agenten für Köche und Betriebe, kein allgemeiner Chatbot. Der Tarif Premium Pro kostet 25 € im Monat mit 85.000 Credits. Der deutsche Arbeitsbereich nennt heute 75+ Agenten.',
           },
           {
             q: 'Wer steht dahinter?',
@@ -227,15 +227,15 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'preis',
         h2: 'Preis, Credits und Mehrwertsteuer',
         answer:
-          'Mitglied: 10 €/Monat (10.000 Credits). Premium Pro: 25 € (85.000). Premium Plus: 50 € (175.000). Premium Max: 95 € mit unbegrenzten Credits, oder 950 € im Jahr. Zahlung per Karte. Kein Gratisplan.',
+          'Premium Pro: 25 €/Monat (85.000 Credits). Premium Plus: 50 € (175.000). Premium Max: 95 € mit unbegrenzten Credits, oder 950 € im Jahr. Zahlung per Karte. Kein Gratisplan.',
         faqs: [
           {
             q: 'Gibt es eine kostenlose Testphase?',
-            a: 'Nein. Es gibt keinen Gratisplan. Der Einstieg ist der Mitgliedsplan für 10 € im Monat, kündbar im Konto.',
+            a: 'Nein. Es gibt keinen Gratisplan. Der Einstieg ist der Tarif Premium Pro für 25 € im Monat, kündbar im Konto.',
           },
           {
             q: 'Was ist ein Credit?',
-            a: 'Der Credit ist die Arbeitseinheit. Eine kurze Idee verbraucht wenige Credits; eine volle Kalkulation oder eine ganze Karte verbraucht mehr. Der Mitgliedsplan enthält 10.000 Credits im Monat. Sie erneuern sich monatlich. Premium Max hebt die Grenze auf.',
+            a: 'Der Credit ist die Arbeitseinheit. Eine kurze Idee verbraucht wenige Credits; eine volle Kalkulation oder eine ganze Karte verbraucht mehr. Der Tarif Premium Pro enthält 85.000 Credits im Monat. Sie erneuern sich monatlich. Premium Max hebt die Grenze auf.',
           },
           {
             q: 'Sind die Preise inklusive Mehrwertsteuer?',
@@ -273,21 +273,21 @@ export const FAQ: Record<ParityLang, PageCopy> = {
       },
     ],
     ctaTitle: 'Lesen Sie die Preise, bevor Sie schreiben',
-    ctaBody: 'Der Mitgliedsplan kostet 10 € im Monat. Wenn ein Satz auf dieser Seite falsch ist, schreiben Sie an info@aichef.pro mit der URL.',
+    ctaBody: 'Die Tarife beginnen bei 25 € im Monat mit Premium Pro. Wenn ein Satz auf dieser Seite falsch ist, schreiben Sie an info@aichef.pro mit der URL.',
     ctaPrimary: 'Zur App',
     ctaSecondary: 'Preise ansehen',
   },
   it: {
     title: 'FAQ sugli agenti IA per ristoranti e chef | AI Chef Pro',
     description:
-      'FAQ sugli agenti IA per ristoranti: cosa include la suite di 75+, il piano a 10 € al mese e come disdire. Trova la risposta e inizia oggi stesso.',
+      'FAQ sugli agenti IA per ristoranti: cosa include la suite di 75+, i piani da 25 € al mese e come disdire. Trova la risposta e inizia oggi stesso.',
     keywords: 'FAQ AI Chef Pro, prezzi AI Chef Pro, crediti IA ristorante, disdire AI Chef Pro, allergeni ristorante',
     eyebrow: 'Domande frequenti',
     h1: 'Le domande che fa chi ha un locale',
     lead: 'Prezzo, crediti, disdetta e cosa fa — e non fa — l’aiuto sugli allergeni.',
     answerLabel: 'Risposta diretta',
     answer:
-      'AI Chef Pro è una suite di agenti specializzati per la cucina professionale, nel browser. Il piano Membro costa 10 € al mese con 10.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Niente piano gratuito, niente permanenza. Prezzi in euro.',
+      'AI Chef Pro è una suite di agenti specializzati per la cucina professionale, nel browser. Il piano d’ingresso, Premium Pro, costa 25 € al mese con 85.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Niente piano gratuito, niente permanenza. Prezzi in euro.',
     homeLabel: 'Home',
     crumb: 'Domande frequenti',
     faqHeading: 'Domande frequenti',
@@ -300,7 +300,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Che cos’è AI Chef Pro?',
-            a: 'Una suite di agenti di intelligenza artificiale per cuochi e gestori, non un chatbot generico. Il piano Membro costa 10 € al mese con 10.000 crediti. Lo spazio italiano indica oggi 75+ agenti.',
+            a: 'Una suite di agenti di intelligenza artificiale per cuochi e gestori, non un chatbot generico. Il piano Premium Pro costa 25 € al mese con 85.000 crediti. Lo spazio italiano indica oggi 75+ agenti.',
           },
           {
             q: 'Chi c’è dietro?',
@@ -316,15 +316,15 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'prezzo',
         h2: 'Prezzo, crediti e IVA',
         answer:
-          'Membro: 10 €/mese (10.000 crediti). Premium Pro: 25 € (85.000). Premium Plus: 50 € (175.000). Premium Max: 95 € con crediti illimitati, oppure 950 € l’anno. Pagamento con carta. Niente piano gratuito.',
+          'Premium Pro: 25 €/mese (85.000 crediti). Premium Plus: 50 € (175.000). Premium Max: 95 € con crediti illimitati, oppure 950 € l’anno. Pagamento con carta. Niente piano gratuito.',
         faqs: [
           {
             q: 'C’è una prova gratuita?',
-            a: 'No. Non c’è un piano gratuito. Si entra con il piano Membro a 10 € al mese, disdicibile dal pannello.',
+            a: 'No. Non c’è un piano gratuito. Si entra con il piano Premium Pro a 25 € al mese, disdicibile dal pannello.',
           },
           {
             q: 'Che cos’è un credito?',
-            a: 'Il credito è l’unità di lavoro. Un’idea breve ne consuma pochi; una scheda completa o un menu intero ne consuma di più. Il piano Membro include 10.000 crediti al mese, che si rinnovano ogni mese. Premium Max toglie il tetto.',
+            a: 'Il credito è l’unità di lavoro. Un’idea breve ne consuma pochi; una scheda completa o un menu intero ne consuma di più. Il piano Premium Pro include 85.000 crediti al mese, che si rinnovano ogni mese. Premium Max toglie il tetto.',
           },
           {
             q: 'I prezzi sono IVA inclusa?',
@@ -362,21 +362,21 @@ export const FAQ: Record<ParityLang, PageCopy> = {
       },
     ],
     ctaTitle: 'Guarda i prezzi prima di scriverci',
-    ctaBody: 'Il piano Membro costa 10 € al mese. Se una frase di questa pagina è sbagliata, scrivi a info@aichef.pro con l’URL.',
+    ctaBody: 'I piani partono da 25 € al mese con Premium Pro. Se una frase di questa pagina è sbagliata, scrivi a info@aichef.pro con l’URL.',
     ctaPrimary: 'Apri l’app',
     ctaSecondary: 'Vedi i prezzi',
   },
   pt: {
     title: 'FAQ sobre agentes de IA para restaurantes | AI Chef Pro',
     description:
-      'FAQ sobre agentes de IA para restaurantes: o que inclui a suite de 75+, o plano a 10 € por mês e como cancelar. Veja a resposta e comece hoje.',
+      'FAQ sobre agentes de IA para restaurantes: o que inclui a suite de 75+, os planos a partir de 25 € por mês e como cancelar. Veja a resposta e comece hoje.',
     keywords: 'FAQ AI Chef Pro, preços AI Chef Pro, créditos IA restauração, cancelar AI Chef Pro, alergénios restaurante',
     eyebrow: 'Perguntas frequentes',
     h1: 'As perguntas que um restaurante faz mesmo',
     lead: 'Preço, créditos, cancelamento e o que a ajuda de alergénios faz — e não faz.',
     answerLabel: 'Resposta direta',
     answer:
-      'O AI Chef Pro é uma suite de agentes especializados para a cozinha profissional, no browser. O plano Membro custa 10 € por mês com 10.000 créditos. A página de preços em português indica hoje 75+ agentes. Não há plano grátis nem permanência. Preços em euros. O site é de Portugal.',
+      'O AI Chef Pro é uma suite de agentes especializados para a cozinha profissional, no browser. O plano de entrada, o Premium Pro, custa 25 € por mês com 85.000 créditos. A página de preços em português indica hoje 75+ agentes. Não há plano grátis nem permanência. Preços em euros. O site é de Portugal.',
     homeLabel: 'Início',
     crumb: 'Perguntas frequentes',
     faqHeading: 'Perguntas frequentes',
@@ -389,7 +389,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'O que é o AI Chef Pro?',
-            a: 'Uma suite de agentes de inteligência artificial para cozinheiros e operadores, não um chatbot genérico. O plano Membro custa 10 € por mês com 10.000 créditos. O espaço em português indica hoje 75+ agentes.',
+            a: 'Uma suite de agentes de inteligência artificial para cozinheiros e operadores, não um chatbot genérico. O plano Premium Pro custa 25 € por mês com 85.000 créditos. O espaço em português indica hoje 75+ agentes.',
           },
           {
             q: 'Quem está por trás?',
@@ -405,15 +405,15 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'preco',
         h2: 'Preço, créditos e IVA',
         answer:
-          'Membro: 10 €/mês (10.000 créditos). Premium Pro: 25 € (85.000). Premium Plus: 50 € (175.000). Premium Max: 95 € com créditos ilimitados, ou 950 € por ano. Pagamento com cartão. Não há plano grátis.',
+          'Premium Pro: 25 €/mês (85.000 créditos). Premium Plus: 50 € (175.000). Premium Max: 95 € com créditos ilimitados, ou 950 € por ano. Pagamento com cartão. Não há plano grátis.',
         faqs: [
           {
             q: 'Há um período experimental grátis?',
-            a: 'Não. Não há plano grátis. A entrada é o plano Membro a 10 € por mês, cancelável no painel.',
+            a: 'Não. Não há plano grátis. A entrada é o plano Premium Pro a 25 € por mês, cancelável no painel.',
           },
           {
             q: 'O que é um crédito?',
-            a: 'O crédito é a unidade de trabalho. Uma ideia curta gasta poucos; uma ficha completa ou uma carta inteira gasta mais. O plano Membro inclui 10.000 créditos por mês, que se renovam todos os meses. O Premium Max tira o teto.',
+            a: 'O crédito é a unidade de trabalho. Uma ideia curta gasta poucos; uma ficha completa ou uma carta inteira gasta mais. O plano Premium Pro inclui 85.000 créditos por mês, que se renovam todos os meses. O Premium Max tira o teto.',
           },
           {
             q: 'Os preços incluem IVA?',
@@ -451,21 +451,21 @@ export const FAQ: Record<ParityLang, PageCopy> = {
       },
     ],
     ctaTitle: 'Vê os preços antes de nos escreveres',
-    ctaBody: 'O plano Membro custa 10 € por mês. Se uma frase desta página estiver errada, escreve para info@aichef.pro com o URL.',
+    ctaBody: 'Os planos começam nos 25 € por mês com o Premium Pro. Se uma frase desta página estiver errada, escreve para info@aichef.pro com o URL.',
     ctaPrimary: 'Abrir a app',
     ctaSecondary: 'Ver preços',
   },
   nl: {
     title: 'FAQ over AI-agenten voor restaurants | AI Chef Pro',
     description:
-      'FAQ over AI-agenten voor restaurants: wat de suite van 75+ dekt, het abonnement vanaf € 10 per maand en hoe u opzegt. Lees het antwoord en start vandaag.',
+      'FAQ over AI-agenten voor restaurants: wat de suite van 75+ dekt, de abonnementen vanaf € 25 per maand en hoe u opzegt. Lees het antwoord en start vandaag.',
     keywords: 'FAQ AI Chef Pro, prijzen AI Chef Pro, credits horeca AI, AI Chef Pro opzeggen, allergenen horeca',
     eyebrow: 'Veelgestelde vragen',
     h1: 'Vragen die een zaak echt stelt',
     lead: 'Prijs, credits, opzeggen en wat de allergenenhulp wel en niet doet.',
     answerLabel: 'Kort antwoord',
     answer:
-      'AI Chef Pro is een suite van gespecialiseerde agenten voor de professionele keuken, in de browser. Het Lid-abonnement kost € 10 per maand met 10.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Geen gratis abonnement en geen contractduur. Prijzen in euro.',
+      'AI Chef Pro is een suite van gespecialiseerde agenten voor de professionele keuken, in de browser. Het instapabonnement, Premium Pro, kost € 25 per maand met 85.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Geen gratis abonnement en geen contractduur. Prijzen in euro.',
     homeLabel: 'Home',
     crumb: 'Veelgestelde vragen',
     faqHeading: 'Veelgestelde vragen',
@@ -478,7 +478,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Wat is AI Chef Pro?',
-            a: 'Een suite van gespecialiseerde AI-agenten voor koks en ondernemers, geen algemene chatbot. Het Lid-abonnement kost € 10 per maand met 10.000 credits. De Nederlandse werkruimte noemt vandaag 75+ agenten.',
+            a: 'Een suite van gespecialiseerde AI-agenten voor koks en ondernemers, geen algemene chatbot. Het Premium Pro-abonnement kost € 25 per maand met 85.000 credits. De Nederlandse werkruimte noemt vandaag 75+ agenten.',
           },
           {
             q: 'Wie zit erachter?',
@@ -494,15 +494,15 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         id: 'prijs',
         h2: 'Prijs, credits en btw',
         answer:
-          'Lid: € 10 per maand (10.000 credits). Premium Pro: € 25 (85.000). Premium Plus: € 50 (175.000). Premium Max: € 95 met onbeperkte credits, of € 950 per jaar. Betaling met kaart. Geen gratis abonnement.',
+          'Premium Pro: € 25 per maand (85.000 credits). Premium Plus: € 50 (175.000). Premium Max: € 95 met onbeperkte credits, of € 950 per jaar. Betaling met kaart. Geen gratis abonnement.',
         faqs: [
           {
             q: 'Is er een gratis proefperiode?',
-            a: 'Nee. Er is geen gratis abonnement. Je begint met Lid voor € 10 per maand en zegt op in het account.',
+            a: 'Nee. Er is geen gratis abonnement. Je begint met Premium Pro voor € 25 per maand en zegt op in het account.',
           },
           {
             q: 'Wat is een credit?',
-            a: 'Een credit is de werkeenheid. Een kort idee kost weinig credits; een volledige kostprijs of een hele kaart kost meer. Lid bevat 10.000 credits per maand. Die vernieuwen elke maand. Premium Max haalt het plafond weg.',
+            a: 'Een credit is de werkeenheid. Een kort idee kost weinig credits; een volledige kostprijs of een hele kaart kost meer. Premium Pro bevat 85.000 credits per maand. Die vernieuwen elke maand. Premium Max haalt het plafond weg.',
           },
           {
             q: 'Zijn de prijzen inclusief btw?',
@@ -540,7 +540,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
       },
     ],
     ctaTitle: 'Bekijk de prijzen voordat je mailt',
-    ctaBody: 'Het Lid-abonnement kost € 10 per maand. Klopt een zin op deze pagina niet, mail de URL naar info@aichef.pro.',
+    ctaBody: 'De abonnementen beginnen bij € 25 per maand met Premium Pro. Klopt een zin op deze pagina niet, mail de URL naar info@aichef.pro.',
     ctaPrimary: 'Open de app',
     ctaSecondary: 'Bekijk de prijzen',
   },

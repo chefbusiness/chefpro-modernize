@@ -128,7 +128,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Gira o seu restaurante com dados, não com intuição.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Proprietários de Restaurante: Plano Financeiro, Fichas Técnicas, SEO | AI Chef Pro",
       "description": "Suite de IA para proprietários de restaurante: agentes especializados, plano financeiro, fichas técnicas profissionais, APPCC, marketing e SEO local. Comece hoje.",
@@ -360,7 +360,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Leve a operação do seu restaurante para o próximo nível.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Gerentes e Gestores de Restaurante: Turnos, APPCC e Reporting | AI Chef Pro",
       "description": "Suite de IA para gestores de restaurante: quadrantes, inventário, APPCC, KPIs e reporting ao proprietário com agentes especializados em hotelaria. Comece hoje.",
@@ -587,7 +587,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Padronize o seu grupo. Mesmo padrão em todos os locais.",
-    "ctaSubtitle": "Fale connosco para um onboarding personalizado para o seu grupo ou comece com o plano Membro: 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Fale connosco para um onboarding personalizado para o seu grupo ou comece com o plano Premium Pro: 25 € por mês com 85.000 créditos.",
     "seo": {
       "title": "IA para Diretores de Operações de Grupos de Restauração | AI Chef Pro",
       "description": "Suíte de IA para grupos de restauração multi-local: dashboards consolidados, padronização de receitas, APPCC corporativo, manuais replicáveis e plano financeiro por unidade.",
@@ -817,7 +817,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Crie, escandalle e replique receitas à velocidade de uma conversa.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Chef Executivo: Receitas, Escandallos e Manuais | AI Chef Pro",
       "description": "Suite de IA para chef executivo e corporativo: agente Chef Executivo Pro, escandallos com IA, com validação do cozinheiro, fichas técnicas e manuais replicáveis multi-local. Comece hoje.",
@@ -1055,7 +1055,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Mais cozinha, menos papelada. Recupere horas para o que importa.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Chef de Cozinha e Chefe de Cozinha: Fichas Técnicas e APPCC | AI Chef Pro",
       "description": "Suite de IA para chefes de cozinha profissional: agentes especializados, fichas técnicas, mise en place e APPCC com suporte gastronómico real. Comece hoje.",
@@ -1275,7 +1275,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       },
       {
         "q": "Serve se não for eu quem decide as ferramentas na cozinha?",
-        "a": "Pode começar com o plano Membro (10 € por mês, 10.000 créditos) para as suas próprias listas e propostas. Quando tiver 1-2 semanas a usá-lo, proponha ao chefe de cozinha com dados concretos: tempo poupado, escandallos validados, mise organizado."
+        "a": "Pode começar com o plano Premium Pro (25 € por mês, 85.000 créditos) para as suas próprias listas e propostas. Quando tiver 1-2 semanas a usá-lo, proponha ao chefe de cozinha com dados concretos: tempo poupado, fichas técnicas com custos validadas, mise organizado."
       },
       {
         "q": "Como me ajuda nos picos de serviço?",
@@ -1287,7 +1287,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Organize a sua cozinha sem papéis soltos.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Sous Chef: Mise en Place, Fichas Técnicas e APPCC | AI Chef Pro",
       "description": "Suite de IA para sous chef em cozinha profissional: mise en place, fichas técnicas centralizadas, escandallos, APPCC a partir do telemóvel e formação da equipa. Comece hoje.",
@@ -1514,7 +1514,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Desenha, escandala e produz eventos sem papéis soltos.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Chef de Catering: Menus, Escandalos e APPCC de Evento | AI Chef Pro",
       "description": "Suite de IA para chef de catering: Catering AI+, Culinária Criativa, Calcula Pax, escandalos por evento, APPCC fora de local e planeamento de produção à escala. Começa hoje.",
@@ -1741,7 +1741,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Faça crescer o seu catering com margem real, não intuição.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Proprietários de Empresa de Catering: Rentabilidade e Plano Financeiro | AI Chef Pro",
       "description": "Suite de IA para empresas de catering: rentabilidade por evento, produção em escala, equipas eventuais, plano financeiro e captação de clientes corporativos. Comece hoje.",
@@ -1969,7 +1969,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua coctelaria com margem real e técnica de autor.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Bartender e Cocteleiro: Cartas, Custos de Receita e Storytelling | AI Chef Pro",
       "description": "Suite de IA para bartenders profissionais: Bar & Lounge AI+, Food Pairing AI, custos por bebida, fichas técnicas com storytelling e branding visual. Comece hoje.",
@@ -2197,7 +2197,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua pizzaria com margem real e técnica autêntica.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Pizzaiolo e Pizzaiolo: Massas, Escandallos e Técnica Italiana | AI Chef Pro",
       "description": "Suite de IA para pizzaiolos profissionais: Cozinha Italiana, Fermentus para massas e biga, escandallos por pizza, modelos e técnica autêntica. Comece hoje.",
@@ -2425,7 +2425,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua padaria artesanal com margem clara e técnica profissional.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Padeiro Artesanal: Massa Mãe, Fichas de Custo e Técnica Profissional | AI Chef Pro",
       "description": "Suite de IA para padeiros artesanais: Padaria Criativa, Fermentus Con AI+ para massa mãe, fichas de custo por peça com custo hora de oficina. Comece hoje.",
@@ -2654,7 +2654,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua chocolataria com margem clara e técnica de autor.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Chocolateiro e Bomboneiro: Temperagem, Escandallos e Sazonalidade | AI Chef Pro",
       "description": "Suite de IA para chocolateiros profissionais: Chocolataria Criativa, escandallos por peça com custo hora obrador, planeamento sazonal e APPCC. Comece hoje.",
@@ -2881,7 +2881,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu serviço de chef privado com margem real e proposta de autor.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Chef Privado e Personal Chef: Menus, Cálculo de Custos e Serviço | AI Chef Pro",
       "description": "Suite de IA para chefs privados profissionais: Chef Privado Pro, cálculos de custos por jantar, menus personalizados, branding e captação. Comece hoje.",
@@ -3109,7 +3109,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu F&B hoteleiro com margem integrada e operativa profissional.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para F&B Manager de Hotel: Multi-outlet, Banquetes e Escandallos | AI Chef Pro",
       "description": "Suite de IA para F&B Managers de hotel: Gerente Pro, Catering AI+, escandallos cruzados, branding multi-outlet e APPCC integrado. Comece hoje.",
@@ -3337,7 +3337,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua sala com técnica profissional e experiência memorável.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Maître e Chefe de Sala: Serviço, Harmonizações e Storytelling | AI Chef Pro",
       "description": "Suite de IA para maîtres profissionais: Gerente Pro, Bar & Lounge AI+, Food Pairing AI, formação de equipa e captação premium. Comece hoje.",
@@ -3565,7 +3565,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua adega com critério profissional e harmonizações científicas.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Sommelier: Adega, Harmonizações e Provas Profissionais | AI Chef Pro",
       "description": "Suite de IA para sommeliers profissionais: Bar & Lounge AI+, Food Pairing AI, custeio por copo, provas privadas e branding wine-driven. Comece hoje.",
@@ -3793,7 +3793,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua grelha com técnica de fogo e margem real.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Mestre Grelhador e Parrilheiro: Cortes, Brasas e Dry-Aged | AI Chef Pro",
       "description": "Suite de IA para mestres grelhadores: Cozinha Argentina + Brasileira, escandallos por corte, dry-aged, branding e APPCC. Comece hoje.",
@@ -4021,7 +4021,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu gelado com técnica autêntica e margem real.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Mestre Geladeiro e Gelatiere: Bases, Escandallos e Sazonalidade | AI Chef Pro",
       "description": "Suite de IA para mestres geladeiros: Gelataria Criativa, equilíbrio técnico, escandallos por sabor, branding e APPCC. Comece hoje.",
@@ -4249,7 +4249,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua confeitaria com técnica de autor e margem real.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Confeiteiro e Pasteleiro: Técnica, Custos de Produção e Sazonalidade | AI Chef Pro",
       "description": "Suite de IA para confeiteiros profissionais: Pastelaria Criativa, custos de produção com custo hora de oficina, planeamento sazonal e branding. Comece hoje.",
@@ -4481,7 +4481,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Ponha ordem no seu restaurante casual.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Casual: Operação, Escandallos e SEO Local | AI Chef Pro",
       "description": "Suite de IA para restaurantes casuais e bistrôs: agentes especializados, escandallos, APPCC, quadrantes, SEO local e marketing com base profissional. Começa hoje.",
@@ -4709,7 +4709,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua cafetaria com operação afinada e captação orgânica.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Cafetaria e Brunch: Operação, Pinterest e SEO Local | AI Chef Pro",
       "description": "Suite de IA para coffee shops e locais de brunch: agentes especializados, escandallos, APPCC, conteúdo para Instagram e Pinterest, SEO local. Comece hoje.",
@@ -4937,7 +4937,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Pizza com margem real, não intuição.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Pizzaria: Massa Mãe, Escandallos por Pizza e Delivery | AI Chef Pro",
       "description": "Suite de IA para pizzarias profissionais: Cozinha Italiana, Fermentus para massas, escandallos por pizza, modelos pizza-shop e SEO local. Comece hoje.",
@@ -5160,7 +5160,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Burger com margem real, não intuição.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Hamburguesaria: Custos, Smash Burger e Delivery | AI Chef Pro",
       "description": "Suite de IA para hamburguesarias profissionais: Burger Pro AI+, custos por burger, modelos burger-shop, APPCC e delivery multi-plataforma. Comece hoje.",
@@ -5392,7 +5392,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua dark kitchen, com margem real e dados por marca.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Dark Kitchen e Cozinhas Virtuais: Custos de Receita e SEO | AI Chef Pro",
       "description": "Suite de IA para dark kitchen e ghost kitchen: custos de receita multi-marca, margem após comissão da Glovo e Uber Eats, SEO local, APPCC e guia para abrir a sua cozinha virtual.",
@@ -5622,7 +5622,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu obrador com margem clara e branding profissional.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Pastelaria e Obrador: Fichas Técnicas, Sazonalidade e Branding | AI Chef Pro",
       "description": "Suite de IA para pastelarias artesanais: Pastelaria Criativa, fichas técnicas por peça com custo de hora de obrador, APPCC, planeamento sazonal e branding. Começa hoje.",
@@ -5850,7 +5850,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Coctelaria com margem real e branding profissional.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Bar e Coctelaria: Cocktails de Autor, Custos e Branding | AI Chef Pro",
       "description": "Suite de IA para bares e coctelaria profissional: Bar & Lounge AI+, Food Pairing AI, custos por cocktail, cartas, APPCC e branding visual. Comece hoje.",
@@ -6078,7 +6078,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Catering com margem real e sem caos.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Catering e Eventos: Casamentos, Corporativos e Cocktails | AI Chef Pro",
       "description": "Suite de IA para empresas de catering profissional: Catering AI+, escandallos por evento, produção à escala, APPCC fora do local e propostas comerciais. Comece hoje.",
@@ -6310,7 +6310,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu F&B de hotel coordenado e sem caos.",
-    "ctaSubtitle": "Fale connosco para um onboarding personalizado ou comece com o plano Membro: 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Fale connosco para um onboarding personalizado ou comece com o plano Premium Pro: 25 € por mês com 85.000 créditos.",
     "seo": {
       "title": "IA para Hotel Completo (F&B + Housekeeping): Restaurante, Bar, Banquetes | AI Chef Pro",
       "description": "Suite de IA para F&B Managers de hotel: pequeno-almoço buffet, restaurante, bar lobby, room service, banquetes e housekeeping com agentes especializados. Comece hoje.",
@@ -6533,7 +6533,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua gelataria com margem clara e branding profissional.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Gelataria Artesanal: Custos de Receita por Sabor, Sazonalidade e Branding | AI Chef Pro",
       "description": "Suite de IA para gelatarias artesanais: Gelataria Criativa, custos de receita por sabor com equilíbrio técnico, APPCC, planeamento sazonal e branding visual. Comece hoje.",
@@ -6761,7 +6761,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua chocolataria com margem clara e branding profissional.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Chocolataria e Bombonaria: Custeios, Sazonalidade e Branding | AI Chef Pro",
       "description": "Suite de IA para chocolatarias artesanais: Chocolataria Criativa, custeios por bombom com custo hora de produção, APPCC, planeamento sazonal e branding. Comece hoje.",
@@ -6993,7 +6993,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Criatividade com sistema, vanguardia com margen.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Criativo e de Autor: P&D, Vanguardia e Storytelling | AI Chef Pro",
       "description": "Suite de IA para restaurantes criativos e de autor: Culinária Criativa, Fermentus, Sonar Deep Research, escandallos avançados, fichas técnicas e storytelling profissional.",
@@ -7225,7 +7225,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Alta cozinha com sistema, vanguarda com direção.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Gastronómico (Michelin/Repsol): Menu de Degustação, I&D e Comunicação | AI Chef Pro",
       "description": "Suite de IA para alta gastronomia: Culinária Criativa, Fermentus, Sonar Deep Research, escandallos premium, fichas técnicas, comunicação com guias Michelin e Repsol. Comece hoje.",
@@ -7453,7 +7453,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O teu restaurante mexicano com margem real e técnica autêntica.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Mexicano: Molhos, Escandallos e Técnica Autêntica | AI Chef Pro",
       "description": "Suite de IA para restaurantes mexicanos: Cozinha Mexicana, escandallos por taco, planeamento de festividades, branding e APPCC. Começa hoje.",
@@ -7681,7 +7681,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O teu restaurante peruano com margem real e técnica autêntica.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Peruano: Cebiches, Fichas Técnicas e Técnica Autêntica | AI Chef Pro",
       "description": "Suíte de IA para restaurantes peruanos: Culinária Peruana, fichas técnicas por cebiche, planeamento de festividades, branding e APPCC. Começa hoje.",
@@ -7909,7 +7909,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu restaurante japonês com margem real e técnica autêntica.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Japonês: Sushi, Cálculo de Custos e Técnica Itamae | AI Chef Pro",
       "description": "Suite de IA para restaurantes japoneses: Cozinha Japonesa, Fermentus para koji e miso, cálculo de custos por peça, planeamento de festividades. Comece hoje.",
@@ -8137,7 +8137,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu restaurante nikkei com margem real e técnica autêntica.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Nikkei: Tiraditos, Escandallos e Técnica de Fusão | AI Chef Pro",
       "description": "Suite de IA para restaurantes nikkei: Cozinha Japonesa + Culinária Peruana, escandallos por tiradito, omakase nikkei, branding e APPCC. Comece hoje.",
@@ -8365,7 +8365,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu restaurante plant-based com margem real e técnica de autor.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Restaurante Plant-Based e Vegano: Bowls, Custeios e Fermentos | AI Chef Pro",
       "description": "Suite de IA para restaurantes plant-based: VegChef, Fermentus para umami vegetal, custeios por bowl, branding e APPCC. Comece hoje.",
@@ -8593,7 +8593,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua churrasqueira com margem real e técnica de fogo.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos para usar todos os agentes.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos para usar todos os agentes.",
     "seo": {
       "title": "IA para Churrasqueira, Grelha e Steakhouse: Cortes, Escandallos e Dry-Aged | AI Chef Pro",
       "description": "Suite de IA para churrasqueiras e steakhouses: Cozinha Argentina + Brasileira, escandallos por corte, dry-aged, branding e APPCC. Comece hoje.",
@@ -8821,7 +8821,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu coffee shop com margem real e técnica third-wave.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Coffee Shop e Specialty Coffee: Cartas, Escandallos e Branding | AI Chef Pro",
       "description": "Suite de IA para coffee shops: Culinária Criativa, Pastelaria própria, escandallos por bebida, branding minimalista e captação local. Comece hoje.",
@@ -9049,7 +9049,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu sushi bar com técnica autêntica e margem real.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Sushi Bar: Itamae, Omakase e Cálculo de Custos | AI Chef Pro",
       "description": "Suite de IA para sushi bars: Cozinha Japonesa, Fermentus, cálculo de custos por nigiri, omakase e branding minimalista. Comece hoje.",
@@ -9277,7 +9277,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu gastrobar com margem real e técnica autêntica.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Gastrobar e Bar de Tapas: Tapas, Fichas de Custos e Maridagens | AI Chef Pro",
       "description": "Suite de IA para gastrobares: Cozinha Espanhola, Bar & Lounge AI+, fichas de custos por tapa, vermute e vinhos à copa. Comece hoje.",
@@ -9505,7 +9505,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu food truck com margem real e operação ajustada.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Food Truck: Ementa, Escandallos e Eventos | AI Chef Pro",
       "description": "Suite de IA para food trucks: Food Truck AI+, escandallos por prato, planeamento de eventos, branding viral e APPCC. Comece hoje.",
@@ -9733,7 +9733,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu restaurante italiano com técnica autêntica e margem real.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "IA para Restaurante Italiano: Massa, Escandallos e Vinhos | AI Chef Pro",
       "description": "Suite de IA para restaurantes italianos: Cozinha Italiana, escandallos, massa fresca, vinhos italianos e branding de trattoria. Comece hoje.",
@@ -9957,7 +9957,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Os seus escandallos em minutos com margem real validada.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Fazer Escandallos com IA: Custo Real, Margem e Food Cost | AI Chef Pro",
       "description": "Suite de IA para escandallos profissionais: receita + CSV com custo hora de obrador, mermas integradas, margem validada. Comece hoje.",
@@ -10182,7 +10182,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu menu de degustação profissional em horas, não em semanas.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Desenhar um Menu de Degustação com IA: Sequência, Ficha de Custos e Harmonizações | AI Chef Pro",
       "description": "Suite de IA para menu de degustação: sequência técnica, ficha de custos total, harmonizações científicas e storytelling. Comece hoje.",
@@ -10406,7 +10406,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "As suas fichas técnicas profissionais em minutos.",
-    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Começa com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Criar Fichas Técnicas com IA: Alergénios, Custo e Storytelling | AI Chef Pro",
       "description": "Suite de IA para fichas técnicas: revisão dos 14 alergénios, com a validação final do cozinheiro, custo integrado, plating photo e storytelling. Comece hoje.",
@@ -10630,7 +10630,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "Os seus maridajes com base científica em minutos.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Validar Maridajes com IA: Vinhos, Sake e Sem Álcool | AI Chef Pro",
       "description": "Suite de IA para maridajes: Food Pairing AI com base científica, seleção de adega, storytelling para sala. Comece hoje.",
@@ -10854,7 +10854,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua cozinha com perdas reduzidas e dados reais.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Reduzir Perdas na Cozinha com IA: Dados Reais e Reaproveitamento | AI Chef Pro",
       "description": "Suite de IA para reduzir perdas: Mermas Genéricas com dados reais, reaproveitamento profissional, ficha técnica rastreável. Comece hoje.",
@@ -11078,7 +11078,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "O seu APPCC profissional a partir do telemóvel sem papel.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Gerir APPCC Digital com IA: Modelos, Alergénios e Rastreabilidade | AI Chef Pro",
       "description": "Suite de IA para APPCC digital: modelos Excel, revisão dos 14 alergénios, com a validação final do cozinheiro, rastreabilidade ISO. Comece hoje.",
@@ -11303,7 +11303,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua carta sazonal com produto local e margem real.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Criar Carta Sazonal com IA: Produto Local, Custo de Receita e Storytelling | AI Chef Pro",
       "description": "Suite de IA para carta sazonal: Gastro Calendar, produto local, custo de receita e storytelling de produtores. Comece hoje.",
@@ -11527,7 +11527,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       }
     ],
     "ctaTitle": "A sua fotografia gastronómica com critério profissional.",
-    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Plano Membro por 10 € por mês com 10.000 créditos.",
+    "ctaSubtitle": "Comece com o onboarding de 2 minutos. Premium Pro por 25 € por mês, com 85.000 créditos.",
     "seo": {
       "title": "Como Fazer Fotografia Gastronómica com IA: Imagem de Referência e Foto Final | AI Chef Pro",
       "description": "Suite de IA para fotografia gastronómica: o GastroIMG Gen+ gera imagem de referência, depois tira a foto definitiva com o seu prato real. Comece hoje.",

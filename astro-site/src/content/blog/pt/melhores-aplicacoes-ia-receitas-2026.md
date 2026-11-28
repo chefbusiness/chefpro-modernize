@@ -17,11 +17,11 @@ translations:
   nl: beste-ai-apps-recepten-2026
 faq:
   - q: "Qual é a melhor aplicação de IA para criar receitas em 2026?"
-    a: "Depende de quem cozinha. Para uma ideia ao jantar, chegam o ChatGPT ou uma aplicação de despensa. Para um restaurante, faz falta um agente que entregue ficha técnica, alergénios e food cost. O AI Chef Pro foi feito para esse ofício: plano Membro a 10 € por mês, 10 000 créditos, sem fidelização. Não publicamos uma nota sobre as outras: não repetimos um teste com pontuação."
+    a: "Depende de quem cozinha. Para uma ideia ao jantar, chegam o ChatGPT ou uma aplicação de despensa. Para um restaurante, faz falta um agente que entregue ficha técnica, alergénios e food cost. O AI Chef Pro foi feito para esse ofício: plano Premium Pro a 25 € por mês, 85 000 créditos, sem fidelização. Não publicamos uma nota sobre as outras: não repetimos um teste com pontuação."
   - q: "Aplicações ou aplicativos: qual é a pesquisa certa?"
     a: "Em Portugal diz-se aplicações. No Brasil, aplicativos. A pesquisa antiga do blog («os 7 melhores aplicativos») vinha das duas grafias. Esta página está em português de Portugal e responde às duas: ia para receitas, ia de receitas e melhor ia para receitas são a mesma intenção."
   - q: "Existe uma IA de receitas grátis?"
-    a: "Os assistentes gerais têm um acesso gratuito com limites. O ChefGPT descarrega-se grátis, mas o editor indica na App Store que as funções pedem uma subscrição. O AI Chef Pro não tem plano gratuito: o primeiro é o Membro, a 10 € por mês."
+    a: "Os assistentes gerais têm um acesso gratuito com limites. O ChefGPT descarrega-se grátis, mas o editor indica na App Store que as funções pedem uma subscrição. O AI Chef Pro não tem plano gratuito: o primeiro é o Premium Pro, a 25 € por mês."
   - q: "Qual é a diferença entre uma aplicação de receitas e um agente de IA?"
     a: "A aplicação sugere um prato, quase sempre para casa. O agente de IA culinário cumpre uma tarefa de cozinha profissional: ficha, ementa, custo, alergénios do Regulamento 1169/2011. Em 2026 a pesquisa mistura as duas coisas."
   - q: "Estas aplicações servem num restaurante?"
@@ -32,7 +32,7 @@ faq:
 
 Se procura as 7 melhores aplicações de IA para criar receitas em 2026, a resposta curta é esta: a pesquisa — também escrita «aplicativos», «ia para receitas» e «ia de receitas» — está cheia de ferramentas de casa. Seis nomes ajudam a decidir o jantar. Um é uma suite de agentes para a restauração.
 
-Não damos notas nem copiamos preços de comparativos de afiliados. Descrevemos o ofício de cada produto, como se apresenta em outubro de 2026. O único preço que citamos é o nosso, na página de [preços](https://aichef.pro/pt/precos): plano Membro a 10 € por mês, 10 000 créditos, sem fidelização.
+Não damos notas nem copiamos preços de comparativos de afiliados. Descrevemos o ofício de cada produto, como se apresenta em outubro de 2026. O único preço que citamos é o nosso, na página de [preços](https://aichef.pro/pt/precos): plano Premium Pro a 25 € por mês, 85 000 créditos, sem fidelização.
 
 [Abrir o espaço de convidado em português](https://ptapp.aichef.pro/guest?utm_source=blog&utm_medium=cta&utm_content=melhores-aplicacoes-ia-receitas-2026)
 
@@ -67,7 +67,7 @@ Os critérios, por esta ordem:
 
 | Ferramenta | Para quem | O que faz mesmo | Preço que publicamos | Cozinha profissional |
 | --- | --- | --- | --- | --- |
-| AI Chef Pro | Chef, gerente, brigada | Agentes de fichas, ementas, food cost, alergénios | Membro 10 €/mês (10 000 créditos); Pro 25 €; Plus 50 €; Max 95 €; Max anual 950 € | Sim |
+| AI Chef Pro | Chef, gerente, brigada | Agentes de fichas, ementas, food cost, alergénios | Pro 25 €/mês (85 000 créditos); Plus 50 €; Max 95 €; Max anual 950 € | Sim |
 | ChatGPT | Qualquer pessoa | Rascunho de receita e reformulação | Não publicado aqui | Não, só como rascunho |
 | ChefGPT | Casa, calorias | Despensa, prato, macros e ementa semanal | Descarga gratuita; o editor exige subscrição para as funções | Não |
 | SuperCook | Casa, sobras | Encontra receitas com o que tem | Não publicado aqui | Não |
@@ -81,7 +81,7 @@ Os critérios, por esta ordem:
 
 **Para quem.** Um restaurante, um catering, um chef que amanhã tem de fazer repetir o prato a outra pessoa.
 
-**O que é.** Uma suite de agentes, não um único chat. O espaço português publica a mesma oferta do resto do sítio: 75+ agentes, plano Membro a 10 € por mês. Não há plano gratuito. O [food cost](https://aichef.pro/pt/blog/food-cost) é uma tarefa desta cozinha, não um extra colado a uma aplicação de jantar.
+**O que é.** Uma suite de agentes, não um único chat. O espaço português publica a mesma oferta do resto do sítio: 75+ agentes, plano Premium Pro a 25 € por mês. Não há plano gratuito. O [food cost](https://aichef.pro/pt/blog/food-cost) é uma tarefa desta cozinha, não um extra colado a uma aplicação de jantar.
 
 **O limite.** Se só quer «o que faço com três ovos», é ferramenta a mais. Use um chatbot.
 
@@ -146,6 +146,6 @@ Três perguntas, e nenhuma se fecha com uma estrela.
 2. **O food cost está na ferramenta ou numa folha à parte?** A [calculadora](https://aichef.pro/pt/calculadora-food-cost-restaurante) serve antes da subscrição.
 3. **Quem valida o alergénio?** A ferramenta propõe. O responsável assina. A lista de [alergénios](https://aichef.pro/pt/blog/alergenios) continua a ser o documento de trabalho.
 
-O plano Membro (10 € por mês, 10 000 créditos) serve para testar os agentes sem fidelização. Os planos acima — 25 €, 50 €, 95 € por mês, ou 950 € no ano em Max — estão na [página de preços](https://aichef.pro/pt/precos).
+O plano Premium Pro (25 € por mês, 85 000 créditos) serve para testar os agentes sem fidelização. Os planos acima — 50 € e 95 € por mês, ou 950 € no ano em Max — estão na [página de preços](https://aichef.pro/pt/precos).
 
 Se a pesquisa é «ia de receitas» ou «ia para receitas» para o jantar de hoje, comece por um assistente geral. Se a pesquisa é a ementa da próxima semana no restaurante, abra o espaço português e peça uma ficha, não uma ideia.

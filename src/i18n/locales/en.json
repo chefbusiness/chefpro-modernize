@@ -75,7 +75,7 @@
     "v2_stat_cookbooks": "regional cookbooks",
     "v2_stat_roles": "chef roles covered",
     "v2_cta_pricing": "See plans & pricing",
-    "v2_microcopy": "Plans from €10/month · 16 connectable tools (Gmail, Sheets, Outlook…)",
+    "v2_microcopy": "Plans from €25/month · 16 connectable tools (Gmail, Sheets, Outlook…)",
     "v2_business_types": [
       "Restaurant",
       "Catering",
@@ -751,37 +751,12 @@
     "enterprise_question": "Need an enterprise plan?",
     "contact_us": "Contact us for a personalized solution",
     "plans": {
-      "member": {
-        "name": "AI Chef Member",
-        "price": "€10",
-        "uses": "10,000/month",
-        "description": "Ideal for kitchen assistants, cooks and station chefs",
-        "features": {
-          "0": "75+ AI agents included",
-          "1": "10,000 monthly credits",
-          "2": "World cookbooks",
-          "3": "Email support"
-        },
-        "v2_short": "Member",
-        "v2_eyebrow": "Cooks & station chefs",
-        "v2_description": "Ideal for kitchen assistants, cooks and station chefs starting with AI.",
-        "v2_credits": "10,000 credits/month",
-        "v2_hint": "≈ a month of recipes, costings and menus for one station",
-        "v2_cta": "Start with Member",
-        "v2_features": [
-          "75+ AI agents included",
-          "10,000 monthly credits",
-          "27 world cookbooks",
-          "Email support"
-        ],
-        "period": "/month"
-      },
       "premium_pro": {
         "name": "AI Chef Premium Pro",
         "price": "€25",
         "period": "/month",
         "uses": "85,000/month",
-        "description": "For Kitchen Chefs, Executive Chefs and Restaurant Managers",
+        "description": "For cooks, head chefs, executive chefs and restaurant managers",
         "features": {
           "0": "75+ AI agents included",
           "1": "85,000 monthly credits",
@@ -790,8 +765,8 @@
           "4": "Priority support"
         },
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Head chefs & managers",
-        "v2_description": "For kitchen chefs, executive chefs and restaurant managers running daily service.",
+        "v2_eyebrow": "Cooks, head chefs & managers",
+        "v2_description": "For cooks, head chefs, executive chefs and restaurant managers running daily service.",
         "v2_credits": "85,000 credits/month",
         "v2_hint": "≈ full menu costing + weekly recipe R&D",
         "v2_cta": "Start with Premium Pro"
@@ -862,12 +837,11 @@
       }
     },
     "v2_title": "Find your plan in 10 seconds",
-    "v2_description": "Match your role to a tier. Credits scale with how much of your kitchen and business you automate — from single-station recipe help to a full multi-restaurant operation.",
-    "v2_role_member": "Cook or assistant",
-    "v2_role_premium_pro": "Head chef",
+    "v2_description": "Match your role to a tier. Credits scale with how much of your kitchen and business you automate — from day-to-day kitchen work to a full multi-restaurant operation.",
+    "v2_role_premium_pro": "Cook or head chef",
     "v2_role_premium_plus": "Owner or group",
     "v2_role_premium_max": "Power user",
-    "v2_divider": "For power users & annual commitment",
+    "v2_divider": "Annual commitment",
     "v2_enterprise_question": "Running a group or need custom volume?",
     "v2_enterprise_link": "Talk to us for an enterprise plan"
   },
@@ -911,8 +885,8 @@
     "a1": "AI Chef Pro includes 75+ specialized AI agents for gastronomy professionals, covering everything from culinary creativity to business management and digital marketing.",
     "q2": "Can I use AI Chef Pro if I'm a beginner?",
     "a2": "Absolutely. Our tools are designed for all skill levels, from culinary students to Michelin-starred chefs. Each application includes detailed guides and examples.",
-    "q3": "How does the AI Chef Member plan work?",
-    "a3": "The AI Chef Member plan costs €10 per month and includes 10,000 monthly credits with access to the 75+ AI agents. When you need more, you can upgrade to AI Chef Premium Pro (€25/month, 85,000 credits) or higher. Monthly plans, no lock-in: change plans or cancel whenever you want.",
+    "q3": "What is the entry plan for AI Chef Pro?",
+    "a3": "The entry plan is AI Chef Premium Pro: it costs €25 per month and includes 85,000 monthly credits with access to the 75+ AI agents. When you need more, you can move up to AI Chef Premium Plus (€50/month, 175,000 credits) or Premium Max (€95/month, unlimited credits). Monthly plans, no lock-in: change plans or cancel whenever you want.",
     "q4": "Do recipes adapt to different portion sizes?",
     "a4": "Yes, all our AI agents include intelligent scaling systems that automatically adjust ingredients and techniques according to the number of diners.",
     "q5": "Does it include support for dietary restrictions?",
@@ -1099,14 +1073,14 @@
   },
   "seo": {
     "title": "AI agents built for chefs and restaurants | AI Chef Pro",
-    "description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €10 a month. Monthly plans, no lock-in.",
+    "description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €25 a month. Monthly plans, no lock-in.",
     "keywords": "ai agents for chefs, ai agents for restaurants, restaurant ai agents, food cost ai, menu engineering ai, ai chef pro",
     "og_image_alt": "AI agents built for chefs and restaurants | AI Chef Pro"
   },
   "pages": {
     "index": {
       "seo_title": "AI agents built for chefs and restaurants | AI Chef Pro",
-      "seo_description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €10 a month. Monthly plans, no lock-in.",
+      "seo_description": "AI agents for chefs and restaurants: 75+ specialists for food cost, recipes, menus and marketing. Start today from €25 a month. Monthly plans, no lock-in.",
       "seo_keywords": "ai agents for chefs, ai agents for restaurants, restaurant ai agents, food cost ai, menu engineering ai, ai chef pro"
     },
     "mentoria_online": {
@@ -1180,7 +1154,7 @@
     },
     "services": {
       "seo_title": "AI agent services for restaurant teams | AI Chef Pro",
-      "seo_description": "AI agent services for restaurants: mentoring, in-person training and a suite of 75+. See what is included and start from €10 a month. No lock-in.",
+      "seo_description": "AI agent services for restaurants: mentoring, in-person training and a suite of 75+. See what is included and start from €25 a month. No lock-in.",
       "seo_keywords": "ai agent services, restaurant ai agents, chef mentoring, in-person ai training, ai chef pro"
     }
   },
@@ -1211,7 +1185,7 @@
       "tagline": "75+ AI agents in 7 languages for the professional kitchen.",
       "cta_primary": "Start saving",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
+      "no_card": "From €25/month · Monthly plans, no lock-in · Instant access"
     },
     "results": [
       {
@@ -1327,7 +1301,7 @@
     },
     "pricing_section": {
       "title": "Start reducing costs today",
-      "subtitle": "Start with the Member plan for €10 per month. Monthly plans, no lock-in.",
+      "subtitle": "Start with the Premium Pro plan for €25 per month. Monthly plans, no lock-in.",
       "annual_note": "The annual Premium Max option costs €950 per year."
     },
     "faq_section": {
@@ -1348,7 +1322,7 @@
       },
       {
         "question": "Does it work for small restaurants or only large groups?",
-        "answer": "It works for any size, from a family restaurant to a group with several venues. The Member plan at €10/month is a good place to start: monthly, with no lock-in."
+        "answer": "It works for any size, from a family restaurant to a group with several venues. The Premium Pro plan at €25/month is a good place to start: monthly, with no lock-in."
       }
     ],
     "cta_section": {
@@ -1366,7 +1340,7 @@
   "landingRestaurantes": {
     "seo": {
       "title": "AI agents for restaurants: 75+ specialists | AI Chef Pro",
-      "description": "AI agents for restaurants: 75+ specialists for food cost, menus, allergens and marketing. No lock-in. Start today from €10 a month and compare plans.",
+      "description": "AI agents for restaurants: 75+ specialists for food cost, menus, allergens and marketing. No lock-in. Start today from €25 a month and compare plans.",
       "keywords": "ai agents for restaurants, restaurant ai agents, food cost ai, menu ai, allergen ai, ai chef pro",
       "url_slug": "ai-tools-for-restaurants"
     },
@@ -1493,7 +1467,7 @@
     },
     "pricing_section": {
       "title": "Plans for every type of food business",
-      "subtitle": "From the Member plan at €10/month to unlimited credits for large operations.",
+      "subtitle": "From the Premium Pro plan at €25/month to unlimited credits for large operations.",
       "annual_note": "Annual plan also available: AI Chef Premium Max Annual at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -1514,7 +1488,7 @@
       },
       {
         "question": "How much does it cost to use AI for restaurant management?",
-        "answer": "The Member plan costs €10 per month and includes 10,000 credits. Premium Pro costs €25/month and includes 85,000 credits. Premium Max costs €95/month, with unlimited credits. Monthly plans have no minimum term."
+        "answer": "The Premium Pro plan costs €25 per month and includes 85,000 credits. Premium Plus costs €50/month and includes 175,000 credits. Premium Max costs €95/month, with unlimited credits. Monthly plans have no minimum term."
       }
     ],
     "cta_section": {
@@ -1664,7 +1638,7 @@
     },
     "pricing_section": {
       "title": "Plans to design unlimited menus",
-      "subtitle": "From the Member plan at €10/month to unlimited credits for large operations with multiple menus.",
+      "subtitle": "From the Premium Pro plan at €25/month to unlimited credits for large operations with multiple menus.",
       "annual_note": "Annual plan also available: AI Chef Premium Max Annual at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -1699,7 +1673,7 @@
   "landingMarketing": {
     "seo": {
       "title": "AI Marketing for Restaurants | AI Chef Pro",
-      "description": "AI marketing for restaurants: create social media posts, reply to Google reviews and launch campaigns in minutes. Plans from €10/month. Try it today.",
+      "description": "AI marketing for restaurants: create social media posts, reply to Google reviews and launch campaigns in minutes. Plans from €25/month. Try it today.",
       "keywords": "ai marketing for restaurants, ai restaurant marketing, ai for restaurant marketing, ai tools for restaurant marketing, ai social media manager for restaurants, ai restaurant advertising, restaurant social media ai, google my business restaurant, restaurant reviews ai"
     },
     "hero": {
@@ -1830,7 +1804,7 @@
     },
     "pricing_section": {
       "title": "Plans to automate your gastronomy marketing",
-      "subtitle": "From the Member plan at €10/month to unlimited credits for groups with multiple locations.",
+      "subtitle": "From the Premium Pro plan at €25/month to unlimited credits for groups with multiple locations.",
       "annual_note": "Annual plan also available: AI Chef Premium Max Annual at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -1855,7 +1829,7 @@
       },
       {
         "question": "What are the best AI tools for restaurant marketing?",
-        "answer": "The best AI tool is the one that speaks restaurant, not generic marketing. Look for four things: content for Instagram, Facebook and TikTok, replies to Google reviews, help with your Google My Business listing, and campaign and newsletter copy. AI Chef Pro covers all of these inside its 75+ AI agents built for restaurants and hospitality businesses, with plans from €10/month."
+        "answer": "The best AI tool is the one that speaks restaurant, not generic marketing. Look for four things: content for Instagram, Facebook and TikTok, replies to Google reviews, help with your Google My Business listing, and campaign and newsletter copy. AI Chef Pro covers all of these inside its 75+ AI agents built for restaurants and hospitality businesses, with plans from €25/month."
       },
       {
         "question": "Can AI create advertising and promotions for my restaurant?",
@@ -1863,7 +1837,7 @@
       },
       {
         "question": "How much does AI marketing for restaurants cost with AI Chef Pro?",
-        "answer": "The Member plan costs €10/month and includes 10,000 monthly credits and access to all 75+ AI agents, marketing ones included. Higher plans add more credits. There is also an annual plan. Monthly plans have no minimum term: you can change or cancel them whenever you want."
+        "answer": "The Premium Pro plan costs €25/month and includes 85,000 monthly credits and access to all 75+ AI agents, marketing ones included. Higher plans add more credits. There is also an annual plan. Monthly plans have no minimum term: you can change or cancel them whenever you want."
       }
     ],
     "cta_section": {
@@ -2037,7 +2011,7 @@
     },
     "pricing_section": {
       "title": "Fair price for the AI your restaurant deserves",
-      "subtitle": "From €10 per month up to unlimited credits for large operations.",
+      "subtitle": "From €25 per month up to unlimited credits for large operations.",
       "annual_note": "Also available: AI Chef Premium Max Annual plan at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2072,7 +2046,7 @@
   "landingSoftwareGestion": {
     "seo": {
       "title": "Kitchen Management Software for Chefs with AI | AI Chef Pro",
-      "description": "Kitchen management software for chefs, powered by AI: food cost, inventory, recipes, allergens and menu engineering in one platform. From €10/month.",
+      "description": "Kitchen management software for chefs, powered by AI: food cost, inventory, recipes, allergens and menu engineering in one platform. From €25/month.",
       "keywords": "kitchen management software, chef kitchen management software, chef kitchen software, ai smart kitchen management, ai food manager, artificial intelligence in professional kitchens, restaurant management AI, professional kitchen software, restaurant inventory management, food cost AI"
     },
     "breadcrumb": "AI Kitchen Management Software",
@@ -2083,7 +2057,7 @@
       "tagline": "Spend less time on spreadsheets and more time on the pass.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
+      "no_card": "From €25/month · Monthly plans, no lock-in · Instant access"
     },
     "results": [
       {
@@ -2232,8 +2206,8 @@
       "role": "Chef-Owner, Restaurante Méndez, Madrid"
     },
     "pricing_section": {
-      "title": "AI kitchen management software from €10",
-      "subtitle": "Start with the Member plan and scale when your business needs it. Monthly plans, no lock-in.",
+      "title": "AI kitchen management software from €25",
+      "subtitle": "Start with the Premium Pro plan and scale when your business needs it. Monthly plans, no lock-in.",
       "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2290,7 +2264,7 @@
       "tagline": "From concept to dish in minutes, not hours.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month · Monthly plans, no lock-in · Instant access"
+      "no_card": "From €25/month · Monthly plans, no lock-in · Instant access"
     },
     "results": [
       {
@@ -2438,8 +2412,8 @@
       ]
     },
     "pricing_section": {
-      "title": "Access the AI recipe generator from €10",
-      "subtitle": "Start with the Member plan and scale when your business needs it. Monthly plans, no lock-in.",
+      "title": "Access the AI recipe generator from €25",
+      "subtitle": "Start with the Premium Pro plan and scale when your business needs it. Monthly plans, no lock-in.",
       "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2484,7 +2458,7 @@
       "tagline": "Stop losing money from uncontrolled food cost.",
       "cta_primary": "Calculate my food cost",
       "cta_secondary": "View plans and pricing",
-      "no_card": "From €10/month. Monthly plans have no minimum term"
+      "no_card": "From €25/month. Monthly plans have no minimum term"
     },
     "results": [
       {
@@ -2620,8 +2594,8 @@
       ]
     },
     "pricing_section": {
-      "title": "Start controlling your food cost from €10",
-      "subtitle": "Cost the menu with the Member plan at €10/month. Monthly plans have no minimum term.",
+      "title": "Start controlling your food cost from €25",
+      "subtitle": "Cost the menu with the Premium Pro plan at €25/month. Monthly plans have no minimum term.",
       "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2827,12 +2801,6 @@
       "subtitle": "With AI Chef Pro you cost the whole menu, with waste in the picture. When a price changes, you review the costing.",
       "plans": [
         {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/month",
           "uses": "85,000 credits/month",
@@ -2874,7 +2842,7 @@
       },
       {
         "question": "Is there a food cost calculator app?",
-        "answer": "You don't need to install one: this calculator runs in your phone's browser, and the calculation is free with no sign-up (the Excel export asks for an email). Save it as a bookmark or a home-screen shortcut. For costing every dish with yields and waste, the AI Chef Pro agents work in the browser too, from €10/month."
+        "answer": "You don't need to install one: this calculator runs in your phone's browser, and the calculation is free with no sign-up (the Excel export asks for an email). Save it as a bookmark or a home-screen shortcut. For costing every dish with yields and waste, the AI Chef Pro agents work in the browser too, from €25/month."
       }
     ],
     "cta_section": {
@@ -2976,12 +2944,6 @@
       "title": "Complete financial analysis with AI Chef Pro",
       "subtitle": "The basic simulator is free. With AI Chef Pro you get per-dish analysis, annual projections and cost deviation alerts.",
       "plans": [
-        {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "€25/month",
@@ -3226,12 +3188,6 @@
       "title": "Take your digitalization to the next level with AI Chef Pro",
       "subtitle": "The test tells you where you are. AI Chef Pro gives you the tools to go further.",
       "plans": [
-        {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "€25/month",
@@ -3573,12 +3529,6 @@
       "subtitle": "With AI Chef Pro you review the 14 allergens on the menu, with the cook's final check.",
       "plans": [
         {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/month",
           "uses": "85,000 credits/month",
@@ -3736,12 +3686,6 @@
       "title": "Optimize your team with AI Chef Pro",
       "subtitle": "The basic calculator is free. With AI Chef Pro you optimize shifts, staff costs and your brigade's productivity.",
       "plans": [
-        {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "€25/month",
@@ -3972,12 +3916,6 @@
       "note": "Monthly plans, no lock-in",
       "plans": [
         {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/month",
           "uses": "85,000 credits/month",
@@ -4127,12 +4065,6 @@
       "subtitle": "The free generator is a starting point. With AI Chef Pro Premium you create copy for your entire menu optimised for local SEO and conversion.",
       "plans": [
         {
-          "name": "Member",
-          "price": "€10/month",
-          "uses": "10,000 credits/month",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/month",
           "uses": "85,000 credits/month",
@@ -4249,12 +4181,6 @@
       "subtitle": "The free generator creates the menu structure. With AI Chef Pro Premium generate full recipes, food costs and technical sheets for each course.",
       "plans": [
         {
-          "name": "Member",
-          "price": "€10/mo",
-          "uses": "10,000 credits/mo",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "€25/mo",
           "uses": "85,000 credits/mo",
@@ -4287,8 +4213,7 @@
   },
   "schema": {
     "offers": {
-      "miembro": "Entry plan: €10/month with 10,000 monthly credits.",
-      "premium_pro": "For Head Chefs, Executive Chefs, and Restaurant Managers. 85,000 credits/month.",
+      "premium_pro": "Entry plan for cooks, head chefs, executive chefs and restaurant managers. 85,000 credits/month.",
       "premium_plus": "For food entrepreneurs and restaurant chains. 175,000 credits/month.",
       "premium_max": "Unlimited monthly credits for demanding professionals.",
       "premium_max_anual": "Ideal for Food Entrepreneurs, Restaurant Owners, and Executives. Save 2 months."

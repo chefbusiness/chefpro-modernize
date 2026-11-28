@@ -91,7 +91,7 @@ Para redactar descripciones de plato sin perder el hilo del menú, la guía de [
 
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para armar el menú</p><p class="mt-2 text-foreground">En el espacio de invitado puedes pedir a Chef Ejecutivo Pro un borrador de estructura y a Catering AI+ una propuesta de grupo. Tú pones los platos que de verdad vas a cocinar. El agente no fija el precio ni habla con la empresa.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=blog&amp;utm_medium=cta&amp;utm_content=menu-de-navidad-para-empresas" target="_blank" rel="noopener noreferrer">Entrar como invitado</a></p></aside>
 
-La página de [carta y menú con IA](https://aichef.pro/carta-menu-restaurante-ia) es el mismo camino, en corto, si solo quieres ver cómo se pide un menú. La suscripción que abre esos agentes está publicada en [precios](https://aichef.pro/precios): el plan Miembro son 10 € al mes, con 10.000 créditos. No hay plan gratuito.
+La página de [carta y menú con IA](https://aichef.pro/carta-menu-restaurante-ia) es el mismo camino, en corto, si solo quieres ver cómo se pide un menú. La suscripción que abre esos agentes está publicada en [precios](https://aichef.pro/precios): el plan de entrada, Premium Pro, son 25 € al mes, con 85.000 créditos. No hay plan gratuito.
 
 ## Cena de empresa en Navidad: tres formatos
 

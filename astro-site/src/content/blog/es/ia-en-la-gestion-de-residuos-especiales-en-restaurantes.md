@@ -1048,7 +1048,7 @@ wpId: 2621
 
 
 <ul class="wp-block-list">
-<li>AI Chef Pro Premium Pro (suite completa): 50€/mes</li>
+<li>AI Chef Pro Premium Plus (suite completa, 175.000 créditos): 50€/mes</li>
 
 
 
@@ -1533,7 +1533,7 @@ wpId: 2621
 <p style="margin:15px 0;"><strong>Inversión en solución IA:</strong></p>
 <div class="table-scroll"><table style="width:100%;margin:15px 0;">
 <tbody><tr style="background-color:#FFF;">
-<td style="padding:8px;">AI Chef Pro Premium Pro</td>
+<td style="padding:8px;">AI Chef Pro Premium Plus</td>
 <td style="padding:8px;text-align:right;">50€/mes</td>
 </tr>
 <tr>
@@ -1951,9 +1951,9 @@ Ahorro acumulado años 2-5: <strong>20.544€</strong></p>
 <h3 style="color:#1565C0;margin-top:0;">🎯 Da el Primer Paso Hacia la Sostenibilidad Inteligente</h3>
 <p style="margin-bottom:15px;"><strong>Accede a AI Chef Pro y comienza tu transformación hoy mismo:</strong></p>
 <ul style="margin-bottom:20px;">
-<li>✅ <strong>Plan Pro (25€/mes):</strong> Ideal para comenzar con análisis y optimización básica</li>
-<li>✅ <strong>Plan Premium Pro (50€/mes):</strong> Suite completa con herramientas avanzadas</li>
-<li>✅ <strong>Plan Anual (500€):</strong> Máximo ahorro con todas las funcionalidades</li>
+<li>✅ <strong>Plan Premium Pro (25€/mes):</strong> Ideal para comenzar con análisis y optimización básica</li>
+<li>✅ <strong>Plan Premium Plus (50€/mes):</strong> 175.000 créditos al mes para más volumen</li>
+<li>✅ <strong>Plan Premium Max Anual (950€/año):</strong> Créditos ilimitados todo el año; ahorras 2 meses frente a Premium Max mensual</li>
 <li>✅ <strong>Mentoría Especializada:</strong> Acompañamiento personalizado en implementación</li>
 </ul>
 <p style="margin-bottom:20px;"><strong>Garantía de resultados:</strong> Si no reduces al menos un 15% tus costes de gestión de residuos en los primeros 6 meses, te devolvemos tu inversión.</p>

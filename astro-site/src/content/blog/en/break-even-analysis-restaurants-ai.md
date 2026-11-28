@@ -118,7 +118,7 @@ imageAlt: "Break Even Analysis"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">📊 Calculate Your True Break-Even Point</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro: Break-Even Calculator + Financial Planner powered by AI.<br />    Precise projections • Scenario modeling • Real-time adjustments • 75+ tools  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    CALCULATE YOUR BREAK-EVEN →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    85,000 credits a month with Premium Pro  </p>
 </div>
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost Kit Pro</h3><p class="mt-2 text-muted-foreground">Excel templates that cost out recipes in minutes with real food cost.</p><a href="/en/digital-products/food-cost-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost Kit Pro for $19</a></aside>
@@ -196,7 +196,7 @@ imageAlt: "Break Even Analysis"
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🎯 Know Exactly When You&#8217;ll Be Profitable</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro&#8217;s break-even tools.<br />    Accurate projections • Scenario planning • Financial confidence • Maximum ROI  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START MEMBER TODAY →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €25/MONTH →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    Break-Even Calculator • Financial Planner • 75+ AI apps   </p>
 </div>
 <h2>Conclusion: Precision Planning for Restaurant Success</h2>
@@ -207,6 +207,6 @@ imageAlt: "Break Even Analysis"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Your Complete Restaurant Financial Intelligence Platform</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Break-even analysis • Financial planning • Scenario modeling • Growth forecasting<br />    Join 50,000+ hospitality professionals using AI Chef Pro.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED MEMBER →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED WITH PREMIUM PRO →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    Break-Even Calculator • Financial Planner • 75+ AI tools   </p>
 </div>

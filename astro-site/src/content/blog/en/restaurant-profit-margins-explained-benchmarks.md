@@ -16,7 +16,7 @@ imageAlt: "Restaurant owner reviewing financial reports and profit margin charts
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Know Your Numbers, Grow Your Profits</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ AI tools to analyze food costs, optimize menu pricing, and boost your restaurant profit margins. Start today.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member for €10 →</a></div>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post11-food-cost.png" alt="Chef weighing ingredients on digital scale with food cost calculations clipboard" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Precise ingredient tracking is the foundation of healthy restaurant profit margins.</figcaption></figure>
 <h2>What Is Restaurant Profit Margin?</h2>
 <p>Before examining benchmarks or strategies, operators must fully understand what profit margin actually measures—and why the distinction between gross and net margin matters enormously for decision-making.</p>
@@ -152,8 +152,8 @@ imageAlt: "Restaurant owner reviewing financial reports and profit margin charts
 <p>Industry estimates suggest that waste and theft combined can consume 2% to 5% of revenue at poorly managed establishments—losses that directly impact the bottom line without any offsetting benefit.</p>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Stop Leaving Money on the Table</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI Chef Pro helps restaurant operators improve margins with menu engineering, recipe costing, and pricing optimization. Starter plan: €10/month.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started Free →</a></div>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI Chef Pro helps restaurant operators improve margins with menu engineering, recipe costing, and pricing optimization. Premium Pro plan: €25/month.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started from €25 →</a></div>
 <h2>How to Calculate Your Restaurant Profit Margin</h2>
 <p>Understanding the formulas behind profit margin calculation allows operators to accurately assess their current financial position and identify specific areas for improvement.</p>
 <h3>Step-by-Step Calculation Process</h3>
@@ -328,7 +328,7 @@ imageAlt: "Restaurant owner reviewing financial reports and profit margin charts
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Calculate Your Exact Restaurant Profit Margin in 90 Seconds</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro auto-calculates gross, operating and net margin from your sales and costs — plus recommends the menu changes that lift it 10-15%.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member for €10 →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a>
 </div>
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Inventory Kit Pro</h3><p class="mt-2 text-muted-foreground">Inventory, purchasing, waste tracking, and supplier management.</p><a href="/en/digital-products/restaurant-inventory-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-profit-margins-explained-benchmarks" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Inventory Kit Pro for $19</a></aside>

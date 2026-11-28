@@ -17,7 +17,7 @@ imageAlt: "Comparison traditional versus AI recipe development"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">⚡ Faster Recipe Drafts, Tested by You</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro: a suite of 75+ AI agents for hospitality.<br />    Avant-garde Cuisine • World cuisines • Staff Meal • Allergen ID • Food Pairing AI  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    EXPLORE ALL TOOLS →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    Plans from €10/month • Billed in euros  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    Plans from €25/month • Billed in euros  </p>
 </div>
 <h2>The Traditional Recipe Development Process</h2>
 <p><img decoding="async" src="/blog-assets/en/2026/02/featured2-new.jpg" alt="Traditional recipe development process with handwritten notes and kitchen preparation" style="width:100%; height:auto; margin: 20px 0; border-radius:8px;"></p>
@@ -124,7 +124,7 @@ imageAlt: "Comparison traditional versus AI recipe development"
 </tr>
 </table></div>
 <h3>AI-Assisted Recipe Development Costs</h3>
-<p>With an AI Chef Pro plan (from €10/month for 10,000 credits, billed in euros), the lines are the same—what changes is how much of each you use:</p>
+<p>With an AI Chef Pro plan (from €25/month for 85,000 credits, billed in euros), the lines are the same—what changes is how much of each you use:</p>
 <div class="table-scroll"><table style="width:100%; border-collapse: collapse; margin: 20px 0;">
 <tr style="border-bottom: 1px solid #ddd;">
 <td style="padding: 10px;">AI Tool Subscription</td>
@@ -156,7 +156,7 @@ imageAlt: "Comparison traditional versus AI recipe development"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">💰 Spend Less Time on Drafts and Paperwork</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Recipe drafts, allergen lists and quantities for another number of covers<br />    Plus: Waste GenCal • Food Pairing AI • Staff Meal • Calcula Pax  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    EXPLORE THE AGENTS →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    Monthly plans from €10 • Credits • Billed in euros  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    Monthly plans from €25 • Credits • Billed in euros  </p>
 </div>
 <h2>Do AI Recipes Actually Work in a Kitchen?</h2>
 <p>This is the question every chef asks. No score settles it: an AI recipe is written from patterns, not from tasting. Here&#8217;s what to expect from a draft straight out of the tool compared with a traditional recipe and with an AI draft a chef has worked on:</p>
@@ -238,8 +238,8 @@ imageAlt: "Comparison traditional versus AI recipe development"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Put the Recipe Agents to Work</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Avant-garde Cuisine • 27 world-cuisine recipe agents • Staff Meal • Waste GenCal<br />    A suite of 75+ AI agents for hospitality.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €10/MONTH →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    AI Chef Member: €10/month for 10,000 credits • Billed in euros  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €25/MONTH →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    AI Chef Premium Pro: €25/month for 85,000 credits • Billed in euros  </p>
 </div>
 <h2>Frequently Asked Questions</h2>
 <h3>Can AI recipe generators replace experienced chefs?</h3>
@@ -256,10 +256,10 @@ imageAlt: "Comparison traditional versus AI recipe development"
 <h3>What about food safety in AI recipes?</h3>
 <p>A good AI draft will mention cooking temperatures and basic food safety, but it isn&#8217;t a HACCP plan. Verify critical control points yourself, especially for proteins, and check allergens against the labels of the products you actually buy. AI Chef Pro&#8217;s Allergen ID agent and the free allergen detector on aichef.pro (no sign-up) help you list allergens—as a check, not a substitute for your own food safety system.</p>
 <h3>How do I choose the right AI recipe generator?</h3>
-<p>Consider your needs: recipe volume, complexity level and budget—and check what each tool can actually see (AI Chef Pro&#8217;s agents, for example, don&#8217;t see your inventory, POS or invoices). For professional kitchens, look for agents built for hospitality work: AI Chef Pro brings 75+ of them in one suite, including recipe, allergen, pairing and waste agents, with plans from €10/month (there is no free plan or free trial). For home use or simple ideation, a general recipe generator such as DishGen may be enough.</p>
+<p>Consider your needs: recipe volume, complexity level and budget—and check what each tool can actually see (AI Chef Pro&#8217;s agents, for example, don&#8217;t see your inventory, POS or invoices). For professional kitchens, look for agents built for hospitality work: AI Chef Pro brings 75+ of them in one suite, including recipe, allergen, pairing and waste agents, with plans from €25/month (there is no free plan or free trial). For home use or simple ideation, a general recipe generator such as DishGen may be enough.</p>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🎯 One Suite of AI Agents for Your Kitchen</h3>
-<p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Recipes, allergens, food pairing, waste and staff meal: drafts you check and test.<br />    AI Chef Member €10 • Premium Pro €25 • Premium Plus €50 • Premium Max €95 per month  </p>
+<p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Recipes, allergens, food pairing, waste and staff meal: drafts you check and test.<br />    Premium Pro €25 • Premium Plus €50 • Premium Max €95 per month  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    75+ AI agents • Billed in euros • No free plan or trial  </p>
 </div>

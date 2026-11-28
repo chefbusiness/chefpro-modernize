@@ -23,7 +23,7 @@ faq:
   - q: "¿Cómo pido que se mejore un agente?"
     a: "Escríbenos a info@aichef.pro o responde al boletín con el nombre del agente y lo que echas en falta. Leemos todas las respuestas y los cambios de cada semana salen de ahí."
   - q: "¿AI Chef Pro tiene plan gratuito?"
-    a: "No. Se entra desde 10 € al mes con el plan Miembro, que incluye 10.000 créditos y no tiene permanencia. Con ese plan ya tienes acceso a los 91 agentes y a la sección de modelos."
+    a: "No. Se entra desde 25 € al mes con el plan Premium Pro, que incluye 85.000 créditos y no tiene permanencia. Con ese plan ya tienes acceso a los 91 agentes y a la sección de modelos."
 ---
 
 Hace unos días, entre el 25 de agosto y el 1 de septiembre de 2026, los agentes de AI Chef Pro superaron el millón de consultas resueltas desde que abrimos la plataforma. No es un número de marketing: es un millón de veces que alguien, desde una cocina, una pastelería, una panadería o una mesa de trabajo, le preguntó algo a un agente y recibió una respuesta útil. Una receta, un escandallo, una carta, una ficha técnica, un plan de negocio o una duda de servicio. Un millón de momentos en los que la IA hizo el trabajo de base para que el profesional pudiera dedicarse a lo que de verdad importa.
@@ -112,4 +112,4 @@ El millón de consultas es un punto de partida, no de llegada. Cada semana segui
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Cafetería</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-un-millon-de-consultas" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Cafetería por €29</a></aside>
 
-Si todavía no has entrado en la plataforma, puedes hacerlo desde [app.aichef.pro](https://app.aichef.pro/). El plan Miembro arranca en 10 € al mes, sin permanencia, con 10.000 créditos para empezar a trabajar con los 91 agentes. Toda la información de planes está en [aichef.pro/precios](https://aichef.pro/precios). Sin compromisos, sin letra pequeña.
+Si todavía no has entrado en la plataforma, puedes hacerlo desde [app.aichef.pro](https://app.aichef.pro/). El plan Premium Pro arranca en 25 € al mes, sin permanencia, con 85.000 créditos para empezar a trabajar con los 91 agentes. Toda la información de planes está en [aichef.pro/precios](https://aichef.pro/precios). Sin compromisos, sin letra pequeña.

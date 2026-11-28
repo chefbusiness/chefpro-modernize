@@ -17,9 +17,9 @@ translations:
   nl: beste-ai-apps-recepten-2026
 faq:
   - q: "Qual è la migliore app di IA per creare ricette nel 2026?"
-    a: "Dipende da chi cucina. Per un'idea a cena bastano ChatGPT o un'app dispensa. Per un ristorante serve un agente che consegni scheda tecnica, allergeni e food cost. AI Chef Pro è fatto per questo: piano Membro a 10 € al mese, 10.000 crediti, senza vincolo. Non pubblichiamo un voto sulle altre sei: non abbiamo rifatto un test a punti."
+    a: "Dipende da chi cucina. Per un'idea a cena bastano ChatGPT o un'app dispensa. Per un ristorante serve un agente che consegni scheda tecnica, allergeni e food cost. AI Chef Pro è fatto per questo: piano Premium Pro a 25 € al mese, 85.000 crediti, senza vincolo. Non pubblichiamo un voto sulle altre sei: non abbiamo rifatto un test a punti."
   - q: "Esiste un'IA per ricette gratuite?"
-    a: "Gli assistenti generali hanno un accesso gratuito con limiti. ChefGPT si scarica gratis, ma chi lo pubblica scrive sull'App Store che le funzioni richiedono un abbonamento. AI Chef Pro non ha un piano gratuito: il primo è il Membro, 10 € al mese. Una ricetta gratis che sbaglia un allergene costa più dell'abbonamento."
+    a: "Gli assistenti generali hanno un accesso gratuito con limiti. ChefGPT si scarica gratis, ma chi lo pubblica scrive sull'App Store che le funzioni richiedono un abbonamento. AI Chef Pro non ha un piano gratuito: il primo è il Premium Pro, 25 € al mese. Una ricetta gratis che sbaglia un allergene costa più dell'abbonamento."
   - q: "Che differenza c'è tra un'app di ricette e un agente IA?"
     a: "L'app di ricette propone un piatto, di solito per casa. L'agente IA culinario svolge un compito da cucina professionale: scheda, adattamento di un menu, costo materia, allergeni. Nel 2026 la ricerca «migliori app» mescola le due cose. In servizio conta il compito, non la chat."
   - q: "GialloZafferano è un'app di IA?"
@@ -32,7 +32,7 @@ faq:
 
 Se cerchi le 7 migliori app di IA per creare ricette nel 2026, la risposta breve è questa: la ricerca italiana mescola ricettari, chatbot e app di casa. Solo una voce dell'elenco è una suite di agenti per la ristorazione. ChatGPT, ChefGPT, SuperCook, Samsung Food e DishGen aiutano a decidere la cena. GialloZafferano è un archivio di ricette, non un'IA. AI Chef Pro serve a produrre una scheda, un costo e un menu.
 
-Non diamo voti in stelle e non ricopiamo i prezzi dei comparativi affiliati. Descriviamo il mestiere di ciascun prodotto, come si presenta a ottobre 2026. L'unico prezzo che citiamo è il nostro, pubblicato sui [prezzi](https://aichef.pro/it/prezzi): piano Membro a 10 € al mese, 10.000 crediti, senza vincolo.
+Non diamo voti in stelle e non ricopiamo i prezzi dei comparativi affiliati. Descriviamo il mestiere di ciascun prodotto, come si presenta a ottobre 2026. L'unico prezzo che citiamo è il nostro, pubblicato sui [prezzi](https://aichef.pro/it/prezzi): piano Premium Pro a 25 € al mese, 85.000 crediti, senza vincolo.
 
 [Apri lo spazio ospite in italiano](https://itapp.aichef.pro/ospite?utm_source=blog&utm_medium=cta&utm_content=migliori-app-ia-ricette-2026)
 
@@ -67,7 +67,7 @@ I criteri, in ordine:
 
 | Strumento | Per chi | Cosa fa davvero | Prezzo che pubblichiamo | Cucina pro |
 | --- | --- | --- | --- | --- |
-| AI Chef Pro | Chef, gestore, brigata | Agenti per schede, menu, food cost, allergeni | Membro 10 €/mese (10.000 crediti); Pro 25 €; Plus 50 €; Max 95 €; Max annuale 950 € | Sì |
+| AI Chef Pro | Chef, gestore, brigata | Agenti per schede, menu, food cost, allergeni | Pro 25 €/mese (85.000 crediti); Plus 50 €; Max 95 €; Max annuale 950 € | Sì |
 | ChatGPT | Chiunque | Bozza di ricetta e riformulazione | Non pubblicato qui | No, solo come bozza |
 | ChefGPT | Casa, calorie | Dispensa, piatto, macro e menu settimanale | Download gratuito; l'editore richiede un abbonamento per le funzioni | No |
 | SuperCook | Casa, avanzi | Trova ricette con quello che hai | Non pubblicato qui | No |
@@ -81,7 +81,7 @@ I criteri, in ordine:
 
 **Per chi.** Un ristorante, un catering, un chef che domani deve far rifare il piatto a un'altra persona.
 
-**Cos'è.** Una suite di agenti, non una sola chat. Lo spazio italiano pubblica la stessa offerta del resto del sito: 75+ agenti, piano Membro a 10 € al mese. Non c'è un piano gratuito. Il [food cost](https://aichef.pro/it/blog/food-cost) e le [salse madri](https://aichef.pro/it/blog/salse-madri) sono compiti di cucina, non funzioni da incollare su un'app per la cena.
+**Cos'è.** Una suite di agenti, non una sola chat. Lo spazio italiano pubblica la stessa offerta del resto del sito: 75+ agenti, piano Premium Pro a 25 € al mese. Non c'è un piano gratuito. Il [food cost](https://aichef.pro/it/blog/food-cost) e le [salse madri](https://aichef.pro/it/blog/salse-madri) sono compiti di cucina, non funzioni da incollare su un'app per la cena.
 
 **Il limite.** Se ti serve solo «cosa faccio con tre uova», è troppo strumento. Prendi un chatbot.
 
@@ -148,6 +148,6 @@ Tre domande, e nessuna si chiude con una stella.
 2. **Il food cost sta nello strumento o in un foglio a parte?** Il [calcolatore](https://aichef.pro/it/calcolatore-food-cost-ristorante) serve prima ancora dell'abbonamento.
 3. **Chi valida l'allergene?** Lo strumento propone. Il responsabile firma.
 
-Il piano Membro (10 € al mese, 10.000 crediti) serve a provare gli agenti senza vincolo. I piani sopra — 25 €, 50 €, 95 € al mese, o 950 € l'anno in Max — sono sulla [pagina prezzi](https://aichef.pro/it/prezzi).
+Il piano Premium Pro (25 € al mese, 85.000 crediti) serve a provare gli agenti senza vincolo. I piani sopra — 50 € e 95 € al mese, o 950 € l'anno in Max — sono sulla [pagina prezzi](https://aichef.pro/it/prezzi).
 
 Se la tua ricerca è «ia per ricette gratuite», parti da un assistente generale. Se la ricerca è la carta della prossima settimana, apri lo spazio italiano e chiedi una scheda, non un'idea.

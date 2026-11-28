@@ -1,28 +1,28 @@
 {
   "hero": {
     "v2_social_prefix": "Utilizado por",
-    "v2_social_chefs": "chefs",
-    "v2_social_count": "receitas e soluções geradas",
-    "v2_title_prefix": "Reduza os custos de ingredientes na sua",
+    "v2_social_chefs": "profissionais",
+    "v2_social_count": "receitas, processos e soluções geradas",
+    "v2_title_prefix": "Crie, gira e faça crescer",
     "v2_title_suffix": "com",
-    "v2_subtitle": "Automatize food cost, desperdício, porções e ementas com 75+ agentes de IA criados para cozinhas profissionais.",
+    "v2_subtitle": "Automatize receitas, food cost, desperdício, ementas e marketing com 75+ agentes de IA criados para restaurantes e hotelaria.",
     "v2_description": "Treinado nos fluxos de trabalho diários de chefs de cozinha, pasteleiros, padeiros e operadores de hotelaria — não em marketing genérico de restauração.",
     "v2_stat_agents": "agentes de IA",
     "v2_stat_tools": "ferramentas de gestão e custos",
     "v2_stat_cookbooks": "livros de cozinha regionais",
     "v2_stat_roles": "perfis de chef cobertos",
     "v2_cta_pricing": "Ver planos e preços",
-    "v2_microcopy": "Planos a partir de 10 €/mês · novo agente de IA adicionado todas as semanas"
+    "v2_microcopy": "Planos a partir de 25 €/mês · 16 ferramentas conectáveis (Gmail, Sheets, Outlook…)"
   },
   "showcase": {
     "v2_business_eyebrow": "Ferramentas de gestão · 6 agentes nativos de cozinha",
-    "v2_business_title_prefix": "Reduza os custos de ingredientes até",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "com ferramentas criadas para o passe.",
-    "v2_business_description": "Desperdício, porcionamento, alergénios, conversões: a matemática diária de uma cozinha profissional, automatizada.",
-    "v2_proof_label": "Dado comprovado",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "redução média de custos de ingredientes com cálculos precisos de desperdício",
+    "v2_business_title_prefix": "Controla o custo dos ingredientes",
+    "v2_business_title_highlight": "no passe",
+    "v2_business_title_suffix": "com ferramentas de cozinha.",
+    "v2_business_description": "Quebras, doses, alergénios e conversões: as contas do dia a dia numa cozinha profissional.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Caso de uso",
     "v2_included_prefix": "Todas as ferramentas incluídas a partir do plano",
     "v2_included_suffix": "e superiores.",
@@ -34,13 +34,13 @@
         "v2_blurb": "Otimize rendimentos e reduza desperdício em todas as fichas de preparação, estações e serviços."
       },
       "id_alergenos": {
-        "v2_blurb": "Identifique alergénios automaticamente e cumpra as normas de segurança alimentar sem erros."
+        "v2_blurb": "Ajuda-te a rever os 14 alergénios de cada receita; a validação final é tua"
       },
       "calcula_pax": {
         "v2_blurb": "Escale receitas com precisão matemática para qualquer número de comensais ou evento."
       },
       "conversor_ing": {
-        "v2_blurb": "Adapte receitas entre sistemas de medida de forma instantânea, sem erros de conversão."
+        "v2_blurb": "Ajuda-te a passar unidades e quantidades de uma receita para outro sistema de medida."
       },
       "mental_coach": {
         "v2_blurb": "Reduza o stress na cozinha e fortaleça a liderança em toda a sua brigada."
@@ -52,33 +52,18 @@
   },
   "pricing": {
     "v2_title": "Encontre o seu plano em 10 segundos",
-    "v2_description": "Faça corresponder o seu perfil ao plano certo. Os créditos escalam consoante o que automatiza na sua cozinha e negócio — desde apoio a receitas numa única estação até uma operação multi-restaurante completa.",
-    "v2_role_member": "Cozinheiro ou assistente",
-    "v2_role_premium_pro": "Chef de cozinha",
+    "v2_description": "Faça corresponder o seu perfil ao plano certo. Os créditos escalam consoante o que automatiza na sua cozinha e negócio — desde o dia a dia de uma cozinha até uma operação multi-restaurante completa.",
+    "v2_role_premium_pro": "Cozinheiro ou chef de cozinha",
     "v2_role_premium_plus": "Proprietário ou grupo",
     "v2_role_premium_max": "Utilizador avançado",
-    "v2_divider": "Para utilizadores avançados e compromisso anual",
+    "v2_divider": "Compromisso anual",
     "v2_enterprise_question": "Gere um grupo ou precisa de volume personalizado?",
     "v2_enterprise_link": "Fale connosco para um plano enterprise",
     "plans": {
-      "member": {
-        "v2_short": "Member",
-        "v2_eyebrow": "Cozinheiros e chefs de partida",
-        "v2_description": "Ideal para assistentes de cozinha, cozinheiros e chefs de partida que começam a trabalhar com IA.",
-        "v2_credits": "10.000 créditos/mês",
-        "v2_hint": "≈ 200 receitas ou 100 escandallos",
-        "v2_cta": "Começar com Member",
-        "v2_features": [
-          "Todas as 75+ ferramentas de IA incluídas",
-          "10.000 créditos mensais",
-          "27 livros de cozinha do mundo",
-          "Suporte por e-mail"
-        ]
-      },
       "premium_pro": {
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Chefs de cozinha e responsáveis",
-        "v2_description": "Para chefs de cozinha, chefs executivos e responsáveis de restaurante que gerem o serviço diário.",
+        "v2_eyebrow": "Cozinheiros, chefs de cozinha e responsáveis",
+        "v2_description": "Para cozinheiros, chefs de cozinha, chefs executivos e responsáveis de restaurante que gerem o serviço diário.",
         "v2_credits": "85.000 créditos/mês",
         "v2_hint": "≈ custo total da ementa + I&D semanal de receitas",
         "v2_cta": "Começar com Premium Pro"

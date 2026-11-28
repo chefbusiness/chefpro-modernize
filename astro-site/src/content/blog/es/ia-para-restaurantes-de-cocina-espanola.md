@@ -87,7 +87,7 @@ wpId: 2346
 <div style="background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%); border-radius: 12px; padding: 30px; margin: 35px 0; text-align: center; box-shadow: 0 8px 25px rgba(26, 95, 42, 0.3);">
 <p style="color: #ffffff; font-size: 22px; font-weight: bold; margin: 0 0 12px 0; line-height: 1.3;">🍳 Descubre el Generador de Recetas Españolas con IA</p>
 <p style="color: #e8f5e9; font-size: 16px; margin: 0 0 20px 0; line-height: 1.5;">Crea recetas de tortilla española, paella, tapas y más con inteligencia artificial profesional.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank" style="display: inline-block; background-color: #ffffff; color: #1a5f2a; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: transform 0.2s;">Probar AI Chef Pro desde 10€/mes →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank" style="display: inline-block; background-color: #ffffff; color: #1a5f2a; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: transform 0.2s;">Probar AI Chef Pro desde 25€/mes →</a>
 </div>
 
 
@@ -487,7 +487,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>Importancia</th><th>Qué buscar</th></tr></thead><tbody><tr><td>Idioma español nativo</td><td>Crítica</td><td>Terminología gastronómica española correcta</td></tr><tr><td>Base de datos de ingredientes españoles</td><td>Alta</td><td>Productos con D.O., ingredientes regionales</td></tr><tr><td>Cumplimiento normativo</td><td>Crítica</td><td>RGPD, normativa de alérgenos UE</td></tr><tr><td>Integración con TPV</td><td>Media-Alta</td><td>Compatibilidad con sistemas españoles</td></tr><tr><td>Soporte técnico en español</td><td>Alta</td><td>Asistencia en horario español</td></tr><tr><td>Precio adaptado al mercado español</td><td>Media</td><td>Planes desde 10€/mes</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>Importancia</th><th>Qué buscar</th></tr></thead><tbody><tr><td>Idioma español nativo</td><td>Crítica</td><td>Terminología gastronómica española correcta</td></tr><tr><td>Base de datos de ingredientes españoles</td><td>Alta</td><td>Productos con D.O., ingredientes regionales</td></tr><tr><td>Cumplimiento normativo</td><td>Crítica</td><td>RGPD, normativa de alérgenos UE</td></tr><tr><td>Integración con TPV</td><td>Media-Alta</td><td>Compatibilidad con sistemas españoles</td></tr><tr><td>Soporte técnico en español</td><td>Alta</td><td>Asistencia en horario español</td></tr><tr><td>Precio adaptado al mercado español</td><td>Media</td><td>Planes desde 25€/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -495,7 +495,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Bares de tapas pequeños, sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Restaurantes medianos</td><td>85.000 créditos al mes y todos los agentes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Restaurantes con alta rotación</td><td>175.000 créditos al mes y todos los agentes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Grupos de restauración</td><td>Créditos ilimitados y todos los agentes</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25 €/mes</td><td>Bares de tapas y restaurantes medianos, sin permanencia</td><td>85.000 créditos al mes y todos los agentes</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Restaurantes con alta rotación</td><td>175.000 créditos al mes y todos los agentes</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Grupos de restauración</td><td>Créditos ilimitados y todos los agentes</td></tr></tbody></table></div></figure>
 
 
 
@@ -696,7 +696,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 
 
-<p class="wp-block-paragraph">Los costes son muy accesibles. AI Chef Pro ofrece un plan de entrada, Miembro, por 10 €/mes, y planes superiores desde 25 €/mes. Para un bar de tapas típico, la inversión puede recuperarse en el primer mes solo con la optimización de mermas.</p>
+<p class="wp-block-paragraph">Los costes son muy accesibles. AI Chef Pro ofrece un plan de entrada, Premium Pro, por 25 €/mes, y planes superiores desde 50 €/mes. Para un bar de tapas típico, la inversión puede recuperarse en el primer mes solo con la optimización de mermas.</p>
 
 
 
@@ -782,7 +782,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">probar AI Chef Pro desde 10 €</a> y descubrir cómo la inteligencia artificial puede transformar tu negocio gastronómico. Para consultas específicas sobre implementación en tu establecimiento, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">contactar con nuestro equipo</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">probar AI Chef Pro desde 25 €</a> y descubrir cómo la inteligencia artificial puede transformar tu negocio gastronómico. Para consultas específicas sobre implementación en tu establecimiento, no dudes en <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-para-restaurantes-de-cocina-espanola" target="_blank">contactar con nuestro equipo</a>.</p>
 
 
 

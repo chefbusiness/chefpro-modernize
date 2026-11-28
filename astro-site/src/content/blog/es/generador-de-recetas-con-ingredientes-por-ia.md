@@ -311,11 +311,11 @@ wpId: 1410
 
 
 
-<p class="wp-block-paragraph">Hay generadores de recetas gratuitos y plataformas de pago, y cada uno sirve para una cosa. Esta es la diferencia real con AI Chef Pro, que es de pago desde 10 €/mes y no tiene plan gratuito.</p>
+<p class="wp-block-paragraph">Hay generadores de recetas gratuitos y plataformas de pago, y cada uno sirve para una cosa. Esta es la diferencia real con AI Chef Pro, que es de pago desde 25 €/mes y no tiene plan gratuito.</p>
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Qué necesitas</th><th>Herramientas gratuitas</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Recetas a partir de tus ingredientes</td><td>Sí, con límites según la app</td><td>Sí, con los créditos de tu plan (10.000 al mes en Miembro)</td></tr><tr><td>Recetarios por país</td><td>Depende de la app</td><td>27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia</td></tr><tr><td>Mermas y coste del plato</td><td>Normalmente no</td><td>Sí: Mermas GenCal y escandallo con los precios que escribes</td></tr><tr><td>Alérgenos</td><td>Variable</td><td>ID Alérgenos, con revisión del chef</td></tr><tr><td>Pensado para</td><td>Cocina de casa</td><td>Cocina profesional y hostelería</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Qué necesitas</th><th>Herramientas gratuitas</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Recetas a partir de tus ingredientes</td><td>Sí, con límites según la app</td><td>Sí, con los créditos de tu plan (85.000 al mes en Premium Pro)</td></tr><tr><td>Recetarios por país</td><td>Depende de la app</td><td>27 recetarios: 12 de Europa, 11 de Latinoamérica y 4 de Asia</td></tr><tr><td>Mermas y coste del plato</td><td>Normalmente no</td><td>Sí: Mermas GenCal y escandallo con los precios que escribes</td></tr><tr><td>Alérgenos</td><td>Variable</td><td>ID Alérgenos, con revisión del chef</td></tr><tr><td>Pensado para</td><td>Cocina de casa</td><td>Cocina profesional y hostelería</td></tr></tbody></table></div></figure>
 
 
 
@@ -1625,7 +1625,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan de AI Chef Pro</th><th>Precio</th><th>Créditos al mes</th><th>Para quién</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>10.000</td><td>Probar y uso puntual</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>85.000</td><td>Uso diario en cocina</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>175.000</td><td>Equipos y varios usuarios</td></tr><tr><td>Premium Max</td><td>95 €/mes (o 950 €/año)</td><td>Ilimitados</td><td>Uso intensivo</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan de AI Chef Pro</th><th>Precio</th><th>Créditos al mes</th><th>Para quién</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25 €/mes</td><td>85.000</td><td>Probar y uso diario en cocina</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>175.000</td><td>Equipos y varios usuarios</td></tr><tr><td>Premium Max</td><td>95 €/mes (o 950 €/año)</td><td>Ilimitados</td><td>Uso intensivo</td></tr></tbody></table></div></figure>
 
 
 
@@ -1638,7 +1638,7 @@ wpId: 1410
 
 
 
-<li><strong>Cocinero profesional que quiere probar:</strong> plan Miembro, sin permanencia</li>
+<li><strong>Cocinero profesional que quiere probar:</strong> plan Premium Pro, sin permanencia</li>
 
 
 
@@ -1686,7 +1686,7 @@ wpId: 1410
 
 
 
-<li><strong>AI Chef Pro:</strong> no tiene plan gratuito (es de pago desde 10 €/mes), pero en aichef.pro tienes herramientas gratuitas sin registro, como el generador de textos de carta o la calculadora de food cost</li>
+<li><strong>AI Chef Pro:</strong> no tiene plan gratuito (es de pago desde 25 €/mes), pero en aichef.pro tienes herramientas gratuitas sin registro, como el generador de textos de carta o la calculadora de food cost</li>
 
 
 
@@ -2019,7 +2019,7 @@ wpId: 1410
 
 <div class="wp-block-group has-background" style="background-color: #e8f4fd; padding: 25px; border-radius: 8px; text-align: center;">
 <h3>🚀 ¡Comienza Tu Revolución Culinaria Hoy!</h3>
-<p><strong>Paso 1:</strong> <a style="color: #0066cc; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=generador-de-recetas-con-ingredientes-por-ia" target="_blank" rel="noopener" data-lasso-id="3229">Accede a AI Chef Pro desde 10 €</a> y explora sus capacidades básicas</p>
+<p><strong>Paso 1:</strong> <a style="color: #0066cc; font-weight: bold;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=generador-de-recetas-con-ingredientes-por-ia" target="_blank" rel="noopener" data-lasso-id="3229">Accede a AI Chef Pro desde 25 €</a> y explora sus capacidades básicas</p>
 <p><strong>Paso 2:</strong> Genera tu primera receta personalizada usando los ingredientes que tienes en casa ahora mismo</p>
 <p><strong>Paso 3:</strong> Experimenta con <a style="color: #0066cc;" href="https://aichef.pro/blog/libreria-de-prompts-para-food-pairing-ai" target="_blank" rel="noopener" data-lasso-id="3230">Food Pairing AI</a> para descubrir combinaciones sorprendentes</p>
 <p><strong>Paso 4:</strong> Únete a los cocineros y profesionales que ya cocinan con IA</p>

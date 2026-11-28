@@ -948,7 +948,7 @@ wpId: 1580
 
 
 
-<p class="wp-block-paragraph">El plan AI Chef Miembro está en <a href="https://aichef.pro/precios">la página de precios</a>: 10 € al mes y 10.000 créditos. La app en español está en <a href="https://app.aichef.pro/?utm_source=blog&#038;utm_medium=body&#038;utm_content=se-utiliza-la-ia-en-la-cocina" target="_blank" rel="noopener noreferrer">app.aichef.pro</a>.</p>
+<p class="wp-block-paragraph">El plan AI Chef Premium Pro está en <a href="https://aichef.pro/precios">la página de precios</a>: 25 € al mes y 85.000 créditos. La app en español está en <a href="https://app.aichef.pro/?utm_source=blog&#038;utm_medium=body&#038;utm_content=se-utiliza-la-ia-en-la-cocina" target="_blank" rel="noopener noreferrer">app.aichef.pro</a>.</p>
 
 
 

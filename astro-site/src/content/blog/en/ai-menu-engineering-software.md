@@ -135,7 +135,7 @@ faq:
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Transform Your Menu in 48 Hours</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro&#8217;s Menu Engineering tool analyzes your entire menu<br />    and delivers actionable recommendations in minutes, not weeks.  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    OPTIMIZE MY MENU NOW →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    Start with 10,000 credits • Cancel anytime.  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    Start with 85,000 credits • Cancel anytime.  </p>
 </div>
 <h2>Step-by-Step Implementation: Getting Started with Menu Engineering Software</h2>
 <p>Ready to optimize your menu? Here&#8217;s how to implement menu engineering software in your restaurant:</p>
@@ -263,10 +263,10 @@ faq:
 </tr>
 </tbody>
 </table></div>
-<p>Most restaurants still operate at the &#8220;traditional&#8221; level because they assume AI requires expensive enterprise contracts, dedicated data teams, and months of implementation. This assumption was accurate five years ago but no longer reflects reality. Modern consumer-grade AI platforms like AI Chef Pro deliver enterprise-level capability at a fraction of the cost—typically under €25/month—with no technical setup required. The real barrier isn&#8217;t budget or complexity; it&#8217;s awareness that restaurant-grade AI has matured beyond the research lab. Restaurants still relying on quarterly spreadsheet reviews are essentially flying blind while competitors with real-time AI optimization capture 8-15% margin improvements that compound monthly.</p>
+<p>Most restaurants still operate at the &#8220;traditional&#8221; level because they assume AI requires expensive enterprise contracts, dedicated data teams, and months of implementation. This assumption was accurate five years ago but no longer reflects reality. Modern consumer-grade AI platforms like AI Chef Pro deliver enterprise-level capability at a fraction of the cost—from €25/month—with no technical setup required. The real barrier isn&#8217;t budget or complexity; it&#8217;s awareness that restaurant-grade AI has matured beyond the research lab. Restaurants still relying on quarterly spreadsheet reviews are essentially flying blind while competitors with real-time AI optimization capture 8-15% margin improvements that compound monthly.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">See the algorithms in action</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro ships these four AI capabilities — demand forecasting, NLP copy, computer-vision layouts, contribution-margin optimization — inside one interface. AI Chef Member: 10,000 credits, Pro €25/mo.</p>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro ships these four AI capabilities — demand forecasting, NLP copy, computer-vision layouts, contribution-margin optimization — inside one interface. AI Chef Premium Pro: 85,000 credits, €25/mo.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a>
 </div>
 <h2>Frequently Asked Questions About Menu Engineering Software</h2>
@@ -290,7 +290,7 @@ faq:
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">⚡ Stop Guessing, Start Profiting</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro to engineer profitable menus.<br />    Menu Engineering • Pricing AI • Cost Control • Profit Optimization  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €10/MONTH →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FROM €25/MONTH →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    75+ AI tools for restaurant success  </p>
 </div>
 <h2>Conclusion: The Future of Profitable Menu Design</h2>

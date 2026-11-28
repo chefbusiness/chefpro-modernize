@@ -17,13 +17,13 @@ translations:
   nl: beste-ai-apps-recepten-2026
 faq:
   - q: "Wat zijn de beste AI-apps voor recepten in 2026?"
-    a: "Voor het avondeten thuis volstaan ChatGPT, een voorraad-app of een bestaand receptenarchief zoals Allerhande. Voor een restaurant hebt u een AI-agent nodig die een receptkaart, allergenen en een kostprijs oplevert. AI Chef Pro is voor die taak gebouwd: lidmaatschap 10 euro per maand, 10.000 credits, zonder binding. Wij geven de andere zes geen score. Een puntenproef hebben wij niet overgedaan."
+    a: "Voor het avondeten thuis volstaan ChatGPT, een voorraad-app of een bestaand receptenarchief zoals Allerhande. Voor een restaurant hebt u een AI-agent nodig die een receptkaart, allergenen en een kostprijs oplevert. AI Chef Pro is voor die taak gebouwd: Premium Pro, 25 euro per maand, 85.000 credits, zonder binding. Wij geven de andere zes geen score. Een puntenproef hebben wij niet overgedaan."
   - q: "Is Allerhande een AI-app?"
     a: "Nee. Allerhande is het receptenarchief van Albert Heijn. Het hoort in dit lijstje omdat de Nederlandse zoekopdracht naar recepten daar landt, niet omdat een agent het gerecht verzint. Een kostprijs vindt u er niet."
   - q: "Wat is het verschil tussen een recepten-app en een AI-agent?"
     a: "Een app stelt een gerecht voor, meestal voor thuis. Een culinaire AI-agent voert een taak van de professionele keuken uit: kaart, menu, kostprijs, allergenen volgens verordening 1169/2011. In 2026 haalt de zoekopdracht die twee door elkaar."
   - q: "Bestaat er een gratis AI voor recepten?"
-    a: "Algemene assistenten hebben een beperkte gratis toegang. ChefGPT is gratis te downloaden; de uitgever schrijft in de App Store dat de functies een abonnement vragen. AI Chef Pro heeft geen gratis plan. Het eerste plan is Lid, 10 euro per maand."
+    a: "Algemene assistenten hebben een beperkte gratis toegang. ChefGPT is gratis te downloaden; de uitgever schrijft in de App Store dat de functies een abonnement vragen. AI Chef Pro heeft geen gratis plan. Het eerste plan is Premium Pro, 25 euro per maand."
   - q: "Zijn deze apps bruikbaar in de horeca?"
     a: "De huis-tuin-apps zijn bruikbaar als ingeving, niet tijdens de service. Voor de zaak begint u bij een agent en bij de kostprijsrekenaar, en proeft u het gerecht zelf."
   - q: "Zijn gegenereerde recepten betrouwbaar?"
@@ -32,7 +32,7 @@ faq:
 
 Zoekt u de 7 beste AI-apps voor recepten in 2026, dan is het korte antwoord dit: de Nederlandse zoekopdracht mengt kookarchieven, huishoud-apps en chatbots. Voor de service hebt u geen extra chat nodig. U hebt een AI-agent nodig die een kaart, een kostprijs en een allergeen oplevert.
 
-Wij geven geen sterren en nemen geen prijzen over uit partnervergelijkingen. Wij beschrijven de taak van elk product, zoals die in oktober 2026 zichtbaar is. De enige prijs die wij noemen, staat op onze eigen [prijspagina](https://aichef.pro/nl/prijzen): lidmaatschap, 10 euro per maand, 10.000 credits, zonder binding.
+Wij geven geen sterren en nemen geen prijzen over uit partnervergelijkingen. Wij beschrijven de taak van elk product, zoals die in oktober 2026 zichtbaar is. De enige prijs die wij noemen, staat op onze eigen [prijspagina](https://aichef.pro/nl/prijzen): Premium Pro, 25 euro per maand, 85.000 credits, zonder binding.
 
 [De gastpagina in het Nederlands openen](https://nlapp.aichef.pro/guest?utm_source=blog&utm_medium=cta&utm_content=beste-ai-apps-recepten-2026)
 
@@ -67,7 +67,7 @@ De criteria, in deze volgorde:
 
 | Hulpmiddel | Voor wie | Wat het echt doet | Prijs die wij noemen | Horeca |
 | --- | --- | --- | --- | --- |
-| AI Chef Pro | Chef, uitbater, brigade | Agenten voor kaarten, menu, kostprijs, allergenen | Lid 10 €/maand (10.000 credits); Pro 25 €; Plus 50 €; Max 95 €; Max jaarlijks 950 € | Ja |
+| AI Chef Pro | Chef, uitbater, brigade | Agenten voor kaarten, menu, kostprijs, allergenen | Pro 25 €/maand (85.000 credits); Plus 50 €; Max 95 €; Max jaarlijks 950 € | Ja |
 | ChatGPT | Iedereen | Receptschets en herformulering | Hier niet genoemd | Nee, alleen als schets |
 | Allerhande | Wie een bestaand recept zoekt | Receptenarchief van Albert Heijn, geen AI | Hier niet genoemd | Nee, het is een archief |
 | KptnCook | Huishouden | Dagelijks een paar recepten, AI-hulp in de betaalde trap | Gratis trap met 3 recepten per dag, zo de eigen pagina | Nee |
@@ -81,7 +81,7 @@ De criteria, in deze volgorde:
 
 **Voor wie.** Een restaurant, een catering, een keuken die het gerecht morgen met iemand anders moet herhalen.
 
-**Wat het is.** Een suite van agenten, geen enkele chat. De Nederlandse ruimte noemt hetzelfde publieke getal als de rest van de site: 75+ agenten, lidmaatschap 10 euro per maand. Een gratis plan is er niet.
+**Wat het is.** Een suite van agenten, geen enkele chat. De Nederlandse ruimte noemt hetzelfde publieke getal als de rest van de site: 75+ agenten, Premium Pro 25 euro per maand. Een gratis plan is er niet.
 
 **De grens.** Wilt u alleen weten wat u met drie eieren doet, dan is dit te veel gereedschap. Neem een chatbot.
 
@@ -146,6 +146,6 @@ Drie vragen. Geen ervan eindigt met een ster.
 2. **Zit de kostprijs in het hulpmiddel of in een tweede blad?** De [rekenaar](https://aichef.pro/nl/food-cost-calculator-restaurant) beantwoordt dat, nog vóór een abonnement.
 3. **Wie controleert het allergeen?** Het hulpmiddel stelt voor. De verantwoordelijke tekent.
 
-Het lidmaatschap (10 euro per maand, 10.000 credits) dient om de agenten zonder binding te proberen. De plannen daarboven — 25, 50 en 95 euro per maand, of 950 euro per jaar als Max — staan op de [prijspagina](https://aichef.pro/nl/prijzen).
+Premium Pro (25 euro per maand, 85.000 credits) dient om de agenten zonder binding te proberen. De plannen daarboven — 50 en 95 euro per maand, of 950 euro per jaar als Max — staan op de [prijspagina](https://aichef.pro/nl/prijzen).
 
 Is uw zoekopdracht «AI recept» voor vanavond, begin dan bij een assistent of bij Allerhande. Is uw zoekopdracht de kaart van volgende week, open dan de Nederlandse ruimte en vraag een kaart, geen idee.

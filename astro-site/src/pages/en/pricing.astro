@@ -29,8 +29,8 @@ const ctaUrl = (slug: string) => appCtaUrl(lang, 'pricing', slug);
 const profiles = [
   {
     title: 'Individual Chef or Cook',
-    body: 'Start with the Member plan at €10/month and try all 75+ agents. Once AI becomes part of your daily routine, Premium Pro gives you plenty of room with 85,000 credits a month.',
-    plan: 'Recommended: Member → Premium Pro',
+    body: 'Start with Premium Pro (€25/month, 85,000 credits) and use all 75+ agents with plenty of room for day-to-day work: costing your full menu and weekly recipe development.',
+    plan: 'Recommended: Premium Pro',
   },
   {
     title: 'Restaurant',
@@ -47,11 +47,11 @@ const profiles = [
 const faqs = [
   {
     q: 'Is there a monthly price?',
-    a: 'Yes. The AI Chef Member plan costs €10/month and includes 10,000 credits every month, with access to all 75+ AI agents. Monthly plans have no minimum term. It is ideal for genuinely testing the suite before you decide.',
+    a: 'Yes. Plans start with AI Chef Premium Pro, which costs €25/month and includes 85,000 credits every month, with access to all 75+ AI agents. Monthly plans have no minimum term. It is the entry plan for cooks, chefs and kitchen leads.',
   },
   {
     q: 'Do I need a credit card?',
-    a: 'Yes, a credit card is required from signup. Member, Pro, Plus and Max are billed month to month. Premium Max also has an annual option at €950. Monthly plans have no minimum term: you can cancel or switch from your account.',
+    a: 'Yes, a credit card is required from signup. Pro, Plus and Max are billed month to month. Premium Max also has an annual option at €950. Monthly plans have no minimum term: you can cancel or switch from your account.',
   },
   {
     q: 'Can I switch plans anytime?',
@@ -73,7 +73,7 @@ const faqs = [
 
 const title = 'AI agent pricing for restaurant kitchens | AI Chef Pro';
 const description =
-  'AI agent pricing for restaurants: the Member plan costs €10 a month and includes 10,000 credits and 75+ agents. Monthly plans have no minimum term. Compare plans and start today. Prices stay in euro.';
+  'AI agent pricing for restaurants: Premium Pro costs €25 a month and includes 85,000 credits and 75+ agents. Monthly plans have no minimum term. Compare plans and start today. Prices stay in euro.';
 const keywords =
   'ai chef pro pricing, ai chef pro plans, ai chef pro monthly price, ai chef pro credits, ai for restaurants pricing, kitchen ai software price';
 
@@ -122,8 +122,8 @@ const schemas = [
         AI Chef Pro Pricing: Plans for Chefs and Restaurants
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        Start with the Member plan, which costs €10/month and includes 10,000 credits a month. Monthly plans have no minimum term. When you want more,
-        Premium plans start at €25/month, and only the Max plan gives you unlimited
+        Start with Premium Pro, which costs €25/month and includes 85,000 credits a month. Monthly plans have no minimum term. When you want more,
+        Premium Plus gives you 175,000 credits for €50/month, and only the Max plan gives you unlimited
         credits. Every plan includes all 75+ AI agents and 7 languages.
       </p>
       <div class="mt-7">
@@ -150,8 +150,8 @@ const schemas = [
         few, more elaborate ones spend a bit more.
       </p>
       <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
-        The 10,000 credits in the Member plan are enough to genuinely test the suite, not just take a
-        quick look. And if your operation needs to use AI without watching the counter,
+        The 85,000 credits in Premium Pro give you plenty of room for day-to-day work: roughly a full
+        menu costing plus weekly recipe development. And if your operation needs to use AI without watching the counter,
         the Premium Max plan gives you unlimited credits.
       </p>
     </section>
@@ -164,7 +164,6 @@ const schemas = [
           <thead>
             <tr class="bg-muted/50 text-left">
               <th class="p-4 font-semibold text-foreground">Feature</th>
-              <th class="p-4 text-center font-semibold text-foreground">Member</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Pro</th>
               <th class="p-4 text-center font-semibold text-primary">Premium Plus</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Max</th>
@@ -174,7 +173,6 @@ const schemas = [
           <tbody class="divide-y divide-border">
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Price</th>
-              <td class="p-4 text-center text-foreground">€10/month</td>
               <td class="p-4 text-center text-foreground">€25/mo</td>
               <td class="p-4 text-center text-foreground">€50/mo</td>
               <td class="p-4 text-center text-foreground">€95/mo</td>
@@ -182,7 +180,6 @@ const schemas = [
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Credits / month</th>
-              <td class="p-4 text-center text-foreground">10,000</td>
               <td class="p-4 text-center text-foreground">85,000</td>
               <td class="p-4 text-center text-foreground">175,000</td>
               <td class="p-4 text-center font-semibold text-accent-dark">Unlimited</td>
@@ -194,7 +191,6 @@ const schemas = [
               <td class="p-4 text-center text-foreground">75+</td>
               <td class="p-4 text-center text-foreground">75+</td>
               <td class="p-4 text-center text-foreground">75+</td>
-              <td class="p-4 text-center text-foreground">75+</td>
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Languages</th>
@@ -202,11 +198,9 @@ const schemas = [
               <td class="p-4 text-center text-foreground">7</td>
               <td class="p-4 text-center text-foreground">7</td>
               <td class="p-4 text-center text-foreground">7</td>
-              <td class="p-4 text-center text-foreground">7</td>
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Support</th>
-              <td class="p-4 text-center text-foreground">Email</td>
               <td class="p-4 text-center text-foreground">Priority</td>
               <td class="p-4 text-center text-foreground">Premium 24/7</td>
               <td class="p-4 text-center text-foreground">Premium 24/7</td>
@@ -214,7 +208,6 @@ const schemas = [
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Card required</th>
-              <td class="p-4 text-center text-foreground">Yes</td>
               <td class="p-4 text-center text-foreground">Yes</td>
               <td class="p-4 text-center text-foreground">Yes</td>
               <td class="p-4 text-center text-foreground">Yes</td>
@@ -259,7 +252,7 @@ const schemas = [
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
       <h2 class="text-2xl font-bold text-foreground md:text-3xl">Start today. Monthly plans have no minimum term</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Create your account in a minute, get 10,000 credits a month with the Member plan and try all 75+ AI
+        Create your account in a minute, get 85,000 credits a month with Premium Pro and work with all 75+ AI
         agents for chefs and restaurants. Upgrade only when you need to.
       </p>
       <div class="mt-7">

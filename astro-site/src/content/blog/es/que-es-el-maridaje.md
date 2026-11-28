@@ -37,7 +37,7 @@ faq:
 
 El maridaje es la combinación de un plato y una bebida buscando que el conjunto sepa mejor que cada cosa por su lado. No es un ritual de sumiller ni una regla escrita en piedra: es criterio de cocina aplicado a la bebida, y se aprende probando.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Propón maridajes plato a plato con Sommelier Consultor Pro y prepara la carta de vinos y de cócteles con los agentes de IA de AI Chef Pro. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/sommelier?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-el-maridaje">Ver qué hace la IA para sommeliers</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Propón maridajes plato a plato con Sommelier Consultor Pro y prepara la carta de vinos y de cócteles con los agentes de IA de AI Chef Pro. Planes desde 25 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/sommelier?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-el-maridaje">Ver qué hace la IA para sommeliers</a></p></aside>
 
 ## Qué Es el Maridaje
 

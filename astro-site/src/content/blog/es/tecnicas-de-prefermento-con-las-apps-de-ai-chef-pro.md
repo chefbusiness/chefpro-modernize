@@ -201,12 +201,6 @@ faq:
 </thead>
 <tbody>
 <tr>
-<td>AI Chef Miembro</td>
-<td>AI Chef Miembro (10€)</td>
-<td>3.000</td>
-<td>Probar la plataforma con el plan AI Chef Miembro</td>
-</tr>
-<tr>
 <td>AI Chef Premium Pro</td>
 <td>25€/mes</td>
 <td>85.000</td>
@@ -232,4 +226,4 @@ faq:
 </tr>
 </tbody>
 </table></div>
-<p>Si quieres comprobar en primera persona cómo Fermentus Con AI+ y Panadería Creativa pueden ayudarte a estandarizar tus prefermentos y a crear recetas nuevas sin ir a ciegas, empieza con el plan AI Chef Miembro. Es el plan AI Chef Miembro, necesitas tarjeta y tendrás 10.000 créditos para trastear con tus fórmulas. Dar el salto a una panadería más precisa nunca fue tan fácil.</p>
+<p>Si quieres comprobar en primera persona cómo Fermentus Con AI+ y Panadería Creativa pueden ayudarte a estandarizar tus prefermentos y a crear recetas nuevas sin ir a ciegas, empieza con el plan AI Chef Premium Pro. Por 25€/mes, sin permanencia, tendrás 85.000 créditos al mes para trastear con tus fórmulas. Dar el salto a una panadería más precisa nunca fue tan fácil.</p>

@@ -1702,7 +1702,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Créditos/mes</th><th>Agentes</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>10 €</td><td>10.000</td><td>Todos</td><td>Chef individual, exploración inicial</td></tr><tr><td><strong>Premium Pro</strong></td><td>25 €</td><td>85.000</td><td>Todos</td><td>Restaurante pequeño o mediano</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €</td><td>175.000</td><td>Todos</td><td>Múltiples conceptos, cadenas pequeñas</td></tr><tr><td><strong>Premium Max</strong></td><td>95 € (o 950 €/año)</td><td>Ilimitados</td><td>Todos</td><td>Grupos gastronómicos</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Créditos/mes</th><th>Agentes</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Premium Pro</strong></td><td>25 €</td><td>85.000</td><td>Todos</td><td>Chef individual, restaurante pequeño o mediano</td></tr><tr><td><strong>Premium Plus</strong></td><td>50 €</td><td>175.000</td><td>Todos</td><td>Múltiples conceptos, cadenas pequeñas</td></tr><tr><td><strong>Premium Max</strong></td><td>95 € (o 950 €/año)</td><td>Ilimitados</td><td>Todos</td><td>Grupos gastronómicos</td></tr></tbody></table></div></figure>
 
 
 
@@ -1710,21 +1710,7 @@ Parámetros económicos:
 
 
 
-<p class="wp-block-paragraph">El retorno de inversión en prompt engineering gastronómico varía significativamente según el plan elegido y la intensidad de implementación. Estos tres ejemplos son orientativos: haz la cuenta con tus cifras como (ahorro − coste) / coste.</p>
-
-
-
-<div class="wp-block-group has-background" style="background-color: #e8f5e8; padding: 20px;">
-<h4>Plan Miembro (10 €/mes) &#8211; ROI del ejemplo: 6.750 %</h4>
-<p><strong>Beneficios mensuales estimados:</strong></p>
-<ul>
-<li>Ahorro en tiempo de planificación: 15 horas × 25€/hora = 375€</li>
-<li>Optimización de food cost: 2% sobre 8,000€ compras = 160€</li>
-<li>Reducción de desperdicios: 150€ mensuales</li>
-<li><strong>Total beneficios: 685€/mes</strong></li>
-<li><strong>ROI neto: 6.750 % anual</strong></li>
-</ul>
-</div>
+<p class="wp-block-paragraph">El retorno de inversión en prompt engineering gastronómico varía significativamente según el plan elegido y la intensidad de implementación. Estos dos ejemplos son orientativos: haz la cuenta con tus cifras como (ahorro − coste) / coste.</p>
 
 
 
@@ -1767,7 +1753,7 @@ Parámetros económicos:
 
 
 <ul class="wp-block-list">
-<li><strong>Chef freelance o consultor</strong>: Plan Miembro &#8211; Ideal para desarrollo de propuestas cliente</li>
+<li><strong>Chef freelance o consultor</strong>: Plan Premium Pro &#8211; Ideal para desarrollo de propuestas cliente</li>
 
 
 
@@ -1850,7 +1836,7 @@ Parámetros económicos:
 
 <div class="wp-block-group has-background" style="background-color: #e8f5e8; padding: 25px;">
 <h3>🚀 Da el Primer Paso Hoy Mismo</h3>
-<p><strong>Inicia tu transformación gastronómica:</strong><br>👉 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3512"><strong>Prueba AI Chef Pro desde 10 €</strong></a> y experimenta la diferencia de los prompts profesionales<br>👉 Accede a templates descargables y casos de estudio reales</p>
+<p><strong>Inicia tu transformación gastronómica:</strong><br>👉 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3512"><strong>Prueba AI Chef Pro desde 25 €</strong></a> y experimenta la diferencia de los prompts profesionales<br>👉 Accede a templates descargables y casos de estudio reales</p>
 <p><strong>¿Tienes preguntas específicas sobre implementación?</strong><br>💬 <a href="https://aichef.pro/contacto?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener" data-lasso-id="3513"><strong>Contacta con nuestro equipo especializado</strong></a> para resolver tus dudas</p>
 </div>
 
@@ -1896,7 +1882,7 @@ Parámetros económicos:
 
 
 
-<p class="wp-block-paragraph">El soporte depende del plan: por email en Miembro, prioritario en Premium Pro y premium 24/7 en Premium Plus y Premium Max. Nuestro equipo está formado por profesionales con experiencia gastronómica que entienden los retos específicos del sector.</p>
+<p class="wp-block-paragraph">El soporte depende del plan: prioritario en Premium Pro y premium 24/7 en Premium Plus y Premium Max. Nuestro equipo está formado por profesionales con experiencia gastronómica que entienden los retos específicos del sector.</p>
 
 
 

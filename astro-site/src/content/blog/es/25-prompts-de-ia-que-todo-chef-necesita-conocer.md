@@ -552,8 +552,8 @@ Antes de responder, confirma si necesitas información adicional para proporcion
 <div style="background: linear-gradient(135deg, #2d3436 0%, #636e72 100%); border-radius: 12px; padding: 40px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <p style="color: #dfe6e9; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">💡 Tu cocina, potenciada por IA</p>
 <h3 style="color: #ffffff; font-size: 28px; margin-bottom: 20px; line-height: 1.3;">Transforma estos prompts en resultados reales con AI Chef Pro</h3>
-<p style="color: #b2bec3; font-size: 16px; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Más de 55 herramientas especializadas, desde Cocina Creativa hasta Food Pairing AI. Planes desde 10€/mes.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" target="_blank" rel="noopener" style="display: inline-block; background-color: #00b894; color: #ffffff; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Empieza desde 10 €/mes</a>
+<p style="color: #b2bec3; font-size: 16px; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Más de 55 herramientas especializadas, desde Cocina Creativa hasta Food Pairing AI. Planes desde 25€/mes.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" target="_blank" rel="noopener" style="display: inline-block; background-color: #00b894; color: #ffffff; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Empieza desde 25 €/mes</a>
 </div>
 
 

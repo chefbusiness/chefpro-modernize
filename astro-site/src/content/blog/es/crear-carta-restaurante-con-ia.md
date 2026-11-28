@@ -16,7 +16,7 @@ faq:
   - q: "¿Cómo escribir descripciones de platos que realmente vendan?"
     a: "Usa la regla ingrediente + técnica + detalle diferencial. Huye de adjetivos vacíos como ‘delicioso’ o ‘exquisito’ y aporta datos concretos: origen del producto, punto de cocción, elemento crujiente o cremoso. Una descripción bien trabajada puede aumentar la probabilidad de pedido alrededor de un 25%."
   - q: "¿Cuánto cuesta crear la carta de un restaurante con IA?"
-    a: "Con AI Chef Pro puedes hacerlo desde 10 € con el plan AI Chef Miembro (10.000 créditos al mes, con tarjeta). Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes (85.000 créditos) y el Plus 50 €/mes (175.000 créditos). El plan Max ofrece créditos ilimitados por 95 €/mes."
+    a: "Con AI Chef Pro puedes hacerlo desde 25 € con el plan AI Chef Premium Pro (85.000 créditos al mes, con tarjeta). Si necesitas más capacidad, el plan Plus cuesta 50 €/mes (175.000 créditos). El plan Max ofrece créditos ilimitados por 95 €/mes."
   - q: "¿Sirve la IA para hacer cartas de restaurante en varios idiomas?"
     a: "Sí, y con matiz gastronómico. La IA de AI Chef Pro traduce a 7 idiomas manteniendo el sentido culinario de términos como ‘meloso’ o ‘sellado’, algo que un traductor genérico no hace. Es ideal para zonas turísticas donde la carta multilingüe ya es una expectativa del comensal."
   - q: "¿Cuánto se tarda en crear una carta de restaurante con IA?"
@@ -145,13 +145,12 @@ Los planes se adaptan al volumen de cada negocio:
 
 | Plan | Créditos / mes | Precio |
 | :--- | :--- | :--- |
-| AI Chef Miembro | 10.000 créditos | 10 €/mes (con tarjeta) |
 | Premium Pro | 85.000 créditos | 25 €/mes |
 | Plus | 175.000 créditos | 50 €/mes |
 | Max | Ilimitados | 95 €/mes |
 | Max Anual | Ilimitados | 950 €/año |
 
-Con el plan AI Chef Miembro puedes crear tu primera carta completa y probar el flujo sin compromiso. Si el volumen de trabajo crece, los planes Pro, Plus y Max te dan la potencia para generar descripciones, traducciones, diseños y análisis de precios sin límites.
+Con el plan AI Chef Premium Pro puedes crear tu primera carta completa y probar el flujo sin compromiso. Si el volumen de trabajo crece, los planes Plus y Max te dan la potencia para generar descripciones, traducciones, diseños y análisis de precios a mayor escala.
 
 [Prueba AI Chef Pro ahora](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=crear-carta) y empieza a crear la carta de tu restaurante con IA desde el primer minuto.
 

@@ -37,7 +37,7 @@ faqInBody: true
 
 La focaccia es un pan plano italiano de masa con levadura, aceite de oliva y sal. Se extiende en una bandeja, se marca con los dedos para hacer hoyuelos y se hornea con aceite por encima. Sale dorada y crujiente por abajo, blanda y alveolada por dentro. Se come sola, con hierbas, tomate o aceitunas, o como pan para bocadillos.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Genera con los agentes de IA de AI Chef Pro tus recetas de focaccia y su escandallo por pieza: harina, aceite, merma y coste. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/panadero-artesanal?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-la-focaccia">Ver la ficha de panadero artesanal</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Genera con los agentes de IA de AI Chef Pro tus recetas de focaccia y su escandallo por pieza: harina, aceite, merma y coste. Planes desde 25 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/panadero-artesanal?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-es-la-focaccia">Ver la ficha de panadero artesanal</a></p></aside>
 
 ## Qué es la focaccia
 

@@ -18,7 +18,7 @@ faq:
   - q: "¿Cómo combatir la estacionalidad de la heladería?"
     a: "Diversifica con chocolate caliente, crepes, repostería y café de especialidad. Rota sabores de temporada para dar motivo de visita cada mes, explora el take-away en zonas de tráfico constante y ofrece catering a empresas. La IA te ayuda a planificar la producción y a no sobreproducir en meses flojos."
   - q: "¿Cuánto cuesta AI Chef Pro y cuál es el plan de entrada?"
-    a: "Sí, el plan AI Chef Miembro cuesta 10 € al mes con 10.000 créditos, sin permanencia y con tarjeta desde el alta. Los planes de pago van desde 25 €/mes (85.000 créditos) hasta 95 €/mes con créditos ilimitados. También existe la opción anual del plan Max por 950 €, ideal para obradores que integran la IA a diario."
+    a: "El plan de entrada es AI Chef Premium Pro: 25 € al mes con 85.000 créditos, sin permanencia y con tarjeta desde el alta. Los planes superiores van desde 50 €/mes (175.000 créditos) hasta 95 €/mes con créditos ilimitados. También existe la opción anual del plan Max por 950 €, ideal para obradores que integran la IA a diario."
   - q: "¿Cómo calcular el coste real de un cucurucho?"
     a: "Suma materia prima, cucurucho, merma estimada, personal imputado por unidad, energía de conservación y una parte proporcional de alquiler y fijos. Divide todo entre el número de unidades. Así obtienes un escandallo completo, no solo el food cost. La IA puede automatizar ese cálculo en segundos."
 ---
@@ -140,11 +140,10 @@ Además, para los que prefieren trabajar con herramientas ya hechas, en la tiend
 
 ## Cómo empezar con AI Chef Pro (y cuánto cuesta de verdad)
 
-He visto a demasiados hosteleros huir de la tecnología porque piensan que es cara o complicada. La realidad es que puedes empezar a probar por 10 € al mes, sin permanencia y con tarjeta desde el alta. El plan AI Chef Miembro te da 10.000 créditos al mes, suficientes para hacer varios escandallos, generar ideas de sabores y planificar una semana de contenido para redes. Si le ves utilidad, escalas.
+He visto a demasiados hosteleros huir de la tecnología porque piensan que es cara o complicada. La realidad es que puedes empezar por 25 € al mes, sin permanencia y con tarjeta desde el alta. El plan AI Chef Premium Pro te da 85.000 créditos al mes, suficientes para hacer varios escandallos, generar ideas de sabores y planificar una semana de contenido para redes. Si le ves utilidad, escalas.
 
 | Plan | Precio | Créditos incluidos |
 | :--- | :--- | :--- |
-| AI Chef Miembro | 10 €/mes | 10.000 créditos/mes |
 | Premium Pro | 25 €/mes | 85.000 créditos |
 | Plus | 50 €/mes | 175.000 créditos |
 | Max | 95 €/mes | Créditos ilimitados |
@@ -152,7 +151,7 @@ He visto a demasiados hosteleros huir de la tecnología porque piensan que es ca
 
 La palabra “ilimitado” solo aparece en el plan Max, y por un motivo: está pensado para obradores que integran la IA en su día a día sin preocuparse por el contador. Para la mayoría de heladerías, el plan Premium Pro o Plus cubre de sobra las necesidades de escandallos, planificación y marketing.
 
-Si quieres verlo por ti mismo, puedes [probar los agentes de IA culinarios con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=heladeria) y decidir sin presión.
+Si quieres verlo por ti mismo, puedes [probar los agentes de IA culinarios con AI Chef Premium Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=heladeria) y decidir sin presión.
 
 
 
@@ -164,4 +163,4 @@ Si quieres verlo por ti mismo, puedes [probar los agentes de IA culinarios con A
 
 La rentabilidad de una heladería artesanal no se juega en el sabor estrella del verano, sino en el control del coste por unidad, el equilibrio de la mezcla y la planificación del año completo. He visto cerrar obradores que hacían el mejor pistacho de la ciudad porque no supieron calcular cuánto les costaba de verdad cada cucurucho.
 
-La inteligencia artificial no sustituye al heladero. Es una herramienta de decisión y velocidad que te permite hacer en minutos lo que antes te llevaba horas de calculadora y prueba-error. Si después de leer esto te pica la curiosidad, abre el plan AI Chef Miembro, trastea con los agentes y aplica el criterio que solo tú tienes. El helado lo haces tú; los números, que los haga la máquina.
+La inteligencia artificial no sustituye al heladero. Es una herramienta de decisión y velocidad que te permite hacer en minutos lo que antes te llevaba horas de calculadora y prueba-error. Si después de leer esto te pica la curiosidad, abre el plan AI Chef Premium Pro, trastea con los agentes y aplica el criterio que solo tú tienes. El helado lo haces tú; los números, que los haga la máquina.

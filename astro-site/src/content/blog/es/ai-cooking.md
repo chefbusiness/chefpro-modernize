@@ -200,7 +200,7 @@ wpId: 1489
 
 
 
-<p class="wp-block-paragraph">Hay generadores de recetas pensados para probar el gesto. En AI Chef Pro el plan de entrada es de pago: AI Chef Miembro, 10 € al mes y 10.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>.</p>
+<p class="wp-block-paragraph">Hay generadores de recetas pensados para probar el gesto. En AI Chef Pro el plan de entrada es de pago: AI Chef Premium Pro, 25 € al mes y 85.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>.</p>
 
 
 
@@ -262,7 +262,7 @@ wpId: 1489
 
 
 
-<p class="wp-block-paragraph">En AI Chef Pro hay agentes de receta, de food pairing y de merma. El plan de entrada, AI Chef Miembro, son 10 € al mes y 10.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>. Cada agente se usa cuando lo pides.</p>
+<p class="wp-block-paragraph">En AI Chef Pro hay agentes de receta, de food pairing y de merma. El plan de entrada, AI Chef Premium Pro, son 25 € al mes y 85.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>. Cada agente se usa cuando lo pides.</p>
 
 
 
@@ -592,7 +592,7 @@ wpId: 1489
 
 
 
-<p class="wp-block-paragraph">AI Chef Miembro (10 € al mes, 10.000 créditos) es el plan de entrada para ayudantes, cocineros y jefes de partida. AI Chef Premium Pro (25 €, 85.000 créditos) encaja con jefes de cocina. AI Chef Premium Plus (50 €, 175.000 créditos) está orientado a propietarios y cadenas. AI Chef Premium Max son 95 € al mes con créditos ilimitados, y el anual, 950 €. La lista viva está en <a href="https://aichef.pro/precios">la página de precios</a>. Se paga desde el alta y puedes cancelar cuando quieras.</p>
+<p class="wp-block-paragraph">AI Chef Premium Pro (25 € al mes, 85.000 créditos) es el plan de entrada para cocineros, jefes de partida y jefes de cocina. AI Chef Premium Plus (50 €, 175.000 créditos) está orientado a propietarios y cadenas. AI Chef Premium Max son 95 € al mes con créditos ilimitados, y el anual, 950 €. La lista viva está en <a href="https://aichef.pro/precios">la página de precios</a>. Se paga desde el alta y puedes cancelar cuando quieras.</p>
 
 
 
@@ -826,14 +826,14 @@ wpId: 1489
 
 
 
-<p class="wp-block-paragraph">Hay planes de pago, desde AI Chef Miembro, en <a href="https://aichef.pro/precios">la página de precios</a>. AI Chef Pro reúne agentes de cocina.</p>
+<p class="wp-block-paragraph">Hay planes de pago, desde AI Chef Premium Pro, en <a href="https://aichef.pro/precios">la página de precios</a>. AI Chef Pro reúne agentes de cocina.</p>
 
 
 
 
 
 
-<p class="wp-block-paragraph">El plan AI Chef Miembro está en <a href="https://aichef.pro/precios">la página de precios</a>: 10 € al mes y 10.000 créditos. La app en español está en <a href="https://app.aichef.pro/?utm_source=blog&#038;utm_medium=body&#038;utm_content=ai-cooking" target="_blank" rel="noopener noreferrer">app.aichef.pro</a>.</p>
+<p class="wp-block-paragraph">El plan AI Chef Premium Pro está en <a href="https://aichef.pro/precios">la página de precios</a>: 25 € al mes y 85.000 créditos. La app en español está en <a href="https://app.aichef.pro/?utm_source=blog&#038;utm_medium=body&#038;utm_content=ai-cooking" target="_blank" rel="noopener noreferrer">app.aichef.pro</a>.</p>
 
 
 
@@ -873,7 +873,7 @@ wpId: 1489
 
 
 
-<p class="wp-block-paragraph">Sí. Pide una receta que ya conoces, con las cantidades y el porqué de cada paso. En AI Chef Pro el plan de entrada es de pago: AI Chef Miembro, 10 € al mes y 10.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>.</p>
+<p class="wp-block-paragraph">Sí. Pide una receta que ya conoces, con las cantidades y el porqué de cada paso. En AI Chef Pro el plan de entrada es de pago: AI Chef Premium Pro, 25 € al mes y 85.000 créditos, en <a href="https://aichef.pro/precios">la página de precios</a>.</p>
 
 
 

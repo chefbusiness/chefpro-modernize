@@ -14,7 +14,7 @@ definedTerm:
   description: "An AI agent for chefs is a specialist that finishes one kitchen job and returns it ready to repeat: a costed recipe card, a menu change, an allergen check, a production list or a purchase order. A general chatbot drafts an idea and forgets the brigade. The chef still tastes, signs the card and runs service."
 faq:
   - q: "What is an AI agent for chefs?"
-    a: "An AI agent for chefs is a specialist that finishes one kitchen job and returns it ready to repeat: a costed recipe card, a menu change, an allergen check, a production list or a purchase order. A general chatbot drafts an idea and does not keep the card. The chef still tastes, signs the card and runs service. AI Chef Pro is a set of those agents. The Member plan is €10 a month for 10,000 credits, and there is no free plan or free trial."
+    a: "An AI agent for chefs is a specialist that finishes one kitchen job and returns it ready to repeat: a costed recipe card, a menu change, an allergen check, a production list or a purchase order. A general chatbot drafts an idea and does not keep the card. The chef still tastes, signs the card and runs service. AI Chef Pro is a set of those agents. The Premium Pro plan is €25 a month for 85,000 credits, and there is no free plan or free trial."
   - q: "How do you use AI as a chef?"
     a: "Start with one dish the brigade already cooks. Give the agent the invoice price, the gross weight and the yield. Ask for a costed card, then the allergens copied from the supplier label, then the production list for the covers you expect, then the purchase order. Taste the dish and sign the card before it goes on the pass. Do not start with the whole menu."
   - q: "What are practical AI tips for chefs?"
@@ -33,7 +33,7 @@ faq:
 
 When a chef asks what AI can do in the kitchen, the real question is which job it takes off the line tonight. Another list of apps doesn’t answer that. AI Chef Pro is built as a set of AI agents, each one around a kitchen job, not a drawer of generic tools.
 
-Plans are on the [pricing page](https://aichef.pro/en/pricing): Member is €10 a month for 10,000 credits, Premium Pro €25 a month (85,000 credits), Premium Plus €50 a month (175,000 credits) and Premium Max €95 a month or €950 a year. You get 75+ agents in English. There is no free plan and no free trial.
+Plans are on the [pricing page](https://aichef.pro/en/pricing): Premium Pro is €25 a month (85,000 credits), Premium Plus €50 a month (175,000 credits) and Premium Max €95 a month or €950 a year. You get 75+ agents in English. There is no free plan and no free trial.
 
 ## What an AI agent for chefs is
 

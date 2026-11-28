@@ -905,7 +905,7 @@ wpId: 2525
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Probar la plataforma sin permanencia</td><td>10.000 créditos al mes y acceso a todos los agentes</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Areperas pequeñas, food trucks</td><td>Uso extensivo de todas las herramientas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Restaurantes, cadenas, consultores</td><td>Uso ilimitado, prioridad en soporte</td></tr><tr><td>Plan Anual</td><td>500€/año</td><td>Compromiso a largo plazo</td><td>Ahorro significativo, todas las funciones</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25€/mes</td><td>Areperas pequeñas, food trucks</td><td>Uso extensivo de todas las herramientas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Restaurantes, cadenas, consultores</td><td>175.000 créditos al mes, prioridad en soporte</td></tr><tr><td>Premium Max Anual</td><td>950€/año</td><td>Compromiso a largo plazo</td><td>Créditos ilimitados todo el año, equivale a 79,17€/mes (ahorra 2 meses)</td></tr></tbody></table></div></figure>
 
 
 

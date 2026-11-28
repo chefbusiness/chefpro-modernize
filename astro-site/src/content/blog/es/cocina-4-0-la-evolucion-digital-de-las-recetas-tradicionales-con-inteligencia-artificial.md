@@ -26,9 +26,9 @@ wpId: 1606
 
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 30px 0; text-align: center; color: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-<h3 style="color: white; font-size: 24px; margin-bottom: 15px;">🚀 Descubre AI Chef Pro Miembro</h3>
+<h3 style="color: white; font-size: 24px; margin-bottom: 15px;">🚀 Descubre AI Chef Premium Pro</h3>
 <p style="font-size: 16px; margin-bottom: 20px; color: #f0f0f0;">La suite más completa de herramientas IA para profesionales culinarios. Genera recetas, optimiza costes y potencia tu creatividad.</p>
-<p><a style="background: #fff; color: #667eea; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5770">Empieza desde 10 €/mes</a></p>
+<p><a style="background: #fff; color: #667eea; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5770">Empieza desde 25 €/mes</a></p>
 </div>
 
 
@@ -369,7 +369,7 @@ wpId: 1606
 
 
 
-<li><strong>Semana 3-4:</strong> Prueba <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5779">AI Chef Pro</a> con el plan Miembro (10 €/mes, de pago) para evaluar funcionalidades avanzadas</li>
+<li><strong>Semana 3-4:</strong> Prueba <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial" data-lasso-id="5779">AI Chef Pro</a> con el plan Premium Pro (25 €/mes, de pago) para evaluar funcionalidades avanzadas</li>
 
 
 
@@ -397,7 +397,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro</th><th>Beneficio Diferencial</th></tr></thead><tbody><tr><td>Precisión de Recetas</td><td>60-70%</td><td>95%</td><td>+35% precisión validada</td></tr><tr><td>Personalización</td><td>Básica</td><td>Hiperespecífica</td><td>Adaptación total a necesidades</td></tr><tr><td>Soporte Técnico</td><td>Limitado/Inexistente</td><td>Por email en Miembro, prioritario en Premium Pro y 24/7 en Premium Plus y Max</td><td>Ayuda especializada según tu plan</td></tr><tr><td>Integración</td><td>Herramientas aisladas</td><td>Ecosistema completo</td><td>Flujo de trabajo unificado</td></tr><tr><td>Escalabilidad</td><td>Limitada</td><td>De 10.000 créditos al mes a ilimitados (Premium Max)</td><td>Subes de plan cuando crece tu volumen</td></tr><tr><td>ROI</td><td>Difícil de medir</td><td>Medible con tus cifras: (ahorro − coste) / coste</td><td>Depende de tu volumen</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro</th><th>Beneficio Diferencial</th></tr></thead><tbody><tr><td>Precisión de Recetas</td><td>60-70%</td><td>95%</td><td>+35% precisión validada</td></tr><tr><td>Personalización</td><td>Básica</td><td>Hiperespecífica</td><td>Adaptación total a necesidades</td></tr><tr><td>Soporte Técnico</td><td>Limitado/Inexistente</td><td>Prioritario en Premium Pro y 24/7 en Premium Plus y Max</td><td>Ayuda especializada según tu plan</td></tr><tr><td>Integración</td><td>Herramientas aisladas</td><td>Ecosistema completo</td><td>Flujo de trabajo unificado</td></tr><tr><td>Escalabilidad</td><td>Limitada</td><td>De 85.000 créditos al mes a ilimitados (Premium Max)</td><td>Subes de plan cuando crece tu volumen</td></tr><tr><td>ROI</td><td>Difícil de medir</td><td>Medible con tus cifras: (ahorro − coste) / coste</td><td>Depende de tu volumen</td></tr></tbody></table></div></figure>
 
 
 

@@ -23,7 +23,7 @@ faq:
   - q: "How do I request an improvement to an agent?"
     a: "Write to us at info@aichef.pro or reply to the newsletter with the agent name and what you feel is missing. We read every reply, and the weekly updates come directly from that feedback."
   - q: "Does AI Chef Pro have a free plan?"
-    a: "No. Entry starts at 10 € per month with the Member plan, which includes 10,000 credits and no lock-in period. With that plan you already have access to all 80 agentes and the models section."
+    a: "No. Entry starts at 25 € per month with the Premium Pro plan, which includes 85,000 credits a month and no lock-in period. With that plan you already have access to all 80 agents and the models section."
 ---
 
 A few days ago, between August 25 and September 1, 2026, the AI Chef Pro agents crossed the one-million-queries milestone since we opened the platform. This isn't a marketing number: it's one million times that someone — from a professional kitchen, a pastry shop, a bakery, or a desk — asked an agent something and got a useful answer back. A recipe, a food cost sheet, a menu, a spec sheet, a business plan, or a service question. One million moments where AI did the groundwork so the professional could focus on what truly matters.
@@ -111,4 +111,4 @@ One million queries is a starting point, not a finish line. Every week we keep r
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost Kit Pro</h3><p class="mt-2 text-muted-foreground">Excel templates that cost out recipes in minutes with real food cost.</p><a href="/en/digital-products/food-cost-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-one-million-queries" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost Kit Pro for $19</a></aside>
 
-If you haven't jumped into the platform yet, you can do it at [enapp.aichef.pro](https://enapp.aichef.pro/). The Member plan starts at $10/month, no commitment, with 10,000 credits to get started with all 80 specialized agents in English — available across seven languages. Full pricing details at [aichef.pro/en/pricing](https://aichef.pro/en/pricing). No strings attached, no fine print.
+If you haven't jumped into the platform yet, you can do it at [enapp.aichef.pro](https://enapp.aichef.pro/). The Premium Pro plan starts at €25/month, no commitment, with 85,000 credits a month to get started with all 80 specialized agents in English — available across seven languages. Full pricing details at [aichef.pro/en/pricing](https://aichef.pro/en/pricing). No strings attached, no fine print.

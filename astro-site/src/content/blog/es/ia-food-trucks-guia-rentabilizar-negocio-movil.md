@@ -220,13 +220,12 @@ Todo esto está disponible desde cualquier dispositivo con conexión a internet,
 
 En cuanto a precios, la transparencia es total:
 
-- **Plan Miembro**: 10 € al mes con 10.000 créditos, sin permanencia.
-- **Premium Pro**: 25 €/mes (85.000 créditos).
+- **Premium Pro**: 25 €/mes (85.000 créditos), sin permanencia.
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).
 - **Max Anual**: 950 €/año (créditos ilimitados).
 
-Mi recomendación: empieza con el plan Miembro, prueba los agentes y, si la previsión de demanda o el escandallo te quitan horas de sueño, salta al plan que mejor se ajuste a tu volumen de operación. [Puedes probar los agentes aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=food-truck).
+Mi recomendación: empieza con el plan Premium Pro, prueba los agentes y, si la previsión de demanda o el escandallo te quitan horas de sueño, salta al plan que mejor se ajuste a tu volumen de operación. [Puedes probar los agentes aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=food-truck).
 
 ---
 

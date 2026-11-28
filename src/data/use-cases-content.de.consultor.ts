@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich es für Kunden außerhalb Spaniens nutzen?', a: 'Ja. Es gibt Versionen in 7 Sprachen, und die HORECA-Datenbank deckt Spanien, LATAM, Italien, Frankreich, Portugal, Deutschland, die Niederlande und den angelsächsischen Markt ab.' },
     ],
     ctaTitle: 'Beschleunigen Sie Ihre Projekte, ohne die technische Strenge zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Gastronomie-Berater · KI Gastronomieberatung BAFA | AI Chef Pro',
       description: 'KI-Agent für Gastronomieberater und Restaurantberater: Due Diligence, Rentabilitätsdiagnose, Eröffnungsplan, BAFA-Förderung 50–70 %. Starten Sie heute.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich es mit Kunden außerhalb Spaniens nutzen?', a: 'Ja. 7 Sprachen und HORECA-Basis in Spanien, LATAM, Italien, Frankreich, Portugal, Deutschland, den Niederlanden und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Mehr Projekte, ohne das technische Urteilsvermögen aufzugeben.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Chef-Berater Pro · KI für Küchencoaching und Beratung | AICP',
       description: 'KI Chef-Berater für Küchenchef-Coaching, Restaurantgruppen, Hotels und Franchises: Menüentwicklung, Kalkulation, Betriebshandbücher und Brigade-Schulung. Starten Sie heute.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich mit Kunden in LATAM oder Italien arbeiten?', a: 'Ja. 7 Sprachen verfügbar und HORECA-Basis in Spanien, Italien, LATAM, Frankreich, Portugal, Deutschland und den Niederlanden.' },
     ],
     ctaTitle: 'Mehr Eisdielenprojekte, ohne die technische Strenge zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Eisdiele-Berater Pro · KI Eisdielen- und Gelateria-Beratung | AICP',
       description: 'KI Eisdiele-Berater handwerklich: POD/PAC-Basenformulierung, saisonale Karten, HORECA-Kalkulation und HACCP für Eisdielen und Gelaterien. Starten Sie heute.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich es mit internationalen Kunden nutzen?', a: 'Ja. 7 Sprachen und HORECA-Preisbasis in Europa, LATAM und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Beschleunigen Sie Ihre Schokoladenprojekte, ohne die Handwerklichkeit zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Chocolatier-Berater Pro · KI Bean-to-Bar Schokolade | AI Chef Pro',
       description: 'KI Chocolatier-Berater: Pralinen-Kollektionen, Tafeln, Bean-to-Bar-Kalkulation und HACCP für Chocolate Shops, Luxushotels und Spezialkonditoreien. Starten Sie heute.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich mit internationalen Kunden arbeiten?', a: 'Ja. 7 Sprachen und HORECA-Basis in Europa, LATAM und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Mehr Dessertkarten, ohne das technische Urteilsvermögen zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Konditor-Berater Pro · KI Konditorei und Patisserie | AI Chef Pro',
       description: 'KI Konditor-Berater (Konditormeister): Dessertkarten, Kalkulation, technische Datenblätter und Backstuben-Handbücher für Restaurants, Hotels und Gruppen. Starten Sie heute.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich mit internationalen Kunden arbeiten?', a: 'Ja. 7 Sprachen und HORECA-Basis in Europa, LATAM und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Mehr beratene Pizzerien, ohne die italienische Strenge zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Pizza-Berater Pro · KI Pizzeria-Beratung Pizzaiolo AVPN | AICP',
       description: 'KI Pizza-Berater handwerklich: Teigformulierung (AVPN), Karten, HORECA-Kalkulation und Gärungshandbücher für Pizzerien, Pizzaiolo-Coaches und Gruppen. Starten Sie heute.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich mit internationalen Kunden arbeiten?', a: 'Ja. 7 Sprachen und HORECA-Basis in Europa, LATAM und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Mehr beratene Specialty Coffee Shops, mit echter Marge.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Barista-Berater Pro · KI Specialty Coffee und Café | AI Chef Pro',
       description: 'KI Barista-Berater: Kaffeekarten, Extraktionskalibrierung, HORECA-Kalkulation und Specialty-Coffee-Shop-Projekte für Hotels, Rösthäuser und Café-Gruppen. Starten Sie heute.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Deckt es Kellerrückverfolgbarkeit und HACCP ab?', a: 'Ja. Das HACCP-Paket umfasst Register für Temperatur, Feuchtigkeit, Jahrgangsrückverfolgbarkeit und Kellerbetrieb.' },
     ],
     ctaTitle: 'Mehr beratene Weinprogramme, ohne das Sommelier-Urteil zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Sommelier-Berater Pro · KI Weinkarten und Weinberatung | AICP',
       description: 'KI Sommelier-Berater: Weinkarten, Beverage Cost, Kelleroptimierung und Saalschulung für Gourmetrestaurants, Luxushotels und Vinotheken (IHK-konform). Starten Sie heute.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich mit internationalen Kunden arbeiten?', a: 'Ja. 7 Sprachen und HORECA-Basis in Europa, LATAM und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Mehr beratene Cocktail-Bars, mit Beverage Cost unter Kontrolle.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Bartender-Berater Pro · KI Bar Consulting Mixology | AI Chef Pro',
       description: 'KI Bartender-Berater (Barkeeper-Coaching): Cocktailkarten, Beverage Cost, Teamschulung und Cocktail-Bar-Projekte für Signature-Bars und Luxushotels. Starten Sie heute.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_DE_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kann ich mit internationalen Kunden arbeiten?', a: 'Ja. 7 Sprachen und HORECA-Basis in Europa, LATAM und im angelsächsischen Markt.' },
     ],
     ctaTitle: 'Mehr beratene Bäckereien, ohne die handwerkliche Identität zu verlieren.',
-    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Mitglied-Plan für 10 € pro Monat mit 10.000 Credits für alle Agenten.',
+    ctaSubtitle: 'Starten Sie mit dem 2-minütigen Onboarding. Premium Pro für 25 € pro Monat, mit 85.000 Credits für alle Agenten.',
     seo: {
       title: 'Bäcker-Berater Pro · KI Bäckereiberatung Backstube | AI Chef Pro',
       description: 'KI Bäcker-Berater handwerklich: Formulierung, HORECA-Kalkulation, Backstuben-Handbücher und Bakery-Café-Projekte für Hotels, Gruppen und Bäckereiketten. Starten Sie heute.',

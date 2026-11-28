@@ -14,7 +14,7 @@ faq:
   - q: "What is the best loyalty program for small restaurants?"
     a: "Digital, points-based systems offer the best balance of affordability and functionality for small restaurants. Look for solutions that integrate with your existing POS and require minimal staff training."
   - q: "Is AI marketing tools worth it for independent restaurants?"
-    a: "Yes. AI tools like those available at AI Chef Pro level the playing field, providing insights and automation previously available only to large chains. The Member plan, from €10/month with 10,000 credits and no commitment, makes experimentation low-risk."
+    a: "Yes. AI tools like those available at AI Chef Pro level the playing field, providing insights and automation previously available only to large chains. The Premium Pro plan, at €25/month with 85,000 credits and no commitment, makes experimentation low-risk."
   - q: "How important are online reviews in 2026?"
     a: "Online reviews remain critical, influencing both search rankings and customer decisions. Active review management—encouraging positive reviews and professionally responding to all feedback—directly impacts revenue."
   - q: "Should restaurants invest in both digital and offline marketing?"
@@ -28,7 +28,7 @@ faq:
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">AI-Powered Restaurant Marketing</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">Use AI Chef Pro to engineer profitable menus, plan prep from the covers you expect, and optimize pricing — the foundation of effective restaurant marketing.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Member →</a></div>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/chef-social-media-food-photography-1.png" alt="Chef photographing dish for social media" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Social media content starts with photogenic dishes — Instagram and TikTok drive 60% of restaurant discovery among Gen Z.</figcaption></figure>
 <h2>Digital Marketing Essentials</h2>
 <p>Before diving into advanced tactics, every restaurant needs a solid digital foundation. These fundamental elements work together to ensure potential customers can find you online and convert into actual diners.</p>
@@ -235,7 +235,7 @@ faq:
 <li><strong>Social Sharing:</strong> Encourage members to share achievements on social media.</li>
 </ul>
 <h2>AI-Powered Marketing: The Competitive Advantage</h2>
-<p>Artificial intelligence has transformed restaurant marketing from guesswork to precision targeting. <strong>AI Chef Pro</strong> (<a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a>) offers 75+ AI agents built for foodservice professionals, from €10/month (AI Chef Member, 10,000 credits, no lock-in). See what the marketing agents do for social posts, Google reviews and campaigns in <a href="https://aichef.pro/en/restaurant-marketing-ai">AI marketing for restaurants</a>.</p>
+<p>Artificial intelligence has transformed restaurant marketing from guesswork to precision targeting. <strong>AI Chef Pro</strong> (<a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a>) offers 75+ AI agents built for foodservice professionals, from €25/month (AI Chef Premium Pro, 85,000 credits, no lock-in). See what the marketing agents do for social posts, Google reviews and campaigns in <a href="https://aichef.pro/en/restaurant-marketing-ai">AI marketing for restaurants</a>.</p>
 <h3>Practical AI Applications</h3>
 <ul>
 <li><strong>Menu Optimization:</strong> AI analyzes sales data to identify high-margin items and suggests menu engineering improvements.</li>
@@ -246,7 +246,7 @@ faq:
 <li><strong>Customer Lifetime Value Prediction:</strong> Identify high-value customers for VIP treatment and exclusive offers.</li>
 </ul>
 <h3>Getting Started with AI Marketing</h3>
-<p>Begin with AI Chef Pro&#8217;s AI Chef Member plan to explore tools relevant to your immediate needs. As you see results, expand into more sophisticated applications. The key is starting simple—automate one process at a time rather than attempting comprehensive implementation simultaneously.</p>
+<p>Begin with AI Chef Pro&#8217;s Premium Pro plan to explore tools relevant to your immediate needs. As you see results, expand into more sophisticated applications. The key is starting simple—automate one process at a time rather than attempting comprehensive implementation simultaneously.</p>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/restaurant-email-marketing-campaign-1.png" alt="Restaurant email marketing campaign review" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Email marketing delivers 42:1 ROI — the highest of any restaurant marketing channel.</figcaption></figure>
 <h2>Offline Marketing Strategies That Still Work</h2>
 <p>Despite digital dominance, traditional marketing methods maintain significant impact, especially when integrated with online efforts.</p>
@@ -282,7 +282,7 @@ faq:
 <p>Effective restaurant marketing in 2026 requires no single tactic—it&#8217;s the strategic integration of multiple approaches that drives sustainable growth. The 15 tactics covered across both parts of this guide work synergistically: local SEO builds discoverability, social media creates engagement, loyalty programs drive repeat visits, AI tools optimize operations, and offline strategies build community connection.</p>
 <p>Begin with foundational elements (Google Business Profile, basic social presence, review management), then progressively add complexity as your team develops capabilities. Track metrics consistently and adjust based on what resonates with your specific audience.</p>
 <p>The foodservice industry moves quickly, but restaurants that invest strategically in marketing position themselves for long-term success regardless of economic conditions or competitive changes.</p>
-<p><strong>Ready to transform your restaurant&#8217;s marketing?</strong> Explore AI Chef Pro&#8217;s suite of 75+ AI-powered tools designed specifically for foodservice professionals. Start with the AI Chef Member plan today at <a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a> and discover how artificial intelligence can streamline your marketing efforts while driving real results.</p>
+<p><strong>Ready to transform your restaurant&#8217;s marketing?</strong> Explore AI Chef Pro&#8217;s suite of 75+ AI-powered tools designed specifically for foodservice professionals. Start with the AI Chef Premium Pro plan today at <a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a> and discover how artificial intelligence can streamline your marketing efforts while driving real results.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>
 <ul>

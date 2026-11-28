@@ -20,7 +20,7 @@ faq:
   - q: "¿Cuántas veces debo publicar fotos de mis platos?"
     a: "Lo ideal es mantener una frecuencia de 3 a 5 publicaciones semanales, combinando platos estrella, proceso en cocina y reseñas. La constancia es más importante que la cantidad: un calendario de contenidos evita huecos largos y mantiene el interés."
   - q: "¿Cuánto cuesta usar AI Chef Pro para esto?"
-    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. Si necesitas más, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para gestionar fotos, pies de foto y calendario. Los planes Plus y Max añaden más créditos, y el plan Max incluye créditos ilimitados por 95 €/mes."
+    a: "AI Chef Pro parte del plan Premium Pro: 25 €/mes con 85.000 créditos, suficiente para gestionar fotos, pies de foto y calendario. Los planes Plus y Max añaden más créditos, y el plan Max incluye créditos ilimitados por 95 €/mes."
 ---
 
 ## Fotografía gastronómica para Instagram: cómo sacar fotos de platos que venden con tu móvil y un toque de IA
@@ -152,10 +152,9 @@ AI Chef Pro es una suite con más de 70 agentes de inteligencia artificial cread
 
 **Precios:**
 
-- **Plan Miembro**: 10 € al mes con 10.000 créditos.
 - **Premium Pro**: 25 €/mes con 85.000 créditos.
 - **Plus**: 50 €/mes con 175.000 créditos.
 - **Max**: 95 €/mes con créditos ilimitados.
 - **Max Anual**: 950 €/año.
 
-Si quieres probar cómo la IA puede acelerar tu flujo de fotografía y publicación sin desvirtuar tus platos, [empieza con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=foto-gastro).
+Si quieres probar cómo la IA puede acelerar tu flujo de fotografía y publicación sin desvirtuar tus platos, [empieza con AI Chef Premium Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=foto-gastro).

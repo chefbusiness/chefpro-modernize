@@ -15,8 +15,8 @@ Funciona contra un directorio `dist/` (VPS, tras `astro build`) o contra una URL
 
 Qué exige por página (marcadores que emiten los componentes, ver CRO_HOME_KEAK_2026-09-20.md §5):
   · portada: 1× data-keak="hero-v2", 1× data-keak="business-v2", 1× data-keak="pricing-v2"
-  · pricing-v2: 5 tarjetas data-plan (member, premium-pro/premium_pro…), 4 data-role-chip,
-    EXACTAMENTE 1 data-popular y que sea premium_plus, 5 CTAs con utm_content de plan,
+  · pricing-v2: 3 tarjetas mensuales + la banda anual (4 data-plan: premium-pro/premium_pro…), 3 data-role-chip,
+    EXACTAMENTE 1 data-popular y que sea premium_plus, 4 CTAs con utm_content de plan,
     0 claves i18n crudas («v2_» literal en el texto = traducción que faltó)
   · restos: 0× class="…popular-plan…" DENTRO de pricing-v2 (pricing viejo; buscarlo en
     todo el HTML daba falso positivo: la subcadena vive también en el CSS del sitio),
@@ -38,10 +38,10 @@ HOME = {'es': '/', 'en': '/en', 'fr': '/fr', 'de': '/de', 'it': '/it', 'pt': '/p
 PRICING = {'es': '/precios', 'en': '/en/pricing', 'fr': '/fr/tarifs', 'de': '/de/preise',
            'it': '/it/prezzi', 'pt': '/pt/precos', 'nl': '/nl/prijzen'}
 SECUNDARIOS = {'fr', 'de', 'it', 'pt', 'nl'}
-PLANES = ['member', 'premium_pro', 'premium_plus', 'premium_max', 'premium_plus_annual']
+PLANES = ['premium_pro', 'premium_plus', 'premium_max', 'premium_plus_annual']
 # 16 islands con bloque de precios × 7 idiomas + el alias EN /en/ai-food-cost-calculator.
 ISLANDS_ESPERADOS = 113
-SLUGS = ['member', 'premium-pro', 'premium-plus', 'premium-max', 'premium-max-annual']
+SLUGS = ['premium-pro', 'premium-plus', 'premium-max', 'premium-max-annual']
 
 
 def rutas_islands():
@@ -101,10 +101,19 @@ def revisar_pricing(html, lang, errores, ruta):
     for p in PLANES:
         if f'data-plan="{p}"' not in s:
             errores.append(f'{ruta}: falta tarjeta {p}')
+    # Que las 4 tarjetas sean EXACTAMENTE las esperadas: la presencia sola daba por
+    # bueno un HTML con una tarjeta sobrante, una duplicada o el anual pintado suelto.
+    planes = re.findall(r'<article[^>]*\bdata-plan="([^"]+)"', s)
+    if sorted(planes) != sorted(PLANES):
+        errores.append(f'{ruta}: data-plan {planes} (esperados exactamente {PLANES})')
+    if re.search(r'utm_content=member(?![\w-])', s):
+        errores.append(f'{ruta}: resto del plan member')
+    if not re.search(r'<article[^>]*data-plan="premium_plus_annual"[^>]*class="[^"]*md:grid-cols-\[minmax\(0,1fr\)_19rem\]', s):
+        errores.append(f'{ruta}: el anual no es banda')
     # Sólo los <a data-role-chip>: el selector del script inline también contiene la cadena.
     chips = len(re.findall(r'<a[^>]*\bdata-role-chip', s))
-    if chips != 4:
-        errores.append(f'{ruta}: {chips} chips de rol (esperados 4)')
+    if chips != 3:
+        errores.append(f'{ruta}: {chips} chips de rol (esperados 3)')
     pop = re.findall(r'<article[^>]*data-plan="([^"]+)"[^>]*data-popular|<article[^>]*data-popular[^>]*data-plan="([^"]+)"', s)
     pops = [a or b for a, b in pop]
     if pops != ['premium_plus']:

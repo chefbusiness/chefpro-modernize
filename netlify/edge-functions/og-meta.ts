@@ -286,14 +286,14 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   // ── Homepage ──
   '/': {
     title: 'AI Chef Pro — Suite de IA para Profesionales de Hostelería',
-    description: '55+ herramientas de inteligencia artificial para chefs, cocineros y profesionales de hostelería. Recetas, escandallos, marketing, gestión de cocina y más. Empieza gratis.',
+    description: '75+ agentes de IA para chefs, cocineros y profesionales de hostelería. Recetas, escandallos, marketing, gestión de cocina y más. Empieza desde 25 €/mes.',
     image: 'https://aichef.pro/og-image.jpg',
   },
 
   // ── Content / SEO Landing Pages ──
   '/herramientas-ia-para-restaurantes': {
     title: 'Herramientas de IA para Restaurantes | AI Chef Pro',
-    description: '55+ herramientas de inteligencia artificial para dueños de restaurantes. Controla costes, diseña carta, gestiona alérgenos y automatiza el marketing. Empieza gratis.',
+    description: '75+ agentes de IA para dueños de restaurantes. Controla costes, diseña carta, gestiona alérgenos y automatiza el marketing. Desde 25 € al mes, sin permanencia.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/reducir-costes-restaurante-ia': {
@@ -303,22 +303,22 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
   '/carta-menu-restaurante-ia': {
     title: 'Carta y Menú de Restaurante con IA | AI Chef Pro',
-    description: 'Crea la carta de tu restaurante con inteligencia artificial. Diseño de menú, ingeniería de carta, descripciones atractivas y gestión de alérgenos. Prueba gratis.',
+    description: 'Crea la carta de tu restaurante con IA. Diseño de menú, ingeniería de carta, descripciones atractivas y gestión de alérgenos. Desde 25 €/mes, sin permanencia.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/marketing-restaurante-ia': {
     title: 'Marketing para Restaurantes con IA | AI Chef Pro',
-    description: 'Automatiza el marketing de tu restaurante con inteligencia artificial. Redes sociales, Google My Business, respuestas a reseñas y campañas en minutos. Prueba gratis.',
+    description: 'Automatiza el marketing de tu restaurante con IA. Redes sociales, Google My Business, respuestas a reseñas y campañas en minutos. Empieza desde 25 €/mes.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/chatgpt-para-restaurantes': {
     title: 'ChatGPT para Restaurantes: la IA especializada | AI Chef Pro',
-    description: 'ChatGPT para restaurantes vs AI Chef Pro: descubre por qué la IA entrenada en gastronomía da mejores resultados que un modelo genérico. Prueba gratis.',
+    description: 'ChatGPT para restaurantes vs AI Chef Pro: descubre por qué la IA entrenada en gastronomía da mejores resultados que un modelo genérico. Desde 25 € al mes.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/software-gestion-cocina-ia': {
     title: 'Software Gestión de Cocina con IA | AI Chef Pro',
-    description: 'Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. 75+ agentes de IA en 7 idiomas. Planes mensuales desde 10 €.',
+    description: 'Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. 75+ agentes de IA en 7 idiomas. Planes desde 25 € al mes.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/recetas-ia-restaurantes': {
@@ -328,7 +328,7 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
   '/escandallos-restaurante-ia': {
     title: 'Escandallos Restaurante con IA: Food Cost Automático | AI Chef Pro',
-    description: 'Calcula escandallos y food cost de tu restaurante con IA en 2 minutos. Control de mermas, precio de venta óptimo y análisis de rentabilidad por plato. Empieza gratis.',
+    description: 'Calcula escandallos y food cost de tu restaurante con IA en 2 minutos. Control de mermas, precio de venta óptimo y rentabilidad por plato. Desde 25 € al mes.',
     image: 'https://aichef.pro/og-image.jpg',
   },
   '/mentoria-online': {

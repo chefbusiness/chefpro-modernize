@@ -17,8 +17,8 @@ faq:
     a: "Se calcula dividiendo el coste de la mercancía consumida entre el inventario medio. Para frescos, una rotación de 15 a 25 veces al mes es sana; para secos, de 4 a 8 veces. Una rotación baja indica dinero parado y riesgo de caducidad."
   - q: "¿La IA sustituye al jefe de cocina en los pedidos?"
     a: "No. La IA sugiere el pedido óptimo a partir del consumo real, el lead time de cada proveedor y el stock de seguridad. El chef revisa la propuesta, la ajusta según su criterio (eventos, cambios de carta) y la aprueba. La decisión final sigue siendo humana."
-  - q: "¿Puedo empezar con la gestión de inventario con IA con el plan AI Chef Miembro?"
-    a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €, con tarjeta y sin permanencia. Puedes pedir a los agentes que te ayuden a ordenar el conteo, calcular el PMP con tus compras y preparar un borrador de pedido para que lo revises. AI Chef Pro no se conecta a tu TPV ni guarda tu stock: te ayuda con el cálculo."
+  - q: "¿Puedo empezar con la gestión de inventario con IA con el plan Premium Pro?"
+    a: "Sí, con el plan Premium Pro de AI Chef Pro dispones de 85.000 créditos al mes por 25 €, con tarjeta y sin permanencia. Puedes pedir a los agentes que te ayuden a ordenar el conteo, calcular el PMP con tus compras y preparar un borrador de pedido para que lo revises. AI Chef Pro no se conecta a tu TPV ni guarda tu stock: te ayuda con el cálculo."
   - q: "¿Cómo conecta el inventario con los escandallos de los platos?"
     a: "Cada ingrediente del escandallo puede tomar su coste del precio medio del inventario. Cuando actualizas el inventario tras una recepción, revisas el coste de los platos que usan ese ingrediente y el cocinero valida el escandallo."
 ---
@@ -183,10 +183,9 @@ Seamos claros: AI Chef Pro no es un programa de inventario. No se conecta a tu T
 
 Los planes, sin letra pequeña:
 
-- **AI Chef Miembro:** 10.000 créditos al mes, 10 €/mes, con tarjeta y sin permanencia.
-- **Premium Pro:** 25 €/mes con 85.000 créditos.
+- **Premium Pro:** 25 €/mes con 85.000 créditos, con tarjeta y sin permanencia.
 - **Plus:** 50 €/mes con 175.000 créditos.
 - **Max:** 95 €/mes con créditos ilimitados.  
 - **Max Anual:** 950 €/año (el mismo plan Max con descuento).
 
-Si llevas años peleándote con hojas de cálculo o con softwares que no hablan el idioma de la cocina, puedes [empezar con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inventario) y probar el inventario con tres catas: un conteo, un escandallo y un pedido sugerido. Sin compromiso.
+Si llevas años peleándote con hojas de cálculo o con softwares que no hablan el idioma de la cocina, puedes [empezar con AI Chef Premium Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inventario) y probar el inventario con tres catas: un conteo, un escandallo y un pedido sugerido. Sin compromiso.

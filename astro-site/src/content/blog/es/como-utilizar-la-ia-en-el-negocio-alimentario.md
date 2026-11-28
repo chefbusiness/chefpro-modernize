@@ -768,7 +768,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> ofrece planes desde 10€/mes que permiten acceder a herramientas profesionales sin grandes inversiones iniciales. Consulta nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">página de precios</a> para encontrar el plan que mejor se adapte a tu negocio.</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro</strong> ofrece planes desde 25€/mes que permiten acceder a herramientas profesionales sin grandes inversiones iniciales. Consulta nuestra <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">página de precios</a> para encontrar el plan que mejor se adapte a tu negocio.</p>
 
 
 
@@ -810,7 +810,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">Los costes varían significativamente según las herramientas seleccionadas. Plataformas como AI Chef Pro ofrecen planes desde 10€/mes que proporcionan acceso a múltiples herramientas profesionales. Para una implementación básica, un restaurante pequeño puede comenzar con una inversión mensual de 25-50€ y escalar según resultados.</p>
+<p class="wp-block-paragraph">Los costes varían significativamente según las herramientas seleccionadas. Plataformas como AI Chef Pro ofrecen planes desde 25€/mes que proporcionan acceso a múltiples herramientas profesionales. Para una implementación básica, un restaurante pequeño puede comenzar con una inversión mensual de 25-50€ y escalar según resultados.</p>
 
 
 
@@ -883,7 +883,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">explorar AI Chef Pro</a> y descubrir cómo más de 80 agentes especializados pueden transformar tu aproximación al negocio alimentario. Con planes desde 10 €/mes, no hay excusa para no comenzar hoy mismo tu viaje hacia la cocina del futuro.</p>
+<p class="wp-block-paragraph">Te invitamos a <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank">explorar AI Chef Pro</a> y descubrir cómo más de 80 agentes especializados pueden transformar tu aproximación al negocio alimentario. Con planes desde 25 €/mes, no hay excusa para no comenzar hoy mismo tu viaje hacia la cocina del futuro.</p>
 
 
 
@@ -898,7 +898,7 @@ wpId: 2113
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 35px; margin: 40px 0; border-radius: 10px; text-align: center;">
 <h3 style="color: #000000; margin-top: 0; font-size: 26px;">🍳 Comienza Tu Transformación Digital Hoy</h3>
 <p style="color: #333333; font-size: 17px; margin-bottom: 25px;">Prueba AI Chef Pro en tu negocio y aprovecha el poder de la IA: acceso a herramientas profesionales, sin permanencia.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 20px;">Empieza con AI Chef Pro desde 10€</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 20px;">Empieza con AI Chef Pro desde 25€</a>
 </div>
 
 

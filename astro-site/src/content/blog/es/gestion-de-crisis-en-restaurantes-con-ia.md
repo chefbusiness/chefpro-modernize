@@ -20,7 +20,7 @@ faq:
   - q: "¿Cómo ayuda la IA en la gestión de crisis de un restaurante?"
     a: "Acelera la preparación redactando protocolos, plantillas de comunicación multi-idioma y checklists. Durante la crisis, genera borradores de respuesta en minutos, adaptados al tono de la marca. No sustituye al equipo, pero ahorra horas de trabajo bajo presión."
   - q: "¿Cuánto cuesta AI Chef Pro?"
-    a: "AI Chef Pro tiene un plan AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
+    a: "AI Chef Pro tiene tres planes mensuales: Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
 ---
 
 ## Manual de gestión de crisis en restaurantes: protocolos, comunicación y cómo la IA te ayuda a responder en minutos
@@ -163,7 +163,7 @@ En AI Chef Pro reunimos más de 70 agentes de IA culinarios que trabajan en 7 id
 
 
 
-Si necesitas más capacidad, los planes de pago son flexibles: el Premium Pro cuesta 25 €/mes (85 000 créditos), el Plus 50 €/mes (175 000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Todos incluyen las herramientas de gestión de crisis y comunicación.
+Los planes son flexibles: el Premium Pro cuesta 25 €/mes (85 000 créditos), el Plus 50 €/mes (175 000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Todos incluyen las herramientas de gestión de crisis y comunicación.
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Paellero para Eventos</h3><p class="mt-2 text-muted-foreground">Paella para eventos: plan de negocio y kit con 11 entregables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=gestion-de-crisis-en-restaurantes-con-ia" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Paellero para Eventos por €45</a></aside>
 

@@ -18,9 +18,9 @@ faq:
   - q: "¿Cómo escalo una receta de 4 a 20 raciones sin pasarme de sal?"
     a: "Pide el escalado y exige que marque qué no se multiplica en línea recta. Proteína, arroz y verdura suelen seguir el factor. La sal, las especias fuertes, la levadura y los tiempos de horno no. Arranca por debajo en la sazón y rectifica al final."
   - q: "¿Me vale un chat generalista o conviene una IA para cocina especializada?"
-    a: "Un chat generalista saca de un apuro si el plato es sencillo. Se queda corto cuando necesitas gramos, nombres de técnica y despensa en español. AI Chef Pro reúne más de 75 agentes de cocina y el plan de entrada, AI Chef Miembro, son 10 € al mes con 10.000 créditos. Se paga desde el alta y puedes cancelar cuando quieras."
+    a: "Un chat generalista saca de un apuro si el plato es sencillo. Se queda corto cuando necesitas gramos, nombres de técnica y despensa en español. AI Chef Pro reúne más de 75 agentes de cocina y el plan de entrada, AI Chef Premium Pro, son 25 € al mes con 85.000 créditos. Se paga desde el alta y puedes cancelar cuando quieras."
   - q: "¿Cuánto cuesta usar AI Chef Pro para cocinar?"
-    a: "El plan AI Chef Miembro cuesta 10 € al mes y incluye 10.000 créditos. AI Chef Premium Pro cuesta 25 € al mes con 85.000 créditos. AI Chef Premium Plus cuesta 50 € al mes con 175.000 créditos. AI Chef Premium Max cuesta 95 € al mes con créditos ilimitados, y AI Chef Premium Max Anual cuesta 950 € al año, también con créditos ilimitados. La lista completa está en la página de precios."
+    a: "El plan de entrada, AI Chef Premium Pro, cuesta 25 € al mes y incluye 85.000 créditos. AI Chef Premium Plus cuesta 50 € al mes con 175.000 créditos. AI Chef Premium Max cuesta 95 € al mes con créditos ilimitados, y AI Chef Premium Max Anual cuesta 950 € al año, también con créditos ilimitados. La lista completa está en la página de precios."
 ---
 
 Imagina un martes a las ocho de la tarde. Abres la nevera y hay un puerro mustio, tres huevos, un bote de tomate a medio acabar y un trozo de queso que pide salir. Ahí es donde entra un ayudante: te propone un plato con lo que hay, te explica la técnica y te deja las cantidades en gramos. Con eso sale una quiche sin masa o unos huevos al plato con tomate y queso, y no tardas ni veinte minutos.
@@ -127,7 +127,7 @@ Un modelo que sirve para todo te saca de un apuro si estás empezando y el plato
 
 AI Chef Pro es una suite de más de 75 agentes de cocina, en 7 idiomas, con el español como lengua de trabajo. Hay agentes para recetas, para escalar, para maridar, para sustituir y para explicar una técnica. No tienes que empezar explicando qué es un pimentón de la Vera ni qué separa un fondo blanco de uno oscuro.
 
-Para cocinar con ella, el plan de entrada es [AI Chef Miembro](https://aichef.pro/precios): 10 € al mes y 10.000 créditos. Se paga desde el alta, con tarjeta, y puedes cancelar cuando quieras. Si el uso crece, en la misma página están AI Chef Premium Pro (25 € al mes, 85.000 créditos), AI Chef Premium Plus (50 € al mes, 175.000 créditos), AI Chef Premium Max (95 € al mes, créditos ilimitados) y AI Chef Premium Max Anual (950 € al año, créditos ilimitados).
+Para cocinar con ella, el plan de entrada es [AI Chef Premium Pro](https://aichef.pro/precios): 25 € al mes y 85.000 créditos. Se paga desde el alta, con tarjeta, y puedes cancelar cuando quieras. Si el uso crece, en la misma página están AI Chef Premium Plus (50 € al mes, 175.000 créditos), AI Chef Premium Max (95 € al mes, créditos ilimitados) y AI Chef Premium Max Anual (950 € al año, créditos ilimitados).
 
 Si quieres entrar ya en la app en español, <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia-para-cocinar-en-2025" target="_blank" rel="noopener noreferrer">abre AI Chef Pro</a>.
 
@@ -154,4 +154,4 @@ No hace falta instalar nada ni hacer un curso.
 3. Cocina y anota qué rectificarías. Sal, acidez, punto. La propuesta la da la IA. El punto lo decides tú al probar.
 4. Vuelve con lo que has visto. «La salsa de ayer quedó líquida. ¿Cómo la reduzco sin pasarme de sal?» Cuanto más le cuentas, menos genérica es la siguiente respuesta.
 
-El [plan AI Chef Miembro](https://aichef.pro/precios) son 10 € al mes y 10.000 créditos: el plan de entrada para ayudantes, cocineros y jefes de partida que empiezan con la IA. Desde ahí decides si subes. Y si quieres probarlo con el delantal puesto, <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia-para-cocinar-en-2025" target="_blank" rel="noopener noreferrer">entra en la app en español</a>.
+El [plan AI Chef Premium Pro](https://aichef.pro/precios) son 25 € al mes y 85.000 créditos: el plan de entrada para ayudantes, cocineros y jefes de partida que empiezan con la IA. Desde ahí decides si subes. Y si quieres probarlo con el delantal puesto, <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia-para-cocinar-en-2025" target="_blank" rel="noopener noreferrer">entra en la app en español</a>.

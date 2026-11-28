@@ -18,12 +18,12 @@ faq:
   - q: "¿Cómo programo los vídeos en varias redes?"
     a: "Con Clautia, herramienta del mismo grupo que AI Chef Pro, programas publicaciones en 10 redes, entre ellas Instagram, TikTok, YouTube y Facebook, con calendario; el vídeo lo subes tú al panel. Tiene una prueba de 7 días por 0 € con tarjeta. No hay integración directa con AI Chef Pro: copias el texto. Los agentes de AI Chef Pro publican texto e imagen, no vídeo."
   - q: "¿Se pueden hacer vídeos de recetas con IA gratis?"
-    a: "Sí, con herramientas gratuitas o versiones de prueba de editores de vídeo con IA puedes montar un vídeo de receta sin pagar, aunque las versiones de prueba suelen dejar marca de agua. AI Chef Pro no tiene plan gratuito: sus planes empiezan en 10 €/mes. En aichef.pro sí tienes herramientas gratuitas sin registro, como el generador de textos de carta. Si el presupuesto es cero, empieza por un editor gratuito y escribe tú la receta y el guion."
+    a: "Sí, con herramientas gratuitas o versiones de prueba de editores de vídeo con IA puedes montar un vídeo de receta sin pagar, aunque las versiones de prueba suelen dejar marca de agua. AI Chef Pro no tiene plan gratuito: sus planes empiezan en 25 €/mes. En aichef.pro sí tienes herramientas gratuitas sin registro, como el generador de textos de carta. Si el presupuesto es cero, empieza por un editor gratuito y escribe tú la receta y el guion."
 ---
 
 Se hace en cinco pasos: la IA escribe la receta y el guion por planos, tú grabas el plato real con el móvil, un editor de vídeo con IA se encarga de los cortes y los subtítulos, pones música o voz, y al final publicas con copy y calendario. La IA no cocina ni graba por ti: te quita el trabajo de mesa para que dediques el tiempo a lo que de verdad se nota en cámara, que es que el plato salga como sale de tu cocina.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de AI Chef Pro la receta, el guion por planos y el copy de tus vídeos. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/marketing-restaurante-ia?utm_source=blog&amp;utm_medium=cta&amp;utm_content=como-hacer-videos-de-recetas-con-ia">Ver marketing para restaurantes con IA</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de AI Chef Pro la receta, el guion por planos y el copy de tus vídeos. Planes desde 25 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/marketing-restaurante-ia?utm_source=blog&amp;utm_medium=cta&amp;utm_content=como-hacer-videos-de-recetas-con-ia">Ver marketing para restaurantes con IA</a></p></aside>
 
 ## Qué Hace la IA en un Vídeo de Receta (y Qué No)
 
@@ -87,7 +87,7 @@ No hace falta complicarse con medidas intermedias. Graba en el formato de la red
 
 La receta y el guion salen de AI Chef Pro; el montaje, los subtítulos y la voz, de un editor de vídeo con IA; la programación en varias redes, de Clautia o de la publicación directa desde los agentes. Cada pieza tiene su sitio y conviene no mezclarlas.
 
-Para la receta y el guion: AI Chef Pro. Cocina Creativa y los recetarios por país escriben la receta con cantidades y pasos; InstaFlow AI Pro es el agente de contenido para Instagram. Los planes empiezan en 10 €/mes y no hay plan gratuito. Si solo quieres probar el terreno, en aichef.pro tienes [herramientas gratuitas](https://aichef.pro/herramientas-gratuitas) sin registro, como el generador de textos de carta.
+Para la receta y el guion: AI Chef Pro. Cocina Creativa y los recetarios por país escriben la receta con cantidades y pasos; InstaFlow AI Pro es el agente de contenido para Instagram. Los planes empiezan en 25 €/mes y no hay plan gratuito. Si solo quieres probar el terreno, en aichef.pro tienes [herramientas gratuitas](https://aichef.pro/herramientas-gratuitas) sin registro, como el generador de textos de carta.
 
 Para el montaje, los subtítulos y la voz: un editor de vídeo con IA del móvil o del ordenador. Muchos hacen cortes, subtítulos automáticos y voz sintética. No necesitas un estudio: con el móvil y un editor decente vas sobrado para un reel de receta.
 

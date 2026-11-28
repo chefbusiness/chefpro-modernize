@@ -31,7 +31,7 @@ faq:
 
 Una ficha técnica de cocina es el documento que describe un plato para que salga igual lo cocine quien lo cocine. Lleva los ingredientes con sus pesos, la elaboración paso a paso, los alérgenos, la conservación, el emplatado y el coste por ración. No es un recetario para colgar en la pared: es la herramienta con la que una cocina deja de depender de la memoria de una persona.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Saca el borrador de tus fichas técnicas con los agentes de IA de AI Chef Pro: ingredientes con pesos, pasos, alérgenos y coste con tus precios. Planes desde 10 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/ficha-tecnica-cocina-ia?utm_source=web&amp;utm_medium=blog&amp;utm_content=ficha-tecnica-de-cocina">Ver la ficha técnica con IA</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Saca el borrador de tus fichas técnicas con los agentes de IA de AI Chef Pro: ingredientes con pesos, pasos, alérgenos y coste con tus precios. Planes desde 25 €/mes.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/ficha-tecnica-cocina-ia?utm_source=web&amp;utm_medium=blog&amp;utm_content=ficha-tecnica-de-cocina">Ver la ficha técnica con IA</a></p></aside>
 
 ## Qué es una ficha técnica de cocina
 

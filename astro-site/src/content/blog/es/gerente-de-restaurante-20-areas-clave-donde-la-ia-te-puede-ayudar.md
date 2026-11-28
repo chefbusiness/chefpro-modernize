@@ -18,7 +18,7 @@ faq:
   - q: "¿Qué KPIs debe vigilar cada día un gerente?"
     a: "Los esenciales son el food cost (28-32 % de ventas), el coste de personal (30-35 %) y el ticket medio. Además debe seguir el coste de bebida, el margen de contribución por plato y el prime cost, preferiblemente con un cuadro de mando diario que le muestre tendencias."
   - q: "¿Cuánto cuesta empezar a usar IA en la gestión del restaurante?"
-    a: "En AI Chef Pro hay un plan de entrada de 10 € al mes con 10.000 créditos, sin permanencia, que permite probar los agentes sin riesgo. Luego se puede escalar a Premium Pro por 25 €/mes (85.000 créditos) o a planes superiores según la intensidad de uso. El retorno suele verse en horas ahorradas cada semana."
+    a: "En AI Chef Pro el plan de entrada es Premium Pro: 25 € al mes con 85.000 créditos, sin permanencia, que permite probar los agentes sin riesgo. Luego se puede escalar a Premium Plus por 50 €/mes (175.000 créditos) o a Premium Max según la intensidad de uso. El retorno suele verse en horas ahorradas cada semana."
   - q: "¿Por dónde debería empezar un gerente que nunca ha usado IA?"
     a: "Lo más práctico es comenzar por la tarea que más tiempo le robe: escandallos, cuadrantes o gestión de reseñas. Con un agente especializado en esa área, el gerente ve resultados inmediatos. Luego puede ir incorporando otros agentes sin sentirse abrumado."
 ---
@@ -164,8 +164,7 @@ Por qué importa cada uno: un food cost desbocado se come tu beneficio; un labor
 En AI Chef Pro no hemos creado un chatbot genérico. Hemos diseñado más de 70 agentes de IA culinarios, en 7 idiomas y con acento español nativo, que entienden cómo funciona un restaurante real. Cada agente está especializado en una de las 20 áreas que hemos visto. El gerente no tiene que aprender a ser un analista de datos: solo formula una petición clara y la IA le devuelve un escandallo, un cuadrante, un plan de marketing o una respuesta a una reseña.
 
 Planes disponibles:
-- **Plan de entrada**: 10 € al mes con 10.000 créditos, sin permanencia.
-- **Premium Pro**: 25 €/mes (85.000 créditos).
+- **Premium Pro** (plan de entrada): 25 €/mes (85.000 créditos), sin permanencia.
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).
 - **Max Anual**: 950 €/año.

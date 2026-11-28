@@ -21,7 +21,7 @@ faq:
   - q: "Come posso richiedere il miglioramento di un agente?"
     a: "Scrivici a info@aichef.pro oppure rispondi alla newsletter indicando il nome dell'agente e cosa vorresti migliorare. Leggiamo tutte le risposte e le modifiche di ogni settimana nascono da lì."
   - q: "AI Chef Pro ha un piano gratuito?"
-    a: "No. Si accede a partire da 10 € al mese con il piano Membro, che include 10.000 crediti e non prevede vincoli di durata. Con questo piano hai già accesso ai 59 agenti e alla sezione dei modelli."
+    a: "No. Si accede a partire da 25 € al mese con il piano Premium Pro, che include 85.000 crediti e non prevede vincoli di durata. Con questo piano hai già accesso ai 59 agenti e alla sezione dei modelli."
 ---
 
 Qualche giorno fa, tra il 25 agosto e il 1° settembre 2026, gli agenti di AI Chef Pro hanno superato il milione di richieste risolte da quando abbiamo aperto la piattaforma. Non è un numero di marketing: è un milione di volte in cui qualcuno, da una cucina, una pasticceria, un forno o un tavolo di lavoro, ha fatto una domanda a un agente e ha ricevuto una risposta utile. Una ricetta, un food cost, un menu, una scheda tecnica, un business plan o un dubbio di servizio. Un milione di momenti in cui l'IA ha fatto il lavoro di base perché il professionista potesse dedicarsi a ciò che conta davvero.
@@ -100,4 +100,4 @@ Il milione di richieste è un punto di partenza, non di arrivo. Ogni settimana c
 
 <figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-agentes-afinados.jpg" alt="Mani di un pasticcere che tempera il cioccolato su marmo in laboratorio" loading="lazy" /></figure>
 
-Se non sei ancora entrato nella piattaforma, puoi farlo da [itapp.aichef.pro](https://itapp.aichef.pro/). Il piano Member parte da 10 € al mese, senza vincoli, con 10.000 crediti per iniziare a lavorare con i 59 agenti specializzati in Italiano. Tutte le informazioni sui piani sono disponibili su [aichef.pro/prezzi](https://aichef.pro/it/prezzi). Nessun impegno, nessuna clausola nascosta.
+Se non sei ancora entrato nella piattaforma, puoi farlo da [itapp.aichef.pro](https://itapp.aichef.pro/). Il piano Premium Pro parte da 25 € al mese, senza vincoli, con 85.000 crediti per iniziare a lavorare con i 59 agenti specializzati in Italiano. Tutte le informazioni sui piani sono disponibili su [aichef.pro/prezzi](https://aichef.pro/it/prezzi). Nessun impegno, nessuna clausola nascosta.

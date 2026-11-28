@@ -14,7 +14,7 @@ imageAlt: "Busy ghost kitchen with multiple cooking stations and delivery order 
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Launch Your Ghost Kitchen with AI-Powered Tools</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro offers 75+ tools for menu development, <a href="https://aichef.pro/en/blog/ai-recipe-scaling-guide">recipe scaling</a>, <a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">food cost</a> analysis, and more — perfect for ghost kitchen operators. Start today.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro from €25 →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post6-packaging-station.png" alt="Professional cook packaging food orders at ghost kitchen packing station" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Efficient packaging workflows are critical to ghost kitchen success.</figcaption></figure>
 <h2>What Is a Ghost Kitchen? (And What It Isn&#8217;t)</h2>
@@ -202,7 +202,7 @@ imageAlt: "Busy ghost kitchen with multiple cooking stations and delivery order 
 <li><strong>Menu scaling</strong>: Tools to adapt recipes as you add brands or locations</li>
 </ul>
 <p>For ghost kitchens running multiple virtual brands from a single kitchen, AI Chef Pro&#8217;s ability to manage cross-brand ingredient overlap becomes particularly valuable—maximizing purchasing efficiency while maintaining distinct brand identities.</p>
-<p>Their member tier provides essential recipe management for operators testing the model, with paid plans starting at EUR 25 monthly for full optimization capabilities.</p>
+<p>Their entry plan, Premium Pro at EUR 25 monthly with 85,000 credits, gives operators testing the model full access to recipe management and optimization capabilities.</p>
 <h2>Running Multiple Brands from One Kitchen</h2>
 <p>The ghost kitchen model&#8217;s most compelling advantage is the ability to run multiple restaurant concepts from a single kitchen facility. This virtual brand strategy multiplies revenue without proportional cost increases.</p>
 <h3>The Virtual Brand Model Explained</h3>
@@ -269,7 +269,7 @@ imageAlt: "Busy ghost kitchen with multiple cooking stations and delivery order 
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post6-multi-brand.png" alt="Commercial kitchen operating multiple virtual restaurant brands from one space" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">One kitchen, multiple brands: the virtual brand model multiplies revenue without multiplying costs.</figcaption></figure>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Running Multiple Virtual Brands?</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro helps you develop unique menus for each brand, optimize food costs across concepts, and scale recipes effortlessly. 75+ AI tools from €10/month.</p>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro helps you develop unique menus for each brand, optimize food costs across concepts, and scale recipes effortlessly. 75+ AI tools from €25/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Explore All Tools →</a>
 </div>
 <p>Once the brands are live, the hard part is running them the same way on every shift. The <a href="https://aichef.pro/en/digital-products/ghost-kitchen-checklist-templates">Ghost Kitchen Checklists Kit Pro</a> turns that into Excel checklists with 331 tasks already written: opening and closing, with the brands going live only after the tablets, printers and prep times are checked; hot food held at 135 °F or above until it is packed and cold food at 41 °F or below, bagged apart; raw fish for poke and sushi handled under the FDA Food Code; packing by brand with tamper-evident seals; a weekly review of prep times, ratings and food cost by brand; and peak checklists for the Friday rush, game night and a new brand launch.</p><h2>Ghost Kitchen Profitability — Real Numbers</h2>

@@ -12,11 +12,11 @@ export default function TryPlatformBanner() {
 
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 leading-tight">
             Prueba AI Chef Pro{' '}
-            <span className="text-[#FFD700]">desde 10 €</span>
+            <span className="text-[#FFD700]">desde 25 €</span>
           </h2>
 
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-4">
-            10.000 créditos al mes con el plan Miembro. Sin permanencia.
+            85.000 créditos al mes con Premium Pro. Sin permanencia.
             La suite de IA más completa para hostelería, en 7 idiomas.
           </p>
 
@@ -36,7 +36,7 @@ export default function TryPlatformBanner() {
             href="https://aichef.pro/precios?utm_source=producto&utm_medium=banner&utm_content=try-platform"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg hover:bg-[#FFD700] hover:text-black transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            Empieza desde 10 €/mes
+            Empieza desde 25 €/mes
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>

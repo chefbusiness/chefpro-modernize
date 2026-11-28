@@ -199,13 +199,12 @@ Esa es la filosofía con la que está construido [AI Chef Pro](https://aichef.pr
 
 Aquí van los números exactos, sin letra pequeña:
 
-- **Plan Miembro**: 10 € al mes con 10.000 créditos.
 - **Premium Pro**: 25 €/mes (85.000 créditos).
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).
 - **Max Anual**: 950 €/año.
 
-Con el plan AI Chef Miembro puedes generar el borrador de tu plan APPCC y probar las herramientas. Para un uso profesional continuo, los planes de pago te dan el margen de créditos que necesitas para mantener documentación, registros y fichas actualizados.
+Con el plan AI Chef Premium Pro puedes generar el borrador de tu plan APPCC y probar las herramientas. Para un uso más intensivo, los planes superiores te dan el margen de créditos que necesitas para mantener documentación, registros y fichas actualizados.
 
 ## Cómo llegar preparado a una inspección de Sanidad
 

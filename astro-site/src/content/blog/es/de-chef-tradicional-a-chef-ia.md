@@ -21,7 +21,7 @@ wpId: 1582
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 30px 0; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
 <h3 style="color: white; margin-bottom: 15px; font-size: 24px;">🚀 Transforma tu Cocina con AI Chef Pro</h3>
 <p style="color: white; margin-bottom: 20px; font-size: 16px;">Únete a más de 10,000 chefs profesionales que ya utilizan la suite más completa de herramientas IA para gastronomía</p>
-<a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" data-lasso-id="5358">AI Chef Miembro 10 €/mes</a>
+<a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" data-lasso-id="5358">AI Chef Premium Pro 25 €/mes</a>
 </div>
 
 
@@ -194,7 +194,7 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">Durante esta fase, recomiendo comenzar con el plan AI Chef Miembro de <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" data-lasso-id="5362">AI Chef Pro</a> (10 € al mes, 10.000 créditos; los planes mensuales no tienen permanencia) para familiarizarse con las capacidades básicas.</p>
+<p class="wp-block-paragraph">Durante esta fase, recomiendo comenzar con el plan Premium Pro de <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" data-lasso-id="5362">AI Chef Pro</a> (25 € al mes, 85.000 créditos; los planes mensuales no tienen permanencia) para familiarizarse con las capacidades básicas.</p>
 
 
 
@@ -887,7 +887,7 @@ wpId: 1582
 
 
 
-<li><strong>Prueba gratuita:</strong> Todas las plataformas principales ofrecen períodos de prueba</li>
+<li><strong>Sin permanencia:</strong> Elige planes mensuales que puedas cancelar si no te convencen</li>
 
 
 
@@ -895,7 +895,7 @@ wpId: 1582
 
 
 
-<li><strong>Inversión mínima inicial:</strong> Puedes comenzar con planes básicos desde 10€/mes</li>
+<li><strong>Inversión mínima inicial:</strong> Puedes comenzar con planes desde 25€/mes</li>
 </ul>
 
 
@@ -916,7 +916,7 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">Tu primer paso puede ser tan simple como explorar las capacidades de <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" data-lasso-id="5372">AI Chef Pro</a> con el plan AI Chef Miembro. Esta plataforma te permitirá experimentar con herramientas profesionales sin compromiso, evaluando directamente su impacto en tu operativa diaria.</p>
+<p class="wp-block-paragraph">Tu primer paso puede ser tan simple como explorar las capacidades de <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" data-lasso-id="5372">AI Chef Pro</a> con el plan Premium Pro. Esta plataforma te permitirá experimentar con herramientas profesionales sin compromiso, evaluando directamente su impacto en tu operativa diaria.</p>
 
 
 
@@ -925,7 +925,7 @@ wpId: 1582
 
 
 <ul class="wp-block-list">
-<li><strong>Esta semana:</strong> Regístrate para una cuenta AI Chef Miembro y explora una herramienta específica</li>
+<li><strong>Esta semana:</strong> Activa el plan AI Chef Premium Pro y explora una herramienta específica</li>
 
 
 
@@ -958,7 +958,7 @@ wpId: 1582
 <h3 style="margin-bottom: 20px; font-size: 26px;">🚀 Comienza Tu Transformación Hoy</h3>
 <p style="margin-bottom: 25px; font-size: 18px; line-height: 1.6;">Únete a la nueva generación de chefs que están redefiniendo la gastronomía con inteligencia artificial</p>
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-<a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" style="display: inline-block; background: white; color: #667eea; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 16px;" data-lasso-id="5373">AI Chef Miembro</a>
+<a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" style="display: inline-block; background: white; color: #667eea; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 16px;" data-lasso-id="5373">Empieza desde 25 €/mes</a>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=de-chef-tradicional-a-chef-ia" style="display: inline-block; background: rgba(255,255,255,0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 16px; border: 2px solid white;" data-lasso-id="5374">Ver Planes</a>
 </div>
 </div>

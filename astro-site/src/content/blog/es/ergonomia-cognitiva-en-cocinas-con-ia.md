@@ -534,8 +534,8 @@ wpId: 2135
 
 <div style="background: linear-gradient(135deg, #2d3436 0%, #000000 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; border: 2px solid #f4d03f; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <h3 style="color: #f4d03f; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">🍳 +80 Agentes de IA para Tu Cocina</h3>
-<p style="color: #ffffff; font-size: 16px; margin: 0 0 10px 0; line-height: 1.6;">Desde <strong>10 €/mes</strong> accede a toda la suite de AI Chef Pro: recetarios de más de 20 cocinas del mundo, Food Pairing AI, Mermas GenCal, ID Alérgenos, Mental Coach y mucho más.</p>
-<p style="color: #cccccc; font-size: 14px; margin: 0 0 20px 0;">Plan de entrada AI Chef Miembro: 10.000 créditos al mes, sin permanencia.</p>
+<p style="color: #ffffff; font-size: 16px; margin: 0 0 10px 0; line-height: 1.6;">Desde <strong>25 €/mes</strong> accede a toda la suite de AI Chef Pro: recetarios de más de 20 cocinas del mundo, Food Pairing AI, Mermas GenCal, ID Alérgenos, Mental Coach y mucho más.</p>
+<p style="color: #cccccc; font-size: 14px; margin: 0 0 20px 0;">Plan de entrada AI Chef Premium Pro: 85.000 créditos al mes, sin permanencia.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #000000; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -897,7 +897,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro</td><td>10 €/mes</td><td>Todas las herramientas con 10.000 créditos al mes</td><td>Estudiantes, chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium Pro</td><td>25 €/mes</td><td>Todas las herramientas con 85.000 créditos al mes</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Todas las herramientas con 175.000 créditos al mes</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Todas las herramientas con créditos ilimitados</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Premium Pro</td><td>25 €/mes</td><td>Todas las herramientas con 85.000 créditos al mes</td><td>Chefs individuales y restaurantes hasta 60 pax</td></tr><tr><td>Premium Plus</td><td>50 €/mes</td><td>Todas las herramientas con 175.000 créditos al mes</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Max</td><td>95 €/mes o 950 €/año</td><td>Todas las herramientas con créditos ilimitados</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
 
 
 
@@ -947,7 +947,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">No necesariamente. Aunque la tecnología avanzada potencia significativamente los resultados, muchas mejoras pueden implementarse con inversión mínima: reorganización física del espacio, estandarización de procedimientos, mejora de la comunicación verbal, sistemas visuales simples. Herramientas como AI Chef Pro ofrecen planes desde 10 €/mes que proporcionan acceso a funcionalidades de alto impacto cognitivo.</p>
+<p class="wp-block-paragraph">No necesariamente. Aunque la tecnología avanzada potencia significativamente los resultados, muchas mejoras pueden implementarse con inversión mínima: reorganización física del espacio, estandarización de procedimientos, mejora de la comunicación verbal, sistemas visuales simples. Herramientas como AI Chef Pro ofrecen planes desde 25 €/mes que proporcionan acceso a funcionalidades de alto impacto cognitivo.</p>
 
 
 
@@ -996,7 +996,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">Te invitamos a dar el primer paso hoy. Explora las herramientas de <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank">AI Chef Pro</a>, comienza con nuestro plan AI Chef Miembro y descubre cómo la inteligencia artificial puede transformar no solo tu cocina, sino también el bienestar de todos los que trabajan en ella.</p>
+<p class="wp-block-paragraph">Te invitamos a dar el primer paso hoy. Explora las herramientas de <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank">AI Chef Pro</a>, comienza con nuestro plan AI Chef Premium Pro y descubre cómo la inteligencia artificial puede transformar no solo tu cocina, sino también el bienestar de todos los que trabajan en ella.</p>
 
 
 
@@ -1008,7 +1008,7 @@ wpId: 2135
 <h3 style="color: #f4d03f; font-size: 28px; margin: 0 0 15px 0; font-weight: 700;">🚀 Transforma Tu Cocina con Inteligencia Artificial</h3>
 <p style="color: #ffffff; font-size: 17px; margin: 0 0 10px 0; line-height: 1.6;">Empieza con <strong>AI Chef Pro</strong> y accede a más de 80 agentes diseñados para reducir tu carga mental y potenciar tu creatividad culinaria.</p>
 <p style="color: #cccccc; font-size: 15px; margin: 0 0 25px 0;">Sin permanencia • Más de 20 recetarios del mundo</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 16px 45px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px;">Empieza desde 10 €/mes</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 16px 45px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px;">Empieza desde 25 €/mes</a>
 </div>
 
 

@@ -24,12 +24,12 @@ faq:
   - q: "Does AI replace the baker?"
     a: "No. It replaces some of the paperwork: the spreadsheet rebuild, the costing sheet, the blank page before a new formula, the allergen list. Judging fermentation, reading the dough, loading the oven and deciding what to bake tomorrow stay with you. The agent drafts; the baker decides and signs off."
   - q: "How much does AI Chef Pro cost for a bakery?"
-    a: "AI Chef Member is €10/month with 10,000 credits, and Premium plans start at €25/month. All plans are billed in euros, with no free plan and no free trial. The free tools on aichef.pro, such as the food cost calculator and the allergen detector, cost nothing and need no sign-up."
+    a: "Plans start at €25/month with AI Chef Premium Pro, which includes 85,000 credits a month. All plans are billed in euros, with no free plan and no free trial. The free tools on aichef.pro, such as the food cost calculator and the allergen detector, cost nothing and need no sign-up."
 ---
 
 A bakery uses AI as a drafting partner, not a decision-maker. You hand an agent what you already know — your formula, your flour prices, last week's sales, the room temperature — and it comes back with a formula sheet, a cost per loaf, a par-level draft, a waste plan or an allergen list you can check, correct and put to work. The oven, the levain and the final call stay with you.
 
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">AI agents for bakers</p><p class="mt-2 text-foreground">Formula sheets, cost per loaf, par levels, waste and allergens, drafted by the agents and signed off by the baker. AI Chef Member is €10/month for 10,000 credits.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/artisan-baker?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-for-bakeries">See AI for artisan bakers</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">AI agents for bakers</p><p class="mt-2 text-foreground">Formula sheets, cost per loaf, par levels, waste and allergens, drafted by the agents and signed off by the baker. AI Chef Premium Pro is €25/month for 85,000 credits.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/artisan-baker?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-for-bakeries">See AI for artisan bakers</a></p></aside>
 
 ## 1. Formulas and fermentation: the baker's judgment, with a faster draft
 
@@ -122,4 +122,4 @@ There are [ready-made Creative Bakery prompts](https://aichef.pro/en/blog/prompt
 
 ## AI Chef Pro plans
 
-AI Chef Pro is a suite of 75+ AI agents for hospitality, including the bakery agents above. To see how they fit your operation, start with [AI for artisan bakers](https://aichef.pro/en/use-cases/role/artisan-baker) or, for a pastry shop or production kitchen, [AI for pastry shops](https://aichef.pro/en/use-cases/concept/bakery-pastry-shop). AI Chef Member is €10/month with 10,000 credits; Premium plans start at €25/month. All plans are billed in euros, and there is no free plan and no free trial. The free tools on aichef.pro — the food cost calculator and the allergen detector — need no sign-up.
+AI Chef Pro is a suite of 75+ AI agents for hospitality, including the bakery agents above. To see how they fit your operation, start with [AI for artisan bakers](https://aichef.pro/en/use-cases/role/artisan-baker) or, for a pastry shop or production kitchen, [AI for pastry shops](https://aichef.pro/en/use-cases/concept/bakery-pastry-shop). Plans start at €25/month with AI Chef Premium Pro, which includes 85,000 credits a month. All plans are billed in euros, and there is no free plan and no free trial. The free tools on aichef.pro — the food cost calculator and the allergen detector — need no sign-up.

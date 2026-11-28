@@ -333,6 +333,18 @@ def check():
 
 
 def main():
+    # ⛔ OBSOLETO desde el 27-nov-2026 (retirada del plan AI Chef Miembro, 10 €). Este script se
+    # escribió con el plan `member` vivo: DECISIONES_JOHN fuerza «desde 10 €» en el microcopy,
+    # OVERRIDES trae los CTA de Miembro, rebaja 75+ → 50+ y lee pricing.plans.member, que ya no
+    # existe. Volver a fundir REINTRODUCIRÍA el plan retirado en los 7 idiomas. Los locales
+    # (src/i18n/locales/*.json) son ahora la fuente de verdad; keak-copy.*.json es solo su espejo.
+    # Antes de reutilizarlo hay que reescribir esas tres tablas. Para forzarlo a sabiendas:
+    #   KEAK_MERGE_OBSOLETO_OK=1 python3 merge-keak-copy.py …
+    import os
+    if os.environ.get('KEAK_MERGE_OBSOLETO_OK') != '1':
+        print('⛔ merge-keak-copy.py está OBSOLETO desde la retirada del plan Miembro (27-nov-2026): '
+              'reintroduciría «desde 10 €» y el plan member. Lee el comentario de main().')
+        sys.exit(2)
     ap = argparse.ArgumentParser()
     ap.add_argument('--lang', choices=LANGS)
     ap.add_argument('--todos', action='store_true')

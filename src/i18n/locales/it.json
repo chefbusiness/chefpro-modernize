@@ -72,7 +72,7 @@
     "v2_stat_cookbooks": "ricettari regionali",
     "v2_stat_roles": "ruoli di cucina coperti",
     "v2_cta_pricing": "Scopri i piani e i prezzi",
-    "v2_microcopy": "Piani da 10 €/mese · 16 strumenti collegabili (Gmail, Sheets, Outlook…)",
+    "v2_microcopy": "Piani da 25 €/mese · 16 strumenti collegabili (Gmail, Sheets, Outlook…)",
     "v2_business_types": [
       "Ristorante",
       "Catering",
@@ -1014,37 +1014,12 @@
     "enterprise_question": "Hai bisogno di un piano enterprise?",
     "contact_us": "Contattaci per una soluzione personalizzata",
     "plans": {
-      "member": {
-        "name": "AI Chef Membro",
-        "price": "10€",
-        "uses": "10.000/mese",
-        "description": "Ideale per aiuto cuochi, cuochi e capostazione",
-        "features": {
-          "0": "75+ agenti IA inclusi",
-          "1": "10.000 crediti mensili",
-          "2": "Ricettari mondiali",
-          "3": "Supporto via email"
-        },
-        "v2_short": "Membro",
-        "v2_eyebrow": "Cuochi e chef di partita",
-        "v2_description": "Ideale per aiuto cuochi, cuochi e chef di partita che iniziano a usare l'AI.",
-        "v2_credits": "10.000 crediti/mese",
-        "v2_hint": "≈ un mese di ricette, food cost e menu per una partita",
-        "v2_cta": "Inizia con Membro",
-        "v2_features": [
-          "75+ agenti IA inclusi",
-          "10.000 crediti mensili",
-          "27 ricettari internazionali",
-          "Supporto via email"
-        ],
-        "period": "/mese"
-      },
       "premium_pro": {
         "name": "AI Chef Premium Pro",
         "price": "25€",
         "period": "/mese",
         "uses": "85.000/mese",
-        "description": "Per Chef di Cucina, Chef Esecutivi e Manager di Ristoranti",
+        "description": "Per cuochi, chef di cucina, chef esecutivi e manager di ristorante",
         "features": {
           "0": "75+ agenti IA inclusi",
           "1": "85.000 crediti mensili",
@@ -1053,8 +1028,8 @@
           "4": "Supporto prioritario"
         },
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Chef de cuisine e responsabili",
-        "v2_description": "Per chef de cuisine, executive chef e responsabili di sala che gestiscono il servizio ogni giorno.",
+        "v2_eyebrow": "Cuochi, chef di cucina e responsabili",
+        "v2_description": "Per cuochi, chef di cucina, executive chef e responsabili di ristorante che gestiscono il servizio ogni giorno.",
         "v2_credits": "85.000 crediti/mese",
         "v2_hint": "≈ food cost completo del menu + R&D ricette settimanale",
         "v2_cta": "Inizia con Premium Pro"
@@ -1125,12 +1100,11 @@
       }
     },
     "v2_title": "Trova il tuo piano in 10 secondi",
-    "v2_description": "Abbina il tuo ruolo al piano giusto. I crediti crescono in base a quanto automatizzi la tua cucina e il tuo locale — dall'aiuto sulle ricette di una singola postazione alla gestione di più ristoranti.",
-    "v2_role_member": "Cuoco o assistente",
-    "v2_role_premium_pro": "Chef de cuisine",
+    "v2_description": "Abbina il tuo ruolo al piano giusto. I crediti crescono in base a quanto automatizzi la tua cucina e il tuo locale — dal lavoro quotidiano ai fornelli alla gestione di più ristoranti.",
+    "v2_role_premium_pro": "Cuoco o chef di cucina",
     "v2_role_premium_plus": "Titolare o gruppo",
     "v2_role_premium_max": "Utente avanzato",
-    "v2_divider": "Per utenti avanzati e impegno annuale",
+    "v2_divider": "Impegno annuale",
     "v2_enterprise_question": "Gestisci un gruppo o hai bisogno di un volume personalizzato?",
     "v2_enterprise_link": "Contattaci per un piano enterprise"
   },
@@ -1200,8 +1174,8 @@
     "a1": "AI Chef Pro include 75+ agenti IA specializzati in gastronomia, dalla creatività culinaria agli strumenti business. Avrai accesso a ricettari di 27 cucine del mondo, generatori di ricette con IA, food pairing scientifico, strumenti di gestione e molto altro.",
     "q2": "Posso usare AI Chef Pro se sono principiante?",
     "a2": "Assolutamente! AI Chef Pro è progettato per professionisti di tutti i livelli. I nostri strumenti includono spiegazioni dettagliate, tecniche passo dopo passo e coaching che ti aiuteranno a sviluppare le tue competenze gastronomiche.",
-    "q3": "Come funziona il piano AI Chef Membro?",
-    "a3": "Il piano AI Chef Membro costa 10 € al mese e include 10.000 crediti mensili con accesso ai 75+ agenti IA. Quando ti servono più crediti, puoi passare ad AI Chef Premium Pro (25 €/mese, 85.000 crediti) o superiore. I piani mensili sono senza vincoli: cambi piano o annulli quando vuoi.",
+    "q3": "Qual è il piano d'ingresso di AI Chef Pro?",
+    "a3": "Il piano d'ingresso è AI Chef Premium Pro: costa 25 € al mese e include 85.000 crediti mensili con accesso ai 75+ agenti IA. Quando ti servono più crediti, puoi passare ad AI Chef Premium Plus (50 €/mese, 175.000 crediti) o a Premium Max (95 €/mese, crediti illimitati). I piani mensili sono senza vincoli: cambi piano o annulli quando vuoi.",
     "q4": "Le ricette si adattano a diverse dimensioni di porzione?",
     "a4": "Sì, tutti i nostri strumenti includono calcolo automatico delle porzioni. Puoi adattare qualsiasi ricetta per 1 persona o per 1000 commensali, e il nostro sistema calcolerà automaticamente le quantità esatte di ogni ingrediente.",
     "q5": "Include supporto per restrizioni alimentari?",
@@ -1384,14 +1358,14 @@
   },
   "seo": {
     "title": "Agenti IA per chef e ristoranti: 75+ | AI Chef Pro",
-    "description": "Agenti IA per chef e ristoranti: 75+ specialisti di food cost, ricette, menu e marketing. Inizia oggi da 10 € al mese. Disdici quando vuoi, piano mensile senza vincoli.",
+    "description": "Agenti IA per chef e ristoranti: 75+ specialisti di food cost, ricette, menu e marketing. Da 25 € al mese, piano mensile senza vincoli: disdici quando vuoi.",
     "keywords": "agenti ia per chef, agenti ia ristorante, ia ristorazione, food cost ia, ai chef pro",
     "og_image_alt": "Agenti IA per chef e ristoranti: 75+ | AI Chef Pro"
   },
   "pages": {
     "index": {
       "seo_title": "Agenti IA per chef e ristoranti: 75+ | AI Chef Pro",
-      "seo_description": "Agenti IA per chef e ristoranti: 75+ specialisti di food cost, ricette, menu e marketing. Inizia oggi da 10 € al mese. Disdici quando vuoi, piano mensile senza vincoli.",
+      "seo_description": "Agenti IA per chef e ristoranti: 75+ specialisti di food cost, ricette, menu e marketing. Da 25 € al mese, piano mensile senza vincoli: disdici quando vuoi.",
       "seo_keywords": "agenti ia per chef, agenti ia ristorante, ia ristorazione, food cost ia, ai chef pro"
     },
     "mentoria_online": {
@@ -1465,7 +1439,7 @@
     },
     "services": {
       "seo_title": "Servizi di agenti IA per la ristorazione | AI Chef Pro",
-      "seo_description": "Servizi di agenti IA per la ristorazione: mentoring, formazione in presenza e una suite di 75+. Guarda cosa include e inizia da 10 € al mese.",
+      "seo_description": "Servizi di agenti IA per la ristorazione: mentoring, formazione in presenza e una suite di 75+. Guarda cosa include e inizia da 25 € al mese.",
       "seo_keywords": "servizi agenti ia, agenti ia ristorazione, mentoring chef, formazione ia, ai chef pro"
     }
   },
@@ -1496,7 +1470,7 @@
       "tagline": "75+ agenti di IA in 7 lingue per la cucina professionale.",
       "cta_primary": "Inizia a risparmiare",
       "cta_secondary": "Vedi piani e prezzi",
-      "no_card": "Da 10 €/mese · Piani mensili senza vincoli · Accesso immediato"
+      "no_card": "Da 25 €/mese · Piani mensili senza vincoli · Accesso immediato"
     },
     "results": [
       {
@@ -1612,7 +1586,7 @@
     },
     "pricing_section": {
       "title": "Inizia a ridurre i costi oggi stesso",
-      "subtitle": "Inizia con il piano Membro a 10 € al mese. L'abbonamento si ripaga da solo con ciò che risparmi il primo mese.",
+      "subtitle": "Inizia con il piano Premium Pro a 25 € al mese. Piani mensili senza vincoli.",
       "annual_note": "L'opzione annuale di Premium Max costa 950 € all'anno."
     },
     "faq_section": {
@@ -1633,7 +1607,7 @@
       },
       {
         "question": "Funziona per ristoranti piccoli o solo per grandi gruppi?",
-        "answer": "Funziona per qualsiasi dimensione. Dal ristorante di famiglia con 40 coperti ai gruppi con 20 locali. Il piano Membro a 10 € al mese è ideale per iniziare senza rischi."
+        "answer": "Funziona per qualsiasi dimensione. Dal ristorante di famiglia con 40 coperti ai gruppi con 20 locali. Il piano Premium Pro a 25 € al mese è un piano mensile, senza vincoli."
       }
     ],
     "cta_section": {
@@ -1651,7 +1625,7 @@
   "landingRestaurantes": {
     "seo": {
       "title": "Agenti IA per ristoranti: 75+ specialisti | AI Chef Pro",
-      "description": "Agenti IA per ristoranti: 75+ specialisti di costi, menu, allergeni e marketing. Senza permanenza. Inizia oggi da 10 € al mese e confronta i piani.",
+      "description": "Agenti IA per ristoranti: 75+ specialisti di costi, menu, allergeni e marketing. Senza vincoli. Inizia oggi da 25 € al mese e confronta i piani.",
       "keywords": "agenti ia per ristoranti, agenti ia ristorazione, food cost ia, menu ia, ai chef pro",
       "url_slug": "strumenti-ia-ristorante"
     },
@@ -1778,7 +1752,7 @@
     },
     "pricing_section": {
       "title": "Piani per ogni tipo di attività gastronomica",
-      "subtitle": "Dal piano Membro a 10 € al mese fino ai crediti illimitati per grandi operazioni.",
+      "subtitle": "Dal piano Premium Pro a 25 € al mese fino ai crediti illimitati per grandi operazioni.",
       "annual_note": "Disponibile anche piano annuale AI Chef Premium Max Annuale a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -1799,7 +1773,7 @@
       },
       {
         "question": "Quanto costa usare l'IA per la gestione di un ristorante?",
-        "answer": "Il piano Membro costa 10 € al mese e include 10.000 crediti. Premium Pro costa 25 €/mese e include 85.000 crediti. Premium Max costa 95 €/mese, con crediti illimitati. I piani mensili non hanno un vincolo minimo."
+        "answer": "Il piano Premium Pro costa 25 € al mese e include 85.000 crediti. Premium Plus costa 50 €/mese e include 175.000 crediti. Premium Max costa 95 €/mese, con crediti illimitati. I piani mensili non hanno un vincolo minimo."
       }
     ],
     "cta_section": {
@@ -1949,7 +1923,7 @@
     },
     "pricing_section": {
       "title": "Piani per progettare menu senza limiti",
-      "subtitle": "Dal piano Membro a 10 € al mese fino ai crediti illimitati per grandi operazioni con più menu.",
+      "subtitle": "Dal piano Premium Pro a 25 € al mese fino ai crediti illimitati per grandi operazioni con più menu.",
       "annual_note": "Disponibile anche piano annuale AI Chef Premium Max Annuale a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -2107,7 +2081,7 @@
     },
     "pricing_section": {
       "title": "Piani per automatizzare il marketing gastronomico",
-      "subtitle": "Dal piano Membro a 10 € al mese fino ai crediti illimitati per gruppi con più sedi.",
+      "subtitle": "Dal piano Premium Pro a 25 € al mese fino ai crediti illimitati per gruppi con più sedi.",
       "annual_note": "Disponibile anche piano annuale AI Chef Premium Max Annuale a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -2302,7 +2276,7 @@
     },
     "pricing_section": {
       "title": "Prezzo giusto per l'IA che il tuo ristorante merita",
-      "subtitle": "Da 10 € al mese fino a crediti illimitati per grandi operazioni.",
+      "subtitle": "Da 25 € al mese fino a crediti illimitati per grandi operazioni.",
       "annual_note": "Disponibile anche piano annuale AI Chef Premium Max a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -2348,7 +2322,7 @@
       "tagline": "Risparmia fino a 3 ore al giorno nella gestione della cucina.",
       "cta_primary": "Prova adesso",
       "cta_secondary": "Vedi piani e prezzi",
-      "no_card": "Da 10 €/mese · Piani mensili senza vincoli · Accesso immediato"
+      "no_card": "Da 25 €/mese · Piani mensili senza vincoli · Accesso immediato"
     },
     "results": [
       {
@@ -2497,8 +2471,8 @@
       "role": "Chef Proprietario, Restaurante Méndez, Madrid"
     },
     "pricing_section": {
-      "title": "Software di gestione cucina con IA da 10 €",
-      "subtitle": "Inizia con il piano Membro e scala quando la tua attività lo richiede. I piani mensili sono senza vincoli.",
+      "title": "Software di gestione cucina con IA da 25 €",
+      "subtitle": "Inizia con il piano Premium Pro e scala quando la tua attività lo richiede. I piani mensili sono senza vincoli.",
       "annual_note": "Piano annuale AI Chef Premium Max disponibile a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -2532,18 +2506,18 @@
   "landingRecetas": {
     "seo": {
       "title": "Ricette AI per ristoranti | Agenti IA | AI Chef Pro",
-      "description": "Ricette AI per ristoranti, con agenti IA: schede tecniche, menu di stagione e dosi. Dal piano Membro a 10 €/mese, piano mensile senza vincoli. Non esiste un piano gratuito.",
+      "description": "Ricette AI per ristoranti, con agenti IA: schede tecniche, menu di stagione e dosi. Da 25 €/mese con Premium Pro, senza vincoli. Nessun piano gratuito.",
       "keywords": "ricette ai, ricette ia, agenti ia cucina, migliore ia per ricette, ricette ia ristoranti"
     },
     "breadcrumb": "Ricette con IA per Ristoranti",
     "hero": {
       "badge": "Generatore Professionale di Ricette con IA",
       "h1": "Ricette AI per ristoranti, con agenti IA",
-      "subtitle": "Schede tecniche, allergeni e dosi per la tua cucina. Gli agenti IA partono dal piano Membro a 10 €/mese. Non esiste un piano gratuito.",
+      "subtitle": "Schede tecniche, allergeni e dosi per la tua cucina. Gli agenti IA partono dal piano Premium Pro a 25 €/mese. Non esiste un piano gratuito.",
       "tagline": "Dal concetto al piatto in minuti, non in ore.",
       "cta_primary": "Prova adesso",
       "cta_secondary": "Vedi piani e prezzi",
-      "no_card": "Da 10 €/mese · Piani mensili senza vincoli · Accesso immediato"
+      "no_card": "Da 25 €/mese · Piani mensili senza vincoli · Accesso immediato"
     },
     "results": [
       {
@@ -2691,8 +2665,8 @@
       ]
     },
     "pricing_section": {
-      "title": "Accedi al generatore di ricette con IA da 10 €",
-      "subtitle": "Inizia con il piano Membro e scala quando la tua attività lo richiede. I piani mensili sono senza vincoli.",
+      "title": "Accedi al generatore di ricette con IA da 25 €",
+      "subtitle": "Inizia con il piano Premium Pro e scala quando la tua attività lo richiede. I piani mensili sono senza vincoli.",
       "annual_note": "Piano annuale AI Chef Premium Max disponibile a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -2701,7 +2675,7 @@
     "faq": [
       {
         "question": "Qual è la migliore IA per le ricette?",
-        "answer": "Per un ristorante, la migliore IA per le ricette è quella che consegna scheda tecnica, allergeni e dosi, non solo un testo. AI Chef Pro lo fa con agenti IA. Il piano Membro costa 10 €/mese e include 10.000 crediti. I piani mensili non hanno un vincolo minimo. Non esiste un piano gratuito. Un chatbot gratuito può bastare per una cena a casa."
+        "answer": "Per un ristorante, la migliore IA per le ricette è quella che consegna scheda tecnica, allergeni e dosi, non solo un testo. AI Chef Pro lo fa con agenti IA. Il piano Premium Pro costa 25 €/mese e include 85.000 crediti. I piani mensili non hanno un vincolo minimo. Non esiste un piano gratuito. Un chatbot gratuito può bastare per una cena a casa."
       },
       {
         "question": "L'IA può creare ricette professionali per ristoranti?",
@@ -2741,7 +2715,7 @@
       "tagline": "Smetti di perdere soldi per un food cost non controllato.",
       "cta_primary": "Calcola il mio food cost",
       "cta_secondary": "Vedi piani e prezzi",
-      "no_card": "Da 10 €/mese. I piani mensili non hanno un vincolo minimo"
+      "no_card": "Da 25 €/mese. I piani mensili non hanno un vincolo minimo"
     },
     "results": [
       {
@@ -2877,8 +2851,8 @@
       ]
     },
     "pricing_section": {
-      "title": "Inizia a controllare il tuo food cost da 10 €",
-      "subtitle": "Fai il food cost della carta con il piano Membro a 10 € al mese. I piani mensili non hanno un vincolo minimo.",
+      "title": "Inizia a controllare il tuo food cost da 25 €",
+      "subtitle": "Fai il food cost della carta con il piano Premium Pro a 25 € al mese. I piani mensili non hanno un vincolo minimo.",
       "annual_note": "Piano annuale AI Chef Premium Max disponibile a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
@@ -3084,12 +3058,6 @@
       "subtitle": "Il calcolatore gratuito è solo un campione. Con AI Chef Pro calcoli tutto il tuo menu con controllo degli scarti.",
       "plans": [
         {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "25€/mese",
           "uses": "85.000 crediti/mese",
@@ -3233,12 +3201,6 @@
       "title": "Analisi finanziaria completa con AI Chef Pro",
       "subtitle": "Il simulatore base è gratuito. Con AI Chef Pro ottieni analisi per piatto, proiezioni annuali e alert di scostamento costi.",
       "plans": [
-        {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "25€/mese",
@@ -3483,12 +3445,6 @@
       "title": "Porta la tua digitalizzazione al livello successivo con AI Chef Pro",
       "subtitle": "Il test ti dice dove sei. AI Chef Pro ti dà gli strumenti per andare più lontano.",
       "plans": [
-        {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "25€/mese",
@@ -3854,12 +3810,6 @@
       "subtitle": "Con AI Chef Pro rivedi i 14 allergeni della carta, con validazione finale del cuoco.",
       "plans": [
         {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "25€/mese",
           "uses": "85.000 crediti/mese",
@@ -4017,12 +3967,6 @@
       "title": "Ottimizza il tuo team con AI Chef Pro",
       "subtitle": "Il calcolatore base è gratuito. Con AI Chef Pro ottimizzi turni, costi del personale e produttività della tua brigata.",
       "plans": [
-        {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
         {
           "name": "Premium Pro",
           "price": "25€/mese",
@@ -4253,12 +4197,6 @@
       "note": "Piani mensili senza vincoli",
       "plans": [
         {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "25€/mese",
           "uses": "85.000 crediti/mese",
@@ -4412,12 +4350,6 @@
       "subtitle": "Il generatore gratuito è un punto di partenza. Con AI Chef Pro Premium crei i testi per tutto il tuo menu ottimizzati per SEO locale e conversione.",
       "plans": [
         {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "25€/mese",
           "uses": "85.000 crediti/mese",
@@ -4534,12 +4466,6 @@
       "subtitle": "Il generatore gratuito crea la struttura del menu. Con AI Chef Pro Premium genera ricette complete e schede tecniche per ogni portata.",
       "plans": [
         {
-          "name": "Membro",
-          "price": "10€/mese",
-          "uses": "10.000 crediti/mese",
-          "highlight": false
-        },
-        {
           "name": "Premium Pro",
           "price": "25€/mese",
           "uses": "85.000 crediti/mese",
@@ -4588,8 +4514,7 @@
   },
   "schema": {
     "offers": {
-      "miembro": "Piano di partenza: 10 €/mese con 10.000 crediti mensili.",
-      "premium_pro": "Per Chef di cucina, Chef esecutivi e Manager di ristoranti. 85.000 crediti/mese.",
+      "premium_pro": "Piano d'ingresso per cuochi, chef di cucina, chef esecutivi e manager di ristorante. 85.000 crediti/mese.",
       "premium_plus": "Per imprenditori gastronomici e catene di ristoranti. 175.000 crediti/mese.",
       "premium_max": "Crediti illimitati mensili per professionisti esigenti.",
       "premium_max_anual": "Ideale per Imprenditori Gastronomici, Proprietari di Ristoranti e Dirigenti. Risparmia 2 mesi."

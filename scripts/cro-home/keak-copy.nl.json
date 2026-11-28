@@ -1,28 +1,28 @@
 {
   "hero": {
     "v2_social_prefix": "Vertrouwd door",
-    "v2_social_chefs": "chefs",
-    "v2_social_count": "recepten & oplossingen gegenereerd",
-    "v2_title_prefix": "Verlaag uw ingrediëntenkosten in uw",
-    "v2_title_suffix": "met",
-    "v2_subtitle": "Automatiseer food cost, verspilling, porties en menu's met 75+ AI-agents ontwikkeld voor professionele keukens.",
+    "v2_social_chefs": "professionals",
+    "v2_social_count": "recepten, processen & oplossingen gegenereerd",
+    "v2_title_prefix": "Creëer, beheer en laat uw",
+    "v2_title_suffix": "groeien met",
+    "v2_subtitle": "Automatiseer recepten, foodcost, derving, menu’s en marketing met 75+ AI-agenten voor restaurants en horecabedrijven.",
     "v2_description": "Getraind op de dagelijkse werkprocessen van keukenchefs, patissiers, bakkers en horecaondernemers — niet op generieke restaurantmarketing.",
     "v2_stat_agents": "AI-agents",
     "v2_stat_tools": "bedrijfs- en kostentools",
     "v2_stat_cookbooks": "regionale kookboeken",
     "v2_stat_roles": "keukenrollen gedekt",
     "v2_cta_pricing": "Bekijk abonnementen & prijzen",
-    "v2_microcopy": "Abonnementen vanaf €10/maand · elke week een nieuwe AI-agent toegevoegd"
+    "v2_microcopy": "Abonnementen vanaf €25/maand · 16 koppelbare tools (Gmail, Sheets, Outlook…)"
   },
   "showcase": {
     "v2_business_eyebrow": "Bedrijfstools · 6 keukengerichte agents",
-    "v2_business_title_prefix": "Verlaag uw ingrediëntenkosten tot wel",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "met tools gebouwd voor het passe.",
-    "v2_business_description": "Verspilling, portionering, allergenen, omrekeningen: de dagelijkse berekeningen van een professionele keuken, geautomatiseerd.",
-    "v2_proof_label": "Bewijs",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "gemiddelde verlaging van ingrediëntenkosten dankzij nauwkeurige verspillingsberekeningen",
+    "v2_business_title_prefix": "Houd de kosten van ingrediënten in de hand",
+    "v2_business_title_highlight": "op de passe",
+    "v2_business_title_suffix": "met keukengereedschap.",
+    "v2_business_description": "Verlies, porties, allergenen en omrekeningen: de dagelijkse cijfers in een professionele keuken.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Toepassing",
     "v2_included_prefix": "Alle tools inbegrepen vanaf het",
     "v2_included_suffix": "abonnement en hoger.",
@@ -34,13 +34,13 @@
         "v2_blurb": "Optimaliseer opbrengsten en verminder verspilling in elke mise-en-place, post en service."
       },
       "id_alergenos": {
-        "v2_blurb": "Identificeer allergenen automatisch en voldoe foutloos aan de voedselveiligheidsnormen."
+        "v2_blurb": "Helpt je de 14 allergenen van elk recept te controleren; de uiteindelijke check is aan jou"
       },
       "calcula_pax": {
         "v2_blurb": "Schaal recepten met wiskundige precisie voor elk aantal couverts of evenement."
       },
       "conversor_ing": {
-        "v2_blurb": "Pas recepten direct aan tussen metrische systemen, zonder omrekenfouten."
+        "v2_blurb": "Helpt u eenheden en hoeveelheden van een recept naar een ander maatsysteem om te zetten."
       },
       "mental_coach": {
         "v2_blurb": "Verminder keukendruk en versterk het leiderschap binnen uw brigade."
@@ -52,33 +52,18 @@
   },
   "pricing": {
     "v2_title": "Vind uw abonnement in 10 seconden",
-    "v2_description": "Koppel uw rol aan een niveau. Credits schalen mee met hoeveel van uw keuken en bedrijf u automatiseert — van recepthulp op één post tot een volledige multi-restaurantoperatie.",
-    "v2_role_member": "Kok of assistent",
-    "v2_role_premium_pro": "Keukenchef",
+    "v2_description": "Koppel uw rol aan een niveau. Credits schalen mee met hoeveel van uw keuken en bedrijf u automatiseert — van het dagelijkse keukenwerk tot een volledige multi-restaurantoperatie.",
+    "v2_role_premium_pro": "Kok of keukenchef",
     "v2_role_premium_plus": "Eigenaar of groep",
     "v2_role_premium_max": "Intensieve gebruiker",
-    "v2_divider": "Voor intensieve gebruikers & jaarlijkse commitment",
+    "v2_divider": "Jaarlijkse verbintenis",
     "v2_enterprise_question": "Beheert u een groep of heeft u een aangepast volume nodig?",
     "v2_enterprise_link": "Neem contact op voor een enterprise-abonnement",
     "plans": {
-      "member": {
-        "v2_short": "Member",
-        "v2_eyebrow": "Koks & postchefs",
-        "v2_description": "Ideaal voor keukenassistenten, koks en postchefs die beginnen met AI.",
-        "v2_credits": "10.000 credits/maand",
-        "v2_hint": "≈ 200 recepten of 100 kostenberekeningen",
-        "v2_cta": "Beginnen met Member",
-        "v2_features": [
-          "Alle 75+ AI-tools inbegrepen",
-          "10.000 maandelijkse credits",
-          "27 wereldkookboeken",
-          "E-mailondersteuning"
-        ]
-      },
       "premium_pro": {
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Keukenchefs & managers",
-        "v2_description": "Voor keukenchefs, executive chefs en restaurantmanagers die dagelijks de service draaien.",
+        "v2_eyebrow": "Koks, keukenchefs & managers",
+        "v2_description": "Voor koks, keukenchefs, executive chefs en restaurantmanagers die dagelijks de service draaien.",
         "v2_credits": "85.000 credits/maand",
         "v2_hint": "≈ volledige menucosting + wekelijkse receptontwikkeling",
         "v2_cta": "Beginnen met Premium Pro"
