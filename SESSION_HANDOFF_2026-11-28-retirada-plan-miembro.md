@@ -32,7 +32,7 @@ gate y `curl` contra la preview → fusionar → `curl` contra producción.
 
 ## Pendiente de John
 1. Mirar la tabla de precios en el MÓVIL (no se pudo verificar visualmente; escritorio sí).
-2. Tarjeta de Miselup en el blog: ¿«desde 10 €/mes» o «desde 19 €/mes por local»? Hoy dice las dos cosas (75 tarjetas).
+2. ~~Tarjeta de Miselup en el blog~~ → **HECHO**: John confirmó 19 €/mes; 75 botones en 25 librerías de prompts corregidos (PR #289, squash `7f5b43c3`), verificado en producción.
 3. «Planes empresa», descuentos «a partir de 5 unidades» y «mentoría 500 € inicial» en FAQ de casos de uso y algún
    post: ¿existen o se reformulan hacia Plus/Max?
 4. Post EN `mental-health-support-chefs-ai`: habla de «Mental Chef» y «Stress Manager» (no existen; el agente es
@@ -46,3 +46,14 @@ gate y `curl` contra la preview → fusionar → `curl` contra producción.
 10. Worktree huérfano en el VPS: `/root/chefpro-plan10` (`git worktree remove`), creado antes de saber que el VPS
     estaba ocupado.
 11. No se cambió `modDate` de los ~290 posts editados (solo el reescrito): Google los revisitará a su ritmo.
+
+## Cierre de sesión (28-nov-2026) — sesión Claude Code (Mac)
+
+- **En producción y verificado con `curl`**: PR #288 (`69490765`) y PR #289 (`7f5b43c3`). 11 páginas clave con los 4
+  planes y cero residuos; `og:description` de la portada ya dice «75+ agentes… desde 25 €/mes».
+- **Motor de código**: los 4 encargos de código fueron a DeepSeek por Ori (`ori-worker`, 0,19 $ en total), cada uno con
+  barrido `opus`. Los encargos y la ficha de hechos quedan en `.work/plan10/` (no versionado): `FICHA.md`,
+  `PROMPT-BLOG.md`, `PROMPT-ROOT.md`, `ENCARGO-codigo*.md`. Sirven de molde para el próximo cambio de precios.
+- **Ramas remotas sin borrar**: `quitar-plan-miembro-10e` y `miselup-desde-19` (ya fusionadas).
+- **Para arrancar la siguiente sesión**: leer la lista «Pendiente de John» de arriba; lo primero es su visto bueno a la
+  tabla de precios en móvil y decidir los puntos 3 a 6.
