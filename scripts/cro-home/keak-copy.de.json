@@ -1,28 +1,28 @@
 {
   "hero": {
     "v2_social_prefix": "Vertrauen von",
-    "v2_social_chefs": "Köchen",
-    "v2_social_count": "generierte Rezepte & Lösungen",
-    "v2_title_prefix": "Senkung der Zutatenkosten in Ihrer",
+    "v2_social_chefs": "Fachleuten",
+    "v2_social_count": "generierte Rezepte, Prozesse & Lösungen",
+    "v2_title_prefix": "Kreieren, steuern und ausbauen:",
     "v2_title_suffix": "mit",
-    "v2_subtitle": "Automatisieren Sie Food Cost, Warenverluste, Portionen und Speisekarten mit 75+ KI-Agenten für professionelle Küchen.",
+    "v2_subtitle": "Automatisieren Sie Rezepte, Food Cost, Warenverlust, Speisekarte und Marketing mit 75+ KI-Agenten für Restaurants.",
     "v2_description": "Trainiert auf den täglichen Arbeitsabläufen von Küchenchefs, Patissiers, Bäckern und Gastronomiebetreibern – nicht auf generischem Restaurant-Marketing.",
     "v2_stat_agents": "KI-Agenten",
     "v2_stat_tools": "Business- & Kalkulationstools",
     "v2_stat_cookbooks": "regionale Kochbücher",
     "v2_stat_roles": "abgedeckte Küchenrollen",
     "v2_cta_pricing": "Pläne & Preise ansehen",
-    "v2_microcopy": "Pläne ab 10 €/Monat · jede Woche ein neuer KI-Agent"
+    "v2_microcopy": "Pläne ab 25 €/Monat · 16 verbindbare Tools (Gmail, Sheets, Outlook…)"
   },
   "showcase": {
     "v2_business_eyebrow": "Business-Tools · 6 küchenspezifische Agenten",
-    "v2_business_title_prefix": "Zutatenkosten um bis zu",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "senken – mit Tools, die für den Passe gebaut wurden.",
-    "v2_business_description": "Warenverluste, Portionierung, Allergene, Umrechnungen: die tägliche Kalkulation einer professionellen Küche, automatisiert.",
-    "v2_proof_label": "Nachweis",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "durchschnittliche Reduzierung der Zutatenkosten durch präzise Verlustberechnungen",
+    "v2_business_title_prefix": "Behalten Sie die Zutatenkosten im Blick",
+    "v2_business_title_highlight": "am Pass",
+    "v2_business_title_suffix": "mit Werkzeugen für die Küche.",
+    "v2_business_description": "Schwund, Portionen, Allergene und Umrechnungen: die täglichen Zahlen in einer Profiküche.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Anwendungsfall",
     "v2_included_prefix": "Alle Tools enthalten ab dem",
     "v2_included_suffix": "Plan aufwärts.",
@@ -34,7 +34,7 @@
         "v2_blurb": "Ausbeuten optimieren und Warenverluste in jedem Mise en Place, an jeder Station und im Service reduzieren."
       },
       "id_alergenos": {
-        "v2_blurb": "Allergene automatisch erkennen und Lebensmittelsicherheitsvorschriften fehlerfrei einhalten."
+        "v2_blurb": "Hilft Ihnen, die 14 Allergene jeder Rezeptur zu prüfen; die endgültige Prüfung liegt bei Ihnen"
       },
       "calcula_pax": {
         "v2_blurb": "Rezepte mit mathematischer Präzision für jede Gästezahl oder Veranstaltung skalieren."
@@ -52,33 +52,18 @@
   },
   "pricing": {
     "v2_title": "Finden Sie Ihren Plan in 10 Sekunden",
-    "v2_description": "Ordnen Sie Ihre Rolle der passenden Stufe zu. Die Credits skalieren mit dem Umfang Ihrer Automatisierung – von der Rezepthilfe an einer einzelnen Station bis zum vollständigen Mehrstandort-Betrieb.",
-    "v2_role_member": "Koch oder Assistenz",
-    "v2_role_premium_pro": "Küchenchef",
+    "v2_description": "Ordnen Sie Ihre Rolle der passenden Stufe zu. Die Credits skalieren mit dem Umfang Ihrer Automatisierung – vom Küchenalltag bis zum vollständigen Mehrstandort-Betrieb.",
+    "v2_role_premium_pro": "Koch oder Küchenchef",
     "v2_role_premium_plus": "Inhaber oder Gruppe",
     "v2_role_premium_max": "Power-User",
-    "v2_divider": "Für Power-User & Jahreszahlung",
+    "v2_divider": "Jahresabo",
     "v2_enterprise_question": "Betreiben Sie eine Gruppe oder benötigen Sie ein individuelles Volumen?",
     "v2_enterprise_link": "Sprechen Sie uns auf einen Enterprise-Plan an",
     "plans": {
-      "member": {
-        "v2_short": "Member",
-        "v2_eyebrow": "Köche & Stationsköche",
-        "v2_description": "Ideal für Küchenassistenten, Köche und Stationsköche, die mit KI starten.",
-        "v2_credits": "10.000 Credits/Monat",
-        "v2_hint": "≈ 200 Rezepte oder 100 Kalkulationen",
-        "v2_cta": "Mit Member starten",
-        "v2_features": [
-          "Alle 75+ KI-Tools inklusive",
-          "10.000 monatliche Credits",
-          "27 internationale Kochbücher",
-          "E-Mail-Support"
-        ]
-      },
       "premium_pro": {
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Küchenchefs & Manager",
-        "v2_description": "Für Küchenchefs, Executive Chefs und Restaurantmanager im täglichen Servicebetrieb.",
+        "v2_eyebrow": "Köche, Küchenchefs & Manager",
+        "v2_description": "Für Köche, Küchenchefs, Executive Chefs und Restaurantmanager im täglichen Servicebetrieb.",
         "v2_credits": "85.000 Credits/Monat",
         "v2_hint": "≈ vollständige Speisekartenkalkulation + wöchentliche Rezeptentwicklung",
         "v2_cta": "Mit Premium Pro starten"

@@ -1573,7 +1573,7 @@
     },
     "pricing_section": {
       "title": "Comece a reduzir custos hoje mesmo",
-      "subtitle": "Começa com o plano Premium Pro por 25 €/mês. A subscrição paga-se sozinha com o que poupas no primeiro mês.",
+      "subtitle": "Começa com o plano Premium Pro por 25 €/mês. Planos mensais sem fidelização.",
       "annual_note": "A opção anual de Premium Max custa 950 € por ano."
     },
     "faq_section": {
@@ -1594,7 +1594,7 @@
       },
       {
         "question": "Funciona para restaurantes pequenos ou apenas para grandes grupos?",
-        "answer": "Funciona para qualquer dimensão. Do restaurante familiar com 40 lugares aos grupos com 20 estabelecimentos. O plano Premium Pro por 25 € por mês é ideal para começar sem risco."
+        "answer": "Funciona para qualquer dimensão. Do restaurante familiar com 40 lugares aos grupos com 20 estabelecimentos. O plano Premium Pro por 25 € por mês é um plano mensal, sem fidelização."
       }
     ],
     "cta_section": {

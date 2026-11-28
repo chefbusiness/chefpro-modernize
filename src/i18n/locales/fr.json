@@ -540,7 +540,7 @@
         },
         "v2_short": "Premium Pro",
         "v2_eyebrow": "Cuisiniers, chefs de cuisine & responsables",
-        "v2_description": "Pour les cuisiniers, chefs de cuisine, chefs exécutifs et directeurs de restaurant qui assurent le service au quotidien.",
+        "v2_description": "Pour les cuisiniers, chefs de cuisine, chefs exécutifs et gérants de restaurant qui assurent le service au quotidien.",
         "v2_credits": "85 000 crédits/mois",
         "v2_hint": "≈ costing complet de la carte + R&D recettes hebdomadaire",
         "v2_cta": "Commencer avec Premium Pro"
@@ -1302,7 +1302,7 @@
     },
     "pricing_section": {
       "title": "Commencez à réduire vos coûts dès aujourd'hui",
-      "subtitle": "Commencez avec le plan Premium Pro à 25 € par mois. L'abonnement se rembourse seul avec ce que vous économisez le premier mois.",
+      "subtitle": "Commencez avec le plan Premium Pro à 25 € par mois. Forfaits mensuels sans engagement.",
       "annual_note": "L'option annuelle de Premium Max coûte 950 € par an."
     },
     "faq_section": {
@@ -1323,7 +1323,7 @@
       },
       {
         "question": "Fonctionne-t-il pour les petits restaurants ou seulement les grands groupes?",
-        "answer": "Il fonctionne pour toute taille d'établissement. Du restaurant familial de 40 couverts aux groupes de 20 établissements. Le plan Premium Pro à 25 €/mois est idéal pour commencer sans risque."
+        "answer": "Il fonctionne pour toute taille d'établissement. Du restaurant familial de 40 couverts aux groupes de 20 établissements. Le plan Premium Pro à 25 €/mois est un forfait mensuel, sans engagement."
       }
     ],
     "cta_section": {

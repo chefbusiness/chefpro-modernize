@@ -32,7 +32,7 @@ Ich bin seit 29 Jahren in der gehobenen Gastronomie tätig und seit 15 Jahren in
 
 ## Was hinter einer Million Anfragen steckt
 
-Jedes Mal, wenn ein Nutzer einem Agenten eine Frage stellt und eine Antwort erhält, zählt das als eine Anfrage. Klingt einfach – aber dahinter stehen 59 agentes especializados en Deutsch, verfügbar in sieben Sprachen – Spanisch, Englisch, Französisch, Deutsch, Italienisch, Portugiesisch und Niederländisch – sowie eine Community, die von Restaurantköchen über Konditoren, Bäcker, Eismacher und Chocolatiers bis hin zu F&B-Managern in Hotels, Gastronomieberatern und Restaurantleitern reicht, und das weltweit.
+Jedes Mal, wenn ein Nutzer einem Agenten eine Frage stellt und eine Antwort erhält, zählt das als eine Anfrage. Klingt einfach – aber dahinter stehen 59 spezialisierte Agenten auf Deutsch, verfügbar in sieben Sprachen – Spanisch, Englisch, Französisch, Deutsch, Italienisch, Portugiesisch und Niederländisch – sowie eine Community, die von Restaurantköchen über Konditoren, Bäcker, Eismacher und Chocolatiers bis hin zu F&B-Managern in Hotels, Gastronomieberatern und Restaurantleitern reicht, und das weltweit.
 
 Die Zahl, die uns wirklich wichtig ist, ist nicht die Million an sich. Es ist das, was sie bedeutet: Arbeitsstunden, die Fachleuten zurückgegeben werden, die sie zum Kochen, zum Kreieren und zum besseren Managen brauchen. Jede Anfrage ist Zeit, die nicht vor einem leeren Blatt verbracht wurde. Und das, multipliziert mit einer Million, beginnt wirklich ins Gewicht zu fallen.
 
@@ -101,4 +101,4 @@ Eine Million Anfragen ist ein Ausgangspunkt, kein Ziel. Jede Woche verfeinern wi
 
 <figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-agentes-afinados.jpg" alt="Hände eines Konditors beim Temperieren von Schokolade auf Marmor in einer Backstube" loading="lazy" /></figure>
 
-Wenn Sie noch nicht auf der Plattform sind, können Sie jetzt einsteigen: [deapp.aichef.pro](https://deapp.aichef.pro/). Das Abo Premium Pro startet bei 25 € pro Monat, ohne Mindestlaufzeit, mit 85.000 Credits – und damit sofortigem Zugang zu den 59 agentes especializados en Deutsch. Alle Informationen zu den Tarifen finden Sie unter [aichef.pro/precios](https://aichef.pro/de/preise). Keine Verpflichtungen, kein Kleingedrucktes.
+Wenn Sie noch nicht auf der Plattform sind, können Sie jetzt einsteigen: [deapp.aichef.pro](https://deapp.aichef.pro/). Das Abo Premium Pro startet bei 25 € pro Monat, ohne Mindestlaufzeit, mit 85.000 Credits – und damit sofortigem Zugang zu den über 75 spezialisierten Agenten auf Deutsch. Alle Informationen zu den Tarifen finden Sie unter [aichef.pro/de/preise](https://aichef.pro/de/preise). Keine Verpflichtungen, kein Kleingedrucktes.

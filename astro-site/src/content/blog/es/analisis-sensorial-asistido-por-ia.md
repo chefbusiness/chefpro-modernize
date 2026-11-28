@@ -1112,7 +1112,7 @@ wpId: 1871
 
 
 
-<p class="wp-block-paragraph">Inversión total (solo software AI Chef Pro, sin hardware): €300-€600/año (planes Pro-Premium). ROI típico: 300-800% en primer año para operaciones medianas (€500K-€2M facturación anual).</p>
+<p class="wp-block-paragraph">Inversión total (solo software AI Chef Pro, sin hardware): €300-€600/año (planes Premium Pro y Premium Plus). ROI típico: 300-800% en primer año para operaciones medianas (€500K-€2M facturación anual).</p>
 
 
 

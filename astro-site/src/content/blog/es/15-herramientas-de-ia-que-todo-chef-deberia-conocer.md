@@ -1,6 +1,6 @@
 ---
 title: "15 Herramientas de IA para Chefs que Sí Usarás en {year}"
-description: "Las 15 herramientas de IA para chefs por oficio: creatividad, escandallos, fotografía, gestión y formación. Plan AI Chef Premium Pro: 25 €/mes con 85.000 créditos, sin permanencia."
+description: "Las 15 herramientas de IA para chefs por oficio: creatividad, escandallos, fotografía, gestión y formación. AI Chef Premium Pro: 25 €/mes con 85.000 créditos."
 pubDate: 2025-12-26
 modDate: 2026-08-31
 category: ia-en-gastronomia

@@ -1,28 +1,28 @@
 {
   "hero": {
     "v2_social_prefix": "Trusted by",
-    "v2_social_chefs": "chefs",
-    "v2_social_count": "recipes & solutions generated",
-    "v2_title_prefix": "Cut ingredient costs in your",
+    "v2_social_chefs": "professionals",
+    "v2_social_count": "recipes, processes & solutions generated",
+    "v2_title_prefix": "Create, run and grow your",
     "v2_title_suffix": "with",
-    "v2_subtitle": "Automate food cost, waste, portions and menus with 75+ AI agents built for professional kitchens.",
+    "v2_subtitle": "Automate recipes, food cost, waste, menus and marketing with 75+ AI agents built for restaurants and hospitality businesses.",
     "v2_description": "Trained on the daily workflows of head chefs, pastry chefs, bakers and hospitality operators, not generic restaurant marketing.",
     "v2_stat_agents": "AI agents",
     "v2_stat_tools": "business & cost tools",
     "v2_stat_cookbooks": "regional cookbooks",
     "v2_stat_roles": "chef roles covered",
     "v2_cta_pricing": "See plans & pricing",
-    "v2_microcopy": "Plans from €10/month · new AI agent added every week"
+    "v2_microcopy": "Plans from €25/month · 16 connectable tools (Gmail, Sheets, Outlook…)"
   },
   "showcase": {
     "v2_business_eyebrow": "Business tools · 6 kitchen-native agents",
-    "v2_business_title_prefix": "Cut ingredient costs up to",
-    "v2_business_title_highlight": "30%",
-    "v2_business_title_suffix": "with tools built for the pass.",
-    "v2_business_description": "Waste, portioning, allergens, conversions: the daily math of a professional kitchen, automated.",
-    "v2_proof_label": "Proof point",
-    "v2_proof_value": "30%",
-    "v2_proof_text": "average ingredient-cost reduction with precise waste calculations",
+    "v2_business_title_prefix": "Keep ingredient cost in check",
+    "v2_business_title_highlight": "on the line",
+    "v2_business_title_suffix": "with kitchen tools.",
+    "v2_business_description": "Waste, portions, allergens and conversions: the day-to-day numbers in a professional kitchen.",
+    "v2_proof_label": "",
+    "v2_proof_value": "",
+    "v2_proof_text": "",
     "v2_use_case_label": "Use case",
     "v2_included_prefix": "Every tool included from the",
     "v2_included_suffix": "plan upward.",
@@ -30,43 +30,40 @@
   },
   "apps": {
     "business": {
-      "mermas_gencal": { "v2_blurb": "Optimize yields and reduce waste across every prep list, station, and service." },
-      "id_alergenos": { "v2_blurb": "Automatically identify allergens and comply with food safety without errors." },
-      "calcula_pax": { "v2_blurb": "Scale recipes with mathematical precision for any cover count or event." },
-      "conversor_ing": { "v2_blurb": "Adapt recipes between metric systems instantly, without conversion errors." },
-      "mental_coach": { "v2_blurb": "Reduce kitchen stress and strengthen leadership across your brigade." },
-      "chatgpt_4o": { "v2_blurb": "Technical questions and seasonal menu planning, always on call." }
+      "mermas_gencal": {
+        "v2_blurb": "Optimize yields and reduce waste across every prep list, station, and service."
+      },
+      "id_alergenos": {
+        "v2_blurb": "It helps you review the 14 allergens in each recipe; the final check is yours"
+      },
+      "calcula_pax": {
+        "v2_blurb": "Scale recipes with mathematical precision for any cover count or event."
+      },
+      "conversor_ing": {
+        "v2_blurb": "Helps you convert units and quantities from one measure system to another."
+      },
+      "mental_coach": {
+        "v2_blurb": "Reduce kitchen stress and strengthen leadership across your brigade."
+      },
+      "chatgpt_4o": {
+        "v2_blurb": "Technical questions and seasonal menu planning, always on call."
+      }
     }
   },
   "pricing": {
     "v2_title": "Find your plan in 10 seconds",
-    "v2_description": "Match your role to a tier. Credits scale with how much of your kitchen and business you automate — from single-station recipe help to a full multi-restaurant operation.",
-    "v2_role_member": "Cook or assistant",
-    "v2_role_premium_pro": "Head chef",
+    "v2_description": "Match your role to a tier. Credits scale with how much of your kitchen and business you automate — from day-to-day kitchen work to a full multi-restaurant operation.",
+    "v2_role_premium_pro": "Cook or head chef",
     "v2_role_premium_plus": "Owner or group",
     "v2_role_premium_max": "Power user",
-    "v2_divider": "For power users & annual commitment",
+    "v2_divider": "Annual commitment",
     "v2_enterprise_question": "Running a group or need custom volume?",
     "v2_enterprise_link": "Talk to us for an enterprise plan",
     "plans": {
-      "member": {
-        "v2_short": "Member",
-        "v2_eyebrow": "Cooks & station chefs",
-        "v2_description": "Ideal for kitchen assistants, cooks and station chefs starting with AI.",
-        "v2_credits": "10,000 credits/month",
-        "v2_hint": "≈ 200 recipes or 100 cost calcs",
-        "v2_cta": "Start with Member",
-        "v2_features": [
-          "All 75+ AI tools included",
-          "10,000 monthly credits",
-          "27 world cookbooks",
-          "Email support"
-        ]
-      },
       "premium_pro": {
         "v2_short": "Premium Pro",
-        "v2_eyebrow": "Head chefs & managers",
-        "v2_description": "For kitchen chefs, executive chefs and restaurant managers running daily service.",
+        "v2_eyebrow": "Cooks, head chefs & managers",
+        "v2_description": "For cooks, head chefs, executive chefs and restaurant managers running daily service.",
         "v2_credits": "85,000 credits/month",
         "v2_hint": "≈ full menu costing + weekly recipe R&D",
         "v2_cta": "Start with Premium Pro"

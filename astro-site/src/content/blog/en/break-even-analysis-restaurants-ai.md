@@ -118,7 +118,7 @@ imageAlt: "Break Even Analysis"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">📊 Calculate Your True Break-Even Point</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro: Break-Even Calculator + Financial Planner powered by AI.<br />    Precise projections • Scenario modeling • Real-time adjustments • 75+ tools  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    CALCULATE YOUR BREAK-EVEN →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    85,000 credits a month with Premium Pro  </p>
 </div>
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost Kit Pro</h3><p class="mt-2 text-muted-foreground">Excel templates that cost out recipes in minutes with real food cost.</p><a href="/en/digital-products/food-cost-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost Kit Pro for $19</a></aside>

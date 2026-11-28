@@ -210,9 +210,13 @@ const pricingSchema = {
               </span>
             )}
 
-            <span class="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
-              {plan.eyebrow}
-            </span>
+            {/* Altura reservada para dos líneas: la etiqueta larga («Cocineros, jefes de cocina y
+                responsables») no descuadra el título respecto a las otras dos tarjetas. */}
+            <div class="flex items-start md:min-h-[2.75rem]">
+              <span class="inline-flex w-fit rounded-2xl bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
+                {plan.eyebrow}
+              </span>
+            </div>
 
             <h3 class="mt-3 text-lg font-bold text-foreground">{plan.name}</h3>
             <p class="mt-2 text-sm text-muted-foreground">{plan.description}</p>
@@ -274,7 +278,7 @@ const pricingSchema = {
     )}
 
     <div>
-      <span class="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
+      <span class="inline-flex w-fit rounded-2xl bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
         {annual.eyebrow}
       </span>
       <h3 class="mt-3 text-lg font-bold text-foreground md:text-xl">{annual.name}</h3>
@@ -307,7 +311,7 @@ const pricingSchema = {
       </a>
     </div>
 
-    <ul class="mt-5 grid gap-x-6 gap-y-2.5 text-sm sm:grid-cols-2">
+    <ul class="mt-5 grid gap-x-6 gap-y-2.5 text-sm sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
       {annual.features.map((feature) => (
         <li class="flex items-start gap-2 text-foreground">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>

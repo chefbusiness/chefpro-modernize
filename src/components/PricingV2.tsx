@@ -11,8 +11,12 @@
  * scripts/cro-home/keak-dist-gate.py valide portadas, páginas de precios e
  * islands con el mismo código.
  *
+ * Estructura (idéntica al .astro): 3 tarjetas mensuales + el plan anual como BANDA
+ * a todo el ancho de la fila (no como cuarta tarjeta), y 3 chips de rol —sólo los
+ * mensuales, porque el anual no es un «rol»—.
+ *
  * Diferencias deliberadas con el .astro, y sólo estas:
- *   · i18n por react-i18next (el .astro usa t()/tList() de astro-site) — MISMAS claves.
+ *   · i18n por react-i18next (el .astro usa t() de astro-site) — MISMAS claves.
  *   · URL de plataforma por useLanguage().getAppUrl() (el .astro usa appCtaUrl()).
  *   · SIN JSON-LD Product: lo emite ya la página Astro que monta el island.
  *   · El resalte de los chips es un onClick de React en vez de un <script>.
@@ -25,9 +29,8 @@
  * ../src/components/*.tsx), así que las genera igual; si alguien reescribe el
  * handler, que no pierda esas dos cadenas literales.
  */
-import { Fragment, useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Check } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 interface PlanV2 {
@@ -159,11 +162,12 @@ export default function PricingV2({ medium }: PricingV2Props) {
     features: feat('premium_plus_annual', 6),
   };
 
-  // Fila 1 = los 3 planes mensuales; fila 2 = el compromiso anual, solo.
-  const rows = [
-    { grid: 'mx-auto grid max-w-5xl gap-6 md:grid-cols-3', plans: [premiumPro, premiumPlus, premiumMax] },
-    { grid: 'mx-auto grid max-w-md gap-6', plans: [premiumPlusAnnual] },
-  ];
+  // Fila 1 = los 3 planes mensuales (el «más popular» queda en el centro). Debajo, el
+  // anual va como BANDA a todo el ancho de la fila —no como una cuarta tarjeta suelta—:
+  // en escritorio, texto y ventajas a la izquierda y precio + CTA a la derecha; en móvil
+  // se apila en el mismo orden que las tarjetas (cabecera, precio, CTA, ventajas).
+  const monthlyPlans = [premiumPro, premiumPlus, premiumMax];
+  const annual = premiumPlusAnnual;
 
   // Chips de rol → plan. Sólo los 3 mensuales (el anual no es un «rol»).
   const roleChips = [
@@ -213,103 +217,185 @@ export default function PricingV2({ medium }: PricingV2Props) {
         ))}
       </div>
 
-      {rows.map((row, i) => (
-        // <Fragment> y no un <div>: el .astro no envuelve la fila, y un div
-        // extra cambiaría el DOM que compara la paridad visual.
-        <Fragment key={i}>
-          {i === 1 && (
-            <div className="mx-auto mt-12 flex max-w-3xl items-center gap-4">
-              <span className="h-px flex-1 bg-border" aria-hidden="true"></span>
-              <span className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                {t('pricing.v2_divider')}
+      <div className="mx-auto mt-10 grid max-w-5xl gap-8 md:grid-cols-3 md:gap-6">
+        {monthlyPlans.map((plan) => (
+          <article
+            key={plan.id}
+            id={`plan-${plan.id}`}
+            tabIndex={-1}
+            data-plan={plan.id}
+            data-popular={plan.popular ? 'true' : undefined}
+            className={cardClass(plan)}
+          >
+            {plan.popular && (
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-black shadow">
+                {`🔥 ${t('pricing.most_popular')}`}
               </span>
-              <span className="h-px flex-1 bg-border" aria-hidden="true"></span>
+            )}
+
+            {plan.unlimitedBadge && (
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground shadow">
+                {`∞ ${plan.unlimitedBadge}`}
+              </span>
+            )}
+
+            {plan.discount && (
+              <span className="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow">
+                {plan.discount}
+              </span>
+            )}
+
+            {/* Altura reservada para dos líneas: la etiqueta larga («Cocineros, jefes de cocina y
+                responsables») no descuadra el título respecto a las otras dos tarjetas. */}
+            <div className="flex items-start md:min-h-[2.75rem]">
+              <span className="inline-flex w-fit rounded-2xl bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
+                {plan.eyebrow}
+              </span>
             </div>
-          )}
 
-          <div className={`${row.grid} ${i === 0 ? 'mt-10' : 'mt-8'}`}>
-            {row.plans.map((plan) => (
-              <article
-                key={plan.id}
-                id={`plan-${plan.id}`}
-                tabIndex={-1}
-                data-plan={plan.id}
-                data-popular={plan.popular ? 'true' : undefined}
-                className={cardClass(plan)}
-              >
-                {plan.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-black shadow">
-                    {`🔥 ${t('pricing.most_popular')}`}
-                  </span>
-                )}
+            <h3 className="mt-3 text-lg font-bold text-foreground">{plan.name}</h3>
+            <p className="mt-2 text-sm text-muted-foreground">{plan.description}</p>
 
-                {plan.unlimitedBadge && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground shadow">
-                    {`∞ ${plan.unlimitedBadge}`}
-                  </span>
-                )}
+            <div className="mt-4">
+              {plan.originalPrice && (
+                <span className="block text-sm text-muted-foreground line-through">{plan.originalPrice}</span>
+              )}
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-foreground">{plan.price}</span>
+                {plan.period && <span className="text-muted-foreground">{plan.period}</span>}
+              </div>
+            </div>
 
-                {plan.discount && (
-                  <span className="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow">
-                    {plan.discount}
-                  </span>
-                )}
+            <div className="mt-4 rounded-md border-l-4 border-accent bg-muted/60 px-3 py-2">
+              <strong className="text-sm text-foreground">{`${plan.creditsPrefix ?? ''}${plan.credits}`}</strong>
+              <span className="block text-xs text-muted-foreground">{plan.hint}</span>
+            </div>
 
-                <span className="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
-                  {plan.eyebrow}
-                </span>
+            <a
+              href={ctaHref(plan)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={ctaClass(plan)}
+            >
+              {`${plan.cta} →`}
+            </a>
 
-                <h3 className="mt-3 text-lg font-bold text-foreground">{plan.name}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{plan.description}</p>
+            <ul className="mt-5 space-y-2.5 text-sm">
+              {plan.features.map((feature, fi) => (
+                <li key={fi} className="flex items-start gap-2 text-foreground">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent"
+                    aria-hidden="true"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
 
-                <div className="mt-4">
-                  {plan.originalPrice && (
-                    <span className="block text-sm text-muted-foreground line-through">{plan.originalPrice}</span>
-                  )}
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-4xl font-bold text-foreground">{plan.price}</span>
-                    {plan.period && <span className="text-muted-foreground">{plan.period}</span>}
-                  </div>
-                </div>
+      <div className="mx-auto mt-12 flex max-w-5xl items-center gap-4">
+        <span className="h-px flex-1 bg-border" aria-hidden="true"></span>
+        <span className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          {t('pricing.v2_divider')}
+        </span>
+        <span className="h-px flex-1 bg-border" aria-hidden="true"></span>
+      </div>
 
-                <div className="mt-4 rounded-md border-l-4 border-accent bg-muted/60 px-3 py-2">
-                  <strong className="text-sm text-foreground">{`${plan.creditsPrefix ?? ''}${plan.credits}`}</strong>
-                  <span className="block text-xs text-muted-foreground">{plan.hint}</span>
-                </div>
+      <article
+        id={`plan-${annual.id}`}
+        tabIndex={-1}
+        data-plan={annual.id}
+        className="relative mx-auto mt-8 grid max-w-5xl scroll-mt-28 gap-x-10 rounded-xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md md:grid-cols-[minmax(0,1fr)_19rem] md:p-8"
+      >
+        {annual.discount && (
+          <span className="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow md:right-8">
+            {annual.discount}
+          </span>
+        )}
 
-                <a
-                  href={ctaHref(plan)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={ctaClass(plan)}
-                >
-                  {`${plan.cta} →`}
-                </a>
+        <div>
+          <span className="inline-flex w-fit rounded-2xl bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
+            {annual.eyebrow}
+          </span>
+          <h3 className="mt-3 text-lg font-bold text-foreground md:text-xl">{annual.name}</h3>
+          <p className="mt-2 max-w-xl text-sm text-muted-foreground">{annual.description}</p>
+        </div>
 
-                <ul className="mt-5 space-y-2.5 text-sm">
-                  {plan.features.map((feature, fi) => (
-                    <li key={fi} className="flex items-start gap-2 text-foreground">
-                      <Check
-                        className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent"
-                        strokeWidth={2.5}
-                        aria-hidden="true"
-                      />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
+        <div className="md:row-span-2 md:flex md:flex-col md:justify-center md:border-l md:border-border md:pl-10">
+          <div className="mt-4 md:mt-0">
+            {annual.originalPrice && (
+              <span className="block text-sm text-muted-foreground line-through">{annual.originalPrice}</span>
+            )}
+            <div className="flex items-baseline gap-1">
+              <span className="text-4xl font-bold text-foreground">{annual.price}</span>
+              {annual.period && <span className="text-muted-foreground">{annual.period}</span>}
+            </div>
           </div>
-        </Fragment>
-      ))}
+
+          <div className="mt-4 rounded-md border-l-4 border-accent bg-muted/60 px-3 py-2">
+            <strong className="text-sm text-foreground">{`${annual.creditsPrefix ?? ''}${annual.credits}`}</strong>
+            <span className="block text-xs text-muted-foreground">{annual.hint}</span>
+          </div>
+
+          <a
+            href={ctaHref(annual)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={ctaClass(annual)}
+          >
+            {`${annual.cta} →`}
+          </a>
+        </div>
+
+        <ul className="mt-5 grid gap-x-6 gap-y-2.5 text-sm sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+          {annual.features.map((feature, fi) => (
+            <li key={fi} className="flex items-start gap-2 text-foreground">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent"
+                aria-hidden="true"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
 
       <div className="mt-12 text-center">
         <p className="text-balance text-sm text-muted-foreground">
           {`${t('pricing.v2_enterprise_question')} `}
           <a href={enterpriseHref} className="inline-flex items-center gap-1 font-semibold text-accent-ink hover:underline">
             {t('pricing.v2_enterprise_link')}
-            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-4 w-4"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
           </a>
         </p>
       </div>

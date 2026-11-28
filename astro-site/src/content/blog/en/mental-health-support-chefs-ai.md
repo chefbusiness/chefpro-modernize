@@ -57,7 +57,7 @@ imageAlt: "Mental Health Support"
 <li><strong>Career Transition Support:</strong> Counseling for chefs considering leaving the industry or facing restaurant closure</li>
 <li><strong>Conflict Resolution Guidance:</strong> AI-assisted strategies for managing kitchen politics and difficult conversations</li>
 </ul>
-<p><strong>Pricing:</strong> Included in every AI Chef Pro plan, from €25/month (Premium Pro, 85,000 credits a month)</p>
+<p><strong>Pricing:</strong> AI Chef Pro plans start at €25/month (Premium Pro, 85,000 credits a month).</p>
 <p><strong>Pros:</strong> Deep culinary industry understanding, evidence-based therapeutic approaches, completely anonymous, available in 20+ languages</p>
 <p><strong>Cons:</strong> Cannot replace emergency psychiatric care, requires consistent use for best results</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
@@ -79,7 +79,7 @@ imageAlt: "Mental Health Support"
 <li><strong>Team Stress Monitoring:</strong> For executive chefs managing kitchen team wellbeing (aggregate anonymous data)</li>
 <li><strong>Sound Therapy:</strong> Specialized audio environments designed for kitchen acoustics</li>
 </ul>
-<p><strong>Pricing:</strong> Included in every AI Chef Pro plan, from €25/month (Premium Pro, 85,000 credits a month)</p>
+<p><strong>Pricing:</strong> AI Chef Pro plans start at €25/month (Premium Pro, 85,000 credits a month).</p>
 <p><strong>Pros:</strong> Instant relief during shifts, wearable integration, very short time commitments, excellent for anger management</p>
 <p><strong>Cons:</strong> Less deep therapeutic work than Mental Chef, requires smartwatch for full features</p>
 <h2>How These AI Tools Prevent Chef Burnout</h2>
@@ -153,8 +153,8 @@ imageAlt: "Mental Health Support"
 </tr>
 <tr>
 <td style="padding: 12px;"><strong>Starting Price</strong></td>
-<td style="padding: 12px; text-align: center;">From €25/mo (AI Chef Pro)</td>
-<td style="padding: 12px; text-align: center;">From €25/mo (AI Chef Pro)</td>
+<td style="padding: 12px; text-align: center;">AI Chef Pro plans from €25/mo</td>
+<td style="padding: 12px; text-align: center;">AI Chef Pro plans from €25/mo</td>
 </tr>
 </tbody>
 </table></div>

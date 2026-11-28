@@ -1275,7 +1275,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       },
       {
         "q": "Serve se não for eu quem decide as ferramentas na cozinha?",
-        "a": "Pode começar com o plano Premium Pro (25 € por mês, 85.000 créditos) para as suas próprias listas e propostas. Quando tiver 1-2 semanas a usá-lo, proponha ao chefe de cozinha com dados concretos: tempo poupado, escandallos validados, mise organizado."
+        "a": "Pode começar com o plano Premium Pro (25 € por mês, 85.000 créditos) para as suas próprias listas e propostas. Quando tiver 1-2 semanas a usá-lo, proponha ao chefe de cozinha com dados concretos: tempo poupado, fichas técnicas com custos validadas, mise organizado."
       },
       {
         "q": "Como me ajuda nos picos de serviço?",

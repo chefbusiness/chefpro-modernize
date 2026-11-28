@@ -175,7 +175,7 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <h3 itemprop="name">How does the credits system work?</h3>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
-<p>The Premium Pro plan (€25/month) includes 85,000 monthly credits, roughly enough to cost your full menu and run weekly recipe R&amp;D. Each calculation covers one complete recipe, including all ingredients, prep loss, and portioning. This lets you test the full power of the Food Cost Calculator before committing. Once you see the value, you can purchase additional credits as needed.</p>
+<p>The Premium Pro plan (€25/month) includes 85,000 monthly credits, roughly enough to cost your full menu and run weekly recipe R&amp;D. Each calculation covers one complete recipe, including all ingredients, prep loss, and portioning. This lets you test the full power of the Food Cost Calculator before committing. Once you see the value, you can move up to Premium Plus (€50/month, 175,000 credits) when you need more.</p>
 </p></div>
 </p></div>
 </p></div>
@@ -227,7 +227,7 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <p class="cta-headline">Every day you wait is money left on the table</p>
 <p class="cta-description">Join thousands of restaurant owners who have transformed their margins with AI Chef Pro. No long-term commitment—start with the Premium Pro plan and see exactly where you can save.</p>
 <p>                <a href="https://aichef.pro/en" class="cta-button secondary" target="_blank" rel="noopener">Start with AI Chef Pro →</a>                </p>
-<p class="cta-note">Calculate your first recipe in under 5 minutes • 1 credit = 1 use</p>
+<p class="cta-note">Calculate your first recipe in under 5 minutes • 85,000 credits a month with Premium Pro</p>
 </p></div>
 </section>
 <p>        <!-- 11. CONCLUSION (100-150 words) -->        </p>

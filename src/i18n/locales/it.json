@@ -1586,7 +1586,7 @@
     },
     "pricing_section": {
       "title": "Inizia a ridurre i costi oggi stesso",
-      "subtitle": "Inizia con il piano Premium Pro a 25 € al mese. L'abbonamento si ripaga da solo con ciò che risparmi il primo mese.",
+      "subtitle": "Inizia con il piano Premium Pro a 25 € al mese. Piani mensili senza vincoli.",
       "annual_note": "L'opzione annuale di Premium Max costa 950 € all'anno."
     },
     "faq_section": {
@@ -1607,7 +1607,7 @@
       },
       {
         "question": "Funziona per ristoranti piccoli o solo per grandi gruppi?",
-        "answer": "Funziona per qualsiasi dimensione. Dal ristorante di famiglia con 40 coperti ai gruppi con 20 locali. Il piano Premium Pro a 25 € al mese è ideale per iniziare senza rischi."
+        "answer": "Funziona per qualsiasi dimensione. Dal ristorante di famiglia con 40 coperti ai gruppi con 20 locali. Il piano Premium Pro a 25 € al mese è un piano mensile, senza vincoli."
       }
     ],
     "cta_section": {
@@ -1625,7 +1625,7 @@
   "landingRestaurantes": {
     "seo": {
       "title": "Agenti IA per ristoranti: 75+ specialisti | AI Chef Pro",
-      "description": "Agenti IA per ristoranti: 75+ specialisti di costi, menu, allergeni e marketing. Senza permanenza. Inizia oggi da 25 € al mese e confronta i piani.",
+      "description": "Agenti IA per ristoranti: 75+ specialisti di costi, menu, allergeni e marketing. Senza vincoli. Inizia oggi da 25 € al mese e confronta i piani.",
       "keywords": "agenti ia per ristoranti, agenti ia ristorazione, food cost ia, menu ia, ai chef pro",
       "url_slug": "strumenti-ia-ristorante"
     },

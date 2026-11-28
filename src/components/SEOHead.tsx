@@ -156,7 +156,7 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Premium Pro",
-                "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 85.000 créditos/mes.",
+                "description": "Plan de entrada para cocineros, jefes de cocina, chefs ejecutivos y gerentes de restaurante. 85.000 créditos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "25",

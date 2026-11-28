@@ -121,7 +121,7 @@ export default function ModernPricing() {
         </p>
       </div>
 
-      <div className="grid w-full items-start gap-6 overflow-visible py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid w-full items-start gap-6 overflow-visible py-12 md:grid-cols-2 xl:grid-cols-4">
         {plans.map((plan, index) => (
           <Card 
             key={index} 

@@ -2359,7 +2359,7 @@ wpId: 1500
 
 
 <ul class="wp-block-list">
-<li><strong>Mejor opción</strong>: AI Chef Pro (plan Premium Pro)</li>
+<li><strong>Mejor opción</strong>: AI Chef Pro (plan Premium Pro, 25 €/mes)</li>
 
 
 

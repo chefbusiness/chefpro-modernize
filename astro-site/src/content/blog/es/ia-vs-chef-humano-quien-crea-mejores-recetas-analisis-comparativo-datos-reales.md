@@ -429,7 +429,7 @@ wpId: 1594
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Generado</th><th>ROI Mensual</th></tr></thead><tbody><tr><td>Restaurante pequeño (30 pax)</td><td>€25</td><td>€300-450</td><td>300-450%</td></tr><tr><td>Restaurante mediano (60 pax)</td><td>€25-50</td><td>€700-1200</td><td>400-800%</td></tr><tr><td>Empresa de catering</td><td>€25-50</td><td>€1000-2000</td><td>700-1500%</td></tr><tr><td>Cadena de restaurantes</td><td>€50-100</td><td>€5000-15000</td><td>1000-3000%</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Generado</th><th>ROI Mensual</th></tr></thead><tbody><tr><td>Restaurante pequeño (30 pax)</td><td>€25</td><td>€300-450</td><td>1100-1700%</td></tr><tr><td>Restaurante mediano (60 pax)</td><td>€25-50</td><td>€700-1200</td><td>1300-4700%</td></tr><tr><td>Empresa de catering</td><td>€25-50</td><td>€1000-2000</td><td>1900-7900%</td></tr><tr><td>Cadena de restaurantes</td><td>€50-95</td><td>€5000-15000</td><td>5163-29900%</td></tr></tbody></table></div></figure>
 
 
 

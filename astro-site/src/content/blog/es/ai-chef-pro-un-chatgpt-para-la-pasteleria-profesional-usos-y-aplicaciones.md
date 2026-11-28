@@ -1,6 +1,6 @@
 ---
 title: "IA para Pastelería Profesional: Usos Reales en el Obrador"
-description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Plan AI Chef Premium Pro: 85.000 créditos por 25 €/mes."
+description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. AI Chef Premium Pro: 85.000 créditos por 25 €/mes."
 pubDate: 2025-02-21
 modDate: 2026-09-10
 category: ia-en-gastronomia

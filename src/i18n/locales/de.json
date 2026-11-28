@@ -1019,7 +1019,7 @@
         "price": "25€",
         "period": "/Monat",
         "uses": "85.000/Monat",
-        "description": "Für Köche, Küchenchefs, Chefköche und Restaurantmanager",
+        "description": "Für Köche, Küchenchefs, Executive Chefs und Restaurantmanager",
         "features": {
           "0": "75+ KI-Agenten enthalten",
           "1": "85.000 monatliche Credits",
@@ -1586,7 +1586,7 @@
     },
     "pricing_section": {
       "title": "Beginnen Sie noch heute mit der Kostensenkung",
-      "subtitle": "Starten Sie mit dem Plan Premium Pro für 25 € pro Monat. Das Abo macht sich schon im ersten Monat durch die Ersparnisse bezahlt.",
+      "subtitle": "Starten Sie mit dem Plan Premium Pro für 25 € pro Monat. Monatliche Tarife ohne Vertragsbindung.",
       "annual_note": "Die Jahresoption von Premium Max kostet 950 € pro Jahr."
     },
     "faq_section": {
@@ -1607,7 +1607,7 @@
       },
       {
         "question": "Funktioniert es für kleine Restaurants oder nur für große Gruppen?",
-        "answer": "Es funktioniert für jede Größe. Vom Familienrestaurant mit 40 Plätzen bis zu Gruppen mit 20 Standorten. Der Plan Premium Pro für 25 €/Monat ist ideal, um ohne Risiko zu beginnen."
+        "answer": "Es funktioniert für jede Größe. Vom Familienrestaurant mit 40 Plätzen bis zu Gruppen mit 20 Standorten. Der Plan Premium Pro für 25 €/Monat ist ein Monatstarif ohne Vertragsbindung."
       }
     ],
     "cta_section": {
